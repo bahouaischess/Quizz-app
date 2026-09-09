@@ -54,7 +54,8 @@
         button.success { background-color: rgba(166, 227, 161, 0.1); color: var(--success); border: 1px solid var(--success); }
         button.success:hover { background-color: var(--success); color: #000; }
         
-        input[type="text"], input[type="number"], input[type="file"], select { width: 100%; padding: 12px; margin: 8px 0 15px 0; border-radius: var(--radius); border: 1px solid var(--surface-light); background-color: var(--bg-dark); color: var(--text-main); box-sizing: border-box; }
+        /* FIX CSS : Ajout des input email et password pour prendre 100% de la largeur */
+        input[type="text"], input[type="number"], input[type="file"], input[type="email"], input[type="password"], select { width: 100%; padding: 12px; margin: 8px 0 15px 0; border-radius: var(--radius); border: 1px solid var(--surface-light); background-color: var(--bg-dark); color: var(--text-main); box-sizing: border-box; }
         
         .card { background-color: var(--surface); padding: 25px; border-radius: var(--radius); margin-bottom: 25px; border: 1px solid var(--surface-light); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         
@@ -183,8 +184,10 @@
                 <div id="auth-msg" class="hidden" style="margin-top: 15px; font-weight: bold;"></div>
             </div>
         </div>
+        
         <!-- ACCUEIL -->
-        <div id="home-view" class="view">
+        <!-- FIX HTML : Ajout de la classe hidden pour que cette vue soit masquée par défaut -->
+        <div id="home-view" class="view hidden">
             <h1>Matières et Entraînements</h1>
             <div id="subjects-list"></div>
             <div class="card" style="margin-top: 30px;">
@@ -407,8 +410,10 @@
                 </div>
                 <button class="danger" style="width: 100%;" onclick="customConfirm('Danger', 'Suppression de toute ta base locale. Es-tu certain ?', resetData)">⚠️ Supprimer la base locale</button>
             </div>
+            
+            <!-- FIX HTML : Bouton déconnexion déplacé ICI -->
+            <button class="warning" style="width: 100%; margin-top: 15px;" onclick="handleLogout()">🚪 Se déconnecter</button>
         </div>
-        <button class="warning" style="width: 100%; margin-top: 15px;" onclick="handleLogout()">🚪 Se déconnecter</button>
 
     </div>
 
