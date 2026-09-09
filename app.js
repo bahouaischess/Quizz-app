@@ -103,40 +103,30 @@ function customConfirm(title, msg, onConfirm) { customModal(title, msg, onConfir
 // -----------------------------------------------------
 // NORMALISATION STRICTE
 // -----------------------------------------------------
+// -----------------------------------------------------
+// NORMALISATION & FUSION (Correction Copilot)
+// -----------------------------------------------------
 function normalizeData(rawData) {
     let valid = { 
-        _player: { 
-            xp: Number(rawData?._player?.xp) || 0, 
-            level: Number(rawData?._player?.level) || 1 
-        },
+        _player: { xp: Number(rawData?._player?.xp) || 0, level: Number(rawData?._player?.level) || 1 },
         _folders: Array.isArray(rawData?._folders) ? rawData._folders : [DEFAULT_FOLDER]
     };
-    
     for (let key in rawData) {
         if (key === '_player' || key === '_folders') continue;
         let sub = rawData[key];
         if (sub && Array.isArray(sub.questions)) {
             valid[key] = {
                 folder: sub.folder || DEFAULT_FOLDER,
-                questions: sub.questions.filter(q => q && typeof q.q === 'string' && Array.isArray(q.options)).map(q => {
+                questions: sub.questions.filter(q => q && typeof q.q === 'string').map(q => {
                     q.q = removeCitations(q.q);
                     q.explanation = removeCitations(q.explanation);
-                    q.options = q.options.map(opt => ({ ...opt, text: removeCitations(opt.text) }));
-                    
+                    q.options = (q.options || []).map(opt => ({ ...opt, text: removeCitations(opt.text) }));
                     q.tags = cleanTags(q.tags);
-                    q.stats = { 
-                        attempts: Number(q.stats?.attempts) || 0, 
-                        correct: Number(q.stats?.correct) || 0 
-                    };
-                    if (!q.sm2) {
-                        q.sm2 = { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 };
-                    }
+                    q.stats = { attempts: Number(q.stats?.attempts) || 0, correct: Number(q.stats?.correct) || 0 };
+                    q.sm2 = q.sm2 || { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 };
                     return q;
                 }),
-                stats: { 
-                    attempts: Number(sub.stats?.attempts) || 0, 
-                    correct: Number(sub.stats?.correct) || 0 
-                },
+                stats: { attempts: Number(sub.stats?.attempts) || 0, correct: Number(sub.stats?.correct) || 0 },
                 dailyValidations: sub.dailyValidations || {}
             };
         }
@@ -144,7 +134,49 @@ function normalizeData(rawData) {
     return valid;
 }
 
-let appData = normalizeData(JSON.parse(JSON.stringify(defaultData || {}))); 
+// Fonction de fusion : Base locale (data.js) + Sauvegarde Cloud (Supabase)
+function mergeDataWithDefaults(cloudData, baseData) {
+    let merged = JSON.parse(JSON.stringify(baseData)); 
+    merged._player = cloudData._player || { xp: 0, level: 1 };
+    merged._folders = cloudData._folders || [DEFAULT_FOLDER];
+
+    for (let subject in baseData) {
+        if (subject.startsWith('_')) continue;
+        if (cloudData[subject]) {
+            merged[subject].folder = cloudData[subject].folder || DEFAULT_FOLDER;
+            merged[subject].stats = cloudData[subject].stats || {attempts: 0, correct: 0};
+            merged[subject].dailyValidations = cloudData[subject].dailyValidations || {};
+
+            // Réinjecte les stats SM-2 du cloud dans les questions de base
+            merged[subject].questions.forEach(q => {
+                const cloudQ = cloudData[subject].questions.find(cq => cq.q === q.q);
+                if (cloudQ) {
+                    q.stats = cloudQ.stats || {attempts: 0, correct: 0};
+                    q.sm2 = cloudQ.sm2 || {repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0};
+                }
+            });
+
+            // Ajoute les questions créées manuellement depuis l'interface UI
+            cloudData[subject].questions.forEach(cq => {
+                const existsInBase = merged[subject].questions.some(q => q.q === cq.q);
+                if (!existsInBase) merged[subject].questions.push(cq);
+            });
+        }
+    }
+
+    // Ajoute les matières créées manuellement depuis l'interface UI
+    for (let subject in cloudData) {
+        if (!subject.startsWith('_') && !merged[subject]) {
+            merged[subject] = cloudData[subject];
+        }
+    }
+    return merged;
+}
+
+// Initialisation au démarrage avec le localStorage
+const baseData = typeof defaultData !== 'undefined' ? normalizeData(defaultData) : { _player: {xp:0, level:1}, _folders: [DEFAULT_FOLDER] };
+const localSave = localStorage.getItem('myQuizData');
+let appData = localSave ? mergeDataWithDefaults(JSON.parse(localSave), baseData) : baseData;
 
 // -----------------------------------------------------
 // AUTHENTIFICATION & SAUVEGARDE CLOUD
@@ -179,8 +211,8 @@ async function initAppAfterAuth() {
 
     if (data && data.content) {
         dbRowId = data.id;
-        // On fusionne les données Cloud avec les questions de base locales
-        appData = normalizeData(data.content);
+        // FUSION MAGIQUE : Les nouveautés de data.js gardent l'historique de Supabase
+        appData = mergeDataWithDefaults(data.content, baseData);
     } else {
         // Premier lancement du compte : création de la ligne
         const { data: insertData, error: insertError } = await supabaseClient
