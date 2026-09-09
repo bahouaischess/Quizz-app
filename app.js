@@ -4,7 +4,7 @@
 const SUPABASE_URL = 'https://dylpgqwobictpelbwwzf.supabase.co';
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5bHBncXdvYmljdHBlbGJ3d3pmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg5NTMzNjMsImV4cCI6MjEwNDUyOTM2M30.A18JCXfr2KWXTdRglTTdun0o9q6Hvlp-LzrWqXLupdo';
 
-const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
+const supabaseClient = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
 // Variables de session Cloud
 let currentUser = null; 
@@ -152,7 +152,7 @@ let appData = normalizeData(JSON.parse(JSON.stringify(defaultData || {})));
 // AUTHENTIFICATION & SAUVEGARDE CLOUD
 // -----------------------------------------------------
 async function checkSession() {
-    const { data: { session } } = await supabase.auth.getSession();
+    const { data: { session } } = await supabaseClient.auth.getSession();
     if (session) {
         currentUser = session.user;
         initAppAfterAuth();
@@ -173,7 +173,7 @@ async function initAppAfterAuth() {
     document.getElementById('profile-email').value = currentUser.email;
 
     // 1. Récupération des données Supabase
-    const { data, error } = await supabase
+    const { data, error } = await supabaseClient
         .from('quiz_data')
         .select('id, content')
         .eq('user_id', currentUser.id)
@@ -185,7 +185,7 @@ async function initAppAfterAuth() {
         appData = normalizeData(data.content);
     } else {
         // Premier lancement du compte : création de la ligne
-        const { data: insertData, error: insertError } = await supabase
+        const { data: insertData, error: insertError } = await supabaseClient
             .from('quiz_data')
             .insert([{ user_id: currentUser.id, content: appData }])
             .select()
@@ -214,7 +214,7 @@ async function handleSignup() {
     msgEl.style.color = "var(--warning)";
     msgEl.classList.remove('hidden');
 
-    const { data, error } = await supabase.auth.signUp({ email, password });
+    const { data, error } = await supabaseClient.auth.signUp({ email, password });
     
     if (error) {
         msgEl.textContent = "Erreur : " + error.message;
@@ -234,7 +234,7 @@ async function handleLogin() {
     msgEl.style.color = "var(--warning)";
     msgEl.classList.remove('hidden');
 
-    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    const { data, error } = await supabaseClient.auth.signInWithPassword({ email, password });
     
     if (error) {
         msgEl.textContent = "Erreur : " + error.message;
@@ -247,7 +247,7 @@ async function handleLogin() {
 }
 
 async function handleLogout() {
-    await supabase.auth.signOut();
+    await supabaseClient.auth.signOut();
     currentUser = null;
     dbRowId = null;
     showAuthScreen();
@@ -263,7 +263,7 @@ async function updateUserProfile() {
 
     if (Object.keys(updates).length === 0) return customAlert("Profil", "Aucune modification à enregistrer.");
 
-    const { data, error } = await supabase.auth.updateUser(updates);
+    const { data, error } = await supabaseClient.auth.updateUser(updates);
     
     if (error) {
         customAlert("Erreur", "Mise à jour impossible : " + error.message);
@@ -280,7 +280,7 @@ async function saveData() {
     
     // Synchro Cloud
     if (currentUser && dbRowId) {
-        const { error } = await supabase
+        const { error } = await supabaseClient
             .from('quiz_data')
             .update({ 
                 content: appData, 
