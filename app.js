@@ -1,8 +1,8 @@
 // -----------------------------------------------------
 // CONFIGURATION SUPABASE
 // -----------------------------------------------------
-const SUPABASE_URL = 'METS_TON_URL_ICI_SANS_REST_V1'; // ex: 'https://dylpgqwobictpelbwwzf.supabase.co'
-const SUPABASE_ANON_KEY = 'METS_TA_CLE_API_ICI';
+const SUPABASE_URL = 'https://dylpgqwobictpelbwwzf.supabase.co/'; // ex: 'https://dylpgqwobictpelbwwzf.supabase.co'
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5bHBncXdvYmljdHBlbGJ3d3pmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg5NTMzNjMsImV4cCI6MjEwNDUyOTM2M30.A18JCXfr2KWXTdRglTTdun0o9q6Hvlp-LzrWqXLupdo';
 
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
