@@ -1079,6 +1079,48 @@ function processAnswerSub() {
         }
     });
 
+    function validateAnswer() {
+    const valBtn = document.getElementById('validate-btn');
+    if (valBtn.classList.contains('hidden') || valBtn.style.display === 'none') return;
+    
+    valBtn.classList.add('hidden');
+    valBtn.style.display = 'none';
+    
+    const result = processAnswerSub();
+    
+    if (result.explanation) {
+        document.getElementById('explanation-text').textContent = result.explanation;
+        document.getElementById('explanation-box').classList.remove('hidden');
+    }
+    
+    const sm2Box = document.getElementById('sm2-eval-box');
+    sm2Box.classList.remove('hidden');
+    
+    const qItem = session.questions[session.currentIndex];
+    const sm2 = qItem.originalRef.sm2;
+
+    // Prise en compte du score partiel pour afficher les bons boutons
+    if (result.isCorrect || result.isPartial) {
+        document.getElementById('btn-next-wrong').classList.add('hidden');
+        document.getElementById('btn-sm2-3').classList.remove('hidden');
+        document.getElementById('btn-sm2-4').classList.remove('hidden');
+        document.getElementById('btn-sm2-5').classList.remove('hidden');
+        document.getElementById('sm2-eval-title').textContent = "Évalue ta facilité à répondre :";
+        
+        document.getElementById('sm2-text-3').textContent = calculateNextInterval(sm2, 3).text;
+        document.getElementById('sm2-text-4').textContent = calculateNextInterval(sm2, 4).text;
+        document.getElementById('sm2-text-5').textContent = calculateNextInterval(sm2, 5).text;
+    } else {
+        document.getElementById('btn-next-wrong').classList.remove('hidden');
+        document.getElementById('btn-sm2-3').classList.add('hidden');
+        document.getElementById('btn-sm2-4').classList.add('hidden');
+        document.getElementById('btn-sm2-5').classList.add('hidden');
+        document.getElementById('sm2-eval-title').textContent = "Aïe... Révise la correction et valide :";
+    }
+
+    renderMath([document.getElementById('explanation-box')]);
+}
+    
     let isCorrect = false;
     let isPartial = false;
 
