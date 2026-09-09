@@ -1,7 +1,7 @@
 // -----------------------------------------------------
 // CONFIGURATION SUPABASE
 // -----------------------------------------------------
-const SUPABASE_URL = 'https://dylpgqwobictpelbwwzf.supabase.co/rest/v1/'; 
+const SUPABASE_URL = 'https://dylpgqwobictpelbwwzf.supabase.co'; 
 const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5bHBncXdvYmljdHBlbGJ3d3pmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg5NTMzNjMsImV4cCI6MjEwNDUyOTM2M30.A18JCXfr2KWXTdRglTTdun0o9q6Hvlp-LzrWqXLupdo';
 
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
@@ -26,6 +26,84 @@ function shuffleArray(array) {
     return result;
 }
 
+// -----------------------------------------------------
+// AUTHENTIFICATION
+// -----------------------------------------------------
+
+async function handleSignup() {
+    const email = document.getElementById('auth-email').value.trim();
+    const password = document.getElementById('auth-password').value;
+    const msgEl = document.getElementById('auth-msg');
+
+    if (!email || password.length < 6) {
+        msgEl.textContent = "Email invalide ou mot de passe trop court (6 car. min).";
+        msgEl.style.color = "var(--danger)";
+        msgEl.classList.remove('hidden');
+        return;
+    }
+
+    msgEl.textContent = "Création du compte en cours...";
+    msgEl.style.color = "var(--warning)";
+    msgEl.classList.remove('hidden');
+
+    const { data, error } = await supabase.auth.signUp({ email, password });
+    
+    if (error) {
+        msgEl.textContent = "Erreur : " + error.message;
+        msgEl.style.color = "var(--danger)";
+    } else {
+        msgEl.textContent = "Compte créé avec succès ! Tu peux maintenant cliquer sur 'Se connecter'.";
+        msgEl.style.color = "var(--success)";
+    }
+}
+
+async function handleLogin() {
+    const email = document.getElementById('auth-email').value.trim();
+    const password = document.getElementById('auth-password').value;
+    const msgEl = document.getElementById('auth-msg');
+
+    msgEl.textContent = "Connexion en cours...";
+    msgEl.style.color = "var(--warning)";
+    msgEl.classList.remove('hidden');
+
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    
+    if (error) {
+        msgEl.textContent = "Erreur : " + error.message;
+        msgEl.style.color = "var(--danger)";
+    } else {
+        msgEl.classList.add('hidden');
+        currentUser = data.user;
+        initAppAfterAuth(); // On lance l'application
+    }
+}
+
+async function handleLogout() {
+    await supabase.auth.signOut();
+    currentUser = null;
+    document.getElementById('sidebar').style.display = 'none'; // On cache le menu
+    showView('auth-view'); // On ramène sur l'écran de connexion
+}
+
+// Vérifie au lancement de la page si l'étudiant est déjà connecté
+async function checkSession() {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (session) {
+        currentUser = session.user;
+        initAppAfterAuth();
+    } else {
+        document.getElementById('sidebar').style.display = 'none'; // On cache le menu
+        showView('auth-view');
+    }
+}
+
+// Fonction appelée quand l'utilisateur est reconnu
+function initAppAfterAuth() {
+    document.getElementById('sidebar').style.display = 'flex'; // On réaffiche le menu
+    // BIENTÔT : C'est ici qu'on chargera les données depuis Supabase !
+    showView('home-view');
+    updatePlayerUI();
+}
 // -----------------------------------------------------
 // SÉCURITÉ MATHJAX (File d'attente asynchrone)
 // -----------------------------------------------------
@@ -1317,4 +1395,5 @@ function resetData() {
 }
 
 setupSidebar();
-renderHome(); updatePlayerUI();
+//renderHome(); updatePlayerUI();
+checkSession();
