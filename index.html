@@ -168,6 +168,21 @@
     </div>
 
     <div id="main-content">
+        <!-- AUTHENTIFICATION -->
+        <div id="auth-view" class="view">
+            <div class="card" style="max-width: 400px; margin: 80px auto; text-align: center;">
+                <h1 style="margin-bottom: 5px;">👋 QuizzHub</h1>
+                <p style="color: var(--text-muted); margin-bottom: 25px;">Connecte-toi pour synchroniser tes statistiques SM-2 et ton XP.</p>
+                
+                <input type="email" id="auth-email" placeholder="Email (ex: etudiant@dauphine.eu)">
+                <input type="password" id="auth-password" placeholder="Mot de passe (min 6 caractères)">
+                
+                <button onclick="handleLogin()" style="width: 100%; margin-bottom: 10px;">Se connecter</button>
+                <button onclick="handleSignup()" class="secondary" style="width: 100%;">Créer un compte</button>
+                
+                <div id="auth-msg" class="hidden" style="margin-top: 15px; font-weight: bold;"></div>
+            </div>
+        </div>
         <!-- ACCUEIL -->
         <div id="home-view" class="view">
             <h1>Matières et Entraînements</h1>
