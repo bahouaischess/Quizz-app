@@ -1,16 +1,17 @@
 // -----------------------------------------------------
 // CONFIGURATION SUPABASE
 // -----------------------------------------------------
-const SUPABASE_URL = 'https://dylpgqwobictpelbwwzf.supabase.co'; 
-const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImR5bHBncXdvYmljdHBlbGJ3d3pmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODg5NTMzNjMsImV4cCI6MjEwNDUyOTM2M30.A18JCXfr2KWXTdRglTTdun0o9q6Hvlp-LzrWqXLupdo';
+const SUPABASE_URL = 'METS_TON_URL_ICI_SANS_REST_V1'; // ex: 'https://dylpgqwobictpelbwwzf.supabase.co'
+const SUPABASE_ANON_KEY = 'METS_TA_CLE_API_ICI';
 
 const supabase = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
-// On va stocker l'ID de l'utilisateur connecté ici
-let currentUser = null;
+// Variables de session Cloud
+let currentUser = null; 
+let dbRowId = null;
+
 const FIVE_HOURS_MS = 5 * 60 * 60 * 1000;
-const DATA_SCHEMA_VERSION = 2;
-const DEFAULT_FOLDER_ID = 'uncategorized';
+const DEFAULT_FOLDER = 'Général';
 
 const getTodayStr = () => {
     const d = new Date();
@@ -26,84 +27,6 @@ function shuffleArray(array) {
     return result;
 }
 
-// -----------------------------------------------------
-// AUTHENTIFICATION
-// -----------------------------------------------------
-
-async function handleSignup() {
-    const email = document.getElementById('auth-email').value.trim();
-    const password = document.getElementById('auth-password').value;
-    const msgEl = document.getElementById('auth-msg');
-
-    if (!email || password.length < 6) {
-        msgEl.textContent = "Email invalide ou mot de passe trop court (6 car. min).";
-        msgEl.style.color = "var(--danger)";
-        msgEl.classList.remove('hidden');
-        return;
-    }
-
-    msgEl.textContent = "Création du compte en cours...";
-    msgEl.style.color = "var(--warning)";
-    msgEl.classList.remove('hidden');
-
-    const { data, error } = await supabase.auth.signUp({ email, password });
-    
-    if (error) {
-        msgEl.textContent = "Erreur : " + error.message;
-        msgEl.style.color = "var(--danger)";
-    } else {
-        msgEl.textContent = "Compte créé avec succès ! Tu peux maintenant cliquer sur 'Se connecter'.";
-        msgEl.style.color = "var(--success)";
-    }
-}
-
-async function handleLogin() {
-    const email = document.getElementById('auth-email').value.trim();
-    const password = document.getElementById('auth-password').value;
-    const msgEl = document.getElementById('auth-msg');
-
-    msgEl.textContent = "Connexion en cours...";
-    msgEl.style.color = "var(--warning)";
-    msgEl.classList.remove('hidden');
-
-    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
-    
-    if (error) {
-        msgEl.textContent = "Erreur : " + error.message;
-        msgEl.style.color = "var(--danger)";
-    } else {
-        msgEl.classList.add('hidden');
-        currentUser = data.user;
-        initAppAfterAuth(); // On lance l'application
-    }
-}
-
-async function handleLogout() {
-    await supabase.auth.signOut();
-    currentUser = null;
-    document.getElementById('sidebar').style.display = 'none'; // On cache le menu
-    showView('auth-view'); // On ramène sur l'écran de connexion
-}
-
-// Vérifie au lancement de la page si l'étudiant est déjà connecté
-async function checkSession() {
-    const { data: { session } } = await supabase.auth.getSession();
-    if (session) {
-        currentUser = session.user;
-        initAppAfterAuth();
-    } else {
-        document.getElementById('sidebar').style.display = 'none'; // On cache le menu
-        showView('auth-view');
-    }
-}
-
-// Fonction appelée quand l'utilisateur est reconnu
-function initAppAfterAuth() {
-    document.getElementById('sidebar').style.display = 'flex'; // On réaffiche le menu
-    // BIENTÔT : C'est ici qu'on chargera les données depuis Supabase !
-    showView('home-view');
-    updatePlayerUI();
-}
 // -----------------------------------------------------
 // SÉCURITÉ MATHJAX (File d'attente asynchrone)
 // -----------------------------------------------------
@@ -149,7 +72,6 @@ function cleanTags(tagsArr) {
 
 function removeCitations(text) {
     if (typeof text !== 'string') return text;
-    // Supprime dynamiquement les[cite: 1], [source: 2], etc.
     return text.replace(/\[(?:cite|source):\s*\d+(?:,\s*\d+)*\]/g, '').trim();
 }
 
@@ -180,189 +102,194 @@ function customModal(title, msg, onConfirm = null, isConfirm = false) {
 function customAlert(title, msg) { customModal(title, msg, null, false); }
 function customConfirm(title, msg, onConfirm) { customModal(title, msg, onConfirm, true); }
 
-// NORMALISATION ET VALIDATION DES DONNÉES
-function createQuestionId() {
-    if (window.crypto?.randomUUID) return window.crypto.randomUUID();
-    return `q-${Date.now()}-${Math.random().toString(36).slice(2, 10)}`;
-}
-
-function getQuestionFingerprint(question) {
-    return JSON.stringify({
-        q: removeCitations(question.q),
-        options: question.options.map(option => ({ text: removeCitations(option.text), isCorrect: option.isCorrect }))
-    });
-}
-
-function createStableQuestionId(subject, question) {
-    const source = `${subject}|${getQuestionFingerprint(question)}`;
-    let hash = 2166136261;
-    for (let index = 0; index < source.length; index++) {
-        hash ^= source.charCodeAt(index);
-        hash = Math.imul(hash, 16777619);
-    }
-    return `builtin-${(hash >>> 0).toString(36)}`;
-}
-
-function isValidQuestion(question) {
-    return Boolean(
-        question &&
-        typeof question.q === 'string' &&
-        question.q.trim() &&
-        Array.isArray(question.options) &&
-        question.options.length >= 2 &&
-        question.options.every(option =>
-            option &&
-            typeof option.text === 'string' &&
-            option.text.trim() &&
-            typeof option.isCorrect === 'boolean'
-        ) &&
-        question.options.some(option => option.isCorrect)
-    );
-}
-
-function validateData(rawData) {
-    const errors = [];
-    if (!rawData || typeof rawData !== 'object' || Array.isArray(rawData)) {
-        return ['La racine du fichier doit être un objet JSON.'];
-    }
-
-    if (rawData._player !== undefined && (typeof rawData._player !== 'object' || Array.isArray(rawData._player))) {
-        errors.push('La section _player est invalide.');
-    }
-
-    Object.entries(rawData).forEach(([subject, subjectData]) => {
-        if (subject === '_player') return;
-        if (!subjectData || typeof subjectData !== 'object' || !Array.isArray(subjectData.questions)) {
-            errors.push(`La matière « ${subject} » est invalide.`);
-            return;
-        }
-        subjectData.questions.forEach((question, index) => {
-            if (!isValidQuestion(question)) {
-                errors.push(`Question invalide dans « ${subject } » à la position ${index + 1}.`);
-            }
-        });
-    });
-    return errors;
-}
-
+// -----------------------------------------------------
+// NORMALISATION STRICTE
+// -----------------------------------------------------
 function normalizeData(rawData) {
-    const rawFolders = Array.isArray(rawData?._player?.folders) ? rawData._player.folders : [];
-    const folders = rawFolders
-        .filter(folder => folder && typeof folder.id === 'string' && typeof folder.name === 'string' && folder.name.trim())
-        .map(folder => ({ id: folder.id, name: folder.name.trim() }));
-    if (!folders.some(folder => folder.id === DEFAULT_FOLDER_ID)) {
-        folders.unshift({ id: DEFAULT_FOLDER_ID, name: 'À classer' });
-    }
-
-    const valid = {
-        _player: {
-            xp: Number(rawData?._player?.xp) || 0,
-            level: Number(rawData?._player?.level) || 1,
-            schemaVersion: DATA_SCHEMA_VERSION,
-            folders,
-            subjectFolders: rawData?._player?.subjectFolders && typeof rawData._player.subjectFolders === 'object'
-                ? { ...rawData._player.subjectFolders }
-                : {}
-        }
+    let valid = { 
+        _player: { 
+            xp: Number(rawData?._player?.xp) || 0, 
+            level: Number(rawData?._player?.level) || 1 
+        },
+        _folders: Array.isArray(rawData?._folders) ? rawData._folders : [DEFAULT_FOLDER]
     };
-
-    Object.entries(rawData || {}).forEach(([key, sub]) => {
-        if (key === '_player' || !sub || !Array.isArray(sub.questions)) return;
-        valid[key] = {
-            questions: sub.questions.filter(isValidQuestion).map(question => ({
-                ...question,
-                id: typeof question.id === 'string' && question.id.trim() ? question.id : createStableQuestionId(key, question),
-                q: removeCitations(question.q),
-                explanation: removeCitations(question.explanation),
-                options: question.options.map(option => ({
-                    ...option,
-                    text: removeCitations(option.text)
-                })),
-                tags: cleanTags(Array.isArray(question.tags) ? question.tags : []),
-                stats: {
-                    attempts: Number(question.stats?.attempts) || 0,
-                    correct: Number(question.stats?.correct) || 0,
-                    partial: Number(question.stats?.partial) || 0
+    
+    for (let key in rawData) {
+        if (key === '_player' || key === '_folders') continue;
+        let sub = rawData[key];
+        if (sub && Array.isArray(sub.questions)) {
+            valid[key] = {
+                folder: sub.folder || DEFAULT_FOLDER,
+                questions: sub.questions.filter(q => q && typeof q.q === 'string' && Array.isArray(q.options)).map(q => {
+                    q.q = removeCitations(q.q);
+                    q.explanation = removeCitations(q.explanation);
+                    q.options = q.options.map(opt => ({ ...opt, text: removeCitations(opt.text) }));
+                    
+                    q.tags = cleanTags(q.tags);
+                    q.stats = { 
+                        attempts: Number(q.stats?.attempts) || 0, 
+                        correct: Number(q.stats?.correct) || 0 
+                    };
+                    if (!q.sm2) {
+                        q.sm2 = { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 };
+                    }
+                    return q;
+                }),
+                stats: { 
+                    attempts: Number(sub.stats?.attempts) || 0, 
+                    correct: Number(sub.stats?.correct) || 0 
                 },
-                sm2: {
-                    repetition: Number(question.sm2?.repetition) || 0,
-                    interval: Number(question.sm2?.interval) || 0,
-                    easeFactor: Number(question.sm2?.easeFactor) || 2.5,
-                    nextReview: Number(question.sm2?.nextReview) || 0,
-                    lastAttempt: Number(question.sm2?.lastAttempt) || 0,
-                    lastWrong: Number(question.sm2?.lastWrong) || 0,
-                    successStreak: Number(question.sm2?.successStreak) || 0,
-                    lastQuality: Number(question.sm2?.lastQuality) || 0
-                }
-            })),
-            stats: {
-                attempts: Number(sub.stats?.attempts) || 0,
-                correct: Number(sub.stats?.correct) || 0
-            },
-            dailyValidations: sub.dailyValidations && typeof sub.dailyValidations === 'object'
-                ? sub.dailyValidations
-                : {}
-        };
-    });
-
-    Object.keys(valid).forEach(subject => {
-        if (subject !== '_player' && !valid._player.subjectFolders[subject]) {
-            valid._player.subjectFolders[subject] = DEFAULT_FOLDER_ID;
+                dailyValidations: sub.dailyValidations || {}
+            };
         }
-        if (subject !== '_player' && !folders.some(folder => folder.id === valid._player.subjectFolders[subject])) {
-            valid._player.subjectFolders[subject] = DEFAULT_FOLDER_ID;
-        }
-    });
+    }
     return valid;
 }
 
-function mergeDataWithDefaults(existingData, builtInData) {
-    const merged = normalizeData(existingData);
-    const defaults = normalizeData(builtInData);
+let appData = normalizeData(JSON.parse(JSON.stringify(defaultData || {}))); 
 
-    Object.entries(defaults).forEach(([subject, defaultSubject]) => {
-        if (subject === '_player') return;
-        if (!merged[subject]) {
-            merged[subject] = defaultSubject;
-            merged._player.subjectFolders[subject] = DEFAULT_FOLDER_ID;
-            return;
-        }
-
-        const knownIds = new Set(merged[subject].questions.map(question => question.id));
-        const knownFingerprints = new Set(merged[subject].questions.map(getQuestionFingerprint));
-        defaultSubject.questions.forEach(question => {
-            const fingerprint = getQuestionFingerprint(question);
-            if (!knownIds.has(question.id) && !knownFingerprints.has(fingerprint)) {
-                merged[subject].questions.push(question);
-                knownIds.add(question.id);
-                knownFingerprints.add(fingerprint);
-            }
-        });
-    });
-
-    merged._player.schemaVersion = DATA_SCHEMA_VERSION;
-    return merged;
-}
-
-let appData = null;
-try {
-    const raw = localStorage.getItem('myQuizData');
-    if(raw) {
-        const parsed = JSON.parse(raw);
-        appData = mergeDataWithDefaults(parsed, defaultData);
-        saveData();
+// -----------------------------------------------------
+// AUTHENTIFICATION & SAUVEGARDE CLOUD
+// -----------------------------------------------------
+async function checkSession() {
+    const { data: { session } } = await supabase.auth.getSession();
+    if (session) {
+        currentUser = session.user;
+        initAppAfterAuth();
+    } else {
+        showAuthScreen();
     }
-} catch (e) {
-    console.error("Erreur parsing local", e);
 }
-if (!appData) appData = normalizeData(JSON.parse(JSON.stringify(defaultData))); 
 
-function saveData() { 
-    try {
-        appData._player.schemaVersion = DATA_SCHEMA_VERSION;
-        localStorage.setItem('myQuizData', JSON.stringify(appData));
-    } 
-    catch(e) { customAlert("Erreur", "Impossible de sauvegarder localement."); }
+function showAuthScreen() {
+    document.getElementById('app-container').classList.add('hidden');
+    document.getElementById('auth-container').classList.remove('hidden');
+}
+
+async function initAppAfterAuth() {
+    document.getElementById('auth-container').classList.add('hidden');
+    document.getElementById('app-container').classList.remove('hidden');
+    
+    document.getElementById('profile-email').value = currentUser.email;
+
+    // 1. Récupération des données Supabase
+    const { data, error } = await supabase
+        .from('quiz_data')
+        .select('id, content')
+        .eq('user_id', currentUser.id)
+        .maybeSingle();
+
+    if (data && data.content) {
+        dbRowId = data.id;
+        // On fusionne les données Cloud avec les questions de base locales
+        appData = normalizeData(data.content);
+    } else {
+        // Premier lancement du compte : création de la ligne
+        const { data: insertData, error: insertError } = await supabase
+            .from('quiz_data')
+            .insert([{ user_id: currentUser.id, content: appData }])
+            .select()
+            .single();
+            
+        if (insertData) dbRowId = insertData.id;
+    }
+
+    showView('home-view');
+    updatePlayerUI();
+}
+
+async function handleSignup() {
+    const email = document.getElementById('auth-email').value.trim();
+    const password = document.getElementById('auth-password').value;
+    const msgEl = document.getElementById('auth-msg');
+
+    if (!email || password.length < 6) {
+        msgEl.textContent = "Email invalide ou mot de passe trop court (6 car. min).";
+        msgEl.style.color = "var(--danger)";
+        msgEl.classList.remove('hidden');
+        return;
+    }
+
+    msgEl.textContent = "Création du compte en cours...";
+    msgEl.style.color = "var(--warning)";
+    msgEl.classList.remove('hidden');
+
+    const { data, error } = await supabase.auth.signUp({ email, password });
+    
+    if (error) {
+        msgEl.textContent = "Erreur : " + error.message;
+        msgEl.style.color = "var(--danger)";
+    } else {
+        msgEl.textContent = "Compte créé avec succès ! Tu peux maintenant te connecter.";
+        msgEl.style.color = "var(--success)";
+    }
+}
+
+async function handleLogin() {
+    const email = document.getElementById('auth-email').value.trim();
+    const password = document.getElementById('auth-password').value;
+    const msgEl = document.getElementById('auth-msg');
+
+    msgEl.textContent = "Connexion en cours...";
+    msgEl.style.color = "var(--warning)";
+    msgEl.classList.remove('hidden');
+
+    const { data, error } = await supabase.auth.signInWithPassword({ email, password });
+    
+    if (error) {
+        msgEl.textContent = "Erreur : " + error.message;
+        msgEl.style.color = "var(--danger)";
+    } else {
+        msgEl.classList.add('hidden');
+        currentUser = data.user;
+        initAppAfterAuth();
+    }
+}
+
+async function handleLogout() {
+    await supabase.auth.signOut();
+    currentUser = null;
+    dbRowId = null;
+    showAuthScreen();
+}
+
+async function updateUserProfile() {
+    const email = document.getElementById('profile-email').value.trim();
+    const password = document.getElementById('profile-password').value;
+    const updates = {};
+    
+    if (email && email !== currentUser.email) updates.email = email;
+    if (password) updates.password = password;
+
+    if (Object.keys(updates).length === 0) return customAlert("Profil", "Aucune modification à enregistrer.");
+
+    const { data, error } = await supabase.auth.updateUser(updates);
+    
+    if (error) {
+        customAlert("Erreur", "Mise à jour impossible : " + error.message);
+    } else {
+        customAlert("Succès", "Profil mis à jour !");
+        currentUser = data.user;
+        document.getElementById('profile-password').value = "";
+    }
+}
+
+async function saveData() { 
+    // Sauvegarde locale de sécurité
+    try { localStorage.setItem('myQuizData', JSON.stringify(appData)); } catch(e) {}
+    
+    // Synchro Cloud
+    if (currentUser && dbRowId) {
+        const { error } = await supabase
+            .from('quiz_data')
+            .update({ 
+                content: appData, 
+                updated_at: new Date().toISOString() 
+            })
+            .eq('id', dbRowId);
+            
+        if (error) console.error("Erreur synchro Supabase:", error.message);
+    }
 }
 
 function exportData() {
@@ -379,34 +306,72 @@ function importData(event) {
     const file = event.target.files[0];
     if (!file) return;
     const reader = new FileReader();
-    reader.onload = function(e) {
+    reader.onload = async function(e) {
         try {
-            const importedData = JSON.parse(e.target.result);
-            const validationErrors = validateData(importedData);
-            if (validationErrors.length > 0) {
-                throw new Error(validationErrors.slice(0, 3).join(' '));
-            }
-            appData = mergeDataWithDefaults(importedData, defaultData);
-            saveData(); updatePlayerUI();
-            customAlert("Succès", "Base importée, les tags et citations ont été nettoyés !");
+            appData = normalizeData(JSON.parse(e.target.result));
+            await saveData(); 
+            updatePlayerUI();
+            customAlert("Succès", "Base importée, synchronisée et nettoyée !");
             showView('home-view');
             event.target.value = ""; 
-        } catch (err) {
-            customAlert("Erreur", err.message || "Fichier JSON corrompu ou invalide.");
-            event.target.value = "";
-        }
+        } catch (err) { customAlert("Erreur", "Fichier JSON corrompu ou invalide."); }
     };
     reader.readAsText(file);
 }
 
-// ETAT GLOBAL UI
+function resetData() {
+    localStorage.removeItem('myQuizData'); 
+    appData = normalizeData(JSON.parse(JSON.stringify(defaultData || {}))); 
+    appData._player = {xp:0, level:1}; 
+    saveData(); 
+    renderHome(); 
+    customAlert("Réinitialisation", "Toutes les données ont été remises à zéro.");
+}
+
+
+// -----------------------------------------------------
+// GESTION DES DOSSIERS
+// -----------------------------------------------------
+function createFolder() {
+    const folderName = document.getElementById('new-folder-name').value.trim();
+    if (folderName && !appData._folders.includes(folderName)) {
+        appData._folders.push(folderName);
+        saveData();
+        document.getElementById('new-folder-name').value = "";
+        renderHome();
+        customAlert("Dossier", `Dossier '${folderName}' créé !`);
+    }
+}
+
+function changeSubjectFolder(newFolder) {
+    if(appData[currentSubject]) {
+        appData[currentSubject].folder = newFolder;
+        saveData();
+        customAlert("Matière déplacée", `Matière déplacée vers ${newFolder}`);
+    }
+}
+
+function populateFolderSelects() {
+    const selectNew = document.getElementById('new-subject-folder');
+    const selectChange = document.getElementById('subject-folder-select');
+    if (selectNew) selectNew.innerHTML = "";
+    if (selectChange) selectChange.innerHTML = "";
+    
+    appData._folders.forEach(f => {
+        if(selectNew) selectNew.add(new Option(f, f));
+        if(selectChange) selectChange.add(new Option(f, f));
+    });
+}
+
+
+// -----------------------------------------------------
+// ETAT GLOBAL UI & QUIZ
+// -----------------------------------------------------
 let currentSubject = "";
 let activeTagsForNewQuestion = new Set(), activeFilterTags = new Set(), globalCustomFilterTags = new Set();
 
-// ETAT SESSION QUIZ
 const session = {
     mode: null, 
-    subject: null,
     questions: [],
     currentIndex: 0,
     score: 0,
@@ -432,52 +397,6 @@ function updatePlayerUI() {
     document.getElementById('xp-fill-bar').style.width = `${progress}%`;
 }
 
-function setupSidebar() {
-    const sidebar = document.getElementById('sidebar');
-    const toggle = document.getElementById('sidebar-toggle');
-    const resizer = document.getElementById('sidebar-resizer');
-    if (!sidebar || !toggle || !resizer) return;
-
-    let savedWidth = 0;
-    try { savedWidth = Number.parseInt(localStorage.getItem('quizSidebarWidth'), 10); } catch (error) { savedWidth = 0; }
-    if (Number.isInteger(savedWidth) && savedWidth >= 220 && savedWidth <= 420) {
-        sidebar.style.width = `${savedWidth}px`;
-    }
-
-    const setCollapsed = collapsed => {
-        sidebar.classList.toggle('collapsed', collapsed);
-        toggle.textContent = collapsed ? '›' : '‹';
-        toggle.setAttribute('aria-label', collapsed ? 'Déployer la barre latérale' : 'Réduire la barre latérale');
-        toggle.title = collapsed ? 'Déployer la barre latérale' : 'Réduire la barre latérale';
-        try { localStorage.setItem('quizSidebarCollapsed', String(collapsed)); } catch (error) { return; }
-    };
-
-    let savedCollapsed = false;
-    try { savedCollapsed = localStorage.getItem('quizSidebarCollapsed') === 'true'; } catch (error) { savedCollapsed = false; }
-    setCollapsed(savedCollapsed);
-    toggle.addEventListener('click', () => setCollapsed(!sidebar.classList.contains('collapsed')));
-
-    let isDragging = false;
-    resizer.addEventListener('pointerdown', event => {
-        if (sidebar.classList.contains('collapsed')) return;
-        isDragging = true;
-        resizer.setPointerCapture(event.pointerId);
-        document.body.style.cursor = 'col-resize';
-    });
-    resizer.addEventListener('pointermove', event => {
-        if (!isDragging) return;
-        const width = Math.max(220, Math.min(420, event.clientX));
-        sidebar.style.width = `${width}px`;
-    });
-    resizer.addEventListener('pointerup', event => {
-        if (!isDragging) return;
-        isDragging = false;
-        resizer.releasePointerCapture(event.pointerId);
-        document.body.style.cursor = '';
-        try { localStorage.setItem('quizSidebarWidth', sidebar.offsetWidth); } catch (error) { return; }
-    });
-}
-
 // NAVIGATION
 function showView(viewId, navElement = null) {
     document.querySelectorAll('.view').forEach(v => v.classList.add('hidden'));
@@ -501,30 +420,6 @@ function getAvailableQuestions(subjectName, forceIgnoreDelay = false) {
     });
 }
 
-function prioritizeQuestions(questionItems) {
-    const now = Date.now();
-    const dayMs = 24 * 60 * 60 * 1000;
-
-    const getPriority = item => {
-        const question = item.originalRef || item;
-        const stats = question.stats || {};
-        const sm2 = question.sm2 || {};
-        const attempts = Number(stats.attempts) || 0;
-        const successRate = attempts > 0 ? (Number(stats.correct) || 0) / attempts : 0;
-        const overdueDays = sm2.nextReview && sm2.nextReview < now
-            ? Math.min((now - sm2.nextReview) / dayMs, 7)
-            : 0;
-        const streakPenalty = Math.min(Number(sm2.successStreak) || 0, 5) * 0.08;
-
-        return (attempts === 0 ? 0.45 : 0) + (1 - successRate) + overdueDays * 0.08 - streakPenalty;
-    };
-
-    return [...questionItems].sort((first, second) => {
-        const difference = getPriority(second) - getPriority(first);
-        return difference || Math.random() - 0.5;
-    });
-}
-
 function updateDailyValidation(subject) {
     const subjectData = appData[subject];
     const today = getTodayStr();
@@ -536,81 +431,14 @@ function updateDailyValidation(subject) {
 }
 
 // ACCUEIL
-function renderFolderSelect(selectId, selectedFolderId = DEFAULT_FOLDER_ID) {
-    const select = document.getElementById(selectId);
-    if (!select) return;
-    select.innerHTML = '';
-    appData._player.folders.forEach(folder => {
-        const option = document.createElement('option');
-        option.value = folder.id;
-        option.textContent = folder.name;
-        option.selected = folder.id === selectedFolderId;
-        select.appendChild(option);
-    });
-}
-
-function createFolder() {
-    const input = document.getElementById('new-folder-name');
-    const name = input.value.trim();
-    if (!name) return customAlert('Dossier', 'Donne un nom au dossier.');
-    if (appData._player.folders.some(folder => folder.name.toLowerCase() === name.toLowerCase())) {
-        return customAlert('Dossier', 'Ce dossier existe déjà.');
-    }
-
-    appData._player.folders.push({ id: `folder-${Date.now()}`, name });
-    input.value = '';
-    saveData();
-    renderFolderSelect('new-subject-folder');
-    renderHome();
-}
-
-function changeSubjectFolder(folderId) {
-    if (!currentSubject || !appData._player.folders.some(folder => folder.id === folderId)) return;
-    appData._player.subjectFolders[currentSubject] = folderId;
-    saveData();
-    renderHome();
-}
-
 function renderHome() {
+    populateFolderSelects();
     const list = document.getElementById('subjects-list');
     list.innerHTML = ""; 
-    renderFolderSelect('new-subject-folder');
+    const frag = document.createDocumentFragment();
 
-    const subjectsByFolder = new Map();
     Object.keys(appData).forEach(subject => {
-        if (subject === '_player') return;
-        const folderId = appData._player.subjectFolders[subject] || DEFAULT_FOLDER_ID;
-        if (!subjectsByFolder.has(folderId)) subjectsByFolder.set(folderId, []);
-        subjectsByFolder.get(folderId).push(subject);
-    });
-
-    appData._player.folders.forEach(folder => {
-        const subjects = subjectsByFolder.get(folder.id) || [];
-        subjects.sort((first, second) => first.localeCompare(second));
-
-        const section = document.createElement('section');
-        section.className = 'folder-section';
-        const header = document.createElement('button');
-        header.className = 'folder-header';
-        header.type = 'button';
-        header.setAttribute('aria-expanded', 'true');
-        header.textContent = `${folder.name} (${subjects.length})`;
-        const subjectList = document.createElement('div');
-        subjectList.className = 'folder-subjects';
-        header.onclick = () => {
-            const collapsed = subjectList.classList.toggle('hidden');
-            header.setAttribute('aria-expanded', String(!collapsed));
-        };
-        section.appendChild(header);
-
-        if (subjects.length === 0) {
-            const emptyMessage = document.createElement('p');
-            emptyMessage.className = 'folder-empty-message';
-            emptyMessage.textContent = 'Aucune matière dans ce dossier.';
-            subjectList.appendChild(emptyMessage);
-        }
-
-        subjects.forEach(subject => {
+        if (subject === '_player' || subject === '_folders') return;
         updateDailyValidation(subject);
         
         const s = appData[subject];
@@ -639,18 +467,16 @@ function renderHome() {
             badge.className = 'badge pending'; badge.textContent = `${available} à réviser`;
         }
         btn.appendChild(badge);
-            subjectList.appendChild(btn);
-        });
-        section.appendChild(subjectList);
-        list.appendChild(section);
+        frag.appendChild(btn);
     });
+    list.appendChild(frag);
 }
 
 function addSubject() {
     const name = document.getElementById('new-subject-name').value.trim();
+    const folder = document.getElementById('new-subject-folder').value || DEFAULT_FOLDER;
     if (name && !appData[name]) {
-        appData[name] = { questions: [], stats: { attempts: 0, correct: 0 }, dailyValidations: {} };
-        appData._player.subjectFolders[name] = document.getElementById('new-subject-folder').value || DEFAULT_FOLDER_ID;
+        appData[name] = { folder: folder, questions: [], stats: { attempts: 0, correct: 0 }, dailyValidations: {} };
         saveData(); document.getElementById('new-subject-name').value = ""; renderHome();
     }
 }
@@ -659,10 +485,13 @@ function addSubject() {
 function openSubject(subject) {
     currentSubject = subject;
     document.getElementById('current-subject-title').textContent = subject;
-    renderFolderSelect('subject-folder-select', appData._player.subjectFolders[subject] || DEFAULT_FOLDER_ID);
     const s = appData[subject];
     const availableQ = getAvailableQuestions(subject); 
     
+    populateFolderSelects();
+    const folderSelect = document.getElementById('subject-folder-select');
+    if(folderSelect) folderSelect.value = s.folder || DEFAULT_FOLDER;
+
     document.getElementById('subject-q-total').textContent = s.questions.length;
     document.getElementById('subject-q-available').textContent = availableQ.length;
     document.getElementById('subject-success-rate').textContent = (s.stats.attempts > 0 ? Math.round((s.stats.correct / s.stats.attempts) * 100) : 0) + "%";
@@ -742,7 +571,7 @@ function getAllTagsForSubject(subject) {
 function getAllTagsGlobally() {
     let allTags = new Set();
     Object.keys(appData).forEach(sub => {
-        if(sub !== '_player') appData[sub].questions.forEach(q => { if(q.tags) q.tags.forEach(t => allTags.add(t)); });
+        if(sub !== '_player' && sub !== '_folders') appData[sub].questions.forEach(q => { if(q.tags) q.tags.forEach(t => allTags.add(t)); });
     });
     return Array.from(allTags);
 }
@@ -824,15 +653,13 @@ function saveQuestion() {
     if (!q || optionsArray.length < 2 || !hasCorrect) return customAlert("Validation", "Il faut une question, au moins 2 options, et 1 réponse vraie.");
 
     const newQData = { 
-        id: createQuestionId(),
         type: "qcm", tags: Array.from(activeTagsForNewQuestion), q: q, options: optionsArray, explanation: expl, 
-        stats: {attempts: 0, correct: 0, partial: 0},
-        sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+        stats: {attempts: 0, correct: 0},
+        sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
     };
     
     const idx = parseInt(document.getElementById('edit-q-index').value, 10);
     if(idx >= 0) {
-        newQData.id = appData[currentSubject].questions[idx].id || newQData.id;
         newQData.stats = appData[currentSubject].questions[idx].stats || newQData.stats;
         newQData.sm2 = appData[currentSubject].questions[idx].sm2 || newQData.sm2;
         appData[currentSubject].questions[idx] = newQData;
@@ -883,7 +710,6 @@ function formatTime(seconds) {
 
 function initQuizState(mode, qArray) {
     session.mode = mode;
-    session.subject = mode === 'subject' ? currentSubject : null;
     session.questions = qArray;
     session.currentIndex = 0; 
     session.score = 0; 
@@ -897,7 +723,7 @@ function startCustomQuiz() {
     let allAvailableQ = [];
     
     Object.keys(appData).forEach(sub => {
-        if(sub !== '_player') {
+        if(sub !== '_player' && sub !== '_folders') {
             appData[sub].questions.forEach(q => {
                 const now = Date.now();
                 if(forceReview || !q.sm2.nextReview || now >= q.sm2.nextReview) {
@@ -917,7 +743,7 @@ function startCustomQuiz() {
     if (!Number.isInteger(rawCount) || rawCount < 1) return customAlert("Erreur", "Nombre invalide.");
     
     let requestedCount = Math.min(rawCount, allAvailableQ.length);
-    allAvailableQ = prioritizeQuestions(allAvailableQ);
+    allAvailableQ = shuffleArray(allAvailableQ);
     
     initQuizState('custom', allAvailableQ.slice(0, requestedCount));
     setupTimer(document.getElementById('custom-exam-mode').checked);
@@ -938,12 +764,11 @@ function startQuiz() {
     
     let requestedCount = Math.min(rawCount, availableQ.length);
     let allQ = availableQ.map(q => ({ originalRef: q, subjectRef: currentSubject }));
-    allQ = prioritizeQuestions(allQ);
+    allQ = shuffleArray(allQ);
     
     initQuizState('subject', allQ.slice(0, requestedCount));
     setupTimer(document.getElementById('exam-mode-toggle').checked);
     
-    document.getElementById('start-quiz-btn')?.blur(); 
     showView('quiz-view');
     renderQuestion();
 }
@@ -951,7 +776,7 @@ function startQuiz() {
 function startGR20() {
     let allAvailableQ = [];
     Object.keys(appData).forEach(sub => {
-        if(sub !== '_player') appData[sub].questions.forEach(q => allAvailableQ.push({ originalRef: q, subjectRef: sub }));
+        if(sub !== '_player' && sub !== '_folders') appData[sub].questions.forEach(q => allAvailableQ.push({ originalRef: q, subjectRef: sub }));
     });
 
     if(allAvailableQ.length < 1) return customAlert("Erreur", "La base de données est vide.");
@@ -968,7 +793,6 @@ function startGR20() {
 }
 
 function renderQuestion() {
-    // FIX DOM : On force complètement la dissimulation du bouton Valider via le display CSS direct.
     const valBtn = document.getElementById('validate-btn');
     if (session.mode === 'gr20') {
         valBtn.classList.add('hidden');
@@ -979,6 +803,7 @@ function renderQuestion() {
     }
     
     document.getElementById('gr20-next-btn').classList.toggle('hidden', session.mode !== 'gr20');
+    document.getElementById('next-q-btn')?.classList.add('hidden'); // Safety check if exists
     document.getElementById('explanation-box').classList.add('hidden');
     document.getElementById('sm2-eval-box').classList.add('hidden');
     
@@ -1034,16 +859,8 @@ function calculateNextInterval(sm2, quality) {
     let int = sm2.interval;
     let ef = sm2.easeFactor;
     
-    if (rep === 0) {
-        if (quality === 3) return { interval: 0.5, text: "12 h" };
-        if (quality === 4) return { interval: 1, text: "1 jour" };
-        return { interval: 3, text: "3 jours" };
-    }
-    if (rep === 1) {
-        if (quality === 3) return { interval: 0.5, text: "12 h" };
-        if (quality === 4) return { interval: 3, text: "3 jours" };
-        return { interval: 7, text: "7 jours" };
-    }
+    if (rep === 0) return { interval: 1, text: "1 jour" };
+    if (rep === 1) return { interval: 6, text: "6 jours" };
     
     let newInt;
     if (quality === 3) newInt = Math.round(int * 1.2);
@@ -1057,7 +874,6 @@ function submitSM2(quality) {
     const qItem = session.questions[session.currentIndex];
     const sm2 = qItem.originalRef.sm2;
     const next = calculateNextInterval(sm2, quality);
-    sm2.lastQuality = quality;
     
     if (quality < 3) {
         sm2.repetition = 0;
@@ -1065,7 +881,9 @@ function submitSM2(quality) {
     } else {
         sm2.repetition++;
         sm2.interval = next.interval;
-        sm2.nextReview = Date.now() + sm2.interval * 24 * 60 * 60 * 1000;
+        const nextDate = new Date();
+        nextDate.setDate(nextDate.getDate() + sm2.interval);
+        sm2.nextReview = nextDate.getTime();
     }
     
     sm2.easeFactor = sm2.easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
@@ -1078,10 +896,6 @@ function submitSM2(quality) {
 function processAnswerSub() {
     const qItem = session.questions[session.currentIndex];
     const qData = qItem.originalRef; 
-    const now = Date.now();
-    const totalCorrectAnswers = qData.options.filter(option => option.isCorrect).length;
-    let selectedCorrectCount = 0;
-    let selectedWrongCount = 0;
     
     appData[qItem.subjectRef].stats.attempts++;
     qData.stats.attempts++;
@@ -1098,8 +912,6 @@ function processAnswerSub() {
         const opt = qData.options[input.getAttribute('data-index')];
         const isChecked = input.checked;
         if(isChecked) { anyChecked = true; userSelectedTexts.push(opt.text); }
-        if (isChecked && opt.isCorrect) selectedCorrectCount++;
-        if (isChecked && !opt.isCorrect) selectedWrongCount++;
         
         if (opt.isCorrect) {
             label.classList.add('correct'); statusIcon.textContent = "✅"; statusIcon.classList.remove('hidden');
@@ -1111,44 +923,21 @@ function processAnswerSub() {
 
     if (!anyChecked) allCorrect = false;
 
-    const scoreValue = totalCorrectAnswers > 1
-        ? Math.max(0, (selectedCorrectCount - selectedWrongCount) / totalCorrectAnswers)
-        : (allCorrect ? 1 : 0);
-    if (!allCorrect && scoreValue > 0) {
-        labels.forEach(label => {
-            const input = label.querySelector('input');
-            const opt = qData.options[input.getAttribute('data-index')];
-            if (input.checked && opt.isCorrect) label.classList.add('partial');
-        });
-    }
-    qData.sm2.lastAttempt = now;
-    if (allCorrect) {
-        qData.sm2.successStreak++;
-    } else {
-        qData.sm2.lastWrong = now;
-        qData.sm2.successStreak = 0;
-    }
-
     if (allCorrect) {
         appData[qItem.subjectRef].stats.correct++;
         qData.stats.correct++;
-    } else if (scoreValue > 0) {
-        appData[qItem.subjectRef].stats.correct += scoreValue;
-        qData.stats.correct += scoreValue;
-        qData.stats.partial++;
+        session.score++;
     } else {
         session.failedQuestions.push({ q: qData.q, userAns: userSelectedTexts.length > 0 ? userSelectedTexts.join(', ') : "Aucune réponse", correctAns: correctTexts.join(', '), explanation: qData.explanation || "Pas d'explication fournie." });
     }
-
-    session.score += scoreValue;
-    return { isCorrect: allCorrect, scoreValue, explanation: qData.explanation };
+    
+    return { isCorrect: allCorrect, explanation: qData.explanation };
 }
 
 function validateAnswer() {
     const valBtn = document.getElementById('validate-btn');
-    if (valBtn.classList.contains('hidden') || valBtn.style.display === 'none') return; // Sécurité anti-double-clic
+    if (valBtn.classList.contains('hidden') || valBtn.style.display === 'none') return;
     
-    // FIX DOM : On force la dissimulation totale
     valBtn.classList.add('hidden');
     valBtn.style.display = 'none';
     
@@ -1193,7 +982,6 @@ function nextGR20Question() {
     const qItem = session.questions[session.currentIndex];
     const sm2 = qItem.originalRef.sm2;
     const next = calculateNextInterval(sm2, quality);
-    sm2.lastQuality = quality;
     
     if (quality < 3) {
         sm2.repetition = 0;
@@ -1201,7 +989,9 @@ function nextGR20Question() {
     } else {
         sm2.repetition++;
         sm2.interval = next.interval;
-        sm2.nextReview = Date.now() + sm2.interval * 24 * 60 * 60 * 1000;
+        const nextDate = new Date();
+        nextDate.setDate(nextDate.getDate() + sm2.interval);
+        sm2.nextReview = nextDate.getTime();
     }
     
     sm2.easeFactor = sm2.easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
@@ -1227,8 +1017,8 @@ function endQuiz(finished = false) {
         let xpGained = addXP(session.score * 10);
         document.getElementById('xp-gained').textContent = `+ ${xpGained} XP`;
         
-        if (session.mode === 'subject' && session.subject) {
-            const newlyValidated = updateDailyValidation(session.subject);
+        if (session.mode === 'subject' && currentSubject) {
+            const newlyValidated = updateDailyValidation(currentSubject);
             if(newlyValidated) document.getElementById('validation-msg').classList.remove('hidden');
         }
 
@@ -1248,39 +1038,21 @@ function exportMarkdownToClipboard() {
 // DASHBOARD
 function renderProfileDashboard() {
     let totalAttempts = 0, totalCorrect = 0, totalQuestions = 0;
-    let dueQuestions = 0, unseenQuestions = 0;
     let strongQuestions = [];
     let weakQuestions = [];
-    const tagStats = new Map();
-    const now = Date.now();
 
     const container = document.getElementById('profile-content');
     container.innerHTML = ""; 
     const frag = document.createDocumentFragment();
     
     Object.keys(appData).forEach(subject => {
-        if(subject === '_player') return;
+        if(subject === '_player' || subject === '_folders') return;
         const s = appData[subject];
         totalAttempts += s.stats.attempts || 0;
         totalCorrect += s.stats.correct || 0;
         totalQuestions += s.questions.length;
         
         s.questions.forEach(q => {
-            const attempts = Number(q.stats?.attempts) || 0;
-            const isDue = !q.sm2?.nextReview || q.sm2.nextReview <= now;
-            if (isDue) dueQuestions++;
-            if (attempts === 0) unseenQuestions++;
-
-            const questionTags = q.tags && q.tags.length > 0 ? q.tags : ['Sans tag'];
-            questionTags.forEach(tag => {
-                if (!tagStats.has(tag)) tagStats.set(tag, { questions: 0, attempts: 0, correct: 0, due: 0 });
-                const stats = tagStats.get(tag);
-                stats.questions++;
-                stats.attempts += attempts;
-                stats.correct += Number(q.stats?.correct) || 0;
-                if (isDue) stats.due++;
-            });
-
             if(q.stats && q.stats.attempts >= 2) {
                 const qRate = q.stats.correct / q.stats.attempts;
                 if(qRate >= 0.8) strongQuestions.push(q);
@@ -1289,11 +1061,9 @@ function renderProfileDashboard() {
         });
 
         const rate = s.stats.attempts > 0 ? Math.round((s.stats.correct / s.stats.attempts) * 100) : 0;
-        const subjectDue = s.questions.filter(question => !question.sm2?.nextReview || question.sm2.nextReview <= now).length;
-        const subjectUnseen = s.questions.filter(question => !(Number(question.stats?.attempts) || 0)).length;
         
         const box = document.createElement('div');
-        box.className = 'subject-progress-card';
+        box.style = "background-color: var(--surface-light); padding: 20px; border-radius: var(--radius); margin-bottom: 15px;";
         
         const headerRow = document.createElement('div');
         headerRow.style = "display:flex; justify-content: space-between; margin-bottom: 10px;";
@@ -1307,50 +1077,18 @@ function renderProfileDashboard() {
         
         const rateLabel = document.createElement('div'); rateLabel.style = "text-align: right; font-size: 0.85em; margin-top: 5px;";
         rateLabel.innerHTML = `Précision : <strong style="color:var(--primary)">${rate}%</strong>`;
-
-        const meta = document.createElement('div');
-        meta.className = 'subject-progress-meta';
-        meta.textContent = `${subjectDue} à revoir · ${subjectUnseen} jamais vue${subjectUnseen > 1 ? 's' : ''}`;
         
-        box.appendChild(headerRow); box.appendChild(pbBg); box.appendChild(rateLabel); box.appendChild(meta);
+        box.appendChild(headerRow); box.appendChild(pbBg); box.appendChild(rateLabel);
         frag.appendChild(box);
     });
     container.appendChild(frag);
 
     const globalRate = totalAttempts > 0 ? Math.round((totalCorrect/totalAttempts)*100) : 0;
     document.getElementById('global-stats-container').innerHTML = `
-        <div class="stat-card"><h3>Précision globale</h3><div class="value">${globalRate}%</div></div>
-        <div class="stat-card accent-secondary"><h3>Questions résolues</h3><div class="value" style="color: var(--text-main);">${totalAttempts}</div></div>
-        <div class="stat-card accent-secondary"><h3>Volume de la base</h3><div class="value" style="color: var(--secondary);">${totalQuestions}</div></div>
-        <div class="stat-card accent-warning"><h3>À revoir maintenant</h3><div class="value" style="color: var(--warning);">${dueQuestions}</div></div>
-        <div class="stat-card accent-success"><h3>Jamais vues</h3><div class="value" style="color: var(--text-main);">${unseenQuestions}</div></div>
+        <div class="stat-card"><h3>Précision Globale</h3><div class="value">${globalRate}%</div></div>
+        <div class="stat-card"><h3>Questions Résolues</h3><div class="value" style="color: var(--text-main);">${totalAttempts}</div></div>
+        <div class="stat-card"><h3>Volume de la base</h3><div class="value" style="color: var(--secondary);">${totalQuestions}</div></div>
     `;
-
-    const tagContainer = document.getElementById('tag-stats-container');
-    tagContainer.innerHTML = '';
-    const sortedTags = [...tagStats.entries()].sort((first, second) => {
-        const firstAttempts = first[1].attempts;
-        const secondAttempts = second[1].attempts;
-        return (second[1].due - first[1].due) || (secondAttempts - firstAttempts) || first[0].localeCompare(second[0]);
-    });
-
-    if (sortedTags.length === 0) {
-        tagContainer.textContent = 'Aucun tag disponible pour le moment.';
-    } else {
-        sortedTags.forEach(([tag, stats]) => {
-            const rate = stats.attempts > 0 ? Math.round((stats.correct / stats.attempts) * 100) : 0;
-            const row = document.createElement('div');
-            row.className = 'tag-stat-row';
-
-            const name = document.createElement('strong');
-            name.textContent = tag;
-            const details = document.createElement('span');
-            details.textContent = `${rate}% · ${stats.questions} question${stats.questions > 1 ? 's' : ''} · ${stats.due} à revoir`;
-            row.appendChild(name);
-            row.appendChild(details);
-            tagContainer.appendChild(row);
-        });
-    }
 
     const buildMiniList = (qList, elementId, cssClass, fallbackMsg) => {
         const listDiv = document.getElementById(elementId);
@@ -1385,15 +1123,5 @@ function renderProfileDashboard() {
     renderMath([document.getElementById('profile-view')]);
 }
 
-function resetData() {
-    localStorage.removeItem('myQuizData'); 
-    appData = normalizeData(JSON.parse(JSON.stringify(defaultData))); 
-    appData._player.xp = 0;
-    appData._player.level = 1;
-    saveData(); renderHome(); 
-    customAlert("Réinitialisation", "Toutes les données ont été remises à zéro.");
-}
-
-setupSidebar();
-//renderHome(); updatePlayerUI();
+// LANCEMENT DE L'APPLICATION
 checkSession();
