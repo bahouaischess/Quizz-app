@@ -106,6 +106,9 @@ function customConfirm(title, msg, onConfirm) { customModal(title, msg, onConfir
 // -----------------------------------------------------
 // NORMALISATION & FUSION (Correction Copilot)
 // -----------------------------------------------------
+// -----------------------------------------------------
+// NORMALISATION & FUSION (Avec métadonnées SM-2 et Partiel)
+// -----------------------------------------------------
 function normalizeData(rawData) {
     let valid = { 
         _player: { xp: Number(rawData?._player?.xp) || 0, level: Number(rawData?._player?.level) || 1 },
@@ -122,8 +125,21 @@ function normalizeData(rawData) {
                     q.explanation = removeCitations(q.explanation);
                     q.options = (q.options || []).map(opt => ({ ...opt, text: removeCitations(opt.text) }));
                     q.tags = cleanTags(q.tags);
-                    q.stats = { attempts: Number(q.stats?.attempts) || 0, correct: Number(q.stats?.correct) || 0 };
-                    q.sm2 = q.sm2 || { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 };
+                    q.stats = { 
+                        attempts: Number(q.stats?.attempts) || 0, 
+                        correct: Number(q.stats?.correct) || 0,
+                        partial: Number(q.stats?.partial) || 0
+                    };
+                    q.sm2 = {
+                        repetition: Number(q.sm2?.repetition) || 0,
+                        interval: Number(q.sm2?.interval) || 0,
+                        easeFactor: Number(q.sm2?.easeFactor) || 2.5,
+                        nextReview: Number(q.sm2?.nextReview) || 0,
+                        lastAttempt: Number(q.sm2?.lastAttempt) || 0,
+                        lastWrong: Number(q.sm2?.lastWrong) || 0,
+                        successStreak: Number(q.sm2?.successStreak) || 0,
+                        lastQuality: Number(q.sm2?.lastQuality) || 0
+                    };
                     return q;
                 }),
                 stats: { attempts: Number(sub.stats?.attempts) || 0, correct: Number(sub.stats?.correct) || 0 },
@@ -945,8 +961,11 @@ function processAnswerSub() {
     appData[qItem.subjectRef].stats.attempts++;
     qData.stats.attempts++;
 
-    let allCorrect = true; let anyChecked = false; let userSelectedTexts = [];
-    let correctTexts = qData.options.filter(o => o.isCorrect).map(o => o.text);
+    let correctSelected = 0;
+    let wrongSelected = 0;
+    let totalCorrect = qData.options.filter(o => o.isCorrect).length;
+    let userSelectedTexts = [];
+    let correctTexts = [];
 
     const labels = document.querySelectorAll('.qcm-option');
     labels.forEach(label => {
@@ -956,85 +975,104 @@ function processAnswerSub() {
         
         const opt = qData.options[input.getAttribute('data-index')];
         const isChecked = input.checked;
-        if(isChecked) { anyChecked = true; userSelectedTexts.push(opt.text); }
         
+        if(opt.isCorrect) correctTexts.push(opt.text);
+        if(isChecked) userSelectedTexts.push(opt.text);
+
         if (opt.isCorrect) {
-            label.classList.add('correct'); statusIcon.textContent = "✅"; statusIcon.classList.remove('hidden');
-            if (!isChecked) allCorrect = false;
-        } else {
-            if (isChecked) { label.classList.add('wrong'); statusIcon.textContent = "❌"; statusIcon.classList.remove('hidden'); allCorrect = false; }
+            if (isChecked) {
+                correctSelected++;
+                label.classList.add('correct');
+                statusIcon.textContent = "✅";
+                statusIcon.classList.remove('hidden');
+            } else {
+                label.classList.add('partial');
+                statusIcon.textContent = "⚠️";
+                statusIcon.classList.remove('hidden');
+            }
+        } else if (isChecked) {
+            wrongSelected++;
+            label.classList.add('wrong');
+            statusIcon.textContent = "❌";
+            statusIcon.classList.remove('hidden');
         }
     });
 
-    if (!anyChecked) allCorrect = false;
+    let isCorrect = false;
+    let isPartial = false;
 
-    if (allCorrect) {
+    if (wrongSelected === 0 && correctSelected === totalCorrect) {
+        isCorrect = true;
         appData[qItem.subjectRef].stats.correct++;
         qData.stats.correct++;
         session.score++;
+    } else if (wrongSelected === 0 && correctSelected > 0) {
+        isPartial = true;
+        qData.stats.partial++;
+        session.score += 0.5; // Demi-point
     } else {
-        session.failedQuestions.push({ q: qData.q, userAns: userSelectedTexts.length > 0 ? userSelectedTexts.join(', ') : "Aucune réponse", correctAns: correctTexts.join(', '), explanation: qData.explanation || "Pas d'explication fournie." });
+        session.failedQuestions.push({ 
+            q: qData.q, 
+            userAns: userSelectedTexts.length > 0 ? userSelectedTexts.join(', ') : "Aucune réponse", 
+            correctAns: correctTexts.join(', '), 
+            explanation: qData.explanation || "Pas d'explication fournie." 
+        });
     }
     
-    return { isCorrect: allCorrect, explanation: qData.explanation };
+    return { isCorrect, isPartial, explanation: qData.explanation };
 }
 
-function validateAnswer() {
-    const valBtn = document.getElementById('validate-btn');
-    if (valBtn.classList.contains('hidden') || valBtn.style.display === 'none') return;
-    
-    valBtn.classList.add('hidden');
-    valBtn.style.display = 'none';
-    
-    const result = processAnswerSub();
-    
-    if (result.explanation) {
-        document.getElementById('explanation-text').textContent = result.explanation;
-        document.getElementById('explanation-box').classList.remove('hidden');
-    }
-    
-    const sm2Box = document.getElementById('sm2-eval-box');
-    sm2Box.classList.remove('hidden');
-    
-    const qItem = session.questions[session.currentIndex];
-    const sm2 = qItem.originalRef.sm2;
-
-    if (result.isCorrect) {
-        document.getElementById('btn-next-wrong').classList.add('hidden');
-        document.getElementById('btn-sm2-3').classList.remove('hidden');
-        document.getElementById('btn-sm2-4').classList.remove('hidden');
-        document.getElementById('btn-sm2-5').classList.remove('hidden');
-        document.getElementById('sm2-eval-title').textContent = "Évalue ta facilité à répondre :";
-        
-        document.getElementById('sm2-text-3').textContent = calculateNextInterval(sm2, 3).text;
-        document.getElementById('sm2-text-4').textContent = calculateNextInterval(sm2, 4).text;
-        document.getElementById('sm2-text-5').textContent = calculateNextInterval(sm2, 5).text;
+function updateSM2Metadata(sm2, quality) {
+    sm2.lastAttempt = Date.now();
+    sm2.lastQuality = quality;
+    if (quality < 3) {
+        sm2.lastWrong = Date.now();
+        sm2.successStreak = 0;
     } else {
-        document.getElementById('btn-next-wrong').classList.remove('hidden');
-        document.getElementById('btn-sm2-3').classList.add('hidden');
-        document.getElementById('btn-sm2-4').classList.add('hidden');
-        document.getElementById('btn-sm2-5').classList.add('hidden');
-        document.getElementById('sm2-eval-title').textContent = "Aïe... Révise la correction et valide :";
+        sm2.successStreak = (sm2.successStreak || 0) + 1;
     }
-
-    renderMath([document.getElementById('explanation-box')]);
 }
 
-function nextGR20Question() { 
-    const result = processAnswerSub();
-    const quality = result.isCorrect ? 4 : 0;
-    
+function submitSM2(quality) {
     const qItem = session.questions[session.currentIndex];
     const sm2 = qItem.originalRef.sm2;
     const next = calculateNextInterval(sm2, quality);
     
+    updateSM2Metadata(sm2, quality);
+
     if (quality < 3) {
         sm2.repetition = 0;
         sm2.nextReview = Date.now() + 10 * 60 * 1000;
     } else {
         sm2.repetition++;
         sm2.interval = next.interval;
-        sm2.nextReview = Date.now() + sm2.interval * 24 * 60 * 60 * 1000; // Appliqué ici aussi
+        sm2.nextReview = Date.now() + sm2.interval * 24 * 60 * 60 * 1000; 
+    }
+    
+    sm2.easeFactor = sm2.easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
+    if (sm2.easeFactor < 1.3) sm2.easeFactor = 1.3;
+    
+    saveData();
+    nextQuestion();
+}
+
+function nextGR20Question() { 
+    const result = processAnswerSub();
+    const quality = result.isCorrect ? 4 : (result.isPartial ? 3 : 0);
+    
+    const qItem = session.questions[session.currentIndex];
+    const sm2 = qItem.originalRef.sm2;
+    const next = calculateNextInterval(sm2, quality);
+    
+    updateSM2Metadata(sm2, quality);
+
+    if (quality < 3) {
+        sm2.repetition = 0;
+        sm2.nextReview = Date.now() + 10 * 60 * 1000;
+    } else {
+        sm2.repetition++;
+        sm2.interval = next.interval;
+        sm2.nextReview = Date.now() + sm2.interval * 24 * 60 * 60 * 1000; 
     }
     
     sm2.easeFactor = sm2.easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
@@ -1079,10 +1117,13 @@ function exportMarkdownToClipboard() {
 }
 
 // DASHBOARD
+// DASHBOARD
 function renderProfileDashboard() {
     let totalAttempts = 0, totalCorrect = 0, totalQuestions = 0;
-    let strongQuestions = [];
-    let weakQuestions = [];
+    let globalDue = 0, globalUnseen = 0;
+    let strongQuestions = [], weakQuestions = [];
+    let tagsMap = {};
+    const now = Date.now();
 
     const container = document.getElementById('profile-content');
     container.innerHTML = ""; 
@@ -1091,48 +1132,97 @@ function renderProfileDashboard() {
     Object.keys(appData).forEach(subject => {
         if(subject === '_player' || subject === '_folders') return;
         const s = appData[subject];
+        let subDue = 0, subUnseen = 0;
+        
         totalAttempts += s.stats.attempts || 0;
         totalCorrect += s.stats.correct || 0;
         totalQuestions += s.questions.length;
         
         s.questions.forEach(q => {
-            if(q.stats && q.stats.attempts >= 2) {
+            // Stats globales et matières
+            if (q.stats.attempts === 0) { globalUnseen++; subUnseen++; }
+            else if (q.sm2.nextReview <= now) { globalDue++; subDue++; }
+
+            // Questions fortes / faibles
+            if(q.stats.attempts >= 2) {
                 const qRate = q.stats.correct / q.stats.attempts;
                 if(qRate >= 0.8) strongQuestions.push(q);
                 else if(qRate <= 0.5) weakQuestions.push(q);
+            }
+
+            // Stats par Tags
+            if (q.tags) {
+                q.tags.forEach(tag => {
+                    if (!tagsMap[tag]) tagsMap[tag] = { total: 0, attempts: 0, correct: 0, due: 0 };
+                    tagsMap[tag].total++;
+                    tagsMap[tag].attempts += q.stats.attempts;
+                    tagsMap[tag].correct += q.stats.correct;
+                    if (q.stats.attempts > 0 && q.sm2.nextReview <= now) tagsMap[tag].due++;
+                });
             }
         });
 
         const rate = s.stats.attempts > 0 ? Math.round((s.stats.correct / s.stats.attempts) * 100) : 0;
         
         const box = document.createElement('div');
-        box.style = "background-color: var(--surface-light); padding: 20px; border-radius: var(--radius); margin-bottom: 15px;";
+        box.className = "subject-progress-card";
         
         const headerRow = document.createElement('div');
         headerRow.style = "display:flex; justify-content: space-between; margin-bottom: 10px;";
         const h3 = document.createElement('h3'); h3.style = "margin:0; color: var(--text-main);"; h3.textContent = subject;
-        const spanStats = document.createElement('span'); spanStats.style = "color: var(--text-muted);"; spanStats.textContent = `${s.stats.correct} / ${s.stats.attempts} essais`;
+        const spanStats = document.createElement('span'); spanStats.style = "color: var(--text-muted); font-weight: bold;"; 
+        spanStats.innerHTML = `${rate}% <span style="font-size:0.8em; font-weight:normal;">(${s.stats.correct}/${s.stats.attempts})</span>`;
         headerRow.appendChild(h3); headerRow.appendChild(spanStats);
         
         const pbBg = document.createElement('div'); pbBg.className = 'progress-bar-bg';
         const pbFill = document.createElement('div'); pbFill.className = `progress-bar-fill ${rate > 50 ? 'good' : 'bad'}`; pbFill.style.width = `${rate}%`;
         pbBg.appendChild(pbFill);
         
-        const rateLabel = document.createElement('div'); rateLabel.style = "text-align: right; font-size: 0.85em; margin-top: 5px;";
-        rateLabel.innerHTML = `Précision : <strong style="color:var(--primary)">${rate}%</strong>`;
+        const metaRow = document.createElement('div'); metaRow.className = "subject-progress-meta";
+        metaRow.innerHTML = `<span>🔴 ${subDue} à revoir</span><span>⚪ ${subUnseen} jamais vues</span>`;
         
-        box.appendChild(headerRow); box.appendChild(pbBg); box.appendChild(rateLabel);
+        box.appendChild(headerRow); box.appendChild(pbBg); box.appendChild(metaRow);
         frag.appendChild(box);
     });
     container.appendChild(frag);
 
+    // Injection Stats Globales
     const globalRate = totalAttempts > 0 ? Math.round((totalCorrect/totalAttempts)*100) : 0;
     document.getElementById('global-stats-container').innerHTML = `
         <div class="stat-card"><h3>Précision Globale</h3><div class="value">${globalRate}%</div></div>
-        <div class="stat-card"><h3>Questions Résolues</h3><div class="value" style="color: var(--text-main);">${totalAttempts}</div></div>
         <div class="stat-card"><h3>Volume de la base</h3><div class="value" style="color: var(--secondary);">${totalQuestions}</div></div>
+        <div class="stat-card"><h3>Questions Résolues</h3><div class="value" style="color: var(--text-main);">${totalAttempts}</div></div>
+        <div class="stat-card accent-warning"><h3>Urgence (À revoir)</h3><div class="value" style="color: var(--warning);">${globalDue}</div></div>
+        <div class="stat-card accent-secondary"><h3>Nouvelles (Jamais vues)</h3><div class="value" style="color: var(--text-muted);">${globalUnseen}</div></div>
     `;
 
+    // Rendu des Tags (Maîtrise par chapitre)
+    const tagsArray = Object.keys(tagsMap).map(k => ({ name: k, ...tagsMap[k] }));
+    // Tri par urgence (due), puis par précision
+    tagsArray.sort((a, b) => {
+        if (b.due !== a.due) return b.due - a.due;
+        const rateA = a.attempts > 0 ? a.correct/a.attempts : 0;
+        const rateB = b.attempts > 0 ? b.correct/b.attempts : 0;
+        return rateA - rateB;
+    });
+
+    const tagContainer = document.getElementById('tag-stats-container');
+    tagContainer.innerHTML = "";
+    if (tagsArray.length === 0) tagContainer.innerHTML = "<p style='color:var(--text-muted); font-style:italic;'>Aucune donnée par chapitre.</p>";
+    else {
+        tagsArray.slice(0, 10).forEach(tag => {
+            const tagRate = tag.attempts > 0 ? Math.round((tag.correct / tag.attempts) * 100) : 0;
+            const row = document.createElement('div'); row.className = 'tag-stat-row';
+            row.innerHTML = `
+                <strong style="color: var(--primary); flex: 1;">${tag.name}</strong>
+                <span style="flex: 1; text-align: center;">${tagRate}% <small>(${tag.total} Q)</small></span>
+                <span style="flex: 1; color: ${tag.due > 0 ? 'var(--warning)' : 'var(--text-muted)'};">🔴 ${tag.due} à revoir</span>
+            `;
+            tagContainer.appendChild(row);
+        });
+    }
+
+    // Mini-listes (Fortes / Faibles)
     const buildMiniList = (qList, elementId, cssClass, fallbackMsg) => {
         const listDiv = document.getElementById(elementId);
         listDiv.innerHTML = "";
@@ -1141,19 +1231,16 @@ function renderProfileDashboard() {
             return;
         }
         qList.slice(0, 5).forEach(q => {
-            const item = document.createElement('div');
-            item.className = `q-mini-item ${cssClass}`;
+            const item = document.createElement('div'); item.className = `q-mini-item ${cssClass}`;
             const pct = Math.round((q.stats.correct / q.stats.attempts) * 100);
             
             const qSpan = document.createElement('span');
             qSpan.style = "white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 80%;";
-            qSpan.textContent = q.q;
-            qSpan.title = q.q;
+            qSpan.textContent = q.q; qSpan.title = q.q;
             
             const pSpan = document.createElement('strong'); pSpan.textContent = `${pct}%`;
             
-            item.appendChild(qSpan); item.appendChild(pSpan);
-            listDiv.appendChild(item);
+            item.appendChild(qSpan); item.appendChild(pSpan); listDiv.appendChild(item);
         });
     };
 
@@ -1165,6 +1252,5 @@ function renderProfileDashboard() {
 
     renderMath([document.getElementById('profile-view')]);
 }
-
 // LANCEMENT DE L'APPLICATION
 checkSession();
