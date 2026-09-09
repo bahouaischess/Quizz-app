@@ -1079,7 +1079,36 @@ function processAnswerSub() {
         }
     });
 
-    function validateAnswer() {
+    // La fin de processAnswerSub reprend bien ici
+    let isCorrect = false;
+    let isPartial = false;
+
+    if (wrongSelected === 0 && correctSelected === totalCorrect) {
+        isCorrect = true;
+        appData[qItem.subjectRef].stats.correct++;
+        qData.stats.correct++;
+        session.score++;
+    } else if (wrongSelected === 0 && correctSelected > 0) {
+        isPartial = true;
+        qData.stats.partial++;
+        session.score += 0.5; // Demi-point
+    } else {
+        session.failedQuestions.push({ 
+            q: qData.q, 
+            userAns: userSelectedTexts.length > 0 ? userSelectedTexts.join(', ') : "Aucune réponse", 
+            correctAns: correctTexts.join(', '), 
+            explanation: qData.explanation || "Pas d'explication fournie." 
+        });
+    }
+    
+    return { isCorrect, isPartial, explanation: qData.explanation };
+} // <--- FIN DE processAnswerSub()
+
+
+// -----------------------------------------------------
+// La fonction validateAnswer est maintenant bien indépendante
+// -----------------------------------------------------
+function validateAnswer() {
     const valBtn = document.getElementById('validate-btn');
     if (valBtn.classList.contains('hidden') || valBtn.style.display === 'none') return;
     
@@ -1119,30 +1148,6 @@ function processAnswerSub() {
     }
 
     renderMath([document.getElementById('explanation-box')]);
-}
-    
-    let isCorrect = false;
-    let isPartial = false;
-
-    if (wrongSelected === 0 && correctSelected === totalCorrect) {
-        isCorrect = true;
-        appData[qItem.subjectRef].stats.correct++;
-        qData.stats.correct++;
-        session.score++;
-    } else if (wrongSelected === 0 && correctSelected > 0) {
-        isPartial = true;
-        qData.stats.partial++;
-        session.score += 0.5; // Demi-point
-    } else {
-        session.failedQuestions.push({ 
-            q: qData.q, 
-            userAns: userSelectedTexts.length > 0 ? userSelectedTexts.join(', ') : "Aucune réponse", 
-            correctAns: correctTexts.join(', '), 
-            explanation: qData.explanation || "Pas d'explication fournie." 
-        });
-    }
-    
-    return { isCorrect, isPartial, explanation: qData.explanation };
 }
 
 function updateSM2Metadata(sm2, quality) {
