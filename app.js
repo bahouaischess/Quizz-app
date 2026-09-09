@@ -882,16 +882,32 @@ function renderQuestion() {
 // ALGORITHME SM-2
 // -----------------------------------------------------
 
+// -----------------------------------------------------
+// ALGORITHME SM-2 (Version Optimisée Demi-journées)
+// -----------------------------------------------------
+
 function calculateNextInterval(sm2, quality) {
-    if (quality < 3) return { interval: 1, text: "10 min" };
+    if (quality < 3) return { interval: 0, text: "10 min" };
     
     let rep = sm2.repetition;
     let int = sm2.interval;
     let ef = sm2.easeFactor;
     
-    if (rep === 0) return { interval: 1, text: "1 jour" };
-    if (rep === 1) return { interval: 6, text: "6 jours" };
+    // Première réussite
+    if (rep === 0) {
+        if (quality === 3) return { interval: 0.5, text: "12 h" };
+        if (quality === 4) return { interval: 1, text: "1 jour" };
+        return { interval: 3, text: "3 jours" };
+    }
     
+    // Deuxième répétition
+    if (rep === 1) {
+        if (quality === 3) return { interval: 0.5, text: "12 h" };
+        if (quality === 4) return { interval: 3, text: "3 jours" };
+        return { interval: 7, text: "7 jours" };
+    }
+    
+    // Répétitions suivantes
     let newInt;
     if (quality === 3) newInt = Math.round(int * 1.2);
     else if (quality === 4) newInt = Math.round(int * ef);
@@ -907,13 +923,11 @@ function submitSM2(quality) {
     
     if (quality < 3) {
         sm2.repetition = 0;
-        sm2.nextReview = Date.now() + 10 * 60 * 1000;
+        sm2.nextReview = Date.now() + 10 * 60 * 1000; // + 10 minutes
     } else {
         sm2.repetition++;
         sm2.interval = next.interval;
-        const nextDate = new Date();
-        nextDate.setDate(nextDate.getDate() + sm2.interval);
-        sm2.nextReview = nextDate.getTime();
+        sm2.nextReview = Date.now() + sm2.interval * 24 * 60 * 60 * 1000; // Conversion précise en ms
     }
     
     sm2.easeFactor = sm2.easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
@@ -923,6 +937,7 @@ function submitSM2(quality) {
     nextQuestion();
 }
 
+// (La suite reste identique, mais on applique aussi la correction ms à nextGR20Question)
 function processAnswerSub() {
     const qItem = session.questions[session.currentIndex];
     const qData = qItem.originalRef; 
@@ -1019,9 +1034,7 @@ function nextGR20Question() {
     } else {
         sm2.repetition++;
         sm2.interval = next.interval;
-        const nextDate = new Date();
-        nextDate.setDate(nextDate.getDate() + sm2.interval);
-        sm2.nextReview = nextDate.getTime();
+        sm2.nextReview = Date.now() + sm2.interval * 24 * 60 * 60 * 1000; // Appliqué ici aussi
     }
     
     sm2.easeFactor = sm2.easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
