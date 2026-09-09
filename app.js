@@ -109,17 +109,36 @@ function customConfirm(title, msg, onConfirm) { customModal(title, msg, onConfir
 // -----------------------------------------------------
 // NORMALISATION & FUSION (Avec métadonnées SM-2 et Partiel)
 // -----------------------------------------------------
+// -----------------------------------------------------
+// NORMALISATION & FUSION (Dossiers et Métadonnées)
+// -----------------------------------------------------
 function normalizeData(rawData) {
+    // Migration des anciens dossiers (_player.folders)
+    let oldFolders = [];
+    if (rawData?._player?.folders && Array.isArray(rawData._player.folders)) {
+        oldFolders = rawData._player.folders.map(f => typeof f === 'string' ? f : f.name);
+    }
+    
+    let validFolders = Array.isArray(rawData?._folders) ? rawData._folders : oldFolders;
+    if (!validFolders.includes(DEFAULT_FOLDER)) validFolders.unshift(DEFAULT_FOLDER);
+    validFolders = [...new Set(validFolders)]; // Suppression des doublons
+
     let valid = { 
         _player: { xp: Number(rawData?._player?.xp) || 0, level: Number(rawData?._player?.level) || 1 },
-        _folders: Array.isArray(rawData?._folders) ? rawData._folders : [DEFAULT_FOLDER]
+        _folders: validFolders
     };
+    
     for (let key in rawData) {
         if (key === '_player' || key === '_folders') continue;
         let sub = rawData[key];
+        
         if (sub && Array.isArray(sub.questions)) {
+            // Récupération de l'ancien emplacement si présent
+            let folderName = sub.folder || rawData?._player?.subjectFolders?.[key] || DEFAULT_FOLDER;
+            if (!valid._folders.includes(folderName)) valid._folders.push(folderName);
+
             valid[key] = {
-                folder: sub.folder || DEFAULT_FOLDER,
+                folder: folderName,
                 questions: sub.questions.filter(q => q && typeof q.q === 'string').map(q => {
                     q.q = removeCitations(q.q);
                     q.explanation = removeCitations(q.explanation);
@@ -154,16 +173,21 @@ function normalizeData(rawData) {
 function mergeDataWithDefaults(cloudData, baseData) {
     let merged = JSON.parse(JSON.stringify(baseData)); 
     merged._player = cloudData._player || { xp: 0, level: 1 };
-    merged._folders = cloudData._folders || [DEFAULT_FOLDER];
+    
+    // Fusion sécurisée des dossiers locaux et cloud
+    let combinedFolders = [...(baseData._folders || []), ...(cloudData._folders || [])];
+    if (!combinedFolders.includes(DEFAULT_FOLDER)) combinedFolders.unshift(DEFAULT_FOLDER);
+    merged._folders = [...new Set(combinedFolders)];
 
     for (let subject in baseData) {
         if (subject.startsWith('_')) continue;
         if (cloudData[subject]) {
-            merged[subject].folder = cloudData[subject].folder || DEFAULT_FOLDER;
+            merged[subject].folder = cloudData[subject].folder || baseData[subject].folder || DEFAULT_FOLDER;
+            if(!merged._folders.includes(merged[subject].folder)) merged._folders.push(merged[subject].folder);
+            
             merged[subject].stats = cloudData[subject].stats || {attempts: 0, correct: 0};
             merged[subject].dailyValidations = cloudData[subject].dailyValidations || {};
 
-            // Réinjecte les stats SM-2 du cloud dans les questions de base
             merged[subject].questions.forEach(q => {
                 const cloudQ = cloudData[subject].questions.find(cq => cq.q === q.q);
                 if (cloudQ) {
@@ -172,7 +196,6 @@ function mergeDataWithDefaults(cloudData, baseData) {
                 }
             });
 
-            // Ajoute les questions créées manuellement depuis l'interface UI
             cloudData[subject].questions.forEach(cq => {
                 const existsInBase = merged[subject].questions.some(q => q.q === cq.q);
                 if (!existsInBase) merged[subject].questions.push(cq);
@@ -180,10 +203,10 @@ function mergeDataWithDefaults(cloudData, baseData) {
         }
     }
 
-    // Ajoute les matières créées manuellement depuis l'interface UI
     for (let subject in cloudData) {
         if (!subject.startsWith('_') && !merged[subject]) {
             merged[subject] = cloudData[subject];
+            if(!merged._folders.includes(merged[subject].folder)) merged._folders.push(merged[subject].folder || DEFAULT_FOLDER);
         }
     }
     return merged;
@@ -378,23 +401,29 @@ function resetData() {
 // -----------------------------------------------------
 // GESTION DES DOSSIERS
 // -----------------------------------------------------
-function createFolder() {
+// -----------------------------------------------------
+// GESTION DES DOSSIERS
+// -----------------------------------------------------
+async function createFolder() {
     const folderName = document.getElementById('new-folder-name').value.trim();
     if (folderName && !appData._folders.includes(folderName)) {
         appData._folders.push(folderName);
-        saveData();
+        await saveData(); // Attendre la sauvegarde cloud
         document.getElementById('new-folder-name').value = "";
         renderHome();
         customAlert("Dossier", `Dossier '${folderName}' créé !`);
+    } else if (appData._folders.includes(folderName)) {
+        customAlert("Erreur", "Ce dossier existe déjà.");
     }
 }
 
-function changeSubjectFolder(newFolder) {
-    if(appData[currentSubject]) {
-        appData[currentSubject].folder = newFolder;
-        saveData();
-        customAlert("Matière déplacée", `Matière déplacée vers ${newFolder}`);
-    }
+async function changeSubjectFolder(newFolder) {
+    if (!appData[currentSubject]) return;
+    if (!appData._folders.includes(newFolder)) return;
+
+    appData[currentSubject].folder = newFolder;
+    await saveData();
+    customAlert("Matière déplacée", `Matière déplacée vers ${newFolder}`);
 }
 
 function populateFolderSelects() {
@@ -407,6 +436,17 @@ function populateFolderSelects() {
         if(selectNew) selectNew.add(new Option(f, f));
         if(selectChange) selectChange.add(new Option(f, f));
     });
+}
+
+async function addSubject() {
+    const name = document.getElementById('new-subject-name').value.trim();
+    const folder = document.getElementById('new-subject-folder').value || DEFAULT_FOLDER;
+    if (name && !appData[name]) {
+        appData[name] = { folder: folder, questions: [], stats: { attempts: 0, correct: 0 }, dailyValidations: {} };
+        await saveData();
+        document.getElementById('new-subject-name').value = ""; 
+        renderHome();
+    }
 }
 
 
@@ -483,38 +523,79 @@ function renderHome() {
     list.innerHTML = ""; 
     const frag = document.createDocumentFragment();
 
+    // 1. Initialiser les groupes
+    const subjectsByFolder = {};
+    appData._folders.forEach(folder => {
+        subjectsByFolder[folder] = [];
+    });
+
+    // 2. Classer les matières
     Object.keys(appData).forEach(subject => {
         if (subject === '_player' || subject === '_folders') return;
-        updateDailyValidation(subject);
-        
-        const s = appData[subject];
-        const available = getAvailableQuestions(subject).length;
-        const isValidated = s.dailyValidations && s.dailyValidations[getTodayStr()];
-
-        const btn = document.createElement('button');
-        btn.className = 'list-item';
-        btn.onclick = () => openSubject(subject);
-        
-        const titleSpan = document.createElement('span');
-        const boldTitle = document.createElement('b');
-        boldTitle.textContent = subject; 
-        const subTxt = document.createElement('span');
-        subTxt.style = "color:var(--text-muted); font-size:0.85em; margin-left:10px;";
-        subTxt.textContent = `(${s.questions.length} Q)`;
-        
-        titleSpan.appendChild(boldTitle);
-        titleSpan.appendChild(subTxt);
-        btn.appendChild(titleSpan);
-
-        const badge = document.createElement('span');
-        if(isValidated) {
-            badge.className = 'badge validated'; badge.textContent = '✓ Validé';
-        } else {
-            badge.className = 'badge pending'; badge.textContent = `${available} à réviser`;
-        }
-        btn.appendChild(badge);
-        frag.appendChild(btn);
+        const folder = appData[subject].folder || DEFAULT_FOLDER;
+        if (!subjectsByFolder[folder]) subjectsByFolder[folder] = [];
+        subjectsByFolder[folder].push(subject);
     });
+
+    // 3. Afficher par dossier
+    appData._folders.forEach(folder => {
+        const folderDiv = document.createElement('div');
+        folderDiv.className = 'folder-section';
+
+        const header = document.createElement('div');
+        header.className = 'folder-header list-item'; // Utilise le style des list-items pour le fond
+        header.style.cursor = 'default';
+        header.style.fontWeight = 'bold';
+        header.innerHTML = `<span>📁 ${folder}</span>`;
+        folderDiv.appendChild(header);
+
+        const subjectsContainer = document.createElement('div');
+        subjectsContainer.className = 'folder-subjects';
+
+        const subjects = subjectsByFolder[folder];
+        
+        if (subjects.length === 0) {
+            const emptyMsg = document.createElement('div');
+            emptyMsg.className = 'folder-empty-message';
+            emptyMsg.textContent = "Aucune matière dans ce dossier.";
+            subjectsContainer.appendChild(emptyMsg);
+        } else {
+            subjects.forEach(subject => {
+                updateDailyValidation(subject);
+                const s = appData[subject];
+                const available = getAvailableQuestions(subject).length;
+                const isValidated = s.dailyValidations && s.dailyValidations[getTodayStr()];
+
+                const btn = document.createElement('button');
+                btn.className = 'list-item';
+                btn.onclick = () => openSubject(subject);
+                
+                const titleSpan = document.createElement('span');
+                const boldTitle = document.createElement('b');
+                boldTitle.textContent = subject; 
+                const subTxt = document.createElement('span');
+                subTxt.style = "color:var(--text-muted); font-size:0.85em; margin-left:10px;";
+                subTxt.textContent = `(${s.questions.length} Q)`;
+                
+                titleSpan.appendChild(boldTitle);
+                titleSpan.appendChild(subTxt);
+                btn.appendChild(titleSpan);
+
+                const badge = document.createElement('span');
+                if(isValidated) {
+                    badge.className = 'badge validated'; badge.textContent = '✓ Validé';
+                } else {
+                    badge.className = 'badge pending'; badge.textContent = `${available} à réviser`;
+                }
+                btn.appendChild(badge);
+                subjectsContainer.appendChild(btn);
+            });
+        }
+        
+        folderDiv.appendChild(subjectsContainer);
+        frag.appendChild(folderDiv);
+    });
+    
     list.appendChild(frag);
 }
 
