@@ -5438,7 +5438,7 @@ const defaultData = {
                     { text: "$\\forall \\epsilon > 0, \\forall n \\in \\mathbb{N}, \\exists n_0 \\ge n$ tel que $d(x_{n_0}, y) < \\epsilon$", isCorrect: true },
                     { text: "$\\forall \\epsilon > 0, \\exists n_0 \\in \\mathbb{N}, \\forall n \\ge n_0, d(x_n, y) < \\epsilon$", isCorrect: false }
                 ],
-                explanation: "Le point $y$ est une valeur d'adhérence si et seulement si pour tout voisinage de $y$ et pour tout rang de départ, on peut toujours trouver un terme de la suite plus loin qui "visite" ce voisinage[cite: 1].",
+                explanation: "Le point $y$ est une valeur d'adhérence si et seulement si pour tout voisinage de $y$ et pour tout rang de départ, on peut toujours trouver un terme de la suite plus loin qui  ce voisinage[cite: 1].",
                 stats: { attempts: 0, correct: 0, partial: 0 },
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             },
