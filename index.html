@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hub de Quizz - L2 (SM-2 Engine)</title>
+    <title>Hub de Quizz - L2</title>
     <script>
         window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
     </script>
@@ -18,6 +18,13 @@
             --radius: 12px;
         }
         body { font-family: 'Segoe UI', system-ui, sans-serif; background-color: var(--bg-dark); color: var(--text-main); margin: 0; display: flex; height: 100vh; overflow: hidden; }
+        
+        /* ISOLATION DE L'AUTHENTIFICATION */
+        #auth-container { position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: var(--bg-dark); display: flex; justify-content: center; align-items: center; z-index: 100; }
+        .auth-box { background: var(--surface); padding: 40px; border-radius: var(--radius); width: 100%; max-width: 400px; border: 1px solid var(--surface-light); box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: center; }
+        .auth-box input { display: block !important; width: 100% !important; margin-bottom: 15px !important; box-sizing: border-box; }
+        
+        #app-container { display: flex; width: 100vw; height: 100vh; overflow: hidden; }
         
         #sidebar { width: 260px; min-width: 72px; flex: 0 0 auto; background-color: var(--surface); padding: 20px; display: flex; flex-direction: column; border-right: 1px solid var(--surface-light); transition: width 0.2s ease; z-index: 10; position: relative; box-sizing: border-box; }
         .sidebar-brand { font-size: 1.5em; font-weight: bold; color: var(--primary); margin: 8px 36px 30px 0; display: flex; align-items: center; gap: 10px; white-space: nowrap; overflow: hidden; }
@@ -54,8 +61,7 @@
         button.success { background-color: rgba(166, 227, 161, 0.1); color: var(--success); border: 1px solid var(--success); }
         button.success:hover { background-color: var(--success); color: #000; }
         
-        /* FIX CSS : Ajout des input email et password pour prendre 100% de la largeur */
-        input[type="text"], input[type="number"], input[type="file"], input[type="email"], input[type="password"], select { width: 100%; padding: 12px; margin: 8px 0 15px 0; border-radius: var(--radius); border: 1px solid var(--surface-light); background-color: var(--bg-dark); color: var(--text-main); box-sizing: border-box; }
+        input[type="text"], input[type="number"], input[type="file"], input[type="email"], input[type="password"], select { display: block; width: 100%; padding: 12px; margin: 8px 0 15px 0; border-radius: var(--radius); border: 1px solid var(--surface-light); background-color: var(--bg-dark); color: var(--text-main); box-sizing: border-box; }
         
         .card { background-color: var(--surface); padding: 25px; border-radius: var(--radius); margin-bottom: 25px; border: 1px solid var(--surface-light); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
         
@@ -100,26 +106,17 @@
         .stat-card { background: var(--surface-light); padding: 20px; border-radius: var(--radius); display: flex; flex-direction: column; justify-content: center; align-items: flex-start; border: 1px solid #45475a; border-top: 3px solid var(--primary); min-height: 110px; }
         .stat-card h3 { margin: 0 0 10px 0; color: var(--text-muted); font-size: 0.78em; text-transform: uppercase; letter-spacing: 1px; }
         .stat-card .value { font-size: 2.5em; line-height: 1; font-weight: bold; color: var(--primary); }
-        .stat-card.accent-success { border-top-color: var(--success); }
-        .stat-card.accent-warning { border-top-color: var(--warning); }
-        .stat-card.accent-secondary { border-top-color: var(--secondary); }
         .subject-progress-card { background-color: var(--surface-light); padding: 20px; border-radius: var(--radius); margin-bottom: 15px; border-left: 3px solid var(--primary); }
         .subject-progress-meta { display: flex; justify-content: space-between; gap: 15px; color: var(--text-muted); font-size: 0.85em; margin-top: 8px; }
         
         .progress-bar-bg { width: 100%; height: 8px; background-color: var(--bg-dark); border-radius: 4px; overflow: hidden; margin-top: 10px; }
         .progress-bar-fill { height: 100%; background-color: var(--primary); transition: width 0.5s ease; }
-        .progress-bar-fill.good { background-color: var(--success); }
-        .progress-bar-fill.bad { background-color: var(--danger); }
 
         .question-list-mini { max-height: 200px; overflow-y: auto; padding-right: 5px; margin-top: 15px; }
         .q-mini-item { background: var(--bg-dark); padding: 12px; border-radius: 8px; margin-bottom: 8px; font-size: 0.9em; border-left: 3px solid var(--surface-light); display: flex; justify-content: space-between; gap: 10px;}
         .q-mini-item.danger { border-left-color: var(--danger); }
         .q-mini-item.success { border-left-color: var(--success); }
-        .tag-stat-row { display: flex; justify-content: space-between; gap: 15px; padding: 12px 0; border-bottom: 1px solid var(--surface-light); }
-        .tag-stat-row:last-child { border-bottom: none; }
-        .tag-stat-row span { color: var(--text-muted); text-align: right; }
 
-        /* BOUTONS SM-2 */
         .sm2-btn { flex: 1; min-width: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px 10px; }
         .sm2-btn small { font-size: 0.85em; opacity: 0.8; margin-top: 5px; font-weight: normal; }
 
@@ -131,15 +128,12 @@
             #main-content { padding: 15px; overflow-y: visible; }
             .add-option-row { flex-direction: column; align-items: stretch; gap: 5px; }
             .list-item { flex-direction: column; align-items: flex-start; gap: 10px; }
-            .tag-stat-row { flex-direction: column; gap: 5px; }
-            .tag-stat-row span { text-align: left; }
-            .subject-folder-control { align-items: stretch; flex-direction: column; gap: 5px; }
-            .subject-folder-control select { max-width: none; }
         }
     </style>
 </head>
 <body>
 
+    <!-- MODAL GÉNÉRIQUE -->
     <div id="modal-overlay" class="hidden" role="dialog" aria-modal="true" tabindex="-1">
         <div class="modal-box">
             <h3 id="modal-title" style="margin-top: 0;">Titre</h3>
@@ -151,270 +145,271 @@
         </div>
     </div>
 
-    <div id="sidebar">
-        <div class="sidebar-brand"><span class="nav-icon">🧠</span><span class="nav-label">QuizzHub</span></div>
-        <button id="sidebar-toggle" class="sidebar-toggle" type="button" aria-label="Réduire la barre latérale" title="Réduire la barre latérale">‹</button>
-        <div id="sidebar-resizer" class="sidebar-resizer" title="Redimensionner la barre latérale"></div>
-        <button class="nav-item active" onclick="showView('home-view', this)"><span class="nav-icon">📚</span><span class="nav-label">Mes Matières</span></button>
-        <button class="nav-item" onclick="showView('custom-quiz-view', this)"><span class="nav-icon">🎯</span><span class="nav-label">Mode Libre (Tags)</span></button>
-        <button class="nav-item" onclick="showView('gr20-setup-view', this)"><span class="nav-icon">🏔️</span><span class="nav-label">Mode GR20</span></button>
-        <button class="nav-item" onclick="showView('profile-view', this)"><span class="nav-icon">📊</span><span class="nav-label">Tableau de Bord</span></button>
-        <button class="nav-item" onclick="showView('settings-view', this)"><span class="nav-icon">⚙️</span><span class="nav-label">Paramètres</span></button>
-        
-        <div id="player-stats">
-            <div class="level-badge">Niveau <span id="player-lvl">1</span></div>
-            <div style="font-size: 0.85em; color: var(--text-muted);">XP Totale : <span id="player-xp">0</span></div>
-            <div class="xp-bar"><div class="xp-fill" id="xp-fill-bar"></div></div>
+    <!-- ECRAN DE CONNEXION (Totalement isolé du reste) -->
+    <div id="auth-container" class="hidden">
+        <div class="auth-box">
+            <h1 style="margin-bottom: 5px;">👋 QuizzHub</h1>
+            <p style="color: var(--text-muted); margin-bottom: 25px;">Connecte-toi pour synchroniser tes statistiques SM-2 et ton XP.</p>
+            
+            <input type="email" id="auth-email" placeholder="Email (ex: etudiant@dauphine.eu)">
+            <input type="password" id="auth-password" placeholder="Mot de passe (min 6 caractères)">
+            
+            <button onclick="handleLogin()" style="width: 100%; margin-bottom: 10px;">Se connecter</button>
+            <button onclick="handleSignup()" class="secondary" style="width: 100%;">Créer un compte</button>
+            
+            <div id="auth-msg" class="hidden" style="margin-top: 15px; font-weight: bold;"></div>
         </div>
     </div>
 
-    <div id="main-content">
-        <!-- AUTHENTIFICATION -->
-        <div id="auth-view" class="view">
-            <div class="card" style="max-width: 400px; margin: 80px auto; text-align: center;">
-                <h1 style="margin-bottom: 5px;">👋 QuizzHub</h1>
-                <p style="color: var(--text-muted); margin-bottom: 25px;">Connecte-toi pour synchroniser tes statistiques SM-2 et ton XP.</p>
-                
-                <input type="email" id="auth-email" placeholder="Email (ex: etudiant@dauphine.eu)">
-                <input type="password" id="auth-password" placeholder="Mot de passe (min 6 caractères)">
-                
-                <button onclick="handleLogin()" style="width: 100%; margin-bottom: 10px;">Se connecter</button>
-                <button onclick="handleSignup()" class="secondary" style="width: 100%;">Créer un compte</button>
-                
-                <div id="auth-msg" class="hidden" style="margin-top: 15px; font-weight: bold;"></div>
-            </div>
-        </div>
+    <!-- APPLICATION PRINCIPALE -->
+    <div id="app-container" class="hidden">
         
-        <!-- ACCUEIL -->
-        <!-- FIX HTML : Ajout de la classe hidden pour que cette vue soit masquée par défaut -->
-        <div id="home-view" class="view hidden">
-            <h1>Matières et Entraînements</h1>
-            <div id="subjects-list"></div>
-            <div class="card" style="margin-top: 30px;">
-                <h3>📁 Nouveau dossier</h3>
-                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                    <input type="text" id="new-folder-name" placeholder="Ex: Programmation" style="margin: 0; flex: 1;">
-                    <button onclick="createFolder()">Créer le dossier</button>
-                </div>
-            </div>
-            <div class="card" style="margin-top: 30px;">
-                <h3>➕ Nouvelle matière</h3>
-                <div style="display: flex; gap: 15px; flex-wrap: wrap;">
-                    <input type="text" id="new-subject-name" placeholder="Ex: Algorithmique Avancée" style="margin: 0; flex: 1;">
-                    <select id="new-subject-folder" aria-label="Dossier de la nouvelle matière" style="margin: 0; flex: 1;"></select>
-                    <button onclick="addSubject()">Créer</button>
-                </div>
+        <div id="sidebar">
+            <div class="sidebar-brand"><span class="nav-icon">🧠</span><span class="nav-label">QuizzHub</span></div>
+            <button id="sidebar-toggle" class="sidebar-toggle" type="button">‹</button>
+            <div id="sidebar-resizer" class="sidebar-resizer"></div>
+            
+            <button class="nav-item active" onclick="showView('home-view', this)"><span class="nav-icon">📚</span><span class="nav-label">Mes Matières</span></button>
+            <button class="nav-item" onclick="showView('custom-quiz-view', this)"><span class="nav-icon">🎯</span><span class="nav-label">Mode Libre</span></button>
+            <button class="nav-item" onclick="showView('gr20-setup-view', this)"><span class="nav-icon">🏔️</span><span class="nav-label">Mode GR20</span></button>
+            <button class="nav-item" onclick="showView('profile-view', this)"><span class="nav-icon">📊</span><span class="nav-label">Tableau de Bord</span></button>
+            <button class="nav-item" onclick="showView('user-profile-view', this)"><span class="nav-icon">👤</span><span class="nav-label">Mon Profil</span></button>
+            <button class="nav-item" onclick="showView('settings-view', this)"><span class="nav-icon">⚙️</span><span class="nav-label">Paramètres</span></button>
+            
+            <div id="player-stats">
+                <div class="level-badge">Niveau <span id="player-lvl">1</span></div>
+                <div style="font-size: 0.85em; color: var(--text-muted);">XP Totale : <span id="player-xp">0</span></div>
+                <div class="xp-bar"><div class="xp-fill" id="xp-fill-bar"></div></div>
             </div>
         </div>
 
-        <!-- MODE LIBRE -->
-        <div id="custom-quiz-view" class="view hidden">
-            <h1>🎯 Mode Libre (Multi-Chapitres)</h1>
-            <div class="card">
-                <p style="color: var(--text-muted);">Sélectionne les chapitres/tags sur lesquels tu souhaites être interrogé, toutes matières confondues.</p>
-                
-                <h3 style="margin-top: 20px;">🏷️ Sélection des chapitres :</h3>
-                <div id="global-tags-container" style="margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 5px; padding: 15px; background: var(--bg-dark); border-radius: var(--radius);"></div>
+        <div id="main-content">
+            
+            <!-- ACCUEIL -->
+            <div id="home-view" class="view">
+                <h1>Matières et Entraînements</h1>
+                <div id="subjects-list"></div>
+                <div class="card" style="margin-top: 30px;">
+                    <h3>📁 Nouveau dossier</h3>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <input type="text" id="new-folder-name" placeholder="Ex: Programmation" style="margin: 0; flex: 1;">
+                        <button onclick="createFolder()">Créer le dossier</button>
+                    </div>
+                </div>
+                <div class="card" style="margin-top: 30px;">
+                    <h3>➕ Nouvelle matière</h3>
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+                        <input type="text" id="new-subject-name" placeholder="Ex: Algorithmique" style="margin: 0; flex: 1;">
+                        <select id="new-subject-folder" style="margin: 0; flex: 1;"></select>
+                        <button onclick="addSubject()">Créer</button>
+                    </div>
+                </div>
+            </div>
 
-                <div style="display: flex; flex-direction: column; gap: 15px; border-top: 1px solid var(--surface-light); padding-top: 20px;">
-                    <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-                        <label for="custom-q-count">Nombre de questions :</label>
-                        <input type="number" id="custom-q-count" value="10" min="1" style="width: 80px; margin: 0;">
-                        
-                        <label style="color: var(--danger); font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px; margin-left: 10px;">
-                            <input type="checkbox" id="custom-exam-mode" style="transform: scale(1.3);"> ⏱️ Chrono
+            <!-- MODE LIBRE -->
+            <div id="custom-quiz-view" class="view hidden">
+                <h1>🎯 Mode Libre (Multi-Chapitres)</h1>
+                <div class="card">
+                    <p style="color: var(--text-muted);">Sélectionne les chapitres/tags sur lesquels tu souhaites être interrogé, toutes matières confondues.</p>
+                    <h3 style="margin-top: 20px;">🏷️ Sélection des chapitres :</h3>
+                    <div id="global-tags-container" style="margin-bottom: 20px; display: flex; flex-wrap: wrap; gap: 5px; padding: 15px; background: var(--bg-dark); border-radius: var(--radius);"></div>
+                    <div style="display: flex; flex-direction: column; gap: 15px; border-top: 1px solid var(--surface-light); padding-top: 20px;">
+                        <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+                            <label for="custom-q-count">Nombre de questions :</label>
+                            <input type="number" id="custom-q-count" value="10" min="1" style="width: 80px; margin: 0;">
+                            <label style="color: var(--danger); font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px; margin-left: 10px;">
+                                <input type="checkbox" id="custom-exam-mode" style="transform: scale(1.3);"> ⏱️ Chrono
+                            </label>
+                        </div>
+                        <label style="color: var(--warning); font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                            <input type="checkbox" id="custom-force-review" style="transform: scale(1.3);"> 🔄 Forcer la révision (Ignorer l'algorithme SM-2)
                         </label>
+                        <button onclick="startCustomQuiz()" style="width: 100%; margin-top: 10px; font-size: 1.1em;">Lancer le Quiz Libre</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MATIÈRE -->
+            <div id="subject-view" class="view hidden">
+                <h1 id="current-subject-title">Matière</h1>
+                <div class="subject-folder-control">
+                    <label for="subject-folder-select">Dossier :</label>
+                    <select id="subject-folder-select" onchange="changeSubjectFolder(this.value)"></select>
+                </div>
+                
+                <div class="card">
+                    <div style="display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
+                        <div>Questions totales: <strong id="subject-q-total" class="badge pending">0</strong></div>
+                        <div>À réviser aujourd'hui: <strong id="subject-q-available" class="badge pending" style="color:var(--danger)">0</strong></div>
+                        <div>Réussite: <strong id="subject-success-rate">0%</strong></div>
                     </div>
                     
-                    <label style="color: var(--warning); font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px;">
-                        <input type="checkbox" id="custom-force-review" style="transform: scale(1.3);"> 🔄 Forcer la révision (Ignorer l'algorithme SM-2)
-                    </label>
+                    <p style="font-weight: bold; color: var(--text-muted);">🏷️ Chapitres et Sous-classes (Tags) :</p>
+                    <div id="filter-tags-container" style="margin-bottom: 20px; display: flex; flex-wrap: wrap;"></div>
 
-                    <button onclick="startCustomQuiz()" style="width: 100%; margin-top: 10px; font-size: 1.1em;">Lancer le Quiz Libre</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- MATIÈRE -->
-        <div id="subject-view" class="view hidden">
-            <h1 id="current-subject-title">Matière</h1>
-            <div class="subject-folder-control">
-                <label for="subject-folder-select">Dossier :</label>
-                <select id="subject-folder-select" onchange="changeSubjectFolder(this.value)"></select>
-            </div>
-            
-            <div class="card">
-                <div style="display: flex; gap: 20px; margin-bottom: 20px; flex-wrap: wrap;">
-                    <div>Questions totales: <strong id="subject-q-total" class="badge pending">0</strong></div>
-                    <div>À réviser aujourd'hui: <strong id="subject-q-available" class="badge pending" style="color:var(--danger)">0</strong></div>
-                    <div>Réussite: <strong id="subject-success-rate">0%</strong></div>
-                </div>
-                
-                <p style="font-weight: bold; color: var(--text-muted);">🏷️ Chapitres et Sous-classes (Tags) :</p>
-                <div id="filter-tags-container" style="margin-bottom: 20px; display: flex; flex-wrap: wrap;"></div>
-
-                <div style="display: flex; flex-direction: column; gap: 15px; border-top: 1px solid var(--surface-light); padding-top: 20px;">
-                    <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
-                        <label for="q-count-input">Nombre de questions :</label>
-                        <input type="number" id="q-count-input" value="10" min="1" style="width: 80px; margin: 0;">
-                        
-                        <label style="color: var(--danger); font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px; margin-left: 10px;">
-                            <input type="checkbox" id="exam-mode-toggle" style="transform: scale(1.3);"> ⏱️ Mode Examen
+                    <div style="display: flex; flex-direction: column; gap: 15px; border-top: 1px solid var(--surface-light); padding-top: 20px;">
+                        <div style="display: flex; align-items: center; gap: 15px; flex-wrap: wrap;">
+                            <label for="q-count-input">Nombre de questions :</label>
+                            <input type="number" id="q-count-input" value="10" min="1" style="width: 80px; margin: 0;">
+                            <label style="color: var(--danger); font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px; margin-left: 10px;">
+                                <input type="checkbox" id="exam-mode-toggle" style="transform: scale(1.3);"> ⏱️ Mode Examen
+                            </label>
+                        </div>
+                        <label style="color: var(--warning); font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px;">
+                            <input type="checkbox" id="force-review-toggle" style="transform: scale(1.3);"> 🔄 Ignorer la répétition espacée
                         </label>
+                        <button onclick="startQuiz()" style="width: 100%; margin-top: 10px; font-size: 1.1em;">Lancer le Quiz</button>
                     </div>
+                </div>
+
+                <div class="card">
+                    <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+                        <h3>📝 Base de questions</h3>
+                        <button class="secondary" onclick="prepareAddQuestion()">+ Ajouter</button>
+                    </div>
+                    <div id="manage-questions-list" style="max-height: 400px; overflow-y: auto; margin-top: 15px; padding-right: 5px;"></div>
+                </div>
+
+                <div id="question-editor-card" class="card hidden" style="border: 1px solid var(--primary);">
+                    <h3 id="editor-title">Nouvelle question</h3>
+                    <input type="hidden" id="edit-q-index" value="-1">
                     
-                    <label style="color: var(--warning); font-weight: bold; cursor: pointer; display: flex; align-items: center; gap: 5px;">
-                        <input type="checkbox" id="force-review-toggle" style="transform: scale(1.3);"> 🔄 Ignorer la répétition espacée
-                    </label>
+                    <label style="font-size: 0.9em; color: var(--text-muted);">Chapitres/Tags (sélectionne ou crée) :</label>
+                    <div id="add-tags-container" style="margin: 10px 0; display: flex; flex-wrap: wrap;"></div>
+                    <div style="display: flex; gap: 10px; margin-bottom: 20px;">
+                        <input type="text" id="new-tag-input" placeholder="Nouveau tag..." style="margin: 0; flex: 1;">
+                        <button class="secondary" style="margin: 0;" onclick="createNewTagUI()">Ajouter</button>
+                    </div>
 
-                    <button onclick="startQuiz()" style="width: 100%; margin-top: 10px; font-size: 1.1em;">Lancer le Quiz</button>
-                </div>
-            </div>
+                    <input type="text" id="new-q-text" placeholder="Intitulé de la question...">
+                    
+                    <label style="font-size: 0.9em; color: var(--text-muted);">Options (coche ce qui est Vrai) :</label>
+                    <div class="add-option-row"><input type="text" id="opt-1" placeholder="Option 1"><label><input type="checkbox" id="check-1"> Vrai</label></div>
+                    <div class="add-option-row"><input type="text" id="opt-2" placeholder="Option 2"><label><input type="checkbox" id="check-2"> Vrai</label></div>
+                    <div class="add-option-row"><input type="text" id="opt-3" placeholder="Option 3 (facultatif)"><label><input type="checkbox" id="check-3"> Vrai</label></div>
+                    <div class="add-option-row"><input type="text" id="opt-4" placeholder="Option 4 (facultatif)"><label><input type="checkbox" id="check-4"> Vrai</label></div>
 
-            <div class="card">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    <h3>📝 Base de questions</h3>
-                    <button class="secondary" onclick="prepareAddQuestion()">+ Ajouter</button>
-                </div>
-                <div id="manage-questions-list" style="max-height: 400px; overflow-y: auto; margin-top: 15px; padding-right: 5px;"></div>
-            </div>
-
-            <div id="question-editor-card" class="card hidden" style="border: 1px solid var(--primary);">
-                <h3 id="editor-title">Nouvelle question</h3>
-                <input type="hidden" id="edit-q-index" value="-1">
-                
-                <label style="font-size: 0.9em; color: var(--text-muted);">Chapitres/Tags (sélectionne ou crée) :</label>
-                <div id="add-tags-container" style="margin: 10px 0; display: flex; flex-wrap: wrap;"></div>
-                <div style="display: flex; gap: 10px; margin-bottom: 20px;">
-                    <input type="text" id="new-tag-input" placeholder="Nouveau tag..." style="margin: 0; flex: 1;">
-                    <button class="secondary" style="margin: 0;" onclick="createNewTagUI()">Ajouter</button>
-                </div>
-
-                <input type="text" id="new-q-text" placeholder="Intitulé de la question...">
-                
-                <label style="font-size: 0.9em; color: var(--text-muted);">Options (coche ce qui est Vrai) :</label>
-                <div class="add-option-row"><input type="text" id="opt-1" placeholder="Option 1"><label><input type="checkbox" id="check-1"> Vrai</label></div>
-                <div class="add-option-row"><input type="text" id="opt-2" placeholder="Option 2"><label><input type="checkbox" id="check-2"> Vrai</label></div>
-                <div class="add-option-row"><input type="text" id="opt-3" placeholder="Option 3 (facultatif)"><label><input type="checkbox" id="check-3"> Vrai</label></div>
-                <div class="add-option-row"><input type="text" id="opt-4" placeholder="Option 4 (facultatif)"><label><input type="checkbox" id="check-4"> Vrai</label></div>
-
-                <input type="text" id="new-q-explanation" placeholder="Explication détaillée (Optionnelle)">
-                
-                <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
-                    <button onclick="saveQuestion()" style="flex: 1; min-width: 150px;">Enregistrer</button>
-                    <button class="secondary" style="flex: 1; min-width: 150px;" onclick="document.getElementById('question-editor-card').classList.add('hidden')">Annuler</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- GR20 -->
-        <div id="gr20-setup-view" class="view hidden">
-            <h1>🏔️ L'Épreuve du GR20</h1>
-            <div class="card">
-                <p>Aucun retour immédiat. Les questions s'enchaînent sans filet de sécurité. L'algorithme SM-2 évaluera les questions automatiquement en arrière-plan. La correction n'est révélée qu'au refuge final.</p>
-                <label for="gr20-count">Combien d'étapes (questions) ?</label>
-                <input type="number" id="gr20-count" value="10" min="1" max="200">
-                <button onclick="startGR20()" style="width: 100%; margin-top: 20px; font-size: 1.1em; background: linear-gradient(135deg, var(--warning), var(--danger)); color: #000;">Démarrer l'ascension</button>
-            </div>
-        </div>
-
-        <!-- QUIZ ACTIF -->
-        <div id="quiz-view" class="view hidden">
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
-                <button class="secondary" onclick="customConfirm('Abandon', 'Veux-tu quitter le quiz ? La progression sera perdue.', () => endQuiz())">Abandonner</button>
-                <div id="timer-display" class="hidden" aria-live="polite">00:00</div>
-            </div>
-            
-            <div class="card">
-                <div id="quiz-progress" style="color: var(--text-muted); font-weight: bold; margin-bottom: 5px;" aria-live="polite"></div>
-                <div id="quiz-tags-display" style="margin-bottom: 20px; color: var(--secondary); font-size: 0.85em;"></div>
-                <h2 id="quiz-question" style="font-size: 1.4em; line-height: 1.4;"></h2>
-                
-                <div id="quiz-options"></div>
-                
-                <button id="validate-btn" style="width: 100%; margin-top: 25px;" onclick="validateAnswer()">Valider la réponse</button>
-                <button id="gr20-next-btn" class="hidden" style="width: 100%; margin-top: 25px; background-color: var(--warning); color: #000;" onclick="nextGR20Question()">Étape suivante →</button>
-
-                <div id="explanation-box" class="hidden">
-                    <strong style="color: var(--primary);">Correction & Explication :</strong>
-                    <p id="explanation-text" style="margin-top: 10px; line-height: 1.5;"></p>
-                </div>
-
-                <!-- SM-2 EVALUATION BOX -->
-                <div id="sm2-eval-box" class="hidden" style="margin-top: 25px; padding-top: 15px; border-top: 1px solid var(--surface-light);">
-                    <p id="sm2-eval-title" style="text-align: center; color: var(--text-muted); font-weight: bold; margin-bottom: 15px;">Évalue ta facilité à répondre pour planifier la prochaine révision :</p>
-                    <div style="display: flex; gap: 10px; flex-wrap: wrap;">
-                        <button id="btn-next-wrong" class="sm2-btn danger" onclick="submitSM2(0)">À revoir<br><small>10 min</small></button>
-                        <button id="btn-sm2-3" class="sm2-btn warning" onclick="submitSM2(3)">Difficile<br><small id="sm2-text-3"></small></button>
-                        <button id="btn-sm2-4" class="sm2-btn success" onclick="submitSM2(4)">Bien<br><small id="sm2-text-4"></small></button>
-                        <button id="btn-sm2-5" class="sm2-btn primary" onclick="submitSM2(5)">Facile<br><small id="sm2-text-5"></small></button>
+                    <input type="text" id="new-q-explanation" placeholder="Explication détaillée (Optionnelle)">
+                    
+                    <div style="display: flex; gap: 10px; margin-top: 10px; flex-wrap: wrap;">
+                        <button onclick="saveQuestion()" style="flex: 1; min-width: 150px;">Enregistrer</button>
+                        <button class="secondary" style="flex: 1; min-width: 150px;" onclick="document.getElementById('question-editor-card').classList.add('hidden')">Annuler</button>
                     </div>
                 </div>
-
-            </div>
-        </div>
-
-        <!-- RÉSULTATS -->
-        <div id="results-view" class="view hidden">
-            <div class="card" style="text-align: center;">
-                <h1 id="results-title">🏁 Bilan de la session</h1>
-                <h2 style="font-size: 2.5em; margin: 10px 0;">Score : <span id="final-score" style="color: var(--primary);">0</span> / <span id="final-total">0</span></h2>
-                <div id="xp-gained" style="color: var(--success); font-weight: bold; margin-bottom: 20px; font-size: 1.2em;">+ 0 XP</div>
-                
-                <div id="validation-msg" class="hidden" style="color: var(--success); font-weight: bold; margin-bottom: 15px;">🏆 Matière validée pour aujourd'hui !</div>
-                
-                <button id="btn-export-markdown" class="secondary hidden" style="margin-bottom: 20px; width: 100%;" onclick="exportMarkdownToClipboard()">📋 Copier le Cahier d'Erreurs pour AppFlowy</button>
-                
-                <button onclick="showView('home-view')">Retour à l'accueil</button>
-            </div>
-        </div>
-
-        <!-- STATISTIQUES -->
-        <div id="profile-view" class="view hidden">
-            <h1>📊 Tableau de Bord Analytique</h1>
-            
-            <div class="dashboard-grid" id="global-stats-container">
-                <!-- Rempli par JS -->
             </div>
 
-            <div class="dashboard-grid">
-                <div class="card" style="margin: 0;">
-                    <h3 style="color: var(--success);">✅ Maîtrise absolue</h3>
-                    <p style="font-size: 0.85em; color: var(--text-muted); margin-top: -5px;">Questions toujours réussies (>80%, min. 2 essais)</p>
-                    <div id="strong-questions-list" class="question-list-mini"></div>
-                </div>
-                
-                <div class="card" style="margin: 0;">
-                    <h3 style="color: var(--danger);">❌ Points de friction</h3>
-                    <p style="font-size: 0.85em; color: var(--text-muted); margin-top: -5px;">Questions problématiques (<50%, min. 2 essais)</p>
-                    <div id="weak-questions-list" class="question-list-mini"></div>
+            <!-- GR20 -->
+            <div id="gr20-setup-view" class="view hidden">
+                <h1>🏔️ L'Épreuve du GR20</h1>
+                <div class="card">
+                    <p>Aucun retour immédiat. Les questions s'enchaînent sans filet de sécurité. La correction n'est révélée qu'au refuge final.</p>
+                    <label for="gr20-count">Combien d'étapes (questions) ?</label>
+                    <input type="number" id="gr20-count" value="10" min="1" max="200">
+                    <button onclick="startGR20()" style="width: 100%; margin-top: 20px; font-size: 1.1em; background: linear-gradient(135deg, var(--warning), var(--danger)); color: #000;">Démarrer l'ascension</button>
                 </div>
             </div>
 
-            <h2 style="margin-top: 30px;">Maîtrise par chapitre</h2>
-            <div id="tag-stats-container" class="card"></div>
-
-            <h2 style="margin-top: 30px;">Progression par matière</h2>
-            <div id="profile-content"></div>
-        </div>
-
-        <!-- PARAMÈTRES -->
-        <div id="settings-view" class="view hidden">
-            <h1>⚙️ Paramètres & Données</h1>
-            <div class="card">
-                <h3>Sauvegarde Locale</h3>
-                <p style="color: var(--text-muted); font-size: 0.9em;">Exporte ta base pour ne rien perdre si tu vides le cache de ton navigateur.</p>
-                <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
-                    <button onclick="exportData()">📥 Exporter (JSON)</button>
-                    <input type="file" id="import-file" accept=".json" onchange="importData(event)" style="margin: 0; flex: 1; min-width: 200px;">
+            <!-- QUIZ ACTIF -->
+            <div id="quiz-view" class="view hidden">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+                    <button class="secondary" onclick="customConfirm('Abandon', 'Veux-tu quitter le quiz ? La progression sera perdue.', () => endQuiz())">Abandonner</button>
+                    <div id="timer-display" class="hidden" aria-live="polite">00:00</div>
                 </div>
-                <button class="danger" style="width: 100%;" onclick="customConfirm('Danger', 'Suppression de toute ta base locale. Es-tu certain ?', resetData)">⚠️ Supprimer la base locale</button>
-            </div>
-            
-            <!-- FIX HTML : Bouton déconnexion déplacé ICI -->
-            <button class="warning" style="width: 100%; margin-top: 15px;" onclick="handleLogout()">🚪 Se déconnecter</button>
-        </div>
+                
+                <div class="card">
+                    <div id="quiz-progress" style="color: var(--text-muted); font-weight: bold; margin-bottom: 5px;" aria-live="polite"></div>
+                    <div id="quiz-tags-display" style="margin-bottom: 20px; color: var(--secondary); font-size: 0.85em;"></div>
+                    <h2 id="quiz-question" style="font-size: 1.4em; line-height: 1.4;"></h2>
+                    <div id="quiz-options"></div>
+                    
+                    <button id="validate-btn" style="width: 100%; margin-top: 25px;" onclick="validateAnswer()">Valider la réponse</button>
+                    <button id="gr20-next-btn" class="hidden" style="width: 100%; margin-top: 25px; background-color: var(--warning); color: #000;" onclick="nextGR20Question()">Étape suivante →</button>
 
+                    <div id="explanation-box" class="hidden">
+                        <strong style="color: var(--primary);">Correction & Explication :</strong>
+                        <p id="explanation-text" style="margin-top: 10px; line-height: 1.5;"></p>
+                    </div>
+
+                    <div id="sm2-eval-box" class="hidden" style="margin-top: 25px; padding-top: 15px; border-top: 1px solid var(--surface-light);">
+                        <p id="sm2-eval-title" style="text-align: center; color: var(--text-muted); font-weight: bold; margin-bottom: 15px;">Évalue ta facilité à répondre pour planifier la prochaine révision :</p>
+                        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                            <button id="btn-next-wrong" class="sm2-btn danger" onclick="submitSM2(0)">À revoir<br><small>10 min</small></button>
+                            <button id="btn-sm2-3" class="sm2-btn warning" onclick="submitSM2(3)">Difficile<br><small id="sm2-text-3"></small></button>
+                            <button id="btn-sm2-4" class="sm2-btn success" onclick="submitSM2(4)">Bien<br><small id="sm2-text-4"></small></button>
+                            <button id="btn-sm2-5" class="sm2-btn primary" onclick="submitSM2(5)">Facile<br><small id="sm2-text-5"></small></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RÉSULTATS -->
+            <div id="results-view" class="view hidden">
+                <div class="card" style="text-align: center;">
+                    <h1 id="results-title">🏁 Bilan de la session</h1>
+                    <h2 style="font-size: 2.5em; margin: 10px 0;">Score : <span id="final-score" style="color: var(--primary);">0</span> / <span id="final-total">0</span></h2>
+                    <div id="xp-gained" style="color: var(--success); font-weight: bold; margin-bottom: 20px; font-size: 1.2em;">+ 0 XP</div>
+                    <div id="validation-msg" class="hidden" style="color: var(--success); font-weight: bold; margin-bottom: 15px;">🏆 Matière validée pour aujourd'hui !</div>
+                    <button id="btn-export-markdown" class="secondary hidden" style="margin-bottom: 20px; width: 100%;" onclick="exportMarkdownToClipboard()">📋 Copier le Cahier d'Erreurs</button>
+                    <button onclick="showView('home-view')">Retour à l'accueil</button>
+                </div>
+            </div>
+
+            <!-- STATISTIQUES -->
+            <div id="profile-view" class="view hidden">
+                <h1>📊 Tableau de Bord Analytique</h1>
+                <div class="dashboard-grid" id="global-stats-container"></div>
+                <div class="dashboard-grid">
+                    <div class="card" style="margin: 0;">
+                        <h3 style="color: var(--success);">✅ Maîtrise absolue</h3>
+                        <p style="font-size: 0.85em; color: var(--text-muted); margin-top: -5px;">Questions toujours réussies (>80%, min. 2 essais)</p>
+                        <div id="strong-questions-list" class="question-list-mini"></div>
+                    </div>
+                    <div class="card" style="margin: 0;">
+                        <h3 style="color: var(--danger);">❌ Points de friction</h3>
+                        <p style="font-size: 0.85em; color: var(--text-muted); margin-top: -5px;">Questions problématiques (<50%, min. 2 essais)</p>
+                        <div id="weak-questions-list" class="question-list-mini"></div>
+                    </div>
+                </div>
+                <h2 style="margin-top: 30px;">Maîtrise par chapitre</h2>
+                <div id="tag-stats-container" class="card"></div>
+                <h2 style="margin-top: 30px;">Progression par matière</h2>
+                <div id="profile-content"></div>
+            </div>
+
+            <!-- MON PROFIL (Nouveau) -->
+            <div id="user-profile-view" class="view hidden">
+                <h1>👤 Mon Profil</h1>
+                <div class="card" style="max-width: 500px; margin: 0 auto;">
+                    <p style="color: var(--text-muted); margin-bottom: 20px;">Modifie tes informations personnelles de connexion.</p>
+                    
+                    <label style="font-size: 0.9em; font-weight: bold;">Adresse Email :</label>
+                    <input type="email" id="profile-email" placeholder="Ton email...">
+                    
+                    <label style="font-size: 0.9em; font-weight: bold;">Nouveau mot de passe (optionnel) :</label>
+                    <input type="password" id="profile-password" placeholder="Laisser vide pour ne pas modifier">
+                    
+                    <button style="width: 100%; margin-top: 10px;" onclick="updateUserProfile()">Enregistrer les modifications</button>
+                    
+                    <hr style="border: 0; border-top: 1px solid var(--surface-light); margin: 25px 0;">
+                    <button class="danger" style="width: 100%;" onclick="handleLogout()">🚪 Se déconnecter</button>
+                </div>
+            </div>
+
+            <!-- PARAMÈTRES -->
+            <div id="settings-view" class="view hidden">
+                <h1>⚙️ Paramètres & Données</h1>
+                <div class="card">
+                    <h3>Sauvegarde Locale (Temporaire)</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9em;">Exporte ta base pour ne rien perdre pendant le développement.</p>
+                    <div style="display: flex; gap: 15px; align-items: center; margin-bottom: 20px; flex-wrap: wrap;">
+                        <button onclick="exportData()">📥 Exporter (JSON)</button>
+                        <input type="file" id="import-file" accept=".json" onchange="importData(event)" style="margin: 0; flex: 1; min-width: 200px;">
+                    </div>
+                    <button class="danger" style="width: 100%;" onclick="customConfirm('Danger', 'Suppression de toute ta base locale. Es-tu certain ?', resetData)">⚠️ Supprimer la base locale</button>
+                </div>
+            </div>
+
+        </div>
     </div>
 
     <script src="data.js"></script>
