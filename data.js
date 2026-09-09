@@ -1,0 +1,3538 @@
+const defaultData = {
+    "Algèbre 2 : Chapitre 1 (Matrices)": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            // --- BLOC 1 : DÉFINITIONS ET FONDATIONS (Questions 1 à 10) ---
+            {
+                type: "qcm", tags: ["Définitions"],
+                q: "Comment note-t-on l'ensemble des matrices à $n$ lignes et $p$ colonnes à coefficients réels ?",
+                options: [
+                    { text: "$\\mathcal{M}_{p,n}(\\mathbb{R})$", isCorrect: false },
+                    { text: "$\\mathcal{M}_{n,p}(\\mathbb{R})$", isCorrect: true },
+                    { text: "$\\mathbb{R}^{n \\times p}$", isCorrect: false }
+                ],
+                explanation: "L'indice de ligne $n$ s'écrit toujours en premier, suivi de l'indice de colonne $p$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions"],
+                q: "Une matrice carrée $A$ est dite triangulaire supérieure si :",
+                options: [
+                    { text: "Pour tout $i > j$, on a $a_{ij} = 0$", isCorrect: true },
+                    { text: "Pour tout $i < j$, on a $a_{ij} = 0$", isCorrect: false },
+                    { text: "Tous les termes de la diagonale sont nuls", isCorrect: false }
+                ],
+                explanation: "Dans une matrice triangulaire supérieure, tous les termes situés strictement sous la diagonale (là où l'indice de ligne $i$ est plus grand que l'indice de colonne $j$) sont nuls[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions"],
+                q: "Qu'est-ce qu'une matrice scalaire ?",
+                options: [
+                    { text: "Une matrice composée d'un seul réel", isCorrect: false },
+                    { text: "Une matrice diagonale dont tous les coefficients diagonaux sont égaux à un même scalaire $\\lambda$", isCorrect: true },
+                    { text: "Une matrice dont le déterminant est $\\lambda$", isCorrect: false }
+                ],
+                explanation: "Une matrice scalaire s'écrit $\\lambda I_n$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions"],
+                q: "Quelle est la particularité d'une matrice élémentaire $E_{kl}$ ?",
+                options: [
+                    { text: "Tous ses coefficients valent 1.", isCorrect: false },
+                    { text: "Elle a des 1 sur la diagonale et des 0 ailleurs.", isCorrect: false },
+                    { text: "Son coefficient $e_{kl}$ vaut 1, et tous les autres sont nuls.", isCorrect: true }
+                ],
+                explanation: "Un seul coefficient vaut 1 à la position $(k,l)$, permettant d'isoler des lignes ou colonnes lors de multiplications[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions"],
+                q: "Vrai ou Faux : La matrice nulle $O_{n,p}$ est obligatoirement une matrice carrée.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "La matrice nulle existe pour tout format $n \\times p$, elle n'est pas restreinte aux matrices carrées[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Produit matriciel"],
+                q: "À quelle condition stricte le produit matriciel $AB$ est-il défini ?",
+                options: [
+                    { text: "Les deux matrices doivent être carrées", isCorrect: false },
+                    { text: "Le nombre de colonnes de $A$ doit être égal au nombre de lignes de $B$", isCorrect: true },
+                    { text: "Le nombre de lignes de $A$ doit être égal au nombre de colonnes de $B$", isCorrect: false }
+                ],
+                explanation: "Si $A \\in \\mathcal{M}_{p,n}$ et $B \\in \\mathcal{M}_{n,q}$, l'indice de liaison $n$ doit correspondre[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Produit matriciel"],
+                q: "Comment peut-on interpréter géométriquement le produit d'une matrice $A$ par un vecteur-colonne $X$ ?",
+                options: [
+                    { text: "Une combinaison linéaire des lignes de $A$", isCorrect: false },
+                    { text: "Une combinaison linéaire des colonnes de $A$, pondérée par les composantes de $X$", isCorrect: true }
+                ],
+                explanation: "C'est une vision fondamentale en algèbre : $AX = x_1 C_1 + \\dots + x_p C_p$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Produit matriciel"],
+                q: "Si $AB = AC$, a-t-on le droit d'écrire $B = C$ ?",
+                options: [
+                    { text: "Oui, toujours", isCorrect: false },
+                    { text: "Non, sauf si $A$ est une matrice inversible", isCorrect: true },
+                    { text: "Non, jamais", isCorrect: false }
+                ],
+                explanation: "L'anneau des matrices admet des diviseurs de zéro. On ne peut simplifier à gauche que si l'on multiplie par $A^{-1}$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Produit matriciel"],
+                q: "Coche les propriétés VRAIES du produit matriciel :",
+                options: [
+                    { text: "Il est commutatif ($AB = BA$)", isCorrect: false },
+                    { text: "Il est associatif ($A(BC) = (AB)C$)", isCorrect: true },
+                    { text: "Il est distributif par rapport à l'addition ($A(B+D) = AB+AD$)", isCorrect: true },
+                    { text: "$AI_n = A$ et $I_pA = A$", isCorrect: true }
+                ],
+                explanation: "Le produit n'est pas commutatif. Il est en revanche associatif, distributif, et admet la matrice identité comme élément neutre[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Produit matriciel", "Identités remarquables"],
+                q: "Si $A$ et $B$ sont deux matrices carrées d'ordre $n$, peut-on écrire $(A-B)(A+B) = A^2 - B^2$ ?",
+                options: [
+                    { text: "Oui, toujours", isCorrect: false },
+                    { text: "Non, en général cela donne $A^2 + AB - BA - B^2$", isCorrect: true }
+                ],
+                explanation: "Comme le produit matriciel n'est pas commutatif, les termes croisés $AB$ et $-BA$ ne s'annulent pas automatiquement[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- BLOC 2 : TRANSPOSITION, TRACE ET SYMÉTRIE (Questions 11 à 20) ---
+            {
+                type: "qcm", tags: ["Transposition & Trace"],
+                q: "Que vaut la transposée d'un produit, $(AB)^T$ ?",
+                options: [
+                    { text: "$A^T B^T$", isCorrect: false },
+                    { text: "$B^T A^T$", isCorrect: true },
+                    { text: "$-(AB)$", isCorrect: false }
+                ],
+                explanation: "La transposition renverse l'ordre du produit : $(AB)^T = B^T A^T$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Transposition & Trace"],
+                q: "Pour toute matrice $A \\in \\mathcal{M}_{n,p}(\\mathbb{R})$, la matrice produit $A(A^T)$ est obligatoirement :",
+                options: [
+                    { text: "Antisymétrique", isCorrect: false },
+                    { text: "Symétrique", isCorrect: true },
+                    { text: "Diagonale", isCorrect: false }
+                ],
+                explanation: "En transposant le produit, on obtient $(A A^T)^T = (A^T)^T A^T = A A^T$. Elle est donc égale à sa propre transposée[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Transposition & Trace"],
+                q: "Soit $X$ une matrice colonne à coefficients réels. Si $X^T X = 0$, que peut-on en déduire ?",
+                options: [
+                    { text: "Que $X = 0$ obligatoirement", isCorrect: true },
+                    { text: "Rien, c'est possible avec des matrices non nulles", isCorrect: false }
+                ],
+                explanation: "$X^T X$ correspond à la somme des carrés des coefficients de $X$. Une somme de carrés réels est nulle si et seulement si tous les coefficients sont nuls[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Transposition & Trace"],
+                q: "Coche les propriétés exactes concernant la Trace :",
+                options: [
+                    { text: "$Tr(A+B) = Tr(A) + Tr(B)$", isCorrect: true },
+                    { text: "$Tr(\\lambda A) = \\lambda Tr(A)$", isCorrect: true },
+                    { text: "$Tr(A^T) = Tr(A)$", isCorrect: true },
+                    { text: "$Tr(AB) = Tr(BA)$", isCorrect: true },
+                    { text: "$Tr(AB) = Tr(A) \\times Tr(B)$", isCorrect: false }
+                ],
+                explanation: "La trace est linéaire, invariante par transposition, et possède la propriété de commutativité circulaire $Tr(AB) = Tr(BA)$. Elle n'est PAS multiplicative[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Transposition & Trace", "Symétrie & Antisymétrie"],
+                q: "Soit $A$ une matrice symétrique non nulle. Que peut-on dire de $Tr(A^2)$ ?",
+                options: [
+                    { text: "Elle est nulle", isCorrect: false },
+                    { text: "Elle est strictement positive", isCorrect: true },
+                    { text: "On ne peut rien affirmer", isCorrect: false }
+                ],
+                explanation: "Les coefficients diagonaux de $A^2$ pour une matrice symétrique sont les sommes des carrés des éléments de chaque ligne. Puisque $A \\neq 0$, cette somme de carrés est $> 0$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Symétrie & Antisymétrie"],
+                q: "Une matrice carrée est dite antisymétrique si :",
+                options: [
+                    { text: "$A^T = -A$", isCorrect: true },
+                    { text: "$A^T = A$", isCorrect: false },
+                    { text: "Sa trace est nulle", isCorrect: false }
+                ],
+                explanation: "L'antisymétrie se traduit par $A^T = -A$, ce qui implique obligatoirement des zéros sur sa diagonale principale[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Symétrie & Antisymétrie"],
+                q: "Soit $M$ une matrice carrée quelconque. Il existe un unique couple $(S, A)$ (S symétrique, A antisymétrique) tel que $M = S + A$. Comment s'écrit $S$ ?",
+                options: [
+                    { text: "$S = \\frac{1}{2}(M - M^T)$", isCorrect: false },
+                    { text: "$S = \\frac{1}{2}(M + M^T)$", isCorrect: true },
+                    { text: "$S = M^T M$", isCorrect: false }
+                ],
+                explanation: "C'est la décomposition classique : la partie symétrique est $\\frac{1}{2}(M + M^T)$ et la partie antisymétrique est $\\frac{1}{2}(M - M^T)$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Symétrie & Antisymétrie"],
+                q: "Si $A$ est une matrice symétrique, que peut-on dire de $A^2$ ?",
+                options: [
+                    { text: "Elle est symétrique", isCorrect: true },
+                    { text: "Elle est antisymétrique", isCorrect: false },
+                    { text: "Elle est diagonale", isCorrect: false }
+                ],
+                explanation: "$(A^2)^T = (AA)^T = A^T A^T$. Puisque $A$ est symétrique ($A^T = A$), on obtient $A A = A^2$, donc $A^2$ est symétrique[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Symétrie & Antisymétrie"],
+                q: "Une matrice symétrique non nulle peut-elle être nilpotente ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non", isCorrect: true }
+                ],
+                explanation: "Non. Si $A$ est symétrique et $A \\neq 0$, on a vu que $Tr(A^2) > 0$, donc $A^2 \\neq 0$. Ce raisonnement interdit à $A^k$ de s'annuler[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Puissances & Nilpotence"],
+                q: "Qu'est-ce qu'une matrice nilpotente ?",
+                options: [
+                    { text: "Une matrice dont la trace est nulle", isCorrect: false },
+                    { text: "Une matrice $A$ telle qu'il existe un entier $k \\ge 1$ vérifiant $A^k = 0_n$", isCorrect: true },
+                    { text: "Une matrice sans inverse", isCorrect: false }
+                ],
+                explanation: "Une matrice est nilpotente si une puissance finie de celle-ci donne la matrice nulle[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- BLOC 3 : PUISSANCES ET INVERSIBILITÉ (Questions 21 à 30) ---
+            {
+                type: "qcm", tags: ["Puissances & Nilpotence"],
+                q: "Soit $A$ une matrice nilpotente. Comment définit-on son \"indice de nilpotence\" $p$ ?",
+                options: [
+                    { text: "Le plus grand entier $p$ tel que $A^p = 0$", isCorrect: false },
+                    { text: "Le plus petit entier $p$ tel que $A^p = 0$ (avec $A^{p-1} \\neq 0$)", isCorrect: true }
+                ],
+                explanation: "L'indice de nilpotence marque la première puissance pour laquelle la matrice s'annule définitivement[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Puissances & Nilpotence"],
+                q: "Sous quelle condition stricte peut-on utiliser la formule du binôme $(A+B)^n = \\sum \\binom{n}{k} A^k B^{n-k}$ ?",
+                options: [
+                    { text: "Si $A$ et $B$ sont inversibles", isCorrect: false },
+                    { text: "Si $A$ et $B$ commutent ($AB = BA$)", isCorrect: true },
+                    { text: "Toujours", isCorrect: false }
+                ],
+                explanation: "Sans la commutativité $AB = BA$, les termes croisés comme $AB$ et $BA$ ne peuvent pas être regroupés en $2AB$ lors du développement[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Puissances & Nilpotence"],
+                q: "On donne $C = 2A + I_n$. Quel est le développement correct de $C^p$ ?",
+                options: [
+                    { text: "$\\sum_{k=0}^{p} \\binom{p}{k} 2^k A^k$", isCorrect: true },
+                    { text: "$\\sum_{k=0}^{p} \\binom{p}{k} 2^p A^p$", isCorrect: false },
+                    { text: "$2^p A^p + I_n$", isCorrect: false }
+                ],
+                explanation: "$A$ et $I_n$ commutent. On applique la formule du binôme : $\\sum \\binom{p}{k} (2A)^k I_n^{p-k} = \\sum \\binom{p}{k} 2^k A^k$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Puissances & Nilpotence"],
+                q: "Soit la matrice de rotation $A = \\begin{pmatrix} \\cos(\\theta) & -\\sin(\\theta) \\\\ \\sin(\\theta) & \\cos(\\theta) \\end{pmatrix}$. Que vaut $A^n$ ?",
+                options: [
+                    { text: "$\\begin{pmatrix} \\cos^n(\\theta) & -\\sin^n(\\theta) \\\\ \\sin^n(\\theta) & \\cos^n(\\theta) \\end{pmatrix}$", isCorrect: false },
+                    { text: "$\\begin{pmatrix} \\cos(n\\theta) & -\\sin(n\\theta) \\\\ \\sin(n\\theta) & \\cos(n\\theta) \\end{pmatrix}$", isCorrect: true }
+                ],
+                explanation: "Composer $n$ rotations d'angle $\\theta$ donne une rotation globale d'angle $n\\theta$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Inversibilité"],
+                q: "Vrai ou Faux : Si on trouve une matrice $B$ telle que $AB = I_n$, il faut obligatoirement vérifier que $BA = I_n$ pour prouver que $A$ est inversible.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux. C'est un théorème puissant : pour des matrices carrées d'ordre $n$, si un inverse existe d'un côté ($AB = I_n$), l'égalité de l'autre côté ($BA = I_n$) est automatique[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Inversibilité"],
+                q: "Que vaut l'inverse d'un produit matriciel, $(AB)^{-1}$ ?",
+                options: [
+                    { text: "$A^{-1} B^{-1}$", isCorrect: false },
+                    { text: "$B^{-1} A^{-1}$", isCorrect: true }
+                ],
+                explanation: "L'inverse d'un produit inverse l'ordre des facteurs, tout comme l'opération de transposition[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Inversibilité", "Polynômes d'endomorphismes"],
+                q: "Soit $A$ vérifiant l'équation polynomiale $A^2 + A + I_n = 0$. Que peut-on en déduire ?",
+                options: [
+                    { text: "$A$ n'est pas inversible", isCorrect: false },
+                    { text: "$A$ est inversible et $A^{-1} = -A - I_n$", isCorrect: true },
+                    { text: "$A$ est nilpotente", isCorrect: false }
+                ],
+                explanation: "L'équation se factorise habilement en $A(-A - I_n) = I_n$. On a donc identifié l'inverse formel de $A$, qui est $(-A - I_n)$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Inversibilité"],
+                q: "La somme de deux matrices inversibles est-elle toujours inversible ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non", isCorrect: true }
+                ],
+                explanation: "Le contre-exemple le plus simple est $I_n$ et $-I_n$. Elles sont toutes deux inversibles, mais leur somme $0_n$ ne l'est absolument pas[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Inversibilité"],
+                q: "Vrai ou Faux : Toute matrice de $\\mathcal{M}_n(\\mathbb{R})$ peut s'écrire comme la somme de deux matrices inversibles.",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Vrai. C'est un exercice classique. Pour une matrice $A$ non inversible, il existe toujours un petit $\\epsilon$ tel que $A = (A + \\epsilon I_n) - \\epsilon I_n$, où les deux termes de droite sont inversibles[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Inversibilité", "Puissances & Nilpotence"],
+                q: "Vrai ou Faux : Une matrice nilpotente non nulle peut être inversible.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux. Si $A^k = 0$ et que $A$ était inversible, en multipliant par $(A^{-1})^k$ on trouverait $I_n = 0$, ce qui est absurde en mathématiques[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- BLOC 4 : DÉTERMINANT (Questions 31 à 45) ---
+            {
+                type: "qcm", tags: ["Déterminant (Calculs)"],
+                q: "Quelle est l'interprétation géométrique absolue du déterminant d'une matrice $2 \\times 2$ ?",
+                options: [
+                    { text: "La longueur de la diagonale", isCorrect: false },
+                    { text: "L'aire du parallélogramme formé par les deux vecteurs colonnes", isCorrect: true }
+                ],
+                explanation: "En dimension 2, c'est une aire (base $\\times$ hauteur). En dimension 3, cela devient le volume du parallélépipède formé par les 3 vecteurs colonnes[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Propriétés)"],
+                q: "Que vaut le déterminant de $\\alpha A$, si $A$ est une matrice carrée d'ordre $n$ ?",
+                options: [
+                    { text: "$\\alpha \\cdot det(A)$", isCorrect: false },
+                    { text: "$\\alpha^n \\cdot det(A)$", isCorrect: true },
+                    { text: "$n \\alpha \\cdot det(A)$", isCorrect: false }
+                ],
+                explanation: "Multiplier toute la matrice revient à multiplier CHAQUE colonne par $\\alpha$. Par multilinéarité sur les colonnes, le scalaire sort à la puissance $n$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Propriétés)"],
+                q: "Que se passe-t-il pour le déterminant si j'échange deux colonnes (ou deux lignes) d'une matrice ?",
+                options: [
+                    { text: "Il ne change pas", isCorrect: false },
+                    { text: "Il s'annule", isCorrect: false },
+                    { text: "Il est multiplié par -1 (change de signe)", isCorrect: true }
+                ],
+                explanation: "Le déterminant est une forme alternée. Une permutation (échange) de deux vecteurs renverse l'orientation géométrique et inverse le signe[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Propriétés)"],
+                q: "Que se passe-t-il si j'ajoute à la colonne $C_j$ un multiple d'une autre colonne $C_i$ ($C_j \\leftarrow C_j + \\alpha C_i$) ?",
+                options: [
+                    { text: "Le déterminant est multiplié par $\\alpha$", isCorrect: false },
+                    { text: "Le déterminant change de signe", isCorrect: false },
+                    { text: "Le déterminant NE CHANGE PAS", isCorrect: true }
+                ],
+                explanation: "C'est la propriété fondamentale appelée \"transvection\" permettant d'échelonner une matrice avec la méthode de Gauss sans fausser son déterminant final[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Propriétés)"],
+                q: "Que vaut le déterminant d'une matrice possédant deux colonnes strictement identiques ?",
+                options: [
+                    { text: "1", isCorrect: false },
+                    { text: "0", isCorrect: true },
+                    { text: "On ne peut pas savoir", isCorrect: false }
+                ],
+                explanation: "Puisque le déterminant est une forme alternée, $\\Phi(C_1, .., C_n) = 0$ si deux colonnes sont identiques (le parallélépipède est \"plat\")[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Propriétés)", "Inversibilité"],
+                q: "Si $A$ est une matrice inversible, que vaut $det(A^{-1})$ ?",
+                options: [
+                    { text: "$-det(A)$", isCorrect: false },
+                    { text: "$\\frac{1}{det(A)}$", isCorrect: true }
+                ],
+                explanation: "Comme $det(AB) = det(A)det(B)$, alors on a logiquement $det(A A^{-1}) = det(I_n) = 1$, d'où $det(A^{-1}) = 1/det(A)$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices par blocs", "Déterminant (Propriétés)"],
+                q: "Quel est le déterminant de la matrice triangulaire par blocs $M = \\begin{pmatrix} A & C \\\\ 0 & B \\end{pmatrix}$ ?",
+                options: [
+                    { text: "$det(A) + det(B)$", isCorrect: false },
+                    { text: "$det(A) \\times det(B)$", isCorrect: true },
+                    { text: "$det(A) \\times det(C) \\times det(B)$", isCorrect: false }
+                ],
+                explanation: "Exactement comme pour les matrices triangulaires simples, le bloc $C$ n'affecte pas le déterminant global, qui reste le produit strict des déterminants des blocs diagonaux $A$ et $B$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Calculs)"],
+                q: "Dans la formule générale du déterminant d'ordre $n$, combien de termes sont additionnés (avant simplification) ?",
+                options: [
+                    { text: "$n^2$", isCorrect: false },
+                    { text: "$2^n$", isCorrect: false },
+                    { text: "$n!$ (factorielle n)", isCorrect: true }
+                ],
+                explanation: "La formule utilise toutes les permutations possibles de l'ensemble $\\{1, ..., n\\}$. Il y a $n!$ permutations dans le groupe symétrique $S_n$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Propriétés)"],
+                q: "Soient $A$ et $B$ deux matrices $n \\times n$. Vrai ou Faux : $det(A+B) = det(A) + det(B)$",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux ! C'est une erreur très grave. Le déterminant n'est absolument pas linéaire, il est MULTIlinéaire (linéaire par rapport à chaque colonne isolément)[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Calculs)"],
+                q: "Pour la matrice de Vandermonde $3 \\times 3$ : $\\begin{vmatrix} 1 & 1 & 1 \\\\ a & b & c \\\\ a^2 & b^2 & c^2 \\end{vmatrix}$, quelle est la forme factorisée du déterminant ?",
+                options: [
+                    { text: "$(a-b)(b-c)(c-a)$", isCorrect: false },
+                    { text: "$(b-a)(c-a)(c-b)$", isCorrect: true },
+                    { text: "$a^2 + b^2 + c^2$", isCorrect: false }
+                ],
+                explanation: "C'est un classique des exercices. On soustrait les colonnes pour factoriser les racines évidentes[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Calculs)"],
+                q: "Soit le polynôme $P(x) = det(A + xB)$ où $A$ et $B$ sont des matrices $n \\times n$. Quel est le degré maximal de $P$ ?",
+                options: [
+                    { text: "$2n$", isCorrect: false },
+                    { text: "$n$", isCorrect: true },
+                    { text: "$x^n$", isCorrect: false }
+                ],
+                explanation: "Le déterminant d'une matrice de taille $n$ contenant des $x$ produit un polynôme de degré au plus $n$. Il est exactement de degré $n$ si et seulement si $B$ est inversible[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Calculs)"],
+                q: "Que vaut le déterminant de la matrice identité $I_n$ ?",
+                options: [
+                    { text: "0", isCorrect: false },
+                    { text: "1", isCorrect: true },
+                    { text: "$n$", isCorrect: false }
+                ],
+                explanation: "C'est la première propriété axiomatique de l'application déterminant : $det(I_n) = 1$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices par blocs", "Inversibilité"],
+                q: "Soit la matrice par blocs $M = \\begin{pmatrix} A & I_2 \\\\ 0 & A \\end{pmatrix}$. Quel est le format du bloc $0$ ?",
+                options: [
+                    { text: "C'est le chiffre zéro", isCorrect: false },
+                    { text: "C'est la matrice nulle $O_{2,2}$", isCorrect: true }
+                ],
+                explanation: "Pour que les blocs s'emboîtent avec l'identité $I_2$, le bloc 0 doit être une matrice carrée nulle d'ordre 2[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Inversibilité"],
+                q: "Comment calcule-t-on l'inverse d'une matrice $2 \\times 2$ : $A = \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix}$ ?",
+                options: [
+                    { text: "$\\frac{1}{ad-bc}\\begin{pmatrix} d & -b \\\\ -c & a \\end{pmatrix}$", isCorrect: true },
+                    { text: "$\\frac{1}{ad-bc}\\begin{pmatrix} a & -c \\\\ -b & d \\end{pmatrix}$", isCorrect: false }
+                ],
+                explanation: "On permute la diagonale principale, on oppose l'antidiagonale, et on divise par le déterminant[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Déterminant (Calculs)", "Systèmes linéaires & Cramer"],
+                q: "Que stipule la Règle de Sarrus ?",
+                options: [
+                    { text: "C'est une méthode visuelle valable UNIQUEMENT pour calculer les déterminants d'ordre 3", isCorrect: true },
+                    { text: "C'est une méthode pour inverser une matrice de n'importe quelle taille", isCorrect: false }
+                ],
+                explanation: "La règle de Sarrus (diagonales descendantes moins diagonales montantes) ne s'applique qu'en dimension 3. L'utiliser en dimension 4 est une erreur fatale[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- BLOC 5 : SYSTÈMES ET RANG (Questions 46 à 60) ---
+            {
+                type: "qcm", tags: ["Systèmes linéaires & Cramer"],
+                q: "Qu'appelle-t-on un système de Cramer ?",
+                options: [
+                    { text: "Un système homogène", isCorrect: false },
+                    { text: "Un système ayant autant d'équations que d'inconnues et admettant une solution unique", isCorrect: true },
+                    { text: "Un système indéterminé", isCorrect: false }
+                ],
+                explanation: "Un système de Cramer est défini par une matrice carrée dont le déterminant est non nul, ce qui garantit l'unicité mathématique de la solution[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Systèmes linéaires & Cramer"],
+                q: "Que représente $X$ dans l'écriture matricielle d'un système $AX = B$ ?",
+                options: [
+                    { text: "La matrice des coefficients", isCorrect: false },
+                    { text: "La colonne des inconnues", isCorrect: true },
+                    { text: "Le second membre", isCorrect: false }
+                ],
+                explanation: "$A$ rassemble les coefficients, $X$ les inconnues ($x_1, \\dots, x_p$), et $B$ les constantes du second membre[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Systèmes linéaires & Cramer"],
+                q: "Combien de solutions un système linéaire homogène ($AX=0$) possède-t-il au minimum ?",
+                options: [
+                    { text: "Zéro", isCorrect: false },
+                    { text: "Au moins une (la solution triviale)", isCorrect: true },
+                    { text: "Une infinité", isCorrect: false }
+                ],
+                explanation: "Le vecteur nul $X=0$ vérifie toujours $A \\times 0 = 0$. Un système homogène n'est donc JAMAIS impossible[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang & Échelonnement"],
+                q: "Comment définit-on le rang d'une matrice $A$ ($rg(A)$) après échelonnement ?",
+                options: [
+                    { text: "C'est le nombre de colonnes", isCorrect: false },
+                    { text: "C'est le nombre de lignes non nulles (ou pivots) d'une réduite échelonnée de $A$", isCorrect: true },
+                    { text: "C'est le nombre de zéros générés", isCorrect: false }
+                ],
+                explanation: "Le rang est un invariant algébrique profond : il correspond au nombre de pivots non nuls à la fin de l'algorithme de Gauss[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang & Échelonnement"],
+                q: "Soit $A \\in \\mathcal{M}_{n,p}(\\mathbb{R})$. Quelle est la majoration absolue du rang de $A$ ?",
+                options: [
+                    { text: "$rg(A) \\le n \\times p$", isCorrect: false },
+                    { text: "$rg(A) \\le \\min(n,p)$", isCorrect: true },
+                    { text: "Il n'y a pas de limite", isCorrect: false }
+                ],
+                explanation: "Le rang d'une matrice ne peut excéder ni son nombre de lignes $n$, ni son nombre de colonnes $p$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang & Échelonnement", "Inversibilité"],
+                q: "Quelle est la relation entre le rang et l'inversibilité d'une matrice carrée d'ordre $n$ ?",
+                options: [
+                    { text: "Elle est inversible si $rg(A) = 0$", isCorrect: false },
+                    { text: "Elle est inversible si et seulement si $rg(A) = n$", isCorrect: true }
+                ],
+                explanation: "Une matrice carrée d'ordre $n$ est inversible si et seulement si elle est de rang maximal (on dit \"rang plein\")[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang & Échelonnement"],
+                q: "Qu'est-ce qu'une matrice échelonnée en lignes ?",
+                options: [
+                    { text: "Une matrice où chaque ligne commence par plus de zéros que la précédente (marches d'escalier)", isCorrect: true },
+                    { text: "Une matrice dont la diagonale est nulle", isCorrect: false }
+                ],
+                explanation: "Le premier élément non nul d'une ligne (le pivot) doit être situé strictement à droite du pivot de la ligne du dessus[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang & Échelonnement"],
+                q: "Vrai ou Faux : Deux systèmes linéaires sont dits équivalents s'ils ont exactement le même ensemble de solutions.",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "C'est la définition même de l'équivalence. Les opérations élémentaires de Gauss préservent l'ensemble des solutions[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang & Échelonnement"],
+                q: "Parmi ces opérations, laquelle est AUTORISÉE lors de la méthode du pivot de Gauss ($L_i$ étant la ligne $i$) ?",
+                options: [
+                    { text: "$L_i \\leftarrow L_i^2$", isCorrect: false },
+                    { text: "$L_i \\leftarrow aL_i + bL_j$ (avec $a \\neq 0$)", isCorrect: true },
+                    { text: "Diviser par zéro", isCorrect: false }
+                ],
+                explanation: "On peut remplacer une ligne par une combinaison linéaire d'elle-même (coefficient non nul) et d'une autre ligne[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Systèmes linéaires & Cramer"],
+                q: "Soit $A$ une matrice. Le noyau de $A$, $Ker(A)$, correspond à :",
+                options: [
+                    { text: "L'ensemble des matrices colonnes $Y$ telles que $AX = Y$", isCorrect: false },
+                    { text: "L'ensemble des matrices colonnes $X$ vérifiant $AX = 0_{n,1}$", isCorrect: true }
+                ],
+                explanation: "Le noyau d'une matrice correspond à l'ensemble exact des solutions du système linéaire homogène qui lui est associé[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Systèmes linéaires & Cramer"],
+                q: "Le vecteur nul $0$ appartient-il au noyau d'une matrice $A$ ?",
+                options: [
+                    { text: "Oui, toujours", isCorrect: true },
+                    { text: "Non, jamais", isCorrect: false },
+                    { text: "Seulement si $A$ est inversible", isCorrect: false }
+                ],
+                explanation: "Puisque $A \\times 0 = 0$, le vecteur nul vérifie toujours l'équation et appartient donc inconditionnellement à $Ker(A)$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Systèmes linéaires & Cramer"],
+                q: "Comment interpréter l'appartenance d'un vecteur $X$ au noyau $Ker(A)$ en fonction des colonnes $C_j$ de $A$ ?",
+                options: [
+                    { text: "La somme des colonnes est nulle", isCorrect: false },
+                    { text: "La combinaison linéaire $x_1 C_1 + \\dots + x_p C_p$ est égale au vecteur nul", isCorrect: true }
+                ],
+                explanation: "C'est une astuce vitale pour repérer le noyau à vue d'œil : $AX=0$ signifie que les colonnes sont linéairement liées avec les poids $x_i$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Systèmes linéaires & Cramer"],
+                q: "Comment définit-on l'Image d'une matrice $A$, notée $Im(A)$ ?",
+                options: [
+                    { text: "L'ensemble des matrices colonnes $Y$ telles qu'il existe $X$ vérifiant $AX = Y$", isCorrect: true },
+                    { text: "L'ensemble des matrices colonnes $X$ vérifiant $AX = 0$", isCorrect: false }
+                ],
+                explanation: "L'image est l'ensemble des seconds membres $Y$ pour lesquels le système $AX=Y$ admet au moins une solution[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Systèmes linéaires & Cramer"],
+                q: "Lorsqu'on cherche à déterminer $Im(A)$ par la méthode de Gauss, que fait-on du second membre $(a, b, c)$ ?",
+                options: [
+                    { text: "On le remplace par des zéros", isCorrect: false },
+                    { text: "On lui applique rigoureusement les mêmes opérations sur les lignes qu'à la matrice $A$", isCorrect: true }
+                ],
+                explanation: "L'image correspond aux conditions de compatibilité. Il faut impérativement répercuter les opérations de pivot sur le second membre abstrait pour voir à quelle condition la dernière ligne s'annule[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Systèmes linéaires & Cramer"],
+                q: "Si la matrice $A$ d'un système possède un rang strictement inférieur à son nombre de colonnes ($r < p$), que se passe-t-il pour le système homogène associé ?",
+                options: [
+                    { text: "Il n'admet aucune solution", isCorrect: false },
+                    { text: "Il est indéterminé (il admet une infinité de solutions)", isCorrect: true }
+                ],
+                explanation: "Il y aura des \"inconnues secondaires\" (paramètres libres), ce qui génère une infinité de solutions et empêche le noyau d'être réduit à $\\{0\\}$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            }
+        ]
+    },
+    "Algèbre 2 : Chapitre 2 (systèmes linéaires)": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            {
+                type: "qcm", tags: ["Définitions", "Solutions"],
+                q: "Combien de solutions un système linéaire à coefficients réels peut-il posséder ?",
+                options: [
+                    { text: "Soit 0, soit 1, soit exactement 2", isCorrect: false },
+                    { text: "Soit 0 (impossible), soit 1 (unique), soit une infinité (indéterminé)", isCorrect: true },
+                    { text: "Toujours au moins une solution", isCorrect: false }
+                ],
+                explanation: "Un système linéaire n'a que trois issues possibles. Il est mathématiquement impossible d'avoir exactement un nombre fini de solutions strictement supérieur à 1[cite: 1, 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions", "Équivalence"],
+                q: "Que signifie rigoureusement que deux systèmes linéaires sont dits « équivalents » ?",
+                options: [
+                    { text: "Ils ont la même matrice associée", isCorrect: false },
+                    { text: "Ils ont exactement le même ensemble de solutions", isCorrect: true },
+                    { text: "Ils ont le même nombre d'équations et d'inconnues", isCorrect: false }
+                ],
+                explanation: "L'équivalence des systèmes repose uniquement sur l'égalité de leur ensemble de solutions. C'est le principe qui valide la méthode de Gauss[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Cramer"],
+                q: "Un système linéaire est qualifié de « système de Cramer » si :",
+                options: [
+                    { text: "Il possède plus d'équations que d'inconnues", isCorrect: false },
+                    { text: "Il est homogène (second membre nul)", isCorrect: false },
+                    { text: "Il possède autant d'équations que d'inconnues ($n=p$) et admet une solution unique", isCorrect: true }
+                ],
+                explanation: "Un système de Cramer est un système carré dont la matrice est inversible (déterminant non nul), ce qui garantit l'existence et l'unicité de la solution[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Méthode de Gauss", "Échelonnement"],
+                q: "Qu'est-ce qu'une matrice « échelonnée en lignes » ?",
+                options: [
+                    { text: "Une matrice dont les coefficients de la diagonale valent 1", isCorrect: false },
+                    { text: "Une matrice où chaque ligne commence par plus de zéros que la précédente, formant un escalier vers la droite", isCorrect: true },
+                    { text: "Une matrice qui ne contient aucune ligne nulle", isCorrect: false }
+                ],
+                explanation: "Dans une matrice échelonnée, le premier élément non nul de chaque ligne (le pivot) est situé strictement à droite du pivot de la ligne du dessus. De plus, si une ligne est nulle, toutes les suivantes le sont aussi[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Méthode de Gauss", "Opérations"],
+                q: "Lors de la méthode du pivot de Gauss, à quelle condition l'opération sur les lignes $L_i \\leftarrow aL_i + bL_j$ produit-elle un système équivalent ?",
+                options: [
+                    { text: "Il faut que $a \\neq 0$", isCorrect: true },
+                    { text: "Il faut que $b \\neq 0$", isCorrect: false },
+                    { text: "Il faut que $a = 1$", isCorrect: false }
+                ],
+                explanation: "Pour garantir la réversibilité de l'opération (et donc l'équivalence du système), le coefficient multiplicateur $a$ de la ligne modifiée $L_i$ ne doit absolument pas être nul[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang", "Définitions"],
+                q: "Comment détermine-t-on le rang d'une matrice $A$ ($rg(A)$) via la méthode de Gauss ?",
+                options: [
+                    { text: "C'est le nombre de colonnes de la matrice", isCorrect: false },
+                    { text: "C'est le nombre de lignes non nulles (ou nombre de pivots) d'une réduite échelonnée de $A$", isCorrect: true },
+                    { text: "C'est le produit des éléments de la diagonale", isCorrect: false }
+                ],
+                explanation: "Le rang est invariant par opérations sur les lignes. Il correspond au nombre d'échelons (pivots non nuls) de la matrice une fois totalement échelonnée[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang", "Théorèmes"],
+                q: "Soit $A \\in \\mathcal{M}_{n,p}(\\mathbb{R})$. Quelles sont les bornes supérieures du rang de $A$ ?",
+                options: [
+                    { text: "$rg(A) \\le n \\times p$", isCorrect: false },
+                    { text: "$rg(A) \\le n$ et $rg(A) \\le p$", isCorrect: true },
+                    { text: "$rg(A) = \\max(n,p)$", isCorrect: false }
+                ],
+                explanation: "Le rang d'une matrice ne peut excéder ni le nombre de ses lignes, ni le nombre de ses colonnes. On écrit souvent $rg(A) \\le \\min(n,p)$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Inversibilité", "Méthode de Gauss"],
+                q: "D'après la méthode de Gauss, une matrice carrée $A$ d'ordre $n$ est inversible si et seulement si :",
+                options: [
+                    { text: "Sa réduite échelonnée est une matrice diagonale avec des zéros", isCorrect: false },
+                    { text: "Sa réduite échelonnée est une triangulaire supérieure sans aucun zéro sur sa diagonale (soit $rg(A)=n$)", isCorrect: true },
+                    { text: "Son rang est strictement inférieur à $n$", isCorrect: false }
+                ],
+                explanation: "Une matrice carrée inversible est une matrice de rang plein. Tous ses pivots doivent être non nuls à l'issue de l'échelonnement[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Inversibilité", "Méthode de Gauss"],
+                q: "Comment procède-t-on concrètement pour inverser une matrice $A$ avec la méthode de Gauss ?",
+                options: [
+                    { text: "On divise $1$ par chaque coefficient de $A$", isCorrect: false },
+                    { text: "On juxtapose $A$ et la matrice identité $I_n$, puis on échelonne jusqu'à obtenir $I_n$ à gauche. La matrice de droite est alors $A^{-1}$", isCorrect: true }
+                ],
+                explanation: "On écrit la matrice augmentée $(A | I_n)$. En appliquant les opérations sur les lignes pour transformer $A$ en $I_n$, ces mêmes opérations transforment $I_n$ en $A^{-1}$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Noyau", "Définitions"],
+                q: "Soit $A \\in \\mathcal{M}_{n,p}(\\mathbb{R})$. Comment définit-on algébriquement le noyau $Ker(A)$ ?",
+                options: [
+                    { text: "L'ensemble des matrices colonnes $Y \\in \\mathcal{M}_{n,1}(\\mathbb{R})$ telles qu'il existe $X$ vérifiant $AX=Y$", isCorrect: false },
+                    { text: "L'ensemble des matrices colonnes $X \\in \\mathcal{M}_{p,1}(\\mathbb{R})$ vérifiant $AX = 0_{n,1}$", isCorrect: true }
+                ],
+                explanation: "Le noyau correspond à l'espace des solutions du système linéaire homogène associé à la matrice $A$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Noyau", "Combinaisons Linéaires"],
+                q: "Quelle est l'interprétation du noyau $Ker(A)$ en termes de combinaisons linéaires des colonnes de $A$ (notées $C_1, \\dots, C_p$) ?",
+                options: [
+                    { text: "Dire que $X \\in Ker(A)$ revient à dire que la combinaison $x_1 C_1 + \\dots + x_p C_p$ est égale au vecteur nul", isCorrect: true },
+                    { text: "Dire que $X \\in Ker(A)$ signifie que toutes les colonnes de $A$ sont nulles", isCorrect: false }
+                ],
+                explanation: "C'est une astuce vitale pour repérer des éléments du noyau à vue d'œil. Si la colonne 2 est l'opposée de la colonne 1, alors $C_1 + C_2 = 0$, donc le vecteur $(1, 1, 0, \\dots)$ est dans $Ker(A)$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Image", "Définitions"],
+                q: "Soit $A \\in \\mathcal{M}_{n,p}(\\mathbb{R})$. Comment définit-on l'Image $Im(A)$ ?",
+                options: [
+                    { text: "L'ensemble des matrices colonnes $Y$ telles qu'il existe une matrice colonne $X$ vérifiant $AX = Y$", isCorrect: true },
+                    { text: "L'ensemble des solutions de $AX = 0$", isCorrect: false }
+                ],
+                explanation: "L'image est l'ensemble des seconds membres $Y$ pour lesquels le système $AX=Y$ est compatible (admet au moins une solution)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Image", "Méthode de Gauss"],
+                q: "Pour déterminer des équations définissant l'Image $Im(A)$ par la méthode de Gauss, que doit-on faire ?",
+                options: [
+                    { text: "Résoudre $AX=0$", isCorrect: false },
+                    { text: "Poser $AX = Y$ avec $Y=(a,b,c)^T$, échelonner la matrice augmentée, et imposer que les expressions en face des lignes nulles soient égales à zéro", isCorrect: true }
+                ],
+                explanation: "Si l'échelonnement génère une ligne de zéros dans la partie gauche, la partie droite (qui est une combinaison des paramètres $a, b, c$) doit obligatoirement être nulle pour que le système ait une solution[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Indétermination", "Solutions"],
+                q: "Si la réduite échelonnée d'un système possède un nombre de pivots $r$ strictement inférieur au nombre d'inconnues $p$, et que le système est homogène ($B=0$), que peut-on affirmer ?",
+                options: [
+                    { text: "Le système est impossible", isCorrect: false },
+                    { text: "Le système admet une unique solution", isCorrect: false },
+                    { text: "Le système est indéterminé (il admet une infinité de solutions)", isCorrect: true }
+                ],
+                explanation: "Il y aura $p - r$ \"inconnues auxiliaires\" (paramètres libres) qui pourront prendre n'importe quelle valeur. Le système étant homogène, il n'est jamais impossible[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Systèmes paramétrés"],
+                q: "Lors de la résolution d'un système paramétré, on tombe sur la ligne : $0x + 0y + 0z = k - 4$. Quelle est la conclusion ?",
+                options: [
+                    { text: "Si $k = 4$, le système admet une solution unique", isCorrect: false },
+                    { text: "Si $k \\neq 4$, le système est impossible. Si $k = 4$, la ligne devient $0=0$ et le système peut admettre des solutions", isCorrect: true }
+                ],
+                explanation: "Une ligne $0 = \\text{constante non nulle}$ indique une contradiction mathématique immédiate, rendant le système impossible[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Noyau", "Propriétés"],
+                q: "Soit $A \\in \\mathcal{M}_n(\\mathbb{R})$. Quelle inclusion concernant les noyaux successifs de $A$ est toujours vérifiée ?",
+                options: [
+                    { text: "$Ker(A^2) \\subset Ker(A)$", isCorrect: false },
+                    { text: "$Ker(A) \\subset Ker(A^2)$", isCorrect: true },
+                    { text: "$Ker(A) = Ker(A^2)$", isCorrect: false }
+                ],
+                explanation: "C'est un exercice classique. Si $X \\in Ker(A)$, alors $AX = 0$. En multipliant par $A$ à gauche, on obtient $A(AX) = A(0) \\Rightarrow A^2 X = 0$, donc $X \\in Ker(A^2)$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Solutions", "Vrai/Faux"],
+                q: "Vrai ou Faux : Un système de $n$ équations à $n$ inconnues possède TOUJOURS exactement une solution.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux. Un tel système peut n'avoir aucune solution ou une infinité si la matrice n'est pas inversible (déterminant nul)[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang", "Dimension"],
+                q: "Considérons un système de 7 équations à 5 inconnues de rang 4. Peut-il posséder une solution unique ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non", isCorrect: true }
+                ],
+                explanation: "Non. Le rang $r=4$ est strictement inférieur au nombre d'inconnues $p=5$. S'il est compatible, le système aura obligatoirement $5-4=1$ inconnue libre, générant une infinité de solutions[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Méthode de Gauss", "Vocabulaire"],
+                q: "Dans la résolution finale d'un système par la méthode de Gauss, comment nomme-t-on les inconnues correspondant aux colonnes SANS pivot ?",
+                options: [
+                    { text: "Les inconnues principales", isCorrect: false },
+                    { text: "Les inconnues auxiliaires (ou paramètres libres)", isCorrect: true },
+                    { text: "Les constantes", isCorrect: false }
+                ],
+                explanation: "Les inconnues correspondant aux colonnes avec pivot (inconnues principales) s'expriment en fonction des inconnues sans pivot (auxiliaires)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Systèmes homogènes", "Vrai/Faux"],
+                q: "Vrai ou Faux : Un système linéaire homogène ne peut jamais être classé comme « système impossible ».",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Vrai. Le second membre étant constitué uniquement de zéros, le vecteur nul $X=(0,0,\\dots,0)$ est toujours une solution évidente. Le système est donc toujours compatible[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            }
+        ]
+    },
+    "Algèbre 2 : Chapitre 3 (espaces vectoriels)": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            // --- DÉFINITIONS ET EXEMPLES FONDAMENTAUX ---
+            {
+                type: "qcm", tags: ["Définition EV", "Lois et Calculs"],
+                q: "Quelles sont les conditions exigées sur la loi interne (+) pour qu'un ensemble $(E, +, \\cdot)$ soit un espace vectoriel ?",
+                options: [
+                    { text: "L'addition doit être associative, posséder un élément neutre (0), admettre un opposé pour chaque élément, et être commutative (Groupe Abélien)", isCorrect: true },
+                    { text: "L'addition doit seulement posséder un élément neutre et être associative", isCorrect: false }
+                ],
+                explanation: "Un espace vectoriel a pour fondation une structure de groupe commutatif (ou abélien) pour l'addition[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définition EV", "Lois et Calculs"],
+                q: "D'après le Lemme 3.3, que peut-on déduire de l'égalité $\\lambda \\cdot x = 0_E$ dans un espace vectoriel ?",
+                options: [
+                    { text: "Que $\\lambda = 0$ et $x = 0_E$ obligatoirement", isCorrect: false },
+                    { text: "Que $\\lambda = 0$ OU $x = 0_E$", isCorrect: true },
+                    { text: "Que $x = -\\lambda$", isCorrect: false }
+                ],
+                explanation: "C'est la règle de l'intégrité de la loi externe : si le produit d'un scalaire par un vecteur est nul, alors soit le scalaire est nul, soit le vecteur est le vecteur nul[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Exemples de base"],
+                q: "L'ensemble $\\mathbb{C}^n$ est-il un espace vectoriel sur $\\mathbb{R}$ ?",
+                options: [
+                    { text: "Oui", isCorrect: true },
+                    { text: "Non", isCorrect: false }
+                ],
+                explanation: "Oui, on peut additionner des vecteurs complexes et les multiplier par des réels. En revanche, $\\mathbb{R}^n$ n'est pas un $\\mathbb{C}$-espace vectoriel[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Exemples de base", "Polynômes", "Pièges"],
+                q: "Parmi ces ensembles, lequel n'est PAS un espace vectoriel de référence ?",
+                options: [
+                    { text: "L'ensemble des fonctions continues $\\mathcal{F}(\\mathbb{R}, \\mathbb{R})$", isCorrect: false },
+                    { text: "L'ensemble $\\mathbb{K}_n[X]$ des polynômes de degré inférieur ou égal à $n$", isCorrect: false },
+                    { text: "L'ensemble des polynômes de degré EXACTEMENT égal à $n$", isCorrect: true }
+                ],
+                explanation: "Les polynômes de degré exactement $n$ ne forment pas un espace vectoriel car ils ne contiennent pas le polynôme nul (degré $-\\infty$), condition absolue pour être un E.V.[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Combinaisons linéaires"],
+                q: "Qu'appelle-t-on la base canonique de $\\mathbb{R}^n$ (Prop 3.10) ?",
+                options: [
+                    { text: "La famille de vecteurs dont tous les coefficients valent 1", isCorrect: false },
+                    { text: "La famille $(e_1, \\dots, e_n)$ où $e_i$ a toutes ses composantes nulles sauf la $i$-ème qui vaut 1", isCorrect: true }
+                ],
+                explanation: "Tout vecteur de $\\mathbb{R}^n$ est combinaison linéaire de cette base : $X = x_1 e_1 + \\dots + x_n e_n$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- SOUS-ESPACES VECTORIELS (SEV) ---
+            {
+                type: "qcm", tags: ["Sous-Espaces Vectoriels"],
+                q: "Quelles sont les conditions strictes (Définition 3.16) pour qu'une partie $F$ soit un Sous-Espace Vectoriel (SEV) de $E$ ?",
+                options: [
+                    { text: "$F$ est non vide, et $\\forall x,y \\in F, \\forall \\lambda, \\mu \\in \\mathbb{K}$, $\\lambda x + \\mu y \\in F$", isCorrect: true },
+                    { text: "$F$ est fini, et la somme des vecteurs de $F$ appartient à $F$", isCorrect: false }
+                ],
+                explanation: "Pour être un SEV, l'ensemble doit être non vide (contenir 0) et être stable par combinaison linéaire[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-Espaces Vectoriels"],
+                q: "Quelle est la caractérisation la plus pratique (Prop 3.20) pour vérifier rapidement que $F$ est un SEV ?",
+                options: [
+                    { text: "Le vecteur nul $0_E \\in F$ et $\\forall x,y \\in F, \\forall \\lambda \\in \\mathbb{K}, \\lambda x + y \\in F$", isCorrect: true },
+                    { text: "$F$ doit avoir la même dimension que $E$", isCorrect: false }
+                ],
+                explanation: "C'est la méthode reine en TD : on vérifie d'abord que 0 est dedans, puis on prouve la stabilité avec une seule constante $\\lambda$ pour aller plus vite[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-Espaces Vectoriels", "Pièges"],
+                q: "L'ensemble $\\{(x,y) \\in \\mathbb{R}^2, 2x+3y=2\\}$ est-il un Sous-Espace Vectoriel ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non", isCorrect: true }
+                ],
+                explanation: "Non, car le vecteur nul $(0,0)$ ne vérifie pas l'équation ($2(0) + 3(0) \\neq 2$). C'est un sous-espace affine, pas vectoriel[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-Espaces Vectoriels", "Systèmes linéaires"],
+                q: "Le noyau d'une matrice $Ker(A)$ forme-t-il un sous-espace vectoriel (Prop 3.24) ?",
+                options: [
+                    { text: "Oui, car $A(\\lambda X + Y) = \\lambda AX + AY = 0$", isCorrect: true },
+                    { text: "Non", isCorrect: false }
+                ],
+                explanation: "L'ensemble des solutions d'un système linéaire HOMOGÈNE est toujours un SEV de l'espace de départ[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-Espaces Vectoriels"],
+                q: "Que peut-on dire de l'intersection de plusieurs sous-espaces vectoriels (Prop 3.25) ?",
+                options: [
+                    { text: "Ce n'est jamais un SEV", isCorrect: false },
+                    { text: "C'est toujours un sous-espace vectoriel", isCorrect: true }
+                ],
+                explanation: "L'intersection de SEV préserve la présence du vecteur nul et la stabilité par combinaison linéaire[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-Espaces Vectoriels", "Pièges"],
+                q: "L'union de deux sous-espaces vectoriels $F \\cup G$ est-elle toujours un sous-espace vectoriel ?",
+                options: [
+                    { text: "Oui, toujours", isCorrect: false },
+                    { text: "Non, elle ne l'est que si $F \\subset G$ ou $G \\subset F$", isCorrect: true }
+                ],
+                explanation: "C'est un grand classique de TD (Ex 3.13). Si l'on prend l'axe des X et l'axe des Y, leur union forme une croix, qui n'est pas stable par addition (la somme d'un vecteur X et Y donne un vecteur en diagonale, hors de la croix)[cite: 1, 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-Espaces Vectoriels"],
+                q: "L'ensemble des suites convergentes vers 0 est-il un SEV de l'espace des suites réelles ?",
+                options: [
+                    { text: "Oui", isCorrect: true },
+                    { text: "Non", isCorrect: false }
+                ],
+                explanation: "La suite nulle converge vers 0, et toute combinaison linéaire de suites tendant vers 0 tend également vers 0 (limites usuelles). C'est un SEV classique (Ex 5.23)[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- ESPACES ENGENDRÉS (VECT) ---
+            {
+                type: "qcm", tags: ["Espaces engendrés (Vect)"],
+                q: "Que désigne la notation $Vect[(x_i)]$ ?",
+                options: [
+                    { text: "L'ensemble des combinaisons linéaires de la famille de vecteurs $(x_i)$", isCorrect: true },
+                    { text: "L'intersection des vecteurs $(x_i)$", isCorrect: false },
+                    { text: "La transposée du vecteur", isCorrect: false }
+                ],
+                explanation: "$Vect[(x_i)]$ engendre par définition un sous-espace vectoriel (Prop 3.31)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Espaces engendrés (Vect)"],
+                q: "Vrai ou Faux : L'ordre des vecteurs dans la notation $Vect[u, v, w]$ change l'espace vectoriel généré.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "L'ordre des vecteurs générateurs n'a aucune importance sur l'espace global engendré (Remarque 3.29)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Espaces engendrés (Vect)"],
+                q: "Qu'est-ce qu'une droite vectorielle (Def 3.34) ?",
+                options: [
+                    { text: "Une ligne d'une matrice", isCorrect: false },
+                    { text: "Un sous-espace vectoriel engendré par un seul vecteur non nul : $Vect[u]$", isCorrect: true }
+                ],
+                explanation: "Tous les points d'une droite vectorielle sont colinéaires au vecteur directeur $u$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Espaces engendrés (Vect)"],
+                q: "Selon la Proposition 3.35, que devient l'espace $Vect[A \\cup \\{x\\}]$ si le vecteur $x$ appartient déjà à $Vect[A]$ ?",
+                options: [
+                    { text: "Sa dimension augmente de 1", isCorrect: false },
+                    { text: "$Vect[A \\cup \\{x\\}] = Vect[A]$. L'espace ne change pas.", isCorrect: true }
+                ],
+                explanation: "Si un vecteur est déjà une combinaison linéaire des autres, l'ajouter à la famille génératrice est redondant et n'agrandit pas l'espace[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Espaces engendrés (Vect)", "Pièges"],
+                q: "Soit $F = Vect[u_1, u_2]$. Si je multiplie $u_1$ par 2, l'espace $F$ change-t-il ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non", isCorrect: true }
+                ],
+                explanation: "Multiplier un vecteur générateur par un scalaire non nul modifie la base, mais l'ensemble global des combinaisons linéaires atteignables reste strictement identique[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- FAMILLES LIBRES ET LIÉES ---
+            {
+                type: "qcm", tags: ["Familles Libres/Liées"],
+                q: "Quand dit-on qu'une famille de vecteurs est LIÉE (Def 3.37) ?",
+                options: [
+                    { text: "S'il existe un vecteur de la famille qui est combinaison linéaire des autres vecteurs de cette même famille", isCorrect: true },
+                    { text: "Si la somme de tous les vecteurs fait 0", isCorrect: false }
+                ],
+                explanation: "Une famille est liée s'il y a de la redondance : au moins l'un des vecteurs est \"inutile\" pour générer l'espace car il est constructible à partir des autres[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées"],
+                q: "Quel est le test fondamental de liberté (Prop 3.38) d'une famille $(u_1, \\dots, u_p)$ ?",
+                options: [
+                    { text: "L'équation $\\lambda_1 u_1 + \\dots + \\lambda_p u_p = 0$ doit impliquer que tous les scalaires $\\lambda_i = 0$", isCorrect: true },
+                    { text: "Le produit des vecteurs doit être non nul", isCorrect: false }
+                ],
+                explanation: "C'est la définition formelle de l'indépendance linéaire : la seule façon d'obtenir le vecteur nul est de mettre tous les coefficients à zéro[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées", "Méthode de Gauss"],
+                q: "Soit $A$ la matrice associée à une famille de $p$ vecteurs de $\\mathbb{K}^n$. D'après la méthode de Gauss (Prop 3.40), la famille est LIBRE si et seulement si sa réduite a :",
+                options: [
+                    { text: "$n$ pivots", isCorrect: false },
+                    { text: "$p$ pivots (autant de pivots que de vecteurs/colonnes)", isCorrect: true },
+                    { text: "Des zéros sur la diagonale", isCorrect: false }
+                ],
+                explanation: "Si le nombre de pivots $r$ est égal au nombre d'inconnues $p$, le système homogène admet une unique solution (tous les $\\lambda = 0$), ce qui prouve la liberté[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées", "Méthode de Gauss"],
+                q: "D'après la méthode de Gauss (Prop 3.40), la famille est GÉNÉRATRICE de $\\mathbb{K}^n$ si et seulement si sa réduite a :",
+                options: [
+                    { text: "$n$ pivots (autant de pivots que de dimensions dans l'espace)", isCorrect: true },
+                    { text: "$p$ pivots", isCorrect: false }
+                ],
+                explanation: "Si $r < n$, la réduite aura des lignes de zéros, ce qui signifie que l'équation $AX = B$ n'aura pas de solution pour certains vecteurs $B$. Pour atteindre tout l'espace, il faut $n$ pivots[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées", "Pièges"],
+                q: "Dans $\\mathbb{R}^n$, si le nombre de vecteurs $p$ d'une famille est strictement supérieur à la dimension $n$ ($p > n$), que peut-on affirmer ?",
+                options: [
+                    { text: "La famille est forcément libre", isCorrect: false },
+                    { text: "La famille est forcément LIÉE", isCorrect: true }
+                ],
+                explanation: "Le nombre de pivots $r$ est au maximum $n$. Si $p > n$, alors on a forcément $r < p$. Il y aura des variables libres, donc des solutions non nulles à $\\sum \\lambda_i x_i = 0$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées"],
+                q: "Que peut-on dire d'une famille de vecteurs contenant le vecteur nul ?",
+                options: [
+                    { text: "Elle est obligatoirement libre", isCorrect: false },
+                    { text: "Elle est obligatoirement liée", isCorrect: true }
+                ],
+                explanation: "On peut donner un coefficient non nul (ex: 1) au vecteur nul et des coefficients nuls aux autres pour former le vecteur nul total ($1 \\cdot 0 + 0 \\cdot u_1 = 0$), ce qui viole la liberté[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées"],
+                q: "À quelle condition stricte une famille de DEUX vecteurs est-elle libre (Prop 3.45) ?",
+                options: [
+                    { text: "Si et seulement s'ils sont orthogonaux", isCorrect: false },
+                    { text: "Si et seulement s'ils ne sont pas colinéaires", isCorrect: true }
+                ],
+                explanation: "Pour deux vecteurs, l'indépendance linéaire se vérifie instantanément à l'œil : l'un ne doit pas être le multiple proportionnel de l'autre[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées"],
+                q: "D'après la Proposition 3.48, qu'implique la liberté d'une famille sur l'écriture des combinaisons linéaires ?",
+                options: [
+                    { text: "Une infinité d'écritures possibles", isCorrect: false },
+                    { text: "L'unicité de la décomposition", isCorrect: true }
+                ],
+                explanation: "Si la famille est libre, tout vecteur de l'espace engendré possède une écriture UNIQUE sur cette famille (c'est le principe fondamental pour former une base plus tard)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées"],
+                q: "Vrai ou Faux : Toute sous-famille non vide d'une famille libre est libre (Prop 3.49).",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Retirer des vecteurs d'une famille qui n'a aucune redondance ne va évidemment pas créer de la redondance[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées"],
+                q: "Soit $A$ une famille libre. À quelle condition stricte la famille $A \\cup \\{x\\}$ reste-t-elle libre (Prop 3.49) ?",
+                options: [
+                    { text: "Si $x \\in Vect[A]$", isCorrect: false },
+                    { text: "Si et seulement si $x \\notin Vect[A]$", isCorrect: true }
+                ],
+                explanation: "Pour préserver la liberté, le nouveau vecteur $x$ ne doit pas pouvoir être construit à l'aide des vecteurs déjà présents dans $A$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées"],
+                q: "Qu'est-ce qu'une famille libre MAXIMALE (Def 3.50) ?",
+                options: [
+                    { text: "Une famille libre contenant le plus grand vecteur", isCorrect: false },
+                    { text: "Une famille à laquelle il est impossible d'ajouter un vecteur sans détruire sa liberté", isCorrect: true }
+                ],
+                explanation: "C'est une autre façon de définir une Base. La famille couvre déjà tout l'espace, donc tout nouvel ajout créera une redondance (famille liée)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Familles Libres/Liées"],
+                q: "Qu'est-ce qu'une famille génératrice MINIMALE (Def 3.36) ?",
+                options: [
+                    { text: "Une famille génératrice à laquelle il est impossible de retirer un vecteur sans détruire sa capacité à engendrer l'espace", isCorrect: true },
+                    { text: "Une famille de dimension 1", isCorrect: false }
+                ],
+                explanation: "C'est l'autre angle d'approche d'une Base : elle génère tout, mais n'a aucun gras. Chaque vecteur est indispensable[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Espaces engendrés (Vect)", "Pièges"],
+                q: "L'ensemble des solutions d'un système linéaire avec un second membre non nul ($AX = B \\neq 0$) forme-t-il un espace vectoriel ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non", isCorrect: true }
+                ],
+                explanation: "Non. Le vecteur nul n'est pas solution ($A \\times 0 = 0 \\neq B$). L'ensemble des solutions d'un système affine est un espace affine, pas un espace vectoriel[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            }
+        ]
+    },
+    "Algèbre 2 : Chapitres 4 & 5 (Bases, Dimensions, Sommes et Supplémentaires)": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            // --- BASES ET DIMENSIONS (Concepts) ---
+            {
+                type: "qcm", tags: ["Bases", "Familles Libres/Liées"],
+                q: "Quelle est la définition formelle d'une base d'un espace vectoriel $E$ ?",
+                options: [
+                    { text: "Une famille de vecteurs qui engendre tout l'espace", isCorrect: false },
+                    { text: "Une famille libre et génératrice de l'espace $E$", isCorrect: true },
+                    { text: "Une famille libre maximale", isCorrect: true },
+                    { text: "Une famille génératrice minimale", isCorrect: true }
+                ],
+                explanation: "Une base doit être à la fois libre (sans redondance) et génératrice (permettant d'atteindre tout vecteur). Cela équivaut à être une famille libre maximale ou une famille génératrice minimale[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Bases", "Coordonnées"],
+                q: "Que garantit le fait qu'une famille $\\mathcal{B}$ soit une base de $E$ pour l'écriture d'un vecteur $x \\in E$ ?",
+                options: [
+                    { text: "Qu'il existe une infinité de décompositions possibles", isCorrect: false },
+                    { text: "Qu'il existe un unique $n$-uplet de coordonnées $(x_1, \\dots, x_n)$ tel que $x = x_1 e_1 + \\dots + x_n e_n$", isCorrect: true }
+                ],
+                explanation: "L'existence de la décomposition provient du caractère générateur, et l'UNICITÉ provient du caractère libre de la base[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynômes", "Bases"],
+                q: "Dans l'espace vectoriel $\\mathbb{K}_n[X]$, qu'est-ce qu'une « famille échelonnée en degré » ?",
+                options: [
+                    { text: "Une famille $(P_0, \\dots, P_n)$ où chaque $P_i$ vérifie $deg(P_i) = i$", isCorrect: true },
+                    { text: "Une famille où tous les polynômes ont le même degré $n$", isCorrect: false }
+                ],
+                explanation: "Une famille de polynômes ayant tous des degrés échelonnés (0, 1, 2, ..., n) forme automatiquement une base de $\\mathbb{K}_n[X]$, car elle est toujours libre et génératrice[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension"],
+                q: "Quand dit-on qu'un espace vectoriel $E$ est de « dimension finie » ?",
+                options: [
+                    { text: "S'il ne contient qu'un nombre fini de vecteurs", isCorrect: false },
+                    { text: "S'il admet une partie génératrice contenant un nombre fini de vecteurs", isCorrect: true },
+                    { text: "Si tous ses vecteurs ont une norme finie", isCorrect: false }
+                ],
+                explanation: "Un espace vectoriel sur $\\mathbb{R}$ a toujours une infinité de vecteurs (sauf $\\{0\\}$). Il est de dimension finie s'il peut être engendré par une famille finie de vecteurs[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Polynômes"],
+                q: "Parmi ces espaces, lequel est de dimension INFINIE ?",
+                options: [
+                    { text: "$\\mathbb{R}^n$", isCorrect: false },
+                    { text: "$\\mathcal{M}_{n,p}(\\mathbb{K})$", isCorrect: false },
+                    { text: "$\\mathbb{K}[X]$ (l'espace de tous les polynômes)", isCorrect: true }
+                ],
+                explanation: "L'espace des polynômes sans restriction de degré $\\mathbb{K}[X]$ n'admet aucune famille génératrice finie, il est donc de dimension infinie[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Théorèmes", "Bases"],
+                q: "Que stipule le Théorème de la base incomplète ?",
+                options: [
+                    { text: "Toute famille libre d'un E.V. de dimension finie $E \\neq \\{0\\}$ peut être complétée avec des vecteurs d'une famille génératrice pour former une base", isCorrect: true },
+                    { text: "Toute famille génératrice peut être complétée pour former une base", isCorrect: false }
+                ],
+                explanation: "Si l'on part d'une famille libre, on peut toujours lui adjoindre des vecteurs bien choisis (issus d'une famille génératrice) pour « grossir » jusqu'à devenir une base[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension"],
+                q: "Si un espace $E$ est de dimension finie, que peut-on affirmer sur toutes ses bases ?",
+                options: [
+                    { text: "Elles contiennent toutes exactement le même nombre de vecteurs", isCorrect: true },
+                    { text: "Elles sont toutes orthogonales", isCorrect: false },
+                    { text: "Elles contiennent toutes le vecteur nul", isCorrect: false }
+                ],
+                explanation: "C'est la définition même de la dimension : si l'espace admet une base de cardinal $n$, alors TOUTES les bases de cet espace auront exactement $n$ éléments[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- JOUER AVEC LA DIMENSION (n) ---
+            {
+                type: "qcm", tags: ["Dimension", "Familles Libres/Liées"],
+                q: "Soit $E$ un espace de dimension $n$. Que peut-on dire de la taille d'une famille LIBRE ?",
+                options: [
+                    { text: "Elle contient exactement $n$ éléments", isCorrect: false },
+                    { text: "Elle contient au maximum $n$ éléments ($\\le n$)", isCorrect: true },
+                    { text: "Elle contient au minimum $n$ éléments ($\\ge n$)", isCorrect: false }
+                ],
+                explanation: "Dans un espace de dimension $n$, il ne peut pas y avoir plus de $n$ vecteurs linéairement indépendants[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Familles Libres/Liées"],
+                q: "Soit $E$ un espace de dimension $n$. Que peut-on dire de la taille d'une famille GÉNÉRATRICE ?",
+                options: [
+                    { text: "Elle contient au maximum $n$ éléments", isCorrect: false },
+                    { text: "Elle contient au minimum $n$ éléments ($\\ge n$)", isCorrect: true }
+                ],
+                explanation: "Pour engendrer tout l'espace de dimension $n$, il faut au moins $n$ directions différentes (vecteurs)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Bases", "Théorèmes"],
+                q: "Dans un espace de dimension $n$, si je possède une famille de $n$ vecteurs (exactement). Que suffit-il de vérifier pour prouver que c'est une base ?",
+                options: [
+                    { text: "Il faut prouver qu'elle est libre ET génératrice", isCorrect: false },
+                    { text: "Il suffit de prouver qu'elle est libre OU qu'elle est génératrice", isCorrect: true }
+                ],
+                explanation: "C'est un raccourci vital en partiel. Si le cardinal correspond à la dimension, la liberté implique le caractère générateur (et inversement)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Matrices"],
+                q: "Quelle est la dimension de l'espace des matrices $\\mathcal{M}_{n,p}(\\mathbb{K})$ ?",
+                options: [
+                    { text: "$n+p$", isCorrect: false },
+                    { text: "$n \\times p$", isCorrect: true },
+                    { text: "$n^p$", isCorrect: false }
+                ],
+                explanation: "Il y a $n \\times p$ coefficients indépendants, donc la base canonique contient $np$ matrices élémentaires[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Polynômes"],
+                q: "Quelle est la dimension de l'espace des polynômes $\\mathbb{K}_n[X]$ (de degré $\\le n$) ?",
+                options: [
+                    { text: "$n$", isCorrect: false },
+                    { text: "$n+1$", isCorrect: true }
+                ],
+                explanation: "La base canonique est $(1, X, X^2, \\dots, X^n)$. En comptant la constante $1$ (degré 0), il y a bien $n+1$ éléments[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- SOUS-ESPACES ET RANG ---
+            {
+                type: "qcm", tags: ["Dimension", "Sous-Espaces Vectoriels"],
+                q: "Soit $F$ un sous-espace vectoriel de $E$ (de dim finie $n$). Si $dim(F) = dim(E)$, que conclut-on ?",
+                options: [
+                    { text: "$F$ et $E$ sont isomorphes mais différents", isCorrect: false },
+                    { text: "$F = E$ (Égalité stricte)", isCorrect: true }
+                ],
+                explanation: "L'inclusion $F \\subset E$ associée à l'égalité des dimensions implique que les deux espaces sont confondus[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Sous-Espaces Vectoriels"],
+                q: "Comment appelle-t-on un sous-espace vectoriel $F$ tel que $\\dim(F) = \\dim(E) - 1$ ?",
+                options: [
+                    { text: "Une droite vectorielle", isCorrect: false },
+                    { text: "Un plan vectoriel", isCorrect: false },
+                    { text: "Un hyperplan vectoriel", isCorrect: true }
+                ],
+                explanation: "Par définition, un hyperplan est un sous-espace de codimension 1 (dimension $n-1$)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang", "Dimension"],
+                q: "Qu'est-ce que le « rang » d'une famille de $p$ vecteurs $S = (v_1, \\dots, v_p)$ ?",
+                options: [
+                    { text: "C'est la dimension de l'espace vectoriel engendré par $S$ ($dim(Vect[S])$)", isCorrect: true },
+                    { text: "C'est le nombre total de vecteurs $p$", isCorrect: false },
+                    { text: "C'est le nombre de vecteurs nuls", isCorrect: false }
+                ],
+                explanation: "Le rang est le nombre maximum de vecteurs linéairement indépendants que l'on peut extraire de $S$. C'est la dimension du SEV généré[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rang", "Familles Libres/Liées"],
+                q: "Soit $S$ une famille de $p$ vecteurs. À quelle condition a-t-on $rg(S) = p$ ?",
+                options: [
+                    { text: "Si et seulement si $S$ est une famille libre", isCorrect: true },
+                    { text: "Si et seulement si $S$ est génératrice", isCorrect: false }
+                ],
+                explanation: "Si le rang (dimension générée) est égal au nombre de vecteurs fournis, cela signifie qu'aucun vecteur n'est redondant (la famille est libre)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- SOMMES ET SOMMES DIRECTES ---
+            {
+                type: "qcm", tags: ["Sommes", "Espaces engendrés (Vect)"],
+                q: "Soient deux sous-espaces vectoriels $F$ et $G$. L'ensemble somme $F+G$ est équivalent à :",
+                options: [
+                    { text: "$F \\cap G$", isCorrect: false },
+                    { text: "$Vect[F \\cup G]$", isCorrect: true }
+                ],
+                explanation: "La somme $F+G$ est le plus petit sous-espace vectoriel contenant à la fois $F$ et $G$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sommes", "Somme Directe"],
+                q: "Quand dit-on que la somme de sous-espaces $F_1 + \\dots + F_p$ est une SOMME DIRECTE ($\\oplus$) ?",
+                options: [
+                    { text: "Si l'intersection de tous les sous-espaces est vide", isCorrect: false },
+                    { text: "Si pour tout vecteur $x$ de la somme, sa décomposition $x = x_1 + \\dots + x_p$ est UNIQUE", isCorrect: true }
+                ],
+                explanation: "La somme directe garantit qu'il n'y a qu'une seule façon d'écrire un vecteur comme somme d'éléments de ces sous-espaces[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Somme Directe", "Intersections"],
+                q: "Pour DEUX sous-espaces $F$ et $G$, quelle est la condition nécessaire et suffisante pour qu'ils soient en somme directe ($F \\oplus G$) ?",
+                options: [
+                    { text: "$F \\cap G = \\{0\\}$ (leur intersection est réduite au vecteur nul)", isCorrect: true },
+                    { text: "$F \\cup G = E$", isCorrect: false },
+                    { text: "Leurs dimensions doivent être égales", isCorrect: false }
+                ],
+                explanation: "Si l'intersection ne contient que le vecteur nul, un vecteur ne peut pas appartenir simultanément aux deux espaces, ce qui force l'unicité de la décomposition[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Somme Directe", "Pièges", "Intersections"],
+                q: "Vrai ou Faux : Pour TROIS sous-espaces $F, G, H$, le fait que $F \\cap G = F \\cap H = G \\cap H = \\{0\\}$ SUFFIT pour prouver que la somme $F+G+H$ est directe.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "C'est un énorme piège. L'intersection deux à deux réduite à zéro n'est valable que pour DEUX SEV. Pour 3 ou plus, l'unicité de la somme entière doit être vérifiée[cite: 1, 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- SUPPLÉMENTAIRES ET GRASSMANN ---
+            {
+                type: "qcm", tags: ["Supplémentaires", "Définitions"],
+                q: "Deux sous-espaces vectoriels $F$ et $G$ sont dits « supplémentaires » dans $E$ (soit $E = F \\oplus G$) si :",
+                options: [
+                    { text: "Ils sont en somme directe", isCorrect: false },
+                    { text: "Leur somme est directe ET génère tout l'espace $E$", isCorrect: true },
+                    { text: "Ils sont orthogonaux", isCorrect: false }
+                ],
+                explanation: "Supplémentaire = Somme directe (unicité) + La somme vaut $E$ (existence)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Sommes", "Théorèmes"],
+                q: "Que stipule la Formule de Grassmann ?",
+                options: [
+                    { text: "$\\dim(F+G) = \\dim(F) + \\dim(G)$", isCorrect: false },
+                    { text: "$\\dim(F+G) = \\dim(F) + \\dim(G) - \\dim(F \\cap G)$", isCorrect: true },
+                    { text: "$\\dim(F+G) = \\dim(F) \\times \\dim(G)$", isCorrect: false }
+                ],
+                explanation: "La dimension de l'espace somme est la somme des dimensions, à laquelle on soustrait la dimension de l'intersection (pour ne pas compter la zone de chevauchement en double)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Supplémentaires", "Dimension"],
+                q: "En dimension finie, à quelles conditions deux sous-espaces $F$ et $G$ sont-ils supplémentaires dans $E$ ?",
+                options: [
+                    { text: "$\\dim(F) + \\dim(G) = \\dim(E)$", isCorrect: false },
+                    { text: "$F \\cap G = \\{0\\}$ ET $\\dim(F) + \\dim(G) = \\dim(E)$", isCorrect: true },
+                    { text: "$F \\cup G = E$", isCorrect: false }
+                ],
+                explanation: "C'est l'application directe de Grassmann. Si l'intersection est nulle, $\\dim(F+G) = \\dim F + \\dim G$. Et si cette somme vaut $\\dim E$, alors $F+G=E$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Supplémentaires", "Matrices"],
+                q: "L'espace des matrices $\\mathcal{M}_n(\\mathbb{K})$ peut s'écrire comme la somme directe de quels sous-espaces remarquables ?",
+                options: [
+                    { text: "Les matrices diagonales et les matrices triangulaires", isCorrect: false },
+                    { text: "L'espace des matrices symétriques $\\mathcal{S}_n$ et l'espace des matrices antisymétriques $\\mathcal{A}_n$", isCorrect: true }
+                ],
+                explanation: "Toute matrice peut se décomposer de manière unique en une partie symétrique $\\frac{1}{2}(M+M^T)$ et une partie antisymétrique $\\frac{1}{2}(M-M^T)$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Supplémentaires", "Pièges"],
+                q: "Si $E = F \\oplus G$, le sous-espace supplémentaire $G$ de $F$ est-il unique ?",
+                options: [
+                    { text: "Oui, un SEV possède un unique supplémentaire", isCorrect: false },
+                    { text: "Non, un SEV possède une infinité de supplémentaires (sauf cas triviaux)", isCorrect: true }
+                ],
+                explanation: "Si l'on prend l'axe des X dans un plan, toute droite passant par l'origine et non confondue avec X est un supplémentaire. Il y en a une infinité[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- CAS EXTRÊMES ET TD ---
+            {
+                type: "qcm", tags: ["Dimension", "Intersections"],
+                q: "Soient $F$ et $G$ deux sous-espaces de $E$ vérifiant : $\\dim(F) + \\dim(G) > \\dim(E)$. Que peut-on en déduire ?",
+                options: [
+                    { text: "$F$ et $G$ sont en somme directe", isCorrect: false },
+                    { text: "Leur intersection n'est PAS réduite au vecteur nul ($F \\cap G \\neq \\{0\\}$)", isCorrect: true }
+                ],
+                explanation: "D'après Grassmann, $\\dim(F \\cap G) = \\dim F + \\dim G - \\dim(F+G)$. Puisque $\\dim(F+G) \\le \\dim E$, l'intersection a forcément une dimension $> 0$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Intersections"],
+                q: "Dans $\\mathbb{R}^n$, quelle est la dimension de l'intersection de DEUX hyperplans distincts ?",
+                options: [
+                    { text: "$n-1$", isCorrect: false },
+                    { text: "$n-2$", isCorrect: true },
+                    { text: "$0$", isCorrect: false }
+                ],
+                explanation: "Chaque hyperplan impose 1 équation indépendante. L'intersection de deux hyperplans distincts est définie par un système de 2 équations indépendantes, réduisant la dimension de 2[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Familles Libres/Liées"],
+                q: "Vrai ou Faux : Dans $\\mathbb{R}[X]$, les familles infinies sont toujours liées.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux. L'espace $\\mathbb{R}[X]$ est de dimension infinie. La famille canonique $(1, X, X^2, \\dots)$ est infinie ET libre[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-Espaces Vectoriels", "Théorèmes"],
+                q: "Que stipule le théorème sur l'existence d'un supplémentaire (Prop 5.12) ?",
+                options: [
+                    { text: "Seuls les hyperplans admettent un supplémentaire", isCorrect: false },
+                    { text: "Dans un espace de dimension finie, TOUT sous-espace vectoriel $F$ admet (au moins) un supplémentaire", isCorrect: true }
+                ],
+                explanation: "C'est une conséquence du théorème de la base incomplète. On prend une base de $F$, on la complète en une base de $E$, et l'espace généré par les vecteurs ajoutés est un supplémentaire[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sommes", "Équivalence", "Pièges"],
+                q: "Soient $E, F, G$ des sous-espaces. A-t-on toujours $E \\cap (F+G) = (E \\cap F) + (E \\cap G)$ ?",
+                options: [
+                    { text: "Oui, la distributivité marche toujours pour les SEV", isCorrect: false },
+                    { text: "Non, c'est faux en général", isCorrect: true }
+                ],
+                explanation: "L'intersection ne se distribue pas parfaitement sur la somme des sous-espaces vectoriels. On a seulement l'inclusion $(E \\cap F) + (E \\cap G) \\subset E \\cap (F+G)$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            }
+        ]
+    },
+    "Algèbre 2 : Chapitres 6 & 7 (Applications Linéaires et Matrices)": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            // --- BLOC 1 : VOCABULAIRE ET DÉFINITIONS (Chap 6) ---
+            {
+                type: "qcm", tags: ["Définitions App Linéaires"],
+                q: "Quelle est la définition mathématique d'une application linéaire $f : E \\to F$ ?",
+                options: [
+                    { text: "$\\forall (x,y) \\in E^2, \\forall (\\lambda,\\mu) \\in \\mathbb{K}^2, f(\\lambda x + \\mu y) = \\lambda f(x) + \\mu f(y)$", isCorrect: true },
+                    { text: "$f(xy) = f(x)f(y)$", isCorrect: false },
+                    { text: "$f(x+y) = f(x) + f(y)$ uniquement", isCorrect: false }
+                ],
+                explanation: "Une application linéaire conserve les combinaisons linéaires. L'image d'une combinaison linéaire est la combinaison linéaire des images[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions App Linéaires", "Vocabulaire"],
+                q: "Comment appelle-t-on une application linéaire allant de $E$ dans $\\mathbb{K}$ (le corps de base, souvent $\\mathbb{R}$) ?",
+                options: [
+                    { text: "Un endomorphisme", isCorrect: false },
+                    { text: "Une forme linéaire", isCorrect: true },
+                    { text: "Un automorphisme", isCorrect: false }
+                ],
+                explanation: "Une forme linéaire associe un scalaire à chaque vecteur de l'espace (ex: la trace, l'espérance, l'intégrale)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions App Linéaires", "Vocabulaire"],
+                q: "Qu'est-ce qu'un « automorphisme » de $E$ ?",
+                options: [
+                    { text: "Une application linéaire de $E$ dans $E$ (endomorphisme)", isCorrect: false },
+                    { text: "Un endomorphisme bijectif de $E$", isCorrect: true },
+                    { text: "Une application linéaire surjective", isCorrect: false }
+                ],
+                explanation: "Un automorphisme cumule deux propriétés : c'est une application linéaire de l'espace vers lui-même (endomorphisme) ET elle est bijective[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions App Linéaires"],
+                q: "Que vaut obligatoirement $f(0_E)$ pour toute application linéaire $f$ ?",
+                options: [
+                    { text: "1", isCorrect: false },
+                    { text: "Cela dépend de l'application", isCorrect: false },
+                    { text: "$0_F$ (le vecteur nul de l'espace d'arrivée)", isCorrect: true }
+                ],
+                explanation: "En appliquant $f(\\lambda x) = \\lambda f(x)$ avec $\\lambda = 0$, on obtient $f(0_E) = 0_F$. C'est le premier test pour vérifier si une fonction n'est pas linéaire[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Espaces Vectoriels des applications"],
+                q: "Quelle est la structure algébrique de $\\mathcal{L}(E,F)$ (l'ensemble des applications linéaires de $E$ dans $F$) ?",
+                options: [
+                    { text: "C'est un espace affine", isCorrect: false },
+                    { text: "C'est un $\\mathbb{K}$-espace vectoriel", isCorrect: true },
+                    { text: "C'est un anneau", isCorrect: false }
+                ],
+                explanation: "La somme de deux applications linéaires est linéaire, et la multiplication par un scalaire donne une application linéaire. $\\mathcal{L}(E,F)$ est donc un E.V.[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Composition"],
+                q: "Si $f \\in \\mathcal{L}(E,F)$ et $g \\in \\mathcal{L}(F,G)$, que peut-on dire de $g \\circ f$ ?",
+                options: [
+                    { text: "Ce n'est pas forcément linéaire", isCorrect: false },
+                    { text: "$g \\circ f \\in \\mathcal{L}(E,G)$", isCorrect: true }
+                ],
+                explanation: "La composée de deux applications linéaires est toujours une application linéaire[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- BLOC 2 : NOYAU, IMAGE ET THÉORÈME DU RANG (Chap 6) ---
+            {
+                type: "qcm", tags: ["Noyau & Image"],
+                q: "Comment définit-on le noyau $Ker(f)$ d'une application linéaire $f$ ?",
+                options: [
+                    { text: "$\\{x \\in E \\mid f(x) = x\\}$", isCorrect: false },
+                    { text: "$\\{y \\in F \\mid \\exists x \\in E, f(x) = y\\}$", isCorrect: false },
+                    { text: "$\\{x \\in E \\mid f(x) = 0_F\\}$", isCorrect: true }
+                ],
+                explanation: "Le noyau est l'image réciproque du vecteur nul de l'espace d'arrivée. C'est un sous-espace vectoriel de $E$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Noyau & Image"],
+                q: "Quelle est la caractérisation fondamentale de l'injectivité d'une application linéaire ?",
+                options: [
+                    { text: "$f$ est injective $\\iff Im(f) = F$", isCorrect: false },
+                    { text: "$f$ est injective $\\iff Ker(f) = \\{0_E\\}$", isCorrect: true }
+                ],
+                explanation: "L'égalité $f(x)=f(y)$ entraîne $f(x-y)=0$. Si le noyau est réduit à zéro, alors $x-y=0$, donc $x=y$. C'est le test d'injectivité ultime en algèbre[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Noyau & Image"],
+                q: "Que signifie algébriquement que $f : E \\to F$ est surjective ?",
+                options: [
+                    { text: "$Im(f) = F$", isCorrect: true },
+                    { text: "$Ker(f) = E$", isCorrect: false },
+                    { text: "$dim(Im(f)) = dim(E)$", isCorrect: false }
+                ],
+                explanation: "La surjectivité signifie que tout élément de l'espace d'arrivée $F$ possède au moins un antécédent, donc que l'image de $f$ couvre intégralement $F$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Théorème du rang"],
+                q: "Soit $E$ un espace de dimension finie. Que stipule le Théorème du rang pour $f \\in \\mathcal{L}(E,F)$ ?",
+                options: [
+                    { text: "$dim(Im(f)) + dim(Ker(f)) = dim(F)$", isCorrect: false },
+                    { text: "$dim(Im(f)) + dim(Ker(f)) = dim(E)$", isCorrect: true },
+                    { text: "$dim(Im(f)) \\times dim(Ker(f)) = dim(E)$", isCorrect: false }
+                ],
+                explanation: "La dimension de l'espace de DÉPART ($E$) se scinde exactement entre ce qui est \"écrasé\" (le noyau) et ce qui est généré (l'image)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Théorème du rang"],
+                q: "Comment appelle-t-on $dim(Im(f))$ ?",
+                options: [
+                    { text: "La trace de $f$", isCorrect: false },
+                    { text: "Le rang de $f$ (noté $rg(f)$)", isCorrect: true }
+                ],
+                explanation: "Le rang d'une application linéaire est défini comme la dimension de son image[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Théorème du rang"],
+                q: "Si $f : E \\to F$ est injective, que vaut $rg(f)$ ?",
+                options: [
+                    { text: "$dim(F)$", isCorrect: false },
+                    { text: "$dim(E)$", isCorrect: true },
+                    { text: "0", isCorrect: false }
+                ],
+                explanation: "Si $f$ est injective, $Ker(f) = \\{0\\}$, donc $dim(Ker(f)) = 0$. Le théorème du rang donne alors $rg(f) + 0 = dim(E)$, soit $rg(f) = dim(E)$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Isomorphismes"],
+                q: "Si $E$ et $F$ sont de dimension finie et que $dim(E) = dim(F)$, que peut-on affirmer sur $f \\in \\mathcal{L}(E,F)$ ?",
+                options: [
+                    { text: "$f$ est obligatoirement bijective", isCorrect: false },
+                    { text: "Les propositions \"$f$ est injective\", \"$f$ est surjective\" et \"$f$ est bijective\" sont strictement équivalentes", isCorrect: true }
+                ],
+                explanation: "C'est l'un des théorèmes les plus utiles. En dimensions égales, il suffit de prouver l'injectivité (Noyau nul) pour obtenir la bijection \"gratuitement\"[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Isomorphismes"],
+                q: "Soit $B=(e_1, \\dots, e_n)$ une base de $E$. $f$ est un isomorphisme de $E$ sur $F$ si et seulement si :",
+                options: [
+                    { text: "La famille $(f(e_1), \\dots, f(e_n))$ est une base de $F$", isCorrect: true },
+                    { text: "La famille $(f(e_1), \\dots, f(e_n))$ est libre mais pas génératrice", isCorrect: false }
+                ],
+                explanation: "Une application linéaire transporte une base sur une base si et seulement si elle est bijective[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Pièges de TD", "Noyau & Image"],
+                q: "Soient $f, g \\in \\mathcal{L}(E)$. Si $g \\circ f = 0$, que peut-on en déduire ?",
+                options: [
+                    { text: "$Im(g) \\subset Ker(f)$", isCorrect: false },
+                    { text: "$Im(f) \\subset Ker(g)$", isCorrect: true },
+                    { text: "$f=0$ ou $g=0$", isCorrect: false }
+                ],
+                explanation: "Exercice classique 6.14. Si $g(f(x)) = 0$ pour tout $x$, cela signifie que chaque vecteur de la forme $f(x)$ (donc dans $Im(f)$) est envoyé sur 0 par $g$ (donc est dans $Ker(g)$)[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- BLOC 3 : PROJECTEURS ET SYMÉTRIES (Chap 6) ---
+            {
+                type: "qcm", tags: ["Projecteurs & Symétries"],
+                q: "Quelle est la caractérisation algébrique d'un projecteur $p$ ?",
+                options: [
+                    { text: "$p \\circ p = Id_E$", isCorrect: false },
+                    { text: "$p \\circ p = p$", isCorrect: true },
+                    { text: "$p^2 = 0$", isCorrect: false }
+                ],
+                explanation: "L'idempotence ($p^2 = p$) définit un projecteur. Projeter deux fois a le même effet que projeter une seule fois[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Projecteurs & Symétries"],
+                q: "Si $p$ est un projecteur, que peut-on affirmer sur $Ker(p)$ et $Im(p)$ ?",
+                options: [
+                    { text: "Ils sont orthogonaux", isCorrect: false },
+                    { text: "Ils sont supplémentaires dans $E$ ($Ker(p) \\oplus Im(p) = E$)", isCorrect: true },
+                    { text: "Ils sont en somme directe mais ne couvrent pas $E$", isCorrect: false }
+                ],
+                explanation: "Tout vecteur $x$ se décompose de manière unique en $x = p(x) + (x - p(x))$, où le premier terme est dans l'Image et le second dans le Noyau[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Projecteurs & Symétries"],
+                q: "Dans un projecteur $p$, comment caractérise-t-on l'Image $Im(p)$ ?",
+                options: [
+                    { text: "$Im(p) = \\{x \\in E \\mid p(x) = 0\\}$", isCorrect: false },
+                    { text: "$Im(p) = \\{x \\in E \\mid p(x) = x\\}$", isCorrect: true }
+                ],
+                explanation: "L'image du projecteur correspond exactement à l'ensemble des vecteurs invariants. Si $y \\in Im(p)$, alors $p(y) = y$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Projecteurs & Symétries"],
+                q: "Soient deux projecteurs $p_1$ et $p_2$ associés à deux sous-espaces supplémentaires $E_1$ et $E_2$. Que vaut $p_1 + p_2$ ?",
+                options: [
+                    { text: "$0_E$", isCorrect: false },
+                    { text: "$Id_E$ (l'application identité)", isCorrect: true }
+                ],
+                explanation: "Pour $x = x_1 + x_2$, on a $p_1(x) = x_1$ et $p_2(x) = x_2$. Donc $(p_1+p_2)(x) = x_1 + x_2 = x$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Projecteurs & Symétries"],
+                q: "Quelle est la caractérisation algébrique d'une symétrie $s$ ?",
+                options: [
+                    { text: "$s \\circ s = s$", isCorrect: false },
+                    { text: "$s \\circ s = Id_E$ ($s^2 = Id_E$)", isCorrect: true },
+                    { text: "$s^2 = -Id_E$", isCorrect: false }
+                ],
+                explanation: "Appliquer une symétrie deux fois de suite ramène le point à sa position de départ, d'où $s^2 = Id$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Projecteurs & Symétries"],
+                q: "Quel est le lien algébrique entre la symétrie $s$ par rapport à $E_1$ (direction $E_2$) et le projecteur $p_1$ sur $E_1$ (direction $E_2$) ?",
+                options: [
+                    { text: "$s = p_1 - Id_E$", isCorrect: false },
+                    { text: "$s = 2p_1 - Id_E$", isCorrect: true }
+                ],
+                explanation: "Pour $x = x_1 + x_2$, $s(x) = x_1 - x_2$. Or $x_1 - x_2 = x_1 - (x - x_1) = 2x_1 - x = 2p_1(x) - x$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Projecteurs & Symétries"],
+                q: "Si un endomorphisme $f$ vérifie $f^2 = Id$, quels sont les espaces sur lesquels $f$ s'appuie pour réaliser sa symétrie ?",
+                options: [
+                    { text: "Symétrie par rapport à $Ker(f-Id)$ de direction $Ker(f+Id)$", isCorrect: true },
+                    { text: "Symétrie par rapport à $Im(f)$ de direction $Ker(f)$", isCorrect: false }
+                ],
+                explanation: "Les vecteurs invariants ($f(x)=x$) forment l'axe de symétrie, et ceux qui sont inversés ($f(x)=-x$) forment la direction[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Pièges de TD", "Projecteurs & Symétries"],
+                q: "Soient $p$ et $q$ deux projecteurs. À quelle condition $p+q$ est-il aussi un projecteur (Exercice 6.29) ?",
+                options: [
+                    { text: "Toujours", isCorrect: false },
+                    { text: "Si et seulement si $p \\circ q = q \\circ p = 0$", isCorrect: true }
+                ],
+                explanation: "En développant $(p+q)^2 = p^2 + q^2 + pq + qp = p + q + pq + qp$. Pour que cela vaille $p+q$, il faut que $pq+qp=0$, ce qui implique $pq=qp=0$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- BLOC 4 : MATRICES D'APPLICATIONS LINÉAIRES (Chap 7) ---
+            {
+                type: "qcm", tags: ["Matrices d'applications"],
+                q: "Comment construit-on la matrice $\\mathcal{M}_{C,\\mathcal{B}}(f)$ d'une application linéaire $f$ de $E$ (base $\\mathcal{B}=(e_1,..,e_p)$) dans $F$ (base $\\mathcal{C}$) ?",
+                options: [
+                    { text: "On met en lignes les vecteurs de la base $\\mathcal{B}$", isCorrect: false },
+                    { text: "La $j$-ème colonne recense les coordonnées de l'image $f(e_j)$ dans la base d'arrivée $\\mathcal{C}$", isCorrect: true }
+                ],
+                explanation: "Les colonnes de la matrice sont littéralement les images des vecteurs de la base de départ, exprimées dans la base d'arrivée[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices d'applications"],
+                q: "Si $A = \\mathcal{M}_{C,\\mathcal{B}}(f)$, $X$ le vecteur de coordonnées de $x$, et $Y$ celui de $f(x)$. Quelle est la relation matricielle fondamentale ?",
+                options: [
+                    { text: "$Y = AX$", isCorrect: true },
+                    { text: "$Y = XA$", isCorrect: false },
+                    { text: "$X = AY$", isCorrect: false }
+                ],
+                explanation: "Le vecteur d'arrivée est le produit de la matrice représentative par le vecteur de départ[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices d'applications", "Dimensions"],
+                q: "Si $E$ est de dimension $p$ et $F$ de dimension $n$. Quelle est la taille de la matrice $\\mathcal{M}_{C,\\mathcal{B}}(f)$ ?",
+                options: [
+                    { text: "$p$ lignes, $n$ colonnes ($p \\times n$)", isCorrect: false },
+                    { text: "$n$ lignes, $p$ colonnes ($n \\times p$)", isCorrect: true }
+                ],
+                explanation: "Le nombre de colonnes ($p$) correspond au nombre de vecteurs de la base de départ. Le nombre de lignes ($n$) correspond à la dimension de l'arrivée[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices d'applications"],
+                q: "Que stipule le théorème fondamental (Thm 7.7) sur l'ensemble $\\mathcal{L}(E,F)$ et l'ensemble des matrices $\\mathcal{M}_{n,p}(\\mathbb{K})$ ?",
+                options: [
+                    { text: "Ce sont deux espaces de dimensions différentes", isCorrect: false },
+                    { text: "L'application qui à $f$ associe sa matrice est un isomorphisme. Ils ont même dimension $n \\times p$", isCorrect: true }
+                ],
+                explanation: "Il y a une bijection parfaite entre les applications linéaires (concept abstrait) et les matrices (tableaux de calcul)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices d'applications", "Composition"],
+                q: "À quelle opération matricielle correspond la COMPOSITION d'applications linéaires ($g \\circ f$) ?",
+                options: [
+                    { text: "L'addition des matrices $M(g) + M(f)$", isCorrect: false },
+                    { text: "Le produit matriciel $M(g) \\times M(f)$", isCorrect: true }
+                ],
+                explanation: "La matrice de $g \\circ f$ est le produit de la matrice de $g$ par la matrice de $f$ (attention à conserver l'ordre !)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices d'applications", "Rang"],
+                q: "Quel est le lien entre le rang d'une application linéaire $rg(f)$ et le rang de sa matrice représentative $A$ ?",
+                options: [
+                    { text: "Ils n'ont aucun rapport", isCorrect: false },
+                    { text: "Ils sont strictement égaux : $rg(f) = rg(A)$", isCorrect: true }
+                ],
+                explanation: "Le rang de la matrice (dimension de l'espace engendré par les colonnes) est par définition la dimension de l'image de $f$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices d'applications", "Isomorphismes"],
+                q: "Un endomorphisme $f$ est une bijection si et seulement si sa matrice $A$ vérifie :",
+                options: [
+                    { text: "$A$ est symétrique", isCorrect: false },
+                    { text: "$A$ est inversible ($det(A) \\neq 0$)", isCorrect: true }
+                ],
+                explanation: "L'isomorphisme dans $\\mathcal{L}(E)$ correspond parfaitement à l'inversibilité dans $\\mathcal{M}_n(\\mathbb{K})$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Pièges de TD", "Noyau & Image"],
+                q: "Si $u$ est un endomorphisme de $\\mathbb{R}^n$ vérifiant $u^n = 0$ et $u^{n-1} \\neq 0$. Que peut-on dire de la famille $(x, u(x), \\dots, u^{n-1}(x))$ pour $x$ bien choisi ?",
+                options: [
+                    { text: "C'est une famille liée", isCorrect: false },
+                    { text: "C'est une base de $\\mathbb{R}^n$", isCorrect: true }
+                ],
+                explanation: "C'est le classique du bloc de Jordan nilpotente (Ex 7.5). Cette famille libre de $n$ éléments dans un espace de dimension $n$ forme automatiquement une base[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- BLOC 5 : CHANGEMENT DE BASE ET MATRICES SEMBLABLES (Chap 7) ---
+            {
+                type: "qcm", tags: ["Changement de base"],
+                q: "Comment est construite la matrice de passage $P_{\\mathcal{B} \\to \\mathcal{C}}$ ?",
+                options: [
+                    { text: "La $j$-ème colonne recense les coordonnées du vecteur $u_j$ de la NOUVELLE base $\\mathcal{C}$ exprimées dans l'ANCIENNE base $\\mathcal{B}$", isCorrect: true },
+                    { text: "La $j$-ème colonne recense les coordonnées du vecteur $e_j$ de l'ANCIENNE base $\\mathcal{B}$ exprimées dans la NOUVELLE base $\\mathcal{C}$", isCorrect: false }
+                ],
+                explanation: "Attention à ce piège majeur. La matrice de passage donne les nouveaux vecteurs exprimés avec les anciens[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Changement de base"],
+                q: "La matrice de passage $P_{\\mathcal{B} \\to \\mathcal{C}}$ correspond à la matrice d'une application linéaire particulière. Laquelle ?",
+                options: [
+                    { text: "La matrice de l'identité $Id_E$ en prenant $\\mathcal{C}$ au départ et $\\mathcal{B}$ à l'arrivée", isCorrect: true },
+                    { text: "La matrice de l'identité en prenant $\\mathcal{B}$ au départ et $\\mathcal{C}$ à l'arrivée", isCorrect: false }
+                ],
+                explanation: "$P_{\\mathcal{B} \\to \\mathcal{C}} = \\mathcal{M}_{\\mathcal{B}, \\mathcal{C}}[Id_E]$. On prend les vecteurs de $\\mathcal{C}$ et on écrit leurs coordonnées dans $\\mathcal{B}$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Changement de base"],
+                q: "Si $X$ sont les coordonnées d'un vecteur dans $\\mathcal{B}$ et $X'$ ses coordonnées dans $\\mathcal{C}$. Quelle est la relation avec $P = P_{\\mathcal{B} \\to \\mathcal{C}}$ ?",
+                options: [
+                    { text: "$X' = P X$", isCorrect: false },
+                    { text: "$X = P X'$", isCorrect: true }
+                ],
+                explanation: "Contre-intuitif mais fondamental : pour obtenir l'ancienne colonne $X$, on multiplie la matrice de passage par la NOUVELLE colonne $X'$[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Changement de base", "Matrices d'applications"],
+                q: "Formule de changement de base pour un ENDOMORPHISME : si $A$ est la matrice dans $\\mathcal{B}$, $A'$ la matrice dans $\\mathcal{B}'$, et $P = P_{\\mathcal{B} \\to \\mathcal{B}'}$. Que vaut $A'$ ?",
+                options: [
+                    { text: "$A' = P^{-1} A P$", isCorrect: true },
+                    { text: "$A' = P A P^{-1}$", isCorrect: false },
+                    { text: "$A' = P^T A P$", isCorrect: false }
+                ],
+                explanation: "C'est la définition de la similitude matricielle. On part des nouvelles coordonnées, on repasse dans l'ancienne base ($P$), on applique l'endomorphisme ($A$), puis on revient dans la nouvelle base ($P^{-1}$)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices semblables"],
+                q: "Que signifie concrètement que deux matrices carrées $A$ et $A'$ sont « semblables » ?",
+                options: [
+                    { text: "Elles ont les mêmes coefficients à une constante près", isCorrect: false },
+                    { text: "Elles représentent exactement le même endomorphisme, mais exprimé dans des bases différentes", isCorrect: true }
+                ],
+                explanation: "Deux matrices semblables racontent la même histoire géométrique de deux points de vue (bases) différents[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices semblables", "Trace"],
+                q: "Que peut-on affirmer concernant deux matrices semblables $A$ et $B$ ?",
+                options: [
+                    { text: "Elles ont obligatoirement le même déterminant, la même trace et le même rang", isCorrect: true },
+                    { text: "Elles peuvent avoir des traces différentes", isCorrect: false }
+                ],
+                explanation: "La trace, le rang et le déterminant sont des invariants de similitude. Si on change de base, ces propriétés fondamentales de l'endomorphisme ne bougent pas[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Changement de base", "Matrices d'applications"],
+                q: "Formule de changement de base pour une APPLICATION LINÉAIRE $f: E \\to F$. Si on change les bases de départ (avec $P$) et d'arrivée (avec $Q$), que vaut $A'$ ?",
+                options: [
+                    { text: "$A' = P^{-1} A Q$", isCorrect: false },
+                    { text: "$A' = Q^{-1} A P$", isCorrect: true }
+                ],
+                explanation: "On convertit les entrées avec $P$ (base de départ $E$), on applique $A$, puis on convertit les sorties avec l'inverse de $Q$ (base d'arrivée $F$)[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Pièges de TD", "Matrices semblables"],
+                q: "Les matrices $A = \\begin{pmatrix} 2 & 1 \\\\ 0 & 2 \\end{pmatrix}$ et $H = \\begin{pmatrix} 2 & 0 \\\\ 0 & 2 \\end{pmatrix}$ ont même trace (4) et même rang (2). Sont-elles semblables ?",
+                options: [
+                    { text: "Oui, car leurs invariants sont égaux", isCorrect: false },
+                    { text: "Non, car $H = 2I_2$, et pour tout $P$ inversible, $P^{-1} (2I_2) P = 2I_2 \\neq A$", isCorrect: true }
+                ],
+                explanation: "Avoir les mêmes invariants est nécessaire, mais pas toujours suffisant. L'identité (ou une matrice scalaire) n'est semblable qu'à elle-même[cite: 1, 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- BLOC 6 : EXERCICES ET PIÈGES AVANCÉS (TD) ---
+            {
+                type: "qcm", tags: ["Pièges de TD", "Rang"],
+                q: "Soient $f$ et $g$ deux endomorphismes de $E$. Quelle est la relation vérifiée par le rang de leur somme $rg(f+g)$ (Exercice 6.19) ?",
+                options: [
+                    { text: "$rg(f+g) = rg(f) + rg(g)$", isCorrect: false },
+                    { text: "$rg(f+g) \\le rg(f) + rg(g)$", isCorrect: true },
+                    { text: "$rg(f+g) \\ge rg(f) + rg(g)$", isCorrect: false }
+                ],
+                explanation: "L'image de la somme est incluse dans la somme des images : $Im(f+g) \\subset Im(f) + Im(g)$. Donc la dimension (le rang) suit cette inégalité[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Pièges de TD", "Matrices d'applications"],
+                q: "Soit $A$ une matrice $n \\times n$ telle que $A^2 = 0$. Que peut-on dire de son rang $r$ (Exercice 7.6) ?",
+                options: [
+                    { text: "$r = n$", isCorrect: false },
+                    { text: "$r \\le \\frac{n}{2}$", isCorrect: true },
+                    { text: "$r = 0$ obligatoirement", isCorrect: false }
+                ],
+                explanation: "Puisque $A^2=0$, on a $Im(A) \\subset Ker(A)$. Le théorème du rang donne $dim(Im) + dim(Ker) = n$, donc $r + dim(Ker) = n$. Comme $r \\le dim(Ker)$, on a $2r \\le n$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Pièges de TD", "Polynômes"],
+                q: "Soit $f : \\mathbb{R}_3[X] \\to \\mathbb{R}^2$ définie par $f(P) = (P(2), P'(2))$. Quelle est la dimension de la matrice de $f$ ?",
+                options: [
+                    { text: "$2 \\times 3$", isCorrect: false },
+                    { text: "$2 \\times 4$", isCorrect: true },
+                    { text: "$4 \\times 2$", isCorrect: false }
+                ],
+                explanation: "L'espace de départ $\\mathbb{R}_3[X]$ a pour base $(1, X, X^2, X^3)$, donc dimension 4. L'espace d'arrivée $\\mathbb{R}^2$ a dimension 2. La matrice a 2 lignes et 4 colonnes[cite: 1].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Trace", "Projecteurs & Symétries"],
+                q: "Soit $p$ un projecteur sur $E$. Quel lien fondamental existe-t-il entre sa trace et son rang (Exercice 7.19) ?",
+                options: [
+                    { text: "$Tr(p) = rg(p)$", isCorrect: true },
+                    { text: "$Tr(p) = 0$", isCorrect: false },
+                    { text: "$Tr(p) = 1$", isCorrect: false }
+                ],
+                explanation: "Dans une base adaptée à $Ker(p) \\oplus Im(p)$, la matrice de $p$ est diagonale avec des 1 (autant que la dimension de $Im(p)$) et des 0. La somme des 1 donne donc $dim(Im(p)) = rg(p)$[cite: 2].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            }
+        ]
+    },
+    "Algèbre 3 : Chapitre 1 (Réduction des endomorphismes)": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            // --- 1.1 SOUS-ESPACES STABLES ---
+            {
+                type: "qcm", tags: ["Sous-espaces stables"],
+                q: "Quelle est la définition d'un sous-espace vectoriel $A$ stable par un endomorphisme $u$ ?",
+                options: [
+                    { text: "$\\forall x \\in E, x \\in A \\Rightarrow u(x) \\in A$", isCorrect: true },
+                    { text: "$\\forall x \\in A, u(x) = x$", isCorrect: false },
+                    { text: "$u(A) = E$", isCorrect: false }
+                ],
+                explanation: "La stabilité (ou invariance) signifie que l'image de $A$ par $u$ est entièrement incluse dans $A$ ($u(A) \\subseteq A$)[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-espaces stables", "Commutation"],
+                q: "Soient $u$ et $v$ deux endomorphismes qui commutent ($u \\circ v = v \\circ u$). Que peut-on affirmer sur le noyau et l'image de $u$ ?",
+                options: [
+                    { text: "Ils sont orthogonaux à $v$", isCorrect: false },
+                    { text: "Ils sont stables par l'endomorphisme $v$", isCorrect: true },
+                    { text: "Ils sont de dimension identique", isCorrect: false }
+                ],
+                explanation: "Si $u$ et $v$ commutent, $v$ laisse stable l'image de $u$, le noyau de $u$, et plus généralement tout sous-espace propre $\\ker(u - \\lambda id_E)$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-espaces stables", "Représentation matricielle"],
+                q: "Si $E = A \\oplus B$ et que le sous-espace $A$ est stable par $u$, quelle forme prend la matrice de $u$ dans une base adaptée à cette somme directe ?",
+                options: [
+                    { text: "Diagonale par blocs", isCorrect: false },
+                    { text: "Triangulaire supérieure par blocs : $\\begin{pmatrix} M_{11} & M_{12} \\\\ 0 & M_{22} \\end{pmatrix}$", isCorrect: true },
+                    { text: "Totalement nulle hors de la diagonale", isCorrect: false }
+                ],
+                explanation: "Puisque $A$ est stable, les images des vecteurs de la base de $A$ s'écrivent uniquement avec les vecteurs de $A$, générant un bloc de zéros en bas à gauche. Pour avoir une matrice diagonale par blocs, il faudrait que $B$ soit AUSSI stable par $u$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.2 ELEMENTS PROPRES ---
+            {
+                type: "qcm", tags: ["Éléments propres"],
+                q: "Un vecteur $x$ de $E$ est un vecteur propre de $u$ associé à la valeur propre $\\lambda$ si et seulement si :",
+                options: [
+                    { text: "$u(x) = \\lambda x$ (avec $x$ pouvant être le vecteur nul)", isCorrect: false },
+                    { text: "$u(x) = \\lambda x$ et $x \\neq 0_E$", isCorrect: true },
+                    { text: "$u(x) = 0_E$", isCorrect: false }
+                ],
+                explanation: "Un vecteur propre doit ABSOLUMENT être non nul par définition. En revanche, une valeur propre $\\lambda$ a tout à fait le droit de valoir zéro[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Éléments propres"],
+                q: "Le sous-espace propre $E_\\lambda$ associé à la valeur propre $\\lambda$ correspond à :",
+                options: [
+                    { text: "$\\text{Im}(u - \\lambda id_E)$", isCorrect: false },
+                    { text: "$\\ker(u - \\lambda id_E)$", isCorrect: true }
+                ],
+                explanation: "$x$ est un vecteur propre pour $\\lambda$ ssi $u(x) = \\lambda x \\iff (u - \\lambda id_E)(x) = 0_E$. Le sous-espace propre est donc le noyau de $u - \\lambda id_E$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Éléments propres"],
+                q: "Soient $\\lambda_1, \\dots, \\lambda_k$ des valeurs propres deux à deux distinctes de $u$. Que peut-on dire de leurs sous-espaces propres associés $E_{\\lambda_i}$ ?",
+                options: [
+                    { text: "Ils sont de même dimension", isCorrect: false },
+                    { text: "Ils sont en somme directe", isCorrect: true },
+                    { text: "Leur union forme $E$", isCorrect: false }
+                ],
+                explanation: "Les sous-espaces propres associés à des valeurs propres distinctes sont toujours en somme directe. Une somme de vecteurs propres de valeurs propres différentes ne peut être nulle que si tous les vecteurs sont nuls[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Éléments propres", "Exemples classiques"],
+                q: "Quel est le spectre (l'ensemble des valeurs propres) d'un endomorphisme nilpotent $u$ ?",
+                options: [
+                    { text: "$\\text{Sp}(u) = \\{1\\}$", isCorrect: false },
+                    { text: "$\\text{Sp}(u) = \\emptyset$", isCorrect: false },
+                    { text: "$\\text{Sp}(u) = \\{0\\}$", isCorrect: true }
+                ],
+                explanation: "Si $u^k = 0$, et $u(x) = \\lambda x$ avec $x \\neq 0$, alors $u^k(x) = \\lambda^k x = 0$. Puisque $x \\neq 0$, on a obligatoirement $\\lambda^k = 0$, donc $\\lambda = 0$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Éléments propres", "Exemples classiques"],
+                q: "Soit $p$ une projection vectorielle stricte ($p \\neq 0_E, p \\neq id_E$). Quel est son spectre ?",
+                options: [
+                    { text: "$\\text{Sp}(p) = \\{-1, 1\\}$", isCorrect: false },
+                    { text: "$\\text{Sp}(p) = \\{0, 1\\}$", isCorrect: true },
+                    { text: "$\\text{Sp}(p) = \\{0\\}$", isCorrect: false }
+                ],
+                explanation: "Les vecteurs de l'image sont invariants ($p(x)=x \\Rightarrow \\lambda=1$) et ceux du noyau sont annulés ($p(x)=0 \\Rightarrow \\lambda=0$)[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Éléments propres", "Corps de base"],
+                q: "Vrai ou faux : Le spectre de la matrice d'une rotation d'angle $\\theta \\notin \\{0, \\pi\\}$ dans $\\mathbb{R}^2$ est vide si l'on travaille sur le corps $\\mathbb{R}$.",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Vrai. Le polynôme caractéristique est $X^2 - 2\\cos(\\theta)X + 1$, de discriminant $-4\\sin^2(\\theta) < 0$. Sur $\\mathbb{R}$, il n'y a pas de valeurs propres. Sur $\\mathbb{C}$, le spectre est $\\{e^{i\\theta}, e^{-i\\theta}\\}$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.3 POLYNOME CARACTERISTIQUE ---
+            {
+                type: "qcm", tags: ["Polynôme caractéristique"],
+                q: "Quelle est la définition mathématique du polynôme caractéristique $\\chi_u(X)$ ?",
+                options: [
+                    { text: "$\\det(u - X id_E)$", isCorrect: false },
+                    { text: "$\\det(X id_E - u)$", isCorrect: true }
+                ],
+                explanation: "On utilise $\\det(X id_E - u)$ pour s'assurer que le polynôme caractéristique est toujours UNITAIRE (le coefficient de son terme de plus haut degré $X^n$ vaut 1)[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme caractéristique"],
+                q: "Si $\\chi_M(X) = X^n - tr(M)X^{n-1} + \\dots + c_0$. Que vaut le coefficient constant $c_0$ ?",
+                options: [
+                    { text: "$\\det(M)$", isCorrect: false },
+                    { text: "$(-1)^n \\det(M)$", isCorrect: true },
+                    { text: "$\\det(-M)$", isCorrect: true }
+                ],
+                explanation: "Le terme de degré zéro correspond à la valeur du polynôme en $X=0$. $\\chi_M(0) = \\det(0 \\cdot I_n - M) = \\det(-M) = (-1)^n \\det(M)$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme caractéristique", "Similitude"],
+                q: "Si deux matrices $A$ et $B$ sont semblables, que peut-on affirmer sur leurs polynômes caractéristiques ?",
+                options: [
+                    { text: "Ils sont égaux : $\\chi_A = \\chi_B$", isCorrect: true },
+                    { text: "Ils sont opposés", isCorrect: false }
+                ],
+                explanation: "Si $B = P^{-1}AP$, alors $\\det(X I_n - B) = \\det(P^{-1}(X I_n - A)P) = \\det(X I_n - A)$. Deux matrices semblables ont le même polynôme caractéristique[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme caractéristique", "Pièges"],
+                q: "Vrai ou Faux : Deux matrices ayant le même polynôme caractéristique sont obligatoirement semblables.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux. Contre-exemple classique : l'identité $I_2$ et la matrice unipotente $\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$. Elles ont toutes deux $\\chi(X) = (X-1)^2$, mais ne sont pas semblables[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme caractéristique", "Méthode de Le Verrier"],
+                q: "Quel est l'objectif de la méthode de Le Verrier ?",
+                options: [
+                    { text: "Calculer les coefficients du polynôme caractéristique de manière récursive (sans déterminant abstrait) et obtenir l'inverse de la matrice si elle est inversible", isCorrect: true },
+                    { text: "Résoudre des systèmes différentiels", isCorrect: false }
+                ],
+                explanation: "La méthode de Le Verrier construit une suite de matrices $M_k$ et utilise leurs traces pour déterminer les coefficients du polynôme caractéristique, permettant d'esquiver le calcul d'un déterminant polynomial complexe[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.4 DIAGONALISATION ---
+            {
+                type: "qcm", tags: ["Diagonalisation", "Inégalités de dimension"],
+                q: "Soit $m_\\lambda$ l'ordre de multiplicité algébrique d'une valeur propre $\\lambda$. Quelle inégalité vérifie la dimension de son sous-espace propre $E_\\lambda$ ?",
+                options: [
+                    { text: "$1 \\le \\dim(E_\\lambda) \\le m_\\lambda$", isCorrect: true },
+                    { text: "$\\dim(E_\\lambda) = m_\\lambda$ toujours", isCorrect: false },
+                    { text: "$m_\\lambda \\le \\dim(E_\\lambda) \\le n$", isCorrect: false }
+                ],
+                explanation: "La dimension géométrique (dimension de $E_\\lambda$) est toujours supérieure ou égale à 1 (puisqu'il y a un vecteur propre) et obligatoirement majorée par la multiplicité algébrique de la racine dans le polynôme caractéristique[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Diagonalisation", "Théorème fondamental"],
+                q: "Quelle est la condition nécessaire et suffisante (CNS) pour qu'un endomorphisme $u$ soit diagonalisable ?",
+                options: [
+                    { text: "Son polynôme caractéristique doit être scindé", isCorrect: false },
+                    { text: "Son polynôme caractéristique doit être scindé ET pour chaque valeur propre, la dimension du sous-espace propre doit être égale à sa multiplicité algébrique", isCorrect: true }
+                ],
+                explanation: "Un polynôme scindé ne suffit pas (ex: bloc de Jordan $\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$). Il faut impérativement que $dim(E_\\lambda) = m_\\lambda$ pour avoir assez de vecteurs propres pour former une base[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Diagonalisation", "Conditions suffisantes"],
+                q: "Si un endomorphisme en dimension $n$ possède $n$ valeurs propres DISTINCTES, que peut-on affirmer ?",
+                options: [
+                    { text: "Il n'est pas diagonalisable", isCorrect: false },
+                    { text: "Il est diagonalisable, et ses sous-espaces propres sont des droites vectorielles", isCorrect: true }
+                ],
+                explanation: "C'est une condition suffisante forte. S'il y a $n$ racines distinctes, le polynôme est scindé à racines simples. Chaque multiplicité vaut 1, et la dimension géométrique valant au moins 1, on a l'égalité partout[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Diagonalisation", "Codiagonalisation"],
+                q: "Deux endomorphismes diagonalisables $u$ et $v$ sont co-diagonalisables (diagonalisables dans la même base) SI ET SEULEMENT SI :",
+                options: [
+                    { text: "Ils ont le même polynôme caractéristique", isCorrect: false },
+                    { text: "Ils commutent entre eux ($u \\circ v = v \\circ u$)", isCorrect: true }
+                ],
+                explanation: "C'est un lemme fondamental (Lemme 1.35). La commutation est la clé pour pouvoir trouver une base commune de vecteurs propres[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.5 TRIGONALISATION ---
+            {
+                type: "qcm", tags: ["Trigonalisation"],
+                q: "Quelle est la condition nécessaire et suffisante pour qu'un endomorphisme soit trigonalisable ?",
+                options: [
+                    { text: "Son polynôme caractéristique doit posséder des racines simples", isCorrect: false },
+                    { text: "Son polynôme caractéristique doit être scindé (factorisable en produits de degré 1)", isCorrect: true }
+                ],
+                explanation: "Si le polynôme caractéristique peut s'écrire sous la forme $\\prod (X - \\lambda_i)^{m_i}$, alors il existe une base où la matrice est triangulaire supérieure (Thm 1.38)[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Trigonalisation", "Corps complexes"],
+                q: "Vrai ou Faux : Tout endomorphisme défini sur un $\\mathbb{C}$-espace vectoriel est obligatoirement trigonalisable.",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Vrai. Le théorème de d'Alembert-Gauss garantit que tout polynôme sur $\\mathbb{C}$ est scindé. Donc la CNS de trigonalisabilité est toujours vérifiée sur les complexes[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.6 POLYNOMES ANNULATEURS ET CAYLEY-HAMILTON ---
+            {
+                type: "qcm", tags: ["Polynômes annulateurs"],
+                q: "Si $P$ est un polynôme annulateur d'un endomorphisme $u$ ($P(u)=0$), que peut-on dire des racines de $P$ ?",
+                options: [
+                    { text: "Toute valeur propre de $u$ est obligatoirement une racine de $P$ : $\\text{Sp}(u) \\subset \\text{Racines}(P)$", isCorrect: true },
+                    { text: "Toute racine de $P$ est obligatoirement une valeur propre de $u$", isCorrect: false }
+                ],
+                explanation: "Si $u(x) = \\lambda x$, alors $P(u)(x) = P(\\lambda)x$. Comme $P(u)=0$ et $x \\neq 0$, alors $P(\\lambda)=0$. Attention à la réciproque : un polynôme annulateur peut avoir des racines \"inutiles\" qui ne sont pas valeurs propres[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynômes annulateurs", "Cayley-Hamilton"],
+                q: "Que stipule le Théorème de Cayley-Hamilton (Thm 1.48) ?",
+                options: [
+                    { text: "Le polynôme caractéristique est égal au polynôme minimal", isCorrect: false },
+                    { text: "Le polynôme caractéristique d'un endomorphisme $u$ est un polynôme annulateur de $u$ : $\\chi_u(u) = 0$", isCorrect: true }
+                ],
+                explanation: "Cayley-Hamilton affirme que si l'on évalue le polynôme caractéristique d'une matrice $M$ en remplaçant la variable $X$ par la matrice $M$ elle-même, on obtient la matrice nulle[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme minimal"],
+                q: "Comment définit-on le « polynôme minimal » $\\mu_u$ d'un endomorphisme $u$ ?",
+                options: [
+                    { text: "Le polynôme annulateur unitaire de plus petit degré", isCorrect: true },
+                    { text: "Le polynôme dérivé du polynôme caractéristique", isCorrect: false }
+                ],
+                explanation: "C'est l'unique polynôme unitaire engendrant l'idéal des polynômes annulateurs. Il divise TOUS les autres polynômes annulateurs de $u$ (y compris $\\chi_u$)[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme minimal", "Valeurs propres"],
+                q: "Quelle relation stricte lie les racines du polynôme minimal $\\mu_u$ et les valeurs propres de $u$ ?",
+                options: [
+                    { text: "Les racines de $\\mu_u$ sont EXACTEMENT les valeurs propres de $u$", isCorrect: true },
+                    { text: "Certaines racines de $\\mu_u$ ne sont pas des valeurs propres", isCorrect: false }
+                ],
+                explanation: "Contrairement à un polynôme annulateur quelconque qui peut avoir des racines superflues, les racines du polynôme minimal coïncident strictement avec le spectre de l'endomorphisme (Prop 1.53)[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme minimal", "Diagonalisation"],
+                q: "D'après le Théorème 1.57, un endomorphisme est DIAGONALISABLE si et seulement si son polynôme minimal est :",
+                options: [
+                    { text: "Scindé", isCorrect: false },
+                    { text: "Scindé à racines simples", isCorrect: true },
+                    { text: "De degré $n$", isCorrect: false }
+                ],
+                explanation: "C'est la caractérisation ultime de la diagonalisabilité : $\\mu_u$ doit être factorisable sous la forme $\\prod (X - \\lambda_i)$ sans aucune puissance supérieure à 1[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme minimal", "Exemples classiques"],
+                q: "Quel est le polynôme minimal d'une symétrie vectorielle stricte ($s \\neq id, s \\neq -id$) ?",
+                options: [
+                    { text: "$X^2 - 1 = (X-1)(X+1)$", isCorrect: true },
+                    { text: "$X(X-1)$", isCorrect: false },
+                    { text: "$(X-1)^2$", isCorrect: false }
+                ],
+                explanation: "Une symétrie vérifie $s^2 = id$, donc $X^2-1$ est un polynôme annulateur scindé à racines simples (les valeurs propres sont 1 et -1). Puisque $s$ n'est pas triviale, c'est son polynôme minimal[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Lemme des noyaux"],
+                q: "Que stipule le Lemme de décomposition des noyaux pour deux polynômes $P$ et $Q$ PREMIERS ENTRE EUX ?",
+                options: [
+                    { text: "$\\ker((PQ)(u)) = \\ker(P(u)) \\oplus \\ker(Q(u))$", isCorrect: true },
+                    { text: "$\\ker((PQ)(u)) = \\ker(P(u)) \\cap \\ker(Q(u))$", isCorrect: false }
+                ],
+                explanation: "Le fait que les polynômes n'aient aucune racine commune garantit que les noyaux des endomorphismes correspondants sont en somme directe. C'est l'outil qui permet de prouver la diagonalisation[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.7 REDUCTION DE JORDAN ET DE DUNFORD/CHEVALLEY ---
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Sous-espaces caractéristiques"],
+                q: "Comment définit-on le « sous-espace caractéristique » $N_\\lambda$ associé à la valeur propre $\\lambda$ de multiplicité algébrique $m_\\lambda$ ?",
+                options: [
+                    { text: "$N_\\lambda = \\ker(u - \\lambda id_E)$", isCorrect: false },
+                    { text: "$N_\\lambda = \\ker((u - \\lambda id_E)^{m_\\lambda})$", isCorrect: true },
+                    { text: "$N_\\lambda = \\text{Im}((u - \\lambda id_E)^{m_\\lambda})$", isCorrect: false }
+                ],
+                explanation: "Le sous-espace caractéristique capte non seulement les vecteurs propres, mais aussi les vecteurs propres GÉNÉRALISÉS. Si l'endomorphisme n'est pas diagonalisable, la suite des noyaux itérés finit par se stabiliser pour englober $m_\\lambda$ dimensions[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Sous-espaces caractéristiques"],
+                q: "Vrai ou Faux : Si le polynôme caractéristique est scindé, l'espace $E$ tout entier est la somme DIRECTE de ses sous-espaces caractéristiques $N_\\lambda$.",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Vrai. C'est une application directe du lemme de décomposition des noyaux généralisé appliqué à $\\chi_u$ : les $N_\\lambda$ absorbent les défaillances de diagonalisabilité et reconstituent parfaitement l'espace[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Définitions"],
+                q: "Qu'est-ce qu'un « bloc de Jordan » $J_l(\\lambda)$ ?",
+                options: [
+                    { text: "Une matrice diagonale avec $\\lambda$ sur la diagonale", isCorrect: false },
+                    { text: "Une matrice triangulaire supérieure avec $\\lambda$ sur la diagonale et des $1$ sur la sur-diagonale juste au-dessus", isCorrect: true }
+                ],
+                explanation: "Un bloc de Jordan encode l'action d'un endomorphisme nilpotent décalé. $\\lambda$ est sur la diagonale, et des $1$ tracent un chemin liant les vecteurs propres généralisés[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Pratique"],
+                q: "Dans la forme de Jordan d'une matrice, à quoi correspond le NOMBRE TOTAL de blocs de Jordan associés à la valeur propre $\\lambda$ ?",
+                options: [
+                    { text: "À la multiplicité algébrique $m_\\lambda$", isCorrect: false },
+                    { text: "À la dimension du sous-espace propre $E_\\lambda = \\dim(\\ker(M - \\lambda I))$", isCorrect: true }
+                ],
+                explanation: "Chaque bloc de Jordan possède EXACTEMENT un vecteur propre pur (qui \"démarre\" ou \"finit\" la chaîne de vecteurs généralisés). Il y a donc autant de blocs que de dimension propre géométrique[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Pratique"],
+                q: "Dans la forme de Jordan, quelle information donne l'ordre de multiplicité de $\\lambda$ en tant que racine du polynôme MINIMAL $\\mu_u$ ?",
+                options: [
+                    { text: "Le nombre total de blocs de Jordan", isCorrect: false },
+                    { text: "La taille du PLUS GRAND bloc de Jordan associé à $\\lambda$", isCorrect: true }
+                ],
+                explanation: "Le polynôme minimal trace la plus grande puissance nécessaire pour annuler le bloc nilpotent maximal. Cette puissance correspond donc à la taille de ce plus grand bloc[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dunford / Jordan-Chevalley"],
+                q: "Que stipule le Théorème de la Décomposition de Jordan-Chevalley (ou Dunford) pour un endomorphisme dont le polynôme caractéristique est scindé ?",
+                options: [
+                    { text: "Il existe un unique couple $(s,n)$, avec $s$ diagonalisable et $n$ nilpotente, tels que $u = s+n$ ET que $s$ et $n$ commutent ($sn = ns$)", isCorrect: true },
+                    { text: "Tout endomorphisme peut s'écrire comme somme d'une rotation et d'une homothétie", isCorrect: false }
+                ],
+                explanation: "La commutation ($sn = ns$) est cruciale. C'est elle qui garantit l'unicité de la décomposition et permet d'utiliser la formule du binôme pour calculer les puissances ou l'exponentielle de la matrice[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dunford / Jordan-Chevalley"],
+                q: "Dans la décomposition de Dunford $u = s + n$, comment détermine-t-on formellement l'endomorphisme diagonalisable $s$ ?",
+                options: [
+                    { text: "C'est l'endomorphisme dont la restriction à chaque sous-espace caractéristique $N_\\lambda$ est l'homothétie de rapport $\\lambda$", isCorrect: true },
+                    { text: "C'est la partie symétrique de la matrice", isCorrect: false }
+                ],
+                explanation: "Puisque $E = \\bigoplus N_\\lambda$, on construit $s$ en le définissant comme agissant par une simple multiplication par $\\lambda$ sur chaque bloc $N_\\lambda$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dunford / Jordan-Chevalley"],
+                q: "Si la partie nilpotente $n$ de la décomposition de Jordan-Chevalley est nulle ($n = 0_E$), que peut-on affirmer sur $u$ ?",
+                options: [
+                    { text: "Que $u$ est l'endomorphisme nul", isCorrect: false },
+                    { text: "Que $u$ est strictement diagonalisable", isCorrect: true }
+                ],
+                explanation: "Si $u = s + 0$, alors $u = s$. Par définition de la décomposition, $s$ est diagonalisable. Donc l'absence de nilpotence caractérise la diagonalisabilité[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.8 APPLICATIONS (Puissances, Exponentielle, etc) ---
+            {
+                type: "qcm", tags: ["Calcul de puissances", "Suites récurrentes"],
+                q: "Lorsqu'on cherche à calculer $M^k$, comment exploite-t-on la décomposition $M = S+N$ de Dunford ?",
+                options: [
+                    { text: "On fait simplement $M^k = S^k + N^k$", isCorrect: false },
+                    { text: "Puisque $S$ et $N$ commutent, on applique la formule du binôme de Newton : $M^k = \\sum \\binom{k}{l} S^l N^{k-l}$. La somme s'arrête vite car $N$ est nilpotente.", isCorrect: true }
+                ],
+                explanation: "La commutation est la clef. Si $N$ a pour indice de nilpotence $p$, tous les termes avec $N^m$ pour $m \\ge p$ s'annulent, ce qui réduit drastiquement la somme[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Suites récurrentes linéaires"],
+                q: "Pour une suite récurrente linéaire d'ordre $n$ à coefficients constants (ex: $u_{k+2} = u_{k+1} + u_k$), de quoi dépend la forme de l'expression explicite du terme général $u_k$ ?",
+                options: [
+                    { text: "Des racines de son équation caractéristique polynomiale et de leur multiplicité (diagonalisabilité de la matrice compagnon)", isCorrect: true },
+                    { text: "Uniquement du premier terme $u_0$", isCorrect: false }
+                ],
+                explanation: "Si l'équation a des racines simples (diagonalisable), $u_k$ est une somme de suites géométriques. S'il y a des racines multiples (non diagonalisable, blocs de Jordan), des polynômes en $k$ apparaissent en facteur (ex: $k \\cdot \\lambda^k$)[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rayon spectral"],
+                q: "Qu'est-ce que le « rayon spectral » $\\rho(M)$ d'une matrice $M$ ?",
+                options: [
+                    { text: "Le module (ou la valeur absolue) de sa plus GRANDE valeur propre en module", isCorrect: true },
+                    { text: "La somme des modules de ses valeurs propres", isCorrect: false }
+                ],
+                explanation: "Le rayon spectral $\\rho(M) = \\max \\{|\\lambda| \\mid \\lambda \\in \\text{Sp}(M)\\}$ définit la plus grande \"envergure\" du spectre dans le plan complexe[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Rayon spectral", "Normes"],
+                q: "Que stipule le lien fondamental entre le rayon spectral $\\rho(M)$ et une norme matricielle subordonnée $\\|M\\|$ ?",
+                options: [
+                    { text: "$\\rho(M) > \\|M\\|$", isCorrect: false },
+                    { text: "$\\rho(M) \\le \\|M\\|$ pour toute norme subordonnée, et l'on peut trouver une norme s'approchant d'aussi près que voulu de $\\rho(M)$", isCorrect: true }
+                ],
+                explanation: "Le rayon spectral donne la borne inférieure absolue de toutes les normes subordonnées de la matrice. L'inégalité inverse $\\ge$ est globalement fausse[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Exponentielle matricielle"],
+                q: "Comment est mathématiquement définie l'exponentielle d'une matrice carrée $\\exp(M)$ ?",
+                options: [
+                    { text: "La matrice dont chaque coefficient est l'exponentielle du coefficient de $M$", isCorrect: false },
+                    { text: "Par la série absolument convergente : $\\sum_{k=0}^{+\\infty} \\frac{M^k}{k!}$", isCorrect: true }
+                ],
+                explanation: "On utilise la définition analytique en série entière de l'exponentielle. Il est faux d'appliquer l'exponentielle terme à terme (sauf si la matrice est diagonale)[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Exponentielle matricielle"],
+                q: "L'égalité $\\exp(M+N) = \\exp(M)\\exp(N)$ est-elle toujours vraie pour deux matrices $M$ et $N$ quelconques ?",
+                options: [
+                    { text: "Oui, c're la propriété fondamentale de l'exponentielle", isCorrect: false },
+                    { text: "Non, elle est vraie SI ET SEULEMENT SI les matrices $M$ et $N$ commutent ($MN = NM$)", isCorrect: true }
+                ],
+                explanation: "La non-commutativité de l'algèbre matricielle fait échouer la démonstration du produit de Cauchy des séries. L'hypothèse de commutation est absolument obligatoire[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Exponentielle matricielle", "Inversibilité"],
+                q: "Vrai ou Faux : L'exponentielle de toute matrice carrée $\\exp(M)$ est une matrice inversible.",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Vrai. Puisque $M$ et $-M$ commutent, $\\exp(M)\\exp(-M) = \\exp(M-M) = \\exp(0) = I_n$. L'inverse de $\\exp(M)$ est donc toujours $\\exp(-M)$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Exponentielle matricielle", "Déterminant"],
+                q: "Quelle relation spectaculaire relie le déterminant, l'exponentielle et la trace d'une matrice $M$ ?",
+                options: [
+                    { text: "$\\det(\\exp(M)) = \\exp(tr(M))$", isCorrect: true },
+                    { text: "$\\det(\\exp(M)) = tr(\\exp(M))$", isCorrect: false },
+                    { text: "$tr(\\exp(M)) = \\exp(\\det(M))$", isCorrect: false }
+                ],
+                explanation: "C'est l'identité de Jacobi. En trigonalisant la matrice, les valeurs propres de l'exponentielle sont les exponentielles des valeurs propres. Le produit des exponentielles devient l'exponentielle de la somme (qui est la trace)[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Exponentielle matricielle", "Calcul diff"],
+                q: "Si l'on dérive la fonction matricielle $Y(t) = \\exp(tM)$ par rapport au temps $t$, qu'obtient-on ?",
+                options: [
+                    { text: "$\\frac{d}{dt} Y(t) = \\exp(M)$", isCorrect: false },
+                    { text: "$\\frac{d}{dt} Y(t) = M \\exp(tM) = \\exp(tM) M$", isCorrect: true }
+                ],
+                explanation: "L'exponentielle de matrice est la résolvante canonique des systèmes différentiels linéaires à coefficients constants $Y' = MY$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Diagonalisation", "Exponentielle matricielle"],
+                q: "Si la matrice $M$ est diagonalisable sous la forme $M = P D P^{-1}$, comment calcule-t-on rapidement son exponentielle ?",
+                options: [
+                    { text: "$\\exp(M) = P \\exp(D) P^{-1}$", isCorrect: true },
+                    { text: "$\\exp(M) = \\exp(P) \\exp(D) \\exp(P^{-1})$", isCorrect: false }
+                ],
+                explanation: "L'exponentielle s'applique bloc par bloc à l'intérieur de la similitude : les puissances $M^k$ donnent $P D^k P^{-1}$, et en sommant la série, les matrices $P$ et $P^{-1}$ se factorisent aux extrémités[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-espaces cycliques"],
+                q: "Qu'appelle-t-on le « sous-espace cyclique » engendré par un vecteur $x$ pour un endomorphisme $u$ ?",
+                options: [
+                    { text: "L'espace engendré par les vecteurs propres de $u$", isCorrect: false },
+                    { text: "Le plus petit sous-espace vectoriel stable par $u$ contenant $x$, engendré par la famille $\\{u^k(x)\\}_{k \\in \\mathbb{N}}$", isCorrect: true },
+                    { text: "L'espace engendré par un vecteur propre et son image réciproque", isCorrect: false }
+                ],
+                explanation: "Un sous-espace cyclique $E_u(x)$ se construit en appliquant itérativement l'endomorphisme $u$ au vecteur de départ $x$, créant ainsi une \"orbite\" qui engendre le sous-espace[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme caractéristique", "Traces & Déterminants"],
+                q: "Si le polynôme caractéristique d'un endomorphisme $u$ de dimension $n$ est scindé : $\\chi_u(X) = \\prod_{i=1}^n (X - \\lambda_i)$. Que peut-on affirmer ?",
+                options: [
+                    { text: "$tr(u) = \\sum_{i=1}^n \\lambda_i$ et $\\det(u) = \\prod_{i=1}^n \\lambda_i$", isCorrect: true },
+                    { text: "$tr(u) = \\prod_{i=1}^n \\lambda_i$ et $\\det(u) = \\sum_{i=1}^n \\lambda_i$", isCorrect: false },
+                    { text: "On ne peut rien affirmer si $u$ n'est pas diagonalisable", isCorrect: false }
+                ],
+                explanation: "C'est une propriété fondamentale des racines d'un polynôme (relations coefficients-racines). Même si $u$ n'est que trigonalisable, la trace reste la somme de SES valeurs propres comptées avec multiplicité, et le déterminant leur produit[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme caractéristique", "Matrice 2x2"],
+                q: "Quelle est la formule directe du polynôme caractéristique pour une matrice carrée $M$ d'ordre 2 ?",
+                options: [
+                    { text: "$\\chi_M(X) = X^2 + \\det(M)X - tr(M)$", isCorrect: false },
+                    { text: "$\\chi_M(X) = X^2 - tr(M)X + \\det(M)$", isCorrect: true },
+                    { text: "$\\chi_M(X) = X^2 + tr(M)X + \\det(M)$", isCorrect: false }
+                ],
+                explanation: "Pour toute matrice d'ordre 2, le polynôme caractéristique s'écrit de manière instantanée avec cette formule issue du développement de $X^2 - tr(M)X^{2-1} + \\dots + (-1)^2 \\det(M)$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Diagonalisation", "Pièges"],
+                q: "Vrai ou Faux : L'ordre de multiplicité géométrique d'une valeur propre $\\lambda$ (c'est-à-dire $\\dim(E_\\lambda)$) peut être strictement SUPÉRIEUR à son ordre de multiplicité algébrique $m_\\lambda$.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux. On a toujours $1 \\le \\dim(E_\\lambda) \\le m_\\lambda$. C'est mathématiquement impossible que la dimension du sous-espace propre dépasse la puissance de la racine dans le polynôme caractéristique[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynômes d'endomorphismes"],
+                q: "Soit $x$ un vecteur propre de $u$ associé à la valeur propre $\\lambda$. Si $P \\in \\mathbb{K}[X]$ est un polynôme quelconque, que vaut $P(u)(x)$ ?",
+                options: [
+                    { text: "$P(\\lambda)x$", isCorrect: true },
+                    { text: "$P(x)$", isCorrect: false },
+                    { text: "$0_E$", isCorrect: false }
+                ],
+                explanation: "L'application d'un polynôme d'endomorphisme sur un vecteur propre se comporte comme une simple évaluation scalaire du polynôme sur la valeur propre : si $u(x)=\\lambda x$, alors $u^k(x) = \\lambda^k x$, d'où $P(u)(x) = P(\\lambda)x$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme minimal", "Homothéties"],
+                q: "Soit $u = \\lambda id_E$ une homothétie dans un espace de dimension $n \\ge 2$. Quel est le polynôme minimal $\\mu_u$ de $u$ ?",
+                options: [
+                    { text: "$(X - \\lambda)^n$", isCorrect: false },
+                    { text: "$X - \\lambda$", isCorrect: true },
+                    { text: "$X^n - \\lambda^n$", isCorrect: false }
+                ],
+                explanation: "L'homothétie s'annule dès la puissance 1 : $(u - \\lambda id_E) = 0_E$. Le polynôme $X - \\lambda$ annule donc $u$. Puisque le polynôme minimal divise le polynôme caractéristique $(X - \\lambda)^n$, il est exactement de degré 1[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme minimal", "Idéal"],
+                q: "Quelle structure mathématique forme l'ensemble des polynômes annulateurs d'un endomorphisme ?",
+                options: [
+                    { text: "Un sous-espace vectoriel de dimension $n$", isCorrect: false },
+                    { text: "Un idéal de l'anneau $\\mathbb{K}[X]$", isCorrect: true },
+                    { text: "Un corps", isCorrect: false }
+                ],
+                explanation: "Cet ensemble est stable par addition, et la multiplication de tout polynôme annulateur par un polynôme QUELCONQUE donne encore un polynôme annulateur. C'est la définition d'un idéal, engendré ici par un polynôme unique (le polynôme minimal)[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Lemme des noyaux"],
+                q: "Pour appliquer le « lemme de décomposition des noyaux généralisé » à $k$ polynômes $P_1, \\dots, P_k$, quelle condition indispensable ces polynômes doivent-ils vérifier ?",
+                options: [
+                    { text: "Ils doivent être scindés", isCorrect: false },
+                    { text: "Ils doivent être de degré strictement positif", isCorrect: false },
+                    { text: "Ils doivent être premiers entre eux deux à deux", isCorrect: true }
+                ],
+                explanation: "Si les polynômes sont premiers entre eux deux à deux (aucun facteur commun, donc aucune valeur propre commune ne peut les annuler simultanément), alors $\\ker((P_1 \\dots P_k)(u)) = \\bigoplus_{i=1}^k \\ker(P_i(u))$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Cayley-Hamilton", "Calcul d'inverse"],
+                q: "Comment le théorème de Cayley-Hamilton fournit-il une méthode de calcul de l'inverse d'une matrice $M$ ?",
+                options: [
+                    { text: "En posant $M^{-1} = \\chi_M(0)$", isCorrect: false },
+                    { text: "Si $M$ est inversible, l'équation $\\chi_M(M) = 0$ peut être réarrangée sous la forme $M \\times P(M) = c \\cdot I_n$, d'où l'on extrait $M^{-1}$", isCorrect: true }
+                ],
+                explanation: "Puisque $M^n - tr(M)M^{n-1} + \\dots + (-1)^n \\det(M)I_n = 0$, on peut isoler l'identité en factorisant par $M$ si $\\det(M) \\neq 0$. Le facteur restant divisé par $\\pm \\det(M)$ est exactement l'inverse de $M$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Matrice compagnon"],
+                q: "Dans l'étude d'un sous-espace cyclique, la matrice de l'endomorphisme induit prend une forme très particulière. Laquelle ?",
+                options: [
+                    { text: "Une matrice compagnon", isCorrect: true },
+                    { text: "Une matrice symétrique", isCorrect: false },
+                    { text: "Une matrice diagonale", isCorrect: false }
+                ],
+                explanation: "Une matrice compagnon possède des 1 sur la sous-diagonale et les coefficients opposés de son polynôme caractéristique sur la dernière colonne. Elle est la \"compagne\" de ce polynôme unitaire[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Vecteurs généralisés"],
+                q: "Dans la réduction de Jordan, si l'on est en présence d'un bloc de Jordan de taille $k$ associé à la valeur propre $\\lambda$. De quel ORDRE est le vecteur propre généralisé $V_k$ qui « initie » la chaîne générant ce bloc ?",
+                options: [
+                    { text: "D'ordre 1 (c'est un vecteur propre classique)", isCorrect: false },
+                    { text: "D'ordre $k$ (il appartient à $\\ker((M-\\lambda I)^k)$ mais pas à $\\ker((M-\\lambda I)^{k-1})$)", isCorrect: true }
+                ],
+                explanation: "Le vecteur $V_k$ est le plus « éloigné » du vrai vecteur propre. Il faut lui appliquer l'opérateur $(M-\\lambda I)$ $k$ fois pour enfin l'annuler[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Suites récurrentes", "Dimension"],
+                q: "Quelle est la dimension du sous-espace vectoriel formé par les suites réelles $(u_k)$ vérifiant une relation de récurrence linéaire d'ordre $n$ à coefficients constants ?",
+                options: [
+                    { text: "Dimension infinie", isCorrect: false },
+                    { text: "Dimension $n$", isCorrect: true },
+                    { text: "Dimension 1", isCorrect: false }
+                ],
+                explanation: "L'application linéaire qui à toute suite de cet ensemble associe ses $n$ premiers termes $(u_0, \\dots, u_{n-1})$ est une bijection. L'espace vectoriel des solutions est donc isomorphe à $\\mathbb{K}^n$, de dimension $n$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Exponentielle matricielle", "Nilpotence"],
+                q: "Soit $M$ une matrice nilpotente d'indice $l$ ($M^l = 0_n$). Que devient la série entière définissant l'exponentielle $\\exp(M)$ ?",
+                options: [
+                    { text: "Elle diverge car les puissances s'annulent", isCorrect: false },
+                    { text: "Elle devient un polynôme en $M$ de degré $l-1$, car tous les termes $\\frac{M^k}{k!}$ pour $k \\ge l$ sont nuls", isCorrect: true }
+                ],
+                explanation: "C'est l'un des plus grands intérêts des matrices nilpotentes : l'exponentielle, qui est normalement une somme infinie, se tronque naturellement en une somme finie parfaitement calculable à la main[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Exponentielle matricielle", "Commutation"],
+                q: "Soient les matrices $M = \\begin{pmatrix} 0 & 1 \\\\ 0 & 0 \\end{pmatrix}$ et $N = \\begin{pmatrix} 0 & 0 \\\\ 1 & 0 \\end{pmatrix}$. Elles sont toutes deux nilpotentes. Pourquoi a-t-on $\\exp(M+N) \\neq \\exp(M)\\exp(N)$ ?",
+                options: [
+                    { text: "Parce que ce ne sont pas des matrices symétriques", isCorrect: false },
+                    { text: "Parce que $M$ et $N$ ne commutent pas ($MN \\neq NM$)", isCorrect: true }
+                ],
+                explanation: "L'égalité des exponentielles requiert impérativement la commutation. Dans ce contre-exemple classique (Remarque 1.88), $MN = \\begin{pmatrix} 1 & 0 \\\\ 0 & 0 \\end{pmatrix}$ et $NM = \\begin{pmatrix} 0 & 0 \\\\ 0 & 1 \\end{pmatrix}$[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Exponentielle matricielle"],
+                q: "Vrai ou Faux : L'exponentielle d'une matrice $M$, $\\exp(M)$, peut toujours s'écrire comme un polynôme en la matrice $M$.",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Vrai (Prop 1.86). Même si $\\exp(M)$ est définie par une série infinie, l'espace des polynômes en $M$ est de dimension finie (grâce à Cayley-Hamilton, de dimension au plus $n$). Toute limite de cette série est un fermé, donc $\\exp(M)$ y appartient[cite: 3].",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            }
+        ]
+    },
+    "Analyse 3 : Chapitres 1 & 2 (Cauchy et Séries)": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            // --- SUITES DE CAUCHY (Chapitre 1) ---
+            {
+                type: "qcm", tags: ["Suites de Cauchy"],
+                q: "Que stipule le théorème de Bolzano-Weierstrass (Théorème 1.3) ?",
+                options: [
+                    { text: "Toute suite réelle admet une limite finie", isCorrect: false },
+                    { text: "Toute suite réelle bornée possède au moins une valeur d'adhérence (une sous-suite convergente)", isCorrect: true },
+                    { text: "Toute suite croissante est de Cauchy", isCorrect: false }
+                ],
+                explanation: "C'est un théorème fondamental d'analyse : toute suite réelle bornée possède une valeur d'adhérence[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Suites de Cauchy"],
+                q: "Quelle est la définition formelle d'une suite de Cauchy $(x_n)$ ?",
+                options: [
+                    { text: "$\\forall \\epsilon > 0, \\exists n_0 \\in \\mathbb{N}, \\forall n \\ge n_0, |x_n - x_{n-1}| < \\epsilon$", isCorrect: false },
+                    { text: "$\\forall \\epsilon > 0, \\exists n_0 \\in \\mathbb{N}, \\forall p, q \\ge n_0, |x_p - x_q| < \\epsilon$", isCorrect: true }
+                ],
+                explanation: "Une suite est de Cauchy si les termes deviennent tous arbitrairement proches les uns des autres à partir d'un certain rang, et non pas seulement deux termes consécutifs[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Suites de Cauchy"],
+                q: "Quel est le lien direct entre les suites convergentes et les suites de Cauchy ?",
+                options: [
+                    { text: "Toute suite de Cauchy est convergente, mais l'inverse est faux", isCorrect: false },
+                    { text: "Toute suite convergente est de Cauchy", isCorrect: true }
+                ],
+                explanation: "C'est la Proposition 1.5 : toute suite qui admet une limite finie voit nécessairement ses termes se rapprocher les uns des autres[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Suites de Cauchy"],
+                q: "Que peut-on affirmer concernant le caractère borné d'une suite de Cauchy (Prop 1.6) ?",
+                options: [
+                    { text: "Toute suite de Cauchy est bornée", isCorrect: true },
+                    { text: "Une suite de Cauchy peut tendre vers $+\\infty$", isCorrect: false }
+                ],
+                explanation: "En fixant $\\epsilon = 1$, tous les termes à partir du rang $n_0$ sont dans une boule de rayon 1. Comme les termes précédents sont en nombre fini, la suite entière est bornée[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Suites de Cauchy"],
+                q: "Si une suite de Cauchy admet une valeur d'adhérence, que se passe-t-il (Prop 1.6) ?",
+                options: [
+                    { text: "Elle converge vers cette valeur d'adhérence", isCorrect: true },
+                    { text: "Elle peut diverger", isCorrect: false }
+                ],
+                explanation: "Si les termes se rapprochent tous les uns des autres (Cauchy) et qu'une sous-suite converge vers $l$, alors toute la suite est fatalement entraînée vers $l$[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Suites de Cauchy"],
+                q: "Que signifie l'affirmation « $\\mathbb{R}$ est complet » (Théorème 1.7) ?",
+                options: [
+                    { text: "Dans $\\mathbb{R}$, toute suite convergente est de Cauchy", isCorrect: false },
+                    { text: "Dans $\\mathbb{R}$, toute suite de Cauchy est une suite convergente", isCorrect: true }
+                ],
+                explanation: "C'est la propriété fondamentale qui différencie $\\mathbb{R}$ de $\\mathbb{Q}$ : un espace est complet si toute suite de Cauchy y admet une limite[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Suites de Cauchy"],
+                q: "L'ensemble des rationnels $\\mathbb{Q}$ est-il complet ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non", isCorrect: true }
+                ],
+                explanation: "Il existe des suites de rationnels qui sont de Cauchy (car elles convergent vers un irrationnel dans $\\mathbb{R}$) mais qui ne convergent pas dans $\\mathbb{Q}$, car leur limite n'y appartient pas[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- SÉRIES : DÉFINITIONS & PROPRIÉTÉS (Chapitre 2) ---
+            {
+                type: "qcm", tags: ["Séries : Définitions & Propriétés"],
+                q: "Comment définit-on la convergence d'une série de terme général $x_n$ ?",
+                options: [
+                    { text: "Elle converge si la suite $(x_n)$ tend vers 0", isCorrect: false },
+                    { text: "Elle converge si la suite de ses sommes partielles $(S_n = \\sum_{k=0}^n x_k)$ admet une limite réelle finie", isCorrect: true }
+                ],
+                explanation: "La convergence d'une série est définie EXCLUSIVEMENT par la convergence de la suite de ses sommes partielles vers une limite finie[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries : Définitions & Propriétés"],
+                q: "À quelle condition stricte la série géométrique $\\sum a^k$ converge-t-elle ?",
+                options: [
+                    { text: "Si $|a| \\le 1$", isCorrect: false },
+                    { text: "Si $|a| < 1$", isCorrect: true },
+                    { text: "Si $a < 1$", isCorrect: false }
+                ],
+                explanation: "La série géométrique converge si et seulement si $|a| < 1$. Si $a=1$ ou $a \\le -1$, elle diverge[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries : Définitions & Propriétés"],
+                q: "Que vaut la somme de la série géométrique $\\sum_{k=0}^\\infty a^k$ (pour $|a| < 1$) ?",
+                options: [
+                    { text: "$\\frac{a}{1-a}$", isCorrect: false },
+                    { text: "$\\frac{1}{1-a}$", isCorrect: true }
+                ],
+                explanation: "Puisque $S_n = \\frac{1-a^{n+1}}{1-a}$, la limite quand $n \\to \\infty$ est $\\frac{1}{1-a}$ pour $|a| < 1$[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries : Définitions & Propriétés"],
+                q: "Si la série $\\sum x_n$ converge, que peut-on affirmer sur la suite $(x_n)$ (Prop 2.5) ?",
+                options: [
+                    { text: "La suite $(x_n)$ converge vers 0", isCorrect: true },
+                    { text: "La suite $(x_n)$ est décroissante", isCorrect: false }
+                ],
+                explanation: "C'est une condition NÉCESSAIRE. Si la série converge, son terme général tend obligatoirement vers zéro ($x_{n+1} = S_{n+1} - S_n \\to l - l = 0$)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries : Définitions & Propriétés"],
+                q: "Vrai ou Faux : Si la suite $(x_n)$ tend vers 0, alors la série $\\sum x_n$ converge obligatoirement.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux ! C'est une erreur classique. Le contre-exemple est la série harmonique (terme général $1/n$ qui tend vers 0, mais dont la série diverge)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries : Définitions & Propriétés"],
+                q: "Si la suite $(x_n)$ ne tend pas vers 0, que peut-on affirmer sur la série $\\sum x_n$ ?",
+                options: [
+                    { text: "Elle diverge", isCorrect: true },
+                    { text: "On ne peut rien conclure", isCorrect: false }
+                ],
+                explanation: "C'est la contraposée de la Proposition 2.5. On parle de « divergence grossière »[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries : Définitions & Propriétés"],
+                q: "Deux séries dont les termes généraux coïncident à partir d'un certain rang $n_0$ ont-elles la même nature (Prop 2.8) ?",
+                options: [
+                    { text: "Oui", isCorrect: true },
+                    { text: "Non", isCorrect: false }
+                ],
+                explanation: "La convergence d'une série ne dépend QUE de son comportement à l'infini. Modifier un nombre fini de termes ne change pas sa nature (convergence ou divergence)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries : Définitions & Propriétés"],
+                q: "Comment est défini le Reste $R_n$ d'une série convergente $\\sum x_k$ (Def 2.10) ?",
+                options: [
+                    { text: "$R_n = \\sum_{k=0}^n x_k$", isCorrect: false },
+                    { text: "$R_n = \\sum_{k=n+1}^\\infty x_k$", isCorrect: true }
+                ],
+                explanation: "Le reste $R_n$ est la somme des termes de $n+1$ à l'infini. Par définition, la suite $(R_n)$ d'une série convergente tend vers 0[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries : Définitions & Propriétés"],
+                q: "Quel est le lien fondamental entre convergence et convergence absolue (Thm 2.12) ?",
+                options: [
+                    { text: "Convergence implique convergence absolue", isCorrect: false },
+                    { text: "Convergence absolue implique convergence", isCorrect: true }
+                ],
+                explanation: "Si la série des valeurs absolues $\\sum |x_n|$ converge, alors la série $\\sum x_n$ converge obligatoirement[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- SÉRIES À TERMES POSITIFS ---
+            {
+                type: "qcm", tags: ["Séries à termes positifs"],
+                q: "Si le terme général $x_n$ d'une série est positif, que peut-on dire de la suite des sommes partielles $(S_n)$ ?",
+                options: [
+                    { text: "Elle est strictement décroissante", isCorrect: false },
+                    { text: "Elle est positive et croissante", isCorrect: true }
+                ],
+                explanation: "Puisque $S_{n+1} - S_n = x_{n+1} \\ge 0$, la suite des sommes partielles est croissante (Prop 2.15)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries à termes positifs"],
+                q: "Pour une série à termes POSITIFS, quels sont les deux seuls comportements possibles (Prop 2.15) ?",
+                options: [
+                    { text: "Elle converge, ou elle n'a pas de limite (oscille)", isCorrect: false },
+                    { text: "Elle converge (si $(S_n)$ est majorée), ou elle tend vers $+\\infty$ (si $(S_n)$ n'est pas majorée)", isCorrect: true }
+                ],
+                explanation: "Une suite croissante est soit majorée (et converge), soit non majorée (et tend vers $+\\infty$). Elle ne peut jamais osciller[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries à termes positifs"],
+                q: "Séries de Riemann : À quelle condition la série $\\sum \\frac{1}{n^\\alpha}$ converge-t-elle ?",
+                options: [
+                    { text: "Si $\\alpha \\ge 1$", isCorrect: false },
+                    { text: "Si $\\alpha > 1$", isCorrect: true },
+                    { text: "Si $\\alpha < 1$", isCorrect: false }
+                ],
+                explanation: "C'est l'un des résultats les plus utilisés : la série de Riemann converge si et seulement si $\\alpha > 1$. Pour $\\alpha=1$ (série harmonique), elle diverge[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- CRITÈRES DE CONVERGENCE ---
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère de comparaison : Soient $0 \\le x_n \\le y_n$. Si la série $\\sum x_n$ DIVERGE, que fait $\\sum y_n$ ?",
+                options: [
+                    { text: "Elle converge", isCorrect: false },
+                    { text: "Elle diverge aussi", isCorrect: true },
+                    { text: "On ne peut rien dire", isCorrect: false }
+                ],
+                explanation: "Si la « petite » série diverge (tend vers l'infini), la « grande » série diverge obligatoirement aussi vers l'infini[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Vrai ou Faux : Le critère de comparaison ($x_n \\le y_n$) est applicable même si $x_n$ et $y_n$ changent de signe.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux. C'est une erreur fatale. Le critère de comparaison N'EST VALABLE QUE pour les séries à termes POSITIFS. Contre-exemple : $x_n=-1 \\le 0=y_n$, $\\sum 0$ converge mais $\\sum -1$ diverge[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère d'équivalence : Si $x_n \\sim y_n$ et que les termes sont POSITIFS, que peut-on affirmer (Prop 2.21) ?",
+                options: [
+                    { text: "Elles ont la même somme", isCorrect: false },
+                    { text: "Elles sont de même nature (convergent ou divergent en même temps)", isCorrect: true }
+                ],
+                explanation: "L'équivalence assure que les deux séries ont le même comportement à l'infini. Attention, elles n'auront pas forcément la même somme[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Vrai ou Faux : On peut utiliser le critère d'équivalence sur des séries dont le terme général change de signe.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux. L'équivalence ne conserve la nature des séries QUE si les termes sont de signe constant (positif ou négatif)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère de Cauchy : Soit $x_n > 0$. Si $\\lim (x_n)^{\\frac{1}{n}} = l$, que conclut-on ?",
+                options: [
+                    { text: "Si $l < 1$ la série converge. Si $l > 1$ elle diverge.", isCorrect: true },
+                    { text: "Si $l > 1$ la série converge. Si $l < 1$ elle diverge.", isCorrect: false }
+                ],
+                explanation: "Si la racine n-ième tend vers $l < 1$, le terme général est majoré par une suite géométrique convergente[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère de D'Alembert : Soit $x_n > 0$. Si $\\lim \\frac{x_{n+1}}{x_n} = l$, à quelle condition la série diverge-t-elle ?",
+                options: [
+                    { text: "Si $l < 1$", isCorrect: false },
+                    { text: "Si $l > 1$", isCorrect: true }
+                ],
+                explanation: "Si le rapport est strictement supérieur à 1 à l'infini, les termes grandissent : la série diverge (divergence grossière)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Que se passe-t-il pour les critères de Cauchy et D'Alembert si la limite $l = 1$ ?",
+                options: [
+                    { text: "La série converge", isCorrect: false },
+                    { text: "La série diverge", isCorrect: false },
+                    { text: "On ne peut pas conclure", isCorrect: true }
+                ],
+                explanation: "Le cas $l=1$ est un cas indéterminé pour ces deux règles. Il faut utiliser une autre méthode (ex: équivalence ou critère en $n^\\alpha$)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère en $n^\\alpha$ : S'il existe $\\alpha > 1$ tel que $\\lim n^\\alpha x_n = l$ (limite finie), que fait la série à termes positifs $\\sum x_n$ ?",
+                options: [
+                    { text: "Elle diverge", isCorrect: false },
+                    { text: "Elle converge", isCorrect: true }
+                ],
+                explanation: "Cela signifie que $x_n = \\mathcal{O}(\\frac{1}{n^\\alpha})$. Comme $\\alpha > 1$, la série de Riemann converge, et donc $\\sum x_n$ converge par comparaison[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère en $n^\\alpha$ : S'il existe $\\alpha \\le 1$ tel que $\\lim n^\\alpha x_n = +\\infty$, que fait la série à termes positifs $\\sum x_n$ ?",
+                options: [
+                    { text: "Elle diverge", isCorrect: true },
+                    { text: "Elle converge", isCorrect: false }
+                ],
+                explanation: "Cela signifie qu'à partir d'un certain rang, $n^\\alpha x_n \\ge 1$, soit $x_n \\ge \\frac{1}{n^\\alpha}$. Comme $\\alpha \\le 1$, la série diverge par comparaison[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- SÉRIES ALTERNÉES & ABEL ---
+            {
+                type: "qcm", tags: ["Séries alternées & Abel"],
+                q: "Qu'est-ce qu'une série « semi-convergente » (Def 2.31) ?",
+                options: [
+                    { text: "Une série qui converge vers l'infini", isCorrect: false },
+                    { text: "Une série qui est convergente, mais PAS absolument convergente", isCorrect: true }
+                ],
+                explanation: "Exemple classique : $\\sum \\frac{(-1)^n}{n}$ converge, mais $\\sum \\left|\\frac{(-1)^n}{n}\\right| = \\sum \\frac{1}{n}$ diverge. Elle est semi-convergente[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries alternées & Abel"],
+                q: "Critère Spécial des Séries Alternées (CSSA) : Quelles sont les 3 conditions sur la suite $(x_n)$ pour que $\\sum (-1)^n x_n$ converge ?",
+                options: [
+                    { text: "Positive, strictement croissante, tend vers 1", isCorrect: false },
+                    { text: "Positive, décroissante, et tend vers 0", isCorrect: true }
+                ],
+                explanation: "Si la suite $(x_n)$ (sans le signe) baisse sans cesse vers 0, les oscillations s'atténuent et la série alternée converge[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries alternées & Abel"],
+                q: "Peut-on utiliser les théorèmes d'équivalence ou de comparaison directement sur une série alternée pour prouver sa semi-convergence ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non, jamais", isCorrect: true }
+                ],
+                explanation: "C'est une interdiction absolue (Rem 2.34). On ne peut utiliser ces critères QUE sur la valeur absolue pour prouver la convergence absolue[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries alternées & Abel"],
+                q: "Critère d'Abel (Thm 2.36) : Si $x_n = a_n b_n$. Quelles sont les conditions pour que $\\sum x_n$ converge ?",
+                options: [
+                    { text: "$(a_n)$ tend vers 0, et $(b_n)$ tend vers 0", isCorrect: false },
+                    { text: "$(a_n)$ est décroissante vers 0, et la suite des SOMMES PARTIELLES de $(b_n)$ est bornée", isCorrect: true }
+                ],
+                explanation: "Le critère d'Abel généralise le CSSA. Il demande un amortisseur monotone vers 0 ($(a_n)$) et un oscillateur à énergie bornée (les sommes partielles de $(b_n)$)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries alternées & Abel"],
+                q: "Sur quoi repose la démonstration du Critère d'Abel ?",
+                options: [
+                    { text: "Sur la transformation d'Abel (version discrète de l'intégration par parties)", isCorrect: true },
+                    { text: "Sur un développement limité à l'ordre 3", isCorrect: false }
+                ],
+                explanation: "La transformation d'Abel utilise $b_n = B_n - B_{n-1}$ pour réécrire la somme et transférer les différences sur $a_n - a_{n+1}$[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- RESTES & ESTIMATIONS ---
+            {
+                type: "qcm", tags: ["Restes & Estimations"],
+                q: "Si $u_n \\sim v_n > 0$ et que les séries DIVERGENT. Que peut-on affirmer ?",
+                options: [
+                    { text: "Les restes sont équivalents", isCorrect: false },
+                    { text: "Les sommes partielles sont équivalentes : $\\sum_{k=0}^n u_k \\sim \\sum_{k=0}^n v_k$", isCorrect: true }
+                ],
+                explanation: "Pour des séries divergentes équivalentes positives, la somme explose et c'est la somme partielle entière qui devient équivalente (Prop 2.39)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Restes & Estimations"],
+                q: "Si $u_n \\sim v_n > 0$ et que les séries CONVERGENT. Que peut-on affirmer ?",
+                options: [
+                    { text: "Les sommes partielles sont équivalentes", isCorrect: false },
+                    { text: "Les RESTES sont équivalents : $\\sum_{k=n}^\\infty u_k \\sim \\sum_{k=n}^\\infty v_k$", isCorrect: true }
+                ],
+                explanation: "Puisque les séries convergent, la limite des sommes partielles est une constante (pas forcément la même). Ce sont les queues (les restes) qui tendent vers 0 et qui sont équivalentes[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Restes & Estimations"],
+                q: "Dans le cadre du Critère Spécial des Séries Alternées (CSSA), comment majore-t-on la valeur absolue du reste $|R_n|$ ?",
+                options: [
+                    { text: "$|R_n| \\le |u_n|$", isCorrect: false },
+                    { text: "$|R_n| \\le |u_{n+1}|$ (la valeur absolue du PREMIER terme négligé)", isCorrect: true }
+                ],
+                explanation: "C'est l'un des outils les plus puissants du CSSA : l'erreur commise en arrêtant la somme au rang $n$ est majorée par la taille du tout premier terme que l'on n'a pas additionné[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Restes & Estimations"],
+                q: "Dans le cadre du CSSA, quel est le signe du reste $R_n = \\sum_{k=n+1}^\\infty (-1)^k u_k$ ?",
+                options: [
+                    { text: "Il est toujours positif", isCorrect: false },
+                    { text: "Il est du même signe que son premier terme : $(-1)^{n+1}$", isCorrect: true }
+                ],
+                explanation: "Le premier terme négligé impose son signe à tout le reste de la somme infinie (Prop 2.40)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Restes & Estimations"],
+                q: "Comment démontre-t-on le Critère Spécial des Séries Alternées (CSSA) ?",
+                options: [
+                    { text: "En utilisant le critère de D'Alembert", isCorrect: false },
+                    { text: "En prouvant que les suites extraites $(S_{2n})$ et $(S_{2n+1})$ sont adjacentes", isCorrect: true }
+                ],
+                explanation: "La démonstration classique (et exigible) montre que la somme des termes pairs décroît, celle des impairs croît, et que leur différence $S_{2n+1} - S_{2n}$ tend vers 0[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- SÉRIES COMPLEXES ---
+            {
+                type: "qcm", tags: ["Séries complexes"],
+                q: "Quand dit-on qu'une série à termes complexes $\\sum z_n$ converge (Def 2.42) ?",
+                options: [
+                    { text: "Quand le module $|z_n|$ tend vers 0", isCorrect: false },
+                    { text: "Quand la série des parties réelles $\\sum \\text{Re}(z_n)$ ET la série des parties imaginaires $\\sum \\text{Im}(z_n)$ convergent toutes les deux", isCorrect: true }
+                ],
+                explanation: "Une série complexe se scinde simplement en deux séries réelles indépendantes. Elle converge si et seulement si ses deux composantes réelles convergent[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries complexes"],
+                q: "À quelle condition une série complexe est-elle ABSOLUMENT convergente (Def 2.43) ?",
+                options: [
+                    { text: "Si la série des parties réelles et celle des parties imaginaires sont absolument convergentes", isCorrect: true },
+                    { text: "Si $\\sum (z_n)^2$ converge", isCorrect: false }
+                ],
+                explanation: "La convergence absolue d'une série complexe implique la convergence absolue de ses composantes réelles et imaginaires (et réciproquement)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries complexes"],
+                q: "Propriété fondamentale (Prop 2.44) : Une série complexe est absolument convergente SI ET SEULEMENT SI...",
+                options: [
+                    { text: "... la série réelle des modules $\\sum |z_n|$ converge", isCorrect: true },
+                    { text: "... la série $\\sum |z_n|$ diverge", isCorrect: false }
+                ],
+                explanation: "C'est l'équivalence parfaite : tester la convergence absolue des composantes revient exactement à tester la convergence de la série (réelle et positive) des modules[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries complexes"],
+                q: "Dans l'utilisation du critère d'Abel sur la série complexe $\\sum a_n e^{i k \\theta}$ (pour $\\theta \\not\\equiv 0 \\pmod{2\\pi}$), que vaut la somme partielle géométrique $\\sum_{k=0}^n e^{i\\theta k}$ ?",
+                options: [
+                    { text: "$\\frac{1-e^{i\\theta(n+1)}}{1-e^{i\\theta}}$", isCorrect: true },
+                    { text: "$\\frac{e^{i\\theta n}-1}{e^{i\\theta}}$", isCorrect: false }
+                ],
+                explanation: "C'est la formule classique de la somme des termes d'une suite géométrique de raison $q = e^{i\\theta}$ (avec $q \\neq 1$)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries complexes"],
+                q: "Comment majore-t-on le module de la somme de $b_k = e^{i \\theta k}$ pour l'appliquer au critère d'Abel (Ex 2.46) ?",
+                options: [
+                    { text: "En factorisant par l'angle moitié, on trouve une forme bornée par $\\frac{1}{|\\sin(\\theta/2)|}$", isCorrect: true },
+                    { text: "Ce n'est pas majorable, ça tend vers l'infini", isCorrect: false }
+                ],
+                explanation: "L'astuce de l'angle moitié permet d'extraire des sinus, prouvant que la somme partielle $(B_n)$ des oscillateurs complexes est bornée, condition clé d'Abel[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Séries complexes"],
+                q: "Quelle inégalité est utilisée pour lier la convergence absolue des parties réelles/imaginaires avec celle du module $|z_n|$ ?",
+                options: [
+                    { text: "$|z_n| \\le |\\text{Re}(z_n)| \\times |\\text{Im}(z_n)|$", isCorrect: false },
+                    { text: "$\\max(|\\text{Re}(z_n)|, |\\text{Im}(z_n)|) \\le |z_n| \\le |\\text{Re}(z_n)| + |\\text{Im}(z_n)|$", isCorrect: true }
+                ],
+                explanation: "La partie gauche vient de la géométrie du triangle rectangle. La partie droite est l'inégalité triangulaire appliquée à $z = \\text{Re}(z) + i\\text{Im}(z)$[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            }
+        ]
+    },
+    "Analyse 3 : Chapitre 3 (Intégrales généralisées)": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            // --- 3.1 DÉFINITIONS & PROPRIÉTÉS GÉNÉRALES ---
+            {
+                type: "qcm", tags: ["Définitions"],
+                q: "Soit $f$ continue sur $[a, +\\infty[$. Comment définit-on la convergence de l'intégrale généralisée $\\int_a^{+\\infty} f(x)dx$ ?",
+                options: [
+                    { text: "L'intégrale converge si la limite $\\lim_{X \\to +\\infty} \\int_a^X f(x)dx$ existe et est un nombre réel", isCorrect: true },
+                    { text: "L'intégrale converge si $f(x)$ tend vers 0 en $+\\infty$", isCorrect: false },
+                    { text: "L'intégrale converge si la fonction est bornée", isCorrect: false }
+                ],
+                explanation: "C'est la définition fondamentale 3.1. On se ramène toujours à la limite d'une intégrale définie classique (sur un segment $[a, X]$) lorsque la borne $X$ tend vers l'infini[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Propriétés générales"],
+                q: "La convergence d'une intégrale généralisée sur $[a, +\\infty[$ dépend-elle du choix de la borne inférieure $a$ (Prop 3.6) ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non, $\\int_a^{+\\infty} f(x)dx$ et $\\int_b^{+\\infty} f(x)dx$ (avec $b \\ge a$) ont la même nature", isCorrect: true }
+                ],
+                explanation: "La relation de Chasles donne $\\int_a^X f = \\int_a^b f + \\int_b^X f$. Comme $\\int_a^b f$ est juste une constante finie, la limite en $+\\infty$ ne dépend que du comportement à l'infini[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions", "Convergence absolue"],
+                q: "Quand dit-on qu'une intégrale généralisée $\\int_a^{+\\infty} f(x)dx$ est ABSOLUMENT convergente ?",
+                options: [
+                    { text: "Si $\\int_a^{+\\infty} |f(x)|dx$ converge", isCorrect: true },
+                    { text: "Si $f$ est une fonction positive", isCorrect: false }
+                ],
+                explanation: "La définition 3.7 est l'exacte jumelle de celle des séries : l'absolue convergence correspond à la convergence de l'intégrale de la valeur absolue de la fonction[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Convergence absolue"],
+                q: "Que stipule le Théorème 3.8 concernant la convergence absolue des intégrales généralisées ?",
+                options: [
+                    { text: "Une intégrale convergente est toujours absolument convergente", isCorrect: false },
+                    { text: "Si l'intégrale est absolument convergente, alors elle est convergente", isCorrect: true }
+                ],
+                explanation: "C'est le grand théorème d'analyse : l'absolue convergence implique la convergence. Cela permet de se ramener à l'étude de fonctions positives (les valeurs absolues)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Pièges"],
+                q: "Vrai ou Faux : Si l'intégrale $\\int_a^{+\\infty} f(x)dx$ converge, alors la fonction $f(x)$ tend obligatoirement vers 0 lorsque $x \\to +\\infty$.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux ! C'est une différence MAJEURE avec les séries. Une fonction peut posséder des \"pics\" arbitrairement hauts mais de plus en plus fins (aire tendant vers 0), de sorte que l'intégrale converge sans que $f$ tende vers 0 (Rem 3.9)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Propriétés générales"],
+                q: "Pour une fonction CONTINUE ET POSITIVE sur $[a, +\\infty[$, combien de comportements possibles existe-t-il pour l'intégrale généralisée ?",
+                options: [
+                    { text: "3 (Convergence, divergence vers $+\\infty$, divergence sans limite)", isCorrect: false },
+                    { text: "2 (Elle converge si la primitive est bornée, sinon elle diverge vers $+\\infty$)", isCorrect: true }
+                ],
+                explanation: "Puisque $f \\ge 0$, la fonction $F(X) = \\int_a^X f(x)dx$ est croissante. Une fonction croissante a seulement deux destins : soit elle est majorée (et converge), soit elle tend vers $+\\infty$ (Rem 3.10)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- 3.1 INTÉGRALES DE RIEMANN (Infini) ---
+            {
+                type: "qcm", tags: ["Riemann & Puissances"],
+                q: "Critère de Riemann en l'infini : À quelle condition l'intégrale $\\int_1^{+\\infty} \\frac{1}{x^\\alpha} dx$ converge-t-elle ?",
+                options: [
+                    { text: "Si $\\alpha < 1$", isCorrect: false },
+                    { text: "Si $\\alpha > 1$", isCorrect: true },
+                    { text: "Si $\\alpha \\ge 1$", isCorrect: false }
+                ],
+                explanation: "En $+\\infty$, il faut que la fonction \"s'écrase\" suffisamment vite vers 0. Cela nécessite une puissance strictement supérieure à 1 (Prop 3.3)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Riemann & Puissances"],
+                q: "Que vaut l'intégrale convergente $\\int_1^{+\\infty} \\frac{1}{x^\\alpha} dx$ (pour $\\alpha > 1$) ?",
+                options: [
+                    { text: "$\\frac{1}{1-\\alpha}$", isCorrect: false },
+                    { text: "$\\frac{1}{\\alpha-1}$", isCorrect: true }
+                ],
+                explanation: "La primitive de $x^{-\\alpha}$ est $\\frac{x^{1-\\alpha}}{1-\\alpha}$. Entre 1 et $+\\infty$, cela donne $0 - \\frac{1}{1-\\alpha} = \\frac{1}{\\alpha-1}$[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Riemann & Puissances"],
+                q: "Pourquoi l'intégrale de Riemann $\\int_1^{+\\infty} \\frac{1}{x} dx$ (cas $\\alpha = 1$) diverge-t-elle ?",
+                options: [
+                    { text: "Parce que la primitive est $-1/x^2$ qui tend vers l'infini", isCorrect: false },
+                    { text: "Parce que la primitive est $\\log(X)$, qui tend vers $+\\infty$ lorsque $X \\to +\\infty$", isCorrect: true }
+                ],
+                explanation: "Le cas $\\alpha=1$ est la bascule critique : la primitive est le logarithme, qui bien qu'il croisse très lentement, tend vers l'infini[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- 3.1 CRITÈRES DE CONVERGENCE (Infini) ---
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère de comparaison : Soient $f$ et $g$ deux fonctions continues telles que $0 \\le f(x) \\le g(x)$ en $+\\infty$. Si l'intégrale de la plus grande ($g$) CONVERGE, que fait l'intégrale de la plus petite ($f$) ?",
+                options: [
+                    { text: "Elle diverge", isCorrect: false },
+                    { text: "Elle converge aussi", isCorrect: true },
+                    { text: "On ne peut rien affirmer", isCorrect: false }
+                ],
+                explanation: "Si l'aire sous la courbe de $g$ est finie, l'aire sous la courbe de $f$ (qui est positive et bornée par $g$) l'est inévitablement aussi (Prop 3.11)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère de comparaison : Soient $0 \\le f(x) \\le g(x)$. Si $\\int_a^{+\\infty} f(x)dx$ DIVERGE, que fait $\\int_a^{+\\infty} g(x)dx$ ?",
+                options: [
+                    { text: "Elle diverge vers $+\\infty$", isCorrect: true },
+                    { text: "Elle converge", isCorrect: false }
+                ],
+                explanation: "Puisque $f$ est positive, l'aire sous $f$ tend vers $+\\infty$. Comme $g$ est au-dessus de $f$, son intégrale tend obligatoirement aussi vers l'infini[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère d'équivalence : Si $f(x) \\sim g(x)$ en $+\\infty$, et que les fonctions sont POSITIVES. Que peut-on affirmer (Prop 3.12) ?",
+                options: [
+                    { text: "Elles ont la même valeur d'intégrale", isCorrect: false },
+                    { text: "Leurs intégrales généralisées sont de même nature (convergent ou divergent simultanément)", isCorrect: true }
+                ],
+                explanation: "L'équivalence en l'infini garantit que les aires ont le même comportement global. La positivité est une condition absolue pour appliquer ce critère[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère en $x^\\alpha$ en $+\\infty$ : S'il existe un réel $\\alpha > 1$ tel que $\\lim_{x \\to +\\infty} x^\\alpha f(x) = L$ (finie), alors...",
+                options: [
+                    { text: "... l'intégrale $\\int_a^{+\\infty} f(x)dx$ diverge", isCorrect: false },
+                    { text: "... l'intégrale $\\int_a^{+\\infty} f(x)dx$ converge absolument", isCorrect: true }
+                ],
+                explanation: "Cela signifie que $f(x) = \\mathcal{O}(1/x^\\alpha)$. Comme $\\alpha > 1$, l'intégrale de Riemann de référence converge, donc celle de $f$ converge aussi (Prop 3.13)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère en $x^\\alpha$ en $+\\infty$ : S'il existe $\\alpha \\le 1$ tel que $\\lim_{x \\to +\\infty} x^\\alpha f(x) = +\\infty$, que fait l'intégrale de $f$ ?",
+                options: [
+                    { text: "Elle diverge", isCorrect: true },
+                    { text: "Elle converge", isCorrect: false }
+                ],
+                explanation: "La fonction $f$ finit par dépasser un multiple de $1/x^\\alpha$. Puisque $\\alpha \\le 1$, l'intégrale de Riemann diverge et entraîne $f$ avec elle dans la divergence[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- 3.2 INTÉGRALES DE RIEMANN ET CRITÈRES SUR INTERVALLE BORNÉ (Problème en 0 ou a) ---
+            {
+                type: "qcm", tags: ["Définitions"],
+                q: "Soit $f$ continue sur $]a, b]$. Comment définit-on la convergence de l'intégrale généralisée avec un \"problème\" en $a$ ?",
+                options: [
+                    { text: "On prend la limite de $\\int_X^b f(x)dx$ quand $X \\to a^+$", isCorrect: true },
+                    { text: "On prend la limite de $f(a) \\times (b-a)$", isCorrect: false }
+                ],
+                explanation: "Puisque le point de discontinuité ou d'explosion est en $a$, on intègre sur $[X, b]$ et on fait tendre $X$ vers $a$ par la droite (Def 3.15)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Riemann & Puissances"],
+                q: "Critère de Riemann en 0 : À quelle condition l'intégrale $\\int_0^1 \\frac{1}{x^\\alpha} dx$ converge-t-elle (Prop 3.17) ?",
+                options: [
+                    { text: "Si $\\alpha < 1$", isCorrect: true },
+                    { text: "Si $\\alpha > 1$", isCorrect: false },
+                    { text: "Si $\\alpha \\le 1$", isCorrect: false }
+                ],
+                explanation: "ATTENTION à l'inversion par rapport à l'infini ! En 0, pour que l'aire sous la courbe d'une asymptote verticale soit finie, la puissance doit être STRICTEMENT INFÉRIEURE à 1[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Riemann & Puissances"],
+                q: "Que vaut l'intégrale $\\int_0^1 \\frac{1}{x^\\alpha} dx$ lorsqu'elle converge ($\\alpha < 1$) ?",
+                options: [
+                    { text: "$\\frac{1}{1-\\alpha}$", isCorrect: true },
+                    { text: "$\\frac{1}{\\alpha-1}$", isCorrect: false }
+                ],
+                explanation: "La primitive de $x^{-\\alpha}$ est $\\frac{x^{1-\\alpha}}{1-\\alpha}$. Entre $X$ et 1, quand $X \to 0$, $X^{1-\\alpha}$ tend vers 0 (car $1-\\alpha > 0$). Il reste donc $\\frac{1}{1-\\alpha}$[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Sur un intervalle borné $]a, b]$, les théorèmes de comparaison et d'équivalence s'appliquent-ils comme en l'infini ?",
+                options: [
+                    { text: "Oui, tant que les fonctions sont continues et POSITIVES sur $]a, b]$", isCorrect: true },
+                    { text: "Non, ces critères sont réservés aux intégrales vers $+\\infty$", isCorrect: false }
+                ],
+                explanation: "Les Propositions 3.23 et 3.24 transposent exactement la logique des séries et de l'infini aux bornes finies, à condition de conserver la positivité[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Critère en $(x-a)^\\alpha$ : Soit un problème en $a$. Si $\\lim_{x \\to a^+} (x-a)^\\alpha f(x) = L$ (limite finie). Pour quelle valeur de $\\alpha$ l'intégrale converge-t-elle ?",
+                options: [
+                    { text: "$\\alpha < 1$", isCorrect: true },
+                    { text: "$\\alpha > 1$", isCorrect: false }
+                ],
+                explanation: "Cela revient à dire que $f$ est dominée par $\\frac{1}{(x-a)^\\alpha}$ près de $a$. En se référant au critère de Riemann en 0, il faut impérativement $\\alpha < 1$ pour converger (Prop 3.25)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "S'il existe un $\\alpha \\ge 1$ tel que $\\lim_{x \\to a^+} (x-a)^\\alpha f(x) = +\\infty$, que fait l'intégrale $\\int_a^b f(x)dx$ ?",
+                options: [
+                    { text: "Elle diverge", isCorrect: true },
+                    { text: "Elle converge", isCorrect: false }
+                ],
+                explanation: "La fonction explose près de $a$ \"plus vite\" que $1/(x-a)^\\alpha$. Comme $\\alpha \\ge 1$, l'intégrale de cette borne inférieure explose vers l'infini[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- 3.3 INTÉGRALES DOUBLEMENT GÉNÉRALISÉES ---
+            {
+                type: "qcm", tags: ["Intégrales doublement généralisées"],
+                q: "Qu'est-ce qu'une intégrale « doublement généralisée » ?",
+                options: [
+                    { text: "Une intégrale comportant DEUX problèmes : soit deux bornes infinies ($-\\infty$, $+\\infty$), soit des problèmes de continuité aux deux bornes", isCorrect: true },
+                    { text: "Une intégrale double sur $\\mathbb{R}^2$", isCorrect: false }
+                ],
+                explanation: "Exemple typique : $\\int_{-\\infty}^{+\\infty} f(x)dx$, ou $\\int_{-1}^1 \\frac{1}{\\sqrt{1-x^2}}dx$ (qui explose en -1 ET en 1)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Intégrales doublement généralisées"],
+                q: "Comment étudie-t-on formellement la convergence d'une intégrale doublement généralisée $\\int_a^b f(x)dx$ ?",
+                options: [
+                    { text: "On introduit un point arbitraire $c \\in ]a,b[$ et on exige que les DEUX intégrales $\\int_a^c f$ ET $\\int_c^b f$ convergent séparément", isCorrect: true },
+                    { text: "On fait une limite symétrique des deux bornes en même temps", isCorrect: false }
+                ],
+                explanation: "La définition 3.27 exige la convergence indépendante des deux morceaux. Si l'un des deux diverge, l'intégrale globale diverge, même s'ils semblent se compenser[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Intégrales doublement généralisées"],
+                q: "La nature de l'intégrale doublement généralisée dépend-elle du point de coupure $c$ choisi ?",
+                options: [
+                    { text: "Oui, un mauvais choix peut créer une divergence", isCorrect: false },
+                    { text: "Non, la convergence et la valeur de la somme finale sont indépendantes du choix de $c$", isCorrect: true }
+                ],
+                explanation: "Tant que $c$ est choisi strictement à l'intérieur du domaine de continuité, les intégrales entre différentes coupures $c$ et $c'$ sont juste des intégrales définies classiques (qui valent une constante finie)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Pièges"],
+                q: "La convergence de l'intégrale $\\int_{-\\infty}^{+\\infty} f(x)dx$ est-elle équivalente au fait que $\\lim_{X \\to +\\infty} \\int_{-X}^X f(x)dx$ existe ?",
+                options: [
+                    { text: "Oui, c'est la définition exacte", isCorrect: false },
+                    { text: "Non, absolument pas !", isCorrect: true }
+                ],
+                explanation: "C'est un piège mortel (Rem 3.30). Pour $f(x)=x$, $\\int_{-X}^X x dx = 0$ pour tout $X$, donc la limite symétrique vaut 0. Pourtant $\\int_0^{+\\infty} x dx$ diverge vers l'infini, donc l'intégrale de $-\\infty$ à $+\\infty$ DIVERGE[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Intégrales doublement généralisées"],
+                q: "Pour l'intégrale $\\int_0^{+\\infty} \\frac{1}{\\sqrt{x}} dx$, que peut-on dire (Ex 3.29) ?",
+                options: [
+                    { text: "Elle diverge à cause du problème en $+\\infty$", isCorrect: true },
+                    { text: "Elle converge", isCorrect: false },
+                    { text: "Elle diverge à cause du problème en 0", isCorrect: false }
+                ],
+                explanation: "Elle est doublement généralisée. En 0, $\\alpha = 1/2 < 1$, donc ça converge. Mais en $+\\infty$, $\\alpha = 1/2 < 1$, donc ça diverge. L'intégrale globale DIVERGE[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Intégrales doublement généralisées"],
+                q: "Existe-t-il une puissance $\\alpha$ pour laquelle l'intégrale $\\int_0^{+\\infty} \\frac{1}{x^\\alpha} dx$ converge ?",
+                options: [
+                    { text: "Oui, pour $\\alpha=1$", isCorrect: false },
+                    { text: "Non, pour aucune valeur de $\\alpha$", isCorrect: true }
+                ],
+                explanation: "Il faut diviser en $c=1$. Sur $]0, 1]$, on a besoin de $\\alpha < 1$. Sur $[1, +\\infty[$, on a besoin de $\\alpha > 1$. Ces deux conditions étant incompatibles, cette intégrale globale diverge TOUJOURS[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- 3.4 CALCUL INTÉGRAL & EXERCICES ---
+            {
+                type: "qcm", tags: ["Calculs & Exercices"],
+                q: "Quelle est la règle d'or pour calculer la valeur exacte d'une intégrale généralisée ?",
+                options: [
+                    { text: "Faire directement une intégration par parties avec des bornes infinies", isCorrect: false },
+                    { text: "Faire tous les calculs (IP, Changement de variable) sur l'intégrale définie $\\int_a^X$, PUIS passer à la limite $X \\to \\infty$ en dernier", isCorrect: true }
+                ],
+                explanation: "Il ne faut jamais écrire $+\\infty$ dans un crochet ou un changement de variable en cours de route. On calcule à $X$ fixé, on simplifie, et on fait la limite à la fin (Sect 3.4)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Calculs & Exercices"],
+                q: "Que vaut l'intégrale $\\int_0^{+\\infty} x e^{-x} dx$ (Exemple 3.31) ?",
+                options: [
+                    { text: "0", isCorrect: false },
+                    { text: "1", isCorrect: true },
+                    { text: "$+\\infty$", isCorrect: false }
+                ],
+                explanation: "On pose $I(X) = \\int_0^X x e^{-x} dx$. Par IPP, $I(X) = [-xe^{-x}]_0^X + \\int_0^X e^{-x} dx = -Xe^{-X} - e^{-X} + 1$. Quand $X \\to \\infty$, les exponentielles l'emportent et écrasent le $X$, il reste $1$[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Calculs & Exercices"],
+                q: "La fonction Gamma (d'Euler) est définie par $\\Gamma(a) = \\int_0^{+\\infty} t^{a-1} e^{-t} dt$. Pour quelles valeurs de $a$ cette intégrale converge-t-elle (Exercice 3.2) ?",
+                options: [
+                    { text: "Pour tout $a > 0$", isCorrect: true },
+                    { text: "Pour tout $a \\in \\mathbb{R}$", isCorrect: false },
+                    { text: "Pour $a > 1$ uniquement", isCorrect: false }
+                ],
+                explanation: "Le terme $e^{-t}$ écrase toute puissance en l'infini, garantissant la convergence en $+\\infty$. Le problème est en $0$, où $t^{a-1} = 1/t^{1-a}$. Il faut que $1-a < 1$, soit $a > 0$ pour que l'intégrale de Riemann converge en $0$[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Calculs & Exercices"],
+                q: "Quelle relation de récurrence fondamentale vérifie la fonction Gamma : $\\Gamma(a+1)$ ?",
+                options: [
+                    { text: "$\\Gamma(a+1) = a \\Gamma(a)$", isCorrect: true },
+                    { text: "$\\Gamma(a+1) = (a+1) \\Gamma(a)$", isCorrect: false }
+                ],
+                explanation: "Cette relation, obtenue par une simple intégration par parties, montre que la fonction Gamma généralise la factorielle. Pour un entier $n$, $\\Gamma(n) = (n-1)!$[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+
+            // --- QUESTIONS COMPLÉMENTAIRES (Pour blinder les 40 items) ---
+            {
+                type: "qcm", tags: ["Propriétés générales"],
+                q: "Si les intégrales $\\int_a^{+\\infty} f(x)dx$ et $\\int_a^{+\\infty} g(x)dx$ convergent, que peut-on dire de $\\int_a^{+\\infty} (f(x)+g(x))dx$ ?",
+                options: [
+                    { text: "Elle converge et vaut la somme des deux intégrales", isCorrect: true },
+                    { text: "Elle converge seulement si $f$ et $g$ sont positives", isCorrect: false }
+                ],
+                explanation: "C'est la propriété de linéarité des intégrales généralisées convergentes (Prop 3.5). La somme de limites finies est la limite des sommes[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions"],
+                q: "Que représente le \"reste\" $R(x)$ d'une intégrale généralisée convergente $\\int_0^{+\\infty} f(t)dt$ ?",
+                options: [
+                    { text: "$R(x) = \\int_0^x f(t)dt$", isCorrect: false },
+                    { text: "$R(x) = \\int_x^{+\\infty} f(t)dt$", isCorrect: true }
+                ],
+                explanation: "Le reste mesure \"l'aire qu'il reste à balayer jusqu'à l'infini\". Puisque l'intégrale totale converge, ce reste $\\lim_{x \\to +\\infty} R(x)$ tend obligatoirement vers 0[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Vrai ou Faux : Si $f(x) \\sim \\frac{-1}{x}$ en $+\\infty$, l'intégrale $\\int_1^{+\\infty} f(x)dx$ converge.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux. L'équivalence à $\\frac{-1}{x}$ (qui garde un signe constant négatif) entraîne que l'intégrale est de la même nature que l'intégrale de $\\frac{-1}{x}$. Celle-ci diverge (cas $\\alpha=1$)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Peut-on utiliser le critère d'équivalence $f(x) \\sim g(x)$ si $f$ et $g$ changent constamment de signe en l'infini ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non, c'est interdit", isCorrect: true }
+                ],
+                explanation: "Comme pour les séries, le critère d'équivalence exige formellement que les fonctions soient de SIGNE CONSTANT (strictement positives ou strictement négatives) au voisinage de l'infini[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Convergence absolue", "Pièges"],
+                q: "Si $\\int_a^{+\\infty} f(x)dx$ est semi-convergente (converge mais pas absolument), peut-on la majorer par l'intégrale d'une fonction plus grande ?",
+                options: [
+                    { text: "Oui", isCorrect: false },
+                    { text: "Non, la majoration nécessite la positivité ou l'étude de $|f|$", isCorrect: true }
+                ],
+                explanation: "Les critères de majoration ($0 \\le f \\le g$) sont structurellement liés à la positivité. Une fonction semi-convergente joue sur l'annulation de ses aires positives et négatives, on ne peut pas l'encadrer de la même manière[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Intégrales doublement généralisées"],
+                q: "Dans l'étude de l'intégrale doublement généralisée $\\int_{-\\infty}^{+\\infty} f(x)dx$, si la partie $\\int_0^{+\\infty} f(x)dx$ converge vers $L$ et que $\\int_{-\\infty}^0 f(x)dx$ diverge vers $-\\infty$, que conclut-on ?",
+                options: [
+                    { text: "L'intégrale globale diverge", isCorrect: true },
+                    { text: "L'intégrale globale diverge vers $-\\infty$", isCorrect: false }
+                ],
+                explanation: "Dès que l'une des deux branches diverge, l'intégrale doublement généralisée diverge globalement par définition. On évite de donner une valeur infinie si les deux côtés ne s'accordent pas[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Calculs & Exercices"],
+                q: "Si on souhaite utiliser une intégration par parties pour prouver la convergence d'une intégrale généralisée, quelle est la bonne méthodologie ?",
+                options: [
+                    { text: "Appliquer l'IPP sur l'intégrale infinie et voir si les termes de bord s'annulent", isCorrect: false },
+                    { text: "Appliquer l'IPP sur le segment $[a, X]$, prouver que le terme crochet a une limite finie quand $X \\to \\infty$, puis étudier la convergence de la nouvelle intégrale résiduelle", isCorrect: true }
+                ],
+                explanation: "Les théorèmes opératoires classiques s'appliquent sur des intégrales propres (finies). On justifie l'existence de la limite globale en s'assurant que TOUTES les parties de la formule IPP convergent séparément[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Propriétés générales"],
+                q: "Pour prouver que l'absolue convergence entraîne la convergence, on montre que la suite $s_n = \\int_a^{X_n} f(x)dx$ est...",
+                options: [
+                    { text: "... croissante et majorée", isCorrect: false },
+                    { text: "... de Cauchy, en s'appuyant sur la convergence de $\\int_a^{X_n} |f(x)|dx$", isCorrect: true }
+                ],
+                explanation: "La démonstration (Thm 3.8) utilise fondamentalement la complétude de $\\mathbb{R}$ : on prouve que la suite des intégrales définies est de Cauchy grâce à l'inégalité triangulaire sur les valeurs absolues[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Définitions"],
+                q: "Soit $f$ une fonction continue sur $]-\\infty, b]$. Comment définit-on la convergence de $\\int_{-\\infty}^b f(x)dx$ ?",
+                options: [
+                    { text: "La limite de $\\int_X^b f(x)dx$ quand $X \\to -\\infty$ doit exister et être finie", isCorrect: true },
+                    { text: "On fait le changement de variable $x = -t$ pour se ramener à $+\\infty$", isCorrect: false }
+                ],
+                explanation: "C'est l'exact miroir de la définition en $+\\infty$ (Remarque 3.4). Le changement de variable est une technique de calcul, pas la définition[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Critères de convergence"],
+                q: "Soit un problème en $a$. Si $f(x) = \\mathcal{O}\\left(\\frac{1}{(x-a)^{\\alpha}}\\right)$ près de $a^+$. Pour quelle condition l'intégrale de $f$ sur $]a, b]$ converge-t-elle assurément ?",
+                options: [
+                    { text: "Pour $\\alpha < 1$", isCorrect: true },
+                    { text: "Pour $\\alpha \\ge 1$", isCorrect: false }
+                ],
+                explanation: "La notation Grand $\\mathcal{O}$ signifie que $f$ est majorée (en valeur absolue) par un multiple de la fonction de référence. Pour que l'aire de cette limite supérieure ne diverge pas en $a$, il faut $\\alpha < 1$ (Prop 3.25)[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Calculs & Exercices"],
+                q: "L'intégrale $\\int_0^1 \\ln(x) dx$ a un problème en 0. Que vaut cette intégrale (si elle converge) ?",
+                options: [
+                    { text: "Elle diverge vers $-\\infty$", isCorrect: false },
+                    { text: "Elle converge et vaut $-1$", isCorrect: true }
+                ],
+                explanation: "La primitive est $x\\ln(x) - x$. On calcule sur $[X, 1]$ : $(1\\ln(1)-1) - (X\\ln(X)-X) = -1 - X\\ln(X) + X$. Par croissances comparées, $X\\ln(X) \\to 0$ quand $X \\to 0^+$. La limite est donc $-1$.", // Calcul implicite standard mais lié à la section "Calcul Intégral".
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            },
+            {
+                type: "qcm", tags: ["Intégrales doublement généralisées"],
+                q: "Pour l'intégrale $\\int_{-1}^1 \\frac{1}{\\sqrt{1-x^2}} dx$ (Exemple 3.28), y a-t-il convergence ?",
+                options: [
+                    { text: "Oui, car près de $x=1$ et $x=-1$, la fonction se comporte comme une puissance $1/2 < 1$", isCorrect: true },
+                    { text: "Non, elle diverge aux deux bornes", isCorrect: false }
+                ],
+                explanation: "On coupe en 0. Près de 1, $1-x^2 = (1-x)(1+x) \\sim 2(1-x)$. On a donc du $1/(1-x)^{1/2}$, ce qui est un problème de type Riemann avec $\\alpha = 1/2 < 1$. Ça converge des deux côtés[cite: 3].",
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+            }
+        ]
+    }
+};
