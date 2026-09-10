@@ -531,31 +531,66 @@ function updateDailyValidation(subject) {
 // -----------------------------------------------------
 // AFFICHAGE DU CATALOGUE (VITRINE)
 // -----------------------------------------------------
+// -----------------------------------------------------
+// AFFICHAGE DU CATALOGUE (VITRINE OFFICIELLE)
+// -----------------------------------------------------
 function renderCatalogue() {
     const container = document.getElementById('catalogue-container');
     if (!container) return;
     container.innerHTML = "";
 
-    // S'assurer que le catalogue existe (défini dans catalogue.js)
     if (typeof courseCatalogue === 'undefined') return;
 
     courseCatalogue.forEach(course => {
-        // --- Calcul dynamique de la progression ---
         let totalQ = 0;
         let masteredQ = 0; 
         
-        // On fouille dans la sauvegarde locale pour trouver les chapitres liés à ce cours
+        // On cherche les chapitres qui appartiennent à ce cours officiel
         Object.keys(appData).forEach(key => {
             if (key.startsWith('_')) return;
             
-            // Si le nom du chapitre contient le titre du cours (ex: "Analyse 3")
-            if (key.includes(course.title)) {
+            // On vérifie l'ID du cours, peu importe dans quel dossier personnel il est rangé !
+            if (appData[key].course === course.id || key.includes(course.title)) {
                 const questions = appData[key].questions || [];
                 totalQ += questions.length;
-                // On considère une question maîtrisée si son intervalle de révision dépasse 10 jours
                 masteredQ += questions.filter(q => q.sm2 && q.sm2.interval > 10).length; 
             }
         });
+
+        const progressPercent = totalQ > 0 ? Math.round((masteredQ / totalQ) * 100) : 0;
+
+        const card = document.createElement('div');
+        card.className = 'course-card';
+        card.style.setProperty('--theme-color', course.themeColor);
+        
+        // Bientôt, ce clic déclenchera le téléchargement depuis Supabase
+        card.onclick = () => {
+            customAlert(course.title, `Téléchargement du pack de questions en préparation... (Lazy Loading à venir)`);
+        };
+
+        card.innerHTML = `
+            <div>
+                <div class="course-icon">${course.icon}</div>
+                <div class="course-title">${course.title}</div>
+                <div class="course-desc">${course.description}</div>
+            </div>
+            <div>
+                <div class="course-meta">
+                    <span>📚 ${course.stats.chapters} Chapitres</span>
+                    <span>📝 ${course.stats.totalQuestions} Q.</span>
+                </div>
+                <div class="progress-bar-bg" style="margin-top: 15px; height: 6px; background-color: rgba(255,255,255,0.1);">
+                    <div class="progress-bar-fill" style="width: ${progressPercent}%; background-color: ${course.themeColor}; border-radius: 4px;"></div>
+                </div>
+                <div style="text-align: right; font-size: 0.8em; color: var(--text-muted); margin-top: 8px; font-weight: bold;">
+                    ${progressPercent}% maîtrisé
+                </div>
+            </div>
+        `;
+
+        container.appendChild(card);
+    });
+}
 
         // Calcul du pourcentage (ou 0 si on n'a pas encore commencé la matière)
         const progressPercent = totalQ > 0 ? Math.round((masteredQ / totalQ) * 100) : 0;
