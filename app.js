@@ -565,7 +565,7 @@ function renderCatalogue() {
         
         // Bientôt, ce clic déclenchera le téléchargement depuis Supabase
         card.onclick = () => {
-            customAlert(course.title, `Téléchargement du pack de questions en préparation... (Lazy Loading à venir)`);
+            loadCourseData(course.title, course.dataFile);
         };
 
         card.innerHTML = `
@@ -1734,6 +1734,61 @@ async function removeFavoriteFromList(subject, questionText) {
             await saveData(); // Synchronisation Supabase
             renderFavorites(); // Rafraîchir l'affichage instantanément
         }
+    }
+}
+
+// -----------------------------------------------------
+// LAZY LOADING : TÉLÉCHARGEMENT DES COURS
+// -----------------------------------------------------
+async function loadCourseData(courseTitle, dataUrl) {
+    try {
+        customAlert("Téléchargement", `Téléchargement de ${courseTitle} en cours... ⏳`);
+
+        // On va chercher le fichier JSON
+        const response = await fetch(dataUrl);
+        if (!response.ok) throw new Error("Fichier introuvable ou erreur réseau");
+        
+        const courseData = await response.json();
+        let hasNewContent = false;
+
+        // On parcourt les chapitres du fichier téléchargé
+        for (let subject in courseData) {
+            if (!appData[subject]) {
+                // Si la matière n'existe pas encore chez l'utilisateur, on l'ajoute
+                appData[subject] = courseData[subject];
+                
+                // On s'assure qu'elle atterrit dans un dossier par défaut
+                appData[subject].folder = courseData[subject].folder || "Général";
+                
+                // On s'assure que _folders connaît ce dossier
+                if (!appData._folders.includes(appData[subject].folder)) {
+                    appData._folders.push(appData[subject].folder);
+                }
+                
+                hasNewContent = true;
+            } else {
+                // Si la matière existe déjà (stats conservées), on ajoute juste les NOUVELLES questions
+                courseData[subject].questions.forEach(newQ => {
+                    const exists = appData[subject].questions.find(q => q.q === newQ.q);
+                    if (!exists) {
+                        appData[subject].questions.push(newQ);
+                        hasNewContent = true;
+                    }
+                });
+            }
+        }
+
+        if (hasNewContent) {
+            await saveData(); // On sauvegarde dans Supabase / Local
+            renderHome();     // On rafraîchit l'accueil pour voir les nouvelles matières
+            customAlert("Succès", `Le cours ${courseTitle} a été installé/mis à jour avec succès ! ✅`);
+        } else {
+            customAlert("À jour", `Le cours ${courseTitle} est déjà 100% à jour dans ta base. 👍`);
+        }
+
+    } catch (error) {
+        console.error(error);
+        customAlert("Erreur", `Impossible de charger ${courseTitle}. Vérifie que le fichier ${dataUrl} existe bien.`);
     }
 }
 // LANCEMENT DE L'APPLICATION
