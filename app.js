@@ -429,13 +429,25 @@ async function changeSubjectFolder(newFolder) {
 function populateFolderSelects() {
     const selectNew = document.getElementById('new-subject-folder');
     const selectChange = document.getElementById('subject-folder-select');
+    const selectFilter = document.getElementById('filter-folder');
+    
     if (selectNew) selectNew.innerHTML = "";
     if (selectChange) selectChange.innerHTML = "";
+    
+    // Pour le filtre d'accueil, on sauvegarde le choix actuel pour ne pas le réinitialiser
+    let filterValue = "ALL";
+    if (selectFilter) {
+        filterValue = selectFilter.value; 
+        selectFilter.innerHTML = '<option value="ALL">📂 Tous les dossiers</option>';
+    }
     
     appData._folders.forEach(f => {
         if(selectNew) selectNew.add(new Option(f, f));
         if(selectChange) selectChange.add(new Option(f, f));
+        if(selectFilter) selectFilter.add(new Option(f, f));
     });
+    
+    if (selectFilter) selectFilter.value = filterValue; // On remet le choix de l'utilisateur
 }
 
 async function addSubject() {
@@ -586,32 +598,53 @@ function renderCatalogue() {
 // ACCUEIL
 function renderHome() {
     populateFolderSelects();
-    renderCatalogue();
+    renderCatalogue(); 
+    
     const list = document.getElementById('subjects-list');
     list.innerHTML = ""; 
     const frag = document.createDocumentFragment();
 
-    // 1. Initialiser les groupes
+    // Récupération des valeurs de recherche et de filtre
+    const searchInput = document.getElementById('search-subject');
+    const filterInput = document.getElementById('filter-folder');
+    const searchQuery = searchInput ? searchInput.value.toLowerCase() : "";
+    const folderFilter = filterInput ? filterInput.value : "ALL";
+
+    // 1. Initialiser les groupes (uniquement pour les dossiers correspondant au filtre)
     const subjectsByFolder = {};
     appData._folders.forEach(folder => {
-        subjectsByFolder[folder] = [];
+        if (folderFilter === "ALL" || folderFilter === folder) {
+            subjectsByFolder[folder] = [];
+        }
     });
 
-    // 2. Classer les matières
+    // 2. Classer les matières en appliquant la recherche textuelle
     Object.keys(appData).forEach(subject => {
-        if (subject === '_player' || subject === '_folders') return;
+        if (subject.startsWith('_')) return;
+        
+        // Filtre textuel (on ignore la casse)
+        if (searchQuery && !subject.toLowerCase().includes(searchQuery)) return;
+
         const folder = appData[subject].folder || DEFAULT_FOLDER;
-        if (!subjectsByFolder[folder]) subjectsByFolder[folder] = [];
-        subjectsByFolder[folder].push(subject);
+        
+        // Si le dossier est bien dans ceux qu'on a le droit d'afficher
+        if (subjectsByFolder[folder] !== undefined) {
+            subjectsByFolder[folder].push(subject);
+        }
     });
 
     // 3. Afficher par dossier
-    appData._folders.forEach(folder => {
+    Object.keys(subjectsByFolder).forEach(folder => {
+        const subjects = subjectsByFolder[folder];
+        
+        // Si on a tapé une recherche, on masque les dossiers qui ne contiennent aucun résultat
+        if (searchQuery && subjects.length === 0) return;
+
         const folderDiv = document.createElement('div');
         folderDiv.className = 'folder-section';
 
         const header = document.createElement('div');
-        header.className = 'folder-header list-item'; // Utilise le style des list-items pour le fond
+        header.className = 'folder-header list-item'; 
         header.style.cursor = 'default';
         header.style.fontWeight = 'bold';
         header.innerHTML = `<span>📁 ${folder}</span>`;
@@ -619,8 +652,6 @@ function renderHome() {
 
         const subjectsContainer = document.createElement('div');
         subjectsContainer.className = 'folder-subjects';
-
-        const subjects = subjectsByFolder[folder];
         
         if (subjects.length === 0) {
             const emptyMsg = document.createElement('div');
@@ -665,6 +696,28 @@ function renderHome() {
     });
     
     list.appendChild(frag);
+}
+
+
+// -----------------------------------------------------
+// ESPACE COMMUNAUTAIRE (MOCK-UP)
+// -----------------------------------------------------
+function renderCommunity() {
+    const container = document.getElementById('community-list');
+    container.innerHTML = `
+        <div class="card" style="text-align: center; grid-column: 1 / -1; padding: 40px; border-style: dashed; border-color: var(--text-muted);">
+            <span style="font-size: 3em;">🚧</span>
+            <h3 style="color: var(--primary); margin-top: 15px;">La connexion Supabase arrive !</h3>
+            <p style="color: var(--text-muted); font-size: 0.9em; line-height: 1.5; max-width: 500px; margin: 0 auto;">
+                C'est ici que tu pourras parcourir le catalogue public et importer les quiz créés par tes camarades. 
+                Le système de partage asynchrone (JSONB via Supabase) est en cours de déploiement.
+            </p>
+        </div>
+    `;
+}
+
+function searchCommunity() {
+    customAlert("Recherche", "La recherche communautaire sera activée dès que la table publique Supabase sera connectée !");
 }
 
 function addSubject() {
