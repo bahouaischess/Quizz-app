@@ -338,6 +338,12 @@
                             <button id="btn-sm2-4" class="sm2-btn success" onclick="submitSM2(4)">Bien<br><small id="sm2-text-4"></small></button>
                             <button id="btn-sm2-5" class="sm2-btn primary" onclick="submitSM2(5)">Facile<br><small id="sm2-text-5"></small></button>
                         </div>
+
+                        <!-- Boutons d'édition et favoris -->
+                        <div id="extra-actions-box" class="hidden" style="margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(255,255,255,0.1); display: flex; justify-content: center; gap: 15px;">
+                            <button id="btn-edit-q" class="btn btn-secondary" onclick="openEditModal()">✏️ Éditer la question</button>
+                            <button id="btn-fav-q" class="btn btn-warning" onclick="toggleFavorite()">⭐ Favoris</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -409,6 +415,37 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <!-- MODAL D'ÉDITION DE QUESTION -->
+    <div id="edit-question-modal" class="modal hidden" style="display:none; position:fixed; z-index:2000; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7); overflow-y:auto;">
+        <div class="modal-content" style="background:var(--bg-card, #1e1e2e); margin: 5% auto; padding: 25px; width: 90%; max-width: 600px; border-radius: 12px; position:relative;">
+            <span class="close-btn" onclick="closeEditModal()" style="position:absolute; right:20px; top:15px; font-size:28px; cursor:pointer; color:var(--text-muted);">&times;</span>
+            <h2 style="margin-top:0; color:var(--primary);">✏️ Éditer la question</h2>
+            
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label>Question :</label>
+                <textarea id="edit-q-text" rows="3" style="width:100%; padding:10px; border-radius:5px; background:rgba(255,255,255,0.05); color:white; border:1px solid rgba(255,255,255,0.2);"></textarea>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label>Explication :</label>
+                <textarea id="edit-q-explanation" rows="3" style="width:100%; padding:10px; border-radius:5px; background:rgba(255,255,255,0.05); color:white; border:1px solid rgba(255,255,255,0.2);"></textarea>
+            </div>
+            
+            <div class="form-group" style="margin-bottom: 15px;">
+                <label>Tags (séparés par des virgules) :</label>
+                <input type="text" id="edit-q-tags" style="width:100%; padding:10px; border-radius:5px; background:rgba(255,255,255,0.05); color:white; border:1px solid rgba(255,255,255,0.2);">
+            </div>
+            
+            <label>Options de réponse :</label>
+            <div id="edit-q-options-container" style="margin-bottom: 15px; background:rgba(0,0,0,0.2); padding:10px; border-radius:8px;">
+                <!-- Les options seront générées ici par JS -->
+            </div>
+            
+            <button class="btn btn-secondary" onclick="addOptionToEdit()" style="width:100%; margin-bottom:15px;">+ Ajouter une option (Difficulté)</button>
+            <button class="btn btn-primary" onclick="saveEditedQuestion()" style="width:100%; font-size:1.1em;">💾 Enregistrer les modifications</button>
         </div>
     </div>
 
