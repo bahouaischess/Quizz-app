@@ -1126,9 +1126,20 @@ function validateAnswer() {
     sm2Box.classList.remove('hidden');
     
     const qItem = session.questions[session.currentIndex];
-    const sm2 = qItem.originalRef.sm2;
+    const qData = qItem.originalRef; // On récupère la question originale
+    const sm2 = qData.sm2;
 
-    // Prise en compte du score partiel pour afficher les bons boutons
+    const extraActions = document.getElementById('extra-actions-box');
+
+    // ----------------------------------------------------------------------
+    // MODIFICATION : On affiche la zone d'édition/favoris DANS TOUS LES CAS
+    // ----------------------------------------------------------------------
+    extraActions.classList.remove('hidden');
+    const favBtn = document.getElementById('btn-fav-q');
+    favBtn.textContent = qData.isFavorite ? "🌟 Retirer des favoris" : "⭐ Ajouter aux favoris";
+    favBtn.className = qData.isFavorite ? "btn btn-success" : "btn btn-warning";
+
+    // Prise en compte du score partiel pour afficher les bons boutons de révision
     if (result.isCorrect || result.isPartial) {
         document.getElementById('btn-next-wrong').classList.add('hidden');
         document.getElementById('btn-sm2-3').classList.remove('hidden');
@@ -1379,6 +1390,143 @@ function renderProfileDashboard() {
     buildMiniList(weakQuestions, 'weak-questions-list', 'danger', "Aucun point de friction détecté pour le moment !");
 
     renderMath([document.getElementById('profile-view')]);
+}
+
+// -----------------------------------------------------
+// ÉDITION ET FAVORIS EN COURS DE QUIZ
+// -----------------------------------------------------
+
+async function toggleFavorite() {
+    const qItem = session.questions[session.currentIndex];
+    const qData = qItem.originalRef;
+    
+    // Inversion de l'état favori
+    qData.isFavorite = !qData.isFavorite;
+    
+    const favBtn = document.getElementById('btn-fav-q');
+    if (qData.isFavorite) {
+        favBtn.textContent = "🌟 Retirer des favoris";
+        favBtn.className = "btn btn-success";
+        customAlert("Favoris", "Question ajoutée aux favoris !");
+    } else {
+        favBtn.textContent = "⭐ Ajouter aux favoris";
+        favBtn.className = "btn btn-warning";
+        customAlert("Favoris", "Question retirée des favoris.");
+    }
+    
+    await saveData(); // Sauvegarde immédiate dans Supabase
+}
+
+function openEditModal() {
+    const qItem = session.questions[session.currentIndex];
+    const qData = qItem.originalRef;
+    
+    // Pré-remplissage des champs avec les données actuelles
+    document.getElementById('edit-q-text').value = qData.q;
+    document.getElementById('edit-q-explanation').value = qData.explanation || "";
+    document.getElementById('edit-q-tags').value = (qData.tags || []).join(", ");
+    
+    // Génération des options existantes
+    const optionsContainer = document.getElementById('edit-q-options-container');
+    optionsContainer.innerHTML = "";
+    
+    qData.options.forEach(opt => {
+        addOptionToEdit(opt.text, opt.isCorrect);
+    });
+    
+    document.getElementById('edit-question-modal').style.display = 'block';
+}
+
+function closeEditModal() {
+    document.getElementById('edit-question-modal').style.display = 'none';
+}
+
+function addOptionToEdit(text = "", isCorrect = false) {
+    const container = document.getElementById('edit-q-options-container');
+    const optDiv = document.createElement('div');
+    optDiv.className = 'option-edit-row';
+    optDiv.style = "display: flex; gap: 10px; margin-bottom: 10px; align-items: center;";
+    
+    const checkCorrect = document.createElement('input');
+    checkCorrect.type = 'checkbox';
+    checkCorrect.checked = isCorrect;
+    checkCorrect.className = "edit-opt-correct";
+    checkCorrect.style.transform = "scale(1.5)";
+    
+    const inputTxt = document.createElement('input');
+    inputTxt.type = 'text';
+    inputTxt.style.flex = "1";
+    inputTxt.value = text;
+    inputTxt.className = "edit-opt-text";
+    inputTxt.style.padding = "8px";
+    inputTxt.style.borderRadius = "5px";
+    inputTxt.style.background = "rgba(255,255,255,0.1)";
+    inputTxt.style.color = "white";
+    inputTxt.style.border = "1px solid rgba(255,255,255,0.3)";
+    
+    const btnDel = document.createElement('button');
+    btnDel.innerHTML = "❌";
+    btnDel.className = "btn btn-danger";
+    btnDel.style.padding = "8px 12px";
+    btnDel.onclick = () => container.removeChild(optDiv);
+    
+    optDiv.appendChild(checkCorrect);
+    optDiv.appendChild(inputTxt);
+    optDiv.appendChild(btnDel);
+    container.appendChild(optDiv);
+}
+
+async function saveEditedQuestion() {
+    const qItem = session.questions[session.currentIndex];
+    const qData = qItem.originalRef;
+    
+    // Récupération des textes
+    const newText = document.getElementById('edit-q-text').value.trim();
+    if (!newText) {
+        alert("La question ne peut pas être vide !");
+        return;
+    }
+    
+    qData.q = newText;
+    qData.explanation = document.getElementById('edit-q-explanation').value.trim();
+    
+    // Traitement des tags
+    const tagsRaw = document.getElementById('edit-q-tags').value;
+    qData.tags = tagsRaw.split(',').map(t => t.trim()).filter(t => t);
+    
+    // Traitement des options
+    const optionRows = document.querySelectorAll('.option-edit-row');
+    let newOptions = [];
+    let hasCorrect = false;
+    
+    optionRows.forEach(row => {
+        const text = row.querySelector('.edit-opt-text').value.trim();
+        const isCorrect = row.querySelector('.edit-opt-correct').checked;
+        if (text) {
+            newOptions.push({ text, isCorrect });
+            if (isCorrect) hasCorrect = true;
+        }
+    });
+    
+    if (newOptions.length < 2) {
+        alert("Il faut au moins 2 options valides !");
+        return;
+    }
+    if (!hasCorrect) {
+        alert("Il faut au moins une bonne réponse cochée !");
+        return;
+    }
+    
+    qData.options = newOptions;
+    
+    await saveData(); // Synchronisation Supabase
+    closeEditModal();
+    customAlert("Succès", "La question a été mise à jour et sauvegardée !");
+    
+    // Mise à jour visuelle immédiate dans le quiz
+    document.getElementById('question-text').textContent = qData.q;
+    if (qData.explanation) document.getElementById('explanation-text').textContent = qData.explanation;
+    renderMath([document.getElementById('question-view')]);
 }
 // LANCEMENT DE L'APPLICATION
 checkSession();
