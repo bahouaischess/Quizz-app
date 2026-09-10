@@ -50,6 +50,7 @@
             <div id="sidebar-resizer" class="sidebar-resizer"></div>
             
             <button class="nav-item active" onclick="showView('home-view', this)"><span class="nav-icon">📚</span><span class="nav-label">Mes Matières</span></button>
+            <button class="nav-item" onclick="showView('community-view', this); renderCommunity();"><span class="nav-icon">🌍</span><span class="nav-label">Communauté</span></button>
             <button class="nav-item" onclick="showView('custom-quiz-view', this)"><span class="nav-icon">🎯</span><span class="nav-label">Mode Libre</span></button>
             <button class="nav-item" onclick="showView('gr20-setup-view', this)"><span class="nav-icon">🏔️</span><span class="nav-label">Mode GR20</span></button>
             <button class="nav-item" onclick="showView('favorites-view', this); renderFavorites();"><span class="nav-icon">⭐</span><span class="nav-label">Mes Favoris</span></button>
@@ -70,6 +71,12 @@
             <!-- ACCUEIL -->
             <div id="home-view" class="view">
                 <h1>Matières et Entraînements</h1>
+                <div style="display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap;">
+                    <input type="text" id="search-subject" placeholder="🔍 Rechercher une matière..." oninput="renderHome()" style="flex: 2; margin: 0; min-width: 200px;">
+                    <select id="filter-folder" onchange="renderHome()" style="flex: 1; margin: 0; min-width: 150px;">
+                        <option value="ALL">📂 Tous les dossiers</option>
+                    </select>
+                </div>
                 <div id="subjects-list"></div>
                 <div class="card" style="margin-top: 30px;">
                     <h3>📁 Nouveau dossier</h3>
@@ -89,6 +96,20 @@
                         <select id="new-subject-folder" style="margin: 0; flex: 1;"></select>
                         <button onclick="addSubject()">Créer</button>
                     </div>
+                </div>
+            </div>
+            <!-- COMMUNAUTÉ (Nouveau) -->
+            <div id="community-view" class="view hidden">
+                <h1>🌍 Espace Communautaire</h1>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Explore les quiz créés et partagés par les autres étudiants. Importe-les en un clic dans tes matières.</p>
+                
+                <div style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;">
+                    <input type="text" id="search-community" placeholder="🔍 Chercher par code d'import, mot-clé, matière..." style="flex: 2; margin: 0; min-width: 200px;">
+                    <button onclick="searchCommunity()" style="flex: 1; min-width: 150px;">Rechercher</button>
+                </div>
+
+                <div id="community-list" class="dashboard-grid">
+                    <!-- Les quiz publics apparaîtront ici -->
                 </div>
             </div>
 
