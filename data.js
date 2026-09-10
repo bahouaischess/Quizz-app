@@ -1486,9 +1486,10 @@ const defaultData = {
                     { text: "Une famille de vecteurs qui engendre tout l'espace", isCorrect: false },
                     { text: "Une famille libre et génératrice de l'espace $E$", isCorrect: true },
                     { text: "Une famille libre maximale", isCorrect: true },
-                    { text: "Une famille génératrice minimale", isCorrect: true }
+                    { text: "Une famille génératrice minimale", isCorrect: true },
+                    { text: "Une famille génératrice contenant le vecteur nul", isCorrect: false }
                 ],
-                explanation: "Une base doit être à la fois libre (sans redondance) et génératrice (permettant d'atteindre tout vecteur). Cela équivaut à être une famille libre maximale ou une famille génératrice minimale[cite: 1].",
+                explanation: "Une base doit être à la fois libre (sans redondance) et génératrice (permettant d'atteindre tout vecteur). Cela équivaut à être une famille libre maximale ou une famille génératrice minimale. Une famille contenant le vecteur nul est automatiquement liée, donc jamais une base.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1496,9 +1497,11 @@ const defaultData = {
                 q: "Que garantit le fait qu'une famille $\\mathcal{B}$ soit une base de $E$ pour l'écriture d'un vecteur $x \\in E$ ?",
                 options: [
                     { text: "Qu'il existe une infinité de décompositions possibles", isCorrect: false },
-                    { text: "Qu'il existe un unique $n$-uplet de coordonnées $(x_1, \\dots, x_n)$ tel que $x = x_1 e_1 + \\dots + x_n e_n$", isCorrect: true }
+                    { text: "Qu'il existe un unique $n$-uplet de coordonnées $(x_1, \\dots, x_n)$ tel que $x = x_1 e_1 + \\dots + x_n e_n$", isCorrect: true },
+                    { text: "Qu'il existe au moins une décomposition, mais pas forcément unique", isCorrect: false },
+                    { text: "Que $x$ s'écrit de façon unique, mais seulement si $x \\neq 0$", isCorrect: false }
                 ],
-                explanation: "L'existence de la décomposition provient du caractère générateur, et l'UNICITÉ provient du caractère libre de la base[cite: 1].",
+                explanation: "L'existence de la décomposition provient du caractère générateur, et l'unicité provient du caractère libre de la base. Cette unicité vaut pour tout vecteur de $E$, y compris le vecteur nul (dont toutes les coordonnées sont nulles).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1506,9 +1509,10 @@ const defaultData = {
                 q: "Dans l'espace vectoriel $\\mathbb{K}_n[X]$, qu'est-ce qu'une « famille échelonnée en degré » ?",
                 options: [
                     { text: "Une famille $(P_0, \\dots, P_n)$ où chaque $P_i$ vérifie $deg(P_i) = i$", isCorrect: true },
-                    { text: "Une famille où tous les polynômes ont le même degré $n$", isCorrect: false }
+                    { text: "Une famille où tous les polynômes ont le même degré $n$", isCorrect: false },
+                    { text: "Une famille où les degrés sont strictement croissants, sans contrainte sur leur valeur exacte", isCorrect: false }
                 ],
-                explanation: "Une famille de polynômes ayant tous des degrés échelonnés (0, 1, 2, ..., n) forme automatiquement une base de $\\mathbb{K}_n[X]$, car elle est toujours libre et génératrice[cite: 1].",
+                explanation: "Une famille de polynômes ayant tous des degrés échelonnés (0, 1, 2, ..., n) forme automatiquement une base de $\\mathbb{K}_n[X]$, car elle est toujours libre et génératrice. Attention : des degrés simplement croissants (par ex. 0, 2, 5) donnent une famille libre mais pas forcément génératrice de tout $\\mathbb{K}_n[X]$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1517,9 +1521,10 @@ const defaultData = {
                 options: [
                     { text: "S'il ne contient qu'un nombre fini de vecteurs", isCorrect: false },
                     { text: "S'il admet une partie génératrice contenant un nombre fini de vecteurs", isCorrect: true },
-                    { text: "Si tous ses vecteurs ont une norme finie", isCorrect: false }
+                    { text: "Si tous ses vecteurs ont une norme finie", isCorrect: false },
+                    { text: "S'il possède au moins une famille libre infinie", isCorrect: false }
                 ],
-                explanation: "Un espace vectoriel sur $\\mathbb{R}$ a toujours une infinité de vecteurs (sauf $\\{0\\}$). Il est de dimension finie s'il peut être engendré par une famille finie de vecteurs[cite: 1].",
+                explanation: "Un espace vectoriel non nul sur $\\mathbb{R}$ ou $\\mathbb{C}$ contient toujours une infinité de vecteurs. Il est de dimension finie s'il peut être engendré par une famille finie de vecteurs. Posséder une famille libre infinie est au contraire la signature d'un espace de dimension infinie.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1528,9 +1533,10 @@ const defaultData = {
                 options: [
                     { text: "$\\mathbb{R}^n$", isCorrect: false },
                     { text: "$\\mathcal{M}_{n,p}(\\mathbb{K})$", isCorrect: false },
-                    { text: "$\\mathbb{K}[X]$ (l'espace de tous les polynômes)", isCorrect: true }
+                    { text: "$\\mathbb{K}[X]$ (l'espace de tous les polynômes)", isCorrect: true },
+                    { text: "$\\mathbb{K}_n[X]$ (polynômes de degré $\\le n$)", isCorrect: false }
                 ],
-                explanation: "L'espace des polynômes sans restriction de degré $\\mathbb{K}[X]$ n'admet aucune famille génératrice finie, il est donc de dimension infinie[cite: 1].",
+                explanation: "L'espace des polynômes sans restriction de degré $\\mathbb{K}[X]$ n'admet aucune famille génératrice finie, il est donc de dimension infinie. Ne le confondez pas avec $\\mathbb{K}_n[X]$, qui lui est borné en degré et donc de dimension finie ($n+1$).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1538,9 +1544,10 @@ const defaultData = {
                 q: "Que stipule le Théorème de la base incomplète ?",
                 options: [
                     { text: "Toute famille libre d'un E.V. de dimension finie $E \\neq \\{0\\}$ peut être complétée avec des vecteurs d'une famille génératrice pour former une base", isCorrect: true },
-                    { text: "Toute famille génératrice peut être complétée pour former une base", isCorrect: false }
+                    { text: "Toute famille génératrice peut être complétée pour former une base", isCorrect: false },
+                    { text: "Toute famille libre peut être complétée par n'importe quel vecteur de $E$", isCorrect: false }
                 ],
-                explanation: "Si l'on part d'une famille libre, on peut toujours lui adjoindre des vecteurs bien choisis (issus d'une famille génératrice) pour « grossir » jusqu'à devenir une base[cite: 1].",
+                explanation: "Si l'on part d'une famille libre, on peut toujours lui adjoindre des vecteurs bien choisis (issus d'une famille génératrice) pour « grossir » jusqu'à devenir une base. Le choix des vecteurs ajoutés n'est pas arbitraire : il faut préserver le caractère libre, donc pas n'importe quel vecteur ne convient.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1548,10 +1555,11 @@ const defaultData = {
                 q: "Si un espace $E$ est de dimension finie, que peut-on affirmer sur toutes ses bases ?",
                 options: [
                     { text: "Elles contiennent toutes exactement le même nombre de vecteurs", isCorrect: true },
-                    { text: "Elles sont toutes orthogonales", isCorrect: false },
-                    { text: "Elles contiennent toutes le vecteur nul", isCorrect: false }
+                    { text: "Elles sont toutes orthogonales entre elles", isCorrect: false },
+                    { text: "Elles contiennent toutes le vecteur nul", isCorrect: false },
+                    { text: "Elles engendrent des sous-espaces différents", isCorrect: false }
                 ],
-                explanation: "C'est la définition même de la dimension : si l'espace admet une base de cardinal $n$, alors TOUTES les bases de cet espace auront exactement $n$ éléments[cite: 1].",
+                explanation: "C'est la définition même de la dimension : si l'espace admet une base de cardinal $n$, alors toutes les bases de cet espace auront exactement $n$ éléments. Une base ne contient jamais le vecteur nul (cela la rendrait liée), et toutes les bases d'un même espace engendrent par définition le même espace $E$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -1564,7 +1572,7 @@ const defaultData = {
                     { text: "Elle contient au maximum $n$ éléments ($\\le n$)", isCorrect: true },
                     { text: "Elle contient au minimum $n$ éléments ($\\ge n$)", isCorrect: false }
                 ],
-                explanation: "Dans un espace de dimension $n$, il ne peut pas y avoir plus de $n$ vecteurs linéairement indépendants[cite: 1].",
+                explanation: "Dans un espace de dimension $n$, il ne peut pas y avoir plus de $n$ vecteurs linéairement indépendants. Une famille libre peut très bien contenir strictement moins de $n$ éléments (par exemple un seul vecteur non nul).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1572,9 +1580,10 @@ const defaultData = {
                 q: "Soit $E$ un espace de dimension $n$. Que peut-on dire de la taille d'une famille GÉNÉRATRICE ?",
                 options: [
                     { text: "Elle contient au maximum $n$ éléments", isCorrect: false },
-                    { text: "Elle contient au minimum $n$ éléments ($\\ge n$)", isCorrect: true }
+                    { text: "Elle contient au minimum $n$ éléments ($\\ge n$)", isCorrect: true },
+                    { text: "Elle contient exactement $n$ éléments", isCorrect: false }
                 ],
-                explanation: "Pour engendrer tout l'espace de dimension $n$, il faut au moins $n$ directions différentes (vecteurs)[cite: 1].",
+                explanation: "Pour engendrer tout l'espace de dimension $n$, il faut au moins $n$ directions différentes (vecteurs). Rien n'empêche une famille génératrice d'en contenir plus de $n$ (avec des vecteurs redondants) — elle ne sera alors pas une base.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1582,9 +1591,10 @@ const defaultData = {
                 q: "Dans un espace de dimension $n$, si je possède une famille de $n$ vecteurs (exactement). Que suffit-il de vérifier pour prouver que c'est une base ?",
                 options: [
                     { text: "Il faut prouver qu'elle est libre ET génératrice", isCorrect: false },
-                    { text: "Il suffit de prouver qu'elle est libre OU qu'elle est génératrice", isCorrect: true }
+                    { text: "Il suffit de prouver qu'elle est libre OU qu'elle est génératrice", isCorrect: true },
+                    { text: "Il suffit qu'aucun vecteur ne soit nul", isCorrect: false }
                 ],
-                explanation: "C'est un raccourci vital en partiel. Si le cardinal correspond à la dimension, la liberté implique le caractère générateur (et inversement)[cite: 1].",
+                explanation: "C'est un raccourci vital en partiel. Si le cardinal correspond exactement à la dimension, la liberté implique le caractère générateur (et inversement). Ce raccourci ne marche que si le nombre de vecteurs est exactement $n$ : « aucun vecteur nul » ne suffit absolument pas à garantir liberté ou caractère générateur.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1593,9 +1603,10 @@ const defaultData = {
                 options: [
                     { text: "$n+p$", isCorrect: false },
                     { text: "$n \\times p$", isCorrect: true },
-                    { text: "$n^p$", isCorrect: false }
+                    { text: "$n^p$", isCorrect: false },
+                    { text: "$\\max(n,p)$", isCorrect: false }
                 ],
-                explanation: "Il y a $n \\times p$ coefficients indépendants, donc la base canonique contient $np$ matrices élémentaires[cite: 1].",
+                explanation: "Il y a $n \\times p$ coefficients indépendants, donc la base canonique contient $np$ matrices élémentaires $E_{ij}$ (un 1 en position $(i,j)$, des 0 ailleurs).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1603,9 +1614,10 @@ const defaultData = {
                 q: "Quelle est la dimension de l'espace des polynômes $\\mathbb{K}_n[X]$ (de degré $\\le n$) ?",
                 options: [
                     { text: "$n$", isCorrect: false },
-                    { text: "$n+1$", isCorrect: true }
+                    { text: "$n+1$", isCorrect: true },
+                    { text: "$n-1$", isCorrect: false }
                 ],
-                explanation: "La base canonique est $(1, X, X^2, \\dots, X^n)$. En comptant la constante $1$ (degré 0), il y a bien $n+1$ éléments[cite: 1].",
+                explanation: "La base canonique est $(1, X, X^2, \\dots, X^n)$. En comptant la constante $1$ (degré 0), il y a bien $n+1$ éléments — piège classique d'oublier le terme constant.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -1615,9 +1627,10 @@ const defaultData = {
                 q: "Soit $F$ un sous-espace vectoriel de $E$ (de dim finie $n$). Si $dim(F) = dim(E)$, que conclut-on ?",
                 options: [
                     { text: "$F$ et $E$ sont isomorphes mais différents", isCorrect: false },
-                    { text: "$F = E$ (Égalité stricte)", isCorrect: true }
+                    { text: "$F = E$ (Égalité stricte)", isCorrect: true },
+                    { text: "On ne peut rien conclure sans connaître une base de $F$", isCorrect: false }
                 ],
-                explanation: "L'inclusion $F \\subset E$ associée à l'égalité des dimensions implique que les deux espaces sont confondus[cite: 1].",
+                explanation: "L'inclusion $F \\subset E$ associée à l'égalité des dimensions implique que les deux espaces sont confondus. Ce résultat est vrai en toute généralité, sans avoir besoin d'exhiber explicitement une base.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1626,9 +1639,10 @@ const defaultData = {
                 options: [
                     { text: "Une droite vectorielle", isCorrect: false },
                     { text: "Un plan vectoriel", isCorrect: false },
-                    { text: "Un hyperplan vectoriel", isCorrect: true }
+                    { text: "Un hyperplan vectoriel", isCorrect: true },
+                    { text: "Un sous-espace de codimension 2", isCorrect: false }
                 ],
-                explanation: "Par définition, un hyperplan est un sous-espace de codimension 1 (dimension $n-1$)[cite: 1].",
+                explanation: "Par définition, un hyperplan est un sous-espace de codimension 1 (dimension $n-1$), quelle que soit la valeur de $n$ — ce n'est donc ni forcément une droite ni un plan (ça dépend de $\\dim E$), et surtout pas de codimension 2.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1639,7 +1653,7 @@ const defaultData = {
                     { text: "C'est le nombre total de vecteurs $p$", isCorrect: false },
                     { text: "C'est le nombre de vecteurs nuls", isCorrect: false }
                 ],
-                explanation: "Le rang est le nombre maximum de vecteurs linéairement indépendants que l'on peut extraire de $S$. C'est la dimension du SEV généré[cite: 1].",
+                explanation: "Le rang est le nombre maximum de vecteurs linéairement indépendants que l'on peut extraire de $S$. C'est la dimension du sous-espace vectoriel généré, et il vérifie toujours $rg(S) \\le p$, avec égalité seulement si $S$ est libre.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1647,9 +1661,10 @@ const defaultData = {
                 q: "Soit $S$ une famille de $p$ vecteurs. À quelle condition a-t-on $rg(S) = p$ ?",
                 options: [
                     { text: "Si et seulement si $S$ est une famille libre", isCorrect: true },
-                    { text: "Si et seulement si $S$ est génératrice", isCorrect: false }
+                    { text: "Si et seulement si $S$ est génératrice", isCorrect: false },
+                    { text: "Si et seulement si $S$ est une base de $E$", isCorrect: false }
                 ],
-                explanation: "Si le rang (dimension générée) est égal au nombre de vecteurs fournis, cela signifie qu'aucun vecteur n'est redondant (la famille est libre)[cite: 1].",
+                explanation: "Si le rang (dimension générée) est égal au nombre de vecteurs fournis, cela signifie qu'aucun vecteur n'est redondant (la famille est libre). Attention : $S$ n'est pas nécessairement une base de $E$ tout entier, seulement de l'espace qu'elle engendre.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -1659,9 +1674,10 @@ const defaultData = {
                 q: "Soient deux sous-espaces vectoriels $F$ et $G$. L'ensemble somme $F+G$ est équivalent à :",
                 options: [
                     { text: "$F \\cap G$", isCorrect: false },
-                    { text: "$Vect[F \\cup G]$", isCorrect: true }
+                    { text: "$Vect[F \\cup G]$", isCorrect: true },
+                    { text: "$F \\cup G$", isCorrect: false }
                 ],
-                explanation: "La somme $F+G$ est le plus petit sous-espace vectoriel contenant à la fois $F$ et $G$[cite: 1].",
+                explanation: "La somme $F+G$ est le plus petit sous-espace vectoriel contenant à la fois $F$ et $G$. Attention, $F \\cup G$ seul n'est en général PAS un sous-espace vectoriel (il n'est pas stable par addition), c'est pour cela qu'on doit prendre son Vect.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1669,9 +1685,10 @@ const defaultData = {
                 q: "Quand dit-on que la somme de sous-espaces $F_1 + \\dots + F_p$ est une SOMME DIRECTE ($\\oplus$) ?",
                 options: [
                     { text: "Si l'intersection de tous les sous-espaces est vide", isCorrect: false },
-                    { text: "Si pour tout vecteur $x$ de la somme, sa décomposition $x = x_1 + \\dots + x_p$ est UNIQUE", isCorrect: true }
+                    { text: "Si pour tout vecteur $x$ de la somme, sa décomposition $x = x_1 + \\dots + x_p$ est UNIQUE", isCorrect: true },
+                    { text: "Si les $F_i$ sont deux à deux disjoints", isCorrect: false }
                 ],
-                explanation: "La somme directe garantit qu'il n'y a qu'une seule façon d'écrire un vecteur comme somme d'éléments de ces sous-espaces[cite: 1].",
+                explanation: "La somme directe garantit qu'il n'y a qu'une seule façon d'écrire un vecteur comme somme d'éléments de ces sous-espaces. Un sous-espace vectoriel n'est jamais « vide » (il contient toujours 0) : on parle d'intersection réduite à $\\{0\\}$, pas d'intersection vide.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1682,7 +1699,7 @@ const defaultData = {
                     { text: "$F \\cup G = E$", isCorrect: false },
                     { text: "Leurs dimensions doivent être égales", isCorrect: false }
                 ],
-                explanation: "Si l'intersection ne contient que le vecteur nul, un vecteur ne peut pas appartenir simultanément aux deux espaces, ce qui force l'unicité de la décomposition[cite: 1].",
+                explanation: "Si l'intersection ne contient que le vecteur nul, un vecteur ne peut pas appartenir simultanément aux deux espaces, ce qui force l'unicité de la décomposition. Cette condition ne dit rien sur l'égalité des dimensions, ni sur le fait que la somme couvre $E$ (c'est le cas des supplémentaires, une notion plus forte).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1692,7 +1709,18 @@ const defaultData = {
                     { text: "Vrai", isCorrect: false },
                     { text: "Faux", isCorrect: true }
                 ],
-                explanation: "C'est un énorme piège. L'intersection deux à deux réduite à zéro n'est valable que pour DEUX SEV. Pour 3 ou plus, l'unicité de la somme entière doit être vérifiée[cite: 1, 2].",
+                explanation: "C'est un énorme piège. L'intersection deux à deux réduite à zéro n'est valable que pour DEUX sous-espaces. Pour 3 ou plus, il faut vérifier une condition plus forte : par exemple $F \\cap (G+H) = \\{0\\}$, $G \\cap (F+H) = \\{0\\}$ et $H \\cap (F+G) = \\{0\\}$, ou directement l'unicité de la décomposition sur toute la somme.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Somme Directe", "Théorèmes"],
+                q: "Quelle est la condition correcte pour que la somme de $p$ sous-espaces $F_1 + \\dots + F_p$ soit directe ?",
+                options: [
+                    { text: "Pour tout $i$, $F_i \\cap (F_1 + \\dots + F_{i-1} + F_{i+1} + \\dots + F_p) = \\{0\\}$", isCorrect: true },
+                    { text: "Les $F_i$ sont deux à deux d'intersection réduite à $\\{0\\}$", isCorrect: false },
+                    { text: "$\\dim(F_1) + \\dots + \\dim(F_p) \\le \\dim(E)$", isCorrect: false }
+                ],
+                explanation: "Chaque sous-espace doit avoir une intersection nulle avec la somme de TOUS les autres (pas seulement avec chacun pris isolément). L'inégalité sur les dimensions est une conséquence nécessaire de la somme directe, mais elle seule ne suffit pas à la garantir : une somme non directe peut très bien vérifier cette inégalité au sens large.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -1705,7 +1733,7 @@ const defaultData = {
                     { text: "Leur somme est directe ET génère tout l'espace $E$", isCorrect: true },
                     { text: "Ils sont orthogonaux", isCorrect: false }
                 ],
-                explanation: "Supplémentaire = Somme directe (unicité) + La somme vaut $E$ (existence)[cite: 1].",
+                explanation: "Supplémentaire = somme directe (unicité) + la somme vaut $E$ (existence). Être seulement « en somme directe » ne suffit pas : $F$ et $G$ peuvent très bien être en somme directe sans que $F+G$ recouvre tout $E$. L'orthogonalité, elle, est une notion euclidienne totalement différente qui n'intervient pas ici.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1716,7 +1744,17 @@ const defaultData = {
                     { text: "$\\dim(F+G) = \\dim(F) + \\dim(G) - \\dim(F \\cap G)$", isCorrect: true },
                     { text: "$\\dim(F+G) = \\dim(F) \\times \\dim(G)$", isCorrect: false }
                 ],
-                explanation: "La dimension de l'espace somme est la somme des dimensions, à laquelle on soustrait la dimension de l'intersection (pour ne pas compter la zone de chevauchement en double)[cite: 1].",
+                explanation: "La dimension de l'espace somme est la somme des dimensions, à laquelle on soustrait la dimension de l'intersection (pour ne pas compter la zone de chevauchement en double). La première formule n'est vraie que dans le cas particulier où la somme est directe ($F \\cap G = \\{0\\}$).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Sommes", "Théorèmes", "Pièges"],
+                q: "La formule de Grassmann à deux sous-espaces ($\\dim(F+G) = \\dim F + \\dim G - \\dim(F \\cap G)$) se généralise-t-elle directement à TROIS sous-espaces sous la forme $\\dim(F+G+H) = \\dim F + \\dim G + \\dim H - \\dim(F\\cap G) - \\dim(F\\cap H) - \\dim(G\\cap H) + \\dim(F\\cap G\\cap H)$ ?",
+                options: [
+                    { text: "Oui, c'est une identité toujours vraie, comme pour les ensembles (formule du crible)", isCorrect: false },
+                    { text: "Non, cette formule n'est en général pas valable pour les sous-espaces vectoriels", isCorrect: true }
+                ],
+                explanation: "Contrairement au principe d'inclusion-exclusion sur les cardinaux d'ensembles, la formule de Grassmann ne se généralise PAS naïvement à 3 sous-espaces ou plus : on peut seulement affirmer l'inégalité $\\dim(F+G+H) \\le \\dim F + \\dim G + \\dim H$, avec égalité si et seulement si la somme est directe.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1727,7 +1765,7 @@ const defaultData = {
                     { text: "$F \\cap G = \\{0\\}$ ET $\\dim(F) + \\dim(G) = \\dim(E)$", isCorrect: true },
                     { text: "$F \\cup G = E$", isCorrect: false }
                 ],
-                explanation: "C'est l'application directe de Grassmann. Si l'intersection est nulle, $\\dim(F+G) = \\dim F + \\dim G$. Et si cette somme vaut $\\dim E$, alors $F+G=E$[cite: 1].",
+                explanation: "C'est l'application directe de Grassmann. Si l'intersection est nulle, $\\dim(F+G) = \\dim F + \\dim G$. Et si cette somme vaut $\\dim E$, alors $F+G=E$. La seule égalité des dimensions ($\\dim F + \\dim G = \\dim E$) ne suffit pas : $F$ et $G$ pourraient se chevaucher et donc ne pas couvrir tout $E$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1735,9 +1773,10 @@ const defaultData = {
                 q: "L'espace des matrices $\\mathcal{M}_n(\\mathbb{K})$ peut s'écrire comme la somme directe de quels sous-espaces remarquables ?",
                 options: [
                     { text: "Les matrices diagonales et les matrices triangulaires", isCorrect: false },
-                    { text: "L'espace des matrices symétriques $\\mathcal{S}_n$ et l'espace des matrices antisymétriques $\\mathcal{A}_n$", isCorrect: true }
+                    { text: "L'espace des matrices symétriques $\\mathcal{S}_n$ et l'espace des matrices antisymétriques $\\mathcal{A}_n$", isCorrect: true },
+                    { text: "Les matrices inversibles et les matrices non inversibles", isCorrect: false }
                 ],
-                explanation: "Toute matrice peut se décomposer de manière unique en une partie symétrique $\\frac{1}{2}(M+M^T)$ et une partie antisymétrique $\\frac{1}{2}(M-M^T)$[cite: 1].",
+                explanation: "Toute matrice peut se décomposer de manière unique en une partie symétrique $\\frac{1}{2}(M+M^T)$ et une partie antisymétrique $\\frac{1}{2}(M-M^T)$. Les matrices non inversibles, elles, ne forment même pas un sous-espace vectoriel (leur somme peut redevenir inversible), donc cette option n'a pas de sens.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1747,7 +1786,17 @@ const defaultData = {
                     { text: "Oui, un SEV possède un unique supplémentaire", isCorrect: false },
                     { text: "Non, un SEV possède une infinité de supplémentaires (sauf cas triviaux)", isCorrect: true }
                 ],
-                explanation: "Si l'on prend l'axe des X dans un plan, toute droite passant par l'origine et non confondue avec X est un supplémentaire. Il y en a une infinité[cite: 2].",
+                explanation: "Si l'on prend l'axe des X dans un plan, toute droite passant par l'origine et non confondue avec X est un supplémentaire. Il y en a une infinité — seuls les cas triviaux ($F=\\{0\\}$ ou $F=E$) admettent un unique supplémentaire (respectivement $E$ et $\\{0\\}$).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Supplémentaires", "Dimension", "Pièges"],
+                q: "Si $G_1$ et $G_2$ sont deux supplémentaires DIFFÉRENTS d'un même sous-espace $F$ dans $E$, que peut-on dire de $\\dim(G_1)$ et $\\dim(G_2)$ ?",
+                options: [
+                    { text: "Elles peuvent être différentes, puisque $G_1 \\neq G_2$", isCorrect: false },
+                    { text: "Elles sont nécessairement égales, toutes deux valant $\\dim(E) - \\dim(F)$", isCorrect: true }
+                ],
+                explanation: "Bien que le supplémentaire lui-même ne soit pas unique (question précédente), sa DIMENSION, elle, est fixée : $\\dim(G) = \\dim(E) - \\dim(F)$ pour n'importe quel supplémentaire $G$ de $F$. C'est une conséquence directe de Grassmann appliquée à une somme directe qui vaut $E$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -1757,9 +1806,10 @@ const defaultData = {
                 q: "Soient $F$ et $G$ deux sous-espaces de $E$ vérifiant : $\\dim(F) + \\dim(G) > \\dim(E)$. Que peut-on en déduire ?",
                 options: [
                     { text: "$F$ et $G$ sont en somme directe", isCorrect: false },
-                    { text: "Leur intersection n'est PAS réduite au vecteur nul ($F \\cap G \\neq \\{0\\}$)", isCorrect: true }
+                    { text: "Leur intersection n'est PAS réduite au vecteur nul ($F \\cap G \\neq \\{0\\}$)", isCorrect: true },
+                    { text: "On ne peut rien conclure sans connaître $F$ et $G$ explicitement", isCorrect: false }
                 ],
-                explanation: "D'après Grassmann, $\\dim(F \\cap G) = \\dim F + \\dim G - \\dim(F+G)$. Puisque $\\dim(F+G) \\le \\dim E$, l'intersection a forcément une dimension $> 0$[cite: 2].",
+                explanation: "D'après Grassmann, $\\dim(F \\cap G) = \\dim F + \\dim G - \\dim(F+G)$. Puisque $\\dim(F+G) \\le \\dim E$, l'intersection a forcément une dimension $> 0$ : ce résultat est garanti par le seul jeu des dimensions, sans avoir besoin de connaître la nature exacte de $F$ et $G$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1770,7 +1820,7 @@ const defaultData = {
                     { text: "$n-2$", isCorrect: true },
                     { text: "$0$", isCorrect: false }
                 ],
-                explanation: "Chaque hyperplan impose 1 équation indépendante. L'intersection de deux hyperplans distincts est définie par un système de 2 équations indépendantes, réduisant la dimension de 2[cite: 2].",
+                explanation: "Chaque hyperplan impose 1 équation indépendante. L'intersection de deux hyperplans distincts est définie par un système de 2 équations indépendantes, réduisant la dimension de 2. Ce résultat vaut quel que soit $n$ (dès que $n \\ge 2$) — la dimension n'est jamais nulle sauf cas particulier de $n=2$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1780,7 +1830,7 @@ const defaultData = {
                     { text: "Vrai", isCorrect: false },
                     { text: "Faux", isCorrect: true }
                 ],
-                explanation: "Faux. L'espace $\\mathbb{R}[X]$ est de dimension infinie. La famille canonique $(1, X, X^2, \\dots)$ est infinie ET libre[cite: 2].",
+                explanation: "Faux. L'espace $\\mathbb{R}[X]$ est de dimension infinie. La famille canonique $(1, X, X^2, \\dots)$ est infinie ET libre. C'est précisément la signature d'un espace de dimension infinie : il possède une famille libre infinie.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1788,9 +1838,10 @@ const defaultData = {
                 q: "Que stipule le théorème sur l'existence d'un supplémentaire (Prop 5.12) ?",
                 options: [
                     { text: "Seuls les hyperplans admettent un supplémentaire", isCorrect: false },
-                    { text: "Dans un espace de dimension finie, TOUT sous-espace vectoriel $F$ admet (au moins) un supplémentaire", isCorrect: true }
+                    { text: "Dans un espace de dimension finie, TOUT sous-espace vectoriel $F$ admet (au moins) un supplémentaire", isCorrect: true },
+                    { text: "Seul le sous-espace $\\{0\\}$ admet un supplémentaire", isCorrect: false }
                 ],
-                explanation: "C'est une conséquence du théorème de la base incomplète. On prend une base de $F$, on la complète en une base de $E$, et l'espace généré par les vecteurs ajoutés est un supplémentaire[cite: 1].",
+                explanation: "C'est une conséquence du théorème de la base incomplète. On prend une base de $F$, on la complète en une base de $E$, et l'espace généré par les vecteurs ajoutés est un supplémentaire. Ce résultat vaut pour absolument tout sous-espace, pas seulement les cas particuliers comme les hyperplans ou $\\{0\\}$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1798,14 +1849,25 @@ const defaultData = {
                 q: "Soient $E, F, G$ des sous-espaces. A-t-on toujours $E \\cap (F+G) = (E \\cap F) + (E \\cap G)$ ?",
                 options: [
                     { text: "Oui, la distributivité marche toujours pour les SEV", isCorrect: false },
-                    { text: "Non, c'est faux en général", isCorrect: true }
+                    { text: "Non, c'est faux en général", isCorrect: true },
+                    { text: "Oui, mais uniquement si $F \\cap G = \\{0\\}$", isCorrect: false }
                 ],
-                explanation: "L'intersection ne se distribue pas parfaitement sur la somme des sous-espaces vectoriels. On a seulement l'inclusion $(E \\cap F) + (E \\cap G) \\subset E \\cap (F+G)$[cite: 2].",
+                explanation: "L'intersection ne se distribue pas parfaitement sur la somme des sous-espaces vectoriels. On a seulement l'inclusion $(E \\cap F) + (E \\cap G) \\subset E \\cap (F+G)$, qui devient une égalité (loi modulaire de Dedekind) dès que $E \\subset F$ ou $F \\subset E$ — mais ce n'est pas lié à $F \\cap G = \\{0\\}$.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Dimension", "Pièges", "Sous-Espaces Vectoriels"],
+                q: "Soit $E$ de dimension $n$ et $F, G$ deux hyperplans distincts de $E$. Peut-on avoir $F \\oplus G$ ?",
+                options: [
+                    { text: "Oui, dès que $n \\ge 2$", isCorrect: false },
+                    { text: "Non, jamais dès que $n \\ge 2$ (sauf le cas dégénéré $n \\le 1$)", isCorrect: true }
+                ],
+                explanation: "Deux hyperplans distincts vérifient $\\dim F = \\dim G = n-1$, donc $\\dim F + \\dim G = 2n-2$. Pour $n \\ge 2$, on a $2n-2 \\ge n$, donc par Grassmann leur intersection ne peut pas être réduite à $\\{0\\}$ (sauf si $n \\le 1$, cas dégénéré où la notion d'hyperplan distinct n'a plus vraiment de sens). Deux hyperplans distincts ne sont donc jamais en somme directe en dimension $\\ge 2$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             }
         ]
     },
-    "Algèbre 2 : Chapitres 6 & 7 (Applications Linéaires et Matrices)": {
+   "Algèbre 2 : Chapitres 6 & 7 (Applications Linéaires et Matrices)": {
         stats: { attempts: 0, correct: 0 },
         dailyValidations: {},
         questions: [
@@ -1816,9 +1878,10 @@ const defaultData = {
                 options: [
                     { text: "$\\forall (x,y) \\in E^2, \\forall (\\lambda,\\mu) \\in \\mathbb{K}^2, f(\\lambda x + \\mu y) = \\lambda f(x) + \\mu f(y)$", isCorrect: true },
                     { text: "$f(xy) = f(x)f(y)$", isCorrect: false },
-                    { text: "$f(x+y) = f(x) + f(y)$ uniquement", isCorrect: false }
+                    { text: "$f(x+y) = f(x) + f(y)$ uniquement", isCorrect: false },
+                    { text: "$f(\\lambda x) = \\lambda f(x)$ uniquement", isCorrect: false }
                 ],
-                explanation: "Une application linéaire conserve les combinaisons linéaires. L'image d'une combinaison linéaire est la combinaison linéaire des images[cite: 1].",
+                explanation: "Une application linéaire conserve les combinaisons linéaires. L'image d'une combinaison linéaire est la combinaison linéaire des images. Vérifier seulement l'additivité ou seulement l'homogénéité séparément ne suffit pas à conclure en général (même si en dimension finie sur $\\mathbb{Q}$/$\\mathbb{R}$ additivité + continuité impliquerait homogénéité, ce n'est pas le cadre du cours).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1827,9 +1890,10 @@ const defaultData = {
                 options: [
                     { text: "Un endomorphisme", isCorrect: false },
                     { text: "Une forme linéaire", isCorrect: true },
-                    { text: "Un automorphisme", isCorrect: false }
+                    { text: "Un automorphisme", isCorrect: false },
+                    { text: "Un isomorphisme", isCorrect: false }
                 ],
-                explanation: "Une forme linéaire associe un scalaire à chaque vecteur de l'espace (ex: la trace, l'espérance, l'intégrale)[cite: 1].",
+                explanation: "Une forme linéaire associe un scalaire à chaque vecteur de l'espace (ex : la trace, une coordonnée, une intégrale). Un endomorphisme va de $E$ dans $E$ lui-même — ce n'est donc le cas que si $E = \\mathbb{K}$, ce qui n'est pas la situation générale visée ici.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1838,9 +1902,10 @@ const defaultData = {
                 options: [
                     { text: "Une application linéaire de $E$ dans $E$ (endomorphisme)", isCorrect: false },
                     { text: "Un endomorphisme bijectif de $E$", isCorrect: true },
-                    { text: "Une application linéaire surjective", isCorrect: false }
+                    { text: "Une application linéaire surjective", isCorrect: false },
+                    { text: "Une application linéaire injective de $E$ dans $E$", isCorrect: false }
                 ],
-                explanation: "Un automorphisme cumule deux propriétés : c'est une application linéaire de l'espace vers lui-même (endomorphisme) ET elle est bijective[cite: 1].",
+                explanation: "Un automorphisme cumule deux propriétés : c'est une application linéaire de l'espace vers lui-même (endomorphisme) ET elle est bijective. En dimension finie, injective seule ou surjective seule d'un endomorphisme suffirait (par équivalence en dimensions égales), mais la DÉFINITION exige bien la bijectivité, pas juste l'une des deux.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1851,7 +1916,7 @@ const defaultData = {
                     { text: "Cela dépend de l'application", isCorrect: false },
                     { text: "$0_F$ (le vecteur nul de l'espace d'arrivée)", isCorrect: true }
                 ],
-                explanation: "En appliquant $f(\\lambda x) = \\lambda f(x)$ avec $\\lambda = 0$, on obtient $f(0_E) = 0_F$. C'est le premier test pour vérifier si une fonction n'est pas linéaire[cite: 1].",
+                explanation: "En appliquant $f(\\lambda x) = \\lambda f(x)$ avec $\\lambda = 0$, on obtient $f(0_E) = 0_F$. C'est le premier test pour vérifier qu'une fonction n'est PAS linéaire : si $f(0) \\neq 0$, on peut conclure immédiatement à la non-linéarité, sans avoir besoin de tester la définition complète.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1862,7 +1927,7 @@ const defaultData = {
                     { text: "C'est un $\\mathbb{K}$-espace vectoriel", isCorrect: true },
                     { text: "C'est un anneau", isCorrect: false }
                 ],
-                explanation: "La somme de deux applications linéaires est linéaire, et la multiplication par un scalaire donne une application linéaire. $\\mathcal{L}(E,F)$ est donc un E.V.[cite: 1].",
+                explanation: "La somme de deux applications linéaires est linéaire, et la multiplication par un scalaire donne une application linéaire. $\\mathcal{L}(E,F)$ est donc un E.V. Ce n'est un anneau (avec la composition comme produit) que dans le cas particulier $\\mathcal{L}(E,E)$, pas pour $F$ quelconque.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1870,9 +1935,10 @@ const defaultData = {
                 q: "Si $f \\in \\mathcal{L}(E,F)$ et $g \\in \\mathcal{L}(F,G)$, que peut-on dire de $g \\circ f$ ?",
                 options: [
                     { text: "Ce n'est pas forcément linéaire", isCorrect: false },
-                    { text: "$g \\circ f \\in \\mathcal{L}(E,G)$", isCorrect: true }
+                    { text: "$g \\circ f \\in \\mathcal{L}(E,G)$", isCorrect: true },
+                    { text: "$g \\circ f \\in \\mathcal{L}(F,F)$", isCorrect: false }
                 ],
-                explanation: "La composée de deux applications linéaires est toujours une application linéaire[cite: 1].",
+                explanation: "La composée de deux applications linéaires est toujours une application linéaire, et son espace de départ est celui de $f$ ($E$) tandis que son espace d'arrivée est celui de $g$ ($G$) — pas $F$, qui n'est qu'un espace intermédiaire.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -1885,7 +1951,7 @@ const defaultData = {
                     { text: "$\\{y \\in F \\mid \\exists x \\in E, f(x) = y\\}$", isCorrect: false },
                     { text: "$\\{x \\in E \\mid f(x) = 0_F\\}$", isCorrect: true }
                 ],
-                explanation: "Le noyau est l'image réciproque du vecteur nul de l'espace d'arrivée. C'est un sous-espace vectoriel de $E$[cite: 1].",
+                explanation: "Le noyau est l'image réciproque du vecteur nul de l'espace d'arrivée. C'est un sous-espace vectoriel de $E$. La première proposition décrit l'ensemble des points fixes (utile pour les projecteurs), la seconde décrit en réalité $Im(f)$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1893,9 +1959,10 @@ const defaultData = {
                 q: "Quelle est la caractérisation fondamentale de l'injectivité d'une application linéaire ?",
                 options: [
                     { text: "$f$ est injective $\\iff Im(f) = F$", isCorrect: false },
-                    { text: "$f$ est injective $\\iff Ker(f) = \\{0_E\\}$", isCorrect: true }
+                    { text: "$f$ est injective $\\iff Ker(f) = \\{0_E\\}$", isCorrect: true },
+                    { text: "$f$ est injective $\\iff dim(Ker(f)) = dim(E)$", isCorrect: false }
                 ],
-                explanation: "L'égalité $f(x)=f(y)$ entraîne $f(x-y)=0$. Si le noyau est réduit à zéro, alors $x-y=0$, donc $x=y$. C'est le test d'injectivité ultime en algèbre[cite: 1].",
+                explanation: "L'égalité $f(x)=f(y)$ entraîne $f(x-y)=0$. Si le noyau est réduit à zéro, alors $x-y=0$, donc $x=y$. La première option décrit la surjectivité, et la troisième décrirait au contraire l'application nulle (le pire cas, tout est envoyé sur 0).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1906,7 +1973,7 @@ const defaultData = {
                     { text: "$Ker(f) = E$", isCorrect: false },
                     { text: "$dim(Im(f)) = dim(E)$", isCorrect: false }
                 ],
-                explanation: "La surjectivité signifie que tout élément de l'espace d'arrivée $F$ possède au moins un antécédent, donc que l'image de $f$ couvre intégralement $F$[cite: 1].",
+                explanation: "La surjectivité signifie que tout élément de l'espace d'arrivée $F$ possède au moins un antécédent, donc que l'image de $f$ couvre intégralement $F$. $Ker(f)=E$ signifierait que $f$ est l'application nulle, et $dim(Im(f))=dim(E)$ caractériserait plutôt l'injectivité (via le théorème du rang).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1917,7 +1984,7 @@ const defaultData = {
                     { text: "$dim(Im(f)) + dim(Ker(f)) = dim(E)$", isCorrect: true },
                     { text: "$dim(Im(f)) \\times dim(Ker(f)) = dim(E)$", isCorrect: false }
                 ],
-                explanation: "La dimension de l'espace de DÉPART ($E$) se scinde exactement entre ce qui est \"écrasé\" (le noyau) et ce qui est généré (l'image)[cite: 1].",
+                explanation: "La dimension de l'espace de DÉPART ($E$) se scinde exactement entre ce qui est « écrasé » (le noyau) et ce qui est généré (l'image). Attention, rien n'impose que $dim(F)$ intervienne dans cette égalité : $F$ peut même être de dimension infinie, le théorème reste vrai tant que $E$ est de dimension finie.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1925,9 +1992,10 @@ const defaultData = {
                 q: "Comment appelle-t-on $dim(Im(f))$ ?",
                 options: [
                     { text: "La trace de $f$", isCorrect: false },
-                    { text: "Le rang de $f$ (noté $rg(f)$)", isCorrect: true }
+                    { text: "Le rang de $f$ (noté $rg(f)$)", isCorrect: true },
+                    { text: "Le déterminant de $f$", isCorrect: false }
                 ],
-                explanation: "Le rang d'une application linéaire est défini comme la dimension de son image[cite: 1].",
+                explanation: "Le rang d'une application linéaire est défini comme la dimension de son image. La trace et le déterminant, eux, ne sont définis que pour des endomorphismes (matrices carrées), pas pour une application linéaire quelconque entre deux espaces différents.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1938,7 +2006,7 @@ const defaultData = {
                     { text: "$dim(E)$", isCorrect: true },
                     { text: "0", isCorrect: false }
                 ],
-                explanation: "Si $f$ est injective, $Ker(f) = \\{0\\}$, donc $dim(Ker(f)) = 0$. Le théorème du rang donne alors $rg(f) + 0 = dim(E)$, soit $rg(f) = dim(E)$[cite: 1].",
+                explanation: "Si $f$ est injective, $Ker(f) = \\{0\\}$, donc $dim(Ker(f)) = 0$. Le théorème du rang donne alors $rg(f) + 0 = dim(E)$, soit $rg(f) = dim(E)$. Ce n'est égal à $dim(F)$ que dans le cas particulier où $f$ est aussi surjective (donc bijective).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1948,7 +2016,7 @@ const defaultData = {
                     { text: "$f$ est obligatoirement bijective", isCorrect: false },
                     { text: "Les propositions \"$f$ est injective\", \"$f$ est surjective\" et \"$f$ est bijective\" sont strictement équivalentes", isCorrect: true }
                 ],
-                explanation: "C'est l'un des théorèmes les plus utiles. En dimensions égales, il suffit de prouver l'injectivité (Noyau nul) pour obtenir la bijection \"gratuitement\"[cite: 1].",
+                explanation: "C'est l'un des théorèmes les plus utiles. En dimensions égales, il suffit de prouver l'injectivité (Noyau nul) pour obtenir la bijection « gratuitement ». Attention, ce résultat porte sur l'ÉQUIVALENCE des trois propriétés pour une $f$ donnée, il ne dit absolument pas que TOUTE application linéaire entre espaces de même dimension est automatiquement bijective (l'application nulle en est un contre-exemple immédiat dès que $\\dim E \\ge 1$).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1956,9 +2024,10 @@ const defaultData = {
                 q: "Soit $B=(e_1, \\dots, e_n)$ une base de $E$. $f$ est un isomorphisme de $E$ sur $F$ si et seulement si :",
                 options: [
                     { text: "La famille $(f(e_1), \\dots, f(e_n))$ est une base de $F$", isCorrect: true },
-                    { text: "La famille $(f(e_1), \\dots, f(e_n))$ est libre mais pas génératrice", isCorrect: false }
+                    { text: "La famille $(f(e_1), \\dots, f(e_n))$ est libre mais pas génératrice", isCorrect: false },
+                    { text: "La famille $(f(e_1), \\dots, f(e_n))$ est génératrice de $F$", isCorrect: false }
                 ],
-                explanation: "Une application linéaire transporte une base sur une base si et seulement si elle est bijective[cite: 1].",
+                explanation: "Une application linéaire transporte une base sur une base si et seulement si elle est bijective. Génératrice seule correspondrait à la surjectivité de $f$, libre seule (sans être génératrice) correspondrait à une injection non surjective — aucune des deux options partielles ne caractérise l'isomorphisme complet.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1969,7 +2038,18 @@ const defaultData = {
                     { text: "$Im(f) \\subset Ker(g)$", isCorrect: true },
                     { text: "$f=0$ ou $g=0$", isCorrect: false }
                 ],
-                explanation: "Exercice classique 6.14. Si $g(f(x)) = 0$ pour tout $x$, cela signifie que chaque vecteur de la forme $f(x)$ (donc dans $Im(f)$) est envoyé sur 0 par $g$ (donc est dans $Ker(g)$)[cite: 2].",
+                explanation: "Exercice classique 6.14. Si $g(f(x)) = 0$ pour tout $x$, cela signifie que chaque vecteur de la forme $f(x)$ (donc dans $Im(f)$) est envoyé sur 0 par $g$ (donc est dans $Ker(g)$). $g \\circ f = 0$ n'implique absolument pas que l'un des deux soit nul individuellement (prendre par exemple deux projecteurs sur des sous-espaces complémentaires).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Pièges de TD", "Rang", "Composition"],
+                q: "Soient $f \\in \\mathcal{L}(E,F)$ et $g \\in \\mathcal{L}(F,G)$. Quel encadrement vérifie toujours $rg(g \\circ f)$ ?",
+                options: [
+                    { text: "$rg(g \\circ f) \\le \\min(rg(f), rg(g))$", isCorrect: true },
+                    { text: "$rg(g \\circ f) = rg(f) \\times rg(g)$", isCorrect: false },
+                    { text: "$rg(g \\circ f) \\ge \\max(rg(f), rg(g))$", isCorrect: false }
+                ],
+                explanation: "$Im(g\\circ f) = g(Im(f)) \\subset Im(g)$ donne $rg(g\\circ f) \\le rg(g)$. Et $g\\circ f$ restreint à $Im(f)$ ne peut pas avoir un rang supérieur à $\\dim(Im(f)) = rg(f)$, d'où $rg(g\\circ f) \\le rg(f)$. La composition ne peut donc jamais faire remonter le rang au-dessus du plus petit des deux.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -1982,7 +2062,7 @@ const defaultData = {
                     { text: "$p \\circ p = p$", isCorrect: true },
                     { text: "$p^2 = 0$", isCorrect: false }
                 ],
-                explanation: "L'idempotence ($p^2 = p$) définit un projecteur. Projeter deux fois a le même effet que projeter une seule fois[cite: 1].",
+                explanation: "L'idempotence ($p^2 = p$) définit un projecteur. Projeter deux fois a le même effet que projeter une seule fois. $p^2=Id$ caractérise une symétrie, $p^2=0$ caractérise un endomorphisme nilpotent d'indice 2.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -1993,7 +2073,7 @@ const defaultData = {
                     { text: "Ils sont supplémentaires dans $E$ ($Ker(p) \\oplus Im(p) = E$)", isCorrect: true },
                     { text: "Ils sont en somme directe mais ne couvrent pas $E$", isCorrect: false }
                 ],
-                explanation: "Tout vecteur $x$ se décompose de manière unique en $x = p(x) + (x - p(x))$, où le premier terme est dans l'Image et le second dans le Noyau[cite: 1].",
+                explanation: "Tout vecteur $x$ se décompose de manière unique en $x = p(x) + (x - p(x))$, où le premier terme est dans l'Image et le second dans le Noyau : la somme est bien directe ET couvre tout $E$. L'orthogonalité, elle, suppose une structure euclidienne (produit scalaire) qui n'est pas donnée par la seule idempotence.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2003,7 +2083,7 @@ const defaultData = {
                     { text: "$Im(p) = \\{x \\in E \\mid p(x) = 0\\}$", isCorrect: false },
                     { text: "$Im(p) = \\{x \\in E \\mid p(x) = x\\}$", isCorrect: true }
                 ],
-                explanation: "L'image du projecteur correspond exactement à l'ensemble des vecteurs invariants. Si $y \\in Im(p)$, alors $p(y) = y$[cite: 1].",
+                explanation: "L'image du projecteur correspond exactement à l'ensemble des vecteurs invariants. Si $y \\in Im(p)$, alors $y=p(x)$ pour un certain $x$, et $p(y)=p(p(x))=p(x)=y$ par idempotence. La première option décrit au contraire $Ker(p)$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2011,9 +2091,10 @@ const defaultData = {
                 q: "Soient deux projecteurs $p_1$ et $p_2$ associés à deux sous-espaces supplémentaires $E_1$ et $E_2$. Que vaut $p_1 + p_2$ ?",
                 options: [
                     { text: "$0_E$", isCorrect: false },
-                    { text: "$Id_E$ (l'application identité)", isCorrect: true }
+                    { text: "$Id_E$ (l'application identité)", isCorrect: true },
+                    { text: "Un projecteur sur $E_1 \\cap E_2$", isCorrect: false }
                 ],
-                explanation: "Pour $x = x_1 + x_2$, on a $p_1(x) = x_1$ et $p_2(x) = x_2$. Donc $(p_1+p_2)(x) = x_1 + x_2 = x$[cite: 1].",
+                explanation: "Pour $x = x_1 + x_2$, on a $p_1(x) = x_1$ et $p_2(x) = x_2$. Donc $(p_1+p_2)(x) = x_1 + x_2 = x$. Puisque $E_1$ et $E_2$ sont supplémentaires, $E_1 \\cap E_2 = \\{0\\}$ : la dernière option n'a donc de sens que pour le sous-espace trivial.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2024,7 +2105,7 @@ const defaultData = {
                     { text: "$s \\circ s = Id_E$ ($s^2 = Id_E$)", isCorrect: true },
                     { text: "$s^2 = -Id_E$", isCorrect: false }
                 ],
-                explanation: "Appliquer une symétrie deux fois de suite ramène le point à sa position de départ, d'où $s^2 = Id$[cite: 1].",
+                explanation: "Appliquer une symétrie deux fois de suite ramène le point à sa position de départ, d'où $s^2 = Id$. $s^2=s$ définirait un projecteur, et $s^2=-Id$ décrit plutôt une structure complexe (comme la multiplication par $i$), pas une symétrie vectorielle réelle.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2034,7 +2115,7 @@ const defaultData = {
                     { text: "$s = p_1 - Id_E$", isCorrect: false },
                     { text: "$s = 2p_1 - Id_E$", isCorrect: true }
                 ],
-                explanation: "Pour $x = x_1 + x_2$, $s(x) = x_1 - x_2$. Or $x_1 - x_2 = x_1 - (x - x_1) = 2x_1 - x = 2p_1(x) - x$[cite: 1].",
+                explanation: "Pour $x = x_1 + x_2$, $s(x) = x_1 - x_2$. Or $x_1 - x_2 = x_1 - (x - x_1) = 2x_1 - x = 2p_1(x) - x$, d'où $s = 2p_1 - Id_E$. Attention à ne pas oublier le facteur 2, piège fréquent.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2044,7 +2125,7 @@ const defaultData = {
                     { text: "Symétrie par rapport à $Ker(f-Id)$ de direction $Ker(f+Id)$", isCorrect: true },
                     { text: "Symétrie par rapport à $Im(f)$ de direction $Ker(f)$", isCorrect: false }
                 ],
-                explanation: "Les vecteurs invariants ($f(x)=x$) forment l'axe de symétrie, et ceux qui sont inversés ($f(x)=-x$) forment la direction[cite: 1].",
+                explanation: "Les vecteurs invariants ($f(x)=x$, donc $x \\in Ker(f-Id)$) forment l'axe de symétrie, et ceux qui sont inversés ($f(x)=-x$, donc $x \\in Ker(f+Id)$) forment la direction. La seconde option confond avec la caractérisation d'un projecteur, qui n'est pas de type $f^2=Id$ mais $f^2=f$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2052,9 +2133,10 @@ const defaultData = {
                 q: "Soient $p$ et $q$ deux projecteurs. À quelle condition $p+q$ est-il aussi un projecteur (Exercice 6.29) ?",
                 options: [
                     { text: "Toujours", isCorrect: false },
-                    { text: "Si et seulement si $p \\circ q = q \\circ p = 0$", isCorrect: true }
+                    { text: "Si et seulement si $p \\circ q = q \\circ p = 0$", isCorrect: true },
+                    { text: "Si et seulement si $p$ et $q$ commutent ($pq = qp$)", isCorrect: false }
                 ],
-                explanation: "En développant $(p+q)^2 = p^2 + q^2 + pq + qp = p + q + pq + qp$. Pour que cela vaille $p+q$, il faut que $pq+qp=0$, ce qui implique $pq=qp=0$[cite: 2].",
+                explanation: "En développant $(p+q)^2 = p^2 + q^2 + pq + qp = p + q + pq + qp$. Pour que cela vaille $p+q$, il faut que $pq+qp=0$, ce qui, combiné à des considérations sur les images/noyaux, force $pq=qp=0$. La seule commutativité ($pq=qp$) ne suffit pas : elle donnerait $pq+qp=2pq$, qu'il faudrait encore annuler.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -2064,9 +2146,10 @@ const defaultData = {
                 q: "Comment construit-on la matrice $\\mathcal{M}_{C,\\mathcal{B}}(f)$ d'une application linéaire $f$ de $E$ (base $\\mathcal{B}=(e_1,..,e_p)$) dans $F$ (base $\\mathcal{C}$) ?",
                 options: [
                     { text: "On met en lignes les vecteurs de la base $\\mathcal{B}$", isCorrect: false },
-                    { text: "La $j$-ème colonne recense les coordonnées de l'image $f(e_j)$ dans la base d'arrivée $\\mathcal{C}$", isCorrect: true }
+                    { text: "La $j$-ème colonne recense les coordonnées de l'image $f(e_j)$ dans la base d'arrivée $\\mathcal{C}$", isCorrect: true },
+                    { text: "La $j$-ème ligne recense les coordonnées de l'image $f(e_j)$ dans la base d'arrivée $\\mathcal{C}$", isCorrect: false }
                 ],
-                explanation: "Les colonnes de la matrice sont littéralement les images des vecteurs de la base de départ, exprimées dans la base d'arrivée[cite: 1].",
+                explanation: "Les colonnes de la matrice sont littéralement les images des vecteurs de la base de départ, exprimées dans la base d'arrivée. Confondre lignes et colonnes est une erreur fréquente qui inverse complètement la convention de calcul $Y=AX$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2077,7 +2160,7 @@ const defaultData = {
                     { text: "$Y = XA$", isCorrect: false },
                     { text: "$X = AY$", isCorrect: false }
                 ],
-                explanation: "Le vecteur d'arrivée est le produit de la matrice représentative par le vecteur de départ[cite: 1].",
+                explanation: "Le vecteur d'arrivée est le produit de la matrice représentative par le vecteur de départ, avec $X$ à droite en colonne. $X=AY$ inverserait le sens de l'application (ce serait la relation pour $f^{-1}$, quand elle existe).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2087,7 +2170,7 @@ const defaultData = {
                     { text: "$p$ lignes, $n$ colonnes ($p \\times n$)", isCorrect: false },
                     { text: "$n$ lignes, $p$ colonnes ($n \\times p$)", isCorrect: true }
                 ],
-                explanation: "Le nombre de colonnes ($p$) correspond au nombre de vecteurs de la base de départ. Le nombre de lignes ($n$) correspond à la dimension de l'arrivée[cite: 1].",
+                explanation: "Le nombre de colonnes ($p$) correspond au nombre de vecteurs de la base de départ. Le nombre de lignes ($n$) correspond à la dimension de l'arrivée : la matrice permet de transformer un vecteur-colonne de taille $p$ en un vecteur-colonne de taille $n$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2097,7 +2180,7 @@ const defaultData = {
                     { text: "Ce sont deux espaces de dimensions différentes", isCorrect: false },
                     { text: "L'application qui à $f$ associe sa matrice est un isomorphisme. Ils ont même dimension $n \\times p$", isCorrect: true }
                 ],
-                explanation: "Il y a une bijection parfaite entre les applications linéaires (concept abstrait) et les matrices (tableaux de calcul)[cite: 1].",
+                explanation: "Il y a une bijection linéaire parfaite entre les applications linéaires (concept abstrait) et les matrices (tableaux de calcul), une fois les bases fixées. Cela permet de faire tous les calculs (somme, composition) indifféremment sur les matrices ou sur les applications.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2105,9 +2188,10 @@ const defaultData = {
                 q: "À quelle opération matricielle correspond la COMPOSITION d'applications linéaires ($g \\circ f$) ?",
                 options: [
                     { text: "L'addition des matrices $M(g) + M(f)$", isCorrect: false },
-                    { text: "Le produit matriciel $M(g) \\times M(f)$", isCorrect: true }
+                    { text: "Le produit matriciel $M(g) \\times M(f)$", isCorrect: true },
+                    { text: "Le produit matriciel $M(f) \\times M(g)$", isCorrect: false }
                 ],
-                explanation: "La matrice de $g \\circ f$ est le produit de la matrice de $g$ par la matrice de $f$ (attention à conserver l'ordre !)[cite: 1].",
+                explanation: "La matrice de $g \\circ f$ est le produit de la matrice de $g$ par la matrice de $f$, DANS CET ORDRE : $M(g \\circ f) = M(g) \\times M(f)$. Inverser l'ordre du produit donnerait en général une matrice différente, puisque le produit matriciel n'est pas commutatif.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2117,7 +2201,7 @@ const defaultData = {
                     { text: "Ils n'ont aucun rapport", isCorrect: false },
                     { text: "Ils sont strictement égaux : $rg(f) = rg(A)$", isCorrect: true }
                 ],
-                explanation: "Le rang de la matrice (dimension de l'espace engendré par les colonnes) est par définition la dimension de l'image de $f$[cite: 1].",
+                explanation: "Le rang de la matrice (dimension de l'espace engendré par les colonnes) est par définition la dimension de l'image de $f$. Ce résultat est indépendant du choix des bases : le rang de $f$ est un invariant, il ne dépend pas de la représentation matricielle choisie.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2125,9 +2209,10 @@ const defaultData = {
                 q: "Un endomorphisme $f$ est une bijection si et seulement si sa matrice $A$ vérifie :",
                 options: [
                     { text: "$A$ est symétrique", isCorrect: false },
-                    { text: "$A$ est inversible ($det(A) \\neq 0$)", isCorrect: true }
+                    { text: "$A$ est inversible ($det(A) \\neq 0$)", isCorrect: true },
+                    { text: "$A$ est diagonale", isCorrect: false }
                 ],
-                explanation: "L'isomorphisme dans $\\mathcal{L}(E)$ correspond parfaitement à l'inversibilité dans $\\mathcal{M}_n(\\mathbb{K})$[cite: 1].",
+                explanation: "L'isomorphisme dans $\\mathcal{L}(E)$ correspond parfaitement à l'inversibilité dans $\\mathcal{M}_n(\\mathbb{K})$. La symétrie et le caractère diagonal sont des propriétés de forme de la matrice qui n'ont aucun rapport direct avec l'inversibilité (une matrice diagonale avec un 0 sur la diagonale n'est pas inversible, une matrice symétrique peut ne pas être inversible non plus).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2137,7 +2222,17 @@ const defaultData = {
                     { text: "C'est une famille liée", isCorrect: false },
                     { text: "C'est une base de $\\mathbb{R}^n$", isCorrect: true }
                 ],
-                explanation: "C'est le classique du bloc de Jordan nilpotente (Ex 7.5). Cette famille libre de $n$ éléments dans un espace de dimension $n$ forme automatiquement une base[cite: 2].",
+                explanation: "C'est le classique du bloc de Jordan nilpotente (Ex 7.5). Cette famille libre de $n$ éléments dans un espace de dimension $n$ forme automatiquement une base. Le choix de $x$ n'est pas arbitraire : il faut prendre $x \\notin Ker(u^{n-1})$ pour que la construction fonctionne.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Pièges de TD", "Matrices d'applications"],
+                q: "Soit $A \\in \\mathcal{M}_n(\\mathbb{K})$ nilpotente ($A^k = 0$ pour un certain $k$). Que peut-on dire de $Id_n - A$ ?",
+                options: [
+                    { text: "Elle n'est jamais inversible", isCorrect: false },
+                    { text: "Elle est toujours inversible, d'inverse $Id + A + A^2 + \\dots + A^{k-1}$", isCorrect: true }
+                ],
+                explanation: "En développant $(Id - A)(Id + A + \\dots + A^{k-1}) = Id - A^k = Id$ (télescopage), on obtient directement l'inverse explicite. C'est une astuce très utile pour éviter un calcul de déterminant.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -2149,7 +2244,7 @@ const defaultData = {
                     { text: "La $j$-ème colonne recense les coordonnées du vecteur $u_j$ de la NOUVELLE base $\\mathcal{C}$ exprimées dans l'ANCIENNE base $\\mathcal{B}$", isCorrect: true },
                     { text: "La $j$-ème colonne recense les coordonnées du vecteur $e_j$ de l'ANCIENNE base $\\mathcal{B}$ exprimées dans la NOUVELLE base $\\mathcal{C}$", isCorrect: false }
                 ],
-                explanation: "Attention à ce piège majeur. La matrice de passage donne les nouveaux vecteurs exprimés avec les anciens[cite: 1].",
+                explanation: "Attention à ce piège majeur. La matrice de passage donne les nouveaux vecteurs exprimés avec les anciens — c'est-à-dire l'inverse de ce qu'on pourrait naïvement penser en lisant le nom « $\\mathcal{B} \\to \\mathcal{C}$ ».",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2159,7 +2254,7 @@ const defaultData = {
                     { text: "La matrice de l'identité $Id_E$ en prenant $\\mathcal{C}$ au départ et $\\mathcal{B}$ à l'arrivée", isCorrect: true },
                     { text: "La matrice de l'identité en prenant $\\mathcal{B}$ au départ et $\\mathcal{C}$ à l'arrivée", isCorrect: false }
                 ],
-                explanation: "$P_{\\mathcal{B} \\to \\mathcal{C}} = \\mathcal{M}_{\\mathcal{B}, \\mathcal{C}}[Id_E]$. On prend les vecteurs de $\\mathcal{C}$ et on écrit leurs coordonnées dans $\\mathcal{B}$[cite: 1].",
+                explanation: "$P_{\\mathcal{B} \\to \\mathcal{C}} = \\mathcal{M}_{\\mathcal{B}, \\mathcal{C}}[Id_E]$. On prend les vecteurs de $\\mathcal{C}$ et on écrit leurs coordonnées dans $\\mathcal{B}$ : c'est cohérent avec le fait que $P$ est toujours inversible (l'identité est toujours bijective), d'inverse $P_{\\mathcal{C} \\to \\mathcal{B}}$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2169,7 +2264,7 @@ const defaultData = {
                     { text: "$X' = P X$", isCorrect: false },
                     { text: "$X = P X'$", isCorrect: true }
                 ],
-                explanation: "Contre-intuitif mais fondamental : pour obtenir l'ancienne colonne $X$, on multiplie la matrice de passage par la NOUVELLE colonne $X'$[cite: 1].",
+                explanation: "Contre-intuitif mais fondamental : pour obtenir l'ancienne colonne $X$, on multiplie la matrice de passage par la NOUVELLE colonne $X'$. Pour l'opération inverse (obtenir $X'$ à partir de $X$), il faut utiliser $P^{-1}$, pas $P$ directement.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2180,7 +2275,7 @@ const defaultData = {
                     { text: "$A' = P A P^{-1}$", isCorrect: false },
                     { text: "$A' = P^T A P$", isCorrect: false }
                 ],
-                explanation: "C'est la définition de la similitude matricielle. On part des nouvelles coordonnées, on repasse dans l'ancienne base ($P$), on applique l'endomorphisme ($A$), puis on revient dans la nouvelle base ($P^{-1}$)[cite: 1].",
+                explanation: "C'est la définition de la similitude matricielle. On part des nouvelles coordonnées ($P$ les convertit en anciennes), on applique l'endomorphisme ($A$), puis on revient dans la nouvelle base ($P^{-1}$). $P^T A P$ est la formule de changement de base pour une forme QUADRATIQUE ou bilinéaire, pas pour un endomorphisme — piège classique de confusion entre les deux contextes.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2188,9 +2283,10 @@ const defaultData = {
                 q: "Que signifie concrètement que deux matrices carrées $A$ et $A'$ sont « semblables » ?",
                 options: [
                     { text: "Elles ont les mêmes coefficients à une constante près", isCorrect: false },
-                    { text: "Elles représentent exactement le même endomorphisme, mais exprimé dans des bases différentes", isCorrect: true }
+                    { text: "Elles représentent exactement le même endomorphisme, mais exprimé dans des bases différentes", isCorrect: true },
+                    { text: "Elles ont le même déterminant", isCorrect: false }
                 ],
-                explanation: "Deux matrices semblables racontent la même histoire géométrique de deux points de vue (bases) différents[cite: 1].",
+                explanation: "Deux matrices semblables racontent la même histoire géométrique de deux points de vue (bases) différents. Avoir le même déterminant est une CONSÉQUENCE nécessaire de la similitude, mais ce n'est pas suffisant : deux matrices peuvent avoir le même déterminant sans être semblables (par exemple $I_2$ et $\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2200,7 +2296,7 @@ const defaultData = {
                     { text: "Elles ont obligatoirement le même déterminant, la même trace et le même rang", isCorrect: true },
                     { text: "Elles peuvent avoir des traces différentes", isCorrect: false }
                 ],
-                explanation: "La trace, le rang et le déterminant sont des invariants de similitude. Si on change de base, ces propriétés fondamentales de l'endomorphisme ne bougent pas[cite: 1].",
+                explanation: "La trace, le rang et le déterminant sont des invariants de similitude. Si on change de base, ces propriétés fondamentales de l'endomorphisme ne bougent pas — c'est d'ailleurs le moyen le plus rapide de prouver que deux matrices NE SONT PAS semblables : il suffit de trouver un de ces invariants qui diffère.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2210,7 +2306,17 @@ const defaultData = {
                     { text: "$A' = P^{-1} A Q$", isCorrect: false },
                     { text: "$A' = Q^{-1} A P$", isCorrect: true }
                 ],
-                explanation: "On convertit les entrées avec $P$ (base de départ $E$), on applique $A$, puis on convertit les sorties avec l'inverse de $Q$ (base d'arrivée $F$)[cite: 1].",
+                explanation: "On convertit les entrées avec $P$ (base de départ $E$), on applique $A$, puis on convertit les sorties avec l'inverse de $Q$ (base d'arrivée $F$). Contrairement au cas d'un endomorphisme, ici $P$ et $Q$ sont a priori deux matrices différentes puisque $E$ et $F$ peuvent être des espaces distincts.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Matrices équivalentes", "Pièges"],
+                q: "Deux matrices $A, B \\in \\mathcal{M}_{n,p}(\\mathbb{K})$ (pas nécessairement carrées) vérifiant $B = Q^{-1} A P$ pour $P, Q$ inversibles sont dites « équivalentes ». Quelle est la différence essentielle avec la similitude ?",
+                options: [
+                    { text: "Aucune, ce sont deux noms pour la même notion", isCorrect: false },
+                    { text: "L'équivalence autorise deux matrices de passage différentes ($P \\neq Q$) et concerne des matrices pas forcément carrées ; la similitude impose $P=Q$ et des matrices carrées", isCorrect: true }
+                ],
+                explanation: "La similitude est un cas particulier (et bien plus restrictif) de l'équivalence : elle correspond au changement de base d'un même endomorphisme ($E=F$, même base au départ et à l'arrivée), alors que l'équivalence correspond au changement de base d'une application linéaire quelconque entre deux espaces éventuellement différents. Deux matrices équivalentes ne sont donc pas nécessairement semblables.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2220,7 +2326,7 @@ const defaultData = {
                     { text: "Oui, car leurs invariants sont égaux", isCorrect: false },
                     { text: "Non, car $H = 2I_2$, et pour tout $P$ inversible, $P^{-1} (2I_2) P = 2I_2 \\neq A$", isCorrect: true }
                 ],
-                explanation: "Avoir les mêmes invariants est nécessaire, mais pas toujours suffisant. L'identité (ou une matrice scalaire) n'est semblable qu'à elle-même[cite: 1, 2].",
+                explanation: "Avoir les mêmes invariants est nécessaire, mais pas toujours suffisant. L'identité (ou une matrice scalaire) n'est semblable qu'à elle-même, car conjuguer une matrice scalaire par n'importe quelle matrice inversible la laisse inchangée.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -2233,7 +2339,7 @@ const defaultData = {
                     { text: "$rg(f+g) \\le rg(f) + rg(g)$", isCorrect: true },
                     { text: "$rg(f+g) \\ge rg(f) + rg(g)$", isCorrect: false }
                 ],
-                explanation: "L'image de la somme est incluse dans la somme des images : $Im(f+g) \\subset Im(f) + Im(g)$. Donc la dimension (le rang) suit cette inégalité[cite: 2].",
+                explanation: "L'image de la somme est incluse dans la somme des images : $Im(f+g) \\subset Im(f) + Im(g)$. Donc la dimension (le rang) suit cette inégalité. L'égalité n'a lieu que dans des cas particuliers, par exemple quand $Im(f)$ et $Im(g)$ sont en somme directe.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2244,7 +2350,7 @@ const defaultData = {
                     { text: "$r \\le \\frac{n}{2}$", isCorrect: true },
                     { text: "$r = 0$ obligatoirement", isCorrect: false }
                 ],
-                explanation: "Puisque $A^2=0$, on a $Im(A) \\subset Ker(A)$. Le théorème du rang donne $dim(Im) + dim(Ker) = n$, donc $r + dim(Ker) = n$. Comme $r \\le dim(Ker)$, on a $2r \\le n$[cite: 2].",
+                explanation: "Puisque $A^2=0$, on a $Im(A) \\subset Ker(A)$. Le théorème du rang donne $dim(Im) + dim(Ker) = n$, donc $r + dim(Ker) = n$. Comme $r \\le dim(Ker)$, on a $2r \\le n$. Notez que $r=0$ n'est qu'un cas particulier (la matrice nulle) : $A^2=0$ n'implique pas $A=0$, il suffit de penser à $A = \\begin{pmatrix} 0&1\\\\0&0 \\end{pmatrix}$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2255,7 +2361,7 @@ const defaultData = {
                     { text: "$2 \\times 4$", isCorrect: true },
                     { text: "$4 \\times 2$", isCorrect: false }
                 ],
-                explanation: "L'espace de départ $\\mathbb{R}_3[X]$ a pour base $(1, X, X^2, X^3)$, donc dimension 4. L'espace d'arrivée $\\mathbb{R}^2$ a dimension 2. La matrice a 2 lignes et 4 colonnes[cite: 1].",
+                explanation: "L'espace de départ $\\mathbb{R}_3[X]$ a pour base $(1, X, X^2, X^3)$, donc dimension 4. L'espace d'arrivée $\\mathbb{R}^2$ a dimension 2. La matrice a 2 lignes et 4 colonnes (piège classique d'oublier le +1 dans la dimension de $\\mathbb{R}_3[X]$, ou d'inverser lignes et colonnes).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2266,12 +2372,23 @@ const defaultData = {
                     { text: "$Tr(p) = 0$", isCorrect: false },
                     { text: "$Tr(p) = 1$", isCorrect: false }
                 ],
-                explanation: "Dans une base adaptée à $Ker(p) \\oplus Im(p)$, la matrice de $p$ est diagonale avec des 1 (autant que la dimension de $Im(p)$) et des 0. La somme des 1 donne donc $dim(Im(p)) = rg(p)$[cite: 2].",
+                explanation: "Dans une base adaptée à $Ker(p) \\oplus Im(p)$, la matrice de $p$ est diagonale avec des 1 (autant que la dimension de $Im(p)$) et des 0. La somme des 1 donne donc $dim(Im(p)) = rg(p)$. Ce résultat n'est valable que pour les PROJECTEURS (idempotents) — il est faux pour un endomorphisme quelconque.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Trace", "Composition", "Pièges"],
+                q: "Soient $f \\in \\mathcal{L}(E,F)$ et $g \\in \\mathcal{L}(F,E)$ deux applications linéaires entre espaces de dimension finie. Que peut-on dire de $Tr(f \\circ g)$ et $Tr(g \\circ f)$ ?",
+                options: [
+                    { text: "Elles sont toujours égales : $Tr(f\\circ g) = Tr(g \\circ f)$", isCorrect: true },
+                    { text: "Elles sont égales seulement si $E=F$", isCorrect: false },
+                    { text: "Aucun lien en général", isCorrect: false }
+                ],
+                explanation: "C'est la propriété de trace cyclique $Tr(AB) = Tr(BA)$, valable pour toute matrice $A$ de taille $n\\times p$ et $B$ de taille $p \\times n$ (même si $A$ et $B$ elles-mêmes ne sont pas carrées, leurs deux produits $AB$ et $BA$ le sont). Ce résultat ne nécessite donc PAS que $E=F$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             }
         ]
     },
-    "Algèbre 3 : Chapitre 1 (Réduction des endomorphismes)": {
+   "Algèbre 3 : Chapitre 1 (Réduction des endomorphismes)": {
         stats: { attempts: 0, correct: 0 },
         dailyValidations: {},
         questions: [
@@ -2282,9 +2399,10 @@ const defaultData = {
                 options: [
                     { text: "$\\forall x \\in E, x \\in A \\Rightarrow u(x) \\in A$", isCorrect: true },
                     { text: "$\\forall x \\in A, u(x) = x$", isCorrect: false },
-                    { text: "$u(A) = E$", isCorrect: false }
+                    { text: "$u(A) = E$", isCorrect: false },
+                    { text: "$u(A) = A$ exactement", isCorrect: false }
                 ],
-                explanation: "La stabilité (ou invariance) signifie que l'image de $A$ par $u$ est entièrement incluse dans $A$ ($u(A) \\subseteq A$)[cite: 3].",
+                explanation: "La stabilité (ou invariance) signifie que l'image de $A$ par $u$ est entièrement incluse dans $A$ ($u(A) \\subseteq A$). L'inclusion n'a pas besoin d'être une égalité : $u$ peut très bien « écraser » $A$ sur un sous-espace strictement plus petit tout en restant stable.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2295,7 +2413,7 @@ const defaultData = {
                     { text: "Ils sont stables par l'endomorphisme $v$", isCorrect: true },
                     { text: "Ils sont de dimension identique", isCorrect: false }
                 ],
-                explanation: "Si $u$ et $v$ commutent, $v$ laisse stable l'image de $u$, le noyau de $u$, et plus généralement tout sous-espace propre $\\ker(u - \\lambda id_E)$[cite: 3].",
+                explanation: "Si $u$ et $v$ commutent, $v$ laisse stable l'image de $u$, le noyau de $u$, et plus généralement tout sous-espace propre $\\ker(u - \\lambda id_E)$. L'orthogonalité suppose une structure euclidienne absente ici, et rien n'impose que $Ker(u)$ et $Im(u)$ aient la même dimension (c'est même rarement le cas hors bijection).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2306,7 +2424,7 @@ const defaultData = {
                     { text: "Triangulaire supérieure par blocs : $\\begin{pmatrix} M_{11} & M_{12} \\\\ 0 & M_{22} \\end{pmatrix}$", isCorrect: true },
                     { text: "Totalement nulle hors de la diagonale", isCorrect: false }
                 ],
-                explanation: "Puisque $A$ est stable, les images des vecteurs de la base de $A$ s'écrivent uniquement avec les vecteurs de $A$, générant un bloc de zéros en bas à gauche. Pour avoir une matrice diagonale par blocs, il faudrait que $B$ soit AUSSI stable par $u$[cite: 3].",
+                explanation: "Puisque $A$ est stable, les images des vecteurs de la base de $A$ s'écrivent uniquement avec les vecteurs de $A$, générant un bloc de zéros en bas à gauche. Pour avoir une matrice diagonale par blocs, il faudrait que $B$ soit AUSSI stable par $u$ — ce n'est pas garanti par la seule hypothèse sur $A$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -2319,7 +2437,7 @@ const defaultData = {
                     { text: "$u(x) = \\lambda x$ et $x \\neq 0_E$", isCorrect: true },
                     { text: "$u(x) = 0_E$", isCorrect: false }
                 ],
-                explanation: "Un vecteur propre doit ABSOLUMENT être non nul par définition. En revanche, une valeur propre $\\lambda$ a tout à fait le droit de valoir zéro[cite: 3].",
+                explanation: "Un vecteur propre doit ABSOLUMENT être non nul par définition (sinon tout scalaire $\\lambda$ conviendrait trivialement, ce qui viderait la notion de son sens). En revanche, une valeur propre $\\lambda$ a tout à fait le droit de valoir zéro.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2327,9 +2445,10 @@ const defaultData = {
                 q: "Le sous-espace propre $E_\\lambda$ associé à la valeur propre $\\lambda$ correspond à :",
                 options: [
                     { text: "$\\text{Im}(u - \\lambda id_E)$", isCorrect: false },
-                    { text: "$\\ker(u - \\lambda id_E)$", isCorrect: true }
+                    { text: "$\\ker(u - \\lambda id_E)$", isCorrect: true },
+                    { text: "$\\ker(u) - \\lambda \\cdot E$", isCorrect: false }
                 ],
-                explanation: "$x$ est un vecteur propre pour $\\lambda$ ssi $u(x) = \\lambda x \\iff (u - \\lambda id_E)(x) = 0_E$. Le sous-espace propre est donc le noyau de $u - \\lambda id_E$[cite: 3].",
+                explanation: "$x$ est un vecteur propre pour $\\lambda$ ssi $u(x) = \\lambda x \\iff (u - \\lambda id_E)(x) = 0_E$. Le sous-espace propre est donc le noyau de $u - \\lambda id_E$, et non son image (qui donnerait plutôt une idée de la « portion régulière » de $u-\\lambda id_E$).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2340,7 +2459,7 @@ const defaultData = {
                     { text: "Ils sont en somme directe", isCorrect: true },
                     { text: "Leur union forme $E$", isCorrect: false }
                 ],
-                explanation: "Les sous-espaces propres associés à des valeurs propres distinctes sont toujours en somme directe. Une somme de vecteurs propres de valeurs propres différentes ne peut être nulle que si tous les vecteurs sont nuls[cite: 3].",
+                explanation: "Les sous-espaces propres associés à des valeurs propres distinctes sont toujours en somme directe. Une somme de vecteurs propres de valeurs propres différentes ne peut être nulle que si tous les vecteurs sont nuls. Rien ne garantit qu'ils aient la même dimension, ni que leur somme couvre tout $E$ (c'est justement ce défaut de recouvrement qui caractérise la non-diagonalisabilité).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2351,7 +2470,7 @@ const defaultData = {
                     { text: "$\\text{Sp}(u) = \\emptyset$", isCorrect: false },
                     { text: "$\\text{Sp}(u) = \\{0\\}$", isCorrect: true }
                 ],
-                explanation: "Si $u^k = 0$, et $u(x) = \\lambda x$ avec $x \\neq 0$, alors $u^k(x) = \\lambda^k x = 0$. Puisque $x \\neq 0$, on a obligatoirement $\\lambda^k = 0$, donc $\\lambda = 0$[cite: 3].",
+                explanation: "Si $u^k = 0$, et $u(x) = \\lambda x$ avec $x \\neq 0$, alors $u^k(x) = \\lambda^k x = 0$. Puisque $x \\neq 0$, on a obligatoirement $\\lambda^k = 0$, donc $\\lambda = 0$. Le spectre n'est jamais vide : en dimension finie, le polynôme caractéristique d'un endomorphisme nilpotent est toujours $X^n$, donc $0$ y est bien racine (et donc valeur propre).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2362,7 +2481,7 @@ const defaultData = {
                     { text: "$\\text{Sp}(p) = \\{0, 1\\}$", isCorrect: true },
                     { text: "$\\text{Sp}(p) = \\{0\\}$", isCorrect: false }
                 ],
-                explanation: "Les vecteurs de l'image sont invariants ($p(x)=x \\Rightarrow \\lambda=1$) et ceux du noyau sont annulés ($p(x)=0 \\Rightarrow \\lambda=0$)[cite: 3].",
+                explanation: "Les vecteurs de l'image sont invariants ($p(x)=x \\Rightarrow \\lambda=1$) et ceux du noyau sont annulés ($p(x)=0 \\Rightarrow \\lambda=0$). $\\{-1,1\\}$ serait le spectre d'une SYMÉTRIE, pas d'un projecteur — attention à ne pas confondre les deux notions.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2372,7 +2491,7 @@ const defaultData = {
                     { text: "Vrai", isCorrect: true },
                     { text: "Faux", isCorrect: false }
                 ],
-                explanation: "Vrai. Le polynôme caractéristique est $X^2 - 2\\cos(\\theta)X + 1$, de discriminant $-4\\sin^2(\\theta) < 0$. Sur $\\mathbb{R}$, il n'y a pas de valeurs propres. Sur $\\mathbb{C}$, le spectre est $\\{e^{i\\theta}, e^{-i\\theta}\\}$[cite: 3].",
+                explanation: "Vrai. Le polynôme caractéristique est $X^2 - 2\\cos(\\theta)X + 1$, de discriminant $-4\\sin^2(\\theta) < 0$. Sur $\\mathbb{R}$, il n'y a pas de valeurs propres. Sur $\\mathbb{C}$, le spectre est $\\{e^{i\\theta}, e^{-i\\theta}\\}$ : le corps de base change fondamentalement l'existence même de valeurs propres.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -2384,7 +2503,7 @@ const defaultData = {
                     { text: "$\\det(u - X id_E)$", isCorrect: false },
                     { text: "$\\det(X id_E - u)$", isCorrect: true }
                 ],
-                explanation: "On utilise $\\det(X id_E - u)$ pour s'assurer que le polynôme caractéristique est toujours UNITAIRE (le coefficient de son terme de plus haut degré $X^n$ vaut 1)[cite: 3].",
+                explanation: "On utilise $\\det(X id_E - u)$ pour s'assurer que le polynôme caractéristique est toujours UNITAIRE (le coefficient de son terme de plus haut degré $X^n$ vaut 1). $\\det(u - X id_E)$ ne diffère que d'un facteur $(-1)^n$, mais cette convention gâche l'unitarité en dimension impaire.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2393,9 +2512,10 @@ const defaultData = {
                 options: [
                     { text: "$\\det(M)$", isCorrect: false },
                     { text: "$(-1)^n \\det(M)$", isCorrect: true },
-                    { text: "$\\det(-M)$", isCorrect: true }
+                    { text: "$\\det(-M)$", isCorrect: true },
+                    { text: "$-\\det(M)$ dans tous les cas", isCorrect: false }
                 ],
-                explanation: "Le terme de degré zéro correspond à la valeur du polynôme en $X=0$. $\\chi_M(0) = \\det(0 \\cdot I_n - M) = \\det(-M) = (-1)^n \\det(M)$[cite: 3].",
+                explanation: "Le terme de degré zéro correspond à la valeur du polynôme en $X=0$. $\\chi_M(0) = \\det(0 \\cdot I_n - M) = \\det(-M) = (-1)^n \\det(M)$. Ces deux écritures sont rigoureusement équivalentes. Le signe dépend donc de la parité de $n$ : $c_0 = -\\det(M)$ uniquement quand $n$ est impair, pas « dans tous les cas ».",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2405,7 +2525,7 @@ const defaultData = {
                     { text: "Ils sont égaux : $\\chi_A = \\chi_B$", isCorrect: true },
                     { text: "Ils sont opposés", isCorrect: false }
                 ],
-                explanation: "Si $B = P^{-1}AP$, alors $\\det(X I_n - B) = \\det(P^{-1}(X I_n - A)P) = \\det(X I_n - A)$. Deux matrices semblables ont le même polynôme caractéristique[cite: 3].",
+                explanation: "Si $B = P^{-1}AP$, alors $\\det(X I_n - B) = \\det(P^{-1}(X I_n - A)P) = \\det(X I_n - A)$. Deux matrices semblables ont le même polynôme caractéristique, jamais opposé (un polynôme caractéristique est toujours unitaire, son opposé ne l'est plus).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2415,7 +2535,7 @@ const defaultData = {
                     { text: "Vrai", isCorrect: false },
                     { text: "Faux", isCorrect: true }
                 ],
-                explanation: "Faux. Contre-exemple classique : l'identité $I_2$ et la matrice unipotente $\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$. Elles ont toutes deux $\\chi(X) = (X-1)^2$, mais ne sont pas semblables[cite: 3].",
+                explanation: "Faux. Contre-exemple classique : l'identité $I_2$ et la matrice unipotente $\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$. Elles ont toutes deux $\\chi(X) = (X-1)^2$, mais ne sont pas semblables (la première est diagonalisable, pas la seconde — la similitude conserverait la diagonalisabilité).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2425,7 +2545,7 @@ const defaultData = {
                     { text: "Calculer les coefficients du polynôme caractéristique de manière récursive (sans déterminant abstrait) et obtenir l'inverse de la matrice si elle est inversible", isCorrect: true },
                     { text: "Résoudre des systèmes différentiels", isCorrect: false }
                 ],
-                explanation: "La méthode de Le Verrier construit une suite de matrices $M_k$ et utilise leurs traces pour déterminer les coefficients du polynôme caractéristique, permettant d'esquiver le calcul d'un déterminant polynomial complexe[cite: 3].",
+                explanation: "La méthode de Le Verrier construit une suite de matrices $M_k$ et utilise leurs traces pour déterminer les coefficients du polynôme caractéristique, permettant d'esquiver le calcul d'un déterminant polynomial complexe. Elle n'a pas vocation directe à résoudre des équations différentielles, même si le polynôme obtenu peut ensuite servir à d'autres fins.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -2438,7 +2558,7 @@ const defaultData = {
                     { text: "$\\dim(E_\\lambda) = m_\\lambda$ toujours", isCorrect: false },
                     { text: "$m_\\lambda \\le \\dim(E_\\lambda) \\le n$", isCorrect: false }
                 ],
-                explanation: "La dimension géométrique (dimension de $E_\\lambda$) est toujours supérieure ou égale à 1 (puisqu'il y a un vecteur propre) et obligatoirement majorée par la multiplicité algébrique de la racine dans le polynôme caractéristique[cite: 3].",
+                explanation: "La dimension géométrique (dimension de $E_\\lambda$) est toujours supérieure ou égale à 1 (puisqu'il y a au moins un vecteur propre) et obligatoirement majorée par la multiplicité algébrique de la racine dans le polynôme caractéristique. L'égalité systématique n'a lieu que dans le cas diagonalisable — ce n'est pas une identité générale.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2446,9 +2566,10 @@ const defaultData = {
                 q: "Quelle est la condition nécessaire et suffisante (CNS) pour qu'un endomorphisme $u$ soit diagonalisable ?",
                 options: [
                     { text: "Son polynôme caractéristique doit être scindé", isCorrect: false },
-                    { text: "Son polynôme caractéristique doit être scindé ET pour chaque valeur propre, la dimension du sous-espace propre doit être égale à sa multiplicité algébrique", isCorrect: true }
+                    { text: "Son polynôme caractéristique doit être scindé ET pour chaque valeur propre, la dimension du sous-espace propre doit être égale à sa multiplicité algébrique", isCorrect: true },
+                    { text: "Son polynôme caractéristique doit être scindé à racines simples", isCorrect: false }
                 ],
-                explanation: "Un polynôme scindé ne suffit pas (ex: bloc de Jordan $\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$). Il faut impérativement que $dim(E_\\lambda) = m_\\lambda$ pour avoir assez de vecteurs propres pour former une base[cite: 3].",
+                explanation: "Un polynôme scindé ne suffit pas (ex : bloc de Jordan $\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$). Il faut impérativement que $dim(E_\\lambda) = m_\\lambda$ pour avoir assez de vecteurs propres pour former une base. « Scindé à racines simples » est une condition SUFFISANTE mais bien plus restrictive que nécessaire : une matrice avec des valeurs propres multiples peut très bien être diagonalisable (par exemple $I_n$).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2458,7 +2579,7 @@ const defaultData = {
                     { text: "Il n'est pas diagonalisable", isCorrect: false },
                     { text: "Il est diagonalisable, et ses sous-espaces propres sont des droites vectorielles", isCorrect: true }
                 ],
-                explanation: "C'est une condition suffisante forte. S'il y a $n$ racines distinctes, le polynôme est scindé à racines simples. Chaque multiplicité vaut 1, et la dimension géométrique valant au moins 1, on a l'égalité partout[cite: 3].",
+                explanation: "C'est une condition suffisante forte (mais pas nécessaire : voir $I_n$). S'il y a $n$ racines distinctes, le polynôme est scindé à racines simples. Chaque multiplicité vaut 1, et la dimension géométrique valant au moins 1, on a l'égalité partout — donc chaque $E_{\\lambda_i}$ est de dimension exactement 1.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2468,7 +2589,7 @@ const defaultData = {
                     { text: "Ils ont le même polynôme caractéristique", isCorrect: false },
                     { text: "Ils commutent entre eux ($u \\circ v = v \\circ u$)", isCorrect: true }
                 ],
-                explanation: "C'est un lemme fondamental (Lemme 1.35). La commutation est la clé pour pouvoir trouver une base commune de vecteurs propres[cite: 3].",
+                explanation: "C'est un lemme fondamental (Lemme 1.35). La commutation est la clé pour pouvoir trouver une base commune de vecteurs propres. Avoir le même polynôme caractéristique n'a même rien à voir : deux endomorphismes très différents peuvent partager $\\chi$ sans commuter (ni être co-diagonalisables).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -2480,7 +2601,7 @@ const defaultData = {
                     { text: "Son polynôme caractéristique doit posséder des racines simples", isCorrect: false },
                     { text: "Son polynôme caractéristique doit être scindé (factorisable en produits de degré 1)", isCorrect: true }
                 ],
-                explanation: "Si le polynôme caractéristique peut s'écrire sous la forme $\\prod (X - \\lambda_i)^{m_i}$, alors il existe une base où la matrice est triangulaire supérieure (Thm 1.38)[cite: 3].",
+                explanation: "Si le polynôme caractéristique peut s'écrire sous la forme $\\prod (X - \\lambda_i)^{m_i}$, alors il existe une base où la matrice est triangulaire supérieure (Thm 1.38). Aucune exigence de racines simples : au contraire, la trigonalisation gère justement le cas des racines multiples, là où la diagonalisation échoue parfois.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2490,7 +2611,7 @@ const defaultData = {
                     { text: "Vrai", isCorrect: true },
                     { text: "Faux", isCorrect: false }
                 ],
-                explanation: "Vrai. Le théorème de d'Alembert-Gauss garantit que tout polynôme sur $\\mathbb{C}$ est scindé. Donc la CNS de trigonalisabilité est toujours vérifiée sur les complexes[cite: 3].",
+                explanation: "Vrai. Le théorème de d'Alembert-Gauss garantit que tout polynôme sur $\\mathbb{C}$ est scindé. Donc la CNS de trigonalisabilité est toujours vérifiée sur les complexes — ce n'est en revanche PAS vrai sur $\\mathbb{R}$ (voir l'exemple de la rotation plus haut).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -2502,7 +2623,7 @@ const defaultData = {
                     { text: "Toute valeur propre de $u$ est obligatoirement une racine de $P$ : $\\text{Sp}(u) \\subset \\text{Racines}(P)$", isCorrect: true },
                     { text: "Toute racine de $P$ est obligatoirement une valeur propre de $u$", isCorrect: false }
                 ],
-                explanation: "Si $u(x) = \\lambda x$, alors $P(u)(x) = P(\\lambda)x$. Comme $P(u)=0$ et $x \\neq 0$, alors $P(\\lambda)=0$. Attention à la réciproque : un polynôme annulateur peut avoir des racines \"inutiles\" qui ne sont pas valeurs propres[cite: 3].",
+                explanation: "Si $u(x) = \\lambda x$, alors $P(u)(x) = P(\\lambda)x$. Comme $P(u)=0$ et $x \\neq 0$, alors $P(\\lambda)=0$. Attention à la réciproque : un polynôme annulateur peut avoir des racines « inutiles » qui ne sont pas valeurs propres (c'est justement ce qui distingue un annulateur quelconque du polynôme minimal).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2512,7 +2633,7 @@ const defaultData = {
                     { text: "Le polynôme caractéristique est égal au polynôme minimal", isCorrect: false },
                     { text: "Le polynôme caractéristique d'un endomorphisme $u$ est un polynôme annulateur de $u$ : $\\chi_u(u) = 0$", isCorrect: true }
                 ],
-                explanation: "Cayley-Hamilton affirme que si l'on évalue le polynôme caractéristique d'une matrice $M$ en remplaçant la variable $X$ par la matrice $M$ elle-même, on obtient la matrice nulle[cite: 3].",
+                explanation: "Cayley-Hamilton affirme que si l'on évalue le polynôme caractéristique d'une matrice $M$ en remplaçant la variable $X$ par la matrice $M$ elle-même, on obtient la matrice nulle. Le polynôme caractéristique et le polynôme minimal COÏNCIDENT parfois, mais ce n'est pas une règle générale : le minimal divise seulement le caractéristique.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2522,7 +2643,7 @@ const defaultData = {
                     { text: "Le polynôme annulateur unitaire de plus petit degré", isCorrect: true },
                     { text: "Le polynôme dérivé du polynôme caractéristique", isCorrect: false }
                 ],
-                explanation: "C'est l'unique polynôme unitaire engendrant l'idéal des polynômes annulateurs. Il divise TOUS les autres polynômes annulateurs de $u$ (y compris $\\chi_u$)[cite: 3].",
+                explanation: "C'est l'unique polynôme unitaire engendrant l'idéal des polynômes annulateurs. Il divise TOUS les autres polynômes annulateurs de $u$ (y compris $\\chi_u$). Il n'a aucun rapport avec une dérivation formelle du polynôme caractéristique.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2532,7 +2653,7 @@ const defaultData = {
                     { text: "Les racines de $\\mu_u$ sont EXACTEMENT les valeurs propres de $u$", isCorrect: true },
                     { text: "Certaines racines de $\\mu_u$ ne sont pas des valeurs propres", isCorrect: false }
                 ],
-                explanation: "Contrairement à un polynôme annulateur quelconque qui peut avoir des racines superflues, les racines du polynôme minimal coïncident strictement avec le spectre de l'endomorphisme (Prop 1.53)[cite: 3].",
+                explanation: "Contrairement à un polynôme annulateur quelconque qui peut avoir des racines superflues, les racines du polynôme minimal coïncident strictement avec le spectre de l'endomorphisme (Prop 1.53). C'est précisément ce qui distingue le polynôme minimal des autres annulateurs.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2543,7 +2664,7 @@ const defaultData = {
                     { text: "Scindé à racines simples", isCorrect: true },
                     { text: "De degré $n$", isCorrect: false }
                 ],
-                explanation: "C'est la caractérisation ultime de la diagonalisabilité : $\\mu_u$ doit être factorisable sous la forme $\\prod (X - \\lambda_i)$ sans aucune puissance supérieure à 1[cite: 3].",
+                explanation: "C'est la caractérisation ultime de la diagonalisabilité : $\\mu_u$ doit être factorisable sous la forme $\\prod (X - \\lambda_i)$ sans aucune puissance supérieure à 1. « Scindé » seul (sans racines simples) ne suffit pas — c'est le même piège que pour le polynôme caractéristique. Le degré de $\\mu_u$ peut d'ailleurs être bien inférieur à $n$ (voir l'exemple de l'homothétie).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2554,7 +2675,7 @@ const defaultData = {
                     { text: "$X(X-1)$", isCorrect: false },
                     { text: "$(X-1)^2$", isCorrect: false }
                 ],
-                explanation: "Une symétrie vérifie $s^2 = id$, donc $X^2-1$ est un polynôme annulateur scindé à racines simples (les valeurs propres sont 1 et -1). Puisque $s$ n'est pas triviale, c'est son polynôme minimal[cite: 3].",
+                explanation: "Une symétrie vérifie $s^2 = id$, donc $X^2-1$ est un polynôme annulateur scindé à racines simples (les valeurs propres sont 1 et -1). Puisque $s$ n'est pas triviale, c'est son polynôme minimal. $X(X-1)$ caractériserait plutôt un PROJECTEUR strict, pas une symétrie.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2564,7 +2685,7 @@ const defaultData = {
                     { text: "$\\ker((PQ)(u)) = \\ker(P(u)) \\oplus \\ker(Q(u))$", isCorrect: true },
                     { text: "$\\ker((PQ)(u)) = \\ker(P(u)) \\cap \\ker(Q(u))$", isCorrect: false }
                 ],
-                explanation: "Le fait que les polynômes n'aient aucune racine commune garantit que les noyaux des endomorphismes correspondants sont en somme directe. C'est l'outil qui permet de prouver la diagonalisation[cite: 3].",
+                explanation: "Le fait que les polynômes n'aient aucune racine commune garantit que les noyaux des endomorphismes correspondants sont en somme directe. C'est l'outil qui permet de prouver la diagonalisation. Leur intersection serait au contraire réduite à $\\{0\\}$ (conséquence de la somme directe), pas égale à $\\ker((PQ)(u))$ tout entier.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -2577,7 +2698,7 @@ const defaultData = {
                     { text: "$N_\\lambda = \\ker((u - \\lambda id_E)^{m_\\lambda})$", isCorrect: true },
                     { text: "$N_\\lambda = \\text{Im}((u - \\lambda id_E)^{m_\\lambda})$", isCorrect: false }
                 ],
-                explanation: "Le sous-espace caractéristique capte non seulement les vecteurs propres, mais aussi les vecteurs propres GÉNÉRALISÉS. Si l'endomorphisme n'est pas diagonalisable, la suite des noyaux itérés finit par se stabiliser pour englober $m_\\lambda$ dimensions[cite: 3].",
+                explanation: "Le sous-espace caractéristique capte non seulement les vecteurs propres, mais aussi les vecteurs propres GÉNÉRALISÉS. Si l'endomorphisme n'est pas diagonalisable, la suite des noyaux itérés finit par se stabiliser pour englober $m_\\lambda$ dimensions. $\\ker(u-\\lambda id_E)$ seul (sans itération) ne redonnerait que le sous-espace propre $E_\\lambda$, en général strictement plus petit.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2587,7 +2708,7 @@ const defaultData = {
                     { text: "Vrai", isCorrect: true },
                     { text: "Faux", isCorrect: false }
                 ],
-                explanation: "Vrai. C'est une application directe du lemme de décomposition des noyaux généralisé appliqué à $\\chi_u$ : les $N_\\lambda$ absorbent les défaillances de diagonalisabilité et reconstituent parfaitement l'espace[cite: 3].",
+                explanation: "Vrai. C'est une application directe du lemme de décomposition des noyaux généralisé appliqué à $\\chi_u$ : les $N_\\lambda$ absorbent les défaillances de diagonalisabilité et reconstituent parfaitement l'espace, que $u$ soit diagonalisable ou seulement trigonalisable.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2597,7 +2718,7 @@ const defaultData = {
                     { text: "Une matrice diagonale avec $\\lambda$ sur la diagonale", isCorrect: false },
                     { text: "Une matrice triangulaire supérieure avec $\\lambda$ sur la diagonale et des $1$ sur la sur-diagonale juste au-dessus", isCorrect: true }
                 ],
-                explanation: "Un bloc de Jordan encode l'action d'un endomorphisme nilpotent décalé. $\\lambda$ est sur la diagonale, et des $1$ tracent un chemin liant les vecteurs propres généralisés[cite: 3].",
+                explanation: "Un bloc de Jordan encode l'action d'un endomorphisme nilpotent décalé. $\\lambda$ est sur la diagonale, et des $1$ tracent un chemin liant les vecteurs propres généralisés. Une matrice purement diagonale correspondrait au cas dégénéré $l=1$ (un « bloc » réduit à un simple vecteur propre classique).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2607,7 +2728,7 @@ const defaultData = {
                     { text: "À la multiplicité algébrique $m_\\lambda$", isCorrect: false },
                     { text: "À la dimension du sous-espace propre $E_\\lambda = \\dim(\\ker(M - \\lambda I))$", isCorrect: true }
                 ],
-                explanation: "Chaque bloc de Jordan possède EXACTEMENT un vecteur propre pur (qui \"démarre\" ou \"finit\" la chaîne de vecteurs généralisés). Il y a donc autant de blocs que de dimension propre géométrique[cite: 3].",
+                explanation: "Chaque bloc de Jordan possède EXACTEMENT un vecteur propre pur (qui « démarre » ou « finit » la chaîne de vecteurs généralisés). Il y a donc autant de blocs que de dimension propre géométrique — pas algébrique, qui donnerait plutôt la SOMME des tailles de tous ces blocs.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2617,7 +2738,17 @@ const defaultData = {
                     { text: "Le nombre total de blocs de Jordan", isCorrect: false },
                     { text: "La taille du PLUS GRAND bloc de Jordan associé à $\\lambda$", isCorrect: true }
                 ],
-                explanation: "Le polynôme minimal trace la plus grande puissance nécessaire pour annuler le bloc nilpotent maximal. Cette puissance correspond donc à la taille de ce plus grand bloc[cite: 3].",
+                explanation: "Le polynôme minimal trace la plus grande puissance nécessaire pour annuler le bloc nilpotent maximal. Cette puissance correspond donc à la taille de ce plus grand bloc — pas au nombre de blocs, qui est donné par la dimension géométrique (question précédente).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Unicité"],
+                q: "La réduction de Jordan d'une matrice donnée (dont le polynôme caractéristique est scindé) est-elle unique ?",
+                options: [
+                    { text: "Oui, totalement unique, y compris l'ordre d'apparition des blocs sur la diagonale", isCorrect: false },
+                    { text: "Elle est unique à l'ordre des blocs près sur la diagonale", isCorrect: true }
+                ],
+                explanation: "L'ensemble des blocs de Jordan (leurs tailles et les valeurs propres associées) est entièrement déterminé par $u$. Mais on peut les disposer dans n'importe quel ordre le long de la diagonale en réarrangeant la base adaptée — la matrice de Jordan n'est donc unique qu'à une permutation des blocs près, pas au sens strict.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2627,7 +2758,7 @@ const defaultData = {
                     { text: "Il existe un unique couple $(s,n)$, avec $s$ diagonalisable et $n$ nilpotente, tels que $u = s+n$ ET que $s$ et $n$ commutent ($sn = ns$)", isCorrect: true },
                     { text: "Tout endomorphisme peut s'écrire comme somme d'une rotation et d'une homothétie", isCorrect: false }
                 ],
-                explanation: "La commutation ($sn = ns$) est cruciale. C'est elle qui garantit l'unicité de la décomposition et permet d'utiliser la formule du binôme pour calculer les puissances ou l'exponentielle de la matrice[cite: 3].",
+                explanation: "La commutation ($sn = ns$) est cruciale. C'est elle qui garantit l'unicité de la décomposition et permet d'utiliser la formule du binôme pour calculer les puissances ou l'exponentielle de la matrice. La deuxième option décrit une décomposition géométrique totalement différente (et non générale), sans rapport avec Dunford.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2637,7 +2768,7 @@ const defaultData = {
                     { text: "C'est l'endomorphisme dont la restriction à chaque sous-espace caractéristique $N_\\lambda$ est l'homothétie de rapport $\\lambda$", isCorrect: true },
                     { text: "C'est la partie symétrique de la matrice", isCorrect: false }
                 ],
-                explanation: "Puisque $E = \\bigoplus N_\\lambda$, on construit $s$ en le définissant comme agissant par une simple multiplication par $\\lambda$ sur chaque bloc $N_\\lambda$[cite: 3].",
+                explanation: "Puisque $E = \\bigoplus N_\\lambda$, on construit $s$ en le définissant comme agissant par une simple multiplication par $\\lambda$ sur chaque bloc $N_\\lambda$. La « partie symétrique » ($\\frac{1}{2}(M+M^T)$) est une notion totalement différente, sans rapport avec la diagonalisabilité.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2647,7 +2778,7 @@ const defaultData = {
                     { text: "Que $u$ est l'endomorphisme nul", isCorrect: false },
                     { text: "Que $u$ est strictement diagonalisable", isCorrect: true }
                 ],
-                explanation: "Si $u = s + 0$, alors $u = s$. Par définition de la décomposition, $s$ est diagonalisable. Donc l'absence de nilpotence caractérise la diagonalisabilité[cite: 3].",
+                explanation: "Si $u = s + 0$, alors $u = s$. Par définition de la décomposition, $s$ est diagonalisable. Donc l'absence de nilpotence caractérise la diagonalisabilité — cela ne dit rien sur la nullité de $u$ lui-même, qui reste un cas très particulier de diagonalisabilité (toutes les valeurs propres valant 0).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
 
@@ -2659,7 +2790,7 @@ const defaultData = {
                     { text: "On fait simplement $M^k = S^k + N^k$", isCorrect: false },
                     { text: "Puisque $S$ et $N$ commutent, on applique la formule du binôme de Newton : $M^k = \\sum \\binom{k}{l} S^l N^{k-l}$. La somme s'arrête vite car $N$ est nilpotente.", isCorrect: true }
                 ],
-                explanation: "La commutation est la clef. Si $N$ a pour indice de nilpotence $p$, tous les termes avec $N^m$ pour $m \\ge p$ s'annulent, ce qui réduit drastiquement la somme[cite: 3].",
+                explanation: "La commutation est la clef. Si $N$ a pour indice de nilpotence $p$, tous les termes avec $N^m$ pour $m \\ge p$ s'annulent, ce qui réduit drastiquement la somme. $M^k = S^k + N^k$ serait faux en général : cette identité ne vaut que si $S$ et $N$ étaient de plus des matrices qui s'annulent mutuellement dans les termes croisés, ce que le binôme complet prend correctement en compte.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2669,7 +2800,7 @@ const defaultData = {
                     { text: "Des racines de son équation caractéristique polynomiale et de leur multiplicité (diagonalisabilité de la matrice compagnon)", isCorrect: true },
                     { text: "Uniquement du premier terme $u_0$", isCorrect: false }
                 ],
-                explanation: "Si l'équation a des racines simples (diagonalisable), $u_k$ est une somme de suites géométriques. S'il y a des racines multiples (non diagonalisable, blocs de Jordan), des polynômes en $k$ apparaissent en facteur (ex: $k \\cdot \\lambda^k$)[cite: 3].",
+                explanation: "Si l'équation a des racines simples (diagonalisable), $u_k$ est une somme de suites géométriques. S'il y a des racines multiples (non diagonalisable, blocs de Jordan), des polynômes en $k$ apparaissent en facteur (ex : $k \\cdot \\lambda^k$). Le premier terme $u_0$ (et les suivants jusqu'à $u_{n-1}$) ne fixe que les CONSTANTES devant chaque terme de la formule, pas sa forme générale.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2679,7 +2810,7 @@ const defaultData = {
                     { text: "Le module (ou la valeur absolue) de sa plus GRANDE valeur propre en module", isCorrect: true },
                     { text: "La somme des modules de ses valeurs propres", isCorrect: false }
                 ],
-                explanation: "Le rayon spectral $\\rho(M) = \\max \\{|\\lambda| \\mid \\lambda \\in \\text{Sp}(M)\\}$ définit la plus grande \"envergure\" du spectre dans le plan complexe[cite: 3].",
+                explanation: "Le rayon spectral $\\rho(M) = \\max \\{|\\lambda| \\mid \\lambda \\in \\text{Sp}(M)\\}$ définit la plus grande « envergure » du spectre dans le plan complexe. La somme des modules serait une quantité différente, sans le même intérêt pour l'étude de la convergence des suites $M^k$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2689,7 +2820,7 @@ const defaultData = {
                     { text: "$\\rho(M) > \\|M\\|$", isCorrect: false },
                     { text: "$\\rho(M) \\le \\|M\\|$ pour toute norme subordonnée, et l'on peut trouver une norme s'approchant d'aussi près que voulu de $\\rho(M)$", isCorrect: true }
                 ],
-                explanation: "Le rayon spectral donne la borne inférieure absolue de toutes les normes subordonnées de la matrice. L'inégalité inverse $\\ge$ est globalement fausse[cite: 3].",
+                explanation: "Le rayon spectral donne la borne inférieure absolue de toutes les normes subordonnées de la matrice. L'inégalité inverse $>$ est globalement fausse : elle est même incompatible avec l'existence de normes arbitrairement proches de $\\rho(M)$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2699,17 +2830,18 @@ const defaultData = {
                     { text: "La matrice dont chaque coefficient est l'exponentielle du coefficient de $M$", isCorrect: false },
                     { text: "Par la série absolument convergente : $\\sum_{k=0}^{+\\infty} \\frac{M^k}{k!}$", isCorrect: true }
                 ],
-                explanation: "On utilise la définition analytique en série entière de l'exponentielle. Il est faux d'appliquer l'exponentielle terme à terme (sauf si la matrice est diagonale)[cite: 3].",
+                explanation: "On utilise la définition analytique en série entière de l'exponentielle. Il est faux d'appliquer l'exponentielle terme à terme sur chaque coefficient (cette confusion mène à des résultats incorrects dès que $M$ n'est pas diagonale).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
                 type: "qcm", tags: ["Exponentielle matricielle"],
-                q: "L'égalité $\\exp(M+N) = \\exp(M)\\exp(N)$ est-elle toujours vraie pour deux matrices $M$ et $N$ quelconques ?",
+                q: "L'égalité $\\exp(M+N) = \\exp(M)\\exp(N)$ est-elle garantie dès que $M$ et $N$ commutent ($MN=NM$) ?",
                 options: [
-                    { text: "Oui, c're la propriété fondamentale de l'exponentielle", isCorrect: false },
-                    { text: "Non, elle est vraie SI ET SEULEMENT SI les matrices $M$ et $N$ commutent ($MN = NM$)", isCorrect: true }
+                    { text: "Oui, la commutation est une condition SUFFISANTE pour cette égalité (c'est le théorème du cours)", isCorrect: true },
+                    { text: "Non, il faut en plus que $M$ et $N$ soient toutes deux diagonalisables", isCorrect: false },
+                    { text: "Non, cette égalité est fausse pour toute paire de matrices distinctes", isCorrect: false }
                 ],
-                explanation: "La non-commutativité de l'algèbre matricielle fait échouer la démonstration du produit de Cauchy des séries. L'hypothèse de commutation est absolument obligatoire[cite: 3].",
+                explanation: "Dès que $MN=NM$, le produit de Cauchy des deux séries se réarrange exactement comme pour des scalaires, ce qui donne $\\exp(M+N)=\\exp(M)\\exp(N)$. Aucune hypothèse de diagonalisabilité n'est nécessaire : le résultat marche aussi pour des matrices nilpotentes qui commutent. Sans commutation, l'égalité s'effondre en général (voir le contre-exemple classique plus loin), mais la condition suffisante ne dit pas qu'elle échoue TOUJOURS pour $M \\neq N$ : il faut juste ne pas s'y fier hors commutation.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2719,7 +2851,7 @@ const defaultData = {
                     { text: "Vrai", isCorrect: true },
                     { text: "Faux", isCorrect: false }
                 ],
-                explanation: "Vrai. Puisque $M$ et $-M$ commutent, $\\exp(M)\\exp(-M) = \\exp(M-M) = \\exp(0) = I_n$. L'inverse de $\\exp(M)$ est donc toujours $\\exp(-M)$[cite: 3].",
+                explanation: "Vrai. Puisque $M$ et $-M$ commutent (trivialement), $\\exp(M)\\exp(-M) = \\exp(M-M) = \\exp(0) = I_n$. L'inverse de $\\exp(M)$ est donc toujours $\\exp(-M)$, et ce quelle que soit la matrice $M$ de départ (inversible ou non).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2730,7 +2862,7 @@ const defaultData = {
                     { text: "$\\det(\\exp(M)) = tr(\\exp(M))$", isCorrect: false },
                     { text: "$tr(\\exp(M)) = \\exp(\\det(M))$", isCorrect: false }
                 ],
-                explanation: "C'est l'identité de Jacobi. En trigonalisant la matrice, les valeurs propres de l'exponentielle sont les exponentielles des valeurs propres. Le produit des exponentielles devient l'exponentielle de la somme (qui est la trace)[cite: 3].",
+                explanation: "C'est l'identité de Jacobi (ou formule de Liouville). En trigonalisant la matrice, les valeurs propres de l'exponentielle sont les exponentielles des valeurs propres. Le produit des exponentielles devient l'exponentielle de la somme (qui est la trace) — jamais confondre avec la trace de $\\exp(M)$, qui est une somme (pas un produit) des $\\exp(\\lambda_i)$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2740,7 +2872,7 @@ const defaultData = {
                     { text: "$\\frac{d}{dt} Y(t) = \\exp(M)$", isCorrect: false },
                     { text: "$\\frac{d}{dt} Y(t) = M \\exp(tM) = \\exp(tM) M$", isCorrect: true }
                 ],
-                explanation: "L'exponentielle de matrice est la résolvante canonique des systèmes différentiels linéaires à coefficients constants $Y' = MY$[cite: 3].",
+                explanation: "L'exponentielle de matrice est la résolvante canonique des systèmes différentiels linéaires à coefficients constants $Y' = MY$. Notez que $M$ et $\\exp(tM)$ commutent toujours (l'un est une série en l'autre), donc l'ordre de multiplication n'a ici pas d'importance, contrairement au cas général.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2750,7 +2882,7 @@ const defaultData = {
                     { text: "$\\exp(M) = P \\exp(D) P^{-1}$", isCorrect: true },
                     { text: "$\\exp(M) = \\exp(P) \\exp(D) \\exp(P^{-1})$", isCorrect: false }
                 ],
-                explanation: "L'exponentielle s'applique bloc par bloc à l'intérieur de la similitude : les puissances $M^k$ donnent $P D^k P^{-1}$, et en sommant la série, les matrices $P$ et $P^{-1}$ se factorisent aux extrémités[cite: 3].",
+                explanation: "L'exponentielle s'applique bloc par bloc à l'intérieur de la similitude : les puissances $M^k$ donnent $P D^k P^{-1}$, et en sommant la série, les matrices $P$ et $P^{-1}$ se factorisent aux extrémités. La deuxième option n'a même pas de sens rigoureux dans ce contexte, puisque $P$ n'a a priori aucune raison d'être diagonalisable ou d'avoir une exponentielle simple à calculer.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2761,7 +2893,7 @@ const defaultData = {
                     { text: "Le plus petit sous-espace vectoriel stable par $u$ contenant $x$, engendré par la famille $\\{u^k(x)\\}_{k \\in \\mathbb{N}}$", isCorrect: true },
                     { text: "L'espace engendré par un vecteur propre et son image réciproque", isCorrect: false }
                 ],
-                explanation: "Un sous-espace cyclique $E_u(x)$ se construit en appliquant itérativement l'endomorphisme $u$ au vecteur de départ $x$, créant ainsi une \"orbite\" qui engendre le sous-espace[cite: 3].",
+                explanation: "Un sous-espace cyclique $E_u(x)$ se construit en appliquant itérativement l'endomorphisme $u$ au vecteur de départ $x$, créant ainsi une « orbite » qui engendre le sous-espace. Ce vecteur $x$ n'a même pas besoin d'être propre — c'est justement pour des $x$ non propres que la construction devient intéressante (matrice compagnon).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2772,7 +2904,7 @@ const defaultData = {
                     { text: "$tr(u) = \\prod_{i=1}^n \\lambda_i$ et $\\det(u) = \\sum_{i=1}^n \\lambda_i$", isCorrect: false },
                     { text: "On ne peut rien affirmer si $u$ n'est pas diagonalisable", isCorrect: false }
                 ],
-                explanation: "C'est une propriété fondamentale des racines d'un polynôme (relations coefficients-racines). Même si $u$ n'est que trigonalisable, la trace reste la somme de SES valeurs propres comptées avec multiplicité, et le déterminant leur produit[cite: 3].",
+                explanation: "C'est une propriété fondamentale des racines d'un polynôme (relations coefficients-racines). Même si $u$ n'est que trigonalisable (pas diagonalisable), la trace reste la somme de SES valeurs propres comptées avec multiplicité, et le déterminant leur produit : ces deux formules ne dépendent en rien de la diagonalisabilité.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2783,7 +2915,7 @@ const defaultData = {
                     { text: "$\\chi_M(X) = X^2 - tr(M)X + \\det(M)$", isCorrect: true },
                     { text: "$\\chi_M(X) = X^2 + tr(M)X + \\det(M)$", isCorrect: false }
                 ],
-                explanation: "Pour toute matrice d'ordre 2, le polynôme caractéristique s'écrit de manière instantanée avec cette formule issue du développement de $X^2 - tr(M)X^{2-1} + \\dots + (-1)^2 \\det(M)$[cite: 3].",
+                explanation: "Pour toute matrice d'ordre 2, le polynôme caractéristique s'écrit de manière instantanée avec cette formule issue du développement de $X^2 - tr(M)X^{2-1} + \\dots + (-1)^2 \\det(M)$. Attention au signe devant la trace : c'est un moins, pas un plus.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2793,7 +2925,7 @@ const defaultData = {
                     { text: "Vrai", isCorrect: false },
                     { text: "Faux", isCorrect: true }
                 ],
-                explanation: "Faux. On a toujours $1 \\le \\dim(E_\\lambda) \\le m_\\lambda$. C'est mathématiquement impossible que la dimension du sous-espace propre dépasse la puissance de la racine dans le polynôme caractéristique[cite: 3].",
+                explanation: "Faux. On a toujours $1 \\le \\dim(E_\\lambda) \\le m_\\lambda$. C'est mathématiquement impossible que la dimension du sous-espace propre dépasse la puissance de la racine dans le polynôme caractéristique.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2804,7 +2936,7 @@ const defaultData = {
                     { text: "$P(x)$", isCorrect: false },
                     { text: "$0_E$", isCorrect: false }
                 ],
-                explanation: "L'application d'un polynôme d'endomorphisme sur un vecteur propre se comporte comme une simple évaluation scalaire du polynôme sur la valeur propre : si $u(x)=\\lambda x$, alors $u^k(x) = \\lambda^k x$, d'où $P(u)(x) = P(\\lambda)x$[cite: 3].",
+                explanation: "L'application d'un polynôme d'endomorphisme sur un vecteur propre se comporte comme une simple évaluation scalaire du polynôme sur la valeur propre : si $u(x)=\\lambda x$, alors $u^k(x) = \\lambda^k x$, d'où $P(u)(x) = P(\\lambda)x$. Cela ne vaut $0_E$ que dans le cas particulier où $\\lambda$ est racine de $P$ (par exemple si $P$ est annulateur).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2815,7 +2947,7 @@ const defaultData = {
                     { text: "$X - \\lambda$", isCorrect: true },
                     { text: "$X^n - \\lambda^n$", isCorrect: false }
                 ],
-                explanation: "L'homothétie s'annule dès la puissance 1 : $(u - \\lambda id_E) = 0_E$. Le polynôme $X - \\lambda$ annule donc $u$. Puisque le polynôme minimal divise le polynôme caractéristique $(X - \\lambda)^n$, il est exactement de degré 1[cite: 3].",
+                explanation: "L'homothétie s'annule dès la puissance 1 : $(u - \\lambda id_E) = 0_E$. Le polynôme $X - \\lambda$ annule donc $u$. Puisque le polynôme minimal divise le polynôme caractéristique $(X - \\lambda)^n$, il est exactement de degré 1 — bien plus court que le caractéristique, ce qui illustre que $\\mu_u$ n'a pas toujours le même degré que $\\chi_u$.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2826,7 +2958,7 @@ const defaultData = {
                     { text: "Un idéal de l'anneau $\\mathbb{K}[X]$", isCorrect: true },
                     { text: "Un corps", isCorrect: false }
                 ],
-                explanation: "Cet ensemble est stable par addition, et la multiplication de tout polynôme annulateur par un polynôme QUELCONQUE donne encore un polynôme annulateur. C'est la définition d'un idéal, engendré ici par un polynôme unique (le polynôme minimal)[cite: 3].",
+                explanation: "Cet ensemble est stable par addition, et la multiplication de tout polynôme annulateur par un polynôme QUELCONQUE donne encore un polynôme annulateur. C'est la définition d'un idéal, engendré ici par un polynôme unique (le polynôme minimal). Ce n'est ni un sous-espace de dimension finie fixe (l'idéal contient des polynômes de tout degré supérieur ou égal à $\\deg \\mu_u$), ni un corps (il contient le polynôme nul et n'a pas d'inverses).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2837,7 +2969,7 @@ const defaultData = {
                     { text: "Ils doivent être de degré strictement positif", isCorrect: false },
                     { text: "Ils doivent être premiers entre eux deux à deux", isCorrect: true }
                 ],
-                explanation: "Si les polynômes sont premiers entre eux deux à deux (aucun facteur commun, donc aucune valeur propre commune ne peut les annuler simultanément), alors $\\ker((P_1 \\dots P_k)(u)) = \\bigoplus_{i=1}^k \\ker(P_i(u))$[cite: 3].",
+                explanation: "Si les polynômes sont premiers entre eux deux à deux (aucun facteur commun, donc aucune valeur propre commune ne peut les annuler simultanément), alors $\\ker((P_1 \\dots P_k)(u)) = \\bigoplus_{i=1}^k \\ker(P_i(u))$. Aucune exigence sur le fait d'être scindés : le lemme fonctionne même avec des facteurs irréductibles de degré $\\ge 2$ (utile sur $\\mathbb{R}$ par exemple).",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2847,7 +2979,7 @@ const defaultData = {
                     { text: "En posant $M^{-1} = \\chi_M(0)$", isCorrect: false },
                     { text: "Si $M$ est inversible, l'équation $\\chi_M(M) = 0$ peut être réarrangée sous la forme $M \\times P(M) = c \\cdot I_n$, d'où l'on extrait $M^{-1}$", isCorrect: true }
                 ],
-                explanation: "Puisque $M^n - tr(M)M^{n-1} + \\dots + (-1)^n \\det(M)I_n = 0$, on peut isoler l'identité en factorisant par $M$ si $\\det(M) \\neq 0$. Le facteur restant divisé par $\\pm \\det(M)$ est exactement l'inverse de $M$[cite: 3].",
+                explanation: "Puisque $M^n - tr(M)M^{n-1} + \\dots + (-1)^n \\det(M)I_n = 0$, on peut isoler l'identité en factorisant par $M$ si $\\det(M) \\neq 0$. Le facteur restant divisé par $\\pm \\det(M)$ est exactement l'inverse de $M$. $\\chi_M(0)$ est un simple SCALAIRE (ou plutôt $(-1)^n\\det(M)$ vu plus haut), pas une matrice, donc cette première option n'a même pas de sens dimensionnel.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2858,7 +2990,7 @@ const defaultData = {
                     { text: "Une matrice symétrique", isCorrect: false },
                     { text: "Une matrice diagonale", isCorrect: false }
                 ],
-                explanation: "Une matrice compagnon possède des 1 sur la sous-diagonale et les coefficients opposés de son polynôme caractéristique sur la dernière colonne. Elle est la \"compagne\" de ce polynôme unitaire[cite: 3].",
+                explanation: "Une matrice compagnon possède des 1 sur la sous-diagonale et les coefficients opposés de son polynôme caractéristique sur la dernière colonne. Elle est la « compagne » de ce polynôme unitaire. Rien ne garantit sa symétrie ni son caractère diagonal — c'est même l'exemple typique d'une matrice non diagonalisable quand le vecteur générateur est bien choisi pour un endomorphisme nilpotent.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2868,7 +3000,7 @@ const defaultData = {
                     { text: "D'ordre 1 (c'est un vecteur propre classique)", isCorrect: false },
                     { text: "D'ordre $k$ (il appartient à $\\ker((M-\\lambda I)^k)$ mais pas à $\\ker((M-\\lambda I)^{k-1})$)", isCorrect: true }
                 ],
-                explanation: "Le vecteur $V_k$ est le plus « éloigné » du vrai vecteur propre. Il faut lui appliquer l'opérateur $(M-\\lambda I)$ $k$ fois pour enfin l'annuler[cite: 3].",
+                explanation: "Le vecteur $V_k$ est le plus « éloigné » du vrai vecteur propre. Il faut lui appliquer l'opérateur $(M-\\lambda I)$ $k$ fois pour enfin l'annuler. C'est en lui appliquant successivement $(M-\\lambda I)$ qu'on redescend toute la chaîne jusqu'au vecteur propre classique d'ordre 1.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2879,7 +3011,7 @@ const defaultData = {
                     { text: "Dimension $n$", isCorrect: true },
                     { text: "Dimension 1", isCorrect: false }
                 ],
-                explanation: "L'application linéaire qui à toute suite de cet ensemble associe ses $n$ premiers termes $(u_0, \\dots, u_{n-1})$ est une bijection. L'espace vectoriel des solutions est donc isomorphe à $\\mathbb{K}^n$, de dimension $n$[cite: 3].",
+                explanation: "L'application linéaire qui à toute suite de cet ensemble associe ses $n$ premiers termes $(u_0, \\dots, u_{n-1})$ est une bijection. L'espace vectoriel des solutions est donc isomorphe à $\\mathbb{K}^n$, de dimension $n$ — malgré le fait qu'une suite contienne, elle, une infinité de termes.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2889,7 +3021,7 @@ const defaultData = {
                     { text: "Elle diverge car les puissances s'annulent", isCorrect: false },
                     { text: "Elle devient un polynôme en $M$ de degré $l-1$, car tous les termes $\\frac{M^k}{k!}$ pour $k \\ge l$ sont nuls", isCorrect: true }
                 ],
-                explanation: "C'est l'un des plus grands intérêts des matrices nilpotentes : l'exponentielle, qui est normalement une somme infinie, se tronque naturellement en une somme finie parfaitement calculable à la main[cite: 3].",
+                explanation: "C'est l'un des plus grands intérêts des matrices nilpotentes : l'exponentielle, qui est normalement une somme infinie, se tronque naturellement en une somme finie parfaitement calculable à la main. L'annulation des puissances n'entraîne évidemment pas une divergence, bien au contraire : elle garantit une somme finie donc triviale à évaluer.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2899,7 +3031,7 @@ const defaultData = {
                     { text: "Parce que ce ne sont pas des matrices symétriques", isCorrect: false },
                     { text: "Parce que $M$ et $N$ ne commutent pas ($MN \\neq NM$)", isCorrect: true }
                 ],
-                explanation: "L'égalité des exponentielles requiert impérativement la commutation. Dans ce contre-exemple classique (Remarque 1.88), $MN = \\begin{pmatrix} 1 & 0 \\\\ 0 & 0 \\end{pmatrix}$ et $NM = \\begin{pmatrix} 0 & 0 \\\\ 0 & 1 \\end{pmatrix}$[cite: 3].",
+                explanation: "L'égalité des exponentielles requiert impérativement la commutation. Dans ce contre-exemple classique (Remarque 1.88), $MN = \\begin{pmatrix} 1 & 0 \\\\ 0 & 0 \\end{pmatrix}$ et $NM = \\begin{pmatrix} 0 & 0 \\\\ 0 & 1 \\end{pmatrix}$, qui sont clairement différentes. La symétrie des matrices n'a ici aucun rapport avec le phénomène observé.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             },
             {
@@ -2909,7 +3041,60 @@ const defaultData = {
                     { text: "Vrai", isCorrect: true },
                     { text: "Faux", isCorrect: false }
                 ],
-                explanation: "Vrai (Prop 1.86). Même si $\\exp(M)$ est définie par une série infinie, l'espace des polynômes en $M$ est de dimension finie (grâce à Cayley-Hamilton, de dimension au plus $n$). Toute limite de cette série est un fermé, donc $\\exp(M)$ y appartient[cite: 3].",
+                explanation: "Vrai (Prop 1.86). Même si $\\exp(M)$ est définie par une série infinie, l'espace des polynômes en $M$ est de dimension finie (grâce à Cayley-Hamilton, de dimension au plus $n$). Cet espace étant fermé (car de dimension finie dans un espace vectoriel normé), la limite de la série y appartient bien.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.9 QUESTIONS SUPPLÉMENTAIRES (subtilités) ---
+            {
+                type: "qcm", tags: ["Polynôme caractéristique", "Multiplicités", "Pièges"],
+                q: "Soit $u$ un endomorphisme de $E$, $\\dim E = n$. La somme des multiplicités algébriques de toutes les valeurs propres de $u$ vaut-elle toujours $n$ ?",
+                options: [
+                    { text: "Oui, toujours, quel que soit $u$", isCorrect: false },
+                    { text: "Oui, mais seulement si $\\chi_u$ est scindé sur le corps de base ; sinon la somme est strictement inférieure à $n$", isCorrect: true }
+                ],
+                explanation: "La somme des multiplicités égale toujours le degré du produit des facteurs de degré 1 de $\\chi_u$. Si $\\chi_u$ n'est pas scindé (comme pour une rotation d'angle non trivial sur $\\mathbb{R}$), il reste des facteurs irréductibles de degré $\\ge 2$ qui ne contribuent à AUCUNE valeur propre : la somme des multiplicités est alors strictement inférieure à $n$.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Trace", "Nilpotence"],
+                q: "Si $u$ est un endomorphisme nilpotent de $E$ (dimension finie $n$), que valent nécessairement $tr(u)$ et $\\det(u)$ ?",
+                options: [
+                    { text: "$tr(u) = 0$ et $\\det(u) = 0$", isCorrect: true },
+                    { text: "$tr(u) = 0$ mais $\\det(u)$ peut être non nul", isCorrect: false },
+                    { text: "On ne peut rien affirmer sans connaître l'indice de nilpotence exact", isCorrect: false }
+                ],
+                explanation: "Le polynôme caractéristique d'un endomorphisme nilpotent est toujours $\\chi_u(X) = X^n$ (toutes les valeurs propres valent 0, avec multiplicité totale $n$). Par les relations coefficients-racines, $tr(u) = \\sum \\lambda_i = 0$ et $\\det(u) = \\prod \\lambda_i = 0$, et ce quel que soit l'indice de nilpotence précis (2, 3, ou $n$).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Diagonalisation", "Corps de base", "Pièges"],
+                q: "Une matrice réelle $A \\in \\mathcal{M}_n(\\mathbb{R})$ peut-elle être diagonalisable sur $\\mathbb{C}$ sans l'être sur $\\mathbb{R}$ ?",
+                options: [
+                    { text: "Non, la diagonalisabilité ne dépend jamais du corps choisi", isCorrect: false },
+                    { text: "Oui, c'est même un cas très fréquent : par exemple une matrice de rotation plane d'angle non trivial", isCorrect: true }
+                ],
+                explanation: "Sur $\\mathbb{C}$, le polynôme caractéristique est automatiquement scindé (d'Alembert-Gauss), ce qui est une des deux conditions de la diagonalisabilité. Sur $\\mathbb{R}$, rien ne garantit que $\\chi_u$ soit scindé : une rotation plane d'angle $\\theta \\notin \\{0,\\pi\\}$ a un spectre réel vide, donc n'est diagonalisable ni sur $\\mathbb{R}$ ni même trigonalisable, alors qu'elle est diagonalisable sur $\\mathbb{C}$ (valeurs propres $e^{\\pm i\\theta}$).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-espaces cycliques", "Polynôme minimal"],
+                q: "Un vecteur $x$ est dit « cyclique » pour $u$ si le sous-espace cyclique qu'il engendre est égal à $E$ tout entier. Que peut-on alors dire du polynôme minimal $\\mu_u$ dans ce cas ?",
+                options: [
+                    { text: "$\\mu_u$ est nécessairement de degré strictement inférieur à $n$", isCorrect: false },
+                    { text: "$\\mu_u = \\chi_u$ (le polynôme minimal coïncide avec le polynôme caractéristique)", isCorrect: true }
+                ],
+                explanation: "Si un seul vecteur suffit à engendrer $E$ tout entier par itérations de $u$, la matrice de $u$ dans la base $(x, u(x), \\dots, u^{n-1}(x))$ est une matrice compagnon de taille $n$, dont on sait que le polynôme minimal est exactement égal au polynôme caractéristique (de degré $n$, pas moins).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Diagonalisation", "Pièges", "Endomorphismes"],
+                q: "Si $u^2$ est diagonalisable, peut-on en conclure que $u$ lui-même est diagonalisable ?",
+                options: [
+                    { text: "Oui, toujours", isCorrect: false },
+                    { text: "Non, ce n'est pas garanti en général (un contre-exemple existe même en dimension 2, avec $u$ nilpotente non nulle)", isCorrect: true }
+                ],
+                explanation: "Contre-exemple : $u = \\begin{pmatrix} 0&1\\\\0&0 \\end{pmatrix}$ vérifie $u^2 = 0$, qui est diagonalisable (c'est la matrice nulle, déjà diagonale). Pourtant $u$ elle-même n'est pas diagonalisable (son polynôme minimal est $X^2$, pas scindé à racines simples). La diagonalisabilité ne « remonte » donc pas automatiquement d'une puissance vers l'endomorphisme de départ.",
                 lastCorrect: 0, stats: { attempts: 0, correct: 0 }
             }
         ]
