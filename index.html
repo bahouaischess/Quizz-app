@@ -172,6 +172,8 @@
             <button class="nav-item active" onclick="showView('home-view', this)"><span class="nav-icon">📚</span><span class="nav-label">Mes Matières</span></button>
             <button class="nav-item" onclick="showView('custom-quiz-view', this)"><span class="nav-icon">🎯</span><span class="nav-label">Mode Libre</span></button>
             <button class="nav-item" onclick="showView('gr20-setup-view', this)"><span class="nav-icon">🏔️</span><span class="nav-label">Mode GR20</span></button>
+            <button class="nav-item" onclick="showView('favorites-view') this; renderFavorites();"> <span class="nav-icon">⭐</span><span class="nav-label">Mes Favoris</span></button>
+
             <button class="nav-item" onclick="showView('profile-view', this)"><span class="nav-icon">📊</span><span class="nav-label">Tableau de Bord</span></button>
             <button class="nav-item" onclick="showView('user-profile-view', this)"><span class="nav-icon">👤</span><span class="nav-label">Mon Profil</span></button>
             <button class="nav-item" onclick="showView('settings-view', this)"><span class="nav-icon">⚙️</span><span class="nav-label">Paramètres</span></button>
@@ -360,6 +362,16 @@
                 </div>
             </div>
 
+
+            <!-- MES FAVORIS -->
+            <div id="favorites-view" class="view hidden">
+                <h1>⭐ Mes Questions Favorites</h1>
+                <p style="color: var(--text-muted); margin-bottom: 20px;">Retrouve ici ton cahier d'erreurs et tes questions épinglées. Les réponses et explications sont affichées directement.</p>
+    
+                 <div id="favorites-container">
+        <!-- Les cartes favorites seront générées ici -->
+                 </div>
+            </div>
             <!-- STATISTIQUES -->
             <div id="profile-view" class="view hidden">
                 <h1>📊 Tableau de Bord Analytique</h1>
