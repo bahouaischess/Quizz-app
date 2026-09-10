@@ -1528,5 +1528,94 @@ async function saveEditedQuestion() {
     if (qData.explanation) document.getElementById('explanation-text').textContent = qData.explanation;
     renderMath([document.getElementById('question-view')]);
 }
+
+// -----------------------------------------------------
+// PAGE "MES FAVORIS"
+// -----------------------------------------------------
+
+function renderFavorites() {
+    const container = document.getElementById('favorites-container');
+    container.innerHTML = "";
+    
+    let hasFavorites = false;
+    const frag = document.createDocumentFragment();
+
+    Object.keys(appData).forEach(subject => {
+        if (subject.startsWith('_')) return; // On ignore _player et _folders
+        
+        const favQuestions = appData[subject].questions.filter(q => q.isFavorite);
+        
+        if (favQuestions.length > 0) {
+            hasFavorites = true;
+            
+            // En-tête de la matière
+            const subjectTitle = document.createElement('h2');
+            subjectTitle.style = "margin-top: 30px; margin-bottom: 15px; border-bottom: 1px solid var(--surface-light); padding-bottom: 5px;";
+            subjectTitle.textContent = `📁 ${subject}`;
+            frag.appendChild(subjectTitle);
+
+            // Création des cartes pour chaque question
+            favQuestions.forEach(q => {
+                const card = document.createElement('div');
+                card.className = 'card';
+                card.style = "margin-bottom: 15px; position: relative;";
+
+                // Recherche de la ou des bonnes réponses
+                const correctAnswers = q.options.filter(o => o.isCorrect).map(o => o.text).join('</strong> ou <strong>');
+
+                let htmlContent = `
+                    <div style="font-size: 0.85em; color: var(--secondary); margin-bottom: 8px;">Tags : ${q.tags ? q.tags.join(', ') : 'Aucun'}</div>
+                    <h3 style="margin-top: 0; font-size: 1.1em;">${q.q}</h3>
+                    <div style="margin-top: 12px; padding: 10px; background: rgba(46, 204, 113, 0.1); border-left: 4px solid var(--success); border-radius: 4px;">
+                        <span style="color: var(--success);">✅ <strong>${correctAnswers}</strong></span>
+                    </div>
+                `;
+
+                if (q.explanation) {
+                    htmlContent += `
+                    <div style="margin-top: 10px; padding: 10px; background: rgba(255, 255, 255, 0.05); border-radius: 4px;">
+                        <strong style="color: var(--primary);">💡 Explication :</strong><br>
+                        <span style="font-size: 0.95em; color: var(--text-main);">${q.explanation}</span>
+                    </div>`;
+                }
+
+                // Bouton de suppression des favoris
+                const btnRemove = document.createElement('button');
+                btnRemove.className = 'btn btn-secondary';
+                btnRemove.style = "margin-top: 15px; padding: 6px 12px; font-size: 0.85em;";
+                btnRemove.innerHTML = "❌ Retirer des favoris";
+                btnRemove.onclick = () => removeFavoriteFromList(subject, q.q);
+
+                card.innerHTML = htmlContent;
+                card.appendChild(btnRemove);
+                frag.appendChild(card);
+            });
+        }
+    });
+
+    if (!hasFavorites) {
+        container.innerHTML = `
+            <div class="card" style="text-align: center; padding: 40px 20px;">
+                <h3 style="color: var(--text-muted);">Aucune question favorite</h3>
+                <p style="color: var(--text-muted); font-size: 0.9em;">Épingle les questions difficiles pendant tes quiz en cliquant sur ⭐ Favoris.</p>
+            </div>`;
+    } else {
+        container.appendChild(frag);
+        // On demande à MathJax de formater les maths (LaTeX) dans la nouvelle page
+        renderMath([container]);
+    }
+}
+
+async function removeFavoriteFromList(subject, questionText) {
+    if (appData[subject]) {
+        // On trouve la question exacte par son texte
+        const targetQ = appData[subject].questions.find(q => q.q === questionText);
+        if (targetQ) {
+            targetQ.isFavorite = false;
+            await saveData(); // Synchronisation Supabase
+            renderFavorites(); // Rafraîchir l'affichage instantanément
+        }
+    }
+}
 // LANCEMENT DE L'APPLICATION
 checkSession();
