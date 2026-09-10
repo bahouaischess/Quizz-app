@@ -23,7 +23,8 @@ const defaultData = {
 // ============================================================
 
 "Algèbre 2 : Chapitre 1 (Matrices)": {
-    folder: "Algèbre 2",
+    course: "analyse3", // <--- LE LIEN FIXE AVEC LE CATALOGUE OFFICIEL
+    folder: "Général",
     stats: { attempts: 0, correct: 0 },
     dailyValidations: {},
     questions: [
@@ -905,7 +906,6 @@ const defaultData = {
     ]
 },
     "Algèbre 2 : Chapitre 2 (systèmes linéaires)": {
-        folder: "Algèbre 2",
         stats: { attempts: 0, correct: 0 },
         dailyValidations: {},
         questions: [
