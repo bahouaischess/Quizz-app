@@ -1,1 +1,1429 @@
-
+{
+    "Analyse 3 : Chapitre 3 (Intégrales généralisées)": {
+        "course": "analyse3",
+        "folder": "Mathématiques",
+        "stats": {
+            "attempts": 0,
+            "correct": 0
+        },
+        "dailyValidations": {},
+        "questions": [
+            {
+                "type": "qcm",
+                "tags": [
+                    "Définitions"
+                ],
+                "q": "Soit $f$ continue sur $[a, +\\infty[$. Comment définit-on la convergence de l'intégrale généralisée $\\int_a^{+\\infty} f(x)dx$ ?",
+                "options": [
+                    {
+                        "text": "L'intégrale converge si la limite $\\lim_{X \\to +\\infty} \\int_a^X f(x)dx$ existe et est un nombre réel",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "L'intégrale converge si $f(x)$ tend vers 0 en $+\\infty$",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "L'intégrale converge si la fonction est bornée",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "C'est la définition fondamentale 3.1. On se ramène toujours à la limite d'une intégrale définie classique (sur un segment $[a, X]$) lorsque la borne $X$ tend vers l'infini.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Propriétés générales"
+                ],
+                "q": "La convergence d'une intégrale généralisée sur $[a, +\\infty[$ dépend-elle du choix de la borne inférieure $a$ (Prop 3.6) ?",
+                "options": [
+                    {
+                        "text": "Oui",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Non, $\\int_a^{+\\infty} f(x)dx$ et $\\int_b^{+\\infty} f(x)dx$ (avec $b \\ge a$) ont la même nature",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "La relation de Chasles donne $\\int_a^X f = \\int_a^b f + \\int_b^X f$. Comme $\\int_a^b f$ est juste une constante finie, la limite en $+\\infty$ ne dépend que du comportement à l'infini.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Définitions",
+                    "Convergence absolue"
+                ],
+                "q": "Quand dit-on qu'une intégrale généralisée $\\int_a^{+\\infty} f(x)dx$ est ABSOLUMENT convergente ?",
+                "options": [
+                    {
+                        "text": "Si $\\int_a^{+\\infty} |f(x)|dx$ converge",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Si $f$ est une fonction positive",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "La définition 3.7 est l'exacte jumelle de celle des séries : l'absolue convergence correspond à la convergence de l'intégrale de la valeur absolue de la fonction.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Convergence absolue"
+                ],
+                "q": "Que stipule le Théorème 3.8 concernant la convergence absolue des intégrales généralisées ?",
+                "options": [
+                    {
+                        "text": "Une intégrale convergente est toujours absolument convergente",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Si l'intégrale est absolument convergente, alors elle est convergente",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "C'est le grand théorème d'analyse : l'absolue convergence implique la convergence. Cela permet de se ramener à l'étude de fonctions positives (les valeurs absolues).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Pièges"
+                ],
+                "q": "Vrai ou Faux : Si l'intégrale $\\int_a^{+\\infty} f(x)dx$ converge, alors la fonction $f(x)$ tend obligatoirement vers 0 lorsque $x \\to +\\infty$.",
+                "options": [
+                    {
+                        "text": "Vrai",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Faux",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Faux! C'est une différence MAJEURE avec les séries. Une fonction peut posséder des \"pics\" arbitrairement hauts mais de plus en plus fins (aire tendant vers 0), de sorte que l'intégrale converge sans que $f$ tende vers 0 (Rem 3.9).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Propriétés générales"
+                ],
+                "q": "Pour une fonction CONTINUE ET POSITIVE sur $[a, +\\infty[$, combien de comportements possibles existe-t-il pour l'intégrale généralisée ?",
+                "options": [
+                    {
+                        "text": "3 (Convergence, divergence vers $+\\infty$, divergence sans limite)",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "2 (Elle converge si la primitive est bornée, sinon elle diverge vers $+\\infty$)",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Puisque $f \\ge 0$, la fonction $F(X) = \\int_a^X f(x)dx$ est croissante. Une fonction croissante a seulement deux destins : soit elle est majorée (et converge), soit elle tend vers $+\\infty$ (Rem 3.10).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Riemann & Puissances"
+                ],
+                "q": "Critère de Riemann en l'infini : À quelle condition l'intégrale $\\int_1^{+\\infty} \\frac{1}{x^\\alpha} dx$ converge-t-elle ?",
+                "options": [
+                    {
+                        "text": "Si $\\alpha < 1$",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Si $\\alpha > 1$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Si $\\alpha \\ge 1$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "En $+\\infty$, il faut que la fonction \"s'écrase\" suffisamment vite vers 0. Cela nécessite une puissance strictement supérieure à 1 (Prop 3.3).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Riemann & Puissances"
+                ],
+                "q": "Que vaut l'intégrale convergente $\\int_1^{+\\infty} \\frac{1}{x^\\alpha} dx$ (pour $\\alpha > 1$) ?",
+                "options": [
+                    {
+                        "text": "$\\frac{1}{1-\\alpha}$",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "$\\frac{1}{\\alpha-1}$",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "La primitive de $x^{-\\alpha}$ est $\\frac{x^{1-\\alpha}}{1-\\alpha}$. Entre 1 et $+\\infty$, cela donne $0 - \\frac{1}{1-\\alpha} = \\frac{1}{\\alpha-1}$.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Riemann & Puissances"
+                ],
+                "q": "Pourquoi l'intégrale de Riemann $\\int_1^{+\\infty} \\frac{1}{x} dx$ (cas $\\alpha = 1$) diverge-t-elle ?",
+                "options": [
+                    {
+                        "text": "Parce que la primitive est $-1/x^2$ qui tend vers l'infini",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Parce que la primitive est $\\log(X)$, qui tend vers $+\\infty$ lorsque $X \\to +\\infty$",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Le cas $\\alpha=1$ est la bascule critique : la primitive est le logarithme, qui bien qu'il croisse très lentement, tend vers l'infini.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "Critère de comparaison : Soient $f$ et $g$ deux fonctions continues telles que $0 \\le f(x) \\le g(x)$ en $+\\infty$. Si l'intégrale de la plus grande ($g$) CONVERGE, que fait l'intégrale de la plus petite ($f$) ?",
+                "options": [
+                    {
+                        "text": "Elle diverge",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Elle converge aussi",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "On ne peut rien affirmer",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "Si l'aire sous la courbe de $g$ est finie, l'aire sous la courbe de $f$ (qui est positive et bornée par $g$) l'est inévitablement aussi (Prop 3.11).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "Critère de comparaison : Soient $0 \\le f(x) \\le g(x)$. Si $\\int_a^{+\\infty} f(x)dx$ DIVERGE, que fait $\\int_a^{+\\infty} g(x)dx$ ?",
+                "options": [
+                    {
+                        "text": "Elle diverge vers $+\\infty$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Elle converge",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "Puisque $f$ est positive, l'aire sous $f$ tend vers $+\\infty$. Comme $g$ est au-dessus de $f$, son intégrale tend obligatoirement aussi vers l'infini.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "Critère d'équivalence : Si $f(x) \\sim g(x)$ en $+\\infty$, et que les fonctions sont POSITIVES. Que peut-on affirmer (Prop 3.12) ?",
+                "options": [
+                    {
+                        "text": "Elles ont la même valeur d'intégrale",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Leurs intégrales généralisées sont de même nature (convergent ou divergent simultanément)",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "L'équivalence en l'infini garantit que les aires ont le même comportement global. La positivité est une condition absolue pour appliquer ce critère.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "Critère en $x^\\alpha$ en $+\\infty$ : S'il existe un réel $\\alpha > 1$ tel que $\\lim_{x \\to +\\infty} x^\\alpha f(x) = L$ (finie), alors...",
+                "options": [
+                    {
+                        "text": "... l'intégrale $\\int_a^{+\\infty} f(x)dx$ diverge",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "... l'intégrale $\\int_a^{+\\infty} f(x)dx$ converge absolument",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Cela signifie que $f(x) = \\mathcal{O}(1/x^\\alpha)$. Comme $\\alpha > 1$, l'intégrale de Riemann de référence converge, donc celle de $f$ converge aussi (Prop 3.13).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "Critère en $x^\\alpha$ en $+\\infty$ : S'il existe $\\alpha \\le 1$ tel que $\\lim_{x \\to +\\infty} x^\\alpha f(x) = +\\infty$, que fait l'intégrale de $f$ ?",
+                "options": [
+                    {
+                        "text": "Elle diverge",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Elle converge",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "La fonction $f$ finit par dépasser un multiple de $1/x^\\alpha$. Puisque $\\alpha \\le 1$, l'intégrale de Riemann diverge et entraîne $f$ avec elle dans la divergence.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Définitions"
+                ],
+                "q": "Soit $f$ continue sur $]a, b]$. Comment définit-on la convergence de l'intégrale généralisée avec un \"problème\" en $a$ ?",
+                "options": [
+                    {
+                        "text": "On prend la limite de $\\int_X^b f(x)dx$ quand $X \\to a^+$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "On prend la limite de $f(a) \\times (b-a)$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "Puisque le point de discontinuité ou d'explosion est en $a$, on intègre sur $[X, b]$ et on fait tendre $X$ vers $a$ par la droite (Def 3.15).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Riemann & Puissances"
+                ],
+                "q": "Critère de Riemann en 0 : À quelle condition l'intégrale $\\int_0^1 \\frac{1}{x^\\alpha} dx$ converge-t-elle (Prop 3.17) ?",
+                "options": [
+                    {
+                        "text": "Si $\\alpha < 1$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Si $\\alpha > 1$",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Si $\\alpha \\le 1$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "ATTENTION à l'inversion par rapport à l'infini! En 0, pour que l'aire sous la courbe d'une asymptote verticale soit finie, la puissance doit être STRICTEMENT INFÉRIEURE à 1.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Riemann & Puissances"
+                ],
+                "q": "Que vaut l'intégrale $\\int_0^1 \\frac{1}{x^\\alpha} dx$ lorsqu'elle converge ($\\alpha < 1$) ?",
+                "options": [
+                    {
+                        "text": "$\\frac{1}{1-\\alpha}$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "$\\frac{1}{\\alpha-1}$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "La primitive de $x^{-\\alpha}$ est $\\frac{x^{1-\\alpha}}{1-\\alpha}$. Entre $X$ et 1, quand $X \\to 0$, $X^{1-\\alpha}$ tend vers 0 (car $1-\\alpha > 0$). Il reste donc $\\frac{1}{1-\\alpha}$.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "Sur un intervalle borné $]a, b]$, les théorèmes de comparaison et d'équivalence s'appliquent-ils comme en l'infini ?",
+                "options": [
+                    {
+                        "text": "Oui, tant que les fonctions sont continues et POSITIVES sur $]a, b]$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Non, ces critères sont réservés aux intégrales vers $+\\infty$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "Les Propositions 3.23 et 3.24 transposent exactement la logique des séries et de l'infini aux bornes finies, à condition de conserver la positivité.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "Critère en $(x-a)^\\alpha$ : Soit un problème en $a$. Si $\\lim_{x \\to a^+} (x-a)^\\alpha f(x) = L$ (limite finie). Pour quelle valeur de $\\alpha$ l'intégrale converge-t-elle ?",
+                "options": [
+                    {
+                        "text": "$\\alpha < 1$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "$\\alpha > 1$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "Cela revient à dire que $f$ est dominée par $\\frac{1}{(x-a)^\\alpha}$ près de $a$. En se référant au critère de Riemann en 0, il faut impérativement $\\alpha < 1$ pour converger (Prop 3.25).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "S'il existe un $\\alpha \\ge 1$ tel que $\\lim_{x \\to a^+} (x-a)^\\alpha f(x) = +\\infty$, que fait l'intégrale $\\int_a^b f(x)dx$ ?",
+                "options": [
+                    {
+                        "text": "Elle diverge",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Elle converge",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "La fonction explose près de $a$ \"plus vite\" que $1/(x-a)^\\alpha$. Comme $\\alpha \\ge 1$, l'intégrale de cette borne inférieure explose vers l'infini.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Intégrales doublement généralisées"
+                ],
+                "q": "Qu'est-ce qu'une intégrale « doublement généralisée » ?",
+                "options": [
+                    {
+                        "text": "Une intégrale comportant DEUX problèmes : soit deux bornes infinies ($-\\infty$, $+\\infty$), soit des problèmes de continuité aux deux bornes",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Une intégrale double sur $\\mathbb{R}^2$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "Exemple typique : $\\int_{-\\infty}^{+\\infty} f(x)dx$, ou $\\int_{-1}^1 \\frac{1}{\\sqrt{1-x^2}}dx$ (qui explose en -1 ET en 1).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Intégrales doublement généralisées"
+                ],
+                "q": "Comment étudie-t-on formellement la convergence d'une intégrale doublement généralisée $\\int_a^b f(x)dx$ ?",
+                "options": [
+                    {
+                        "text": "On introduit un point arbitraire $c \\in ]a,b[$ et on exige que les DEUX intégrales $\\int_a^c f$ ET $\\int_c^b f$ convergent séparément",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "On fait une limite symétrique des deux bornes en même temps",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "La définition 3.27 exige la convergence indépendante des deux morceaux. Si l'un des deux diverge, l'intégrale globale diverge, même s'ils semblent se compenser.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Intégrales doublement généralisées"
+                ],
+                "q": "La nature de l'intégrale doublement généralisée dépend-elle du point de coupure $c$ choisi ?",
+                "options": [
+                    {
+                        "text": "Oui, un mauvais choix peut créer une divergence",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Non, la convergence et la valeur de la somme finale sont indépendantes du choix de $c$",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Tant que $c$ est choisi strictement à l'intérieur du domaine de continuité, les intégrales entre différentes coupures $c$ et $c'$ sont juste des intégrales définies classiques (qui valent une constante finie).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Pièges"
+                ],
+                "q": "La convergence de l'intégrale $\\int_{-\\infty}^{+\\infty} f(x)dx$ est-elle équivalente au fait que $\\lim_{X \\to +\\infty} \\int_{-X}^X f(x)dx$ existe ?",
+                "options": [
+                    {
+                        "text": "Oui, c'est la définition exacte",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Non, absolument pas !",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "C'est un piège mortel (Rem 3.30). Pour $f(x)=x$, $\\int_{-X}^X x dx = 0$ pour tout $X$, donc la limite symétrique vaut 0. Pourtant $\\int_0^{+\\infty} x dx$ diverge vers l'infini, donc l'intégrale de $-\\infty$ à $+\\infty$ DIVERGE.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Intégrales doublement généralisées"
+                ],
+                "q": "Pour l'intégrale $\\int_0^{+\\infty} \\frac{1}{\\sqrt{x}} dx$, que peut-on dire (Ex 3.29) ?",
+                "options": [
+                    {
+                        "text": "Elle diverge à cause du problème en $+\\infty$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Elle converge",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Elle diverge à cause du problème en 0",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "Elle est doublement généralisée. En 0, $\\alpha = 1/2 < 1$, donc ça converge. Mais en $+\\infty$, $\\alpha = 1/2 < 1$, donc ça diverge. L'intégrale globale DIVERGE.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Intégrales doublement généralisées"
+                ],
+                "q": "Existe-t-il une puissance $\\alpha$ pour laquelle l'intégrale $\\int_0^{+\\infty} \\frac{1}{x^\\alpha} dx$ converge ?",
+                "options": [
+                    {
+                        "text": "Oui, pour $\\alpha=1$",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Non, pour aucune valeur de $\\alpha$",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Il faut diviser en $c=1$. Sur $]0, 1]$, on a besoin de $\\alpha < 1$. Sur $[1, +\\infty[$, on a besoin de $\\alpha > 1$. Ces deux conditions étant incompatibles, cette intégrale globale diverge TOUJOURS.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Calculs & Exercices"
+                ],
+                "q": "Quelle est la règle d'or pour calculer la valeur exacte d'une intégrale généralisée ?",
+                "options": [
+                    {
+                        "text": "Faire directement une intégration par parties avec des bornes infinies",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Faire tous les calculs (IP, Changement de variable) sur l'intégrale définie $\\int_a^X$, PUIS passer à la limite $X \\to \\infty$ en dernier",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Il ne faut jamais écrire $+\\infty$ dans un crochet ou un changement de variable en cours de route. On calcule à $X$ fixé, on simplifie, et on fait la limite à la fin (Sect 3.4).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Calculs & Exercices"
+                ],
+                "q": "Que vaut l'intégrale $\\int_0^{+\\infty} x e^{-x} dx$ (Exemple 3.31) ?",
+                "options": [
+                    {
+                        "text": "0",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "1",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "$+\\infty$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "On pose $I(X) = \\int_0^X x e^{-x} dx$. Par IPP, $I(X) = [-xe^{-x}]_0^X + \\int_0^X e^{-x} dx = -Xe^{-X} - e^{-X} + 1$. Quand $X \\to \\infty$, les exponentielles l'emportent et écrasent le $X$, il reste $1$.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Calculs & Exercices"
+                ],
+                "q": "La fonction Gamma (d'Euler) est définie par $\\Gamma(a) = \\int_0^{+\\infty} t^{a-1} e^{-t} dt$. Pour quelles valeurs de $a$ cette intégrale converge-t-elle (Exercice 3.2) ?",
+                "options": [
+                    {
+                        "text": "Pour tout $a > 0$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Pour tout $a \\in \\mathbb{R}$",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Pour $a > 1$ uniquement",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "Le terme $e^{-t}$ écrase toute puissance en l'infini, garantissant la convergence en $+\\infty$. Le problème est en $0$, où $t^{a-1} = 1/t^{1-a}$. Il faut que $1-a < 1$, soit $a > 0$ pour que l'intégrale de Riemann converge en $0$.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Calculs & Exercices"
+                ],
+                "q": "Quelle relation de récurrence fondamentale vérifie la fonction Gamma : $\\Gamma(a+1)$ ?",
+                "options": [
+                    {
+                        "text": "$\\Gamma(a+1) = a \\Gamma(a)$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "$\\Gamma(a+1) = (a+1) \\Gamma(a)$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "Cette relation, obtenue par une simple intégration par parties, montre que la fonction Gamma généralise la factorielle. Pour un entier $n$, $\\Gamma(n) = (n-1)!$.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Propriétés générales"
+                ],
+                "q": "Si les intégrales $\\int_a^{+\\infty} f(x)dx$ et $\\int_a^{+\\infty} g(x)dx$ convergent, que peut-on dire de $\\int_a^{+\\infty} (f(x)+g(x))dx$ ?",
+                "options": [
+                    {
+                        "text": "Elle converge et vaut la somme des deux intégrales",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Elle converge seulement si $f$ et $g$ sont positives",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "C'est la propriété de linéarité des intégrales généralisées convergentes (Prop 3.5). La somme de limites finies est la limite des sommes.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Définitions"
+                ],
+                "q": "Que représente le \"reste\" $R(x)$ d'une intégrale généralisée convergente $\\int_0^{+\\infty} f(t)dt$ ?",
+                "options": [
+                    {
+                        "text": "$R(x) = \\int_0^x f(t)dt$",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "$R(x) = \\int_x^{+\\infty} f(t)dt$",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Le reste mesure \"l'aire qu'il reste à balayer jusqu'à l'infini\". Puisque l'intégrale totale converge, ce reste $\\lim_{x \\to +\\infty} R(x)$ tend obligatoirement vers 0.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "Vrai ou Faux : Si $f(x) \\sim \\frac{-1}{x}$ en $+\\infty$, l'intégrale $\\int_1^{+\\infty} f(x)dx$ converge.",
+                "options": [
+                    {
+                        "text": "Vrai",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Faux",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Faux. L'équivalence à $\\frac{-1}{x}$ (qui garde un signe constant négatif) entraîne que l'intégrale est de la même nature que l'intégrale de $\\frac{-1}{x}$. Celle-ci diverge (cas $\\alpha=1$).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "Peut-on utiliser le critère d'équivalence $f(x) \\sim g(x)$ si $f$ et $g$ changent constamment de signe en l'infini ?",
+                "options": [
+                    {
+                        "text": "Oui",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Non, c'est interdit",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Comme pour les séries, le critère d'équivalence exige formellement que les fonctions soient de SIGNE CONSTANT (strictement positives ou strictement négatives) au voisinage de l'infini.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Convergence absolue",
+                    "Pièges"
+                ],
+                "q": "Si $\\int_a^{+\\infty} f(x)dx$ est semi-convergente (converge mais pas absolument), peut-on la majorer par l'intégrale d'une fonction plus grande ?",
+                "options": [
+                    {
+                        "text": "Oui",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Non, la majoration nécessite la positivité ou l'étude de $|f|$",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Les critères de majoration ($0 \\le f \\le g$) sont structurellement liés à la positivité. Une fonction semi-convergente joue sur l'annulation de ses aires positives et négatives, on ne peut pas l'encadrer de la même manière.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Intégrales doublement généralisées"
+                ],
+                "q": "Dans l'étude de l'intégrale doublement généralisée $\\int_{-\\infty}^{+\\infty} f(x)dx$, si la partie $\\int_0^{+\\infty} f(x)dx$ converge vers $L$ et que $\\int_{-\\infty}^0 f(x)dx$ diverge vers $-\\infty$, que conclut-on ?",
+                "options": [
+                    {
+                        "text": "L'intégrale globale diverge",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "L'intégrale globale diverge vers $-\\infty$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "Dès que l'une des deux branches diverge, l'intégrale doublement généralisée diverge globalement par définition. On évite de donner une valeur infinie si les deux côtés ne s'accordent pas.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Calculs & Exercices"
+                ],
+                "q": "Si on souhaite utiliser une intégration par parties pour prouver la convergence d'une intégrale généralisée, quelle est la bonne méthodologie ?",
+                "options": [
+                    {
+                        "text": "Appliquer l'IPP sur l'intégrale infinie et voir si les termes de bord s'annulent",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Appliquer l'IPP sur le segment $[a, X]$, prouver que le terme crochet a une limite finie quand $X \\to \\infty$, puis étudier la convergence de la nouvelle intégrale résiduelle",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "Les théorèmes opératoires classiques s'appliquent sur des intégrales propres (finies). On justifie l'existence de la limite globale en s'assurant que TOUTES les parties de la formule IPP convergent séparément.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Propriétés générales"
+                ],
+                "q": "Pour prouver que l'absolue convergence entraîne la convergence, on montre que la suite $s_n = \\int_a^{X_n} f(x)dx$ est...",
+                "options": [
+                    {
+                        "text": "... croissante et majorée",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "... de Cauchy, en s'appuyant sur la convergence de $\\int_a^{X_n} |f(x)|dx$",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "La démonstration (Thm 3.8) utilise fondamentalement la complétude de $\\mathbb{R}$ : on prouve que la suite des intégrales définies est de Cauchy grâce à l'inégalité triangulaire sur les valeurs absolues.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Définitions"
+                ],
+                "q": "Soit $f$ une fonction continue sur $]-\\infty, b]$. Comment définit-on la convergence de $\\int_{-\\infty}^b f(x)dx$ ?",
+                "options": [
+                    {
+                        "text": "La limite de $\\int_X^b f(x)dx$ quand $X \\to -\\infty$ doit exister et être finie",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "On fait le changement de variable $x = -t$ pour se ramener à $+\\infty$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "C'est l'exact miroir de la définition en $+\\infty$ (Remarque 3.4). Le changement de variable est une technique de calcul, pas la définition.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Critères de convergence"
+                ],
+                "q": "Soit un problème en $a$. Si $f(x) = \\mathcal{O}\\left(\\frac{1}{(x-a)^{\\alpha}}\\right)$ près de $a^+$. Pour quelle condition l'intégrale de $f$ sur $]a, b]$ converge-t-elle assurément ?",
+                "options": [
+                    {
+                        "text": "Pour $\\alpha < 1$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Pour $\\alpha \\ge 1$",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "La notation Grand $\\mathcal{O}$ signifie que $f$ est majorée (en valeur absolue) par un multiple de la fonction de référence. Pour que l'aire de cette limite supérieure ne diverge pas en $a$, il faut $\\alpha < 1$ (Prop 3.25).",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Calculs & Exercices"
+                ],
+                "q": "L'intégrale $\\int_0^1 \\ln(x) dx$ a un problème en 0. Que vaut cette intégrale (si elle converge) ?",
+                "options": [
+                    {
+                        "text": "Elle diverge vers $-\\infty$",
+                        "isCorrect": false
+                    },
+                    {
+                        "text": "Elle converge et vaut $-1$",
+                        "isCorrect": true
+                    }
+                ],
+                "explanation": "La primitive est $x\\ln(x) - x$. On calcule sur $[X, 1]$ : $(1\\ln(1)-1) - (X\\ln(X)-X) = -1 - X\\ln(X) + X$. Par croissances comparées, $X\\ln(X) \\to 0$ quand $X \\to 0^+$. La limite est donc $-1$.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            },
+            {
+                "type": "qcm",
+                "tags": [
+                    "Intégrales doublement généralisées"
+                ],
+                "q": "Pour l'intégrale $\\int_{-1}^1 \\frac{1}{\\sqrt{1-x^2}} dx$ (Exemple 3.28), y a-t-il convergence ?",
+                "options": [
+                    {
+                        "text": "Oui, car près de $x=1$ et $x=-1$, la fonction se comporte comme une puissance $1/2 < 1$",
+                        "isCorrect": true
+                    },
+                    {
+                        "text": "Non, elle diverge aux deux bornes",
+                        "isCorrect": false
+                    }
+                ],
+                "explanation": "On coupe en 0. Près de 1, $1-x^2 = (1-x)(1+x) \\sim 2(1-x)$. On a donc du $1/(1-x)^{1/2}$, ce qui est un problème de type Riemann avec $\\alpha = 1/2 < 1$. Ça converge des deux côtés.",
+                "stats": {
+                    "attempts": 0,
+                    "correct": 0,
+                    "partial": 0
+                },
+                "sm2": {
+                    "repetition": 0,
+                    "interval": 0,
+                    "easeFactor": 2.5,
+                    "nextReview": 0,
+                    "lastAttempt": 0,
+                    "lastWrong": 0,
+                    "successStreak": 0,
+                    "lastQuality": 0
+                }
+            }
+        ]
+    }
+}
