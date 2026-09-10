@@ -119,6 +119,51 @@
 
         .sm2-btn { flex: 1; min-width: 100px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 15px 10px; }
         .sm2-btn small { font-size: 0.85em; opacity: 0.8; margin-top: 5px; font-weight: normal; }
+        .course-card {
+    background: var(--bg-card, #1e1e2e);
+    border-radius: 12px;
+    padding: 20px;
+    border-top: 4px solid var(--theme-color, #3498db);
+    transition: transform 0.2s, box-shadow 0.2s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.course-icon {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.course-title {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: var(--text-main, #fff);
+}
+
+.course-desc {
+    font-size: 0.9em;
+    color: var(--text-muted, #a0a0b0);
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.course-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.85em;
+    font-weight: bold;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
 
         @media (max-width: 768px) {
             body { flex-direction: column; overflow: auto; }
@@ -197,6 +242,10 @@
                         <input type="text" id="new-folder-name" placeholder="Ex: Programmation" style="margin: 0; flex: 1;">
                         <button onclick="createFolder()">Créer le dossier</button>
                     </div>
+                </div>
+                <!-- NOUVEL AFFICHAGE CATALOGUE -->
+                <div id="catalogue-container" class="dashboard-grid" style="margin-top: 20px;">
+    <!-- Les cartes de matières seront générées ici par app.js -->
                 </div>
                 <div class="card" style="margin-top: 30px;">
                     <h3>➕ Nouvelle matière</h3>
@@ -462,6 +511,7 @@
     </div>
 
     <script src="data.js"></script>
+    <script src="catalogue.js"></script>
     <script src="app.js"></script>
 </body>
 </html>
