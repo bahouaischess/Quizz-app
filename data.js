@@ -8556,1267 +8556,456 @@ const defaultData = {
             }
         ]
 },
-    "Probabilités : Espérance, Vecteurs aléatoires & Marche aléatoire (Chapitres 4-6)": {
+   
+    "Probabilités : Chapitre 6 - Introduction à la marche aléatoire": {
         stats: { attempts: 0, correct: 0 },
         dailyValidations: {},
         questions: [
             {
                 type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Définitions"],
-                q: "Soit $(\\Omega, \\mathcal{F}, P)$ un espace probabilisé avec $\\Omega$ fini ou dénombrable, et $X$ une variable aléatoire sur $\\Omega$. Sous quelle condition l'espérance $E(X) = \\sum_{\\omega \\in \\Omega} p_\\omega X(\\omega)$ est-elle bien définie ?",
+                tags: ["Marche aléatoire", "Définition"],
+                q: "Comment est définie une marche aléatoire $(S_n)_{n\\ge0}$ selon la Définition 6.1 ?",
                 options: [
-                    { text: "Si $\\sum_{\\omega \\in \\Omega} p_\\omega |X(\\omega)|$ est finie", isCorrect: true },
-                    { text: "Si $X$ est positive", isCorrect: false },
-                    { text: "Toujours, sans aucune condition", isCorrect: false },
-                    { text: "Si $\\Omega$ est fini uniquement", isCorrect: false }
+                    { text: "$S_n = x + \\sum_{k=1}^{n} X_k$, où $x=S_0$ et les $(X_k)_{k\\ge1}$ sont i.i.d", isCorrect: true },
+                    { text: "$S_n = x \\times \\prod_{k=1}^n X_k$, où les $(X_k)$ sont indépendantes", isCorrect: false },
+                    { text: "$S_n = \\max(X_1,\\dots,X_n)$", isCorrect: false },
+                    { text: "$S_n = x + \\sum_{k=1}^n X_k$, où les $(X_k)$ sont indépendantes mais pas nécessairement de même loi", isCorrect: false }
                 ],
-                explanation: "D'après la Définition 4.1, l'espérance $E(X) = \\sum_{\\omega \\in \\Omega} p_\\omega X(\\omega)$ n'est définie que si la somme $\\sum_{\\omega \\in \\Omega} p_\\omega |X(\\omega)|$ est finie, c'est-à-dire si $X$ est intégrable. Cette condition garantit que la somme converge de manière absolue, ce qui est nécessaire car $\\Omega$ peut être infini dénombrable.",
+                explanation: "Une marche aléatoire cumule des pas i.i.d $(X_k)_{k\\ge1}$ à partir d'une position initiale $x=S_0$. L'hypothèse i.i.d (indépendance ET même loi) est essentielle, contrairement à la simple indépendance.",
                 stats: { attempts: 0, correct: 0, partial: 0 },
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             },
             {
                 type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Théorème de transfert"],
-                q: "Le Théorème 4.2 permet d'écrire $E(X) = \\sum_{i \\in I} x_i P(X = x_i)$. Quelle est la portée fondamentale de ce résultat ?",
-                options: [
-                    { text: "L'espérance ne dépend que de la loi de $X$, pas de l'espace $\\Omega$ sous-jacent", isCorrect: true },
-                    { text: "Il permet de calculer la variance directement", isCorrect: false },
-                    { text: "Il prouve que toute variable aléatoire est intégrable", isCorrect: false },
-                    { text: "Il s'applique uniquement aux variables aléatoires continues", isCorrect: false }
-                ],
-                explanation: "Ce théorème est important car il permet de passer de l'espace de départ $(\\Omega, \\mathcal{F}, P)$, souvent abstrait, à l'espace d'arrivée (sous-ensemble de $\\mathbb{R}$). On en déduit que l'espérance ne dépend que de la loi $P_X$ de la variable aléatoire, et non de la structure fine de $\\Omega$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Variables étagées"],
-                q: "Une variable aléatoire $X$ est dite étagée si :",
-                options: [
-                    { text: "Elle ne prend qu'un nombre fini de valeurs $x_1, \\ldots, x_m$", isCorrect: true },
-                    { text: "Elle est toujours positive", isCorrect: false },
-                    { text: "Elle prend une infinité dénombrable de valeurs", isCorrect: false },
-                    { text: "Elle admet une densité", isCorrect: false }
-                ],
-                explanation: "Par la Définition 4.3, une variable aléatoire étagée ne prend qu'un nombre fini de valeurs $x_1, \\ldots, x_m$, et s'écrit $X = \\sum_{i=1}^m x_i \\mathbb{I}_{A_i}$ où $A_i = \\{X = x_i\\}$. C'est la brique de base pour construire l'espérance des variables positives puis intégrables.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Construction"],
-                q: "Quel est l'ordre de construction de l'espérance pour une variable aléatoire réelle générale, selon le cours ?",
-                options: [
-                    { text: "Étagées → positives → intégrables", isCorrect: true },
-                    { text: "Intégrables → positives → étagées", isCorrect: false },
-                    { text: "Positives → intégrables → étagées", isCorrect: false },
-                    { text: "Discrètes → à densité → générales", isCorrect: false }
-                ],
-                explanation: "On définit d'abord l'espérance pour les variables étagées via le Théorème 4.2, puis on l'étend aux variables positives par $E(X) = \\sup\\{E(Z) : Z \\text{ étagée positive}, Z \\leq X\\}$, et enfin aux variables intégrables via la décomposition $X = X^+ - X^-$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Intégrabilité"],
-                q: "Une variable aléatoire $X$ est dite intégrable si :",
-                options: [
-                    { text: "$E(X^+) < \\infty$ et $E(X^-) < \\infty$", isCorrect: true },
-                    { text: "$E(|X|) < \\infty$", isCorrect: true },
-                    { text: "$X$ ne prend que des valeurs positives", isCorrect: false },
-                    { text: "$X^2$ est bornée", isCorrect: false }
-                ],
-                explanation: "Ces deux conditions sont équivalentes : $X = X^+ - X^-$ avec $X^+ = \\max\\{0, X\\}$ et $X^- = \\max\\{0, -X\\}$, et comme $|X| = X^+ + X^-$, on a $E(X^+) < \\infty$ et $E(X^-) < \\infty$ si et seulement si $E(|X|) < \\infty$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Propriétés fondamentales"],
-                q: "Parmi les propriétés suivantes de l'espérance, lesquelles sont correctes ?",
-                options: [
-                    { text: "$E(\\mathbb{I}_A) = P(A)$ pour tout évènement $A$", isCorrect: true },
-                    { text: "$E(aX + bY) = aE(X) + bE(Y)$ pour $X, Y$ intégrables et $a, b \\in \\mathbb{R}$ (linéarité)", isCorrect: true },
-                    { text: "$X \\leq Y$ p.s. implique $E(X) \\geq E(Y)$", isCorrect: false },
-                    { text: "$|E(X)| \\leq E(|X|)$", isCorrect: true }
-                ],
-                explanation: "La Proposition 4.6 énumère : espérance d'une indicatrice égale à la probabilité de l'évènement, linéarité de l'espérance (qui fait de $L^1$ un espace vectoriel), monotonie ($X \\leq Y$ p.s. implique $E(X) \\leq E(Y)$, pas l'inverse), et l'inégalité triangulaire $|E(X)| \\leq E(|X|)$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Convergence"],
-                q: "Le théorème de convergence monotone énonce que si $(X_n)_{n\\geq 1}$ est une suite croissante et positive p.s. qui converge vers $X$ p.s., alors :",
-                options: [
-                    { text: "$E(X_n) \\to E(X)$ quand $n \\to \\infty$", isCorrect: true },
-                    { text: "$X_n$ converge vers $X$ en probabilité seulement", isCorrect: false },
-                    { text: "$E(X_n)$ est constante", isCorrect: false },
-                    { text: "$X$ doit être bornée", isCorrect: false }
-                ],
-                explanation: "C'est le point 5 de la Proposition 4.6 : sous les hypothèses de croissance, positivité p.s. et convergence p.s., les espérances convergent aussi : $E(X_n) \\xrightarrow{n\\to\\infty} E(X)$. Ce théorème est fondamental pour définir l'espérance des variables positives générales à partir des variables étagées.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Convergence dominée"],
-                q: "Quelles sont les hypothèses du théorème de convergence dominée ?",
-                options: [
-                    { text: "$(X_n)_{n\\geq 1}$ converge vers $X$ p.s.", isCorrect: true },
-                    { text: "Il existe $Y$ intégrable telle que $|X_n| \\leq Y$ p.s. pour tout $n$", isCorrect: true },
-                    { text: "$(X_n)_{n\\geq 1}$ doit être une suite croissante", isCorrect: false },
-                    { text: "Toutes les $X_n$ doivent être positives", isCorrect: false }
-                ],
-                explanation: "Contrairement à la convergence monotone, la convergence dominée ne nécessite ni croissance ni positivité, mais requiert l'existence d'une variable dominante intégrable $Y$ telle que $|X_n| \\leq Y$ p.s. pour tout $n$. Sous ces conditions, $X$ est intégrable et $E(X_n) \\to E(X)$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Caractérisation de la loi"],
-                q: "D'après le Théorème 4.8, deux variables aléatoires $X$ et $Y$ ont même loi si et seulement si :",
-                options: [
-                    { text: "Pour toute fonction $h : \\mathbb{R} \\to \\mathbb{R}$ continue et bornée, $E(h(X)) = E(h(Y))$", isCorrect: true },
-                    { text: "$E(X) = E(Y)$", isCorrect: false },
-                    { text: "$Var(X) = Var(Y)$", isCorrect: false },
-                    { text: "$X$ et $Y$ ont la même fonction de répartition uniquement pour $x=0$", isCorrect: false }
-                ],
-                explanation: "L'égalité des espérances ou des variances seules ne caractérise pas la loi (contre-exemple facile à construire). En revanche, l'égalité de $E(h(X))$ et $E(h(Y))$ pour toute fonction continue bornée $h$ est équivalente à l'égalité des lois, car cela permet de reconstruire la fonction de répartition par approximation.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Théorème de transfert"],
-                q: "Pour une variable aléatoire discrète $X$ à valeurs dans $E = \\{x_i\\}_{i \\in I}$, le théorème de transfert donne $E(h(X))$ égal à :",
-                options: [
-                    { text: "$\\sum_{i \\in I} h(x_i) P(X = x_i)$", isCorrect: true },
-                    { text: "$\\int_{-\\infty}^{\\infty} h(x) f(x) dx$", isCorrect: false },
-                    { text: "$h(E(X))$", isCorrect: false },
-                    { text: "$\\sum_{i \\in I} h(x_i)$", isCorrect: false }
-                ],
-                explanation: "Le Théorème 4.10 (théorème de transfert), version discrète, permet de calculer $E(h(X))$ directement à partir de la loi de $X$ sans passer par la loi de $h(X)$ : $E(h(X)) = \\sum_{i \\in I} h(x_i) P(X = x_i)$, sous réserve de convergence absolue.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Théorème de transfert", "Densité"],
-                q: "Pour une variable aléatoire à densité $f$, le théorème de transfert donne :",
-                options: [
-                    { text: "$E(h(X)) = \\int_{-\\infty}^{\\infty} h(x) f(x) dx$", isCorrect: true },
-                    { text: "$E(h(X)) = \\sum_i h(x_i) f(x_i)$", isCorrect: false },
-                    { text: "$E(h(X)) = h(E(X))$", isCorrect: false },
-                    { text: "$E(h(X)) = \\int_{-\\infty}^{\\infty} h(f(x)) dx$", isCorrect: false }
-                ],
-                explanation: "Pour les variables à densité, la version continue du théorème de transfert (Théorème 4.10) donne $E(h(X)) = \\int_{-\\infty}^{\\infty} h(x) f(x) dx$, sous condition d'intégrabilité $\\int |h(x)| f(x) dx < \\infty$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Densité", "Changement de variable"],
-                q: "Soit $X$ une variable aléatoire à densité $f$, et $Y = aX + b$ avec $a \\neq 0$. Quelle est la densité $f^Y$ de $Y$ ?",
-                options: [
-                    { text: "$f^Y(y) = f\\left(\\frac{y-b}{a}\\right) \\frac{1}{|a|}$", isCorrect: true },
-                    { text: "$f^Y(y) = a f(y) + b$", isCorrect: false },
-                    { text: "$f^Y(y) = f(ay + b)$", isCorrect: false },
-                    { text: "$f^Y(y) = \\frac{1}{a} f(y-b)$", isCorrect: false }
-                ],
-                explanation: "L'Exemple 4.13 montre, via un changement de variable $y = ax+b$ dans l'intégrale du théorème de transfert, que $f^Y(y) = f\\left(\\frac{y-b}{a}\\right) \\frac{1}{|a|}$. Le facteur $\\frac{1}{|a|}$ vient du jacobien du changement de variable et assure que $f^Y$ s'intègre bien à 1.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Variance", "Définitions"],
-                q: "La variance d'une variable aléatoire $X$ de carré intégrable est définie par :",
-                options: [
-                    { text: "$Var(X) = E[(X - E(X))^2]$", isCorrect: true },
-                    { text: "$Var(X) = E(X^2) - E(X)^2$", isCorrect: true },
-                    { text: "$Var(X) = E(X^2)$", isCorrect: false },
-                    { text: "$Var(X) = \\sigma(X)$", isCorrect: false }
-                ],
-                explanation: "Les deux premières formules sont équivalentes (Propriété 4.18, point 4) : $Var(X) = E[(X-E(X))^2] = E(X^2) - E(X)^2$. La dernière option est fausse car $\\sigma(X) = \\sqrt{Var(X)}$ est l'écart-type, pas la variance elle-même.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Variance", "Propriétés"],
-                q: "Parmi les propriétés suivantes de la variance, lesquelles sont vraies pour $a \\in \\mathbb{R}$ ?",
-                options: [
-                    { text: "$Var(X+a) = Var(X)$", isCorrect: true },
-                    { text: "$Var(aX) = a^2 Var(X)$", isCorrect: true },
-                    { text: "$Var(X) \\geq 0$", isCorrect: true },
-                    { text: "$Var(aX) = a \\cdot Var(X)$", isCorrect: false }
-                ],
-                explanation: "La Propriété 4.18 donne : $Var(X) \\geq 0$ (car c'est l'espérance d'un carré), $Var(X+a) = Var(X)$ (la variance est invariante par translation) et $Var(aX) = a^2 Var(X)$ (facteur au carré car $Var$ est une forme quadratique). La dernière option confond variance et espérance (linéaire).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Écart-type"],
-                q: "Pourquoi utilise-t-on souvent l'écart-type plutôt que la variance en statistique ?",
-                options: [
-                    { text: "L'écart-type a la même unité que la variable aléatoire, contrairement à la variance qui a l'unité au carré", isCorrect: true },
-                    { text: "L'écart-type est toujours plus grand que la variance", isCorrect: false },
-                    { text: "L'écart-type est toujours nul", isCorrect: false },
-                    { text: "La variance n'existe pas pour les variables continues", isCorrect: false }
-                ],
-                explanation: "Comme le note la remarque après la Définition 4.17, si $X$ a une unité (mètres, euros...), l'écart-type $\\sigma(X) = \\sqrt{Var(X)}$ a la même unité, alors que la variance a l'unité au carré. C'est pourquoi l'écart-type est plus interprétable en pratique.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Variable centrée-réduite"],
-                q: "Une variable aléatoire $X$ est dite centrée-réduite si :",
-                options: [
-                    { text: "$E(X) = 0$ et $Var(X) = 1$", isCorrect: true },
-                    { text: "$E(X) = 1$ et $Var(X) = 0$", isCorrect: false },
-                    { text: "$E(X) = Var(X)$", isCorrect: false },
-                    { text: "$X$ suit une loi uniforme", isCorrect: false }
-                ],
-                explanation: "Par la Définition 4.17, $X$ est dite réduite si $Var(X) = 1$, et centrée-réduite si de plus $E(X) = 0$. C'est une transformation courante en statistique pour standardiser une variable aléatoire.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Covariance", "Définitions"],
-                q: "La covariance de deux variables aléatoires $X, Y$ de carré intégrable est définie par :",
-                options: [
-                    { text: "$Cov(X,Y) = E[(X - E(X))(Y - E(Y))]$", isCorrect: true },
-                    { text: "$Cov(X,Y) = E(XY) - E(X)E(Y)$", isCorrect: true },
-                    { text: "$Cov(X,Y) = E(X)E(Y)$", isCorrect: false },
-                    { text: "$Cov(X,Y) = Var(X) + Var(Y)$", isCorrect: false }
-                ],
-                explanation: "La Définition 4.20 et la Proposition 4.21 (point 4) donnent deux formules équivalentes : $Cov(X,Y) = E[(X-E(X))(Y-E(Y))] = E(XY) - E(X)E(Y)$. Cette dernière formule est souvent plus pratique en calcul.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Covariance", "Bilinéarité"],
-                q: "La covariance, en tant que forme bilinéaire symétrique sur $L^2$, vérifie :",
-                options: [
-                    { text: "$Cov(X,X) = Var(X)$", isCorrect: true },
-                    { text: "$Cov(aX+bY, Z) = a\\,Cov(X,Z) + b\\,Cov(Y,Z)$", isCorrect: true },
-                    { text: "$Cov(X,Y) = Cov(Y,X)$ (symétrie)", isCorrect: true },
-                    { text: "$Cov(X,Y)$ est toujours positive", isCorrect: false }
-                ],
-                explanation: "La Proposition 4.21 établit que la covariance est bilinéaire ($Cov(aX+bY,Z) = a\\,Cov(X,Z)+b\\,Cov(Y,Z)$), symétrique ($Cov(X,Y)=Cov(Y,X)$), et que sa forme quadratique associée est la variance ($Cov(X,X) = Var(X)$). Elle peut être négative, nulle ou positive selon la relation entre $X$ et $Y$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Variance", "Somme"],
-                q: "La relation entre variance de la somme et covariance s'écrit :",
-                options: [
-                    { text: "$Var(X+Y) = Var(X) + Var(Y) + 2\\,Cov(X,Y)$", isCorrect: true },
-                    { text: "$Var(X+Y) = Var(X) + Var(Y)$", isCorrect: false },
-                    { text: "$Var(X+Y) = Var(X) \\cdot Var(Y)$", isCorrect: false },
-                    { text: "$Var(X+Y) = Var(X) - Var(Y)$", isCorrect: false }
-                ],
-                explanation: "Le point 5 de la Proposition 4.21 donne $Var(X+Y) = Var(X) + Var(Y) + 2\\,Cov(X,Y)$. La deuxième option n'est vraie que dans le cas particulier où $X$ et $Y$ sont indépendantes (ou plus généralement non corrélées), car alors $Cov(X,Y) = 0$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Matrice de covariance"],
-                q: "Concernant la matrice de covariance de $X_1, \\ldots, X_n$ (variables aléatoires de carré intégrable), quelles affirmations sont vraies ?",
-                options: [
-                    { text: "C'est une matrice réelle symétrique", isCorrect: true },
-                    { text: "Sa diagonale est formée des variances des $X_i$", isCorrect: true },
-                    { text: "$Var\\left(\\sum_{i=1}^n X_i\\right) = \\sum_{i=1}^n Var(X_i) + 2\\sum_{1\\leq i<j\\leq n} Cov(X_i,X_j)$", isCorrect: true },
-                    { text: "Elle est toujours diagonale", isCorrect: false }
-                ],
-                explanation: "La Propriété 4.24 confirme la symétrie de la matrice de covariance, sa diagonale formée des variances, et la formule généralisée de la variance d'une somme. Elle n'est diagonale que dans des cas particuliers, notamment lorsque les variables sont deux à deux non corrélées (par exemple indépendantes).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Corrélation"],
-                q: "La corrélation $Cor(X,Y)$ entre deux variables aléatoires de variances non nulles est définie et bornée par :",
-                options: [
-                    { text: "$Cor(X,Y) = \\frac{Cov(X,Y)}{\\sigma(X)\\sigma(Y)}$, avec $-1 \\leq Cor(X,Y) \\leq 1$", isCorrect: true },
-                    { text: "$Cor(X,Y) = Cov(X,Y)$ directement", isCorrect: false },
-                    { text: "$Cor(X,Y)$ peut dépasser 1 en valeur absolue", isCorrect: false },
-                    { text: "$Cor(X,Y)$ a la même unité que $X$", isCorrect: false }
-                ],
-                explanation: "La Définition 4.20 donne $Cor(X,Y) = \\frac{Cov(X,Y)}{\\sigma(X)\\sigma(Y)}$, et la Proposition 4.32 (conséquence de Cauchy-Schwarz) montre que $-1 \\leq Cor(X,Y) \\leq 1$. La corrélation est sans unité, ce qui la rend très utile en statistique pour comparer différentes paires de variables.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Moments"],
-                q: "Le moment d'ordre $n$ d'une variable aléatoire $X$ est défini comme $E(X^n)$, à condition que :",
-                options: [
-                    { text: "$X^n$ soit intégrable", isCorrect: true },
-                    { text: "$X$ soit toujours positive", isCorrect: false },
-                    { text: "$n$ soit pair", isCorrect: false },
-                    { text: "$X$ suive une loi normale", isCorrect: false }
-                ],
-                explanation: "Selon la Définition 4.26, si $X^n$ est intégrable, la quantité $E(X^n)$ est bien définie et appelée moment d'ordre $n$ de $X$. Il n'y a pas de restriction sur la parité de $n$ ni sur le signe de $X$, ni sur la loi de $X$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Inégalité de Markov"],
-                q: "L'inégalité de Markov énonce, pour $X$ admettant un moment d'ordre $n \\geq 1$ et $a > 0$ :",
-                options: [
-                    { text: "$P(|X| \\geq a) \\leq \\frac{E[|X|^n]}{a^n}$", isCorrect: true },
-                    { text: "$P(|X| \\geq a) \\geq \\frac{E[|X|^n]}{a^n}$", isCorrect: false },
-                    { text: "$P(|X| \\geq a) \\leq \\frac{Var(X)}{a^2}$", isCorrect: false },
-                    { text: "$P(|X| \\geq a) = \\frac{E[|X|^n]}{a^n}$", isCorrect: false }
-                ],
-                explanation: "La Proposition 4.28 donne l'inégalité de Markov : $P(|X| \\geq a) \\leq \\frac{E[|X|^n]}{a^n}$ pour tout $a > 0$. C'est une borne (inégalité, pas égalité) qui utilise le fait que $|X|^n \\geq a^n \\mathbb{I}_{\\{|X|\\geq a\\}}$. La troisième option correspond en réalité à l'inégalité de Bienaymé-Tchebychev.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Inégalité de Bienaymé-Tchebychev"],
-                q: "L'inégalité de Bienaymé-Tchebychev, pour $X$ de carré intégrable et $a > 0$, s'écrit :",
-                options: [
-                    { text: "$P[|X - E(X)| \\geq a] \\leq \\frac{Var(X)}{a^2}$", isCorrect: true },
-                    { text: "$P[|X - E(X)| \\geq a] \\leq \\frac{E(X)}{a}$", isCorrect: false },
-                    { text: "C'est une conséquence de l'inégalité de Markov appliquée à $Y = X - E(X)$ avec $n=2$", isCorrect: true },
-                    { text: "Elle nécessite que $X$ suive une loi normale", isCorrect: false }
-                ],
-                explanation: "La Proposition 4.29 montre que l'inégalité de Bienaymé-Tchebychev $P[|X-E(X)| \\geq a] \\leq \\frac{Var(X)}{a^2}$ s'obtient en appliquant Markov à $Y = X - E(X)$ avec $n=2$. Elle est valable pour toute variable aléatoire de carré intégrable, sans hypothèse de loi particulière, et quantifie que plus la variance est grande, plus les fluctuations autour de la moyenne sont potentiellement grandes.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Inégalité de Jensen"],
-                q: "L'inégalité de Jensen énonce, pour $X$ intégrable et $f$ continue convexe telle que $f(X)$ est intégrable :",
-                options: [
-                    { text: "$E(f(X)) \\geq f(E(X))$", isCorrect: true },
-                    { text: "$E(f(X)) \\leq f(E(X))$", isCorrect: false },
-                    { text: "$E(f(X)) = f(E(X))$", isCorrect: false },
-                    { text: "Elle nécessite que $f$ soit concave", isCorrect: false }
-                ],
-                explanation: "La Proposition 4.30 donne $E(f(X)) \\geq f(E(X))$ pour $f$ convexe. La preuve utilise le fait qu'une fonction convexe est toujours au-dessus de sa tangente en tout point, en particulier au point $a = E(X)$. Pour $f$ concave, l'inégalité serait inversée.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Inégalité de Cauchy-Schwarz"],
-                q: "L'inégalité de Cauchy-Schwarz pour deux variables aléatoires $X, Y$ de carré intégrable donne :",
-                options: [
-                    { text: "$|E(XY)| \\leq \\sqrt{E(X^2)E(Y^2)}$", isCorrect: true },
-                    { text: "$E(XY) = E(X)E(Y)$", isCorrect: false },
-                    { text: "$XY$ n'est pas nécessairement intégrable", isCorrect: false },
-                    { text: "$|E(XY)| \\geq \\sqrt{E(X^2)E(Y^2)}$", isCorrect: false }
-                ],
-                explanation: "La Proposition 4.31 énonce que si $X, Y$ sont de carré intégrable, alors $XY$ est intégrable (conséquence de $|XY| \\leq \\frac{1}{2}(X^2+Y^2)$) et $|E(XY)| \\leq \\sqrt{E(X^2)E(Y^2)}$. Cette inégalité est à la base de la borne sur la covariance et la corrélation.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "L1 L2"],
-                q: "Quelle est la relation entre les espaces $L^1(\\Omega,\\mathcal{F},P)$ et $L^2(\\Omega,\\mathcal{F},P)$ ?",
-                options: [
-                    { text: "$L^2$ est un sous-espace vectoriel de $L^1$", isCorrect: true },
-                    { text: "$L^1$ est un sous-espace vectoriel de $L^2$", isCorrect: false },
-                    { text: "$L^1$ et $L^2$ sont toujours égaux", isCorrect: false },
-                    { text: "$E(|X|) \\leq \\sqrt{E(X^2)}$ pour $X$ de carré intégrable", isCorrect: true }
-                ],
-                explanation: "La Proposition 4.16 montre que si $X$ est de carré intégrable, alors $E(|X|) \\leq \\sqrt{E(X^2)}$, ce qui implique que $X$ est intégrable. Donc $L^2$ est un sous-espace vectoriel de $L^1$ (la réciproque est fausse en général : une variable peut être intégrable sans être de carré intégrable).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Vecteurs aléatoires discrets"],
-                q: "Un vecteur aléatoire discret $X = (X_1, \\ldots, X_n)$ est caractérisé par le fait que :",
-                options: [
-                    { text: "Chacune de ses composantes est une variable aléatoire discrète", isCorrect: true },
-                    { text: "$X$ prend nécessairement une infinité non dénombrable de valeurs", isCorrect: false },
-                    { text: "L'espace d'arrivée $E = E_1 \\times \\cdots \\times E_n$ est fini ou dénombrable", isCorrect: true },
-                    { text: "Toutes les composantes doivent avoir la même loi", isCorrect: false }
-                ],
-                explanation: "La Remarque 5.2 précise que $X$ est un vecteur aléatoire discret si et seulement si chacune de ses composantes est discrète, et que l'espace d'arrivée $E_1 \\times \\cdots \\times E_n$ est bien fini ou dénombrable car produit cartésien fini d'ensembles finis ou dénombrables. Il n'y a aucune exigence sur l'égalité des lois des composantes.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Loi jointe", "Loi marginale"],
-                q: "Pour un couple aléatoire discret $(X,Y)$, la loi marginale de $X$ se retrouve à partir de la loi jointe par :",
-                options: [
-                    { text: "$P(X=x) = \\sum_{y \\in F} P(X=x, Y=y)$", isCorrect: true },
-                    { text: "$P(X=x) = P(X=x,Y=y)$ pour un $y$ fixé quelconque", isCorrect: false },
-                    { text: "$P(X=x) = \\max_y P(X=x,Y=y)$", isCorrect: false },
-                    { text: "$P(X=x)$ ne peut pas être retrouvée à partir de la loi jointe", isCorrect: false }
-                ],
-                explanation: "La Définition 5.4 (point 3) montre que la loi marginale de $X$ s'obtient en sommant la loi jointe sur toutes les valeurs de $Y$ : $P_X(\\{x\\}) = \\sum_{y \\in F} P(X=x, Y=y)$. C'est une conséquence de la formule des probabilités totales.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Loi jointe", "Lois marginales"],
-                q: "Connaître les lois marginales de $X$ et $Y$ suffit-il à déterminer la loi jointe du couple $(X,Y)$ ?",
-                options: [
-                    { text: "Non, en général la réciproque est fausse", isCorrect: true },
-                    { text: "Oui, toujours", isCorrect: false },
-                    { text: "Oui, mais seulement si $X$ et $Y$ sont discrètes", isCorrect: false },
-                    { text: "Oui, mais seulement si $X = Y$", isCorrect: false }
-                ],
-                explanation: "La Remarque 5.8 souligne que la loi du couple $(X,Y)$ détermine les lois marginales, mais la réciproque est fausse : connaître les lois de $X$ et $Y$ séparément n'entraîne pas la connaissance de la loi du couple. L'Exemple 5.6 illustre ceci avec des couples ayant les mêmes marginales uniformes mais des lois jointes différentes selon $p$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Exemple", "Covariance"],
-                q: "Dans l'Exemple 5.6, un couple $(X,Y)$ à valeurs dans $\\{-1,1\\}^2$ a pour probabilités $\\frac{1}{2}-p, p, p, \\frac{1}{2}-p$ (dans l'ordre $(-1,-1),(-1,1),(1,-1),(1,1)$). Quelle est la covariance $Cov(X,Y)$ ?",
-                options: [
-                    { text: "$Cov(X,Y) = 1 - 4p$", isCorrect: true },
-                    { text: "$Cov(X,Y) = 4p - 1$", isCorrect: false },
-                    { text: "$Cov(X,Y) = 0$ pour toute valeur de $p$", isCorrect: false },
-                    { text: "$Cov(X,Y) = p$", isCorrect: false }
-                ],
-                explanation: "Dans l'Exemple 5.6, $X$ et $Y$ suivent chacune la loi uniforme sur $\\{-1,1\\}$ donc $E(X)=E(Y)=0$. Le calcul de $E(XY)$ par le théorème de transfert donne $E(XY) = 2(\\frac{1}{2}-p) - 2p = 1-4p$, donc $Cov(X,Y) = E(XY) - E(X)E(Y) = 1-4p$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Loi conditionnelle"],
-                q: "La loi conditionnelle de $Y$ sachant $\\{X=x\\}$ (avec $P(X=x)>0$) est définie par :",
-                options: [
-                    { text: "$P(\\{Y=y\\}|\\{X=x\\}) = \\frac{P_{(X,Y)}(\\{(x,y)\\})}{P_X(\\{x\\})}$", isCorrect: true },
-                    { text: "$P(\\{Y=y\\}|\\{X=x\\}) = P_{(X,Y)}(\\{(x,y)\\}) \\cdot P_X(\\{x\\})$", isCorrect: false },
-                    { text: "$P(\\{Y=y\\}|\\{X=x\\}) = P_Y(\\{y\\})$ toujours", isCorrect: false },
-                    { text: "$P(\\{Y=y\\}|\\{X=x\\})$ n'est définie que si $Y$ est indépendante de $X$", isCorrect: false }
-                ],
-                explanation: "La Définition 5.7 donne exactement cette formule, cohérente avec la définition classique de la probabilité conditionnelle vue au Chapitre 2 : $P(\\{Y=y\\}|\\{X=x\\}) = \\frac{P(\\{Y=y,X=x\\})}{P(\\{X=x\\})} = \\frac{P_{(X,Y)}(\\{(x,y)\\})}{P_X(\\{x\\})}$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Espérance conditionnelle"],
-                q: "L'espérance conditionnelle $E(Y|X)$ est :",
-                options: [
-                    { text: "Une variable aléatoire fonction de $X$, contrairement à l'espérance classique qui est un nombre réel", isCorrect: true },
-                    { text: "Toujours un nombre réel constant", isCorrect: false },
-                    { text: "Définie par $\\psi(X)$ où $\\psi(x) = E(Y|X=x)$ si $P(X=x)>0$", isCorrect: true },
-                    { text: "Égale à $E(Y)$ dans tous les cas", isCorrect: false }
-                ],
-                explanation: "La Remarque 5.10 souligne bien cette différence fondamentale : contrairement à l'espérance $E(Y)$ qui est un nombre réel, l'espérance conditionnelle $E(Y|X)$ est une variable aléatoire (fonction de l'aléa à travers $X$), définie via la Définition 5.9 comme $\\psi(X)$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Espérance conditionnelle", "Théorème"],
-                q: "Le Théorème 5.11 (formule de l'espérance totale) énonce que si $Y$ est intégrable :",
-                options: [
-                    { text: "$E[E(Y|X)] = E(Y)$", isCorrect: true },
-                    { text: "$E[E(Y|X)] = E(X)$", isCorrect: false },
-                    { text: "$E(Y|X)$ n'est jamais intégrable", isCorrect: false },
-                    { text: "$E[E(Y|X)] = 0$ toujours", isCorrect: false }
-                ],
-                explanation: "Le Théorème 5.11 (formule de l'espérance totale) est un résultat fondamental : $E[E(Y|X)] = E(Y)$. La démonstration passe par le théorème de transfert et la formule des probabilités totales, en montrant que l'espérance conditionnelle est intégrable si $Y$ l'est.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Espérance conditionnelle", "Propriétés"],
-                q: "Parmi les propriétés de l'espérance conditionnelle du Théorème 5.12, lesquelles sont correctes ?",
-                options: [
-                    { text: "Linéarité : $E(aY+bZ|X) = aE(Y|X) + bE(Z|X)$", isCorrect: true },
-                    { text: "Si $g(X)$ est intégrable, $E[Yg(X)|X] = g(X)E(Y|X)$ ($g(X)$ se comporte comme une constante)", isCorrect: true },
-                    { text: "$E(1|X) = 1$", isCorrect: true },
-                    { text: "$Y \\geq 0 \\Rightarrow E(Y|X) \\leq 0$", isCorrect: false }
-                ],
-                explanation: "Le Théorème 5.12 liste : linéarité, positivité ($Y\\geq 0 \\Rightarrow E(Y|X) \\geq 0$, pas $\\leq 0$), $E(1|X)=1$, et la propriété que toute fonction $g(X)$ mesurable et intégrable se comporte comme une constante vis-à-vis de l'espérance conditionnelle sachant $X$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Indépendance", "Définition"],
-                q: "Deux variables aléatoires discrètes $X$ et $Y$ sont indépendantes si :",
-                options: [
-                    { text: "Pour tout $A \\in \\mathcal{P}(E)$, $B \\in \\mathcal{P}(F)$, $P(X \\in A, Y \\in B) = P(X \\in A)P(Y \\in B)$", isCorrect: true },
-                    { text: "$E(X) = E(Y)$", isCorrect: false },
-                    { text: "$Cov(X,Y) = 0$", isCorrect: false },
-                    { text: "Elles ont la même loi", isCorrect: false }
-                ],
-                explanation: "La Définition 5.14 caractérise l'indépendance par la factorisation des probabilités jointes pour tous ensembles $A, B$. Les autres critères sont soit nécessaires mais non suffisants (comme $Cov(X,Y)=0$, voir Remarque 5.19), soit sans rapport avec l'indépendance.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "i.i.d."],
-                q: "Une famille de variables aléatoires est dite i.i.d. (indépendantes et identiquement distribuées) si :",
-                options: [
-                    { text: "Elles sont indépendantes et toutes de même loi", isCorrect: true },
-                    { text: "Elles sont indépendantes mais pas nécessairement de même loi", isCorrect: false },
-                    { text: "Elles ont la même loi mais ne sont pas nécessairement indépendantes", isCorrect: false },
-                    { text: "Elles sont toutes égales entre elles", isCorrect: false }
-                ],
-                explanation: "La Définition 5.14 précise clairement les deux conditions cumulatives : indépendance mutuelle ET même loi pour toutes les variables de la famille. C'est une hypothèse centrale de la loi des grands nombres (Théorème 5.27).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Indépendance", "Caractérisations"],
-                q: "D'après le Théorème 5.16, laquelle des conditions suivantes est équivalente à l'indépendance de $X$ et $Y$ ?",
-                options: [
-                    { text: "$\\forall x \\in E, y \\in F : P(\\{X=x,Y=y\\}) = P(\\{X=x\\})P(\\{Y=y\\})$", isCorrect: true },
-                    { text: "Pour toutes fonctions bornées $f, g$, $E[f(X)g(Y)] = E[f(X)]E[g(Y)]$", isCorrect: true },
-                    { text: "$\\forall x, P(X=x) > 0 \\Rightarrow P_Y(\\cdot|\\{X=x\\}) = P_Y(\\cdot)$", isCorrect: true },
-                    { text: "$E(X+Y) = E(X) + E(Y)$", isCorrect: false }
-                ],
-                explanation: "Le Théorème 5.16 énonce cinq conditions équivalentes à l'indépendance, dont la factorisation ponctuelle des lois, l'égalité de la loi conditionnelle et de la loi marginale, et la factorisation de $E[f(X)g(Y)]$. La linéarité de l'espérance $E(X+Y)=E(X)+E(Y)$ est toujours vraie, indépendance ou non, donc elle ne caractérise pas l'indépendance.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Indépendance", "Conséquences"],
-                q: "Si $X, Y$ sont deux variables aléatoires de carré intégrable et indépendantes, quelles conséquences en découlent (Proposition 5.18) ?",
-                options: [
-                    { text: "$E(XY) = E(X)E(Y)$", isCorrect: true },
-                    { text: "$Cov(X,Y) = 0$", isCorrect: true },
-                    { text: "$Var(X+Y) = Var(X) + Var(Y)$", isCorrect: true },
-                    { text: "$X$ et $Y$ ont nécessairement la même loi", isCorrect: false }
-                ],
-                explanation: "La Proposition 5.18 découle directement du Théorème 5.16 : indépendance implique $E(XY)=E(X)E(Y)$, donc $Cov(X,Y)=0$, et donc $Var(X+Y)=Var(X)+Var(Y)$. L'indépendance ne dit rien sur l'égalité des lois (ce serait la propriété i.i.d.).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Covariance nulle", "Contre-exemple"],
-                q: "La réciproque de « indépendance implique covariance nulle » est-elle vraie ?",
-                options: [
-                    { text: "Non : covariance nulle n'implique pas indépendance", isCorrect: true },
-                    { text: "Oui, toujours", isCorrect: false },
-                    { text: "Oui, mais seulement pour les variables gaussiennes", isCorrect: false },
-                    { text: "Oui, mais seulement pour les variables discrètes finies", isCorrect: false }
-                ],
-                explanation: "La Remarque 5.19 donne un contre-exemple explicite : $Z$ uniforme sur $\\{-1,0,1\\}$, $X=Z$, $Y=Z^2$. On a $Cov(X,Y)=0$ mais $X$ et $Y$ ne sont pas indépendantes, car $P(X=-1,Y=1) = 1/3 \\neq P(X=-1)P(Y=1) = 2/9$. (Note : la réciproque est vraie pour les vecteurs gaussiens, mais ce cas dépasse le cadre du cours.)",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Loi de la somme", "Convolution"],
-                q: "Pour $X, Y$ deux variables aléatoires discrètes réelles indépendantes, la loi de $S = X+Y$ est donnée par :",
-                options: [
-                    { text: "$P(X+Y=s) = \\sum_{x \\in E} P(X=x)P(Y=s-x)$", isCorrect: true },
-                    { text: "$P(X+Y=s) = P(X=s)P(Y=s)$", isCorrect: false },
-                    { text: "$P(X+Y=s) = P(X=s) + P(Y=s)$", isCorrect: false },
-                    { text: "$P(X+Y=s)$ ne peut se calculer que numériquement", isCorrect: false }
-                ],
-                explanation: "La Proposition 5.20 donne, dans le cas indépendant, $P(X+Y=s) = \\sum_{x\\in E} P(X=x)P(Y=s-x)$, appelée produit de convolution des lois de $X$ et $Y$ (Définition 5.23). Sans indépendance, il faut utiliser la formule générale avec $P(X=x,Y=s-x)$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Convolution", "Densité"],
-                q: "Pour $X, Y$ deux variables aléatoires réelles à densité indépendantes, de densités $f^X, f^Y$, la densité de $Z = X+Y$ est :",
-                options: [
-                    { text: "$f^Z(z) = \\int_{\\mathbb{R}} f^X(w) f^Y(z-w) dw$", isCorrect: true },
-                    { text: "$f^Z(z) = f^X(z) \\cdot f^Y(z)$", isCorrect: false },
-                    { text: "$f^Z(z) = f^X(z) + f^Y(z)$", isCorrect: false },
-                    { text: "$f^Z(z) = f^X(z) - f^Y(z)$", isCorrect: false }
-                ],
-                explanation: "La Proposition 5.22 donne la formule de convolution des densités : $f^Z(z) = \\int_{\\mathbb{R}} f^X(w) f^Y(z-w) dw = \\int_{\\mathbb{R}} f^X(z-w) f^Y(w) dw$. Cette formule, bien qu'issue d'une preuve hors programme, est très utilisée en pratique.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Convolution", "Lois usuelles"],
-                q: "D'après l'Exemple 5.24 sur les produits de convolution, quelles affirmations sont correctes ?",
-                options: [
-                    { text: "$Bin(n_1,p) + Bin(n_2,p)$ (indépendantes) suit une loi $Bin(n_1+n_2, p)$", isCorrect: true },
-                    { text: "$\\mathcal{N}(\\mu,\\sigma^2) + \\mathcal{N}(\\nu,\\tau^2)$ (indépendantes) suit une loi $\\mathcal{N}(\\mu+\\nu, \\sigma^2+\\tau^2)$", isCorrect: true },
-                    { text: "La somme de deux lois binomiales de paramètres $p$ différents reste binomiale", isCorrect: false },
-                    { text: "$\\mathcal{N}(\\mu,\\sigma^2) + \\mathcal{N}(\\nu,\\tau^2)$ suit une loi $\\mathcal{N}(\\mu+\\nu, \\sigma^2 \\tau^2)$", isCorrect: false }
-                ],
-                explanation: "L'Exemple 5.24 énonce deux résultats classiques de stabilité par convolution : la somme de deux binomiales indépendantes de même paramètre $p$ est binomiale, et la somme de deux gaussiennes indépendantes est gaussienne avec sommation des moyennes et des variances (pas des écarts-types ni multiplication).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Convergence", "Modes"],
-                q: "Une suite $(X_n)_{n\\geq1}$ converge presque sûrement vers $X$ si :",
-                options: [
-                    { text: "$P[\\omega \\in \\Omega : \\lim_{n\\to\\infty} X_n(\\omega) = X(\\omega)] = 1$", isCorrect: true },
-                    { text: "$\\forall \\varepsilon>0, \\lim_{n\\to\\infty} P[|X-X_n|\\geq\\varepsilon]=0$", isCorrect: false },
-                    { text: "$X_n(\\omega) = X(\\omega)$ pour tout $\\omega$", isCorrect: false },
-                    { text: "$E(X_n) \\to E(X)$", isCorrect: false }
-                ],
-                explanation: "La Définition 5.25 (point 1) définit la convergence presque sûre par $P[\\omega : \\lim_n X_n(\\omega) = X(\\omega)] = 1$ : la convergence simple a lieu sauf sur un ensemble de probabilité nulle. La deuxième option décrit la convergence en probabilité (point 2), un mode de convergence différent et plus faible.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Convergence en probabilité"],
-                q: "Une suite $(X_n)_{n\\geq1}$ converge en probabilité vers $X$ si :",
-                options: [
-                    { text: "$\\forall \\varepsilon > 0$, $\\lim_{n\\to+\\infty} P[|X-X_n| \\geq \\varepsilon] = 0$", isCorrect: true },
-                    { text: "$P[\\omega : \\lim_n X_n(\\omega) = X(\\omega)] = 1$", isCorrect: false },
-                    { text: "$X_n$ converge uniformément vers $X$", isCorrect: false },
-                    { text: "$Var(X_n) \\to 0$ nécessairement", isCorrect: false }
-                ],
-                explanation: "La Définition 5.25 (point 2) définit la convergence en probabilité par $\\forall \\varepsilon>0, \\lim_{n\\to+\\infty} P[|X-X_n|\\geq\\varepsilon]=0$. La convergence presque sûre est plus forte que la convergence en probabilité, comme le note la Remarque 5.26.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Convergences", "Comparaison"],
-                q: "Quel est le rapport de force entre la convergence presque sûre et la convergence en probabilité ?",
-                options: [
-                    { text: "La convergence presque sûre est plus forte : elle implique la convergence en probabilité", isCorrect: true },
-                    { text: "La convergence en probabilité est plus forte", isCorrect: false },
-                    { text: "Les deux modes de convergence sont toujours équivalents", isCorrect: false },
-                    { text: "Aucun lien n'existe entre les deux notions", isCorrect: false }
-                ],
-                explanation: "La Remarque 5.26 précise que la convergence presque sûre est plus forte que la convergence en probabilité. Ce résultat, admis dans ce cours, sera démontré dans le cours de probabilités de l'année suivante.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Loi faible des grands nombres"],
-                q: "La loi faible des grands nombres (Théorème 5.27) concerne une suite $(X_n)_{n\\geq1}$ i.i.d. de carré intégrable, de moyenne $\\mu$ et variance $\\sigma^2$. Que dit-elle sur la moyenne empirique $Z_n = \\frac{X_1+\\cdots+X_n}{n}$ ?",
-                options: [
-                    { text: "$Z_n$ converge en probabilité vers $\\mu$", isCorrect: true },
-                    { text: "$Z_n$ converge en probabilité vers $\\sigma^2$", isCorrect: false },
-                    { text: "$Z_n$ est constante et égale à $\\mu$ pour tout $n$", isCorrect: false },
-                    { text: "$Z_n$ diverge presque sûrement", isCorrect: false }
-                ],
-                explanation: "Le Théorème 5.27 énonce que la moyenne empirique $Z_n$ converge en probabilité vers la moyenne théorique $\\mu$ : $\\forall \\varepsilon>0, P(|Z_n-\\mu|\\geq\\varepsilon) \\leq \\frac{\\sigma^2}{\\varepsilon^2 n}$. Cela valide l'approche fréquentiste des probabilités.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Loi des grands nombres", "Démonstration"],
-                q: "Dans la démonstration de la loi faible des grands nombres, on utilise :",
-                options: [
-                    { text: "La linéarité de l'espérance pour montrer $E(Z_n) = \\mu$", isCorrect: true },
-                    { text: "L'indépendance des $(X_n)$ pour montrer $Var(Z_n) = \\sigma^2/n$", isCorrect: true },
-                    { text: "L'inégalité de Bienaymé-Tchebychev appliquée à $Z_n$", isCorrect: true },
-                    { text: "L'inégalité de Cauchy-Schwarz uniquement", isCorrect: false }
-                ],
-                explanation: "La démonstration du Théorème 5.27 combine : linéarité de l'espérance ($E(Z_n)=\\mu$), indépendance pour additivité des variances ($Var(Z_n)=\\sigma^2/n$), puis application de l'inégalité de Bienaymé-Tchebychev pour obtenir la borne $P(|Z_n-\\mu|\\geq\\varepsilon)\\leq\\sigma^2/(\\varepsilon^2 n)$, dont on prend la limite quand $n\\to\\infty$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Loi forte des grands nombres"],
-                q: "Quelle est la différence entre la loi faible et la loi forte des grands nombres ?",
-                options: [
-                    { text: "La loi forte donne la convergence presque sûre, la loi faible donne seulement la convergence en probabilité", isCorrect: true },
-                    { text: "La loi forte nécessite des variables de carré intégrable, la loi faible non", isCorrect: false },
-                    { text: "Il n'y a aucune différence", isCorrect: false },
-                    { text: "La loi forte s'applique uniquement aux variables discrètes", isCorrect: false }
-                ],
-                explanation: "La Remarque 5.28 précise que la loi forte des grands nombres démontre la convergence presque sûre de $(Z_n)$ vers $\\mu$ (sous la seule hypothèse d'intégrabilité, plus faible que carré-intégrabilité), tandis que la version prouvée dans ce cours (loi faible) ne donne que la convergence en probabilité.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Loi des grands nombres", "Application"],
-                q: "Dans l'exemple du schéma de Bernoulli (dé non pipé, succès = obtenir un 6), que représente $\\frac{n_N(A)}{N}$ où $n_N(A)$ est le nombre de succès en $N$ répétitions ?",
-                options: [
-                    { text: "La fréquence empirique de l'évènement $A$, qui converge en probabilité vers $p = P(A)$", isCorrect: true },
-                    { text: "La probabilité théorique exacte de $A$", isCorrect: false },
-                    { text: "Une constante indépendante de $N$", isCorrect: false },
-                    { text: "La variance de $A$", isCorrect: false }
-                ],
-                explanation: "L'Exemple 5.29 illustre concrètement la loi des grands nombres : $\\frac{n_N(A)}{N} \\xrightarrow[N\\to+\\infty]{P} p$. Cela justifie l'approche fréquentiste intuitive de la probabilité évoquée au Chapitre 1 : la fréquence d'apparition d'un évènement converge vers sa probabilité théorique.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Marche aléatoire", "Définition"],
-                q: "Une marche aléatoire $(S_n)_{n\\geq0}$ est définie par $S_n = x + \\sum_{k=1}^n X_k$. Quelle hypothèse est faite sur les $(X_k)_{k\\geq1}$ ?",
-                options: [
-                    { text: "Elles sont indépendantes et identiquement distribuées", isCorrect: true },
-                    { text: "Elles sont dépendantes deux à deux", isCorrect: false },
-                    { text: "Elles doivent être positives", isCorrect: false },
-                    { text: "Elles suivent nécessairement une loi normale", isCorrect: false }
-                ],
-                explanation: "La Définition 6.1 précise que les incréments $(X_k)_{k\\geq1}$ sont i.i.d., et $x = S_0$ est la position initiale. Aucune hypothèse de positivité ni de loi spécifique n'est imposée dans la définition générale.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Marche aléatoire", "Symétrique"],
-                q: "Pour la marche aléatoire simple sur $\\mathbb{Z}$ (dimension $d=1$) avec $P(X_k=1)=p$, $P(X_k=-1)=1-p$, quand parle-t-on de marche aléatoire symétrique ?",
-                options: [
-                    { text: "Lorsque $p = \\frac{1}{2}$", isCorrect: true },
-                    { text: "Lorsque $p = 1$", isCorrect: false },
-                    { text: "Lorsque $p = 0$", isCorrect: false },
-                    { text: "Pour toute valeur de $p$", isCorrect: false }
-                ],
-                explanation: "L'Exemple 6.2 précise que la marche aléatoire est dite symétrique lorsque les variables $X_k$ sont uniformes, ce qui correspond à $p = \\frac{1}{2}$ dans le cas $d=1$ : la probabilité d'aller à droite ou à gauche est égale.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Marche aléatoire", "Zd"],
-                q: "Pour la marche aléatoire symétrique sur $\\mathbb{Z}^2$, les incréments $X_k$ prennent leurs valeurs dans quel ensemble ?",
-                options: [
-                    { text: "$\\{(1,0), (-1,0), (0,1), (0,-1)\\}$, chacune avec probabilité $\\frac{1}{4}$", isCorrect: true },
-                    { text: "$\\{(1,1), (-1,-1)\\}$ uniquement", isCorrect: false },
-                    { text: "$\\{-1,1\\}$", isCorrect: false },
-                    { text: "$\\mathbb{Z}^2$ tout entier avec probabilité uniforme", isCorrect: false }
-                ],
-                explanation: "L'Exemple 6.2 décrit la marche aléatoire symétrique sur $\\mathbb{Z}^2$ : les incréments sont à valeurs dans les 4 directions cardinales $\\{(1,0),(-1,0),(0,1),(0,-1)\\}$, chacune avec probabilité $\\frac{1}{4}$ dans le cas symétrique.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Retour en zéro", "Probabilité"],
-                q: "Pour la marche aléatoire symétrique sur $\\mathbb{Z}$ ($d=1$), la probabilité de retour en 0 après $2n$ pas est :",
-                options: [
-                    { text: "$P_0(S_{2n}=0) = \\binom{2n}{n}\\frac{1}{2^{2n}}$", isCorrect: true },
-                    { text: "$P_0(S_{2n}=0) = \\frac{1}{2^n}$", isCorrect: false },
-                    { text: "$P_0(S_{2n}=0) = \\binom{2n}{n}^2\\frac{1}{2^{4n}}$", isCorrect: false },
-                    { text: "$P_0(S_{2n}=0) = 0$", isCorrect: false }
-                ],
-                explanation: "La Proposition 6.3 donne, pour $d=1$ : $P_0(S_{2n}=0) = \\binom{2n}{n}\\frac{1}{2^{2n}}$. La troisième option correspond en réalité à la formule du cas $d=2$ où $P_0(S_{2n}=0) = \\binom{2n}{n}^2\\frac{1}{2^{4n}}$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Retour en zéro", "Nombre de pas impair"],
-                q: "Pourquoi la probabilité de retour en 0 est-elle nulle si le nombre de pas est impair, pour la marche symétrique sur $\\mathbb{Z}^d$ avec $d=1,2$ ?",
-                options: [
-                    { text: "Car pour revenir en 0, la marche doit faire autant de pas dans chaque direction opposée, ce qui exige un nombre total de pas pair", isCorrect: true },
-                    { text: "Car la marche ne peut jamais revenir en 0", isCorrect: false },
-                    { text: "Car $p \\neq \\frac{1}{2}$", isCorrect: false },
-                    { text: "C'est une convention arbitraire du cours", isCorrect: false }
-                ],
-                explanation: "Comme expliqué dans la démonstration de la Proposition 6.3, pour $d=1$ la marche doit faire autant de pas à gauche qu'à droite pour revenir en 0, donc le nombre total de pas doit être pair. Le raisonnement est similaire pour $d=2$ avec les 4 directions.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Marche aléatoire", "Dimension 2", "Rotation"],
-                q: "Dans la preuve de la Proposition 6.3 pour $d=2$, quelle astuce est utilisée ?",
-                options: [
-                    { text: "Une bijection avec une marche aléatoire sur le réseau $\\tilde{\\mathbb{Z}}^2$ tourné de $45°$", isCorrect: true },
-                    { text: "Une approximation par la loi normale", isCorrect: false },
-                    { text: "Une intégration par parties", isCorrect: false },
-                    { text: "Le lemme de Borel-Cantelli", isCorrect: false }
-                ],
-                explanation: "La démonstration utilise une bijection avec la marche aléatoire sur $\\tilde{\\mathbb{Z}}^2$, le réseau $\\mathbb{Z}^2$ tourné de $45°$ avec les longueurs d'arêtes multipliées par $\\sqrt{2}$. Cela permet de décomposer la marche 2D en deux marches 1D indépendantes sur les composantes tournées.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Nombre de visites en zéro"],
-                q: "Le Corollaire 6.4 énonce que pour la marche aléatoire symétrique sur $\\mathbb{Z}^d$ avec $d=1,2$, l'espérance du nombre de visites en 0, notée $N_0$, vérifie :",
-                options: [
-                    { text: "$E(N_0) = \\infty$", isCorrect: true },
-                    { text: "$E(N_0) = 1$", isCorrect: false },
-                    { text: "$E(N_0) = 0$", isCorrect: false },
-                    { text: "$E(N_0)$ est finie mais non calculable explicitement", isCorrect: false }
-                ],
-                explanation: "Le Corollaire 6.4 montre que pour $d=1,2$, l'espérance du nombre de visites en 0 est infinie : $E(N_0)=\\infty$. C'est un résultat de récurrence de la marche aléatoire en basses dimensions ; la marche revient en moyenne infiniment souvent à l'origine.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Dimension et récurrence"],
-                q: "D'après le cours, que se passe-t-il pour l'espérance du nombre de visites en 0 lorsque $d \\geq 3$ ?",
-                options: [
-                    { text: "Elle devient finie", isCorrect: true },
-                    { text: "Elle reste infinie", isCorrect: false },
-                    { text: "Elle devient nulle", isCorrect: false },
-                    { text: "Elle n'est plus définie", isCorrect: false }
-                ],
-                explanation: "Le texte précédant le Corollaire 6.4 précise qu'à partir de $d\\geq 3$, l'espérance du nombre de visites en 0 devient finie : plus la dimension augmente, plus il devient difficile pour la marche aléatoire de revenir à l'origine une fois qu'elle est partie (transience en haute dimension).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Convergence monotone", "Application"],
-                q: "Dans la démonstration du Corollaire 6.4, quel outil du Chapitre 4 est utilisé pour justifier $E_0(N_0) = \\lim_{\\ell\\to\\infty} E_0(N_0^\\ell)$ ?",
-                options: [
-                    { text: "Le théorème de convergence monotone, car $(N_0^\\ell)_{\\ell\\geq1}$ est une suite croissante de variables aléatoires positives", isCorrect: true },
-                    { text: "L'inégalité de Jensen", isCorrect: false },
-                    { text: "Le théorème de convergence dominée", isCorrect: false },
-                    { text: "L'inégalité de Cauchy-Schwarz", isCorrect: false }
-                ],
-                explanation: "La démonstration utilise le théorème de convergence monotone car $N_0 = \\lim_{\\ell\\to\\infty} \\sum_{n=1}^\\ell \\mathbb{I}_{\\{S_n=0\\}}$, et la suite $(N_0^\\ell)_{\\ell\\geq1} = (\\sum_{n=1}^\\ell \\mathbb{I}_{\\{S_n=0\\}})_{\\ell\\geq1}$ est croissante et positive, ce qui permet de passer à la limite dans l'espérance.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Formule de Stirling"],
-                q: "Dans la preuve du Corollaire 6.4, la formule de Stirling $n! \\sim \\sqrt{2\\pi n}\\left(\\frac{n}{e}\\right)^n$ est utilisée pour montrer que :",
-                options: [
-                    { text: "$\\binom{2n}{n}\\frac{1}{2^{2n}} \\sim \\frac{1}{\\sqrt{\\pi n}}$, terme général d'une série divergente", isCorrect: true },
-                    { text: "$\\binom{2n}{n}\\frac{1}{2^{2n}}$ converge vers 0 rapidement (série convergente)", isCorrect: false },
-                    { text: "La marche aléatoire est bornée", isCorrect: false },
-                    { text: "$n!$ est toujours pair", isCorrect: false }
-                ],
-                explanation: "En utilisant la formule de Stirling, on montre que $\\binom{2n}{n}\\frac{1}{2^{2n}} \\sim \\frac{1}{\\sqrt{\\pi n}}$, terme général équivalent à celui d'une série de Riemann divergente (exposant $\\frac{1}{2}<1$), ce qui prouve que $E(N_0) = \\sum_n P_0(S_{2n}=0) = \\infty$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Ruine du joueur", "Modélisation"],
-                q: "Dans le problème de la ruine de la joueuse, la fortune $S_n$ de la joueuse A au temps $n$ est modélisée par une marche aléatoire $S_n = a + \\sum_{k=1}^n X_k$ où :",
-                options: [
-                    { text: "$X_k$ sont i.i.d à valeurs dans $\\{-1,1\\}$ avec $P(X_k=1)=p$", isCorrect: true },
-                    { text: "$a$ est la fortune initiale de la joueuse A", isCorrect: true },
-                    { text: "La formule reste valide même après la fin du jeu", isCorrect: false },
-                    { text: "Les états 0 et $a+b$ sont absorbants", isCorrect: true }
-                ],
-                explanation: "Le problème de la ruine de la joueuse modélise la fortune par une marche aléatoire simple avec $a$ la fortune initiale, jusqu'à ce que la marche atteigne 0 (ruine de A) ou $a+b$ (ruine de B), qui sont des états absorbants. La formule $S_n=a+\\sum X_k$ n'est valide que jusqu'à la fin du jeu, après quoi $S_n$ reste constante.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Ruine du joueur", "Récurrence"],
-                q: "En notant $u_k = P_k(R)$ la probabilité que la joueuse A (fortune initiale $k$) soit ruinée, quelle relation de récurrence vérifient les $(u_k)$ ?",
-                options: [
-                    { text: "$u_k = p\\,u_{k+1} + q\\,u_{k-1}$ pour $1 \\leq k \\leq a+b-1$, avec $u_0=1$, $u_{a+b}=0$", isCorrect: true },
-                    { text: "$u_k = u_{k+1} - u_{k-1}$", isCorrect: false },
-                    { text: "$u_k = p \\cdot u_k$", isCorrect: false },
-                    { text: "$u_0 = 0$ et $u_{a+b} = 1$", isCorrect: false }
-                ],
-                explanation: "En utilisant la formule des probabilités totales sur le résultat du premier lancer, on obtient $u_k = p\\,u_{k+1} + q\\,u_{k-1}$, avec les conditions au bord $u_0=1$ (la joueuse A est déjà ruinée si $k=0$) et $u_{a+b}=0$ (elle a gagné toute la fortune, donc pas ruinée).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Ruine du joueur", "Équation caractéristique"],
-                q: "L'équation caractéristique associée à la récurrence $u_k = p\\,u_{k+1} + q\\,u_{k-1}$ est $pr^2 - r + q = 0$. Quelles sont ses racines ?",
-                options: [
-                    { text: "$r_1 = 1$ et $r_2 = q/p$", isCorrect: true },
-                    { text: "$r_1 = p$ et $r_2 = q$", isCorrect: false },
-                    { text: "$r_1 = 0$ et $r_2 = 1$", isCorrect: false },
-                    { text: "$r_1 = -1$ et $r_2 = 1$", isCorrect: false }
-                ],
-                explanation: "Le discriminant de $pr^2-r+q=0$ vaut $\\Delta = 1-4pq = (2p-1)^2 \\geq 0$, et les solutions sont $r_1=1$, $r_2=q/p$. Cette équation caractéristique classique des suites récurrentes linéaires d'ordre 2 permet de résoudre explicitement la probabilité de ruine.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Ruine du joueur", "Cas p≠q"],
-                q: "Dans le cas où $p \\neq q$ (i.e. $p \\neq \\frac{1}{2}$), la solution générale de la récurrence de la ruine de la joueuse est :",
-                options: [
-                    { text: "$u_k = \\dfrac{(q/p)^{a+b} - (q/p)^k}{(q/p)^{a+b}-1}$", isCorrect: true },
-                    { text: "$u_k = 1 - \\dfrac{k}{a+b}$", isCorrect: false },
-                    { text: "$u_k = \\alpha + k\\beta$ pour des constantes $\\alpha, \\beta$", isCorrect: false },
-                    { text: "$u_k = (q/p)^k$", isCorrect: false }
-                ],
-                explanation: "Pour $p \\neq q$, les racines $r_1=1, r_2=q/p$ sont distinctes, la solution générale est $u_k = \\alpha r_1^k + \\beta r_2^k = \\alpha + \\beta(q/p)^k$. En appliquant les conditions au bord $u_0=1, u_{a+b}=0$, on trouve $u_k = \\frac{(q/p)^{a+b}-(q/p)^k}{(q/p)^{a+b}-1}$. La deuxième et troisième options correspondent au cas $p=q$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Ruine du joueur", "Cas p=q"],
-                q: "Dans le cas $p = q = \\frac{1}{2}$ (jeu équitable), la probabilité de ruine de la joueuse A partant avec une fortune $k$ est :",
-                options: [
-                    { text: "$u_k = 1 - \\dfrac{k}{a+b}$", isCorrect: true },
-                    { text: "$u_k = \\dfrac{k}{a+b}$", isCorrect: false },
-                    { text: "$u_k = \\dfrac{(q/p)^{a+b} - (q/p)^k}{(q/p)^{a+b}-1}$", isCorrect: false },
-                    { text: "$u_k$ ne dépend pas de $k$", isCorrect: false }
-                ],
-                explanation: "Dans le cas $p=q=\\frac{1}{2}$, la racine double $r=1$ conduit à une solution de la forme $u_k = \\alpha + k\\beta$. Les conditions au bord $u_0=1, u_{a+b}=0$ donnent $\\alpha=1$, $\\beta=-1/(a+b)$, d'où $u_k = 1 - \\frac{k}{a+b}$, qui décroît linéairement avec la fortune initiale $k$ de la joueuse A.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Ruine du joueur", "Interprétation"],
-                q: "Dans le cas équitable ($p=q=1/2$), si la joueuse A commence avec une fortune $k=a+b$ (fortune totale), quelle est sa probabilité de ruine $u_k$ ?",
-                options: [
-                    { text: "$0$", isCorrect: true },
-                    { text: "$1$", isCorrect: false },
-                    { text: "$\\frac{1}{2}$", isCorrect: false },
-                    { text: "Indéterminée", isCorrect: false }
-                ],
-                explanation: "En utilisant $u_k = 1 - \\frac{k}{a+b}$ avec $k=a+b$, on obtient $u_{a+b} = 1 - 1 = 0$. Cela est cohérent avec la condition au bord $u_{a+b}=0$ : si A possède déjà toute la fortune, elle ne peut pas être ruinée (B est déjà ruiné).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Variance", "Application numérique"],
-                q: "Soit $X$ une variable aléatoire telle que $E(X)=3$ et $E(X^2)=13$. Quelle est $Var(X)$ ?",
-                options: [
-                    { text: "$4$", isCorrect: true },
-                    { text: "$13$", isCorrect: false },
-                    { text: "$10$", isCorrect: false },
-                    { text: "$16$", isCorrect: false }
-                ],
-                explanation: "En utilisant la Propriété 4.18 (point 4) : $Var(X) = E(X^2) - E(X)^2 = 13 - 3^2 = 13 - 9 = 4$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Markov", "Application numérique"],
-                q: "Soit $X$ une variable aléatoire positive avec $E(X) = 10$. D'après l'inégalité de Markov, une borne supérieure pour $P(X \\geq 50)$ est :",
-                options: [
-                    { text: "$\\frac{1}{5} = 0.2$", isCorrect: true },
-                    { text: "$0.5$", isCorrect: false },
-                    { text: "$50$", isCorrect: false },
-                    { text: "$5$", isCorrect: false }
-                ],
-                explanation: "En appliquant l'inégalité de Markov avec $n=1$ : $P(X \\geq 50) \\leq \\frac{E(X)}{50} = \\frac{10}{50} = \\frac{1}{5} = 0.2$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Bienaymé-Tchebychev", "Application numérique"],
-                q: "Soit $X$ de carré intégrable avec $E(X)=20$ et $Var(X)=25$. D'après Bienaymé-Tchebychev, une borne supérieure pour $P(|X-20|\\geq 10)$ est :",
-                options: [
-                    { text: "$0.25$", isCorrect: true },
-                    { text: "$2.5$", isCorrect: false },
-                    { text: "$0.025$", isCorrect: false },
-                    { text: "$25$", isCorrect: false }
-                ],
-                explanation: "D'après la Proposition 4.29 : $P(|X-E(X)|\\geq a) \\leq \\frac{Var(X)}{a^2}$. Ici, $a=10$, donc $P(|X-20|\\geq10) \\leq \\frac{25}{10^2} = \\frac{25}{100} = 0.25$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Covariance", "Application numérique"],
-                q: "Soit $X, Y$ deux variables aléatoires avec $Var(X)=4$, $Var(Y)=9$ et $Cov(X,Y)=2$. Que vaut $Var(X+Y)$ ?",
-                options: [
-                    { text: "$17$", isCorrect: true },
-                    { text: "$13$", isCorrect: false },
-                    { text: "$36$", isCorrect: false },
-                    { text: "$6$", isCorrect: false }
-                ],
-                explanation: "D'après la Proposition 4.21 (point 5) : $Var(X+Y) = Var(X)+Var(Y)+2Cov(X,Y) = 4+9+2(2) = 4+9+4 = 17$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Loi des grands nombres", "Application numérique"],
-                q: "Soit $(X_n)$ i.i.d. de carré intégrable, $\\sigma^2=4$. D'après la loi faible des grands nombres, pour $\\varepsilon=0.1$ et $n=1000$, quelle borne obtient-on pour $P(|Z_n-\\mu|\\geq0.1)$ ?",
-                options: [
-                    { text: "$0.4$", isCorrect: true },
-                    { text: "$4$", isCorrect: false },
-                    { text: "$0.04$", isCorrect: false },
-                    { text: "$40$", isCorrect: false }
-                ],
-                explanation: "D'après le Théorème 5.27 : $P(|Z_n-\\mu|\\geq\\varepsilon) \\leq \\frac{\\sigma^2}{\\varepsilon^2 n} = \\frac{4}{(0.1)^2 \\times 1000} = \\frac{4}{0.01 \\times 1000} = \\frac{4}{10} = 0.4$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Ruine du joueur", "Application numérique"],
-                q: "Dans le jeu de la ruine avec $p=q=\\frac{1}{2}$, $a=3$ (fortune de A), $b=7$ (fortune de B). Quelle est la probabilité de ruine de A ?",
-                options: [
-                    { text: "$0.7$", isCorrect: true },
-                    { text: "$0.3$", isCorrect: false },
-                    { text: "$0.5$", isCorrect: false },
-                    { text: "$1$", isCorrect: false }
-                ],
-                explanation: "Avec $k=a=3$ et $a+b=10$ : $u_k = 1 - \\frac{k}{a+b} = 1 - \\frac{3}{10} = 0.7$. Ceci illustre qu'avec une fortune initiale plus faible que l'adversaire, la probabilité de ruine est plus élevée, même dans un jeu équitable.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Espace fini vs général"],
-                q: "Pourquoi introduit-on la notion de variable aléatoire étagée avant de définir l'espérance pour les variables aléatoires positives générales ?",
-                options: [
-                    { text: "Car le Théorème 4.2 (espérance = somme finie) a un sens pour un espace d'arrivée fini, indépendamment de l'espace de départ", isCorrect: true },
-                    { text: "Car les variables étagées sont toujours indépendantes", isCorrect: false },
-                    { text: "Car seules les variables étagées ont une espérance", isCorrect: false },
-                    { text: "Car c'est une exigence purement historique sans justification mathématique", isCorrect: false }
-                ],
-                explanation: "Comme expliqué avant la Définition 4.3, l'idée clé est que la formule de droite du Théorème 4.2 a un sens si l'espace d'arrivée est fini, indépendamment de la nature de $\\Omega$. Cela permet de construire l'espérance par étapes : étagées → positives (par sup) → intégrables (par décomposition $X^+-X^-$).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Variable centrée"],
-                q: "Une variable aléatoire positive ou intégrable $X$ est dite centrée si :",
-                options: [
-                    { text: "$E(X) = 0$", isCorrect: true },
-                    { text: "$Var(X) = 0$", isCorrect: false },
-                    { text: "$X = 0$ presque sûrement", isCorrect: false },
-                    { text: "$E(X) = 1$", isCorrect: false }
-                ],
-                explanation: "La Définition 4.5 précise qu'une variable aléatoire (positive ou intégrable) est dite centrée si son espérance est nulle, $E(X)=0$. Cela n'implique pas que $X$ soit nulle p.s. (sauf cas particulier où $Var(X)=0$ également, dans le cas positif).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Vecteur aléatoire", "n composantes"],
-                q: "Pour un vecteur aléatoire discret $(X_1,\\ldots,X_n)$, comment généralise-t-on la formule des lois marginales du cas $n=2$ ?",
-                options: [
-                    { text: "On somme la loi jointe sur toutes les valeurs des autres composantes", isCorrect: true },
-                    { text: "On ne peut pas généraliser au-delà de $n=2$", isCorrect: false },
-                    { text: "On prend le maximum de la loi jointe", isCorrect: false },
-                    { text: "On divise la loi jointe par $n$", isCorrect: false }
-                ],
-                explanation: "Le cours précise (avant la Définition 5.4) que la généralisation au cas $n>2$ est possible avec des notations plus compliquées au niveau des indices, mais le principe reste le même : sommer sur toutes les valeurs possibles des autres composantes pour obtenir la loi marginale d'une composante.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Indépendance mutuelle"],
-                q: "Une famille $(X_i)_{i\\in I}$ de variables aléatoires est dite mutuellement indépendante si :",
-                options: [
-                    { text: "Pour toute partie finie $K$ de $I$ et tous $A_i \\in \\mathcal{P}(E_i)$, $P(\\cap_{i\\in K}\\{X_i\\in A_i\\}) = \\prod_{i\\in K}P(X_i\\in A_i)$", isCorrect: true },
-                    { text: "$X_i$ et $X_j$ sont indépendantes deux à deux uniquement", isCorrect: false },
-                    { text: "Toutes les $X_i$ ont la même loi", isCorrect: false },
-                    { text: "$Cov(X_i,X_j)=0$ pour tout $i\\neq j$", isCorrect: false }
-                ],
-                explanation: "La Définition 5.14 précise que l'indépendance mutuelle exige la factorisation des probabilités pour TOUTE partie finie $K$ de $I$, pas seulement les paires. L'indépendance deux à deux (paires) est une notion plus faible que l'indépendance mutuelle en général.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "Indépendance", "Stabilité"],
-                q: "D'après la Remarque 5.15, si $(X_i)_{i\\in I}$ est une famille de variables aléatoires indépendantes, quelles familles restent indépendantes ?",
-                options: [
-                    { text: "Toute sous-famille $(X_i)_{i\\in J}$ avec $J \\subset I$", isCorrect: true },
-                    { text: "Toute famille $(Y_i)_{i\\in I}$ où $Y_i = h_i(X_i)$", isCorrect: true },
-                    { text: "Toute famille obtenue en regroupant des blocs disjoints de variables et en appliquant une fonction à chaque bloc", isCorrect: true },
-                    { text: "Uniquement la famille originale, aucune transformation n'est permise", isCorrect: false }
-                ],
-                explanation: "La Remarque 5.15 énumère trois propriétés de stabilité de l'indépendance : restriction à une sous-famille, application de fonctions mesurables à chaque composante individuellement, et regroupement en blocs disjoints avec application de fonctions à chaque bloc.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Marche aléatoire", "Notion de récurrence"],
-                q: "Le fait que $E(N_0) = \\infty$ pour $d=1,2$ mais finie pour $d\\geq3$ est lié à quelle notion, mentionnée dans le cours ?",
-                options: [
-                    { text: "La récurrence/transience de la marche aléatoire", isCorrect: true },
-                    { text: "La loi des grands nombres", isCorrect: false },
-                    { text: "L'indépendance des incréments", isCorrect: false },
-                    { text: "Le théorème de Bayes", isCorrect: false }
-                ],
-                explanation: "L'introduction de la section 6.2 précise que ces notions de retour en 0 et d'espérance du nombre de visites sont sous-jacentes aux notions de récurrence/transience de la marche aléatoire, concepts qui seront approfondis dans un cours ultérieur.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Espérance conditionnée", "Prérequis"],
-                q: "Quelle propriété de l'espérance est utilisée pour établir la preuve de la Proposition 4.16 ($E(|X|) \\leq \\sqrt{E(X^2)}$) ?",
-                options: [
-                    { text: "L'étude du signe d'un polynôme du second degré en $\\lambda$ via son discriminant", isCorrect: true },
-                    { text: "Le théorème de Bayes", isCorrect: false },
-                    { text: "La loi des grands nombres", isCorrect: false },
-                    { text: "L'indépendance de $X$ avec elle-même", isCorrect: false }
-                ],
-                explanation: "La démonstration pose $f(\\lambda) = E[(|X|+\\lambda)^2]$, qui est un polynôme de degré 2 en $\\lambda$, toujours positif ou nul. Son discriminant doit donc être négatif ou nul, ce qui donne directement l'inégalité recherchée. C'est une méthode classique pour prouver des inégalités de type Cauchy-Schwarz.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 5", "XY intégrable"],
-                q: "Pourquoi peut-on affirmer que si $X, Y \\in L^2$, alors $XY \\in L^1$ ?",
-                options: [
-                    { text: "Car $|XY| \\leq \\frac{1}{2}(X^2+Y^2)$ et $X^2, Y^2$ sont intégrables", isCorrect: true },
-                    { text: "Car $X$ et $Y$ sont indépendantes", isCorrect: false },
-                    { text: "Car $E(XY) = E(X)E(Y)$ toujours", isCorrect: false },
-                    { text: "Ce résultat est faux en général", isCorrect: false }
-                ],
-                explanation: "Le cours (avant la Définition 4.20) note que si $X,Y$ sont dans $L^2$, alors $XY$ est dans $L^1$ car $|XY| \\leq \\frac{1}{2}(X^2+Y^2)$ par l'inégalité classique $2ab \\leq a^2+b^2$, et $X^2, Y^2$ sont intégrables par hypothèse. Cette propriété ne nécessite pas d'indépendance.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Remarque 4.7", "Construction espérance positive"],
-                q: "Dans la Remarque 4.7, pour approcher une variable aléatoire positive $X$ par une suite croissante de variables étagées, on utilise :",
-                options: [
-                    { text: "Une discrétisation dyadique de plus en plus fine des valeurs de $X$", isCorrect: true },
-                    { text: "Une approximation gaussienne", isCorrect: false },
-                    { text: "Le théorème central limite", isCorrect: false },
-                    { text: "Une interpolation polynomiale", isCorrect: false }
-                ],
-                explanation: "La suite $X_n(\\omega) = \\sum_{k=0}^{n2^n-1} \\frac{k}{2^n} \\mathbb{I}_{\\{X\\in[\\frac{k}{2^n},\\frac{k+1}{2^n}[\\}}(\\omega)$ utilise une discrétisation dyadique : on découpe l'intervalle des valeurs possibles en petits intervalles de longueur $\\frac{1}{2^n}$, de plus en plus fins quand $n$ augmente, ce qui donne une suite croissante convergeant simplement vers $X$.",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "Variance nulle"],
-                q: "Si $Var(X) = 0$ pour une variable aléatoire $X$, que peut-on en déduire ?",
-                options: [
-                    { text: "$X$ est presque sûrement constante et égale à $E(X)$", isCorrect: true },
-                    { text: "$X$ suit nécessairement une loi normale", isCorrect: false },
-                    { text: "$E(X) = 0$", isCorrect: false },
-                    { text: "$X$ n'est pas intégrable", isCorrect: false }
-                ],
-                explanation: "Bien que non explicitement démontré dans le texte fourni, ce résultat classique découle de la positivité de $E[(X-E(X))^2]$ : si cette espérance est nulle pour une variable positive, alors $(X-E(X))^2=0$ presque sûrement, donc $X=E(X)$ presque sûrement (constante).",
-                stats: { attempts: 0, correct: 0, partial: 0 },
-                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
-            },
-            {
-                type: "qcm",
-                tags: ["Chapitre 6", "Marche aléatoire", "Applications pratiques"],
-                q: "Selon l'introduction du Chapitre 6, à quels phénomènes la marche aléatoire s'applique-t-elle ?",
+                tags: ["Marche aléatoire", "Applications"],
+                q: "Selon l'introduction du chapitre, à quels phénomènes la marche aléatoire est-elle sous-jacente ?",
                 options: [
                     { text: "Le déplacement d'une particule", isCorrect: true },
                     { text: "Les cours de la bourse", isCorrect: true },
                     { text: "Les réseaux électriques", isCorrect: true },
-                    { text: "Uniquement les jeux de hasard", isCorrect: false }
+                    { text: "Uniquement les jeux de pile ou face", isCorrect: false }
                 ],
-                explanation: "L'introduction du Chapitre 6 mentionne explicitement que la marche aléatoire est sous-jacente à la modélisation de nombreux phénomènes : déplacement de particules, cours de la bourse, réseaux électriques, évolution d'une population, et bien d'autres, pas seulement les jeux de hasard.",
+                explanation: "Le cours mentionne explicitement le déplacement d'une particule, les cours de la bourse, les réseaux électriques et l'évolution d'une population comme phénomènes modélisés par des marches aléatoires ; ce n'est donc pas limité aux jeux de hasard simples.",
                 stats: { attempts: 0, correct: 0, partial: 0 },
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             },
             {
                 type: "qcm",
-                tags: ["Chapitre 5", "Espérance conditionnelle", "Cas particulier"],
-                q: "Si $X$ et $Y$ sont indépendantes, que devient l'espérance conditionnelle $E(Y|X=x)$ pour tout $x$ tel que $P(X=x)>0$ ?",
+                tags: ["Marche aléatoire sur Z", "Dimension 1"],
+                q: "Pour la marche aléatoire sur $\\mathbb{Z}$ ($d=1$), les variables $X_k$ sont à valeurs dans $\\{-1,1\\}$ avec $P(X_k=1)=p$. Quand parle-t-on de marche aléatoire symétrique ?",
                 options: [
-                    { text: "$E(Y|X=x) = E(Y)$, ne dépend pas de $x$", isCorrect: true },
-                    { text: "$E(Y|X=x) = x$", isCorrect: false },
-                    { text: "$E(Y|X=x) = 0$ toujours", isCorrect: false },
-                    { text: "$E(Y|X=x)$ n'est pas définie si $X, Y$ sont indépendantes", isCorrect: false }
+                    { text: "Lorsque $p = \\frac{1}{2}$", isCorrect: true },
+                    { text: "Lorsque $p = 1$", isCorrect: false },
+                    { text: "Lorsque $p = 0$", isCorrect: false },
+                    { text: "Pour toute valeur de $p \\in [0,1]$", isCorrect: false }
                 ],
-                explanation: "Si $X$ et $Y$ sont indépendantes, alors par le Théorème 5.16 (point 3), la loi conditionnelle de $Y$ sachant $\\{X=x\\}$ est égale à la loi marginale de $Y$ : $P_Y(\\cdot|X=x) = P_Y(\\cdot)$. Donc l'espérance conditionnelle $E(Y|X=x) = E(Y)$ ne dépend pas de $x$, ce qui est cohérent avec l'intuition que $X$ n'apporte aucune information sur $Y$.",
+                explanation: "La marche est dite symétrique quand les probabilités d'aller à gauche ou à droite sont égales, c'est-à-dire $p=1/2$, ce qui correspond au cas où les $X_k$ sont uniformes sur $\\{-1,1\\}$.",
                 stats: { attempts: 0, correct: 0, partial: 0 },
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             },
             {
                 type: "qcm",
-                tags: ["Chapitre 6", "Ruine du joueur", "Durée du jeu"],
-                q: "Selon la fin de la section 6.3, quelle autre quantité peut-on calculer avec une approche similaire à celle de la probabilité de ruine ?",
+                tags: ["Marche aléatoire sur Z^2", "Dimension 2"],
+                q: "Pour la marche aléatoire symétrique sur $\\mathbb{Z}^2$, à quelles valeurs les pas $X_k$ sont-ils uniformément distribués ?",
                 options: [
-                    { text: "L'espérance de la durée du jeu avant la ruine d'une des deux joueuses", isCorrect: true },
-                    { text: "Le nombre exact de coups gagnés par la joueuse A", isCorrect: false },
-                    { text: "La probabilité que le jeu ne se termine jamais", isCorrect: false },
-                    { text: "La loi de la fortune finale de B uniquement", isCorrect: false }
+                    { text: "$\\{(1,0), (-1,0), (0,1), (0,-1)\\}$, chacun avec probabilité $1/4$", isCorrect: true },
+                    { text: "$\\{(1,1), (-1,-1)\\}$, chacun avec probabilité $1/2$", isCorrect: false },
+                    { text: "$\\{(1,0), (0,1)\\}$, chacun avec probabilité $1/2$", isCorrect: false },
+                    { text: "$\\{-1,1\\}^2$ avec probabilité $1/4$ chacun, mais uniquement les 4 coins", isCorrect: false }
                 ],
-                explanation: "Le cours conclut la section 6.3 en notant qu'une approche similaire (résolution d'une récurrence linéaire avec conditions au bord) permet de calculer l'espérance de la durée du jeu avant que l'une des deux joueuses ne soit ruinée.",
+                explanation: "Sur $\\mathbb{Z}^2$, la marche symétrique se déplace uniformément vers l'un des 4 voisins directs (haut, bas, gauche, droite), chacun avec probabilité $1/4$.",
                 stats: { attempts: 0, correct: 0, partial: 0 },
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             },
             {
                 type: "qcm",
-                tags: ["Chapitre 4", "Moments", "Corollaire"],
-                q: "D'après le Corollaire 4.27, pour une variable aléatoire discrète $X$ telle que $X^n$ est intégrable, le moment d'ordre $n$ est donné par :",
+                tags: ["Notation"],
+                q: "Que représente la notation $P_x(S_n = \\cdot)$ dans le cours ?",
                 options: [
-                    { text: "$E(X^n) = \\sum_{i \\in I} x_i^n P(X=x_i)$", isCorrect: true },
-                    { text: "$E(X^n) = [E(X)]^n$", isCorrect: false },
-                    { text: "$E(X^n) = n \\, E(X)$", isCorrect: false },
-                    { text: "$E(X^n)$ n'existe que si $X$ est à densité", isCorrect: false }
+                    { text: "La loi de la marche aléatoire partant de l'état initial $x$", isCorrect: true },
+                    { text: "La probabilité que $x$ soit visité au temps $n$", isCorrect: false },
+                    { text: "La probabilité que la marche s'arrête en $x$", isCorrect: false },
+                    { text: "La densité de $S_n$", isCorrect: false }
                 ],
-                explanation: "Le Corollaire 4.27, conséquence directe du théorème de transfert (Théorème 4.10) appliqué à $h(x)=x^n$, donne $E(X^n) = \\sum_{i\\in I} x_i^n P(X=x_i)$ dans le cas discret, sous réserve que $\\sum_{i\\in I} |x_i|^n P(x_i) < \\infty$. Dans le cas à densité, la formule analogue est $E(X^n) = \\int_{-\\infty}^{\\infty} x^n f(x) dx$.",
+                explanation: "Cette notation spécifie la loi de la marche aléatoire conditionnellement au fait qu'elle démarre en $x$ (état initial $S_0=x$), notation utile car la loi de $(S_n)$ dépend du point de départ.",
                 stats: { attempts: 0, correct: 0, partial: 0 },
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             },
             {
                 type: "qcm",
-                tags: ["Chapitre 4", "Espérance", "L2 espace vectoriel"],
-                q: "D'après la Remarque 4.15, pourquoi $L^2(\\Omega, \\mathcal{F}, P)$ est-il un espace vectoriel ?",
+                tags: ["Retours en zéro", "Parité"],
+                q: "Pour la marche aléatoire symétrique sur $\\mathbb{Z}^d$ ($d=1,2$), que vaut la probabilité de retour en 0 après un nombre impair de pas ?",
                 options: [
-                    { text: "Car pour $X,Y$ de carré intégrable et $a,b \\in \\mathbb{R}$, $(aX+bY)^2 \\leq 2(a^2X^2+b^2Y^2)$, donc $aX+bY$ est aussi de carré intégrable", isCorrect: true },
-                    { text: "Car toute variable aléatoire est automatiquement de carré intégrable", isCorrect: false },
-                    { text: "Car $L^2$ est un sous-ensemble fini de $L^1$", isCorrect: false },
-                    { text: "Ce fait n'est pas démontré dans le cours", isCorrect: false }
+                    { text: "Elle est nulle", isCorrect: true },
+                    { text: "Elle vaut $1/2$", isCorrect: false },
+                    { text: "Elle vaut $1$", isCorrect: false },
+                    { text: "Cela dépend de la dimension $d$", isCorrect: false }
                 ],
-                explanation: "La Remarque 4.15 (second point) montre que si $X, Y$ sont de carré intégrable, alors, grâce à l'inégalité $(aX+bY)^2 \\leq 2(a^2X^2+b^2Y^2)$, la combinaison linéaire $aX+bY$ est également de carré intégrable pour tout $a,b\\in\\mathbb{R}$. Ceci, combiné à la stabilité par multiplication scalaire, fait de $L^2(\\Omega,\\mathcal{F},P)$ un espace vectoriel.",
+                explanation: "Pour revenir à l'origine, la marche doit faire autant de pas dans chaque direction opposée, ce qui n'est possible qu'avec un nombre total de pas pair (Proposition 6.3).",
                 stats: { attempts: 0, correct: 0, partial: 0 },
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             },
             {
                 type: "qcm",
-                tags: ["Chapitre 5", "Vecteurs aléatoires", "Théorème de transfert"],
-                q: "D'après le Théorème 5.5, pour un couple aléatoire discret $(X,Y)$ à valeurs dans $E \\times F$, et $h : E \\times F \\to \\mathbb{R}$ telle que $h(X,Y)$ soit positive ou intégrable, l'espérance $E(h(X,Y))$ est égale à :",
+                tags: ["Retours en zéro", "Formule dimension 1"],
+                q: "Pour la marche aléatoire symétrique sur $\\mathbb{Z}$ ($d=1$), quelle est la formule de $P_0(S_{2n}=0)$ ?",
                 options: [
-                    { text: "$\\sum_{(x,y)\\in E\\times F} h(x,y) P(X=x, Y=y)$", isCorrect: true },
-                    { text: "$h\\big(E(X), E(Y)\\big)$", isCorrect: false },
-                    { text: "$E(h(X)) \\cdot E(h(Y))$", isCorrect: false },
-                    { text: "$\\sum_{x\\in E} h(x) P(X=x)$", isCorrect: false }
+                    { text: "$\\binom{2n}{n} \\dfrac{1}{2^{2n}}$", isCorrect: true },
+                    { text: "$\\binom{2n}{n} \\dfrac{1}{2^{4n}}$", isCorrect: false },
+                    { text: "$\\binom{2n}{n}^2 \\dfrac{1}{2^{4n}}$", isCorrect: false },
+                    { text: "$\\dfrac{1}{2^{2n}}$", isCorrect: false }
                 ],
-                explanation: "Le Théorème 5.5 (théorème de transfert pour les couples aléatoires discrets) généralise le Théorème 4.10 : $E(h(X,Y)) = \\sum_{(x,y)\\in E\\times F} h(x,y) P(\\{X=x,Y=y\\})$, sous réserve que la série $\\sum_{(x,y)} |h(x,y)| P(X,Y)(\\{(x,y)\\})$ converge. C'est cet outil qui permet, par exemple, de calculer explicitement $E(XY)$ à partir de la loi jointe (comme dans l'Exemple 5.6).",
+                explanation: "La formule pour $d=1$ est $P_0(S_{2n}=0) = \\binom{2n}{n}\\frac{1}{2^{2n}}$, obtenue via le lien avec une loi binomiale $\\text{Bin}(2n,1/2)$ : il faut $n$ pas vers la droite et $n$ vers la gauche parmi $2n$ pas.",
                 stats: { attempts: 0, correct: 0, partial: 0 },
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             },
             {
                 type: "qcm",
-                tags: ["Chapitre 5", "Indépendance", "Variables réelles"],
-                q: "Selon la Définition 5.21, deux variables aléatoires réelles $X, Y : \\Omega \\to \\mathbb{R}$ (pas nécessairement discrètes) sont dites indépendantes si :",
+                tags: ["Retours en zéro", "Formule dimension 2"],
+                q: "Pour la marche aléatoire symétrique sur $\\mathbb{Z}^2$ ($d=2$), quelle est la formule de $P_0(S_{2n}=0)$ ?",
                 options: [
-                    { text: "Pour tout $A, B \\in \\mathcal{B}(\\mathbb{R})$ (boréliens de $\\mathbb{R}$), $P(X\\in A, Y\\in B) = P(X\\in A)P(Y\\in B)$", isCorrect: true },
-                    { text: "Pour tout $A, B \\in \\mathcal{P}(\\mathbb{R})$ (parties de $\\mathbb{R}$), $P(X\\in A, Y\\in B) = P(X\\in A)P(Y\\in B)$", isCorrect: false },
-                    { text: "$X$ et $Y$ ont nécessairement la même densité", isCorrect: false },
-                    { text: "Cette notion n'est définie que pour les variables discrètes", isCorrect: false }
+                    { text: "$\\binom{2n}{n}^2 \\dfrac{1}{2^{4n}}$", isCorrect: true },
+                    { text: "$\\binom{2n}{n} \\dfrac{1}{2^{2n}}$", isCorrect: false },
+                    { text: "$\\binom{2n}{n} \\dfrac{1}{2^{4n}}$", isCorrect: false },
+                    { text: "$\\binom{2n}{n}^2 \\dfrac{1}{2^{2n}}$", isCorrect: false }
                 ],
-                explanation: "La Définition 5.21 étend l'indépendance (initialement définie pour les variables discrètes à la Définition 5.14, avec $A\\in\\mathcal{P}(E)$) au cas des variables aléatoires réelles générales, en utilisant la tribu borélienne $\\mathcal{B}(\\mathbb{R})$ plutôt que l'ensemble des parties. Cette définition est indispensable pour énoncer la Proposition 5.22 sur la densité de la somme de deux variables à densité indépendantes.",
+                explanation: "Grâce à une bijection avec deux marches aléatoires indépendantes sur $\\mathbb{Z}$ (après rotation à 45° du réseau), on obtient le carré de la formule en dimension 1 : $\\binom{2n}{n}^2 \\frac{1}{2^{4n}}$.",
                 stats: { attempts: 0, correct: 0, partial: 0 },
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             },
             {
                 type: "qcm",
-                tags: ["Chapitre 5", "Indépendance", "n variables"],
-                q: "Si $X_1, \\ldots, X_n$ sont des variables aléatoires de carré intégrable et mutuellement indépendantes, que peut-on en conclure (Proposition 5.18, points 4 à 6) ?",
+                tags: ["Preuve dimension 1", "Loi de Bernoulli"],
+                q: "Dans la preuve pour $d=1$, on écrit $X_k = 2Y_k - 1$ avec $Y_k \\sim \\text{Ber}(1/2)$. À quoi sert cette transformation ?",
                 options: [
-                    { text: "$E\\left(\\prod_{i=1}^n X_i\\right) = \\prod_{i=1}^n E(X_i)$", isCorrect: true },
-                    { text: "La matrice de covariance des $(X_i)$ est diagonale", isCorrect: true },
-                    { text: "$Var\\left(\\sum_{i=1}^n X_i\\right) = \\sum_{i=1}^n Var(X_i)$", isCorrect: true },
-                    { text: "Les $(X_i)$ ont nécessairement la même variance", isCorrect: false }
+                    { text: "À exprimer $\\sum_{k=1}^{2n} Y_k$ comme une loi binomiale $\\text{Bin}(2n,1/2)$", isCorrect: true },
+                    { text: "À rendre les $X_k$ indépendantes (elles ne l'étaient pas avant)", isCorrect: false },
+                    { text: "À transformer la marche en une marche continue", isCorrect: false },
+                    { text: "À garantir que $E(X_k)=1$", isCorrect: false }
                 ],
-                explanation: "La Proposition 5.18 (points 4 à 6) généralise le cas de deux variables au cas de $n$ variables mutuellement indépendantes de carré intégrable : l'espérance du produit est le produit des espérances, la matrice de covariance est diagonale (car $Cov(X_i,X_j)=0$ pour $i\\neq j$), et par conséquent la variance de la somme est la somme des variances. Rien n'impose que les variables aient la même variance (ce serait le cas i.i.d. en plus).",
+                explanation: "En posant $Y_k=(X_k+1)/2 \\in \\{0,1\\}$, l'évènement $\\{S_{2n}=0\\}$ (i.e. $\\sum X_k=0$) devient $\\{\\sum Y_k = n\\}$, et comme les $(Y_k)$ sont i.i.d. de Bernoulli(1/2), leur somme suit une loi binomiale, ce qui permet le calcul explicite.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Preuve dimension 2", "Rotation du réseau"],
+                q: "Quelle astuce est utilisée dans la preuve du cas $d=2$ pour se ramener au cas $d=1$ ?",
+                options: [
+                    { text: "Une bijection avec la marche $(\\tilde{S}_n)$ sur le réseau $\\tilde{\\mathbb{Z}}^2$, tourné de $45°$", isCorrect: true },
+                    { text: "Un changement de variable exponentiel", isCorrect: false },
+                    { text: "L'utilisation de la fonction caractéristique", isCorrect: false },
+                    { text: "La projection sur une seule des deux coordonnées, en ignorant l'autre", isCorrect: false }
+                ],
+                explanation: "En tournant le réseau $\\mathbb{Z}^2$ de $45°$ (et en multipliant la longueur des arêtes par $\\sqrt{2}$), les pas deviennent à valeurs dans $\\{(1,1),(-1,1),(1,-1),(-1,-1)\\}$, et les deux composantes de la marche transformée deviennent des marches indépendantes sur $\\mathbb{Z}$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Preuve dimension 2", "Indépendance des composantes"],
+                q: "Dans la preuve du cas $d=2$, pourquoi les composantes $\\tilde{S}_n^1$ et $\\tilde{S}_n^2$ sont-elles indépendantes ?",
+                options: [
+                    { text: "Car pour chaque $k$, $\\tilde{X}_k^1$ et $\\tilde{X}_k^2$ sont indépendantes, et les $(\\tilde{X}_k)_{k\\ge1}$ sont i.i.d", isCorrect: true },
+                    { text: "Car $\\tilde{S}_n^1$ et $\\tilde{S}_n^2$ ont la même loi", isCorrect: false },
+                    { text: "Car $d=2$ implique automatiquement l'indépendance des coordonnées", isCorrect: false },
+                    { text: "Ce n'est vrai qu'asymptotiquement quand $n\\to\\infty$", isCorrect: false }
+                ],
+                explanation: "L'indépendance des composantes $\\tilde{X}_k^1, \\tilde{X}_k^2$ pour chaque pas $k$, combinée à l'indépendance des différents pas $(\\tilde{X}_k)_{k\\ge1}$ entre eux, entraîne l'indépendance des sommes cumulées $\\tilde{S}_n^1$ et $\\tilde{S}_n^2$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Nombre de visites en zéro"],
+                q: "Comment est défini $N_0$, le nombre de visites en 0 de la marche aléatoire ?",
+                options: [
+                    { text: "$N_0 = \\sum_{n=1}^{\\infty} \\mathbb{1}_{\\{S_n=0\\}}$", isCorrect: true },
+                    { text: "$N_0 = \\max\\{n : S_n = 0\\}$", isCorrect: false },
+                    { text: "$N_0 = \\min\\{n\\ge1 : S_n=0\\}$", isCorrect: false },
+                    { text: "$N_0 = P(S_n = 0 \\text{ pour un certain } n)$", isCorrect: false }
+                ],
+                explanation: "$N_0$ compte le nombre total (éventuellement infini) de visites en 0 sur toute la trajectoire, en sommant les indicatrices $\\mathbb{1}_{\\{S_n=0\\}}$ pour tout $n\\ge1$. Ce n'est pas le premier temps de retour (qui serait un temps d'arrêt).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Corollaire 6.4", "Espérance infinie"],
+                q: "Que dit le Corollaire 6.4 concernant $E(N_0)$ pour la marche aléatoire symétrique sur $\\mathbb{Z}^d$, $d=1,2$ ?",
+                options: [
+                    { text: "$E(N_0) = \\infty$", isCorrect: true },
+                    { text: "$E(N_0) = 1$", isCorrect: false },
+                    { text: "$E(N_0) = 0$", isCorrect: false },
+                    { text: "$E(N_0)$ dépend de la dimension et est toujours finie", isCorrect: false }
+                ],
+                explanation: "En dimension 1 et 2, la marche aléatoire symétrique visite l'origine infiniment souvent en espérance ; c'est un signe de récurrence. Ce résultat contraste avec la dimension $d\\ge3$, où $E(N_0)$ devient finie (transience).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Récurrence / transience", "Dimension"],
+                q: "Que se passe-t-il pour $E(N_0)$ lorsque la dimension $d$ augmente au-delà de 2 (i.e. $d\\ge3$) ?",
+                options: [
+                    { text: "$E(N_0)$ devient finie", isCorrect: true },
+                    { text: "$E(N_0)$ reste infinie pour toute dimension", isCorrect: false },
+                    { text: "$E(N_0)$ devient nulle", isCorrect: false },
+                    { text: "$E(N_0)$ n'est définie que pour $d\\le2$", isCorrect: false }
+                ],
+                explanation: "Le cours indique qu'en dimension supérieure ou égale à 3, il devient de plus en plus difficile pour la marche de revenir en 0 une fois partie, ce qui rend l'espérance du nombre de visites finie (marche transiente).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Preuve Corollaire 6.4", "Convergence monotone"],
+                q: "Quel théorème est utilisé dans la preuve du Corollaire 6.4 pour intervertir espérance et limite dans $E_0(N_0) = \\lim_{\\ell\\to\\infty} E_0(N_0^\\ell)$ ?",
+                options: [
+                    { text: "Le théorème de convergence monotone", isCorrect: true },
+                    { text: "Le théorème de convergence dominée", isCorrect: false },
+                    { text: "L'inégalité de Markov", isCorrect: false },
+                    { text: "Le théorème de transfert", isCorrect: false }
+                ],
+                explanation: "La suite $(N_0^\\ell)_{\\ell\\ge1} = \\left(\\sum_{n=1}^{\\ell}\\mathbb{1}_{\\{S_n=0\\}}\\right)_{\\ell\\ge1}$ est croissante et positive, ce qui permet d'appliquer le théorème de convergence monotone pour obtenir $E_0(N_0) = \\sum_{n=1}^{\\infty} P_0(S_n=0)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Formule de Stirling"],
+                q: "Quelle est la formule de Stirling utilisée dans la preuve du Corollaire 6.4 ?",
+                options: [
+                    { text: "$n! \\sim \\sqrt{2\\pi n} \\left(\\frac{n}{e}\\right)^n$", isCorrect: true },
+                    { text: "$n! \\sim n^n$", isCorrect: false },
+                    { text: "$n! \\sim \\sqrt{2\\pi n} \\, e^n$", isCorrect: false },
+                    { text: "$n! \\sim \\frac{n^n}{e^n}$ (sans le facteur $\\sqrt{2\\pi n}$)", isCorrect: false }
+                ],
+                explanation: "La formule de Stirling $n! \\sim \\sqrt{2\\pi n}\\left(\\frac{n}{e}\\right)^n$ est essentielle pour estimer le comportement asymptotique de $\\binom{2n}{n}\\frac{1}{2^{2n}}$, qui est équivalent à $\\frac{1}{\\sqrt{\\pi n}}$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Séries divergentes", "Dimension 1 et 2"],
+                q: "Pourquoi $E(N_0) = \\infty$ en dimension $d=1$ et $d=2$ d'après l'analyse asymptotique ?",
+                options: [
+                    { text: "Car le terme général $P_0(S_{2n}=0)$ est équivalent à $\\frac{1}{\\sqrt{\\pi n}}$ (d=1) ou $\\frac{1}{\\pi n}$ (d=2), termes généraux de séries divergentes", isCorrect: true },
+                    { text: "Car $P_0(S_{2n}=0)$ tend vers une constante non nulle", isCorrect: false },
+                    { text: "Car $P_0(S_{2n}=0)$ est croissant en $n$", isCorrect: false },
+                    { text: "Car la série est une série géométrique de raison supérieure à 1", isCorrect: false }
+                ],
+                explanation: "En $d=1$, $\\sum \\frac{1}{\\sqrt{\\pi n}}$ diverge (comparable à une série de Riemann d'exposant $1/2 \\le 1$) ; en $d=2$, $\\sum \\frac{1}{\\pi n}$ diverge aussi (série harmonique). C'est cette divergence qui entraîne $E(N_0)=\\infty$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Modélisation"],
+                q: "Dans le problème de la ruine de la joueuse, comment est modélisée la fortune $S_n$ de la joueuse A au temps $n$ (avant la fin du jeu) ?",
+                options: [
+                    { text: "$S_n = a + \\sum_{k=1}^{n} X_k$, avec $(X_k)$ i.i.d à valeurs dans $\\{-1,1\\}$, $P(X_k=1)=p$", isCorrect: true },
+                    { text: "$S_n = a - \\sum_{k=1}^n X_k$, avec $X_k$ à valeurs dans $\\{0,1\\}$", isCorrect: false },
+                    { text: "$S_n = a \\times p^n$", isCorrect: false },
+                    { text: "$S_n = a + n$, de façon déterministe", isCorrect: false }
+                ],
+                explanation: "La fortune de la joueuse A évolue comme une marche aléatoire partant de sa fortune initiale $a$, avec des pas $+1$ (gain, probabilité $p$) ou $-1$ (perte, probabilité $q=1-p$), jusqu'à ce que le jeu s'arrête.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "États absorbants"],
+                q: "Dans le modèle de ruine, quels sont les états absorbants de la marche $(S_n)$ ?",
+                options: [
+                    { text: "$0$ et $a+b$", isCorrect: true },
+                    { text: "Uniquement $0$", isCorrect: false },
+                    { text: "Uniquement $a+b$", isCorrect: false },
+                    { text: "$a$ et $b$", isCorrect: false }
+                ],
+                explanation: "Le jeu s'arrête dès que $S_n=0$ (la joueuse A est ruinée) ou $S_n=a+b$ (l'adversaire B est ruinée, A possède toute la fortune totale $a+b$) ; ces deux états sont absorbants car la marche y reste constante ensuite.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Récurrence"],
+                q: "Notons $u_k = P_k(R)$ la probabilité de ruine de A en partant de la fortune $k$. Quelle récurrence satisfont les $(u_k)$ ?",
+                options: [
+                    { text: "$u_k = p\\,u_{k+1} + q\\,u_{k-1}$, pour $1\\le k \\le a+b-1$, avec $u_0=1$, $u_{a+b}=0$", isCorrect: true },
+                    { text: "$u_k = p\\,u_{k-1} + q\\,u_{k+1}$, avec $u_0=0$, $u_{a+b}=1$", isCorrect: false },
+                    { text: "$u_k = u_{k+1} + u_{k-1}$, indépendamment de $p$", isCorrect: false },
+                    { text: "$u_k = p \\cdot u_{k+1} \\cdot u_{k-1}$", isCorrect: false }
+                ],
+                explanation: "En conditionnant sur le premier lancer (pile avec probabilité $p$, la fortune passe à $k+1$ ; face avec probabilité $q$, elle passe à $k-1$), on obtient cette récurrence linéaire d'ordre 2, avec les conditions au bord $u_0=1$ (déjà ruinée) et $u_{a+b}=0$ (déjà gagnante).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Équation caractéristique"],
+                q: "Quelle est l'équation caractéristique associée à la récurrence $u_k = p\\,u_{k+1} + q\\,u_{k-1}$ ?",
+                options: [
+                    { text: "$p r^2 - r + q = 0$", isCorrect: true },
+                    { text: "$r^2 - pr + q = 0$", isCorrect: false },
+                    { text: "$p r^2 + r + q = 0$", isCorrect: false },
+                    { text: "$r^2 - p - q = 0$", isCorrect: false }
+                ],
+                explanation: "En cherchant des solutions de la forme $u_k = r^k$, on obtient $r^{k+1}p - r^k + r^{k-1}q = 0$, ce qui après division par $r^{k-1}$ donne $pr^2-r+q=0$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Racines"],
+                q: "Quelles sont les racines de l'équation caractéristique $pr^2-r+q=0$ (avec $q=1-p$) ?",
+                options: [
+                    { text: "$r_1 = 1$ et $r_2 = q/p$", isCorrect: true },
+                    { text: "$r_1 = p$ et $r_2 = q$", isCorrect: false },
+                    { text: "$r_1 = -1$ et $r_2 = p/q$", isCorrect: false },
+                    { text: "$r_1 = 0$ et $r_2 = 1$", isCorrect: false }
+                ],
+                explanation: "Le discriminant vaut $\\Delta = 1-4pq = (2p-1)^2 \\ge 0$, et les racines sont $r_1=1$ (racine évidente puisque $p+q=1$) et $r_2 = q/p$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Cas p différent de q"],
+                q: "Lorsque $p \\ne q$ (i.e. $p \\ne 1/2$), quelle est la formule finale pour $u_k$ ?",
+                options: [
+                    { text: "$u_k = \\dfrac{(q/p)^{a+b} - (q/p)^k}{(q/p)^{a+b} - 1}$", isCorrect: true },
+                    { text: "$u_k = \\dfrac{(q/p)^{k}}{(q/p)^{a+b}}$", isCorrect: false },
+                    { text: "$u_k = 1 - \\dfrac{k}{a+b}$", isCorrect: false },
+                    { text: "$u_k = \\dfrac{(q/p)^k - 1}{(q/p)^{a+b}-1}$", isCorrect: false }
+                ],
+                explanation: "En utilisant les deux racines $r_1=1, r_2=q/p$, la solution générale $u_k = \\alpha + \\beta(q/p)^k$ et les conditions aux bords $u_0=1, u_{a+b}=0$, on obtient $u_k = \\frac{(q/p)^{a+b}-(q/p)^k}{(q/p)^{a+b}-1}$ après résolution du système linéaire.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Cas p égal q"],
+                q: "Lorsque $p=q=1/2$, quelle est la formule finale pour $u_k$ ?",
+                options: [
+                    { text: "$u_k = 1 - \\dfrac{k}{a+b}$", isCorrect: true },
+                    { text: "$u_k = \\dfrac{k}{a+b}$", isCorrect: false },
+                    { text: "$u_k = \\dfrac{1}{2}$ pour tout $k$", isCorrect: false },
+                    { text: "$u_k = 1 - \\left(\\dfrac{1}{2}\\right)^k$", isCorrect: false }
+                ],
+                explanation: "Quand $p=q=1/2$, la racine $r_2=q/p=1$ est double, donc la solution générale prend la forme $u_k = \\alpha + k\\beta$. Avec $u_0=1$ (donc $\\alpha=1$) et $u_{a+b}=0$ (donc $\\beta=-1/(a+b)$), on obtient $u_k = 1 - k/(a+b)$, linéaire en $k$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Racine double"],
+                q: "Pourquoi la forme des solutions $u_k$ change-t-elle qualitativement lorsque $p=q$ ?",
+                options: [
+                    { text: "Car l'équation caractéristique admet alors une racine double $r=1$, imposant une solution de la forme $\\alpha + k\\beta$ au lieu de $\\alpha r_1^k+\\beta r_2^k$", isCorrect: true },
+                    { text: "Car les probabilités deviennent négatives", isCorrect: false },
+                    { text: "Car la marche aléatoire n'est plus définie quand $p=q$", isCorrect: false },
+                    { text: "Car la joueuse ne peut plus être ruinée dans ce cas", isCorrect: false }
+                ],
+                explanation: "Pour une récurrence linéaire d'ordre 2 avec racine double $r$, l'espace des solutions est engendré par $r^k$ et $k\\,r^k$ (et non par deux puissances distinctes), ce qui change la forme générale de la solution — un résultat classique sur les équations de récurrence linéaires.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Conditions au bord"],
+                q: "Quelles sont les conditions au bord (valeurs connues) de la récurrence sur $(u_k)$ ?",
+                options: [
+                    { text: "$u_0 = 1$ et $u_{a+b} = 0$", isCorrect: true },
+                    { text: "$u_0 = 0$ et $u_{a+b} = 1$", isCorrect: false },
+                    { text: "$u_0 = 1/2$ et $u_{a+b} = 1/2$", isCorrect: false },
+                    { text: "$u_a = 1$ et $u_b = 0$", isCorrect: false }
+                ],
+                explanation: "$u_0=1$ car si la joueuse A a déjà une fortune nulle, elle est ruinée avec certitude ; $u_{a+b}=0$ car si elle possède toute la fortune totale, elle n'est jamais ruinée (le jeu s'est arrêté avec son adversaire ruiné).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Probabilités totales"],
+                q: "Quel outil probabiliste est utilisé pour établir la récurrence sur $P_k(R)$ ?",
+                options: [
+                    { text: "La formule des probabilités totales, en conditionnant sur le résultat $X_1$ du premier lancer", isCorrect: true },
+                    { text: "L'inégalité de Cauchy-Schwarz", isCorrect: false },
+                    { text: "Le théorème de convergence dominée", isCorrect: false },
+                    { text: "L'indépendance des évènements $R$ et $X_1$", isCorrect: false }
+                ],
+                explanation: "En conditionnant sur $X_1=1$ (probabilité $p$) ou $X_1=-1$ (probabilité $q$), la formule des probabilités totales donne $P_k(R) = P_{k+1}(R)p + P_{k-1}(R)q$, correspondant au fait que le jeu redémarre depuis une nouvelle fortune selon le résultat du premier lancer.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Interprétation"],
+                q: "Que représente l'évènement $R$ dans le problème de la ruine de la joueuse ?",
+                options: [
+                    { text: "\"La joueuse A est finalement ruinée\"", isCorrect: true },
+                    { text: "\"La joueuse A gagne le jeu\"", isCorrect: false },
+                    { text: "\"Le jeu ne se termine jamais\"", isCorrect: false },
+                    { text: "\"La pièce tombe sur pile au premier lancer\"", isCorrect: false }
+                ],
+                explanation: "$R$ désigne l'évènement où la fortune de A atteint 0 (elle perd tout son argent), et $u_k=P_k(R)$ est la probabilité de cet évènement lorsqu'elle démarre avec une fortune $k$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Ruine de la joueuse", "Extension"],
+                q: "Le cours mentionne qu'une approche similaire à celle utilisée pour $u_k$ permet de calculer :",
+                options: [
+                    { text: "L'espérance de la durée du jeu avant la ruine de l'une des deux joueuses", isCorrect: true },
+                    { text: "La probabilité que la pièce soit truquée", isCorrect: false },
+                    { text: "La variance de $p$", isCorrect: false },
+                    { text: "Le nombre total de parties jouées dans une vie", isCorrect: false }
+                ],
+                explanation: "Une méthode analogue (récurrence linéaire avec conditions au bord) permet d'obtenir l'espérance du temps d'arrêt du jeu, en plus de la probabilité de ruine.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Marche aléatoire", "Discriminant"],
+                q: "Que vaut le discriminant $\\Delta$ de l'équation caractéristique $pr^2-r+q=0$ ?",
+                options: [
+                    { text: "$\\Delta = (2p-1)^2$", isCorrect: true },
+                    { text: "$\\Delta = 1 - 4p$", isCorrect: false },
+                    { text: "$\\Delta = 4pq - 1$", isCorrect: false },
+                    { text: "$\\Delta = (p-q)^2 - 1$", isCorrect: false }
+                ],
+                explanation: "On calcule $\\Delta = 1 - 4pq$. En remplaçant $q=1-p$, on trouve $\\Delta = 1-4p(1-p) = 1-4p+4p^2 = (2p-1)^2 \\ge 0$, ce qui garantit deux racines réelles (éventuellement confondues si $p=1/2$).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Marche aléatoire", "Loi jointe des composantes"],
+                q: "Dans la preuve du cas $d=2$, comment vérifie-t-on que $\\tilde{X}_k^1$ et $\\tilde{X}_k^2$ sont indépendantes ?",
+                options: [
+                    { text: "En montrant que $P(\\tilde{X}_k=(j,\\ell)) = P(\\tilde{X}_k^1=j)P(\\tilde{X}_k^2=\\ell) = 1/4$ pour tout $(j,\\ell) \\in \\{-1,1\\}^2$", isCorrect: true },
+                    { text: "En supposant l'indépendance sans preuve", isCorrect: false },
+                    { text: "En calculant uniquement $E(\\tilde{X}_k^1)$ et $E(\\tilde{X}_k^2)$", isCorrect: false },
+                    { text: "En utilisant l'inégalité de Bienaymé-Tchebychev", isCorrect: false }
+                ],
+                explanation: "On vérifie directement la caractérisation de l'indépendance (Théorème 5.16) : la loi jointe se factorise en produit des lois marginales pour chaque couple de valeurs, ce qui confirme l'indépendance de $\\tilde{X}_k^1$ et $\\tilde{X}_k^2$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Marche aléatoire", "Loi marginale des composantes"],
+                q: "Dans la preuve du cas $d=2$, quelle est la loi de chacune des composantes $\\tilde{X}_k^1$ et $\\tilde{X}_k^2$ ?",
+                options: [
+                    { text: "La loi uniforme sur $\\{-1,1\\}$", isCorrect: true },
+                    { text: "La loi de Bernoulli de paramètre $1/4$", isCorrect: false },
+                    { text: "La loi uniforme sur $\\{-1,0,1\\}$", isCorrect: false },
+                    { text: "La loi binomiale $\\text{Bin}(2,1/2)$", isCorrect: false }
+                ],
+                explanation: "En sommant les probabilités jointes correspondant aux deux valeurs possibles, on obtient $P(\\tilde{X}_k^1=1)=P(\\tilde{X}_k^1=-1)=1/2$, soit une loi uniforme sur $\\{-1,1\\}$, identique à la marche symétrique en dimension 1.",
                 stats: { attempts: 0, correct: 0, partial: 0 },
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             }
