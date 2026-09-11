@@ -6336,9 +6336,8 @@ const defaultData = {
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             }
         ]
-    }
-};
-{
+    },
+
     "Probabilités : Chapitre 1 - Modélisation des phénomènes aléatoires": {
         stats: { attempts: 0, correct: 0 },
         dailyValidations: {},
@@ -9808,8 +9807,7 @@ const defaultData = {
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             }
         ]
-    }
-}
+    },
 "Programmation C : Chapitre 1 (Introduction)": {
         course: "prog_c",
         folder: "Informatique",
