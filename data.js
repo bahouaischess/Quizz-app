@@ -6338,3 +6338,1255 @@ const defaultData = {
         ]
     }
 };
+{
+    "Probabilités : Chapitre 1 - Modélisation des phénomènes aléatoires": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            {
+                type: "qcm",
+                tags: ["Univers", "Définitions"],
+                q: "Que représente l'espace des états (ou univers) $\\Omega$ dans la modélisation d'une expérience aléatoire ?",
+                options: [
+                    { text: "L'ensemble de tous les résultats possibles de l'expérience", isCorrect: true },
+                    { text: "L'ensemble des évènements considérés comme réalisables", isCorrect: false },
+                    { text: "La probabilité associée à chaque résultat", isCorrect: false },
+                    { text: "Un sous-ensemble particulier des résultats jugés probables", isCorrect: false }
+                ],
+                explanation: "Par définition (Définition 1.1), $\\Omega$ est l'ensemble des résultats possibles $\\omega$ de l'expérience aléatoire, noté $\\omega \\in \\Omega$. Ce n'est pas l'ensemble des évènements (qui est $\\mathcal{F} \\subset \\mathcal{P}(\\Omega)$), ni une notion probabiliste.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Univers", "Choix de modèle"],
+                q: "Concernant le choix de l'espace des états $\\Omega$ pour modéliser une expérience aléatoire, quelles affirmations sont correctes ?",
+                options: [
+                    { text: "Le choix de $\\Omega$ n'est pas nécessairement unique", isCorrect: true },
+                    { text: "$\\Omega$ peut être fini, dénombrable ou infini non dénombrable", isCorrect: true },
+                    { text: "Un seul choix d'univers est mathématiquement valide pour une expérience donnée", isCorrect: false },
+                    { text: "$\\Omega$ doit toujours être un ensemble de nombres réels", isCorrect: false }
+                ],
+                explanation: "Le cours précise qu'il n'y a pas forcément unicité du modèle : par exemple pour la somme de deux dés, on peut choisir $\\Omega_1 = \\{1,\\dots,6\\}^2$ ou $\\Omega_2 = \\{2,\\dots,12\\}$. $\\Omega$ peut être de natures très différentes (fini, dénombrable, espace de fonctions, etc.).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tribu", "Axiomes"],
+                q: "Quelles conditions un ensemble $\\mathcal{F}$ de parties de $\\Omega$ doit-il satisfaire pour être une tribu (σ-algèbre) ?",
+                options: [
+                    { text: "$\\Omega \\in \\mathcal{F}$", isCorrect: true },
+                    { text: "Si $A \\in \\mathcal{F}$, alors $A^c \\in \\mathcal{F}$", isCorrect: true },
+                    { text: "Si $(A_n)_{n \\geq 1}$ est une suite d'éléments de $\\mathcal{F}$, alors $\\bigcup_{n\\geq 1} A_n \\in \\mathcal{F}$", isCorrect: true },
+                    { text: "$\\mathcal{F}$ doit contenir uniquement des singletons de $\\Omega$", isCorrect: false }
+                ],
+                explanation: "La Définition 1.3 donne exactement ces trois axiomes : stabilité par le complémentaire, stabilité par réunion dénombrable, et $\\Omega \\in \\mathcal{F}$ (ce qui implique $\\emptyset \\in \\mathcal{F}$ par complémentation). La stabilité par intersection dénombrable en découle par les lois de De Morgan.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tribu"],
+                q: "Quelle est la tribu la plus petite (au sens de l'inclusion) que l'on puisse définir sur $\\Omega$ ?",
+                options: [
+                    { text: "$\\{\\emptyset, \\Omega\\}$, appelée tribu grossière ou triviale", isCorrect: true },
+                    { text: "$\\mathcal{P}(\\Omega)$", isCorrect: false },
+                    { text: "L'ensemble des singletons de $\\Omega$", isCorrect: false },
+                    { text: "La tribu engendrée par un évènement $A$ quelconque", isCorrect: false }
+                ],
+                explanation: "$\\{\\emptyset, \\Omega\\}$ est bien une tribu (elle vérifie les trois axiomes) et c'est la plus petite possible car toute tribu doit contenir au minimum $\\Omega$ et $\\emptyset$. À l'inverse, $\\mathcal{P}(\\Omega)$ est la plus grande tribu possible.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tribu", "Cas fini/dénombrable"],
+                q: "Dans quel(s) cas choisit-on typiquement $\\mathcal{F} = \\mathcal{P}(\\Omega)$ comme tribu d'évènements ?",
+                options: [
+                    { text: "Lorsque $\\Omega$ est fini", isCorrect: true },
+                    { text: "Lorsque $\\Omega$ est dénombrable", isCorrect: true },
+                    { text: "Systématiquement, quel que soit $\\Omega$, y compris infini non dénombrable", isCorrect: false },
+                    { text: "Uniquement lorsque $\\Omega$ est un intervalle de $\\mathbb{R}$", isCorrect: false }
+                ],
+                explanation: "Le cours précise que $\\mathcal{P}(\\Omega)$ est choisie lorsque $\\Omega$ est fini ou dénombrable. Lorsque $\\Omega$ est infini non dénombrable, cette tribu est typiquement trop grande (il devient impossible d'y définir une probabilité cohérente sur toutes les parties), d'où l'usage de tribus plus restreintes comme la tribu borélienne.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tribu", "Tribu engendrée"],
+                q: "Comment est définie la tribu engendrée $\\sigma(\\mathcal{C})$ par une classe $\\mathcal{C} \\subset \\mathcal{P}(\\Omega)$ ?",
+                options: [
+                    { text: "C'est la plus petite tribu contenant $\\mathcal{C}$", isCorrect: true },
+                    { text: "C'est l'intersection de toutes les tribus contenant $\\mathcal{C}$", isCorrect: true },
+                    { text: "C'est la réunion de tous les éléments de $\\mathcal{C}$", isCorrect: false },
+                    { text: "C'est toujours égale à $\\mathcal{P}(\\Omega)$", isCorrect: false }
+                ],
+                explanation: "$\\sigma(\\mathcal{C})$ est définie comme $\\bigcap_{\\{\\mathcal{F} : \\mathcal{F} \\text{ tribu contenant } \\mathcal{C}\\}} \\mathcal{F}$. Cette intersection existe car $\\mathcal{P}(\\Omega)$ est toujours une telle tribu, c'est bien une tribu (une intersection de tribus est une tribu), elle contient $\\mathcal{C}$, et c'est la plus petite car on prend l'intersection de toutes les candidates.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tribu borélienne"],
+                q: "Comment est définie la tribu borélienne $\\mathcal{B}(\\mathbb{R})$ ?",
+                options: [
+                    { text: "La tribu engendrée par l'ensemble des intervalles ouverts $]a,b[$ avec $a<b$", isCorrect: true },
+                    { text: "Elle peut aussi être engendrée par les intervalles de la forme $]-\\infty, a]$, $a \\in \\mathbb{R}$", isCorrect: true },
+                    { text: "L'ensemble $\\mathcal{P}(\\mathbb{R})$ de toutes les parties de $\\mathbb{R}$", isCorrect: false },
+                    { text: "L'ensemble des singletons de $\\mathbb{R}$", isCorrect: false }
+                ],
+                explanation: "La Définition 1.7 introduit $\\mathcal{B}(\\mathbb{R})$ comme la tribu engendrée par les intervalles ouverts. Une remarque du cours indique que cette même tribu est aussi engendrée par les intervalles $]-\\infty, a]$. Ce n'est pas $\\mathcal{P}(\\mathbb{R})$ (qui serait trop grande pour porter une mesure de probabilité cohérente).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tribu engendrée", "Exemples"],
+                q: "Soit $A \\in \\mathcal{P}(\\Omega)$ avec $A \\neq \\emptyset$ et $A \\neq \\Omega$. Quelle est la tribu engendrée par $\\{A\\}$ ?",
+                options: [
+                    { text: "$\\sigma(A) = \\{\\emptyset, A, A^c, \\Omega\\}$", isCorrect: true },
+                    { text: "$\\sigma(A) = \\{A\\}$", isCorrect: false },
+                    { text: "$\\sigma(A) = \\mathcal{P}(\\Omega)$", isCorrect: false },
+                    { text: "$\\sigma(A) = \\{\\emptyset, \\Omega\\}$", isCorrect: false }
+                ],
+                explanation: "Pour être une tribu, l'ensemble doit contenir $\\Omega$, être stable par complémentation (donc contenir $A^c$) et par réunion (donc $A \\cup A^c = \\Omega$, déjà présent, et $\\emptyset$ via complémentation de $\\Omega$). Le plus petit ensemble satisfaisant ces propriétés et contenant $A$ est exactement $\\{\\emptyset, A, A^c, \\Omega\\}$ (Exemple 1.9).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Vocabulaire", "Évènements"],
+                q: "Concernant la correspondance entre terminologie ensembliste et probabiliste, quelles affirmations sont exactes ?",
+                options: [
+                    { text: "$A \\cup B$ correspond à l'évènement « A ou B » au sens non exclusif", isCorrect: true },
+                    { text: "$A \\cap B = \\emptyset$ signifie que A et B sont incompatibles", isCorrect: true },
+                    { text: "$A \\subset B$ signifie que si A est réalisé alors B l'est aussi", isCorrect: true },
+                    { text: "$A^c$ correspond à l'ensemble vide", isCorrect: false }
+                ],
+                explanation: "Le tableau de correspondance du cours établit ces équivalences : $A\\cup B$ = « A ou B » (non exclusif), $A \\cap B = \\emptyset$ = A et B incompatibles, $A \\subset B$ = si A réalisé alors B aussi. $A^c$ est l'évènement contraire de A, pas l'ensemble vide.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Opérations", "De Morgan"],
+                q: "Parmi les propriétés suivantes sur les opérations d'évènements, lesquelles sont correctes ?",
+                options: [
+                    { text: "$(A \\cup B)^c = A^c \\cap B^c$ (loi de De Morgan)", isCorrect: true },
+                    { text: "$(A \\cap B)^c = A^c \\cup B^c$ (loi de De Morgan)", isCorrect: true },
+                    { text: "$(A \\cup B) \\cap C = (A \\cap C) \\cup (B \\cap C)$ (distributivité)", isCorrect: true },
+                    { text: "$(A \\cup B)^c = A^c \\cup B^c$", isCorrect: false }
+                ],
+                explanation: "La Propriété 1.6 donne les lois de De Morgan $(A\\cup B)^c = A^c \\cap B^c$ et $(A\\cap B)^c = A^c \\cup B^c$, ainsi que la distributivité de l'intersection sur l'union. La dernière option confond union et intersection dans la loi de De Morgan et est donc fausse.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité", "Axiomes de Kolmogorov"],
+                q: "Quels sont les deux axiomes définissant une mesure de probabilité $P$ sur $(\\Omega, \\mathcal{F})$ ?",
+                options: [
+                    { text: "$P(\\Omega) = 1$", isCorrect: true },
+                    { text: "σ-additivité : pour toute famille dénombrable $(A_n)_{n\\geq 1}$ d'évènements deux-à-deux disjoints, $P(\\bigcup_{n\\geq 1} A_n) = \\sum_{n=1}^{+\\infty} P(A_n)$", isCorrect: true },
+                    { text: "$P(A) = P(A^c)$ pour tout évènement $A$", isCorrect: false },
+                    { text: "$P$ doit être une fonction strictement croissante", isCorrect: false }
+                ],
+                explanation: "La Définition 1.10 pose exactement ces deux axiomes : la probabilité de l'évènement certain vaut 1, et la σ-additivité pour les familles dénombrables d'évènements disjoints. Toutes les autres propriétés (P(∅)=0, complémentaire, monotonie, etc.) s'en déduisent comme corollaires.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité", "Propriétés"],
+                q: "Que vaut $P(\\emptyset)$ pour toute mesure de probabilité $P$, et comment le démontre-t-on ?",
+                options: [
+                    { text: "$P(\\emptyset) = 0$", isCorrect: true },
+                    { text: "On l'obtient en appliquant la σ-additivité à la famille $(A_n)_{n\\geq 1}$ où $A_n = \\emptyset$ pour tout $n$", isCorrect: true },
+                    { text: "$P(\\emptyset) = 1$", isCorrect: false },
+                    { text: "C'est un axiome supplémentaire, non démontrable", isCorrect: false }
+                ],
+                explanation: "En appliquant la σ-additivité à la famille $(\\emptyset)_{n\\geq1}$ (deux-à-deux disjoints, trivialement), on obtient $P(\\emptyset) = \\sum_{n\\geq1} P(\\emptyset)$, une série dont chaque terme est identique et qui ne converge que si $P(\\emptyset)=0$ (Corollaire 1.12, Point 1).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité", "Propriétés"],
+                q: "Soit $(\\Omega, \\mathcal{F}, P)$ un espace probabilisé et $A, B \\in \\mathcal{F}$. Quelles formules sont correctes ?",
+                options: [
+                    { text: "$P(A^c) = 1 - P(A)$", isCorrect: true },
+                    { text: "$P(B \\setminus A) = P(B) - P(A \\cap B)$", isCorrect: true },
+                    { text: "Si $A \\subset B$ alors $P(A) \\leq P(B)$", isCorrect: true },
+                    { text: "$P(B \\setminus A) = P(B) - P(A)$ en toute généralité", isCorrect: false }
+                ],
+                explanation: "Le Corollaire 1.12 donne : $P(A^c)=1-P(A)$ (points 1 et 2 appliqués à $A,A^c$), $P(B\\setminus A)=P(B)-P(A\\cap B)$ (Point 4), et la monotonie (Point 5). La dernière formule n'est correcte que si $A \\subset B$ ; en général il faut soustraire $P(A\\cap B)$ et non $P(A)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité", "Formule du crible"],
+                q: "Quelle est la formule du crible (cas de deux évènements) et sa généralisation (formule de Poincaré) ?",
+                options: [
+                    { text: "$P(A \\cup B) = P(A) + P(B) - P(A \\cap B)$", isCorrect: true },
+                    { text: "Pour $n$ évènements, la formule de Poincaré alterne les signes selon le cardinal des intersections multiples", isCorrect: true },
+                    { text: "$P(A \\cup B) = P(A) + P(B)$ pour tous A, B", isCorrect: false },
+                    { text: "$P(A \\cup B) = P(A) \\cdot P(B)$", isCorrect: false }
+                ],
+                explanation: "La formule du crible $P(A\\cup B) = P(A)+P(B)-P(A\\cap B)$ se généralise en la formule de Poincaré $P\\left(\\bigcup_{i=1}^n A_i\\right) = \\sum_{i=1}^n (-1)^{i-1} \\sum_{J \\subset \\{1,\\dots,n\\}, |J|=i} P\\left(\\bigcap_{k \\in J} A_k\\right)$, une somme alternée sur les intersections de tailles croissantes.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité", "Sous-additivité", "Limites"],
+                q: "Concernant la Proposition 1.13 sur les suites d'évènements, quelles affirmations sont correctes ?",
+                options: [
+                    { text: "$P(\\bigcup_{n\\geq1} A_n) \\leq \\sum_{n\\geq1} P(A_n)$ (sous-additivité)", isCorrect: true },
+                    { text: "Si $(A_n)$ est croissante et $A = \\bigcup_{n\\geq1} A_n$, alors $P(A) = \\lim_{n\\to+\\infty} P(A_n)$", isCorrect: true },
+                    { text: "Si $(B_n)$ est décroissante et $B = \\bigcap_{n\\geq1} B_n$, alors $P(B) = \\lim_{n\\to+\\infty} P(B_n)$", isCorrect: true },
+                    { text: "La sous-additivité devient toujours une égalité stricte", isCorrect: false }
+                ],
+                explanation: "La sous-additivité découle de la construction d'une famille disjointe $C_n = A_n \\setminus A_{n-1}$ et n'est une égalité que si les $A_n$ sont eux-mêmes disjoints. La continuité monotone (croissante et décroissante) de la probabilité est démontrée via cette même famille $(C_n)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Cas fini", "Probabilité uniforme"],
+                q: "Dans un univers $\\Omega$ fini muni de la probabilité uniforme, comment calcule-t-on $P(A)$ pour $A \\in \\mathcal{P}(\\Omega)$ ?",
+                options: [
+                    { text: "$P(A) = \\dfrac{\\text{card}(A)}{\\text{card}(\\Omega)}$", isCorrect: true },
+                    { text: "$P(\\{\\omega\\}) = \\dfrac{1}{\\text{card}(\\Omega)}$ pour tout $\\omega \\in \\Omega$", isCorrect: true },
+                    { text: "$P(A) = \\text{card}(A)$", isCorrect: false },
+                    { text: "$P(A)$ dépend de la nature des éléments de $A$, pas seulement de son cardinal", isCorrect: false }
+                ],
+                explanation: "La Définition 1.15 précise que sous l'hypothèse d'équiprobabilité, chaque singleton a la même probabilité $1/\\text{card}(\\Omega)$, et donc $P(A) = \\text{card}(A)/\\text{card}(\\Omega)$ pour tout évènement $A$ : seul le cardinal de $A$ compte.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Combinatoire", "Tirage avec remise ordonné"],
+                q: "On tire un échantillon ordonné de taille $r$ avec remise dans une population de taille $N$. Combien d'échantillons distincts sont possibles ?",
+                options: [
+                    { text: "$N^r$", isCorrect: true },
+                    { text: "$\\dfrac{N!}{(N-r)!}$", isCorrect: false },
+                    { text: "$\\binom{N}{r}$", isCorrect: false },
+                    { text: "$\\binom{N+r-1}{r}$", isCorrect: false }
+                ],
+                explanation: "Pour un tirage ordonné avec remise, chaque tirage a $N$ possibilités indépendamment des précédents, donnant $N^r$ échantillons possibles (Exemple : jeter un dé 5 fois donne $6^5$ tirages). Les autres formules correspondent respectivement au tirage ordonné sans remise, au tirage non ordonné sans remise, et au tirage non ordonné avec remise.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Combinatoire", "Tirage sans remise ordonné"],
+                q: "Combien y a-t-il d'échantillons ordonnés de taille $r \\leq N$ sans répétition (arrangements) dans une population de taille $N$ ?",
+                options: [
+                    { text: "$A_N^r = N(N-1)\\dots(N-r+1) = \\dfrac{N!}{(N-r)!}$", isCorrect: true },
+                    { text: "$N^r$", isCorrect: false },
+                    { text: "$\\binom{N}{r}$", isCorrect: false },
+                    { text: "$r!$", isCorrect: false }
+                ],
+                explanation: "Pour un tirage sans remise, il y a $N$ choix pour le premier élément, $N-1$ pour le second (l'élément déjà tiré étant exclu), etc., jusqu'à $N-r+1$ pour le $r$-ième, soit $N(N-1)\\dots(N-r+1) = N!/(N-r)!$, noté $A_N^r$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Combinatoire", "Coefficient binomial"],
+                q: "Le nombre de sous-populations (non ordonnées) de taille $r$ sans répétition choisies parmi $N$ individus est appelé coefficient binomial et vaut :",
+                options: [
+                    { text: "$\\binom{N}{r} = \\dfrac{N!}{(N-r)!\\, r!}$", isCorrect: true },
+                    { text: "$\\dfrac{N!}{(N-r)!}$", isCorrect: false },
+                    { text: "$N^r$", isCorrect: false },
+                    { text: "$r! \\cdot \\binom{N}{r}$ donne le nombre d'échantillons ordonnés sans répétition associés à chaque combinaison", isCorrect: true }
+                ],
+                explanation: "Le coefficient binomial $\\binom{N}{r} = \\frac{N!}{(N-r)!r!}$ compte les combinaisons (sous-ensembles non ordonnés). Chaque sous-ensemble à $r$ éléments donne $r!$ arrangements ordonnés, d'où la relation $\\text{card}(\\Omega_2) = r! \\cdot \\text{card}(\\Omega_3)$, c'est-à-dire $A_N^r = r! \\binom{N}{r}$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Combinatoire", "Tirage avec remise non ordonné"],
+                q: "Combien de sous-populations de taille $r$ avec répétitions (tirage non ordonné avec remise) peut-on former à partir de $N$ individus ?",
+                options: [
+                    { text: "$\\binom{N+r-1}{r}$", isCorrect: true },
+                    { text: "$\\binom{N+r-1}{N-1}$", isCorrect: true },
+                    { text: "$N^r$", isCorrect: false },
+                    { text: "$\\binom{N}{r}$", isCorrect: false }
+                ],
+                explanation: "Ce dénombrement (méthode des « étoiles et barres ») revient à placer $r$ boules indistinguables dans $N$ urnes, soit à disposer $N-1$ cloisons parmi $N+r-1$ positions : $\\binom{N+r-1}{N-1} = \\binom{N+r-1}{r}$ (ces deux écritures sont égales par symétrie du coefficient binomial).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Combinatoire", "Coefficient multinomial"],
+                q: "Le nombre d'anagrammes du mot CHERCHER (8 lettres, avec les répétitions C×2, H×2, E×2, R×2) se calcule avec :",
+                options: [
+                    { text: "$\\dfrac{8!}{2!\\,2!\\,2!\\,2!}$, un coefficient multinomial", isCorrect: true },
+                    { text: "$8!$", isCorrect: false },
+                    { text: "$\\binom{8}{2}$", isCorrect: false },
+                    { text: "Le coefficient multinomial $\\binom{N}{r_1 \\dots r_k}$ compte le nombre de façons de répartir $N$ objets en $k$ familles de tailles fixées $r_1,\\dots,r_k$", isCorrect: true }
+                ],
+                explanation: "Le coefficient multinomial $\\binom{N}{r_1\\dots r_k} = \\frac{N!}{r_1!\\dots r_k!}$ généralise le coefficient binomial à plus de deux catégories. Pour CHERCHER, on partitionne les 8 positions en 4 lettres répétées 2 fois chacune, d'où $8!/(2!)^4$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Combinatoire", "Loi hypergéométrique"],
+                q: "Une urne contient $N_a$ individus de catégorie a et $N_b = N - N_a$ de catégorie b. On tire une sous-population de taille $r$ sans répétition. Quelle est la probabilité de tirer exactement $k$ individus de catégorie a ?",
+                options: [
+                    { text: "$P(A_k) = \\dfrac{\\binom{N_a}{k}\\binom{N-N_a}{r-k}}{\\binom{N}{r}}$", isCorrect: true },
+                    { text: "$P(A_k) = \\binom{r}{k}\\left(\\dfrac{N_a}{N}\\right)^k\\left(\\dfrac{N_b}{N}\\right)^{r-k}$", isCorrect: false },
+                    { text: "C'est un exemple de loi hypergéométrique", isCorrect: true },
+                    { text: "C'est un exemple de loi de Poisson", isCorrect: false }
+                ],
+                explanation: "Ce tirage sans remise donne la loi hypergéométrique $P(A_k) = \\binom{N_a}{k}\\binom{N-N_a}{r-k} / \\binom{N}{r}$. La deuxième option correspond en fait à la loi binomiale, qui s'obtient dans le cas d'un tirage AVEC remise, et qui apparaît aussi comme limite de la loi hypergéométrique quand $N \\to +\\infty$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Combinatoire", "Limite hypergéométrique-binomiale"],
+                q: "Que se passe-t-il lorsque, dans un tirage hypergéométrique, le nombre total de boules $N$ tend vers l'infini avec $N_a/N \\to p$ (r et k fixés) ?",
+                options: [
+                    { text: "$P(A_k)$ converge vers $\\binom{r}{k} p^k (1-p)^{r-k}$, la probabilité binomiale", isCorrect: true },
+                    { text: "Ce résultat est intuitif car pour un grand nombre de boules, tirer avec ou sans remise change peu de choses", isCorrect: true },
+                    { text: "$P(A_k)$ diverge vers l'infini", isCorrect: false },
+                    { text: "$P(A_k)$ tend toujours vers 0", isCorrect: false }
+                ],
+                explanation: "Le cours démontre que la loi hypergéométrique converge vers la loi binomiale $\\binom{r}{k}p^k(1-p)^{r-k}$ quand $N \\to +\\infty$ avec $N_a/N \\to p$. L'intuition est que sur une population immense, la probabilité de retirer deux fois le même individu devient négligeable, rendant le tirage sans remise proche du tirage avec remise.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Cas dénombrable"],
+                q: "On lance une pièce équilibrée jusqu'à l'obtention du premier pile. On prend $\\Omega = \\mathbb{N}^* \\cup \\{\\infty\\}$ avec $P(\\{k\\}) = 1/2^k$. Quelle est la probabilité que pile ne sorte jamais ?",
+                options: [
+                    { text: "$P(\\{\\infty\\}) = 0$", isCorrect: true },
+                    { text: "$P(\\{\\infty\\}) = 1 - \\sum_{k=1}^{+\\infty} \\frac{1}{2^k} = 1 - 1 = 0$", isCorrect: true },
+                    { text: "$P(\\{\\infty\\}) = 1/2$", isCorrect: false },
+                    { text: "$P(\\{\\infty\\})$ n'est pas définie car $\\Omega$ est infini", isCorrect: false }
+                ],
+                explanation: "Comme $\\mathbb{N}^*$ et $\\{\\infty\\}$ partitionnent $\\Omega$, $1 = P(\\{\\infty\\}) + \\sum_{k=1}^{+\\infty} P(\\{k\\})$. Or $\\sum_{k=1}^{+\\infty} \\frac{1}{2^k} = 1$ (série géométrique), donc $P(\\{\\infty\\}) = 1-1 = 0$ : l'univers est bien dénombrable et la probabilité est parfaitement définie même si $\\Omega$ est infini.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Cas dénombrable"],
+                q: "Dans l'exemple précédent (lancers de pièce jusqu'au premier pile), quelle est la probabilité que le premier pile sorte après un nombre pair de lancers, $P(\\{2,4,6,\\dots\\})$ ?",
+                options: [
+                    { text: "$P = \\sum_{k=1}^{+\\infty} \\frac{1}{2^{2k}} = \\frac{1}{3}$", isCorrect: true },
+                    { text: "$P = 1/2$", isCorrect: false },
+                    { text: "$P = 1$", isCorrect: false },
+                    { text: "Le calcul utilise une somme géométrique de raison $1/4$", isCorrect: true }
+                ],
+                explanation: "$P(\\{2,4,6,\\dots\\}) = \\sum_{k\\geq1} P(\\{2k\\}) = \\sum_{k\\geq1} \\frac{1}{2^{2k}} = \\sum_{k\\geq1} \\left(\\frac{1}{4}\\right)^k = \\frac{1/4}{1-1/4} = \\frac{1}{3}$, série géométrique de raison $1/4$ et premier terme $1/4$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Cas général", "Mesure de Dirac"],
+                q: "Qu'est-ce que la mesure de Dirac $\\delta_{\\omega_0}$ en un point $\\omega_0 \\in \\Omega$ ?",
+                options: [
+                    { text: "La probabilité définie par $\\delta_{\\omega_0}(A) = 1$ si $\\omega_0 \\in A$, et $0$ sinon", isCorrect: true },
+                    { text: "Une mesure qui charge tout $\\Omega$ de manière uniforme", isCorrect: false },
+                    { text: "Une probabilité telle que $\\Omega \\setminus \\{\\omega_0\\}$ est négligeable", isCorrect: true },
+                    { text: "Une mesure qui n'existe que dans le cas fini", isCorrect: false }
+                ],
+                explanation: "$\\delta_{\\omega_0}$ « concentre » toute la masse de probabilité sur le point $\\omega_0$. Elle vaut 1 sur tout évènement contenant $\\omega_0$ et 0 sinon, ce qui rend $\\Omega\\setminus\\{\\omega_0\\}$ négligeable et $\\omega_0$ (au sens des propriétés qu'il satisfait) presque sûr. Elle est définie dans un cadre d'univers général, pas seulement fini.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Cas général", "π-système"],
+                q: "Quel résultat théorique permet de caractériser une mesure de probabilité par ses valeurs sur une classe restreinte d'évènements $\\mathcal{C}$ ?",
+                options: [
+                    { text: "Si $\\mathcal{C}$ est stable par intersections finies (π-système) et $\\sigma(\\mathcal{C}) = \\mathcal{F}$, alors la mesure est entièrement déterminée par ses valeurs sur $\\mathcal{C}$", isCorrect: true },
+                    { text: "Ce résultat découle du lemme de classe monotone", isCorrect: true },
+                    { text: "Une mesure de probabilité sur $(\\mathbb{R}, \\mathcal{B}(\\mathbb{R}))$ est entièrement déterminée par sa valeur sur les intervalles $]-\\infty, x]$", isCorrect: true },
+                    { text: "Ce résultat garantit également l'existence de la mesure sans autre argument", isCorrect: false }
+                ],
+                explanation: "Le cours mentionne que, comme conséquence du lemme de classe monotone, une mesure de probabilité est entièrement déterminée par ses valeurs sur un π-système générateur. L'existence de la mesure est une question distincte, plus délicate, nécessitant par exemple le théorème d'extension de Carathéodory.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Combinatoire", "Application numérique"],
+                q: "On jette un dé équilibré 5 fois de suite. Quelle est (approximativement) la probabilité d'obtenir 5 résultats tous distincts ?",
+                options: [
+                    { text: "$\\dfrac{6 \\cdot 5 \\cdot 4 \\cdot 3 \\cdot 2}{6^5} \\approx 0{,}09$", isCorrect: true },
+                    { text: "Cette probabilité est le rapport entre un tirage sans remise et un tirage avec remise sur le même univers", isCorrect: true },
+                    { text: "$\\dfrac{1}{6^5}$", isCorrect: false },
+                    { text: "$\\dfrac{5!}{6!}$", isCorrect: false }
+                ],
+                explanation: "On choisit $\\Omega_1 = \\{1,\\dots,6\\}^5$ (tirage avec remise, équiprobable), et l'évènement « tous distincts » correspond à $\\Omega_2$ (tirage sans remise) : $P(A) = \\text{card}(\\Omega_2)/\\text{card}(\\Omega_1) = A_6^5/6^5 = (6\\cdot5\\cdot4\\cdot3\\cdot2)/6^5 \\approx 0{,}09$ (Exemple 1.19).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Combinatoire", "Applications"],
+                q: "Pour une main de poker (5 cartes tirées parmi un jeu de 32), quelle démarche permet de calculer la probabilité que les 5 hauteurs soient toutes différentes ?",
+                options: [
+                    { text: "Choisir 5 hauteurs parmi 8 : $\\binom{8}{5}$ façons, puis choisir la couleur de chaque carte : $4^5$ façons", isCorrect: true },
+                    { text: "La probabilité recherchée est $\\dfrac{\\binom{8}{5} \\cdot 4^5}{\\binom{32}{5}}$", isCorrect: true },
+                    { text: "Il suffit de calculer $\\binom{32}{5}$ sans autre choix supplémentaire", isCorrect: false },
+                    { text: "On utilise un tirage avec remise pour modéliser la main de poker", isCorrect: false }
+                ],
+                explanation: "Il y a $\\binom{32}{5}$ mains possibles au total (tirage sans remise, non ordonné). Pour avoir 5 hauteurs distinctes, on choisit d'abord les 8 hauteurs parmi 8 possibles via $\\binom{8}{5}$, puis pour chaque hauteur on choisit une des 4 couleurs, soit $4^5$ combinaisons, d'où $\\text{card}(A) = \\binom{8}{5}4^5$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Vocabulaire", "Presque-sûr"],
+                q: "Que signifie qu'un évènement $A$ est « négligeable » ou « presque-sûr » ?",
+                options: [
+                    { text: "$A$ est négligeable si $P(A) = 0$", isCorrect: true },
+                    { text: "$A$ est presque-sûr si $P(A) = 1$", isCorrect: true },
+                    { text: "$A$ négligeable signifie que $A = \\emptyset$ nécessairement", isCorrect: false },
+                    { text: "$A$ presque-sûr signifie que $A = \\Omega$ nécessairement", isCorrect: false }
+                ],
+                explanation: "La Définition 1.11 introduit ces termes : négligeable si $P(A)=0$, presque-sûr si $P(A)=1$. Ces notions ne sont pas équivalentes à $A=\\emptyset$ ou $A=\\Omega$ : dans le cas continu (par exemple), un singleton peut avoir une probabilité nulle sans être l'ensemble vide.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            }
+        ]
+    },
+    "Probabilités : Chapitre 2 - Conditionnement et indépendance": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            {
+                type: "qcm",
+                tags: ["Probabilité conditionnelle", "Définition"],
+                q: "Comment est définie la probabilité conditionnelle $P(A|B)$ pour $B$ tel que $P(B) > 0$ ?",
+                options: [
+                    { text: "$P(A|B) = \\dfrac{P(A \\cap B)}{P(B)}$", isCorrect: true },
+                    { text: "$P(A|B) = P(A) \\cdot P(B)$", isCorrect: false },
+                    { text: "$P(A|B) = P(A) - P(B)$", isCorrect: false },
+                    { text: "$P(A|B) = \\dfrac{P(B)}{P(A \\cap B)}$", isCorrect: false }
+                ],
+                explanation: "La Définition 2.1 pose $P(A|B) = P(A\\cap B)/P(B)$, qui nécessite $P(B) > 0$ pour être définie. Intuitivement, on « restreint » l'univers à $B$ et on regarde la proportion de $A\\cap B$ dans ce nouvel univers.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité conditionnelle", "Propriétés"],
+                q: "Que peut-on dire de l'application $P(\\cdot | B) : \\mathcal{F} \\to \\mathbb{R}_+$, $A \\mapsto P(A|B)$ (avec $P(B)>0$) ?",
+                options: [
+                    { text: "C'est une probabilité sur $(\\Omega, \\mathcal{F})$", isCorrect: true },
+                    { text: "Le triplet $(\\Omega, \\mathcal{F}, P(\\cdot|B))$ est un espace probabilisé", isCorrect: true },
+                    { text: "Elle satisfait donc toutes les propriétés générales des probabilités (Corollaire 1.12, Proposition 1.13)", isCorrect: true },
+                    { text: "Elle n'est définie que sur les sous-ensembles de $B$", isCorrect: false }
+                ],
+                explanation: "Le Lemme 2.2 démontre que $P(\\cdot|B)$ vérifie les trois axiomes d'une probabilité (bornes dans [0,1], $P(\\Omega|B)=1$, σ-additivité), donc c'est bien une probabilité sur l'ensemble de $\\mathcal{F}$ (pas seulement sur les sous-ensembles de $B$), et hérite donc de toutes les propriétés générales déjà établies.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité conditionnelle", "Probabilités composées"],
+                q: "Si $P(A) > 0$ et $P(B) > 0$, quelle identité relie $P(A\\cap B)$, $P(A|B)$ et $P(B|A)$ ?",
+                options: [
+                    { text: "$P(A \\cap B) = P(B|A)\\,P(A) = P(A|B)\\,P(B)$", isCorrect: true },
+                    { text: "$P(A \\cap B) = P(A|B) + P(B|A)$", isCorrect: false },
+                    { text: "$P(A \\cap B) = P(A) \\cdot P(B)$ dans tous les cas", isCorrect: false },
+                    { text: "$P(A \\cap B) = P(A|B) \\cdot P(B|A)$", isCorrect: false }
+                ],
+                explanation: "C'est la formule des probabilités composées (Proposition 2.4, Point 1), obtenue simplement en réécrivant la définition de la probabilité conditionnelle des deux façons possibles. L'égalité $P(A\\cap B) = P(A)P(B)$ n'est vraie que dans le cas particulier de l'indépendance.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité conditionnelle", "Probabilités composées"],
+                q: "Quelle est la formule des probabilités composées généralisée à $n$ évènements $A_1, \\dots, A_n$ (avec $P(\\cap_{i=1}^{n-1} A_i) > 0$) ?",
+                options: [
+                    { text: "$P(A_1 \\cap \\dots \\cap A_n) = P(A_1)\\, P(A_2|A_1)\\, P(A_3|A_1\\cap A_2) \\dots P(A_n|A_1\\cap \\dots \\cap A_{n-1})$", isCorrect: true },
+                    { text: "$P(A_1 \\cap \\dots \\cap A_n) = \\prod_{i=1}^n P(A_i)$ en toute généralité", isCorrect: false },
+                    { text: "Cette formule se démontre par récurrence à partir du cas $n=2$", isCorrect: true },
+                    { text: "$P(A_1 \\cap \\dots \\cap A_n) = P(A_n|A_1 \\cap \\dots \\cap A_{n-1})$ seul suffit", isCorrect: false }
+                ],
+                explanation: "La Proposition 2.4, Point 2, généralise la règle du produit conditionnel en chaîne. Chaque facteur conditionne sur l'intersection de tous les évènements précédents. Le produit simple des probabilités $\\prod P(A_i)$ ne serait valable qu'en cas d'indépendance mutuelle.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité conditionnelle", "Exemple", "Calcul"],
+                q: "On lance deux fois un dé équilibré. Sachant que le premier jet donne 3, quelle est la probabilité que la somme soit strictement supérieure à 6 ?",
+                options: [
+                    { text: "$P(A|B) = 1/2$", isCorrect: true },
+                    { text: "$B$ = « premier jet donne 3 » a pour cardinal 6, donc $P(B) = 1/6$", isCorrect: true },
+                    { text: "$A \\cap B = \\{(3,4),(3,5),(3,6)\\}$, de cardinal 3", isCorrect: true },
+                    { text: "$P(A|B) = 1/6$", isCorrect: false }
+                ],
+                explanation: "Avec $\\Omega = \\{1,\\dots,6\\}^2$ équiprobable, $B=\\{(3,j): j\\in\\{1,\\dots,6\\}\\}$ a pour cardinal 6, donc $P(B)=6/36=1/6$. $A\\cap B = \\{(3,4),(3,5),(3,6)\\}$ (sommes 7,8,9 > 6), de cardinal 3, donc $P(A\\cap B) = 3/36 = 1/12$. Ainsi $P(A|B) = (1/12)/(1/6) = 1/2$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Système complet", "Probabilités totales"],
+                q: "Qu'est-ce qu'un système complet d'évènements $(B_i)_{i \\in I}$ ?",
+                options: [
+                    { text: "Une famille d'évènements deux-à-deux disjoints dont la réunion vaut $\\Omega$", isCorrect: true },
+                    { text: "C'est-à-dire une partition de $\\Omega$", isCorrect: true },
+                    { text: "Une famille d'évènements indépendants", isCorrect: false },
+                    { text: "Une famille d'évènements dont l'intersection vaut $\\Omega$", isCorrect: false }
+                ],
+                explanation: "La Définition 2.6 précise que $(B_i)_{i\\in I}$ forme un système complet d'évènements (une partition de $\\Omega$) si les $B_i$ sont deux-à-deux disjoints et $\\bigcup_{i\\in I} B_i = \\Omega$. Cette notion n'a aucun rapport direct avec l'indépendance.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Formule des probabilités totales"],
+                q: "Soit $(B_i)_{i\\in I}$ un système complet d'évènements avec $P(B_i) > 0$ pour tout $i$. Quelle est la formule des probabilités totales pour $A \\in \\mathcal{F}$ ?",
+                options: [
+                    { text: "$P(A) = \\sum_{i \\in I} P(A|B_i)\\, P(B_i)$", isCorrect: true },
+                    { text: "$P(A) = \\sum_{i \\in I} P(A \\cap B_i)$", isCorrect: true },
+                    { text: "$P(A) = \\prod_{i \\in I} P(A|B_i)$", isCorrect: false },
+                    { text: "$P(A) = \\max_{i \\in I} P(A|B_i)$", isCorrect: false }
+                ],
+                explanation: "Le Théorème 2.7 établit que $A = \\bigcup_{i\\in I}(A\\cap B_i)$ (réunion disjointe car les $B_i$ le sont), d'où par σ-additivité $P(A) = \\sum_i P(A\\cap B_i)$, et en utilisant $P(A\\cap B_i) = P(A|B_i)P(B_i)$, on obtient la forme usuelle de la formule.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Formule de Bayes"],
+                q: "Sous les hypothèses de la formule des probabilités totales et si $P(A) > 0$, quelle est la formule de Bayes pour $P(B_i|A)$ ?",
+                options: [
+                    { text: "$P(B_i|A) = \\dfrac{P(A|B_i)\\,P(B_i)}{\\sum_{j \\in I} P(A|B_j)\\,P(B_j)}$", isCorrect: true },
+                    { text: "Le dénominateur est obtenu en appliquant la formule des probabilités totales à $P(A)$", isCorrect: true },
+                    { text: "$P(B_i|A) = P(A|B_i)$", isCorrect: false },
+                    { text: "$P(B_i|A) = \\dfrac{P(B_i)}{P(A)}$", isCorrect: false }
+                ],
+                explanation: "La formule de Bayes « inverse » le conditionnement : elle exprime $P(B_i|A)$ en fonction des $P(A|B_j)$. Elle se démontre en écrivant $P(B_i|A) = P(B_i \\cap A)/P(A) = P(A|B_i)P(B_i)/P(A)$, puis en remplaçant $P(A)$ par la formule des probabilités totales.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Paradoxe de Simpson"],
+                q: "Que met en évidence le paradoxe de Simpson illustré par l'exemple des traitements de calculs rénaux ?",
+                options: [
+                    { text: "Une comparaison globale entre deux traitements peut s'inverser lorsqu'on tient compte d'une variable supplémentaire (comme la taille des calculs)", isCorrect: true },
+                    { text: "Ce rebroussement provient d'une répartition très différente des tailles de groupes combinés dans les deux populations comparées", isCorrect: true },
+                    { text: "Ce paradoxe montre que la formule des probabilités totales est fausse", isCorrect: false },
+                    { text: "Le traitement B est toujours objectivement supérieur au traitement A", isCorrect: false }
+                ],
+                explanation: "Dans l'exemple, le traitement B semble globalement meilleur (83% vs 78%), mais en stratifiant par la taille des calculs, le traitement A est en fait plus efficace dans les deux sous-groupes. Ce paradoxe illustre l'importance de bien utiliser la formule des probabilités totales pour interpréter des données agrégées, et ne remet nullement en cause sa validité.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Indépendance", "Définition"],
+                q: "Quelle est la définition de l'indépendance de deux évènements $A$ et $B$ ?",
+                options: [
+                    { text: "$P(A \\cap B) = P(A)\\,P(B)$", isCorrect: true },
+                    { text: "$A \\cap B = \\emptyset$", isCorrect: false },
+                    { text: "$P(A|B) = P(A)$ (lorsque $P(B) > 0$), ce qui est équivalent à la définition", isCorrect: true },
+                    { text: "$P(A \\cup B) = P(A) + P(B)$", isCorrect: false }
+                ],
+                explanation: "La Définition 2.9 pose $A, B$ indépendants si $P(A\\cap B) = P(A)P(B)$. Quand $P(A), P(B) > 0$, ceci équivaut à $P(A|B) = P(A)$ et $P(B|A) = P(B)$ : l'information de réalisation de B ne modifie pas la vraisemblance de A. L'indépendance n'a rien à voir avec la disjonction des évènements.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Indépendance", "Exemples"],
+                q: "Les évènements $\\emptyset$ et $\\Omega$ sont-ils toujours indépendants, quelle que soit la probabilité $P$ ?",
+                options: [
+                    { text: "Oui, car $P(\\emptyset \\cap \\Omega) = P(\\emptyset) = 0$ et $P(\\emptyset)P(\\Omega) = 0 \\times 1 = 0$", isCorrect: true },
+                    { text: "Non, cela dépend de la probabilité choisie", isCorrect: false },
+                    { text: "Ce résultat illustre que l'indépendance n'implique pas la disjonction (ici $\\emptyset \\cap \\Omega = \\emptyset$ mais aussi $\\emptyset \\subset \\Omega$)", isCorrect: false },
+                    { text: "Non, car $\\emptyset$ a une probabilité nulle donc n'est jamais indépendant d'un autre évènement", isCorrect: false }
+                ],
+                explanation: "$P(\\emptyset \\cap \\Omega) = P(\\emptyset) = 0 = P(\\emptyset) \\cdot P(\\Omega)$ pour toute probabilité $P$ (puisque $P(\\emptyset)=0$ toujours). Cette égalité est vraie systématiquement, indépendamment du choix de $P$. Un évènement de probabilité 0 (ou 1) est toujours indépendant de tout autre évènement.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Indépendance", "Nature de la notion"],
+                q: "Quelles affirmations sur la nature de la notion d'indépendance sont correctes ?",
+                options: [
+                    { text: "L'indépendance est liée au choix de la probabilité $P$, ce n'est pas une notion purement ensembliste", isCorrect: true },
+                    { text: "Deux évènements indépendants peuvent avoir une intersection non vide", isCorrect: true },
+                    { text: "Deux évènements disjoints (incompatibles) et de probabilité strictement positive sont toujours indépendants", isCorrect: false },
+                    { text: "L'indépendance équivaut toujours à la disjonction des évènements", isCorrect: false }
+                ],
+                explanation: "La Remarque 2.11 souligne que l'indépendance dépend du choix de $P$ et n'a rien à voir avec la disjonction ensembliste. Au contraire, si $A$ et $B$ sont disjoints avec $P(A), P(B) > 0$, alors $P(A\\cap B) = 0 \\neq P(A)P(B) > 0$ : ils ne sont donc jamais indépendants dans ce cas.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Indépendance", "Exemple dé"],
+                q: "On jette un dé équilibré. Soit $A$ = « obtenir 1, 2 ou 3 » et $B$ = « obtenir 1, 2, 4 ou 5 ». $A$ et $B$ sont-ils indépendants ?",
+                options: [
+                    { text: "Oui, car $P(A\\cap B) = P(\\{1,2\\}) = 1/3 = P(A) \\cdot P(B) = (1/2)(2/3)$", isCorrect: true },
+                    { text: "Non, car $A \\cap B \\neq \\emptyset$", isCorrect: false },
+                    { text: "$P(A) = 1/2$ et $P(B) = 2/3$", isCorrect: true },
+                    { text: "Non, car $A$ et $B$ ont des cardinaux différents", isCorrect: false }
+                ],
+                explanation: "$P(A) = 3/6 = 1/2$, $P(B) = 4/6 = 2/3$, $A \\cap B = \\{1,2\\}$ donc $P(A\\cap B) = 2/6 = 1/3$. On vérifie $P(A)P(B) = (1/2)(2/3) = 1/3 = P(A\\cap B)$ : les évènements sont bien indépendants, malgré une intersection non vide — ce qui illustre justement que disjonction et indépendance sont des notions distinctes.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Indépendance", "Propriétés"],
+                q: "Si $A$ et $B$ sont des évènements indépendants, quelles paires d'évènements sont également indépendantes ?",
+                options: [
+                    { text: "$A^c$ et $B$", isCorrect: true },
+                    { text: "$A$ et $B^c$", isCorrect: true },
+                    { text: "$A^c$ et $B^c$", isCorrect: true },
+                    { text: "Seule la paire originale $A, B$ est garantie indépendante ; les complémentaires ne le sont pas nécessairement", isCorrect: false }
+                ],
+                explanation: "La Proposition 2.12 démontre que si $A$ et $B$ sont indépendants, alors $A^c$ et $B$, $A$ et $B^c$, ainsi que $A^c$ et $B^c$ le sont aussi. La démonstration clé utilise $P(A^c \\cap B) = P(B) - P(A\\cap B) = P(B)(1-P(A)) = P(B)P(A^c)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Indépendance mutuelle"],
+                q: "Quelle est la définition de l'indépendance mutuelle d'une famille d'évènements $(A_i)_{i \\in I}$ ?",
+                options: [
+                    { text: "Pour toute partie finie $K \\subset I$, $P\\left(\\bigcap_{i \\in K} A_i\\right) = \\prod_{i \\in K} P(A_i)$", isCorrect: true },
+                    { text: "Il suffit que $P(A_i \\cap A_j) = P(A_i)P(A_j)$ pour tout $i \\neq j$", isCorrect: false },
+                    { text: "Cette condition doit être vérifiée pour TOUTE sous-famille finie, pas seulement la famille entière", isCorrect: true },
+                    { text: "Il suffit que $\\bigcap_{i \\in I} A_i \\neq \\emptyset$", isCorrect: false }
+                ],
+                explanation: "La Définition 2.13 exige l'égalité du produit pour toute partie finie $K$ de $I$, ce qui est une condition bien plus forte que la simple indépendance deux-à-deux (qui ne teste que les paires). C'est précisément cette distinction que met en évidence l'Exemple 2.14.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Indépendance mutuelle", "Deux-à-deux"],
+                q: "Quelle relation existe-t-il entre l'indépendance mutuelle et l'indépendance deux-à-deux d'une famille d'évènements ?",
+                options: [
+                    { text: "L'indépendance mutuelle implique l'indépendance deux-à-deux", isCorrect: true },
+                    { text: "L'indépendance deux-à-deux n'implique pas en général l'indépendance mutuelle", isCorrect: true },
+                    { text: "Ces deux notions sont toujours équivalentes", isCorrect: false },
+                    { text: "L'indépendance deux-à-deux est une condition plus forte que l'indépendance mutuelle", isCorrect: false }
+                ],
+                explanation: "L'indépendance mutuelle (produit vrai pour toute sous-famille finie) est strictement plus forte que l'indépendance deux-à-deux (produit vrai seulement pour les paires). L'Exemple 2.14 du cours construit un contre-exemple explicite montrant que l'indépendance deux-à-deux n'entraîne pas l'indépendance mutuelle.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Indépendance mutuelle", "Contre-exemple"],
+                q: "Dans l'Exemple 2.14 ($\\Omega = \\{1,2,3,4\\}$ équiprobable, $A=\\{1,2\\}$, $B=\\{2,3\\}$, $C=\\{1,3\\}$), pourquoi $A, B, C$ ne sont-ils pas mutuellement indépendants ?",
+                options: [
+                    { text: "$A \\cap B \\cap C = \\emptyset$ donc $P(A\\cap B\\cap C) = 0$, alors que $P(A)P(B)P(C) = 1/8 \\neq 0$", isCorrect: true },
+                    { text: "Ils sont pourtant deux-à-deux indépendants : $P(A\\cap B) = P(A)P(B) = 1/4$", isCorrect: true },
+                    { text: "Parce que $A$, $B$ et $C$ sont deux-à-deux disjoints", isCorrect: false },
+                    { text: "Parce que $P(A) \\neq P(B) \\neq P(C)$", isCorrect: false }
+                ],
+                explanation: "On a $P(A)=P(B)=P(C)=1/2$, et $P(A\\cap B)=P(B\\cap C)=P(A\\cap C)=1/4=P(A)P(B)$ etc., donc les trois paires sont bien indépendantes deux-à-deux. Mais $A\\cap B\\cap C = \\emptyset$, donc $P(A\\cap B\\cap C)=0$ alors que $P(A)P(B)P(C)=1/8$ : la condition d'indépendance mutuelle échoue pour la famille entière.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Borel-Cantelli", "lim sup", "lim inf"],
+                q: "Soit $(A_n)_{n\\geq1}$ une suite d'évènements. Comment sont définis $\\limsup_n A_n$ et $\\liminf_n A_n$ ?",
+                options: [
+                    { text: "$\\limsup_n A_n = \\bigcap_{k\\geq1}\\bigcup_{n\\geq k} A_n$, l'ensemble des $\\omega$ appartenant à une infinité de $A_n$", isCorrect: true },
+                    { text: "$\\liminf_n A_n = \\bigcup_{k\\geq1}\\bigcap_{n\\geq k} A_n$, l'ensemble des $\\omega$ appartenant à tous les $A_n$ à partir d'un certain rang", isCorrect: true },
+                    { text: "$\\limsup_n A_n$ et $\\liminf_n A_n$ n'appartiennent pas nécessairement à $\\mathcal{F}$", isCorrect: false },
+                    { text: "$\\limsup_n A_n = \\bigcup_{k\\geq1}\\bigcap_{n\\geq k} A_n$", isCorrect: false }
+                ],
+                explanation: "La Définition 2.15 donne ces formules précises. Comme $\\limsup A_n$ et $\\liminf A_n$ sont des intersections et réunions dénombrables d'évènements de $\\mathcal{F}$, ils appartiennent bien à $\\mathcal{F}$ (stabilité de la tribu par ces opérations).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Borel-Cantelli", "Théorème"],
+                q: "Quel est le premier point du lemme de Borel-Cantelli ?",
+                options: [
+                    { text: "Si $\\sum_{n\\geq1} P(A_n) < \\infty$, alors $P(\\limsup_n A_n) = 0$", isCorrect: true },
+                    { text: "Ce résultat ne nécessite aucune hypothèse d'indépendance des $A_n$", isCorrect: true },
+                    { text: "Cela signifie que presque sûrement, un nombre fini seulement de $A_n$ sont réalisés", isCorrect: true },
+                    { text: "Ce point nécessite que les $A_n$ soient indépendants", isCorrect: false }
+                ],
+                explanation: "Le Théorème 2.17, Point 1, est valable sans aucune hypothèse d'indépendance : si la série des probabilités converge, alors presque sûrement seul un nombre fini de $A_n$ se réalisent. C'est le Point 2 (réciproque partielle) qui nécessite l'indépendance des $(A_n)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Borel-Cantelli", "Théorème"],
+                q: "Quel est le second point du lemme de Borel-Cantelli, et quelle hypothèse supplémentaire nécessite-t-il ?",
+                options: [
+                    { text: "Si les $(A_n)$ sont indépendants et $\\sum_{n\\geq1} P(A_n) = \\infty$, alors $P(\\limsup_n A_n) = 1$", isCorrect: true },
+                    { text: "Il nécessite l'hypothèse d'indépendance de la suite $(A_n)_{n\\geq1}$", isCorrect: true },
+                    { text: "Cela signifie que presque sûrement une infinité de $A_n$ sont réalisés", isCorrect: true },
+                    { text: "Ce point est valable même sans hypothèse d'indépendance, comme le premier point", isCorrect: false }
+                ],
+                explanation: "Le Point 2 du Théorème 2.17 est une réciproque partielle qui, contrairement au Point 1, nécessite l'indépendance des évènements $(A_n)$. Sous cette hypothèse, si la série des probabilités diverge, alors presque sûrement une infinité de $A_n$ sont réalisés.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Borel-Cantelli", "Démonstration"],
+                q: "Dans la démonstration du Point 1 du lemme de Borel-Cantelli, quelle inégalité clé est utilisée ?",
+                options: [
+                    { text: "La sous-additivité : $P(\\bigcup_{n\\geq k} A_n) \\leq \\sum_{n\\geq k} P(A_n)$", isCorrect: true },
+                    { text: "La continuité décroissante : $P(\\limsup_n A_n) = \\lim_{k\\to\\infty} P(B_k)$ où $B_k = \\bigcup_{n\\geq k} A_n$", isCorrect: true },
+                    { text: "L'inégalité $1-x \\leq e^{-x}$", isCorrect: false },
+                    { text: "La formule de Bayes", isCorrect: false }
+                ],
+                explanation: "La démonstration du Point 1 pose $B_k = \\bigcup_{n\\geq k} A_n$ (suite décroissante), utilise la continuité décroissante de $P$ (Proposition 1.13, Point 3) pour écrire $P(\\limsup A_n) = \\lim_k P(B_k)$, puis borne $P(B_k)$ par sous-additivité. L'inégalité $1-x\\leq e^{-x}$ est utilisée dans la démonstration du Point 2, pas du Point 1.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité produit", "Tribu produit"],
+                q: "Pour $k$ espaces probabilisés $(\\Omega_1,\\mathcal{F}_1,P_1),\\dots,(\\Omega_k,\\mathcal{F}_k,P_k)$ indépendants, comment est construite la probabilité produit sur $\\Omega = \\Omega_1 \\times \\dots \\times \\Omega_k$ ?",
+                options: [
+                    { text: "Sur la tribu produit $\\mathcal{F} = \\mathcal{F}_1 \\otimes \\dots \\otimes \\mathcal{F}_k$, on pose $P(A_1\\times\\dots\\times A_k) = P_1(A_1)\\dots P_k(A_k)$ sur les pavés", isCorrect: true },
+                    { text: "La tribu produit est la tribu engendrée par les pavés $A_1 \\times \\dots \\times A_k$ avec $A_n \\in \\mathcal{F}_n$", isCorrect: true },
+                    { text: "Cette définition sur les pavés suffit, en général, à caractériser entièrement la probabilité produit sur toute la tribu", isCorrect: true },
+                    { text: "On additionne les probabilités $P_1(A_1) + \\dots + P_k(A_k)$", isCorrect: false }
+                ],
+                explanation: "La probabilité produit est définie sur les pavés (produits cartésiens d'évènements) par le produit des probabilités individuelles. En référence à la Section 1.4 (résultat de caractérisation par un π-système générateur), cela suffit à déterminer entièrement la probabilité produit sur toute la tribu produit.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Probabilité produit", "Cas dénombrable"],
+                q: "Dans le cas d'un nombre dénombrable infini d'espaces probabilisés, comment est définie la tribu produit (tribu des cylindres) ?",
+                options: [
+                    { text: "C'est la tribu engendrée par les produits cartésiens finis d'évènements des tribus $(\\mathcal{F}_n)_{n\\geq1}$", isCorrect: true },
+                    { text: "Elle contient tous les évènements de la forme $A_1 \\times \\dots \\times A_k \\times \\Omega_{k+1} \\times \\Omega_{k+2} \\times \\dots$", isCorrect: true },
+                    { text: "L'existence et l'unicité de la probabilité produit associée sont admises (démontrées en théorie de la mesure)", isCorrect: true },
+                    { text: "C'est simplement $\\mathcal{P}(\\Omega)$ où $\\Omega = \\prod_{n\\geq1} \\Omega_n$", isCorrect: false }
+                ],
+                explanation: "La tribu des cylindres est engendrée par les produits cartésiens finis d'évènements, où seules un nombre fini de coordonnées sont contraintes (les autres valant $\\Omega_n$ tout entier). L'existence et l'unicité de la probabilité produit vérifiant $P(A_1\\times\\dots\\times A_k\\times\\Omega_{k+1}\\times\\dots) = \\prod_{n=1}^k P_n(A_n)$ sont admises, renvoyées au cours de théorie de la mesure.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Synthèse", "Indépendance", "Conditionnement"],
+                q: "Parmi les affirmations suivantes concernant conditionnement et indépendance, lesquelles sont vraies ?",
+                options: [
+                    { text: "Si $A$ et $B$ sont indépendants et $P(B) > 0$, alors $P(A|B) = P(A)$", isCorrect: true },
+                    { text: "La formule des probabilités totales nécessite un système complet d'évènements de probabilité strictement positive", isCorrect: true },
+                    { text: "La probabilité conditionnelle $P(\\cdot|B)$ ne satisfait pas nécessairement l'axiome de σ-additivité", isCorrect: false },
+                    { text: "Deux évènements incompatibles ($A\\cap B=\\emptyset$) de probabilités strictement positives sont automatiquement indépendants", isCorrect: false }
+                ],
+                explanation: "Ces deux dernières affirmations sont fausses : le Lemme 2.2 montre que $P(\\cdot|B)$ est bien une probabilité complète, satisfaisant la σ-additivité ; et deux évènements incompatibles de probabilité strictement positive ne sont jamais indépendants car $P(A\\cap B)=0 \\neq P(A)P(B)>0$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Borel-Cantelli", "Application"],
+                q: "On lance une infinité de fois une pièce équilibrée de façon indépendante et on note $A_n$ l'évènement « le $n$-ième lancer donne pile ». Que peut-on dire de $\\limsup_n A_n$ ?",
+                options: [
+                    { text: "$\\sum_{n\\geq1} P(A_n) = \\sum_{n\\geq1} 1/2 = +\\infty$", isCorrect: true },
+                    { text: "Comme les $A_n$ sont indépendants et la série diverge, le Point 2 de Borel-Cantelli donne $P(\\limsup_n A_n) = 1$", isCorrect: true },
+                    { text: "Presque sûrement, on obtient pile une infinité de fois", isCorrect: true },
+                    { text: "Le lemme de Borel-Cantelli ne peut pas s'appliquer ici car $P(A_n)$ ne tend pas vers 0", isCorrect: false }
+                ],
+                explanation: "Ici $P(A_n) = 1/2$ pour tout $n$, donc $\\sum P(A_n) = \\infty$. Les lancers étant indépendants, le Point 2 du lemme de Borel-Cantelli s'applique directement (aucune condition sur la limite de $P(A_n)$ n'est requise) et donne $P(\\limsup_n A_n)=1$ : presque sûrement, pile apparaît une infinité de fois.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Borel-Cantelli", "Application"],
+                q: "Soit $(A_n)_{n\\geq1}$ des évènements (non nécessairement indépendants) tels que $P(A_n) = 1/n^2$. Que peut-on conclure sur $\\limsup_n A_n$ ?",
+                options: [
+                    { text: "$\\sum_{n\\geq1} 1/n^2 = \\pi^2/6 < \\infty$, la série converge", isCorrect: true },
+                    { text: "D'après le Point 1 du lemme de Borel-Cantelli, $P(\\limsup_n A_n) = 0$", isCorrect: true },
+                    { text: "Presque sûrement, seul un nombre fini de $A_n$ sont réalisés", isCorrect: true },
+                    { text: "On ne peut rien conclure sans savoir si les $A_n$ sont indépendants", isCorrect: false }
+                ],
+                explanation: "Le Point 1 du lemme de Borel-Cantelli ne requiert aucune hypothèse d'indépendance : dès que $\\sum P(A_n) < \\infty$ (ici la série de Riemann convergente $\\sum 1/n^2$), on peut conclure directement que $P(\\limsup_n A_n) = 0$, c'est-à-dire que presque sûrement un nombre fini seulement des $A_n$ se réalisent.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            }
+        ]
+    },
+    "Probabilités : Chapitre 3 - Variables aléatoires": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            {
+                type: "qcm",
+                tags: ["Variable aléatoire", "Définition"],
+                q: "Comment est définie une variable aléatoire $X$ de $(\\Omega, \\mathcal{F})$ dans $(E, \\mathcal{E})$ ?",
+                options: [
+                    { text: "Une application qui vérifie $\\forall B \\in \\mathcal{E}, X^{-1}(B) = \\{X \\in B\\} \\in \\mathcal{F}$", isCorrect: true },
+                    { text: "Une application mesurable préservant les structures de tribus respectives", isCorrect: true },
+                    { text: "Une application nécessairement bijective de $\\Omega$ dans $E$", isCorrect: false },
+                    { text: "Une application qui associe à chaque évènement un nombre réel", isCorrect: false }
+                ],
+                explanation: "La Définition 3.1 exige que l'image réciproque de tout borélien $B \\in \\mathcal{E}$ soit un élément de $\\mathcal{F}$ : c'est la notion d'application mesurable. La notation $X^{-1}$ n'a aucun rapport avec la bijectivité (Remarque 3.2) : elle désigne simplement l'image réciproque d'une partie.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variable aléatoire", "Loi"],
+                q: "Qu'est-ce que la loi $P_X$ d'une variable aléatoire $X$, et quelle propriété fondamentale possède-t-elle ?",
+                options: [
+                    { text: "$P_X(B) := P(X^{-1}(B)) = P(\\{X \\in B\\})$ pour tout $B \\in \\mathcal{E}$", isCorrect: true },
+                    { text: "C'est une probabilité sur l'espace d'arrivée $(E, \\mathcal{E})$", isCorrect: true },
+                    { text: "On l'appelle aussi « probabilité image » de $P$", isCorrect: true },
+                    { text: "$P_X$ n'est définie que si $X$ est une variable discrète", isCorrect: false }
+                ],
+                explanation: "La Définition/Proposition 3.3 introduit $P_X$ comme la mesure image, et démontre (en vérifiant les axiomes) que c'est bien une probabilité sur $(E,\\mathcal{E})$, faisant de $(E,\\mathcal{E},P_X)$ un espace probabilisé. Cette construction est générale, pas limitée au cas discret.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variable aléatoire", "Notation"],
+                q: "Que signifie la notation $X \\sim \\mu$ ?",
+                options: [
+                    { text: "$X$ a pour loi $\\mu$, c'est-à-dire $P_X = \\mu$", isCorrect: true },
+                    { text: "$X$ est indépendante de $\\mu$", isCorrect: false },
+                    { text: "$X$ converge vers $\\mu$", isCorrect: false },
+                    { text: "$\\mu$ est la valeur moyenne de $X$", isCorrect: false }
+                ],
+                explanation: "C'est une notation standard rappelée dans la Remarque suivant la Définition 3.3 : $X \\sim \\mu$ signifie simplement que la loi de $X$, notée $P_X$, est égale à la mesure $\\mu$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variable aléatoire discrète", "Définition"],
+                q: "Qu'est-ce qu'une variable aléatoire discrète, et comment sa loi est-elle caractérisée ?",
+                options: [
+                    { text: "C'est une variable aléatoire dont l'ensemble d'arrivée $E = \\{x_i\\}_{i\\in I}$ est fini ou dénombrable, muni de $\\mathcal{P}(E)$", isCorrect: true },
+                    { text: "Sa loi est caractérisée par la donnée de $P(X = x_i)$ pour tout $i \\in I$", isCorrect: true },
+                    { text: "Pour tout $B \\in \\mathcal{P}(E)$, $P_X(B) = \\sum_{x_i \\in B} P(X = x_i)$", isCorrect: true },
+                    { text: "Sa loi ne peut être caractérisée que via sa fonction de répartition", isCorrect: false }
+                ],
+                explanation: "La Définition 3.4 et la Proposition 3.5 précisent ce cadre : $E$ dénombrable/fini muni de $\\mathcal{P}(E)$, et grâce à la Proposition 1.14 (caractérisation d'une probabilité par ses valeurs sur les singletons), la loi $P_X$ est entièrement déterminée par les valeurs $(P(X=x_i))_{i\\in I}$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Indicatrice", "Propriétés"],
+                q: "Soit $A, B \\in \\mathcal{F}$. Quelles identités sur les fonctions indicatrices sont correctes ?",
+                options: [
+                    { text: "$\\mathbb{I}_{A^c} = 1 - \\mathbb{I}_A$", isCorrect: true },
+                    { text: "$\\mathbb{I}_{A \\cap B} = \\mathbb{I}_A \\cdot \\mathbb{I}_B$", isCorrect: true },
+                    { text: "$\\mathbb{I}_{A \\cup B} = \\mathbb{I}_A + \\mathbb{I}_B - \\mathbb{I}_{A \\cap B}$", isCorrect: true },
+                    { text: "$\\mathbb{I}_{A \\cup B} = \\mathbb{I}_A + \\mathbb{I}_B$ en toute généralité", isCorrect: false }
+                ],
+                explanation: "Ces trois identités sont rappelées dans l'Exemple 3.6. La dernière n'est vraie que si $A$ et $B$ sont disjoints ; en général il faut soustraire $\\mathbb{I}_{A\\cap B}$ pour ne pas compter deux fois les éléments communs (analogue de la formule du crible).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Indicatrice", "Loi"],
+                q: "Quelle est la loi de l'indicatrice $\\mathbb{I}_A$ d'un évènement $A \\in \\mathcal{F}$ ?",
+                options: [
+                    { text: "$P_{\\mathbb{I}_A}(1) = P(A)$", isCorrect: true },
+                    { text: "$P_{\\mathbb{I}_A}(0) = 1 - P(A) = P(A^c)$", isCorrect: true },
+                    { text: "$\\mathbb{I}_A$ suit une loi de Bernoulli de paramètre $P(A)$", isCorrect: true },
+                    { text: "$P_{\\mathbb{I}_A}(1) = P(A^c)$", isCorrect: false }
+                ],
+                explanation: "L'Exemple 3.6 calcule directement $P_{\\mathbb{I}_A}(1) = P(\\{\\omega : \\mathbb{I}_A(\\omega)=1\\}) = P(A)$ et $P_{\\mathbb{I}_A}(0) = P(A^c) = 1-P(A)$, ce qui est précisément la loi de Bernoulli de paramètre $P(A)$ (Exemple 3.8).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi uniforme discrète"],
+                q: "Une variable aléatoire $X$ suit la loi uniforme discrète $\\mathcal{U}(\\{x_1,\\dots,x_n\\})$ si :",
+                options: [
+                    { text: "$X(\\Omega) = \\{x_1,\\dots,x_n\\}$ et $P_X(x_i) = 1/n$ pour tout $i$", isCorrect: true },
+                    { text: "Chaque valeur possible a la même probabilité d'être prise", isCorrect: true },
+                    { text: "$P_X(x_i)$ dépend de la position de $i$ dans la liste", isCorrect: false },
+                    { text: "$X(\\Omega)$ doit être un sous-ensemble de $\\mathbb{N}$", isCorrect: false }
+                ],
+                explanation: "La loi uniforme discrète attribue la même probabilité $1/n$ à chacune des $n$ valeurs possibles $x_1,\\dots,x_n$, qui n'ont pas besoin d'être des entiers (l'Exemple 3.7 utilise $\\{-1,1\\}$).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi binomiale", "Schéma de Bernoulli"],
+                q: "Dans un schéma de Bernoulli de paramètres $n$ et $p$ (n répétitions indépendantes d'une épreuve de Bernoulli de paramètre $p$), quelle est la loi du nombre de succès $X$ ?",
+                options: [
+                    { text: "$X$ suit une loi binomiale $\\text{Bin}(n,p)$", isCorrect: true },
+                    { text: "$P(X=k) = \\binom{n}{k} p^k (1-p)^{n-k}$ pour $k \\in \\{0,\\dots,n\\}$", isCorrect: true },
+                    { text: "$X = \\sum_{i=1}^n \\mathbb{I}_{A_i}$, une somme de $n$ variables de Bernoulli indépendantes de paramètre $p$", isCorrect: true },
+                    { text: "$X$ suit une loi géométrique de paramètre $p$", isCorrect: false }
+                ],
+                explanation: "L'Exemple 3.9 montre que $\\binom{n}{k}$ compte les façons d'obtenir $k$ succès parmi $n$ épreuves indépendantes, chacune de probabilité $p^k(1-p)^{n-k}$, et interprète $X$ comme la somme des indicatrices des succès individuels : $X=\\sum_{i=1}^n \\mathbb{I}_{A_i}$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi binomiale", "Somme de variables"],
+                q: "Si $X_1$ suit une loi binomiale $\\text{Bin}(n,p)$ et $X_2$ suit une loi binomiale $\\text{Bin}(m,p)$, et que $X_1$ et $X_2$ sont indépendantes, quelle est la loi de $X_1+X_2$ ?",
+                options: [
+                    { text: "$X_1 + X_2$ suit une loi binomiale $\\text{Bin}(n+m, p)$", isCorrect: true },
+                    { text: "$X_1 + X_2$ suit une loi binomiale $\\text{Bin}(nm, p)$", isCorrect: false },
+                    { text: "Ce résultat s'explique car $X_1$ et $X_2$ sont chacune des sommes de Bernoulli indépendantes de même paramètre $p$", isCorrect: true },
+                    { text: "$X_1+X_2$ ne suit aucune loi connue en général", isCorrect: false }
+                ],
+                explanation: "Le cours (remarque après l'Exemple 3.9) indique que la somme de variables binomiales indépendantes de même paramètre $p$ mais de nombres d'épreuves différents reste binomiale, avec les paramètres d'épreuves qui s'additionnent : $\\text{Bin}(n,p) + \\text{Bin}(m,p) = \\text{Bin}(n+m,p)$. L'intuition vient de la représentation comme sommes d'indicatrices de Bernoulli indépendantes.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi géométrique"],
+                q: "Une variable aléatoire $X$ suit une loi géométrique $\\mathcal{G}(p)$ si :",
+                options: [
+                    { text: "$X(\\Omega) = \\mathbb{N}^*$ et $P_X(k) = (1-p)^{k-1} p$ pour tout $k \\in \\mathbb{N}^*$", isCorrect: true },
+                    { text: "Elle modélise le temps d'attente jusqu'au premier succès dans un schéma de Bernoulli répété indéfiniment", isCorrect: true },
+                    { text: "$P_X(k) = \\binom{k}{p}(1-p)^{k}$", isCorrect: false },
+                    { text: "$X(\\Omega)$ est nécessairement fini", isCorrect: false }
+                ],
+                explanation: "L'Exemple 3.10 démontre précisément que $X$ = « rang du premier succès » dans une suite indéfinie d'épreuves de Bernoulli indépendantes suit la loi géométrique $\\mathcal{G}(p)$ : pour obtenir succès au $k$-ième essai, il faut $k-1$ échecs suivis d'un succès, d'où $P(X=k)=(1-p)^{k-1}p$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi de Poisson"],
+                q: "Une variable aléatoire $X$ suit une loi de Poisson $\\mathcal{P}(\\lambda)$ (avec $\\lambda > 0$) si :",
+                options: [
+                    { text: "$X(\\Omega) = \\mathbb{N}$ et $P_X(k) = e^{-\\lambda} \\dfrac{\\lambda^k}{k!}$ pour tout $k \\in \\mathbb{N}$", isCorrect: true },
+                    { text: "Elle peut modéliser le nombre d'arrivées d'autobus à un arrêt avant un instant $T$ donné", isCorrect: true },
+                    { text: "$\\lambda$ représente le nombre moyen d'arrivées dans l'intervalle considéré", isCorrect: true },
+                    { text: "Elle ne prend que des valeurs bornées par $\\lambda$", isCorrect: false }
+                ],
+                explanation: "La définition et l'Exemple 3.11 donnent cette loi et son interprétation classique : le paramètre $\\lambda$ représente le taux moyen d'occurrence d'un phénomène (ici, arrivées d'autobus), et $X$ peut prendre n'importe quelle valeur entière positive, sans borne supérieure.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Convergence binomiale-Poisson"],
+                q: "Sous quelles conditions la loi binomiale $\\text{Bin}(n, p_n)$ converge-t-elle vers la loi de Poisson $\\mathcal{P}(\\lambda)$ ?",
+                options: [
+                    { text: "Lorsque $n \\to +\\infty$, $p_n \\to 0$, et $n\\, p_n \\to \\lambda > 0$", isCorrect: true },
+                    { text: "Pour tout $k$ fixé, $P^{X_n}(k) \\to e^{-\\lambda}\\lambda^k/k!$", isCorrect: true },
+                    { text: "Cette convergence nécessite que $p_n$ reste constant et égal à $p$", isCorrect: false },
+                    { text: "Cette convergence est valable uniquement lorsque $n$ est pair", isCorrect: false }
+                ],
+                explanation: "La Proposition 3.12 énonce précisément ce résultat de convergence (« loi des évènements rares ») : lorsque $n\\to+\\infty$ et $p_n\\to 0$ de sorte que $np_n \\to \\lambda$, alors pour tout $k$ fixé, la probabilité binomiale converge vers la probabilité de Poisson correspondante. Il s'agit bien d'une suite $(p_n)$ qui varie avec $n$, pas d'un $p$ fixe.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variable aléatoire réelle", "Définition"],
+                q: "Qu'est-ce qu'une variable aléatoire réelle ?",
+                options: [
+                    { text: "Une variable aléatoire $X$ de $(\\Omega,\\mathcal{F})$ dans $(E,\\mathcal{E}) = (\\mathbb{R}, \\mathcal{B}(\\mathbb{R}))$", isCorrect: true },
+                    { text: "Une variable aléatoire à valeurs dans $\\mathbb{R}$ munie de la tribu borélienne", isCorrect: true },
+                    { text: "Toute application de $\\Omega$ dans $\\mathbb{R}$, sans condition supplémentaire", isCorrect: false },
+                    { text: "Une variable aléatoire qui prend nécessairement une infinité de valeurs", isCorrect: false }
+                ],
+                explanation: "La Définition 3.13 précise le cas particulier où l'espace d'arrivée est $(\\mathbb{R}, \\mathcal{B}(\\mathbb{R}))$. Il ne suffit pas d'être une simple application de $\\Omega$ dans $\\mathbb{R}$ : il faut vérifier la mesurabilité, c'est-à-dire que l'image réciproque de tout borélien appartient à $\\mathcal{F}$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variable aléatoire réelle", "Critère de mesurabilité"],
+                q: "Pour montrer qu'une application $X : \\Omega \\to \\mathbb{R}$ est une variable aléatoire réelle, quel critère suffisant peut-on utiliser (Remarque 3.14) ?",
+                options: [
+                    { text: "Il suffit de montrer que pour tout $x \\in \\mathbb{R}$, $X^{-1}(]-\\infty,x]) \\in \\mathcal{F}$", isCorrect: true },
+                    { text: "Ce critère fonctionne car $\\mathcal{B}(\\mathbb{R})$ est la plus petite tribu contenant les intervalles $]-\\infty,x]$", isCorrect: true },
+                    { text: "Il faut vérifier la condition pour tous les boréliens de $\\mathbb{R}$ un par un", isCorrect: false },
+                    { text: "Ce critère nécessite en plus que $X$ soit continue", isCorrect: false }
+                ],
+                explanation: "La démonstration de la Remarque 3.14 construit l'ensemble $G = \\{B \\in \\mathcal{B}(\\mathbb{R}) : X^{-1}(B) \\in \\mathcal{F}\\}$, montre que c'est une tribu contenant les $]-\\infty,x]$, donc contenant $\\mathcal{B}(\\mathbb{R})$ tout entier (car cette dernière est la plus petite tribu engendrée par ces intervalles). Ce critère évite de tester tous les boréliens un par un et ne requiert aucune continuité de $X$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variable aléatoire réelle", "Opérations"],
+                q: "Si $X_1,\\dots,X_n$ sont des variables aléatoires réelles et $f: \\mathbb{R}^n \\to \\mathbb{R}$ est continue, que peut-on dire de $Y = f(X_1,\\dots,X_n)$ (Proposition 3.15) ?",
+                options: [
+                    { text: "$Y$ est également une variable aléatoire réelle", isCorrect: true },
+                    { text: "En conséquence, $X+Y$, $XY$, et $X/Y$ (si $Y\\neq0$) sont des variables aléatoires réelles", isCorrect: true },
+                    { text: "$\\sup_{1\\leq n\\leq k} X_n$, $\\liminf_{n\\geq1} X_n$ sont aussi des variables aléatoires réelles", isCorrect: true },
+                    { text: "Ce résultat n'est vrai que si $f$ est linéaire", isCorrect: false }
+                ],
+                explanation: "La Proposition 3.15 exige seulement la continuité de $f$, pas la linéarité. Le Corollaire 3.16 en tire les conséquences pour les opérations usuelles (somme, produit, quotient) ainsi que pour sup/inf finis et infinis, limsup/liminf, et la limite lorsqu'elle est bien définie.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Fonction de répartition", "Définition"],
+                q: "Comment est définie la fonction de répartition $F^X$ d'une variable aléatoire réelle $X$ ?",
+                options: [
+                    { text: "$F^X(x) = P_X(]-\\infty,x]) = P(X \\leq x)$ pour tout $x \\in \\mathbb{R}$", isCorrect: true },
+                    { text: "$F^X(x) = P(X < x)$", isCorrect: false },
+                    { text: "$F^X(x) = P(X = x)$", isCorrect: false },
+                    { text: "$F^X$ prend ses valeurs dans $[0,1]$", isCorrect: true }
+                ],
+                explanation: "La Définition 3.17 pose $F^X(x) = P(X\\leq x)$, avec l'inégalité large. Comme $F^X$ est une probabilité d'un évènement, elle prend nécessairement ses valeurs dans $[0,1]$. La confusion fréquente est d'utiliser $P(X<x)$ (inégalité stricte), qui ne coïncide pas toujours avec $F^X(x)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Fonction de répartition", "Propriétés"],
+                q: "Quelles sont les trois propriétés fondamentales de toute fonction de répartition $F^X$ (Proposition 3.18) ?",
+                options: [
+                    { text: "Elle est croissante", isCorrect: true },
+                    { text: "Elle est continue à droite", isCorrect: true },
+                    { text: "$\\lim_{x\\to-\\infty} F^X(x) = 0$ et $\\lim_{x\\to+\\infty} F^X(x) = 1$", isCorrect: true },
+                    { text: "Elle est nécessairement continue en tout point", isCorrect: false }
+                ],
+                explanation: "$F^X$ vérifie croissance, continuité à droite (mais pas nécessairement à gauche : elle peut avoir des sauts, comme pour les variables discrètes) et les limites 0/1 aux infinis. Ces trois propriétés caractérisent entièrement les fonctions de répartition possibles (Théorème 3.21).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Fonction de répartition", "Caractérisation de la loi"],
+                q: "En quel sens la fonction de répartition $F^X$ caractérise-t-elle la loi $P_X$ ?",
+                options: [
+                    { text: "Deux variables aléatoires ont même loi si et seulement si elles ont même fonction de répartition", isCorrect: true },
+                    { text: "Ce résultat s'appuie sur le fait qu'une probabilité sur $(\\mathbb{R},\\mathcal{B}(\\mathbb{R}))$ est déterminée par ses valeurs sur les $]-\\infty,x]$", isCorrect: true },
+                    { text: "Cette caractérisation est une conséquence du lemme de classe monotone", isCorrect: true },
+                    { text: "Deux variables ayant même fonction de répartition ont nécessairement même valeur presque sûrement", isCorrect: false }
+                ],
+                explanation: "La Proposition 3.18 affirme cette équivalence. Le sens facile est direct (même loi ⟹ même $F^X$) ; l'autre sens s'appuie sur le résultat de caractérisation par un π-système générateur mentionné en Section 1.4, conséquence du lemme de classe monotone. Attention : « même loi » ne signifie pas « même valeur presque sûrement », deux variables aléatoires distinctes peuvent avoir la même loi sans être égales.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Fonction de répartition", "Formules"],
+                q: "Soit $x < y$ deux réels. Quelles formules impliquant $F^X$ et sa limite à gauche $F^X(x^-)$ sont correctes ?",
+                options: [
+                    { text: "$P(X > x) = 1 - F^X(x)$", isCorrect: true },
+                    { text: "$P(x < X \\leq y) = F^X(y) - F^X(x)$", isCorrect: true },
+                    { text: "$P(X = x) = F^X(x) - F^X(x^-)$", isCorrect: true },
+                    { text: "$P(x < X < y) = F^X(y) - F^X(x)$", isCorrect: false }
+                ],
+                explanation: "La Proposition 3.19 donne ces formules. Attention à la dernière : $P(x<X<y)$ utilise la limite à gauche en $y$, soit $F^X(y^-) - F^X(x)$, et non $F^X(y)$, car il faut exclure la masse ponctuelle éventuelle en $y$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Fonction de répartition", "Continuité"],
+                q: "Quel est le lien entre la continuité de $F^X$ en un point $x$ et la probabilité $P(X=x)$ (Corollaire 3.20) ?",
+                options: [
+                    { text: "$P(X=x) = 0 \\iff F^X$ est continue en $x$", isCorrect: true },
+                    { text: "$F^X$ admet toujours une limite à gauche en tout point (même si elle n'y est pas continue)", isCorrect: true },
+                    { text: "$P(X=x) > 0$ signifie que $F^X$ présente un saut de hauteur $P(X=x)$ en $x$", isCorrect: true },
+                    { text: "$F^X$ est toujours continue en tout point où $X$ est une variable discrète", isCorrect: false }
+                ],
+                explanation: "Ce corollaire découle directement du Point 7 de la Proposition 3.19 : $P(X=x) = F^X(x) - F^X(x^-)$. Ainsi la masse ponctuelle en $x$ correspond exactement à la taille du saut de $F^X$ en ce point. Pour une variable discrète, $F^X$ a des sauts précisément aux points de $X(\\Omega)$, donc n'y est justement PAS continue.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Fonction de répartition", "Théorème de caractérisation"],
+                q: "Que dit le Théorème 3.21 sur les fonctions satisfaisant les propriétés 1 à 3 de la Proposition 3.18 (croissance, continuité à droite, limites 0/1) ?",
+                options: [
+                    { text: "Toute fonction $F$ ayant ces propriétés est la fonction de répartition d'une loi $\\mu$ sur $(\\mathbb{R}, \\mathcal{B}(\\mathbb{R}))$", isCorrect: true },
+                    { text: "On ne peut pas en général définir $\\mu$ sur la tribu $\\mathcal{P}(\\mathbb{R})$ de toutes les parties de $\\mathbb{R}$", isCorrect: true },
+                    { text: "Ce résultat se démontre facilement sans outils avancés", isCorrect: false },
+                    { text: "Ce théorème est une conséquence directe et élémentaire du Corollaire 3.20", isCorrect: false }
+                ],
+                explanation: "Le Théorème 3.21 est la réciproque de la Proposition 3.18 : c'est un résultat profond de théorie de la mesure (nécessitant la preuve de l'existence d'une mesure de probabilité), énoncé sans démonstration dans ce cours. Il souligne aussi que $\\mathcal{P}(\\mathbb{R})$ est en général trop grande pour porter une telle mesure de manière cohérente.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variables discrètes réelles", "Fonction de répartition"],
+                q: "Pour une variable aléatoire $X$ discrète réelle, quelles propriétés de la fonction de répartition $F^X$ sont vraies (Proposition 3.22) ?",
+                options: [
+                    { text: "$F^X(x) = \\sum_{y \\in X(\\Omega), y \\leq x} P_X(y)$", isCorrect: true },
+                    { text: "Si $x$ et $y$ sont deux points consécutifs de $X(\\Omega)$, $F^X$ est constante sur $[x,y[$", isCorrect: true },
+                    { text: "La hauteur du saut en $x \\in X(\\Omega)$ est $P_X(x)$", isCorrect: true },
+                    { text: "$F^X$ est une fonction continue dans le cas discret", isCorrect: false }
+                ],
+                explanation: "Pour une variable discrète, $F^X$ est une fonction en escalier : constante entre deux valeurs consécutives de $X(\\Omega)$ et présentant un saut de hauteur $P_X(x)$ en chaque point $x$ de $X(\\Omega)$. Elle n'est donc jamais continue en ces points (sauf si $P_X(x)=0$, ce qui n'arrive pas pour les valeurs effectivement prises).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Densité de probabilité", "Définition"],
+                q: "Quelles conditions doit vérifier une fonction $f : \\mathbb{R} \\to \\mathbb{R}$ pour être une densité de probabilité ?",
+                options: [
+                    { text: "$f$ est positive", isCorrect: true },
+                    { text: "$f$ est intégrable", isCorrect: true },
+                    { text: "$\\int_{-\\infty}^{+\\infty} f(x)\\,dx = 1$", isCorrect: true },
+                    { text: "$f$ doit être bornée par 1", isCorrect: false }
+                ],
+                explanation: "La Définition 3.24 exige positivité, intégrabilité, et intégrale totale égale à 1. Contrairement à une confusion fréquente, une densité n'est PAS bornée par 1 : par exemple la densité uniforme sur $[0, 0.5]$ vaut 2 sur cet intervalle.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variable à densité", "Propriétés"],
+                q: "Si $X$ est une variable aléatoire à densité $f$, quelles propriétés sont vraies (Proposition 3.25) ?",
+                options: [
+                    { text: "$F^X$ est continue sur $\\mathbb{R}$, donc $P(X=x)=0$ pour tout $x$", isCorrect: true },
+                    { text: "$F^X$ est dérivable partout où $f$ est continue, avec $(F^X)'(x) = f(x)$ en ces points", isCorrect: true },
+                    { text: "Pour tout intervalle $J$ non réduit à un point, $P(X \\in J) = \\int_J f(x)\\,dx$", isCorrect: true },
+                    { text: "Une variable à densité prend nécessairement un nombre fini de valeurs", isCorrect: false }
+                ],
+                explanation: "Ces propriétés découlent directement de la définition d'une densité via l'intégrale (3.1). Une variable à densité prend au contraire un continuum de valeurs (typiquement un intervalle de $\\mathbb{R}$), ce qui contraste fondamentalement avec le cas discret.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Densité", "Non-unicité"],
+                q: "Concernant l'unicité de la densité d'une variable aléatoire, que dit la Remarque 3.26 ?",
+                options: [
+                    { text: "Si on modifie $f$ en un nombre fini de points, on obtient une autre densité définissant la même variable aléatoire", isCorrect: true },
+                    { text: "On devrait parler « d'une » densité plutôt que « de la » densité", isCorrect: true },
+                    { text: "Toutes les variables aléatoires discrètes admettent aussi une densité", isCorrect: false },
+                    { text: "La densité d'une variable aléatoire est toujours unique", isCorrect: false }
+                ],
+                explanation: "Modifier une fonction en un nombre fini (ou même dénombrable) de points ne change pas la valeur de son intégrale, donc ne change pas la loi définie. La densité n'est donc pas unique. Les variables discrètes, elles, n'admettent PAS de densité au sens de cette définition (leur loi est portée par un ensemble dénombrable de points, de mesure de Lebesgue nulle).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi uniforme continue"],
+                q: "Quelle est la densité de la loi uniforme $\\mathcal{U}([a,b])$ (avec $a<b$) ?",
+                options: [
+                    { text: "$f(x) = \\dfrac{1}{b-a} \\mathbb{I}_{[a,b]}(x)$", isCorrect: true },
+                    { text: "$f(x) = \\dfrac{1}{b-a}$ pour tout $x \\in \\mathbb{R}$", isCorrect: false },
+                    { text: "On peut redéfinir $f(a)=0$ et/ou $f(b)=0$ sans changer la loi", isCorrect: true },
+                    { text: "$f(x) = b-a$ pour $x \\in [a,b]$", isCorrect: false }
+                ],
+                explanation: "La densité vaut $1/(b-a)$ uniquement sur $[a,b]$ et $0$ ailleurs (sinon l'intégrale ne vaudrait pas 1 sur un domaine non borné). En vertu de la non-unicité de la densité, on peut modifier les valeurs aux bornes $a$ et $b$ sans changer la loi (ces points ont une mesure de Lebesgue nulle).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi normale", "Gaussienne"],
+                q: "Concernant la loi normale (gaussienne) $\\mathcal{N}(\\mu, \\sigma^2)$ de densité $f(x) = \\frac{1}{\\sqrt{2\\pi\\sigma^2}} e^{-\\frac{(x-\\mu)^2}{2\\sigma^2}}$, quelles affirmations sont vraies ?",
+                options: [
+                    { text: "Si $X \\sim \\mathcal{N}(0,1)$, alors $Y = \\sigma X + \\mu$ suit une loi $\\mathcal{N}(\\mu, \\sigma^2)$", isCorrect: true },
+                    { text: "Si $Y \\sim \\mathcal{N}(\\mu,\\sigma^2)$, alors $X = (Y-\\mu)/\\sigma$ suit une loi $\\mathcal{N}(0,1)$", isCorrect: true },
+                    { text: "La fonction de répartition de $\\mathcal{N}(0,1)$ se calcule à l'aide des fonctions usuelles", isCorrect: false },
+                    { text: "On parle de loi gaussienne « centrée-réduite » lorsque $\\mu=0$ et $\\sigma^2=1$", isCorrect: true }
+                ],
+                explanation: "Le cours indique explicitement que la fonction de répartition de la loi normale ne se calcule PAS à l'aide des fonctions usuelles (on utilise des tables numériques, avec la relation $\\Pi(x)+\\Pi(-x)=1$). Les relations de standardisation entre $X\\sim\\mathcal{N}(0,1)$ et $Y=\\sigma X+\\mu \\sim \\mathcal{N}(\\mu,\\sigma^2)$ sont vraies et fondamentales.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi exponentielle"],
+                q: "Concernant la loi exponentielle $\\mathcal{E}(\\lambda)$ de densité $f(x) = \\lambda e^{-\\lambda x} \\mathbb{I}_{[0,+\\infty[}(x)$, quelles affirmations sont correctes ?",
+                options: [
+                    { text: "Elle modélise souvent une durée de vie ou un temps d'attente", isCorrect: true },
+                    { text: "Elle a la propriété d'être « sans mémoire »", isCorrect: true },
+                    { text: "La densité est nulle pour les valeurs négatives", isCorrect: true },
+                    { text: "$\\lambda$ représente la variance de la loi", isCorrect: false }
+                ],
+                explanation: "Le cours décrit précisément ces usages et propriétés de la loi exponentielle. Le paramètre $\\lambda$ est un taux (analogue continu de la loi géométrique), pas directement la variance (qui vaudra en réalité $1/\\lambda^2$, résultat établi au chapitre suivant sur l'espérance).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi de Cauchy"],
+                q: "Concernant la loi de Cauchy $\\mathcal{C}(\\lambda)$ de densité $f(x) = \\dfrac{\\lambda}{\\pi(\\lambda^2+x^2)}$, quelles affirmations sont correctes ?",
+                options: [
+                    { text: "Elle apparaît comme la loi du quotient de deux variables gaussiennes centrées indépendantes de même variance", isCorrect: true },
+                    { text: "L'inverse d'une variable de Cauchy suit également une loi de Cauchy", isCorrect: true },
+                    { text: "Sa densité est définie sur $\\mathbb{R}$ tout entier (pas seulement sur $[0,+\\infty[$)", isCorrect: true },
+                    { text: "Elle est identique à la loi normale centrée réduite", isCorrect: false }
+                ],
+                explanation: "Le cours présente ces propriétés remarquables de la loi de Cauchy : elle résulte du quotient de deux gaussiennes centrées indépendantes de même variance, et se distingue de la loi normale (elle a des queues beaucoup plus lourdes, et n'admet même pas d'espérance finie).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi du chi carré"],
+                q: "Que représente la loi du $\\chi^2$ à $n$ degrés de liberté, notée $\\chi^2(n)$ ?",
+                options: [
+                    { text: "La loi de la somme des carrés de $n$ variables aléatoires gaussiennes centrées réduites indépendantes", isCorrect: true },
+                    { text: "Sa densité est nulle pour les valeurs strictement négatives", isCorrect: true },
+                    { text: "Elle correspond à un cas particulier de la loi Gamma, avec $\\alpha = n/2$ et $\\lambda = 1/2$", isCorrect: true },
+                    { text: "Elle est la loi du produit de $n$ variables gaussiennes indépendantes", isCorrect: false }
+                ],
+                explanation: "Le cours définit $\\chi^2(n)$ comme la loi de $\\sum_{i=1}^n Z_i^2$ où les $Z_i$ sont des gaussiennes centrées réduites indépendantes (pas un produit). Sa densité fait intervenir $\\mathbb{I}_{[0,\\infty[}$, donc s'annule pour les valeurs négatives, et elle coïncide avec la loi Gamma$(n/2, 1/2)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Loi Gamma"],
+                q: "Concernant la loi Gamma $\\Gamma(\\alpha,\\lambda)$ de densité $f(x) = \\dfrac{\\lambda^\\alpha}{\\Gamma(\\alpha)} x^{\\alpha-1} e^{-\\lambda x} \\mathbb{I}_{[0,\\infty[}(x)$, quelles affirmations sont vraies ?",
+                options: [
+                    { text: "Lorsque $\\alpha = 1$, on retrouve la loi exponentielle $\\mathcal{E}(\\lambda)$", isCorrect: true },
+                    { text: "Lorsque $\\alpha = n/2$ et $\\lambda = 1/2$, on retrouve la loi $\\chi^2(n)$", isCorrect: true },
+                    { text: "La fonction $\\Gamma$ est définie par $\\Gamma(\\alpha) = \\int_0^{+\\infty} x^{\\alpha-1} e^{-x}\\,dx$", isCorrect: true },
+                    { text: "La loi Gamma généralise uniquement la loi normale", isCorrect: false }
+                ],
+                explanation: "La loi Gamma est une famille très générale qui englobe l'exponentielle ($\\alpha=1$) et le $\\chi^2$ ($\\alpha=n/2, \\lambda=1/2$) comme cas particuliers. La fonction $\\Gamma$, définie par cette intégrale généralisée sur $]0,\\infty[$, normalise la densité. Elle n'a pas de lien direct de généralisation avec la loi normale.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Synthèse", "Discret vs densité"],
+                q: "Quelles différences fondamentales distinguent une variable aléatoire discrète d'une variable aléatoire à densité ?",
+                options: [
+                    { text: "Une variable discrète a une fonction de répartition en escalier (sauts), une variable à densité a une fonction de répartition continue", isCorrect: true },
+                    { text: "Pour une variable discrète, $P(X=x)$ peut être strictement positif ; pour une variable à densité, $P(X=x)=0$ toujours", isCorrect: true },
+                    { text: "Une variable discrète prend ses valeurs dans un ensemble fini ou dénombrable, une variable à densité typiquement dans un intervalle", isCorrect: true },
+                    { text: "Toute variable aléatoire réelle est soit discrète, soit à densité, sans autre possibilité", isCorrect: false }
+                ],
+                explanation: "Ces trois distinctions résument bien les Sections 3.3.3 et 3.3.4. La dernière affirmation est fausse : il existe des variables aléatoires réelles qui ne sont ni discrètes ni à densité (par exemple des lois mixtes, combinant une partie discrète et une partie continue, ou des lois singulières comme la fonction de Cantor).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            }
+        ]
+    }
+}
