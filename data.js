@@ -8542,3 +8542,2810 @@ const defaultData = {
         ]
     }
 }
+{
+    "Probabilités : Espérance, Vecteurs aléatoires & Marche aléatoire (Chapitres 4-6)": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Définitions"],
+                q: "Soit $(\\Omega, \\mathcal{F}, P)$ un espace probabilisé avec $\\Omega$ fini ou dénombrable, et $X$ une variable aléatoire sur $\\Omega$. Sous quelle condition l'espérance $E(X) = \\sum_{\\omega \\in \\Omega} p_\\omega X(\\omega)$ est-elle bien définie ?",
+                options: [
+                    { text: "Si $\\sum_{\\omega \\in \\Omega} p_\\omega |X(\\omega)|$ est finie", isCorrect: true },
+                    { text: "Si $X$ est positive", isCorrect: false },
+                    { text: "Toujours, sans aucune condition", isCorrect: false },
+                    { text: "Si $\\Omega$ est fini uniquement", isCorrect: false }
+                ],
+                explanation: "D'après la Définition 4.1, l'espérance $E(X) = \\sum_{\\omega \\in \\Omega} p_\\omega X(\\omega)$ n'est définie que si la somme $\\sum_{\\omega \\in \\Omega} p_\\omega |X(\\omega)|$ est finie, c'est-à-dire si $X$ est intégrable. Cette condition garantit que la somme converge de manière absolue, ce qui est nécessaire car $\\Omega$ peut être infini dénombrable.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Théorème de transfert"],
+                q: "Le Théorème 4.2 permet d'écrire $E(X) = \\sum_{i \\in I} x_i P(X = x_i)$. Quelle est la portée fondamentale de ce résultat ?",
+                options: [
+                    { text: "L'espérance ne dépend que de la loi de $X$, pas de l'espace $\\Omega$ sous-jacent", isCorrect: true },
+                    { text: "Il permet de calculer la variance directement", isCorrect: false },
+                    { text: "Il prouve que toute variable aléatoire est intégrable", isCorrect: false },
+                    { text: "Il s'applique uniquement aux variables aléatoires continues", isCorrect: false }
+                ],
+                explanation: "Ce théorème est important car il permet de passer de l'espace de départ $(\\Omega, \\mathcal{F}, P)$, souvent abstrait, à l'espace d'arrivée (sous-ensemble de $\\mathbb{R}$). On en déduit que l'espérance ne dépend que de la loi $P_X$ de la variable aléatoire, et non de la structure fine de $\\Omega$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Variables étagées"],
+                q: "Une variable aléatoire $X$ est dite étagée si :",
+                options: [
+                    { text: "Elle ne prend qu'un nombre fini de valeurs $x_1, \\ldots, x_m$", isCorrect: true },
+                    { text: "Elle est toujours positive", isCorrect: false },
+                    { text: "Elle prend une infinité dénombrable de valeurs", isCorrect: false },
+                    { text: "Elle admet une densité", isCorrect: false }
+                ],
+                explanation: "Par la Définition 4.3, une variable aléatoire étagée ne prend qu'un nombre fini de valeurs $x_1, \\ldots, x_m$, et s'écrit $X = \\sum_{i=1}^m x_i \\mathbb{I}_{A_i}$ où $A_i = \\{X = x_i\\}$. C'est la brique de base pour construire l'espérance des variables positives puis intégrables.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Construction"],
+                q: "Quel est l'ordre de construction de l'espérance pour une variable aléatoire réelle générale, selon le cours ?",
+                options: [
+                    { text: "Étagées → positives → intégrables", isCorrect: true },
+                    { text: "Intégrables → positives → étagées", isCorrect: false },
+                    { text: "Positives → intégrables → étagées", isCorrect: false },
+                    { text: "Discrètes → à densité → générales", isCorrect: false }
+                ],
+                explanation: "On définit d'abord l'espérance pour les variables étagées via le Théorème 4.2, puis on l'étend aux variables positives par $E(X) = \\sup\\{E(Z) : Z \\text{ étagée positive}, Z \\leq X\\}$, et enfin aux variables intégrables via la décomposition $X = X^+ - X^-$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Intégrabilité"],
+                q: "Une variable aléatoire $X$ est dite intégrable si :",
+                options: [
+                    { text: "$E(X^+) < \\infty$ et $E(X^-) < \\infty$", isCorrect: true },
+                    { text: "$E(|X|) < \\infty$", isCorrect: true },
+                    { text: "$X$ ne prend que des valeurs positives", isCorrect: false },
+                    { text: "$X^2$ est bornée", isCorrect: false }
+                ],
+                explanation: "Ces deux conditions sont équivalentes : $X = X^+ - X^-$ avec $X^+ = \\max\\{0, X\\}$ et $X^- = \\max\\{0, -X\\}$, et comme $|X| = X^+ + X^-$, on a $E(X^+) < \\infty$ et $E(X^-) < \\infty$ si et seulement si $E(|X|) < \\infty$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Propriétés fondamentales"],
+                q: "Parmi les propriétés suivantes de l'espérance, lesquelles sont correctes ?",
+                options: [
+                    { text: "$E(\\mathbb{I}_A) = P(A)$ pour tout évènement $A$", isCorrect: true },
+                    { text: "$E(aX + bY) = aE(X) + bE(Y)$ pour $X, Y$ intégrables et $a, b \\in \\mathbb{R}$ (linéarité)", isCorrect: true },
+                    { text: "$X \\leq Y$ p.s. implique $E(X) \\geq E(Y)$", isCorrect: false },
+                    { text: "$|E(X)| \\leq E(|X|)$", isCorrect: true }
+                ],
+                explanation: "La Proposition 4.6 énumère : espérance d'une indicatrice égale à la probabilité de l'évènement, linéarité de l'espérance (qui fait de $L^1$ un espace vectoriel), monotonie ($X \\leq Y$ p.s. implique $E(X) \\leq E(Y)$, pas l'inverse), et l'inégalité triangulaire $|E(X)| \\leq E(|X|)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Convergence"],
+                q: "Le théorème de convergence monotone énonce que si $(X_n)_{n\\geq 1}$ est une suite croissante et positive p.s. qui converge vers $X$ p.s., alors :",
+                options: [
+                    { text: "$E(X_n) \\to E(X)$ quand $n \\to \\infty$", isCorrect: true },
+                    { text: "$X_n$ converge vers $X$ en probabilité seulement", isCorrect: false },
+                    { text: "$E(X_n)$ est constante", isCorrect: false },
+                    { text: "$X$ doit être bornée", isCorrect: false }
+                ],
+                explanation: "C'est le point 5 de la Proposition 4.6 : sous les hypothèses de croissance, positivité p.s. et convergence p.s., les espérances convergent aussi : $E(X_n) \\xrightarrow{n\\to\\infty} E(X)$. Ce théorème est fondamental pour définir l'espérance des variables positives générales à partir des variables étagées.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Convergence dominée"],
+                q: "Quelles sont les hypothèses du théorème de convergence dominée ?",
+                options: [
+                    { text: "$(X_n)_{n\\geq 1}$ converge vers $X$ p.s.", isCorrect: true },
+                    { text: "Il existe $Y$ intégrable telle que $|X_n| \\leq Y$ p.s. pour tout $n$", isCorrect: true },
+                    { text: "$(X_n)_{n\\geq 1}$ doit être une suite croissante", isCorrect: false },
+                    { text: "Toutes les $X_n$ doivent être positives", isCorrect: false }
+                ],
+                explanation: "Contrairement à la convergence monotone, la convergence dominée ne nécessite ni croissance ni positivité, mais requiert l'existence d'une variable dominante intégrable $Y$ telle que $|X_n| \\leq Y$ p.s. pour tout $n$. Sous ces conditions, $X$ est intégrable et $E(X_n) \\to E(X)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Caractérisation de la loi"],
+                q: "D'après le Théorème 4.8, deux variables aléatoires $X$ et $Y$ ont même loi si et seulement si :",
+                options: [
+                    { text: "Pour toute fonction $h : \\mathbb{R} \\to \\mathbb{R}$ continue et bornée, $E(h(X)) = E(h(Y))$", isCorrect: true },
+                    { text: "$E(X) = E(Y)$", isCorrect: false },
+                    { text: "$Var(X) = Var(Y)$", isCorrect: false },
+                    { text: "$X$ et $Y$ ont la même fonction de répartition uniquement pour $x=0$", isCorrect: false }
+                ],
+                explanation: "L'égalité des espérances ou des variances seules ne caractérise pas la loi (contre-exemple facile à construire). En revanche, l'égalité de $E(h(X))$ et $E(h(Y))$ pour toute fonction continue bornée $h$ est équivalente à l'égalité des lois, car cela permet de reconstruire la fonction de répartition par approximation.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Théorème de transfert"],
+                q: "Pour une variable aléatoire discrète $X$ à valeurs dans $E = \\{x_i\\}_{i \\in I}$, le théorème de transfert donne $E(h(X))$ égal à :",
+                options: [
+                    { text: "$\\sum_{i \\in I} h(x_i) P(X = x_i)$", isCorrect: true },
+                    { text: "$\\int_{-\\infty}^{\\infty} h(x) f(x) dx$", isCorrect: false },
+                    { text: "$h(E(X))$", isCorrect: false },
+                    { text: "$\\sum_{i \\in I} h(x_i)$", isCorrect: false }
+                ],
+                explanation: "Le Théorème 4.10 (théorème de transfert), version discrète, permet de calculer $E(h(X))$ directement à partir de la loi de $X$ sans passer par la loi de $h(X)$ : $E(h(X)) = \\sum_{i \\in I} h(x_i) P(X = x_i)$, sous réserve de convergence absolue.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Théorème de transfert", "Densité"],
+                q: "Pour une variable aléatoire à densité $f$, le théorème de transfert donne :",
+                options: [
+                    { text: "$E(h(X)) = \\int_{-\\infty}^{\\infty} h(x) f(x) dx$", isCorrect: true },
+                    { text: "$E(h(X)) = \\sum_i h(x_i) f(x_i)$", isCorrect: false },
+                    { text: "$E(h(X)) = h(E(X))$", isCorrect: false },
+                    { text: "$E(h(X)) = \\int_{-\\infty}^{\\infty} h(f(x)) dx$", isCorrect: false }
+                ],
+                explanation: "Pour les variables à densité, la version continue du théorème de transfert (Théorème 4.10) donne $E(h(X)) = \\int_{-\\infty}^{\\infty} h(x) f(x) dx$, sous condition d'intégrabilité $\\int |h(x)| f(x) dx < \\infty$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Densité", "Changement de variable"],
+                q: "Soit $X$ une variable aléatoire à densité $f$, et $Y = aX + b$ avec $a \\neq 0$. Quelle est la densité $f^Y$ de $Y$ ?",
+                options: [
+                    { text: "$f^Y(y) = f\\left(\\frac{y-b}{a}\\right) \\frac{1}{|a|}$", isCorrect: true },
+                    { text: "$f^Y(y) = a f(y) + b$", isCorrect: false },
+                    { text: "$f^Y(y) = f(ay + b)$", isCorrect: false },
+                    { text: "$f^Y(y) = \\frac{1}{a} f(y-b)$", isCorrect: false }
+                ],
+                explanation: "L'Exemple 4.13 montre, via un changement de variable $y = ax+b$ dans l'intégrale du théorème de transfert, que $f^Y(y) = f\\left(\\frac{y-b}{a}\\right) \\frac{1}{|a|}$. Le facteur $\\frac{1}{|a|}$ vient du jacobien du changement de variable et assure que $f^Y$ s'intègre bien à 1.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Variance", "Définitions"],
+                q: "La variance d'une variable aléatoire $X$ de carré intégrable est définie par :",
+                options: [
+                    { text: "$Var(X) = E[(X - E(X))^2]$", isCorrect: true },
+                    { text: "$Var(X) = E(X^2) - E(X)^2$", isCorrect: true },
+                    { text: "$Var(X) = E(X^2)$", isCorrect: false },
+                    { text: "$Var(X) = \\sigma(X)$", isCorrect: false }
+                ],
+                explanation: "Les deux premières formules sont équivalentes (Propriété 4.18, point 4) : $Var(X) = E[(X-E(X))^2] = E(X^2) - E(X)^2$. La dernière option est fausse car $\\sigma(X) = \\sqrt{Var(X)}$ est l'écart-type, pas la variance elle-même.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Variance", "Propriétés"],
+                q: "Parmi les propriétés suivantes de la variance, lesquelles sont vraies pour $a \\in \\mathbb{R}$ ?",
+                options: [
+                    { text: "$Var(X+a) = Var(X)$", isCorrect: true },
+                    { text: "$Var(aX) = a^2 Var(X)$", isCorrect: true },
+                    { text: "$Var(X) \\geq 0$", isCorrect: true },
+                    { text: "$Var(aX) = a \\cdot Var(X)$", isCorrect: false }
+                ],
+                explanation: "La Propriété 4.18 donne : $Var(X) \\geq 0$ (car c'est l'espérance d'un carré), $Var(X+a) = Var(X)$ (la variance est invariante par translation) et $Var(aX) = a^2 Var(X)$ (facteur au carré car $Var$ est une forme quadratique). La dernière option confond variance et espérance (linéaire).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Écart-type"],
+                q: "Pourquoi utilise-t-on souvent l'écart-type plutôt que la variance en statistique ?",
+                options: [
+                    { text: "L'écart-type a la même unité que la variable aléatoire, contrairement à la variance qui a l'unité au carré", isCorrect: true },
+                    { text: "L'écart-type est toujours plus grand que la variance", isCorrect: false },
+                    { text: "L'écart-type est toujours nul", isCorrect: false },
+                    { text: "La variance n'existe pas pour les variables continues", isCorrect: false }
+                ],
+                explanation: "Comme le note la remarque après la Définition 4.17, si $X$ a une unité (mètres, euros...), l'écart-type $\\sigma(X) = \\sqrt{Var(X)}$ a la même unité, alors que la variance a l'unité au carré. C'est pourquoi l'écart-type est plus interprétable en pratique.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Variable centrée-réduite"],
+                q: "Une variable aléatoire $X$ est dite centrée-réduite si :",
+                options: [
+                    { text: "$E(X) = 0$ et $Var(X) = 1$", isCorrect: true },
+                    { text: "$E(X) = 1$ et $Var(X) = 0$", isCorrect: false },
+                    { text: "$E(X) = Var(X)$", isCorrect: false },
+                    { text: "$X$ suit une loi uniforme", isCorrect: false }
+                ],
+                explanation: "Par la Définition 4.17, $X$ est dite réduite si $Var(X) = 1$, et centrée-réduite si de plus $E(X) = 0$. C'est une transformation courante en statistique pour standardiser une variable aléatoire.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Covariance", "Définitions"],
+                q: "La covariance de deux variables aléatoires $X, Y$ de carré intégrable est définie par :",
+                options: [
+                    { text: "$Cov(X,Y) = E[(X - E(X))(Y - E(Y))]$", isCorrect: true },
+                    { text: "$Cov(X,Y) = E(XY) - E(X)E(Y)$", isCorrect: true },
+                    { text: "$Cov(X,Y) = E(X)E(Y)$", isCorrect: false },
+                    { text: "$Cov(X,Y) = Var(X) + Var(Y)$", isCorrect: false }
+                ],
+                explanation: "La Définition 4.20 et la Proposition 4.21 (point 4) donnent deux formules équivalentes : $Cov(X,Y) = E[(X-E(X))(Y-E(Y))] = E(XY) - E(X)E(Y)$. Cette dernière formule est souvent plus pratique en calcul.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Covariance", "Bilinéarité"],
+                q: "La covariance, en tant que forme bilinéaire symétrique sur $L^2$, vérifie :",
+                options: [
+                    { text: "$Cov(X,X) = Var(X)$", isCorrect: true },
+                    { text: "$Cov(aX+bY, Z) = a\\,Cov(X,Z) + b\\,Cov(Y,Z)$", isCorrect: true },
+                    { text: "$Cov(X,Y) = Cov(Y,X)$ (symétrie)", isCorrect: true },
+                    { text: "$Cov(X,Y)$ est toujours positive", isCorrect: false }
+                ],
+                explanation: "La Proposition 4.21 établit que la covariance est bilinéaire ($Cov(aX+bY,Z) = a\\,Cov(X,Z)+b\\,Cov(Y,Z)$), symétrique ($Cov(X,Y)=Cov(Y,X)$), et que sa forme quadratique associée est la variance ($Cov(X,X) = Var(X)$). Elle peut être négative, nulle ou positive selon la relation entre $X$ et $Y$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Variance", "Somme"],
+                q: "La relation entre variance de la somme et covariance s'écrit :",
+                options: [
+                    { text: "$Var(X+Y) = Var(X) + Var(Y) + 2\\,Cov(X,Y)$", isCorrect: true },
+                    { text: "$Var(X+Y) = Var(X) + Var(Y)$", isCorrect: false },
+                    { text: "$Var(X+Y) = Var(X) \\cdot Var(Y)$", isCorrect: false },
+                    { text: "$Var(X+Y) = Var(X) - Var(Y)$", isCorrect: false }
+                ],
+                explanation: "Le point 5 de la Proposition 4.21 donne $Var(X+Y) = Var(X) + Var(Y) + 2\\,Cov(X,Y)$. La deuxième option n'est vraie que dans le cas particulier où $X$ et $Y$ sont indépendantes (ou plus généralement non corrélées), car alors $Cov(X,Y) = 0$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Matrice de covariance"],
+                q: "Concernant la matrice de covariance de $X_1, \\ldots, X_n$ (variables aléatoires de carré intégrable), quelles affirmations sont vraies ?",
+                options: [
+                    { text: "C'est une matrice réelle symétrique", isCorrect: true },
+                    { text: "Sa diagonale est formée des variances des $X_i$", isCorrect: true },
+                    { text: "$Var\\left(\\sum_{i=1}^n X_i\\right) = \\sum_{i=1}^n Var(X_i) + 2\\sum_{1\\leq i<j\\leq n} Cov(X_i,X_j)$", isCorrect: true },
+                    { text: "Elle est toujours diagonale", isCorrect: false }
+                ],
+                explanation: "La Propriété 4.24 confirme la symétrie de la matrice de covariance, sa diagonale formée des variances, et la formule généralisée de la variance d'une somme. Elle n'est diagonale que dans des cas particuliers, notamment lorsque les variables sont deux à deux non corrélées (par exemple indépendantes).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Corrélation"],
+                q: "La corrélation $Cor(X,Y)$ entre deux variables aléatoires de variances non nulles est définie et bornée par :",
+                options: [
+                    { text: "$Cor(X,Y) = \\frac{Cov(X,Y)}{\\sigma(X)\\sigma(Y)}$, avec $-1 \\leq Cor(X,Y) \\leq 1$", isCorrect: true },
+                    { text: "$Cor(X,Y) = Cov(X,Y)$ directement", isCorrect: false },
+                    { text: "$Cor(X,Y)$ peut dépasser 1 en valeur absolue", isCorrect: false },
+                    { text: "$Cor(X,Y)$ a la même unité que $X$", isCorrect: false }
+                ],
+                explanation: "La Définition 4.20 donne $Cor(X,Y) = \\frac{Cov(X,Y)}{\\sigma(X)\\sigma(Y)}$, et la Proposition 4.32 (conséquence de Cauchy-Schwarz) montre que $-1 \\leq Cor(X,Y) \\leq 1$. La corrélation est sans unité, ce qui la rend très utile en statistique pour comparer différentes paires de variables.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Moments"],
+                q: "Le moment d'ordre $n$ d'une variable aléatoire $X$ est défini comme $E(X^n)$, à condition que :",
+                options: [
+                    { text: "$X^n$ soit intégrable", isCorrect: true },
+                    { text: "$X$ soit toujours positive", isCorrect: false },
+                    { text: "$n$ soit pair", isCorrect: false },
+                    { text: "$X$ suive une loi normale", isCorrect: false }
+                ],
+                explanation: "Selon la Définition 4.26, si $X^n$ est intégrable, la quantité $E(X^n)$ est bien définie et appelée moment d'ordre $n$ de $X$. Il n'y a pas de restriction sur la parité de $n$ ni sur le signe de $X$, ni sur la loi de $X$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Inégalité de Markov"],
+                q: "L'inégalité de Markov énonce, pour $X$ admettant un moment d'ordre $n \\geq 1$ et $a > 0$ :",
+                options: [
+                    { text: "$P(|X| \\geq a) \\leq \\frac{E[|X|^n]}{a^n}$", isCorrect: true },
+                    { text: "$P(|X| \\geq a) \\geq \\frac{E[|X|^n]}{a^n}$", isCorrect: false },
+                    { text: "$P(|X| \\geq a) \\leq \\frac{Var(X)}{a^2}$", isCorrect: false },
+                    { text: "$P(|X| \\geq a) = \\frac{E[|X|^n]}{a^n}$", isCorrect: false }
+                ],
+                explanation: "La Proposition 4.28 donne l'inégalité de Markov : $P(|X| \\geq a) \\leq \\frac{E[|X|^n]}{a^n}$ pour tout $a > 0$. C'est une borne (inégalité, pas égalité) qui utilise le fait que $|X|^n \\geq a^n \\mathbb{I}_{\\{|X|\\geq a\\}}$. La troisième option correspond en réalité à l'inégalité de Bienaymé-Tchebychev.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Inégalité de Bienaymé-Tchebychev"],
+                q: "L'inégalité de Bienaymé-Tchebychev, pour $X$ de carré intégrable et $a > 0$, s'écrit :",
+                options: [
+                    { text: "$P[|X - E(X)| \\geq a] \\leq \\frac{Var(X)}{a^2}$", isCorrect: true },
+                    { text: "$P[|X - E(X)| \\geq a] \\leq \\frac{E(X)}{a}$", isCorrect: false },
+                    { text: "C'est une conséquence de l'inégalité de Markov appliquée à $Y = X - E(X)$ avec $n=2$", isCorrect: true },
+                    { text: "Elle nécessite que $X$ suive une loi normale", isCorrect: false }
+                ],
+                explanation: "La Proposition 4.29 montre que l'inégalité de Bienaymé-Tchebychev $P[|X-E(X)| \\geq a] \\leq \\frac{Var(X)}{a^2}$ s'obtient en appliquant Markov à $Y = X - E(X)$ avec $n=2$. Elle est valable pour toute variable aléatoire de carré intégrable, sans hypothèse de loi particulière, et quantifie que plus la variance est grande, plus les fluctuations autour de la moyenne sont potentiellement grandes.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Inégalité de Jensen"],
+                q: "L'inégalité de Jensen énonce, pour $X$ intégrable et $f$ continue convexe telle que $f(X)$ est intégrable :",
+                options: [
+                    { text: "$E(f(X)) \\geq f(E(X))$", isCorrect: true },
+                    { text: "$E(f(X)) \\leq f(E(X))$", isCorrect: false },
+                    { text: "$E(f(X)) = f(E(X))$", isCorrect: false },
+                    { text: "Elle nécessite que $f$ soit concave", isCorrect: false }
+                ],
+                explanation: "La Proposition 4.30 donne $E(f(X)) \\geq f(E(X))$ pour $f$ convexe. La preuve utilise le fait qu'une fonction convexe est toujours au-dessus de sa tangente en tout point, en particulier au point $a = E(X)$. Pour $f$ concave, l'inégalité serait inversée.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Inégalité de Cauchy-Schwarz"],
+                q: "L'inégalité de Cauchy-Schwarz pour deux variables aléatoires $X, Y$ de carré intégrable donne :",
+                options: [
+                    { text: "$|E(XY)| \\leq \\sqrt{E(X^2)E(Y^2)}$", isCorrect: true },
+                    { text: "$E(XY) = E(X)E(Y)$", isCorrect: false },
+                    { text: "$XY$ n'est pas nécessairement intégrable", isCorrect: false },
+                    { text: "$|E(XY)| \\geq \\sqrt{E(X^2)E(Y^2)}$", isCorrect: false }
+                ],
+                explanation: "La Proposition 4.31 énonce que si $X, Y$ sont de carré intégrable, alors $XY$ est intégrable (conséquence de $|XY| \\leq \\frac{1}{2}(X^2+Y^2)$) et $|E(XY)| \\leq \\sqrt{E(X^2)E(Y^2)}$. Cette inégalité est à la base de la borne sur la covariance et la corrélation.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "L1 L2"],
+                q: "Quelle est la relation entre les espaces $L^1(\\Omega,\\mathcal{F},P)$ et $L^2(\\Omega,\\mathcal{F},P)$ ?",
+                options: [
+                    { text: "$L^2$ est un sous-espace vectoriel de $L^1$", isCorrect: true },
+                    { text: "$L^1$ est un sous-espace vectoriel de $L^2$", isCorrect: false },
+                    { text: "$L^1$ et $L^2$ sont toujours égaux", isCorrect: false },
+                    { text: "$E(|X|) \\leq \\sqrt{E(X^2)}$ pour $X$ de carré intégrable", isCorrect: true }
+                ],
+                explanation: "La Proposition 4.16 montre que si $X$ est de carré intégrable, alors $E(|X|) \\leq \\sqrt{E(X^2)}$, ce qui implique que $X$ est intégrable. Donc $L^2$ est un sous-espace vectoriel de $L^1$ (la réciproque est fausse en général : une variable peut être intégrable sans être de carré intégrable).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Vecteurs aléatoires discrets"],
+                q: "Un vecteur aléatoire discret $X = (X_1, \\ldots, X_n)$ est caractérisé par le fait que :",
+                options: [
+                    { text: "Chacune de ses composantes est une variable aléatoire discrète", isCorrect: true },
+                    { text: "$X$ prend nécessairement une infinité non dénombrable de valeurs", isCorrect: false },
+                    { text: "L'espace d'arrivée $E = E_1 \\times \\cdots \\times E_n$ est fini ou dénombrable", isCorrect: true },
+                    { text: "Toutes les composantes doivent avoir la même loi", isCorrect: false }
+                ],
+                explanation: "La Remarque 5.2 précise que $X$ est un vecteur aléatoire discret si et seulement si chacune de ses composantes est discrète, et que l'espace d'arrivée $E_1 \\times \\cdots \\times E_n$ est bien fini ou dénombrable car produit cartésien fini d'ensembles finis ou dénombrables. Il n'y a aucune exigence sur l'égalité des lois des composantes.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Loi jointe", "Loi marginale"],
+                q: "Pour un couple aléatoire discret $(X,Y)$, la loi marginale de $X$ se retrouve à partir de la loi jointe par :",
+                options: [
+                    { text: "$P(X=x) = \\sum_{y \\in F} P(X=x, Y=y)$", isCorrect: true },
+                    { text: "$P(X=x) = P(X=x,Y=y)$ pour un $y$ fixé quelconque", isCorrect: false },
+                    { text: "$P(X=x) = \\max_y P(X=x,Y=y)$", isCorrect: false },
+                    { text: "$P(X=x)$ ne peut pas être retrouvée à partir de la loi jointe", isCorrect: false }
+                ],
+                explanation: "La Définition 5.4 (point 3) montre que la loi marginale de $X$ s'obtient en sommant la loi jointe sur toutes les valeurs de $Y$ : $P_X(\\{x\\}) = \\sum_{y \\in F} P(X=x, Y=y)$. C'est une conséquence de la formule des probabilités totales.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Loi jointe", "Lois marginales"],
+                q: "Connaître les lois marginales de $X$ et $Y$ suffit-il à déterminer la loi jointe du couple $(X,Y)$ ?",
+                options: [
+                    { text: "Non, en général la réciproque est fausse", isCorrect: true },
+                    { text: "Oui, toujours", isCorrect: false },
+                    { text: "Oui, mais seulement si $X$ et $Y$ sont discrètes", isCorrect: false },
+                    { text: "Oui, mais seulement si $X = Y$", isCorrect: false }
+                ],
+                explanation: "La Remarque 5.8 souligne que la loi du couple $(X,Y)$ détermine les lois marginales, mais la réciproque est fausse : connaître les lois de $X$ et $Y$ séparément n'entraîne pas la connaissance de la loi du couple. L'Exemple 5.6 illustre ceci avec des couples ayant les mêmes marginales uniformes mais des lois jointes différentes selon $p$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Exemple", "Covariance"],
+                q: "Dans l'Exemple 5.6, un couple $(X,Y)$ à valeurs dans $\\{-1,1\\}^2$ a pour probabilités $\\frac{1}{2}-p, p, p, \\frac{1}{2}-p$ (dans l'ordre $(-1,-1),(-1,1),(1,-1),(1,1)$). Quelle est la covariance $Cov(X,Y)$ ?",
+                options: [
+                    { text: "$Cov(X,Y) = 1 - 4p$", isCorrect: true },
+                    { text: "$Cov(X,Y) = 4p - 1$", isCorrect: false },
+                    { text: "$Cov(X,Y) = 0$ pour toute valeur de $p$", isCorrect: false },
+                    { text: "$Cov(X,Y) = p$", isCorrect: false }
+                ],
+                explanation: "Dans l'Exemple 5.6, $X$ et $Y$ suivent chacune la loi uniforme sur $\\{-1,1\\}$ donc $E(X)=E(Y)=0$. Le calcul de $E(XY)$ par le théorème de transfert donne $E(XY) = 2(\\frac{1}{2}-p) - 2p = 1-4p$, donc $Cov(X,Y) = E(XY) - E(X)E(Y) = 1-4p$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Loi conditionnelle"],
+                q: "La loi conditionnelle de $Y$ sachant $\\{X=x\\}$ (avec $P(X=x)>0$) est définie par :",
+                options: [
+                    { text: "$P(\\{Y=y\\}|\\{X=x\\}) = \\frac{P_{(X,Y)}(\\{(x,y)\\})}{P_X(\\{x\\})}$", isCorrect: true },
+                    { text: "$P(\\{Y=y\\}|\\{X=x\\}) = P_{(X,Y)}(\\{(x,y)\\}) \\cdot P_X(\\{x\\})$", isCorrect: false },
+                    { text: "$P(\\{Y=y\\}|\\{X=x\\}) = P_Y(\\{y\\})$ toujours", isCorrect: false },
+                    { text: "$P(\\{Y=y\\}|\\{X=x\\})$ n'est définie que si $Y$ est indépendante de $X$", isCorrect: false }
+                ],
+                explanation: "La Définition 5.7 donne exactement cette formule, cohérente avec la définition classique de la probabilité conditionnelle vue au Chapitre 2 : $P(\\{Y=y\\}|\\{X=x\\}) = \\frac{P(\\{Y=y,X=x\\})}{P(\\{X=x\\})} = \\frac{P_{(X,Y)}(\\{(x,y)\\})}{P_X(\\{x\\})}$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Espérance conditionnelle"],
+                q: "L'espérance conditionnelle $E(Y|X)$ est :",
+                options: [
+                    { text: "Une variable aléatoire fonction de $X$, contrairement à l'espérance classique qui est un nombre réel", isCorrect: true },
+                    { text: "Toujours un nombre réel constant", isCorrect: false },
+                    { text: "Définie par $\\psi(X)$ où $\\psi(x) = E(Y|X=x)$ si $P(X=x)>0$", isCorrect: true },
+                    { text: "Égale à $E(Y)$ dans tous les cas", isCorrect: false }
+                ],
+                explanation: "La Remarque 5.10 souligne bien cette différence fondamentale : contrairement à l'espérance $E(Y)$ qui est un nombre réel, l'espérance conditionnelle $E(Y|X)$ est une variable aléatoire (fonction de l'aléa à travers $X$), définie via la Définition 5.9 comme $\\psi(X)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Espérance conditionnelle", "Théorème"],
+                q: "Le Théorème 5.11 (formule de l'espérance totale) énonce que si $Y$ est intégrable :",
+                options: [
+                    { text: "$E[E(Y|X)] = E(Y)$", isCorrect: true },
+                    { text: "$E[E(Y|X)] = E(X)$", isCorrect: false },
+                    { text: "$E(Y|X)$ n'est jamais intégrable", isCorrect: false },
+                    { text: "$E[E(Y|X)] = 0$ toujours", isCorrect: false }
+                ],
+                explanation: "Le Théorème 5.11 (formule de l'espérance totale) est un résultat fondamental : $E[E(Y|X)] = E(Y)$. La démonstration passe par le théorème de transfert et la formule des probabilités totales, en montrant que l'espérance conditionnelle est intégrable si $Y$ l'est.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Espérance conditionnelle", "Propriétés"],
+                q: "Parmi les propriétés de l'espérance conditionnelle du Théorème 5.12, lesquelles sont correctes ?",
+                options: [
+                    { text: "Linéarité : $E(aY+bZ|X) = aE(Y|X) + bE(Z|X)$", isCorrect: true },
+                    { text: "Si $g(X)$ est intégrable, $E[Yg(X)|X] = g(X)E(Y|X)$ ($g(X)$ se comporte comme une constante)", isCorrect: true },
+                    { text: "$E(1|X) = 1$", isCorrect: true },
+                    { text: "$Y \\geq 0 \\Rightarrow E(Y|X) \\leq 0$", isCorrect: false }
+                ],
+                explanation: "Le Théorème 5.12 liste : linéarité, positivité ($Y\\geq 0 \\Rightarrow E(Y|X) \\geq 0$, pas $\\leq 0$), $E(1|X)=1$, et la propriété que toute fonction $g(X)$ mesurable et intégrable se comporte comme une constante vis-à-vis de l'espérance conditionnelle sachant $X$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Indépendance", "Définition"],
+                q: "Deux variables aléatoires discrètes $X$ et $Y$ sont indépendantes si :",
+                options: [
+                    { text: "Pour tout $A \\in \\mathcal{P}(E)$, $B \\in \\mathcal{P}(F)$, $P(X \\in A, Y \\in B) = P(X \\in A)P(Y \\in B)$", isCorrect: true },
+                    { text: "$E(X) = E(Y)$", isCorrect: false },
+                    { text: "$Cov(X,Y) = 0$", isCorrect: false },
+                    { text: "Elles ont la même loi", isCorrect: false }
+                ],
+                explanation: "La Définition 5.14 caractérise l'indépendance par la factorisation des probabilités jointes pour tous ensembles $A, B$. Les autres critères sont soit nécessaires mais non suffisants (comme $Cov(X,Y)=0$, voir Remarque 5.19), soit sans rapport avec l'indépendance.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "i.i.d."],
+                q: "Une famille de variables aléatoires est dite i.i.d. (indépendantes et identiquement distribuées) si :",
+                options: [
+                    { text: "Elles sont indépendantes et toutes de même loi", isCorrect: true },
+                    { text: "Elles sont indépendantes mais pas nécessairement de même loi", isCorrect: false },
+                    { text: "Elles ont la même loi mais ne sont pas nécessairement indépendantes", isCorrect: false },
+                    { text: "Elles sont toutes égales entre elles", isCorrect: false }
+                ],
+                explanation: "La Définition 5.14 précise clairement les deux conditions cumulatives : indépendance mutuelle ET même loi pour toutes les variables de la famille. C'est une hypothèse centrale de la loi des grands nombres (Théorème 5.27).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Indépendance", "Caractérisations"],
+                q: "D'après le Théorème 5.16, laquelle des conditions suivantes est équivalente à l'indépendance de $X$ et $Y$ ?",
+                options: [
+                    { text: "$\\forall x \\in E, y \\in F : P(\\{X=x,Y=y\\}) = P(\\{X=x\\})P(\\{Y=y\\})$", isCorrect: true },
+                    { text: "Pour toutes fonctions bornées $f, g$, $E[f(X)g(Y)] = E[f(X)]E[g(Y)]$", isCorrect: true },
+                    { text: "$\\forall x, P(X=x) > 0 \\Rightarrow P_Y(\\cdot|\\{X=x\\}) = P_Y(\\cdot)$", isCorrect: true },
+                    { text: "$E(X+Y) = E(X) + E(Y)$", isCorrect: false }
+                ],
+                explanation: "Le Théorème 5.16 énonce cinq conditions équivalentes à l'indépendance, dont la factorisation ponctuelle des lois, l'égalité de la loi conditionnelle et de la loi marginale, et la factorisation de $E[f(X)g(Y)]$. La linéarité de l'espérance $E(X+Y)=E(X)+E(Y)$ est toujours vraie, indépendance ou non, donc elle ne caractérise pas l'indépendance.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Indépendance", "Conséquences"],
+                q: "Si $X, Y$ sont deux variables aléatoires de carré intégrable et indépendantes, quelles conséquences en découlent (Proposition 5.18) ?",
+                options: [
+                    { text: "$E(XY) = E(X)E(Y)$", isCorrect: true },
+                    { text: "$Cov(X,Y) = 0$", isCorrect: true },
+                    { text: "$Var(X+Y) = Var(X) + Var(Y)$", isCorrect: true },
+                    { text: "$X$ et $Y$ ont nécessairement la même loi", isCorrect: false }
+                ],
+                explanation: "La Proposition 5.18 découle directement du Théorème 5.16 : indépendance implique $E(XY)=E(X)E(Y)$, donc $Cov(X,Y)=0$, et donc $Var(X+Y)=Var(X)+Var(Y)$. L'indépendance ne dit rien sur l'égalité des lois (ce serait la propriété i.i.d.).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Covariance nulle", "Contre-exemple"],
+                q: "La réciproque de « indépendance implique covariance nulle » est-elle vraie ?",
+                options: [
+                    { text: "Non : covariance nulle n'implique pas indépendance", isCorrect: true },
+                    { text: "Oui, toujours", isCorrect: false },
+                    { text: "Oui, mais seulement pour les variables gaussiennes", isCorrect: false },
+                    { text: "Oui, mais seulement pour les variables discrètes finies", isCorrect: false }
+                ],
+                explanation: "La Remarque 5.19 donne un contre-exemple explicite : $Z$ uniforme sur $\\{-1,0,1\\}$, $X=Z$, $Y=Z^2$. On a $Cov(X,Y)=0$ mais $X$ et $Y$ ne sont pas indépendantes, car $P(X=-1,Y=1) = 1/3 \\neq P(X=-1)P(Y=1) = 2/9$. (Note : la réciproque est vraie pour les vecteurs gaussiens, mais ce cas dépasse le cadre du cours.)",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Loi de la somme", "Convolution"],
+                q: "Pour $X, Y$ deux variables aléatoires discrètes réelles indépendantes, la loi de $S = X+Y$ est donnée par :",
+                options: [
+                    { text: "$P(X+Y=s) = \\sum_{x \\in E} P(X=x)P(Y=s-x)$", isCorrect: true },
+                    { text: "$P(X+Y=s) = P(X=s)P(Y=s)$", isCorrect: false },
+                    { text: "$P(X+Y=s) = P(X=s) + P(Y=s)$", isCorrect: false },
+                    { text: "$P(X+Y=s)$ ne peut se calculer que numériquement", isCorrect: false }
+                ],
+                explanation: "La Proposition 5.20 donne, dans le cas indépendant, $P(X+Y=s) = \\sum_{x\\in E} P(X=x)P(Y=s-x)$, appelée produit de convolution des lois de $X$ et $Y$ (Définition 5.23). Sans indépendance, il faut utiliser la formule générale avec $P(X=x,Y=s-x)$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Convolution", "Densité"],
+                q: "Pour $X, Y$ deux variables aléatoires réelles à densité indépendantes, de densités $f^X, f^Y$, la densité de $Z = X+Y$ est :",
+                options: [
+                    { text: "$f^Z(z) = \\int_{\\mathbb{R}} f^X(w) f^Y(z-w) dw$", isCorrect: true },
+                    { text: "$f^Z(z) = f^X(z) \\cdot f^Y(z)$", isCorrect: false },
+                    { text: "$f^Z(z) = f^X(z) + f^Y(z)$", isCorrect: false },
+                    { text: "$f^Z(z) = f^X(z) - f^Y(z)$", isCorrect: false }
+                ],
+                explanation: "La Proposition 5.22 donne la formule de convolution des densités : $f^Z(z) = \\int_{\\mathbb{R}} f^X(w) f^Y(z-w) dw = \\int_{\\mathbb{R}} f^X(z-w) f^Y(w) dw$. Cette formule, bien qu'issue d'une preuve hors programme, est très utilisée en pratique.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Convolution", "Lois usuelles"],
+                q: "D'après l'Exemple 5.24 sur les produits de convolution, quelles affirmations sont correctes ?",
+                options: [
+                    { text: "$Bin(n_1,p) + Bin(n_2,p)$ (indépendantes) suit une loi $Bin(n_1+n_2, p)$", isCorrect: true },
+                    { text: "$\\mathcal{N}(\\mu,\\sigma^2) + \\mathcal{N}(\\nu,\\tau^2)$ (indépendantes) suit une loi $\\mathcal{N}(\\mu+\\nu, \\sigma^2+\\tau^2)$", isCorrect: true },
+                    { text: "La somme de deux lois binomiales de paramètres $p$ différents reste binomiale", isCorrect: false },
+                    { text: "$\\mathcal{N}(\\mu,\\sigma^2) + \\mathcal{N}(\\nu,\\tau^2)$ suit une loi $\\mathcal{N}(\\mu+\\nu, \\sigma^2 \\tau^2)$", isCorrect: false }
+                ],
+                explanation: "L'Exemple 5.24 énonce deux résultats classiques de stabilité par convolution : la somme de deux binomiales indépendantes de même paramètre $p$ est binomiale, et la somme de deux gaussiennes indépendantes est gaussienne avec sommation des moyennes et des variances (pas des écarts-types ni multiplication).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Convergence", "Modes"],
+                q: "Une suite $(X_n)_{n\\geq1}$ converge presque sûrement vers $X$ si :",
+                options: [
+                    { text: "$P[\\omega \\in \\Omega : \\lim_{n\\to\\infty} X_n(\\omega) = X(\\omega)] = 1$", isCorrect: true },
+                    { text: "$\\forall \\varepsilon>0, \\lim_{n\\to\\infty} P[|X-X_n|\\geq\\varepsilon]=0$", isCorrect: false },
+                    { text: "$X_n(\\omega) = X(\\omega)$ pour tout $\\omega$", isCorrect: false },
+                    { text: "$E(X_n) \\to E(X)$", isCorrect: false }
+                ],
+                explanation: "La Définition 5.25 (point 1) définit la convergence presque sûre par $P[\\omega : \\lim_n X_n(\\omega) = X(\\omega)] = 1$ : la convergence simple a lieu sauf sur un ensemble de probabilité nulle. La deuxième option décrit la convergence en probabilité (point 2), un mode de convergence différent et plus faible.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Convergence en probabilité"],
+                q: "Une suite $(X_n)_{n\\geq1}$ converge en probabilité vers $X$ si :",
+                options: [
+                    { text: "$\\forall \\varepsilon > 0$, $\\lim_{n\\to+\\infty} P[|X-X_n| \\geq \\varepsilon] = 0$", isCorrect: true },
+                    { text: "$P[\\omega : \\lim_n X_n(\\omega) = X(\\omega)] = 1$", isCorrect: false },
+                    { text: "$X_n$ converge uniformément vers $X$", isCorrect: false },
+                    { text: "$Var(X_n) \\to 0$ nécessairement", isCorrect: false }
+                ],
+                explanation: "La Définition 5.25 (point 2) définit la convergence en probabilité par $\\forall \\varepsilon>0, \\lim_{n\\to+\\infty} P[|X-X_n|\\geq\\varepsilon]=0$. La convergence presque sûre est plus forte que la convergence en probabilité, comme le note la Remarque 5.26.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Convergences", "Comparaison"],
+                q: "Quel est le rapport de force entre la convergence presque sûre et la convergence en probabilité ?",
+                options: [
+                    { text: "La convergence presque sûre est plus forte : elle implique la convergence en probabilité", isCorrect: true },
+                    { text: "La convergence en probabilité est plus forte", isCorrect: false },
+                    { text: "Les deux modes de convergence sont toujours équivalents", isCorrect: false },
+                    { text: "Aucun lien n'existe entre les deux notions", isCorrect: false }
+                ],
+                explanation: "La Remarque 5.26 précise que la convergence presque sûre est plus forte que la convergence en probabilité. Ce résultat, admis dans ce cours, sera démontré dans le cours de probabilités de l'année suivante.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Loi faible des grands nombres"],
+                q: "La loi faible des grands nombres (Théorème 5.27) concerne une suite $(X_n)_{n\\geq1}$ i.i.d. de carré intégrable, de moyenne $\\mu$ et variance $\\sigma^2$. Que dit-elle sur la moyenne empirique $Z_n = \\frac{X_1+\\cdots+X_n}{n}$ ?",
+                options: [
+                    { text: "$Z_n$ converge en probabilité vers $\\mu$", isCorrect: true },
+                    { text: "$Z_n$ converge en probabilité vers $\\sigma^2$", isCorrect: false },
+                    { text: "$Z_n$ est constante et égale à $\\mu$ pour tout $n$", isCorrect: false },
+                    { text: "$Z_n$ diverge presque sûrement", isCorrect: false }
+                ],
+                explanation: "Le Théorème 5.27 énonce que la moyenne empirique $Z_n$ converge en probabilité vers la moyenne théorique $\\mu$ : $\\forall \\varepsilon>0, P(|Z_n-\\mu|\\geq\\varepsilon) \\leq \\frac{\\sigma^2}{\\varepsilon^2 n}$. Cela valide l'approche fréquentiste des probabilités.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Loi des grands nombres", "Démonstration"],
+                q: "Dans la démonstration de la loi faible des grands nombres, on utilise :",
+                options: [
+                    { text: "La linéarité de l'espérance pour montrer $E(Z_n) = \\mu$", isCorrect: true },
+                    { text: "L'indépendance des $(X_n)$ pour montrer $Var(Z_n) = \\sigma^2/n$", isCorrect: true },
+                    { text: "L'inégalité de Bienaymé-Tchebychev appliquée à $Z_n$", isCorrect: true },
+                    { text: "L'inégalité de Cauchy-Schwarz uniquement", isCorrect: false }
+                ],
+                explanation: "La démonstration du Théorème 5.27 combine : linéarité de l'espérance ($E(Z_n)=\\mu$), indépendance pour additivité des variances ($Var(Z_n)=\\sigma^2/n$), puis application de l'inégalité de Bienaymé-Tchebychev pour obtenir la borne $P(|Z_n-\\mu|\\geq\\varepsilon)\\leq\\sigma^2/(\\varepsilon^2 n)$, dont on prend la limite quand $n\\to\\infty$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Loi forte des grands nombres"],
+                q: "Quelle est la différence entre la loi faible et la loi forte des grands nombres ?",
+                options: [
+                    { text: "La loi forte donne la convergence presque sûre, la loi faible donne seulement la convergence en probabilité", isCorrect: true },
+                    { text: "La loi forte nécessite des variables de carré intégrable, la loi faible non", isCorrect: false },
+                    { text: "Il n'y a aucune différence", isCorrect: false },
+                    { text: "La loi forte s'applique uniquement aux variables discrètes", isCorrect: false }
+                ],
+                explanation: "La Remarque 5.28 précise que la loi forte des grands nombres démontre la convergence presque sûre de $(Z_n)$ vers $\\mu$ (sous la seule hypothèse d'intégrabilité, plus faible que carré-intégrabilité), tandis que la version prouvée dans ce cours (loi faible) ne donne que la convergence en probabilité.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Loi des grands nombres", "Application"],
+                q: "Dans l'exemple du schéma de Bernoulli (dé non pipé, succès = obtenir un 6), que représente $\\frac{n_N(A)}{N}$ où $n_N(A)$ est le nombre de succès en $N$ répétitions ?",
+                options: [
+                    { text: "La fréquence empirique de l'évènement $A$, qui converge en probabilité vers $p = P(A)$", isCorrect: true },
+                    { text: "La probabilité théorique exacte de $A$", isCorrect: false },
+                    { text: "Une constante indépendante de $N$", isCorrect: false },
+                    { text: "La variance de $A$", isCorrect: false }
+                ],
+                explanation: "L'Exemple 5.29 illustre concrètement la loi des grands nombres : $\\frac{n_N(A)}{N} \\xrightarrow[N\\to+\\infty]{P} p$. Cela justifie l'approche fréquentiste intuitive de la probabilité évoquée au Chapitre 1 : la fréquence d'apparition d'un évènement converge vers sa probabilité théorique.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Marche aléatoire", "Définition"],
+                q: "Une marche aléatoire $(S_n)_{n\\geq0}$ est définie par $S_n = x + \\sum_{k=1}^n X_k$. Quelle hypothèse est faite sur les $(X_k)_{k\\geq1}$ ?",
+                options: [
+                    { text: "Elles sont indépendantes et identiquement distribuées", isCorrect: true },
+                    { text: "Elles sont dépendantes deux à deux", isCorrect: false },
+                    { text: "Elles doivent être positives", isCorrect: false },
+                    { text: "Elles suivent nécessairement une loi normale", isCorrect: false }
+                ],
+                explanation: "La Définition 6.1 précise que les incréments $(X_k)_{k\\geq1}$ sont i.i.d., et $x = S_0$ est la position initiale. Aucune hypothèse de positivité ni de loi spécifique n'est imposée dans la définition générale.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Marche aléatoire", "Symétrique"],
+                q: "Pour la marche aléatoire simple sur $\\mathbb{Z}$ (dimension $d=1$) avec $P(X_k=1)=p$, $P(X_k=-1)=1-p$, quand parle-t-on de marche aléatoire symétrique ?",
+                options: [
+                    { text: "Lorsque $p = \\frac{1}{2}$", isCorrect: true },
+                    { text: "Lorsque $p = 1$", isCorrect: false },
+                    { text: "Lorsque $p = 0$", isCorrect: false },
+                    { text: "Pour toute valeur de $p$", isCorrect: false }
+                ],
+                explanation: "L'Exemple 6.2 précise que la marche aléatoire est dite symétrique lorsque les variables $X_k$ sont uniformes, ce qui correspond à $p = \\frac{1}{2}$ dans le cas $d=1$ : la probabilité d'aller à droite ou à gauche est égale.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Marche aléatoire", "Zd"],
+                q: "Pour la marche aléatoire symétrique sur $\\mathbb{Z}^2$, les incréments $X_k$ prennent leurs valeurs dans quel ensemble ?",
+                options: [
+                    { text: "$\\{(1,0), (-1,0), (0,1), (0,-1)\\}$, chacune avec probabilité $\\frac{1}{4}$", isCorrect: true },
+                    { text: "$\\{(1,1), (-1,-1)\\}$ uniquement", isCorrect: false },
+                    { text: "$\\{-1,1\\}$", isCorrect: false },
+                    { text: "$\\mathbb{Z}^2$ tout entier avec probabilité uniforme", isCorrect: false }
+                ],
+                explanation: "L'Exemple 6.2 décrit la marche aléatoire symétrique sur $\\mathbb{Z}^2$ : les incréments sont à valeurs dans les 4 directions cardinales $\\{(1,0),(-1,0),(0,1),(0,-1)\\}$, chacune avec probabilité $\\frac{1}{4}$ dans le cas symétrique.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Retour en zéro", "Probabilité"],
+                q: "Pour la marche aléatoire symétrique sur $\\mathbb{Z}$ ($d=1$), la probabilité de retour en 0 après $2n$ pas est :",
+                options: [
+                    { text: "$P_0(S_{2n}=0) = \\binom{2n}{n}\\frac{1}{2^{2n}}$", isCorrect: true },
+                    { text: "$P_0(S_{2n}=0) = \\frac{1}{2^n}$", isCorrect: false },
+                    { text: "$P_0(S_{2n}=0) = \\binom{2n}{n}^2\\frac{1}{2^{4n}}$", isCorrect: false },
+                    { text: "$P_0(S_{2n}=0) = 0$", isCorrect: false }
+                ],
+                explanation: "La Proposition 6.3 donne, pour $d=1$ : $P_0(S_{2n}=0) = \\binom{2n}{n}\\frac{1}{2^{2n}}$. La troisième option correspond en réalité à la formule du cas $d=2$ où $P_0(S_{2n}=0) = \\binom{2n}{n}^2\\frac{1}{2^{4n}}$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Retour en zéro", "Nombre de pas impair"],
+                q: "Pourquoi la probabilité de retour en 0 est-elle nulle si le nombre de pas est impair, pour la marche symétrique sur $\\mathbb{Z}^d$ avec $d=1,2$ ?",
+                options: [
+                    { text: "Car pour revenir en 0, la marche doit faire autant de pas dans chaque direction opposée, ce qui exige un nombre total de pas pair", isCorrect: true },
+                    { text: "Car la marche ne peut jamais revenir en 0", isCorrect: false },
+                    { text: "Car $p \\neq \\frac{1}{2}$", isCorrect: false },
+                    { text: "C'est une convention arbitraire du cours", isCorrect: false }
+                ],
+                explanation: "Comme expliqué dans la démonstration de la Proposition 6.3, pour $d=1$ la marche doit faire autant de pas à gauche qu'à droite pour revenir en 0, donc le nombre total de pas doit être pair. Le raisonnement est similaire pour $d=2$ avec les 4 directions.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Marche aléatoire", "Dimension 2", "Rotation"],
+                q: "Dans la preuve de la Proposition 6.3 pour $d=2$, quelle astuce est utilisée ?",
+                options: [
+                    { text: "Une bijection avec une marche aléatoire sur le réseau $\\tilde{\\mathbb{Z}}^2$ tourné de $45°$", isCorrect: true },
+                    { text: "Une approximation par la loi normale", isCorrect: false },
+                    { text: "Une intégration par parties", isCorrect: false },
+                    { text: "Le lemme de Borel-Cantelli", isCorrect: false }
+                ],
+                explanation: "La démonstration utilise une bijection avec la marche aléatoire sur $\\tilde{\\mathbb{Z}}^2$, le réseau $\\mathbb{Z}^2$ tourné de $45°$ avec les longueurs d'arêtes multipliées par $\\sqrt{2}$. Cela permet de décomposer la marche 2D en deux marches 1D indépendantes sur les composantes tournées.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Nombre de visites en zéro"],
+                q: "Le Corollaire 6.4 énonce que pour la marche aléatoire symétrique sur $\\mathbb{Z}^d$ avec $d=1,2$, l'espérance du nombre de visites en 0, notée $N_0$, vérifie :",
+                options: [
+                    { text: "$E(N_0) = \\infty$", isCorrect: true },
+                    { text: "$E(N_0) = 1$", isCorrect: false },
+                    { text: "$E(N_0) = 0$", isCorrect: false },
+                    { text: "$E(N_0)$ est finie mais non calculable explicitement", isCorrect: false }
+                ],
+                explanation: "Le Corollaire 6.4 montre que pour $d=1,2$, l'espérance du nombre de visites en 0 est infinie : $E(N_0)=\\infty$. C'est un résultat de récurrence de la marche aléatoire en basses dimensions ; la marche revient en moyenne infiniment souvent à l'origine.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Dimension et récurrence"],
+                q: "D'après le cours, que se passe-t-il pour l'espérance du nombre de visites en 0 lorsque $d \\geq 3$ ?",
+                options: [
+                    { text: "Elle devient finie", isCorrect: true },
+                    { text: "Elle reste infinie", isCorrect: false },
+                    { text: "Elle devient nulle", isCorrect: false },
+                    { text: "Elle n'est plus définie", isCorrect: false }
+                ],
+                explanation: "Le texte précédant le Corollaire 6.4 précise qu'à partir de $d\\geq 3$, l'espérance du nombre de visites en 0 devient finie : plus la dimension augmente, plus il devient difficile pour la marche aléatoire de revenir à l'origine une fois qu'elle est partie (transience en haute dimension).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Convergence monotone", "Application"],
+                q: "Dans la démonstration du Corollaire 6.4, quel outil du Chapitre 4 est utilisé pour justifier $E_0(N_0) = \\lim_{\\ell\\to\\infty} E_0(N_0^\\ell)$ ?",
+                options: [
+                    { text: "Le théorème de convergence monotone, car $(N_0^\\ell)_{\\ell\\geq1}$ est une suite croissante de variables aléatoires positives", isCorrect: true },
+                    { text: "L'inégalité de Jensen", isCorrect: false },
+                    { text: "Le théorème de convergence dominée", isCorrect: false },
+                    { text: "L'inégalité de Cauchy-Schwarz", isCorrect: false }
+                ],
+                explanation: "La démonstration utilise le théorème de convergence monotone car $N_0 = \\lim_{\\ell\\to\\infty} \\sum_{n=1}^\\ell \\mathbb{I}_{\\{S_n=0\\}}$, et la suite $(N_0^\\ell)_{\\ell\\geq1} = (\\sum_{n=1}^\\ell \\mathbb{I}_{\\{S_n=0\\}})_{\\ell\\geq1}$ est croissante et positive, ce qui permet de passer à la limite dans l'espérance.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Formule de Stirling"],
+                q: "Dans la preuve du Corollaire 6.4, la formule de Stirling $n! \\sim \\sqrt{2\\pi n}\\left(\\frac{n}{e}\\right)^n$ est utilisée pour montrer que :",
+                options: [
+                    { text: "$\\binom{2n}{n}\\frac{1}{2^{2n}} \\sim \\frac{1}{\\sqrt{\\pi n}}$, terme général d'une série divergente", isCorrect: true },
+                    { text: "$\\binom{2n}{n}\\frac{1}{2^{2n}}$ converge vers 0 rapidement (série convergente)", isCorrect: false },
+                    { text: "La marche aléatoire est bornée", isCorrect: false },
+                    { text: "$n!$ est toujours pair", isCorrect: false }
+                ],
+                explanation: "En utilisant la formule de Stirling, on montre que $\\binom{2n}{n}\\frac{1}{2^{2n}} \\sim \\frac{1}{\\sqrt{\\pi n}}$, terme général équivalent à celui d'une série de Riemann divergente (exposant $\\frac{1}{2}<1$), ce qui prouve que $E(N_0) = \\sum_n P_0(S_{2n}=0) = \\infty$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Ruine du joueur", "Modélisation"],
+                q: "Dans le problème de la ruine de la joueuse, la fortune $S_n$ de la joueuse A au temps $n$ est modélisée par une marche aléatoire $S_n = a + \\sum_{k=1}^n X_k$ où :",
+                options: [
+                    { text: "$X_k$ sont i.i.d à valeurs dans $\\{-1,1\\}$ avec $P(X_k=1)=p$", isCorrect: true },
+                    { text: "$a$ est la fortune initiale de la joueuse A", isCorrect: true },
+                    { text: "La formule reste valide même après la fin du jeu", isCorrect: false },
+                    { text: "Les états 0 et $a+b$ sont absorbants", isCorrect: true }
+                ],
+                explanation: "Le problème de la ruine de la joueuse modélise la fortune par une marche aléatoire simple avec $a$ la fortune initiale, jusqu'à ce que la marche atteigne 0 (ruine de A) ou $a+b$ (ruine de B), qui sont des états absorbants. La formule $S_n=a+\\sum X_k$ n'est valide que jusqu'à la fin du jeu, après quoi $S_n$ reste constante.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Ruine du joueur", "Récurrence"],
+                q: "En notant $u_k = P_k(R)$ la probabilité que la joueuse A (fortune initiale $k$) soit ruinée, quelle relation de récurrence vérifient les $(u_k)$ ?",
+                options: [
+                    { text: "$u_k = p\\,u_{k+1} + q\\,u_{k-1}$ pour $1 \\leq k \\leq a+b-1$, avec $u_0=1$, $u_{a+b}=0$", isCorrect: true },
+                    { text: "$u_k = u_{k+1} - u_{k-1}$", isCorrect: false },
+                    { text: "$u_k = p \\cdot u_k$", isCorrect: false },
+                    { text: "$u_0 = 0$ et $u_{a+b} = 1$", isCorrect: false }
+                ],
+                explanation: "En utilisant la formule des probabilités totales sur le résultat du premier lancer, on obtient $u_k = p\\,u_{k+1} + q\\,u_{k-1}$, avec les conditions au bord $u_0=1$ (la joueuse A est déjà ruinée si $k=0$) et $u_{a+b}=0$ (elle a gagné toute la fortune, donc pas ruinée).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Ruine du joueur", "Équation caractéristique"],
+                q: "L'équation caractéristique associée à la récurrence $u_k = p\\,u_{k+1} + q\\,u_{k-1}$ est $pr^2 - r + q = 0$. Quelles sont ses racines ?",
+                options: [
+                    { text: "$r_1 = 1$ et $r_2 = q/p$", isCorrect: true },
+                    { text: "$r_1 = p$ et $r_2 = q$", isCorrect: false },
+                    { text: "$r_1 = 0$ et $r_2 = 1$", isCorrect: false },
+                    { text: "$r_1 = -1$ et $r_2 = 1$", isCorrect: false }
+                ],
+                explanation: "Le discriminant de $pr^2-r+q=0$ vaut $\\Delta = 1-4pq = (2p-1)^2 \\geq 0$, et les solutions sont $r_1=1$, $r_2=q/p$. Cette équation caractéristique classique des suites récurrentes linéaires d'ordre 2 permet de résoudre explicitement la probabilité de ruine.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Ruine du joueur", "Cas p≠q"],
+                q: "Dans le cas où $p \\neq q$ (i.e. $p \\neq \\frac{1}{2}$), la solution générale de la récurrence de la ruine de la joueuse est :",
+                options: [
+                    { text: "$u_k = \\dfrac{(q/p)^{a+b} - (q/p)^k}{(q/p)^{a+b}-1}$", isCorrect: true },
+                    { text: "$u_k = 1 - \\dfrac{k}{a+b}$", isCorrect: false },
+                    { text: "$u_k = \\alpha + k\\beta$ pour des constantes $\\alpha, \\beta$", isCorrect: false },
+                    { text: "$u_k = (q/p)^k$", isCorrect: false }
+                ],
+                explanation: "Pour $p \\neq q$, les racines $r_1=1, r_2=q/p$ sont distinctes, la solution générale est $u_k = \\alpha r_1^k + \\beta r_2^k = \\alpha + \\beta(q/p)^k$. En appliquant les conditions au bord $u_0=1, u_{a+b}=0$, on trouve $u_k = \\frac{(q/p)^{a+b}-(q/p)^k}{(q/p)^{a+b}-1}$. La deuxième et troisième options correspondent au cas $p=q$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Ruine du joueur", "Cas p=q"],
+                q: "Dans le cas $p = q = \\frac{1}{2}$ (jeu équitable), la probabilité de ruine de la joueuse A partant avec une fortune $k$ est :",
+                options: [
+                    { text: "$u_k = 1 - \\dfrac{k}{a+b}$", isCorrect: true },
+                    { text: "$u_k = \\dfrac{k}{a+b}$", isCorrect: false },
+                    { text: "$u_k = \\dfrac{(q/p)^{a+b} - (q/p)^k}{(q/p)^{a+b}-1}$", isCorrect: false },
+                    { text: "$u_k$ ne dépend pas de $k$", isCorrect: false }
+                ],
+                explanation: "Dans le cas $p=q=\\frac{1}{2}$, la racine double $r=1$ conduit à une solution de la forme $u_k = \\alpha + k\\beta$. Les conditions au bord $u_0=1, u_{a+b}=0$ donnent $\\alpha=1$, $\\beta=-1/(a+b)$, d'où $u_k = 1 - \\frac{k}{a+b}$, qui décroît linéairement avec la fortune initiale $k$ de la joueuse A.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Ruine du joueur", "Interprétation"],
+                q: "Dans le cas équitable ($p=q=1/2$), si la joueuse A commence avec une fortune $k=a+b$ (fortune totale), quelle est sa probabilité de ruine $u_k$ ?",
+                options: [
+                    { text: "$0$", isCorrect: true },
+                    { text: "$1$", isCorrect: false },
+                    { text: "$\\frac{1}{2}$", isCorrect: false },
+                    { text: "Indéterminée", isCorrect: false }
+                ],
+                explanation: "En utilisant $u_k = 1 - \\frac{k}{a+b}$ avec $k=a+b$, on obtient $u_{a+b} = 1 - 1 = 0$. Cela est cohérent avec la condition au bord $u_{a+b}=0$ : si A possède déjà toute la fortune, elle ne peut pas être ruinée (B est déjà ruiné).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Variance", "Application numérique"],
+                q: "Soit $X$ une variable aléatoire telle que $E(X)=3$ et $E(X^2)=13$. Quelle est $Var(X)$ ?",
+                options: [
+                    { text: "$4$", isCorrect: true },
+                    { text: "$13$", isCorrect: false },
+                    { text: "$10$", isCorrect: false },
+                    { text: "$16$", isCorrect: false }
+                ],
+                explanation: "En utilisant la Propriété 4.18 (point 4) : $Var(X) = E(X^2) - E(X)^2 = 13 - 3^2 = 13 - 9 = 4$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Markov", "Application numérique"],
+                q: "Soit $X$ une variable aléatoire positive avec $E(X) = 10$. D'après l'inégalité de Markov, une borne supérieure pour $P(X \\geq 50)$ est :",
+                options: [
+                    { text: "$\\frac{1}{5} = 0.2$", isCorrect: true },
+                    { text: "$0.5$", isCorrect: false },
+                    { text: "$50$", isCorrect: false },
+                    { text: "$5$", isCorrect: false }
+                ],
+                explanation: "En appliquant l'inégalité de Markov avec $n=1$ : $P(X \\geq 50) \\leq \\frac{E(X)}{50} = \\frac{10}{50} = \\frac{1}{5} = 0.2$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Bienaymé-Tchebychev", "Application numérique"],
+                q: "Soit $X$ de carré intégrable avec $E(X)=20$ et $Var(X)=25$. D'après Bienaymé-Tchebychev, une borne supérieure pour $P(|X-20|\\geq 10)$ est :",
+                options: [
+                    { text: "$0.25$", isCorrect: true },
+                    { text: "$2.5$", isCorrect: false },
+                    { text: "$0.025$", isCorrect: false },
+                    { text: "$25$", isCorrect: false }
+                ],
+                explanation: "D'après la Proposition 4.29 : $P(|X-E(X)|\\geq a) \\leq \\frac{Var(X)}{a^2}$. Ici, $a=10$, donc $P(|X-20|\\geq10) \\leq \\frac{25}{10^2} = \\frac{25}{100} = 0.25$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Covariance", "Application numérique"],
+                q: "Soit $X, Y$ deux variables aléatoires avec $Var(X)=4$, $Var(Y)=9$ et $Cov(X,Y)=2$. Que vaut $Var(X+Y)$ ?",
+                options: [
+                    { text: "$17$", isCorrect: true },
+                    { text: "$13$", isCorrect: false },
+                    { text: "$36$", isCorrect: false },
+                    { text: "$6$", isCorrect: false }
+                ],
+                explanation: "D'après la Proposition 4.21 (point 5) : $Var(X+Y) = Var(X)+Var(Y)+2Cov(X,Y) = 4+9+2(2) = 4+9+4 = 17$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Loi des grands nombres", "Application numérique"],
+                q: "Soit $(X_n)$ i.i.d. de carré intégrable, $\\sigma^2=4$. D'après la loi faible des grands nombres, pour $\\varepsilon=0.1$ et $n=1000$, quelle borne obtient-on pour $P(|Z_n-\\mu|\\geq0.1)$ ?",
+                options: [
+                    { text: "$0.4$", isCorrect: true },
+                    { text: "$4$", isCorrect: false },
+                    { text: "$0.04$", isCorrect: false },
+                    { text: "$40$", isCorrect: false }
+                ],
+                explanation: "D'après le Théorème 5.27 : $P(|Z_n-\\mu|\\geq\\varepsilon) \\leq \\frac{\\sigma^2}{\\varepsilon^2 n} = \\frac{4}{(0.1)^2 \\times 1000} = \\frac{4}{0.01 \\times 1000} = \\frac{4}{10} = 0.4$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Ruine du joueur", "Application numérique"],
+                q: "Dans le jeu de la ruine avec $p=q=\\frac{1}{2}$, $a=3$ (fortune de A), $b=7$ (fortune de B). Quelle est la probabilité de ruine de A ?",
+                options: [
+                    { text: "$0.7$", isCorrect: true },
+                    { text: "$0.3$", isCorrect: false },
+                    { text: "$0.5$", isCorrect: false },
+                    { text: "$1$", isCorrect: false }
+                ],
+                explanation: "Avec $k=a=3$ et $a+b=10$ : $u_k = 1 - \\frac{k}{a+b} = 1 - \\frac{3}{10} = 0.7$. Ceci illustre qu'avec une fortune initiale plus faible que l'adversaire, la probabilité de ruine est plus élevée, même dans un jeu équitable.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Espace fini vs général"],
+                q: "Pourquoi introduit-on la notion de variable aléatoire étagée avant de définir l'espérance pour les variables aléatoires positives générales ?",
+                options: [
+                    { text: "Car le Théorème 4.2 (espérance = somme finie) a un sens pour un espace d'arrivée fini, indépendamment de l'espace de départ", isCorrect: true },
+                    { text: "Car les variables étagées sont toujours indépendantes", isCorrect: false },
+                    { text: "Car seules les variables étagées ont une espérance", isCorrect: false },
+                    { text: "Car c'est une exigence purement historique sans justification mathématique", isCorrect: false }
+                ],
+                explanation: "Comme expliqué avant la Définition 4.3, l'idée clé est que la formule de droite du Théorème 4.2 a un sens si l'espace d'arrivée est fini, indépendamment de la nature de $\\Omega$. Cela permet de construire l'espérance par étapes : étagées → positives (par sup) → intégrables (par décomposition $X^+-X^-$).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Variable centrée"],
+                q: "Une variable aléatoire positive ou intégrable $X$ est dite centrée si :",
+                options: [
+                    { text: "$E(X) = 0$", isCorrect: true },
+                    { text: "$Var(X) = 0$", isCorrect: false },
+                    { text: "$X = 0$ presque sûrement", isCorrect: false },
+                    { text: "$E(X) = 1$", isCorrect: false }
+                ],
+                explanation: "La Définition 4.5 précise qu'une variable aléatoire (positive ou intégrable) est dite centrée si son espérance est nulle, $E(X)=0$. Cela n'implique pas que $X$ soit nulle p.s. (sauf cas particulier où $Var(X)=0$ également, dans le cas positif).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Vecteur aléatoire", "n composantes"],
+                q: "Pour un vecteur aléatoire discret $(X_1,\\ldots,X_n)$, comment généralise-t-on la formule des lois marginales du cas $n=2$ ?",
+                options: [
+                    { text: "On somme la loi jointe sur toutes les valeurs des autres composantes", isCorrect: true },
+                    { text: "On ne peut pas généraliser au-delà de $n=2$", isCorrect: false },
+                    { text: "On prend le maximum de la loi jointe", isCorrect: false },
+                    { text: "On divise la loi jointe par $n$", isCorrect: false }
+                ],
+                explanation: "Le cours précise (avant la Définition 5.4) que la généralisation au cas $n>2$ est possible avec des notations plus compliquées au niveau des indices, mais le principe reste le même : sommer sur toutes les valeurs possibles des autres composantes pour obtenir la loi marginale d'une composante.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Indépendance mutuelle"],
+                q: "Une famille $(X_i)_{i\\in I}$ de variables aléatoires est dite mutuellement indépendante si :",
+                options: [
+                    { text: "Pour toute partie finie $K$ de $I$ et tous $A_i \\in \\mathcal{P}(E_i)$, $P(\\cap_{i\\in K}\\{X_i\\in A_i\\}) = \\prod_{i\\in K}P(X_i\\in A_i)$", isCorrect: true },
+                    { text: "$X_i$ et $X_j$ sont indépendantes deux à deux uniquement", isCorrect: false },
+                    { text: "Toutes les $X_i$ ont la même loi", isCorrect: false },
+                    { text: "$Cov(X_i,X_j)=0$ pour tout $i\\neq j$", isCorrect: false }
+                ],
+                explanation: "La Définition 5.14 précise que l'indépendance mutuelle exige la factorisation des probabilités pour TOUTE partie finie $K$ de $I$, pas seulement les paires. L'indépendance deux à deux (paires) est une notion plus faible que l'indépendance mutuelle en général.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Indépendance", "Stabilité"],
+                q: "D'après la Remarque 5.15, si $(X_i)_{i\\in I}$ est une famille de variables aléatoires indépendantes, quelles familles restent indépendantes ?",
+                options: [
+                    { text: "Toute sous-famille $(X_i)_{i\\in J}$ avec $J \\subset I$", isCorrect: true },
+                    { text: "Toute famille $(Y_i)_{i\\in I}$ où $Y_i = h_i(X_i)$", isCorrect: true },
+                    { text: "Toute famille obtenue en regroupant des blocs disjoints de variables et en appliquant une fonction à chaque bloc", isCorrect: true },
+                    { text: "Uniquement la famille originale, aucune transformation n'est permise", isCorrect: false }
+                ],
+                explanation: "La Remarque 5.15 énumère trois propriétés de stabilité de l'indépendance : restriction à une sous-famille, application de fonctions mesurables à chaque composante individuellement, et regroupement en blocs disjoints avec application de fonctions à chaque bloc.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Marche aléatoire", "Notion de récurrence"],
+                q: "Le fait que $E(N_0) = \\infty$ pour $d=1,2$ mais finie pour $d\\geq3$ est lié à quelle notion, mentionnée dans le cours ?",
+                options: [
+                    { text: "La récurrence/transience de la marche aléatoire", isCorrect: true },
+                    { text: "La loi des grands nombres", isCorrect: false },
+                    { text: "L'indépendance des incréments", isCorrect: false },
+                    { text: "Le théorème de Bayes", isCorrect: false }
+                ],
+                explanation: "L'introduction de la section 6.2 précise que ces notions de retour en 0 et d'espérance du nombre de visites sont sous-jacentes aux notions de récurrence/transience de la marche aléatoire, concepts qui seront approfondis dans un cours ultérieur.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance conditionnée", "Prérequis"],
+                q: "Quelle propriété de l'espérance est utilisée pour établir la preuve de la Proposition 4.16 ($E(|X|) \\leq \\sqrt{E(X^2)}$) ?",
+                options: [
+                    { text: "L'étude du signe d'un polynôme du second degré en $\\lambda$ via son discriminant", isCorrect: true },
+                    { text: "Le théorème de Bayes", isCorrect: false },
+                    { text: "La loi des grands nombres", isCorrect: false },
+                    { text: "L'indépendance de $X$ avec elle-même", isCorrect: false }
+                ],
+                explanation: "La démonstration pose $f(\\lambda) = E[(|X|+\\lambda)^2]$, qui est un polynôme de degré 2 en $\\lambda$, toujours positif ou nul. Son discriminant doit donc être négatif ou nul, ce qui donne directement l'inégalité recherchée. C'est une méthode classique pour prouver des inégalités de type Cauchy-Schwarz.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "XY intégrable"],
+                q: "Pourquoi peut-on affirmer que si $X, Y \\in L^2$, alors $XY \\in L^1$ ?",
+                options: [
+                    { text: "Car $|XY| \\leq \\frac{1}{2}(X^2+Y^2)$ et $X^2, Y^2$ sont intégrables", isCorrect: true },
+                    { text: "Car $X$ et $Y$ sont indépendantes", isCorrect: false },
+                    { text: "Car $E(XY) = E(X)E(Y)$ toujours", isCorrect: false },
+                    { text: "Ce résultat est faux en général", isCorrect: false }
+                ],
+                explanation: "Le cours (avant la Définition 4.20) note que si $X,Y$ sont dans $L^2$, alors $XY$ est dans $L^1$ car $|XY| \\leq \\frac{1}{2}(X^2+Y^2)$ par l'inégalité classique $2ab \\leq a^2+b^2$, et $X^2, Y^2$ sont intégrables par hypothèse. Cette propriété ne nécessite pas d'indépendance.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Remarque 4.7", "Construction espérance positive"],
+                q: "Dans la Remarque 4.7, pour approcher une variable aléatoire positive $X$ par une suite croissante de variables étagées, on utilise :",
+                options: [
+                    { text: "Une discrétisation dyadique de plus en plus fine des valeurs de $X$", isCorrect: true },
+                    { text: "Une approximation gaussienne", isCorrect: false },
+                    { text: "Le théorème central limite", isCorrect: false },
+                    { text: "Une interpolation polynomiale", isCorrect: false }
+                ],
+                explanation: "La suite $X_n(\\omega) = \\sum_{k=0}^{n2^n-1} \\frac{k}{2^n} \\mathbb{I}_{\\{X\\in[\\frac{k}{2^n},\\frac{k+1}{2^n}[\\}}(\\omega)$ utilise une discrétisation dyadique : on découpe l'intervalle des valeurs possibles en petits intervalles de longueur $\\frac{1}{2^n}$, de plus en plus fins quand $n$ augmente, ce qui donne une suite croissante convergeant simplement vers $X$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "Variance nulle"],
+                q: "Si $Var(X) = 0$ pour une variable aléatoire $X$, que peut-on en déduire ?",
+                options: [
+                    { text: "$X$ est presque sûrement constante et égale à $E(X)$", isCorrect: true },
+                    { text: "$X$ suit nécessairement une loi normale", isCorrect: false },
+                    { text: "$E(X) = 0$", isCorrect: false },
+                    { text: "$X$ n'est pas intégrable", isCorrect: false }
+                ],
+                explanation: "Bien que non explicitement démontré dans le texte fourni, ce résultat classique découle de la positivité de $E[(X-E(X))^2]$ : si cette espérance est nulle pour une variable positive, alors $(X-E(X))^2=0$ presque sûrement, donc $X=E(X)$ presque sûrement (constante).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Marche aléatoire", "Applications pratiques"],
+                q: "Selon l'introduction du Chapitre 6, à quels phénomènes la marche aléatoire s'applique-t-elle ?",
+                options: [
+                    { text: "Le déplacement d'une particule", isCorrect: true },
+                    { text: "Les cours de la bourse", isCorrect: true },
+                    { text: "Les réseaux électriques", isCorrect: true },
+                    { text: "Uniquement les jeux de hasard", isCorrect: false }
+                ],
+                explanation: "L'introduction du Chapitre 6 mentionne explicitement que la marche aléatoire est sous-jacente à la modélisation de nombreux phénomènes : déplacement de particules, cours de la bourse, réseaux électriques, évolution d'une population, et bien d'autres, pas seulement les jeux de hasard.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Espérance conditionnelle", "Cas particulier"],
+                q: "Si $X$ et $Y$ sont indépendantes, que devient l'espérance conditionnelle $E(Y|X=x)$ pour tout $x$ tel que $P(X=x)>0$ ?",
+                options: [
+                    { text: "$E(Y|X=x) = E(Y)$, ne dépend pas de $x$", isCorrect: true },
+                    { text: "$E(Y|X=x) = x$", isCorrect: false },
+                    { text: "$E(Y|X=x) = 0$ toujours", isCorrect: false },
+                    { text: "$E(Y|X=x)$ n'est pas définie si $X, Y$ sont indépendantes", isCorrect: false }
+                ],
+                explanation: "Si $X$ et $Y$ sont indépendantes, alors par le Théorème 5.16 (point 3), la loi conditionnelle de $Y$ sachant $\\{X=x\\}$ est égale à la loi marginale de $Y$ : $P_Y(\\cdot|X=x) = P_Y(\\cdot)$. Donc l'espérance conditionnelle $E(Y|X=x) = E(Y)$ ne dépend pas de $x$, ce qui est cohérent avec l'intuition que $X$ n'apporte aucune information sur $Y$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 6", "Ruine du joueur", "Durée du jeu"],
+                q: "Selon la fin de la section 6.3, quelle autre quantité peut-on calculer avec une approche similaire à celle de la probabilité de ruine ?",
+                options: [
+                    { text: "L'espérance de la durée du jeu avant la ruine d'une des deux joueuses", isCorrect: true },
+                    { text: "Le nombre exact de coups gagnés par la joueuse A", isCorrect: false },
+                    { text: "La probabilité que le jeu ne se termine jamais", isCorrect: false },
+                    { text: "La loi de la fortune finale de B uniquement", isCorrect: false }
+                ],
+                explanation: "Le cours conclut la section 6.3 en notant qu'une approche similaire (résolution d'une récurrence linéaire avec conditions au bord) permet de calculer l'espérance de la durée du jeu avant que l'une des deux joueuses ne soit ruinée.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Moments", "Corollaire"],
+                q: "D'après le Corollaire 4.27, pour une variable aléatoire discrète $X$ telle que $X^n$ est intégrable, le moment d'ordre $n$ est donné par :",
+                options: [
+                    { text: "$E(X^n) = \\sum_{i \\in I} x_i^n P(X=x_i)$", isCorrect: true },
+                    { text: "$E(X^n) = [E(X)]^n$", isCorrect: false },
+                    { text: "$E(X^n) = n \\, E(X)$", isCorrect: false },
+                    { text: "$E(X^n)$ n'existe que si $X$ est à densité", isCorrect: false }
+                ],
+                explanation: "Le Corollaire 4.27, conséquence directe du théorème de transfert (Théorème 4.10) appliqué à $h(x)=x^n$, donne $E(X^n) = \\sum_{i\\in I} x_i^n P(X=x_i)$ dans le cas discret, sous réserve que $\\sum_{i\\in I} |x_i|^n P(x_i) < \\infty$. Dans le cas à densité, la formule analogue est $E(X^n) = \\int_{-\\infty}^{\\infty} x^n f(x) dx$.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 4", "Espérance", "L2 espace vectoriel"],
+                q: "D'après la Remarque 4.15, pourquoi $L^2(\\Omega, \\mathcal{F}, P)$ est-il un espace vectoriel ?",
+                options: [
+                    { text: "Car pour $X,Y$ de carré intégrable et $a,b \\in \\mathbb{R}$, $(aX+bY)^2 \\leq 2(a^2X^2+b^2Y^2)$, donc $aX+bY$ est aussi de carré intégrable", isCorrect: true },
+                    { text: "Car toute variable aléatoire est automatiquement de carré intégrable", isCorrect: false },
+                    { text: "Car $L^2$ est un sous-ensemble fini de $L^1$", isCorrect: false },
+                    { text: "Ce fait n'est pas démontré dans le cours", isCorrect: false }
+                ],
+                explanation: "La Remarque 4.15 (second point) montre que si $X, Y$ sont de carré intégrable, alors, grâce à l'inégalité $(aX+bY)^2 \\leq 2(a^2X^2+b^2Y^2)$, la combinaison linéaire $aX+bY$ est également de carré intégrable pour tout $a,b\\in\\mathbb{R}$. Ceci, combiné à la stabilité par multiplication scalaire, fait de $L^2(\\Omega,\\mathcal{F},P)$ un espace vectoriel.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Vecteurs aléatoires", "Théorème de transfert"],
+                q: "D'après le Théorème 5.5, pour un couple aléatoire discret $(X,Y)$ à valeurs dans $E \\times F$, et $h : E \\times F \\to \\mathbb{R}$ telle que $h(X,Y)$ soit positive ou intégrable, l'espérance $E(h(X,Y))$ est égale à :",
+                options: [
+                    { text: "$\\sum_{(x,y)\\in E\\times F} h(x,y) P(X=x, Y=y)$", isCorrect: true },
+                    { text: "$h\\big(E(X), E(Y)\\big)$", isCorrect: false },
+                    { text: "$E(h(X)) \\cdot E(h(Y))$", isCorrect: false },
+                    { text: "$\\sum_{x\\in E} h(x) P(X=x)$", isCorrect: false }
+                ],
+                explanation: "Le Théorème 5.5 (théorème de transfert pour les couples aléatoires discrets) généralise le Théorème 4.10 : $E(h(X,Y)) = \\sum_{(x,y)\\in E\\times F} h(x,y) P(\\{X=x,Y=y\\})$, sous réserve que la série $\\sum_{(x,y)} |h(x,y)| P(X,Y)(\\{(x,y)\\})$ converge. C'est cet outil qui permet, par exemple, de calculer explicitement $E(XY)$ à partir de la loi jointe (comme dans l'Exemple 5.6).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Indépendance", "Variables réelles"],
+                q: "Selon la Définition 5.21, deux variables aléatoires réelles $X, Y : \\Omega \\to \\mathbb{R}$ (pas nécessairement discrètes) sont dites indépendantes si :",
+                options: [
+                    { text: "Pour tout $A, B \\in \\mathcal{B}(\\mathbb{R})$ (boréliens de $\\mathbb{R}$), $P(X\\in A, Y\\in B) = P(X\\in A)P(Y\\in B)$", isCorrect: true },
+                    { text: "Pour tout $A, B \\in \\mathcal{P}(\\mathbb{R})$ (parties de $\\mathbb{R}$), $P(X\\in A, Y\\in B) = P(X\\in A)P(Y\\in B)$", isCorrect: false },
+                    { text: "$X$ et $Y$ ont nécessairement la même densité", isCorrect: false },
+                    { text: "Cette notion n'est définie que pour les variables discrètes", isCorrect: false }
+                ],
+                explanation: "La Définition 5.21 étend l'indépendance (initialement définie pour les variables discrètes à la Définition 5.14, avec $A\\in\\mathcal{P}(E)$) au cas des variables aléatoires réelles générales, en utilisant la tribu borélienne $\\mathcal{B}(\\mathbb{R})$ plutôt que l'ensemble des parties. Cette définition est indispensable pour énoncer la Proposition 5.22 sur la densité de la somme de deux variables à densité indépendantes.",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chapitre 5", "Indépendance", "n variables"],
+                q: "Si $X_1, \\ldots, X_n$ sont des variables aléatoires de carré intégrable et mutuellement indépendantes, que peut-on en conclure (Proposition 5.18, points 4 à 6) ?",
+                options: [
+                    { text: "$E\\left(\\prod_{i=1}^n X_i\\right) = \\prod_{i=1}^n E(X_i)$", isCorrect: true },
+                    { text: "La matrice de covariance des $(X_i)$ est diagonale", isCorrect: true },
+                    { text: "$Var\\left(\\sum_{i=1}^n X_i\\right) = \\sum_{i=1}^n Var(X_i)$", isCorrect: true },
+                    { text: "Les $(X_i)$ ont nécessairement la même variance", isCorrect: false }
+                ],
+                explanation: "La Proposition 5.18 (points 4 à 6) généralise le cas de deux variables au cas de $n$ variables mutuellement indépendantes de carré intégrable : l'espérance du produit est le produit des espérances, la matrice de covariance est diagonale (car $Cov(X_i,X_j)=0$ pour $i\\neq j$), et par conséquent la variance de la somme est la somme des variances. Rien n'impose que les variables aient la même variance (ce serait le cas i.i.d. en plus).",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            }
+        ]
+    }
+}
+"Programmation C : Chapitre 1 (Introduction)": {
+        course: "prog_c",
+        folder: "Informatique",
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            {
+                type: "qcm",
+                tags: ["Généralités", "Objectifs"],
+                q: "Quels sont les principaux objectifs du cours de programmation C[cite: 1] ?",
+                options: [
+                    { text: "Apprendre le C, comprendre la mémoire (pointeurs), et coder proprement de façon modulaire[cite: 1]", isCorrect: true },
+                    { text: "Apprendre à créer des interfaces graphiques complexes et des pages web[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Les objectifs incluent l'apprentissage du langage, l'analyse de problèmes pour écrire des programmes élégants, et la compréhension de la mémoire et des pointeurs[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Histoire"],
+                q: "Quels sont les créateurs du langage C et en quelle année a-t-il été inventé[cite: 1] ?",
+                options: [
+                    { text: "Dennis Ritchie et Ken Thompson en 1972[cite: 1]", isCorrect: true },
+                    { text: "Brian Kernighan en 1989[cite: 1]", isCorrect: false },
+                    { text: "Linus Torvalds en 1991[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le langage C a été inventé en 1972 par Dennis Ritchie et Ken Thompson aux Bell Labs pour écrire le système d'exploitation Unix[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Histoire"],
+                q: "Quel langage a précédé le langage C[cite: 1] ?",
+                options: [
+                    { text: "Le langage B (qui n'avait pas de typage)[cite: 1]", isCorrect: true },
+                    { text: "Le langage A[cite: 1]", isCorrect: false },
+                    { text: "Le Fortran[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le langage C a été créé après le langage B, ce dernier ayant la particularité de ne pas avoir de typage[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Généralités", "Usage"],
+                q: "Pourquoi le C reste-t-il indispensable aujourd'hui[cite: 1] ?",
+                options: [
+                    { text: "Il est incontournable pour la programmation bas niveau (OS, drivers, systèmes embarqués)[cite: 1]", isCorrect: true },
+                    { text: "C'est le seul langage permettant de faire des mathématiques complexes[cite: 1]", isCorrect: false },
+                    { text: "Il possède un système de gestion d'exceptions très moderne[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le C permet de faire du bas niveau, est très rapide, et reste indispensable pour les OS et l'embarqué[cite: 1]. Il n'a d'ailleurs pas de gestion d'exceptions moderne[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Caractéristiques", "Paradigmes"],
+                q: "Quel est le paradigme principal du langage C[cite: 1] ?",
+                options: [
+                    { text: "Impératif[cite: 1]", isCorrect: true },
+                    { text: "Orienté Objet[cite: 1]", isCorrect: false },
+                    { text: "Fonctionnel[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le C est un langage impératif, basé sur un état (la mémoire) et des instructions élémentaires qui modifient cet état[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Caractéristiques", "Paradigmes"],
+                q: "En quoi consiste le paradigme impératif[cite: 1] ?",
+                options: [
+                    { text: "Un découpage en procédures contenant des séquences d'instructions pour modifier l'état de la mémoire[cite: 1]", isCorrect: true },
+                    { text: "L'utilisation d'objets possédant des attributs et des méthodes[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le paradigme impératif (celui du C) consiste à ordonner au processeur des instructions élémentaires (séquences, boucles) pour modifier directement l'état de la mémoire[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Caractéristiques"],
+                q: "Le langage C est-il typé[cite: 1] ?",
+                options: [
+                    { text: "Oui, il utilise un typage statique défini à la compilation[cite: 1]", isCorrect: true },
+                    { text: "Non, il utilise un typage dynamique déterminé à l'exécution[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Contrairement à Python, le C utilise un typage statique : les types des variables doivent être définis par le programmeur et sont vérifiés lors de la compilation[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Généralités", "Avantages"],
+                q: "Parmi les éléments suivants, lesquels sont des avantages du C[cite: 1] ?",
+                options: [
+                    { text: "Il est très rapide, proche de la machine, et permet une gestion manuelle de la mémoire[cite: 1]", isCorrect: true },
+                    { text: "Il possède un ramasse-miettes (Garbage Collector) qui évite les fuites mémoire[cite: 1]", isCorrect: false }
+                ],
+                explanation: "La rapidité et le contrôle manuel sont des atouts du C[cite: 1]. L'absence de gestion automatique (pas de GC) en fait un langage bas niveau très performant[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Généralités", "Inconvénients"],
+                q: "Quel est l'un des principaux inconvénients de la liberté offerte par le C[cite: 1] ?",
+                options: [
+                    { text: "L'absence de vérifications à l'exécution entraîne un risque élevé de bugs et de comportements indéfinis (Undefined behavior)[cite: 1]", isCorrect: true },
+                    { text: "L'obligation d'utiliser des interfaces graphiques complexes[cite: 1]", isCorrect: false }
+                ],
+                explanation: "La liberté totale implique qu'il n'y a pas de garde-fous à l'exécution. Cela donne un code efficace, mais propice aux bugs si l'on gère mal la mémoire[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Compilation"],
+                q: "Quelles sont les étapes principales de transformation d'un programme C[cite: 1] ?",
+                options: [
+                    { text: "Code source -> Fichiers objets -> Programme exécutable[cite: 1]", isCorrect: true },
+                    { text: "Code source -> Interpréteur -> Exécution[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le flux classique du C passe par la compilation des sources en fichiers objets, suivie de l'édition de liens pour créer l'exécutable binaire final[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Compilation"],
+                q: "Quel est le rôle exact du compilateur[cite: 1] ?",
+                options: [
+                    { text: "Il vérifie le code source et génère des instructions pour le processeur[cite: 1]", isCorrect: true },
+                    { text: "Il relie les différents fichiers objets entre eux[cite: 1]", isCorrect: false },
+                    { text: "Il lit et exécute le code ligne par ligne[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le compilateur lit le code humain, vérifie la syntaxe et les types, puis le traduit en instructions machine (fichiers objets)[cite: 1]. C'est l'éditeur de liens qui relie les objets[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Compilation", "Avantages"],
+                q: "Quels sont les avantages d'un langage compilé par rapport à un langage interprété[cite: 1] ?",
+                options: [
+                    { text: "La détection des erreurs se fait avant l'exécution, et le code machine généré est optimisé et très rapide[cite: 1]", isCorrect: true },
+                    { text: "Le même exécutable peut tourner sur n'importe quel système d'exploitation sans modification[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Un langage compilé détecte les erreurs (types, syntaxe) à la compilation et produit un code plus rapide[cite: 1]. Cependant, l'exécutable généré est spécifique à la plateforme (CPU+OS)[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Compilation", "Inconvénients"],
+                q: "Quel est l'un des inconvénients majeurs de la compilation[cite: 1] ?",
+                options: [
+                    { text: "L'exécutable est généré pour une plateforme spécifique (CPU+OS) et il faut recompiler pour chaque système[cite: 1]", isCorrect: true },
+                    { text: "L'exécution est plus lente car le processeur doit vérifier le typage[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Un exécutable compilé est intimement lié à la machine cible (OS et CPU). Il faut recompiler le code source pour l'exécuter sur une autre architecture[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Compilation", "Erreurs"],
+                q: "Quelle est la différence entre une « error » et un « warning » signalés par le compilateur[cite: 1] ?",
+                options: [
+                    { text: "Une erreur empêche la compilation (pas d'exécutable), un warning signale un problème potentiel mais permet la compilation[cite: 1]", isCorrect: true },
+                    { text: "Un warning arrête la compilation immédiatement, une erreur la suspend[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Les erreurs bloquent la création de l'exécutable, tandis que les avertissements (warnings) n'empêchent pas la compilation, bien qu'ils doivent être lus attentivement[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Compilation", "Erreurs"],
+                q: "Pourquoi est-il conseillé de traiter les erreurs de compilation dans l'ordre d'apparition[cite: 1] ?",
+                options: [
+                    { text: "Parce qu'une erreur de syntaxe peut en cacher (ou en générer) une multitude d'autres en cascade[cite: 1]", isCorrect: true },
+                    { text: "Parce que le compilateur efface les dernières erreurs[cite: 1]", isCorrect: false }
+                ],
+                explanation: "« Un train peut en cacher un autre » : une simple variable non déclarée ou un point-virgule manquant peut provoquer des dizaines d'erreurs subséquentes. Il faut toujours corriger la toute première[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Langages interprétés", "Python vs C"],
+                q: "Comment fonctionne l'exécution d'un langage interprété comme Python[cite: 1] ?",
+                options: [
+                    { text: "Le code source est traduit et exécuté au fur et à mesure par l'interpréteur[cite: 1]", isCorrect: true },
+                    { text: "Le code est intégralement compilé en fichier binaire avant l'exécution[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Un langage interprété est lu, analysé et exécuté $n$ fois (à la volée) par un interpréteur[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Langages interprétés", "Avantages"],
+                q: "Quel est un avantage majeur des langages interprétés[cite: 1] ?",
+                options: [
+                    { text: "Le même code source est portable et peut s'exécuter sur différentes plateformes sans recompilation[cite: 1]", isCorrect: true },
+                    { text: "L'occupation mémoire est beaucoup plus faible[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Grâce à l'interpréteur, le code est hautement portable[cite: 1]. En contrepartie, l'exécution est plus lente et l'occupation mémoire est plus élevée[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Outils"],
+                q: "Qu'est-ce qu'un IDE (Integrated Development Environment)[cite: 1] ?",
+                options: [
+                    { text: "Une interface regroupant un éditeur de code, un compilateur, un outil d'exécution et un débogueur[cite: 1]", isCorrect: true },
+                    { text: "Un outil en ligne de commande permettant de relier des fichiers objets[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Un IDE (comme VS Code, Code::Blocks, Eclipse) rassemble tous les outils nécessaires au développement dans une interface unique pour faciliter le travail du programmeur[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Hello World"],
+                q: "Dans un programme C, quelle est la fonction appelée automatiquement au lancement de l'exécutable[cite: 1] ?",
+                options: [
+                    { text: "La fonction `main`[cite: 1]", isCorrect: true },
+                    { text: "La première fonction déclarée en haut du fichier[cite: 1]", isCorrect: false },
+                    { text: "La fonction `start`[cite: 1]", isCorrect: false }
+                ],
+                explanation: "En C, l'entrée d'un programme est obligatoirement une fonction unique nommée `main`[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Bibliothèques"],
+                q: "À quoi sert la ligne `#include <stdio.h>` au début d'un programme[cite: 1] ?",
+                options: [
+                    { text: "À déclarer l'utilisation des fonctions d'entrée/sortie standards (comme `printf`)[cite: 1]", isCorrect: true },
+                    { text: "À définir la fonction `main`[cite: 1]", isCorrect: false }
+                ],
+                explanation: "L'inclusion de `stdio.h` (Standard Input/Output) est nécessaire pour utiliser les fonctions de base permettant de lire et d'afficher des données[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Fonctions"],
+                q: "Que signifie précisément la signature `int main(void)`[cite: 1] ?",
+                options: [
+                    { text: "La fonction renvoie un code de type entier (`int`) et n'accepte aucun paramètre (`void`)[cite: 1]", isCorrect: true },
+                    { text: "La fonction ne renvoie rien et prend des entiers en paramètres[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le mot clé `int` indique le type de retour (0 ou EXIT_SUCCESS en général pour dire que tout va bien), et `void` indique formellement l'absence de paramètres[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Instructions"],
+                q: "Comment marque-t-on la fin d'une instruction classique en C[cite: 1] ?",
+                options: [
+                    { text: "Avec un point-virgule `;`[cite: 1]", isCorrect: true },
+                    { text: "Avec un simple retour à la ligne[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Contrairement à Python où le retour à la ligne suffit, le langage C exige un point-virgule `;` pour clore chaque instruction[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Blocs"],
+                q: "Quel symbole est utilisé pour encadrer un bloc d'instructions (le corps d'une fonction, d'une boucle...)[cite: 1] ?",
+                options: [
+                    { text: "Les accolades `{` et `}`[cite: 1]", isCorrect: true },
+                    { text: "L'indentation visuelle du code[cite: 1]", isCorrect: false },
+                    { text: "Les crochets `[` et `]`[cite: 1]", isCorrect: false }
+                ],
+                explanation: "En C, les blocs d'instructions sont structurellement délimités par des accolades[cite: 1]. L'indentation n'est là que pour le confort visuel du développeur[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Commentaires"],
+                q: "Comment écrit-on un commentaire sur plusieurs lignes en C[cite: 1] ?",
+                options: [
+                    { text: "En l'encadrant entre `/*` et `*/`[cite: 1]", isCorrect: true },
+                    { text: "En l'encadrant entre `<!--` et `-->`[cite: 1]", isCorrect: false },
+                    { text: "En commençant chaque ligne par `#`[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Les blocs de commentaires s'écrivent avec `/* texte */`. Attention, ils ne sont pas imbricables[cite: 1]. On peut aussi utiliser `//` pour commenter la fin d'une ligne[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Return"],
+                q: "Dans la fonction `main`, que signifie l'instruction `return EXIT_SUCCESS;` (ou `return 0;`)[cite: 1] ?",
+                options: [
+                    { text: "Elle signale au système d'exploitation que le programme s'est terminé sans erreur[cite: 1]", isCorrect: true },
+                    { text: "Elle relance le programme au début[cite: 1]", isCorrect: false }
+                ],
+                explanation: "La valeur de retour de `main` est un code transmis au système. 0 (ou `EXIT_SUCCESS` via `stdlib.h`) indique une exécution réussie[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Variables"],
+                q: "Que représente l'instruction `float a,b;` en dehors de toute fonction[cite: 1] ?",
+                options: [
+                    { text: "La déclaration de variables globales de type réel (float)[cite: 1]", isCorrect: true },
+                    { text: "La définition d'une constante[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Déclarées en dehors de tout bloc, `a` et `b` deviennent des variables globales accessibles par toutes les fonctions du fichier[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Directives"],
+                q: "À quoi sert la directive `#define PI 3.14`[cite: 1] ?",
+                options: [
+                    { text: "À créer une constante de préprocesseur qui remplacera textuellement `PI` par `3.14` avant la compilation[cite: 1]", isCorrect: true },
+                    { text: "À allouer de la mémoire dynamique pour la variable PI[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le `#define` permet de créer des macros ou des constantes symboliques. Le compilateur remplacera chaque occurrence de `PI` par `3.14`[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base"],
+                q: "Le langage C est-il sensible à la casse (majuscules/minuscules)[cite: 1] ?",
+                options: [
+                    { text: "Oui, `variable` et `Variable` sont considérés comme deux identificateurs totalement différents[cite: 1]", isCorrect: true },
+                    { text: "Non, il ignore la casse[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le C est strict et sensible à la casse. Par exemple, le nom de l'université `dauphine` est différent de `Dauphine` pour le compilateur[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Identificateurs"],
+                q: "Quelles sont les règles de nommage des identificateurs en C[cite: 1] ?",
+                options: [
+                    { text: "Uniquement des lettres (sans accent), des chiffres et l'underscore `_`, sans commencer par un chiffre[cite: 1]", isCorrect: true },
+                    { text: "Tous les caractères y compris les espaces et les accents sont autorisés[cite: 1]", isCorrect: false }
+                ],
+                explanation: "L'ASCII pur sans accent est de rigueur. On évite de commencer par un `_` (souvent réservé au système), et les espaces sont interdits dans un identificateur[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Bonnes pratiques", "Lisibilité"],
+                q: "Pourquoi l'indentation est-elle importante en C si le compilateur ne s'en sert pas[cite: 1] ?",
+                options: [
+                    { text: "Pour permettre la relecture humaine et faciliter le débogage (par exemple, pour repérer les accolades fermantes manquantes)[cite: 1]", isCorrect: true },
+                    { text: "Pour réduire la taille du fichier exécutable[cite: 1]", isCorrect: false }
+                ],
+                explanation: "L'indentation n'a aucune valeur syntaxique pour le compilateur (il peut tout lire sur une seule ligne), mais elle est vitale pour la maintenance et la compréhension du code[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Python vs C", "Déclarations"],
+                q: "Quelle différence fondamentale existe-t-il entre C et Python concernant l'utilisation des variables[cite: 1] ?",
+                options: [
+                    { text: "En C, toute variable doit être explicitement déclarée avec son type avant de pouvoir être utilisée[cite: 1]", isCorrect: true },
+                    { text: "En Python, on doit obligatoirement déclarer le type de la variable avant de l'assigner[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le C impose que toute chose (variable, fonction) soit déclarée pour être connue du compilateur avant d'être utilisée. Python permet la déclaration automatique à l'affectation[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Python vs C", "Structure"],
+                q: "Si en Python les instructions conditionnelles (if) et les fonctions (def) reposent sur l'indentation, sur quoi reposent-elles en C[cite: 1] ?",
+                options: [
+                    { text: "Sur la syntaxe des blocs encadrés par des accolades `{ }`[cite: 1]", isCorrect: true },
+                    { text: "Sur des mots clés de fermeture comme `endif` ou `enddef`[cite: 1]", isCorrect: false }
+                ],
+                explanation: "En C, c'est l'accolade qui ouvre et ferme le périmètre d'une fonction, d'une boucle ou d'une condition[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Python vs C", "Typage"],
+                q: "Laquelle de ces signatures de fonction illustre le passage de Python (typage dynamique) au C (typage statique)[cite: 1] ?",
+                options: [
+                    { text: "Python: `def f(x):`  ->  C: `int f(int x) { ... }`[cite: 1]", isCorrect: true },
+                    { text: "Python: `int f(x):`  ->  C: `def f(int x) { ... }`[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Le langage C exige que l'on indique le type de la valeur de retour (ex: `int`) et le type de chaque argument (ex: `int x`) lors de la définition de la fonction[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Python vs C", "Exécution"],
+                q: "Quelle différence d'exécution globale sépare Python et C[cite: 1] ?",
+                options: [
+                    { text: "Python exécute le script de haut en bas ; le C cherche directement la fonction `main` et n'exécute que son contenu[cite: 1]", isCorrect: true },
+                    { text: "Le C exécute les fonctions dans l'ordre de leur déclaration dans le fichier[cite: 1]", isCorrect: false }
+                ],
+                explanation: "En C, on ne peut pas mettre d'instructions flottantes en dehors d'une fonction. Le processeur va systématiquement démarrer l'exécution à la première ligne de la fonction `main`, peu importe où elle se trouve dans le code[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Histoire", "Normes"],
+                q: "Quelles sont quelques-unes des principales normes ISO du langage C[cite: 1] ?",
+                options: [
+                    { text: "C90, C99, C11, C23[cite: 1]", isCorrect: true },
+                    { text: "C++, C#, Objective-C[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Après le livre K&R de 1978, l'ANSI a standardisé le C en 1989, puis l'ISO en 1990 (C90), avec des mises à jour majeures en 1999 (C99), 2011 (C11) et récemment 2023 (C23) ajoutant de nouvelles fonctionnalités[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Bonnes pratiques", "Nomenclature"],
+                q: "Pourquoi insiste-t-on sur le choix des identificateurs en C[cite: 1] ?",
+                options: [
+                    { text: "Pour améliorer drastiquement la lisibilité et la réutilisabilité du code[cite: 1]", isCorrect: true },
+                    { text: "Pour optimiser la vitesse de compilation de GCC[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Un code propre (variables nommées clairement, cohérence de présentation) facilite sa maintenance, le C ayant par nature peu de structures de très haut niveau[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Généralités", "IHM"],
+                q: "Le langage C propose-t-il une bibliothèque standard de création d'interface graphique (GUI)[cite: 1] ?",
+                options: [
+                    { text: "Non, il n'y a pas de GUI standard, le langage est minimaliste[cite: 1]", isCorrect: true },
+                    { text: "Oui, la bibliothèque `stdio.h` intègre la gestion des fenêtres[cite: 1]", isCorrect: false }
+                ],
+                explanation: "C'est l'un de ses inconvénients (ou de ses forces selon le point de vue) : le C est minimaliste et ne fournit pas de GUI dans sa bibliothèque standard[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Python vs C", "Garbage Collector"],
+                q: "Dans un programme, que doit faire le développeur vis-à-vis de la mémoire en C par rapport à Python[cite: 1] ?",
+                options: [
+                    { text: "En C, le développeur gère la mémoire manuellement ; en Python, le Garbage Collector s'en occupe automatiquement[cite: 1]", isCorrect: true },
+                    { text: "Les deux langages possèdent un Garbage Collector automatique[cite: 1]", isCorrect: false }
+                ],
+                explanation: "C'est une différence capitale. L'absence de gestion automatique en C est ce qui le rend si rapide, mais c'est aussi la source majeure de bugs (liberté dangereuse)[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Syntaxe de base", "Traductions"],
+                q: "Comment traduit-on l'assignation Python `price = 5` en C sachant qu'on crée la variable[cite: 1] ?",
+                options: [
+                    { text: "`int price = 5;`[cite: 1]", isCorrect: true },
+                    { text: "`price = 5;` sans indiquer le type[cite: 1]", isCorrect: false }
+                ],
+                explanation: "En C, lors de sa première utilisation, la variable doit impérativement être déclarée avec son type et l'instruction doit se terminer par un point-virgule[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Culture générale"],
+                q: "Selon la célèbre phrase de Dennis Ritchie : « C is quirky, flawed, and an enormous... »[cite: 1]",
+                options: [
+                    { text: "... success. »[cite: 1]", isCorrect: true },
+                    { text: "... failure. »[cite: 1]", isCorrect: false }
+                ],
+                explanation: "Dennis Ritchie a reconnu que malgré ses défauts et étrangetés, le langage a connu un succès colossal[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Compilation", "Édition de liens"],
+                q: "Lors de la chaîne de compilation, à quoi sert l'éditeur de liens (linker)[cite: 1] ?",
+                options: [
+                    { text: "Il relie ensemble tous les fichiers objets compilés (et les librairies) pour former le programme exécutable final[cite: 1]", isCorrect: true },
+                    { text: "Il traduit le code source C directement en langage assembleur[cite: 1]", isCorrect: false }
+                ],
+                explanation: "La compilation transforme chaque source en fichier objet. L'édition de liens rassemble ces morceaux éparpillés (plus les bibliothèques comme `stdio.h`) pour créer un seul binaire exécutable[cite: 1].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            }
+        ]
+    }
+"Programmation C : Chapitre 2 (Types et Variables)": {
+        course: "prog_c",
+        folder: "Informatique",
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            {
+                type: "qcm",
+                tags: ["Mémoire", "Définitions"],
+                q: "Qu'est-ce qu'une adresse mémoire dans le contexte d'un programme C[cite: 2] ?",
+                options: [
+                    { text: "Une case mémoire d'un octet, qui est l'unité indivisible de 8 bits (0 ou 1)[cite: 2]", isCorrect: true },
+                    { text: "L'emplacement du fichier source sur le disque dur[cite: 2]", isCorrect: false },
+                    { text: "Une variable globale stockée dans le processeur[cite: 2]", isCorrect: false }
+                ],
+                explanation: "La mémoire est manipulée à l'aide d'adresses. Chaque adresse correspond à une case mémoire d'un octet (8 bits)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Mémoire", "Zones"],
+                q: "Quelles sont les différentes zones de mémoire utilisées par un programme C[cite: 2] ?",
+                options: [
+                    { text: "La zone dynamique (pile, tas) et la zone statique (code, données statiques)[cite: 2]", isCorrect: true },
+                    { text: "Uniquement le disque dur et la mémoire cache[cite: 2]", isCorrect: false }
+                ],
+                explanation: "La mémoire d'un programme est divisée en plusieurs segments : la zone dynamique (qui inclut la pile pour les variables locales et le tas pour l'allocation dynamique) et la zone statique (contenant le code exécutable et les données statiques globales)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Types", "Généralités"],
+                q: "À quoi sert la déclaration explicite d'un type en C[cite: 2] ?",
+                options: [
+                    { text: "À permettre au compilateur de réserver la bonne quantité de mémoire et de vérifier la cohérence des expressions[cite: 2]", isCorrect: true },
+                    { text: "À indiquer si la variable doit être stockée sur le disque ou en RAM[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Le type donne deux informations cruciales au compilateur : la taille de la zone mémoire à réserver, et la façon dont il faut interpréter les bits qui s'y trouvent (signé, non signé, flottant...)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Types", "Généralités"],
+                q: "Comment est définie la notion de type en C[cite: 2] ?",
+                options: [
+                    { text: "C'est la combinaison d'une taille de zone mémoire et d'une interprétation des bits[cite: 2]", isCorrect: true },
+                    { text: "C'est uniquement la taille en octets de la variable[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Un type = taille + interprétation (par exemple, savoir si le premier bit indique un signe ou fait partie de la valeur)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Types", "Portabilité"],
+                q: "Quelle est l'unique contrainte imposée par la norme C concernant la taille des types entiers[cite: 2] ?",
+                options: [
+                    { text: "L'ordre des tailles : caractère < petit entier ≤ entier ≤ entier long[cite: 2]", isCorrect: true },
+                    { text: "Qu'un entier `int` fasse exactement 4 octets sur toutes les machines[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Le C est machine-dépendant. La norme impose seulement un ordre de grandeur (ex: `short` $\\le$ `int` $\\le$ `long`), ce qui explique pourquoi la taille exacte varie selon le compilateur et la machine (32 ou 64 bits)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Types entiers", "Limites"],
+                q: "Quelles sont les valeurs possibles pour un `signed char` (1 octet)[cite: 2] ?",
+                options: [
+                    { text: "De -127 à 127 (la norme autorise aussi -128 selon le compilateur)[cite: 2]", isCorrect: true },
+                    { text: "De 0 à 255[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Un `signed char` utilise 1 octet (8 bits). Un bit est réservé pour le signe. La norme contraint l'intervalle entre $-(2^7-1)$ et $2^7-1$, soit $[-127 ; 127]$. Les compilateurs incluent souvent -128, mais ce n'est pas standard et nuit à la portabilité[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Types entiers", "Limites"],
+                q: "Quelles sont les valeurs possibles pour un `unsigned char` (1 octet)[cite: 2] ?",
+                options: [
+                    { text: "De 0 à 255[cite: 2]", isCorrect: true },
+                    { text: "De -127 à 127[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Un `unsigned char` utilise l'intégralité de ses 8 bits pour des valeurs positives, allant donc de $0$ à $2^8-1 = 255$[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Types entiers", "Débordement"],
+                q: "Que se passe-t-il si l'on exécute : `unsigned char c = 255; c = c + 1;`[cite: 2] ?",
+                options: [
+                    { text: "La variable `c` prend la valeur 0 (débordement)[cite: 2]", isCorrect: true },
+                    { text: "La variable `c` prend la valeur 256[cite: 2]", isCorrect: false },
+                    { text: "Le programme plante avec une erreur d'exécution[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Il n'y a aucune vérification faite à l'exécution en C. Quand on ajoute 1 à `0b11111111`, on obtient `0b100000000`. Comme on n'a que 8 bits, le 9ème bit est tronqué et il ne reste que des zéros[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Types entiers", "Débordement", "Boucles"],
+                q: "Quel est le problème dans cette boucle : `for (unsigned int i=10; i>=0; i--)`[cite: 2] ?",
+                options: [
+                    { text: "C'est une boucle infinie : quand `i` atteint 0, `i--` provoque un débordement qui remet `i` à sa valeur maximale ($2^{32}-1$), donc `i` reste toujours supérieur ou égal à 0[cite: 2]", isCorrect: true },
+                    { text: "Il n'y a pas de problème, la boucle s'arrêtera quand `i` vaudra -1[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Un `unsigned int` ne peut jamais être strictement inférieur à 0. Après 0, il boucle sur le plafond maximum (phénomène de roll-over), la condition de la boucle est donc une tautologie[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Types entiers", "Représentation"],
+                q: "En C, comment écrire l'entier 12 en base octale dans le code source[cite: 2] ?",
+                options: [
+                    { text: "En ajoutant un 0 devant : `014`[cite: 2]", isCorrect: true },
+                    { text: "En écrivant simplement `00012`[cite: 2]", isCorrect: false }
+                ],
+                explanation: "En C, un nombre entier qui commence par `0` est interprété comme de l'octal (base 8). Le nombre écrit `012` en C vaut donc $1\\times8 + 2 = 10$ en décimal[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Types entiers", "Opérations"],
+                q: "Que vaut le résultat de la division `9/4` en C[cite: 2] ?",
+                options: [
+                    { text: "2[cite: 2]", isCorrect: true },
+                    { text: "2.25[cite: 2]", isCorrect: false }
+                ],
+                explanation: "En C, si les deux opérandes sont des entiers, l'opérateur `/` effectue le quotient de la division entière (il tronque la partie décimale). Le résultat est donc 2[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Réels", "Types"],
+                q: "Quelles sont les particularités des types `float` et `double`[cite: 2] ?",
+                options: [
+                    { text: "Ce sont des représentations en virgule flottante qui produisent des approximations et des erreurs d'arrondis. Ils ne doivent pas être utilisés pour des calculs exacts[cite: 2]", isCorrect: true },
+                    { text: "Ils permettent de stocker des nombres réels avec une précision infinie[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Les flottants sont des approximations stockées sous la forme $m \times 2^e$. Des nombres simples comme 0.1 ne sont pas représentables de façon exacte en binaire, ce qui crée des erreurs d'accumulation[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Réels", "Précision"],
+                q: "Vrai ou Faux : En C, la condition `if (0.1 + 0.2 == 0.3)` est toujours vérifiée[cite: 2].",
+                options: [
+                    { text: "Faux[cite: 2]", isCorrect: true },
+                    { text: "Vrai[cite: 2]", isCorrect: false }
+                ],
+                explanation: "C'est un piège classique de l'arithmétique à virgule flottante. L'approximation de 0.1 et de 0.2 en binaire fait que leur somme n'est pas strictement égale à l'approximation en mémoire de 0.3[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Réels", "Opérations"],
+                q: "Que se passe-t-il lors de l'opération `8.4 / 2`[cite: 2] ?",
+                options: [
+                    { text: "Le 2 est implicitement converti en réel (2.0) pour adopter le type le plus précis, et le résultat est une division réelle (4.2)[cite: 2]", isCorrect: true },
+                    { text: "Le programme génère une erreur car les types sont différents[cite: 2]", isCorrect: false }
+                ],
+                explanation: "C'est la règle de conversion automatique (promotion) du C. Si les opérandes sont de types différents, on convertit dans le type le plus « large » pour effectuer le calcul[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Caractères", "Définition"],
+                q: "Comment le type `char` fonctionne-t-il en interne en C[cite: 2] ?",
+                options: [
+                    { text: "C'est un entier stocké sur 1 octet qui est interprété comme un code de caractère (code ASCII)[cite: 2]", isCorrect: true },
+                    { text: "C'est un type de donnée complexe capable de stocker n'importe quel symbole Unicode[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Un `char` est avant tout un petit entier de 8 bits. La table ASCII fait la correspondance entre ce nombre et un caractère affichable (pour les valeurs de 0 à 127)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Caractères", "Valeurs"],
+                q: "Que va afficher l'instruction `printf(\"%d %d\", 9, '9');`[cite: 2] ?",
+                options: [
+                    { text: "9 et 57[cite: 2]", isCorrect: true },
+                    { text: "9 et 9[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Le premier argument est l'entier mathématique 9. Le second argument est le caractère `'9'`, dont la valeur dans la table ASCII est 57. Le formateur `%d` demande d'afficher l'entier sous-jacent[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Caractères", "Spéciaux"],
+                q: "À quoi correspond le caractère spécial `\\n`[cite: 2] ?",
+                options: [
+                    { text: "Un saut de ligne[cite: 2]", isCorrect: true },
+                    { text: "Une tabulation[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Le `\\n` est la séquence d'échappement standard pour ordonner un retour à la ligne (newline)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variables", "Initialisation"],
+                q: "Quelle est la valeur par défaut d'une variable non initialisée (ex: `int a;` dans une fonction)[cite: 2] ?",
+                options: [
+                    { text: "Sa valeur est indéterminée (elle contient ce qui traînait en mémoire à cette adresse)[cite: 2]", isCorrect: true },
+                    { text: "Elle vaut 0 par sécurité[cite: 2]", isCorrect: false }
+                ],
+                explanation: "En C, les variables locales ne sont pas nettoyées. Déclarer `int a;` réserve la mémoire, mais ne la vide pas. Ne jamais utiliser une variable sans l'avoir initialisée d'abord ![cite: 2]",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variables", "Conversions implicites"],
+                q: "Que se passe-t-il avec le code `int a = 2.45;`[cite: 2] ?",
+                options: [
+                    { text: "La valeur réelle (2.45) est tronquée, et la variable `a` reçoit la valeur 2[cite: 2]", isCorrect: true },
+                    { text: "Le compilateur rejette l'affectation car les types sont incompatibles[cite: 2]", isCorrect: false }
+                ],
+                explanation: "C'est une conversion implicite. La donnée à droite est forcée dans le type de la variable à gauche, ce qui entraîne une perte de précision (la partie décimale est ignorée)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Variables", "Cast"],
+                q: "Qu'est-ce qu'un « cast » explicite en C[cite: 2] ?",
+                options: [
+                    { text: "Le fait de forcer le compilateur à interpréter une variable dans un autre type (ex: `b = (int) a;`)[cite: 2]", isCorrect: true },
+                    { text: "Une fonction qui nettoie la mémoire d'une variable[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Le cast (transtypage) dit au compilateur de fermer les yeux et de traiter les octets de la variable selon les règles du nouveau type précisé entre parenthèses[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Constantes", "Déclaration"],
+                q: "Quelle est la différence fondamentale entre `const int a = 5;` et `#define A 5`[cite: 2] ?",
+                options: [
+                    { text: "`const` crée une vraie variable (en lecture seule) avec un type et un espace mémoire. `#define` effectue une simple substitution de texte avant la compilation sans aucune vérification[cite: 2]", isCorrect: true },
+                    { text: "Il n'y a aucune différence, ce sont deux syntaxes pour la même chose[cite: 2]", isCorrect: false }
+                ],
+                explanation: "La macro `#define` est aveugle. Le préprocesseur cherche et remplace le texte. La variable `const` est gérée par le compilateur, avec toutes les garanties de type et de portée[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Constantes", "Macros"],
+                q: "Pourquoi est-il risqué d'utiliser des macros (`#define`) avec un nom d'un seul caractère (ex: `#define A 3`)[cite: 2] ?",
+                options: [
+                    { text: "Parce que le remplacement de texte est brut. Si on déclare ensuite une variable `int A = 4;`, le code deviendra `int 3 = 4;` et plantera à la compilation[cite: 2]", isCorrect: true },
+                    { text: "Parce que le C interdit les identificateurs d'une seule lettre[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Le préprocesseur qui gère le `#define` ne comprend pas le langage C. Il remplace le texte partout où il le trouve. C'est pourquoi on utilise toujours des mots longs et en MAJUSCULES pour les macros[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tableaux", "Caractéristiques"],
+                q: "Un tableau statique en C peut-il être redimensionné au cours de l'exécution du programme[cite: 2] ?",
+                options: [
+                    { text: "Non[cite: 2]", isCorrect: true },
+                    { text: "Oui, en utilisant la fonction resize[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Un tableau statique est placé dans une zone contiguë de la pile avec une taille fixée à la compilation. Il ne peut jamais changer de taille. Pour un tableau extensible, il faut gérer la mémoire dynamiquement (tas)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tableaux", "Accès"],
+                q: "Dans un tableau `int tab[10];`, quel est l'indice du premier et du dernier élément[cite: 2] ?",
+                options: [
+                    { text: "Le premier est `tab[0]` et le dernier est `tab[9]`[cite: 2]", isCorrect: true },
+                    { text: "Le premier est `tab[1]` et le dernier est `tab[10]`[cite: 2]", isCorrect: false }
+                ],
+                explanation: "En C, les tableaux sont indexés à partir de 0 (zéro-based numbering). Le dernier élément d'un tableau de taille $N$ est donc à l'indice $N-1$[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tableaux", "Sécurité"],
+                q: "Que se passe-t-il si l'on écrit `tab[10]` pour un tableau de taille 10[cite: 2] ?",
+                options: [
+                    { text: "C'est un accès hors-limites (out of bounds). Le C ne vérifie rien, on va lire ou corrompre la mémoire située juste après le tableau (erreur fatale possible)[cite: 2]", isCorrect: true },
+                    { text: "Le compilateur signale une erreur et refuse de compiler[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Le C ne surveille jamais les accès aux indices des tableaux, ni à la compilation ni à l'exécution. C'est l'entière responsabilité du programmeur de rester dans les bornes[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tableaux", "Taille"],
+                q: "Pourquoi est-il nécessaire de transmettre la taille d'un tableau en tant que paramètre supplémentaire lorsqu'on le passe à une fonction[cite: 2] ?",
+                options: [
+                    { text: "Parce qu'un tableau ne connaît pas sa propre taille (il ne transmet que l'adresse de sa première case à la fonction)[cite: 2]", isCorrect: true },
+                    { text: "Pour que la fonction puisse vérifier que le tableau n'est pas vide[cite: 2]", isCorrect: false }
+                ],
+                explanation: "En C, le nom d'un tableau est équivalent à l'adresse mémoire de son premier élément. La fonction appelée ignore complètement où s'arrête le tableau. L'utilisation de `sizeof` dans la fonction renverrait juste la taille d'une adresse[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tableaux", "Initialisation"],
+                q: "Dans la déclaration `int tab[5] = {1};`, que valent les éléments du tableau[cite: 2] ?",
+                options: [
+                    { text: "Le premier vaut 1, et tous les autres (qui n'ont pas été précisés) sont initialisés à 0[cite: 2]", isCorrect: true },
+                    { text: "Tous les éléments valent 1[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Lorsqu'on initialise partiellement un tableau avec des accolades, le compilateur remplit automatiquement toutes les cases restantes avec des zéros[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tableaux", "Affectation"],
+                q: "Pourquoi l'instruction `a = b;` (où `a` et `b` sont deux tableaux) provoque-t-elle une erreur de compilation[cite: 2] ?",
+                options: [
+                    { text: "Parce que le nom d'un tableau désigne une adresse mémoire constante (le début du tableau), on ne peut donc pas réaffecter cette adresse[cite: 2]", isCorrect: true },
+                    { text: "Parce que les tableaux n'ont pas la même taille[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Le C n'offre pas d'opérateur pour copier le contenu d'un tableau d'un seul coup. Le nom du tableau pointe de manière figée sur la première case, on ne peut pas écraser ce pointeur[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tableaux multidimensionnels", "Syntaxe"],
+                q: "Comment accède-t-on à l'élément de la 2ème ligne et 3ème colonne de la matrice `int A[3][4];`[cite: 2] ?",
+                options: [
+                    { text: "`A[1][2]`[cite: 2]", isCorrect: true },
+                    { text: "`A[2][3]`[cite: 2]", isCorrect: false },
+                    { text: "`A[1, 2]`[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Chaque dimension possède sa propre paire de crochets et on compte à partir de 0. La syntaxe `A[1,2]` avec une virgule compile mais effectue une opération obscure totalement différente de l'accès 2D[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tableaux multidimensionnels", "Parcours"],
+                q: "Dans une très grande matrice en C, pourquoi est-il crucial de parcourir les éléments « ligne par ligne » plutôt que « colonne par colonne »[cite: 2] ?",
+                options: [
+                    { text: "Car le C stocke les matrices de manière linéaire (ligne après ligne) en mémoire. Le parcours par ligne respecte la contiguïté mémoire et est beaucoup plus rapide (mémoire cache)[cite: 2]", isCorrect: true },
+                    { text: "C'est faux, le temps de parcours est exactement le même dans les deux sens[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Un tableau 2D n'est qu'un grand tableau 1D déguisé, organisé ligne par ligne (`t[0][0]`, `t[0][1]`, `t[0][2]`, puis `t[1][0]`). Parcourir les colonnes implique de faire de grands bonds en mémoire, ruinant les performances d'accès (cache miss)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Tableaux", "Limites de la pile"],
+                q: "Que se passera-t-il à l'exécution de ce code : `int main() { int tab[10000][10000]; return 0; }`[cite: 2] ?",
+                options: [
+                    { text: "Le programme va planter immédiatement avec une erreur de segmentation (Stack overflow)[cite: 2]", isCorrect: true },
+                    { text: "Le tableau sera créé sans problème dans la RAM[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Les tableaux statiques locaux sont stockés sur la « pile » (Stack), une zone mémoire de taille très restreinte (souvent de l'ordre de quelques Mo). Un tableau aussi gigantesque fait exploser la pile[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chaînes de caractères", "Définition"],
+                q: "Qu'est-ce qu'une chaîne de caractères en langage C[cite: 2] ?",
+                options: [
+                    { text: "C'est simplement une convention : un tableau de `char` dont le tout dernier élément utile est suivi du caractère spécial `\\0` (caractère nul)[cite: 2]", isCorrect: true },
+                    { text: "C'est un type de base indépendant nommé `String`[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Le type String n'existe pas en C. Une chaîne est un tableau de caractères classique, et c'est le `\\0` qui indique aux fonctions (comme `printf`) où s'arrêter de lire[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chaînes de caractères", "Taille en mémoire"],
+                q: "Pour stocker la chaîne \"cat\" (3 lettres), quelle doit être la longueur minimale du tableau de caractères[cite: 2] ?",
+                options: [
+                    { text: "4 cases (3 pour les lettres, plus 1 pour le caractère de fin `\\0`)[cite: 2]", isCorrect: true },
+                    { text: "3 cases[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Il faut toujours prévoir une case supplémentaire pour loger le caractère de terminaison nul (`\\0`), indispensable pour délimiter la fin de la chaîne[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chaînes de caractères", "Bibliothèques"],
+                q: "Si `s1` et `s2` sont des chaînes, pourquoi l'instruction `s2 = s1;` ne copie-t-elle pas la chaîne[cite: 2] ?",
+                options: [
+                    { text: "Car ce sont des tableaux (on ne peut pas réaffecter les adresses de tableaux statiques). Il faut utiliser une fonction dédiée comme `strcpy(s2, s1);` de la bibliothèque `string.h`[cite: 2]", isCorrect: true },
+                    { text: "Car l'opérateur `=` copie à l'envers, il faut faire `s1 = s2;`[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Comme pour tous les tableaux en C, le signe `=` ne duplique pas le contenu des cases. On doit utiliser des fonctions standard (`strcpy` pour la copie, `strlen` pour la taille, `strcmp` pour la comparaison)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Chaînes de caractères", "Erreurs classiques"],
+                q: "Quel est le risque principal lié à l'utilisation du `\\0` pour marquer la fin des chaînes en C[cite: 2] ?",
+                options: [
+                    { text: "Si l'on oublie de l'insérer (ou si on l'écrase par erreur), les fonctions de lecture comme `printf` ou `strlen` vont continuer à lire la mémoire à l'infini jusqu'à provoquer un crash[cite: 2]", isCorrect: true },
+                    { text: "Cela ralentit considérablement la compilation[cite: 2]", isCorrect: false }
+                ],
+                explanation: "Les fonctions du C s'appuient aveuglément sur la présence de cette sentinelle `\\0`. Sans elle, elles parcourent la mémoire indéfiniment (car le tableau ne connaît pas sa propre taille)[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Concepts fondamentaux"],
+                q: "En C, l'équation « Variable = ... » se résume à trois éléments fondamentaux. Lesquels[cite: 2] ?",
+                options: [
+                    { text: "Variable = adresse + type + valeur[cite: 2]", isCorrect: true },
+                    { text: "Variable = nom + portée + fonction[cite: 2]", isCorrect: false }
+                ],
+                explanation: "C'est la clé de voûte de la mémoire en C : une variable est située à une adresse précise, elle stocke une valeur binaire pure, et c'est son type qui détermine comment cette valeur doit être interprétée et quelle est sa taille[cite: 2].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            }
+        ]
+    }
+"Programmation C : Chapitre 3 (Expressions, instructions et E/S simples)": {
+        course: "prog_c",
+        folder: "Informatique",
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            {
+                type: "qcm",
+                tags: ["Expressions", "Définitions"],
+                q: "En langage C, qu'est-ce qu'une expression[cite: 3] ?",
+                options: [
+                    { text: "Une combinaison de valeurs, de variables, d'opérateurs et d'appels de fonctions qui est évaluée pour produire une valeur de type connu[cite: 3]", isCorrect: true },
+                    { text: "Une étape du programme qui ne produit aucune valeur, comme une déclaration[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Une expression produit toujours une valeur typée, qu'il s'agisse d'une constante (ex: 42), d'une opération ($x+y$) ou d'un appel de fonction[cite: 3]. Une étape qui ne produit rien est une instruction[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Instructions", "Définitions"],
+                q: "Quelle est la principale différence entre une expression et une instruction[cite: 3] ?",
+                options: [
+                    { text: "Une instruction est une étape du programme qui ne produit aucune valeur, contrairement à une expression[cite: 3]", isCorrect: true },
+                    { text: "Une expression est obligatoirement terminée par un point-virgule, contrairement à une instruction[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Une instruction (comme la déclaration `int x;` ou une boucle `for`) décrit une action à effectuer mais ne s'évalue pas en une valeur[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Affectation", "Valeur de retour"],
+                q: "Que produit l'expression d'affectation `x = 5` en plus de stocker la valeur dans la variable[cite: 3] ?",
+                options: [
+                    { text: "Elle renvoie la valeur affectée (ici 5)[cite: 3]", isCorrect: true },
+                    { text: "Elle renvoie un booléen indiquant si l'affectation a réussi[cite: 3]", isCorrect: false },
+                    { text: "Elle ne renvoie aucune valeur[cite: 3]", isCorrect: false }
+                ],
+                explanation: "En C, l'affectation est une expression qui renvoie la valeur affectée[cite: 3]. C'est ce qui permet d'enchaîner les affectations comme `x = y = z = 5;` ou de tester des retours de fonctions directement dans un `if`[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Affectation", "Exemples"],
+                q: "Si `int a = 3;` et `int b = (a = a + 5) + 1;`, que valent `a` et `b` à la fin de l'exécution[cite: 3] ?",
+                options: [
+                    { text: "`a` vaut 8 et `b` vaut 9[cite: 3]", isCorrect: true },
+                    { text: "`a` vaut 3 et `b` vaut 9[cite: 3]", isCorrect: false }
+                ],
+                explanation: "L'expression `(a = a + 5)` affecte la valeur 8 à `a` et renvoie cette même valeur 8[cite: 3]. Ensuite, `b` reçoit la valeur $8 + 1 = 9$[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Affectation", "Opérateurs composés"],
+                q: "À quoi équivaut strictement l'instruction `x *= y + 1;`[cite: 3] ?",
+                options: [
+                    { text: "`x = x * (y + 1);`[cite: 3]", isCorrect: true },
+                    { text: "`x = x * y + 1;`[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Les affectations composées `<lvalue> <op>= <expression>` équivalent à `<lvalue> = <lvalue> <op> (<expression>)`[cite: 3]. L'expression de droite est toujours évaluée en premier[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Opérateurs", "Incrémentation"],
+                q: "Quelle est la différence entre l'incrémentation postfixée (`i++`) et préfixée (`++i`)[cite: 3] ?",
+                options: [
+                    { text: "`i++` renvoie la valeur de `i` avant l'incrémentation, tandis que `++i` renvoie la valeur de `i` après l'incrémentation[cite: 3]", isCorrect: true },
+                    { text: "`i++` ajoute 1, tandis que `++i` ajoute la valeur de la variable précédente[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Dans les deux cas, la variable est incrémentée[cite: 3]. La seule différence réside dans la valeur renvoyée par l'expression au moment de son exécution[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Opérateurs", "Incrémentation", "Exemples"],
+                q: "Si `int i = 2;` et `int a = i++;`, quelles sont les valeurs finales[cite: 3] ?",
+                options: [
+                    { text: "`a = 2` et `i = 3`[cite: 3]", isCorrect: true },
+                    { text: "`a = 3` et `i = 3`[cite: 3]", isCorrect: false }
+                ],
+                explanation: "L'opérateur postfixé `i++` renvoie la valeur courante de `i` (donc 2) pour l'affecter à `a`, puis incrémente `i` à 3[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Opérateurs", "Erreurs classiques"],
+                q: "Peut-on utiliser l'opérateur d'incrémentation sur une constante, comme `5++;`[cite: 3] ?",
+                options: [
+                    { text: "Non, cela produit une erreur[cite: 3]", isCorrect: true },
+                    { text: "Oui, la valeur devient 6 en mémoire[cite: 3]", isCorrect: false }
+                ],
+                explanation: "L'opérateur d'incrémentation requiert une `<lvalue>` (une variable possédant une adresse mémoire modifiable). Il ne s'applique pas sur les constantes[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Booléens", "Généralités"],
+                q: "Comment le langage C (historiquement, avant C99) représente-t-il les valeurs booléennes[cite: 3] ?",
+                options: [
+                    { text: "La valeur 0 représente \"faux\", et toute valeur non nulle représente \"vrai\"[cite: 3]", isCorrect: true },
+                    { text: "Avec les mots clés `True` et `False` uniquement[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Historiquement, le C n'a pas de type booléen dédié. Le zéro vaut faux, et toute autre valeur (comme 42 ou -1) est évaluée comme vraie[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Booléens", "Normes"],
+                q: "Quel ajout la norme C99 a-t-elle apporté concernant les booléens[cite: 3] ?",
+                options: [
+                    { text: "L'ajout du type `_Bool` et de la macro `bool` via la bibliothèque `<stdbool.h>`[cite: 3]", isCorrect: true },
+                    { text: "La suppression définitive de l'évaluation du nombre 0 comme faux[cite: 3]", isCorrect: false }
+                ],
+                explanation: "La norme C99 a introduit `_Bool` et l'en-tête `<stdbool.h>`. En C23, `bool` devient même un mot-clé natif du langage[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Opérateurs", "Logique"],
+                q: "Quels sont les opérateurs logiques en C pour le ET, le OU et le NON[cite: 3] ?",
+                options: [
+                    { text: "`&&` pour ET, `||` pour OU, `!` pour NON[cite: 3]", isCorrect: true },
+                    { text: "`&` pour ET, `|` pour OU, `~` pour NON[cite: 3]", isCorrect: false },
+                    { text: "`and` pour ET, `or` pour OU, `not` pour NON[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Les opérateurs logiques sont `&&` (ET), `||` (OU), et `!` (NON)[cite: 3]. Les opérateurs `&` et `|` sont des opérateurs bit à bit[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Booléens", "Évaluation paresseuse"],
+                q: "Qu'est-ce que l'évaluation paresseuse (lazy evaluation) de l'opérateur logique `&&`[cite: 3] ?",
+                options: [
+                    { text: "Dans `A && B`, si `A` est faux, l'expression `B` n'est même pas évaluée car le résultat sera forcément faux[cite: 3]", isCorrect: true },
+                    { text: "Le compilateur retarde le calcul de l'expression à la fin de la fonction[cite: 3]", isCorrect: false }
+                ],
+                explanation: "C'est un mécanisme de sécurité et d'optimisation fondamental en C. Si la première partie d'un ET logique échoue, la seconde est ignorée[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Booléens", "Évaluation paresseuse"],
+                q: "Comment fonctionne l'évaluation paresseuse de l'opérateur logique `||`[cite: 3] ?",
+                options: [
+                    { text: "Dans `A || B`, si `A` est vrai, l'expression `B` n'est pas évaluée car le résultat sera forcément vrai[cite: 3]", isCorrect: true },
+                    { text: "Dans `A || B`, les deux opérandes sont toujours évaluées pour vérifier les erreurs[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Dès qu'une condition du OU logique est vraie (en lisant de gauche à droite), le système arrête l'évaluation et renvoie vrai[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Booléens", "Évaluation paresseuse", "Exemples"],
+                q: "Dans l'expression `if (s != NULL && s[0] < '0')`, pourquoi l'ordre est-il vital[cite: 3] ?",
+                options: [
+                    { text: "Grâce à l'évaluation paresseuse, si `s` est NULL, `s[0]` ne sera jamais évalué, ce qui évite un crash (erreur de segmentation)[cite: 3]", isCorrect: true },
+                    { text: "C'est juste une convention de style[cite: 3]", isCorrect: false }
+                ],
+                explanation: "L'évaluation paresseuse garantit que l'opérande de droite n'est testée que si celle de gauche est vraie. On teste donc si le pointeur est valide AVANT d'essayer de lire sa première case[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Opérateurs", "Évaluation"],
+                q: "En dehors des opérateurs `&&` et `||`, que garantit le C sur l'ordre d'évaluation des opérandes (ex: `f() + g()`)[cite: 3] ?",
+                options: [
+                    { text: "Rien n'est garanti, l'ordre d'évaluation est souvent non spécifié[cite: 3]", isCorrect: true },
+                    { text: "L'évaluation se fait toujours strictement de gauche à droite[cite: 3]", isCorrect: false }
+                ],
+                explanation: "L'ordre d'évaluation des opérandes pour des opérations mathématiques ou des appels de fonctions n'est pas défini par la norme. On ne sait pas si `f()` sera exécuté avant `g()`[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Opérateurs", "Comportement indéfini"],
+                q: "Pourquoi l'expression `A[i] = B[i++]` est-elle considérée comme un comportement indéfini[cite: 3] ?",
+                options: [
+                    { text: "Car l'ordre d'évaluation n'étant pas spécifié, on ne sait pas si le `i` de `A[i]` sera la valeur avant ou après l'incrémentation de `i++`[cite: 3]", isCorrect: true },
+                    { text: "Car on ne peut pas affecter un tableau à un autre tableau[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Modifier une variable (avec `++`) et la relire dans la même expression, sans point de séquence garanti, donne un comportement indéfini en C[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Comparaison", "Types"],
+                q: "Quelles sont les opérateurs réservés à la comparaison d'ordre sur des types numériques[cite: 3] ?",
+                options: [
+                    { text: "`<`, `>`, `<=`, `>=`[cite: 3]", isCorrect: true },
+                    { text: "`==`, `!=`[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Les opérateurs de stricte infériorité/supériorité ne s'appliquent qu'à des grandeurs numériques. L'égalité (`==`) s'applique plus largement (pointeurs, caractères)[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Opérateurs", "Priorité"],
+                q: "Quel opérateur est le plus prioritaire entre `&&`, `==` et `<`[cite: 3] ?",
+                options: [
+                    { text: "`<` est plus prioritaire que `==`, qui est plus prioritaire que `&&`[cite: 3]", isCorrect: true },
+                    { text: "`&&` est le plus prioritaire des trois[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Dans l'ordre de priorité décroissant : les comparaisons d'ordre (`<`), puis l'égalité (`==`), puis le ET logique (`&&`)[cite: 3]. Dans le doute, il faut utiliser des parenthèses[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Booléens", "Exemples"],
+                q: "Que vaut l'expression booléenne `!17` en C[cite: 3] ?",
+                options: [
+                    { text: "0 (faux)[cite: 3]", isCorrect: true },
+                    { text: "1 (vrai)[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Toute valeur non nulle est considérée comme vraie. La négation (`!`) de \"vrai\" donne 0 (\"faux\")[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Booléens", "Exemples"],
+                q: "Que vaut l'expression `4 && 6` en C[cite: 3] ?",
+                options: [
+                    { text: "1 (vrai)[cite: 3]", isCorrect: true },
+                    { text: "4[cite: 3]", isCorrect: false },
+                    { text: "24[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Les opérandes 4 et 6 sont non nuls, donc considérés comme vrais. L'opération logique \"vrai ET vrai\" renvoie le booléen vrai (qui vaut 1 en C)[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Structures conditionnelles", "Syntaxe"],
+                q: "Quelle est la structure d'une instruction `if ... else` classique[cite: 3] ?",
+                options: [
+                    { text: "`if (expression) { instructions1; } else { instructions2; }`[cite: 3]", isCorrect: true },
+                    { text: "`if expression then instructions1; else instructions2;`[cite: 3]", isCorrect: false }
+                ],
+                explanation: "En C, l'expression conditionnelle doit obligatoirement être entre parenthèses, et les blocs d'instructions sont (généralement) entourés d'accolades[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Structures conditionnelles", "Erreurs classiques"],
+                q: "Que provoque le code `if (a = 2) { printf(\"vrai\"); }`[cite: 3] ?",
+                options: [
+                    { text: "L'affectation `a = 2` renvoie 2 (vrai), donc la condition est toujours remplie et le code affiche \"vrai\"[cite: 3]", isCorrect: true },
+                    { text: "Une erreur de compilation[cite: 3]", isCorrect: false },
+                    { text: "Il n'affiche rien si `a` ne valait pas 2 initialement[cite: 3]", isCorrect: false }
+                ],
+                explanation: "C'est une erreur très courante. On a confondu l'égalité `==` avec l'affectation `=`. L'affectation écrase `a` avec 2 et la condition évalue ce 2 comme \"vrai\"[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Structures conditionnelles", "Chaînes"],
+                q: "Pourquoi le test `if (s1 == s2)` pour deux chaînes contenant \"Francois\" renvoie-t-il faux[cite: 3] ?",
+                options: [
+                    { text: "Parce que l'opérateur `==` compare les adresses mémoire des tableaux, pas le contenu textuel[cite: 3]", isCorrect: true },
+                    { text: "Parce qu'il faut utiliser l'opérateur `===` en C[cite: 3]", isCorrect: false }
+                ],
+                explanation: "En C, le nom d'un tableau est un pointeur. Comparer deux chaînes avec `==` compare si elles sont stockées au même endroit en mémoire. Il faut utiliser `strcmp()`[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Structures conditionnelles", "Erreurs classiques"],
+                q: "Que se passe-t-il dans ce code : `if (10 % 2 == 1); printf(\"10 est impair\\n\");`[cite: 3] ?",
+                options: [
+                    { text: "Il affichera toujours \"10 est impair\" car le point-virgule après le `if` termine l'instruction conditionnelle (instruction vide)[cite: 3]", isCorrect: true },
+                    { text: "Le compilateur plante[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Le point-virgule après la parenthèse du `if` constitue le corps du `if` (une action vide). Le `printf` qui suit est donc totalement indépendant de la condition et s'exécutera toujours[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Structures conditionnelles", "Portée"],
+                q: "Dans un enchaînement `if ... if ... else`, à quel `if` le `else` est-il rattaché par défaut[cite: 3] ?",
+                options: [
+                    { text: "Au `if` le plus proche qui n'a pas encore de `else`[cite: 3]", isCorrect: true },
+                    { text: "Au tout premier `if` de l'enchaînement[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Pour éviter l'ambiguïté (problème du \"dangling else\"), le compilateur associe toujours le `else` au dernier `if` ouvert. Utiliser des accolades permet de forcer un autre comportement[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Boucles", "for"],
+                q: "Quelles sont les trois parties constitutives de l'en-tête d'une boucle `for` en C[cite: 3] ?",
+                options: [
+                    { text: "`for(instruction_initialisation; expression_condition; instruction_evolution)`[cite: 3]", isCorrect: true },
+                    { text: "`for(variable in liste_valeurs)`[cite: 3]", isCorrect: false }
+                ],
+                explanation: "La boucle `for` en C s'articule autour de l'initialisation (faite une fois), la condition (testée avant chaque tour), et l'évolution (exécutée en fin de tour)[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Boucles", "for"],
+                q: "Peut-on laisser des champs vides dans un `for`, comme `for(; i < 10;)`[cite: 3] ?",
+                options: [
+                    { text: "Oui, c'est autorisé[cite: 3]", isCorrect: true },
+                    { text: "Non, une erreur de syntaxe empêchera la compilation[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Les trois champs du `for` sont optionnels. Laisser la condition vide équivaut à un test toujours vrai, ce qui crée une boucle infinie (`for(;;)`). Les points-virgules, eux, restent obligatoires[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Boucles", "Complexité"],
+                q: "Pourquoi écrire `for(i=0; i < strlen(mot); i++)` peut-il poser un problème de complexité[cite: 3] ?",
+                options: [
+                    { text: "Parce que l'expression de condition (`strlen`) est réévaluée à CHAQUE itération, ce qui recalcule la longueur à chaque tour[cite: 3]", isCorrect: true },
+                    { text: "Parce que `strlen` modifie la chaîne de caractères[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Dans un `for`, l'expression centrale est testée à chaque boucle. Appeler une fonction lourde à cet endroit ralentit énormément le programme. Il vaut mieux la stocker dans une variable avant la boucle[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Boucles", "Portée"],
+                q: "Si je déclare la variable d'itération DANS la boucle : `for(int i=0; i<10; i++)`, est-ce que `i` est accessible après la boucle[cite: 3] ?",
+                options: [
+                    { text: "Non, sa portée se limite au bloc du `for`. Une erreur de compilation surviendra si on l'appelle après[cite: 3]", isCorrect: true },
+                    { text: "Oui, `i` conservera la valeur 10[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Déclarer la variable d'itération à l'intérieur de l'en-tête du `for` réduit sa portée (scope) à la boucle elle-même. Elle n'existe plus en dehors[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Boucles", "while"],
+                q: "Quelle est la particularité d'une boucle `while`[cite: 3] ?",
+                options: [
+                    { text: "Elle n'exige qu'une condition. Si la condition est fausse dès le début, on n'entre jamais dans la boucle[cite: 3]", isCorrect: true },
+                    { text: "Elle s'exécute toujours au moins une fois[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Le `while(expression)` teste la condition avant l'exécution du bloc d'instructions. C'est l'équivalent d'un `for` sans initialisation ni évolution[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Boucles", "do-while"],
+                q: "Comment garantit-on qu'une boucle s'exécute TOUJOURS au moins une fois[cite: 3] ?",
+                options: [
+                    { text: "En utilisant la structure `do { ... } while(expression);`[cite: 3]", isCorrect: true },
+                    { text: "En mettant la condition à 1 dans un `while`[cite: 3]", isCorrect: false }
+                ],
+                explanation: "La boucle `do...while` effectue d'abord les instructions, puis teste la condition à la fin de l'itération pour savoir si elle doit recommencer[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Boucles", "do-while", "Syntaxe"],
+                q: "Quelle est la contrainte syntaxique stricte de la structure `do...while`[cite: 3] ?",
+                options: [
+                    { text: "Le point-virgule `;` est obligatoire tout à la fin, après la parenthèse du `while`[cite: 3]", isCorrect: true },
+                    { text: "Les accolades ne sont pas autorisées[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Contrairement aux blocs `if` ou `while` classiques qui finissent par une accolade fermante `}`, le `do...while` nécessite un point-virgule après l'expression : `do { ... } while(cond);`[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Contrôle du déroulement", "return"],
+                q: "Quel est l'effet de l'instruction `return;`[cite: 3] ?",
+                options: [
+                    { text: "Elle quitte immédiatement la fonction en cours et retourne l'exécution à la fonction appelante[cite: 3]", isCorrect: true },
+                    { text: "Elle relance la fonction depuis le début[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Le `return` met fin à l'exécution de la fonction et, le cas échéant, transmet une valeur au code qui l'a appelée[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Contrôle du déroulement", "break"],
+                q: "Que fait l'instruction `break;` dans une boucle[cite: 3] ?",
+                options: [
+                    { text: "Elle force la sortie immédiate de la boucle la plus proche[cite: 3]", isCorrect: true },
+                    { text: "Elle passe immédiatement à l'itération suivante de la boucle[cite: 3]", isCorrect: false }
+                ],
+                explanation: "L'instruction `break` interrompt prématurément le déroulement et éjecte le programme de la boucle englobante la plus proche[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Contrôle du déroulement", "continue"],
+                q: "Que fait l'instruction `continue;` dans une boucle[cite: 3] ?",
+                options: [
+                    { text: "Elle ignore le reste des instructions et passe directement à l'itération suivante de la boucle la plus proche[cite: 3]", isCorrect: true },
+                    { text: "Elle casse la boucle et passe à l'instruction suivante[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Le `continue` permet de zapper la fin du code de la boucle pour le tour en cours et d'embrayer directement sur la vérification de la condition pour le tour suivant. Cela évite des indentations lourdes (des `if` géants)[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Contrôle du déroulement", "switch"],
+                q: "La structure de contrôle `switch` permet de remplacer de multiples `if...else`. Quelle est sa particularité[cite: 3] ?",
+                options: [
+                    { text: "Elle ne fonctionne que pour vérifier l'égalité sur des constantes entières (ou des caractères)[cite: 3]", isCorrect: true },
+                    { text: "Elle permet d'évaluer des conditions complexes avec des signes supérieurs ou inférieurs[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Le `switch` attend une expression évaluée à un nombre entier et compare ce résultat aux différentes branches `case`[cite: 3]. On ne peut pas mettre de conditions complexes type `x > 5` dans un `case`[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Contrôle du déroulement", "switch", "break"],
+                q: "Dans un `switch`, pourquoi faut-il généralement mettre un `break;` à la fin de chaque `case`[cite: 3] ?",
+                options: [
+                    { text: "Parce que sans `break`, l'exécution va « traverser » et exécuter tous les `case` suivants (comportement de fall-through)[cite: 3]", isCorrect: true },
+                    { text: "Parce que le compilateur refusera de compiler sans lui[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Sans `break`, dès que le programme trouve un cas valide, il exécute les instructions de ce cas MAIS AUSSI les instructions de tous les cas positionnés en dessous, sans refaire de vérification[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["Contrôle du déroulement", "switch", "default"],
+                q: "À quoi sert le mot-clé `default:` dans un `switch`[cite: 3] ?",
+                options: [
+                    { text: "Il permet d'exécuter des instructions si aucune des valeurs spécifiées dans les `case` ne correspond à l'expression[cite: 3]", isCorrect: true },
+                    { text: "Il définit la variable par défaut à utiliser si l'expression est nulle[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Le `default` est le cas par défaut (similaire au `else` final d'une longue chaîne de `if`). Il est optionnel mais recommandé pour traiter les cas imprévus[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["E/S simples", "printf"],
+                q: "À quoi sert le spécificateur `%d` dans un `printf`[cite: 3] ?",
+                options: [
+                    { text: "À remplacer l'emplacement par la valeur d'une expression au format entier (décimal)[cite: 3]", isCorrect: true },
+                    { text: "À formater l'affichage en nombre flottant double[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Les formats de `printf` incluent : `%d` pour un entier, `%f` pour un flottant, `%c` pour un caractère et `%s` pour une chaîne[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["E/S simples", "printf", "Typage"],
+                q: "Que se passe-t-il si vous écrivez `printf(\"%d\", 3.14);`[cite: 3] ?",
+                options: [
+                    { text: "La fonction va afficher n'importe quoi (elle va lire les bits du flottant comme si c'était un entier, car il n'y a pas de conversion automatique)[cite: 3]", isCorrect: true },
+                    { text: "La fonction va afficher 3 en tronquant la décimale[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Le `printf` en C ne convertit pas automatiquement les types. Si on lui donne un `%d`, il prend 32 bits en mémoire et les lit comme un entier, ce qui donne un résultat absurde avec un flottant[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["E/S simples", "printf", "Buffer"],
+                q: "Pourquoi le texte d'un `printf` peut-il ne pas s'afficher immédiatement à l'écran[cite: 3] ?",
+                options: [
+                    { text: "L'affichage est « bufferisé » : il est stocké en mémoire et n'est envoyé à l'écran que lorsque le buffer est plein, qu'il y a un `\\n`, ou que le programme se termine[cite: 3]", isCorrect: true },
+                    { text: "Parce que l'écran rafraîchit trop lentement[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Pour des raisons de performance (les appels systèmes coûtent cher), le C attend d'avoir un bon paquet de caractères (ou une commande claire comme `\\n`) avant de demander au système de les afficher[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["E/S simples", "scanf"],
+                q: "Quelle est la syntaxe correcte pour récupérer un entier saisi par l'utilisateur avec `scanf`[cite: 3] ?",
+                options: [
+                    { text: "`scanf(\"%d\", &a);` (avec l'esperluette devant la variable)[cite: 3]", isCorrect: true },
+                    { text: "`scanf(\"%d\", a);`[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Contrairement au `printf`, le `scanf` a besoin de modifier la variable. Il faut donc lui envoyer l'adresse mémoire de cette variable, d'où la présence obligatoire du `&`[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["E/S simples", "scanf", "Chaînes"],
+                q: "Faut-il mettre un `&` devant une variable chaîne de caractères (`char s[64]`) dans un `scanf(\"%s\", s)`[cite: 3] ?",
+                options: [
+                    { text: "Non, car le nom d'un tableau est déjà une adresse mémoire[cite: 3]", isCorrect: true },
+                    { text: "Oui, c'est obligatoire pour tous les types[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Pour une chaîne de caractères, la variable `s` désigne intrinsèquement l'adresse de la première case du tableau, on n'utilise donc pas le `&`[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["E/S simples", "scanf", "Espaces"],
+                q: "Lorsqu'on utilise `scanf(\"%s\", s);`, que se passe-t-il si l'utilisateur saisit \"Salut tout le monde\"[cite: 3] ?",
+                options: [
+                    { text: "La variable `s` contiendra uniquement \"Salut\" car le `%s` s'arrête au premier espace[cite: 3]", isCorrect: true },
+                    { text: "La variable `s` contiendra toute la phrase[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Le format `%s` de `scanf` lit une chaîne en s'arrêtant dès qu'il rencontre un espace, une tabulation ou un saut de ligne[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["E/S simples", "scanf", "Retour"],
+                q: "Que renvoie la fonction `scanf` après exécution[cite: 3] ?",
+                options: [
+                    { text: "Le nombre de variables qui ont été saisies et assignées correctement[cite: 3]", isCorrect: true },
+                    { text: "La valeur saisie par l'utilisateur[cite: 3]", isCorrect: false }
+                ],
+                explanation: "C'est utile pour vérifier les erreurs. Si on demande 3 entiers et que `scanf` renvoie 2, c'est que l'utilisateur s'est trompé sur la troisième saisie (par exemple, il a tapé des lettres)[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["E/S simples", "puts"],
+                q: "Comment fonctionne la fonction `puts(const char[]);`[cite: 3] ?",
+                options: [
+                    { text: "Elle affiche la chaîne de caractères passée en argument suivie d'un retour à la ligne automatique[cite: 3]", isCorrect: true },
+                    { text: "Elle enregistre une chaîne saisie au clavier[cite: 3]", isCorrect: false }
+                ],
+                explanation: "C'est une fonction simple d'affichage. La chaîne doit obligatoirement être terminée par le caractère nul `\\0` pour que `puts` sache où s'arrêter[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["E/S simples", "gets", "Sécurité"],
+                q: "Pourquoi la fonction `gets(char[]);` a-t-elle été supprimée dans la norme C11[cite: 3] ?",
+                options: [
+                    { text: "Parce qu'elle ne vérifie pas la taille du tableau de destination, ce qui provoque des dépassements de tampon (buffer overflow) très dangereux[cite: 3]", isCorrect: true },
+                    { text: "Parce qu'elle était trop lente à exécuter[cite: 3]", isCorrect: false }
+                ],
+                explanation: "La fonction `gets` est historiquement responsable d'énormément de failles de sécurité, comme le ver de Morris en 1988. Un pirate peut envoyer une chaîne plus longue que prévue pour écraser la pile et exécuter du code malveillant. On doit utiliser `fgets` à la place[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            },
+            {
+                type: "qcm",
+                tags: ["E/S simples", "getchar"],
+                q: "Quel est le type de retour de la fonction `getchar()`[cite: 3] ?",
+                options: [
+                    { text: "`int` (un entier)[cite: 3]", isCorrect: true },
+                    { text: "`char` (un caractère)[cite: 3]", isCorrect: false }
+                ],
+                explanation: "Bien qu'elle lise un caractère, `getchar()` renvoie un entier. Cela permet de renvoyer le code ASCII du caractère lu, mais aussi de pouvoir renvoyer la constante d'erreur ou de fin de fichier `EOF` (qui vaut -1)[cite: 3].",
+                stats: { attempts: 0, correct: 0, partial: 0 },
+                sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
+            }
+        ]
+    }
