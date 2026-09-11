@@ -2738,6 +2738,357 @@ const defaultData = {
                 q: "Dans la forme de Jordan, quelle information donne l'ordre de multiplicité de $\\lambda$ en tant que racine du polynôme MINIMAL $\\mu_u$ ?",
                 options: [
                     { text: "Le nombre total de blocs de Jordan", isCorrect: false },
+                    "Algèbre 3 : Chapitre 1 (Réduction des endomorphismes)": {
+        stats: { attempts: 0, correct: 0 },
+        dailyValidations: {},
+        questions: [
+            // --- 1.1 SOUS-ESPACES STABLES ---
+            {
+                type: "qcm", tags: ["Sous-espaces stables"],
+                q: "Quelle est la définition d'un sous-espace vectoriel $A$ stable par un endomorphisme $u$ ?",
+                options: [
+                    { text: "$\\forall x \\in E, x \\in A \\Rightarrow u(x) \\in A$", isCorrect: true },
+                    { text: "$\\forall x \\in A, u(x) = x$", isCorrect: false },
+                    { text: "$u(A) = E$", isCorrect: false },
+                    { text: "$u(A) = A$ exactement", isCorrect: false }
+                ],
+                explanation: "La stabilité (ou invariance) signifie que l'image de $A$ par $u$ est entièrement incluse dans $A$ ($u(A) \\subseteq A$). L'inclusion n'a pas besoin d'être une égalité : $u$ peut très bien « écraser » $A$ sur un sous-espace strictement plus petit tout en restant stable.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-espaces stables", "Commutation"],
+                q: "Soient $u$ et $v$ deux endomorphismes qui commutent ($u \\circ v = v \\circ u$). Que peut-on affirmer sur le noyau et l'image de $u$ ?",
+                options: [
+                    { text: "Ils sont orthogonaux à $v$", isCorrect: false },
+                    { text: "Ils sont stables par l'endomorphisme $v$", isCorrect: true },
+                    { text: "Ils sont de dimension identique", isCorrect: false }
+                ],
+                explanation: "Si $u$ et $v$ commutent, $v$ laisse stable l'image de $u$, le noyau de $u$, et plus généralement tout sous-espace propre $\\ker(u - \\lambda id_E)$. L'orthogonalité suppose une structure euclidienne absente ici, et rien n'impose que $Ker(u)$ et $Im(u)$ aient la même dimension (c'est même rarement le cas hors bijection).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Sous-espaces stables", "Représentation matricielle"],
+                q: "Si $E = A \\oplus B$ et que le sous-espace $A$ est stable par $u$, quelle forme prend la matrice de $u$ dans une base adaptée à cette somme directe ?",
+                options: [
+                    { text: "Diagonale par blocs", isCorrect: false },
+                    { text: "Triangulaire supérieure par blocs : $\\begin{pmatrix} M_{11} & M_{12} \\\\ 0 & M_{22} \\end{pmatrix}$", isCorrect: true },
+                    { text: "Totalement nulle hors de la diagonale", isCorrect: false }
+                ],
+                explanation: "Puisque $A$ est stable, les images des vecteurs de la base de $A$ s'écrivent uniquement avec les vecteurs de $A$, générant un bloc de zéros en bas à gauche. Pour avoir une matrice diagonale par blocs, il faudrait que $B$ soit AUSSI stable par $u$ — ce n'est pas garanti par la seule hypothèse sur $A$.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.2 ELEMENTS PROPRES ---
+            {
+                type: "qcm", tags: ["Éléments propres"],
+                q: "Un vecteur $x$ de $E$ est un vecteur propre de $u$ associé à la valeur propre $\\lambda$ si et seulement si :",
+                options: [
+                    { text: "$u(x) = \\lambda x$ (avec $x$ pouvant être le vecteur nul)", isCorrect: false },
+                    { text: "$u(x) = \\lambda x$ et $x \\neq 0_E$", isCorrect: true },
+                    { text: "$u(x) = 0_E$", isCorrect: false }
+                ],
+                explanation: "Un vecteur propre doit ABSOLUMENT être non nul par définition (sinon tout scalaire $\\lambda$ conviendrait trivialement, ce qui viderait la notion de son sens). En revanche, une valeur propre $\\lambda$ a tout à fait le droit de valoir zéro.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Éléments propres"],
+                q: "Le sous-espace propre $E_\\lambda$ associé à la valeur propre $\\lambda$ correspond à :",
+                options: [
+                    { text: "$\\text{Im}(u - \\lambda id_E)$", isCorrect: false },
+                    { text: "$\\ker(u - \\lambda id_E)$", isCorrect: true },
+                    { text: "$\\ker(u) - \\lambda \\cdot E$", isCorrect: false }
+                ],
+                explanation: "$x$ est un vecteur propre pour $\\lambda$ ssi $u(x) = \\lambda x \\iff (u - \\lambda id_E)(x) = 0_E$. Le sous-espace propre est donc le noyau de $u - \\lambda id_E$, et non son image (qui donnerait plutôt une idée de la « portion régulière » de $u-\\lambda id_E$).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Éléments propres"],
+                q: "Soient $\\lambda_1, \\dots, \\lambda_k$ des valeurs propres deux à deux distinctes de $u$. Que peut-on dire de leurs sous-espaces propres associés $E_{\\lambda_i}$ ?",
+                options: [
+                    { text: "Ils sont de même dimension", isCorrect: false },
+                    { text: "Ils sont en somme directe", isCorrect: true },
+                    { text: "Leur union forme $E$", isCorrect: false }
+                ],
+                explanation: "Les sous-espaces propres associés à des valeurs propres distinctes sont toujours en somme directe. Une somme de vecteurs propres de valeurs propres différentes ne peut être nulle que si tous les vecteurs sont nuls. Rien ne garantit qu'ils aient la même dimension, ni que leur somme couvre tout $E$ (c'est justement ce défaut de recouvrement qui caractérise la non-diagonalisabilité).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Éléments propres", "Exemples classiques"],
+                q: "Quel est le spectre (l'ensemble des valeurs propres) d'un endomorphisme nilpotent $u$ ?",
+                options: [
+                    { text: "$\\text{Sp}(u) = \\{1\\}$", isCorrect: false },
+                    { text: "$\\text{Sp}(u) = \\emptyset$", isCorrect: false },
+                    { text: "$\\text{Sp}(u) = \\{0\\}$", isCorrect: true }
+                ],
+                explanation: "Si $u^k = 0$, et $u(x) = \\lambda x$ avec $x \\neq 0$, alors $u^k(x) = \\lambda^k x = 0$. Puisque $x \\neq 0$, on a obligatoirement $\\lambda^k = 0$, donc $\\lambda = 0$. Le spectre n'est jamais vide : en dimension finie, le polynôme caractéristique d'un endomorphisme nilpotent est toujours $X^n$, donc $0$ y est bien racine (et donc valeur propre).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Éléments propres", "Exemples classiques"],
+                q: "Soit $p$ une projection vectorielle stricte ($p \\neq 0_E, p \\neq id_E$). Quel est son spectre ?",
+                options: [
+                    { text: "$\\text{Sp}(p) = \\{-1, 1\\}$", isCorrect: false },
+                    { text: "$\\text{Sp}(p) = \\{0, 1\\}$", isCorrect: true },
+                    { text: "$\\text{Sp}(p) = \\{0\\}$", isCorrect: false }
+                ],
+                explanation: "Les vecteurs de l'image sont invariants ($p(x)=x \\Rightarrow \\lambda=1$) et ceux du noyau sont annulés ($p(x)=0 \\Rightarrow \\lambda=0$). $\\{-1,1\\}$ serait le spectre d'une SYMÉTRIE, pas d'un projecteur — attention à ne pas confondre les deux notions.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Éléments propres", "Corps de base"],
+                q: "Vrai ou faux : Le spectre de la matrice d'une rotation d'angle $\\theta \\notin \\{0, \\pi\\}$ dans $\\mathbb{R}^2$ est vide si l'on travaille sur le corps $\\mathbb{R}$.",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Vrai. Le polynôme caractéristique est $X^2 - 2\\cos(\\theta)X + 1$, de discriminant $-4\\sin^2(\\theta) < 0$. Sur $\\mathbb{R}$, il n'y a pas de valeurs propres. Sur $\\mathbb{C}$, le spectre est $\\{e^{i\\theta}, e^{-i\\theta}\\}$ : le corps de base change fondamentalement l'existence même de valeurs propres.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.3 POLYNOME CARACTERISTIQUE ---
+            {
+                type: "qcm", tags: ["Polynôme caractéristique"],
+                q: "Quelle est la définition mathématique du polynôme caractéristique $\\chi_u(X)$ ?",
+                options: [
+                    { text: "$\\det(u - X id_E)$", isCorrect: false },
+                    { text: "$\\det(X id_E - u)$", isCorrect: true }
+                ],
+                explanation: "On utilise $\\det(X id_E - u)$ pour s'assurer que le polynôme caractéristique est toujours UNITAIRE (le coefficient de son terme de plus haut degré $X^n$ vaut 1). $\\det(u - X id_E)$ ne diffère que d'un facteur $(-1)^n$, mais cette convention gâche l'unitarité en dimension impaire.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme caractéristique"],
+                q: "Si $\\chi_M(X) = X^n - tr(M)X^{n-1} + \\dots + c_0$. Que vaut le coefficient constant $c_0$ ?",
+                options: [
+                    { text: "$\\det(M)$ (sans signe)", isCorrect: false },
+                    { text: "$(-1)^n \\det(M)$", isCorrect: true },
+                    { text: "$-\\det(M)$, quelle que soit la parité de $n$", isCorrect: false },
+                    { text: "$n \\cdot \\det(M)$", isCorrect: false }
+                ],
+                explanation: "Le terme de degré zéro correspond à la valeur du polynôme en $X=0$ : $\\chi_M(0) = \\det(0 \\cdot I_n - M) = \\det(-M) = (-1)^n \\det(M)$. Le signe dépend donc de la parité de $n$ : $c_0 = -\\det(M)$ uniquement quand $n$ est impair, jamais un multiple de $n$ (ne pas confondre avec la trace, qui est une somme et non un produit).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme caractéristique", "Similitude"],
+                q: "Si deux matrices $A$ et $B$ sont semblables, que peut-on affirmer sur leurs polynômes caractéristiques ?",
+                options: [
+                    { text: "Ils sont égaux : $\\chi_A = \\chi_B$", isCorrect: true },
+                    { text: "Ils sont opposés", isCorrect: false }
+                ],
+                explanation: "Si $B = P^{-1}AP$, alors $\\det(X I_n - B) = \\det(P^{-1}(X I_n - A)P) = \\det(X I_n - A)$. Deux matrices semblables ont le même polynôme caractéristique, jamais opposé (un polynôme caractéristique est toujours unitaire, son opposé ne l'est plus).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme caractéristique", "Pièges"],
+                q: "Vrai ou Faux : Deux matrices ayant le même polynôme caractéristique sont obligatoirement semblables.",
+                options: [
+                    { text: "Vrai", isCorrect: false },
+                    { text: "Faux", isCorrect: true }
+                ],
+                explanation: "Faux. Contre-exemple classique : l'identité $I_2$ et la matrice unipotente $\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$. Elles ont toutes deux $\\chi(X) = (X-1)^2$, mais ne sont pas semblables (la première est diagonalisable, pas la seconde — la similitude conserverait la diagonalisabilité).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme caractéristique", "Méthode de Le Verrier"],
+                q: "Quel est l'objectif de la méthode de Le Verrier ?",
+                options: [
+                    { text: "Calculer les coefficients du polynôme caractéristique de manière récursive (sans déterminant abstrait) et obtenir l'inverse de la matrice si elle est inversible", isCorrect: true },
+                    { text: "Résoudre des systèmes différentiels", isCorrect: false },
+                    { text: "Diagonaliser directement la matrice sans passer par le polynôme caractéristique", isCorrect: false }
+                ],
+                explanation: "La méthode de Le Verrier construit une suite de matrices $M_k$ et utilise leurs traces pour déterminer les coefficients du polynôme caractéristique, permettant d'esquiver le calcul d'un déterminant polynomial complexe. Elle ne cherche pas à diagonaliser directement la matrice — au contraire, elle construit le polynôme caractéristique lui-même, ce qui reste utile même si la matrice n'est pas diagonalisable. Elle n'a pas non plus vocation directe à résoudre des équations différentielles.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.4 DIAGONALISATION ---
+            {
+                type: "qcm", tags: ["Diagonalisation", "Inégalités de dimension"],
+                q: "Soit $m_\\lambda$ l'ordre de multiplicité algébrique d'une valeur propre $\\lambda$. Quelle inégalité vérifie la dimension de son sous-espace propre $E_\\lambda$ ?",
+                options: [
+                    { text: "$1 \\le \\dim(E_\\lambda) \\le m_\\lambda$", isCorrect: true },
+                    { text: "$\\dim(E_\\lambda) = m_\\lambda$ toujours", isCorrect: false },
+                    { text: "$m_\\lambda \\le \\dim(E_\\lambda) \\le n$", isCorrect: false }
+                ],
+                explanation: "La dimension géométrique (dimension de $E_\\lambda$) est toujours supérieure ou égale à 1 (puisqu'il y a au moins un vecteur propre) et obligatoirement majorée par la multiplicité algébrique de la racine dans le polynôme caractéristique. L'égalité systématique n'a lieu que dans le cas diagonalisable — ce n'est pas une identité générale.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Diagonalisation", "Théorème fondamental"],
+                q: "Quelle est la condition nécessaire et suffisante (CNS) pour qu'un endomorphisme $u$ soit diagonalisable ?",
+                options: [
+                    { text: "Son polynôme caractéristique doit être scindé", isCorrect: false },
+                    { text: "Son polynôme caractéristique doit être scindé ET pour chaque valeur propre, la dimension du sous-espace propre doit être égale à sa multiplicité algébrique", isCorrect: true },
+                    { text: "Son polynôme caractéristique doit être scindé à racines simples", isCorrect: false }
+                ],
+                explanation: "Un polynôme scindé ne suffit pas (ex : bloc de Jordan $\\begin{pmatrix} 1 & 1 \\\\ 0 & 1 \\end{pmatrix}$). Il faut impérativement que $dim(E_\\lambda) = m_\\lambda$ pour avoir assez de vecteurs propres pour former une base. « Scindé à racines simples » est une condition SUFFISANTE mais bien plus restrictive que nécessaire : une matrice avec des valeurs propres multiples peut très bien être diagonalisable (par exemple $I_n$).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Diagonalisation", "Conditions suffisantes"],
+                q: "Si un endomorphisme en dimension $n$ possède $n$ valeurs propres DISTINCTES, que peut-on affirmer ?",
+                options: [
+                    { text: "Il n'est pas diagonalisable", isCorrect: false },
+                    { text: "Il est diagonalisable, et ses sous-espaces propres sont des droites vectorielles", isCorrect: true },
+                    { text: "Il est seulement trigonalisable, mais pas nécessairement diagonalisable", isCorrect: false }
+                ],
+                explanation: "C'est une condition suffisante forte (mais pas nécessaire : voir $I_n$). S'il y a $n$ racines distinctes, le polynôme est scindé à racines simples. Chaque multiplicité vaut 1, et la dimension géométrique valant au moins 1, on a l'égalité partout — donc chaque $E_{\\lambda_i}$ est de dimension exactement 1, et $u$ est bien diagonalisable, pas seulement trigonalisable : la trigonalisation seule serait un résultat bien plus faible que ce que garantit ici la CNS de diagonalisabilité.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Diagonalisation", "Codiagonalisation"],
+                q: "Deux endomorphismes diagonalisables $u$ et $v$ sont co-diagonalisables (diagonalisables dans la même base) SI ET SEULEMENT SI :",
+                options: [
+                    { text: "Ils ont le même polynôme caractéristique", isCorrect: false },
+                    { text: "Ils commutent entre eux ($u \\circ v = v \\circ u$)", isCorrect: true }
+                ],
+                explanation: "C'est un lemme fondamental (Lemme 1.35). La commutation est la clé pour pouvoir trouver une base commune de vecteurs propres. Avoir le même polynôme caractéristique n'a même rien à voir : deux endomorphismes très différents peuvent partager $\\chi$ sans commuter (ni être co-diagonalisables).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.5 TRIGONALISATION ---
+            {
+                type: "qcm", tags: ["Trigonalisation"],
+                q: "Quelle est la condition nécessaire et suffisante pour qu'un endomorphisme soit trigonalisable ?",
+                options: [
+                    { text: "Son polynôme caractéristique doit posséder des racines simples", isCorrect: false },
+                    { text: "Son polynôme caractéristique doit être scindé (factorisable en produits de degré 1)", isCorrect: true }
+                ],
+                explanation: "Si le polynôme caractéristique peut s'écrire sous la forme $\\prod (X - \\lambda_i)^{m_i}$, alors il existe une base où la matrice est triangulaire supérieure (Thm 1.38). Aucune exigence de racines simples : au contraire, la trigonalisation gère justement le cas des racines multiples, là où la diagonalisation échoue parfois.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Trigonalisation", "Corps complexes"],
+                q: "Vrai ou Faux : Tout endomorphisme défini sur un $\\mathbb{C}$-espace vectoriel est obligatoirement trigonalisable.",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Vrai. Le théorème de d'Alembert-Gauss garantit que tout polynôme sur $\\mathbb{C}$ est scindé. Donc la CNS de trigonalisabilité est toujours vérifiée sur les complexes — ce n'est en revanche PAS vrai sur $\\mathbb{R}$ (voir l'exemple de la rotation plus haut).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.6 POLYNOMES ANNULATEURS ET CAYLEY-HAMILTON ---
+            {
+                type: "qcm", tags: ["Polynômes annulateurs"],
+                q: "Si $P$ est un polynôme annulateur d'un endomorphisme $u$ ($P(u)=0$), que peut-on dire des racines de $P$ ?",
+                options: [
+                    { text: "Toute valeur propre de $u$ est obligatoirement une racine de $P$ : $\\text{Sp}(u) \\subset \\text{Racines}(P)$", isCorrect: true },
+                    { text: "Toute racine de $P$ est obligatoirement une valeur propre de $u$", isCorrect: false }
+                ],
+                explanation: "Si $u(x) = \\lambda x$, alors $P(u)(x) = P(\\lambda)x$. Comme $P(u)=0$ et $x \\neq 0$, alors $P(\\lambda)=0$. Attention à la réciproque : un polynôme annulateur peut avoir des racines « inutiles » qui ne sont pas valeurs propres (c'est justement ce qui distingue un annulateur quelconque du polynôme minimal).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynômes annulateurs", "Cayley-Hamilton"],
+                q: "Que stipule le Théorème de Cayley-Hamilton (Thm 1.48) ?",
+                options: [
+                    { text: "Le polynôme caractéristique est égal au polynôme minimal", isCorrect: false },
+                    { text: "Le polynôme caractéristique d'un endomorphisme $u$ est un polynôme annulateur de $u$ : $\\chi_u(u) = 0$", isCorrect: true }
+                ],
+                explanation: "Cayley-Hamilton affirme que si l'on évalue le polynôme caractéristique d'une matrice $M$ en remplaçant la variable $X$ par la matrice $M$ elle-même, on obtient la matrice nulle. Le polynôme caractéristique et le polynôme minimal COÏNCIDENT parfois, mais ce n'est pas une règle générale : le minimal divise seulement le caractéristique.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme minimal"],
+                q: "Comment définit-on le « polynôme minimal » $\\mu_u$ d'un endomorphisme $u$ ?",
+                options: [
+                    { text: "Le polynôme annulateur unitaire de plus petit degré", isCorrect: true },
+                    { text: "Le polynôme dérivé du polynôme caractéristique", isCorrect: false },
+                    { text: "Le polynôme annulateur unitaire de plus GRAND degré", isCorrect: false }
+                ],
+                explanation: "C'est l'unique polynôme unitaire engendrant l'idéal des polynômes annulateurs, celui de plus PETIT degré : il divise tous les autres polynômes annulateurs de $u$ (y compris $\\chi_u$). Un polynôme annulateur de grand degré existe toujours (un multiple quelconque de $\\mu_u$), mais n'apporte aucune information nouvelle. Il n'a par ailleurs aucun rapport avec une dérivation formelle du polynôme caractéristique.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme minimal", "Valeurs propres"],
+                q: "Quelle relation stricte lie les racines du polynôme minimal $\\mu_u$ et les valeurs propres de $u$ ?",
+                options: [
+                    { text: "Les racines de $\\mu_u$ sont EXACTEMENT les valeurs propres de $u$", isCorrect: true },
+                    { text: "Certaines racines de $\\mu_u$ ne sont pas des valeurs propres", isCorrect: false }
+                ],
+                explanation: "Contrairement à un polynôme annulateur quelconque qui peut avoir des racines superflues, les racines du polynôme minimal coïncident strictement avec le spectre de l'endomorphisme (Prop 1.53). C'est précisément ce qui distingue le polynôme minimal des autres annulateurs.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme minimal", "Diagonalisation"],
+                q: "D'après le Théorème 1.57, un endomorphisme est DIAGONALISABLE si et seulement si son polynôme minimal est :",
+                options: [
+                    { text: "Scindé", isCorrect: false },
+                    { text: "Scindé à racines simples", isCorrect: true },
+                    { text: "De degré $n$", isCorrect: false }
+                ],
+                explanation: "C'est la caractérisation ultime de la diagonalisabilité : $\\mu_u$ doit être factorisable sous la forme $\\prod (X - \\lambda_i)$ sans aucune puissance supérieure à 1. « Scindé » seul (sans racines simples) ne suffit pas — c'est le même piège que pour le polynôme caractéristique. Le degré de $\\mu_u$ peut d'ailleurs être bien inférieur à $n$ (voir l'exemple de l'homothétie).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Polynôme minimal", "Exemples classiques"],
+                q: "Quel est le polynôme minimal d'une symétrie vectorielle stricte ($s \\neq id, s \\neq -id$) ?",
+                options: [
+                    { text: "$X^2 - 1 = (X-1)(X+1)$", isCorrect: true },
+                    { text: "$X(X-1)$", isCorrect: false },
+                    { text: "$(X-1)^2$", isCorrect: false }
+                ],
+                explanation: "Une symétrie vérifie $s^2 = id$, donc $X^2-1$ est un polynôme annulateur scindé à racines simples (les valeurs propres sont 1 et -1). Puisque $s$ n'est pas triviale, c'est son polynôme minimal. $X(X-1)$ caractériserait plutôt un PROJECTEUR strict, pas une symétrie.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Lemme des noyaux"],
+                q: "Que stipule le Lemme de décomposition des noyaux pour deux polynômes $P$ et $Q$ PREMIERS ENTRE EUX ?",
+                options: [
+                    { text: "$\\ker((PQ)(u)) = \\ker(P(u)) \\oplus \\ker(Q(u))$", isCorrect: true },
+                    { text: "$\\ker((PQ)(u)) = \\ker(P(u)) \\cap \\ker(Q(u))$", isCorrect: false }
+                ],
+                explanation: "Le fait que les polynômes n'aient aucune racine commune garantit que les noyaux des endomorphismes correspondants sont en somme directe. C'est l'outil qui permet de prouver la diagonalisation. Leur intersection serait au contraire réduite à $\\{0\\}$ (conséquence de la somme directe), pas égale à $\\ker((PQ)(u))$ tout entier.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+
+            // --- 1.7 REDUCTION DE JORDAN ET DE DUNFORD/CHEVALLEY ---
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Sous-espaces caractéristiques"],
+                q: "Comment définit-on le « sous-espace caractéristique » $N_\\lambda$ associé à la valeur propre $\\lambda$ de multiplicité algébrique $m_\\lambda$ ?",
+                options: [
+                    { text: "$N_\\lambda = \\ker(u - \\lambda id_E)$", isCorrect: false },
+                    { text: "$N_\\lambda = \\ker((u - \\lambda id_E)^{m_\\lambda})$", isCorrect: true },
+                    { text: "$N_\\lambda = \\text{Im}((u - \\lambda id_E)^{m_\\lambda})$", isCorrect: false }
+                ],
+                explanation: "Le sous-espace caractéristique capte non seulement les vecteurs propres, mais aussi les vecteurs propres GÉNÉRALISÉS. Si l'endomorphisme n'est pas diagonalisable, la suite des noyaux itérés finit par se stabiliser pour englober $m_\\lambda$ dimensions. $\\ker(u-\\lambda id_E)$ seul (sans itération) ne redonnerait que le sous-espace propre $E_\\lambda$, en général strictement plus petit.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Sous-espaces caractéristiques"],
+                q: "Vrai ou Faux : Si le polynôme caractéristique est scindé, l'espace $E$ tout entier est la somme DIRECTE de ses sous-espaces caractéristiques $N_\\lambda$.",
+                options: [
+                    { text: "Vrai", isCorrect: true },
+                    { text: "Faux", isCorrect: false }
+                ],
+                explanation: "Vrai. C'est une application directe du lemme de décomposition des noyaux généralisé appliqué à $\\chi_u$ : les $N_\\lambda$ absorbent les défaillances de diagonalisabilité et reconstituent parfaitement l'espace, que $u$ soit diagonalisable ou seulement trigonalisable.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Définitions"],
+                q: "Qu'est-ce qu'un « bloc de Jordan » $J_l(\\lambda)$ ?",
+                options: [
+                    { text: "Une matrice diagonale avec $\\lambda$ sur la diagonale", isCorrect: false },
+                    { text: "Une matrice triangulaire supérieure avec $\\lambda$ sur la diagonale et des $1$ sur la sur-diagonale juste au-dessus", isCorrect: true }
+                ],
+                explanation: "Un bloc de Jordan encode l'action d'un endomorphisme nilpotent décalé. $\\lambda$ est sur la diagonale, et des $1$ tracent un chemin liant les vecteurs propres généralisés. Une matrice purement diagonale correspondrait au cas dégénéré $l=1$ (un « bloc » réduit à un simple vecteur propre classique).",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Pratique"],
+                q: "Dans la forme de Jordan d'une matrice, à quoi correspond le NOMBRE TOTAL de blocs de Jordan associés à la valeur propre $\\lambda$ ?",
+                options: [
+                    { text: "À la multiplicité algébrique $m_\\lambda$", isCorrect: false },
+                    { text: "À la dimension du sous-espace propre $E_\\lambda = \\dim(\\ker(M - \\lambda I))$", isCorrect: true }
+                ],
+                explanation: "Chaque bloc de Jordan possède EXACTEMENT un vecteur propre pur (qui « démarre » ou « finit » la chaîne de vecteurs généralisés). Il y a donc autant de blocs que de dimension propre géométrique — pas algébrique, qui donnerait plutôt la SOMME des tailles de tous ces blocs.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Pratique"],
+                q: "Dans la forme de Jordan, quelle information donne l'ordre de multiplicité de $\\lambda$ en tant que racine du polynôme MINIMAL $\\mu_u$ ?",
+                options: [
+                    { text: "Le nombre total de blocs de Jordan", isCorrect: false },
                     { text: "La taille du PLUS GRAND bloc de Jordan associé à $\\lambda$", isCorrect: true }
                 ],
                 explanation: "Le polynôme minimal trace la plus grande puissance nécessaire pour annuler le bloc nilpotent maximal. Cette puissance correspond donc à la taille de ce plus grand bloc — pas au nombre de blocs, qui est donné par la dimension géométrique (question précédente).",
