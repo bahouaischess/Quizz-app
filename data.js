@@ -2738,7 +2738,26 @@ const defaultData = {
                 q: "Dans la forme de Jordan, quelle information donne l'ordre de multiplicité de $\\lambda$ en tant que racine du polynôme MINIMAL $\\mu_u$ ?",
                 options: [
                     { text: "Le nombre total de blocs de Jordan", isCorrect: false },
-                    "Algèbre 3 : Chapitre 1 (Réduction des endomorphismes)": {
+                    { text: "La taille du plus grand bloc de Jordan associé à $\\lambda$", isCorrect: true },
+                    { text: "La multiplicité algébrique de $\\lambda$", isCorrect: false }
+                ],
+                explanation: "Dans le polynôme minimal, l'exposant de $(X-\\lambda)$ est la taille du plus grand bloc de Jordan associé à $\\lambda$. La multiplicité algébrique correspond à la somme des tailles de tous les blocs associés à cette valeur propre.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+            {
+                type: "qcm", tags: ["Réduction de Jordan", "Pratique"],
+                q: "Quel est le lien entre la multiplicité algébrique de $\\lambda$ et les blocs de Jordan associés ?",
+                options: [
+                    { text: "Elle est égale à la somme des tailles de tous les blocs associés à $\\lambda$", isCorrect: true },
+                    { text: "Elle est égale à la taille du plus grand bloc uniquement", isCorrect: false },
+                    { text: "Elle est égale au nombre de blocs associés à $\\lambda$", isCorrect: false }
+                ],
+                explanation: "La multiplicité algébrique de $\\lambda$ est la dimension du sous-espace caractéristique associé, donc la somme des tailles des blocs de Jordan associés à $\\lambda$.",
+                lastCorrect: 0, stats: { attempts: 0, correct: 0 }
+            },
+        ]
+    },
+    "Algèbre 3 : Chapitre 1 (Réduction des endomorphismes)": {
         stats: { attempts: 0, correct: 0 },
         dailyValidations: {},
         questions: [
@@ -6337,7 +6356,6 @@ const defaultData = {
             }
         ]
     },
-
     "Probabilités : Chapitre 1 - Modélisation des phénomènes aléatoires": {
         stats: { attempts: 0, correct: 0 },
         dailyValidations: {},
@@ -7587,9 +7605,7 @@ const defaultData = {
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             }
         ]
-    }
-}
-{
+    },
     "Probabilités : Chapitre 4 - Espérance, variance et inégalités": {
         stats: { attempts: 0, correct: 0 },
         dailyValidations: {},
@@ -8539,9 +8555,7 @@ const defaultData = {
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             }
         ]
-    }
-}
-{
+},
     "Probabilités : Espérance, Vecteurs aléatoires & Marche aléatoire (Chapitres 4-6)": {
         stats: { attempts: 0, correct: 0 },
         dailyValidations: {},
@@ -10315,7 +10329,7 @@ const defaultData = {
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             }
         ]
-    }
+    },
 "Programmation C : Chapitre 2 (Types et Variables)": {
         course: "prog_c",
         folder: "Informatique",
@@ -10758,7 +10772,7 @@ const defaultData = {
                 sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0, lastAttempt: 0, lastWrong: 0, successStreak: 0, lastQuality: 0 }
             }
         ]
-    }
+    },
 "Programmation C : Chapitre 3 (Expressions, instructions et E/S simples)": {
         course: "prog_c",
         folder: "Informatique",
@@ -11347,3 +11361,4 @@ const defaultData = {
             }
         ]
     }
+}
