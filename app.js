@@ -581,7 +581,9 @@ const session = {
     startedAt: 0,
     answeredCount: 0,
     correctCount: 0,
-    partialCount: 0
+    partialCount: 0,
+    examMode: false,
+    examAnswers: []
 };
 
 function hasActiveQuiz() {
@@ -607,7 +609,9 @@ function persistQuizState() {
         startedAt: session.startedAt,
         answeredCount: session.answeredCount,
         correctCount: session.correctCount,
-        partialCount: session.partialCount
+        partialCount: session.partialCount,
+        examMode: session.examMode,
+        examAnswers: session.examAnswers
     };
 
     try {
@@ -631,6 +635,8 @@ function clearQuizState() {
     session.answeredCount = 0;
     session.correctCount = 0;
     session.partialCount = 0;
+    session.examMode = false;
+    session.examAnswers = [];
     sessionStorage.removeItem(ACTIVE_QUIZ_KEY);
 }
 
@@ -670,6 +676,8 @@ function restoreQuizState() {
     session.answeredCount = Number(savedState.answeredCount) || 0;
     session.correctCount = Number(savedState.correctCount) || 0;
     session.partialCount = Number(savedState.partialCount) || 0;
+    session.examMode = Boolean(savedState.examMode);
+    session.examAnswers = Array.isArray(savedState.examAnswers) ? savedState.examAnswers : [];
     return true;
 }
 
@@ -718,7 +726,6 @@ function recordActivity(subject, question, result) {
         questionId: question.id,
         correct: result.isCorrect,
         partial: result.isPartial,
-        confidence: result.confidence || '',
         responseTime: Math.max(0, Date.now() - (session.questionStartedAt || Date.now()))
     });
     appData._activity = appData._activity.slice(-500);
@@ -1075,7 +1082,9 @@ function openSubject(subject) {
 
     document.getElementById('subject-q-total').textContent = s.questions.length;
     document.getElementById('subject-q-available').textContent = availableQ.length;
-    document.getElementById('subject-success-rate').textContent = (s.stats.attempts > 0 ? Math.round((s.stats.correct / s.stats.attempts) * 100) : 0) + "%";
+    const subjectAttempts = s.questions.reduce((total, question) => total + (question.stats?.attempts || 0), 0);
+    const subjectCorrect = s.questions.reduce((total, question) => total + (question.stats?.correct || 0), 0);
+    document.getElementById('subject-success-rate').textContent = (subjectAttempts > 0 ? Math.round((subjectCorrect / subjectAttempts) * 100) : 0) + "%";
     
     activeFilterTags.clear();
     renderTagChips('filter-tags-container', getAllTagsForSubject(subject), true, activeFilterTags);
@@ -1152,7 +1161,7 @@ function getAllTagsForSubject(subject) {
 function getAllTagsGlobally() {
     let allTags = new Set();
     Object.keys(appData).forEach(sub => {
-        if(sub !== '_player' && sub !== '_folders') appData[sub].questions.forEach(q => { if(q.tags) q.tags.forEach(t => allTags.add(t)); });
+        if(!sub.startsWith('_')) appData[sub].questions.forEach(q => { if(q.tags) q.tags.forEach(t => allTags.add(t)); });
     });
     return Array.from(allTags);
 }
@@ -1273,10 +1282,10 @@ function setupTimer(isOn, reset = true) {
     if (isOn) {
         if (reset || !session.timeRemaining) session.timeRemaining = session.questions.length * 60;
         timerDisplay.classList.remove('hidden');
-        timerDisplay.textContent = formatTime(session.timeRemaining);
+        timerDisplay.textContent = `Temps restant : ${formatTime(session.timeRemaining)}`;
         session.timerInterval = setInterval(() => {
             session.timeRemaining--; 
-            timerDisplay.textContent = formatTime(session.timeRemaining);
+            timerDisplay.textContent = `Temps restant : ${formatTime(session.timeRemaining)}`;
             persistQuizState();
             if (session.timeRemaining <= 0) { 
                 stopTimer(); 
@@ -1308,9 +1317,13 @@ function initQuizState(mode, qArray) {
     session.answeredCount = 0;
     session.correctCount = 0;
     session.partialCount = 0;
+    session.examMode = false;
+    session.examAnswers = [];
     persistQuizState();
     document.getElementById('btn-export-markdown').classList.add('hidden');
     document.getElementById('validation-msg').classList.add('hidden');
+    document.getElementById('exam-review').classList.add('hidden');
+    document.getElementById('exam-time-result').classList.add('hidden');
 }
 
 function resumeQuiz() {
@@ -1322,10 +1335,11 @@ function resumeQuiz() {
 
 function startCustomQuiz() {
     const forceReview = document.getElementById('custom-force-review').checked;
+    const examMode = document.getElementById('custom-exam-mode').checked;
     let allAvailableQ = [];
     
     Object.keys(appData).forEach(sub => {
-        if(sub !== '_player' && sub !== '_folders') {
+        if(!sub.startsWith('_')) {
             appData[sub].questions.forEach(q => {
                 const now = Date.now();
                 if(forceReview || !q.sm2.nextReview || now >= q.sm2.nextReview) {
@@ -1348,7 +1362,8 @@ function startCustomQuiz() {
     allAvailableQ = buildReviewQueue(allAvailableQ);
     
     initQuizState('custom', allAvailableQ.slice(0, requestedCount));
-    setupTimer(document.getElementById('custom-exam-mode').checked);
+    session.examMode = examMode;
+    setupTimer(true);
     
     showView('quiz-view');
     renderQuestion();
@@ -1356,6 +1371,7 @@ function startCustomQuiz() {
 
 function startQuiz() {
     const forceReview = document.getElementById('force-review-toggle').checked;
+    const examMode = document.getElementById('exam-mode-toggle').checked;
     let availableQ = getAvailableQuestions(currentSubject, forceReview);
     
     if (activeFilterTags.size > 0) availableQ = availableQ.filter(q => q.tags && q.tags.some(t => activeFilterTags.has(t)));
@@ -1369,7 +1385,8 @@ function startQuiz() {
     allQ = buildReviewQueue(allQ);
     
     initQuizState('subject', allQ.slice(0, requestedCount));
-    setupTimer(document.getElementById('exam-mode-toggle').checked);
+    session.examMode = examMode;
+    setupTimer(true);
     
     showView('quiz-view');
     renderQuestion();
@@ -1378,7 +1395,7 @@ function startQuiz() {
 function startGR20() {
     let allAvailableQ = [];
     Object.keys(appData).forEach(sub => {
-        if(sub !== '_player' && sub !== '_folders') appData[sub].questions.forEach(q => allAvailableQ.push({ originalRef: q, subjectRef: sub }));
+        if(!sub.startsWith('_')) appData[sub].questions.forEach(q => allAvailableQ.push({ originalRef: q, subjectRef: sub }));
     });
 
     if(allAvailableQ.length < 1) return customAlert("Erreur", "La base de données est vide.");
@@ -1403,15 +1420,14 @@ function renderQuestion() {
         valBtn.classList.remove('hidden');
         valBtn.style.display = 'block';
     }
-    const confidenceControl = document.getElementById('confidence-control');
-    const confidenceSelect = document.getElementById('confidence-select');
-    confidenceControl.classList.toggle('hidden', session.mode === 'gr20');
-    confidenceSelect.classList.toggle('hidden', session.mode === 'gr20');
-    confidenceSelect.value = '';
-    
+    const examNextBtn = document.getElementById('exam-next-btn');
+    examNextBtn.classList.add('hidden');
+    examNextBtn.disabled = false;
+    valBtn.textContent = session.examMode ? 'Enregistrer la réponse' : 'Valider la réponse';
     document.getElementById('gr20-next-btn').classList.toggle('hidden', session.mode !== 'gr20');
     document.getElementById('explanation-box').classList.add('hidden');
     document.getElementById('sm2-eval-box').classList.add('hidden');
+    document.getElementById('extra-actions-box').classList.add('hidden');
     
     const qItem = session.questions[session.currentIndex];
     const qData = qItem.originalRef; 
@@ -1462,8 +1478,12 @@ function renderQuestion() {
         });
         document.getElementById('validate-btn').classList.add('hidden');
         document.getElementById('validate-btn').style.display = 'none';
-        document.getElementById('sm2-eval-box').classList.remove('hidden');
-        showAnswerFeedback(session.pendingResult);
+        if (session.examMode) {
+            examNextBtn.classList.remove('hidden');
+        } else {
+            document.getElementById('sm2-eval-box').classList.remove('hidden');
+            showAnswerFeedback(session.pendingResult);
+        }
     }
     renderMath([document.getElementById('quiz-question'), document.getElementById('quiz-options')]);
 }
@@ -1519,7 +1539,7 @@ function processAnswerSub() {
     let userSelectedTexts = [];
     let correctTexts = [];
     let selectedIndices = [];
-    const confidence = document.getElementById('confidence-select')?.value || '';
+    const revealAnswer = !session.examMode;
 
     const labels = document.querySelectorAll('.qcm-option');
     labels.forEach(label => {
@@ -1539,19 +1559,25 @@ function processAnswerSub() {
         if (opt.isCorrect) {
             if (isChecked) {
                 correctSelected++;
-                label.classList.add('correct');
-                statusIcon.textContent = "✅";
-                statusIcon.classList.remove('hidden');
+                if (revealAnswer) {
+                    label.classList.add('correct');
+                    statusIcon.textContent = "✅";
+                    statusIcon.classList.remove('hidden');
+                }
             } else {
-                label.classList.add('partial');
-                statusIcon.textContent = "⚠️";
-                statusIcon.classList.remove('hidden');
+                if (revealAnswer) {
+                    label.classList.add('partial');
+                    statusIcon.textContent = "⚠️";
+                    statusIcon.classList.remove('hidden');
+                }
             }
         } else if (isChecked) {
             wrongSelected++;
-            label.classList.add('wrong');
-            statusIcon.textContent = "❌";
-            statusIcon.classList.remove('hidden');
+            if (revealAnswer) {
+                label.classList.add('wrong');
+                statusIcon.textContent = "❌";
+                statusIcon.classList.remove('hidden');
+            }
         }
     });
 
@@ -1580,11 +1606,22 @@ function processAnswerSub() {
         });
     }
     session.answeredCount++;
+    if (session.examMode) {
+        session.examAnswers.push({
+            questionId: qData.id,
+            question: qData.q,
+            userAnswer: userSelectedTexts.length ? userSelectedTexts.join(', ') : 'Aucune réponse',
+            correctAnswer: correctTexts.join(', '),
+            explanation: qData.explanation || 'Pas d’explication fournie.',
+            isCorrect,
+            isPartial
+        });
+    }
     
 
-    recordActivity(qItem.subjectRef, qData, { isCorrect, isPartial, confidence });
+    recordActivity(qItem.subjectRef, qData, { isCorrect, isPartial });
     saveData();
-    return { isCorrect, isPartial, explanation: qData.explanation, selectedIndices, confidence };
+    return { isCorrect, isPartial, explanation: qData.explanation, selectedIndices };
 } // <--- FIN DE processAnswerSub()
 
 
@@ -1646,7 +1683,18 @@ function validateAnswer() {
     const result = processAnswerSub();
     session.pendingResult = result;
     persistQuizState();
+    if (session.examMode) {
+        document.getElementById('exam-next-btn').classList.remove('hidden');
+        document.getElementById('exam-next-btn').focus();
+        return;
+    }
     showAnswerFeedback(result);
+}
+
+function nextExamQuestion() {
+    if (!session.examMode || !session.pendingResult) return;
+    session.pendingResult = null;
+    nextQuestion();
 }
 
 function updateSM2Metadata(sm2, quality) {
@@ -1658,6 +1706,21 @@ function updateSM2Metadata(sm2, quality) {
     } else {
         sm2.successStreak = (sm2.successStreak || 0) + 1;
     }
+}
+
+function applySM2Quality(sm2, quality) {
+    const next = calculateNextInterval(sm2, quality);
+    updateSM2Metadata(sm2, quality);
+    if (quality < 3) {
+        sm2.repetition = 0;
+        sm2.nextReview = Date.now() + 10 * 60 * 1000;
+    } else {
+        sm2.repetition++;
+        sm2.interval = next.interval;
+        sm2.nextReview = Date.now() + sm2.interval * 24 * 60 * 60 * 1000;
+    }
+    sm2.easeFactor += 0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02);
+    if (sm2.easeFactor < 1.3) sm2.easeFactor = 1.3;
 }
 
 function submitSM2(quality) {
@@ -1716,6 +1779,28 @@ function nextQuestion() {
     session.currentIndex < session.questions.length ? renderQuestion() : endQuiz(true);
 }
 
+function renderExamReview() {
+    const container = document.getElementById('exam-review');
+    if (!container) return;
+    container.classList.remove('hidden');
+    container.innerHTML = '';
+    session.examAnswers.forEach((answer, index) => {
+        const card = document.createElement('article');
+        card.className = `exam-review-item ${answer.isCorrect ? 'correct' : answer.isPartial ? 'partial' : 'wrong'}`;
+        const title = document.createElement('h3');
+        title.textContent = `${index + 1}. ${answer.question}`;
+        const response = document.createElement('p');
+        response.textContent = `Ta réponse : ${answer.userAnswer}`;
+        const correction = document.createElement('p');
+        correction.textContent = `Bonne réponse : ${answer.correctAnswer}`;
+        const explanation = document.createElement('p');
+        explanation.textContent = answer.explanation;
+        card.append(title, response, correction, explanation);
+        container.appendChild(card);
+    });
+    renderMath([container]);
+}
+
 function endQuiz(finished = false) {
     stopTimer();
     if (!finished) {
@@ -1727,11 +1812,21 @@ function endQuiz(finished = false) {
     }
     
     if (finished) {
+        if (session.examMode) {
+            session.examAnswers.forEach(answer => {
+                const item = session.questions.find(candidate => candidate.originalRef.id === answer.questionId);
+                if (item) applySM2Quality(item.originalRef.sm2, answer.isCorrect ? 4 : answer.isPartial ? 3 : 0);
+            });
+            renderExamReview();
+        }
         recordSessionHistory(session.timerEnabled && session.timeRemaining <= 0 ? 'timeout' : 'completed');
         saveData();
         document.getElementById('results-title').textContent = session.mode === 'gr20' ? "🏁 Arrivée du GR20" : "🏁 Bilan de la session";
         document.getElementById('final-score').textContent = session.score;
         document.getElementById('final-total').textContent = session.questions.length;
+        const examTimeResult = document.getElementById('exam-time-result');
+        examTimeResult.classList.toggle('hidden', !session.examMode);
+        if (session.examMode) examTimeResult.textContent = `Temps : ${formatDuration(Date.now() - session.startedAt)} · ${session.answeredCount} réponse(s) enregistrée(s)`;
         
         let xpGained = addXP(session.score * 10);
         document.getElementById('xp-gained').textContent = `+ ${xpGained} XP`;
@@ -1800,13 +1895,16 @@ function renderProfileDashboard() {
     const frag = document.createDocumentFragment();
     
     Object.keys(appData).forEach(subject => {
-        if(subject === '_player' || subject === '_folders') return;
+        if(subject.startsWith('_')) return;
         const s = appData[subject];
         let subDue = 0, subUnseen = 0;
         
-        totalAttempts += s.stats.attempts || 0;
-        totalCorrect += s.stats.correct || 0;
-        totalPartial += s.stats.partial || 0;
+        const subjectAttempts = s.questions.reduce((total, question) => total + (question.stats?.attempts || 0), 0);
+        const subjectCorrect = s.questions.reduce((total, question) => total + (question.stats?.correct || 0), 0);
+        const subjectPartial = s.questions.reduce((total, question) => total + (question.stats?.partial || 0), 0);
+        totalAttempts += subjectAttempts;
+        totalCorrect += subjectCorrect;
+        totalPartial += subjectPartial;
         totalQuestions += s.questions.length;
         
         s.questions.forEach(q => {
@@ -1834,7 +1932,7 @@ function renderProfileDashboard() {
             }
         });
 
-        const rate = s.stats.attempts > 0 ? Math.round((s.stats.correct / s.stats.attempts) * 100) : 0;
+        const rate = subjectAttempts > 0 ? Math.round((subjectCorrect / subjectAttempts) * 100) : 0;
         
         const box = document.createElement('div');
         box.className = "subject-progress-card";
@@ -1843,7 +1941,7 @@ function renderProfileDashboard() {
         headerRow.style = "display:flex; justify-content: space-between; margin-bottom: 10px;";
         const h3 = document.createElement('h3'); h3.style = "margin:0; color: var(--text-main);"; h3.textContent = subject;
         const spanStats = document.createElement('span'); spanStats.style = "color: var(--text-muted); font-weight: bold;"; 
-        spanStats.innerHTML = `${rate}% <span style="font-size:0.8em; font-weight:normal;">(${s.stats.correct}/${s.stats.attempts})</span>`;
+        spanStats.innerHTML = `${rate}% <span style="font-size:0.8em; font-weight:normal;">(${subjectCorrect}/${subjectAttempts})</span>`;
         headerRow.appendChild(h3); headerRow.appendChild(spanStats);
         
         const pbBg = document.createElement('div'); pbBg.className = 'progress-bar-bg';
@@ -1886,17 +1984,6 @@ function renderProfileDashboard() {
             chartDays.push(`<div class="activity-day"><div class="activity-bars"><span class="activity-bar attempts" style="height:${Math.min(100, attempts * 12)}%" title="${attempts} tentative(s)"></span><span class="activity-bar correct" style="height:${attempts ? Math.min(100, (correct / attempts) * 100) : 0}%" title="${correct} réussite(s)"></span></div><small>${date.toLocaleDateString('fr-FR', { weekday: 'short' }).replace('.', '')}</small><strong>${attempts}</strong></div>`);
         }
         chart.innerHTML = chartDays.join('');
-    }
-
-    const confidenceStats = document.getElementById('confidence-stats');
-    if (confidenceStats) {
-        const confidenceLabels = { low: 'Au hasard', medium: 'Hésitant(e)', high: 'Sûr(e) de moi', '': 'Non renseigné' };
-        confidenceStats.innerHTML = Object.keys(confidenceLabels).map(level => {
-            const entries = (appData._activity || []).filter(item => item.confidence === level);
-            const success = entries.filter(item => item.correct).length;
-            const rate = entries.length ? Math.round((success / entries.length) * 100) : 0;
-            return `<div class="confidence-row"><span>${confidenceLabels[level]}</span><strong>${entries.length ? `${rate}% (${success}/${entries.length})` : 'Aucune donnée'}</strong></div>`;
-        }).join('');
     }
 
     const retentionStats = document.getElementById('retention-stats');
