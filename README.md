@@ -1,3 +1,7 @@
+<p align="center"> <a href="https://TON-UTILISATEUR.github.io/NOM-DU-REPOSITORY/"> <strong>🌐 ACCÉDER AU SITE →</strong> </a> </p> <p align="center"> <a href="https://TON-UTILISATEUR.github.io/NOM-DU-REPOSITORY/"> <img src="https://img.shields.io/badge/🌐%20Voir%20le%20site-en%20ligne-brightgreen?style=for-the-badge" alt="Voir le site"> </a> </p>
+
+
+
 Bonjour,
 Voici un site de quizz personnalisé avec des cours de maths des 2 premières années de licence maths, vous pouvez aussi contribuer aux quizz, voici les instructions : 
 ## Étape 1 : Préparer le prompt pour l'IA
@@ -64,3 +68,9 @@ const baseData = {
         // ...
     }
 };
+
+
+
+
+Vous pouvez ensuite me l'envoyer à l'adresse mail hubertechecs@gmail.com
+
