@@ -62,6 +62,8 @@
             <div id="player-stats">
                 <div class="level-badge">Niveau <span id="player-lvl">1</span></div>
                 <div style="font-size: 0.85em; color: var(--text-muted);">XP Totale : <span id="player-xp">0</span></div>
+                <div style="font-size: 0.85em; color: var(--text-muted); margin-top: 8px;">Objectif : <span id="daily-goal-progress">0 / 10</span></div>
+                <div style="font-size: 0.85em; color: var(--warning); margin-top: 5px;">Série : <span id="study-streak">0</span> jour(s)</div>
                 <div class="xp-bar"><div class="xp-fill" id="xp-fill-bar"></div></div>
             </div>
         </div>
@@ -76,6 +78,13 @@
                     <select id="filter-folder" onchange="renderHome()" style="flex: 1; margin: 0; min-width: 150px;">
                         <option value="ALL">📂 Tous les dossiers</option>
                     </select>
+                </div>
+                <div id="resume-quiz-box" class="card hidden" style="border-left: 4px solid var(--warning); display: flex; justify-content: space-between; align-items: center; gap: 15px; flex-wrap: wrap;">
+                    <div>
+                        <h3 style="margin-bottom: 5px; color: var(--warning);">Quiz en cours</h3>
+                        <p style="margin: 0; color: var(--text-muted);">Ta progression a été conservée.</p>
+                    </div>
+                    <button class="warning" onclick="resumeQuiz()">▶ Reprendre</button>
                 </div>
                 <div id="subjects-list"></div>
                 <div class="card" style="margin-top: 30px;">
@@ -228,6 +237,13 @@
                     <div id="quiz-tags-display" style="margin-bottom: 20px; color: var(--secondary); font-size: 0.85em;"></div>
                     <h2 id="quiz-question" style="font-size: 1.4em; line-height: 1.4;"></h2>
                     <div id="quiz-options"></div>
+                    <label id="confidence-control" for="confidence-select" style="display: block; margin-top: 20px; color: var(--text-muted);">Niveau de confiance :</label>
+                    <select id="confidence-select" style="margin-top: 8px;">
+                        <option value="">Je préfère ne pas répondre</option>
+                        <option value="low">Réponse au hasard</option>
+                        <option value="medium">Hésitant(e)</option>
+                        <option value="high">Sûr(e) de moi</option>
+                    </select>
                     
                     <button id="validate-btn" style="width: 100%; margin-top: 25px;" onclick="validateAnswer()">Valider la réponse</button>
                     <button id="gr20-next-btn" class="hidden" style="width: 100%; margin-top: 25px; background-color: var(--warning); color: #000;" onclick="nextGR20Question()">Étape suivante →</button>
@@ -281,6 +297,26 @@
             <div id="profile-view" class="view hidden">
                 <h1>📊 Tableau de Bord Analytique</h1>
                 <div class="dashboard-grid" id="global-stats-container"></div>
+                <div class="card activity-card">
+                    <h2>Activité des 7 derniers jours</h2>
+                    <div id="activity-chart" class="activity-chart" aria-label="Graphique d’activité récente"></div>
+                </div>
+                <div class="card">
+                    <h2>Confiance et réussite</h2>
+                    <div id="confidence-stats" class="confidence-stats"></div>
+                </div>
+                <div class="card">
+                    <h2>Rétention des connaissances</h2>
+                    <div id="retention-stats" class="confidence-stats"></div>
+                </div>
+                <div class="card">
+                    <h2>Calendrier des révisions</h2>
+                    <div id="review-calendar" class="review-calendar"></div>
+                </div>
+                <div class="card">
+                    <h2>Historique des sessions</h2>
+                    <div id="session-history" class="session-history"></div>
+                </div>
                 <div class="dashboard-grid">
                     <div class="card" style="margin: 0;">
                         <h3 style="color: var(--success);">✅ Maîtrise absolue</h3>
@@ -329,6 +365,24 @@
                         <input type="file" id="import-file" accept=".json" onchange="importData(event)" style="margin: 0; flex: 1; min-width: 200px;">
                     </div>
                     <button class="danger" style="width: 100%;" onclick="customConfirm('Danger', 'Suppression de toute ta base locale. Es-tu certain ?', resetData)">⚠️ Supprimer la base locale</button>
+                </div>
+                <div class="card">
+                    <h3>Objectif quotidien</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9em;">Choisis le nombre de réponses à traiter chaque jour.</p>
+                    <input type="number" id="daily-goal-input" min="1" max="500" value="10">
+                    <button onclick="updateStudyGoal()">Enregistrer l’objectif</button>
+                </div>
+                <div class="card">
+                    <h3>Exports et restauration</h3>
+                    <button class="secondary" onclick="exportStatisticsCSV()">📊 Exporter les statistiques CSV</button>
+                    <button class="secondary" onclick="restoreLatestBackup()">↩ Restaurer la dernière sauvegarde</button>
+                </div>
+                <div class="card">
+                    <h3>Contrôle de qualité</h3>
+                    <p style="color: var(--text-muted); font-size: 0.9em;">Détecte les doublons, les questions incomplètes et les problèmes de structure.</p>
+                    <button class="secondary" onclick="showContentValidation()">🔎 Vérifier la base</button>
+                    <button class="secondary" onclick="showSelfTest()">🧪 Lancer l’auto-test</button>
+                    <div id="validation-report" style="margin-top: 15px;"></div>
                 </div>
             </div>
 
