@@ -10,6 +10,47 @@ let dbRowId = null;
 
 const FIVE_HOURS_MS = 5 * 60 * 60 * 1000;
 const DEFAULT_FOLDER = 'Général';
+const ACTIVE_QUIZ_KEY = 'activeQuizState';
+
+function stableHash(value) {
+    let hash = 2166136261;
+    for (let index = 0; index < value.length; index++) {
+        hash ^= value.charCodeAt(index);
+        hash = Math.imul(hash, 16777619);
+    }
+    return `q-${(hash >>> 0).toString(16)}`;
+}
+
+function getQuestionId(subjectName, question, index = 0) {
+    return question.id || stableHash(`${subjectName}|${question.q}|${index}`);
+}
+
+function normalizeQuestion(question, subjectName, index = 0) {
+    const normalized = { ...question };
+    normalized.id = getQuestionId(subjectName, question, index);
+    normalized.q = removeCitations(question.q || '').trim();
+    normalized.explanation = removeCitations(question.explanation || '');
+    normalized.options = Array.isArray(question.options) ? question.options
+        .filter(option => option && typeof option.text === 'string')
+        .map(option => ({ ...option, text: removeCitations(option.text).trim(), isCorrect: Boolean(option.isCorrect) })) : [];
+    normalized.tags = cleanTags(question.tags);
+    normalized.stats = {
+        attempts: Number(question.stats?.attempts) || 0,
+        correct: Number(question.stats?.correct) || 0,
+        partial: Number(question.stats?.partial) || 0
+    };
+    normalized.sm2 = {
+        repetition: Number(question.sm2?.repetition) || 0,
+        interval: Number(question.sm2?.interval) || 0,
+        easeFactor: Number(question.sm2?.easeFactor) || 2.5,
+        nextReview: Number(question.sm2?.nextReview) || 0,
+        lastAttempt: Number(question.sm2?.lastAttempt) || 0,
+        lastWrong: Number(question.sm2?.lastWrong) || 0,
+        successStreak: Number(question.sm2?.successStreak) || 0,
+        lastQuality: Number(question.sm2?.lastQuality) || 0
+    };
+    return normalized;
+}
 
 const getTodayStr = () => {
     const d = new Date();
@@ -113,18 +154,24 @@ function customConfirm(title, msg, onConfirm) { customModal(title, msg, onConfir
 // NORMALISATION & FUSION (Dossiers et Métadonnées)
 // -----------------------------------------------------
 function normalizeData(rawData) {
+    rawData = rawData && typeof rawData === 'object' ? rawData : {};
     // Migration des anciens dossiers (_player.folders)
     let oldFolders = [];
     if (rawData?._player?.folders && Array.isArray(rawData._player.folders)) {
         oldFolders = rawData._player.folders.map(f => typeof f === 'string' ? f : f.name);
     }
     
-    let validFolders = Array.isArray(rawData?._folders) ? rawData._folders : oldFolders;
+    let validFolders = Array.isArray(rawData?._folders) ? [...rawData._folders] : oldFolders;
+    validFolders = validFolders.filter(folder => typeof folder === 'string' && folder.trim());
     if (!validFolders.includes(DEFAULT_FOLDER)) validFolders.unshift(DEFAULT_FOLDER);
     validFolders = [...new Set(validFolders)]; // Suppression des doublons
 
     let valid = { 
-        _player: { xp: Number(rawData?._player?.xp) || 0, level: Number(rawData?._player?.level) || 1 },
+        _player: {
+            xp: Number(rawData?._player?.xp) || 0,
+            level: Number(rawData?._player?.level) || 1,
+            dailyGoal: Math.max(1, Number(rawData?._player?.dailyGoal) || 10)
+        },
         _folders: validFolders
     };
     
@@ -139,83 +186,80 @@ function normalizeData(rawData) {
 
             valid[key] = {
                 folder: folderName,
-                questions: sub.questions.filter(q => q && typeof q.q === 'string').map(q => {
-                    q.q = removeCitations(q.q);
-                    q.explanation = removeCitations(q.explanation);
-                    q.options = (q.options || []).map(opt => ({ ...opt, text: removeCitations(opt.text) }));
-                    q.tags = cleanTags(q.tags);
-                    q.stats = { 
-                        attempts: Number(q.stats?.attempts) || 0, 
-                        correct: Number(q.stats?.correct) || 0,
-                        partial: Number(q.stats?.partial) || 0
-                    };
-                    q.sm2 = {
-                        repetition: Number(q.sm2?.repetition) || 0,
-                        interval: Number(q.sm2?.interval) || 0,
-                        easeFactor: Number(q.sm2?.easeFactor) || 2.5,
-                        nextReview: Number(q.sm2?.nextReview) || 0,
-                        lastAttempt: Number(q.sm2?.lastAttempt) || 0,
-                        lastWrong: Number(q.sm2?.lastWrong) || 0,
-                        successStreak: Number(q.sm2?.successStreak) || 0,
-                        lastQuality: Number(q.sm2?.lastQuality) || 0
-                    };
-                    return q;
-                }),
-                stats: { attempts: Number(sub.stats?.attempts) || 0, correct: Number(sub.stats?.correct) || 0 },
+                course: sub.course || '',
+                questions: sub.questions.filter(q => q && typeof q.q === 'string').map((q, index) => normalizeQuestion(q, key, index)),
+                stats: {
+                    attempts: Number(sub.stats?.attempts) || 0,
+                    correct: Number(sub.stats?.correct) || 0,
+                    partial: Number(sub.stats?.partial) || 0
+                },
                 dailyValidations: sub.dailyValidations || {}
             };
         }
     }
+    valid._activity = Array.isArray(rawData._activity) ? rawData._activity.slice(-500) : [];
+    valid._sessions = Array.isArray(rawData._sessions) ? rawData._sessions.slice(-100) : [];
     return valid;
 }
 
 // Fonction de fusion : Base locale (data.js) + Sauvegarde Cloud (Supabase)
 function mergeDataWithDefaults(cloudData, baseData) {
+    const normalizedCloud = normalizeData(cloudData);
     let merged = JSON.parse(JSON.stringify(baseData)); 
-    merged._player = cloudData._player || { xp: 0, level: 1 };
+    merged._player = normalizedCloud._player || { xp: 0, level: 1 };
+    merged._activity = normalizedCloud._activity || [];
+    merged._sessions = normalizedCloud._sessions || [];
     
     // Fusion sécurisée des dossiers locaux et cloud
-    let combinedFolders = [...(baseData._folders || []), ...(cloudData._folders || [])];
+    let combinedFolders = [...(baseData._folders || []), ...(normalizedCloud._folders || [])];
     if (!combinedFolders.includes(DEFAULT_FOLDER)) combinedFolders.unshift(DEFAULT_FOLDER);
     merged._folders = [...new Set(combinedFolders)];
 
     for (let subject in baseData) {
         if (subject.startsWith('_')) continue;
-        if (cloudData[subject]) {
-            merged[subject].folder = cloudData[subject].folder || baseData[subject].folder || DEFAULT_FOLDER;
+        if (normalizedCloud[subject]) {
+            merged[subject].folder = normalizedCloud[subject].folder || baseData[subject].folder || DEFAULT_FOLDER;
+            merged[subject].course = normalizedCloud[subject].course || baseData[subject].course || '';
             if(!merged._folders.includes(merged[subject].folder)) merged._folders.push(merged[subject].folder);
             
-            merged[subject].stats = cloudData[subject].stats || {attempts: 0, correct: 0};
-            merged[subject].dailyValidations = cloudData[subject].dailyValidations || {};
+            merged[subject].stats = normalizedCloud[subject].stats || {attempts: 0, correct: 0};
+            merged[subject].dailyValidations = normalizedCloud[subject].dailyValidations || {};
 
             merged[subject].questions.forEach(q => {
-                const cloudQ = cloudData[subject].questions.find(cq => cq.q === q.q);
+                const cloudQ = normalizedCloud[subject].questions.find(cq => cq.id === q.id || cq.q === q.q);
                 if (cloudQ) {
-                    q.stats = cloudQ.stats || {attempts: 0, correct: 0};
-                    q.sm2 = cloudQ.sm2 || {repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0};
+                    Object.assign(q, cloudQ);
                 }
             });
 
-            cloudData[subject].questions.forEach(cq => {
-                const existsInBase = merged[subject].questions.some(q => q.q === cq.q);
+            normalizedCloud[subject].questions.forEach(cq => {
+                const existsInBase = merged[subject].questions.some(q => q.id === cq.id || q.q === cq.q);
                 if (!existsInBase) merged[subject].questions.push(cq);
             });
         }
     }
 
-    for (let subject in cloudData) {
+    for (let subject in normalizedCloud) {
         if (!subject.startsWith('_') && !merged[subject]) {
-            merged[subject] = cloudData[subject];
+            merged[subject] = normalizedCloud[subject];
             if(!merged._folders.includes(merged[subject].folder)) merged._folders.push(merged[subject].folder || DEFAULT_FOLDER);
         }
     }
-    return merged;
+    return normalizeData(merged);
 }
 
 // Initialisation au démarrage avec le localStorage
 const baseData = typeof defaultData !== 'undefined' ? normalizeData(defaultData) : { _player: {xp:0, level:1}, _folders: [DEFAULT_FOLDER] };
 const localSave = localStorage.getItem('myQuizData');
-let appData = localSave ? mergeDataWithDefaults(JSON.parse(localSave), baseData) : baseData;
+let appData = baseData;
+if (localSave) {
+    try {
+        appData = mergeDataWithDefaults(JSON.parse(localSave), baseData);
+    } catch (error) {
+        console.error('Sauvegarde locale ignorée :', error);
+        localStorage.removeItem('myQuizData');
+    }
+}
 
 // -----------------------------------------------------
 // AUTHENTIFICATION & SAUVEGARDE CLOUD
@@ -263,6 +307,7 @@ async function initAppAfterAuth() {
         if (insertData) dbRowId = insertData.id;
     }
 
+    restoreQuizState();
     showView('home-view');
     updatePlayerUI();
 }
@@ -343,21 +388,73 @@ async function updateUserProfile() {
     }
 }
 
+function createLocalBackup(force = false) {
+    const now = Date.now();
+    const lastBackup = Number(localStorage.getItem('myQuizLastBackupAt')) || 0;
+    if (!force && now - lastBackup < 60 * 60 * 1000) return;
+    try {
+        const backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
+        backups.push({ at: now, content: appData });
+        localStorage.setItem('myQuizBackups', JSON.stringify(backups.slice(-5)));
+        localStorage.setItem('myQuizLastBackupAt', String(now));
+    } catch (error) {
+        console.error('Impossible de créer la sauvegarde locale :', error);
+    }
+}
+
+async function restoreLatestBackup() {
+    try {
+        const backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
+        const latest = backups.at(-1);
+        if (!latest?.content) return customAlert('Restauration', 'Aucune sauvegarde précédente disponible.');
+        customConfirm('Restauration', 'Remplacer les données actuelles par la dernière sauvegarde ?', async () => {
+            appData = normalizeData(latest.content);
+            await saveData();
+            updatePlayerUI();
+            renderHome();
+            customAlert('Restauration', 'La dernière sauvegarde a été restaurée.');
+        });
+    } catch (error) {
+        customAlert('Restauration', 'La sauvegarde locale est illisible.');
+    }
+}
+
+function exportStatisticsCSV() {
+    const rows = [['type', 'date', 'matiere', 'questionId', 'correcte', 'partielle', 'confiance', 'temps_ms', 'score', 'total', 'duree_ms']];
+    (appData._activity || []).forEach(activity => rows.push([
+        'réponse', new Date(activity.at).toISOString(), activity.subject, activity.questionId,
+        activity.correct, activity.partial, activity.confidence, activity.responseTime, '', '', ''
+    ]));
+    (appData._sessions || []).forEach(sessionRecord => rows.push([
+        'session', new Date(sessionRecord.at).toISOString(), sessionRecord.subject, '', '', '', '', '',
+        sessionRecord.score, sessionRecord.total, sessionRecord.duration
+    ]));
+    const csv = '\ufeff' + rows.map(row => row.map(value => `"${String(value ?? '').replaceAll('"', '""')}"`).join(';')).join('\n');
+    const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = `quizzhub-statistiques-${getTodayStr()}.csv`;
+    link.click();
+    URL.revokeObjectURL(url);
+}
+
+let saveQueue = Promise.resolve();
 async function saveData() { 
     // Sauvegarde locale de sécurité
     try { localStorage.setItem('myQuizData', JSON.stringify(appData)); } catch(e) {}
+    createLocalBackup();
     
     // Synchro Cloud
     if (currentUser && dbRowId) {
-        const { error } = await supabaseClient
-            .from('quiz_data')
-            .update({ 
-                content: appData, 
-                updated_at: new Date().toISOString() 
-            })
-            .eq('id', dbRowId);
-            
-        if (error) console.error("Erreur synchro Supabase:", error.message);
+        const snapshot = JSON.parse(JSON.stringify(appData));
+        saveQueue = saveQueue.then(async () => {
+            const { error } = await supabaseClient
+                .from('quiz_data')
+                .update({ content: snapshot, updated_at: new Date().toISOString() })
+                .eq('id', dbRowId);
+            if (error) console.error("Erreur synchro Supabase:", error.message);
+        }).catch(error => console.error('Erreur dans la file de sauvegarde :', error));
+        return saveQueue;
     }
 }
 
@@ -377,6 +474,7 @@ function importData(event) {
     const reader = new FileReader();
     reader.onload = async function(e) {
         try {
+            createLocalBackup(true);
             appData = normalizeData(JSON.parse(e.target.result));
             await saveData(); 
             updatePlayerUI();
@@ -389,6 +487,7 @@ function importData(event) {
 }
 
 function resetData() {
+    createLocalBackup(true);
     localStorage.removeItem('myQuizData'); 
     appData = normalizeData(JSON.parse(JSON.stringify(defaultData || {}))); 
     appData._player = {xp:0, level:1}; 
@@ -475,8 +574,104 @@ const session = {
     score: 0,
     failedQuestions: [],
     timerInterval: null,
-    timeRemaining: 0
+    timeRemaining: 0,
+    timerEnabled: false,
+    questionStartedAt: 0,
+    pendingResult: null,
+    startedAt: 0,
+    answeredCount: 0,
+    correctCount: 0,
+    partialCount: 0
 };
+
+function hasActiveQuiz() {
+    return Boolean(session.mode && session.questions.length && session.currentIndex < session.questions.length);
+}
+
+function persistQuizState() {
+    if (!hasActiveQuiz()) {
+        sessionStorage.removeItem(ACTIVE_QUIZ_KEY);
+        return;
+    }
+
+    const state = {
+        mode: session.mode,
+        questions: session.questions.map(item => ({ id: item.originalRef.id, subjectRef: item.subjectRef })),
+        currentIndex: session.currentIndex,
+        score: session.score,
+        failedQuestions: session.failedQuestions,
+        timeRemaining: session.timeRemaining,
+        timerEnabled: session.timerEnabled,
+        questionStartedAt: session.questionStartedAt,
+        pendingResult: session.pendingResult,
+        startedAt: session.startedAt,
+        answeredCount: session.answeredCount,
+        correctCount: session.correctCount,
+        partialCount: session.partialCount
+    };
+
+    try {
+        sessionStorage.setItem(ACTIVE_QUIZ_KEY, JSON.stringify(state));
+    } catch (error) {
+        console.error('Impossible de sauvegarder la session de quiz :', error);
+    }
+}
+
+function clearQuizState() {
+    session.mode = null;
+    session.questions = [];
+    session.currentIndex = 0;
+    session.score = 0;
+    session.failedQuestions = [];
+    session.timerEnabled = false;
+    session.timeRemaining = 0;
+    session.questionStartedAt = 0;
+    session.pendingResult = null;
+    session.startedAt = 0;
+    session.answeredCount = 0;
+    session.correctCount = 0;
+    session.partialCount = 0;
+    sessionStorage.removeItem(ACTIVE_QUIZ_KEY);
+}
+
+function restoreQuizState() {
+    let savedState;
+    try {
+        savedState = JSON.parse(sessionStorage.getItem(ACTIVE_QUIZ_KEY) || 'null');
+    } catch (error) {
+        sessionStorage.removeItem(ACTIVE_QUIZ_KEY);
+        return false;
+    }
+
+    if (!savedState?.questions?.length) return false;
+
+    const restoredQuestions = savedState.questions.map(item => {
+        const subject = appData[item.subjectRef];
+        const question = subject?.questions.find(candidate => candidate.id === item.id);
+        return question ? { originalRef: question, subjectRef: item.subjectRef } : null;
+    });
+
+    if (restoredQuestions.some(item => !item) || savedState.currentIndex >= restoredQuestions.length) {
+        sessionStorage.removeItem(ACTIVE_QUIZ_KEY);
+        return false;
+    }
+
+    session.mode = savedState.mode;
+    session.questions = restoredQuestions;
+    if (session.mode === 'subject') currentSubject = restoredQuestions[0].subjectRef;
+    session.currentIndex = Math.max(0, savedState.currentIndex || 0);
+    session.score = Number(savedState.score) || 0;
+    session.failedQuestions = Array.isArray(savedState.failedQuestions) ? savedState.failedQuestions : [];
+    session.timeRemaining = Math.max(0, Number(savedState.timeRemaining) || 0);
+    session.timerEnabled = Boolean(savedState.timerEnabled);
+    session.questionStartedAt = Number(savedState.questionStartedAt) || Date.now();
+    session.pendingResult = savedState.pendingResult || null;
+    session.startedAt = Number(savedState.startedAt) || Date.now();
+    session.answeredCount = Number(savedState.answeredCount) || 0;
+    session.correctCount = Number(savedState.correctCount) || 0;
+    session.partialCount = Number(savedState.partialCount) || 0;
+    return true;
+}
 
 // XP
 function addXP(points) {
@@ -486,6 +681,67 @@ function addXP(points) {
     return points;
 }
 
+function getDailyActivity(date = new Date()) {
+    const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+    return (appData._activity || []).filter(item => {
+        const activityDate = new Date(item.at);
+        const activityKey = `${activityDate.getFullYear()}-${String(activityDate.getMonth() + 1).padStart(2, '0')}-${String(activityDate.getDate()).padStart(2, '0')}`;
+        return activityKey === key;
+    });
+}
+
+function getStudyStreak() {
+    let streak = 0;
+    const cursor = new Date();
+    while (getDailyActivity(cursor).length > 0) {
+        streak++;
+        cursor.setDate(cursor.getDate() - 1);
+    }
+    return streak;
+}
+
+function updateStudyGoal() {
+    const input = document.getElementById('daily-goal-input');
+    const goal = Math.max(1, Math.min(500, Number.parseInt(input.value, 10) || 10));
+    appData._player.dailyGoal = goal;
+    input.value = goal;
+    saveData();
+    updatePlayerUI();
+    customAlert('Objectif quotidien', `Objectif réglé sur ${goal} question(s) par jour.`);
+}
+
+function recordActivity(subject, question, result) {
+    if (!Array.isArray(appData._activity)) appData._activity = [];
+    appData._activity.push({
+        at: Date.now(),
+        subject,
+        questionId: question.id,
+        correct: result.isCorrect,
+        partial: result.isPartial,
+        confidence: result.confidence || '',
+        responseTime: Math.max(0, Date.now() - (session.questionStartedAt || Date.now()))
+    });
+    appData._activity = appData._activity.slice(-500);
+}
+
+function recordSessionHistory(status = 'completed') {
+    if (!Array.isArray(appData._sessions)) appData._sessions = [];
+    appData._sessions.push({
+        at: Date.now(),
+        startedAt: session.startedAt || Date.now(),
+        mode: session.mode,
+        subject: session.mode === 'subject' ? currentSubject : session.mode === 'custom' ? 'Multi-matières' : 'GR20',
+        total: session.questions.length,
+        answered: session.answeredCount,
+        correct: session.correctCount,
+        partial: session.partialCount,
+        score: session.score,
+        duration: Math.max(0, Date.now() - (session.startedAt || Date.now())),
+        status
+    });
+    appData._sessions = appData._sessions.slice(-100);
+}
+
 function updatePlayerUI() {
     document.getElementById('player-lvl').textContent = appData._player.level;
     document.getElementById('player-xp').textContent = appData._player.xp;
@@ -493,10 +749,22 @@ function updatePlayerUI() {
     const nextLevelXP = 50 * Math.pow(appData._player.level, 2);
     const progress = ((appData._player.xp - currentLevelXP) / (nextLevelXP - currentLevelXP)) * 100;
     document.getElementById('xp-fill-bar').style.width = `${progress}%`;
+    const dailyGoal = appData._player.dailyGoal || 10;
+    const dailyCount = getDailyActivity().length;
+    const dailyGoalEl = document.getElementById('daily-goal-progress');
+    const streakEl = document.getElementById('study-streak');
+    const dailyGoalInput = document.getElementById('daily-goal-input');
+    if (dailyGoalEl) dailyGoalEl.textContent = `${Math.min(dailyCount, dailyGoal)} / ${dailyGoal}`;
+    if (streakEl) streakEl.textContent = getStudyStreak();
+    if (dailyGoalInput && document.activeElement !== dailyGoalInput) dailyGoalInput.value = dailyGoal;
 }
 
 // NAVIGATION
 function showView(viewId, navElement = null) {
+    if (viewId !== 'quiz-view' && hasActiveQuiz()) {
+        if (session.timerInterval) stopTimer();
+        persistQuizState();
+    }
     document.querySelectorAll('.view').forEach(v => v.classList.add('hidden'));
     document.getElementById(viewId).classList.remove('hidden');
     if (navElement) {
@@ -516,6 +784,79 @@ function getAvailableQuestions(subjectName, forceIgnoreDelay = false) {
         if (forceIgnoreDelay) return true;
         return !q.sm2.nextReview || now >= q.sm2.nextReview;
     });
+}
+
+function buildReviewQueue(questionItems) {
+    const buckets = { weak: [], unseen: [], due: [], other: [] };
+    questionItems.forEach(item => {
+        const question = item.originalRef || item;
+        const attempts = question.stats?.attempts || 0;
+        const rate = attempts ? question.stats.correct / attempts : 0;
+        if (attempts >= 2 && rate <= 0.5) buckets.weak.push(item);
+        else if (attempts === 0) buckets.unseen.push(item);
+        else if (!question.sm2?.nextReview || question.sm2.nextReview <= Date.now()) buckets.due.push(item);
+        else buckets.other.push(item);
+    });
+
+    return [
+        ...shuffleArray(buckets.weak),
+        ...shuffleArray(buckets.unseen),
+        ...shuffleArray(buckets.due),
+        ...shuffleArray(buckets.other)
+    ];
+}
+
+function validateQuestionBank() {
+    const issues = [];
+    const seenIds = new Set();
+    Object.keys(appData).forEach(subject => {
+        if (subject.startsWith('_')) return;
+        const questions = appData[subject].questions || [];
+        const seenTexts = new Set();
+        questions.forEach((question, index) => {
+            const label = `${subject} / question ${index + 1}`;
+            if (!question.id || seenIds.has(question.id)) issues.push(`${label} : identifiant manquant ou dupliqué.`);
+            seenIds.add(question.id);
+            if (!question.q?.trim()) issues.push(`${label} : énoncé vide.`);
+            if (!Array.isArray(question.options) || question.options.length < 2) issues.push(`${label} : moins de 2 options.`);
+            if (!question.options?.some(option => option.isCorrect)) issues.push(`${label} : aucune bonne réponse.`);
+            if (seenTexts.has(question.q)) issues.push(`${label} : question en double.`);
+            seenTexts.add(question.q);
+            if (!question.explanation?.trim()) issues.push(`${label} : explication absente.`);
+        });
+    });
+    return issues;
+}
+
+function showContentValidation() {
+    const report = document.getElementById('validation-report');
+    const issues = validateQuestionBank();
+    report.textContent = issues.length ? issues.slice(0, 30).join(' ') : 'Base valide : aucun problème détecté.';
+    report.style.color = issues.length ? 'var(--warning)' : 'var(--success)';
+}
+
+function showSelfTest() {
+    const report = document.getElementById('validation-report');
+    report.textContent = runQuizSelfChecks().join(' ');
+    report.style.color = 'var(--success)';
+}
+
+function runQuizSelfChecks() {
+    const checks = [];
+    const assert = (condition, message) => { if (!condition) throw new Error(message); };
+    try {
+        assert(stableHash('quiz') === stableHash('quiz'), 'Hash non déterministe');
+        assert(calculateNextInterval({ repetition: 0, interval: 0, easeFactor: 2.5 }, 4).interval === 1, 'Intervalle initial incorrect');
+        const normalized = normalizeData({ Demo: { questions: [{ q: 'Q', options: [{ text: 'Oui', isCorrect: true }, { text: 'Non', isCorrect: false }] }] } });
+        assert(normalized.Demo.questions[0].id, 'ID question absent');
+        assert(normalized.Demo.questions[0].sm2, 'SM-2 absent');
+        checks.push('SM-2, normalisation et identifiants : OK');
+        const contentIssues = validateQuestionBank();
+        checks.push(contentIssues.length ? `${contentIssues.length} problème(s) de contenu détecté(s)` : 'Base de questions : OK');
+    } catch (error) {
+        checks.push(`Échec : ${error.message}`);
+    }
+    return checks;
 }
 
 function updateDailyValidation(subject) {
@@ -597,6 +938,9 @@ function renderCatalogue() {
 function renderHome() {
     populateFolderSelects();
     renderCatalogue(); 
+
+    const resumeBox = document.getElementById('resume-quiz-box');
+    if (resumeBox) resumeBox.classList.toggle('hidden', !hasActiveQuiz());
     
     const list = document.getElementById('subjects-list');
     list.innerHTML = ""; 
@@ -716,15 +1060,6 @@ function renderCommunity() {
 
 function searchCommunity() {
     customAlert("Recherche", "La recherche communautaire sera activée dès que la table publique Supabase sera connectée !");
-}
-
-function addSubject() {
-    const name = document.getElementById('new-subject-name').value.trim();
-    const folder = document.getElementById('new-subject-folder').value || DEFAULT_FOLDER;
-    if (name && !appData[name]) {
-        appData[name] = { folder: folder, questions: [], stats: { attempts: 0, correct: 0 }, dailyValidations: {} };
-        saveData(); document.getElementById('new-subject-name').value = ""; renderHome();
-    }
 }
 
 // VUE MATIÈRE 
@@ -906,10 +1241,12 @@ function saveQuestion() {
     
     const idx = parseInt(document.getElementById('edit-q-index').value, 10);
     if(idx >= 0) {
+        newQData.id = appData[currentSubject].questions[idx].id;
         newQData.stats = appData[currentSubject].questions[idx].stats || newQData.stats;
         newQData.sm2 = appData[currentSubject].questions[idx].sm2 || newQData.sm2;
         appData[currentSubject].questions[idx] = newQData;
     } else { appData[currentSubject].questions.push(newQData); }
+    newQData.id = newQData.id || getQuestionId(currentSubject, newQData, appData[currentSubject].questions.length);
     
     updateDailyValidation(currentSubject); saveData(); openSubject(currentSubject);
 }
@@ -929,16 +1266,18 @@ function stopTimer() {
     document.getElementById('timer-display').classList.add('hidden');
 }
 
-function setupTimer(isOn) {
+function setupTimer(isOn, reset = true) {
     stopTimer();
     const timerDisplay = document.getElementById('timer-display');
+    session.timerEnabled = isOn;
     if (isOn) {
-        session.timeRemaining = session.questions.length * 60;
+        if (reset || !session.timeRemaining) session.timeRemaining = session.questions.length * 60;
         timerDisplay.classList.remove('hidden');
         timerDisplay.textContent = formatTime(session.timeRemaining);
         session.timerInterval = setInterval(() => {
             session.timeRemaining--; 
             timerDisplay.textContent = formatTime(session.timeRemaining);
+            persistQuizState();
             if (session.timeRemaining <= 0) { 
                 stopTimer(); 
                 customAlert("Terminé", "Temps écoulé !"); 
@@ -946,6 +1285,7 @@ function setupTimer(isOn) {
             }
         }, 1000);
     }
+    persistQuizState();
 }
 
 function formatTime(seconds) {
@@ -960,8 +1300,24 @@ function initQuizState(mode, qArray) {
     session.currentIndex = 0; 
     session.score = 0; 
     session.failedQuestions = [];
+    session.timerEnabled = false;
+    session.timeRemaining = 0;
+    session.questionStartedAt = Date.now();
+    session.pendingResult = null;
+    session.startedAt = Date.now();
+    session.answeredCount = 0;
+    session.correctCount = 0;
+    session.partialCount = 0;
+    persistQuizState();
     document.getElementById('btn-export-markdown').classList.add('hidden');
     document.getElementById('validation-msg').classList.add('hidden');
+}
+
+function resumeQuiz() {
+    if (!hasActiveQuiz()) return;
+    showView('quiz-view');
+    if (session.timerEnabled) setupTimer(true, false);
+    renderQuestion();
 }
 
 function startCustomQuiz() {
@@ -989,7 +1345,7 @@ function startCustomQuiz() {
     if (!Number.isInteger(rawCount) || rawCount < 1) return customAlert("Erreur", "Nombre invalide.");
     
     let requestedCount = Math.min(rawCount, allAvailableQ.length);
-    allAvailableQ = shuffleArray(allAvailableQ);
+    allAvailableQ = buildReviewQueue(allAvailableQ);
     
     initQuizState('custom', allAvailableQ.slice(0, requestedCount));
     setupTimer(document.getElementById('custom-exam-mode').checked);
@@ -1010,7 +1366,7 @@ function startQuiz() {
     
     let requestedCount = Math.min(rawCount, availableQ.length);
     let allQ = availableQ.map(q => ({ originalRef: q, subjectRef: currentSubject }));
-    allQ = shuffleArray(allQ);
+    allQ = buildReviewQueue(allQ);
     
     initQuizState('subject', allQ.slice(0, requestedCount));
     setupTimer(document.getElementById('exam-mode-toggle').checked);
@@ -1047,14 +1403,20 @@ function renderQuestion() {
         valBtn.classList.remove('hidden');
         valBtn.style.display = 'block';
     }
+    const confidenceControl = document.getElementById('confidence-control');
+    const confidenceSelect = document.getElementById('confidence-select');
+    confidenceControl.classList.toggle('hidden', session.mode === 'gr20');
+    confidenceSelect.classList.toggle('hidden', session.mode === 'gr20');
+    confidenceSelect.value = '';
     
     document.getElementById('gr20-next-btn').classList.toggle('hidden', session.mode !== 'gr20');
-    document.getElementById('next-q-btn')?.classList.add('hidden'); // Safety check if exists
     document.getElementById('explanation-box').classList.add('hidden');
     document.getElementById('sm2-eval-box').classList.add('hidden');
     
     const qItem = session.questions[session.currentIndex];
     const qData = qItem.originalRef; 
+    session.questionStartedAt = Date.now();
+    persistQuizState();
     
     document.getElementById('quiz-progress').textContent = session.mode === 'gr20' ? `🏔️ Étape ${session.currentIndex + 1} / ${session.questions.length}` : `Question ${session.currentIndex + 1} / ${session.questions.length}`;
     let tagStr = qData.tags && qData.tags.length > 0 ? " | " + qData.tags.join(" | ") : "";
@@ -1091,6 +1453,18 @@ function renderQuestion() {
     });
 
     optionsDiv.appendChild(frag);
+    optionsDiv.addEventListener('change', persistQuizState, { once: true });
+    if (session.pendingResult) {
+        const selected = new Set(session.pendingResult.selectedIndices || []);
+        optionsDiv.querySelectorAll('input').forEach(input => {
+            input.checked = selected.has(Number(input.getAttribute('data-index')));
+            input.disabled = true;
+        });
+        document.getElementById('validate-btn').classList.add('hidden');
+        document.getElementById('validate-btn').style.display = 'none';
+        document.getElementById('sm2-eval-box').classList.remove('hidden');
+        showAnswerFeedback(session.pendingResult);
+    }
     renderMath([document.getElementById('quiz-question'), document.getElementById('quiz-options')]);
 }
 
@@ -1132,28 +1506,6 @@ function calculateNextInterval(sm2, quality) {
     return { interval: newInt, text: newInt + " jours" };
 }
 
-function submitSM2(quality) {
-    const qItem = session.questions[session.currentIndex];
-    const sm2 = qItem.originalRef.sm2;
-    const next = calculateNextInterval(sm2, quality);
-    
-    if (quality < 3) {
-        sm2.repetition = 0;
-        sm2.nextReview = Date.now() + 10 * 60 * 1000; // + 10 minutes
-    } else {
-        sm2.repetition++;
-        sm2.interval = next.interval;
-        sm2.nextReview = Date.now() + sm2.interval * 24 * 60 * 60 * 1000; // Conversion précise en ms
-    }
-    
-    sm2.easeFactor = sm2.easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
-    if (sm2.easeFactor < 1.3) sm2.easeFactor = 1.3;
-    
-    saveData();
-    nextQuestion();
-}
-
-// (La suite reste identique, mais on applique aussi la correction ms à nextGR20Question)
 function processAnswerSub() {
     const qItem = session.questions[session.currentIndex];
     const qData = qItem.originalRef; 
@@ -1166,6 +1518,8 @@ function processAnswerSub() {
     let totalCorrect = qData.options.filter(o => o.isCorrect).length;
     let userSelectedTexts = [];
     let correctTexts = [];
+    let selectedIndices = [];
+    const confidence = document.getElementById('confidence-select')?.value || '';
 
     const labels = document.querySelectorAll('.qcm-option');
     labels.forEach(label => {
@@ -1177,7 +1531,10 @@ function processAnswerSub() {
         const isChecked = input.checked;
         
         if(opt.isCorrect) correctTexts.push(opt.text);
-        if(isChecked) userSelectedTexts.push(opt.text);
+        if(isChecked) {
+            userSelectedTexts.push(opt.text);
+            selectedIndices.push(Number(input.getAttribute('data-index')));
+        }
 
         if (opt.isCorrect) {
             if (isChecked) {
@@ -1204,11 +1561,14 @@ function processAnswerSub() {
 
     if (wrongSelected === 0 && correctSelected === totalCorrect) {
         isCorrect = true;
+        session.correctCount++;
         appData[qItem.subjectRef].stats.correct++;
         qData.stats.correct++;
         session.score++;
     } else if (wrongSelected === 0 && correctSelected > 0) {
         isPartial = true;
+        session.partialCount++;
+        appData[qItem.subjectRef].stats.partial = (appData[qItem.subjectRef].stats.partial || 0) + 1;
         qData.stats.partial++;
         session.score += 0.5; // Demi-point
     } else {
@@ -1219,23 +1579,19 @@ function processAnswerSub() {
             explanation: qData.explanation || "Pas d'explication fournie." 
         });
     }
+    session.answeredCount++;
     
-    return { isCorrect, isPartial, explanation: qData.explanation };
+
+    recordActivity(qItem.subjectRef, qData, { isCorrect, isPartial, confidence });
+    saveData();
+    return { isCorrect, isPartial, explanation: qData.explanation, selectedIndices, confidence };
 } // <--- FIN DE processAnswerSub()
 
 
 // -----------------------------------------------------
 // La fonction validateAnswer est maintenant bien indépendante
 // -----------------------------------------------------
-function validateAnswer() {
-    const valBtn = document.getElementById('validate-btn');
-    if (valBtn.classList.contains('hidden') || valBtn.style.display === 'none') return;
-    
-    valBtn.classList.add('hidden');
-    valBtn.style.display = 'none';
-    
-    const result = processAnswerSub();
-    
+function showAnswerFeedback(result) {
     if (result.explanation) {
         document.getElementById('explanation-text').textContent = result.explanation;
         document.getElementById('explanation-box').classList.remove('hidden');
@@ -1280,6 +1636,19 @@ function validateAnswer() {
     renderMath([document.getElementById('explanation-box')]);
 }
 
+function validateAnswer() {
+    const valBtn = document.getElementById('validate-btn');
+    if (valBtn.classList.contains('hidden') || valBtn.style.display === 'none') return;
+    
+    valBtn.classList.add('hidden');
+    valBtn.style.display = 'none';
+    
+    const result = processAnswerSub();
+    session.pendingResult = result;
+    persistQuizState();
+    showAnswerFeedback(result);
+}
+
 function updateSM2Metadata(sm2, quality) {
     sm2.lastAttempt = Date.now();
     sm2.lastQuality = quality;
@@ -1310,6 +1679,7 @@ function submitSM2(quality) {
     sm2.easeFactor = sm2.easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
     if (sm2.easeFactor < 1.3) sm2.easeFactor = 1.3;
     
+    session.pendingResult = null;
     saveData();
     nextQuestion();
 }
@@ -1336,6 +1706,7 @@ function nextGR20Question() {
     sm2.easeFactor = sm2.easeFactor + (0.1 - (5 - quality) * (0.08 + (5 - quality) * 0.02));
     if (sm2.easeFactor < 1.3) sm2.easeFactor = 1.3;
     
+    session.pendingResult = null;
     saveData();
     nextQuestion(); 
 }
@@ -1347,8 +1718,17 @@ function nextQuestion() {
 
 function endQuiz(finished = false) {
     stopTimer();
+    if (!finished) {
+        if (session.answeredCount > 0) {
+            recordSessionHistory('abandoned');
+            saveData();
+        }
+        clearQuizState();
+    }
     
     if (finished) {
+        recordSessionHistory(session.timerEnabled && session.timeRemaining <= 0 ? 'timeout' : 'completed');
+        saveData();
         document.getElementById('results-title').textContent = session.mode === 'gr20' ? "🏁 Arrivée du GR20" : "🏁 Bilan de la session";
         document.getElementById('final-score').textContent = session.score;
         document.getElementById('final-total').textContent = session.questions.length;
@@ -1363,6 +1743,7 @@ function endQuiz(finished = false) {
 
         if(session.failedQuestions.length > 0) document.getElementById('btn-export-markdown').classList.remove('hidden');
         showView('results-view');
+        clearQuizState();
     } else { 
         showView('home-view'); 
     }
@@ -1376,12 +1757,43 @@ function exportMarkdownToClipboard() {
 
 // DASHBOARD
 // DASHBOARD
+function calculateRetention(days) {
+    const threshold = days * 24 * 60 * 60 * 1000;
+    const grouped = new Map();
+    (appData._activity || []).forEach(activity => {
+        const key = `${activity.subject}:${activity.questionId}`;
+        if (!grouped.has(key)) grouped.set(key, []);
+        grouped.get(key).push(activity);
+    });
+
+    let eligible = 0;
+    let remembered = 0;
+    grouped.forEach(events => {
+        events.sort((a, b) => a.at - b.at);
+        const first = events[0];
+        if (Date.now() - first.at < threshold) return;
+        eligible++;
+        if (events.some(event => event.at - first.at >= threshold && event.correct)) remembered++;
+    });
+    return { eligible, remembered, rate: eligible ? Math.round((remembered / eligible) * 100) : null };
+}
+
+function formatDuration(milliseconds) {
+    const minutes = Math.round((milliseconds || 0) / 60000);
+    return minutes < 1 ? '< 1 min' : `${minutes} min`;
+}
+
 function renderProfileDashboard() {
-    let totalAttempts = 0, totalCorrect = 0, totalQuestions = 0;
+    let totalAttempts = 0, totalCorrect = 0, totalPartial = 0, totalQuestions = 0, masteredQuestions = 0;
     let globalDue = 0, globalUnseen = 0;
     let strongQuestions = [], weakQuestions = [];
     let tagsMap = {};
     const now = Date.now();
+    const recentActivity = (appData._activity || []).filter(item => now - Number(item.at) <= 7 * 24 * 60 * 60 * 1000);
+    const recentAttempts = recentActivity.length;
+    const recentCorrect = recentActivity.filter(item => item.correct).length;
+    const recentMinutes = recentActivity.reduce((total, item) => total + (Number(item.responseTime) || 0), 0) / 60000;
+    const activeDays = new Set(recentActivity.map(item => new Date(item.at).toISOString().slice(0, 10))).size;
 
     const container = document.getElementById('profile-content');
     container.innerHTML = ""; 
@@ -1394,12 +1806,14 @@ function renderProfileDashboard() {
         
         totalAttempts += s.stats.attempts || 0;
         totalCorrect += s.stats.correct || 0;
+        totalPartial += s.stats.partial || 0;
         totalQuestions += s.questions.length;
         
         s.questions.forEach(q => {
             // Stats globales et matières
             if (q.stats.attempts === 0) { globalUnseen++; subUnseen++; }
             else if (q.sm2.nextReview <= now) { globalDue++; subDue++; }
+            if (q.sm2.interval > 10) masteredQuestions++;
 
             // Questions fortes / faibles
             if(q.stats.attempts >= 2) {
@@ -1446,13 +1860,113 @@ function renderProfileDashboard() {
 
     // Injection Stats Globales
     const globalRate = totalAttempts > 0 ? Math.round((totalCorrect/totalAttempts)*100) : 0;
+    const recentRate = recentAttempts > 0 ? Math.round((recentCorrect / recentAttempts) * 100) : 0;
+    const averageResponse = recentAttempts > 0 ? Math.round((recentMinutes * 60) / recentAttempts) : 0;
     document.getElementById('global-stats-container').innerHTML = `
         <div class="stat-card"><h3>Précision Globale</h3><div class="value">${globalRate}%</div></div>
         <div class="stat-card"><h3>Volume de la base</h3><div class="value" style="color: var(--secondary);">${totalQuestions}</div></div>
-        <div class="stat-card"><h3>Questions Résolues</h3><div class="value" style="color: var(--text-main);">${totalAttempts}</div></div>
+        <div class="stat-card"><h3>Tentatives totales</h3><div class="value" style="color: var(--text-main);">${totalAttempts}</div></div>
+        <div class="stat-card"><h3>Réponses partielles</h3><div class="value" style="color: var(--warning);">${totalPartial}</div></div>
         <div class="stat-card accent-warning"><h3>Urgence (À revoir)</h3><div class="value" style="color: var(--warning);">${globalDue}</div></div>
         <div class="stat-card accent-secondary"><h3>Nouvelles (Jamais vues)</h3><div class="value" style="color: var(--text-muted);">${globalUnseen}</div></div>
+        <div class="stat-card"><h3>7 derniers jours</h3><div class="value">${recentAttempts}</div><small>${recentRate}% de réussite</small></div>
+        <div class="stat-card"><h3>Temps moyen</h3><div class="value">${averageResponse}s</div><small>${Math.round(recentMinutes)} min étudiées cette semaine</small></div>
+        <div class="stat-card"><h3>Jours actifs</h3><div class="value">${activeDays}/7</div><small>${masteredQuestions} questions bien ancrées</small></div>
     `;
+
+    const chart = document.getElementById('activity-chart');
+    if (chart) {
+        const chartDays = [];
+        for (let offset = 6; offset >= 0; offset--) {
+            const date = new Date(now - offset * 24 * 60 * 60 * 1000);
+            const key = `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+            const dayActivity = (appData._activity || []).filter(item => new Date(item.at).toISOString().slice(0, 10) === key);
+            const attempts = dayActivity.length;
+            const correct = dayActivity.filter(item => item.correct).length;
+            chartDays.push(`<div class="activity-day"><div class="activity-bars"><span class="activity-bar attempts" style="height:${Math.min(100, attempts * 12)}%" title="${attempts} tentative(s)"></span><span class="activity-bar correct" style="height:${attempts ? Math.min(100, (correct / attempts) * 100) : 0}%" title="${correct} réussite(s)"></span></div><small>${date.toLocaleDateString('fr-FR', { weekday: 'short' }).replace('.', '')}</small><strong>${attempts}</strong></div>`);
+        }
+        chart.innerHTML = chartDays.join('');
+    }
+
+    const confidenceStats = document.getElementById('confidence-stats');
+    if (confidenceStats) {
+        const confidenceLabels = { low: 'Au hasard', medium: 'Hésitant(e)', high: 'Sûr(e) de moi', '': 'Non renseigné' };
+        confidenceStats.innerHTML = Object.keys(confidenceLabels).map(level => {
+            const entries = (appData._activity || []).filter(item => item.confidence === level);
+            const success = entries.filter(item => item.correct).length;
+            const rate = entries.length ? Math.round((success / entries.length) * 100) : 0;
+            return `<div class="confidence-row"><span>${confidenceLabels[level]}</span><strong>${entries.length ? `${rate}% (${success}/${entries.length})` : 'Aucune donnée'}</strong></div>`;
+        }).join('');
+    }
+
+    const retentionStats = document.getElementById('retention-stats');
+    if (retentionStats) {
+        retentionStats.innerHTML = [1, 7, 30].map(days => {
+            const retention = calculateRetention(days);
+            const value = retention.rate === null ? 'Pas encore assez de recul' : `${retention.rate}% (${retention.remembered}/${retention.eligible})`;
+            return `<div class="confidence-row"><span>Après ${days} jour${days > 1 ? 's' : ''}</span><strong>${value}</strong></div>`;
+        }).join('');
+    }
+
+    const reviewCalendar = document.getElementById('review-calendar');
+    if (reviewCalendar) {
+        const reviewDays = Array.from({ length: 8 }, (_, offset) => ({ offset, count: 0, subjects: new Set() }));
+        Object.keys(appData).forEach(subject => {
+            if (subject.startsWith('_')) return;
+            appData[subject].questions.forEach(question => {
+                const reviewAt = Number(question.sm2?.nextReview) || 0;
+                const offset = reviewAt <= now ? 0 : Math.floor((reviewAt - now) / (24 * 60 * 60 * 1000)) + 1;
+                if (offset >= 0 && offset < reviewDays.length) {
+                    reviewDays[offset].count++;
+                    reviewDays[offset].subjects.add(subject);
+                }
+            });
+        });
+        reviewCalendar.innerHTML = '';
+        reviewDays.forEach(day => {
+            const date = new Date(now + day.offset * 24 * 60 * 60 * 1000);
+            const row = document.createElement('div');
+            row.className = 'review-day';
+            const dateText = document.createElement('span');
+            dateText.textContent = day.offset === 0 ? "Aujourd'hui" : date.toLocaleDateString('fr-FR', { weekday: 'short', day: 'numeric', month: 'short' });
+            const countText = document.createElement('strong');
+            countText.textContent = `${day.count} question${day.count > 1 ? 's' : ''}`;
+            const subjectsText = document.createElement('small');
+            subjectsText.textContent = [...day.subjects].slice(0, 2).join(', ');
+            row.append(dateText, countText, subjectsText);
+            reviewCalendar.appendChild(row);
+        });
+    }
+
+    const historyContainer = document.getElementById('session-history');
+    if (historyContainer) {
+        historyContainer.innerHTML = '';
+        const sessions = [...(appData._sessions || [])].reverse().slice(0, 10);
+        if (!sessions.length) {
+            historyContainer.textContent = 'Aucune session enregistrée pour le moment.';
+        } else {
+            sessions.forEach(sessionRecord => {
+                const row = document.createElement('div');
+                row.className = 'session-row';
+                const date = new Date(sessionRecord.at).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' });
+                const status = sessionRecord.status === 'abandoned' ? 'abandonnée' : sessionRecord.status === 'timeout' ? 'temps écoulé' : 'terminée';
+                const left = document.createElement('span');
+                const dateText = document.createElement('strong');
+                dateText.textContent = date;
+                const subjectText = document.createElement('small');
+                subjectText.textContent = `${sessionRecord.subject} · ${status}`;
+                left.append(dateText, subjectText);
+                const right = document.createElement('span');
+                const scoreText = document.createElement('strong');
+                scoreText.textContent = `${sessionRecord.score}/${sessionRecord.total}`;
+                const detailText = document.createElement('small');
+                detailText.textContent = `${sessionRecord.correct} correcte(s) · ${formatDuration(sessionRecord.duration)}`;
+                right.append(scoreText, detailText);
+                row.append(left, right);
+                historyContainer.appendChild(row);
+            });
+        }
+    }
 
     // Rendu des Tags (Maîtrise par chapitre)
     const tagsArray = Object.keys(tagsMap).map(k => ({ name: k, ...tagsMap[k] }));
@@ -1643,9 +2157,9 @@ async function saveEditedQuestion() {
     customAlert("Succès", "La question a été mise à jour et sauvegardée !");
     
     // Mise à jour visuelle immédiate dans le quiz
-    document.getElementById('question-text').textContent = qData.q;
+    document.getElementById('quiz-question').textContent = qData.q;
     if (qData.explanation) document.getElementById('explanation-text').textContent = qData.explanation;
-    renderMath([document.getElementById('question-view')]);
+    renderMath([document.getElementById('quiz-view')]);
 }
 
 // -----------------------------------------------------
@@ -1679,23 +2193,35 @@ function renderFavorites() {
                 card.className = 'card';
                 card.style = "margin-bottom: 15px; position: relative;";
 
-                // Recherche de la ou des bonnes réponses
-                const correctAnswers = q.options.filter(o => o.isCorrect).map(o => o.text).join('</strong> ou <strong>');
+                const tags = document.createElement('div');
+                tags.style = "font-size: 0.85em; color: var(--secondary); margin-bottom: 8px;";
+                tags.textContent = `Tags : ${q.tags?.join(', ') || 'Aucun'}`;
+                card.appendChild(tags);
 
-                let htmlContent = `
-                    <div style="font-size: 0.85em; color: var(--secondary); margin-bottom: 8px;">Tags : ${q.tags ? q.tags.join(', ') : 'Aucun'}</div>
-                    <h3 style="margin-top: 0; font-size: 1.1em;">${q.q}</h3>
-                    <div style="margin-top: 12px; padding: 10px; background: rgba(46, 204, 113, 0.1); border-left: 4px solid var(--success); border-radius: 4px;">
-                        <span style="color: var(--success);">✅ <strong>${correctAnswers}</strong></span>
-                    </div>
-                `;
+                const questionTitle = document.createElement('h3');
+                questionTitle.style = "margin-top: 0; font-size: 1.1em;";
+                questionTitle.textContent = q.q;
+                card.appendChild(questionTitle);
+
+                const answersBox = document.createElement('div');
+                answersBox.style = "margin-top: 12px; padding: 10px; background: rgba(46, 204, 113, 0.1); border-left: 4px solid var(--success); border-radius: 4px;";
+                const answers = document.createElement('span');
+                answers.style.color = 'var(--success)';
+                answers.textContent = `✅ ${q.options.filter(option => option.isCorrect).map(option => option.text).join(' ou ')}`;
+                answersBox.appendChild(answers);
+                card.appendChild(answersBox);
 
                 if (q.explanation) {
-                    htmlContent += `
-                    <div style="margin-top: 10px; padding: 10px; background: rgba(255, 255, 255, 0.05); border-radius: 4px;">
-                        <strong style="color: var(--primary);">💡 Explication :</strong><br>
-                        <span style="font-size: 0.95em; color: var(--text-main);">${q.explanation}</span>
-                    </div>`;
+                    const explanationBox = document.createElement('div');
+                    explanationBox.style = "margin-top: 10px; padding: 10px; background: rgba(255, 255, 255, 0.05); border-radius: 4px;";
+                    const explanationTitle = document.createElement('strong');
+                    explanationTitle.style.color = 'var(--primary)';
+                    explanationTitle.textContent = '💡 Explication :';
+                    const explanationText = document.createElement('span');
+                    explanationText.style = "font-size: 0.95em; color: var(--text-main);";
+                    explanationText.textContent = q.explanation;
+                    explanationBox.append(explanationTitle, document.createElement('br'), explanationText);
+                    card.appendChild(explanationBox);
                 }
 
                 // Bouton de suppression des favoris
@@ -1705,7 +2231,6 @@ function renderFavorites() {
                 btnRemove.innerHTML = "❌ Retirer des favoris";
                 btnRemove.onclick = () => removeFavoriteFromList(subject, q.q);
 
-                card.innerHTML = htmlContent;
                 card.appendChild(btnRemove);
                 frag.appendChild(card);
             });
@@ -1722,6 +2247,36 @@ function renderFavorites() {
         container.appendChild(frag);
         // On demande à MathJax de formater les maths (LaTeX) dans la nouvelle page
         renderMath([container]);
+    }
+}
+
+function handleQuizKeyboard(event) {
+    if (!hasActiveQuiz() || document.getElementById('quiz-view').classList.contains('hidden')) return;
+    if (['INPUT', 'TEXTAREA', 'SELECT', 'BUTTON'].includes(event.target.tagName)) return;
+
+    if (session.pendingResult) {
+        const reviewButtons = { '1': 'btn-next-wrong', '2': 'btn-sm2-3', '3': 'btn-sm2-4', '4': 'btn-sm2-5' };
+        const buttonId = reviewButtons[event.key];
+        if (buttonId && !document.getElementById(buttonId).classList.contains('hidden')) {
+            event.preventDefault();
+            document.getElementById(buttonId).click();
+        }
+        return;
+    }
+
+    if (event.key >= '1' && event.key <= '4') {
+        const input = document.querySelectorAll('.qcm-option input')[Number(event.key) - 1];
+        if (input) {
+            event.preventDefault();
+            input.checked = input.type === 'radio' ? true : !input.checked;
+            input.dispatchEvent(new Event('change', { bubbles: true }));
+        }
+    } else if (event.key === 'Enter' && session.mode !== 'gr20') {
+        event.preventDefault();
+        document.getElementById('validate-btn').click();
+    } else if ((event.key === 'n' || event.key === 'N') && session.mode === 'gr20') {
+        event.preventDefault();
+        document.getElementById('gr20-next-btn').click();
     }
 }
 
@@ -1755,7 +2310,7 @@ async function loadCourseData(courseTitle, dataUrl) {
         for (let subject in courseData) {
             if (!appData[subject]) {
                 // Si la matière n'existe pas encore chez l'utilisateur, on l'ajoute
-                appData[subject] = courseData[subject];
+                appData[subject] = normalizeData({ [subject]: courseData[subject] })[subject];
                 
                 // On s'assure qu'elle atterrit dans un dossier par défaut
                 appData[subject].folder = courseData[subject].folder || "Général";
@@ -1768,10 +2323,10 @@ async function loadCourseData(courseTitle, dataUrl) {
                 hasNewContent = true;
             } else {
                 // Si la matière existe déjà (stats conservées), on ajoute juste les NOUVELLES questions
-                courseData[subject].questions.forEach(newQ => {
+                courseData[subject].questions.forEach((newQ, index) => {
                     const exists = appData[subject].questions.find(q => q.q === newQ.q);
                     if (!exists) {
-                        appData[subject].questions.push(newQ);
+                        appData[subject].questions.push(normalizeQuestion(newQ, subject, appData[subject].questions.length + index));
                         hasNewContent = true;
                     }
                 });
@@ -1792,4 +2347,15 @@ async function loadCourseData(courseTitle, dataUrl) {
     }
 }
 // LANCEMENT DE L'APPLICATION
+document.addEventListener('keydown', handleQuizKeyboard);
+document.addEventListener('visibilitychange', () => {
+    if (document.hidden) {
+        if (hasActiveQuiz() && session.timerInterval) {
+            stopTimer();
+            persistQuizState();
+        }
+    } else if (hasActiveQuiz() && session.timerEnabled && !document.getElementById('quiz-view').classList.contains('hidden')) {
+        setupTimer(true, false);
+    }
+});
 checkSession();
