@@ -101,6 +101,26 @@ input[type="text"], input[type="number"], input[type="file"], input[type="email"
 .progress-bar-bg { width: 100%; height: 8px; background-color: var(--bg-dark); border-radius: 4px; overflow: hidden; margin-top: 10px; }
 .progress-bar-fill { height: 100%; background-color: var(--primary); transition: width 0.5s ease; }
 
+.activity-chart { min-height: 170px; display: flex; align-items: end; justify-content: space-around; gap: 12px; padding: 20px 10px 0; border-bottom: 1px solid var(--surface-light); }
+.activity-day { flex: 1; min-width: 32px; display: flex; flex-direction: column; align-items: center; gap: 6px; color: var(--text-muted); }
+.activity-day strong { color: var(--text-main); font-size: 0.8em; }
+.activity-bars { height: 120px; width: 100%; display: flex; align-items: end; justify-content: center; gap: 4px; }
+.activity-bar { display: block; width: 14px; min-height: 2px; border-radius: 4px 4px 0 0; transition: height 0.3s ease; }
+.activity-bar.attempts { background-color: var(--secondary); }
+.activity-bar.correct { background-color: var(--success); }
+.confidence-stats { display: grid; gap: 10px; }
+.confidence-row { display: flex; justify-content: space-between; gap: 15px; padding: 10px 12px; background: var(--surface-light); border-radius: var(--radius); }
+.confidence-row strong { color: var(--primary); }
+.review-calendar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+.review-day { display: flex; flex-direction: column; gap: 5px; padding: 12px; background: var(--surface-light); border-radius: var(--radius); }
+.review-day strong { color: var(--warning); }
+.review-day small { color: var(--text-muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.session-history { display: grid; gap: 8px; }
+.session-row { display: flex; justify-content: space-between; gap: 15px; padding: 12px; background: var(--surface-light); border-radius: var(--radius); }
+.session-row > span { display: flex; flex-direction: column; gap: 4px; }
+.session-row > span:last-child { text-align: right; }
+.session-row small { color: var(--text-muted); }
+
 .question-list-mini { max-height: 200px; overflow-y: auto; padding-right: 5px; margin-top: 15px; }
 .q-mini-item { background: var(--bg-dark); padding: 12px; border-radius: 8px; margin-bottom: 8px; font-size: 0.9em; border-left: 3px solid var(--surface-light); display: flex; justify-content: space-between; gap: 10px;}
 .q-mini-item.danger { border-left-color: var(--danger); }
@@ -118,10 +138,29 @@ input[type="text"], input[type="number"], input[type="file"], input[type="email"
 
 @media (max-width: 768px) {
     body { flex-direction: column; overflow: auto; }
-    #sidebar { width: 100% !important; padding: 15px; border-right: none; border-bottom: 1px solid var(--surface-light); box-sizing: border-box; }
+    #sidebar { width: 100% !important; padding: 10px; border-right: none; border-bottom: 1px solid var(--surface-light); box-sizing: border-box; display: block; overflow-x: auto; white-space: nowrap; }
     #sidebar.collapsed { width: 100% !important; }
     .sidebar-toggle, .sidebar-resizer { display: none; }
+    .sidebar-brand { display: inline-flex; margin: 4px 12px 8px 0; vertical-align: middle; font-size: 1.2em; }
+    .nav-item { display: inline-flex; width: auto; margin: 0 4px 0 0; padding: 9px 11px; vertical-align: middle; }
+    #sidebar #player-stats { display: none; }
     #main-content { padding: 15px; overflow-y: visible; }
+    .view { max-width: none; }
+    .card { padding: 18px; margin-bottom: 15px; }
+    h1 { font-size: 1.65em; }
+    h2 { font-size: 1.3em; }
+    .dashboard-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .stat-card { min-height: 90px; padding: 14px; }
+    .stat-card .value { font-size: 1.8em; }
+    .subject-folder-control { align-items: stretch; flex-direction: column; margin-top: 0; }
+    .subject-folder-control select { max-width: none; }
+    .qcm-option { padding: 12px; }
+    .sm2-btn { min-width: calc(50% - 5px); }
     .add-option-row { flex-direction: column; align-items: stretch; gap: 5px; }
     .list-item { flex-direction: column; align-items: flex-start; gap: 10px; }
+    .activity-chart { gap: 4px; padding-left: 0; padding-right: 0; }
+    .activity-bar { width: 9px; }
+    .session-row { align-items: flex-start; flex-direction: column; }
+    .session-row > span:last-child { text-align: left; }
+    .review-calendar { grid-template-columns: 1fr 1fr; }
 }
