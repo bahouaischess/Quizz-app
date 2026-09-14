@@ -187,6 +187,8 @@ function normalizeData(rawData) {
             valid[key] = {
                 folder: folderName,
                 course: sub.course || '',
+                description: typeof sub.description === 'string' ? sub.description : '',
+                prerequisites: Array.isArray(sub.prerequisites) ? sub.prerequisites.filter(item => typeof item === 'string') : [],
                 questions: sub.questions.filter(q => q && typeof q.q === 'string').map((q, index) => normalizeQuestion(q, key, index)),
                 stats: {
                     attempts: Number(sub.stats?.attempts) || 0,
@@ -220,6 +222,8 @@ function mergeDataWithDefaults(cloudData, baseData) {
         if (normalizedCloud[subject]) {
             merged[subject].folder = normalizedCloud[subject].folder || baseData[subject].folder || DEFAULT_FOLDER;
             merged[subject].course = normalizedCloud[subject].course || baseData[subject].course || '';
+            merged[subject].description = normalizedCloud[subject].description || baseData[subject].description || '';
+            merged[subject].prerequisites = normalizedCloud[subject].prerequisites || baseData[subject].prerequisites || [];
             if(!merged._folders.includes(merged[subject].folder)) merged._folders.push(merged[subject].folder);
             
             merged[subject].stats = normalizedCloud[subject].stats || {attempts: 0, correct: 0};
@@ -560,11 +564,53 @@ async function addSubject() {
     }
 }
 
+function renderCreateSubjectView() {
+    const folderSelect = document.getElementById('created-subject-folder');
+    const prerequisiteSelect = document.getElementById('created-subject-prerequisites');
+    if (folderSelect) folderSelect.innerHTML = appData._folders.map(folder => `<option value="${folder.replaceAll('"', '&quot;')}">${folder}</option>`).join('');
+    if (prerequisiteSelect) {
+        const subjects = Object.keys(appData).filter(subject => !subject.startsWith('_')).sort();
+        prerequisiteSelect.innerHTML = subjects.map(subject => `<option value="${subject.replaceAll('"', '&quot;')}">${subject}</option>`).join('');
+    }
+}
+
+async function createSubjectFromApp() {
+    const nameInput = document.getElementById('created-subject-name');
+    const message = document.getElementById('create-subject-message');
+    const name = nameInput.value.trim();
+    if (!name) {
+        message.textContent = 'Donne un nom à la matière.';
+        message.style.color = 'var(--danger)';
+        return;
+    }
+    if (appData[name] || name.startsWith('_')) {
+        message.textContent = 'Cette matière existe déjà ou ce nom est réservé.';
+        message.style.color = 'var(--danger)';
+        return;
+    }
+    const prerequisites = [...document.getElementById('created-subject-prerequisites').selectedOptions].map(option => option.value).filter(subject => subject !== name);
+    appData[name] = {
+        folder: document.getElementById('created-subject-folder').value || DEFAULT_FOLDER,
+        description: document.getElementById('created-subject-description').value.trim(),
+        prerequisites,
+        questions: [],
+        stats: { attempts: 0, correct: 0, partial: 0 },
+        dailyValidations: {}
+    };
+    await saveData();
+    nameInput.value = '';
+    document.getElementById('created-subject-description').value = '';
+    message.textContent = 'Matière créée et sauvegardée. Tu peux maintenant ajouter ses questions.';
+    message.style.color = 'var(--success)';
+    renderCreateSubjectView();
+}
+
 
 // -----------------------------------------------------
 // ETAT GLOBAL UI & QUIZ
 // -----------------------------------------------------
 let currentSubject = "";
+let openFolders = new Set();
 let activeTagsForNewQuestion = new Set(), activeFilterTags = new Set(), globalCustomFilterTags = new Set();
 
 const session = {
@@ -583,7 +629,8 @@ const session = {
     correctCount: 0,
     partialCount: 0,
     examMode: false,
-    examAnswers: []
+    examAnswers: [],
+    note: ''
 };
 
 function hasActiveQuiz() {
@@ -611,7 +658,8 @@ function persistQuizState() {
         correctCount: session.correctCount,
         partialCount: session.partialCount,
         examMode: session.examMode,
-        examAnswers: session.examAnswers
+        examAnswers: session.examAnswers,
+        note: session.note
     };
 
     try {
@@ -637,6 +685,7 @@ function clearQuizState() {
     session.partialCount = 0;
     session.examMode = false;
     session.examAnswers = [];
+    session.note = '';
     sessionStorage.removeItem(ACTIVE_QUIZ_KEY);
 }
 
@@ -678,6 +727,7 @@ function restoreQuizState() {
     session.partialCount = Number(savedState.partialCount) || 0;
     session.examMode = Boolean(savedState.examMode);
     session.examAnswers = Array.isArray(savedState.examAnswers) ? savedState.examAnswers : [];
+    session.note = typeof savedState.note === 'string' ? savedState.note : '';
     return true;
 }
 
@@ -744,6 +794,7 @@ function recordSessionHistory(status = 'completed') {
         partial: session.partialCount,
         score: session.score,
         duration: Math.max(0, Date.now() - (session.startedAt || Date.now())),
+        note: session.note || '',
         status
     });
     appData._sessions = appData._sessions.slice(-100);
@@ -766,8 +817,27 @@ function updatePlayerUI() {
     if (dailyGoalInput && document.activeElement !== dailyGoalInput) dailyGoalInput.value = dailyGoal;
 }
 
+function saveSessionNote() {
+    const note = document.getElementById('session-note').value.trim();
+    session.note = note;
+    const latest = appData._sessions?.at(-1);
+    if (latest) {
+        latest.note = note;
+        saveData();
+    }
+    customAlert('Session', note ? 'Note enregistrée.' : 'Note supprimée.');
+}
+
 // NAVIGATION
 function showView(viewId, navElement = null) {
+    if (viewId !== 'quiz-view' && document.body.classList.contains('focus-mode')) {
+        document.body.classList.remove('focus-mode');
+        const focusButton = document.getElementById('focus-mode-btn');
+        if (focusButton) {
+            focusButton.textContent = '◉ Faible distraction';
+            focusButton.setAttribute('aria-pressed', 'false');
+        }
+    }
     if (viewId !== 'quiz-view' && hasActiveQuiz()) {
         if (session.timerInterval) stopTimer();
         persistQuizState();
@@ -778,10 +848,33 @@ function showView(viewId, navElement = null) {
         document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
         navElement.classList.add('active');
     }
-    if (viewId === 'home-view') renderHome();
+    if (viewId === 'home-view') {
+        openFolders.clear();
+        renderHome();
+    }
     if (viewId === 'profile-view') renderProfileDashboard();
     if (viewId === 'custom-quiz-view') renderCustomQuizSetup();
+    if (viewId === 'create-subject-view') renderCreateSubjectView();
     updatePlayerUI();
+}
+
+function setSidebarHidden(isHidden) {
+    const sidebar = document.getElementById('sidebar');
+    const reopenButton = document.getElementById('sidebar-reopen');
+    const toggleButton = document.getElementById('sidebar-toggle');
+    sidebar.classList.toggle('sidebar-hidden', isHidden);
+    reopenButton.classList.toggle('hidden', !isHidden);
+    toggleButton.setAttribute('aria-label', isHidden ? 'Afficher la barre latérale' : 'Masquer la barre latérale');
+    toggleButton.title = isHidden ? 'Afficher la barre latérale' : 'Masquer la barre latérale';
+    localStorage.setItem('quizSidebarHidden', String(isHidden));
+}
+
+function initSidebarControls() {
+    const toggleButton = document.getElementById('sidebar-toggle');
+    const reopenButton = document.getElementById('sidebar-reopen');
+    toggleButton.addEventListener('click', () => setSidebarHidden(true));
+    reopenButton.addEventListener('click', () => setSidebarHidden(false));
+    setSidebarHidden(localStorage.getItem('quizSidebarHidden') === 'true');
 }
 
 // MOTEUR SM-2 (FILTRE)
@@ -992,15 +1085,21 @@ function renderHome() {
         const folderDiv = document.createElement('div');
         folderDiv.className = 'folder-section';
 
-        const header = document.createElement('div');
+        const header = document.createElement('button');
         header.className = 'folder-header list-item'; 
-        header.style.cursor = 'default';
         header.style.fontWeight = 'bold';
-        header.innerHTML = `<span>📁 ${folder}</span>`;
+        header.type = 'button';
+        const headerLabel = document.createElement('span');
+        const isOpen = openFolders.has(folder);
+        headerLabel.textContent = `${isOpen ? '⌄' : '⌃'} 📁 ${folder}`;
+        header.appendChild(headerLabel);
+        header.setAttribute('aria-expanded', String(isOpen));
+        header.onclick = () => toggleFolder(folder);
         folderDiv.appendChild(header);
 
         const subjectsContainer = document.createElement('div');
         subjectsContainer.className = 'folder-subjects';
+        subjectsContainer.classList.toggle('hidden', !isOpen);
         
         if (subjects.length === 0) {
             const emptyMsg = document.createElement('div');
@@ -1045,6 +1144,12 @@ function renderHome() {
     });
     
     list.appendChild(frag);
+}
+
+function toggleFolder(folder) {
+    if (openFolders.has(folder)) openFolders.delete(folder);
+    else openFolders.add(folder);
+    renderHome();
 }
 
 
@@ -1319,6 +1424,7 @@ function initQuizState(mode, qArray) {
     session.partialCount = 0;
     session.examMode = false;
     session.examAnswers = [];
+    session.note = '';
     persistQuizState();
     document.getElementById('btn-export-markdown').classList.add('hidden');
     document.getElementById('validation-msg').classList.add('hidden');
@@ -1824,6 +1930,7 @@ function endQuiz(finished = false) {
         document.getElementById('results-title').textContent = session.mode === 'gr20' ? "🏁 Arrivée du GR20" : "🏁 Bilan de la session";
         document.getElementById('final-score').textContent = session.score;
         document.getElementById('final-total').textContent = session.questions.length;
+        document.getElementById('session-note').value = session.note || '';
         const examTimeResult = document.getElementById('exam-time-result');
         examTimeResult.classList.toggle('hidden', !session.examMode);
         if (session.examMode) examTimeResult.textContent = `Temps : ${formatDuration(Date.now() - session.startedAt)} · ${session.answeredCount} réponse(s) enregistrée(s)`;
@@ -1878,13 +1985,176 @@ function formatDuration(milliseconds) {
     return minutes < 1 ? '< 1 min' : `${minutes} min`;
 }
 
+function getStatsFilters() {
+    const period = document.getElementById('stats-period-filter')?.value || 'all';
+    const subject = document.getElementById('stats-subject-filter')?.value || 'all';
+    const tag = document.getElementById('stats-tag-filter')?.value || 'all';
+    const sort = document.getElementById('stats-subject-sort')?.value || 'name';
+    const comparisonPeriod = Number(document.getElementById('comparison-period')?.value || 7);
+    return { period, subject, tag, sort, comparisonPeriod };
+}
+
+function updateStatsFilterOptions() {
+    const subjectSelect = document.getElementById('stats-subject-filter');
+    const tagSelect = document.getElementById('stats-tag-filter');
+    if (!subjectSelect || !tagSelect) return;
+    const currentSubject = subjectSelect.value || 'all';
+    const currentTag = tagSelect.value || 'all';
+    const subjects = Object.keys(appData).filter(subject => !subject.startsWith('_')).sort();
+    const tags = new Set();
+    subjects.forEach(subject => (appData[subject].questions || []).forEach(question => (question.tags || []).forEach(tag => tags.add(tag))));
+    subjectSelect.innerHTML = '<option value="all">Toutes les matières</option>' + subjects.map(subject => `<option value="${subject.replaceAll('"', '&quot;')}">${subject}</option>`).join('');
+    tagSelect.innerHTML = '<option value="all">Tous les chapitres</option>' + [...tags].sort().map(tag => `<option value="${tag.replaceAll('"', '&quot;')}">${tag}</option>`).join('');
+    subjectSelect.value = subjects.includes(currentSubject) ? currentSubject : 'all';
+    tagSelect.value = tags.has(currentTag) ? currentTag : 'all';
+}
+
+function matchesStatsFilters(subject, question, filters) {
+    return (filters.subject === 'all' || filters.subject === subject) && (filters.tag === 'all' || (question.tags || []).includes(filters.tag));
+}
+
+function resetStatsFilters() {
+    document.getElementById('stats-period-filter').value = 'all';
+    document.getElementById('stats-subject-filter').value = 'all';
+    document.getElementById('stats-tag-filter').value = 'all';
+    document.getElementById('stats-subject-sort').value = 'name';
+    renderProfileDashboard();
+}
+
+function toggleFocusMode() {
+    const enabled = document.body.classList.toggle('focus-mode');
+    const button = document.getElementById('focus-mode-btn');
+    button.textContent = enabled ? '◉ Quitter le mode réduit' : '◉ Faible distraction';
+    button.setAttribute('aria-pressed', String(enabled));
+}
+
+function renderSessionHistory() {
+    const container = document.getElementById('session-history');
+    if (!container) return;
+    const query = (document.getElementById('session-history-search')?.value || '').toLowerCase().trim();
+    const sessions = [...(appData._sessions || [])].reverse().filter(record => {
+        const haystack = `${record.subject} ${record.mode} ${record.status} ${new Date(record.at).toLocaleString('fr-FR')}`.toLowerCase();
+        return !query || haystack.includes(query);
+    }).slice(0, 20);
+    container.innerHTML = '';
+    if (!sessions.length) {
+        container.textContent = query ? 'Aucune session ne correspond à cette recherche.' : 'Aucune session enregistrée pour le moment.';
+        return;
+    }
+    sessions.forEach(sessionRecord => {
+        const row = document.createElement('div');
+        row.className = 'session-row';
+        const date = new Date(sessionRecord.at).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' });
+        const status = sessionRecord.status === 'abandoned' ? 'abandonnée' : sessionRecord.status === 'timeout' ? 'temps écoulé' : 'terminée';
+        const left = document.createElement('span');
+        const dateText = document.createElement('strong');
+        dateText.textContent = date;
+        const subjectText = document.createElement('small');
+        subjectText.textContent = `${sessionRecord.subject} · ${status}`;
+        left.append(dateText, subjectText);
+        const right = document.createElement('span');
+        const scoreText = document.createElement('strong');
+        scoreText.textContent = `${sessionRecord.score}/${sessionRecord.total}`;
+        const detailText = document.createElement('small');
+        detailText.textContent = `${sessionRecord.correct} correcte(s) · ${formatDuration(sessionRecord.duration)}${sessionRecord.note ? ` · ${sessionRecord.note}` : ''}`;
+        right.append(scoreText, detailText);
+        row.append(left, right);
+        container.appendChild(row);
+    });
+}
+
+function getActivityWindow(days, offset = 0) {
+    const end = Date.now() - offset * days * 24 * 60 * 60 * 1000;
+    const start = end - days * 24 * 60 * 60 * 1000;
+    return (appData._activity || []).filter(item => Number(item.at) >= start && Number(item.at) < end);
+}
+
+function renderPeriodComparison(days) {
+    const container = document.getElementById('period-comparison-content');
+    if (!container) return;
+    const current = getActivityWindow(days, 0);
+    const previous = getActivityWindow(days, 1);
+    const summarize = entries => ({
+        attempts: entries.length,
+        correct: entries.filter(entry => entry.correct).length,
+        minutes: entries.reduce((sum, entry) => sum + (Number(entry.responseTime) || 0), 0) / 60000
+    });
+    const currentStats = summarize(current);
+    const previousStats = summarize(previous);
+    const rate = stats => stats.attempts ? Math.round(stats.correct / stats.attempts * 100) : 0;
+    const delta = (value, previousValue) => `${value - previousValue >= 0 ? '+' : ''}${value - previousValue}`;
+    container.innerHTML = `<span>Questions : <strong>${currentStats.attempts}</strong> <small>(${delta(currentStats.attempts, previousStats.attempts)})</small></span><span>Précision : <strong>${rate(currentStats)}%</strong> <small>(${delta(rate(currentStats), rate(previousStats))} pts)</small></span><span>Temps : <strong>${Math.round(currentStats.minutes)} min</strong> <small>(${delta(Math.round(currentStats.minutes), Math.round(previousStats.minutes))} min)</small></span>`;
+}
+
+function renderAdvancedDashboard(filters, now) {
+    const subjectData = new Map();
+    const tagData = {};
+    const activities = appData._activity || [];
+    Object.keys(appData).forEach(subject => {
+        if (subject.startsWith('_')) return;
+        const questions = appData[subject].questions.filter(question => matchesStatsFilters(subject, question, filters));
+        const subjectActivities = activities.filter(activity => activity.subject === subject);
+        subjectData.set(subject, { attempts: subjectActivities.length, correct: subjectActivities.filter(activity => activity.correct).length });
+        questions.forEach(question => (question.tags || []).forEach(tag => {
+            if (!tagData[tag]) tagData[tag] = { attempts: 0, due: 0, stable: 0, total: 0 };
+            const data = tagData[tag];
+            data.total++;
+            data.attempts += question.stats.attempts || 0;
+            if (!question.sm2.nextReview || question.sm2.nextReview <= now) data.due++;
+            if ((question.sm2.successStreak || 0) >= 3 && (question.sm2.interval || 0) >= 7) data.stable++;
+        }));
+    });
+
+    const chapterUrgency = Object.entries(tagData).sort((a, b) => (b[1].due - a[1].due) || (a[1].attempts - b[1].attempts));
+    const urgencyContainer = document.getElementById('chapter-urgency-list');
+    if (urgencyContainer) urgencyContainer.innerHTML = chapterUrgency.slice(0, 8).map(([tag, data]) => `<div class="q-mini-item danger"><span>${tag}</span><strong>${data.due} due(s)</strong></div>`).join('') || '<span>Aucune donnée.</span>';
+
+    const fastAnswers = activities.filter(activity => Number(activity.responseTime) > 0 && Number(activity.responseTime) < 2500 && !activity.correct).sort((a, b) => a.responseTime - b.responseTime);
+    const fastContainer = document.getElementById('fast-answer-list');
+    if (fastContainer) fastContainer.innerHTML = fastAnswers.slice(0, 8).map(activity => `<div class="q-mini-item danger"><span>${activity.subject}</span><strong>${(activity.responseTime / 1000).toFixed(1)} s</strong></div>`).join('') || '<span>Aucune réponse suspectement rapide.</span>';
+
+    const stabilityContainer = document.getElementById('stability-list');
+    if (stabilityContainer) stabilityContainer.innerHTML = Object.entries(tagData).sort((a, b) => b[1].stable - a[1].stable).slice(0, 8).map(([tag, data]) => `<div class="q-mini-item success"><span>${tag}</span><strong>${data.stable}/${data.total} stable(s)</strong></div>`).join('') || '<span>Aucune notion stabilisée pour le moment.</span>';
+
+    const effortContainer = document.getElementById('effort-gap-list');
+    if (effortContainer) {
+        effortContainer.innerHTML = [...subjectData.entries()].filter(([, data]) => data.attempts >= 3).sort((a, b) => (b[1].attempts - a[1].attempts) || (a[1].correct / a[1].attempts - b[1].correct / b[1].attempts)).slice(0, 8).map(([subject, data]) => `<div class="q-mini-item warning"><span>${subject} · ${data.attempts} tentatives</span><strong>${Math.round(data.correct / data.attempts * 100)}%</strong></div>`).join('') || '<span>Pas encore assez de données.</span>';
+    }
+
+    const prerequisiteContainer = document.getElementById('prerequisite-graph');
+    if (prerequisiteContainer) {
+        const edges = [];
+        Object.keys(appData).forEach(subject => {
+            if (subject.startsWith('_')) return;
+            (appData[subject].prerequisites || []).forEach(prerequisite => edges.push(`<div class="q-mini-item"><span>${prerequisite}</span><strong>→ ${subject}</strong></div>`));
+        });
+        prerequisiteContainer.innerHTML = edges.join('') || '<span>Aucun prérequis défini. Ajoute-les depuis l’onglet de création.</span>';
+    }
+
+    const semesterContainer = document.getElementById('semester-evolution');
+    if (semesterContainer) {
+        const semester = getActivityWindow(180);
+        const firstHalf = semester.filter(item => item.at < Date.now() - 90 * 24 * 60 * 60 * 1000);
+        const lastHalf = semester.filter(item => item.at >= Date.now() - 90 * 24 * 60 * 60 * 1000);
+        const success = entries => entries.length ? Math.round(entries.filter(item => item.correct).length / entries.length * 100) : 0;
+        semesterContainer.innerHTML = `<span>Activité : <strong>${semester.length}</strong> réponses</span><span>Début : <strong>${success(firstHalf)}%</strong></span><span>Récent : <strong>${success(lastHalf)}%</strong></span><span>Évolution : <strong>${success(lastHalf) - success(firstHalf) >= 0 ? '+' : ''}${success(lastHalf) - success(firstHalf)} pts</strong></span>`;
+    }
+}
+
 function renderProfileDashboard() {
+    updateStatsFilterOptions();
+    const filters = getStatsFilters();
+    renderPeriodComparison(filters.comparisonPeriod);
     let totalAttempts = 0, totalCorrect = 0, totalPartial = 0, totalQuestions = 0, masteredQuestions = 0;
     let globalDue = 0, globalUnseen = 0;
     let strongQuestions = [], weakQuestions = [];
     let tagsMap = {};
     const now = Date.now();
-    const recentActivity = (appData._activity || []).filter(item => now - Number(item.at) <= 7 * 24 * 60 * 60 * 1000);
+    const periodLimit = filters.period === 'all' ? Infinity : Number(filters.period) * 24 * 60 * 60 * 1000;
+    const recentActivity = (appData._activity || []).filter(item => {
+        const subjectMatches = filters.subject === 'all' || item.subject === filters.subject;
+        return subjectMatches && now - Number(item.at) <= periodLimit;
+    });
     const recentAttempts = recentActivity.length;
     const recentCorrect = recentActivity.filter(item => item.correct).length;
     const recentMinutes = recentActivity.reduce((total, item) => total + (Number(item.responseTime) || 0), 0) / 60000;
@@ -1893,21 +2163,40 @@ function renderProfileDashboard() {
     const container = document.getElementById('profile-content');
     container.innerHTML = ""; 
     const frag = document.createDocumentFragment();
-    
-    Object.keys(appData).forEach(subject => {
+    const subjects = Object.keys(appData).filter(subject => !subject.startsWith('_') && (filters.subject === 'all' || filters.subject === subject));
+    const subjectMetrics = subject => {
+        const questions = appData[subject].questions.filter(question => matchesStatsFilters(subject, question, filters));
+        const attempts = questions.reduce((sum, question) => sum + (question.stats?.attempts || 0), 0);
+        const correct = questions.reduce((sum, question) => sum + (question.stats?.correct || 0), 0);
+        const due = questions.filter(question => !question.sm2.nextReview || question.sm2.nextReview <= now).length;
+        const progress = questions.length ? questions.filter(question => question.sm2.interval > 10).length / questions.length : 0;
+        return { attempts, correct, due, progress, accuracy: attempts ? correct / attempts : 0 };
+    };
+    subjects.sort((a, b) => {
+        const aMetrics = subjectMetrics(a);
+        const bMetrics = subjectMetrics(b);
+        if (filters.sort === 'urgency') return bMetrics.due - aMetrics.due;
+        if (filters.sort === 'progress') return bMetrics.progress - aMetrics.progress;
+        if (filters.sort === 'accuracy') return bMetrics.accuracy - aMetrics.accuracy;
+        return a.localeCompare(b, 'fr');
+    });
+
+    subjects.forEach(subject => {
         if(subject.startsWith('_')) return;
+        if (filters.subject !== 'all' && filters.subject !== subject) return;
         const s = appData[subject];
+        const filteredQuestions = s.questions.filter(question => matchesStatsFilters(subject, question, filters));
         let subDue = 0, subUnseen = 0;
         
-        const subjectAttempts = s.questions.reduce((total, question) => total + (question.stats?.attempts || 0), 0);
-        const subjectCorrect = s.questions.reduce((total, question) => total + (question.stats?.correct || 0), 0);
-        const subjectPartial = s.questions.reduce((total, question) => total + (question.stats?.partial || 0), 0);
+        const subjectAttempts = filteredQuestions.reduce((total, question) => total + (question.stats?.attempts || 0), 0);
+        const subjectCorrect = filteredQuestions.reduce((total, question) => total + (question.stats?.correct || 0), 0);
+        const subjectPartial = filteredQuestions.reduce((total, question) => total + (question.stats?.partial || 0), 0);
         totalAttempts += subjectAttempts;
         totalCorrect += subjectCorrect;
         totalPartial += subjectPartial;
-        totalQuestions += s.questions.length;
+        totalQuestions += filteredQuestions.length;
         
-        s.questions.forEach(q => {
+        filteredQuestions.forEach(q => {
             // Stats globales et matières
             if (q.stats.attempts === 0) { globalUnseen++; subUnseen++; }
             else if (q.sm2.nextReview <= now) { globalDue++; subDue++; }
@@ -1923,6 +2212,7 @@ function renderProfileDashboard() {
             // Stats par Tags
             if (q.tags) {
                 q.tags.forEach(tag => {
+                    if (filters.tag !== 'all' && tag !== filters.tag) return;
                     if (!tagsMap[tag]) tagsMap[tag] = { total: 0, attempts: 0, correct: 0, due: 0 };
                     tagsMap[tag].total++;
                     tagsMap[tag].attempts += q.stats.attempts;
@@ -1971,6 +2261,13 @@ function renderProfileDashboard() {
         <div class="stat-card"><h3>Temps moyen</h3><div class="value">${averageResponse}s</div><small>${Math.round(recentMinutes)} min étudiées cette semaine</small></div>
         <div class="stat-card"><h3>Jours actifs</h3><div class="value">${activeDays}/7</div><small>${masteredQuestions} questions bien ancrées</small></div>
     `;
+
+    const summary = document.getElementById('dashboard-summary');
+    if (summary) {
+        const dueCount = Object.keys(appData).filter(subject => !subject.startsWith('_')).reduce((total, subject) => total + appData[subject].questions.filter(question => matchesStatsFilters(subject, question, filters) && (!question.sm2.nextReview || question.sm2.nextReview <= now)).length, 0);
+        const latestSession = [...(appData._sessions || [])].sort((a, b) => b.at - a.at)[0];
+        summary.innerHTML = `<span><strong>${dueCount}</strong> à réviser</span><span><strong>${getDailyActivity().length}/${appData._player.dailyGoal || 10}</strong> objectif du jour</span><span><strong>${getStudyStreak()}</strong> jour(s) de série</span><span>Dernière session : <strong>${latestSession ? new Date(latestSession.at).toLocaleDateString('fr-FR') : 'aucune'}</strong></span>`;
+    }
 
     const chart = document.getElementById('activity-chart');
     if (chart) {
@@ -2025,35 +2322,7 @@ function renderProfileDashboard() {
         });
     }
 
-    const historyContainer = document.getElementById('session-history');
-    if (historyContainer) {
-        historyContainer.innerHTML = '';
-        const sessions = [...(appData._sessions || [])].reverse().slice(0, 10);
-        if (!sessions.length) {
-            historyContainer.textContent = 'Aucune session enregistrée pour le moment.';
-        } else {
-            sessions.forEach(sessionRecord => {
-                const row = document.createElement('div');
-                row.className = 'session-row';
-                const date = new Date(sessionRecord.at).toLocaleString('fr-FR', { dateStyle: 'short', timeStyle: 'short' });
-                const status = sessionRecord.status === 'abandoned' ? 'abandonnée' : sessionRecord.status === 'timeout' ? 'temps écoulé' : 'terminée';
-                const left = document.createElement('span');
-                const dateText = document.createElement('strong');
-                dateText.textContent = date;
-                const subjectText = document.createElement('small');
-                subjectText.textContent = `${sessionRecord.subject} · ${status}`;
-                left.append(dateText, subjectText);
-                const right = document.createElement('span');
-                const scoreText = document.createElement('strong');
-                scoreText.textContent = `${sessionRecord.score}/${sessionRecord.total}`;
-                const detailText = document.createElement('small');
-                detailText.textContent = `${sessionRecord.correct} correcte(s) · ${formatDuration(sessionRecord.duration)}`;
-                right.append(scoreText, detailText);
-                row.append(left, right);
-                historyContainer.appendChild(row);
-            });
-        }
-    }
+    renderSessionHistory();
 
     // Rendu des Tags (Maîtrise par chapitre)
     const tagsArray = Object.keys(tagsMap).map(k => ({ name: k, ...tagsMap[k] }));
@@ -2071,10 +2340,12 @@ function renderProfileDashboard() {
     else {
         tagsArray.slice(0, 10).forEach(tag => {
             const tagRate = tag.attempts > 0 ? Math.round((tag.correct / tag.attempts) * 100) : 0;
+            const coverage = Math.min(1, tag.attempts / Math.max(1, tag.total * 3));
+            const masteryScore = Math.round(tagRate * (0.7 + 0.3 * coverage));
             const row = document.createElement('div'); row.className = 'tag-stat-row';
             row.innerHTML = `
                 <strong style="color: var(--primary); flex: 1;">${tag.name}</strong>
-                <span style="flex: 1; text-align: center;">${tagRate}% <small>(${tag.total} Q)</small></span>
+                <span style="flex: 1; text-align: center;">Maîtrise ${masteryScore}% <small>(${tagRate}% réussite, ${tag.total} Q)</small></span>
                 <span style="flex: 1; color: ${tag.due > 0 ? 'var(--warning)' : 'var(--text-muted)'};">🔴 ${tag.due} à revoir</span>
             `;
             tagContainer.appendChild(row);
@@ -2108,6 +2379,24 @@ function renderProfileDashboard() {
 
     buildMiniList(strongQuestions, 'strong-questions-list', 'success', "Continue de t'entraîner pour débloquer cette section.");
     buildMiniList(weakQuestions, 'weak-questions-list', 'danger', "Aucun point de friction détecté pour le moment !");
+
+    const forgottenContainer = document.getElementById('forgotten-questions-list');
+    if (forgottenContainer) {
+        const forgotten = [];
+        Object.keys(appData).forEach(subject => {
+            if (subject.startsWith('_')) return;
+            appData[subject].questions.forEach(question => {
+                if (!matchesStatsFilters(subject, question, filters) || !question.stats.attempts) return;
+                const lastActivity = (appData._activity || []).filter(item => item.subject === subject && item.questionId === question.id).sort((a, b) => b.at - a.at)[0];
+                const daysSince = lastActivity ? Math.floor((now - lastActivity.at) / (24 * 60 * 60 * 1000)) : 999;
+                if (daysSince >= 14) forgotten.push({ question, subject, daysSince });
+            });
+        });
+        forgotten.sort((a, b) => b.daysSince - a.daysSince);
+        forgottenContainer.innerHTML = forgotten.length ? forgotten.slice(0, 10).map(item => `<div class="q-mini-item danger"><span title="${item.question.q}">${item.subject} · ${item.question.q}</span><strong>${item.daysSince} j</strong></div>`).join('') : '<span style="color:var(--text-muted);">Aucune question oubliée depuis plus de 14 jours.</span>';
+    }
+
+    renderAdvancedDashboard(filters, now);
 
     renderMath([document.getElementById('profile-view')]);
 }
@@ -2434,6 +2723,7 @@ async function loadCourseData(courseTitle, dataUrl) {
     }
 }
 // LANCEMENT DE L'APPLICATION
+initSidebarControls();
 document.addEventListener('keydown', handleQuizKeyboard);
 document.addEventListener('visibilitychange', () => {
     if (document.hidden) {
