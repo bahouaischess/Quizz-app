@@ -63,8 +63,9 @@ function validateSubjectJson(rawSubject) {
         if (!rawQuestion || typeof rawQuestion !== 'object') throw new Error(`${position} : objet invalide.`);
         const text = typeof rawQuestion.q === 'string' ? rawQuestion.q.trim() : typeof rawQuestion.question === 'string' ? rawQuestion.question.trim() : '';
         if (!text) throw new Error(`${position} : le champ "q" est obligatoire.`);
-        if (questionTexts.has(text)) throw new Error(`${position} : énoncé dupliqué.`);
-        questionTexts.add(text);
+        const normalizedText = text.toLowerCase().replace(/\s+/g, ' ');
+        if (questionTexts.has(normalizedText)) throw new Error(`${position} : énoncé dupliqué dans ce fichier.`);
+        questionTexts.add(normalizedText);
         if (!Array.isArray(rawQuestion.options) || rawQuestion.options.length < 2) throw new Error(`${position} : il faut au moins deux options.`);
         const options = rawQuestion.options.map((rawOption, optionIndex) => {
             if (!rawOption || typeof rawOption.text !== 'string' || !rawOption.text.trim()) throw new Error(`${position}, option ${optionIndex + 1} : texte manquant.`);
@@ -94,7 +95,16 @@ function validateSubjectJson(rawSubject) {
 }
 
 async function createSubjectFromValidatedJson(subjectData) {
-    if (appData[subjectData.name]) throw new Error(`La matière "${subjectData.name}" existe déjà.`);
+    const normalizedName = subjectData.name.toLowerCase().replace(/\s+/g, ' ');
+    const existingSubject = Object.keys(appData).find(subject => !subject.startsWith('_') && subject.toLowerCase().replace(/\s+/g, ' ') === normalizedName);
+    if (existingSubject) throw new Error(`La matière "${existingSubject}" existe déjà.`);
+    const existingQuestions = new Set();
+    Object.keys(appData).forEach(subject => {
+        if (subject.startsWith('_')) return;
+        appData[subject].questions.forEach(question => existingQuestions.add(question.q.toLowerCase().replace(/\s+/g, ' ')));
+    });
+    const duplicateQuestion = subjectData.questions.find(question => existingQuestions.has(question.q.toLowerCase().replace(/\s+/g, ' ')));
+    if (duplicateQuestion) throw new Error(`La question "${duplicateQuestion.q}" existe déjà dans une autre matière.`);
     if (!appData._folders.includes(subjectData.folder)) appData._folders.push(subjectData.folder);
     appData[subjectData.name] = {
         folder: subjectData.folder,
@@ -686,11 +696,15 @@ function populateFolderSelects() {
 async function addSubject() {
     const name = document.getElementById('new-subject-name').value.trim();
     const folder = document.getElementById('new-subject-folder').value || DEFAULT_FOLDER;
-    if (name && !appData[name]) {
+    const normalizedName = name.toLowerCase().replace(/\s+/g, ' ');
+    const alreadyExists = Object.keys(appData).some(subject => !subject.startsWith('_') && subject.toLowerCase().replace(/\s+/g, ' ') === normalizedName);
+    if (name && !alreadyExists && !name.startsWith('_')) {
         appData[name] = { folder: folder, questions: [], stats: { attempts: 0, correct: 0 }, dailyValidations: {} };
         await saveData();
         document.getElementById('new-subject-name').value = ""; 
         renderHome();
+    } else if (name) {
+        customAlert('Matière', 'Une matière portant ce nom existe déjà.');
     }
 }
 
@@ -713,7 +727,9 @@ async function createSubjectFromApp() {
         message.style.color = 'var(--danger)';
         return;
     }
-    if (appData[name] || name.startsWith('_')) {
+    const normalizedName = name.toLowerCase().replace(/\s+/g, ' ');
+    const alreadyExists = Object.keys(appData).some(subject => !subject.startsWith('_') && subject.toLowerCase().replace(/\s+/g, ' ') === normalizedName);
+    if (alreadyExists || name.startsWith('_')) {
         message.textContent = 'Cette matière existe déjà ou ce nom est réservé.';
         message.style.color = 'var(--danger)';
         return;
@@ -741,6 +757,7 @@ async function createSubjectFromApp() {
 // -----------------------------------------------------
 let currentSubject = "";
 let openFolders = new Set();
+let editingQuestionRef = null;
 let activeTagsForNewQuestion = new Set(), activeFilterTags = new Set(), globalCustomFilterTags = new Set();
 
 const session = {
@@ -2556,9 +2573,21 @@ async function toggleFavorite() {
     await saveData(); // Sauvegarde immédiate dans Supabase
 }
 
-function openEditModal() {
+function getQuestionForEditing() {
+    if (editingQuestionRef) {
+        const subjectData = appData[editingQuestionRef.subject];
+        const question = subjectData?.questions.find(item => item.id === editingQuestionRef.questionId);
+        if (question) return { question, subject: editingQuestionRef.subject };
+    }
     const qItem = session.questions[session.currentIndex];
-    const qData = qItem.originalRef;
+    return qItem ? { question: qItem.originalRef, subject: qItem.subjectRef } : null;
+}
+
+function openEditModal(subject = null, questionId = null) {
+    editingQuestionRef = subject && questionId ? { subject, questionId } : null;
+    const editingTarget = getQuestionForEditing();
+    if (!editingTarget) return customAlert('Édition', 'Cette question est introuvable.');
+    const qData = editingTarget.question;
     
     // Pré-remplissage des champs avec les données actuelles
     document.getElementById('edit-q-text').value = qData.q;
@@ -2616,8 +2645,9 @@ function addOptionToEdit(text = "", isCorrect = false) {
 }
 
 async function saveEditedQuestion() {
-    const qItem = session.questions[session.currentIndex];
-    const qData = qItem.originalRef;
+    const editingTarget = getQuestionForEditing();
+    if (!editingTarget) return customAlert('Édition', 'Cette question est introuvable.');
+    const qData = editingTarget.question;
     
     // Récupération des textes
     const newText = document.getElementById('edit-q-text').value.trim();
@@ -2628,8 +2658,7 @@ async function saveEditedQuestion() {
     
     qData.q = newText;
     qData.explanation = document.getElementById('edit-q-explanation').value.trim();
-    
-    // Traitement des tags
+
     const tagsRaw = document.getElementById('edit-q-tags').value;
     qData.tags = tagsRaw.split(',').map(t => t.trim()).filter(t => t);
     
@@ -2656,16 +2685,25 @@ async function saveEditedQuestion() {
         return;
     }
     
+    const duplicate = appData[editingTarget.subject].questions.find(question => question.id !== qData.id && question.q.trim().toLowerCase() === newText.toLowerCase());
+    if (duplicate) return customAlert('Édition', 'Une autre question de cette matière possède déjà cet énoncé.');
+
     qData.options = newOptions;
+    qData.id = qData.id || getQuestionId(editingTarget.subject, qData, 0);
     
     await saveData(); // Synchronisation Supabase
     closeEditModal();
-    customAlert("Succès", "La question a été mise à jour et sauvegardée !");
+    customAlert("Succès", "La question a été mise à jour et sauvegardée. Son historique a été conservé.");
     
     // Mise à jour visuelle immédiate dans le quiz
-    document.getElementById('quiz-question').textContent = qData.q;
-    if (qData.explanation) document.getElementById('explanation-text').textContent = qData.explanation;
-    renderMath([document.getElementById('quiz-view')]);
+    const quizQuestion = document.getElementById('quiz-question');
+    if (quizQuestion && session.questions[session.currentIndex]?.originalRef.id === qData.id) {
+        quizQuestion.textContent = qData.q;
+        document.getElementById('explanation-text').textContent = qData.explanation || '';
+        renderMath([document.getElementById('quiz-view')]);
+    }
+    if (document.getElementById('favorites-view').classList.contains('hidden') === false) renderFavorites();
+    editingQuestionRef = null;
 }
 
 // -----------------------------------------------------
@@ -2730,12 +2768,18 @@ function renderFavorites() {
                     card.appendChild(explanationBox);
                 }
 
-                // Bouton de suppression des favoris
+                const btnEdit = document.createElement('button');
+                btnEdit.className = 'secondary';
+                btnEdit.style = "margin-top: 15px; padding: 6px 12px; font-size: 0.85em; margin-right: 8px;";
+                btnEdit.textContent = '✏️ Modifier';
+                btnEdit.onclick = () => openEditModal(subject, q.id);
+                card.appendChild(btnEdit);
+
                 const btnRemove = document.createElement('button');
                 btnRemove.className = 'btn btn-secondary';
                 btnRemove.style = "margin-top: 15px; padding: 6px 12px; font-size: 0.85em;";
                 btnRemove.innerHTML = "❌ Retirer des favoris";
-                btnRemove.onclick = () => removeFavoriteFromList(subject, q.q);
+                btnRemove.onclick = () => removeFavoriteFromList(subject, q.id);
 
                 card.appendChild(btnRemove);
                 frag.appendChild(card);
@@ -2786,10 +2830,9 @@ function handleQuizKeyboard(event) {
     }
 }
 
-async function removeFavoriteFromList(subject, questionText) {
+async function removeFavoriteFromList(subject, questionId) {
     if (appData[subject]) {
-        // On trouve la question exacte par son texte
-        const targetQ = appData[subject].questions.find(q => q.q === questionText);
+        const targetQ = appData[subject].questions.find(q => q.id === questionId);
         if (targetQ) {
             targetQ.isFavorite = false;
             await saveData(); // Synchronisation Supabase
