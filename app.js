@@ -2603,11 +2603,15 @@ function openEditModal(subject = null, questionId = null) {
         addOptionToEdit(opt.text, opt.isCorrect);
     });
     
-    document.getElementById('edit-question-modal').style.display = 'block';
+    const modal = document.getElementById('edit-question-modal');
+    modal.classList.remove('hidden');
+    modal.style.display = 'block';
 }
 
 function closeEditModal() {
-    document.getElementById('edit-question-modal').style.display = 'none';
+    const modal = document.getElementById('edit-question-modal');
+    modal.classList.add('hidden');
+    modal.style.display = 'none';
 }
 
 function addOptionToEdit(text = "", isCorrect = false) {
