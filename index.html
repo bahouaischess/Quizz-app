@@ -135,6 +135,28 @@
                     <button onclick="createSubjectFromApp()">Créer la matière</button>
                     <div id="create-subject-message" class="form-message"></div>
                 </div>
+                <div class="card">
+                    <h2>Importer une matière avec ses questions</h2>
+                    <p class="muted">Télécharge le modèle, donne ton cours à une IA en lui demandant de respecter cette structure, puis importe le fichier JSON rempli.</p>
+                    <div class="creation-actions">
+                        <button class="secondary" type="button" onclick="downloadSubjectTemplate()">📥 Télécharger le modèle JSON</button>
+                        <label class="file-button secondary" for="subject-json-file">📄 Choisir un fichier JSON</label>
+                        <input id="subject-json-file" type="file" accept="application/json,.json" onchange="importSubjectJsonFile(event)">
+                    </div>
+                    <label for="subject-json-text">Ou colle directement le JSON</label>
+                    <textarea id="subject-json-text" rows="12" placeholder="Colle ici le contenu JSON du modèle..."></textarea>
+                    <button type="button" onclick="importSubjectJsonText()">✅ Vérifier et créer la matière</button>
+                    <div id="subject-json-message" class="form-message" role="status"></div>
+                    <details class="json-help">
+                        <summary>Voir les règles acceptées</summary>
+                        <ul>
+                            <li>Le fichier doit être du JSON valide, sans commentaires JavaScript.</li>
+                            <li>La matière doit avoir un nom et une liste <code>questions</code>.</li>
+                            <li>Chaque question doit avoir un énoncé, au moins deux options, une bonne réponse et une explication.</li>
+                            <li>Une option utilise <code>isCorrect: true</code> pour indiquer la bonne réponse.</li>
+                        </ul>
+                    </details>
+                </div>
             </div>
 
             <!-- COMMUNAUTÉ (Nouveau) -->
