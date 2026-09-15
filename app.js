@@ -1708,7 +1708,8 @@ function renderQuestion() {
         
         const input = document.createElement('input');
         input.type = inputType;
-        if(inputName) input.name = "q_option";
+        input.id = `quiz-option-${opt.originalIndex}`;
+        input.name = "q_option";
         input.setAttribute('data-index', opt.originalIndex);
         
         const span = document.createElement('span');
@@ -2617,12 +2618,16 @@ function addOptionToEdit(text = "", isCorrect = false) {
     
     const checkCorrect = document.createElement('input');
     checkCorrect.type = 'checkbox';
+    checkCorrect.id = `edit-option-correct-${container.children.length}`;
+    checkCorrect.name = 'edit-option-correct';
     checkCorrect.checked = isCorrect;
     checkCorrect.className = "edit-opt-correct";
     checkCorrect.style.transform = "scale(1.5)";
     
     const inputTxt = document.createElement('input');
     inputTxt.type = 'text';
+    inputTxt.id = `edit-option-text-${container.children.length}`;
+    inputTxt.name = 'edit-option-text';
     inputTxt.style.flex = "1";
     inputTxt.value = text;
     inputTxt.className = "edit-opt-text";
