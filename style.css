@@ -60,6 +60,12 @@ textarea { display: block; width: 100%; padding: 12px; margin: 8px 0 15px 0; bor
 .creation-guide ol { color: var(--text-muted); line-height: 1.7; }
 .muted { color: var(--text-muted); }
 .form-message { min-height: 1.4em; margin-top: 12px; font-weight: bold; }
+.creation-actions { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; margin-bottom: 15px; }
+.creation-actions input[type="file"] { display: none; }
+.file-button { display: inline-flex; align-items: center; justify-content: center; padding: 12px 20px; border-radius: var(--radius); cursor: pointer; font-weight: bold; color: var(--text-main); }
+.json-help { margin-top: 15px; color: var(--text-muted); }
+.json-help summary { cursor: pointer; color: var(--primary); font-weight: bold; }
+.json-help code { color: var(--warning); }
 
 .card { background-color: var(--surface); padding: 25px; border-radius: var(--radius); margin-bottom: 25px; border: 1px solid var(--surface-light); box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
 
