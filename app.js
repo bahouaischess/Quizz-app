@@ -10,6 +10,136 @@ let dbRowId = null;
 
 const FIVE_HOURS_MS = 5 * 60 * 60 * 1000;
 const DEFAULT_FOLDER = 'Général';
+function getSubjectJsonTemplate() {
+    return {
+        __instructions: 'Champ informatif ignore par QuizzHub. Le JSON ne supporte pas les commentaires avec // ou /* */.',
+        name: 'Nom de la matière',
+        folder: 'Général',
+        description: 'Description facultative du cours',
+        prerequisites: [],
+        questions: [
+            {
+                q: 'Énoncé de la question',
+                tags: ['Chapitre'],
+                options: [
+                    { text: 'Réponse correcte', isCorrect: true },
+                    { text: 'Réponse incorrecte', isCorrect: false }
+                ],
+                explanation: 'Explique ici pourquoi la réponse est correcte et pourquoi les pièges sont faux.'
+            }
+        ]
+    };
+}
+
+function downloadSubjectTemplate() {
+    const template = JSON.stringify(getSubjectJsonTemplate(), null, 2);
+    const url = URL.createObjectURL(new Blob([template], { type: 'application/json;charset=utf-8' }));
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'modele-matiere-quizzhub.json';
+    link.click();
+    URL.revokeObjectURL(url);
+}
+
+function setSubjectJsonMessage(message, type = 'error') {
+    const element = document.getElementById('subject-json-message');
+    element.textContent = message;
+    element.style.color = type === 'success' ? 'var(--success)' : 'var(--danger)';
+}
+
+function validateSubjectJson(rawSubject) {
+    if (!rawSubject || typeof rawSubject !== 'object' || Array.isArray(rawSubject)) {
+        throw new Error('Le fichier doit contenir un objet JSON à sa racine.');
+    }
+
+    const name = typeof rawSubject.name === 'string' ? rawSubject.name.trim() : typeof rawSubject.title === 'string' ? rawSubject.title.trim() : '';
+    if (!name) throw new Error('Le champ "name" est obligatoire.');
+    if (name.startsWith('_')) throw new Error('Le nom de la matière ne peut pas commencer par "_".');
+    if (!Array.isArray(rawSubject.questions) || rawSubject.questions.length === 0) throw new Error('Le champ "questions" doit être une liste non vide.');
+
+    const questionTexts = new Set();
+    const questions = rawSubject.questions.map((rawQuestion, questionIndex) => {
+        const position = `Question ${questionIndex + 1}`;
+        if (!rawQuestion || typeof rawQuestion !== 'object') throw new Error(`${position} : objet invalide.`);
+        const text = typeof rawQuestion.q === 'string' ? rawQuestion.q.trim() : typeof rawQuestion.question === 'string' ? rawQuestion.question.trim() : '';
+        if (!text) throw new Error(`${position} : le champ "q" est obligatoire.`);
+        if (questionTexts.has(text)) throw new Error(`${position} : énoncé dupliqué.`);
+        questionTexts.add(text);
+        if (!Array.isArray(rawQuestion.options) || rawQuestion.options.length < 2) throw new Error(`${position} : il faut au moins deux options.`);
+        const options = rawQuestion.options.map((rawOption, optionIndex) => {
+            if (!rawOption || typeof rawOption.text !== 'string' || !rawOption.text.trim()) throw new Error(`${position}, option ${optionIndex + 1} : texte manquant.`);
+            if (typeof rawOption.isCorrect !== 'boolean') throw new Error(`${position}, option ${optionIndex + 1} : "isCorrect" doit être true ou false.`);
+            return { text: rawOption.text.trim(), isCorrect: rawOption.isCorrect };
+        });
+        if (!options.some(option => option.isCorrect)) throw new Error(`${position} : aucune bonne réponse.`);
+        if (!rawQuestion.explanation || typeof rawQuestion.explanation !== 'string' || !rawQuestion.explanation.trim()) throw new Error(`${position} : explication obligatoire.`);
+        return normalizeQuestion({
+            type: 'qcm',
+            q: text,
+            tags: Array.isArray(rawQuestion.tags) ? rawQuestion.tags : [],
+            options,
+            explanation: rawQuestion.explanation.trim(),
+            stats: { attempts: 0, correct: 0, partial: 0 },
+            sm2: { repetition: 0, interval: 0, easeFactor: 2.5, nextReview: 0 }
+        }, name, questionIndex);
+    });
+
+    return {
+        name,
+        folder: typeof rawSubject.folder === 'string' && rawSubject.folder.trim() ? rawSubject.folder.trim() : DEFAULT_FOLDER,
+        description: typeof rawSubject.description === 'string' ? rawSubject.description.trim() : '',
+        prerequisites: Array.isArray(rawSubject.prerequisites) ? rawSubject.prerequisites.filter(item => typeof item === 'string' && item.trim() && item !== name) : [],
+        questions
+    };
+}
+
+async function createSubjectFromValidatedJson(subjectData) {
+    if (appData[subjectData.name]) throw new Error(`La matière "${subjectData.name}" existe déjà.`);
+    if (!appData._folders.includes(subjectData.folder)) appData._folders.push(subjectData.folder);
+    appData[subjectData.name] = {
+        folder: subjectData.folder,
+        description: subjectData.description,
+        prerequisites: subjectData.prerequisites,
+        questions: subjectData.questions,
+        stats: { attempts: 0, correct: 0, partial: 0 },
+        dailyValidations: {}
+    };
+    await saveData();
+}
+
+async function importSubjectJsonText() {
+    const text = document.getElementById('subject-json-text').value.trim();
+    if (!text) return setSubjectJsonMessage('Colle un JSON ou choisis un fichier avant de lancer la vérification.');
+    let parsed;
+    try {
+        parsed = JSON.parse(text);
+    } catch (error) {
+        return setSubjectJsonMessage(`JSON invalide : ${error.message}`);
+    }
+    try {
+        const subjectData = validateSubjectJson(parsed);
+        await createSubjectFromValidatedJson(subjectData);
+        document.getElementById('subject-json-text').value = '';
+        document.getElementById('subject-json-file').value = '';
+        setSubjectJsonMessage(`Matière "${subjectData.name}" créée avec ${subjectData.questions.length} question(s) et sauvegardée.`, 'success');
+        renderCreateSubjectView();
+        renderHome();
+    } catch (error) {
+        setSubjectJsonMessage(`Import impossible : ${error.message}`);
+    }
+}
+
+function importSubjectJsonFile(event) {
+    const file = event.target.files[0];
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+        document.getElementById('subject-json-text').value = reader.result;
+        importSubjectJsonText();
+    };
+    reader.onerror = () => setSubjectJsonMessage('Impossible de lire ce fichier.');
+    reader.readAsText(file);
+}
 const ACTIVE_QUIZ_KEY = 'activeQuizState';
 
 function stableHash(value) {
