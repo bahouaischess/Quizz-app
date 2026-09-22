@@ -10,6 +10,59 @@ let dbRowId = null;
 
 const FIVE_HOURS_MS = 5 * 60 * 60 * 1000;
 const DEFAULT_FOLDER = 'Général';
+const ARCHIVE_FOLDER = 'Archive';
+
+function ensureArchiveFolder() {
+    if (!Array.isArray(appData?._folders)) {
+        appData._folders = [DEFAULT_FOLDER];
+    }
+    if (!appData._folders.includes(ARCHIVE_FOLDER)) {
+        appData._folders.push(ARCHIVE_FOLDER);
+    }
+}
+
+function isSubjectDeleted(subjectName) {
+    return Boolean(subjectName && appData?.[subjectName]?.deleted);
+}
+
+function isSubjectAvailable(subjectName) {
+    return Boolean(subjectName && !subjectName.startsWith('_') && !isSubjectDeleted(subjectName));
+}
+
+function getVisibleSubjects() {
+    return Object.keys(appData || {}).filter(subject => isSubjectAvailable(subject));
+}
+
+async function archiveSubject(subjectName) {
+    if (!appData[subjectName]) return;
+    appData[subjectName].deleted = false;
+    appData[subjectName].archived = true;
+    appData[subjectName].folder = ARCHIVE_FOLDER;
+    ensureArchiveFolder();
+    await saveData();
+    renderHome();
+    if (currentSubject === subjectName) {
+        currentSubject = '';
+        showView('home-view');
+    }
+    customAlert('Matière archivée', `La matière "${subjectName}" a été déplacée dans le dossier ${ARCHIVE_FOLDER}.`);
+}
+
+async function deleteSubject(subjectName) {
+    if (!appData[subjectName]) return;
+    appData[subjectName].deleted = true;
+    appData[subjectName].archived = false;
+    appData[subjectName].folder = ARCHIVE_FOLDER;
+    ensureArchiveFolder();
+    await saveData();
+    renderHome();
+    if (currentSubject === subjectName) {
+        currentSubject = '';
+        showView('home-view');
+    }
+    customAlert('Matière supprimée', `La matière "${subjectName}" a été supprimée pour toi et ne sera plus accessible.`);
+}
+
 function getSubjectJsonTemplate() {
     return {
         __instructions: 'Champ informatif ignore par QuizzHub. Le JSON ne supporte pas les commentaires avec // ou /* */.',
@@ -312,11 +365,12 @@ function normalizeData(rawData) {
             level: Number(rawData?._player?.level) || 1,
             dailyGoal: Math.max(1, Number(rawData?._player?.dailyGoal) || 10)
         },
-        _folders: validFolders
+        _folders: validFolders,
+        _deleted: {}
     };
     
     for (let key in rawData) {
-        if (key === '_player' || key === '_folders') continue;
+        if (key === '_player' || key === '_folders' || key === '_deleted') continue;
         let sub = rawData[key];
         
         if (sub && Array.isArray(sub.questions)) {
@@ -335,7 +389,9 @@ function normalizeData(rawData) {
                     correct: Number(sub.stats?.correct) || 0,
                     partial: Number(sub.stats?.partial) || 0
                 },
-                dailyValidations: sub.dailyValidations || {}
+                dailyValidations: sub.dailyValidations || {},
+                archived: Boolean(sub.archived || folderName === ARCHIVE_FOLDER),
+                deleted: Boolean(sub.deleted)
             };
         }
     }
@@ -660,6 +716,10 @@ async function createFolder() {
     }
 }
 
+function getHomeFolderOptions() {
+    return (appData._folders || []).filter(folder => folder !== ARCHIVE_FOLDER);
+}
+
 async function changeSubjectFolder(newFolder) {
     if (!appData[currentSubject]) return;
     if (!appData._folders.includes(newFolder)) return;
@@ -677,20 +737,25 @@ function populateFolderSelects() {
     if (selectNew) selectNew.innerHTML = "";
     if (selectChange) selectChange.innerHTML = "";
     
-    // Pour le filtre d'accueil, on sauvegarde le choix actuel pour ne pas le réinitialiser
     let filterValue = "ALL";
     if (selectFilter) {
-        filterValue = selectFilter.value; 
+        filterValue = selectFilter.value;
         selectFilter.innerHTML = '<option value="ALL">📂 Tous les dossiers</option>';
     }
-    
-    appData._folders.forEach(f => {
+
+    const regularFolders = getHomeFolderOptions();
+    const allFolders = appData._folders || [];
+    regularFolders.forEach(f => {
         if(selectNew) selectNew.add(new Option(f, f));
-        if(selectChange) selectChange.add(new Option(f, f));
         if(selectFilter) selectFilter.add(new Option(f, f));
     });
-    
-    if (selectFilter) selectFilter.value = filterValue; // On remet le choix de l'utilisateur
+    allFolders.forEach(f => {
+        if (selectChange) selectChange.add(new Option(f, f));
+    });
+    if (selectFilter && allFolders.includes(ARCHIVE_FOLDER)) {
+        selectFilter.add(new Option(`📦 ${ARCHIVE_FOLDER}`, ARCHIVE_FOLDER));
+    }
+    if (selectFilter) selectFilter.value = filterValue;
 }
 
 async function addSubject() {
@@ -1133,11 +1198,9 @@ function renderCatalogue() {
         let totalQ = 0;
         let masteredQ = 0; 
         
-        // On cherche les chapitres qui appartiennent à ce cours officiel
         Object.keys(appData).forEach(key => {
-            if (key.startsWith('_')) return;
+            if (key.startsWith('_') || appData[key]?.deleted) return;
             
-            // On vérifie l'ID du cours, peu importe dans quel dossier personnel il est rangé !
             if (appData[key].course === course.id || key.includes(course.title)) {
                 const questions = appData[key].questions || [];
                 totalQ += questions.length;
@@ -1183,6 +1246,7 @@ function renderCatalogue() {
         
 // ACCUEIL
 function renderHome() {
+    ensureArchiveFolder();
     populateFolderSelects();
     renderCatalogue(); 
 
@@ -1193,40 +1257,29 @@ function renderHome() {
     list.innerHTML = ""; 
     const frag = document.createDocumentFragment();
 
-    // Récupération des valeurs de recherche et de filtre
     const searchInput = document.getElementById('search-subject');
     const filterInput = document.getElementById('filter-folder');
     const searchQuery = searchInput ? searchInput.value.toLowerCase() : "";
     const folderFilter = filterInput ? filterInput.value : "ALL";
 
-    // 1. Initialiser les groupes (uniquement pour les dossiers correspondant au filtre)
     const subjectsByFolder = {};
-    appData._folders.forEach(folder => {
-        if (folderFilter === "ALL" || folderFilter === folder) {
-            subjectsByFolder[folder] = [];
-        }
+    const foldersToShow = appData._folders.filter(folder => folderFilter === 'ALL' || folderFilter === folder);
+    foldersToShow.forEach(folder => {
+        subjectsByFolder[folder] = [];
     });
 
-    // 2. Classer les matières en appliquant la recherche textuelle
     Object.keys(appData).forEach(subject => {
-        if (subject.startsWith('_')) return;
-        
-        // Filtre textuel (on ignore la casse)
+        if (subject.startsWith('_') || appData[subject]?.deleted) return;
         if (searchQuery && !subject.toLowerCase().includes(searchQuery)) return;
 
-        const folder = appData[subject].folder || DEFAULT_FOLDER;
-        
-        // Si le dossier est bien dans ceux qu'on a le droit d'afficher
+        const folder = appData[subject]?.folder || DEFAULT_FOLDER;
         if (subjectsByFolder[folder] !== undefined) {
             subjectsByFolder[folder].push(subject);
         }
     });
 
-    // 3. Afficher par dossier
     Object.keys(subjectsByFolder).forEach(folder => {
         const subjects = subjectsByFolder[folder];
-        
-        // Si on a tapé une recherche, on masque les dossiers qui ne contiennent aucun résultat
         if (searchQuery && subjects.length === 0) return;
 
         const folderDiv = document.createElement('div');
@@ -1251,7 +1304,7 @@ function renderHome() {
         if (subjects.length === 0) {
             const emptyMsg = document.createElement('div');
             emptyMsg.className = 'folder-empty-message';
-            emptyMsg.textContent = "Aucune matière dans ce dossier.";
+            emptyMsg.textContent = folder === ARCHIVE_FOLDER ? 'Aucune matière archivée.' : 'Aucune matière dans ce dossier.';
             subjectsContainer.appendChild(emptyMsg);
         } else {
             subjects.forEach(subject => {
@@ -1261,19 +1314,30 @@ function renderHome() {
                 const isValidated = s.dailyValidations && s.dailyValidations[getTodayStr()];
 
                 const btn = document.createElement('button');
-                btn.className = 'list-item';
-                btn.onclick = () => openSubject(subject);
-                
+                btn.type = 'button';
+                btn.className = 'list-item subject-list-item';
+                btn.setAttribute('aria-label', `Ouvrir la matière ${subject}`);
+                btn.onclick = (event) => {
+                    const target = event.target.closest('.subject-action');
+                    if (target) {
+                        event.stopPropagation();
+                        return;
+                    }
+                    openSubject(subject);
+                };
+
                 const titleSpan = document.createElement('span');
+                titleSpan.className = 'subject-item-main';
                 const boldTitle = document.createElement('b');
                 boldTitle.textContent = subject; 
                 const subTxt = document.createElement('span');
                 subTxt.style = "color:var(--text-muted); font-size:0.85em; margin-left:10px;";
                 subTxt.textContent = `(${s.questions.length} Q)`;
-                
                 titleSpan.appendChild(boldTitle);
                 titleSpan.appendChild(subTxt);
-                btn.appendChild(titleSpan);
+
+                const actionWrap = document.createElement('span');
+                actionWrap.className = 'subject-item-actions';
 
                 const badge = document.createElement('span');
                 if(isValidated) {
@@ -1281,7 +1345,41 @@ function renderHome() {
                 } else {
                     badge.className = 'badge pending'; badge.textContent = `${available} à réviser`;
                 }
-                btn.appendChild(badge);
+
+                const archiveAction = document.createElement('span');
+                archiveAction.className = 'subject-action';
+                archiveAction.textContent = folder === ARCHIVE_FOLDER ? '↩️' : '📦';
+                archiveAction.title = folder === ARCHIVE_FOLDER ? 'Désarchiver la matière' : 'Archiver la matière';
+                archiveAction.onclick = (event) => {
+                    event.stopPropagation();
+                    if (folder === ARCHIVE_FOLDER) {
+                        appData[subject].archived = false;
+                        appData[subject].deleted = false;
+                        appData[subject].folder = DEFAULT_FOLDER;
+                        saveData();
+                        renderHome();
+                        customAlert('Matière restaurée', `La matière "${subject}" est de nouveau disponible.`);
+                    } else {
+                        archiveSubject(subject);
+                    }
+                };
+
+                const deleteAction = document.createElement('span');
+                deleteAction.className = 'subject-action danger-action';
+                deleteAction.textContent = '🗑️';
+                deleteAction.title = 'Supprimer définitivement pour l’utilisateur';
+                deleteAction.onclick = (event) => {
+                    event.stopPropagation();
+                    customConfirm('Supprimer', `Supprimer définitivement "${subject}" pour toi ? Tu ne pourras plus jamais y répondre.`, async () => {
+                        await deleteSubject(subject);
+                    });
+                };
+
+                actionWrap.appendChild(badge);
+                actionWrap.appendChild(archiveAction);
+                actionWrap.appendChild(deleteAction);
+                btn.appendChild(titleSpan);
+                btn.appendChild(actionWrap);
                 subjectsContainer.appendChild(btn);
             });
         }
@@ -1323,6 +1421,10 @@ function searchCommunity() {
 
 // VUE MATIÈRE 
 function openSubject(subject) {
+    if (!appData[subject] || appData[subject].deleted) {
+        customAlert('Matière inaccessible', 'Cette matière a été supprimée et n’est plus accessible.');
+        return;
+    }
     currentSubject = subject;
     document.getElementById('current-subject-title').textContent = subject;
     const s = appData[subject];
