@@ -78,6 +78,12 @@ textarea { display: block; width: 100%; padding: 12px; margin: 8px 0 15px 0; bor
 .folder-empty-message { color: var(--text-muted); margin: 12px 0 20px; padding-left: 20px; font-style: italic; }
 .subject-folder-control { display: flex; align-items: center; gap: 12px; margin: -10px auto 25px; max-width: 900px; color: var(--text-muted); }
 .subject-folder-control select { max-width: 280px; margin: 0; }
+.subject-item-main { display: flex; align-items: center; gap: 6px; min-width: 0; }
+.subject-item-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.subject-action { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 28px; border-radius: 50%; background: rgba(255,255,255,0.04); color: var(--text-main); font-size: 1rem; cursor: pointer; transition: 0.2s; }
+.subject-action:hover { background: rgba(137, 180, 250, 0.18); transform: scale(1.05); }
+.danger-action { background: rgba(243, 139, 168, 0.12); }
+.danger-action:hover { background: rgba(243, 139, 168, 0.25); }
 .badge { padding: 5px 12px; border-radius: 12px; font-size: 0.85em; font-weight: bold; }
 .badge.validated { background-color: rgba(166, 227, 161, 0.2); color: var(--success); }
 .badge.pending { background-color: rgba(249, 226, 175, 0.2); color: var(--warning); }
