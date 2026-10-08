@@ -1321,6 +1321,8 @@ function renderHome() {
     ensureArchiveFolder();
     populateFolderSelects(); 
 
+    // Les dossiers restent fermés par défaut pour une interface sobre et aérée
+
     const resumeBox = document.getElementById('resume-quiz-box');
     if (resumeBox) resumeBox.classList.toggle('hidden', !hasActiveQuiz());
     

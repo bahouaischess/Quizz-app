@@ -121,7 +121,7 @@ const CourseAnalyzer = {
         if (name.includes('probabilité') || name.includes('probabilites') || name.includes('aléatoire') || name.includes('marche')) {
             return "Probabilités";
         }
-        if (name.includes('programmation') || name.includes('informatique') || name.includes('c :') || folder.includes('info') || folder.includes('programmation')) {
+        if (name.includes('bash') || name.includes('powershell') || name.includes('shell') || folder.includes('bash') || folder.includes('powershell') || name.includes('architecture') || name.includes('ordinateur') || name.includes('ordi') || folder.includes('architecture') || name.includes('programmation') || name.includes('informatique') || name.includes('c :') || folder.includes('info') || folder.includes('programmation')) {
             return "Informatique";
         }
         return "Algèbre Linéaire"; // Valeur par défaut
@@ -134,7 +134,11 @@ const CourseAnalyzer = {
             .replace(/^Algèbre \d+\s*:\s*/i, '')
             .replace(/^Analyse \d+\s*:\s*/i, '')
             .replace(/^Probabilités\s*:\s*/i, '')
-            .replace(/^Programmation C\s*:\s*/i, '');
+            .replace(/^Programmation C\s*:\s*/i, '')
+            .replace(/^Architecture des ordis\s*:\s*/i, '')
+            .replace(/^Architecture des ordinateurs\s*:\s*/i, '')
+            .replace(/^Bash\s*:\s*/i, '')
+            .replace(/^PowerShell\s*:\s*/i, '');
         
         return clean.trim();
     },
