@@ -15,7 +15,8 @@ const CourseAnalyzer = {
                 "Algèbre Linéaire": { id: "algebre", icon: "📐", chapters: {} },
                 "Analyse": { id: "analyse", icon: "📈", chapters: {} },
                 "Probabilités": { id: "proba", icon: "🎲", chapters: {} },
-                "Informatique": { id: "info", icon: "💻", chapters: {} }
+                "Informatique": { id: "info", icon: "💻", chapters: {} },
+                "Microéconomie": { id: "eco", icon: "📊", chapters: {} }
             },
             conceptsIndex: {}, // conceptKey -> { id, label, discipline, chapter, questions: [], types: Set, tags: Set }
             stats: {
@@ -121,7 +122,10 @@ const CourseAnalyzer = {
         if (name.includes('probabilité') || name.includes('probabilites') || name.includes('aléatoire') || name.includes('marche')) {
             return "Probabilités";
         }
-        if (name.includes('bash') || name.includes('powershell') || name.includes('shell') || folder.includes('bash') || folder.includes('powershell') || name.includes('architecture') || name.includes('ordinateur') || name.includes('ordi') || folder.includes('architecture') || name.includes('programmation') || name.includes('informatique') || name.includes('c :') || folder.includes('info') || folder.includes('programmation')) {
+        if (name.includes('micro') || name.includes('économie') || name.includes('economie') || folder.includes('micro') || folder.includes('économie') || folder.includes('economie')) {
+            return "Microéconomie";
+        }
+        if (name.includes('algo') || folder.includes('algo') || name.includes('bash') || name.includes('powershell') || name.includes('shell') || folder.includes('bash') || folder.includes('powershell') || name.includes('architecture') || name.includes('ordinateur') || name.includes('ordi') || folder.includes('architecture') || name.includes('programmation') || name.includes('informatique') || name.includes('c :') || folder.includes('info') || folder.includes('programmation')) {
             return "Informatique";
         }
         return "Algèbre Linéaire"; // Valeur par défaut
@@ -138,7 +142,11 @@ const CourseAnalyzer = {
             .replace(/^Architecture des ordis\s*:\s*/i, '')
             .replace(/^Architecture des ordinateurs\s*:\s*/i, '')
             .replace(/^Bash\s*:\s*/i, '')
-            .replace(/^PowerShell\s*:\s*/i, '');
+            .replace(/^PowerShell\s*:\s*/i, '')
+            .replace(/^Microéconomie\s*(\d+)?\s*:\s*/i, '')
+            .replace(/^Microéconomie\s*-\s*/i, '')
+            .replace(/^Algo\s*(\d+)?\s*:\s*/i, '')
+            .replace(/^Algo\s*-\s*/i, '');
         
         return clean.trim();
     },
