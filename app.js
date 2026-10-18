@@ -400,77 +400,154 @@ function normalizeData(rawData) {
     return valid;
 }
 
-// Fonction de fusion : Base locale (data.js) + Sauvegarde Cloud (Supabase)
-function mergeDataWithDefaults(cloudData, baseData) {
-    // Prise en charge des deltas légers (séparation données utilisateur / cours statiques)
-    if (cloudData && cloudData._isDelta) {
-        let merged = JSON.parse(JSON.stringify(baseData));
-        merged._player = cloudData._player || { xp: 0, level: 1 };
-        merged._activity = cloudData._activity || [];
-        merged._sessions = cloudData._sessions || [];
-        if (cloudData._mastery && window.MasteryTracker) {
-            try { localStorage.setItem(window.MasteryTracker.STORAGE_KEY, JSON.stringify(cloudData._mastery)); } catch(e) {}
+// Fonction de fusion universelle et non-destructive :
+// Fusionne : Base officielle (Cours/) + Sauvegarde Cloud/Local + Données déjà en mémoire (appData)
+function mergeDataWithDefaults(incomingData, currentBase = null) {
+    const baseCatalogue = typeof baseData !== 'undefined' ? baseData : {};
+    if (!incomingData && !currentBase) return normalizeData(baseCatalogue);
+
+    // 1. Initialiser avec le catalogue officiel
+    let merged = JSON.parse(JSON.stringify(baseCatalogue));
+
+    // 2. Préserver d'abord TOUS les cours personnalisés présents dans currentBase (mémoire locale)
+    if (currentBase && typeof currentBase === 'object') {
+        Object.keys(currentBase).forEach(sub => {
+            if (!sub.startsWith('_') && !merged[sub] && currentBase[sub]?.questions) {
+                merged[sub] = JSON.parse(JSON.stringify(currentBase[sub]));
+            }
+        });
+    }
+
+    if (!incomingData) return normalizeData(merged);
+
+    // 3. Cas A : Payload Delta Cloud Supabase (_isDelta: true)
+    if (incomingData._isDelta) {
+        // Restaurer les cours personnalisés sauvegardés dans le cloud
+        if (incomingData._customSubjects && typeof incomingData._customSubjects === 'object') {
+            Object.keys(incomingData._customSubjects).forEach(sub => {
+                if (!sub.startsWith('_') && incomingData._customSubjects[sub]?.questions) {
+                    merged[sub] = JSON.parse(JSON.stringify(incomingData._customSubjects[sub]));
+                }
+            });
         }
-        if (cloudData._progress) {
-            Object.keys(cloudData._progress).forEach(sub => {
-                if (merged[sub] && merged[sub].questions) {
-                    const prog = cloudData._progress[sub];
-                    merged[sub].questions.forEach(q => {
-                        const saved = prog[q.id] || prog[q.q];
+
+        // Progression du joueur : TOUJOURS prendre le max pour éviter toute perte
+        const pIn = incomingData._player || {};
+        const pCur = (currentBase && currentBase._player) || {};
+        merged._player = {
+            xp: Math.max(Number(pIn.xp) || 0, Number(pCur.xp) || 0, Number(merged._player?.xp) || 0),
+            level: Math.max(Number(pIn.level) || 1, Number(pCur.level) || 1, Number(merged._player?.level) || 1),
+            dailyGoal: Number(pIn.dailyGoal) || Number(pCur.dailyGoal) || 10,
+            workoutXP: Math.max(Number(pIn.workoutXP) || 0, Number(pCur.workoutXP) || 0),
+            quizXP: Math.max(Number(pIn.quizXP) || 0, Number(pCur.quizXP) || 0)
+        };
+
+        merged._activity = (incomingData._activity || currentBase?._activity || []).slice(-300);
+        merged._sessions = (incomingData._sessions || currentBase?._sessions || []).slice(-100);
+
+        if (incomingData._mastery && window.MasteryTracker) {
+            try { localStorage.setItem(window.MasteryTracker.STORAGE_KEY, JSON.stringify(incomingData._mastery)); } catch(e) {}
+        }
+
+        // Réapplication de la progression (stats & répétition espacée SM-2)
+        if (incomingData._progress) {
+            Object.keys(incomingData._progress).forEach(sub => {
+                if (merged[sub] && Array.isArray(merged[sub].questions)) {
+                    const prog = incomingData._progress[sub];
+                    merged[sub].questions.forEach((q, idx) => {
+                        const hashId = getQuestionId(sub, q, idx);
+                        const saved = prog[q.id] || prog[hashId] || prog[q.q];
                         if (saved) {
-                            if (saved.stats) q.stats = saved.stats;
-                            if (saved.sm2) q.sm2 = saved.sm2;
+                            if (saved.stats) {
+                                q.stats = {
+                                    attempts: Math.max(Number(q.stats?.attempts) || 0, Number(saved.stats.attempts) || 0),
+                                    correct: Math.max(Number(q.stats?.correct) || 0, Number(saved.stats.correct) || 0),
+                                    partial: Math.max(Number(q.stats?.partial) || 0, Number(saved.stats.partial) || 0)
+                                };
+                            }
+                            if (saved.sm2) {
+                                q.sm2 = Object.assign(q.sm2 || {}, saved.sm2);
+                            }
                         }
                     });
                 }
             });
         }
+
+        // Synchroniser tous les dossiers
+        let folders = [...(baseCatalogue._folders || []), ...(merged._folders || []), ...(incomingData._folders || [])];
+        Object.keys(merged).forEach(sub => {
+            if (!sub.startsWith('_') && merged[sub]?.folder) folders.push(merged[sub].folder);
+        });
+        if (!folders.includes(DEFAULT_FOLDER)) folders.unshift(DEFAULT_FOLDER);
+        merged._folders = [...new Set(folders.filter(f => f && typeof f === 'string'))];
+
         return normalizeData(merged);
     }
 
-    const normalizedCloud = normalizeData(cloudData);
-    let merged = JSON.parse(JSON.stringify(baseData)); 
-    merged._player = normalizedCloud._player || { xp: 0, level: 1 };
-    merged._activity = normalizedCloud._activity || [];
-    merged._sessions = normalizedCloud._sessions || [];
-    
-    // Fusion sécurisée des dossiers locaux et cloud
-    let combinedFolders = [...(baseData._folders || []), ...(normalizedCloud._folders || [])];
-    if (!combinedFolders.includes(DEFAULT_FOLDER)) combinedFolders.unshift(DEFAULT_FOLDER);
-    merged._folders = [...new Set(combinedFolders)];
+    // 4. Cas B : Sauvegarde complète (JSON local ou full backup)
+    const normalizedIn = normalizeData(incomingData);
 
-    for (let subject in baseData) {
+    const pIn = normalizedIn._player || {};
+    const pCur = (currentBase && currentBase._player) || {};
+    merged._player = {
+        xp: Math.max(Number(pIn.xp) || 0, Number(pCur.xp) || 0),
+        level: Math.max(Number(pIn.level) || 1, Number(pCur.level) || 1),
+        dailyGoal: Number(pIn.dailyGoal) || Number(pCur.dailyGoal) || 10,
+        workoutXP: Math.max(Number(pIn.workoutXP) || 0, Number(pCur.workoutXP) || 0),
+        quizXP: Math.max(Number(pIn.quizXP) || 0, Number(pCur.quizXP) || 0)
+    };
+
+    merged._activity = (normalizedIn._activity || currentBase?._activity || []).slice(-300);
+    merged._sessions = (normalizedIn._sessions || currentBase?._sessions || []).slice(-100);
+
+    for (let subject in normalizedIn) {
         if (subject.startsWith('_')) continue;
-        if (normalizedCloud[subject]) {
-            merged[subject].folder = normalizedCloud[subject].folder || baseData[subject].folder || DEFAULT_FOLDER;
-            merged[subject].course = normalizedCloud[subject].course || baseData[subject].course || '';
-            merged[subject].description = normalizedCloud[subject].description || baseData[subject].description || '';
-            merged[subject].prerequisites = normalizedCloud[subject].prerequisites || baseData[subject].prerequisites || [];
-            if(!merged._folders.includes(merged[subject].folder)) merged._folders.push(merged[subject].folder);
+        if (merged[subject]) {
+            merged[subject].folder = normalizedIn[subject].folder || merged[subject].folder || DEFAULT_FOLDER;
+            merged[subject].course = normalizedIn[subject].course || merged[subject].course || '';
+            merged[subject].description = normalizedIn[subject].description || merged[subject].description || '';
+            merged[subject].prerequisites = normalizedIn[subject].prerequisites || merged[subject].prerequisites || [];
             
-            merged[subject].stats = normalizedCloud[subject].stats || {attempts: 0, correct: 0};
-            merged[subject].dailyValidations = normalizedCloud[subject].dailyValidations || {};
+            merged[subject].stats = {
+                attempts: Math.max(Number(merged[subject].stats?.attempts) || 0, Number(normalizedIn[subject].stats?.attempts) || 0),
+                correct: Math.max(Number(merged[subject].stats?.correct) || 0, Number(normalizedIn[subject].stats?.correct) || 0),
+                partial: Math.max(Number(merged[subject].stats?.partial) || 0, Number(normalizedIn[subject].stats?.partial) || 0)
+            };
+            merged[subject].dailyValidations = Object.assign({}, merged[subject].dailyValidations || {}, normalizedIn[subject].dailyValidations || {});
 
-            merged[subject].questions.forEach(q => {
-                const cloudQ = normalizedCloud[subject].questions.find(cq => cq.id === q.id || cq.q === q.q);
+            merged[subject].questions.forEach((q, idx) => {
+                const hashId = getQuestionId(subject, q, idx);
+                const cloudQ = normalizedIn[subject].questions.find(cq => cq.id === q.id || cq.id === hashId || cq.q === q.q);
                 if (cloudQ) {
-                    Object.assign(q, cloudQ);
+                    if (cloudQ.stats) {
+                        q.stats = {
+                            attempts: Math.max(Number(q.stats?.attempts) || 0, Number(cloudQ.stats.attempts) || 0),
+                            correct: Math.max(Number(q.stats?.correct) || 0, Number(cloudQ.stats.correct) || 0),
+                            partial: Math.max(Number(q.stats?.partial) || 0, Number(cloudQ.stats.partial) || 0)
+                        };
+                    }
+                    if (cloudQ.sm2) q.sm2 = Object.assign(q.sm2 || {}, cloudQ.sm2);
                 }
             });
 
-            normalizedCloud[subject].questions.forEach(cq => {
-                const existsInBase = merged[subject].questions.some(q => q.id === cq.id || q.q === cq.q);
-                if (!existsInBase) merged[subject].questions.push(cq);
+            normalizedIn[subject].questions.forEach(cq => {
+                const exists = merged[subject].questions.some(q => q.id === cq.id || q.q === cq.q);
+                if (!exists) merged[subject].questions.push(cq);
             });
+        } else {
+            // Matière personnalisée créée/uploadée : préservée intégralement !
+            merged[subject] = normalizedIn[subject];
         }
     }
 
-    for (let subject in normalizedCloud) {
-        if (!subject.startsWith('_') && !merged[subject]) {
-            merged[subject] = normalizedCloud[subject];
-            if(!merged._folders.includes(merged[subject].folder)) merged._folders.push(merged[subject].folder || DEFAULT_FOLDER);
-        }
-    }
+    let combinedFolders = [...(baseCatalogue._folders || []), ...(merged._folders || []), ...(normalizedIn._folders || [])];
+    Object.keys(merged).forEach(sub => {
+        if (!sub.startsWith('_') && merged[sub]?.folder) combinedFolders.push(merged[sub].folder);
+    });
+    if (!combinedFolders.includes(DEFAULT_FOLDER)) combinedFolders.unshift(DEFAULT_FOLDER);
+    merged._folders = [...new Set(combinedFolders.filter(f => f && typeof f === 'string'))];
+
     return normalizeData(merged);
 }
 
@@ -482,8 +559,8 @@ if (localSave) {
     try {
         appData = mergeDataWithDefaults(JSON.parse(localSave), baseData);
     } catch (error) {
-        console.error('Sauvegarde locale ignorée :', error);
-        localStorage.removeItem('myQuizData');
+        console.error('Sauvegarde locale corrompue, copie de secours conservée :', error);
+        try { localStorage.setItem('myQuizData_rescue', localSave); } catch(e) {}
     }
 }
 
@@ -520,8 +597,8 @@ async function initAppAfterAuth() {
 
     if (data && data.content) {
         dbRowId = data.id;
-        // FUSION MAGIQUE : Les nouveautés de data.js gardent l'historique de Supabase
-        appData = mergeDataWithDefaults(data.content, baseData);
+        // FUSION NON-DESTRUCTIVE : Préserve le catalogue officiel, les cours locaux et la sauvegarde Supabase
+        appData = mergeDataWithDefaults(data.content, appData);
     } else {
         // Premier lancement du compte : création de la ligne
         const { data: insertData, error: insertError } = await supabaseClient
@@ -626,12 +703,15 @@ async function updateUserProfile() {
 function createLocalBackup(force = false) {
     const now = Date.now();
     const lastBackup = Number(localStorage.getItem('myQuizLastBackupAt')) || 0;
-    if (!force && now - lastBackup < 60 * 60 * 1000) return;
+    if (!force && now - lastBackup < 15 * 60 * 1000) return; // Sauvegarde toutes les 15 minutes
     try {
         const backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
-        backups.push({ at: now, content: appData });
-        localStorage.setItem('myQuizBackups', JSON.stringify(backups.slice(-5)));
-        localStorage.setItem('myQuizLastBackupAt', String(now));
+        const totalQ = Object.keys(appData).filter(k => !k.startsWith('_')).reduce((acc, k) => acc + (appData[k]?.questions?.length || 0), 0);
+        if (totalQ > 0) {
+            backups.push({ at: now, content: JSON.parse(JSON.stringify(appData)) });
+            localStorage.setItem('myQuizBackups', JSON.stringify(backups.slice(-10))); // Conserve 10 snapshots de secours
+            localStorage.setItem('myQuizLastBackupAt', String(now));
+        }
     } catch (error) {
         console.error('Impossible de créer la sauvegarde locale :', error);
     }
@@ -640,17 +720,33 @@ function createLocalBackup(force = false) {
 async function restoreLatestBackup() {
     try {
         const backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
-        const latest = backups.at(-1);
-        if (!latest?.content) return customAlert('Restauration', 'Aucune sauvegarde précédente disponible.');
-        customConfirm('Restauration', 'Remplacer les données actuelles par la dernière sauvegarde ?', async () => {
-            appData = normalizeData(latest.content);
-            await saveData();
-            updatePlayerUI();
-            renderHome();
-            customAlert('Restauration', 'La dernière sauvegarde a été restaurée.');
-        });
+        if (!backups.length) return customAlert('Restauration', 'Aucune sauvegarde automatique trouvée dans le stockage local.');
+        
+        // Prendre la sauvegarde la plus complète ou la plus récente
+        const sorted = [...backups].reverse();
+        const best = sorted.find(b => {
+            const subs = Object.keys(b.content || {}).filter(k => !k.startsWith('_'));
+            return subs.length > 0;
+        }) || sorted[0];
+
+        if (!best?.content) return customAlert('Restauration', 'Aucune sauvegarde valide disponible.');
+        
+        const countSubs = Object.keys(best.content).filter(k => !k.startsWith('_')).length;
+        const xp = best.content._player?.xp || 0;
+        const dateStr = new Date(best.at).toLocaleString();
+
+        customConfirm('Restauration de secours', 
+            `Restaurer et fusionner la sauvegarde du ${dateStr} (${countSubs} matière(s), ${xp} XP) ?\nTes cours personnels et ton historique seront intégralement récupérés.`, 
+            async () => {
+                appData = mergeDataWithDefaults(best.content, appData);
+                await saveData();
+                updatePlayerUI();
+                renderHome();
+                customAlert('Restauration réussie', `La sauvegarde a été fusionnée : ${countSubs} matière(s) restaurée(s) avec succès !`);
+            }
+        );
     } catch (error) {
-        customAlert('Restauration', 'La sauvegarde locale est illisible.');
+        customAlert('Restauration', 'Erreur lors de la lecture des sauvegardes : ' + error.message);
     }
 }
 
@@ -677,18 +773,34 @@ function extractUserDelta() {
     const delta = {
         _isDelta: true,
         _player: appData._player || { xp: 0, level: 1, workoutXP: 0, quizXP: 0 },
-        _activity: (appData._activity || []).slice(-100),
-        _sessions: (appData._sessions || []).slice(-50),
-        _workoutHistory: (appData._workoutHistory || []).slice(-100),
+        _activity: (appData._activity || []).slice(-200),
+        _sessions: (appData._sessions || []).slice(-100),
+        _workoutHistory: (appData._workoutHistory || []).slice(-200),
         _mastery: window.MasteryTracker ? window.MasteryTracker.init() : {},
+        _customSubjects: {}, // Sauvegarde intégrale des cours personnalisés uploadés par l'utilisateur
         _progress: {}
     };
+
+    // 1. Sauvegarde de tous les cours personnalisés dans le Cloud
+    Object.keys(appData).forEach(sub => {
+        if (sub.startsWith('_') || appData[sub]?.deleted) return;
+        // Si ce cours n'existe pas dans le catalogue officiel de baseData, c'est un cours perso
+        if (!baseData || !baseData[sub]) {
+            delta._customSubjects[sub] = JSON.parse(JSON.stringify(appData[sub]));
+        }
+    });
+
+    // 2. Sauvegarde de la progression sur tous les cours
     Object.keys(appData).forEach(sub => {
         if (sub.startsWith('_')) return;
         const subProgress = {};
-        (appData[sub].questions || []).forEach(q => {
+        (appData[sub].questions || []).forEach((q, idx) => {
             if ((q.stats && q.stats.attempts > 0) || (q.sm2 && q.sm2.repetition > 0)) {
-                subProgress[q.id || q.q] = { stats: q.stats, sm2: q.sm2 };
+                const progData = { stats: q.stats, sm2: q.sm2 };
+                if (q.id) subProgress[q.id] = progData;
+                if (q.q) subProgress[q.q] = progData;
+                const hashId = getQuestionId(sub, q, idx);
+                if (hashId) subProgress[hashId] = progData;
             }
         });
         if (Object.keys(subProgress).length > 0) {
@@ -3090,6 +3202,65 @@ document.addEventListener('visibilitychange', () => {
         }
     } else if (hasActiveQuiz() && session.timerEnabled && !document.getElementById('quiz-view').classList.contains('hidden')) {
         setupTimer(true, false);
-    }
 });
 checkSession();
+
+// Utilitaire de secours accessible en console pour restaurer n'importe quel snapshot précédent
+window.quizzRecovery = {
+    list() {
+        const backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
+        const rescue = localStorage.getItem('myQuizData_rescue');
+        if (rescue) {
+            console.log("%c[INFO] Une copie de secours 'myQuizData_rescue' a été trouvée dans localStorage. Tu peux faire window.quizzRecovery.restoreRescue() pour la réappliquer.", "color: #f59e0b; font-weight: bold;");
+        }
+        if (!backups.length && !rescue) {
+            console.warn("Aucune sauvegarde trouvée dans localStorage.");
+            return [];
+        }
+        console.table(backups.map((b, i) => ({
+            Index: i,
+            Date: new Date(b.at).toLocaleString(),
+            XP: b.content?._player?.xp || 0,
+            Matieres: Object.keys(b.content || {}).filter(k => !k.startsWith('_')).length,
+            QuestionsTotales: Object.keys(b.content || {}).filter(k => !k.startsWith('_')).reduce((acc, k) => acc + (b.content[k]?.questions?.length || 0), 0)
+        })));
+        return backups;
+    },
+    restoreRescue() {
+        const rescue = localStorage.getItem('myQuizData_rescue');
+        if (!rescue) {
+            console.warn("Aucune sauvegarde de secours 'myQuizData_rescue' trouvée.");
+            return false;
+        }
+        try {
+            const parsed = JSON.parse(rescue);
+            appData = mergeDataWithDefaults(parsed, appData);
+            saveData();
+            renderHome();
+            updatePlayerUI();
+            console.log("%c✓ Sauvegarde d'urgence 'myQuizData_rescue' restaurée et fusionnée avec succès !", "color: #10b981; font-weight: bold; font-size: 14px;");
+            return true;
+        } catch(e) {
+            console.error("Erreur parsing rescue :", e);
+            return false;
+        }
+    },
+    restore(index = -1) {
+        const backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
+        if (!backups.length) {
+            console.error("Aucune sauvegarde disponible.");
+            return false;
+        }
+        const target = index === -1 ? backups.at(-1) : backups[index];
+        if (!target?.content) {
+            console.error("Index invalide ou contenu vide.");
+            return false;
+        }
+        appData = mergeDataWithDefaults(target.content, appData);
+        saveData();
+        renderHome();
+        updatePlayerUI();
+        console.log("%c✓ Sauvegarde restaurée et fusionnée avec succès !", "color: #10b981; font-weight: bold; font-size: 14px;");
+        return true;
+    }
+};
