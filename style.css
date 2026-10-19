@@ -2761,4 +2761,60 @@ textarea { display: block; width: 100%; padding: 12px; margin: 8px 0 15px 0; bor
     border-radius: 16px;
     margin: 20px 0;
 }
+
+/* ==========================================================================
+   FLASHCARDS MODULE & 3D FLIP CARD
+   ========================================================================== */
+
+.flashcard-scene {
+    perspective: 1200px;
+}
+
+.flashcard-flipper {
+    position: relative;
+    width: 100%;
+    min-height: 320px;
+    transition: transform 0.45s cubic-bezier(0.4, 0.2, 0.2, 1);
+    transform-style: preserve-3d;
+}
+
+.flashcard-flipper.flipped {
+    transform: rotateY(180deg);
+}
+
+.flashcard-face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    border-radius: var(--radius);
+    padding: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.flashcard-front {
+    background: linear-gradient(145deg, #1e1e2e, #26263b);
+    border: 1px solid var(--surface-light);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.flashcard-back {
+    background: linear-gradient(145deg, #182338, #1e1e2e);
+    border: 1px solid rgba(166, 227, 161, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+    transform: rotateY(180deg);
+}
+
+.flashcard-tag {
+    display: inline-block;
+    padding: 3px 8px;
+    font-size: 0.75em;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    color: var(--text-muted);
+}
+
 

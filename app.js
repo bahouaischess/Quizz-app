@@ -384,11 +384,12 @@ function normalizeData(rawData) {
             dailyGoal: Math.max(1, Number(rawData?._player?.dailyGoal) || 10)
         },
         _folders: validFolders,
-        _deleted: {}
+        _deleted: {},
+        _flashcards: Array.isArray(rawData?._flashcards) ? rawData._flashcards : []
     };
 
     for (let key in rawData) {
-        if (key === '_player' || key === '_folders' || key === '_deleted') continue;
+        if (key === '_player' || key === '_folders' || key === '_deleted' || key === '_flashcards') continue;
         let sub = rawData[key];
 
         if (sub && Array.isArray(sub.questions)) {
@@ -492,6 +493,14 @@ function mergeDataWithDefaults(incomingData, currentBase = null) {
             });
         }
 
+        // Synchroniser les flashcards
+        if (Array.isArray(incomingData._flashcards) || Array.isArray(currentBase?._flashcards)) {
+            const fcMap = new Map();
+            (currentBase?._flashcards || []).forEach(c => c && c.id && fcMap.set(c.id, c));
+            (incomingData._flashcards || []).forEach(c => c && c.id && fcMap.set(c.id, c));
+            merged._flashcards = Array.from(fcMap.values());
+        }
+
         // Synchroniser tous les dossiers
         let folders = [...(baseCatalogue._folders || []), ...(merged._folders || []), ...(incomingData._folders || [])];
         Object.keys(merged).forEach(sub => {
@@ -557,6 +566,14 @@ function mergeDataWithDefaults(incomingData, currentBase = null) {
             // Matière personnalisée créée/uploadée : préservée intégralement !
             merged[subject] = normalizedIn[subject];
         }
+    }
+
+    // Synchroniser les flashcards (Sauvegarde complète)
+    if (Array.isArray(normalizedIn._flashcards) || Array.isArray(currentBase?._flashcards)) {
+        const fcMap = new Map();
+        (currentBase?._flashcards || []).forEach(c => c && c.id && fcMap.set(c.id, c));
+        (normalizedIn._flashcards || []).forEach(c => c && c.id && fcMap.set(c.id, c));
+        merged._flashcards = Array.from(fcMap.values());
     }
 
     let combinedFolders = [...(baseCatalogue._folders || []), ...(merged._folders || []), ...(normalizedIn._folders || [])];
@@ -785,7 +802,7 @@ function createLocalBackup(force = false) {
                 }
             }
             if (saved) {
-                try { localStorage.setItem('myQuizLastBackupAt', String(now)); } catch (e) {}
+                try { localStorage.setItem('myQuizLastBackupAt', String(now)); } catch (e) { }
             }
         }
     } catch (error) {
@@ -854,6 +871,7 @@ function extractUserDelta() {
         _workoutHistory: (appData._workoutHistory || []).slice(-200),
         _mastery: window.MasteryTracker ? window.MasteryTracker.init() : {},
         _customSubjects: {}, // Sauvegarde intégrale des cours personnalisés uploadés par l'utilisateur
+        _flashcards: (appData._flashcards || []).slice(-1000), // Persistance Cloud des Flashcards
         _selectedCommunitySubjects: (window.communityAdmin && typeof window.communityAdmin.getSelectedSubjectsList === 'function')
             ? window.communityAdmin.getSelectedSubjectsList()
             : [],
@@ -897,8 +915,8 @@ let saveQueue = Promise.resolve();
 let cloudSyncTimeout = null;
 async function saveData(immediate = false) {
     // Sauvegarde locale de sécurité immédiate
-    try { 
-        localStorage.setItem('myQuizData', JSON.stringify(appData)); 
+    try {
+        localStorage.setItem('myQuizData', JSON.stringify(appData));
     } catch (e) {
         console.warn("Quota atteint pour myQuizData, libération d'espace...", e.message);
         try {
@@ -912,7 +930,7 @@ async function saveData(immediate = false) {
 
     // Mettre à jour l'annuaire local pour l'admin
     if (window.communityAdmin && typeof window.communityAdmin.recordUserInDirectory === 'function') {
-        try { window.communityAdmin.recordUserInDirectory(); } catch (err) {}
+        try { window.communityAdmin.recordUserInDirectory(); } catch (err) { }
     }
 
     // Synchro Cloud
@@ -1463,6 +1481,7 @@ function showView(viewId, navElement = null) {
     if (viewId === 'profile-view') renderProfileDashboard();
     if (viewId === 'custom-quiz-view') renderCustomQuizSetup();
     if (viewId === 'create-subject-view') renderCreateSubjectView();
+    if (viewId === 'flashcard-view' && window.flashcardManager) window.flashcardManager.renderView();
     updatePlayerUI();
 }
 
@@ -1688,81 +1707,81 @@ function renderHome() {
         const subjectsContainer = document.createElement('div');
         subjectsContainer.className = 'folder-subjects';
         subjectsContainer.classList.toggle('hidden', !isOpen);
-            subjects.forEach(subject => {
-                updateDailyValidation(subject);
-                const s = appData[subject];
-                const available = getAvailableQuestions(subject).length;
-                const isValidated = s.dailyValidations && s.dailyValidations[getTodayStr()];
+        subjects.forEach(subject => {
+            updateDailyValidation(subject);
+            const s = appData[subject];
+            const available = getAvailableQuestions(subject).length;
+            const isValidated = s.dailyValidations && s.dailyValidations[getTodayStr()];
 
-                const btn = document.createElement('button');
-                btn.type = 'button';
-                btn.className = 'list-item subject-list-item';
-                btn.setAttribute('aria-label', `Ouvrir la matière ${subject}`);
-                btn.onclick = (event) => {
-                    const target = event.target.closest('.subject-action');
-                    if (target) {
-                        event.stopPropagation();
-                        return;
-                    }
-                    openSubject(subject);
-                };
-
-                const titleSpan = document.createElement('span');
-                titleSpan.className = 'subject-item-main';
-                const boldTitle = document.createElement('b');
-                boldTitle.textContent = subject;
-                const subTxt = document.createElement('span');
-                subTxt.style = "color:var(--text-muted); font-size:0.85em; margin-left:10px;";
-                subTxt.textContent = `(${s.questions.length} Q)`;
-                titleSpan.appendChild(boldTitle);
-                titleSpan.appendChild(subTxt);
-
-                const actionWrap = document.createElement('span');
-                actionWrap.className = 'subject-item-actions';
-
-                const badge = document.createElement('span');
-                if (isValidated) {
-                    badge.className = 'badge validated'; badge.textContent = '✓ Validé';
-                } else {
-                    badge.className = 'badge pending'; badge.textContent = `${available} à réviser`;
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'list-item subject-list-item';
+            btn.setAttribute('aria-label', `Ouvrir la matière ${subject}`);
+            btn.onclick = (event) => {
+                const target = event.target.closest('.subject-action');
+                if (target) {
+                    event.stopPropagation();
+                    return;
                 }
+                openSubject(subject);
+            };
 
-                const archiveAction = document.createElement('span');
-                archiveAction.className = 'subject-action';
-                archiveAction.textContent = folder === ARCHIVE_FOLDER ? '↩️' : '📦';
-                archiveAction.title = folder === ARCHIVE_FOLDER ? 'Désarchiver la matière' : 'Archiver la matière';
-                archiveAction.onclick = (event) => {
-                    event.stopPropagation();
-                    if (folder === ARCHIVE_FOLDER) {
-                        appData[subject].archived = false;
-                        appData[subject].deleted = false;
-                        appData[subject].folder = DEFAULT_FOLDER;
-                        saveData();
-                        renderHome();
-                        customAlert('Matière restaurée', `La matière "${subject}" est de nouveau disponible.`);
-                    } else {
-                        archiveSubject(subject);
-                    }
-                };
+            const titleSpan = document.createElement('span');
+            titleSpan.className = 'subject-item-main';
+            const boldTitle = document.createElement('b');
+            boldTitle.textContent = subject;
+            const subTxt = document.createElement('span');
+            subTxt.style = "color:var(--text-muted); font-size:0.85em; margin-left:10px;";
+            subTxt.textContent = `(${s.questions.length} Q)`;
+            titleSpan.appendChild(boldTitle);
+            titleSpan.appendChild(subTxt);
 
-                const deleteAction = document.createElement('span');
-                deleteAction.className = 'subject-action danger-action';
-                deleteAction.textContent = '🗑️';
-                deleteAction.title = 'Supprimer définitivement pour l’utilisateur';
-                deleteAction.onclick = (event) => {
-                    event.stopPropagation();
-                    customConfirm('Supprimer', `Supprimer définitivement "${subject}" pour toi ? Tu ne pourras plus jamais y répondre.`, async () => {
-                        await deleteSubject(subject);
-                    });
-                };
+            const actionWrap = document.createElement('span');
+            actionWrap.className = 'subject-item-actions';
 
-                actionWrap.appendChild(badge);
-                actionWrap.appendChild(archiveAction);
-                actionWrap.appendChild(deleteAction);
-                btn.appendChild(titleSpan);
-                btn.appendChild(actionWrap);
-                subjectsContainer.appendChild(btn);
-            });
+            const badge = document.createElement('span');
+            if (isValidated) {
+                badge.className = 'badge validated'; badge.textContent = '✓ Validé';
+            } else {
+                badge.className = 'badge pending'; badge.textContent = `${available} à réviser`;
+            }
+
+            const archiveAction = document.createElement('span');
+            archiveAction.className = 'subject-action';
+            archiveAction.textContent = folder === ARCHIVE_FOLDER ? '↩️' : '📦';
+            archiveAction.title = folder === ARCHIVE_FOLDER ? 'Désarchiver la matière' : 'Archiver la matière';
+            archiveAction.onclick = (event) => {
+                event.stopPropagation();
+                if (folder === ARCHIVE_FOLDER) {
+                    appData[subject].archived = false;
+                    appData[subject].deleted = false;
+                    appData[subject].folder = DEFAULT_FOLDER;
+                    saveData();
+                    renderHome();
+                    customAlert('Matière restaurée', `La matière "${subject}" est de nouveau disponible.`);
+                } else {
+                    archiveSubject(subject);
+                }
+            };
+
+            const deleteAction = document.createElement('span');
+            deleteAction.className = 'subject-action danger-action';
+            deleteAction.textContent = '🗑️';
+            deleteAction.title = 'Supprimer définitivement pour l’utilisateur';
+            deleteAction.onclick = (event) => {
+                event.stopPropagation();
+                customConfirm('Supprimer', `Supprimer définitivement "${subject}" pour toi ? Tu ne pourras plus jamais y répondre.`, async () => {
+                    await deleteSubject(subject);
+                });
+            };
+
+            actionWrap.appendChild(badge);
+            actionWrap.appendChild(archiveAction);
+            actionWrap.appendChild(deleteAction);
+            btn.appendChild(titleSpan);
+            btn.appendChild(actionWrap);
+            subjectsContainer.appendChild(btn);
+        });
 
         folderDiv.appendChild(subjectsContainer);
         frag.appendChild(folderDiv);
@@ -3430,7 +3449,7 @@ window.quizzRecovery = {
             const parsed = JSON.parse(rescue);
             appData = mergeDataWithDefaults(parsed, appData);
             window.appData = appData;
-            
+
             // Réactivation et ouverture des dossiers pour toutes les matières restaurées
             const restoredNames = [];
             Object.keys(parsed || {}).forEach(sub => {
@@ -3448,7 +3467,7 @@ window.quizzRecovery = {
             try {
                 const cur = JSON.parse(localStorage.getItem('myQuizSelectedSubjects') || '[]');
                 localStorage.setItem('myQuizSelectedSubjects', JSON.stringify([...new Set([...cur, ...restoredNames])]));
-            } catch(err) {}
+            } catch (err) { }
 
             saveData();
             renderHome();
@@ -3464,7 +3483,7 @@ window.quizzRecovery = {
         let backups = [];
         try {
             backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
-        } catch(e) { backups = []; }
+        } catch (e) { backups = []; }
         if (!backups.length) {
             console.error("Aucune sauvegarde disponible.");
             return false;
@@ -3494,7 +3513,7 @@ window.quizzRecovery = {
         try {
             const cur = JSON.parse(localStorage.getItem('myQuizSelectedSubjects') || '[]');
             localStorage.setItem('myQuizSelectedSubjects', JSON.stringify([...new Set([...cur, ...restoredNames])]));
-        } catch(err) {}
+        } catch (err) { }
 
         saveData();
         renderHome();
@@ -3537,7 +3556,7 @@ function renderRecoveryModalList() {
             const subs = Object.keys(parsed || {}).filter(k => !k.startsWith('_')).length;
             const xp = parsed?._player?.xp || 0;
             rescueInfo = `${subs} matière(s) • ${xp} XP`;
-        } catch(e) {}
+        } catch (e) { }
 
         html += `
             <div style="background: rgba(245, 158, 11, 0.12); border: 1px solid var(--warning); border-radius: 8px; padding: 14px; margin-bottom: 15px;">
@@ -3604,6 +3623,98 @@ async function applyRecoveryIndex(idx) {
 }
 
 // ============================================================================
+// GESTION DU COMPARTIMENT FLASHCARDS (AJOUTER UNE MATIÈRE)
+// ============================================================================
+async function createFlashcardFromCompartment() {
+    const recto = document.getElementById('create-fc-recto')?.value.trim();
+    const verso = document.getElementById('create-fc-verso')?.value.trim();
+    const subject = document.getElementById('create-fc-subject')?.value.trim() || 'Général';
+    const folder = document.getElementById('create-fc-folder')?.value.trim() || 'Général';
+    const msgEl = document.getElementById('create-fc-message');
+
+    if (!recto || !verso) {
+        if (msgEl) {
+            msgEl.textContent = 'Veuillez remplir le Recto et le Verso de la carte.';
+            msgEl.style.color = 'var(--danger)';
+        }
+        return;
+    }
+
+    if (window.flashcardManager) {
+        window.flashcardManager.addCard({ recto, verso, subject, folder });
+        const rEl = document.getElementById('create-fc-recto');
+        const vEl = document.getElementById('create-fc-verso');
+        if (rEl) rEl.value = '';
+        if (vEl) vEl.value = '';
+        if (msgEl) {
+            msgEl.textContent = `✓ Flashcard créée avec succès dans "${subject}" (${folder}) !`;
+            msgEl.style.color = 'var(--success)';
+            setTimeout(() => { if (msgEl) msgEl.textContent = ''; }, 4000);
+        }
+    }
+}
+window.createFlashcardFromCompartment = createFlashcardFromCompartment;
+
+function importCompartmentFlashcardFile(event) {
+    const file = event.target.files?.[0];
+    if (!file) return;
+    const msgEl = document.getElementById('compartment-fc-message');
+    const reader = new FileReader();
+    reader.onload = (e) => {
+        try {
+            const parsed = JSON.parse(e.target.result);
+            const list = Array.isArray(parsed) ? parsed : (parsed.flashcards || parsed.cards || []);
+            if (window.flashcardManager) {
+                const count = window.flashcardManager.importCards(list);
+                if (msgEl) {
+                    msgEl.textContent = `✓ ${count} flashcard(s) importée(s) avec succès !`;
+                    msgEl.style.color = 'var(--success)';
+                }
+                event.target.value = '';
+            }
+        } catch (err) {
+            if (msgEl) {
+                msgEl.textContent = `Erreur : ${err.message}`;
+                msgEl.style.color = 'var(--danger)';
+            }
+        }
+    };
+    reader.readAsText(file);
+}
+window.importCompartmentFlashcardFile = importCompartmentFlashcardFile;
+
+function importCompartmentFlashcardJson() {
+    const text = document.getElementById('compartment-fc-json')?.value.trim();
+    const msgEl = document.getElementById('compartment-fc-message');
+    if (!text) {
+        if (msgEl) {
+            msgEl.textContent = 'Veuillez coller du code JSON.';
+            msgEl.style.color = 'var(--danger)';
+        }
+        return;
+    }
+    try {
+        const parsed = JSON.parse(text);
+        const list = Array.isArray(parsed) ? parsed : (parsed.flashcards || parsed.cards || []);
+        if (window.flashcardManager) {
+            const count = window.flashcardManager.importCards(list);
+            const txtEl = document.getElementById('compartment-fc-json');
+            if (txtEl) txtEl.value = '';
+            if (msgEl) {
+                msgEl.textContent = `✓ ${count} flashcard(s) importée(s) avec succès !`;
+                msgEl.style.color = 'var(--success)';
+            }
+        }
+    } catch (err) {
+        if (msgEl) {
+            msgEl.textContent = `Erreur JSON : ${err.message}`;
+            msgEl.style.color = 'var(--danger)';
+        }
+    }
+}
+window.importCompartmentFlashcardJson = importCompartmentFlashcardJson;
+
+// ============================================================================
 // EXPOSITIONS GLOBALES SUR WINDOW
 // ============================================================================
 window.saveData = saveData;
@@ -3615,4 +3726,5 @@ window.showView = showView;
 window.updatePlayerUI = updatePlayerUI;
 window.isSubjectAvailable = isSubjectAvailable;
 window.openFolders = openFolders;
+
 

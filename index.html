@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hub de Quizz - L2</title>
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
     <script>
         window.MathJax = { tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] } };
     </script>
@@ -61,6 +62,8 @@
                     class="nav-icon">🏋️</span><span class="nav-label">Entraînement</span></button>
             <button class="nav-item" onclick="showView('home-view', this)"><span class="nav-icon">📚</span><span
                     class="nav-label">Mes Matières</span></button>
+            <button class="nav-item" onclick="showView('flashcard-view', this); if (window.flashcardManager) window.flashcardManager.renderView();"><span
+                    class="nav-icon">🎴</span><span class="nav-label">Flashcards</span></button>
             <button class="nav-item" onclick="showView('create-subject-view', this)"><span
                     class="nav-icon">➕</span><span class="nav-label">Ajouter une matière</span></button>
             <button class="nav-item" onclick="showView('community-view', this); renderCommunity();"><span
@@ -234,18 +237,92 @@
                         </ul>
                     </details>
                 </div>
+
+                <!-- COMPARTIMENT CRÉATION ET IMPORT FLASHCARDS -->
+                <div class="card" style="margin-top: 30px; border: 1px solid rgba(137, 180, 250, 0.35); background: rgba(137, 180, 250, 0.03);">
+                    <div style="display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-bottom: 12px;">
+                        <h2 style="margin: 0; color: var(--primary); display:flex; align-items:center; gap:8px;">
+                            <span>🎴</span> <span>Ajouter ou Importer des Flashcards</span>
+                        </h2>
+                        <span class="badge" style="background: rgba(137, 180, 250, 0.2); color: var(--primary);">Répétition Espacée SM-2</span>
+                    </div>
+                    <p class="muted">
+                        Crée une flashcard recto/verso rattachée à une matière et un dossier (ou sous-dossier), ou importe un lot complet généré par une IA au format JSON.
+                    </p>
+
+                    <!-- FORMULAIRE FLASHCARD INDIVIDUELLE -->
+                    <div style="background: rgba(0,0,0,0.2); padding: 18px; border-radius: 10px; border: 1px solid var(--surface-light); margin-bottom: 20px;">
+                        <h3 style="margin-top: 0; font-size: 1.05em; color: var(--text-main);">➕ Créer une Flashcard individuelle</h3>
+                        <label for="create-fc-recto" style="font-weight: 600; font-size: 0.9em; color: var(--primary);">Recto (Question / Définition / Concept à deviner) *</label>
+                        <textarea id="create-fc-recto" rows="3" placeholder="Ex: Définition d'un sous-espace vectoriel ?"></textarea>
+
+                        <label for="create-fc-verso" style="font-weight: 600; font-size: 0.9em; color: var(--success); margin-top: 8px;">Verso (Réponse / Démonstration / Explication) *</label>
+                        <textarea id="create-fc-verso" rows="3" placeholder="Ex: Une partie non vide stable par combinaison linéaire (λu + μv ∈ F)..."></textarea>
+
+                        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 10px;">
+                            <div>
+                                <label for="create-fc-subject" style="font-weight: 600; font-size: 0.9em;">Matière</label>
+                                <input type="text" id="create-fc-subject" placeholder="Ex: Algèbre 2 (défaut : Général)">
+                            </div>
+                            <div>
+                                <label for="create-fc-folder" style="font-weight: 600; font-size: 0.9em;">Dossier / Sous-dossier</label>
+                                <input type="text" id="create-fc-folder" placeholder="Ex: Mathématiques / Algèbre (défaut : Général)">
+                            </div>
+                        </div>
+
+                        <button type="button" class="btn btn-primary" onclick="createFlashcardFromCompartment()" style="margin-top: 10px;">
+                            💾 Enregistrer la flashcard
+                        </button>
+                        <div id="create-fc-message" class="form-message"></div>
+                    </div>
+
+                    <!-- IMPORT JSON FLASHCARDS -->
+                    <div style="background: rgba(0,0,0,0.2); padding: 18px; border-radius: 10px; border: 1px solid var(--surface-light);">
+                        <h3 style="margin-top: 0; font-size: 1.05em; color: var(--text-main);">📥 Importer un lot de Flashcards (JSON)</h3>
+                        <p class="muted" style="font-size: 0.9em;">
+                            Télécharge le modèle de flashcard, transmets-le avec ton cours à une IA, puis importe le JSON produit.
+                        </p>
+                        <div class="creation-actions">
+                            <button class="secondary" type="button" onclick="if (window.flashcardManager) window.flashcardManager.downloadTemplate()">
+                                📥 Télécharger le modèle JSON Flashcards
+                            </button>
+                            <label class="file-button secondary" for="compartment-fc-file" style="cursor: pointer;">
+                                📄 Choisir un fichier JSON
+                            </label>
+                            <input id="compartment-fc-file" type="file" accept="application/json,.json" onchange="importCompartmentFlashcardFile(event)" style="display:none;">
+                        </div>
+                        <label for="compartment-fc-json">Ou colle directement le JSON de flashcards :</label>
+                        <textarea id="compartment-fc-json" rows="6" placeholder='[
+  {
+    "recto": "Quelle est la définition d'\''une matrice inversible ?",
+    "verso": "Une matrice carrée A est inversible s'\''il existe B telle que AB = BA = In.",
+    "subject": "Algèbre 2",
+    "folder": "Mathématiques / Algèbre"
+  }
+]'></textarea>
+                        <button type="button" onclick="importCompartmentFlashcardJson()">✅ Vérifier et importer les flashcards</button>
+                        <div id="compartment-fc-message" class="form-message"></div>
+                    </div>
+                </div>
             </div>
+
+            <!-- VUE FLASHCARDS PRINCIPALE -->
+            <div id="flashcard-view" class="view hidden"></div>
 
             <!-- MATIÈRES DE LA COMMUNAUTÉ -->
             <div id="community-view" class="view hidden">
-                <div style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 15px; margin-bottom: 20px;">
                     <div>
                         <h1 style="margin: 0 0 6px 0;">🌍 Matières de la Communauté</h1>
                         <p style="color: var(--text-muted); margin: 0; font-size: 0.95em;">
-                            Explore tous les cours et quiz officiels (sous-dossier <code>Cours/</code>) ainsi que les cours créés et partagés par la communauté. Ajoute ceux que tu souhaites travailler dans <strong>Mes Matières</strong> !
+                            Explore tous les cours et quiz officiels (sous-dossier <code>Cours/</code>) ainsi que les
+                            cours créés et partagés par la communauté. Ajoute ceux que tu souhaites travailler dans
+                            <strong>Mes Matières</strong> !
                         </p>
                     </div>
-                    <div id="community-stats-badge" style="background: rgba(99, 102, 241, 0.12); border: 1px solid var(--primary); padding: 8px 16px; border-radius: 20px; font-size: 0.9em; color: var(--primary); font-weight: bold;">
+                    <div id="community-stats-badge"
+                        style="background: rgba(99, 102, 241, 0.12); border: 1px solid var(--primary); padding: 8px 16px; border-radius: 20px; font-size: 0.9em; color: var(--primary); font-weight: bold;">
                         <span id="community-total-count">0</span> matières disponibles
                     </div>
                 </div>
@@ -254,8 +331,7 @@
                     <div style="flex: 2; min-width: 240px; position: relative;">
                         <input type="text" id="search-community"
                             placeholder="🔍 Rechercher une matière, un chapitre, un tag..."
-                            oninput="filterCommunityCourses()"
-                            style="width: 100%; margin: 0; padding-left: 14px;">
+                            oninput="filterCommunityCourses()" style="width: 100%; margin: 0; padding-left: 14px;">
                     </div>
                     <select id="filter-community-category" onchange="filterCommunityCourses()"
                         style="flex: 1; min-width: 180px; margin: 0;">
@@ -501,9 +577,11 @@
 
             <!-- STATISTIQUES -->
             <div id="profile-view" class="view hidden">
-                <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
+                <div
+                    style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; margin-bottom: 20px;">
                     <h1 style="margin: 0;">📊 Tableau de Bord Analytique</h1>
-                    <button class="secondary" type="button" onclick="openStatsRecoveryModal()" style="display: inline-flex; align-items: center; gap: 6px; font-weight: bold; border-color: var(--primary); color: var(--primary); cursor: pointer;">
+                    <button class="secondary" type="button" onclick="openStatsRecoveryModal()"
+                        style="display: inline-flex; align-items: center; gap: 6px; font-weight: bold; border-color: var(--primary); color: var(--primary); cursor: pointer;">
                         🔄 Récupérer mes anciennes statistiques
                     </button>
                 </div>
@@ -688,7 +766,8 @@
                         <p style="color:var(--text-muted); margin:0;">Aucun exercice enregistré pour le moment.</p>
                     </div>
 
-                    <button class="secondary" type="button" onclick="openStatsRecoveryModal()" style="width: 100%; margin-top: 15px; border-color: var(--primary); color: var(--primary); font-weight: bold; cursor: pointer;">
+                    <button class="secondary" type="button" onclick="openStatsRecoveryModal()"
+                        style="width: 100%; margin-top: 15px; border-color: var(--primary); color: var(--primary); font-weight: bold; cursor: pointer;">
                         🔄 Récupérer / Restaurer mes anciennes statistiques & cours
                     </button>
                 </div>
@@ -712,70 +791,99 @@
                 </div>
 
                 <!-- SECTION CODE ADMIN (0408) -->
-                <div class="card admin-access-card" style="max-width: 650px; margin: 0 auto 25px auto; border: 1px solid rgba(99, 102, 241, 0.4); background: linear-gradient(135deg, rgba(30, 27, 75, 0.4), rgba(15, 23, 42, 0.8));">
+                <div class="card admin-access-card"
+                    style="max-width: 650px; margin: 0 auto 25px auto; border: 1px solid rgba(99, 102, 241, 0.4); background: linear-gradient(135deg, rgba(30, 27, 75, 0.4), rgba(15, 23, 42, 0.8));">
                     <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
                         <h3 style="margin:0; display:flex; align-items:center; gap:8px;">
                             🛡️ Console d'Administration
                         </h3>
-                        <span id="admin-status-badge" class="badge" style="display:none; background: #10b981; color: #fff; font-size:0.85em; padding:4px 10px; border-radius:12px;">
+                        <span id="admin-status-badge" class="badge"
+                            style="display:none; background: #10b981; color: #fff; font-size:0.85em; padding:4px 10px; border-radius:12px;">
                             ✓ Accès Admin Actif
                         </span>
                     </div>
                     <p style="color: var(--text-muted); font-size: 0.9em; margin-bottom: 15px;">
-                        Saisis le code administrateur pour accéder à la liste des étudiants, consulter leurs statistiques détaillées et copier leurs cours uploadés dans les <strong>Matières de la communauté</strong>.
+                        Saisis le code administrateur pour accéder à la liste des étudiants, consulter leurs
+                        statistiques détaillées et copier leurs cours uploadés dans les <strong>Matières de la
+                            communauté</strong>.
                     </p>
 
                     <div id="admin-login-box" style="display: flex; gap: 10px; flex-wrap: wrap;">
                         <input type="password" id="admin-code-input" placeholder="Entrez le code admin..."
                             onkeydown="if(event.key==='Enter') verifyAdminCode()"
                             style="flex: 2; margin: 0; min-width: 180px; font-size: 1em; letter-spacing: 2px;">
-                        <button class="btn btn-primary" onclick="verifyAdminCode()" style="flex: 1; min-width: 140px; margin: 0;">
+                        <button class="btn btn-primary" onclick="verifyAdminCode()"
+                            style="flex: 1; min-width: 140px; margin: 0;">
                             🔓 Déverrouiller
                         </button>
                     </div>
-                    <div id="admin-code-feedback" style="display: none; margin-top: 10px; font-size: 0.9em; font-weight: 500;"></div>
+                    <div id="admin-code-feedback"
+                        style="display: none; margin-top: 10px; font-size: 0.9em; font-weight: 500;"></div>
                 </div>
 
                 <!-- PANNEAU ADMINISTRATEUR DÉVERROUILLÉ -->
                 <div id="admin-panel-container" class="hidden" style="max-width: 850px; margin: 0 auto 30px auto;">
-                    <div class="card" style="border: 1px solid var(--primary); background: var(--bg-card); box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.2);">
-                        <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--surface-light); padding-bottom: 12px; margin-bottom: 18px; flex-wrap: wrap; gap: 10px;">
+                    <div class="card"
+                        style="border: 1px solid var(--primary); background: var(--bg-card); box-shadow: 0 10px 25px -5px rgba(99, 102, 241, 0.2);">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--surface-light); padding-bottom: 12px; margin-bottom: 18px; flex-wrap: wrap; gap: 10px;">
                             <div>
-                                <h2 style="margin: 0; color: var(--primary); font-size: 1.35em;">👑 Gestion des Utilisateurs & Cours Uploadés</h2>
+                                <h2 style="margin: 0; color: var(--primary); font-size: 1.35em;">👑 Gestion des
+                                    Utilisateurs & Cours Uploadés</h2>
                                 <small style="color: var(--text-muted);">Vue Administrateur Globale du Site</small>
                             </div>
                             <div style="display: flex; gap: 10px;">
-                                <button class="secondary" onclick="refreshAdminDashboard()" style="padding: 6px 12px; font-size: 0.85em;">🔄 Actualiser</button>
-                                <button class="secondary" onclick="lockAdminMode()" style="padding: 6px 12px; font-size: 0.85em; color: var(--danger); border-color: var(--danger);">🔒 Verrouiller</button>
+                                <button class="secondary" onclick="refreshAdminDashboard()"
+                                    style="padding: 6px 12px; font-size: 0.85em;">🔄 Actualiser</button>
+                                <button class="secondary" onclick="lockAdminMode()"
+                                    style="padding: 6px 12px; font-size: 0.85em; color: var(--danger); border-color: var(--danger);">🔒
+                                    Verrouiller</button>
                             </div>
                         </div>
 
                         <!-- STATS GLOBALES ADMIN -->
-                        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 22px;">
-                            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; text-align: center;">
-                                <div style="font-size: 0.75em; color: var(--text-muted); text-transform: uppercase;">Utilisateurs</div>
-                                <div id="admin-stat-users-count" style="font-size: 1.5em; font-weight: bold; color: var(--primary);">0</div>
+                        <div
+                            style="display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 12px; margin-bottom: 22px;">
+                            <div
+                                style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; text-align: center;">
+                                <div style="font-size: 0.75em; color: var(--text-muted); text-transform: uppercase;">
+                                    Utilisateurs</div>
+                                <div id="admin-stat-users-count"
+                                    style="font-size: 1.5em; font-weight: bold; color: var(--primary);">0</div>
                             </div>
-                            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; text-align: center;">
-                                <div style="font-size: 0.75em; color: var(--text-muted); text-transform: uppercase;">Cours Uploadés</div>
-                                <div id="admin-stat-uploads-count" style="font-size: 1.5em; font-weight: bold; color: #10b981;">0</div>
+                            <div
+                                style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; text-align: center;">
+                                <div style="font-size: 0.75em; color: var(--text-muted); text-transform: uppercase;">
+                                    Cours Uploadés</div>
+                                <div id="admin-stat-uploads-count"
+                                    style="font-size: 1.5em; font-weight: bold; color: #10b981;">0</div>
                             </div>
-                            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; text-align: center;">
-                                <div style="font-size: 0.75em; color: var(--text-muted); text-transform: uppercase;">Questions Créées</div>
-                                <div id="admin-stat-questions-count" style="font-size: 1.5em; font-weight: bold; color: #f59e0b;">0</div>
+                            <div
+                                style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; text-align: center;">
+                                <div style="font-size: 0.75em; color: var(--text-muted); text-transform: uppercase;">
+                                    Questions Créées</div>
+                                <div id="admin-stat-questions-count"
+                                    style="font-size: 1.5em; font-weight: bold; color: #f59e0b;">0</div>
                             </div>
-                            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; text-align: center;">
-                                <div style="font-size: 0.75em; color: var(--text-muted); text-transform: uppercase;">Promus Communauté</div>
-                                <div id="admin-stat-promoted-count" style="font-size: 1.5em; font-weight: bold; color: #06b6d4;">0</div>
+                            <div
+                                style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; text-align: center;">
+                                <div style="font-size: 0.75em; color: var(--text-muted); text-transform: uppercase;">
+                                    Promus Communauté</div>
+                                <div id="admin-stat-promoted-count"
+                                    style="font-size: 1.5em; font-weight: bold; color: #06b6d4;">0</div>
                             </div>
-                            <div style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; text-align: center;">
-                                <div style="font-size: 0.75em; color: var(--text-muted); text-transform: uppercase;">XP Totale Cumulée</div>
-                                <div id="admin-stat-xp-count" style="font-size: 1.5em; font-weight: bold; color: #ec4899;">0</div>
+                            <div
+                                style="background: rgba(255,255,255,0.03); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; text-align: center;">
+                                <div style="font-size: 0.75em; color: var(--text-muted); text-transform: uppercase;">XP
+                                    Totale Cumulée</div>
+                                <div id="admin-stat-xp-count"
+                                    style="font-size: 1.5em; font-weight: bold; color: #ec4899;">0</div>
                             </div>
                         </div>
 
                         <!-- LISTE DES UTILISATEURS -->
-                        <h3 style="margin: 0 0 12px 0; font-size: 1.05em; color: var(--text-main);">👥 Liste des Étudiants et Cours Disponibles</h3>
+                        <h3 style="margin: 0 0 12px 0; font-size: 1.05em; color: var(--text-main);">👥 Liste des
+                            Étudiants et Cours Disponibles</h3>
                         <div id="admin-users-list" style="display: flex; flex-direction: column; gap: 15px;">
                             <!-- Généré dynamiquement par renderAdminUsersList() -->
                         </div>
@@ -808,8 +916,13 @@
                 </div>
                 <div class="card">
                     <h3>🛡️ Sauvegardes & Restauration</h3>
-                    <p style="color: var(--text-muted); font-size: 0.9em;">En cas de mise à jour ou de changement de machine, clique ci-dessous pour récupérer et fusionner immédiatement tes anciennes statistiques, cours personnels et ton XP.</p>
-                    <button style="background: var(--accent); color: white; width: 100%; margin-bottom: 10px; cursor: pointer;" onclick="openStatsRecoveryModal()">🛡️ Récupérer mes anciennes statistiques & sauvegardes</button>
+                    <p style="color: var(--text-muted); font-size: 0.9em;">En cas de mise à jour ou de changement de
+                        machine, clique ci-dessous pour récupérer et fusionner immédiatement tes anciennes statistiques,
+                        cours personnels et ton XP.</p>
+                    <button
+                        style="background: var(--accent); color: white; width: 100%; margin-bottom: 10px; cursor: pointer;"
+                        onclick="openStatsRecoveryModal()">🛡️ Récupérer mes anciennes statistiques &
+                        sauvegardes</button>
                     <button class="secondary" onclick="exportStatisticsCSV()">📊 Exporter les statistiques CSV</button>
                 </div>
                 <div class="card">
@@ -834,18 +947,22 @@
                 style="position:absolute; right:20px; top:15px; font-size:28px; cursor:pointer; color:var(--text-muted);">&times;</span>
             <h2 style="margin-top:0; color:var(--primary);">🛡️ Récupérer mes anciennes statistiques</h2>
             <p style="color:var(--text-muted); font-size:0.95em;">
-                Retrouve ici l'ensemble des sauvegardes automatiques conservées par ton navigateur. Tu peux restaurer et fusionner une sauvegarde antérieure pour réintégrer tes statistiques SM-2, ton XP, tes cours personnels et ton historique.
+                Retrouve ici l'ensemble des sauvegardes automatiques conservées par ton navigateur. Tu peux restaurer et
+                fusionner une sauvegarde antérieure pour réintégrer tes statistiques SM-2, ton XP, tes cours personnels
+                et ton historique.
             </p>
 
             <div id="stats-recovery-list" style="margin-top: 20px; max-height: 400px; overflow-y: auto;">
                 <!-- Rendu dynamique par renderRecoveryModalList() -->
             </div>
 
-            <div style="margin-top: 25px; padding-top: 15px; border-top: 1px solid var(--surface-light); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
+            <div
+                style="margin-top: 25px; padding-top: 15px; border-top: 1px solid var(--surface-light); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
                 <label class="file-button secondary" for="recovery-import-file" style="cursor: pointer; margin: 0;">
                     📂 Importer un fichier JSON de sauvegarde
                 </label>
-                <input type="file" id="recovery-import-file" accept=".json" onchange="importData(event); closeStatsRecoveryModal();" style="display: none;">
+                <input type="file" id="recovery-import-file" accept=".json"
+                    onchange="importData(event); closeStatsRecoveryModal();" style="display: none;">
                 <button class="secondary" onclick="closeStatsRecoveryModal()">Fermer</button>
             </div>
         </div>
@@ -909,12 +1026,15 @@
             <div id="preview-course-header">
                 <!-- Titre & infos générés en JS -->
             </div>
-            <div id="preview-course-questions" style="max-height: 60vh; overflow-y: auto; margin-top: 15px; padding-right: 5px;">
+            <div id="preview-course-questions"
+                style="max-height: 60vh; overflow-y: auto; margin-top: 15px; padding-right: 5px;">
                 <!-- Liste des questions générée en JS -->
             </div>
-            <div style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--surface-light); display: flex; justify-content: flex-end; gap: 10px;">
+            <div
+                style="margin-top: 20px; padding-top: 15px; border-top: 1px solid var(--surface-light); display: flex; justify-content: flex-end; gap: 10px;">
                 <button class="secondary" onclick="closeCoursePreviewModal()">Fermer</button>
-                <button id="preview-course-action-btn" class="btn btn-primary" onclick="">Ajouter à mes matières</button>
+                <button id="preview-course-action-btn" class="btn btn-primary" onclick="">Ajouter à mes
+                    matières</button>
             </div>
         </div>
     </div>
@@ -976,13 +1096,15 @@
     <script src="Cours/Probabilite/probabilits___chapitre_2_-_conditionnement_et_indpendance.js"></script>
     <script src="Cours/Probabilite/probabilits___chapitre_3_-_variables_alatoires.js"></script>
     <script src="Cours/Probabilite/probabilits___chapitre_4_-_esprance_variance_et_ingalits.js"></script>
-    <script src="Cours/Probabilite/probabilits___chapitre_5_-_vecteurs_alatoires_discrets_indpendance_loi_des_grands_nombres.js"></script>
+    <script
+        src="Cours/Probabilite/probabilits___chapitre_5_-_vecteurs_alatoires_discrets_indpendance_loi_des_grands_nombres.js"></script>
     <script src="Cours/Probabilite/probabilits___chapitre_6_-_introduction__la_marche_alatoire.js"></script>
 
     <!-- Programmation C -->
     <script src="Cours/Programmation C/programmation_c___chapitre_1_(introduction).js"></script>
     <script src="Cours/Programmation C/programmation_c___chapitre_2_(types_et_variables).js"></script>
-    <script src="Cours/Programmation C/programmation_c___chapitre_3_(expressions_instructions_et_e_s_simples).js"></script>
+    <script
+        src="Cours/Programmation C/programmation_c___chapitre_3_(expressions_instructions_et_e_s_simples).js"></script>
     <script src="Cours/Programmation C/programmation_c___chapitre_4_(fonctions).js"></script>
     <script src="Cours/Programmation C/c-cours5-memoire-pointeurs.js"></script>
 
@@ -1007,7 +1129,8 @@
     <script src="Cours/Microeconomie 1/microeconomie_1___chapitre_4_(surplus).js"></script>
     <script src="Cours/Microeconomie 1/microeconomie_1___chapitre_5_(intervention_publique).js"></script>
     <script src="Cours/Microeconomie 1/microeconomie_1___chapitre_6_partie_1_(comportement_consommateur).js"></script>
-    <script src="Cours/Microeconomie 1/microeconomie_1___chapitre_6_partie_2_(theorie_consommateur_formalisee).js"></script>
+    <script
+        src="Cours/Microeconomie 1/microeconomie_1___chapitre_6_partie_2_(theorie_consommateur_formalisee).js"></script>
     <script src="Cours/Microeconomie 1/microeconomie_1___chapitre_7_(entreprise_concurrentielle).js"></script>
     <script src="Cours/Microeconomie 1/microeconomie_1___chapitre_8_(entreprise_monopolistique).js"></script>
 
@@ -1023,6 +1146,7 @@
     <script src="src/data/seed-advanced-exercises.js"></script>
     <script src="app.js"></script>
     <script src="src/engine/community-admin.js"></script>
+    <script src="src/engine/flashcards.js"></script>
 </body>
 
 </html>

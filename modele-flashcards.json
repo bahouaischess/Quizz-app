@@ -1,0 +1,37 @@
+[
+  {
+    "recto": "Quelle est la définition d'un espace vectoriel ?",
+    "verso": "Un ensemble E muni d'une loi de composition interne (+) et d'une loi externe (.) vérifiant les 8 axiomes fondamentaux (associativité, commutativité, élément neutre, élément symétrique, distributivités scalaire et vectorielle).",
+    "subject": "Algèbre 2",
+    "folder": "Mathématiques / Algèbre",
+    "tags": ["Espaces vectoriels", "Définition"]
+  },
+  {
+    "recto": "Quand dit-on qu'une famille de vecteurs (v1, ..., vn) est libre ?",
+    "verso": "Une famille est libre si toute combinaison linéaire nulle implique la nullité de tous ses coefficients : λ1·v1 + ... + λn·vn = 0 ⟹ λ1 = ... = λn = 0.",
+    "subject": "Algèbre 2",
+    "folder": "Mathématiques / Algèbre",
+    "tags": ["Indépendance linéaire", "Base"]
+  },
+  {
+    "recto": "Quelle est la différence fondamentale entre un pointeur et une référence en C/C++ ?",
+    "verso": "Un pointeur possède sa propre adresse mémoire, peut être réassigné ou pointer vers NULL. Une référence est un alias direct et immuable d'une variable existante et ne peut pas être nulle.",
+    "subject": "Programmation C",
+    "folder": "Informatique / Programmation C",
+    "tags": ["Mémoire", "Pointeurs"]
+  },
+  {
+    "recto": "Qu'énonce le théorème de la loi des rendements marginaux décroissants ?",
+    "verso": "À court terme, lorsque la quantité d'un facteur de production variable augmente alors que tous les autres facteurs restent fixes, la productivité marginale de ce facteur finit inévitablement par diminuer.",
+    "subject": "Microéconomie 1",
+    "folder": "Économie / Microéconomie",
+    "tags": ["Production", "Rendements"]
+  },
+  {
+    "recto": "Quelle est la complexité temporelle moyenne et dans le pire des cas du tri rapide (QuickSort) ?",
+    "verso": "Moyenne : O(n log n). Pire des cas (si le pivot choisi est le minimum ou maximum à chaque étape) : O(n²).",
+    "subject": "Algo 3",
+    "folder": "Informatique / Algorithmes",
+    "tags": ["Tri", "Complexité"]
+  }
+]
