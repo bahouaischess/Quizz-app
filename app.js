@@ -162,6 +162,7 @@ async function createSubjectFromValidatedJson(subjectData) {
     const duplicateQuestion = subjectData.questions.find(question => existingQuestions.has(question.q.toLowerCase().replace(/\s+/g, ' ')));
     if (duplicateQuestion) throw new Error(`La question "${duplicateQuestion.q}" existe déjà dans une autre matière.`);
     if (!appData._folders.includes(subjectData.folder)) appData._folders.push(subjectData.folder);
+    if (typeof openFolders !== 'undefined') openFolders.add(subjectData.folder);
 
     const authorEmail = currentUser ? currentUser.email : 'local@etudiant';
 
@@ -737,15 +738,37 @@ function createLocalBackup(force = false) {
     const lastBackup = Number(localStorage.getItem('myQuizLastBackupAt')) || 0;
     if (!force && now - lastBackup < 15 * 60 * 1000) return; // Sauvegarde toutes les 15 minutes
     try {
-        const backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
-        const totalQ = Object.keys(appData).filter(k => !k.startsWith('_')).reduce((acc, k) => acc + (appData[k]?.questions?.length || 0), 0);
+        let backups = [];
+        try {
+            backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
+            if (!Array.isArray(backups)) backups = [];
+        } catch (e) {
+            backups = [];
+        }
+
+        const totalQ = Object.keys(appData || {}).filter(k => !k.startsWith('_')).reduce((acc, k) => acc + (appData[k]?.questions?.length || 0), 0);
         if (totalQ > 0) {
-            backups.push({ at: now, content: JSON.parse(JSON.stringify(appData)) });
-            localStorage.setItem('myQuizBackups', JSON.stringify(backups.slice(-10))); // Conserve 10 snapshots de secours
-            localStorage.setItem('myQuizLastBackupAt', String(now));
+            const snapshot = { at: now, content: JSON.parse(JSON.stringify(appData)) };
+            backups.push(snapshot);
+            // Conserver au maximum 2 snapshots pour respecter la limite de 5Mo de localStorage
+            backups = backups.slice(-2);
+
+            let saved = false;
+            while (backups.length > 0 && !saved) {
+                try {
+                    localStorage.setItem('myQuizBackups', JSON.stringify(backups));
+                    saved = true;
+                } catch (quotaErr) {
+                    console.warn('[Backup] Quota atteint, réduction des snapshots...');
+                    backups.shift(); // Réduire le nombre de sauvegardes
+                }
+            }
+            if (saved) {
+                try { localStorage.setItem('myQuizLastBackupAt', String(now)); } catch (e) {}
+            }
         }
     } catch (error) {
-        console.error('Impossible de créer la sauvegarde locale :', error);
+        console.warn('Impossible de créer la sauvegarde locale (quota sécurisé) :', error.message);
     }
 }
 
@@ -853,12 +876,22 @@ let saveQueue = Promise.resolve();
 let cloudSyncTimeout = null;
 async function saveData(immediate = false) {
     // Sauvegarde locale de sécurité immédiate
-    try { localStorage.setItem('myQuizData', JSON.stringify(appData)); } catch (e) { }
+    try { 
+        localStorage.setItem('myQuizData', JSON.stringify(appData)); 
+    } catch (e) {
+        console.warn("Quota atteint pour myQuizData, libération d'espace...", e.message);
+        try {
+            localStorage.removeItem('myQuizBackups');
+            localStorage.setItem('myQuizData', JSON.stringify(appData));
+        } catch (e2) {
+            console.error("Échec persistance myQuizData locale:", e2);
+        }
+    }
     createLocalBackup();
 
     // Mettre à jour l'annuaire local pour l'admin
     if (window.communityAdmin && typeof window.communityAdmin.recordUserInDirectory === 'function') {
-        window.communityAdmin.recordUserInDirectory();
+        try { window.communityAdmin.recordUserInDirectory(); } catch (err) {}
     }
 
     // Synchro Cloud
@@ -1047,6 +1080,7 @@ async function createSubjectFromApp() {
 // -----------------------------------------------------
 let currentSubject = "";
 let openFolders = new Set();
+window.openFolders = openFolders;
 let editingQuestionRef = null;
 let activeTagsForNewQuestion = new Set(), activeFilterTags = new Set(), globalCustomFilterTags = new Set();
 
@@ -1374,7 +1408,14 @@ function showView(viewId, navElement = null) {
         navElement.classList.add('active');
     }
     if (viewId === 'home-view') {
-        openFolders.clear();
+        if (openFolders.size === 0) {
+            Object.keys(appData || {}).forEach(s => {
+                if (isSubjectAvailable(s) && appData[s]?.folder && appData[s].folder !== ARCHIVE_FOLDER) {
+                    openFolders.add(appData[s].folder);
+                }
+            });
+            if (openFolders.size === 0) openFolders.add(DEFAULT_FOLDER);
+        }
         renderHome();
     }
     if (viewId === 'workout-hub-view' && window.WorkoutView) WorkoutView.renderHub();
@@ -1500,7 +1541,15 @@ function renderHome() {
     ensureArchiveFolder();
     populateFolderSelects();
 
-    // Les dossiers restent fermés par défaut pour une interface sobre et aérée
+    // Ouvrir automatiquement les dossiers contenant des matières visibles si aucun dossier n'est ouvert
+    if (openFolders.size === 0) {
+        Object.keys(appData || {}).forEach(s => {
+            if (isSubjectAvailable(s) && appData[s]?.folder && appData[s].folder !== ARCHIVE_FOLDER) {
+                openFolders.add(appData[s].folder);
+            }
+        });
+        if (openFolders.size === 0) openFolders.add(DEFAULT_FOLDER);
+    }
 
     const resumeBox = document.getElementById('resume-quiz-box');
     if (resumeBox) resumeBox.classList.toggle('hidden', !hasActiveQuiz());
@@ -3325,6 +3374,19 @@ window.quizzRecovery = {
         try {
             const parsed = JSON.parse(rescue);
             appData = mergeDataWithDefaults(parsed, appData);
+            
+            // Réactivation et ouverture des dossiers pour toutes les matières restaurées
+            Object.keys(parsed || {}).forEach(sub => {
+                if (!sub.startsWith('_') && appData[sub]) {
+                    appData[sub].isSelected = true;
+                    appData[sub].deleted = false;
+                    if (window.communityAdmin && typeof window.communityAdmin.addSubjectToUserSelection === 'function') {
+                        window.communityAdmin.addSubjectToUserSelection(sub);
+                    }
+                    if (appData[sub].folder) openFolders.add(appData[sub].folder);
+                }
+            });
+
             saveData();
             renderHome();
             updatePlayerUI();
@@ -3336,7 +3398,10 @@ window.quizzRecovery = {
         }
     },
     restore(index = -1) {
-        const backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
+        let backups = [];
+        try {
+            backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
+        } catch(e) { backups = []; }
         if (!backups.length) {
             console.error("Aucune sauvegarde disponible.");
             return false;
@@ -3347,6 +3412,19 @@ window.quizzRecovery = {
             return false;
         }
         appData = mergeDataWithDefaults(target.content, appData);
+
+        // Réactivation et ouverture des dossiers pour toutes les matières restaurées
+        Object.keys(target.content || {}).forEach(sub => {
+            if (!sub.startsWith('_') && appData[sub]) {
+                appData[sub].isSelected = true;
+                appData[sub].deleted = false;
+                if (window.communityAdmin && typeof window.communityAdmin.addSubjectToUserSelection === 'function') {
+                    window.communityAdmin.addSubjectToUserSelection(sub);
+                }
+                if (appData[sub].folder) openFolders.add(appData[sub].folder);
+            }
+        });
+
         saveData();
         renderHome();
         updatePlayerUI();

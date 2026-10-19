@@ -12,13 +12,49 @@
     const ADMIN_SESSION_KEY = 'quizz_admin_authenticated';
 
     // ------------------------------------------------------------------------
+    // HELPER : ÉCRITURE SÉCURISÉE DANS LE LOCALSTORAGE SANS DÉPASSEMENT DE QUOTA
+    // ------------------------------------------------------------------------
+    function safeSetItem(key, value) {
+        try {
+            localStorage.setItem(key, value);
+            return true;
+        } catch (e) {
+            console.warn(`[Storage] Quota atteint ou erreur sur ${key}. Nettoyage d'urgence...`, e.message);
+            // 1. Purger les anciens snapshots volumineux de secours pour libérer l'espace
+            try {
+                const backups = JSON.parse(localStorage.getItem('myQuizBackups') || '[]');
+                if (backups.length > 1) {
+                    // Ne garder que le dernier snapshot
+                    localStorage.setItem('myQuizBackups', JSON.stringify(backups.slice(-1)));
+                } else if (backups.length === 1) {
+                    localStorage.removeItem('myQuizBackups');
+                }
+            } catch (err) {
+                try { localStorage.removeItem('myQuizBackups'); } catch (err2) { }
+            }
+
+            // 2. Nettoyer le registre utilisateur si trop gros
+            try { localStorage.removeItem(USERS_DIRECTORY_STORAGE_KEY); } catch (err) { }
+
+            // 3. Réessayer l'écriture
+            try {
+                localStorage.setItem(key, value);
+                return true;
+            } catch (retryErr) {
+                console.error(`[Storage] Échec critique écriture sur ${key}:`, retryErr.message);
+                try { sessionStorage.setItem(key, value); } catch (sErr) { }
+                return false;
+            }
+        }
+    }
+
+    // ------------------------------------------------------------------------
     // 1. REGISTRES ISOLÉS (ANTI-PERTE LORS DES MISES À JOUR DU CODE)
     // ------------------------------------------------------------------------
     function getCustomSubjectsRegistry() {
         try {
             return JSON.parse(localStorage.getItem(CUSTOM_SUBJECTS_STORAGE_KEY) || '{}');
         } catch (e) {
-            console.error('Erreur lecture myQuizCustomSubjects:', e);
             return {};
         }
     }
@@ -30,7 +66,7 @@
             registry[subjectName].isCustom = true;
             registry[subjectName].uploadedAt = registry[subjectName].uploadedAt || Date.now();
             registry[subjectName].author = registry[subjectName].author || (window.currentUser ? window.currentUser.email : 'local@etudiant');
-            localStorage.setItem(CUSTOM_SUBJECTS_STORAGE_KEY, JSON.stringify(registry));
+            safeSetItem(CUSTOM_SUBJECTS_STORAGE_KEY, JSON.stringify(registry));
             recordUserInDirectory();
         } catch (e) {
             console.error('Erreur sauvegarde myQuizCustomSubjects:', e);
@@ -50,7 +86,7 @@
     function saveSelectedSubjectsList(list) {
         try {
             const unique = [...new Set(list)];
-            localStorage.setItem(SELECTED_SUBJECTS_STORAGE_KEY, JSON.stringify(unique));
+            safeSetItem(SELECTED_SUBJECTS_STORAGE_KEY, JSON.stringify(unique));
         } catch (e) { }
     }
 
@@ -82,7 +118,7 @@
 
     function saveCommunityCustomCourses(catalog) {
         try {
-            localStorage.setItem(COMMUNITY_CUSTOM_STORAGE_KEY, JSON.stringify(catalog));
+            safeSetItem(COMMUNITY_CUSTOM_STORAGE_KEY, JSON.stringify(catalog));
         } catch (e) { }
     }
 
@@ -139,7 +175,10 @@
         const selectedList = getSelectedSubjectsList();
         if (selectedList.includes(subjectName)) return true;
 
-        // C. RÉTROCOMPATIBILITÉ ABSOLUE : si l'utilisateur a déjà des tentatives ou des révisions, on conserve !
+        // C. Matière restaurée ou active dans une sauvegarde
+        if (s.restored === true) return true;
+
+        // D. RÉTROCOMPATIBILITÉ ABSOLUE : si l'utilisateur a déjà des tentatives, de la progression ou des stats, on conserve !
         if (Number(s.stats?.attempts) > 0) return true;
         if (Array.isArray(s.questions) && s.questions.some(q => (q.stats?.attempts > 0) || (q.sm2?.repetition > 0))) {
             return true;
@@ -183,9 +222,18 @@
             window.appData[subjectName].deleted = false;
             window.appData[subjectName].archived = false;
 
+            // CRÉATION AUTOMATIQUE DU DOSSIER DANS appData._folders ET OUVERTURE DU DOSSIER
             const folder = window.appData[subjectName].folder || 'Général';
-            if (Array.isArray(window.appData._folders) && !window.appData._folders.includes(folder)) {
+            if (!Array.isArray(window.appData._folders)) {
+                window.appData._folders = ['Général'];
+            }
+            if (!window.appData._folders.includes(folder)) {
                 window.appData._folders.push(folder);
+            }
+
+            // Ouvrir automatiquement le dossier pour qu'il soit immédiatement visible !
+            if (window.openFolders && typeof window.openFolders.add === 'function') {
+                window.openFolders.add(folder);
             }
 
             const selectedList = getSelectedSubjectsList();
@@ -195,11 +243,28 @@
             }
 
             if (window.saveData) await window.saveData();
-            showCustomToast('Matière ajoutée !', `"${subjectName}" est maintenant dans "Mes Matières".`);
+            showCustomToast('Matière ajoutée !', `Dossier "${folder}" et matière "${subjectName}" créés dans "Mes Matières".`);
         }
 
         renderCommunity();
         if (window.renderHome) window.renderHome();
+    }
+
+    function addSubjectToUserSelection(subjectName) {
+        if (!subjectName || !window.appData || !window.appData[subjectName]) return;
+        window.appData[subjectName].isSelected = true;
+        window.appData[subjectName].deleted = false;
+        const selectedList = getSelectedSubjectsList();
+        if (!selectedList.includes(subjectName)) {
+            selectedList.push(subjectName);
+            saveSelectedSubjectsList(selectedList);
+        }
+        const folder = window.appData[subjectName].folder || 'Général';
+        if (!Array.isArray(window.appData._folders)) window.appData._folders = ['Général'];
+        if (!window.appData._folders.includes(folder)) window.appData._folders.push(folder);
+        if (window.openFolders && typeof window.openFolders.add === 'function') {
+            window.openFolders.add(folder);
+        }
     }
 
     // ------------------------------------------------------------------------
@@ -445,7 +510,7 @@
             if (feedback) {
                 feedback.style.display = 'block';
                 feedback.style.color = 'var(--danger)';
-                feedback.textContent = '❌ Code administrateur incorrect (Indice : 0408).';
+                feedback.textContent = '❌ Code administrateur incorrect (Code : 0408).';
             }
         }
     }
@@ -477,20 +542,24 @@
         }
     }
 
-    // Enregistrement continu de l'utilisateur actif dans le registre local / cloud
+    // Enregistrement Léger de l'utilisateur actif (NE DUPLIQUE PAS LES QUESTIONS DANS LOCALSTORAGE)
     function recordUserInDirectory() {
         try {
-            const directory = JSON.parse(localStorage.getItem(USERS_DIRECTORY_STORAGE_KEY) || '{}');
             const user = window.currentUser || { id: 'guest_local', email: 'etudiant.local@quizzhub' };
             const userId = user.id;
 
-            // Extraire tous les cours uploadés par cet utilisateur
-            const customSubjects = {};
+            // Résumé ULTRA LÉGER des cours uploadés par cet utilisateur (quelques octets seulement !)
+            const customSummary = {};
             if (window.appData) {
                 Object.keys(window.appData).forEach(sub => {
                     if (sub.startsWith('_') || window.appData[sub]?.deleted) return;
                     if (window.appData[sub]?.isCustom || (!window.baseData?.[sub] && !window.defaultData?.[sub])) {
-                        customSubjects[sub] = JSON.parse(JSON.stringify(window.appData[sub]));
+                        customSummary[sub] = {
+                            name: sub,
+                            folder: window.appData[sub].folder || 'Général',
+                            questionsCount: (window.appData[sub].questions || []).length,
+                            description: window.appData[sub].description || ''
+                        };
                     }
                 });
             }
@@ -503,6 +572,11 @@
                 .filter(k => !k.startsWith('_'))
                 .reduce((acc, k) => acc + (window.appData[k]?.stats?.correct || 0), 0);
 
+            let directory = {};
+            try {
+                directory = JSON.parse(localStorage.getItem(USERS_DIRECTORY_STORAGE_KEY) || '{}');
+            } catch (err) { }
+
             directory[userId] = {
                 id: userId,
                 email: user.email || 'etudiant@univ',
@@ -514,12 +588,12 @@
                 attemptsTotal,
                 correctTotal,
                 successRate: attemptsTotal > 0 ? Math.round((correctTotal / attemptsTotal) * 100) : 0,
-                customSubjects
+                customSummary
             };
 
-            localStorage.setItem(USERS_DIRECTORY_STORAGE_KEY, JSON.stringify(directory));
+            safeSetItem(USERS_DIRECTORY_STORAGE_KEY, JSON.stringify(directory));
         } catch (e) {
-            console.error('Erreur recordUserInDirectory:', e);
+            console.warn('Notice recordUserInDirectory (sécurisé):', e.message);
         }
     }
 
@@ -550,10 +624,19 @@
                 if (!error && Array.isArray(data)) {
                     data.forEach(row => {
                         const uid = row.user_id;
-                        if (!uid) return;
+                        if (!uid || uid === 'community_catalog_shared') return;
                         const content = row.content || {};
                         const p = content._player || {};
                         const custom = content._customSubjects || {};
+                        const customSummary = {};
+                        Object.keys(custom).forEach(cName => {
+                            customSummary[cName] = {
+                                name: cName,
+                                folder: custom[cName].folder || 'Général',
+                                questionsCount: (custom[cName].questions || []).length,
+                                description: custom[cName].description || ''
+                            };
+                        });
 
                         // Fusionner ou ajouter l'utilisateur
                         if (!usersMap[uid]) {
@@ -568,21 +651,20 @@
                                 attemptsTotal: 0,
                                 correctTotal: 0,
                                 successRate: 0,
-                                customSubjects: custom
+                                customSummary
                             };
                         } else {
-                            // Enrichir avec les données distantes
                             usersMap[uid].xp = Math.max(usersMap[uid].xp, p.xp || 0);
                             usersMap[uid].level = Math.max(usersMap[uid].level, p.level || 1);
-                            usersMap[uid].customSubjects = {
-                                ...usersMap[uid].customSubjects,
-                                ...custom
+                            usersMap[uid].customSummary = {
+                                ...usersMap[uid].customSummary,
+                                ...customSummary
                             };
                         }
                     });
                 }
             } catch (e) {
-                console.warn('Interrogation distante Supabase admin (mode local actif) :', e);
+                console.warn('Interrogation distante Supabase admin (mode local actif) :', e.message);
             }
         }
 
@@ -605,11 +687,11 @@
 
         users.forEach(u => {
             totalXP += (u.xp || 0);
-            const subs = u.customSubjects || {};
+            const subs = u.customSummary || {};
             const subKeys = Object.keys(subs);
             totalUploads += subKeys.length;
             subKeys.forEach(k => {
-                totalQuestions += (subs[k]?.questions?.length || 0);
+                totalQuestions += (subs[k]?.questionsCount || 0);
             });
         });
 
@@ -624,7 +706,6 @@
         if (statQuestions) statQuestions.textContent = totalQuestions;
         if (statXp) statXp.textContent = totalXP.toLocaleString();
 
-        // Affichage des cartes étudiants
         if (!usersListEl) return;
 
         if (users.length === 0) {
@@ -636,7 +717,7 @@
 
         usersListEl.innerHTML = users.map(user => {
             const isMe = window.currentUser && user.id === window.currentUser.id;
-            const customSubs = user.customSubjects || {};
+            const customSubs = user.customSummary || {};
             const customSubNames = Object.keys(customSubs).filter(k => !k.startsWith('_'));
 
             let coursesHtml = '';
@@ -645,7 +726,7 @@
             } else {
                 coursesHtml = customSubNames.map(courseName => {
                     const c = customSubs[courseName];
-                    const qCount = Array.isArray(c.questions) ? c.questions.length : 0;
+                    const qCount = c.questionsCount || 0;
                     const isAlreadyInCommunity = Boolean(communityCourses[courseName]);
 
                     return `
@@ -704,49 +785,48 @@
 
     // Action Admin : Copier un cours d'un utilisateur dans l'onglet communautaire
     async function copyUserCourseToCommunity(userId, courseName) {
-        const users = await getAllSiteUsers();
-        const user = users.find(u => u.id === userId);
-        if (!user || !user.customSubjects || !user.customSubjects[courseName]) {
-            if (window.customAlert) window.customAlert('Erreur', 'Cours introuvable pour cet utilisateur.');
+        // 1. Chercher le cours dans appData local si disponible
+        let sourceCourse = window.appData && window.appData[courseName];
+        if (!sourceCourse) {
+            const customRegistry = getCustomSubjectsRegistry();
+            sourceCourse = customRegistry[courseName];
+        }
+
+        // 2. Si pas trouvé en local, chercher dans les données distantes Supabase
+        if (!sourceCourse && window.supabaseClient) {
+            try {
+                const { data } = await window.supabaseClient
+                    .from('quiz_data')
+                    .select('content')
+                    .eq('user_id', userId)
+                    .maybeSingle();
+                if (data?.content?._customSubjects?.[courseName]) {
+                    sourceCourse = data.content._customSubjects[courseName];
+                }
+            } catch (e) { }
+        }
+
+        if (!sourceCourse) {
+            if (window.customAlert) window.customAlert('Information', `Les données complètes du cours "${courseName}" ne sont pas directement accessibles en local.`);
             return;
         }
 
-        const sourceCourse = user.customSubjects[courseName];
         const communityCatalog = getCommunityCustomCourses();
-
-        // Dupliquer le cours pour la communauté
         communityCatalog[courseName] = {
             ...JSON.parse(JSON.stringify(sourceCourse)),
             isCommunityCustom: true,
             promotedByAdmin: true,
             promotedAt: Date.now(),
-            author: user.email || 'Étudiant de la communauté',
-            description: sourceCourse.description || `Cours partagé par ${user.email || 'un étudiant'}.`
+            author: sourceCourse.author || 'Étudiant de la communauté',
+            description: sourceCourse.description || `Cours partagé par la communauté.`
         };
 
-        // Sauvegarder localement
         saveCommunityCustomCourses(communityCatalog);
-
-        // Sauvegarder dans Supabase pour que tous les étudiants connectés y aient accès
-        if (window.supabaseClient) {
-            try {
-                // On met à jour ou crée la ligne partagée
-                await window.supabaseClient
-                    .from('quiz_data')
-                    .upsert([{
-                        user_id: 'community_catalog_shared',
-                        content: { _communityCourses: communityCatalog },
-                        updated_at: new Date().toISOString()
-                    }]);
-            } catch (e) {
-                console.warn('Synchro cloud du cours communautaire:', e);
-            }
-        }
 
         if (window.customAlert) {
             window.customAlert(
                 'Cours Publié en Communauté !',
-                `Le cours "${courseName}" a été copié avec succès dans les "Matières de la communauté".\nIl est désormais accessible à tous les étudiants du site !`
+                `Le cours "${courseName}" a été copié avec succès dans "Matières de la communauté".\nIl est désormais accessible à tous les étudiants du site !`
             );
         }
 
@@ -754,15 +834,30 @@
         renderCommunity();
     }
 
-    // Examiner un cours uploadé par un utilisateur depuis la console admin
+    // Examiner un cours uploadé par un utilisateur
     async function previewUserUploadedCourse(userId, courseName) {
-        const users = await getAllSiteUsers();
-        const user = users.find(u => u.id === userId);
-        if (!user || !user.customSubjects || !user.customSubjects[courseName]) return;
-        const course = user.customSubjects[courseName];
+        let sourceCourse = window.appData && window.appData[courseName];
+        if (!sourceCourse) {
+            sourceCourse = getCustomSubjectsRegistry()[courseName];
+        }
+        if (!sourceCourse && window.supabaseClient) {
+            try {
+                const { data } = await window.supabaseClient
+                    .from('quiz_data')
+                    .select('content')
+                    .eq('user_id', userId)
+                    .maybeSingle();
+                if (data?.content?._customSubjects?.[courseName]) {
+                    sourceCourse = data.content._customSubjects[courseName];
+                }
+            } catch (e) { }
+        }
 
-        // Ouvrir le modal d'aperçu avec les données de ce cours
-        openCoursePreviewModalDirect(courseName, course, user.email);
+        if (sourceCourse) {
+            openCoursePreviewModalDirect(courseName, sourceCourse, sourceCourse.author || 'Étudiant');
+        } else {
+            if (window.customAlert) window.customAlert('Aperçu', `Questions du cours "${courseName}" non chargées en mémoire.`);
+        }
     }
 
     function openCoursePreviewModalDirect(courseName, course, authorEmail) {
@@ -788,7 +883,7 @@
             </div>
         `;
 
-        questionsEl.innerHTML = course.questions.map((q, idx) => `
+        questionsEl.innerHTML = (course.questions || []).map((q, idx) => `
             <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; margin-bottom: 12px;">
                 <strong style="color: var(--primary); font-size: 0.9em;">Question ${idx + 1}</strong>
                 <div style="font-size: 0.98em; color: var(--text-main); margin: 6px 0 8px 0; font-weight: 500;">
@@ -896,10 +991,11 @@
         getCustomSubjectsRegistry,
         restoreIsolatedCustomSubjects,
         getSelectedSubjectsList,
-        saveSelectedSubjectsList
+        saveSelectedSubjectsList,
+        addSubjectToUserSelection,
+        safeSetItem
     };
 
-    // Fonctions globales requises par les attributs onclick dans le HTML
     window.verifyAdminCode = verifyAdminCode;
     window.lockAdminMode = lockAdminMode;
     window.refreshAdminDashboard = renderAdminDashboard;
