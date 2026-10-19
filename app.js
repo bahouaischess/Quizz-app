@@ -1763,7 +1763,6 @@ function renderHome() {
                 btn.appendChild(actionWrap);
                 subjectsContainer.appendChild(btn);
             });
-        }
 
         folderDiv.appendChild(subjectsContainer);
         frag.appendChild(folderDiv);
