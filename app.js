@@ -26,6 +26,9 @@ function isSubjectDeleted(subjectName) {
 }
 
 function isSubjectAvailable(subjectName) {
+    if (window.communityAdmin && typeof window.communityAdmin.isUserSubject === 'function') {
+        return window.communityAdmin.isUserSubject(subjectName);
+    }
     return Boolean(subjectName && !subjectName.startsWith('_') && !isSubjectDeleted(subjectName));
 }
 
@@ -154,20 +157,34 @@ async function createSubjectFromValidatedJson(subjectData) {
     const existingQuestions = new Set();
     Object.keys(appData).forEach(subject => {
         if (subject.startsWith('_')) return;
-        appData[subject].questions.forEach(question => existingQuestions.add(question.q.toLowerCase().replace(/\s+/g, ' ')));
+        (appData[subject].questions || []).forEach(question => existingQuestions.add(question.q.toLowerCase().replace(/\s+/g, ' ')));
     });
     const duplicateQuestion = subjectData.questions.find(question => existingQuestions.has(question.q.toLowerCase().replace(/\s+/g, ' ')));
     if (duplicateQuestion) throw new Error(`La question "${duplicateQuestion.q}" existe déjà dans une autre matière.`);
     if (!appData._folders.includes(subjectData.folder)) appData._folders.push(subjectData.folder);
+
+    const authorEmail = currentUser ? currentUser.email : 'local@etudiant';
+
     appData[subjectData.name] = {
         folder: subjectData.folder,
         description: subjectData.description,
         prerequisites: subjectData.prerequisites,
         questions: subjectData.questions,
         stats: { attempts: 0, correct: 0, partial: 0 },
-        dailyValidations: {}
+        dailyValidations: {},
+        isCustom: true,
+        isSelected: true,
+        uploadedAt: Date.now(),
+        author: authorEmail
     };
-    await saveData();
+
+    // 1. Sauvegarde dans le magasin isolé anti-perte
+    if (window.communityAdmin && window.communityAdmin.saveCustomSubjectToRegistry) {
+        window.communityAdmin.saveCustomSubjectToRegistry(subjectData.name, appData[subjectData.name]);
+    }
+
+    // 2. Sauvegarde générale immédiate
+    await saveData(true);
 }
 
 async function importSubjectJsonText() {
@@ -564,6 +581,11 @@ if (localSave) {
     }
 }
 
+// Sécurité Anti-Perte : Restaurer immédiatement tous les cours uploadés dans appData
+if (window.communityAdmin && typeof window.communityAdmin.restoreIsolatedCustomSubjects === 'function') {
+    window.communityAdmin.restoreIsolatedCustomSubjects(appData);
+}
+
 // -----------------------------------------------------
 // AUTHENTIFICATION & SAUVEGARDE CLOUD
 // -----------------------------------------------------
@@ -608,6 +630,16 @@ async function initAppAfterAuth() {
             .single();
 
         if (insertData) dbRowId = insertData.id;
+    }
+
+    // Sécurité Anti-Perte post-auth : Réinjection des cours personnalisés & enregistrement annuaire
+    if (window.communityAdmin) {
+        if (typeof window.communityAdmin.restoreIsolatedCustomSubjects === 'function') {
+            window.communityAdmin.restoreIsolatedCustomSubjects(appData);
+        }
+        if (typeof window.communityAdmin.recordUserInDirectory === 'function') {
+            window.communityAdmin.recordUserInDirectory();
+        }
     }
 
     restoreQuizState();
@@ -778,14 +810,21 @@ function extractUserDelta() {
         _workoutHistory: (appData._workoutHistory || []).slice(-200),
         _mastery: window.MasteryTracker ? window.MasteryTracker.init() : {},
         _customSubjects: {}, // Sauvegarde intégrale des cours personnalisés uploadés par l'utilisateur
+        _selectedCommunitySubjects: (window.communityAdmin && typeof window.communityAdmin.getSelectedSubjectsList === 'function')
+            ? window.communityAdmin.getSelectedSubjectsList()
+            : [],
         _progress: {}
     };
 
     // 1. Sauvegarde de tous les cours personnalisés dans le Cloud
+    const customRegistry = (window.communityAdmin && window.communityAdmin.getCustomSubjectsRegistry)
+        ? window.communityAdmin.getCustomSubjectsRegistry()
+        : {};
+
     Object.keys(appData).forEach(sub => {
         if (sub.startsWith('_') || appData[sub]?.deleted) return;
-        // Si ce cours n'existe pas dans le catalogue officiel de baseData, c'est un cours perso
-        if (!baseData || !baseData[sub]) {
+        const isCustom = appData[sub]?.isCustom || Boolean(customRegistry[sub]) || (!baseData || !baseData[sub]);
+        if (isCustom && appData[sub]?.questions) {
             delta._customSubjects[sub] = JSON.parse(JSON.stringify(appData[sub]));
         }
     });
@@ -812,15 +851,20 @@ function extractUserDelta() {
 
 let saveQueue = Promise.resolve();
 let cloudSyncTimeout = null;
-async function saveData() {
+async function saveData(immediate = false) {
     // Sauvegarde locale de sécurité immédiate
     try { localStorage.setItem('myQuizData', JSON.stringify(appData)); } catch (e) { }
     createLocalBackup();
 
-    // Synchro Cloud debouncée (1000ms) avec payload léger séparé (deltas / stats)
+    // Mettre à jour l'annuaire local pour l'admin
+    if (window.communityAdmin && typeof window.communityAdmin.recordUserInDirectory === 'function') {
+        window.communityAdmin.recordUserInDirectory();
+    }
+
+    // Synchro Cloud
     if (currentUser && dbRowId) {
         clearTimeout(cloudSyncTimeout);
-        cloudSyncTimeout = setTimeout(() => {
+        const executeCloudSync = () => {
             const deltaPayload = extractUserDelta();
             saveQueue = saveQueue.then(async () => {
                 const { error } = await supabaseClient
@@ -829,7 +873,13 @@ async function saveData() {
                     .eq('id', dbRowId);
                 if (error) console.error("Erreur synchro Supabase:", error.message);
             }).catch(error => console.error('Erreur dans la file de sauvegarde :', error));
-        }, 1000);
+        };
+
+        if (immediate) {
+            executeCloudSync();
+        } else {
+            cloudSyncTimeout = setTimeout(executeCloudSync, 1000);
+        }
     }
 }
 
@@ -1272,6 +1322,23 @@ function renderUserProfile() {
             `).join('');
         }
     }
+
+    // Actualisation de l'état administrateur
+    if (window.communityAdmin) {
+        const isAuth = sessionStorage.getItem('quizz_admin_authenticated') === 'true';
+        const badge = document.getElementById('admin-status-badge');
+        const panel = document.getElementById('admin-panel-container');
+        const loginBox = document.getElementById('admin-login-box');
+        if (badge) badge.style.display = isAuth ? 'inline-block' : 'none';
+        if (panel) {
+            panel.classList.toggle('hidden', !isAuth);
+            panel.style.display = isAuth ? 'block' : 'none';
+        }
+        if (loginBox) loginBox.style.display = isAuth ? 'none' : 'flex';
+        if (isAuth && typeof window.communityAdmin.renderAdminDashboard === 'function') {
+            window.communityAdmin.renderAdminDashboard();
+        }
+    }
 }
 window.renderUserProfile = renderUserProfile;
 
@@ -1453,15 +1520,39 @@ function renderHome() {
         subjectsByFolder[folder] = [];
     });
 
+    let totalShownSubjects = 0;
     Object.keys(appData).forEach(subject => {
         if (subject.startsWith('_') || appData[subject]?.deleted) return;
+        if (!isSubjectAvailable(subject)) return;
         if (searchQuery && !subject.toLowerCase().includes(searchQuery)) return;
 
+        totalShownSubjects++;
         const folder = appData[subject]?.folder || DEFAULT_FOLDER;
         if (subjectsByFolder[folder] !== undefined) {
             subjectsByFolder[folder].push(subject);
         }
     });
+
+    if (totalShownSubjects === 0 && !searchQuery && folderFilter === 'ALL') {
+        list.innerHTML = `
+            <div class="empty-state-card" style="margin: 20px 0; padding: 40px 20px; background: rgba(255,255,255,0.02); border: 2px dashed var(--surface-light); border-radius: 16px; text-align: center;">
+                <span style="font-size: 3em;">📚</span>
+                <h3 style="margin: 14px 0 8px 0; color: var(--primary); font-size: 1.3em;">Aucune matière sélectionnée dans "Mes Matières"</h3>
+                <p style="color: var(--text-muted); font-size: 0.95em; max-width: 500px; margin: 0 auto 22px auto; line-height: 1.5;">
+                    Choisis parmi les <strong>45+ cours officiels</strong> dans <strong>Matières de la communauté</strong> ou importe tes propres cours au format JSON pour démarrer !
+                </p>
+                <div style="display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">
+                    <button class="btn btn-primary" onclick="showView('community-view'); if (window.renderCommunity) window.renderCommunity();">
+                        🌍 Explorer les matières de la communauté
+                    </button>
+                    <button class="secondary" onclick="showView('create-subject-view');">
+                        ➕ Ajouter ma propre matière
+                    </button>
+                </div>
+            </div>
+        `;
+        return;
+    }
 
     Object.keys(subjectsByFolder).forEach(folder => {
         const subjects = subjectsByFolder[folder];
@@ -1584,24 +1675,22 @@ function toggleFolder(folder) {
 
 
 // -----------------------------------------------------
-// ESPACE COMMUNAUTAIRE (MOCK-UP)
+// MATIÈRES DE LA COMMUNAUTÉ
 // -----------------------------------------------------
 function renderCommunity() {
-    const container = document.getElementById('community-list');
-    container.innerHTML = `
-        <div class="card" style="text-align: center; grid-column: 1 / -1; padding: 40px; border-style: dashed; border-color: var(--text-muted);">
-            <span style="font-size: 3em;">🚧</span>
-            <h3 style="color: var(--primary); margin-top: 15px;">La connexion Supabase arrive !</h3>
-            <p style="color: var(--text-muted); font-size: 0.9em; line-height: 1.5; max-width: 500px; margin: 0 auto;">
-                C'est ici que tu pourras parcourir le catalogue public et importer les quiz créés par tes camarades. 
-                Le système de partage asynchrone (JSONB via Supabase) est en cours de déploiement.
-            </p>
-        </div>
-    `;
+    if (window.communityAdmin && typeof window.communityAdmin.renderCommunity === 'function') {
+        window.communityAdmin.renderCommunity();
+    }
+}
+
+function filterCommunityCourses() {
+    if (window.communityAdmin && typeof window.communityAdmin.filterCommunityCourses === 'function') {
+        window.communityAdmin.filterCommunityCourses();
+    }
 }
 
 function searchCommunity() {
-    customAlert("Recherche", "La recherche communautaire sera activée dès que la table publique Supabase sera connectée !");
+    filterCommunityCourses();
 }
 
 // VUE MATIÈRE 
