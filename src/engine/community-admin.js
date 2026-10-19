@@ -94,13 +94,30 @@
     function restoreIsolatedCustomSubjects(targetAppData) {
         if (!targetAppData || typeof targetAppData !== 'object') return;
         const registry = getCustomSubjectsRegistry();
+        let deletedFolders = [];
+        try {
+            deletedFolders = JSON.parse(localStorage.getItem('myQuizDeletedFolders') || '[]');
+            if (!Array.isArray(deletedFolders)) deletedFolders = [];
+        } catch (e) { deletedFolders = []; }
+        const deletedSet = new Set(deletedFolders);
+
         Object.keys(registry).forEach(name => {
-            if (!targetAppData[name] || !Array.isArray(targetAppData[name].questions) || targetAppData[name].questions.length === 0) {
+            if (!targetAppData[name] || !Array.isArray(targetAppData[name].questions) || targetAppData[name].questions.length < (registry[name].questions?.length || 0)) {
                 targetAppData[name] = JSON.parse(JSON.stringify(registry[name]));
                 targetAppData[name].isCustom = true;
                 targetAppData[name].isSelected = true;
             } else {
                 targetAppData[name].isCustom = true;
+            }
+
+            // Si le dossier a été supprimé par l'utilisateur, ne jamais le ressusciter
+            if (deletedSet.has(targetAppData[name].folder)) {
+                targetAppData[name].folder = 'Général';
+                registry[name].folder = 'Général';
+            }
+
+            if (targetAppData._folders && !deletedSet.has(targetAppData[name].folder) && !targetAppData._folders.includes(targetAppData[name].folder)) {
+                targetAppData._folders.push(targetAppData[name].folder);
             }
         });
     }

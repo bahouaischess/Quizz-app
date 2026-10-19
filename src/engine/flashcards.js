@@ -52,7 +52,13 @@
         const recto = typeof raw.recto === 'string' ? raw.recto.trim() : (raw.front || raw.question || '');
         const verso = typeof raw.verso === 'string' ? raw.verso.trim() : (raw.back || raw.answer || raw.reponse || '');
         const subject = (raw.subject || raw.matiere || raw.matière || DEFAULT_SUBJECT).trim() || DEFAULT_SUBJECT;
-        const folder = (raw.folder || raw.dossier || DEFAULT_FOLDER).trim() || DEFAULT_FOLDER;
+        let folder = (raw.folder || raw.dossier || DEFAULT_FOLDER).trim() || DEFAULT_FOLDER;
+        let deletedFolders = [];
+        try {
+            deletedFolders = JSON.parse(localStorage.getItem('myQuizDeletedFolders') || '[]');
+        } catch (e) { deletedFolders = []; }
+        if (deletedFolders.includes(folder)) folder = DEFAULT_FOLDER;
+
         const tags = Array.isArray(raw.tags) ? raw.tags.map(t => String(t).trim()).filter(Boolean) : [];
 
         const rawSm2 = raw.sm2 || {};
@@ -88,13 +94,21 @@
     // Récupérer les dossiers et sous-dossiers uniques
     function getAllFolders() {
         const cards = getFlashcards();
+        let deletedFolders = [];
+        try {
+            deletedFolders = JSON.parse(localStorage.getItem('myQuizDeletedFolders') || '[]');
+            if (!Array.isArray(deletedFolders)) deletedFolders = [];
+        } catch (e) { deletedFolders = []; }
+        const deletedSet = new Set(deletedFolders);
+
         const folderSet = new Set([DEFAULT_FOLDER]);
         cards.forEach(c => {
-            if (c.folder) folderSet.add(c.folder);
+            if (c.folder && !deletedSet.has(c.folder)) folderSet.add(c.folder);
+            else if (c.folder && deletedSet.has(c.folder)) c.folder = DEFAULT_FOLDER;
         });
         if (window.appData && Array.isArray(window.appData._folders)) {
             window.appData._folders.forEach(f => {
-                if (f && f !== 'Archives') folderSet.add(f);
+                if (f && f !== 'Archives' && !deletedSet.has(f)) folderSet.add(f);
             });
         }
         return Array.from(folderSet).sort();

@@ -372,7 +372,16 @@ function normalizeData(rawData) {
         oldFolders = rawData._player.folders.map(f => typeof f === 'string' ? f : f.name);
     }
 
-    let validFolders = Array.isArray(rawData?._folders) ? [...rawData._folders] : oldFolders;
+    let validDeletedFolders = Array.isArray(rawData?._deletedFolders) ? rawData._deletedFolders : [];
+    try {
+        const localDeleted = JSON.parse(localStorage.getItem('myQuizDeletedFolders') || '[]');
+        if (Array.isArray(localDeleted)) {
+            validDeletedFolders = [...new Set([...validDeletedFolders, ...localDeleted])];
+        }
+    } catch (e) { }
+    const deletedFoldersFilter = new Set(validDeletedFolders);
+
+    let validFolders = Array.isArray(rawData?._folders) ? rawData._folders.filter(f => !deletedFoldersFilter.has(f)) : oldFolders.filter(f => !deletedFoldersFilter.has(f));
     validFolders = validFolders.filter(folder => typeof folder === 'string' && folder.trim());
     if (!validFolders.includes(DEFAULT_FOLDER)) validFolders.unshift(DEFAULT_FOLDER);
     validFolders = [...new Set(validFolders)]; // Suppression des doublons
@@ -385,16 +394,18 @@ function normalizeData(rawData) {
         },
         _folders: validFolders,
         _deleted: {},
+        _deletedFolders: validDeletedFolders,
         _flashcards: Array.isArray(rawData?._flashcards) ? rawData._flashcards : []
     };
 
     for (let key in rawData) {
-        if (key === '_player' || key === '_folders' || key === '_deleted' || key === '_flashcards') continue;
+        if (key === '_player' || key === '_folders' || key === '_deleted' || key === '_flashcards' || key === '_deletedFolders') continue;
         let sub = rawData[key];
 
         if (sub && Array.isArray(sub.questions)) {
             // Récupération de l'ancien emplacement si présent
             let folderName = sub.folder || rawData?._player?.subjectFolders?.[key] || DEFAULT_FOLDER;
+            if (deletedFoldersFilter.has(folderName)) folderName = DEFAULT_FOLDER;
             if (!valid._folders.includes(folderName)) valid._folders.push(folderName);
 
             valid[key] = {
@@ -410,7 +421,12 @@ function normalizeData(rawData) {
                 },
                 dailyValidations: sub.dailyValidations || {},
                 archived: Boolean(sub.archived || folderName === ARCHIVE_FOLDER),
-                deleted: Boolean(sub.deleted)
+                deleted: Boolean(sub.deleted),
+                isCustom: Boolean(sub.isCustom),
+                isSelected: sub.isSelected !== undefined ? Boolean(sub.isSelected) : undefined,
+                uploadedByMe: Boolean(sub.uploadedByMe),
+                author: sub.author || '',
+                uploadedAt: sub.uploadedAt || 0
             };
         }
     }
@@ -425,14 +441,42 @@ function mergeDataWithDefaults(incomingData, currentBase = null) {
     const baseCatalogue = typeof baseData !== 'undefined' ? baseData : {};
     if (!incomingData && !currentBase) return normalizeData(baseCatalogue);
 
+    // 0. Récupérer l'ensemble des dossiers supprimés de manière persistante
+    let localDeleted = [];
+    try {
+        localDeleted = JSON.parse(localStorage.getItem('myQuizDeletedFolders') || '[]');
+        if (!Array.isArray(localDeleted)) localDeleted = [];
+    } catch (e) { localDeleted = []; }
+
+    const allDeletedFolders = new Set([
+        ...localDeleted,
+        ...(currentBase?._deletedFolders || []),
+        ...(incomingData?._deletedFolders || [])
+    ]);
+    const deletedFoldersList = Array.from(allDeletedFolders).filter(f => f && f !== DEFAULT_FOLDER && f !== ARCHIVE_FOLDER);
+    try {
+        localStorage.setItem('myQuizDeletedFolders', JSON.stringify(deletedFoldersList));
+    } catch (e) { }
+
     // 1. Initialiser avec le catalogue officiel
     let merged = JSON.parse(JSON.stringify(baseCatalogue));
+    merged._deletedFolders = deletedFoldersList;
 
     // 2. Préserver d'abord TOUS les cours personnalisés présents dans currentBase (mémoire locale)
     if (currentBase && typeof currentBase === 'object') {
         Object.keys(currentBase).forEach(sub => {
-            if (!sub.startsWith('_') && !merged[sub] && currentBase[sub]?.questions) {
+            if (!sub.startsWith('_') && (!merged[sub] || currentBase[sub]?.isCustom) && currentBase[sub]?.questions) {
                 merged[sub] = JSON.parse(JSON.stringify(currentBase[sub]));
+            }
+        });
+    }
+
+    // Récupérer également le registre de cours personnalisés isolés de communityAdmin
+    if (window.communityAdmin && typeof window.communityAdmin.getCustomSubjectsRegistry === 'function') {
+        const customReg = window.communityAdmin.getCustomSubjectsRegistry();
+        Object.keys(customReg).forEach(sub => {
+            if (!merged[sub] || merged[sub]?.isCustom || (merged[sub]?.questions?.length || 0) <= (customReg[sub]?.questions?.length || 0)) {
+                merged[sub] = JSON.parse(JSON.stringify(customReg[sub]));
             }
         });
     }
@@ -501,13 +545,28 @@ function mergeDataWithDefaults(incomingData, currentBase = null) {
             merged._flashcards = Array.from(fcMap.values());
         }
 
-        // Synchroniser tous les dossiers
-        let folders = [...(baseCatalogue._folders || []), ...(merged._folders || []), ...(incomingData._folders || [])];
+        // Synchroniser tous les dossiers (en excluant formellement tous les dossiers supprimés)
+        let folders = [
+            ...(baseCatalogue._folders || []).filter(f => !allDeletedFolders.has(f)),
+            ...(merged._folders || []).filter(f => !allDeletedFolders.has(f)),
+            ...(incomingData._folders || []).filter(f => !allDeletedFolders.has(f))
+        ];
         Object.keys(merged).forEach(sub => {
-            if (!sub.startsWith('_') && merged[sub]?.folder) folders.push(merged[sub].folder);
+            if (!sub.startsWith('_') && merged[sub]?.folder) {
+                if (allDeletedFolders.has(merged[sub].folder)) {
+                    merged[sub].folder = DEFAULT_FOLDER;
+                }
+                if (!allDeletedFolders.has(merged[sub].folder)) {
+                    folders.push(merged[sub].folder);
+                }
+            }
+        });
+        (merged._flashcards || []).forEach(c => {
+            if (c && allDeletedFolders.has(c.folder)) c.folder = DEFAULT_FOLDER;
         });
         if (!folders.includes(DEFAULT_FOLDER)) folders.unshift(DEFAULT_FOLDER);
-        merged._folders = [...new Set(folders.filter(f => f && typeof f === 'string'))];
+        merged._folders = [...new Set(folders.filter(f => f && typeof f === 'string' && !allDeletedFolders.has(f)))];
+        merged._deletedFolders = deletedFoldersList;
 
         return normalizeData(merged);
     }
@@ -576,12 +635,28 @@ function mergeDataWithDefaults(incomingData, currentBase = null) {
         merged._flashcards = Array.from(fcMap.values());
     }
 
-    let combinedFolders = [...(baseCatalogue._folders || []), ...(merged._folders || []), ...(normalizedIn._folders || [])];
+    // Synchroniser tous les dossiers (en excluant formellement tous les dossiers supprimés)
+    let combinedFolders = [
+        ...(baseCatalogue._folders || []).filter(f => !allDeletedFolders.has(f)),
+        ...(merged._folders || []).filter(f => !allDeletedFolders.has(f)),
+        ...(normalizedIn._folders || []).filter(f => !allDeletedFolders.has(f))
+    ];
     Object.keys(merged).forEach(sub => {
-        if (!sub.startsWith('_') && merged[sub]?.folder) combinedFolders.push(merged[sub].folder);
+        if (!sub.startsWith('_') && merged[sub]?.folder) {
+            if (allDeletedFolders.has(merged[sub].folder)) {
+                merged[sub].folder = DEFAULT_FOLDER;
+            }
+            if (!allDeletedFolders.has(merged[sub].folder)) {
+                combinedFolders.push(merged[sub].folder);
+            }
+        }
+    });
+    (merged._flashcards || []).forEach(c => {
+        if (c && allDeletedFolders.has(c.folder)) c.folder = DEFAULT_FOLDER;
     });
     if (!combinedFolders.includes(DEFAULT_FOLDER)) combinedFolders.unshift(DEFAULT_FOLDER);
-    merged._folders = [...new Set(combinedFolders.filter(f => f && typeof f === 'string'))];
+    merged._folders = [...new Set(combinedFolders.filter(f => f && typeof f === 'string' && !allDeletedFolders.has(f)))];
+    merged._deletedFolders = deletedFoldersList;
 
     return normalizeData(merged);
 }
@@ -872,6 +947,7 @@ function extractUserDelta() {
         _mastery: window.MasteryTracker ? window.MasteryTracker.init() : {},
         _customSubjects: {}, // Sauvegarde intégrale des cours personnalisés uploadés par l'utilisateur
         _flashcards: (appData._flashcards || []).slice(-1000), // Persistance Cloud des Flashcards
+        _deletedFolders: appData._deletedFolders || [], // Persistance Cloud des dossiers supprimés
         _selectedCommunitySubjects: (window.communityAdmin && typeof window.communityAdmin.getSelectedSubjectsList === 'function')
             ? window.communityAdmin.getSelectedSubjectsList()
             : [],
@@ -882,6 +958,13 @@ function extractUserDelta() {
     const customRegistry = (window.communityAdmin && window.communityAdmin.getCustomSubjectsRegistry)
         ? window.communityAdmin.getCustomSubjectsRegistry()
         : {};
+
+    // S'assurer que tous les cours du registre sont inclus dans le delta
+    Object.keys(customRegistry).forEach(sub => {
+        if (customRegistry[sub]?.questions) {
+            delta._customSubjects[sub] = JSON.parse(JSON.stringify(customRegistry[sub]));
+        }
+    });
 
     Object.keys(appData).forEach(sub => {
         if (sub.startsWith('_') || appData[sub]?.deleted) return;
@@ -956,11 +1039,15 @@ async function saveData(immediate = false) {
 }
 
 function exportData() {
+    // S'assurer que tous les cours custom du registre sont présents dans appData avant l'export
+    if (window.communityAdmin && typeof window.communityAdmin.restoreIsolatedCustomSubjects === 'function') {
+        window.communityAdmin.restoreIsolatedCustomSubjects(appData);
+    }
     const blob = new Blob([JSON.stringify(appData, null, 2)], { type: "application/json" });
     const url = URL.createObjectURL(blob);
     const dlAnchorElem = document.createElement('a');
     dlAnchorElem.setAttribute("href", url);
-    dlAnchorElem.setAttribute("download", "quizzhub_backup.json");
+    dlAnchorElem.setAttribute("download", `quizzhub_backup_${new Date().toISOString().slice(0, 10)}.json`);
     dlAnchorElem.click();
     URL.revokeObjectURL(url);
 }
@@ -972,13 +1059,31 @@ function importData(event) {
     reader.onload = async function (e) {
         try {
             createLocalBackup(true);
-            appData = normalizeData(JSON.parse(e.target.result));
-            await saveData();
+            const imported = JSON.parse(e.target.result);
+            appData = mergeDataWithDefaults(imported, appData);
+            window.appData = appData;
+
+            // Enregistrer tous les cours personnalisés de l'import dans le registre anti-perte
+            Object.keys(appData).forEach(sub => {
+                if (!sub.startsWith('_') && (appData[sub].isCustom || (!baseData || !baseData[sub]))) {
+                    appData[sub].isCustom = true;
+                    appData[sub].isSelected = true;
+                    if (window.communityAdmin && window.communityAdmin.saveCustomSubjectToRegistry) {
+                        window.communityAdmin.saveCustomSubjectToRegistry(sub, appData[sub]);
+                    }
+                    if (window.communityAdmin && window.communityAdmin.addSubjectToUserSelection) {
+                        window.communityAdmin.addSubjectToUserSelection(sub);
+                    }
+                }
+            });
+
+            await saveData(true);
             updatePlayerUI();
-            customAlert("Succès", "Base importée, synchronisée et nettoyée !");
+            renderHome();
+            customAlert("Succès", "Sauvegarde importée et fusionnée avec succès ! Vos matières et flashcards sont restaurées.");
             showView('home-view');
             event.target.value = "";
-        } catch (err) { customAlert("Erreur", "Fichier JSON corrompu ou invalide."); }
+        } catch (err) { customAlert("Erreur", "Fichier JSON corrompu ou invalide : " + err.message); }
     };
     reader.readAsText(file);
 }
@@ -986,6 +1091,7 @@ function importData(event) {
 function resetData() {
     createLocalBackup(true);
     localStorage.removeItem('myQuizData');
+    localStorage.removeItem('myQuizDeletedFolders');
     appData = normalizeData(JSON.parse(JSON.stringify(defaultData || {})));
     appData._player = { xp: 0, level: 1 };
     saveData();
@@ -997,18 +1103,25 @@ function resetData() {
 // -----------------------------------------------------
 // GESTION DES DOSSIERS
 // -----------------------------------------------------
-// -----------------------------------------------------
-// GESTION DES DOSSIERS
-// -----------------------------------------------------
 async function createFolder() {
     const folderName = document.getElementById('new-folder-name').value.trim();
-    if (folderName && !appData._folders.includes(folderName)) {
+    if (!folderName) return;
+
+    // Si le dossier avait été supprimé précédemment, le réactiver en le retirant des dossiers supprimés
+    if (Array.isArray(appData._deletedFolders)) {
+        appData._deletedFolders = appData._deletedFolders.filter(f => f !== folderName);
+        try {
+            localStorage.setItem('myQuizDeletedFolders', JSON.stringify(appData._deletedFolders));
+        } catch (e) { }
+    }
+
+    if (!appData._folders.includes(folderName)) {
         appData._folders.push(folderName);
-        await saveData(); // Attendre la sauvegarde cloud
+        await saveData(true);
         document.getElementById('new-folder-name').value = "";
         renderHome();
         customAlert("Dossier", `Dossier '${folderName}' créé !`);
-    } else if (appData._folders.includes(folderName)) {
+    } else {
         customAlert("Erreur", "Ce dossier existe déjà.");
     }
 }
@@ -1022,14 +1135,38 @@ async function deleteFolder(folderName) {
     const count = subjectsInFolder.length;
 
     const performDelete = async () => {
+        // 1. Déplacer toutes les matières dans Général
         subjectsInFolder.forEach(s => {
             appData[s].folder = DEFAULT_FOLDER;
+            if (window.communityAdmin && window.communityAdmin.saveCustomSubjectToRegistry && appData[s].isCustom) {
+                window.communityAdmin.saveCustomSubjectToRegistry(s, appData[s]);
+            }
         });
+
+        // 2. Déplacer toutes les flashcards dans Général
+        (appData._flashcards || []).forEach(c => {
+            if (c.folder === folderName) c.folder = DEFAULT_FOLDER;
+        });
+
+        // 3. Enregistrer le dossier dans la liste définitive des dossiers supprimés
+        if (!Array.isArray(appData._deletedFolders)) appData._deletedFolders = [];
+        if (!appData._deletedFolders.includes(folderName)) {
+            appData._deletedFolders.push(folderName);
+        }
+        try {
+            localStorage.setItem('myQuizDeletedFolders', JSON.stringify(appData._deletedFolders));
+        } catch (e) { }
+
+        // 4. Retirer le dossier de la liste active et des dossiers ouverts
         appData._folders = (appData._folders || []).filter(f => f !== folderName);
         openFolders.delete(folderName);
-        await saveData();
+
+        await saveData(true);
         renderHome();
-        customAlert("Dossier supprimé", `Le dossier "${folderName}" a été supprimé.${count > 0 ? ` Les ${count} matière(s) ont été déplacées dans "${DEFAULT_FOLDER}".` : ''}`);
+        if (window.flashcardManager && typeof window.flashcardManager.renderView === 'function') {
+            window.flashcardManager.renderView();
+        }
+        customAlert("Dossier supprimé", `Le dossier "${folderName}" a été définitivement supprimé.${count > 0 ? ` Les ${count} matière(s) ont été déplacées dans "${DEFAULT_FOLDER}".` : ''}`);
     };
 
     if (count > 0) {
@@ -1130,14 +1267,26 @@ async function createSubjectFromApp() {
         prerequisites,
         questions: [],
         stats: { attempts: 0, correct: 0, partial: 0 },
-        dailyValidations: {}
+        dailyValidations: {},
+        isCustom: true,
+        isSelected: true,
+        uploadedByMe: true,
+        author: currentUser ? currentUser.email : 'local@etudiant',
+        uploadedAt: Date.now()
     };
-    await saveData();
+    if (window.communityAdmin && window.communityAdmin.saveCustomSubjectToRegistry) {
+        window.communityAdmin.saveCustomSubjectToRegistry(name, appData[name]);
+    }
+    if (window.communityAdmin && window.communityAdmin.addSubjectToUserSelection) {
+        window.communityAdmin.addSubjectToUserSelection(name);
+    }
+    await saveData(true);
     nameInput.value = '';
     document.getElementById('created-subject-description').value = '';
     message.textContent = 'Matière créée et sauvegardée. Tu peux maintenant ajouter ses questions.';
     message.style.color = 'var(--success)';
     renderCreateSubjectView();
+    renderHome();
 }
 
 
@@ -3507,15 +3656,31 @@ window.quizzRecovery = {
                 if (!Array.isArray(appData._folders)) appData._folders = [DEFAULT_FOLDER];
                 if (!appData._folders.includes(folder)) appData._folders.push(folder);
                 openFolders.add(folder);
+
+                // Sauvegarder dans le registre anti-perte
+                if (target.content[sub]?.isCustom || (!baseData || !baseData[sub])) {
+                    appData[sub].isCustom = true;
+                    if (window.communityAdmin && window.communityAdmin.saveCustomSubjectToRegistry) {
+                        window.communityAdmin.saveCustomSubjectToRegistry(sub, appData[sub]);
+                    }
+                }
             }
         });
+
+        // Restaurer la liste des dossiers supprimés
+        if (Array.isArray(target.content?._deletedFolders)) {
+            appData._deletedFolders = [...new Set([...(appData._deletedFolders || []), ...target.content._deletedFolders])];
+            try {
+                localStorage.setItem('myQuizDeletedFolders', JSON.stringify(appData._deletedFolders));
+            } catch (e) { }
+        }
 
         try {
             const cur = JSON.parse(localStorage.getItem('myQuizSelectedSubjects') || '[]');
             localStorage.setItem('myQuizSelectedSubjects', JSON.stringify([...new Set([...cur, ...restoredNames])]));
         } catch (err) { }
 
-        saveData();
+        saveData(true);
         renderHome();
         updatePlayerUI();
         console.log("%c✓ Sauvegarde restaurée et fusionnée avec succès !", "color: #10b981; font-weight: bold; font-size: 14px;");
