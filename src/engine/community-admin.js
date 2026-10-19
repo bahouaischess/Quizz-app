@@ -155,15 +155,20 @@
         return catalog;
     }
 
+    function getAppData() {
+        return window.appData || (typeof appData !== 'undefined' ? appData : null);
+    }
+
     // ------------------------------------------------------------------------
     // 3. APPARTENANCE À "MES MATIÈRES"
     // ------------------------------------------------------------------------
-    function isUserSubject(subjectName) {
+    function isUserSubject(subjectName, targetData = null) {
         if (!subjectName || subjectName.startsWith('_')) return false;
-        if (!window.appData || !window.appData[subjectName]) return false;
-        if (window.appData[subjectName].deleted) return false;
+        const data = targetData || getAppData();
+        if (!data || !data[subjectName]) return false;
+        if (data[subjectName].deleted) return false;
 
-        const s = window.appData[subjectName];
+        const s = data[subjectName];
 
         // A. Matière personnalisée uploadée par cet utilisateur
         if (s.isCustom || s.uploadedByMe) return true;
@@ -191,13 +196,14 @@
     // 4. AJOUT / RETRAIT DEPUIS LA SECTION COMMUNAUTAIRE
     // ------------------------------------------------------------------------
     async function toggleCommunitySubject(subjectName) {
-        if (!window.appData) return;
-        const inMySubjects = isUserSubject(subjectName);
+        const data = getAppData();
+        if (!data) return;
+        const inMySubjects = isUserSubject(subjectName, data);
 
         if (inMySubjects) {
             // Retirer de mes matières
-            if (window.appData[subjectName]) {
-                window.appData[subjectName].isSelected = false;
+            if (data[subjectName]) {
+                data[subjectName].isSelected = false;
             }
             const selectedList = getSelectedSubjectsList().filter(name => name !== subjectName);
             saveSelectedSubjectsList(selectedList);
@@ -212,23 +218,23 @@
                 return;
             }
 
-            if (!window.appData[subjectName]) {
-                window.appData[subjectName] = JSON.parse(JSON.stringify(source));
-                window.appData[subjectName].stats = { attempts: 0, correct: 0, partial: 0 };
-                window.appData[subjectName].dailyValidations = {};
+            if (!data[subjectName]) {
+                data[subjectName] = JSON.parse(JSON.stringify(source));
+                data[subjectName].stats = { attempts: 0, correct: 0, partial: 0 };
+                data[subjectName].dailyValidations = {};
             }
 
-            window.appData[subjectName].isSelected = true;
-            window.appData[subjectName].deleted = false;
-            window.appData[subjectName].archived = false;
+            data[subjectName].isSelected = true;
+            data[subjectName].deleted = false;
+            data[subjectName].archived = false;
 
             // CRÉATION AUTOMATIQUE DU DOSSIER DANS appData._folders ET OUVERTURE DU DOSSIER
-            const folder = window.appData[subjectName].folder || 'Général';
-            if (!Array.isArray(window.appData._folders)) {
-                window.appData._folders = ['Général'];
+            const folder = data[subjectName].folder || 'Général';
+            if (!Array.isArray(data._folders)) {
+                data._folders = ['Général'];
             }
-            if (!window.appData._folders.includes(folder)) {
-                window.appData._folders.push(folder);
+            if (!data._folders.includes(folder)) {
+                data._folders.push(folder);
             }
 
             // Ouvrir automatiquement le dossier pour qu'il soit immédiatement visible !
@@ -251,17 +257,18 @@
     }
 
     function addSubjectToUserSelection(subjectName) {
-        if (!subjectName || !window.appData || !window.appData[subjectName]) return;
-        window.appData[subjectName].isSelected = true;
-        window.appData[subjectName].deleted = false;
+        const data = getAppData();
+        if (!subjectName || !data || !data[subjectName]) return;
+        data[subjectName].isSelected = true;
+        data[subjectName].deleted = false;
         const selectedList = getSelectedSubjectsList();
         if (!selectedList.includes(subjectName)) {
             selectedList.push(subjectName);
             saveSelectedSubjectsList(selectedList);
         }
-        const folder = window.appData[subjectName].folder || 'Général';
-        if (!Array.isArray(window.appData._folders)) window.appData._folders = ['Général'];
-        if (!window.appData._folders.includes(folder)) window.appData._folders.push(folder);
+        const folder = data[subjectName].folder || 'Général';
+        if (!Array.isArray(data._folders)) data._folders = ['Général'];
+        if (!data._folders.includes(folder)) data._folders.push(folder);
         if (window.openFolders && typeof window.openFolders.add === 'function') {
             window.openFolders.add(folder);
         }

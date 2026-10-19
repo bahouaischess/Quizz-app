@@ -27,7 +27,7 @@ function isSubjectDeleted(subjectName) {
 
 function isSubjectAvailable(subjectName) {
     if (window.communityAdmin && typeof window.communityAdmin.isUserSubject === 'function') {
-        return window.communityAdmin.isUserSubject(subjectName);
+        return window.communityAdmin.isUserSubject(subjectName, appData);
     }
     return Boolean(subjectName && !subjectName.startsWith('_') && !isSubjectDeleted(subjectName));
 }
@@ -573,9 +573,30 @@ function mergeDataWithDefaults(incomingData, currentBase = null) {
 const baseData = typeof defaultData !== 'undefined' ? normalizeData(defaultData) : { _player: { xp: 0, level: 1 }, _folders: [DEFAULT_FOLDER] };
 const localSave = localStorage.getItem('myQuizData');
 let appData = baseData;
+window.appData = appData;
+try {
+    Object.defineProperty(window, 'appData', {
+        get() { return appData; },
+        set(v) { appData = v; },
+        configurable: true
+    });
+} catch (e) {
+    window.appData = appData;
+}
+try {
+    Object.defineProperty(window, 'currentUser', {
+        get() { return currentUser; },
+        set(v) { currentUser = v; },
+        configurable: true
+    });
+} catch (e) {
+    window.currentUser = currentUser;
+}
+
 if (localSave) {
     try {
         appData = mergeDataWithDefaults(JSON.parse(localSave), baseData);
+        window.appData = appData;
     } catch (error) {
         console.error('Sauvegarde locale corrompue, copie de secours conservée :', error);
         try { localStorage.setItem('myQuizData_rescue', localSave); } catch (e) { }
@@ -3374,18 +3395,26 @@ window.quizzRecovery = {
         try {
             const parsed = JSON.parse(rescue);
             appData = mergeDataWithDefaults(parsed, appData);
+            window.appData = appData;
             
             // Réactivation et ouverture des dossiers pour toutes les matières restaurées
+            const restoredNames = [];
             Object.keys(parsed || {}).forEach(sub => {
                 if (!sub.startsWith('_') && appData[sub]) {
                     appData[sub].isSelected = true;
                     appData[sub].deleted = false;
-                    if (window.communityAdmin && typeof window.communityAdmin.addSubjectToUserSelection === 'function') {
-                        window.communityAdmin.addSubjectToUserSelection(sub);
-                    }
-                    if (appData[sub].folder) openFolders.add(appData[sub].folder);
+                    restoredNames.push(sub);
+                    const folder = appData[sub].folder || DEFAULT_FOLDER;
+                    if (!Array.isArray(appData._folders)) appData._folders = [DEFAULT_FOLDER];
+                    if (!appData._folders.includes(folder)) appData._folders.push(folder);
+                    openFolders.add(folder);
                 }
             });
+
+            try {
+                const cur = JSON.parse(localStorage.getItem('myQuizSelectedSubjects') || '[]');
+                localStorage.setItem('myQuizSelectedSubjects', JSON.stringify([...new Set([...cur, ...restoredNames])]));
+            } catch(err) {}
 
             saveData();
             renderHome();
@@ -3412,18 +3441,26 @@ window.quizzRecovery = {
             return false;
         }
         appData = mergeDataWithDefaults(target.content, appData);
+        window.appData = appData;
 
         // Réactivation et ouverture des dossiers pour toutes les matières restaurées
+        const restoredNames = [];
         Object.keys(target.content || {}).forEach(sub => {
             if (!sub.startsWith('_') && appData[sub]) {
                 appData[sub].isSelected = true;
                 appData[sub].deleted = false;
-                if (window.communityAdmin && typeof window.communityAdmin.addSubjectToUserSelection === 'function') {
-                    window.communityAdmin.addSubjectToUserSelection(sub);
-                }
-                if (appData[sub].folder) openFolders.add(appData[sub].folder);
+                restoredNames.push(sub);
+                const folder = appData[sub].folder || DEFAULT_FOLDER;
+                if (!Array.isArray(appData._folders)) appData._folders = [DEFAULT_FOLDER];
+                if (!appData._folders.includes(folder)) appData._folders.push(folder);
+                openFolders.add(folder);
             }
         });
+
+        try {
+            const cur = JSON.parse(localStorage.getItem('myQuizSelectedSubjects') || '[]');
+            localStorage.setItem('myQuizSelectedSubjects', JSON.stringify([...new Set([...cur, ...restoredNames])]));
+        } catch(err) {}
 
         saveData();
         renderHome();
@@ -3531,3 +3568,17 @@ async function applyRecoveryIndex(idx) {
         }
     }
 }
+
+// ============================================================================
+// EXPOSITIONS GLOBALES SUR WINDOW
+// ============================================================================
+window.saveData = saveData;
+window.renderHome = renderHome;
+window.openSubject = openSubject;
+window.customAlert = customAlert;
+window.customConfirm = customConfirm;
+window.showView = showView;
+window.updatePlayerUI = updatePlayerUI;
+window.isSubjectAvailable = isSubjectAvailable;
+window.openFolders = openFolders;
+
