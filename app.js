@@ -995,6 +995,33 @@ async function createFolder() {
     }
 }
 
+async function deleteFolder(folderName) {
+    if (!folderName || folderName === DEFAULT_FOLDER || folderName === ARCHIVE_FOLDER) {
+        customAlert("Action impossible", `Le dossier "${folderName}" est un dossier système et ne peut pas être supprimé.`);
+        return;
+    }
+    const subjectsInFolder = Object.keys(appData).filter(s => !s.startsWith('_') && !appData[s]?.deleted && appData[s]?.folder === folderName);
+    const count = subjectsInFolder.length;
+
+    const performDelete = async () => {
+        subjectsInFolder.forEach(s => {
+            appData[s].folder = DEFAULT_FOLDER;
+        });
+        appData._folders = (appData._folders || []).filter(f => f !== folderName);
+        openFolders.delete(folderName);
+        await saveData();
+        renderHome();
+        customAlert("Dossier supprimé", `Le dossier "${folderName}" a été supprimé.${count > 0 ? ` Les ${count} matière(s) ont été déplacées dans "${DEFAULT_FOLDER}".` : ''}`);
+    };
+
+    if (count > 0) {
+        customConfirm("Supprimer le dossier", `Le dossier "${folderName}" contient ${count} matière(s). Supprimer ce dossier et déplacer ses matières vers "${DEFAULT_FOLDER}" ?`, performDelete);
+    } else {
+        performDelete();
+    }
+}
+window.deleteFolder = deleteFolder;
+
 function getHomeFolderOptions() {
     return (appData._folders || []).filter(folder => folder !== ARCHIVE_FOLDER);
 }
@@ -1429,14 +1456,7 @@ function showView(viewId, navElement = null) {
         navElement.classList.add('active');
     }
     if (viewId === 'home-view') {
-        if (openFolders.size === 0) {
-            Object.keys(appData || {}).forEach(s => {
-                if (isSubjectAvailable(s) && appData[s]?.folder && appData[s].folder !== ARCHIVE_FOLDER) {
-                    openFolders.add(appData[s].folder);
-                }
-            });
-            if (openFolders.size === 0) openFolders.add(DEFAULT_FOLDER);
-        }
+        openFolders.clear();
         renderHome();
     }
     if (viewId === 'workout-hub-view' && window.WorkoutView) WorkoutView.renderHub();
@@ -1562,16 +1582,7 @@ function renderHome() {
     ensureArchiveFolder();
     populateFolderSelects();
 
-    // Ouvrir automatiquement les dossiers contenant des matières visibles si aucun dossier n'est ouvert
-    if (openFolders.size === 0) {
-        Object.keys(appData || {}).forEach(s => {
-            if (isSubjectAvailable(s) && appData[s]?.folder && appData[s].folder !== ARCHIVE_FOLDER) {
-                openFolders.add(appData[s].folder);
-            }
-        });
-        if (openFolders.size === 0) openFolders.add(DEFAULT_FOLDER);
-    }
-
+    // Les dossiers restent repliés par défaut pour un affichage propre et sobre
     const resumeBox = document.getElementById('resume-quiz-box');
     if (resumeBox) resumeBox.classList.toggle('hidden', !hasActiveQuiz());
 
@@ -1626,33 +1637,57 @@ function renderHome() {
 
     Object.keys(subjectsByFolder).forEach(folder => {
         const subjects = subjectsByFolder[folder];
-        if (searchQuery && subjects.length === 0) return;
+        // Ne jamais afficher de dossiers vides !
+        if (subjects.length === 0) return;
 
         const folderDiv = document.createElement('div');
         folderDiv.className = 'folder-section';
 
-        const header = document.createElement('button');
-        header.className = 'folder-header list-item';
-        header.style.fontWeight = 'bold';
-        header.type = 'button';
-        const headerLabel = document.createElement('span');
+        const headerWrapper = document.createElement('div');
+        headerWrapper.className = 'folder-header list-item';
+        headerWrapper.style.display = 'flex';
+        headerWrapper.style.justifyContent = 'space-between';
+        headerWrapper.style.alignItems = 'center';
+
+        const headerBtn = document.createElement('button');
+        headerBtn.type = 'button';
+        headerBtn.style.background = 'none';
+        headerBtn.style.border = 'none';
+        headerBtn.style.color = 'inherit';
+        headerBtn.style.fontWeight = 'bold';
+        headerBtn.style.cursor = 'pointer';
+        headerBtn.style.textAlign = 'left';
+        headerBtn.style.flex = '1';
+        headerBtn.style.padding = '0';
         const isOpen = openFolders.has(folder);
-        headerLabel.textContent = `${isOpen ? '⌄' : '⌃'} 📁 ${folder}`;
-        header.appendChild(headerLabel);
-        header.setAttribute('aria-expanded', String(isOpen));
-        header.onclick = () => toggleFolder(folder);
-        folderDiv.appendChild(header);
+        headerBtn.textContent = `${isOpen ? '⌄' : '⌃'} 📁 ${folder} (${subjects.length})`;
+        headerBtn.setAttribute('aria-expanded', String(isOpen));
+        headerBtn.onclick = () => toggleFolder(folder);
+        headerWrapper.appendChild(headerBtn);
+
+        // Bouton pour supprimer le dossier s'il n'est pas un dossier système
+        if (folder !== DEFAULT_FOLDER && folder !== ARCHIVE_FOLDER) {
+            const delFolderBtn = document.createElement('button');
+            delFolderBtn.type = 'button';
+            delFolderBtn.className = 'secondary';
+            delFolderBtn.style.padding = '4px 8px';
+            delFolderBtn.style.fontSize = '0.78em';
+            delFolderBtn.style.color = 'var(--danger)';
+            delFolderBtn.style.borderColor = 'rgba(239, 68, 68, 0.35)';
+            delFolderBtn.title = `Supprimer le dossier "${folder}"`;
+            delFolderBtn.textContent = '🗑️ Enlever dossier';
+            delFolderBtn.onclick = (e) => {
+                e.stopPropagation();
+                deleteFolder(folder);
+            };
+            headerWrapper.appendChild(delFolderBtn);
+        }
+
+        folderDiv.appendChild(headerWrapper);
 
         const subjectsContainer = document.createElement('div');
         subjectsContainer.className = 'folder-subjects';
         subjectsContainer.classList.toggle('hidden', !isOpen);
-
-        if (subjects.length === 0) {
-            const emptyMsg = document.createElement('div');
-            emptyMsg.className = 'folder-empty-message';
-            emptyMsg.textContent = folder === ARCHIVE_FOLDER ? 'Aucune matière archivée.' : 'Aucune matière dans ce dossier.';
-            subjectsContainer.appendChild(emptyMsg);
-        } else {
             subjects.forEach(subject => {
                 updateDailyValidation(subject);
                 const s = appData[subject];

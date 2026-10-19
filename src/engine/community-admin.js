@@ -170,24 +170,18 @@
 
         const s = data[subjectName];
 
-        // A. Matière personnalisée uploadée par cet utilisateur
+        // 1. Si la matière a été explicitement retirée : JAMAIS AFFICHÉE
+        if (s.isSelected === false) return false;
+
+        // 2. Matière personnalisée créée ou uploadée par l'utilisateur : TOUJOURS AFFICHÉE
         if (s.isCustom || s.uploadedByMe) return true;
         const registry = getCustomSubjectsRegistry();
         if (registry[subjectName]) return true;
 
-        // B. Matière explicitement choisie depuis "Matières de la communauté"
+        // 3. Matière explicitement ajoutée depuis "Matières de la communauté"
         if (s.isSelected === true) return true;
         const selectedList = getSelectedSubjectsList();
         if (selectedList.includes(subjectName)) return true;
-
-        // C. Matière restaurée ou active dans une sauvegarde
-        if (s.restored === true) return true;
-
-        // D. RÉTROCOMPATIBILITÉ ABSOLUE : si l'utilisateur a déjà des tentatives, de la progression ou des stats, on conserve !
-        if (Number(s.stats?.attempts) > 0) return true;
-        if (Array.isArray(s.questions) && s.questions.some(q => (q.stats?.attempts > 0) || (q.sm2?.repetition > 0))) {
-            return true;
-        }
 
         return false;
     }
@@ -204,9 +198,18 @@
             // Retirer de mes matières
             if (data[subjectName]) {
                 data[subjectName].isSelected = false;
+                delete data[subjectName].restored;
             }
             const selectedList = getSelectedSubjectsList().filter(name => name !== subjectName);
             saveSelectedSubjectsList(selectedList);
+
+            // Si le dossier n'a plus de matière active, le fermer
+            const folder = data[subjectName]?.folder || 'Général';
+            const remaining = Object.keys(data).filter(sub => !sub.startsWith('_') && data[sub]?.folder === folder && isUserSubject(sub, data));
+            if (remaining.length === 0 && window.openFolders) {
+                window.openFolders.delete(folder);
+            }
+
             if (window.saveData) await window.saveData();
             showCustomToast('Matière retirée', `"${subjectName}" a été retirée de tes matières.`);
         } else {
@@ -595,7 +598,8 @@
                 attemptsTotal,
                 correctTotal,
                 successRate: attemptsTotal > 0 ? Math.round((correctTotal / attemptsTotal) * 100) : 0,
-                customSummary
+                customSummary,
+                selectedList: getSelectedSubjectsList()
             };
 
             safeSetItem(USERS_DIRECTORY_STORAGE_KEY, JSON.stringify(directory));
@@ -713,14 +717,16 @@
         if (statQuestions) statQuestions.textContent = totalQuestions;
         if (statXp) statXp.textContent = totalXP.toLocaleString();
 
+        const communityCourses = getCommunityCustomCourses();
+        const statPromoted = document.getElementById('admin-stat-promoted-count');
+        if (statPromoted) statPromoted.textContent = Object.keys(communityCourses).length;
+
         if (!usersListEl) return;
 
         if (users.length === 0) {
             usersListEl.innerHTML = '<p style="color:var(--text-muted); text-align:center;">Aucun utilisateur enregistré.</p>';
             return;
         }
-
-        const communityCourses = getCommunityCustomCourses();
 
         usersListEl.innerHTML = users.map(user => {
             const isMe = window.currentUser && user.id === window.currentUser.id;
@@ -744,13 +750,13 @@
                                     📁 ${escapeHtml(c.folder || 'Général')} • <strong>${qCount}</strong> questions
                                 </div>
                             </div>
-                            <div style="display:flex; gap:8px; align-items:center;">
+                            <div style="display:flex; gap:8px; align-items:center; flex-wrap:wrap;">
                                 <button class="secondary" style="font-size:0.8em; padding:5px 10px;" onclick="window.communityAdmin.previewUserUploadedCourse('${escapeJsString(user.id)}', '${escapeJsString(courseName)}')">
                                     👁️ Examiner
                                 </button>
                                 ${isAlreadyInCommunity ? `
-                                    <span class="badge validated" style="font-size:0.8em; padding:5px 10px;">
-                                        ✓ Déjà en Communauté
+                                    <span class="badge validated" style="font-size:0.82em; padding:6px 12px; background:rgba(16, 185, 129, 0.2); color:#10b981; border:1px solid #10b981; border-radius:6px; font-weight:600; display:inline-flex; align-items:center; gap:4px;">
+                                        ✓ Ajouté aux matières de la communauté
                                     </span>
                                 ` : `
                                     <button class="btn btn-primary" style="font-size:0.8em; padding:5px 12px; background:linear-gradient(135deg, #10b981, #059669);" onclick="window.communityAdmin.copyUserCourseToCommunity('${escapeJsString(user.id)}', '${escapeJsString(courseName)}')">
@@ -764,6 +770,7 @@
             }
 
             const dateStr = user.lastActive ? new Date(user.lastActive).toLocaleDateString() : 'Actif';
+            const userSelectedList = user.selectedList || [];
 
             return `
                 <div class="admin-user-card">
@@ -785,6 +792,20 @@
                         </div>
                         ${coursesHtml}
                     </div>
+                    ${userSelectedList.length > 0 ? `
+                        <div style="margin-top: 10px; border-top: 1px dashed rgba(255,255,255,0.06); padding-top: 8px;">
+                            <div style="font-size:0.8em; font-weight:600; color:var(--text-muted); text-transform:uppercase; margin-bottom:5px;">
+                                Matières communautaires choisies (${userSelectedList.length}) :
+                            </div>
+                            <div style="display:flex; flex-wrap:wrap; gap:6px;">
+                                ${userSelectedList.map(name => `
+                                    <span style="font-size:0.78em; padding:3px 8px; border-radius:12px; background:rgba(99,102,241,0.12); color:var(--primary); border:1px solid rgba(99,102,241,0.3);">
+                                        📖 ${escapeHtml(name)}
+                                    </span>
+                                `).join('')}
+                            </div>
+                        </div>
+                    ` : ''}
                 </div>
             `;
         }).join('');
