@@ -436,112 +436,112 @@
         renderCommunity();
         if (window.renderHome) window.renderHome();
     }
-        if (window.renderHome) window.renderHome();
-    }
+    if (window.renderHome) window.renderHome();
+}
 
     function addSubjectToUserSelection(subjectName) {
-        const data = getAppData();
-        if (!subjectName || !data || !data[subjectName]) return;
-        data[subjectName].isSelected = true;
-        data[subjectName].deleted = false;
-        const selectedList = getSelectedSubjectsList();
-        if (!selectedList.includes(subjectName)) {
-            selectedList.push(subjectName);
-            saveSelectedSubjectsList(selectedList);
-        }
-        const folder = data[subjectName].folder || 'Général';
-        if (!Array.isArray(data._folders)) data._folders = ['Général'];
-        if (!data._folders.includes(folder)) data._folders.push(folder);
-        if (window.openFolders && typeof window.openFolders.add === 'function') {
-            window.openFolders.add(folder);
-        }
+    const data = getAppData();
+    if (!subjectName || !data || !data[subjectName]) return;
+    data[subjectName].isSelected = true;
+    data[subjectName].deleted = false;
+    const selectedList = getSelectedSubjectsList();
+    if (!selectedList.includes(subjectName)) {
+        selectedList.push(subjectName);
+        saveSelectedSubjectsList(selectedList);
     }
-
-    // ------------------------------------------------------------------------
-    // 5. AFFICHAGE DES "MATIÈRES DE LA COMMUNAUTÉ"
-    // ------------------------------------------------------------------------
-    function renderCommunity() {
-        const container = document.getElementById('community-list');
-        if (!container) return;
-
-        const catalog = getCommunityCatalog();
-        const subjects = Object.keys(catalog);
-
-        // Mettre à jour le compteur global
-        const countBadge = document.getElementById('community-total-count');
-        if (countBadge) countBadge.textContent = subjects.length;
-
-        // Remplir le select des catégories s'il n'est pas encore peuplé
-        const catSelect = document.getElementById('filter-community-category');
-        if (catSelect && catSelect.children.length <= 1) {
-            const categories = [...new Set(subjects.map(sub => catalog[sub].category || catalog[sub].folder || 'Général'))].sort();
-            catSelect.innerHTML = '<option value="ALL">📁 Toutes les catégories (' + subjects.length + ')</option>';
-            categories.forEach(cat => {
-                const count = subjects.filter(sub => (catalog[sub].category || catalog[sub].folder) === cat).length;
-                const opt = document.createElement('option');
-                opt.value = cat;
-                opt.textContent = `${cat} (${count})`;
-                catSelect.appendChild(opt);
-            });
-        }
-
-        filterCommunityCourses();
+    const folder = data[subjectName].folder || 'Général';
+    if (!Array.isArray(data._folders)) data._folders = ['Général'];
+    if (!data._folders.includes(folder)) data._folders.push(folder);
+    if (window.openFolders && typeof window.openFolders.add === 'function') {
+        window.openFolders.add(folder);
     }
+}
 
-    function filterCommunityCourses() {
-        const container = document.getElementById('community-list');
-        if (!container) return;
+// ------------------------------------------------------------------------
+// 5. AFFICHAGE DES "MATIÈRES DE LA COMMUNAUTÉ"
+// ------------------------------------------------------------------------
+function renderCommunity() {
+    const container = document.getElementById('community-list');
+    if (!container) return;
 
-        const catalog = getCommunityCatalog();
-        const searchInput = document.getElementById('search-community');
-        const catSelect = document.getElementById('filter-community-category');
-        const statusSelect = document.getElementById('filter-community-status');
+    const catalog = getCommunityCatalog();
+    const subjects = Object.keys(catalog);
 
-        const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
-        const selectedCat = catSelect ? catSelect.value : 'ALL';
-        const selectedStatus = statusSelect ? statusSelect.value : 'ALL';
+    // Mettre à jour le compteur global
+    const countBadge = document.getElementById('community-total-count');
+    if (countBadge) countBadge.textContent = subjects.length;
 
-        const filtered = Object.keys(catalog).filter(sub => {
-            const item = catalog[sub];
-            const cat = item.category || item.folder || 'Général';
-            const isAdded = isUserSubject(sub);
-
-            if (selectedCat !== 'ALL' && cat !== selectedCat) return false;
-            if (selectedStatus === 'ADDED' && !isAdded) return false;
-            if (selectedStatus === 'NOT_ADDED' && isAdded) return false;
-
-            if (query) {
-                const matchName = sub.toLowerCase().includes(query);
-                const matchCat = cat.toLowerCase().includes(query);
-                const matchDesc = (item.description || '').toLowerCase().includes(query);
-                const matchAuthor = (item.author || '').toLowerCase().includes(query);
-                if (!matchName && !matchCat && !matchDesc && !matchAuthor) return false;
-            }
-            return true;
+    // Remplir le select des catégories s'il n'est pas encore peuplé
+    const catSelect = document.getElementById('filter-community-category');
+    if (catSelect && catSelect.children.length <= 1) {
+        const categories = [...new Set(subjects.map(sub => catalog[sub].category || catalog[sub].folder || 'Général'))].sort();
+        catSelect.innerHTML = '<option value="ALL">📁 Toutes les catégories (' + subjects.length + ')</option>';
+        categories.forEach(cat => {
+            const count = subjects.filter(sub => (catalog[sub].category || catalog[sub].folder) === cat).length;
+            const opt = document.createElement('option');
+            opt.value = cat;
+            opt.textContent = `${cat} (${count})`;
+            catSelect.appendChild(opt);
         });
+    }
 
-        if (filtered.length === 0) {
-            container.innerHTML = `
+    filterCommunityCourses();
+}
+
+function filterCommunityCourses() {
+    const container = document.getElementById('community-list');
+    if (!container) return;
+
+    const catalog = getCommunityCatalog();
+    const searchInput = document.getElementById('search-community');
+    const catSelect = document.getElementById('filter-community-category');
+    const statusSelect = document.getElementById('filter-community-status');
+
+    const query = (searchInput ? searchInput.value : '').toLowerCase().trim();
+    const selectedCat = catSelect ? catSelect.value : 'ALL';
+    const selectedStatus = statusSelect ? statusSelect.value : 'ALL';
+
+    const filtered = Object.keys(catalog).filter(sub => {
+        const item = catalog[sub];
+        const cat = item.category || item.folder || 'Général';
+        const isAdded = isUserSubject(sub);
+
+        if (selectedCat !== 'ALL' && cat !== selectedCat) return false;
+        if (selectedStatus === 'ADDED' && !isAdded) return false;
+        if (selectedStatus === 'NOT_ADDED' && isAdded) return false;
+
+        if (query) {
+            const matchName = sub.toLowerCase().includes(query);
+            const matchCat = cat.toLowerCase().includes(query);
+            const matchDesc = (item.description || '').toLowerCase().includes(query);
+            const matchAuthor = (item.author || '').toLowerCase().includes(query);
+            if (!matchName && !matchCat && !matchDesc && !matchAuthor) return false;
+        }
+        return true;
+    });
+
+    if (filtered.length === 0) {
+        container.innerHTML = `
                 <div class="empty-state-card" style="grid-column: 1 / -1;">
                     <span style="font-size: 2.5em;">🔍</span>
                     <h3 style="margin: 12px 0 6px 0; color: var(--text-main);">Aucune matière trouvée</h3>
                     <p style="color: var(--text-muted); font-size: 0.9em; margin: 0;">Essaie de modifier tes filtres ou ta recherche.</p>
                 </div>
             `;
-            return;
-        }
+        return;
+    }
 
-        container.innerHTML = filtered.map(sub => {
-            const item = catalog[sub];
-            const isAdded = isUserSubject(sub);
-            const qCount = Array.isArray(item.questions) ? item.questions.length : 0;
-            const cat = item.category || item.folder || 'Général';
-            const author = item.author || (item.isOfficial ? 'Équipe Universitaire' : 'Étudiant');
-            const authorBadge = item.isOfficial
-                ? `<span style="font-size:0.75em; color:var(--primary); font-weight:600;">🏛️ Cours Officiel</span>`
-                : `<span style="font-size:0.75em; color:#10b981; font-weight:600;">🌟 Partagé par l'étudiant (${escapeHtml(author)})</span>`;
+    container.innerHTML = filtered.map(sub => {
+        const item = catalog[sub];
+        const isAdded = isUserSubject(sub);
+        const qCount = Array.isArray(item.questions) ? item.questions.length : 0;
+        const cat = item.category || item.folder || 'Général';
+        const author = item.author || (item.isOfficial ? 'Équipe Universitaire' : 'Étudiant');
+        const authorBadge = item.isOfficial
+            ? `<span style="font-size:0.75em; color:var(--primary); font-weight:600;">🏛️ Cours Officiel</span>`
+            : `<span style="font-size:0.75em; color:#10b981; font-weight:600;">🌟 Partagé par l'étudiant (${escapeHtml(author)})</span>`;
 
-            return `
+        return `
                 <div class="community-card ${isAdded ? 'is-added' : ''}">
                     <div>
                         <div class="community-card-header">
@@ -579,28 +579,28 @@
                     </div>
                 </div>
             `;
-        }).join('');
-    }
+    }).join('');
+}
 
-    // ------------------------------------------------------------------------
-    // 6. MODAL D'APERÇU D'UN COURS
-    // ------------------------------------------------------------------------
-    function openCoursePreviewModal(courseName) {
-        const modal = document.getElementById('preview-course-modal');
-        if (!modal) return;
+// ------------------------------------------------------------------------
+// 6. MODAL D'APERÇU D'UN COURS
+// ------------------------------------------------------------------------
+function openCoursePreviewModal(courseName) {
+    const modal = document.getElementById('preview-course-modal');
+    if (!modal) return;
 
-        const catalog = getCommunityCatalog();
-        const course = catalog[courseName] || (window.appData ? window.appData[courseName] : null);
-        if (!course) return;
+    const catalog = getCommunityCatalog();
+    const course = catalog[courseName] || (window.appData ? window.appData[courseName] : null);
+    if (!course) return;
 
-        const headerEl = document.getElementById('preview-course-header');
-        const questionsEl = document.getElementById('preview-course-questions');
-        const actionBtn = document.getElementById('preview-course-action-btn');
+    const headerEl = document.getElementById('preview-course-header');
+    const questionsEl = document.getElementById('preview-course-questions');
+    const actionBtn = document.getElementById('preview-course-action-btn');
 
-        const isAdded = isUserSubject(courseName);
-        const qCount = Array.isArray(course.questions) ? course.questions.length : 0;
+    const isAdded = isUserSubject(courseName);
+    const qCount = Array.isArray(course.questions) ? course.questions.length : 0;
 
-        headerEl.innerHTML = `
+    headerEl.innerHTML = `
             <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
                 <span class="community-category-pill">📁 ${escapeHtml(course.folder || 'Général')}</span>
                 ${isAdded ? '<span class="badge validated" style="font-size:0.8em;">✓ Déjà dans tes matières</span>' : ''}
@@ -614,17 +614,17 @@
             ${course.description ? `<p style="margin: 10px 0 0 0; font-size: 0.9em; color: var(--text-muted); line-height: 1.4;">${escapeHtml(course.description)}</p>` : ''}
         `;
 
-        if (qCount === 0) {
-            questionsEl.innerHTML = `<p style="color:var(--text-muted); text-align:center; padding:30px;">Aucune question dans ce cours.</p>`;
-        } else {
-            questionsEl.innerHTML = course.questions.map((q, idx) => {
-                const optionsHtml = Array.isArray(q.options) ? q.options.map((opt, oIdx) => `
+    if (qCount === 0) {
+        questionsEl.innerHTML = `<p style="color:var(--text-muted); text-align:center; padding:30px;">Aucune question dans ce cours.</p>`;
+    } else {
+        questionsEl.innerHTML = course.questions.map((q, idx) => {
+            const optionsHtml = Array.isArray(q.options) ? q.options.map((opt, oIdx) => `
                     <div style="padding: 6px 10px; margin-top: 4px; border-radius: 6px; font-size: 0.9em; background: ${opt.isCorrect ? 'rgba(16, 185, 129, 0.15)' : 'rgba(255,255,255,0.03)'}; border: 1px solid ${opt.isCorrect ? '#10b981' : 'var(--surface-light)'}; color: ${opt.isCorrect ? '#34d399' : 'var(--text-main)'};">
                         ${opt.isCorrect ? '✓ ' : '• '} ${escapeHtml(opt.text)}
                     </div>
                 `).join('') : '';
 
-                return `
+            return `
                     <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; margin-bottom: 12px;">
                         <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:6px;">
                             <strong style="color: var(--primary); font-size: 0.9em;">Question ${idx + 1}</strong>
@@ -643,289 +643,289 @@
                         ` : ''}
                     </div>
                 `;
-            }).join('');
-        }
-
-        if (actionBtn) {
-            if (isAdded) {
-                actionBtn.textContent = '➖ Retirer de mes matières';
-                actionBtn.className = 'btn-remove-subject';
-                actionBtn.onclick = () => {
-                    toggleCommunitySubject(courseName);
-                    closeCoursePreviewModal();
-                };
-            } else {
-                actionBtn.textContent = '➕ Ajouter à mes matières';
-                actionBtn.className = 'btn btn-primary';
-                actionBtn.onclick = () => {
-                    toggleCommunitySubject(courseName);
-                    closeCoursePreviewModal();
-                };
-            }
-        }
-
-        modal.classList.remove('hidden');
-        modal.style.display = 'block';
+        }).join('');
     }
 
-    function closeCoursePreviewModal() {
-        const modal = document.getElementById('preview-course-modal');
-        if (modal) {
-            modal.classList.add('hidden');
-            modal.style.display = 'none';
-        }
-    }
-
-    // ------------------------------------------------------------------------
-    // 7. GESTION DE L'ESPACE ADMIN (CODE: 0408)
-    // ------------------------------------------------------------------------
-    function isAdminAuthenticated() {
-        return sessionStorage.getItem(ADMIN_SESSION_KEY) === 'true';
-    }
-
-    function verifyAdminCode() {
-        const input = document.getElementById('admin-code-input');
-        const feedback = document.getElementById('admin-code-feedback');
-        if (!input) return;
-
-        const code = input.value.trim();
-        if (code === ADMIN_CODE) {
-            sessionStorage.setItem(ADMIN_SESSION_KEY, 'true');
-            input.value = '';
-            if (feedback) {
-                feedback.style.display = 'block';
-                feedback.style.color = '#10b981';
-                feedback.textContent = '✓ Code correct ! Accès administrateur déverrouillé.';
-            }
-            updateAdminUI();
-            renderAdminDashboard();
+    if (actionBtn) {
+        if (isAdded) {
+            actionBtn.textContent = '➖ Retirer de mes matières';
+            actionBtn.className = 'btn-remove-subject';
+            actionBtn.onclick = () => {
+                toggleCommunitySubject(courseName);
+                closeCoursePreviewModal();
+            };
         } else {
-            if (feedback) {
-                feedback.style.display = 'block';
-                feedback.style.color = 'var(--danger)';
-                feedback.textContent = '❌ Code administrateur incorrect (Code : 0408).';
-            }
+            actionBtn.textContent = '➕ Ajouter à mes matières';
+            actionBtn.className = 'btn btn-primary';
+            actionBtn.onclick = () => {
+                toggleCommunitySubject(courseName);
+                closeCoursePreviewModal();
+            };
         }
     }
 
-    function lockAdminMode() {
-        sessionStorage.removeItem(ADMIN_SESSION_KEY);
-        updateAdminUI();
-        const feedback = document.getElementById('admin-code-feedback');
+    modal.classList.remove('hidden');
+    modal.style.display = 'block';
+}
+
+function closeCoursePreviewModal() {
+    const modal = document.getElementById('preview-course-modal');
+    if (modal) {
+        modal.classList.add('hidden');
+        modal.style.display = 'none';
+    }
+}
+
+// ------------------------------------------------------------------------
+// 7. GESTION DE L'ESPACE ADMIN (CODE: 0408)
+// ------------------------------------------------------------------------
+function isAdminAuthenticated() {
+    return sessionStorage.getItem(ADMIN_SESSION_KEY) === 'true';
+}
+
+function verifyAdminCode() {
+    const input = document.getElementById('admin-code-input');
+    const feedback = document.getElementById('admin-code-feedback');
+    if (!input) return;
+
+    const code = input.value.trim();
+    if (code === ADMIN_CODE) {
+        sessionStorage.setItem(ADMIN_SESSION_KEY, 'true');
+        input.value = '';
         if (feedback) {
             feedback.style.display = 'block';
-            feedback.style.color = 'var(--text-muted)';
-            feedback.textContent = '🔒 Mode administrateur verrouillé.';
+            feedback.style.color = '#10b981';
+            feedback.textContent = '✓ Code correct ! Accès administrateur déverrouillé.';
+        }
+        updateAdminUI();
+        renderAdminDashboard();
+    } else {
+        if (feedback) {
+            feedback.style.display = 'block';
+            feedback.style.color = 'var(--danger)';
+            feedback.textContent = '❌ Code administrateur incorrect (Code : 0408).';
         }
     }
+}
 
-    function updateAdminUI() {
-        const isAuth = isAdminAuthenticated();
-        const badge = document.getElementById('admin-status-badge');
-        const panel = document.getElementById('admin-panel-container');
-        const loginBox = document.getElementById('admin-login-box');
-
-        if (badge) badge.style.display = isAuth ? 'inline-block' : 'none';
-        if (panel) {
-            panel.classList.toggle('hidden', !isAuth);
-            panel.style.display = isAuth ? 'block' : 'none';
-        }
-        if (loginBox) {
-            loginBox.style.display = isAuth ? 'none' : 'flex';
-        }
+function lockAdminMode() {
+    sessionStorage.removeItem(ADMIN_SESSION_KEY);
+    updateAdminUI();
+    const feedback = document.getElementById('admin-code-feedback');
+    if (feedback) {
+        feedback.style.display = 'block';
+        feedback.style.color = 'var(--text-muted)';
+        feedback.textContent = '🔒 Mode administrateur verrouillé.';
     }
+}
 
-    // Enregistrement Léger de l'utilisateur actif (NE DUPLIQUE PAS LES QUESTIONS DANS LOCALSTORAGE)
-    function recordUserInDirectory() {
+function updateAdminUI() {
+    const isAuth = isAdminAuthenticated();
+    const badge = document.getElementById('admin-status-badge');
+    const panel = document.getElementById('admin-panel-container');
+    const loginBox = document.getElementById('admin-login-box');
+
+    if (badge) badge.style.display = isAuth ? 'inline-block' : 'none';
+    if (panel) {
+        panel.classList.toggle('hidden', !isAuth);
+        panel.style.display = isAuth ? 'block' : 'none';
+    }
+    if (loginBox) {
+        loginBox.style.display = isAuth ? 'none' : 'flex';
+    }
+}
+
+// Enregistrement Léger de l'utilisateur actif (NE DUPLIQUE PAS LES QUESTIONS DANS LOCALSTORAGE)
+function recordUserInDirectory() {
+    try {
+        const user = window.currentUser || { id: 'guest_local', email: 'etudiant.local@quizzhub' };
+        const userId = user.id;
+
+        // Résumé ULTRA LÉGER des cours uploadés par cet utilisateur (quelques octets seulement !)
+        const customSummary = {};
+        if (window.appData) {
+            Object.keys(window.appData).forEach(sub => {
+                if (sub.startsWith('_') || window.appData[sub]?.deleted) return;
+                if (window.appData[sub]?.isCustom || (!window.baseData?.[sub] && !window.defaultData?.[sub])) {
+                    customSummary[sub] = {
+                        name: sub,
+                        folder: window.appData[sub].folder || 'Général',
+                        questionsCount: (window.appData[sub].questions || []).length,
+                        description: window.appData[sub].description || ''
+                    };
+                }
+            });
+        }
+
+        const p = (window.appData && window.appData._player) || { xp: 0, level: 1 };
+        const attemptsTotal = Object.keys(window.appData || {})
+            .filter(k => !k.startsWith('_'))
+            .reduce((acc, k) => acc + (window.appData[k]?.stats?.attempts || 0), 0);
+        const correctTotal = Object.keys(window.appData || {})
+            .filter(k => !k.startsWith('_'))
+            .reduce((acc, k) => acc + (window.appData[k]?.stats?.correct || 0), 0);
+
+        let directory = {};
         try {
-            const user = window.currentUser || { id: 'guest_local', email: 'etudiant.local@quizzhub' };
-            const userId = user.id;
+            directory = JSON.parse(localStorage.getItem(USERS_DIRECTORY_STORAGE_KEY) || '{}');
+        } catch (err) { }
 
-            // Résumé ULTRA LÉGER des cours uploadés par cet utilisateur (quelques octets seulement !)
-            const customSummary = {};
-            if (window.appData) {
-                Object.keys(window.appData).forEach(sub => {
-                    if (sub.startsWith('_') || window.appData[sub]?.deleted) return;
-                    if (window.appData[sub]?.isCustom || (!window.baseData?.[sub] && !window.defaultData?.[sub])) {
-                        customSummary[sub] = {
-                            name: sub,
-                            folder: window.appData[sub].folder || 'Général',
-                            questionsCount: (window.appData[sub].questions || []).length,
-                            description: window.appData[sub].description || ''
+        directory[userId] = {
+            id: userId,
+            email: user.email || 'etudiant@univ',
+            lastActive: new Date().toISOString(),
+            level: p.level || 1,
+            xp: p.xp || 0,
+            workoutXP: p.workoutXP || 0,
+            quizXP: p.quizXP || 0,
+            attemptsTotal,
+            correctTotal,
+            successRate: attemptsTotal > 0 ? Math.round((correctTotal / attemptsTotal) * 100) : 0,
+            customSummary,
+            selectedList: getSelectedSubjectsList()
+        };
+
+        safeSetItem(USERS_DIRECTORY_STORAGE_KEY, JSON.stringify(directory));
+    } catch (e) {
+        console.warn('Notice recordUserInDirectory (sécurisé):', e.message);
+    }
+}
+
+// Récupération de tous les utilisateurs (Cloud Supabase + Registre Local)
+async function getAllSiteUsers() {
+    const usersMap = {};
+
+    // 1. Lire le registre local
+    try {
+        const localDir = JSON.parse(localStorage.getItem(USERS_DIRECTORY_STORAGE_KEY) || '{}');
+        Object.assign(usersMap, localDir);
+    } catch (e) { }
+
+    // S'assurer que l'utilisateur actuel est bien dedans
+    recordUserInDirectory();
+    try {
+        const localDir = JSON.parse(localStorage.getItem(USERS_DIRECTORY_STORAGE_KEY) || '{}');
+        Object.assign(usersMap, localDir);
+    } catch (e) { }
+
+    // 2. Interroger Supabase si connecté
+    if (window.supabaseClient) {
+        try {
+            const { data, error } = await window.supabaseClient
+                .from('quiz_data')
+                .select('id, user_id, content, updated_at');
+
+            if (!error && Array.isArray(data)) {
+                data.forEach(row => {
+                    const uid = row.user_id;
+                    if (!uid || uid === 'community_catalog_shared') return;
+                    const content = row.content || {};
+                    const p = content._player || {};
+                    const custom = content._customSubjects || {};
+                    const customSummary = {};
+                    Object.keys(custom).forEach(cName => {
+                        customSummary[cName] = {
+                            name: cName,
+                            folder: custom[cName].folder || 'Général',
+                            questionsCount: (custom[cName].questions || []).length,
+                            description: custom[cName].description || ''
+                        };
+                    });
+
+                    // Fusionner ou ajouter l'utilisateur
+                    if (!usersMap[uid]) {
+                        usersMap[uid] = {
+                            id: uid,
+                            email: uid === window.currentUser?.id ? window.currentUser.email : `etudiant_${uid.slice(0, 8)}@univ`,
+                            lastActive: row.updated_at || new Date().toISOString(),
+                            level: p.level || 1,
+                            xp: p.xp || 0,
+                            workoutXP: p.workoutXP || 0,
+                            quizXP: p.quizXP || 0,
+                            attemptsTotal: 0,
+                            correctTotal: 0,
+                            successRate: 0,
+                            customSummary
+                        };
+                    } else {
+                        usersMap[uid].xp = Math.max(usersMap[uid].xp, p.xp || 0);
+                        usersMap[uid].level = Math.max(usersMap[uid].level, p.level || 1);
+                        usersMap[uid].customSummary = {
+                            ...usersMap[uid].customSummary,
+                            ...customSummary
                         };
                     }
                 });
             }
-
-            const p = (window.appData && window.appData._player) || { xp: 0, level: 1 };
-            const attemptsTotal = Object.keys(window.appData || {})
-                .filter(k => !k.startsWith('_'))
-                .reduce((acc, k) => acc + (window.appData[k]?.stats?.attempts || 0), 0);
-            const correctTotal = Object.keys(window.appData || {})
-                .filter(k => !k.startsWith('_'))
-                .reduce((acc, k) => acc + (window.appData[k]?.stats?.correct || 0), 0);
-
-            let directory = {};
-            try {
-                directory = JSON.parse(localStorage.getItem(USERS_DIRECTORY_STORAGE_KEY) || '{}');
-            } catch (err) { }
-
-            directory[userId] = {
-                id: userId,
-                email: user.email || 'etudiant@univ',
-                lastActive: new Date().toISOString(),
-                level: p.level || 1,
-                xp: p.xp || 0,
-                workoutXP: p.workoutXP || 0,
-                quizXP: p.quizXP || 0,
-                attemptsTotal,
-                correctTotal,
-                successRate: attemptsTotal > 0 ? Math.round((correctTotal / attemptsTotal) * 100) : 0,
-                customSummary,
-                selectedList: getSelectedSubjectsList()
-            };
-
-            safeSetItem(USERS_DIRECTORY_STORAGE_KEY, JSON.stringify(directory));
         } catch (e) {
-            console.warn('Notice recordUserInDirectory (sécurisé):', e.message);
+            console.warn('Interrogation distante Supabase admin (mode local actif) :', e.message);
         }
     }
 
-    // Récupération de tous les utilisateurs (Cloud Supabase + Registre Local)
-    async function getAllSiteUsers() {
-        const usersMap = {};
+    return Object.values(usersMap);
+}
 
-        // 1. Lire le registre local
-        try {
-            const localDir = JSON.parse(localStorage.getItem(USERS_DIRECTORY_STORAGE_KEY) || '{}');
-            Object.assign(usersMap, localDir);
-        } catch (e) { }
+// Rendu du tableau de bord d'administration
+async function renderAdminDashboard() {
+    if (!isAdminAuthenticated()) return;
 
-        // S'assurer que l'utilisateur actuel est bien dedans
-        recordUserInDirectory();
-        try {
-            const localDir = JSON.parse(localStorage.getItem(USERS_DIRECTORY_STORAGE_KEY) || '{}');
-            Object.assign(usersMap, localDir);
-        } catch (e) { }
+    const usersListEl = document.getElementById('admin-users-list');
+    if (usersListEl) usersListEl.innerHTML = '<p style="color:var(--text-muted); text-align:center; padding:20px;">Chargement des données étudiants...</p>';
 
-        // 2. Interroger Supabase si connecté
-        if (window.supabaseClient) {
-            try {
-                const { data, error } = await window.supabaseClient
-                    .from('quiz_data')
-                    .select('id, user_id, content, updated_at');
+    const users = await getAllSiteUsers();
 
-                if (!error && Array.isArray(data)) {
-                    data.forEach(row => {
-                        const uid = row.user_id;
-                        if (!uid || uid === 'community_catalog_shared') return;
-                        const content = row.content || {};
-                        const p = content._player || {};
-                        const custom = content._customSubjects || {};
-                        const customSummary = {};
-                        Object.keys(custom).forEach(cName => {
-                            customSummary[cName] = {
-                                name: cName,
-                                folder: custom[cName].folder || 'Général',
-                                questionsCount: (custom[cName].questions || []).length,
-                                description: custom[cName].description || ''
-                            };
-                        });
+    // Calcul des métriques globales
+    let totalUploads = 0;
+    let totalQuestions = 0;
+    let totalXP = 0;
 
-                        // Fusionner ou ajouter l'utilisateur
-                        if (!usersMap[uid]) {
-                            usersMap[uid] = {
-                                id: uid,
-                                email: uid === window.currentUser?.id ? window.currentUser.email : `etudiant_${uid.slice(0, 8)}@univ`,
-                                lastActive: row.updated_at || new Date().toISOString(),
-                                level: p.level || 1,
-                                xp: p.xp || 0,
-                                workoutXP: p.workoutXP || 0,
-                                quizXP: p.quizXP || 0,
-                                attemptsTotal: 0,
-                                correctTotal: 0,
-                                successRate: 0,
-                                customSummary
-                            };
-                        } else {
-                            usersMap[uid].xp = Math.max(usersMap[uid].xp, p.xp || 0);
-                            usersMap[uid].level = Math.max(usersMap[uid].level, p.level || 1);
-                            usersMap[uid].customSummary = {
-                                ...usersMap[uid].customSummary,
-                                ...customSummary
-                            };
-                        }
-                    });
-                }
-            } catch (e) {
-                console.warn('Interrogation distante Supabase admin (mode local actif) :', e.message);
-            }
-        }
-
-        return Object.values(usersMap);
-    }
-
-    // Rendu du tableau de bord d'administration
-    async function renderAdminDashboard() {
-        if (!isAdminAuthenticated()) return;
-
-        const usersListEl = document.getElementById('admin-users-list');
-        if (usersListEl) usersListEl.innerHTML = '<p style="color:var(--text-muted); text-align:center; padding:20px;">Chargement des données étudiants...</p>';
-
-        const users = await getAllSiteUsers();
-
-        // Calcul des métriques globales
-        let totalUploads = 0;
-        let totalQuestions = 0;
-        let totalXP = 0;
-
-        users.forEach(u => {
-            totalXP += (u.xp || 0);
-            const subs = u.customSummary || {};
-            const subKeys = Object.keys(subs);
-            totalUploads += subKeys.length;
-            subKeys.forEach(k => {
-                totalQuestions += (subs[k]?.questionsCount || 0);
-            });
+    users.forEach(u => {
+        totalXP += (u.xp || 0);
+        const subs = u.customSummary || {};
+        const subKeys = Object.keys(subs);
+        totalUploads += subKeys.length;
+        subKeys.forEach(k => {
+            totalQuestions += (subs[k]?.questionsCount || 0);
         });
+    });
 
-        // Mise à jour des compteurs du dashboard
-        const statUsers = document.getElementById('admin-stat-users-count');
-        const statUploads = document.getElementById('admin-stat-uploads-count');
-        const statQuestions = document.getElementById('admin-stat-questions-count');
-        const statXp = document.getElementById('admin-stat-xp-count');
+    // Mise à jour des compteurs du dashboard
+    const statUsers = document.getElementById('admin-stat-users-count');
+    const statUploads = document.getElementById('admin-stat-uploads-count');
+    const statQuestions = document.getElementById('admin-stat-questions-count');
+    const statXp = document.getElementById('admin-stat-xp-count');
 
-        if (statUsers) statUsers.textContent = users.length;
-        if (statUploads) statUploads.textContent = totalUploads;
-        if (statQuestions) statQuestions.textContent = totalQuestions;
-        if (statXp) statXp.textContent = totalXP.toLocaleString();
+    if (statUsers) statUsers.textContent = users.length;
+    if (statUploads) statUploads.textContent = totalUploads;
+    if (statQuestions) statQuestions.textContent = totalQuestions;
+    if (statXp) statXp.textContent = totalXP.toLocaleString();
 
-        const communityCourses = getCommunityCustomCourses();
-        const statPromoted = document.getElementById('admin-stat-promoted-count');
-        if (statPromoted) statPromoted.textContent = Object.keys(communityCourses).length;
+    const communityCourses = getCommunityCustomCourses();
+    const statPromoted = document.getElementById('admin-stat-promoted-count');
+    if (statPromoted) statPromoted.textContent = Object.keys(communityCourses).length;
 
-        if (!usersListEl) return;
+    if (!usersListEl) return;
 
-        if (users.length === 0) {
-            usersListEl.innerHTML = '<p style="color:var(--text-muted); text-align:center;">Aucun utilisateur enregistré.</p>';
-            return;
-        }
+    if (users.length === 0) {
+        usersListEl.innerHTML = '<p style="color:var(--text-muted); text-align:center;">Aucun utilisateur enregistré.</p>';
+        return;
+    }
 
-        usersListEl.innerHTML = users.map(user => {
-            const isMe = window.currentUser && user.id === window.currentUser.id;
-            const customSubs = user.customSummary || {};
-            const customSubNames = Object.keys(customSubs).filter(k => !k.startsWith('_'));
+    usersListEl.innerHTML = users.map(user => {
+        const isMe = window.currentUser && user.id === window.currentUser.id;
+        const customSubs = user.customSummary || {};
+        const customSubNames = Object.keys(customSubs).filter(k => !k.startsWith('_'));
 
-            let coursesHtml = '';
-            if (customSubNames.length === 0) {
-                coursesHtml = '<p style="font-size:0.85em; color:var(--text-muted); margin:4px 0 0 0; font-style:italic;">Aucun cours uploadé par cet étudiant pour le moment.</p>';
-            } else {
-                coursesHtml = customSubNames.map(courseName => {
-                    const c = customSubs[courseName];
-                    const qCount = c.questionsCount || 0;
-                    const isAlreadyInCommunity = Boolean(communityCourses[courseName]);
+        let coursesHtml = '';
+        if (customSubNames.length === 0) {
+            coursesHtml = '<p style="font-size:0.85em; color:var(--text-muted); margin:4px 0 0 0; font-style:italic;">Aucun cours uploadé par cet étudiant pour le moment.</p>';
+        } else {
+            coursesHtml = customSubNames.map(courseName => {
+                const c = customSubs[courseName];
+                const qCount = c.questionsCount || 0;
+                const isAlreadyInCommunity = Boolean(communityCourses[courseName]);
 
-                    return `
+                return `
                         <div class="admin-course-item">
                             <div>
                                 <strong style="color:var(--text-main); font-size:0.95em;">📚 ${escapeHtml(courseName)}</strong>
@@ -949,13 +949,13 @@
                             </div>
                         </div>
                     `;
-                }).join('');
-            }
+            }).join('');
+        }
 
-            const dateStr = user.lastActive ? new Date(user.lastActive).toLocaleDateString() : 'Actif';
-            const userSelectedList = user.selectedList || [];
+        const dateStr = user.lastActive ? new Date(user.lastActive).toLocaleDateString() : 'Actif';
+        const userSelectedList = user.selectedList || [];
 
-            return `
+        return `
                 <div class="admin-user-card">
                     <div class="admin-user-header">
                         <div class="admin-user-email">
@@ -991,97 +991,97 @@
                     ` : ''}
                 </div>
             `;
-        }).join('');
+    }).join('');
+}
+
+// Action Admin : Copier un cours d'un utilisateur dans l'onglet communautaire
+async function copyUserCourseToCommunity(userId, courseName) {
+    // 1. Chercher le cours dans appData local si disponible
+    let sourceCourse = window.appData && window.appData[courseName];
+    if (!sourceCourse) {
+        const customRegistry = getCustomSubjectsRegistry();
+        sourceCourse = customRegistry[courseName];
     }
 
-    // Action Admin : Copier un cours d'un utilisateur dans l'onglet communautaire
-    async function copyUserCourseToCommunity(userId, courseName) {
-        // 1. Chercher le cours dans appData local si disponible
-        let sourceCourse = window.appData && window.appData[courseName];
-        if (!sourceCourse) {
-            const customRegistry = getCustomSubjectsRegistry();
-            sourceCourse = customRegistry[courseName];
-        }
-
-        // 2. Si pas trouvé en local, chercher dans les données distantes Supabase
-        if (!sourceCourse && window.supabaseClient) {
-            try {
-                const { data } = await window.supabaseClient
-                    .from('quiz_data')
-                    .select('content')
-                    .eq('user_id', userId)
-                    .maybeSingle();
-                if (data?.content?._customSubjects?.[courseName]) {
-                    sourceCourse = data.content._customSubjects[courseName];
-                }
-            } catch (e) { }
-        }
-
-        if (!sourceCourse) {
-            if (window.customAlert) window.customAlert('Information', `Les données complètes du cours "${courseName}" ne sont pas directement accessibles en local.`);
-            return;
-        }
-
-        const communityCatalog = getCommunityCustomCourses();
-        communityCatalog[courseName] = {
-            ...JSON.parse(JSON.stringify(sourceCourse)),
-            isCommunityCustom: true,
-            promotedByAdmin: true,
-            promotedAt: Date.now(),
-            author: sourceCourse.author || 'Étudiant de la communauté',
-            description: sourceCourse.description || `Cours partagé par la communauté.`
-        };
-
-        saveCommunityCustomCourses(communityCatalog);
-
-        if (window.customAlert) {
-            window.customAlert(
-                'Cours Publié en Communauté !',
-                `Le cours "${courseName}" a été copié avec succès dans "Matières de la communauté".\nIl est désormais accessible à tous les étudiants du site !`
-            );
-        }
-
-        renderAdminDashboard();
-        renderCommunity();
+    // 2. Si pas trouvé en local, chercher dans les données distantes Supabase
+    if (!sourceCourse && window.supabaseClient) {
+        try {
+            const { data } = await window.supabaseClient
+                .from('quiz_data')
+                .select('content')
+                .eq('user_id', userId)
+                .maybeSingle();
+            if (data?.content?._customSubjects?.[courseName]) {
+                sourceCourse = data.content._customSubjects[courseName];
+            }
+        } catch (e) { }
     }
 
-    // Examiner un cours uploadé par un utilisateur
-    async function previewUserUploadedCourse(userId, courseName) {
-        let sourceCourse = window.appData && window.appData[courseName];
-        if (!sourceCourse) {
-            sourceCourse = getCustomSubjectsRegistry()[courseName];
-        }
-        if (!sourceCourse && window.supabaseClient) {
-            try {
-                const { data } = await window.supabaseClient
-                    .from('quiz_data')
-                    .select('content')
-                    .eq('user_id', userId)
-                    .maybeSingle();
-                if (data?.content?._customSubjects?.[courseName]) {
-                    sourceCourse = data.content._customSubjects[courseName];
-                }
-            } catch (e) { }
-        }
-
-        if (sourceCourse) {
-            openCoursePreviewModalDirect(courseName, sourceCourse, sourceCourse.author || 'Étudiant');
-        } else {
-            if (window.customAlert) window.customAlert('Aperçu', `Questions du cours "${courseName}" non chargées en mémoire.`);
-        }
+    if (!sourceCourse) {
+        if (window.customAlert) window.customAlert('Information', `Les données complètes du cours "${courseName}" ne sont pas directement accessibles en local.`);
+        return;
     }
 
-    function openCoursePreviewModalDirect(courseName, course, authorEmail) {
-        const modal = document.getElementById('preview-course-modal');
-        if (!modal) return;
+    const communityCatalog = getCommunityCustomCourses();
+    communityCatalog[courseName] = {
+        ...JSON.parse(JSON.stringify(sourceCourse)),
+        isCommunityCustom: true,
+        promotedByAdmin: true,
+        promotedAt: Date.now(),
+        author: sourceCourse.author || 'Étudiant de la communauté',
+        description: sourceCourse.description || `Cours partagé par la communauté.`
+    };
 
-        const headerEl = document.getElementById('preview-course-header');
-        const questionsEl = document.getElementById('preview-course-questions');
-        const actionBtn = document.getElementById('preview-course-action-btn');
+    saveCommunityCustomCourses(communityCatalog);
 
-        const qCount = Array.isArray(course.questions) ? course.questions.length : 0;
+    if (window.customAlert) {
+        window.customAlert(
+            'Cours Publié en Communauté !',
+            `Le cours "${courseName}" a été copié avec succès dans "Matières de la communauté".\nIl est désormais accessible à tous les étudiants du site !`
+        );
+    }
 
-        headerEl.innerHTML = `
+    renderAdminDashboard();
+    renderCommunity();
+}
+
+// Examiner un cours uploadé par un utilisateur
+async function previewUserUploadedCourse(userId, courseName) {
+    let sourceCourse = window.appData && window.appData[courseName];
+    if (!sourceCourse) {
+        sourceCourse = getCustomSubjectsRegistry()[courseName];
+    }
+    if (!sourceCourse && window.supabaseClient) {
+        try {
+            const { data } = await window.supabaseClient
+                .from('quiz_data')
+                .select('content')
+                .eq('user_id', userId)
+                .maybeSingle();
+            if (data?.content?._customSubjects?.[courseName]) {
+                sourceCourse = data.content._customSubjects[courseName];
+            }
+        } catch (e) { }
+    }
+
+    if (sourceCourse) {
+        openCoursePreviewModalDirect(courseName, sourceCourse, sourceCourse.author || 'Étudiant');
+    } else {
+        if (window.customAlert) window.customAlert('Aperçu', `Questions du cours "${courseName}" non chargées en mémoire.`);
+    }
+}
+
+function openCoursePreviewModalDirect(courseName, course, authorEmail) {
+    const modal = document.getElementById('preview-course-modal');
+    if (!modal) return;
+
+    const headerEl = document.getElementById('preview-course-header');
+    const questionsEl = document.getElementById('preview-course-questions');
+    const actionBtn = document.getElementById('preview-course-action-btn');
+
+    const qCount = Array.isArray(course.questions) ? course.questions.length : 0;
+
+    headerEl.innerHTML = `
             <div style="display:flex; align-items:center; gap:10px; margin-bottom:8px;">
                 <span class="community-category-pill">📁 ${escapeHtml(course.folder || 'Général')}</span>
                 <span class="badge" style="background:#6366f1; color:#fff; font-size:0.8em;">Upload Étudiant</span>
@@ -1094,7 +1094,7 @@
             </div>
         `;
 
-        questionsEl.innerHTML = (course.questions || []).map((q, idx) => `
+    questionsEl.innerHTML = (course.questions || []).map((q, idx) => `
             <div style="background: rgba(255,255,255,0.02); border: 1px solid var(--surface-light); border-radius: 8px; padding: 12px; margin-bottom: 12px;">
                 <strong style="color: var(--primary); font-size: 0.9em;">Question ${idx + 1}</strong>
                 <div style="font-size: 0.98em; color: var(--text-main); margin: 6px 0 8px 0; font-weight: 500;">
@@ -1115,40 +1115,40 @@
             </div>
         `).join('');
 
-        if (actionBtn) {
-            actionBtn.textContent = '📢 Copier dans la communauté';
-            actionBtn.className = 'btn btn-primary';
-            actionBtn.onclick = () => {
-                copyUserCourseToCommunity(authorEmail, courseName);
-                closeCoursePreviewModal();
-            };
-        }
-
-        modal.classList.remove('hidden');
-        modal.style.display = 'block';
+    if (actionBtn) {
+        actionBtn.textContent = '📢 Copier dans la communauté';
+        actionBtn.className = 'btn btn-primary';
+        actionBtn.onclick = () => {
+            copyUserCourseToCommunity(authorEmail, courseName);
+            closeCoursePreviewModal();
+        };
     }
 
-    // ------------------------------------------------------------------------
-    // 8. HELPERS & TOAST
-    // ------------------------------------------------------------------------
-    function escapeHtml(str) {
-        if (!str) return '';
-        return String(str)
-            .replace(/&/g, '&amp;')
-            .replace(/</g, '&lt;')
-            .replace(/>/g, '&gt;')
-            .replace(/"/g, '&quot;')
-            .replace(/'/g, '&#039;');
-    }
+    modal.classList.remove('hidden');
+    modal.style.display = 'block';
+}
 
-    function escapeJsString(str) {
-        if (!str) return '';
-        return String(str).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
-    }
+// ------------------------------------------------------------------------
+// 8. HELPERS & TOAST
+// ------------------------------------------------------------------------
+function escapeHtml(str) {
+    if (!str) return '';
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#039;');
+}
 
-    function showCustomToast(title, message) {
-        const toast = document.createElement('div');
-        toast.style.cssText = `
+function escapeJsString(str) {
+    if (!str) return '';
+    return String(str).replace(/\\/g, '\\\\').replace(/'/g, "\\'");
+}
+
+function showCustomToast(title, message) {
+    const toast = document.createElement('div');
+    toast.style.cssText = `
             position: fixed;
             bottom: 25px;
             right: 25px;
@@ -1162,61 +1162,61 @@
             animation: slideDownFade 0.3s ease-out;
             max-width: 360px;
         `;
-        toast.innerHTML = `
+    toast.innerHTML = `
             <div style="font-weight: bold; color: var(--primary); margin-bottom: 4px;">${escapeHtml(title)}</div>
             <div style="font-size: 0.9em; color: var(--text-muted);">${escapeHtml(message)}</div>
         `;
-        document.body.appendChild(toast);
-        setTimeout(() => {
-            toast.style.opacity = '0';
-            toast.style.transform = 'translateY(10px)';
-            toast.style.transition = 'all 0.3s ease';
-            setTimeout(() => toast.remove(), 300);
-        }, 3500);
+    document.body.appendChild(toast);
+    setTimeout(() => {
+        toast.style.opacity = '0';
+        toast.style.transform = 'translateY(10px)';
+        toast.style.transition = 'all 0.3s ease';
+        setTimeout(() => toast.remove(), 300);
+    }, 3500);
+}
+
+// Initialisation au chargement
+document.addEventListener('DOMContentLoaded', () => {
+    updateAdminUI();
+    if (isAdminAuthenticated()) {
+        renderAdminDashboard();
     }
+});
 
-    // Initialisation au chargement
-    document.addEventListener('DOMContentLoaded', () => {
-        updateAdminUI();
-        if (isAdminAuthenticated()) {
-            renderAdminDashboard();
-        }
-    });
+// Exposition globale sur window
+window.communityAdmin = {
+    getCommunityCatalog,
+    isUserSubject,
+    toggleCommunitySubject,
+    syncCommunitySubject,
+    syncAllCommunitySubjects,
+    findExistingSubjectByAlias,
+    findCanonicalCommunitySubject,
+    renderCommunity,
+    filterCommunityCourses,
+    openCoursePreviewModal,
+    closeCoursePreviewModal,
+    verifyAdminCode,
+    lockAdminMode,
+    renderAdminDashboard,
+    copyUserCourseToCommunity,
+    previewUserUploadedCourse,
+    recordUserInDirectory,
+    saveCustomSubjectToRegistry,
+    getCustomSubjectsRegistry,
+    restoreIsolatedCustomSubjects,
+    getSelectedSubjectsList,
+    saveSelectedSubjectsList,
+    addSubjectToUserSelection,
+    safeSetItem
+};
 
-    // Exposition globale sur window
-    window.communityAdmin = {
-        getCommunityCatalog,
-        isUserSubject,
-        toggleCommunitySubject,
-        syncCommunitySubject,
-        syncAllCommunitySubjects,
-        findExistingSubjectByAlias,
-        findCanonicalCommunitySubject,
-        renderCommunity,
-        filterCommunityCourses,
-        openCoursePreviewModal,
-        closeCoursePreviewModal,
-        verifyAdminCode,
-        lockAdminMode,
-        renderAdminDashboard,
-        copyUserCourseToCommunity,
-        previewUserUploadedCourse,
-        recordUserInDirectory,
-        saveCustomSubjectToRegistry,
-        getCustomSubjectsRegistry,
-        restoreIsolatedCustomSubjects,
-        getSelectedSubjectsList,
-        saveSelectedSubjectsList,
-        addSubjectToUserSelection,
-        safeSetItem
-    };
-
-    window.verifyAdminCode = verifyAdminCode;
-    window.lockAdminMode = lockAdminMode;
-    window.refreshAdminDashboard = renderAdminDashboard;
-    window.renderCommunity = renderCommunity;
-    window.filterCommunityCourses = filterCommunityCourses;
-    window.closeCoursePreviewModal = closeCoursePreviewModal;
-    window.syncAllCommunitySubjects = syncAllCommunitySubjects;
-    window.syncCommunitySubject = syncCommunitySubject;
-})();
+window.verifyAdminCode = verifyAdminCode;
+window.lockAdminMode = lockAdminMode;
+window.refreshAdminDashboard = renderAdminDashboard;
+window.renderCommunity = renderCommunity;
+window.filterCommunityCourses = filterCommunityCourses;
+window.closeCoursePreviewModal = closeCoursePreviewModal;
+window.syncAllCommunitySubjects = syncAllCommunitySubjects;
+window.syncCommunitySubject = syncCommunitySubject;
+}) ();
