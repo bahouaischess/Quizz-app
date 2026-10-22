@@ -436,8 +436,6 @@
         renderCommunity();
         if (window.renderHome) window.renderHome();
     }
-    if (window.renderHome) window.renderHome();
-}
 
     function addSubjectToUserSelection(subjectName) {
     const data = getAppData();
