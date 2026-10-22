@@ -1,0 +1,528 @@
+{
+    "name": "CM 9 - Tissu musculaire (Partie 2)",
+    "folder": "PASS - Histologie",
+    "description": "Étude approfondie de la contraction musculaire striée, du tissu musculaire lisse et du tissu musculaire cardiaque (myocarde).",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Lors de la contraction d'une fibre musculaire striée squelettique, comment évoluent les différentes bandes du sarcomère ?",
+            "tags": [
+                "Contraction",
+                "Sarcomère"
+            ],
+            "options": [
+                {
+                    "text": "La strie H et les bandes I raccourcissent, tandis que la bande A reste constante.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La bande A et la strie H raccourcissent simultanément, tandis que la demi-bande I conserve une largeur rigoureusement invariable.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Toutes les bandes du sarcomère raccourcissent de manière proportionnelle à la tension mécanique exercée par les têtes de myosine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Seule la ligne médiane transversale M s'élargit passivement pour compenser l'incurvation des filaments fins d'actine sarcomérique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Lors de la contraction, les myofilaments glissent les uns sur les autres : la bande A (correspondant à la longueur de la myosine) ne bouge pas, mais les bandes I et la strie H rétrécissent jusqu'à devenir virtuelles au maximum de la contraction[cite: 983, 984]."
+        },
+        {
+            "q": "Quelle est l'étape moléculaire qui permet spécifiquement de démasquer les sites de liaison entre l'actine et la myosine dans le muscle strié ?",
+            "tags": [
+                "Contraction",
+                "Régulation"
+            ],
+            "options": [
+                {
+                    "text": "La fixation du Ca2+ sur la troponine C, déplaçant la tropomyosine et libérant le site de liaison de l'actine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'hydrolyse enzymatique directe d'une molécule d'ATP cytosolique en ADP et phosphate inorganique par le monomère d'actine globulaire G.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La phosphorylation de la chaîne légère régulatrice (LC20 P) de la myosine par une kinase dépendante de la calmoduline sarcoplasmique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'ouverture synaptique des récepteurs canaux nicotiniques de la plaque motrice sous l'action directe du neurotransmetteur acétylcholine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le Ca2+ cytosolique se fixe sur la sous-unité C de la troponine. Ce changement de conformation déplace le filament de tropomyosine, ce qui démasque le site de fixation situé sur l'actine, permettant à la tête de myosine de s'y lier[cite: 987, 988, 991]."
+        },
+        {
+            "q": "Dans la cellule musculaire lisse (léiomyocyte), quelle structure intracellulaire est considérée comme l'équivalent fonctionnel des tubules T du muscle strié ?",
+            "tags": [
+                "Muscle Lisse",
+                "Ultrastructure"
+            ],
+            "options": [
+                {
+                    "text": "Les cavéoles membranaires associées au réticulum lisse périphérique.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les corps denses sarcoplasmiques, formations lenticulaires riches en alpha-actinine dispersées dans le cytoplasme contractile.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les plaques d'attache membranaires contenant de la vinculine et de la taline ancrant les filaments fins à la membrane plasmique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les cônes sarcoplasmiques polaires logés aux extrémités coniques du léiomyocyte et riches en mitochondries et glycogène.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dépourvu de système T profond, le léiomyocyte possède des cavéoles (invaginations augmentant la surface membranaire de 60%) qui contiennent une réserve extracellulaire de calcium et interagissent avec le réticulum lisse périphérique pour déclencher la contraction[cite: 1003]."
+        },
+        {
+            "q": "Quelle particularité morphologique permet d'identifier facilement un léiomyocyte contracté en coupe histologique longitudinale ?",
+            "tags": [
+                "Muscle Lisse",
+                "Histologie"
+            ],
+            "options": [
+                {
+                    "text": "Le raccourcissement cellulaire confère au noyau central une forme typique en tire-bouchon.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'apparition soudaine d'une double striation transversale et longitudinale liée à l'alignement strict des corps denses sarcoplasmiques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La cellule prend une forme polygonale étoilée et expulse son noyau vésiculeux sous la lame basale externe sarcolemmique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le sarcoplasme se vacuolise massivement pour séquestrer de volumineuses inclusions d'acide lactique issues de la glycolyse anaérobie.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le léiomyocyte a un noyau unique central. Lors de la contraction (qui s'effectue en tous sens grâce au réseau oblique des filaments), le noyau suit la déformation et prend un aspect plissé en « tire-bouchon »[cite: 998, 1000]."
+        },
+        {
+            "q": "Dans le muscle lisse, sur quelle structure les filaments fins d'actine s'insèrent-ils (jouant un rôle analogue aux stries Z du muscle strié) ?",
+            "tags": [
+                "Muscle Lisse",
+                "Myofilaments"
+            ],
+            "options": [
+                {
+                    "text": "Les corps denses intracytoplasmiques et les plaques d'attache membranaires.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les disques intercalaires transversaux riches en desmosomes et en fascia adherens reliant les extrémités des cardiomyocytes voisins.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les jonctions communicantes de type nexus formées par l'appariement de connexons hexamériques assurant le couplage métabolique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La ligne médiane osmiophile dense des cavéoles membranaires associée aux récepteurs calciques de type ryanodine sous-sarcolemmiques.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans la cellule musculaire lisse, l'architecture contractile n'est pas striée. Les filaments d'actine s'insèrent sur des corps denses (dispersés dans le cytoplasme) et sur les plaques d'attache membranaires, via des protéines comme l'alpha-actinine et la desmine[cite: 1004, 1005, 1006]."
+        },
+        {
+            "q": "Contrairement au muscle strié, comment s'opère la régulation moléculaire de l'interaction actine-myosine lors de la contraction du muscle lisse ?",
+            "tags": [
+                "Muscle Lisse",
+                "Contraction"
+            ],
+            "options": [
+                {
+                    "text": "Le Ca2+ se lie à la calmoduline, activant la kinase MLCK qui phosphoryle les chaînes légères de myosine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le calcium cytosolique se fixe directement sur la sous-unité troponine C, démasquant le site d'arrimage des têtes de myosine sur l'actine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'adénosine triphosphate est hydrolysé par la caldesmone qui libère mécaniquement les sites actifs de l'actine F sans phosphorylation.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'onde de dépolarisation synaptique déclenche une libération explosive de calcium à travers les tubules T par la calsequestrine basale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le muscle lisse est dépourvu de troponine. La régulation se fait par la voie de la calmoduline : le Ca2+ s'y fixe et active la MLC-K, qui va phosphoryler la chaîne légère régulatrice de la myosine (LC20 P), autorisant l'hydrolyse de l'ATP et le glissement[cite: 1008, 1011]."
+        },
+        {
+            "q": "Concernant l'appareil contractile du léiomyocyte, quelle est la proportion exacte entre les filaments épais de myosine et les filaments fins d'actine ?",
+            "tags": [
+                "Muscle Lisse",
+                "Ultrastructure"
+            ],
+            "options": [
+                {
+                    "text": "Le rapport est de 1 filament épais pour 12 filaments fins (1/12).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le rapport est de 1 filament épais pour 2 filaments fins (1/2).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le rapport est de 1 filament épais pour 6 filaments fins (1/6).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il n'y a pas de filaments de myosine, la contraction est assurée uniquement par l'actine et la desmine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le sarcoplasme myofilamentaire du muscle lisse contient des faisceaux irréguliers d'actine et de myosine, avec un rapport de 1 filament épais de myosine pour 12 filaments fins d'actine[cite: 1004]."
+        },
+        {
+            "q": "Quelle est la topographie anatomique exacte du myocarde ?",
+            "tags": [
+                "Myocarde",
+                "Anatomie"
+            ],
+            "options": [
+                {
+                    "text": "Couche moyenne musculaire de la paroi cardiaque, entre l'épicarde externe et l'endocarde interne.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Couche luminale la plus interne du cœur formant un endothélium continu en contact direct avec le flux sanguin des cavités ventriculaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Enveloppe séreuse et fibreuse externe inextensible délimitant la cavité péricardique sous le nom de péricarde pariétal péricardique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Tissu fibro-élastique dense tapissant de manière exclusive les valvules auriculo-ventriculaires et leurs cordages tendineux sous-jacents.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le myocarde est le muscle cardiaque constituant la majeure partie de la paroi, s'intercalant entre l'endocarde (tapissant les cavités) et l'épicarde (feuillet viscéral du péricarde)[cite: 1017, 1018, 1019]."
+        },
+        {
+            "q": "Quelle spécificité morphologique assure l'interconnexion mécanique et électrique des cardiomyocytes ?",
+            "tags": [
+                "Myocarde",
+                "Histologie"
+            ],
+            "options": [
+                {
+                    "text": "Par des disques intercalaires (stries scalariformes) présentant des interdigitations en marches d'escalier.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ils fusionnent complètement au cours de l'embryogenèse pour constituer un vaste syncytium anatomique plurinucléé sans cloisons membranaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ils échangent leurs informations électrophysiologiques par un dense feutrage de prolongements dendritiques fortement myélinisés.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ils sont isolés individuellement par une gaine continue de périmysium fibreux imperméable s'opposant à toute conduction électrique directe.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les cellules myocardiques ne fusionnent pas (ce ne sont pas des syncytiums structuraux comme les rhabdomyocytes) mais sont collées par leurs extrémités en marche d'escalier (stries scalariformes) pour fonctionner de manière synchrone[cite: 1021, 1025]."
+        },
+        {
+            "q": "Au sein des stries scalariformes, quelles jonctions spécifiques assurent le couplage mécanique (cohésion) au niveau des segments transversaux ?",
+            "tags": [
+                "Myocarde",
+                "Jonctions"
+            ],
+            "options": [
+                {
+                    "text": "Les desmosomes et les jonctions adhérentes (fascia adherens).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les jonctions communicantes (nexus / gap junctions).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les jonctions serrées (zonula occludens) et les hémidesmosomes.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les corps denses et les plaques d'attache à la desmine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les segments transversaux (à la place des stries Z) abritent des jonctions d'ancrage mécanique : les desmosomes (liés aux filaments intermédiaires) et les jonctions adhérentes (liées à l'actine). Le couplage électrique est assuré par les nexus sur les segments longitudinaux[cite: 1025, 1026, 1027]."
+        },
+        {
+            "q": "Comment le système sarcotubulaire est-il organisé dans le muscle cardiaque par rapport au muscle strié squelettique ?",
+            "tags": [
+                "Myocarde",
+                "Système T"
+            ],
+            "options": [
+                {
+                    "text": "En diades (un large tubule T associé à un tubule longitudinal du RS), situées au niveau des stries Z.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "En triades denses très régulières formées d'un tubule T central et de deux volumineuses citernes de RS situées à la jonction des bandes A et I.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "En un réseau exclusif de cavéoles membranaires périphériques totalement dépourvu de tubules transverses invaginés dans le sarcoplasme profond.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "En un réticulum sarcoplasmique vestigial sans système canalaire, le calcium contractile étant exclusivement stocké dans les crêtes mitochondriales.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Contrairement au rhabdomyocyte (qui présente des triades à la jonction A/I), le cardiomyocyte possède un réticulum sarcoplasmique moins développé sans citernes terminales. Un tubule L du RS s'associe à un très large tubule T (situé au niveau des stries Z) pour former une diade[cite: 1029, 1038]."
+        },
+        {
+            "q": "Dans le cytosquelette sous-sarcolemmique du cardiomyocyte, quelle protéine spécifique remplace la vinculine classique observée chez le rhabdomyocyte ?",
+            "tags": [
+                "Myocarde",
+                "Cytosquelette"
+            ],
+            "options": [
+                {
+                    "text": "La métavinculine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La nébulette.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'alpha-actinine cardiaque.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La calponine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Au sein des complexes intégrines du cœur, la vinculine est remplacée par une isoforme cardiaque appelée la métavinculine pour l'ancrage sous-membranaire[cite: 1033]."
+        },
+        {
+            "q": "Quelle molécule interagit avec les filaments fins d'actine dans le cytosquelette endosarcomérique cardiaque, jouant le rôle de la nébuline du muscle squelettique ?",
+            "tags": [
+                "Myocarde",
+                "Histologie moléculaire"
+            ],
+            "options": [
+                {
+                    "text": "La nébulette.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La myomésine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La cMYBP-C.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La dystrophine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans le cytosquelette endosarcomérique cardiaque, les filaments fins d'actine sont associés et régulés par la nébulette (l'équivalent de la nébuline présente dans le muscle strié)[cite: 1032]."
+        },
+        {
+            "q": "Quelle est la principale source de calcium déclenchant la contraction du myocarde ?",
+            "tags": [
+                "Myocarde",
+                "Contraction"
+            ],
+            "options": [
+                {
+                    "text": "Le calcium extracellulaire entrant massivement par les canaux calciques des tubules T lors du potentiel d'action.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le réservoir calcique interne des citernes terminales du réticulum sarcoplasmique libéré spontanément sans apport calcique extracellulaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le pool de calcium minéral osseux résorbé par les ostéoclastes et acheminé en urgence vers le myocarde par la vascularisation coronarienne.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les cations divalents synthétisés de novo par la phosphorylation oxydative au sein des mitochondries allongées de la région périnucléaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "À la différence du muscle strié squelettique où la contraction repose sur le largage massif du Ca2+ interne du RS, la contraction cardiaque dépend fondamentalement de l'afflux de calcium d'origine extracellulaire entrant via les tubules T (lequel induit ensuite la libération du RS)[cite: 1035]."
+        },
+        {
+            "q": "En comparant les trois types de tissus musculaires, lequel possède des noyaux multiples situés en périphérie de la cellule et est soumis au contrôle du système nerveux central (volontaire) ?",
+            "tags": [
+                "Comparaison",
+                "Muscle strié squelettique"
+            ],
+            "options": [
+                {
+                    "text": "Le muscle strié squelettique.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le muscle cardiaque (myocarde).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le muscle lisse.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les cellules myoépithélioïdes de Ruyters.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le tableau récapitulatif montre que le muscle strié squelettique est le seul à être volontaire (SNC) et à être constitué de cellules géantes comportant de multiples noyaux rejetés en périphérie. Le lisse et le cardiaque ont un noyau central unique et sont involontaires[cite: 1038]."
+        },
+        {
+            "q": "Quelle particularité métabolique caractérise le sarcoplasme non myofilamentaire du léiomyocyte (cellule lisse) ?",
+            "tags": [
+                "Muscle Lisse",
+                "Métabolisme"
+            ],
+            "options": [
+                {
+                    "text": "Peu de mitochondries (métabolisme anaérobie), peu de glycogène, absence de myoglobine et de système T.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une très forte teneur en myoglobine rouge et une profusion de volumineuses mitochondries adaptées à un métabolisme aérobie contractile permanent.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une accumulation massive et spécifique d'ions calcium libres stockés sous forme complexée au sein du nucléoplasme des cellules musculaires lisses.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une surabondance de grains de lipofuscine et d'inclusions lipidiques lui conférant une coloration brunâtre caractéristique en microscopie optique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La cellule musculaire lisse fonctionne principalement avec un métabolisme anaérobie, d'où la rareté des mitochondries, l'absence de myoglobine et un réticulum sarcoplasmique peu développé, adapté à une contraction lente et économe[cite: 1003]."
+        },
+        {
+            "q": "Dans les filaments épais du muscle lisse, comment sont disposées les têtes de myosine par rapport au muscle strié ?",
+            "tags": [
+                "Muscle Lisse",
+                "Myosine"
+            ],
+            "options": [
+                {
+                    "text": "Les têtes de myosine sont réparties sur toute la longueur du filament épais, sans zone centrale nue.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elles sont concentrées uniquement aux extrémités du filament, laissant une très grande strie H centrale nue.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elles sont absentes, l'actine glissant directement sur les filaments intermédiaires de desmine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elles fusionnent pour former des crochets immobiles s'ancrant sur les corps denses.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le muscle lisse a des filaments de myosine plus longs et instables dont les têtes globulaires sont présentes sur toute leur longueur, permettant un glissement beaucoup plus étendu de l'actine, contrairement au muscle strié (qui a une zone nue centrale)[cite: 1005, 1008]."
+        },
+        {
+            "q": "À l'étape 5 de la contraction musculaire moléculaire, quel événement provoque le mouvement mécanique de la tête de myosine, basculant son angle à 45° ?",
+            "tags": [
+                "Contraction",
+                "Cinétique"
+            ],
+            "options": [
+                {
+                    "text": "La libération de l'ADP.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La fixation d'un nouvel ATP sur la tête de myosine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'hydrolyse de l'ATP en ADP + Pi.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'entrée du calcium cytosolique dans le réticulum.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'énergie est libérée au temps 4 (fixation actine/myosine). Au temps 5, la libération de l'ADP s'accompagne de l'achèvement du mouvement de pivot (angle à 45°), déplaçant le filament fin de 10 nm vers le centre (le Power Stroke). La fixation d'un nouvel ATP dissociera ensuite le complexe[cite: 989, 990]."
+        },
+        {
+            "q": "Quelle protéine majeure du cytosquelette endosarcomérique relie l'actine au niveau des stries Z ?",
+            "tags": [
+                "Cytosquelette",
+                "Actine"
+            ],
+            "options": [
+                {
+                    "text": "L'alpha-actinine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La myomésine centrale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La protéine C sarcomérique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La desmine péricellulaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans la strie Z, l'alpha-actinine interagit fermement avec l'actine F, assurant l'ancrage régulier et l'alignement des myofilaments fins dans le sarcomère[cite: 967, 968]."
+        },
+        {
+            "q": "Quelle capacité régénérative possède le tissu musculaire lisse en cas de lésion ?",
+            "tags": [
+                "Muscle Lisse",
+                "Régénération"
+            ],
+            "options": [
+                {
+                    "text": "Pouvoir faible par mitose des léiomyocytes ou différenciation de péricytes et cellules mésenchymateuses.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Régénération complète et rapide assurée par l'activation mitotique d'un volumineux contingent de cellules satellites quiescentes sous la lame basale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Incapacité absolue à toute cicatrisation cellulaire, chaque traumatisme conduisant inéluctablement à une nécrose ischémique étendue définitive.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Réparation exclusive par métaplasie fibrocartilagineuse secondaire puis différenciation ostéoblastique hétérotopique sous le périoste adjacent.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Bien que dépourvu de cellules satellites (qui sont l'apanage exclusif du muscle strié squelettique), le muscle lisse conserve une faible capacité de réparation : les léiomyocytes peuvent se diviser et les cellules mésenchymateuses se différencier[cite: 1014]."
+        }
+    ]
+}

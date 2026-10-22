@@ -1,0 +1,660 @@
+﻿{
+    "name":  "CM 6 - La construction scientifique de la médecine (19e-20e siècle)",
+    "folder":  "PASS - SHS",
+    "description":  "25 questions sur l\u0027anatomoclinique, la médecine expérimentale et la bactériologie (Bichat, Bernard, Pasteur).",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Quelle avancée préventive majeure a été empiriquement découverte par Edward Jenner à la fin du XVIIIe siècle, avant même l\u0027explication scientifique des maladies ?",
+                          "tags":  [
+                                       "Introduction",
+                                       "Jenner"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le premier vaccin contre la variole.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La pénicilline.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027anesthésie chirurgicale générale par inhalation d\u0027éther et de chloroforme.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La pasteurisation du lait.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le vaccin contre la variole développé par Edward Jenner démontre que des savoirs fondés sur l\u0027observation existaient avant le XIXe siècle, mais sans l\u0027explication étiologique (causale) qui viendra plus tard."
+                      },
+                      {
+                          "q":  "Sur quel principe fondamental repose la méthode anatomoclinique théorisée au tournant du XIXe siècle ?",
+                          "tags":  [
+                                       "Anatomoclinique",
+                                       "Définition"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Établir des liens systématiques entre les symptômes observés chez le malade et les lésions organiques découvertes à la dissection.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Démontrer expérimentalement la présence spécifique d\u0027agents pathogènes bactériens microscopiques dans le flux sanguin des patients infectés.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Rétablir l\u0027équilibre des quatre humeurs du corps par la saignée.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Réaliser des vivisections sur des animaux pour en déduire la physiologie humaine.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027anatomoclinique, popularisée par Bichat et Laennec, repose sur l\u0027aller-retour entre la clinique (l\u0027observation des symptômes du vivant) et l\u0027autopsie (l\u0027observation des lésions tissulaires du cadavre)."
+                      },
+                      {
+                          "q":  "À quel illustre médecin français, auteur d\u0027un traité d\u0027anatomie, attribue-t-on la célèbre injonction « Ouvrez quelques cadavres : vous verrez aussitôt disparaître l\u0027obscurité [...] » ?",
+                          "tags":  [
+                                       "Anatomoclinique",
+                                       "Bichat"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Xavier Bichat.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Claude Bernard.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "René Laennec.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Jean-Martin Charcot.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Xavier Bichat invite les cliniciens à recourir systématiquement à la dissection post-mortem pour éclairer la confusion des symptômes observés au lit du malade."
+                      },
+                      {
+                          "q":  "Dans la méthode anatomoclinique, que représente la lésion observée lors de l\u0027autopsie ?",
+                          "tags":  [
+                                       "Anatomoclinique",
+                                       "Lésion"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le siège de la maladie au niveau tissulaire, mais pas nécessairement sa cause originelle.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La preuve irréfutable de l\u0027infection par un bacille.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une simple altération fonctionnelle transitoire et totalement réversible de la dynamique sécrétoire d\u0027un organe plein.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027effet exclusif d\u0027un déséquilibre moral du patient.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pour l\u0027anatomoclinique, la lésion localise le « siège » de la maladie (le lieu de ses manifestations anatomiques) mais ne constitue pas une justification causale (étiologique) de l\u0027apparition de la maladie."
+                      },
+                      {
+                          "q":  "Quel instrument René Laennec a-t-il inventé, permettant d\u0027objectiver les sons internes du corps vivant (comme les râles de la tuberculose) ?",
+                          "tags":  [
+                                       "Instruments",
+                                       "Laennec"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le stéthoscope.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le thermomètre médical.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le microscope optique à fort grossissement.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027électrocardiogramme.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Laennec invente le stéthoscope (auscultation médiate) au début du XIXe siècle, permettant d\u0027écouter les bruits thoraciques et d\u0027en déduire la présence de lésions pulmonaires ou cardiaques de son vivant."
+                      },
+                      {
+                          "q":  "Sur le plan institutionnel, qu\u0027engendre la « Naissance de la clinique » dans la première moitié du XIXe siècle ?",
+                          "tags":  [
+                                       "Hôpital",
+                                       "Clinique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Une refonte de l\u0027université où l\u0027hôpital devient un lieu d\u0027enseignement pratique, les malades servant d\u0027objets de savoir.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La fin immédiate et totale des dissections cadavériques pour des raisons éthiques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le retour de la gestion de l\u0027hôpital sous l\u0027égide exclusive de l\u0027Église (re-catholicisation).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027interdiction absolue des soins cliniques au sein de l\u0027hôpital, désormais réservé à la recherche fondamentale expérimentale en laboratoire.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La « Naissance de la clinique » (période postrévolutionnaire) marque le passage d\u0027un apprentissage purement théorique en faculté à une médecine s\u0027apprenant au lit du malade à l\u0027hôpital, ce dernier devenant lieu de recherche."
+                      },
+                      {
+                          "q":  "Quelle limite épistémologique majeure de l\u0027anatomoclinique justifie l\u0027avènement de la médecine expérimentale ?",
+                          "tags":  [
+                                       "Épistémologie",
+                                       "CM 6"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027observation anatomo-clinique ne fournit pas d\u0027explication sur les causes véritables (étiologie) de la maladie.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027impossibilité méthodologique de classer les symptômes cliniques en tableaux nosologiques cohérents et reproductibles.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027absence de cas d\u0027études suffisants dans les hôpitaux parisiens.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le refus du gouvernement de laïciser le corps médical.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027observation clinique et post-mortem localise la maladie mais n\u0027en fournit pas la justification causale. C\u0027est le rôle que prendra la médecine expérimentale (trouver l\u0027étiologie via l\u0027expérimentation)."
+                      },
+                      {
+                          "q":  "Quelle expérience fondatrice de 1855 a permis à Claude Bernard de prouver la fonction glycogénique du foie ?",
+                          "tags":  [
+                                       "Médecine expérimentale",
+                                       "Claude Bernard"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027expérience du foie lavé (montrant la production continue de glucose malgré un rinçage à l\u0027eau).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027expérience du ballon à col de cygne chauffé, prouvant l\u0027absence totale de génération spontanée microbienne.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027inoculation du bacille du charbon à des moutons (vaccination).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La découverte de la circulation sanguine par la ligature des veines (vivisection).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En lavant le foie d\u0027un chien mort (vidé de son sang et de son sucre), puis en retrouvant du glucose le lendemain, Bernard prouve que le foie ne se contente pas de stocker, mais qu\u0027il produit du sucre (le glycogène)."
+                      },
+                      {
+                          "q":  "Quel concept majeur Claude Bernard invente-t-il pour décrire l\u0027environnement invariable qui enveloppe les organes et permet la vie indépendante ?",
+                          "tags":  [
+                                       "Claude Bernard",
+                                       "Concept"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le milieu intérieur.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le germe pathogène.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La génération spontanée.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le siège tissulaire.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Claude Bernard théorise le « milieu intérieur », un équilibre interne (sang, lymphe) qui compense les variations extérieures et garantit l\u0027autonomie et la stabilité de l\u0027organisme (homéostasie)."
+                      },
+                      {
+                          "q":  "Pour la physiologie bernardienne, comment est définie la maladie (l\u0027état pathologique) ?",
+                          "tags":  [
+                                       "Physiologie",
+                                       "Maladie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Comme une variation quantitative, un dérèglement ou un écart du fonctionnement physiologique normal.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Comme une entité morbide étrangère et autonome venue coloniser passivement les cavités corporelles depuis l\u0027environnement extérieur.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme la destruction mécanique irréversible de l\u0027anatomie de l\u0027organe.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme une simple construction sociale sans fondement biologique réel.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La physiologie unifie le normal et le pathologique : la maladie n\u0027est qu\u0027une dérive (un dysfonctionnement du milieu intérieur), une variation quantitative d\u0027une fonction normale (ex: le diabète est un excès de glucose, pas un mécanisme différent)."
+                      },
+                      {
+                          "q":  "Parmi ces critères, lequel NE FAIT PAS partie des 4 critères de la méthode expérimentale de Claude Bernard ?",
+                          "tags":  [
+                                       "Méthode",
+                                       "Claude Bernard"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Holistique (refus de décomposer le vivant pour ne l\u0027étudier que dans sa mystérieuse globalité).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Hypothético-déductive rigoureuse (enchaînement canonique : observation clinique, formulation d\u0027une hypothèse, contre-épreuve expérimentale).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Active (le phénomène est provoqué artificiellement par le scientifique).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Déterministe (les mêmes causes produisent les mêmes effets).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La méthode de Bernard est Analytique (décomposer les mécanismes) puis synthétique. Elle est hypothético-déductive, active et déterministe. Elle rejette l\u0027idée holistique selon laquelle on ne peut pas isoler les parties du vivant."
+                      },
+                      {
+                          "q":  "Quel est le lieu central exclusif de la production des savoirs pour la médecine expérimentale du milieu du XIXe siècle ?",
+                          "tags":  [
+                                       "Lieu",
+                                       "Médecine expérimentale"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le laboratoire.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le lit du malade à l\u0027hôpital.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les salles de dissection anatomique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les grands amphithéâtres de la faculté.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Contrairement à l\u0027anatomoclinique (centrée sur l\u0027hôpital et la morgue), la médecine expérimentale (Bernard) fait du laboratoire le seul vrai sanctuaire de la science médicale, reléguant la clinique à un rôle subordonné."
+                      },
+                      {
+                          "q":  "Quel est le débat scientifique majeur qui a opposé Félix Pouchet et Louis Pasteur dans les années 1860 ?",
+                          "tags":  [
+                                       "Controverse",
+                                       "Pasteur"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027existence de la génération spontanée (la matière inorganique donnant vie à des microorganismes).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La fonction glycogénique du foie.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027efficacité thérapeutique prouvée de la saignée abondante et des purges dans le traitement des formes graves de phtisie pulmonaire.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027existence de la circulation sanguine systémique.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La controverse portait sur la génération spontanée. Pouchet croyait l\u0027avoir prouvée, tandis que Pasteur (via l\u0027expérience du col de cygne) démontrait que les microorganismes venaient de la poussière de l\u0027air."
+                      },
+                      {
+                          "q":  "Grâce à quelle célèbre expérience Louis Pasteur a-t-il réfuté la théorie de la génération spontanée en 1864 ?",
+                          "tags":  [
+                                       "Pasteur",
+                                       "Expérience"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027expérience du ballon à « col de cygne » (ou à col recourbé).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027expérience du foie lavé.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027inoculation du bacille de Koch à des cobayes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027auscultation médiate systématique des bruits cardiaques et respiratoires à l\u0027aide du stéthoscope monoaural en bois tourné.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le flacon à col de cygne permettait à l\u0027air d\u0027entrer tout en piégeant la poussière (et les microbes) dans la courbure, prouvant que le bouillon stérile restait intact sans contact direct avec les germes de l\u0027air."
+                      },
+                      {
+                          "q":  "Parmi ces maladies, contre laquelle Louis Pasteur N\u0027A-T-IL PAS mis au point un principe vaccinal atténué ?",
+                          "tags":  [
+                                       "Vaccination",
+                                       "Pasteur"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La tuberculose (bacille de Koch).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le choléra des poules.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La maladie du charbon (anthrax) chez les ovins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La rage.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pasteur a développé l\u0027atténuation de la virulence sur le choléra des poules (1878), le charbon (1881) et la rage (1885). Le bacille de la tuberculose a été découvert par son rival allemand Robert Koch."
+                      },
+                      {
+                          "q":  "Quelle règle logique a été formalisée par le bactériologiste allemand Robert Koch pour prouver qu\u0027un microbe spécifique cause une maladie ?",
+                          "tags":  [
+                                       "Koch",
+                                       "Bactériologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les 4 Postulats de Koch.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La règle du milieu intérieur invariant.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le principe de non-malfaisance de l\u0027agent pathogène.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le dogme de la génération spontanée in vitro.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Koch établit ses 4 postulats : isoler le microbe chez le malade, le cultiver pur, reproduire la maladie sur un animal avec cette culture, et pouvoir ré-isoler le microbe chez cet animal infecté."
+                      },
+                      {
+                          "q":  "Dans la théorie de l\u0027étiologie microbienne des années 1870, quel est le rôle des microorganismes ?",
+                          "tags":  [
+                                       "Étiologie",
+                                       "Microbes"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Ils ont un rôle spécifique : à un type de microbe particulier correspond une maladie infectieuse particulière.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Ils sont une conséquence inoffensive de la décomposition des tissus lésés.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Ils agissent de façon totalement chaotique, déclenchant des syndromes opposés selon l\u0027âge et la saison de contamination.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Ils sont les vecteurs invisibles de la circulation sanguine, supplantant les globules rouges.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pasteur démontre la spécificité des microbes : ils ne sont pas la conséquence de la maladie mais bien sa cause, et chaque maladie infectieuse est due à un agent pathogène spécifique."
+                      },
+                      {
+                          "q":  "À la fin du XIXe siècle, malgré la révolution bactériologique de l\u0027hygiène et de la vaccination, sur quel plan la médecine reste-t-elle largement impuissante face aux bactéries ?",
+                          "tags":  [
+                                       "Bactériologie",
+                                       "Limites"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Sur le plan thérapeutique curatif (aucun antibiotique ou traitement médicamenteux n\u0027est encore disponible pour combattre l\u0027infection déclarée).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Sur le plan du diagnostic biologique et de l\u0027identification morphologique des germes responsables observés au microscope optique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Sur le plan de la prévention collective (les vaccins s\u0027avérant tous inefficaces).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Sur le plan de l\u0027explication causale (les médecins refusant toujours la théorie des germes).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Si la bactériologie permet d\u0027isoler (diagnostic) et de prévenir (vaccination, isolement, hygiène), la thérapie antibactérienne (antibiotiques) n\u0027existe pas encore à la fin du XIXe siècle : l\u0027échec thérapeutique curatif est flagrant."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce qui caractérise la naissance de la « bactériologie clinique » ?",
+                          "tags":  [
+                                       "Bactériologie clinique",
+                                       "Hôpital"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le rapprochement des laboratoires et de la clinique, avec des cliniciens réalisant des prélèvements au chevet du malade pour des examens bactériologiques.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027interdiction stricte d\u0027implanter des laboratoires au sein de l\u0027Assistance publique pour éviter tout risque de contamination aérienne.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le rejet des postulats de Koch par les médecins de brousse français.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027idée que seul le microscope peut remplacer l\u0027auscultation du cœur.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La bactériologie clinique fusionne la science du laboratoire et le soin hospitalier : les médecins eux-mêmes (internes, chefs de clinique) prélèvent des fluides (crachats, sang) et réalisent l\u0027examen au microscope pour poser le diagnostic."
+                      },
+                      {
+                          "q":  "Comment l\u0027hôpital Hôpital Pasteur (créé pour la diphtérie) témoigne-t-il des découvertes bactériologiques dans son architecture ?",
+                          "tags":  [
+                                       "Architecture",
+                                       "Pasteur"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Par la séparation, l\u0027isolement et la sectorisation stricte des malades pour prévenir la contagion croisée.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Par d\u0027immenses dortoirs collectifs ouverts favorisant l\u0027aération transversale continue des miasmes selon les dogmes hygiénistes anciens.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Par des salles d\u0027opération installées au sous-sol sans fenêtres.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Par des laboratoires de chimie directement intégrés aux cuisines.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pour éviter que les microbes ne circulent entre patients, l\u0027hôpital devient un lieu où l\u0027on applique l\u0027hygiène pasteurienne : on isole les malades contagieux en secteurs dédiés."
+                      },
+                      {
+                          "q":  "Comment l\u0027usage du thermomètre médical a-t-il modifié le lien entre la clinique et le laboratoire à la fin du XIXe siècle ?",
+                          "tags":  [
+                                       "Instruments",
+                                       "Clinique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La fièvre objectivée par le thermomètre justifie et légitime la recherche au laboratoire d\u0027un agent pathogène dans le sang.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le thermomètre a rendu les prélèvements et analyses biologiques totalement superflus en identifiant immédiatement le germe en cause.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La température corporelle servait à détruire directement les bactéries in vivo.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027instrument était utilisé pour chauffer les bouillons de culture à la bonne température.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le thermomètre objective une fièvre, ce qui indique cliniquement une infection et pousse le médecin à prélever du sang pour envoyer au laboratoire, liant ainsi clinique (symptôme) et bactériologie (étiologie)."
+                      },
+                      {
+                          "q":  "William Harvey est cité dans le cours pour avoir mené des expériences en 1628. Que cela illustre-t-il concernant la méthode expérimentale ?",
+                          "tags":  [
+                                       "Histoire",
+                                       "Harvey"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Que l\u0027expérimentation existait déjà avant le XIXe siècle (mise en évidence de la circulation sanguine), bien qu\u0027elle ne devienne systématique qu\u0027avec Claude Bernard.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Que le microscope optique composé avait déjà été perfectionné et validé dès le début du XVIIe siècle pour observer les bactéries sanguines.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Qu\u0027il est le véritable inventeur de l\u0027anatomoclinique française.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Que la théorie des humeurs est restée indiscutée jusqu\u0027à Louis Pasteur.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027expérimentation d\u0027Harvey sur la circulation du sang montre que l\u0027on pratiquait des expériences ponctuelles en médecine bien avant la formalisation systématique par C. Bernard au XIXe siècle."
+                      },
+                      {
+                          "q":  "Dans la controverse sur la génération spontanée, pourquoi Pasteur critique-t-il le dispositif de Pouchet (la cuve à mercure) ?",
+                          "tags":  [
+                                       "Controverse",
+                                       "Expérimentation"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Parce qu\u0027il démontre que le milieu utilisé par Pouchet (le mercure et l\u0027air introduit) n\u0027était pas suffisamment stérilisé et contenait des microorganismes.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Parce que le mercure métallique est un poison protoplasmique violent qui inhibe chimiquement toute tentative d\u0027apparition de la vie spontanée.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce que Pouchet n\u0027avait pas utilisé de foin dans son infusion.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce que l\u0027Académie des Sciences interdisait l\u0027usage de substances chimiques inorganiques.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pasteur montre que les microbes ayant poussé dans l\u0027expérience de Pouchet ne se sont pas générés spontanément, mais ont été introduits parce que son dispositif de filtration de l\u0027air n\u0027était pas parfaitement stérile."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce qui différencie la notion de « signe » clinique dans l\u0027anatomoclinique des symptômes purement subjectifs rapportés par le patient ?",
+                          "tags":  [
+                                       "Anatomoclinique",
+                                       "Sémiologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le signe clinique est objectivé et hiérarchisé par le regard et l\u0027examen du médecin, permettant de le lier à une lésion sous-jacente.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le signe clinique est défini uniquement par les rêves du patient.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le signe clinique est le résultat chiffré brut d\u0027une analyse biochimique ou bactériologique transmise en urgence par le laboratoire hospitalier.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il n\u0027y a aucune différence, l\u0027anatomoclinique rejette toute observation visuelle.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027anatomoclinique exige un « regard clinique » capable de repérer, d\u0027objectiver, de comparer et de hiérarchiser les signes physiques (ex: grâce au stéthoscope) pour identifier la lésion correspondante, dépassant le simple récit du malade."
+                      },
+                      {
+                          "q":  "Quelle est la conclusion épistémologique globale sur la « construction scientifique de la médecine » rappelée à la fin du cours ?",
+                          "tags":  [
+                                       "Conclusion",
+                                       "Épistémologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027intégration de la science (ambition de dépasser l\u0027expérience individuelle) n\u0027enlève pas à la médecine sa dimension fondamentale d\u0027art du soin (où l\u0027expérience du patient reste centrale).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La science a définitivement effacé l\u0027empirisme et rendu le témoignage du malade inutile.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La médecine contemporaine s\u0027est intégralement dissoute dans la biologie moléculaire et la génétique, effaçant définitivement la dimension relationnelle du soin clinique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027étiologie pasteurienne a prouvé que toutes les maladies s\u0027expliquent par la physiologie du foie.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Si la médecine s\u0027est construite scientifiquement (anatomoclinique, méthode expérimentale, bactériologie) pour garantir la preuve, elle demeure une pratique de soin où la relation avec l\u0027individu malade est irréductible à une équation de laboratoire."
+                      }
+                  ]
+}

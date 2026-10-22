@@ -1,0 +1,660 @@
+﻿{
+    "name":  "CM 5 - Principes et courants de l\u0027éthique médicale",
+    "folder":  "PASS - SHS",
+    "description":  "25 questions sur l\u0027éthique normative, la médecine hippocratique, le principisme et la décision médicale.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Quelle est l\u0027origine étymologique du mot « éthique » par opposition au mot « morale » ?",
+                          "tags":  [
+                                       "Étymologie",
+                                       "CM 5"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Éthique vient du grec (éthos), tandis que morale vient du latin (mos, moris).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Éthique provient directement de l\u0027arabe classique, tandis que morale dérive du grec ancien (éthos).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les deux termes ont la même racine gréco-latine signifiant « devoir ».",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Éthique vient du latin classique, tandis que morale a une racine germanique.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le mot éthique tire son origine du grec (éthos), tandis que morale vient du latin (mos, moris), bien que les deux renvoient à l\u0027idée de mœurs ou coutumes."
+                      },
+                      {
+                          "q":  "Selon le sociologue Émile Durkheim, comment se caractérise la morale ?",
+                          "tags":  [
+                                       "Durkheim",
+                                       "Morale"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "C\u0027est un fait empiriquement observable, de l\u0027ordre du devoir, qui n\u0027a pas de portée universelle.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "C\u0027est une théorie strictement philosophique et a priori visant l\u0027universalité abstraite dans l\u0027ensemble des civilisations humaines.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est un questionnement ouvert en situation d\u0027incertitude.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est l\u0027équivalent parfait de la législation pénale internationale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pour Durkheim, la morale est un fait social observable (ensemble de jugements spontanés), fondée sur le devoir et les règles d\u0027une société donnée, sans portée universelle."
+                      },
+                      {
+                          "q":  "Par opposition à la norme (qui impose une limite de l\u0027extérieur), comment se définit l\u0027éthique selon le cours ?",
+                          "tags":  [
+                                       "Concepts",
+                                       "Éthique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Comme un questionnement et une « visée » préalable à un choix en situation complexe.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Comme un corpus figé de lois juridiquement contraignantes et de sanctions disciplinaires imposées d\u0027autorité aux soignants.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme un synonyme de la déontologie professionnelle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme une morale universelle et inconsciente dictant le bien.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027éthique n\u0027est pas une norme fixée ; c\u0027est un questionnement en contexte d\u0027incertitude et une « visée » nécessitant une réflexion argumentée avant l\u0027action."
+                      },
+                      {
+                          "q":  "Quelles sont les trois grandes familles de théories morales qui sous-tendent l\u0027éthique normative ?",
+                          "tags":  [
+                                       "Théories morales",
+                                       "Éthique normative"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les éthiques de la vertu, les éthiques déontologiques et les éthiques conséquentialistes.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027hygiénisme, le paternalisme et le principisme.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La bioéthique fondamentale, la méta-éthique analytique du discours et l\u0027éthique appliquée en milieu clinique de soins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le stoïcisme, l\u0027empirisme et l\u0027existentialisme.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027éthique normative regroupe trois grandes constructions intellectuelles : la vertu (le perfectionnement de l\u0027agent), le déontologisme (le respect du devoir/règle) et le conséquentialisme (les résultats de l\u0027action)."
+                      },
+                      {
+                          "q":  "Sur quel concept central repose l\u0027éthique d\u0027auteurs comme Kant ou William David Ross ?",
+                          "tags":  [
+                                       "Déontologisme",
+                                       "Kant"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le devoir moral et le respect de principes absolus (indépendamment des conséquences).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La maximisation quantitative du bien-être global et la minimisation des souffrances physiques pour le plus grand nombre d\u0027individus.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le perfectionnement du caractère vertueux de l\u0027agent moral.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La recherche d\u0027un équilibre des humeurs corporelles.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Kant et Ross sont des figures des théories déontologiques, où une action est morale si elle suit des devoirs et principes stricts, sans considération pour les conséquences."
+                      },
+                      {
+                          "q":  "L\u0027utilitarisme classique (Bentham et Mill) est une déclinaison célèbre de quelle grande famille théorique ?",
+                          "tags":  [
+                                       "Conséquentialisme",
+                                       "Utilitarisme"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les théories conséquentialistes.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les théories morales déontologiques du devoir pur.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les éthiques de la vertu.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La méta-éthique.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027utilitarisme (maximiser le plus grand bonheur pour le plus grand nombre) juge la moralité d\u0027un acte sur ses résultats : il appartient au conséquentialisme."
+                      },
+                      {
+                          "q":  "Dans la médecine hippocratique antique, comment était définie la santé ?",
+                          "tags":  [
+                                       "Hippocrate",
+                                       "Histoire"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Comme l\u0027équilibre de quatre humeurs (sang, bile noire, bile jaune, phlegme) et une relation harmonieuse avec la nature.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Comme l\u0027absence de lésions tissulaires visibles à l\u0027autopsie.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme un don divin inaccessible à la raison humaine.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme l\u0027éradication microscopique totale et continue de l\u0027ensemble des agents bactériens pathogènes colonisant le milieu intérieur.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Hippocrate basait la santé sur la théorie des humeurs (équilibre) et l\u0027harmonie entre le corps et son environnement (air, eau, feu, terre)."
+                      },
+                      {
+                          "q":  "Quel adage latin traduit le principe hippocratique de « non-malfaisance » ?",
+                          "tags":  [
+                                       "Principes",
+                                       "Hippocrate"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Primum non nocere.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "In vino veritas.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Carpe diem.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Mens sana in corpore sano.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "« Primum non nocere » (d\u0027abord ne pas nuire) incarne le principe de non-malfaisance, interdisant de porter atteinte à l\u0027intégrité du patient."
+                      },
+                      {
+                          "q":  "De quel principe les dérives paternalistes en médecine ont-elles historiquement tiré leur justification morale ?",
+                          "tags":  [
+                                       "Paternalisme",
+                                       "Bienfaisance"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Du principe de bienfaisance.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Du principe de non-malfaisance.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Du principe de justice.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Du principe d\u0027autonomie.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Au nom de la bienfaisance (faire le bien du patient) et de son savoir supérieur, le médecin se substituait à la volonté du malade, instaurant un modèle paternaliste où le patient s\u0027en remettait au soignant comme un enfant à ses parents."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce qui a originellement impulsé la naissance du mouvement de la « bioéthique » en Amérique du Nord ?",
+                          "tags":  [
+                                       "Bioéthique",
+                                       "Histoire"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un mouvement de contestation sociale dirigé contre le corporatisme médical, réclamant respect et justice.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Une demande exclusive et concertée de l\u0027industrie pharmaceutique internationale cherchant à sécuriser les brevets de synthèse.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le souhait des médecins de renforcer leur pouvoir paternaliste.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une réforme dogmatique imposée par les églises conservatrices.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La bioéthique naît d\u0027une contestation sociale (associations de patients, scandales de recherche) face au paternalisme, réclamant une médecine plus juste, équitable et respectueuse de l\u0027autonomie."
+                      },
+                      {
+                          "q":  "Quels sont les trois principes incontournables de l\u0027éthique de la recherche fondés par le Rapport Belmont (1977-1978) ?",
+                          "tags":  [
+                                       "Belmont",
+                                       "Recherche"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Respect de la personne, bienfaisance et justice.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Autonomie, rentabilité et liberté.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Confidentialité absolue du dossier médical, collégialité des soignants et charité chrétienne hospitalière.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Observation, expérimentation et déduction.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le rapport Belmont pose 3 fondements : le respect des personnes, la bienfaisance et la justice. Il préfigure le principisme."
+                      },
+                      {
+                          "q":  "Quels auteurs ont développé le modèle de l\u0027éthique biomédicale dit du « Principisme » en 1979 ?",
+                          "tags":  [
+                                       "Principisme",
+                                       "Auteurs"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Tom L. Beauchamp et James F. Childress.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Ruwen Ogien et Christine Tappolet.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Emmanuel Kant et William David Ross.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Giovanni Battista Morgagni et Xavier Bichat.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Beauchamp et Childress publient en 1979 \u0027Principles of Biomedical Ethics\u0027, définissant 4 principes cardinaux : Autonomie, Non-malfaisance, Bienfaisance, et Justice/Équité."
+                      },
+                      {
+                          "q":  "Dans l\u0027évolution de la réflexion éthique, quel concept justifie la prise en compte du principe de précaution et l\u0027analyse de la balance bénéfice/risque ?",
+                          "tags":  [
+                                       "Principes",
+                                       "Risque"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le principe de non-malfaisance.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le principe de justice distributive équitable.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La théorie de la vertu.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027exigence d\u0027autonomie.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La non-malfaisance (« primum non nocere ») exige de limiter l\u0027action délétère, fondant ainsi la balance bénéfice/risque et le principe de précaution en situation d\u0027incertitude."
+                      },
+                      {
+                          "q":  "Quel principe juridique et éthique fondamental est inscrit dans l\u0027article 16 du Code civil français (lois de bioéthique de 1994) ?",
+                          "tags":  [
+                                       "Droit",
+                                       "Bioéthique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La primauté de la personne humaine et le respect de la dignité humaine.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le droit inaliénable à l\u0027euthanasie active.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027obligation pour l\u0027État de financer l\u0027intégralité des dépenses de santé.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La subordination du patient aux décisions collégiales de l\u0027hôpital.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027article 16 stipule que la loi assure la primauté de la personne et interdit toute atteinte à la dignité de celle-ci, un principe phare qui limite parfois la liberté individuelle (ex: indisponibilité du corps humain)."
+                      },
+                      {
+                          "q":  "Selon la loi du 4 mars 2002, quelles sont les trois conditions nécessaires pour que le consentement du patient soit considéré comme valide ?",
+                          "tags":  [
+                                       "Consentement",
+                                       "Loi 2002"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La loyauté de l\u0027information, la compétence décisionnelle de la personne, et sa liberté de choisir.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027accord formel et écrit de la famille proche, l\u0027aval explicite du médecin traitant, et le respect d\u0027un délai légal de réflexion de 15 jours.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La signature d\u0027un acte notarié, la présence d\u0027un témoin, et la majorité pénale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La gratuité de l\u0027acte, la certitude du diagnostic, et l\u0027urgence vitale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pour matérialiser l\u0027autonomie, le consentement doit être éclairé par une information loyale, et émaner d\u0027une personne apte (compétente) à décider librement, sans contrainte."
+                      },
+                      {
+                          "q":  "Comment Hans Jonas fonde-t-il moralement le « principe de responsabilité » ?",
+                          "tags":  [
+                                       "Hans Jonas",
+                                       "Responsabilité"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Sur le devoir moral à l\u0027égard du plus fragile et du plus menacé, sans attente de réciprocité.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Sur l\u0027obligation contractuelle strictement synallagmatique et réciproque unissant des sujets rationnels, libres et juridiquement égaux.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Sur le respect absolu des règles juridiques fixées par la majorité démocratique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Sur la nécessité utilitariste de protéger les citoyens les plus productifs.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le principe de responsabilité (Jonas, Lévinas) compense les limites de l\u0027autonomie en soulignant que la vulnérabilité et la fragilité d\u0027autrui appellent intrinsèquement un devoir d\u0027assistance non réciproque."
+                      },
+                      {
+                          "q":  "Comment André Lalande (1926) définit-il philosophiquement la « décision » ?",
+                          "tags":  [
+                                       "Décision",
+                                       "Philosophie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Comme le choix réfléchi d\u0027un des actes possibles, terminaison normale d\u0027une délibération.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Comme un acte réflexe instinctif face au danger.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme l\u0027application purement logique, déterministe et automatisée d\u0027un arbre décisionnel algorithmique issu des recommandations officielles.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme la soumission aveugle à la règle déontologique de la corporation.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Dans le Vocabulaire technique et critique de la philosophie, la décision est la terminaison normale de la délibération dans un acte volontaire, un choix réfléchi."
+                      },
+                      {
+                          "q":  "Dans l\u0027analyse de la décision médicale, Daniel Parrochia souligne que le concept implique l\u0027interaction de deux éléments fondamentaux. Lesquels ?",
+                          "tags":  [
+                                       "Décision médicale",
+                                       "Parrochia"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un pôle subjectif (le sujet engagé) et une situation objective (le contexte d\u0027indétermination).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Une rationalité économique financière parfaite et une éthique téléologique absolue orientée vers la rentabilité immédiate des soins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La volonté de puissance du médecin et la soumission du patient.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un cadre légal figé et une norme internationale imposée.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "D. Parrochia (2009) explique qu\u0027une décision implique un sujet engagé dans une action (pôle subjectif) au sein d\u0027un contexte présentant une certaine incertitude (situation objective)."
+                      },
+                      {
+                          "q":  "Parmi les éléments suivants, lequel relève des contraintes dites « objectives » dans la prise de décision médicale ?",
+                          "tags":  [
+                                       "Décision",
+                                       "Contraintes"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027état de santé clinique du patient et l\u0027état des connaissances médicales.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les émotions ressenties par les proches du patient.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les convictions intimes, croyances spirituelles, philosophiques et morales personnelles propres au médecin qui dispense les soins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les peurs du malade face à la mort imminente.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les émotions, peurs et valeurs morales relèvent des « pôles de subjectivité ». L\u0027état de santé, le cadre légal, les moyens disponibles et les limites des connaissances (l\u0027état de l\u0027Art) sont les contraintes objectives de la situation."
+                      },
+                      {
+                          "q":  "Dans l\u0027éthique normative, quelle théorie est axée sur le concept central de « vertu » plutôt que sur l\u0027analyse de la règle ou des conséquences ?",
+                          "tags":  [
+                                       "Éthique normative",
+                                       "Vertu"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027éthique de la vertu (inspirée d\u0027Aristote).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027éthique déontologique (inspirée de Kant).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027éthique conséquentialiste (inspirée de Bentham).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027éthique procédurale de la discussion (Habermas).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027éthique de la vertu s\u0027interroge sur « quel genre de personne dois-je être ? » et vise le perfectionnement moral de l\u0027agent (comme dans les pensées d\u0027Aristote ou de Thomas d\u0027Aquin)."
+                      },
+                      {
+                          "q":  "En médecine hippocratique, qu\u0027est-ce qui caractérise l\u0027origine de la maladie ?",
+                          "tags":  [
+                                       "Hippocrate",
+                                       "Étiologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "C\u0027est un événement naturel causé par la perturbation des rapports entre l\u0027homme, son milieu, et ses humeurs internes.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "C\u0027est une punition divine infligée par les dieux en rétribution de transgressions et d\u0027actes individuels profondément immoraux.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est une infection provoquée de façon déterministe par un bacille ou une bactérie exogène.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est une lésion structurelle irréversible localisée uniquement dans les tissus solides.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Hippocrate marque une rupture avec la magie : la maladie est naturelle, due au déséquilibre des 4 humeurs et de l\u0027environnement. L\u0027étiologie microbienne n\u0027arrivera qu\u0027avec Pasteur au 19ème siècle."
+                      },
+                      {
+                          "q":  "Pourquoi la notion de « Méta-éthique » se distingue-t-elle de l\u0027éthique normative ?",
+                          "tags":  [
+                                       "Méta-éthique",
+                                       "Philosophie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle n\u0027a pas de visée normative : elle étudie les concepts, la nature et le langage des jugements moraux.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle constitue le domaine exclusif et normatif de l\u0027application pratique des dilemmes moraux rencontrés lors de la clinique de terrain.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle prescrit strictement des règles d\u0027action pour maximiser l\u0027utilité moyenne.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle n\u0027existe que dans le cadre des comités d\u0027éthique de la recherche scientifique.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La méta-éthique analyse la signification des termes moraux (le bien, le mal) et le statut des jugements moraux sans dire ce qu\u0027il faut faire (ce qui est le rôle de l\u0027éthique normative)."
+                      },
+                      {
+                          "q":  "Dans la représentation des déterminants de la décision médicale (le diagramme de Venn), l\u0027institution (l\u0027hôpital) représente :",
+                          "tags":  [
+                                       "Décision",
+                                       "Institution"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un cadre d\u0027intersection des subjectivités entre le médecin, le patient, et leurs interactions au sein de la société.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027unique pôle légal dénué de toute subjectivité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une barrière empêchant toute délibération éthique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027équivalent institutionnel strict des valeurs traditionnelles, des croyances spirituelles et des attentes de la famille du patient.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Dans la modélisation du cours, la décision se joue au croisement des cercles d\u0027influence (médecin, patient, proches) au sein de l\u0027institution, le tout englobé dans le grand cercle de la société."
+                      },
+                      {
+                          "q":  "Si un médecin réanime un patient contre l\u0027avis anticipé de ce dernier, mais dans le but exclusif de lui sauver la vie pour maximiser son intérêt clinique objectif, quel principe philosophique s\u0027oppose ici ?",
+                          "tags":  [
+                                       "Dilemme",
+                                       "Principes"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le principe de bienfaisance entre en conflit direct avec le principe d\u0027autonomie.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le principe de justice sociale s\u0027oppose au principe d\u0027équité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027éthique de la vertu s\u0027oppose à la méta-éthique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le principe de précaution sanitaire prospective vient annuler et supplanter la maxime hippocratique traditionnelle « primum non nocere ».",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "C\u0027est l\u0027exemple type du conflit éthique (qui motive la réflexion) : agir « pour le bien » du patient (bienfaisance prolonger la vie) en transgressant sa volonté propre (autonomie)."
+                      },
+                      {
+                          "q":  "La question morale « L\u0027action qu\u0027il faut accomplir est celle dont les conséquences sont les meilleures (maximisation) » relève de :",
+                          "tags":  [
+                                       "Conséquentialisme",
+                                       "CM 5"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027éthique conséquentialiste.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027éthique kantienne (déontologique).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La théorie du paternalisme hippocratique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La loi Kouchner de 2002.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le conséquentialisme, qui englobe l\u0027utilitarisme, évalue la moralité d\u0027un acte uniquement sur la maximisation de ses conséquences positives (utilité, bien-être)."
+                      }
+                  ]
+}

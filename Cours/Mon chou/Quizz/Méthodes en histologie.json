@@ -1,0 +1,956 @@
+﻿{
+    "name":  "Méthodes en histologie (imagerie cellulaire)",
+    "folder":  "Histologie",
+    "description":  "Types d\u0027échantillons, préparation et coloration en microscopie optique, microscopie électronique (MET et MEB), histochimie, histoenzymologie, immunohistologie, hybridation in situ.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Quel est l\u0027ordre de grandeur du nombre de cellules d\u0027un corps humain de 60 kg selon le cours ?",
+                          "tags":  [
+                                       "Introduction"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "60 000 milliards",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "6 000 milliards",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "60 milliards",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "600 000 milliards",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le cours donne 60 000 milliards de cellules, soit environ 10 000 fois plus que d\u0027habitants sur Terre. Les cellules associées à la matrice extracellulaire (MEC = substance fondamentale + fibres) forment les tissus fondamentaux."
+                      },
+                      {
+                          "q":  "Quels sont les tissus fondamentaux cités dans l\u0027introduction ?",
+                          "tags":  [
+                                       "Introduction"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Épithéliums de revêtement et glandulaires",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Tissus conjonctifs et squelettiques",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Cellules sanguines et tissus hématopoïétiques",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Tissus musculaires et tissus nerveux",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Tissus osseux, présentés comme un tissu fondamental distinct des tissus conjonctifs et squelettiques",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Il y a cinq grandes familles : épithéliums, tissus conjonctifs et squelettiques, cellules sanguines et tissus hématopoïétiques, tissus musculaires, tissus nerveux. Le tissu osseux fait partie des tissus conjonctifs et squelettiques."
+                      },
+                      {
+                          "q":  "Concernant le pouvoir séparateur (distance minimale entre deux points vus séparément) :",
+                          "tags":  [
+                                       "Introduction"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Œil : 0,2 mm (200 µm)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Microscope optique : 0,2 µm (200 nm)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Microscope électronique : 0,2 nm",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Microscope optique : pouvoir séparateur ultime de 0,2 nm grâce à l\u0027immersion d\u0027huile",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Chaque instrument gagne un facteur 1000 : de l\u0027œil au MO, puis du MO au ME. La taille moyenne des cellules (5 à 20 µm) est trop petite pour l\u0027œil nu, d\u0027où la nécessité du recours à la microscopie."
+                      },
+                      {
+                          "q":  "Associez chaque étape de l\u0027imagerie cellulaire à ses techniques :",
+                          "tags":  [
+                                       "Introduction"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Description morphologique : microscopie optique et électronique",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Caractérisation biochimique in situ : histochimie et histoenzymologie",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Analyse moléculaire in situ : immunohistologie, hybridation in situ, autoradiographie",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Approche quantitative et morphométrique cellulaire à haute résolution : immunohistologie sur coupes standard",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027approche quantitative relève des techniques de cytométrie (mesures à l\u0027échelon cellulaire). Le point fondamental à se poser avant toute technique : que veut-on étudier ?"
+                      },
+                      {
+                          "q":  "Vrai ou faux : « La microscopie optique utilise un faisceau d\u0027électrons comme source lumineuse. »",
+                          "tags":  [
+                                       "Introduction"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Faux",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Vrai",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La microscopie optique (ou photonique) utilise un faisceau de photons ; c\u0027est la microscopie électronique qui utilise un faisceau d\u0027électrons, de longueur d\u0027onde bien plus faible."
+                      },
+                      {
+                          "q":  "Concernant l\u0027étude de cellules vivantes (en survie ex vivo ou en culture in vitro) :",
+                          "tags":  [
+                                       "Types d\u0027échantillons"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "On utilise une étuve à 37 °C saturée en vapeur d\u0027eau, avec parfois du CO2 pour les cultures longues",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027observation se fait avec un microscope inversé à contraste de phase",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les colorations vitales préservent la vie des cellules",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les cellules sont préalablement immobilisées par une fixation rapide au formaldéhyde neutre tamponné",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Fixer tue les cellules : c\u0027est incompatible avec l\u0027étude de cellules vivantes. On étudie plutôt leur viabilité/vitalité, par exemple avec le bleu trypan ou des sondes fluorescentes."
+                      },
+                      {
+                          "q":  "Quel colorant permet de repérer les cellules mortes lors d\u0027une étude de viabilité ?",
+                          "tags":  [
+                                       "Types d\u0027échantillons"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le bleu trypan",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le bleu trypan pour les cellules vivantes, une sonde fluorescente pour les mortes",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027hématéine-éosine",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La calcéine AM",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le bleu trypan marque les cellules mortes. Les cellules vivantes se repèrent avec des sondes fluorescentes comme la calcéine AM, transformée en calcéine fluorescente par les estérases."
+                      },
+                      {
+                          "q":  "Associez chaque type d\u0027échantillon à son usage :",
+                          "tags":  [
+                                       "Types d\u0027échantillons"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Frottis / étalements / cytocentrifugation : liquides biologiques, produits de grattage ou de brossage",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Empreintes / appositions : échantillons solides (organes, tumeurs), sur une tranche de section",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Préparations à plat : organes fins, après microdissection",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Empreintes et appositions tissulaires : milieux liquides biologiques et suspensions cellulaires diluées",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les coupes concernent les organes trop épais pour une observation directe : on réalise des coupes fines ou ultrafines après fixation et inclusion, sur lame (MO) ou sur grille (MET)."
+                      },
+                      {
+                          "q":  "Quel est l\u0027ordre des étapes de la préparation standard d\u0027un échantillon pour la microscopie optique ?",
+                          "tags":  [
+                                       "Microscopie optique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Fixation, inclusion, coupe, coloration, montage",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Inclusion, fixation, coupe, coloration, montage",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Fixation, coupe, inclusion, coloration, montage",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Fixation, inclusion, coloration, coupe, montage",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "On fixe pour préserver, on inclut pour durcir, on coupe, on colore, puis on monte entre lame et lamelle. Les étapes ne sont pas permutables : on ne colore qu\u0027une coupe déjà faite."
+                      },
+                      {
+                          "q":  "Concernant la fixation en microscopie optique :",
+                          "tags":  [
+                                       "Microscopie optique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle est indispensable pour préserver les structures biologiques",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle doit être faite le plus rapidement possible après exérèse",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "On immerge de petits blocs d\u0027organes dans un grand volume de liquide fixateur",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle est superflue et facultative si l\u0027on réalise immédiatement une inclusion classique en paraffine à 56 °C",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Fixateurs cités : acide acétique-méthanol, formaldéhyde, paraformaldéhyde. De petits blocs et un grand volume permettent une pénétration rapide et homogène du fixateur."
+                      },
+                      {
+                          "q":  "Concernant l\u0027inclusion en microscopie optique :",
+                          "tags":  [
+                                       "Microscopie optique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle sert à durcir l\u0027échantillon pour en permettre la coupe",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle suit une déshydratation par des bains d\u0027alcool de degré croissant puis de xylène",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle se fait le plus souvent dans de la paraffine fondue, chauffée à 56 °C",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle s\u0027effectue dans de la paraffine liquide maintenue à 4 °C immédiatement après réhydratation aqueuse complète",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La paraffine est liquide à chaud : l\u0027échantillon doit donc être préalablement déshydraté. On peut aussi utiliser des résines plastiques ou la congélation dans l\u0027azote liquide."
+                      },
+                      {
+                          "q":  "Concernant la coupe en microscopie optique (microtomie) :",
+                          "tags":  [
+                                       "Microscopie optique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les coupes font 2 à 5 µm d\u0027épaisseur",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle se fait avec un microtome (avance mécanique, couteau en acier)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un cryostat permet des coupes en congélation, qui préservent les protéines et les lipides",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les coupes semi-fines et ultra-fines de routine font systématiquement de 50 à 80 nm d\u0027épaisseur sur couteau d\u0027acier",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les coupes de 50 à 80 nm sont les coupes ultrafines de la microscopie électronique à transmission, réalisées à l\u0027ultramicrotome. Les coupes en congélation conservent mieux certains constituants que l\u0027inclusion en paraffine."
+                      },
+                      {
+                          "q":  "Avant la coloration d\u0027une coupe incluse en paraffine, quel traitement faut-il appliquer ?",
+                          "tags":  [
+                                       "Microscopie optique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un déparaffinage (chaleur et bains de toluène) puis une réhydratation (alcool de degré décroissant puis eau distillée)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Une déshydratation préalable par des bains successifs d\u0027alcool de degré croissant puis du xylène pour durcir la préparation",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une post-fixation à l\u0027acide osmique",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un passage au point critique du CO2",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La déshydratation par alcool croissant puis xylène a lieu avant l\u0027inclusion, et de nouveau après la coloration, avant le montage. Les colorants sont aqueux, d\u0027où la nécessité de retirer la paraffine puis de réhydrater."
+                      },
+                      {
+                          "q":  "Concernant les colorations de routine :",
+                          "tags":  [
+                                       "Microscopie optique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Hématéine-éosine : noyaux en violet, cytoplasme en rose",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Hématéine-éosine-safran : le safran colore les fibres de collagène en orange",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Trichrome de Masson : le vert lumière colore les fibres de collagène en vert",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "May-Grünwald Giemsa (MGG) : coloration de référence systématique des coupes tissulaires d\u0027organes pleins en paraffine",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "May Grünwald Giemsa est réservé aux cellules sanguines (frottis sanguin). Autres couleurs du trichrome de Masson : hématoxyline pour les noyaux, fuchsine acide pour le cytoplasme en rouge."
+                      },
+                      {
+                          "q":  "Concernant l\u0027étape de montage :",
+                          "tags":  [
+                                       "Microscopie optique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle suit la coloration puis une déshydratation (alcool croissant puis xylène)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les coupes sont placées entre lame et lamelle",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le milieu de montage (résine synthétique) a un indice de réfraction voisin de celui du verre",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle précède obligatoirement les étapes de coloration histochimique afin de stabiliser et protéger la membrane plasmique",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Un indice de réfraction voisin de celui du verre évite les distorsions optiques entre la lame, la préparation et la lamelle."
+                      },
+                      {
+                          "q":  "Concernant le microscope optique standard :",
+                          "tags":  [
+                                       "Microscopie optique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La partie mécanique comprend la potence, le tube optique et la platine",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La partie optique comprend le condenseur, l\u0027objectif et l\u0027oculaire",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La capture d\u0027images se fait avec une caméra numérique",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le condenseur de focalisation lumineuse fait partie intégrante de l\u0027armature mécanique et du socle du microscope",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le condenseur concentre la lumière sur la préparation et appartient donc à la partie optique, avec l\u0027objectif et l\u0027oculaire."
+                      },
+                      {
+                          "q":  "Quel est le principe du microscope à contraste de phase ?",
+                          "tags":  [
+                                       "Microscopie optique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Révéler les différences d\u0027indices de réfraction en révélant des différences de phase de la lumière, ce qui permet l\u0027étude de cellules vivantes ou de préparations non colorées",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Exciter spécifiquement des groupements fluorophores à une longueur d\u0027onde donnée pour capter l\u0027émission spectrale résultante à une longueur d\u0027onde supérieure",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Recueillir les électrons réfléchis par la préparation",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Colorer sélectivement les noyaux",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Cette technique évite toute coloration, ce qui la rend adaptée aux cellules vivantes. L\u0027excitation de fluorochromes caractérise le microscope à fluorescence, la collecte d\u0027électrons réfléchis le MEB."
+                      },
+                      {
+                          "q":  "Concernant le microscope à fluorescence :",
+                          "tags":  [
+                                       "Microscopie optique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un fluorochrome excité à une longueur d\u0027onde donnée émet à une longueur d\u0027onde supérieure",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La fluorescéine (FITC) est excitée à 488 nm et émet à 520 nm",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La phycoérythrine (PE) est excitée à 488 nm et émet à 580 nm",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Des filtres sélectionnent les longueurs d\u0027onde d\u0027excitation puis d\u0027émission",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un fluorochrome excite les molécules cibles en émettant une lumière à une longueur d\u0027onde toujours inférieure à celle d\u0027excitation incidente",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Loi de Stokes : l\u0027émission se fait toujours à une longueur d\u0027onde supérieure (énergie moindre) à l\u0027excitation. Le miroir dichroïque sépare ensuite les deux trajets lumineux."
+                      },
+                      {
+                          "q":  "Concernant la préparation pour la microscopie électronique à transmission (MET), première partie :",
+                          "tags":  [
+                                       "Microscopie électronique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La fixation se fait au glutaraldéhyde dans du tampon cacodylate ou phosphate",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Une post-fixation à l\u0027acide osmique (OsO4) suit la fixation",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027inclusion se fait dans des résines synthétiques (Epon ou Araldite) après déshydratation à l\u0027alcool puis à l\u0027oxyde de propylène",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027inclusion s\u0027effectue dans des blocs massifs de paraffine liquide chauffée comme pour la microscopie photonique conventionnelle",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pour le MET, on utilise des résines synthétiques plus dures que la paraffine, ce qui permet de réaliser des coupes beaucoup plus fines."
+                      },
+                      {
+                          "q":  "Concernant la coupe et le contraste en MET :",
+                          "tags":  [
+                                       "Microscopie électronique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les coupes sont ultrafines (50 à 80 nm), réalisées à l\u0027ultramicrotome (couteau en verre ou en diamant)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elles sont déposées sur des grilles de cuivre",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027acétate d\u0027uranyle contraste le noyau, le nucléole et les ribosomes",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le citrate de plomb contraste les membranes",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les coupes obtenues sont systématiquement étalées et déposées sur des lames de verre standard transparentes comme en MO conventionnel",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En MET les coupes sont déposées sur grilles (de cuivre) et non sur lames. Le contraste est obtenu avec des métaux lourds qui arrêtent les électrons."
+                      },
+                      {
+                          "q":  "Concernant la préparation pour la microscopie électronique à balayage (MEB) :",
+                          "tags":  [
+                                       "Microscopie électronique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La fixation se fait au glutaraldéhyde, sans post-fixation",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La déshydratation passe par l\u0027alcool puis le CO2 liquide, avec passage au point critique du CO2 (32 °C ; 73 atmosphères)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La métallisation dépose une couche fine (10 nm) d\u0027or-palladium sur toutes les surfaces",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La coupe ultrafine s\u0027effectue à l\u0027ultramicrotome automatisé puis est recueillie sur des grilles circulaires de cuivre perforées",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En MEB, on observe la surface de l\u0027échantillon entier : il n\u0027y a pas de coupe ultrafine. Les MEB à pression variable de nouvelle génération permettent de travailler sur des cellules ou micro-organismes non métallisés, voire vivants."
+                      },
+                      {
+                          "q":  "Comparez MET et MEB :",
+                          "tags":  [
+                                       "Microscopie électronique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "En MET, on recueille les électrons qui traversent la préparation",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "En MEB, on recueille les électrons réfléchis par la préparation",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les électrons sont produits par un filament et le microscope fonctionne sous vide",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "En MET, on recueille exclusivement les électrons rétrodiffusés et réfléchis par le relief de la surface de la préparation biologique",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La différence tient au sens de la détection : transmission (à travers la coupe) pour le MET, réflexion en surface pour le MEB. Dans les deux cas, les lentilles sont des solénoïdes."
+                      },
+                      {
+                          "q":  "Pourquoi la résolution du microscope électronique est-elle supérieure à celle du microscope optique ?",
+                          "tags":  [
+                                       "Microscopie électronique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Parce que la longueur d\u0027onde des électrons est inférieure à celle de la lumière visible",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Parce que les électrons traversent plus de couches de tissu",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce que les préparations sont colorées à l\u0027hématéine-éosine",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce que le faisceau d\u0027électrons est canalisé et focalisé sous un champ électromagnétique beaucoup plus faible que le flux lumineux",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le pouvoir séparateur dépend de la longueur d\u0027onde du rayonnement : plus elle est courte, plus on distingue de petits détails. D\u0027où 0,2 nm pour le ME contre 0,2 µm pour le MO."
+                      },
+                      {
+                          "q":  "Concernant la réaction à l\u0027acide périodique de Schiff (PAS) :",
+                          "tags":  [
+                                       "Histochimie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle met en évidence des glucides",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Premier temps : oxydation des groupements glycol par l\u0027acide périodique, avec formation d\u0027aldéhydes",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Second temps : révélation des aldéhydes par le réactif de Schiff, qui donne une coloration rouge pourpre",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle met en évidence spécifiquement les molécules d\u0027ADN chromosomique par clivage acide hydrolysant l\u0027ensemble de la chromatine nucléaire",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027histochimie utilise des réactions chimiques pour déceler et localiser, sur préparations histologiques, des substances organiques et minérales (lipides, glucides, protides)."
+                      },
+                      {
+                          "q":  "Quelle réaction histochimique met en évidence l\u0027ADN ?",
+                          "tags":  [
+                                       "Histochimie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La réaction de Feulgen-Rossenbeck : hydrolyse de l\u0027ADN, puis révélation des aldéhydes du désoxyribose par le réactif de Schiff",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La réaction de coloration cytochimique au PAS, par oxydation ménagée sélective des groupements glycol libres de l\u0027acide nucléique",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La réaction de la péroxydase en présence d\u0027eau oxygénée",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La réaction à l\u0027ATPase en présence de chlorure de cobalt",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les réactions PAS et de Feulgen partagent la même révélation (réactif de Schiff, rouge pourpre) mais diffèrent par la première étape : oxydation des glucides ou hydrolyse de l\u0027ADN."
+                      },
+                      {
+                          "q":  "Vrai ou faux : « L\u0027histoenzymologie détecte directement les enzymes elles-mêmes dans les cellules. »",
+                          "tags":  [
+                                       "Histochimie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Faux",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Vrai",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Elle décèle des activités enzymatiques, et non les enzymes elles-mêmes, en mettant en évidence le produit de leur action sur un substrat spécialement fourni. Les enzymes en tant que protéines se détectent par immunohistologie."
+                      },
+                      {
+                          "q":  "Concernant la calcéine AM, utilisée pour étudier la viabilité cellulaire :",
+                          "tags":  [
+                                       "Histochimie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle est non fluorescente et traverse les membranes cellulaires",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Dans le cytoplasme des cellules vivantes, des estérases la transforment en calcéine, fluorescente",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La calcéine formée ne traverse pas les membranes cellulaires",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle émet une vive fluorescence verte dès sa pénétration intracellulaire passive, sans nécessiter aucune activation enzymatique par des estérases",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La fluorescence n\u0027apparaît que dans les cellules vivantes, dont les estérases sont actives, et reste piégée à l\u0027intérieur : c\u0027est un exemple d\u0027histoenzymologie sur cellules vivantes."
+                      },
+                      {
+                          "q":  "Concernant les péroxydases et l\u0027ATPase en histoenzymologie :",
+                          "tags":  [
+                                       "Histochimie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La péroxydase endogène oxyde la diaminobenzidine (DAB) en présence d\u0027eau oxygénée, donnant un précipité brun noir",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La réaction à la péroxydase marque les granulocytes éosinophiles",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Avec l\u0027ATPase, les fibres musculaires lentes sont colorées en noir et les rapides en beige",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027ATPase myofibrillaire colore intensément les fibres musculaires rapides en noir et laisse les fibres lentes en beige clair",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En immunohistologie, la péroxydase est utilisée sur cellules fixées : elle est alors exogène (couplée à l\u0027anticorps), alors qu\u0027elle est endogène dans l\u0027exemple de l\u0027histoenzymologie. L\u0027ATPase est étudiée sur coupes à congélation."
+                      },
+                      {
+                          "q":  "Concernant l\u0027immunohistologie :",
+                          "tags":  [
+                                       "Immunohistologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle utilise un anticorps, essentiellement monoclonal, pour détecter et localiser très spécifiquement une protéine ou un polyoside",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La molécule reconnue se comporte alors comme un antigène",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les protéines détectables incluent protéines de structure, hormones, enzymes, neurotransmetteurs et récepteurs",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle met en oeuvre une sonde nucléique simple brin hautement marquée pour détecter et hybrider des séquences d\u0027ADN génomique cible",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La sonde nucléique est l\u0027outil de l\u0027hybridation in situ. L\u0027immunohistologie repose sur la reconnaissance antigène-anticorps."
+                      },
+                      {
+                          "q":  "Comment obtient-on des anticorps monoclonaux ?",
+                          "tags":  [
+                                       "Immunohistologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "À partir de cellules spléniques (dont les lymphocytes B) et de cellules d\u0027une lignée myélomateuse en culture, puis par clonage et sélection",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "À partir de cultures isolées et purifiées de cellules myélomateuses immortalisées, sans aucune adjonction ni fusion préalable avec des lymphocytes B ou splénocytes",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Par synthèse chimique directe à partir de la séquence de l\u0027antigène",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Par simple prélèvement du sérum d\u0027un animal immunisé",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les cellules spléniques apportent la spécificité (lymphocytes B), la lignée myélomateuse apporte l\u0027immortalité. Le clonage et la sélection isolent une lignée produisant un unique anticorps."
+                      },
+                      {
+                          "q":  "De quelles façons peut-on révéler le complexe antigène-anticorps ?",
+                          "tags":  [
+                                       "Immunohistologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Par un fluorochrome (immunofluorescence)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Par une enzyme (techniques immunoenzymatiques)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Par de l\u0027or colloïdal (pour la microscopie électronique)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Par une coloration vitale non spécifique au bleu trypan traversant les membranes altérées",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le bleu trypan sert à repérer les cellules mortes, pas à révéler un complexe Ag-Ac. La révélation peut aussi être directe ou indirecte, et parfois suivie d\u0027une amplification."
+                      },
+                      {
+                          "q":  "Quelles associations sont exactes pour la révélation immunoenzymatique ?",
+                          "tags":  [
+                                       "Immunohistologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Péroxydase : révélée par la diaminobenzidine (DAB)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Phosphatase alcaline : révélée par du nitro bleu de tétrazolium",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Or colloïdal : couplé à l\u0027anticorps par l\u0027intermédiaire de la protéine A",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Péroxydase : révélée et visualisée par fixation directe et affinité sélective de la protéine A streptococcique",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027enzyme est couplée à l\u0027anticorps, et on la révèle par son substrat chromogène. L\u0027or colloïdal, lui, sert à la microscopie électronique."
+                      },
+                      {
+                          "q":  "Quels sont des modes de marquage indirect cités dans le cours ?",
+                          "tags":  [
+                                       "Immunohistologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un deuxième anticorps dirigé contre le premier anticorps (ex. anticorps de chèvre anti-souris)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "De l\u0027avidine qui se lie à de la biotine attachée au premier anticorps",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un deuxième anticorps anti-digoxigénine qui se lie à de la digoxigénine attachée au premier anticorps",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un marqueur fluorochrome couplé par liaison covalente directe sur la région variable du premier anticorps primaire",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Quand le marqueur est couplé directement à l\u0027anticorps spécifique de la protéine, le marquage est direct. L\u0027indirect passe par un intermédiaire, ce qui permet une amplification du signal."
+                      },
+                      {
+                          "q":  "Quel est le but de l\u0027amplification dans le marquage immunohistologique ?",
+                          "tags":  [
+                                       "Immunohistologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Obtenir un signal de plus forte intensité, procédé le plus fréquent en routine diagnostique",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Augmenter considérablement l\u0027affinité stérique et la spécificité antigénique intrinsèque de l\u0027anticorps primaire",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Fixer plus rapidement l\u0027échantillon",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Supprimer le besoin d\u0027anticorps primaire",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027amplification multiplie le nombre de molécules de marqueur par antigène détecté, ce qui rend visible des antigènes peu abondants."
+                      },
+                      {
+                          "q":  "Concernant l\u0027hybridation in situ :",
+                          "tags":  [
+                                       "Hybridation in situ"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle utilise une sonde nucléique marquée complémentaire de la séquence recherchée",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle permet de détecter une séquence spécifique d\u0027ADN ou d\u0027ARN dans les cellules ou les tissus",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle permet d\u0027étudier les gènes (génome) ou leur expression (transcriptome)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle recourt à un anticorps polyclonal spécifique purifié dirigé contre les histones de la séquence nucléique d\u0027ADN",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027immunohistologie vise des protéines ou polyosides avec des anticorps ; l\u0027hybridation in situ vise des acides nucléiques avec des sondes."
+                      },
+                      {
+                          "q":  "Quel est l\u0027ordre des temps de l\u0027hybridation in situ ?",
+                          "tags":  [
+                                       "Hybridation in situ"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Dénaturation de l\u0027ADN et de la sonde, puis hybridation, puis lecture selon la nature du marqueur",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Hybridation préliminaire des brins, suivie d\u0027une dénaturation thermique ménagée, puis étape finale de lecture selon le fluorophore",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Lecture, puis dénaturation, puis hybridation",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Dénaturation, puis lecture, puis hybridation",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Il faut d\u0027abord séparer les deux brins d\u0027ADN (et ceux de la sonde) pour que la sonde puisse s\u0027apparier à la séquence complémentaire."
+                      },
+                      {
+                          "q":  "Concernant le marquage des sondes :",
+                          "tags":  [
+                                       "Hybridation in situ"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les sondes chaudes sont marquées par des isotopes radioactifs",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les sondes froides sont marquées par des produits non radioactifs",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les fluorochromes permettent la technique FISH (Fluorescence In Situ par Hybridation)",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les sondes froides sont synthétisées et marquées à l\u0027aide d\u0027isotopes radioactifs émetteurs de rayonnements de haute énergie",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Autres marqueurs froids : enzymes (phosphatase alcaline), biotine, digoxigénine, et or colloïdal pour la MET."
+                      },
+                      {
+                          "q":  "Quelle application de la FISH est citée dans le cours ?",
+                          "tags":  [
+                                       "Hybridation in situ"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le diagnostic d\u0027anomalies du nombre de chromosomes, par exemple la trisomie 21 sur des amniocytes",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La quantification et la mesure automatisée du diamètre moyen des cellules en suspension par cytométrie en flux",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La coloration des fibres de collagène",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La recherche de glucides sur coupes",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Une sonde spécifique d\u0027un chromosome permet de compter les copies de ce chromosome dans chaque noyau : trois signaux pour le chromosome 21 indiquent une trisomie."
+                      }
+                  ]
+}

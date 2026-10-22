@@ -1,0 +1,660 @@
+﻿{
+    "name":  "CM 7 - Enjeux sociaux et éthiques des maladies chroniques",
+    "folder":  "PASS - SHS",
+    "description":  "25 questions sur la sociologie, la philosophie du soin et le vécu des maladies chroniques.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Selon le Haut Conseil de la Santé Publique français (2009), quel critère d\u0027ancienneté minimale définit une maladie chronique ?",
+                          "tags":  [
+                                       "Définitions",
+                                       "CM 7"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Trois mois (ou supposée telle).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Six mois minimum, selon la définition internationale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un an, avec nécessité de soins continus.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il n\u0027y a pas de critère de durée, seul le retentissement compte.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Selon le HCSP (2009), une maladie chronique est définie par un état pathologique appelé à durer, avec une ancienneté minimale de 3 mois (ou supposée telle) et un retentissement sur la vie quotidienne."
+                      },
+                      {
+                          "q":  "Quel concept le sociologue Michael Bury a-t-il forgé pour décrire l\u0027impact d\u0027une maladie chronique survenant au cours de la vie d\u0027un adulte ?",
+                          "tags":  [
+                                       "Sociologie",
+                                       "Identité"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La rupture biographique.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027ordre négocié.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La réduction de la normativité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La déviance primaire.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "M. Bury parle de « rupture biographique » pour désigner la remise en question profonde de l\u0027identité personnelle, des valeurs et du récit de soi provoquée par l\u0027apparition de la maladie."
+                      },
+                      {
+                          "q":  "Face au sentiment de dépossession de soi induit par la maladie chronique, quel enjeu majeur est identifié par le philosophe Paul Ricœur ?",
+                          "tags":  [
+                                       "Philosophie",
+                                       "Identité"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le récit de soi comme instrument de restauration de la capacité du sujet à dire et agir.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027acceptation stoïque et fataliste de la douleur chronique corporelle comme l\u0027unique norme possible d\u0027existence quotidienne.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027effacement volontaire du passé pour renaître dans la maladie.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La délégation totale de ses choix au corps médical.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Paul Ricœur souligne l\u0027importance du récit de soi pour maintenir ou rétablir la continuité biographique et restaurer le sujet dans sa capacité à se dire, malgré la dépossession causée par la maladie."
+                      },
+                      {
+                          "q":  "Comment la sociologue Isabelle Baszanger définit-elle la maladie chronique du point de vue de la vie sociale du patient ?",
+                          "tags":  [
+                                       "Sociologie",
+                                       "Travail du malade"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Comme une « construction sociale négociée » dont le patient est l\u0027acteur principal.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Comme un effondrement brutal et irrémédiable de l\u0027ensemble des réseaux d\u0027intégration familiale, sociale et professionnelle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme une trajectoire strictement définie par le corps médical.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme une période de latence sociale où le malade est passif.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pour I. Baszanger, la maladie chronique exige du patient un travail constant pour maintenir ses relations ; c\u0027est une « construction sociale négociée » face à une situation nouvelle et instable."
+                      },
+                      {
+                          "q":  "Parmi ces techniques, laquelle NE FAIT PAS partie des méthodes de contrôle de l\u0027information (gestion du stigmate) décrites par Erving Goffman ?",
+                          "tags":  [
+                                       "Sociologie",
+                                       "Stigmate"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La médicalisation systématique des interactions sociales.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La dissimulation délibérée et systématique de l\u0027ensemble des signes visibles de l\u0027affection.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027imputation des signes à une autre origine.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le dévoilement volontaire de la maladie.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Goffman a décrit 4 techniques pour contrôler l\u0027information et éviter la stigmatisation : la dissimulation, l\u0027imputation à une autre origine, le maintien d\u0027une distance, et le dévoilement volontaire. La « médicalisation des interactions » n\u0027en fait pas partie."
+                      },
+                      {
+                          "q":  "Que souligne Annemarie Mol dans son ouvrage « Ce que soigner veut dire » concernant la vie avec une maladie chronique ?",
+                          "tags":  [
+                                       "Philosophie",
+                                       "Soin"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Que c\u0027est une « tâche pratique » exigeant de l\u0027activité et une multitude de petits choix continus.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Que le patient doit atteindre une indépendance totale face au système de santé.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Que la maladie chronique doit faire l\u0027objet d\u0027une quête exclusive et obsessionnelle de guérison totale (cure) par les armes de la biomédecine.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Que le libre choix du patient est une illusion dictée par les algorithmes de soins.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "A. Mol insiste sur le fait que vivre avec une maladie chronique n\u0027est pas un état passif (un fait) mais une « tâche pratique » constante, faite d\u0027une multitude de micro-activités et de choix quotidiens."
+                      },
+                      {
+                          "q":  "Dans le contexte de la maladie chronique, comment le soin médical est-il décrit ?",
+                          "tags":  [
+                                       "Soin",
+                                       "CM 7"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Comme un « bricolage partagé » et un processus décisionnel continu d\u0027ajustement.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Comme un protocole rigide excluant les savoirs expérientiels du patient.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme une application stricte de la méthode expérimentale visant la guérison totale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme une délégation exclusive de la décision au médecin spécialiste.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le soin dans la maladie chronique est un « bricolage partagé » entre soignants et soignés, nécessitant de constants ajustements pour s\u0027adapter à l\u0027imprévisibilité de la maladie."
+                      },
+                      {
+                          "q":  "Selon Anselm Strauss, quel est l\u0027enjeu majeur de la normalisation pour le malade chronique ?",
+                          "tags":  [
+                                       "Sociologie",
+                                       "Normalisation"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Vivre aussi normalement que possible malgré les symptômes, via un équilibre négocié socialement.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Dissimuler scrupuleusement la réalité médicale de son affection auprès de son employeur pour se conformer aux exigences de rentabilité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Retrouver des constantes biologiques parfaites grâce à l\u0027observance thérapeutique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Atteindre la guérison complète pour rejoindre le groupe des bien-portants.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "A. Strauss affirme que la normalité n\u0027est pas un état mais une estimation négociée (un équilibre complexe) visant à vivre aussi normalement que possible en dépit de la maladie."
+                      },
+                      {
+                          "q":  "Dans l\u0027approche de Georges Canguilhem, comment se caractérise la norme de vie dans la maladie chronique ?",
+                          "tags":  [
+                                       "Canguilhem",
+                                       "Normativité"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Par la réduction de la « normativité », c\u0027est-à-dire une capacité réduite d\u0027adaptation et de participation au monde.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Par une absence totale de création de normes par le sujet.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Par une normalisation biologique parfaite et automatisée rendant l\u0027expérience existentielle de la pathologie totalement imperceptible.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Par une augmentation paradoxale des capacités physiologiques globales.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pour Canguilhem, la vie avec la maladie chronique institue une autre norme de vie, plus précaire, marquée par la réduction de la normativité (capacité d\u0027adaptation), bien qu\u0027elle recèle encore une part d\u0027invention normative par le patient."
+                      },
+                      {
+                          "q":  "Quel artiste célèbre est cité dans le cours comme l\u0027exemple d\u0027un sujet vivant une norme de vie restreinte (vieillesse, maladie) tout en demeurant créateur de normes ?",
+                          "tags":  [
+                                       "Exemple",
+                                       "Art"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Henri Matisse.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Claude Monet.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Auguste Renoir.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Vincent Van Gogh.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le peintre Henri Matisse (notamment à la fin de sa vie, créant depuis son lit) est cité comme un sujet qui, malgré une norme de vie restreinte et contrainte, invente de nouvelles normes esthétiques."
+                      },
+                      {
+                          "q":  "Que met en évidence la philosophe Havi Carel concernant l\u0027expérience vécue de la maladie chronique ?",
+                          "tags":  [
+                                       "Philosophie",
+                                       "Expérience"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Qu\u0027il est possible de ressentir un état de santé au sein même de la maladie (vie de Janus).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Que la maladie chronique abolit définitivement toute sensation de bien-être subjectif.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Que seule la guérison objective permet de retrouver la santé.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Que les patients n\u0027évaluent jamais leur santé comme bonne s\u0027ils sont physiquement invalides.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Havi Carel souligne l\u0027ambivalence de l\u0027expérience, affirmant qu\u0027une « expérience de santé dans la maladie » peut avoir lieu, et s\u0027opposant à l\u0027idée que santé et maladie seraient mutuellement exclusives."
+                      },
+                      {
+                          "q":  "Quel paradoxe est relevé par l\u0027étude de Stuifbergen citée dans le cours ?",
+                          "tags":  [
+                                       "Étude",
+                                       "Qualité de vie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "73% des personnes sondées vivant avec une maladie invalidante ont évalué leur santé comme bonne ou excellente.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La totalité des patients vivant avec une incapacité motrice sévère réfutent formellement le concept même de bien-être ou de santé.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les médecins surestiment systématiquement le bien-être subjectif de leurs patients.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027observance thérapeutique garantit toujours un sentiment subjectif de bonne santé.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Cette étude révèle un manque de corrélation entre le corps biologique objectivé par la pathologie et le bien-être subjectif, une majorité de personnes invalidées s\u0027estimant en bonne santé."
+                      },
+                      {
+                          "q":  "Quelle est l\u0027une des conséquences négatives potentielles de l\u0027injonction à l\u0027autonomie et à la normalisation par la médecine ?",
+                          "tags":  [
+                                       "Éthique",
+                                       "Autonomie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La culpabilisation du patient et la disqualification de ses comportements s\u0027il ne suit pas les prescriptions (observance).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La survalorisation disproportionnée de ses savoirs expérientiels conduisant au désengagement progressif du corps soignant.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le financement excessif des associations de patients par l\u0027État.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La suppression pure et simple de l\u0027éducation thérapeutique.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027idéal d\u0027autonomie peut mener à blâmer le malade (le responsabiliser à l\u0027excès, le culpabiliser) pour sa non-observance, en négligeant les déterminants psycho-sociaux qui compliquent la gestion de sa maladie."
+                      },
+                      {
+                          "q":  "Comment définit-on globalement l\u0027« empowerment » dans le contexte de la maladie chronique ?",
+                          "tags":  [
+                                       "Empowerment",
+                                       "Définition"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le processus par lequel le patient apprend à vivre avec la maladie et renforce sa capacité à reprendre le pouvoir sur son existence.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le droit légal pour le patient de refuser tout traitement sans justification.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le transfert juridique et déontologique exclusif de l\u0027intégralité de la responsabilité des soins vers les membres de la famille du patient.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027acceptation d\u0027un contrôle social total sur le mode de vie du malade.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027empowerment est le renforcement du pouvoir d\u0027agir de la personne malade, sa capacité à mobiliser ses ressources pour contrôler sa propre vie face à la maladie."
+                      },
+                      {
+                          "q":  "En philosophie du soin, à quoi s\u0027oppose l\u0027« autonomie relationnelle » ?",
+                          "tags":  [
+                                       "Autonomie",
+                                       "Soin"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "À l\u0027indépendance totale ou à la solitude de l\u0027individu.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "À la décision médicale partagée.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "À la démarche formalisée et collective d\u0027éducation thérapeutique du patient (ETP) dispensée en milieu de soins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Au respect du choix libre et éclairé.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027autonomie relationnelle souligne que l\u0027autonomie n\u0027est pas synonyme d\u0027indépendance stricte ou d\u0027isolement : elle s\u0027inscrit au contraire dans des relations de soin et de soutien qui rendent cette autonomie possible."
+                      },
+                      {
+                          "q":  "Lequel de ces éléments illustre le passage d\u0027une médecine aiguë à une médecine de la maladie chronique ?",
+                          "tags":  [
+                                       "Paradigme",
+                                       "CM 7"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le passage du paradigme du traitement (cure) au paradigme de l\u0027accompagnement (care).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le basculement radical d\u0027une médecine hospitalière de proximité vers une biologie moléculaire et génétique de laboratoire de recherche.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le déclin de l\u0027éducation thérapeutique au profit de la chirurgie de pointe.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La suppression de la notion de « qualité de vie » dans l\u0027évaluation des soins.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La médecine des maladies chroniques ne cherche plus seulement à guérir (to cure) mais à prendre soin et accompagner (to care) sur le long terme."
+                      },
+                      {
+                          "q":  "Qui est le premier et principal juge de la qualité de vie d\u0027une personne malade chronique ?",
+                          "tags":  [
+                                       "Qualité de vie",
+                                       "Éthique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La personne malade elle-même, selon son expérience subjective.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le médecin spécialiste traitant la pathologie.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La Haute Autorité de Santé (HAS) via des normes standardisées.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027entourage immédiat du patient.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La qualité de vie ne s\u0027évalue pas seulement par des normes statistiques ou objectives, mais d\u0027abord par ce que la personne éprouve et juge appréciable pour elle-même."
+                      },
+                      {
+                          "q":  "Quel rôle l\u0027Éducation Thérapeutique du Patient (ETP) joue-t-elle concrètement vis-à-vis de l\u0027empowerment ?",
+                          "tags":  [
+                                       "ETP",
+                                       "Empowerment"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle contribue à l\u0027empowerment en apprenant au patient à reconnaître ses symptômes et à pratiquer des auto-soins.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle entrave directement l\u0027empowerment en assujettissant le patient à des injonctions comportementales et hygiénistes infantilisantes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle remplace le traitement médical par un soutien psychologique exclusif.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle sert uniquement à former les aidants familiaux, pas le patient.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027ETP est un outil majeur d\u0027empowerment car elle vise à donner (ou redonner) au patient les compétences et le pouvoir d\u0027agir sur sa propre santé."
+                      },
+                      {
+                          "q":  "Selon A. Grimaldi, la médecine de la maladie chronique correspond à la « 3ème médecine ». Quelle pratique la caractérise ?",
+                          "tags":  [
+                                       "3ème médecine",
+                                       "Décision"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La pratique de la « co-décision » ou « décision partagée » entre soignant et soigné.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La délégation intégrale de la décision clinique aux algorithmes probabilistes d\u0027une intelligence artificielle hospitalière.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le retour strict au paternalisme médical bienveillant.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027application aveugle des protocoles de recherche fondamentale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La 3ème médecine (ou médecine de la personne) se définit par un accompagnement centré sur les besoins du patient et implique fondamentalement la décision partagée."
+                      },
+                      {
+                          "q":  "Quel est le statut épistémologique de la médecine face à la variabilité des normes de vie des patients chroniques (selon Canguilhem) ?",
+                          "tags":  [
+                                       "Épistémologie",
+                                       "Canguilhem"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle est un art de soigner des individus tous singuliers, et non une simple science des généralités.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle constitue une science expérimentale rigoureuse cherchant à normaliser tous les écarts statistiques et comportements déviants.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle est un obstacle regrettable qui empêche l\u0027application des statistiques universelles.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle est une simple discipline sociale sans fondement biologique réel.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Canguilhem souligne que la variabilité n\u0027est pas un « obstacle regrettable » ; elle définit la médecine non comme une science stricte des généralités, mais comme un art clinique s\u0027adressant à des singularités."
+                      },
+                      {
+                          "q":  "Pourquoi peut-on considérer, de plus en plus, le cancer comme une maladie chronique ?",
+                          "tags":  [
+                                       "Cancer",
+                                       "Classification"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Parce qu\u0027il requiert des traitements longs, comporte des risques de récidive et nécessite une surveillance sur plusieurs années.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Parce que son pronostic vital est toujours engagé à très court terme.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce que le cancer est désormais assimilé juridiquement et cliniquement aux affections psychiatriques de très longue durée.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce qu\u0027aucun traitement n\u0027existe pour en modifier l\u0027évolution.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Bien que le cancer puisse parfois être guéri, la durée de ses traitements, les séquelles et la surveillance requise conduisent à l\u0027assimiler de plus en plus à la dynamique d\u0027une maladie chronique."
+                      },
+                      {
+                          "q":  "Selon Claire Marin (auteure de « Hors de moi »), quel sentiment le corps transformé par la maladie et les traitements peut-il provoquer ?",
+                          "tags":  [
+                                       "Philosophie",
+                                       "Corps"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le sentiment que le corps devient autre, étranger, extérieur ou aliéné.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un sentiment immédiat d\u0027invulnérabilité et d\u0027indépendance.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une réconciliation sereine et immédiate avec sa vulnérabilité biologique et la perspective apaisée de sa propre finitude corporelle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une amnésie rétrograde concernant sa vie d\u0027avant la maladie.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Claire Marin décrit comment la maladie introduit un sentiment d\u0027étrangeté et de dépossession de soi, où le corps douloureux ou altéré est perçu comme une intrusion, un corps aliéné."
+                      },
+                      {
+                          "q":  "Comment l\u0027entourage et les professionnels de santé peuvent-ils soutenir la capacité normative du patient ?",
+                          "tags":  [
+                                       "Soin",
+                                       "Accompagnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "En l\u0027aidant à faire de sa vie contrainte une vie qu\u0027il valorise selon ses propres préférences, pour qu\u0027il en demeure le sujet.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "En l\u0027obligeant à calquer scrupuleusement son existence sur les moyennes statistiques nationales présentées comme seul modèle de santé.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "En réalisant systématiquement toutes ses tâches quotidiennes à sa place.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "En ignorant sa maladie pour faire comme si tout était redevenu parfaitement normal.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le but de la médecine n\u0027est pas d\u0027adapter à tout prix le patient à la norme sociale, mais de soutenir sa capacité normative : l\u0027aider à inventer une norme de vie, même restreinte, qu\u0027il juge accomplie."
+                      },
+                      {
+                          "q":  "La normalisation de la vie du patient chronique peut être entravée par la « visibilité sociale du traitement ». Qu\u0027est-ce que cela signifie concrètement ?",
+                          "tags":  [
+                                       "Normalisation",
+                                       "Observance"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La difficulté à prendre ses médicaments ou faire ses soins en public, par peur du jugement social ou professionnel.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La charge financière prohibitive liée au non-remboursement par l\u0027Assurance Maladie des thérapeutiques innovantes prescrites à l\u0027hôpital.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le fait que les professionnels de santé ne croient pas aux symptômes décrits.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027absence d\u0027information médicale fiable sur Internet.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les patients peuvent peiner à suivre leur traitement parce qu\u0027il les expose socialement (ex: se piquer devant des collègues), ce qui complique la gestion du stigmate et l\u0027observance."
+                      },
+                      {
+                          "q":  "À combien estime-t-on le nombre de personnes concernées par une maladie chronique en France (selon les données du cours) ?",
+                          "tags":  [
+                                       "Épidémiologie",
+                                       "CM 7"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Environ 20 millions de patients.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Environ 5 millions de patients.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Environ 500 000 patients.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Environ 45 millions de patients.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027épidémiologie présentée dans le cours indique que les maladies chroniques concernent environ 20 millions de patients en France."
+                      }
+                  ]
+}

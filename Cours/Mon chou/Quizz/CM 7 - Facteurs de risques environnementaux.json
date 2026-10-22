@@ -1,0 +1,510 @@
+﻿{
+    "name":  "CM 7 - Facteurs de risques environnementaux",
+    "folder":  "PASS - Santé Publique",
+    "description":  "Compréhension de la santé environnementale, de la pollution atmosphérique, des gaz à effet de serre et de leurs impacts sur la morbidité globale.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "En écologie, qu\u0027englobe la notion d\u0027« écosphère » ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle comprend l\u0027atmosphère, l\u0027hydrosphère, la lithosphère et la biosphère.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle correspond uniquement à l\u0027ensemble des écosystèmes animaux et végétaux de la planète (biosphère).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle ne désigne que le cadre urbain artificiel construit par l\u0027homme (infrastructures).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle est synonyme de la couche d\u0027ozone stratosphérique protectrice.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027écosphère est le concept global englobant le minéral (lithosphère), l\u0027eau (hydrosphère), l\u0027air (atmosphère) et le vivant (biosphère)[cite: 337]."
+                      },
+                      {
+                          "q":  "Selon la définition de l\u0027OMS, comment caractérise-t-on la « Santé environnementale » ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Comme une science et une pratique gérant les aspects de la santé déterminés par les facteurs physiques, chimiques, biologiques, sociaux et esthétiques de l\u0027environnement.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Comme une doctrine philosophique écocentrée plaçant l\u0027intégrité de la biosphère animale et végétale strictement au-dessus de la santé de l\u0027espèce humaine (« Deep ecology »).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Exclusivement comme le contrôle policier et administratif des rejets chimiques industriels lourds.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme l\u0027étude médicale spécialisée des intoxications aiguës aux métaux lourds en milieu professionnel fermée.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pour l\u0027OMS, la santé environnementale est large : c\u0027est à la fois l\u0027étude scientifique de l\u0027impact des facteurs environnementaux sur la santé et la pratique/politique visant à les contrôler pour les générations actuelles et futures[cite: 339, 340]."
+                      },
+                      {
+                          "q":  "Quelles sont les caractéristiques habituelles de l\u0027exposition environnementale à des polluants ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Des concentrations généralement faibles, s\u0027étendant sur des durées longues (chronicité), avec une nature multiple (poly-exposition, poly-pollution).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Des concentrations très aiguës et toxiques (doses létales massives) survenant sur un temps d\u0027exposition extrêmement court de quelques secondes lors de catastrophes industrielles majeures.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027exposition à un polluant isolé et unique avec un diagnostic clinique immédiat et spécifique (ex: légionellose foudroyante universelle).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une absorption cantonnée exclusivement à la barrière cutanée lors de pics de chaleur estivale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "À l\u0027exception d\u0027accidents industriels, l\u0027exposition environnementale courante est caractérisée par la micropollution (faibles doses), la chronicité (sur des années) et le fait qu\u0027elle implique de très nombreuses substances en simultané via de multiples voies (inhalation, ingestion)[cite: 343]."
+                      },
+                      {
+                          "q":  "Que définit légalement la « pollution atmosphérique » en France selon la Loi sur l\u0027air (1996) ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027introduction de substances dans l\u0027atmosphère et les espaces clos, pouvant mettre en danger la santé, nuire aux écosystèmes ou détériorer les biens.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027augmentation naturelle des pollens au printemps responsable d\u0027allergies respiratoires.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027introduction de substances chimiques toxiques exclusivement dans l\u0027environnement extérieur industriel ouvert, excluant formellement l\u0027air des espaces clos domestiques ou professionnels.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027émission globale de CO2 d\u0027origine volcanique ne pouvant être contrôlée.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La définition légale française intègre explicitement les « espaces clos », et englobe les conséquences sur la santé humaine, les écosystèmes, le changement climatique, les biens matériels et même les nuisances olfactives[cite: 347]."
+                      },
+                      {
+                          "q":  "Parmi les gaz constituant la composition naturelle de l\u0027air de la basse atmosphère (hors polluants), quel est le plus abondant ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027azote (N2), qui représente environ 78 % de sa composition.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027oxygène (O2), représentant près de 95 % de l\u0027air respirable.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le dioxyde de carbone (CO2), qui constitue environ 20 % de l\u0027air à l\u0027état naturel.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027argon, majoritaire à 50 %.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027air naturel se compose à 78% d\u0027azote, 21% d\u0027oxygène, près de 1% d\u0027argon et une fraction très minime (0,05%) de CO2[cite: 347]."
+                      },
+                      {
+                          "q":  "Comment se forme l\u0027ozone troposphérique (O3) qui est un polluant toxique au niveau du sol ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "C\u0027est un polluant secondaire issu d\u0027une réaction photochimique entre les Oxydes d\u0027azote (NOx) et les Composés Organiques Volatils (COV) sous l\u0027action du rayonnement solaire.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Il est émis directement par les pots d\u0027échappement des moteurs diesel en hiver.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il résulte directement de la descente massive et saisonnière de l\u0027ozone stratosphérique protecteur vers les très basses couches terrestres lors des épisodes pluvieux orageux d\u0027automne.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est un sous-produit de l\u0027évaporation des engrais agricoles riches en ammoniac.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027ozone au niveau du sol n\u0027est pas émis par une cheminée ou un pot d\u0027échappement : il se forme chimiquement dans l\u0027atmosphère lorsque les NOx (trafic) et les COV interagissent sous un fort ensoleillement[cite: 350, 370]."
+                      },
+                      {
+                          "q":  "Quel polluant atmosphérique majeur, principalement responsable du « Smog de Londres » en 1952, a vu ses émissions chuter de façon spectaculaire en France depuis les années 1970 ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le dioxyde de soufre (SO2), dont les taux urbains sont aujourd\u0027hui très faibles grâce au recul des émissions industrielles lourdes.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les oxydes d\u0027azote (NOx), dont les niveaux ambiants globaux ont été divisés par 100 en quelques années grâce à l\u0027interdiction définitive des motorisations diesel.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027ozone troposphérique (O3), totalement éradiqué grâce aux pots catalytiques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les particules fines PM2.5, qui n\u0027existent plus dans les grandes métropoles.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La pollution historique industrielle au dioxyde de soufre (SO2, gaz âcre issu de la combustion de charbon et de fioul soufré) a été le grand succès des politiques de lutte. Ses concentrations moyennes s\u0027effondrent sous les limites de détection de nos jours[cite: 358, 364, 365]."
+                      },
+                      {
+                          "q":  "Actuellement, quels sont les trois polluants de l\u0027air extérieur considérés comme « critiques » (car leurs concentrations dépassent régulièrement les normes sanitaires, surtout en milieu urbain) ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le dioxyde d\u0027azote (NO2), les particules fines (PM10 et PM2.5) et l\u0027ozone (O3).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le dioxyde de soufre (SO2), le monoxyde de carbone (CO) et le plomb.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027amiante libre aéroportée, les halons gazeux et les résidus de pesticides organochlorés retrouvés en suspension dans l\u0027air ambiant urbain.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le méthane (CH4), le benzène et l\u0027ammoniac (NH3).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Bien que d\u0027autres polluants existent, la préoccupation sanitaire actuelle en Europe concerne les NOx (liés aux moteurs thermiques), les particules (diesel, chauffage) et l\u0027Ozone (réchauffement estival)[cite: 366, 367, 368, 371]."
+                      },
+                      {
+                          "q":  "Quelle agence locale est en charge de la surveillance de la qualité de l\u0027air en Île-de-France ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "AIRPARIF, qui fait partie du réseau des AASQA (Associations Agréées de Surveillance de la Qualité de l\u0027Air).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La DREES (Direction de la recherche, des études, de l\u0027évaluation et des statistiques du Ministère des Solidarités et de la Santé).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027ANSM (Agence nationale de sécurité du médicament).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027INSERM (Institut national de la santé et de la recherche médicale).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En France, la surveillance régionale est déléguée aux AASQA. En région parisienne, cet organisme est Airparif, qui exploite plusieurs typologies de stations (urbaine, trafic, rurale)[cite: 354]."
+                      },
+                      {
+                          "q":  "Sur le plan sanitaire respiratoire, qu\u0027est-ce qui distingue les PM10 des PM2.5 ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Leur taille conditionne leur niveau de pénétration : les PM10 restent plutôt dans les voies aériennes supérieures et bronches, tandis que les PM2.5 pénètrent plus profondément jusqu\u0027aux alvéoles pulmonaires.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les PM10 sont exclusivement d\u0027origine naturelle et végétale (pollens, poussières minérales), tandis que les PM2.5 sont formées uniquement de microgouttelettes d\u0027acides forts liquides.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les PM10 sont cancérigènes, mais les PM2.5 sont totalement inoffensives pour l\u0027homme car rejetées par la toux.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles sont chimiquement identiques et ont strictement la même vitesse de sédimentation.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La taille granulométrique des particules (Particulate Matter, mesurées en microns) détermine à quel point elles peuvent franchir les barrières pulmonaires. Les particules très fines (2,5 microns) descendent profondément dans l\u0027arbre respiratoire, augmentant le risque inflammatoire et cardiovasculaire[cite: 358]."
+                      },
+                      {
+                          "q":  "Quelles sont les trois grandes causes d\u0027intensité variable de production des particules fines en milieu urbain ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les émissions directes (chauffage, trafic diesel), la remise en suspension par le vent ou le roulement, et la transformation chimique des gaz en particules.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La respiration humaine massive, la photosynthèse nocturne et l\u0027évaporation océanique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les panaches volcaniques islandais récurrents, la déforestation tropicale par brûlis et l\u0027utilisation quotidienne de bombes de laque capillaire domestique à l\u0027échelle métropolitaine.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Exclusivement l\u0027industrie sidérurgique lourde et les centrales nucléaires.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les particules fines n\u0027ont pas une source unique. Elles proviennent des rejets directs (échappements, freins, usure des pneus, combustion du bois), du soulèvement des dépôts au sol, et de la condensation secondaire de gaz (formation de sels)[cite: 368]."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce que l\u0027Indice ATMO ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "C\u0027est un outil de communication grand public agrégeant les concentrations de 5 polluants majeurs pour fournir une évaluation synthétique (couleur, qualificatif de Bon à Extrêmement mauvais) de la qualité de l\u0027air ambiant.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "C\u0027est un appareil expérimental de télédétection par laser hélioporté utilisé pour sonder la densité de la couche limite d\u0027ozone et cartographier les îlots de chaleur urbains franciliens.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est l\u0027indicateur épidémiologique mesurant le nombre annuel d\u0027hospitalisations pour asthme infantile.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est la norme fixant l\u0027épaisseur réglementaire de l\u0027amiante-ciment dans les toitures.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027indice ATMO permet de donner chaque jour une prévision ou un constat simple et compréhensible (de « Bon » à « Extrêmement mauvais ») aux citoyens, en fonction des niveaux des polluants réglementés[cite: 356]."
+                      },
+                      {
+                          "q":  "À propos de la morbidité (et non la mortalité) liée à la pollution de l\u0027air, quelle proportion de la population est affectée par les effets les moins sévères mais les plus vastes ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La pyramide des effets montre qu\u0027une très large proportion de la population subit des effets infra-cliniques non apparents ou des diminutions de la fonction pulmonaire, sans que cela n\u0027entraîne d\u0027hospitalisation immédiate.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La morbidité est restreinte à une infime minorité (\u003c1%) de personnes hyper-allergiques développant un choc anaphylactique foudroyant avec détresse respiratoire aiguë mortelle dans les minutes suivant le pic.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Tous les patients affectés finissent systématiquement aux urgences dans la même semaine d\u0027exposition.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il n\u0027y a pas de morbidité liée à l\u0027air ; seule l\u0027espérance de vie à 80 ans est modifiée.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La pyramide de la sévérité des effets de l\u0027air illustre que les événements les plus sévères (décès, hospitalisations) touchent la pointe de la pyramide (faible proportion de personnes), alors que la base de la pyramide correspond aux impacts massifs sur la population globale (asthénie, toux, inflammation infra-clinique, légère gêne respiratoire)[cite: 359]."
+                      },
+                      {
+                          "q":  "Quel rôle bénéfique assure la couche d\u0027ozone située dans la stratosphère ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle constitue un écran protecteur filtrant une grande partie des rayons ultraviolets nocifs (UV-B, UV-C) émis par le Soleil.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle piège de façon irréversible les molécules de gaz à effet de serre (dioxyde de carbone et méthane), maintenant un refroidissement climatique moyen de 15 degrés par réflexion des infrarouges.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle élimine directement les particules fines en suspension grâce à ses propriétés oxydantes fortes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle favorise les réactions de photosynthèse des forêts tropicales la nuit.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Contrairement à l\u0027ozone troposphérique (toxique à respirer en bas), l\u0027ozone stratosphérique, situé à haute altitude (20km), est indispensable pour protéger le vivant des rayons UV solaires destructeurs[cite: 359, 360]."
+                      },
+                      {
+                          "q":  "Quelle famille de substances chimiques d\u0027origine anthropique a été identifiée dans les années 1970 comme la principale responsable du « trou de la couche d\u0027ozone » au-dessus de l\u0027Antarctique ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les CFC (Chloro Fluoro Carbones) présents dans les aérosols et les réfrigérants, et les Halons utilisés contre les incendies.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le dioxyde de carbone (CO2) issu de la combustion du charbon fossile dans les centrales thermiques et les chaufferies urbaines d\u0027Europe.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le monoxyde d\u0027azote (NO) des rejets agricoles.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les micro-plastiques marins évaporés dans les nuages.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les CFC libèrent du chlore actif dans les hautes couches froides de l\u0027atmosphère qui détruit catalytiquement les molécules d\u0027ozone. Leurs méfaits ont conduit au Prix Nobel de Molina et Rowland, et à leur interdiction (protocole de Montréal)[cite: 360, 361]."
+                      },
+                      {
+                          "q":  "Sur le plan de la santé humaine, quelle pathologie risque d\u0027augmenter massivement à cause de la destruction de l\u0027ozone stratosphérique ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les cancers cutanés et les cataractes, causés par une plus forte exposition de la peau et des yeux aux UV solaires.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027asbestose pulmonaire fibrosante et le mésothéliome pleural malin, secondaires à l\u0027inhalation d\u0027ondes lumineuses altérant les tissus interstitiels.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027intoxication saturnine infantile par absorption cutanée accrue.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La fièvre typhoïde foudroyante causée par les rayons cosmiques.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Moins d\u0027ozone en altitude implique une plus grande quantité d\u0027UV nocifs touchant la surface terrestre. L\u0027excès d\u0027UV-B est directement impliqué dans la genèse des carcinomes/mélanomes et la perte de transparence du cristallin (cataracte)[cite: 361]."
+                      },
+                      {
+                          "q":  "Quel mécanisme physique définit le phénomène d\u0027« Effet de serre » naturel, vital pour la Terre ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027absorption et la réémission par certains gaz de l\u0027atmosphère (les GES) du rayonnement infrarouge issu de la surface terrestre réchauffée par le Soleil, permettant de maintenir une température moyenne mondiale d\u0027environ +15°C au lieu de -18°C.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La réflexion totale et immédiate de l\u0027intégralité du rayonnement solaire incident sous la forme exclusive de faisceaux d\u0027ondes UV-C hautement énergétiques, empêchant la surchauffe globale des masses océaniques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La combustion interne du noyau terrestre qui irradie l\u0027atmosphère et crée une bulle de chaleur stable par radioactivité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La chaleur engendrée exclusivement par le frottement des avions à réaction en haute altitude.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027effet de serre naturel est ce qui permet la vie liquide sur Terre (+15°C au lieu de -18°C). Les GES (vapeur d\u0027eau, CO2, méthane) laissent passer la lumière du Soleil mais retiennent la chaleur (rayons infrarouges) renvoyée par le sol[cite: 362]."
+                      },
+                      {
+                          "q":  "Le réchauffement climatique et l\u0027augmentation anthropique de l\u0027effet de serre ont des conséquences directes de nature médicale ou sanitaire. Lesquelles ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027augmentation des pathologies infectieuses liées au climat (expansion des vecteurs comme les moustiques vers de nouvelles zones) et les stress liés aux événements extrêmes (canicules).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La recrudescence pandémique mondiale du choléra et de la typhoïde directement causée par la fonte accélérée des neiges éternelles et des glaciers alpins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027apparition systémique de nouvelles souches de virus hivernaux résistants au gel.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La hausse des cancers du poumon causés par l\u0027ingestion d\u0027eau de mer réchauffée.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La hausse des températures modifie la cartographie des maladies à vecteurs climato-dépendants (malaria, dengue) et engendre des catastrophes climatiques majeures (canicules, sécheresses) ayant un grand impact sur la santé humaine[cite: 363]."
+                      },
+                      {
+                          "q":  "L\u0027amiante et le radon sont cités comme des agents environnementaux dont l\u0027effet différé se manifeste par quelles pathologies ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027asbestose et le mésothéliome pleural (amiante) ; et le cancer du poumon (radon radioactif domestique).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le saturnisme (amiante) et la listériose gastrique (radon).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Des réactions allergiques aiguës immédiates à type de rhinite des foins spasmodique, dermite de contact suintante et conjonctivite purulente bilatérale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027obésité infantile morbide via une modification génétique précoce.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027amiante (présente dans d\u0027anciens flocages ou canalisations) est responsable de fibroses sévères et de cancers très spécifiques (mésothéliome). Le radon est un gaz radioactif naturel émanant du sol, cancérigène pour le poumon (effets à long terme)[cite: 345]."
+                      },
+                      {
+                          "q":  "Parmi les sources des principaux polluants, à quel grand secteur de l\u0027économie est historiquement et massivement associée la production d\u0027oxydes d\u0027azote (NOx) ?",
+                          "tags":  [
+                                       "CM 7 - Environnement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Au secteur des transports (routiers en particulier, en raison de l\u0027oxydation à haute température des moteurs thermiques).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Au secteur strictement agricole et sylvicole intensif via l\u0027épandage massif de fertilisants azotés et de purin animal au printemps.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Exclusivement au chauffage urbain au bois chez les particuliers l\u0027hiver.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Au secteur de l\u0027extraction pétrolière en eau très profonde.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La réaction atmosphérique entre N2 et O2 à haute température dans les cylindres des moteurs automobiles (surtout diesel) fait du secteur routier le principal émetteur structurel d\u0027Oxydes d\u0027azote[cite: 350, 351, 368]."
+                      }
+                  ]
+}

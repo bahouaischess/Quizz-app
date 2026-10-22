@@ -1,0 +1,510 @@
+﻿{
+    "name":  "CM 3 - Facteurs comportementaux",
+    "folder":  "PASS - Santé Publique",
+    "description":  "Addictions (tabac, alcool, drogues), activité physique, sédentarité, nutrition et santé sexuelle.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Combien de substances chimiques environ compte-t-on dans la fumée de cigarette, et quel est le principal composant responsable de la dépendance ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Plus de 4 000 substances (dont de nombreux toxiques et gaz) ; la nicotine est responsable de la dépendance.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Moins de 50 substances chimiques gazeuses inoffensives ; le goudron particulaire est seul responsable de l\u0027addiction physique",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "2 500 substances ; le monoxyde de carbone crée la dépendance neurobiologique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Environ 1 000 substances ; le polonium 210 (radioactif) est responsable de l\u0027addiction.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La fumée de cigarette contient plus de 4 000 substances (issues de la combustion des 2 500 composés initiaux). La nicotine est un alcaloïde puissant entraînant une forte dépendance dès les premières expositions[cite: 503]."
+                      },
+                      {
+                          "q":  "Selon les données de 2024, comment a évolué la prévalence du tabagisme quotidien en France parmi les 18-75 ans ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle a baissé pour atteindre environ 18 %.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle a augmenté pour atteindre plus de 30 %.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle a stagné autour de 25 % depuis les années 2000.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle est devenue marginale, tombant en dessous de 5 %.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En 2024, le tabagisme quotidien a connu une baisse conséquente, atteignant environ 18% (18,2%) chez les 18-75 ans en France hexagonale[cite: 504, 505]."
+                      },
+                      {
+                          "q":  "Concernant le syndrome d\u0027alcoolisation fœtale (SAF), laquelle de ces affirmations est exacte ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La consommation d\u0027alcool pendant la grossesse est la première cause de handicap mental d\u0027origine non génétique chez l\u0027enfant.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le SAF n\u0027apparaît que si la mère consomme plus de 5 verres d\u0027alcool par jour au premier trimestre.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il n\u0027entraîne que des malformations faciales réversibles sans altérer les capacités cognitives.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il est désormais quasiment éradiqué en France car la totalité des femmes enceintes sont formées au risque dès la première consultation prénatale",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le SAF, consécutif au tabagisme passif ou à la consommation maternelle, reste la première cause de handicap mental d\u0027origine non génétique. De plus, 19% des gens pensent encore à tort qu\u0027un petit verre de vin de temps en temps est conseillé[cite: 536]."
+                      },
+                      {
+                          "q":  "Quel est le repère officiel recommandé par Santé publique France concernant la consommation d\u0027alcool ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Pas plus de 10 verres par semaine, pas plus de 2 verres par jour, et prévoir des jours sans alcool.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un verre de vin par jour maximum, sans restriction le week-end.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "14 verres par semaine pour les hommes et 7 pour les femmes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un maximum de 5 verres par occasion festive, sans dépasser 2 occasions distinctes par mois civil avec abstinence stricte entre-temps",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les repères 2019 de Santé Publique France sont clairs : pas plus de 10 verres par semaine, pas plus de 2 verres par jour, et inclure des jours sans alcool dans la semaine[cite: 540]."
+                      },
+                      {
+                          "q":  "Comment définit-on cliniquement la sédentarité, indépendamment de l\u0027activité physique ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un comportement caractérisé par une dépense énergétique inférieure à 1,6 METs en position assise ou allongée (hors sommeil).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Une pratique d\u0027activité physique sportive et dynamique inférieure à 45 minutes continues par jour ou moins de 3 séances intensives par semaine",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027absence de déplacement à pied pour se rendre sur son lieu de travail.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une dépense calorique quotidienne globale inférieure à 2000 kcal.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La sédentarité est indépendante de l\u0027inactivité physique ; elle se définit par une dépense énergétique \u003c 1,6 METs (position assise ou allongée)[cite: 545]."
+                      },
+                      {
+                          "q":  "Dans l\u0027étude du coût social des drogues (2019), quel produit licite engendre le coût social le plus élevé en France (incluant coût externe, vies perdues, etc.) ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le tabac (156 milliards d\u0027euros).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027alcool (102 milliards d\u0027euros).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les drogues illicites (plus de 200 milliards d\u0027euros).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le cannabis exclusivement (95 milliards d\u0027euros).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le coût social du tabac est de 156 milliards d\u0027euros (73 189 décès), devant l\u0027alcool (102 milliards) et très loin devant les drogues illicites (8 milliards)[cite: 542]."
+                      },
+                      {
+                          "q":  "Quelle proportion d\u0027adultes en France (18-54 ans) n\u0027atteint pas les recommandations nutritionnelles fixées à 25 g de fibres par jour ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Près de 90 % (89,7 %).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Moins de 20 %.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Environ la moitié (50 %).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La quasi-totalité les atteint grâce au Nutri-Score.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027insuffisance de fibres est massive : 89,7% des adultes de 18 à 54 ans n\u0027atteignent pas les recommandations, en lien avec une faible consommation de produits céréaliers complets et de légumes secs[cite: 556]."
+                      },
+                      {
+                          "q":  "En matière d\u0027addictions, selon les critères de la CIM-10, combien de manifestations cliniques doivent être présentes en même temps pour diagnostiquer une dépendance ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Au moins 3 manifestations (ex: syndrome de sevrage, tolérance, perte de contrôle).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Au moins 1 seule manifestation très sévère suffit.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les 6 critères doivent être obligatoirement remplis.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le diagnostic de dépendance repose obligatoirement sur un dosage toxicologique sanguin quantitatif de la substance sur 3 jours consécutifs",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pour faire le diagnostic de dépendance selon l\u0027OMS (CIM 10), il faut réunir au moins 3 manifestations (désir compulsif, perte de contrôle, sevrage, tolérance, abandon des autres intérêts, poursuite malgré la toxicité) au cours de la dernière année[cite: 501]."
+                      },
+                      {
+                          "q":  "Concernant les inégalités sociales liées au tabagisme en France, que constate-t-on statistiquement sur la période récente (2000-2023) ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un creusement de l\u0027écart : la baisse est forte chez les cadres et diplômés, mais le tabagisme reste très élevé (voire a augmenté ponctuellement) chez les chômeurs.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Une réduction parfaite des inégalités : cadres et chômeurs fument désormais dans les mêmes proportions (18%).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le tabagisme est devenu un marqueur exclusif des classes sociales les plus favorisées.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les politiques successives de hausses fiscales sur le paquet ont totalement éradiqué le tabac chez les personnes aux revenus les plus faibles",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Bien que le tabagisme global baisse, les inégalités persistent et se sont même creusées à certaines périodes : la baisse est marquée chez les plus diplômés (cadres) alors que la prévalence reste très forte chez les personnes au chômage ou à bas revenus (autour de 35% pour les chômeurs)[cite: 479, 480, 506]."
+                      },
+                      {
+                          "q":  "Quel est le risque lié à une sédentarité élevée (passer plus de 3 heures par jour en position assise) sur la mortalité ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle serait responsable de près de 3,8% de la mortalité toutes causes (chaque heure sup. au-delà de 7h augmentant le risque de 5%).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle n\u0027a aucun impact si l\u0027individu pratique 30 minutes de sport intensif par semaine.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle réduit paradoxalement le risque d\u0027AVC par limitation de la fatigue myocardique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle multiplie par trois le risque d\u0027accident cardiovasculaire majeur dès qu\u0027elle excède 2 heures d\u0027assise consécutives au poste de travail",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le temps passé assis est un facteur de risque indépendant. Plus de 3 heures/jour est responsable de 3,8% de la mortalité globale, et au-delà de 7h, chaque heure supplémentaire ajoute 5% de risque[cite: 547]."
+                      },
+                      {
+                          "q":  "Quel concept sociologique critique le fait de faire porter la responsabilité exclusive des maladies liées au comportement sur les individus, en négligeant les déterminants sociaux ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le « Blaming the victim » (culpabilisation de la victime).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027empowerment communautaire.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027universalisme proportionné.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le déterminisme génétique absolu et exclusif des conduites de dépendance",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Réduire une infection ou une blessure au simple mauvais choix de l\u0027individu (ou de ses parents) sans regarder l\u0027environnement dégradé ou la précarité relève du « Blaming the victim ». Il est crucial d\u0027intégrer les forces sociales (Blaming the society) qui pèsent sur les choix[cite: 566, 567]."
+                      },
+                      {
+                          "q":  "Par rapport aux recommandations d\u0027activité physique de l\u0027OMS, que doit faire un adulte au cours de la semaine ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Pratiquer au moins 150 minutes d\u0027activité d\u0027endurance d\u0027intensité modérée, ou 75 minutes d\u0027intensité soutenue.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Accumuler au moins 60 minutes par jour d\u0027activité intense.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Pratiquer 30 minutes de marche lente une fois par semaine.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "S\u0027inscrire obligatoirement dans une structure sportive affiliée pour un minimum garanti de 5 heures de renforcement musculaire intense par semaine",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Pour les adultes, la recommandation de l\u0027OMS est d\u0027au moins 150 minutes d\u0027intensité modérée (ou 75 minutes soutenue) par semaine. La consigne des 60 min/jour s\u0027applique aux enfants de 5 à 17 ans[cite: 553]."
+                      },
+                      {
+                          "q":  "Quelle est la part des cancers qui pourraient être évités par des changements de comportements et de modes de vie (prévention primaire) ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Environ 40 %.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Moins de 5 %.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "10 à 15 %.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Plus de 80 %.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les facteurs de risque comportementaux (tabac 19,8%, alcool 8%, alimentation 5,4%, surpoids, etc.) représentent 40% des cancers évitables, soit environ 142 000 ou 173 000 cas par an[cite: 499, 644]."
+                      },
+                      {
+                          "q":  "Quel indicateur de santé sexuelle montre une faille dans la prévention, malgré une large diffusion des contraceptifs en France ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un tiers des grossesses reste non prévu, aboutissant 6 fois sur 10 à une IVG.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Plus de 50% des jeunes n\u0027utilisent jamais de préservatif lors de leur premier rapport.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027épidémie de VIH a doublé chez les adolescents depuis 2007.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Moins de 20% des femmes de 15 à 49 ans utilisent un moyen de contraception.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Si 80% des femmes utilisent une contraception et \u003e80% des jeunes mettent un préservatif au premier rapport, on observe tout de même qu\u0027un tiers des grossesses est non prévu (menant souvent à une IVG), et que la couverture vaccinale VHB/HPV est insuffisante[cite: 560, 561]."
+                      },
+                      {
+                          "q":  "Que nous indique l\u0027étude ESTEBAN (2014-2015) sur les apports nutritionnels des Français ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les apports en sel et en acides gras saturés sont trop élevés, tandis que les apports en fibres et en oméga-3 sont trop faibles.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La consommation de produits sucrés a quasiment disparu chez les adultes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les apports en poissons gras sont largement supérieurs aux recommandations internationales.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027équilibre alimentaire s\u0027est tellement amélioré ces dix dernières années que la prévalence globale du surpoids a diminué de plus de 15 %",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027étude ESTEBAN montre des déséquilibres persistants : excès de sel (dépassé par 90% des adultes), excès d\u0027acides gras saturés, manque d\u0027oméga-3 (poissons) et manque de fibres (légumes secs, céréales complètes)[cite: 555, 556]."
+                      },
+                      {
+                          "q":  "Quelle a été la politique de la France instaurée en 1991 visant à réduire la consommation d\u0027alcool et de tabac dans les lieux collectifs et à encadrer la publicité ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La loi Évin.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La loi Veil.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le plan PNNS.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le programme Santé Sport Bien-Être (PSSBE).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La Loi Évin de 1991 a drastiquement restreint la publicité pour l\u0027alcool et le tabac et a interdit de fumer dans les lieux à usage collectif[cite: 520, 521]."
+                      },
+                      {
+                          "q":  "La consommation d\u0027alcool multiplie le risque d\u0027accident mortel de la route. À partir d\u0027un taux supérieur à 2 g/l de sang, par combien ce risque est-il approximativement multiplié ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Par 80.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Par 6.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Par 2.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Par 10.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La courbe de Freudenberg montre que le risque d\u0027accident est multiplié par 6 pour un taux entre 0,5 et 0,8 g/l, et explose en étant multiplié par 80 au-delà de 2 g/l[cite: 532, 583]."
+                      },
+                      {
+                          "q":  "Parmi les 15-24 ans, selon les données récentes (ESPAD/EnCLASS), quelle est la position de la France vis-à-vis du tabagisme quotidien à 16 ans par rapport au reste de l\u0027Europe ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle affiche l\u0027un des niveaux les plus bas d\u0027Europe, témoignant d\u0027une réduction spectaculaire sur les 10 dernières années.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle est systématiquement le pays avec le taux de tabagisme juvénile le plus élevé et alarmant de toute l\u0027Union européenne",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le taux y stagne autour de 40%, très au-dessus de la moyenne européenne.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027expérimentation du tabac à 16 ans touche 100% des lycéens français.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La France a connu une baisse très spectaculaire du tabagisme chez les jeunes de 16 ans entre 2015 et 2024, se situant désormais à des niveaux historiquement bas (autour de 3-4% en quotidien) comparativement aux autres pays européens[cite: 508, 509]."
+                      },
+                      {
+                          "q":  "Comment évolue l\u0027espérance de vie d\u0027un individu en fonction de son statut de fumeur actif ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les fumeurs actifs perdent au moins une décennie (11 à 12 ans) d\u0027espérance de vie à partir de l\u0027âge de 25 ans par rapport aux non-fumeurs.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027espérance de vie est diminuée d\u0027environ 1 à 2 ans, uniquement chez les hommes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le tabagisme régulier n\u0027altère absolument pas l\u0027espérance de vie globale si la consommation reste strictement inférieure à 10 cigarettes manufacturées par jour",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027espérance de vie est réduite de 30 ans, rendant exceptionnelle la survie au-delà de 50 ans.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les courbes de probabilité de survie montrent que, par rapport aux sujets n\u0027ayant jamais fumé, les fumeurs actifs perdent au moins une décennie d\u0027espérance de vie (11 ans pour les femmes, 12 pour les hommes)[cite: 516]."
+                      },
+                      {
+                          "q":  "Quelles sont les dimensions considérées par le « périmètre abdominal » dans l\u0027évaluation de l\u0027obésité ?",
+                          "tags":  [
+                                       "CM 3"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Il évalue l\u0027excès de masse grasse viscérale. Un risque accru apparaît si \u003e 100 cm chez l\u0027homme et \u003e 88 cm chez la femme.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Il mesure uniquement le tissu adipeux sous-cutané sans lien avec les risques de diabète.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un périmètre \u003e 110 cm est requis chez les deux sexes pour définir une obésité abdominale sévère.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il remplace totalement le calcul de l\u0027Indice de Masse Corporelle (IMC) pour le diagnostic d\u0027obésité chez tous les enfants et adolescents de moins de 18 ans",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La mesure du périmètre abdominal (\u003e100 cm H / \u003e88 cm F) est cruciale car elle cible l\u0027obésité viscérale, un type de masse grasse particulièrement corrélé au risque accru de maladies cardiovasculaires et de diabète[cite: 675]."
+                      }
+                  ]
+}

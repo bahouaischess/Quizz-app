@@ -1,0 +1,524 @@
+{
+    "name": "CM 6 - Fluides visqueux",
+    "folder": "PASS - Physique",
+    "description": "Lois des fluides réels, perte de charge, loi de Poiseuille, réseaux hydrauliques et applications hémodynamiques.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Quelle est l'origine physique de la force de viscosité dans un fluide réel ?",
+            "tags": [
+                "Viscosité",
+                "Frottements"
+            ],
+            "options": [
+                {
+                    "text": "Elle provient des frottements et transferts de quantité de mouvement entre couches fluides de vitesses distinctes et avec la paroi.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle résulte de l'interaction électrostatique coulombienne répulsive entre les dipôles moléculaires orientés par le champ d'écoulement.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle provient de la compression gravitationnelle barométrique qui augmente spontanément l'énergie interne des couches laminaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle est due à la force d'inertie centrifuge de Coriolis agissant préférentiellement sur les molécules les plus denses de la périphérie.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La viscosité est la manifestation macroscopique des collisions microscopiques entre particules : les couches rapides cèdent de la quantité de mouvement aux couches lentes, tentant d'homogénéiser les vitesses (friction fluide)[cite: 1187]."
+        },
+        {
+            "q": "Quelle est l'expression mathématique de la norme de la force de viscosité (F_vis) ?",
+            "tags": [
+                "Force de viscosité"
+            ],
+            "options": [
+                {
+                    "text": "|F_vis| = η × S × |dv/dz|",
+                    "isCorrect": true
+                },
+                {
+                    "text": "|F_vis| = 1/2 × η × S × (dv/dz)²",
+                    "isCorrect": false
+                },
+                {
+                    "text": "|F_vis| = (η × S) / |dv/dz|",
+                    "isCorrect": false
+                },
+                {
+                    "text": "|F_vis| = η × (S / z) × v²",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La force visqueuse est tangentielle aux couches de fluide. Elle est proportionnelle à la surface de contact (S) et au taux de cisaillement (dv/dz), avec η (en Pa.s) comme coefficient de viscosité propre au fluide[cite: 1187]."
+        },
+        {
+            "q": "Comment évolue la viscosité dynamique (η) avec la température pour un liquide, d'une part, et pour un gaz, d'autre part ?",
+            "tags": [
+                "Viscosité",
+                "Température"
+            ],
+            "options": [
+                {
+                    "text": "La viscosité d'un liquide diminue lorsque la température s'élève, alors que celle d'un gaz augmente avec la température.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La viscosité d'un liquide augmente sous l'effet de l'agitation thermique, alors que celle d'un gaz parfait demeure strictement constante.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La viscosité des deux états physiques diminue de façon exponentielle en raison de la dilatation volumique des liaisons interatomiques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La viscosité des liquides et des gaz augmente linéairement en proportion directe de la racine carrée de la température absolue en Kelvin.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'agitation thermique (chaleur) casse les liaisons intermoléculaires faibles dans un liquide, le rendant plus fluide (η diminue). À l'inverse, dans un gaz, chauffer augmente l'agitation et donc la fréquence des collisions, rendant le gaz plus « freiné » (η augmente)[cite: 1187]."
+        },
+        {
+            "q": "Quel type de profil de vitesse caractérise un écoulement laminaire de fluide visqueux dans un tube cylindrique ?",
+            "tags": [
+                "Profil de vitesse"
+            ],
+            "options": [
+                {
+                    "text": "Un profil parabolique axisymétrique, avec vitesse nulle à la paroi et vitesse maximale sur l'axe central.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un profil rectangulaire parfaitement homogène où toutes les lignes de courant avancent à la même vitesse critique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un profil hyperbolique inversé caractérisé par un cisaillement maximal et une vitesse d'écoulement maximale aux parois.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un profil logarithmique turbulent asymétrique présentant des tourbillons stationnaires au voisinage de la couche limite.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans un fluide visqueux, les forces de frottement contre la paroi annulent la vitesse du fluide à la surface de contact (v=0). La vitesse augmente au fur et à mesure qu'on s'approche de l'axe central (v=v_max), créant une parabole[cite: 1189, 1190]."
+        },
+        {
+            "q": "Pour un écoulement visqueux à profil parabolique dans un tuyau, quel est le rapport entre la vitesse moyenne (v_bar) et la vitesse maximale centrale (v_max) ?",
+            "tags": [
+                "Vitesse",
+                "Écoulement"
+            ],
+            "options": [
+                {
+                    "text": "La vitesse moyenne correspond exactement à la moitié de la vitesse maximale : v_bar = v_max / 2.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La vitesse moyenne est rigoureusement identique à la vitesse maximale axiale : v_bar = v_max.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La vitesse moyenne est égale au tiers de la vitesse maximale : v_bar = v_max / 3.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La vitesse moyenne vaut deux tiers de la vitesse centrale maximale : v_bar = 2/3 v_max.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'intégration du profil parabolique v(r) = v_max [1 - (r/a)²] sur toute la section du tube démontre mathématiquement que la vitesse d'écoulement moyenne vaut la moitié de la vitesse au centre[cite: 1190]."
+        },
+        {
+            "q": "Qu'est-ce qu'une « perte de charge » (Δp) en hydrodynamique ?",
+            "tags": [
+                "Perte de charge"
+            ],
+            "options": [
+                {
+                    "text": "La chute de pression irréversible provoquée par la dissipation d'énergie mécanique en chaleur sous l'effet des frottements visqueux.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La baisse réversible de pression statique observée lors d'un rétrécissement de section par conversion d'énergie en vitesse (effet Venturi).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La perte nette de débit massique à travers un tube semi-perméable consécutive à l'établissement d'une pression osmotique transmembranaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La variation brutale d'énergie potentielle gravitationnelle observée au passage d'une bifurcation artérielle asymétrique en régime turbulent.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'énergie dissipée par les frottements (inter-couches et sur la paroi) est irrécupérable (le liquide chauffe légèrement). Pour que le liquide avance malgré ces frottements, l'énergie initiale doit être supérieure : la pression en amont est donc plus forte qu'en aval[cite: 1191, 1193]."
+        },
+        {
+            "q": "Que stipule la loi de Poiseuille ?",
+            "tags": [
+                "Poiseuille"
+            ],
+            "options": [
+                {
+                    "text": "La perte de charge Δp est directement proportionnelle au débit volumique Q par la résistance hydraulique : Δp = R × Q.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La résistance hydraulique d'un conduit cylindrique décroît de façon linéaire avec la longueur axiale du vaisseau : R = k / L.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La pression dynamique d'un liquide newtonien augmente proportionnellement au cube de la vitesse moyenne d'écoulement.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le débit volumique total s'annule dès que le nombre sans dimension de Reynolds dépasse le seuil critique d'instabilité laminaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La loi de Poiseuille quantifie la chute de pression due aux frottements. Pour faire circuler un débit Q à travers un tuyau opposant une résistance R, il faut fournir une différence de pression Δp. C'est l'exact équivalent de la loi d'Ohm en électricité (ΔV = R × i)[cite: 1192]."
+        },
+        {
+            "q": "Comment exprime-t-on la résistance hydraulique (R) d'un tube cylindrique de rayon a et de longueur L selon la loi de Poiseuille ?",
+            "tags": [
+                "Résistance hydraulique",
+                "Formule"
+            ],
+            "options": [
+                {
+                    "text": "R = (8 × η × L) / (π × a⁴)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "R = (π × a⁴) / (8 × η × L)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "R = (8 × η × L²) / (π × a²)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "R = (4 × η × L) / (π × a³)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La résistance hydraulique croît avec la viscosité (η) et la longueur du tuyau (L). De façon cruciale, elle est inversement proportionnelle à la puissance 4 du rayon (1/a⁴), ce qui signifie qu'un léger rétrécissement augmente colossalement la résistance[cite: 1192]."
+        },
+        {
+            "q": "Comment la viscosité sanguine (η) évolue-t-elle par rapport à l'hématocrite ?",
+            "tags": [
+                "Viscosité",
+                "Sang"
+            ],
+            "options": [
+                {
+                    "text": "Elle augmente de façon exponentielle au fur et à mesure que la fraction volumique cellulaire d'hématocrite s'élève.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle demeure rigoureusement constante à 1 mPa.s en raison des propriétés newtoniennes idéales du solvant plasmatique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle diminue significativement lorsque l'hématocrite dépasse 50% grâce à l'alignement rhéologique des leucocytes circulants.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle dépend exclusivement de la concentration en fibrinogène et en plaquettes, indépendamment du contingent d'érythrocytes.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le sang n'est pas de l'eau claire ; c'est une suspension riche en cellules. À un hématocrite normal (~45%), la viscosité du sang est environ 3 à 4 fois supérieure à celle du plasma pur. Si l'hématocrite augmente (polycythémie), le sang devient très visqueux[cite: 1188]."
+        },
+        {
+            "q": "Comment calcule-t-on la puissance mécanique dissipée sous forme de chaleur (P_diss) par les frottements visqueux d'un liquide ?",
+            "tags": [
+                "Puissance",
+                "Dissipation"
+            ],
+            "options": [
+                {
+                    "text": "P_diss = Δp × Q = R × Q²",
+                    "isCorrect": true
+                },
+                {
+                    "text": "P_diss = Δp / Q = R / Q²",
+                    "isCorrect": false
+                },
+                {
+                    "text": "P_diss = 1/2 × ρ × Q² × L",
+                    "isCorrect": false
+                },
+                {
+                    "text": "P_diss = R² × Q × Δp",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La puissance (énergie par temps) dissipée est le produit de la perte de charge (l'énergie volumique perdue) par le débit. Comme Δp = RQ, on trouve R×Q², ce qui est la stricte analogie de la puissance dissipée par effet Joule électrique (P = R×i²)[cite: 1193]."
+        },
+        {
+            "q": "Dans la version modifiée du théorème de Bernoulli pour les fluides réels visqueux, comment prend-on en compte la perte de charge (Δp) ?",
+            "tags": [
+                "Bernoulli",
+                "Fluide réel"
+            ],
+            "options": [
+                {
+                    "text": "L'énergie mécanique en amont est égale à l'énergie mécanique restante en aval additionnée de la perte de charge : E_amont = E_aval + Δp.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La charge totale en amont est soustraite de la perte de charge pour égaliser la densité d'énergie cinétique aval : E_amont - Δp = 0.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "On remplace purement et simplement le terme de pression dynamique (1/2 ρv²) par le terme de frottement de Poiseuille dans l'équation aval.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'équation de Bernoulli devient inapplicable aux fluides réels et doit être remplacée par le principe de Pascal de l'hydrostatique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'équation devient : p_1 + 1/2 ρv_1² + ρgz_1 = Δp + p_2 + 1/2 ρv_2² + ρgz_2. Une partie de la « charge » initiale a été consommée sur le trajet pour vaincre la viscosité[cite: 1193]."
+        },
+        {
+            "q": "Comment calcule-t-on la résistance équivalente (R_eq) de plusieurs tuyaux montés en série ?",
+            "tags": [
+                "Réseau hydraulique",
+                "Série"
+            ],
+            "options": [
+                {
+                    "text": "R_eq = Σ R_i (somme directe des résistances)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "1/R_eq = Σ (1/R_i) (somme des inverses)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "R_eq = (Π R_i) / (Σ R_i)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "R_eq = (R_1 × R_2) / (R_1 + R_2)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "En série, le débit (Q) est le même partout, et les pertes de charges s'additionnent. Donc Δp_totale = (R1 + R2 + ...) × Q, ce qui donne R_eq = R1 + R2 + ...[cite: 1196]."
+        },
+        {
+            "q": "Comment calcule-t-on la résistance équivalente (R_eq) de plusieurs tuyaux montés en parallèle ?",
+            "tags": [
+                "Réseau hydraulique",
+                "Parallèle"
+            ],
+            "options": [
+                {
+                    "text": "1/R_eq = Σ (1/R_i) (les conductances s'additionnent)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "R_eq = Σ R_i (somme algébrique des résistances)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "R_eq = (Σ R_i) / N² (moyenne arithmétique)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "R_eq = Max(R_i) - Min(R_i) (écart de charge)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "En parallèle, la perte de charge (Δp) est identique aux bornes de chaque branche, mais les débits s'additionnent (Q_tot = Q1 + Q2...). Cela donne 1/R_eq = 1/R1 + 1/R2 + ... Cette mise en parallèle permet de diminuer drastiquement la résistance globale[cite: 1196]."
+        },
+        {
+            "q": "Un capillaire sanguin a un rayon minuscule, ce qui lui confère une résistance hydraulique individuelle gigantesque. Pourquoi le sang ne se bloque-t-il pas à ce niveau ?",
+            "tags": [
+                "Hémodynamique",
+                "Parallélisme"
+            ],
+            "options": [
+                {
+                    "text": "L'organisation de milliards de capillaires en parallèle divise la résistance hydraulique globale : R_eq = R_capillaire / N.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La viscosité dynamique du sang s'annule totalement dans les microvaisseaux par déplétion enzymatique complète du plasma.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La pression systolique ventriculaire est démultipliée par effet de levier hydraulique juste avant l'abouchement capillaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La dépression créée par l'effet Venturi dans les veinules post-capillaires aspire le sang à travers les sphincters pré-capillaires.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le rapport de résistance entre l'aorte et UN seul capillaire est d'environ 10¹². C'est infranchissable. Mais comme il y a environ 5 milliards de capillaires en parallèle, la résistance équivalente du lit capillaire est divisée par ce nombre, rendant la perte de charge globale faible (~10% de la perte de charge systémique)[cite: 1201, 1202]."
+        },
+        {
+            "q": "Si un vaisseau sanguin se sépare en deux branches dérivées (en parallèle) de rayons identiques mais de longueurs différentes (L1 = 2 × L2), comment se répartit le débit d'entrée Q ?",
+            "tags": [
+                "Dérivation",
+                "Calcul"
+            ],
+            "options": [
+                {
+                    "text": "La branche la plus courte L2 reçoit 2/3 du débit et la branche la plus longue L1 reçoit 1/3 du débit.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le débit se partage équitablement à parts égales (Q/2 dans chaque branche) en vertu du principe de continuité volumique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La branche L1 reçoit 4/5 du débit total en raison de l'accumulation d'énergie cinétique le long de sa plus grande longueur.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La totalité du flux s'engouffre dans L2, la branche L1 subissant une stase complète par oblitération de la pression motrice.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les résistances dépendent de L (R = 8ηL/πa⁴). Donc R1 = 2 × R2. En parallèle, les Δp sont égaux, donc R1×Q1 = R2×Q2. On a Q1 = (R2/R1)×Q2 = 1/2 Q2. Sachant que Q_total = Q1 + Q2, on trouve Q1 = Q/3 et Q2 = 2Q/3[cite: 1198]."
+        },
+        {
+            "q": "Comment définir la « compliance » vasculaire (C) d'une artère ?",
+            "tags": [
+                "Hémodynamique",
+                "Compliance"
+            ],
+            "options": [
+                {
+                    "text": "La variation de volume sanguin admise par unité de variation de pression trans吐ale : C = dV/dp.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La contrainte de cisaillement tangentielle maximale supportée par l'endothélium avant rupture intimale : C = dF/dS.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le coefficient sans dimension mesurant le rapport entre la vitesse de l'onde de pouls et le débit moyen aortique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La résistance hydraulique intrinsèque opposée par la média musculo-élastique à l'onde de pression systolique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les artères se dilatent lors de la systole cardiaque (hausse de pression) et se rétractent en diastole, jouant un rôle de réservoir de pression. Cette capacité à se distendre est la compliance (C = dV/dp)[cite: 1203]."
+        },
+        {
+            "q": "Par analogie électrique, comment peut-on modéliser l'évolution temporelle de la tension artérielle lors d'un cycle cardiaque (systole/diastole) ?",
+            "tags": [
+                "Modélisation",
+                "Hémodynamique"
+            ],
+            "options": [
+                {
+                    "text": "Par un circuit RC de Windkessel où la compliance artérielle agit comme un condensateur et la résistance périphérique comme une résistance.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Par un circuit RL série pur où l'inertie de la masse sanguine joue le rôle exclusif d'une bobine d'induction sans capacité de stockage.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par un montage diviseur de tension purement ohmique ne présentant aucune constante de temps ni décroissance diastolique exponentielle.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par un oscillateur LC non amorti maintenant une pression moyenne strictement sinusoïdale au niveau des réseaux microcirculatoires.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'aorte absorbe une partie du volume sanguin éjecté et de la pression (charge du condensateur) pendant la systole, puis restitue ce volume et cette pression doucement pendant la diastole (décharge). Cela permet d'avoir un flux continu dans les capillaires et une décroissance exponentielle de la pression[cite: 1204]."
+        },
+        {
+            "q": "Si l'on pose une perfusion au bras d'un patient et qu'on cherche la hauteur (h) minimale du flacon pour que le liquide entre dans la veine, contre quelle pression principale doit-on lutter ?",
+            "tags": [
+                "Perfusion",
+                "Bernoulli"
+            ],
+            "options": [
+                {
+                    "text": "Contre la pression veineuse locale (Tv) et la perte de charge visqueuse dans la tubulure et le cathéter : ρgh ≥ Tv + R×Q.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Exclusivement contre la pression barométrique atmosphérique extérieure régnant à la surface libre du flacon de perfusion.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Contre la tension élastique de compliance de l'aorte thoracique transmise par rétro-propagation de l'onde de choc systolique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Contre la force électrostatique répulsive exercée par les hématies chargées négativement sur le soluté de perfusion.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Pour qu'un liquide rentre, la pression d'entrée (amenée par la gravité ρgh) doit vaincre la pression de la veine (Patm + Tv) PLUS vaincre la perte d'énergie due à la viscosité dans le très fin tuyau de l'aiguille (Δp = R×Q). La formule devient h ≥ (Tv + RQ) / (ρg)[cite: 1199]."
+        },
+        {
+            "q": "Où se produit la majorité de la perte de charge (chute de pression) systémique dans le circuit cardiovasculaire humain ?",
+            "tags": [
+                "Hémodynamique",
+                "Perte de charge"
+            ],
+            "options": [
+                {
+                    "text": "Dans les artérioles précapillaires (environ 60% de la résistance vasculaire systémique totale).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dans la crosse de l'aorte et les troncs supra-aortiques par frottement turbulent sur les parois élastiques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Dans le système des veines caves et de l'oreillette droite en raison de leur volume de stockage massif.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Dans les cavités ventriculaires pendant la phase de contraction isovolumétrique du myocarde.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les artérioles possèdent une forte couche musculaire lisse, sont très étroites et constituent le principal site de régulation de la résistance vasculaire périphérique. La pression artérielle (environ 100 mmHg) y chute brutalement avant l'entrée dans les capillaires (à 40 mmHg)[cite: 1201]."
+        },
+        {
+            "q": "Dans la circulation pulmonaire lors de la ventilation, quelle force (mécanique) assure le débit d'air visqueux contre les pertes de Poiseuille pour permettre l'inspiration ?",
+            "tags": [
+                "Ventilation",
+                "Pression"
+            ],
+            "options": [
+                {
+                    "text": "La dépression alvéolaire générée par l'expansion de la cage thoracique et l'abaissement du diaphragme (P_alvéolaire < P_atm).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La contraction spontanée des cellules musculaires lisses bronchiques qui comprime le volume résiduel pour créer un appel de vide.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'échauffement thermique brutal de l'air inspiré qui dilate son volume spécifique conformément à la loi de Charles des gaz parfaits.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La force motrice osmotique induite par la vaporisation de l'eau du mucus à la surface de l'épithélium respiratoire pseudostratifié.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'air est un fluide visqueux. Pour le faire circuler, il faut créer une différence de pression (Δp) qui compensera les frottements (RQ). L'action des muscles respiratoires abaisse la pression intra-alvéolaire sous la pression atmosphérique, d'où l'appel d'air (inspiration)[cite: 1205]."
+        }
+    ]
+}

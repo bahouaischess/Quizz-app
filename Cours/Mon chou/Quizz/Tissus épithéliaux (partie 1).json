@@ -1,0 +1,504 @@
+{
+    "name": "UE5 : Tissus épithéliaux (Partie 1)",
+    "folder": "Histologie",
+    "description": "Épithéliums de revêtement : généralités, membrane basale, polarité, classification, jonctions cellulaires et spécialisations apicales/basales.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Concernant les épithéliums en général, quelle proposition est exacte ?",
+            "tags": [
+                "Généralités"
+            ],
+            "options": [
+                {
+                    "text": "Ils ne sont pas vascularisés",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ils sont richement vascularisés par des capillaires intra-épithéliaux",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ils sont séparés du tissu conjonctif par une lame réticulaire uniquement",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Leurs cellules sont séparées les unes des autres par de la matrice extracellulaire",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Un épithélium est un ensemble de cellules juxtaposées, solidarisées par des jonctions et séparées du tissu conjonctif par une membrane basale (lame basale + lame réticulaire). Il n'est pas vascularisé : sa nutrition dépend du tissu conjonctif sous-jacent, à travers la membrane basale. Les cellules étant jointives, il n'y a pas de MEC abondante entre elles."
+        },
+        {
+            "q": "Quelles associations sont exactes concernant les épithéliums de revêtement ?",
+            "tags": [
+                "Généralités"
+            ],
+            "options": [
+                {
+                    "text": "Épithélium tapissant les cavités internes de l'organisme = mésothélium",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Épithélium recouvrant la surface interne des structures vasculaires = endothélium",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Épithélium tapissant les cavités séreuses internes et péricardiques = endothélium d'origine mésodermique",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Épithélium des unités fonctionnelles sécrétrices des glandes exocrines tubulo-alvéolaires = mésothélium",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Mésothélium = revêtement des cavités internes (séreuses) ; endothélium = revêtement interne des vaisseaux. Les deux dernières propositions inversent ces définitions ou confondent avec l'épithélium glandulaire, qui constitue les unités fonctionnelles des glandes."
+        },
+        {
+            "q": "La membrane basale est formée de deux composantes. Lesquelles ?",
+            "tags": [
+                "Généralités"
+            ],
+            "options": [
+                {
+                    "text": "La lame basale et la lame réticulaire",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La lamina lucida et la lamina densa",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La lame basale et la lamina rara",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La lame réticulaire et le tissu conjonctif lâche",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Piège classique d'emboîtement : membrane basale = lame basale + lame réticulaire. C'est la lame basale qui est elle-même composée de deux couches, la lamina lucida (ou rara) et la lamina densa. La lamina rara est donc un synonyme de lamina lucida, pas une troisième couche."
+        },
+        {
+            "q": "Concernant l'origine et la composition des composantes de la membrane basale :",
+            "tags": [
+                "Généralités"
+            ],
+            "options": [
+                {
+                    "text": "La lame basale est sécrétée par les cellules épithéliales et contient du collagène de type IV",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La lame réticulaire est sécrétée par les fibroblastes et contient du collagène de type III",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La lame basale est entièrement sécrétée par les fibroblastes résidents du tissu conjonctif sous-jacent",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La lame réticulaire contient du collagène de type IV associé à un réseau dense de laminine et de fibronectine",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Deux origines distinctes : la lame basale est un feuillet de glycoprotéines sécrété par les cellules épithéliales (protéoglycanes, collagène IV, fibronectine, laminine) ; la lame réticulaire est du matériel extracellulaire sécrété par les fibroblastes et contient des fibres de collagène III. Ne pas intervertir les types de collagène (IV = basale, III = réticulaire)."
+        },
+        {
+            "q": "Quelles sont les conséquences de la polarité épithéliale ?",
+            "tags": [
+                "Généralités"
+            ],
+            "options": [
+                {
+                    "text": "Le noyau est habituellement proche du pôle basal",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les spécialisations (microvillosités, cils) sont apicales",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les jonctions étanches séparent les domaines membranaires apical et basolatéral",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les vésicules de sécrétion et de transport s'accumulent préférentiellement au niveau du pôle basolatéral",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Noyau basal, spécialisations et vésicules de sécrétion apicales : c'est la signature morphologique de la polarité. Les jonctions serrées, latérales et proches de l'apex, cloisonnent la membrane en deux compartiments, apical et basolatéral, de compositions protéiques différentes."
+        },
+        {
+            "q": "Concernant la classification usuelle des épithéliums de revêtement :",
+            "tags": [
+                "Classification"
+            ],
+            "options": [
+                {
+                    "text": "Elle repose sur la forme des cellules et sur le nombre de couches cellulaires",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un épithélium dont les cellules sont plus larges que hautes est dit pavimenteux",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un épithélium dont les cellules sont plus hautes que larges est dit cubique",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle est purement descriptive et reste limitée sur le plan fonctionnel",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La case « pseudo-stratifié pavimenteux » est la plus fréquente dans l'organisme",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Pavimenteux : largeur > hauteur. Cubique : largeur = hauteur. Cylindrique ou prismatique : largeur < hauteur, donc la troisième proposition décrit un épithélium cylindrique. Dans le tableau croisé du cours, les cases pseudo-stratifié pavimenteux et pseudo-stratifié cubique sont grisées, c'est-à-dire inexistantes : le pseudo-stratifié n'existe qu'en cylindrique (ex. épithélium respiratoire)."
+        },
+        {
+            "q": "Un épithélium pseudo-stratifié comporte plusieurs couches de cellules superposées.",
+            "tags": [
+                "Classification"
+            ],
+            "options": [
+                {
+                    "text": "Faux",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Vrai",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Faux : il ne comporte qu'une seule couche de cellules cylindriques, mais les noyaux sont répartis sur toute la hauteur de l'épithélium, ce qui donne l'illusion de plusieurs couches. Le critère décisif est que toutes les cellules gardent un contact avec la lame basale. Sa fonction est d'ailleurs similaire à celle des épithéliums simples."
+        },
+        {
+            "q": "Concernant les épithéliums stratifiés :",
+            "tags": [
+                "Classification"
+            ],
+            "options": [
+                {
+                    "text": "La forme des cellules de la couche superficielle définit celle de l'épithélium",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La couche basale contient les cellules souches",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ils sont surtout impliqués dans la protection",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Deux couches cellulaires superposées suffisent à définir formellement un épithélium pluristratifié",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Deux couches = bistratifié ; plus de deux couches = pluristratifié. On distingue toujours une couche basale (cellules souches, au contact de la lame basale) et une couche superficielle, dont la forme cellulaire donne son nom à l'épithélium. Leur pluricouche les destine surtout à la protection, contrairement aux épithéliums simples, peu résistants, plutôt dédiés à la sécrétion et à l'absorption."
+        },
+        {
+            "q": "Comment se fait le renouvellement des cellules épithéliales ?",
+            "tags": [
+                "Classification"
+            ],
+            "options": [
+                {
+                    "text": "Dans un épithélium simple, par division d'une cellule voisine, toutes conservant leur mitose",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dans un épithélium stratifié, par des cellules souches situées au contact de la lame basale",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dans un épithélium stratifié, exclusivement par des cellules souches situées dans la couche superficielle",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le renouvellement est un phénomène exceptionnel dans l'organisme, strictement réservé aux plaies tissulaires",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les épithéliums sont renouvelés en permanence, car les cellules sénescentes se détachent (desquamation) ou meurent par apoptose. Dans un épithélium simple, toute cellule peut se diviser ; dans un épithélium stratifié, seules les cellules souches de la couche basale assurent ce renouvellement."
+        },
+        {
+            "q": "Concernant les jonctions serrées (zonula occludens) :",
+            "tags": [
+                "Jonctions cellulaires"
+            ],
+            "options": [
+                {
+                    "text": "Elles forment une ceinture péricellulaire proche du pôle apical",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Leur degré d'étanchéité dépend du nombre de rangées de crêtes jonctionnelles",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elles limitent la diffusion des protéines entre domaines apical et basolatéral",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elles relient directement les réseaux de filaments intermédiaires de cytokératine de deux cellules adjacentes",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les jonctions serrées sont des accolements des membranes plasmiques de cellules adjacentes, d'aspect linéaire (crêtes jonctionnelles). Elles scellent l'espace intercellulaire et cloisonnent la membrane. Ce sont les jonctions d'ancrage, et non les jonctions serrées, qui relient les cytosquelettes : les desmosomes pour les filaments intermédiaires."
+        },
+        {
+            "q": "Quelles protéines transmembranaires participent à la « fusion » membranaire des jonctions serrées ?",
+            "tags": [
+                "Jonctions cellulaires"
+            ],
+            "options": [
+                {
+                    "text": "Claudine, occludine et JAM",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Cadhérines et caténines",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Intégrines et taline",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Desmogléine et desmocolline",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Claudine, occludine et JAM (junctional adhesion molecule) s'enchevêtrent entre cellules adjacentes. Les protéines de la famille Zona Occludens (ZO1, ZO2, ZO3) les relient au réseau de filaments d'actine. Les cadhérines appartiennent aux jonctions adhérentes et desmosomes, les intégrines aux jonctions cellule-MEC."
+        },
+        {
+            "q": "Complétez le tableau des jonctions d'ancrage : quelle association est exacte ?",
+            "tags": [
+                "Jonctions cellulaires"
+            ],
+            "options": [
+                {
+                    "text": "Filaments intermédiaires + contact cellule-MEC = hémidesmosomes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Actine + contact cellule-cellule = jonctions adhérentes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Actine + contact cellule-MEC = desmosomes",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Filaments intermédiaires + contact cellule-cellule = contacts focaux",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Double entrée à mémoriser. Actine : jonctions adhérentes (cellule-cellule) et contacts focaux (cellule-MEC). Filaments intermédiaires : desmosomes (cellule-cellule) et hémidesmosomes (cellule-MEC). Les deux dernières propositions croisent les cases."
+        },
+        {
+            "q": "Concernant l'ultrastructure de la zonula adherens :",
+            "tags": [
+                "Jonctions cellulaires"
+            ],
+            "options": [
+                {
+                    "text": "Les protéines d'ancrage sont des cadhérines dont la liaison dépend du Ca++",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les protéines de liaison sont l'α-caténine, la β-caténine et la vinculine",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les filaments d'actine sont reliés entre eux par l'α-actinine",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les protéines d'ancrage sont des intégrines transmembranaires liées aux protéines structurales de la MEC",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La jonction adhérente suit l'organisation commune en trois parties : filaments d'actine (solidarisés par l'α-actinine), protéines de liaison cytoplasmiques (α- et β-caténine, vinculine) et protéines d'ancrage transmembranaires de la famille des cadhérines, calcium-dépendantes. Les intégrines caractérisent les jonctions cellule-MEC (contacts focaux, hémidesmosomes)."
+        },
+        {
+            "q": "Les contacts focaux relient :",
+            "tags": [
+                "Jonctions cellulaires"
+            ],
+            "options": [
+                {
+                    "text": "Les filaments d'actine intracellulaires à la MEC de la lame basale, via les intégrines",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les filaments de cytokératine à la MEC, via les intégrines alpha6-bêta4 et l'antigène BPAG2 de la lame dense",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les filaments d'actine intracellulaires de deux cellules adjacentes, par l'intermédiaire des cadhérines classiques",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les compartiments cytoplasmiques de deux cellules épithéliales adjacentes, via l'alignement de connexons",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Contacts focaux : actine → α-actinine, vinculine et taline → intégrines → protéines de la MEC. La deuxième proposition décrit les hémidesmosomes, la troisième les jonctions adhérentes, la quatrième les jonctions communicantes."
+        },
+        {
+            "q": "Quelles protéines appartiennent au desmosome (macula adherens) ?",
+            "tags": [
+                "Jonctions cellulaires"
+            ],
+            "options": [
+                {
+                    "text": "Desmoplakine et plakoglobine, dans la plaque intracytoplasmique",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Desmogléine et desmocolline, cadhérines dites desmosomales",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Plectine et BPAG1e, composants de la plaque intracytoplasmique dense",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Occludine et claudine-1, ancrées au réseau d'actine filamenteuse",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le desmosome relie les filaments intermédiaires de cytokératine de deux cellules adjacentes : plaque discoïde dense aux électrons (desmoplakine, plakoglobine) et cadhérines desmosomales (desmogléine, desmocolline). Plectine et BPAG1e sont les protéines de la plaque des hémidesmosomes : le piège tient à la ressemblance structurale entre les deux jonctions."
+        },
+        {
+            "q": "Le complexe de jonction, du pôle apical vers le pôle basal, est constitué dans l'ordre de :",
+            "tags": [
+                "Jonctions cellulaires"
+            ],
+            "options": [
+                {
+                    "text": "Jonction serrée, puis zonula adherens, puis desmosome",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Zonula adherens, puis jonction serrée, puis desmosome",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Desmosome, puis jonction serrée, puis zonula adherens",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Jonction serrée, puis desmosome, puis hémidesmosome",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Ordre apico-basal : zonula occludens, zonula adherens, macula adherens (desmosome). Ce complexe se trouve au pôle apical des cellules cubiques ou cylindriques (ex. épithélium intestinal) et maintient l'intégrité structurale et fonctionnelle de l'épithélium. L'hémidesmosome, jonction cellule-MEC, n'en fait pas partie."
+        },
+        {
+            "q": "Concernant les jonctions communicantes (gap junctions) :",
+            "tags": [
+                "Jonctions cellulaires"
+            ],
+            "options": [
+                {
+                    "text": "Un connexon est formé de 6 connexines organisées autour d'un pore central",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elles laissent passer des molécules de petite taille (< 1,5 kDa)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un connexon est dit homomérique s'il est formé de 6 connexines identiques",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un canal intercellulaire est dit homomérique s'il résulte de l'assemblage de 2 connexons rigoureusement identiques",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Attention au vocabulaire à deux étages : homomérique / hétéromérique qualifie le connexon selon ses connexines ; homotypique / hétérotypique qualifie le canal selon ses deux connexons. Les connexines sont des protéines à 4 passages transmembranaires, plus de 20 types différents selon les tissus."
+        },
+        {
+            "q": "Concernant les microvillosités et les stéréocils :",
+            "tags": [
+                "Spécialisations"
+            ],
+            "options": [
+                {
+                    "text": "Ce sont des spécialisations apicales non mobiles",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Leur forme est maintenue par un squelette d'actine solidarisé par la fimbrine",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les stéréocils sont des cils particulièrement longs et mobiles",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Leur axonème comporte 9 doublets externes et 1 doublet central de microtubules",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Piège majeur du chapitre : malgré leur nom, les stéréocils ne sont pas des cils, ce sont de très longues microvillosités non mobiles. Les microvillosités reposent sur un squelette d'actine (fimbrine), avec une zone apicale amorphe sans cytosquelette ; seuls les cils possèdent un axonème de microtubules en 9 + 2. Les microvillosités peuvent augmenter la surface de contact jusqu'à 30 fois, avec jusqu'à 3 000 microvillosités par cellule dans l'intestin grêle."
+        },
+        {
+            "q": "Associez chaque spécialisation à sa caractéristique. Quelle proposition est exacte ?",
+            "tags": [
+                "Spécialisations"
+            ],
+            "options": [
+                {
+                    "text": "Replis basolatéraux : invaginations basales riches en mitochondries pour le transport d'ions",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Plaques membranaires : épaississements apicaux riches en cérébrosides, propres à l'urothélium",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Plateau strié : microvillosités nombreuses et régulières",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Replis basolatéraux : spécialisations exclusivement apicales totalement dépourvues d'organites, propres aux voies respiratoires",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les replis basolatéraux sont basaux (ex. tubule rénal) et riches en mitochondries, car le transport actif d'ions est coûteux en ATP. Les plaques membranaires sont apicales, spécifiques de l'épithélium vésical : elles protègent de la toxicité de l'urine et, avec les vésicules fusiformes (réserve de membrane), permettent l'extension de la vessie. Le plateau strié correspond à des microvillosités nombreuses et régulières, par opposition aux microvillosités simples, courtes et irrégulières."
+        },
+        {
+            "q": "Concernant l'ultrastructure des cils :",
+            "tags": [
+                "Spécialisations"
+            ],
+            "options": [
+                {
+                    "text": "L'axonème comporte 9 doublets externes et 1 doublet central de microtubules",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le corpuscule basal comporte 9 triplets externes de microtubules",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les bras de dynéine jouent le rôle de moteur moléculaire à l'origine du mouvement",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le cil complet est exclusivement constitué de deux parties distinctes : l'axonème moteur et la racine ciliaire",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "En coupe longitudinale, on distingue trois parties et non deux : le cil contenant l'axonème, le corpuscule basal et la racine ciliaire. Les bras de dynéine, disposés le long des microtubules, entraînent leur déplacement, d'où les mouvements actifs des cils (déplacement du mucus dans l'épithélium respiratoire, migration de l'ovocyte dans la trompe de Fallope)."
+        }
+    ]
+}

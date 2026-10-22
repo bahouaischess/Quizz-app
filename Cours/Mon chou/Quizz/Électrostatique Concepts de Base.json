@@ -1,0 +1,517 @@
+{
+    "name": "CM 2 - Électrostatique : Concepts de Base",
+    "folder": "PASS - Physique",
+    "description": "Champs de force, loi de Coulomb, champ électrique, lignes de champ, énergie potentielle électrique et potentiel électrique.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "En physique, qu'est-ce qu'un « champ de force » (introduit par Faraday) ?",
+            "tags": [
+                "Champ de force"
+            ],
+            "options": [
+                {
+                    "text": "Une grandeur vectorielle définie en chaque point de l'espace décrivant la force subie par unité de masse ou de charge test.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une enveloppe équipotentielle fermée à l'intérieur de laquelle toute force électromagnétique s'annule par compensation quantique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un vecteur sans dimension traduisant l'accélération instantanée transmise à vitesse infinie à travers le vide relativiste.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La densité volumique d'énergie cinétique microscopique échangée par conduction thermique au voisinage des électrodes.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Faraday a introduit l'idée que les sources modifient l'espace environnant en créant un champ. Le champ (g ou E) donne l'intensité et la direction de la force qu'une charge ou une masse « test » subirait si elle était placée à cet endroit[cite: 1267, 1268]."
+        },
+        {
+            "q": "Comment calcule-t-on le champ gravitationnel lointain (g) créé par une masse source (M) à une distance (r) ?",
+            "tags": [
+                "Champ gravitationnel"
+            ],
+            "options": [
+                {
+                    "text": "||g(r)|| = G × M / r²",
+                    "isCorrect": true
+                },
+                {
+                    "text": "||g(r)|| = G × M / r",
+                    "isCorrect": false
+                },
+                {
+                    "text": "||g(r)|| = G × M² / r³",
+                    "isCorrect": false
+                },
+                {
+                    "text": "||g(r)|| = G × r² / M",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "À grande distance d'une masse source M (r ≫ R_Terre), le champ gravitationnel (ou accélération de la pesanteur) s'affaiblit avec le carré de la distance : |g(r)| = GM/r²[cite: 1267]."
+        },
+        {
+            "q": "Comment détermine-t-on l'orientation du vecteur champ électrique (E) créé par une charge ponctuelle isolée (Q) ?",
+            "tags": [
+                "Champ électrique"
+            ],
+            "options": [
+                {
+                    "text": "Radial et sortant si Q > 0 (fuit la charge), radial et entrant si Q < 0 (pointe vers la charge).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Orthogonal au rayon vecteur, décrivant des lignes de champ circulaires concentriques fermées.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Toujours orienté vers le centre de la charge source (attractif pur), quelle que soit sa polarité.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Aligné obligatoirement selon l'axe nord-sud géomagnétique local par induction dipolaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le champ E indique la force que subirait une charge test *positive*. Si Q est positif, la charge test est repoussée (vecteur sortant). Si Q est négatif, la charge test est attirée (vecteur entrant)[cite: 1268]."
+        },
+        {
+            "q": "Quelle est l'expression mathématique de la norme du champ électrique (E) créé par une charge ponctuelle (Q) à une distance (r) dans un milieu de permittivité (ε) ?",
+            "tags": [
+                "Champ électrique",
+                "Formule"
+            ],
+            "options": [
+                {
+                    "text": "E = |Q| / (4πε × r²)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "E = |Q| / (4πε × r)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "E = (4πε × |Q|) / r²",
+                    "isCorrect": false
+                },
+                {
+                    "text": "E = |Q| / (2πε × r³)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le champ électrique s'affaiblit avec le carré de la distance selon la loi de Coulomb. La formule exacte est E = Q / (4πε r²)[cite: 1268]."
+        },
+        {
+            "q": "Comment calcule-t-on le champ électrique total (E_tot) créé par une distribution de plusieurs charges ?",
+            "tags": [
+                "Superposition",
+                "Champ électrique"
+            ],
+            "options": [
+                {
+                    "text": "Par la somme vectorielle des champs créés individuellement par chaque charge (E_tot = Σ E_i).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Par la somme scalaire arithmétique des modules des champs divisée par la permittivité relative.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par le produit tensoriel des champs individuels pondéré par la distance barycentrique du système.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "En ne retenant que la composante colinéaire de la charge source présentant le potentiel le plus bas.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le champ électrique est une grandeur vectorielle. Pour une distribution de charges, les champs individuels s'additionnent vectoriellement (E_tot = Σ E_i)[cite: 1269]."
+        },
+        {
+            "q": "Que représentent visuellement les « lignes de champ » électrique ?",
+            "tags": [
+                "Lignes de champ"
+            ],
+            "options": [
+                {
+                    "text": "Des courbes orientées tangentes en chacun de leurs points au vecteur champ électrique E local.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Des trajectoires elliptiques fermées représentant la circulation du flux magnétique rotationnel.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Des surfaces géométriques planes perpendiculaires à la direction de propagation des photons.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Des lignes de crête d'énergie potentielle nulle reliant les charges de polarité identique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les lignes de champ sont partout tangentes au vecteur champ E et sont orientées dans le sens de E (elles partent des charges positives pour aller vers les charges négatives)[cite: 1269]."
+        },
+        {
+            "q": "Qu'est-ce qu'un dipôle électrique ?",
+            "tags": [
+                "Dipôle électrique"
+            ],
+            "options": [
+                {
+                    "text": "Un ensemble constitué de deux charges opposées (+q et -q) séparées par une distance fixe a.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une sphère conductrice isolée portant une densité volumique de charge uniforme strictement positive.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une distribution continue de charges positives entourée d'un nuage électronique sphérique symétrique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une capacité plane dont l'armature centrale est portée à un potentiel électrostatique nul.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C'est un couple composé de deux charges de signes opposés mais de même valeur absolue (+q et -q), séparées par une distance[cite: 1270]."
+        },
+        {
+            "q": "Comment est orienté le vecteur moment dipolaire (p) et quelle est sa norme ?",
+            "tags": [
+                "Moment dipolaire"
+            ],
+            "options": [
+                {
+                    "text": "Il est dirigé conventionnellement de la charge négative vers la charge positive, avec ||p|| = q × d.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il est orienté de la charge positive vers la charge négative, avec une norme donnée par ||p|| = q / d².",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il est orthogonal au segment joignant les deux pôles, avec une norme invariante égale à 1 Debye.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il tourne continuellement à vitesse angulaire constante dans le plan équatorial du dipôle induit.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Il est dirigé de la charge négative (N) vers la charge positive (P), et sa norme vaut la charge (q) multipliée par la distance entre elles (a) : p = q · NP[cite: 1270]."
+        },
+        {
+            "q": "Que vaut l'intensité du champ électrique (E) créé par une plaque plane infinie chargée uniformément (densité de charge σ) ?",
+            "tags": [
+                "Plaque infinie",
+                "Champ électrique"
+            ],
+            "options": [
+                {
+                    "text": "E = |σ| / (2ε) (champ uniforme, indépendant de la distance à la plaque)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "E = |σ| / (ε × r) (champ décroissant en 1/r)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "E = |σ| / (4πε × r²) (champ coulombien sphérique)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "E = (|σ| × r) / (2ε) (champ croissant linéairement)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "|E| = |σ| / (2ε). Le champ est uniforme et perpendiculaire à la plaque de part et d'autre[cite: 1271]."
+        },
+        {
+            "q": "Quelle est l'intensité du champ électrique à l'INTÉRIEUR d'un conducteur parfait à l'équilibre ?",
+            "tags": [
+                "Conducteur",
+                "Équilibre"
+            ],
+            "options": [
+                {
+                    "text": "Le champ y est rigoureusement nul (E = 0), les charges libres résidant exclusivement en surface.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le champ y est infini en raison de la concentration des charges libres dans le volume métallique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le champ y est homogène et égal au rapport de la densité surfacique par la permittivité du vide.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le champ y oscille à la fréquence plasma sous l'effet des fluctuations thermiques électroniques.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le champ électrique y est nul (E = 0) et les lignes de champ ne pénètrent pas dans le conducteur[cite: 1272]."
+        },
+        {
+            "q": "Si une charge test q > 0 est rapprochée d'une charge source Q de même signe (Q > 0), comment évolue son énergie potentielle électrique (Ep) ?",
+            "tags": [
+                "Énergie potentielle"
+            ],
+            "options": [
+                {
+                    "text": "Elle augmente au cours du rapprochement, la force électrostatique répulsive développant un travail résistant.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle décroît continuellement jusqu'à s'annuler au point de contact sous l'effet de l'attraction mutuelle.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle demeure rigoureusement stationnaire, l'invariance de jauge interdisant tout échange d'énergie scalaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle prend une valeur complexe imaginaire pure dès que la distance devient inférieure au rayon classique de l'électron.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La charge test est repoussée (force résistante pour le rapprochement). Son énergie potentielle augmente au fur et à mesure que la distance diminue[cite: 1274]."
+        },
+        {
+            "q": "Quelle est la définition physique du « Potentiel électrique » (V) en un point de l'espace ?",
+            "tags": [
+                "Potentiel électrique"
+            ],
+            "options": [
+                {
+                    "text": "L'énergie potentielle électrostatique par unité de charge en ce point : V = Ep / q, exprimé en Volts (J/C).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La force d'attraction électrostatique exercée par unité de surface sur une armature métallique plane.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le taux de variation temporel de l'induction magnétique traversant une boucle fermée idéale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La capacité d'emmagasinement d'énergie électrique par unité de volume d'un diélectrique polaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C'est l'énergie potentielle électrique disponible par unité de charge en ce point (V = Ep / q). Il s'exprime en Volts (J/C)[cite: 1275]."
+        },
+        {
+            "q": "Contrairement au champ électrique qui s'additionne vectoriellement, comment calcule-t-on le potentiel électrique total créé par plusieurs charges en un point M ?",
+            "tags": [
+                "Potentiel électrique",
+                "Superposition"
+            ],
+            "options": [
+                {
+                    "text": "Par la somme scalaire algébrique simple des potentiels individuels : V_tot = Σ V_i.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Par la projection vectorielle de la résultante des potentiels sur la normale au plan équatorial.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par le produit des amplitudes des potentiels pondéré par l'inverse de la constante de Coulomb.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "En soustrayant le potentiel de la charge minimale à celui de la charge dominante en valeur absolue.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Par la somme scalaire simple des potentiels créés individuellement par chaque charge (V_tot = Σ V_i)[cite: 1275]."
+        },
+        {
+            "q": "Quelle relation fondamentale relie le champ électrique (vecteur E) et le potentiel électrique (V) ?",
+            "tags": [
+                "Champ et Potentiel"
+            ],
+            "options": [
+                {
+                    "text": "E = -grad(V) (ou E = -dV/dr en 1D : le champ électrique dérive du potentiel et est orienté vers les potentiels décroissants).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "E = +grad(V) (le champ électrique pointe systématiquement vers les zones de potentiel électrostatique croissant).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "E = dV/dt (le champ électrique est la dérivée première temporelle du potentiel scalaire en régime stationnaire).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "V = -grad(E) (le potentiel scalaire est l'opposé du gradient vectoriel de l'intensité du champ électrique).",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le champ électrique est l'opposé de la dérivée spatiale (gradient) du potentiel : E = -dV/dr. (Le champ « descend » les potentiels)[cite: 1277]."
+        },
+        {
+            "q": "Qu'est-ce qu'une « surface équipotentielle » et comment est orienté le champ électrique par rapport à elle ?",
+            "tags": [
+                "Équipotentielle"
+            ],
+            "options": [
+                {
+                    "text": "Une surface où V = Cte, sur laquelle le vecteur champ électrique E est partout rigoureusement orthogonal.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une surface où E = 0, sur laquelle le vecteur gradient de potentiel est strictement coplanaire et tangent.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une nappe curviligne où la densité de charge superficielle s'annule par compensation symétrique dipolaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une zone de transition diélectrique où le vecteur moment dipolaire s'aligne parallèlement aux parois.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C'est une surface où le potentiel électrique est constant (V = cte). Le vecteur champ électrique (E) y est toujours strictement perpendiculaire[cite: 1277]."
+        },
+        {
+            "q": "Sous l'effet d'un champ électrique, dans quel sens se déplace spontanément une charge NÉGATIVE ?",
+            "tags": [
+                "Mouvement de charge"
+            ],
+            "options": [
+                {
+                    "text": "Elle remonte les potentiels (se déplace vers les V plus élevés, à l'opposé de E) pour minimiser Ep = qV.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle descend les potentiels (se déplace dans le sens direct du champ E vers les potentiels V décroissants).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle demeure immobile, seules les charges positives étant soumises à la force coulombienne motrice F = qE.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle effectue une dérive circulaire stationnaire sans modification d'énergie cinétique ni de potentiel.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Elle « remonte » les potentiels (se déplace vers les zones de potentiel V plus élevé) à l'inverse des lignes de champ, pour diminuer son énergie potentielle (Ep = qV)[cite: 1276]."
+        },
+        {
+            "q": "Dans le cas des pointes géantes utilisées pour créer des orages dans l'arche Rama, pourquoi les poils de l'astronaute se hérissent-ils ?",
+            "tags": [
+                "Effet de pointe",
+                "Application"
+            ],
+            "options": [
+                {
+                    "text": "Le fort potentiel de la pointe génère à distance un champ électrique intense qui électrise et repousse les poils entre eux.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La force de Coriolis inversée induite par la rotation de l'arche soulève verticalement les structures de faible masse.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'ionisation de l'air par le vent solaire direct détruit le surfactant cutané protecteur au niveau de l'épiderme.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La surpression barométrique locale créée par l'onde acoustique pré-orageuse plaque les téguments contre l'armature.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Car le potentiel élevé de la pointe (22 milliards de Volts) génère à distance un champ électrique d'une grande intensité (ex: 250 kV/m) suffisant pour électriser et repousser les poils[cite: 1282]."
+        },
+        {
+            "q": "Que devient le potentiel V(r) d'un dipôle électrique (formé de +q et -q séparés par a) à une grande distance r (r ≫ a) ?",
+            "tags": [
+                "Dipôle",
+                "Potentiel"
+            ],
+            "options": [
+                {
+                    "text": "Il décroît en 1/r² (plus vite que le potentiel en 1/r d'une charge monopolaire ponctuelle isolée).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il décroît en 1/r³ (au même rythme que le tenseur quadrupolaire électrostatique asymptotique).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il demeure rigoureusement nul dans tout l'espace car la charge totale nette s'annule : (+q) + (-q) = 0.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il croît linéairement avec la distance axiale selon la relation asymptotique de polarisation V(r) ∝ r.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Il décroît selon l'inverse du carré de la distance (V(r) ∝ 1/r²), s'affaiblissant plus vite que le potentiel d'une charge ponctuelle isolée (qui décroît en 1/r)[cite: 1279]."
+        },
+        {
+            "q": "Comment choisit-on conventionnellement le niveau de référence pour calculer l'énergie potentielle (ou le potentiel) d'une charge isolée dans l'espace ?",
+            "tags": [
+                "Potentiel",
+                "Référence"
+            ],
+            "options": [
+                {
+                    "text": "On pose conventionnellement V = 0 (et Ep = 0) à l'infini (r → ∞).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "On fixe la référence V = 0 au centre de la particule chargée (r = 0).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "On choisit le potentiel du sol terrestre de référence fixé à +100 V.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "On prend pour origine le potentiel d'ionisation de l'atome d'hydrogène.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "On choisit généralement arbitrairement une énergie potentielle nulle (Ep = 0 et V = 0) à une distance infinie (r → ∞)[cite: 1275]."
+        },
+        {
+            "q": "Le champ électrique d'une distribution de charge d'un brin d'ADN s'étudie à l'aide de quel paramètre ?",
+            "tags": [
+                "Distribution de charge",
+                "Biophysique"
+            ],
+            "options": [
+                {
+                    "text": "La densité linéique de charge λ = dq / dl (en C/m).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La densité surfacique de charge σ = dq / dS (en C/m²).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La densité volumique de polarisation ρ = dq / dV (en C/m³).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le moment dipolaire magnétique nucléaire gyromagnétique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La densité linéique de charge (λ = dq / dl), supposée uniforme[cite: 1270]."
+        }
+    ]
+}

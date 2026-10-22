@@ -1,0 +1,660 @@
+﻿{
+    "name":  "CM 10 - Sociologie des inégalités sociales de santé",
+    "folder":  "PASS - SHS",
+    "description":  "25 questions sur l\u0027histoire, les causes et les déterminants des inégalités sociales de santé, incluant l\u0027obésité et l\u0027accès mondial aux soins.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Selon le cours d\u0027introduction à la sociologie, comment définit-on les inégalités sociales de santé ?",
+                          "tags":  [
+                                       "Introduction",
+                                       "Définition"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "C\u0027est le fait que la probabilité de contracter une maladie, l\u0027espérance de vie et les soins prodigués varient selon la place qu\u0027on occupe dans la société.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "C\u0027est la disparité statutaire de remboursement et de prise en charge financière des thérapeutiques selon le régime obligatoire de Sécurité Sociale du patient.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est l\u0027explication purement génétique des différences de mortalité entre les différentes populations humaines.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est l\u0027inégalité de répartition des hôpitaux sur le territoire national exclusivement.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les inégalités sociales de santé désignent le fait que la santé est distribuée de façon non uniforme en fonction de l\u0027appartenance sociale, du métier, du lieu de vie, du genre, etc."
+                      },
+                      {
+                          "q":  "Dans la première moitié du XIXe siècle, quel mouvement prônait l\u0027amélioration de la santé publique par l\u0027application administrative de règles telles que l\u0027installation d\u0027eau potable et d\u0027égouts ?",
+                          "tags":  [
+                                       "Histoire",
+                                       "Hygiénisme"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027hygiénisme.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027eugénisme.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le libéralisme médical.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La médecine expérimentale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027hygiénisme, porté par des médecins, architectes et hommes politiques, visait à améliorer les conditions de vie par l\u0027aménagement urbain (égouts, eau potable) pour limiter les fléaux sociaux."
+                      },
+                      {
+                          "q":  "Quel célèbre observateur de la condition ouvrière a publié en 1840 un rapport démontrant les liens entre la mortalité, la pauvreté et les conditions de travail dans l\u0027industrie textile ?",
+                          "tags":  [
+                                       "Histoire",
+                                       "Villermé"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Louis René Villermé.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Louis Pasteur, par ses travaux précurseurs sur la fermentation lactique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Claude Bernard.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Émile Durkheim.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Louis René Villermé a étudié les quartiers de Paris et les ouvriers du textile, prouvant que les conditions de travail et la pauvreté avaient un impact direct sur la mortalité."
+                      },
+                      {
+                          "q":  "Comment la révolution bactériologique de la fin du XIXe siècle a-t-il reconfiguré la prévention en santé publique ?",
+                          "tags":  [
+                                       "Histoire",
+                                       "Bactériologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "En identifiant les germes responsables, elle a permis de valider scientifiquement ou d\u0027invalider certaines pratiques sociales et d\u0027aménagement (comme l\u0027isolement ou l\u0027analyse de l\u0027eau).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "En apportant la démonstration biologique formelle que les disparités économiques et professionnelles n\u0027exerçaient absolument aucune influence mesurable sur l\u0027épidémiologie des maladies transmissibles.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "En transférant l\u0027entière responsabilité de la prévention aux patients individuels.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "En démontrant que la théorie des miasmes était l\u0027unique explication des épidémies.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027identification des germes a permis de fonder l\u0027aménagement de l\u0027environnement (analyse de l\u0027eau, isolement des contagieux) sur des bases scientifiques incontestables."
+                      },
+                      {
+                          "q":  "Quelle a été la conclusion paradoxale et majeure du Black Report publié au Royaume-Uni en 1980 ?",
+                          "tags":  [
+                                       "Black Report",
+                                       "Épidémiologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Malgré l\u0027instauration d\u0027un accès égalitaire aux soins (NHS), les inégalités de santé se sont accrues et suivent un gradient social tout au long de l\u0027échelle sociale.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027institution d\u0027une gratuité totale et universelle des soins hospitaliers et ambulatoires au sein du NHS a permis d\u0027éradiquer définitivement l\u0027ensemble des inégalités sociales de mortalité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027espérance de vie s\u0027est dégradée de manière homogène pour toutes les classes sociales britanniques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Seules les catégories les plus pauvres souffrent d\u0027inégalités, les classes moyennes étant épargnées.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le Black Report a montré que la gratuité des soins ne suffisait pas. L\u0027espérance de vie a augmenté pour tous, mais les écarts (le gradient social) se sont paradoxalement creusés entre les différentes strates sociales."
+                      },
+                      {
+                          "q":  "Que désigne l\u0027expression « gradient social de santé » mise en évidence par des études comme la cohorte de Whitehall ?",
+                          "tags":  [
+                                       "Gradient",
+                                       "Sociologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le fait que les inégalités de santé touchent l\u0027ensemble de la population de manière proportionnelle à la position dans la hiérarchie sociale.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le décrochage statistique brutal et ponctuel de l\u0027espérance de vie sans incapacité observé exclusivement parmi les demandeurs d\u0027emploi en situation d\u0027exclusion.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La différence biologique innée entre les hommes et les femmes face à l\u0027obésité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La courbe représentant le vieillissement naturel des cellules indépendamment du milieu social.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le gradient social démontre que la santé s\u0027améliore à chaque échelon supplémentaire de l\u0027échelle socio-économique, et ne concerne pas uniquement les extrêmes (les très riches vs les très pauvres)."
+                      },
+                      {
+                          "q":  "Sur le plan des inégalités de genre, quelle est la situation globale des femmes par rapport aux hommes concernant la santé ?",
+                          "tags":  [
+                                       "Genre",
+                                       "Morbidité"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les femmes vivent plus longtemps que les hommes, mais présentent des taux de morbidité supérieurs (elles sont plus souvent malades).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les femmes ont une espérance de vie significativement inférieure à celle des hommes et subissent massivement les conséquences graves des affections professionnelles physiques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il n\u0027y a aucune différence d\u0027espérance de vie, seules les pathologies diffèrent.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les femmes cadres vivent 7 ans de moins que les ouvrières en raison du stress professionnel.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les femmes ont une espérance de vie plus longue mais déclarent plus souvent des problèmes de santé non mortels (morbidité supérieure). Les inégalités sociales sont toutefois plus prononcées chez les hommes."
+                      },
+                      {
+                          "q":  "Pourquoi des dispositifs comme la CMU ou l\u0027AME ne suffisent-ils pas à effacer les inégalités sociales face au système de soins ?",
+                          "tags":  [
+                                       "Accès aux soins",
+                                       "Politiques publiques"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "En raison de facteurs tels que la stigmatisation, le sentiment de honte, et la méconnaissance des droits qui freinent le recours aux soins.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Parce que ces dispositifs d\u0027aide médicale interdisent réglementairement l\u0027accès aux consultations spécialisées et à la pratique de la médecine générale libérale de ville.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce qu\u0027ils ne couvrent que les maladies génétiques rares.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce que les médecins de ces dispositifs sont moins bien formés.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Un dispositif réglementaire ou financier ne suffit pas à produire de l\u0027équité : les barrières symboliques et sociales (honte, complexité administrative) limitent leur efficacité."
+                      },
+                      {
+                          "q":  "Comment la sociologie explique-t-elle souvent les « conduites à risque » (tabac, malbouffe) plus fréquentes chez les populations vulnérables ?",
+                          "tags":  [
+                                       "Comportements",
+                                       "Vulnérabilité"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elles sont le reflet d\u0027une moindre attention portée à la santé face à des urgences plus immédiates (survie économique, logement).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elles découlent d\u0027une anomalie neurogénétique partagée limitant la capacité intellectuelle à assimiler rationnellement les messages préventifs de santé publique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles résultent d\u0027un choix philosophique délibéré de rejet du système de soins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles prouvent que la prévention télévisée n\u0027atteint pas les quartiers populaires.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les individus en précarité concentrent souvent leurs efforts sur l\u0027insertion professionnelle et la survie économique immédiate, reléguant la santé préventive au second plan."
+                      },
+                      {
+                          "q":  "Quel avantage socio-culturel les couches favorisées possèdent-elles dans leur relation avec le monde médical ?",
+                          "tags":  [
+                                       "Relation de soin",
+                                       "Sociologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Une proximité socio-culturelle et langagière avec les médecins, facilitant la compréhension et la qualité de la prise en charge.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La prérogative légale institutionnalisée de contourner les listes officielles d\u0027attente d\u0027attribution des greffes d\u0027organes au sein des grands CHU universitaires.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027accès exclusif à des médicaments non génériques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une immunité naturelle aux maladies professionnelles.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le partage de normes sociales et de référents langagiers entre patients aisés et médecins favorise une meilleure communication et une orientation plus efficace dans le système de soins."
+                      },
+                      {
+                          "q":  "La santé n\u0027est pas seulement une conséquence des inégalités, elle en est aussi une cause. Comment ?",
+                          "tags":  [
+                                       "Causalité",
+                                       "Précarité"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Une maladie grave ou un handicap peut entraîner une perte d\u0027emploi et une baisse de revenus, générant un déclassement social.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La guérison augmente systématiquement l\u0027imposition fiscale du foyer.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La bonne santé est un critère discriminant pour l\u0027accès aux logements sociaux.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les dépenses de santé engagées lors du parcours de soins de premier recours contraignent les ménages modestes à s\u0027endetter lourdement sur plusieurs générations successives.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Il y a une double chaîne de causalité : la position sociale détermine la santé, mais un problème de santé peut aussi dégrader la position sociale (baisse de revenus, chômage)."
+                      },
+                      {
+                          "q":  "Dans les pays en voie de développement (selon l\u0027étude de Sobal et Stunkard), comment se caractérise la prévalence de l\u0027obésité ?",
+                          "tags":  [
+                                       "Obésité",
+                                       "Épidémiologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027obésité y est plus fréquente dans les groupes sociaux les plus élevés.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027obésité n\u0027y existe pas en raison de la sous-nutrition endémique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027obésité touche principalement les travailleurs manuels et les agriculteurs.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027obésité a exactement la même répartition que dans les pays occidentaux.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Dans les pays en voie de développement, les strates supérieures ont accès à une plus grande disponibilité alimentaire et exercent des métiers sédentaires, et la forte corpulence y est parfois valorisée socialement."
+                      },
+                      {
+                          "q":  "Comment l\u0027épidémie d\u0027obésité se caractérise-t-elle sociologiquement dans les sociétés développées (comme la France) ?",
+                          "tags":  [
+                                       "Obésité",
+                                       "France"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les taux de prévalence les plus élevés se trouvent dans les milieux les moins favorisés.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle touche de façon disproportionnée les cadres dirigeants d\u0027entreprises en raison d\u0027un stress professionnel permanent et d\u0027un mode de vie sédentaire.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il n\u0027y a aucune différenciation sociale de l\u0027obésité chez les adultes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle affecte exclusivement la population rurale éloignée des métropoles.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En France et dans les pays développés, l\u0027obésité frappe davantage les classes populaires et les personnes en bas de l\u0027échelle sociale."
+                      },
+                      {
+                          "q":  "Quel lien les travaux de sociologie établissent-ils entre la dynamique sociale et l\u0027obésité chez l\u0027adulte ?",
+                          "tags":  [
+                                       "Obésité",
+                                       "Mobilité sociale"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les prévalences les plus fortes d\u0027obésité sont associées à des trajectoires sociales descendantes (dégradations de position sociale).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027obésité est le signe d\u0027une ascension sociale rapide et d\u0027un enrichissement économique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La mobilité sociale ascendante ou descendante n\u0027exerce absolument aucun effet mesurable sur la variation longitudinale de l\u0027indice de masse corporelle chez l\u0027adulte.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Seules les professions libérales voient leur corpulence augmenter avec l\u0027âge.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les dynamiques descendantes (déclassement) sont fortement corrélées aux prévalences les plus élevées d\u0027obésité."
+                      },
+                      {
+                          "q":  "En quoi consiste la « double chaîne de causalité » dans l\u0027analyse sociologique de l\u0027obésité ?",
+                          "tags":  [
+                                       "Obésité",
+                                       "Causalité"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le statut social détermine l\u0027exposition au risque d\u0027obésité, mais la corpulence agit aussi comme déterminant social (stigmatisation, discrimination à l\u0027emploi).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027obésité est causée à la fois par des virus et par des bactéries gastriques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le niveau élevé de diplôme exacerbe le stress psychologique quotidien, qui déclenche à son tour des dérèglements métaboliques et neuroendocriniens d\u0027origine génétique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La génétique conditionne le poids, qui conditionne à son tour le patrimoine génétique transmis.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027obésité est la conséquence d\u0027inégalités, mais elle en est aussi une cause : en raison de l\u0027idéal de minceur, elle génère des discriminations qui entravent la trajectoire professionnelle."
+                      },
+                      {
+                          "q":  "Comment l\u0027appropriation de l\u0027information nutritionnelle varie-t-elle selon les catégories sociales ?",
+                          "tags":  [
+                                       "Nutrition",
+                                       "Information"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les milieux diplômés, notamment les femmes, y sont plus réceptifs, ce qui accentue la différenciation des modes de vie.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les catégories socio-professionnelles ouvrières et populaires se l\u0027approprient beaucoup plus rapidement grâce à la diffusion massive des campagnes audiovisuelles.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle est universellement comprise et appliquée dès l\u0027école primaire.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle n\u0027a aucun effet mesurable sur le comportement des cadres supérieurs.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027intérêt et la réception de l\u0027information préventive sont socialement situés : les catégories aisées (et souvent les femmes) s\u0027en approprient plus facilement les codes, ce qui accroît paradoxalement les écarts sociaux."
+                      },
+                      {
+                          "q":  "Quel effet secondaire pervers peut avoir l\u0027imposition forte d\u0027un idéal social de minceur ?",
+                          "tags":  [
+                                       "Obésité",
+                                       "Stigmatisation"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Il peut engendrer des pratiques d\u0027amaigrissement sans justification sanitaire, risquant de développer des troubles du comportement alimentaire.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Il résout automatiquement l\u0027épidémie mondiale d\u0027obésité par l\u0027auto-discipline.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il favorise l\u0027ascension sociale des populations ouvrières.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il contraint l\u0027ensemble des grands groupes de l\u0027industrie agroalimentaire à stopper définitivement la commercialisation des produits ultratransformés et sucrés.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La pression sociale (effets d\u0027anticipation et peur de la stigmatisation) pousse parfois des sujets sains vers des régimes pathogènes (troubles alimentaires)."
+                      },
+                      {
+                          "q":  "Dans le contexte mondial, quelle affirmation concernant la « transition épidémiologique » est correcte selon le cours ?",
+                          "tags":  [
+                                       "Épidémiologie mondiale",
+                                       "Transition"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle ne doit pas être surestimée : les pays du Sud subissent aussi les maladies chroniques (cancers) et le Nord affronte toujours des maladies infectieuses.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle est totale, définitive et irréversible : l\u0027ensemble des pathologies infectieuses transmissibles ont été totalement éradiquées de l\u0027ensemble des pays industrialisés du Nord.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les pays du Sud sont génétiquement immunisés contre les maladies chroniques et les cancers.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027espérance de vie est désormais identique sur tous les continents grâce aux antibiotiques.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027idée que le Sud n\u0027aurait que des infections et le Nord que des maladies chroniques est fausse : le Sud représente 60% des cas de cancers et le Nord affronte le VIH, la grippe, etc."
+                      },
+                      {
+                          "q":  "Comment la médecine coloniale percevait-elle l\u0027amélioration sanitaire dans les territoires coloniaux au début du XXe siècle ?",
+                          "tags":  [
+                                       "Histoire",
+                                       "Colonialisme"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Comme un moyen technique nécessaire au développement économique et à l\u0027exploitation des colonies.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Comme un devoir purement philanthropique et humaniste universel totalement affranchi de toute logique marchande, d\u0027exploitation ou d\u0027intérêt financier géopolitique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme une stratégie de repeuplement démographique des métropoles européennes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme une erreur stratégique ralentissant l\u0027industrialisation.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Historiquement, les puissances coloniales concevaient les progrès sanitaires comme le maintien d\u0027une force de travail indispensable à la viabilité économique de la colonie."
+                      },
+                      {
+                          "q":  "Quel fut l\u0027engagement majeur de la Déclaration d\u0027Alma-Ata de l\u0027OMS en 1978 ?",
+                          "tags":  [
+                                       "OMS",
+                                       "Alma-Ata"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027instauration d\u0027une stratégie de soins de santé primaires visant « l\u0027accès à la santé pour tous en l\u0027an 2000 ».",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La levée immédiate et obligatoire d\u0027un prélèvement fiscal international sur les bénéfices financiers mondiaux des grands laboratoires pharmaceutiques multinationaux.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027interdiction des médecines traditionnelles en Afrique subsaharienne.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027abandon des campagnes de vaccination de masse jugées trop coûteuses.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Alma-Ata (1978) marque un tournant en promouvant les soins de santé primaires et la prise en compte de l\u0027environnement social des populations face à l\u0027échec des approches purement verticales."
+                      },
+                      {
+                          "q":  "Pourquoi l\u0027OMS s\u0027est-elle détournée des approches dites « verticales » dans les années 1970 ?",
+                          "tags":  [
+                                       "OMS",
+                                       "Politique sanitaire"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Parce qu\u0027elles étaient trop techniques, centrées uniquement sur la maladie, sans tenir compte des conditions économiques et sociales de vie.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Parce que ces approches s\u0027appuyaient exclusivement sur le déploiement des médecines douces et des pharmacopées traditionnelles sans évaluation scientifique probante.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce que l\u0027industrie pharmaceutique refusait de produire les vaccins correspondants.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce qu\u0027elles donnaient trop de pouvoir décisionnel aux communautés locales pauvres.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027approche verticale (ex: campagnes d\u0027éradication par traitement d\u0027une seule maladie) s\u0027épuisait, prouvant la nécessité d\u0027approches « horizontales » intégrant les déterminants sociaux (logement, éducation)."
+                      },
+                      {
+                          "q":  "Qu\u0027a affirmé la Commission des déterminants sociaux de la santé de l\u0027OMS en 2005 (et confirmé à Rio en 2012) pour réduire les inégalités ?",
+                          "tags":  [
+                                       "OMS",
+                                       "Déterminants sociaux"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Qu\u0027il est indispensable d\u0027agir au niveau extra-sanitaire, en luttant contre l\u0027inégale répartition du pouvoir, de l\u0027argent et des ressources.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Que seul l\u0027investissement massif dans des plateaux techniques hospitaliers de pointe et des thérapies géniques permettra d\u0027endiguer la mortalité des populations précaires.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Qu\u0027il faut instaurer un numerus clausus médical mondial strict.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Que la génétique est le seul déterminant prédictif viable de la longévité.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La commission de 2005 souligne que la santé se joue largement en dehors du système de soins : il faut agir sur les structures économiques, politiques et sociales globales."
+                      },
+                      {
+                          "q":  "En matière de tabagisme, quel effet ont eu les grandes campagnes d\u0027information et de prévention selon les sociologues ?",
+                          "tags":  [
+                                       "Prévention",
+                                       "Tabagisme"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elles ont provoqué une baisse de la consommation bien plus marquée chez les cadres que chez les ouvriers, accentuant l\u0027écart.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elles ont exercé une efficacité homogène et universelle, conduisant à la quasi-éradication du tabagisme quotidien dans la totalité des couches sociales sans distinction.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles ont paradoxalement fait augmenter le tabagisme des populations les plus riches.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles n\u0027ont eu strictement aucun effet chiffrable sur la morbidité globale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027information préventive tend à creuser les inégalités car les milieux favorisés modifient leurs comportements beaucoup plus vite et massivement que les classes populaires."
+                      },
+                      {
+                          "q":  "Quelle épidémie africaine récente (2013-2015) est citée dans le cours comme un révélateur des inégalités mondiales d\u0027accès aux soins ?",
+                          "tags":  [
+                                       "Mondialisation",
+                                       "Epidémie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027épidémie d\u0027Ebola en Afrique de l\u0027Ouest.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027épidémie de choléra au Yémen.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La pandémie d\u0027encéphalite spongiforme et de grippe aviaire hautement pathogène H5N1.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La fièvre jaune au Brésil.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027épidémie d\u0027Ebola a tragiquement illustré les inégalités cumulatives mondiales : manque d\u0027infrastructures, manque de soignants et accès défaillant aux traitements d\u0027urgence."
+                      },
+                      {
+                          "q":  "Quelle conclusion sociologique fondamentale peut-on tirer du cours sur les inégalités sociales de santé ?",
+                          "tags":  [
+                                       "Conclusion",
+                                       "Sociologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027organisation sociale produit elle-même des états de santé inégaux, dépassant largement la simple variation biologique interindividuelle.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les inégalités de santé relèvent du ressort exclusif de la médecine clinique individuelle et des prédispositions génétiques moléculaires de chaque individu.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La santé d\u0027un individu dépend exclusivement de ses choix comportementaux personnels et volontaires.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La sociologie est impuissante face aux lois biologiques de l\u0027évolution virale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La sociologie démontre que la santé et la maladie sont socialement construites : l\u0027organisation sociale, économique et politique est directement productrice des écarts d\u0027espérance de vie et de morbidité."
+                      }
+                  ]
+}

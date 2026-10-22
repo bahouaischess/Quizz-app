@@ -1,0 +1,660 @@
+﻿{
+    "name":  "CM 9 - Evolution des systèmes, acteurs et relations de soin",
+    "folder":  "PASS - SHS",
+    "description":  "25 questions sur l\u0027histoire de la profession médicale, de l\u0027hôpital et du rôle des patients.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Comment se déroulait principalement l\u0027apprentissage de la médecine dans l\u0027Antiquité ?",
+                          "tags":  [
+                                       "Antiquité",
+                                       "Formation"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Il se faisait par compagnonnage auprès d\u0027un maître, sans certification qualifiante.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Il s\u0027effectuait dans des facultés universitaires d\u0027État soumises à un examen national standardisé.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il nécessitait l\u0027adhésion obligatoire à une corporation de métier.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il était dispensé exclusivement au sein des monastères.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Dans l\u0027Antiquité, les médecins étaient souvent ambulants, l\u0027apprentissage se faisait auprès d\u0027un maître sans diplôme officiel, ce qui rendait difficile l\u0027identification des imposteurs."
+                      },
+                      {
+                          "q":  "Quelle institution apparaît au Moyen-Âge pour organiser de manière plus formelle la formation médicale ?",
+                          "tags":  [
+                                       "Moyen-Âge",
+                                       "Formation"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les universités de médecine.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027Ordre des médecins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027Agence Française du Sang.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les collèges médicaux d\u0027arrondissement.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "C\u0027est au Moyen-Âge que naissent les universités de médecine, permettant un contrôle de l\u0027exercice par les facultés."
+                      },
+                      {
+                          "q":  "Au Moyen-Âge, comment la médecine se distinguait-elle de la chirurgie ?",
+                          "tags":  [
+                                       "Moyen-Âge",
+                                       "Professions"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La médecine était une discipline intellectuelle universitaire, la chirurgie une activité pratique d\u0027artisans.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La médecine était illégale, seule la chirurgie était autorisée.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il n\u0027existait aucune séparation formelle, le même praticien accomplissant indistinctement les prescriptions et les amputations.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La chirurgie était réservée aux nobles, la médecine aux pauvres.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La médecine était théorique et basée sur les textes anciens (enseignée à l\u0027Université), tandis que la chirurgie était vue comme une activité artisanale moins respectée."
+                      },
+                      {
+                          "q":  "En France, quand l\u0027Ordre des médecins, tel qu\u0027on le connaît, a-t-il été créé ?",
+                          "tags":  [
+                                       "Ordre des médecins",
+                                       "Histoire"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "En 1945, juste après la Seconde Guerre mondiale.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Au milieu du XIXe siècle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Immédiatement après la Révolution française.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "En 1993, par décret d\u0027urgence suite au scandale sanitaire national du sang contaminé par le VIH.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Créé en 1945, l\u0027Ordre des médecins vise à réguler l\u0027exercice de la profession dans un contexte de restructuration du système de santé."
+                      },
+                      {
+                          "q":  "Quel acronyme désigne les infirmiers ayant récemment acquis de nouvelles compétences étendues en France ?",
+                          "tags":  [
+                                       "Professions",
+                                       "Actualité"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "IPA (Infirmiers de Pratiques Avancées).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "IDE (Infirmiers Diplômés d\u0027État exerçant en secteur libéral ou hospitalier).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "AS (Aides-Soignants).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "IBODE (Infirmiers de Bloc Opératoire).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les IPA (Infirmiers de Pratiques Avancées) représentent un nouveau statut illustrant la réorganisation et le transfert de compétences entre médecins et paramédicaux."
+                      },
+                      {
+                          "q":  "Quelle profession a été interdite jusqu\u0027en 2002 avant d\u0027être reconnue comme profession de santé ?",
+                          "tags":  [
+                                       "Professions",
+                                       "Droit"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les ostéopathes.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les sages-femmes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les dentistes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les psychomotriciens.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les ostéopathes étaient considérés comme exerçant illégalement la médecine jusqu\u0027à leur reconnaissance officielle en 2002."
+                      },
+                      {
+                          "q":  "Quel drame de santé publique des années 1980 a révélé les failles de la régulation externe de la médecine en France ?",
+                          "tags":  [
+                                       "Scandale",
+                                       "Santé publique"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le scandale du sang contaminé par le VIH.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La crise sanitaire et pharmacologique majeure du Mediator (benfluorex).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le scandale de l\u0027amiante.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027épidémie de choléra parisienne.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Dans les années 80, le retard de la France dans le dépistage du VIH dans les produits sanguins a entraîné la contamination de milliers de personnes, provoquant un scandale retentissant."
+                      },
+                      {
+                          "q":  "Quelle agence a été créée en 1993 suite au scandale du sang contaminé ?",
+                          "tags":  [
+                                       "Agences",
+                                       "Régulation"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027Agence française du sang.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La Haute Autorité de Santé (HAS).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027Ordre National des Médecins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le Ministère de la Santé.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027Agence française du sang a été créée en 1993 pour garantir la sécurité et la régulation des produits sanguins, en réaction directe au scandale."
+                      },
+                      {
+                          "q":  "Quel mode de financement hospitalier, introduit en 2003, est source de tension entre logiques médicale et administrative ?",
+                          "tags":  [
+                                       "Hôpital",
+                                       "Financement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La tarification à l\u0027activité (T2A).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le budget global par dotation.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le paiement à l\u0027acte direct par le patient.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La charité et les dons monastiques.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La T2A relie le budget de l\u0027hôpital au volume d\u0027actes réalisés, ce qui modifie les comportements cliniques et crée des tensions avec l\u0027administration."
+                      },
+                      {
+                          "q":  "Quelle était la fonction première de l\u0027hôpital à ses débuts (notamment au IVe siècle) ?",
+                          "tags":  [
+                                       "Hôpital",
+                                       "Histoire"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027assistance, la charité et l\u0027accueil des démunis (pas seulement des malades).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La recherche scientifique de pointe.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027enseignement universitaire académique et la formation théorique exclusive des élites médicales.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La chirurgie réparatrice et esthétique.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les premiers hôpitaux (Xenodochium, Hôtels-Dieu) étaient des lieux d\u0027assistance et de charité religieuse accueillant les pauvres, les pèlerins et les malades pour le salut de l\u0027âme."
+                      },
+                      {
+                          "q":  "Qu\u0027appelle-t-on le « grand renfermement » décrit par le philosophe Michel Foucault ?",
+                          "tags":  [
+                                       "Hôpital",
+                                       "Sociologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027utilisation des hôpitaux généraux au XVIIe siècle pour enfermer et éloigner les vagabonds de la société.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La période où les malades mentaux et aliénés étaient systématiquement enfermés dans des donjons carcéraux.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027isolement des lépreux dans des îles au Moyen-Âge.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La mise en quarantaine stricte pendant les épidémies de peste.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Au XVIIe siècle, l\u0027hôpital a un rôle de contrôle social où l\u0027on enferme les marginaux et vagabonds, phénomène que Foucault a nommé le « grand renfermement »."
+                      },
+                      {
+                          "q":  "A partir de quel siècle observe-t-on véritablement la « médicalisation » des hôpitaux (la maladie devient le facteur d\u0027hospitalisation) ?",
+                          "tags":  [
+                                       "Hôpital",
+                                       "Médecine"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le XVIIIe siècle.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le Moyen-Âge.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le début du XXe siècle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027Antiquité romaine.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Sous l\u0027impulsion de figures comme Jacques Tenon au XVIIIe siècle, l\u0027hôpital devient une « machine à traiter les malades », axé sur le soin et la formation médicale."
+                      },
+                      {
+                          "q":  "Quelle méthode médicale développée au XIXe siècle influence fortement la conception architecturale de l\u0027hôpital ?",
+                          "tags":  [
+                                       "Architecture",
+                                       "Médecine"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La méthode anatomoclinique.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La méthode humorale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La méthode homéopathique et infinitésimale de Hahnemann.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La psychiatrie asilaire.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La méthode anatomoclinique nécessite d\u0027observer les lésions post-mortem pour les lier aux symptômes : l\u0027hôpital intègre alors salles de dissection, chambres et amphithéâtres."
+                      },
+                      {
+                          "q":  "Quels principes architecturaux découlent de la théorie hygiéniste avant les découvertes de Pasteur ?",
+                          "tags":  [
+                                       "Hygiénisme",
+                                       "Architecture"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "De grands volumes d\u0027air et de vastes aérations pour évacuer les miasmes.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Des espaces confinés, compacts et facilement chauffables.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027utilisation exclusive de chambres stériles à pression négative.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La suppression de toutes les fenêtres pour éviter les courants d\u0027air froids.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027hygiénisme pensait que les miasmes (l\u0027air vicié) rendaient malade. L\u0027architecture privilégiait donc de hauts plafonds et une grande aération, rendant les salles dures à chauffer."
+                      },
+                      {
+                          "q":  "Quelle loi de 1958 a profondément transformé le lien entre hôpital et enseignement en France ?",
+                          "tags":  [
+                                       "Hôpital",
+                                       "Enseignement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La réforme Debré (création des CHU).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La loi Kouchner.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La loi Neuwirth.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La tarification à l\u0027activité (T2A) généralisée à l\u0027ensemble des établissements.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La réforme Debré crée les Centres Hospitaliers Universitaires (CHU), liant indissociablement soin, recherche et enseignement."
+                      },
+                      {
+                          "q":  "Quel concept a été développé par le sociologue Anselm Strauss dans la deuxième moitié du XXe siècle ?",
+                          "tags":  [
+                                       "Patient",
+                                       "Sociologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le travail invisible du malade.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le grand renfermement.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La médicalisation et la pathologisation croissante de la vie quotidienne.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027anomie médicale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Strauss a mis en lumière le « travail invisible » réalisé par le patient lui-même (s\u0027alimenter, s\u0027auto-évaluer, supporter des soins douloureux)."
+                      },
+                      {
+                          "q":  "Quelle crise sanitaire majeure des années 1980-1990 a catalysé l\u0027émergence des associations de patients militants ?",
+                          "tags":  [
+                                       "SIDA",
+                                       "Militantisme"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027épidémie de SIDA.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La pandémie de grippe H1N1.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La canicule de 2003.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027épidémie de poliomyélite.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027épidémie de VIH/SIDA a poussé les malades (ex: Act Up) à s\u0027organiser pour faire pression sur la recherche, défendre leurs droits et politiser la maladie."
+                      },
+                      {
+                          "q":  "Quel est l\u0027objectif premier de l\u0027Éducation Thérapeutique du Patient (ETP) ?",
+                          "tags":  [
+                                       "Soin",
+                                       "Patient"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Aider le malade à acquérir ou maintenir les compétences dont il a besoin pour gérer au mieux sa maladie chronique.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Former les médecins à la psychologie des patients difficiles.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Remplacer progressivement les consultations médicales par des modules d\u0027auto-évaluation en ligne sans encadrement.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Obliger les patients à signer des décharges de responsabilité.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027ETP vise à impliquer le patient, réduire la non-observance et horizontaliser la relation de soin en rendant le patient expert de sa vie avec la maladie."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce qu\u0027un « patient pair » (ou patient expert) ?",
+                          "tags":  [
+                                       "Patient",
+                                       "Démocratie sanitaire"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un patient vivant avec la maladie qui collabore avec les soignants et accompagne d\u0027autres malades grâce à son expérience.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un médecin hospitalier atteint de la pathologie chronique qu\u0027il traite quotidiennement dans son service.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un patient qui finance lui-même les essais cliniques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un membre de la famille du patient qui se porte garant financièrement.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le patient pair utilise son savoir expérientiel pour faire l\u0027intermédiaire, conseiller et co-construire l\u0027ETP avec les soignants."
+                      },
+                      {
+                          "q":  "Quelle loi française de 2002 est le socle de la démocratie sanitaire et des droits des usagers ?",
+                          "tags":  [
+                                       "Droit",
+                                       "Démocratie sanitaire"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La loi Kouchner (relative aux droits des malades et à la qualité du système de santé).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La loi Veil.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La loi Debré.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La loi HPST de 2009 (portant réforme de l\u0027Hôpital et relative aux Patients, à la Santé et aux Territoires).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La loi Kouchner de 2002 consacre la démocratie sanitaire, l\u0027accès direct au dossier médical et le recueil du consentement éclairé."
+                      },
+                      {
+                          "q":  "Que signifie étymologiquement le terme « patient » (du latin patiens) ?",
+                          "tags":  [
+                                       "Étymologie",
+                                       "Vocabulaire"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Celui qui souffre, qui endure ou qui supporte.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Celui qui rétribue financièrement le praticien pour ses soins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Celui qui possède la sagesse.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Celui qui se rétablit vite.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le terme patient vient du latin patior, endurer/souffrir, et souligne aussi l\u0027idée d\u0027une certaine dépendance vis-à-vis de l\u0027institution biomédicale."
+                      },
+                      {
+                          "q":  "Au niveau européen, quel texte promulgué en 1979 témoigne des prémices de la reconnaissance des droits des usagers de la santé ?",
+                          "tags":  [
+                                       "Europe",
+                                       "Droit"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La Charte européenne du malade usager de l\u0027hôpital.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La Déclaration d\u0027Alma-Ata.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La Convention Européenne de Sauvegarde des Droits de l\u0027Homme.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le traité de Rome.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La Charte européenne du malade usager de l\u0027hôpital (1979) est un texte précurseur de la démocratie sanitaire en Europe."
+                      },
+                      {
+                          "q":  "Comment l\u0027architecture hospitalière a-t-elle réagi aux découvertes de la microbiologie par Pasteur ?",
+                          "tags":  [
+                                       "Architecture",
+                                       "Pasteur"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "En cherchant à séparer les espaces et à faciliter la désinfection des locaux.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "En agrandissant encore les dortoirs pour ventiler les germes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "En abandonnant la construction de nouveaux hôpitaux au profit de soins à domicile.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "En supprimant les blocs opératoires jugés trop dangereux.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La découverte des micro-organismes invalide la peur de l\u0027air vicié (miasmes) et pousse l\u0027architecture vers le cloisonnement, l\u0027asepsie et la désinfection."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce qu\u0027une architecture hospitalière de type « socle-tour » ou « monobloc » typique de la fin du XXe siècle ?",
+                          "tags":  [
+                                       "Architecture",
+                                       "Hôpital"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un hôpital compact centralisant de vastes plateaux techniques (comme Bichat ou le CHU de Caen).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un ensemble pavillonnaire aéré constitué de multiples bâtiments isolés disséminés dans un parc arboré.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un sanatorium de haute montagne tourné face au soleil.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un dispensaire de soins primaires sans lit d\u0027hospitalisation.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027évolution technique a conduit à la construction d\u0027hôpitaux très verticaux et compacts, intégrant d\u0027énormes plateaux techniques et blocs opératoires (ex: Hôpital Bichat)."
+                      },
+                      {
+                          "q":  "Quels professionnels de santé ont été historiquement qualifiés de « paramédicaux » dans le contexte du développement des professions ?",
+                          "tags":  [
+                                       "Professions",
+                                       "Coopération"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le personnel soignant gravitant autour et coopérant avec le médecin (infirmiers, etc.).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les charlatans non reconnus par l\u0027Ordre.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les directeurs administratifs d\u0027hôpitaux.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les barbiers-chirurgiens de corporation corporatiste avant l\u0027abolition des privilèges en 1789.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les paramédicaux regroupent les professions de santé qui accompagnent et collaborent avec le médecin (les infirmiers étant majoritaires) dans le parcours de soin."
+                      }
+                  ]
+}

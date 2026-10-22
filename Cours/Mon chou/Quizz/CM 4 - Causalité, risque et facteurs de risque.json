@@ -1,0 +1,510 @@
+﻿{
+    "name":  "CM 4 - Causalité, risque et facteurs de risque",
+    "folder":  "PASS - Santé Publique",
+    "description":  "Compréhension de la notion de risque en épidémiologie, des critères de Hill, et du calcul du RR, RA, FER.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Quelle est la définition probabiliste exacte d\u0027un facteur de risque F pour une maladie M ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027exposition au facteur F modifie la probabilité d\u0027apparition de la maladie M (P(M/F) ≠ P(M/non-F)).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027exposition au facteur F est la cause unique et absolument nécessaire pour que la maladie M apparaisse.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La maladie M apparaît 100% du temps lorsque le patient est exposé au facteur F.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La probabilité d\u0027apparition de la maladie M est strictement indépendante de la présence du facteur F.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Un facteur est un facteur de risque si la probabilité conditionnelle d\u0027être malade sachant qu\u0027on est exposé est différente de la probabilité d\u0027être malade sachant qu\u0027on n\u0027est pas exposé[cite: 578]."
+                      },
+                      {
+                          "q":  "Dans l\u0027étude des maladies chroniques (ex: infarctus du myocarde), comment se caractérise la notion de cause ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle est de nature multifactorielle : il s\u0027agit d\u0027un agrégat de facteurs causaux contributifs (ex: tabac + HTA + diabète) formant des causes suffisantes.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle obéit rigoureusement à la loi déterministe d\u0027une cause biologique unique, à la fois nécessaire et suffisante pour chaque patient",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les facteurs n\u0027interagissent jamais entre eux ; l\u0027effet d\u0027un facteur ne dépend pas du niveau des autres.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Seuls les agents infectieux sont reconnus comme de véritables causes biologiques.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Contrairement aux maladies infectieuses, les maladies chroniques n\u0027ont pas une seule cause nécessaire. Ce sont des facteurs étiologiques imbriqués (ex: si on additionne Tabac + Diabète + HTA, le risque d\u0027infarctus est multiplié par 13)[cite: 574, 575, 576]."
+                      },
+                      {
+                          "q":  "Selon les critères de causalité de Bradford Hill, que démontre la « relation temporelle » ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Que l\u0027exposition au facteur de risque a bien précédé la survenue de la maladie (ex: décalage de 20 ans entre tabagisme et cancer).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Que l\u0027incidence et la sévérité clinique des lésions augmentent strictement et de façon continue avec le gradient de dose cumulée reçue",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Que l\u0027association est retrouvée dans de nombreuses études menées dans des pays différents.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Que l\u0027arrêt de l\u0027exposition au facteur entraîne une diminution directe de l\u0027incidence.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La relation temporelle est le seul critère absolument indispensable : l\u0027exposition doit précéder l\u0027effet pour qu\u0027il y ait causalité. Le décalage des courbes entre l\u0027explosion du tabagisme et l\u0027explosion des cancers 20 ans plus tard l\u0027illustre parfaitement[cite: 589]."
+                      },
+                      {
+                          "q":  "Que calcule-t-on avec la formule : RR = P(M/F) / P(M/non-F) ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le risque relatif, c\u0027est-à-dire le rapport entre l\u0027incidence chez les exposés et l\u0027incidence chez les non-exposés.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le risque attribuable dans la population exposée, soit la proportion exacte de l\u0027excès de risque directement imputable à l\u0027exposition",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La fraction étiologique du risque en population générale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027indice de surmortalité indirecte (SMR).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le Risque Relatif (RR) est le rapport de la probabilité de la maladie sachant le facteur F, sur la probabilité de la maladie sachant l\u0027absence du facteur F. Il indique la force de l\u0027association[cite: 595]."
+                      },
+                      {
+                          "q":  "Un des critères de causalité est la relation « dose-effet ». Parmi les exemples suivants, lequel l\u0027illustre ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le taux de décès par cancer broncho-pulmonaire augmente progressivement avec le nombre de cigarettes fumées par jour (1-9, puis 10-20, puis \u003e40).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027arrêt précoce du tabagisme avant 30 ans permet une récupération progressive quasi intégrale de l\u0027espérance de vie par rapport à un sevrage tardif à 65 ans",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le cancer du poumon se développe 20 ans après l\u0027initiation du tabagisme.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La fumée contient des substances cancérigènes confirmées biologiquement chez l\u0027animal.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La relation dose-effet se vérifie si la probabilité de la maladie augmente (ou diminue) lorsque le niveau d\u0027exposition au facteur augmente. Les graphes de Kahn montrent clairement que plus on fume de cigarettes/jour, plus le risque augmente[cite: 589]."
+                      },
+                      {
+                          "q":  "Comment interprète-t-on le « Risque Attribuable » (RA) ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "C\u0027est la différence de risque absolu (P(M/F) - P(M/non-F)), mesurant l\u0027excès de cas de maladie spécifiquement dus au facteur chez les exposés.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "C\u0027est le rapport des probabilités (P(M/F) / P(M/non-F)), reflétant la force de l\u0027association.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est la fraction globale de malades au sein de l\u0027ensemble de la population générale qui auraient pu être définitivement évités si l\u0027exposition n\u0027avait jamais existé",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est la probabilité de contracter la maladie sans jamais avoir été exposé au facteur.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le risque attribuable se calcule par une soustraction : il traduit la part du risque d\u0027un sujet exposé qui est spécifiquement attribuable à l\u0027exposition (le « sur-risque »)[cite: 595]."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce qu\u0027un facteur endogène lié à l\u0027hôte ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un facteur lié directement à l\u0027individu, comme son âge, sa génétique (atopie) ou une maladie préexistante (HTA).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un facteur écotoxique issu directement de la pollution atmosphérique particulaire et des composés organiques volatils",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un vecteur bactérien ou parasitaire qui pénètre dans l\u0027organisme.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le niveau de bruit au travail (décibels) subi quotidiennement.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les facteurs endogènes sont propres à l\u0027hôte : caractéristiques physiologiques (âge, sexe), patrimoine génétique, et pathologies sous-jacentes (ex: hypertension induisant un AVC)[cite: 580, 581]."
+                      },
+                      {
+                          "q":  "Lequel de ces facteurs appartient à la catégorie des facteurs de risque exogènes physiques ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027exposition quotidienne à des niveaux sonores élevés (\u003e 90 décibels) ou à des rayonnements.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La consommation excessive d\u0027alcool et de tabac.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le stress psychosocial permanent et les conflits relationnels répétés au poste de travail ou dans l\u0027environnement familial",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027inhalation de dioxyde de soufre lié au smog (qui est un facteur chimique).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le bruit (acoustique) et les rayonnements sont des agents physiques de l\u0027environnement (exogènes). La pollution de l\u0027air est un facteur chimique, et le stress un facteur psychologique[cite: 584, 585]."
+                      },
+                      {
+                          "q":  "Dans le cas de l\u0027allergie IgE-dépendante (asthme), quel mécanisme illustre l\u0027interaction entre le facteur endogène et exogène ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La personne a une prédisposition génétique (atopie, facteur endogène) qui, lors de la rencontre avec un allergène environnemental (facteur exogène), provoque la libération d\u0027histamine.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027allergène chimique environnemental inhalé induit à lui seul des mutations somatiques directes sur l\u0027ADN bronchique sans jamais nécessiter la moindre prédisposition immunitaire de l\u0027individu",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027asthme est déclenché exclusivement par un stress psychologique aigu sans implication immunitaire.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le facteur exogène n\u0027a aucune importance, seul l\u0027âge détermine la survenue des crises d\u0027asthme.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027asthme atopique montre bien l\u0027interaction : la présence de cellules porteuses d\u0027IgE liées à l\u0027hérédité de l\u0027hôte (endogène) s\u0027active lors de la reconnaissance de l\u0027allergène externe (exogène)[cite: 581]."
+                      },
+                      {
+                          "q":  "Quelle approche épidémiologique caractérise le fait de partir d\u0027un seul facteur de risque (ex: le tabac) pour en étudier les multiples effets (infarctus, cancer ORL, BPCO) ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027étude exposés-non exposés (ou étude de cohorte).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027étude cas-témoins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027essai thérapeutique randomisé en double aveugle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La standardisation indirecte de mortalité.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La « deuxième approche » (partir d\u0027un facteur F pour chercher les maladies M1, M2...) correspond typiquement à une étude de cohorte exposés/non-exposés, où l\u0027on suit des fumeurs et des non-fumeurs pour voir quelles pathologies ils développent[cite: 594]."
+                      },
+                      {
+                          "q":  "Quel critère de causalité est validé lorsque plusieurs études, menées dans des pays différents par des équipes différentes (ex: British doctors, Kaiser Permanente, Japon), aboutissent au même résultat sur le lien tabac-cancer ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le critère de constance et de reproductibilité.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le critère de relation temporelle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le critère de suppression du facteur.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le critère de plausibilité biologique et expérimentale chez l\u0027animal de laboratoire",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le fait que l\u0027association soit retrouvée à maintes reprises dans diverses populations et avec des méthodes variées renforce la causalité. C\u0027est l\u0027argument de constance/reproductibilité[cite: 590, 591]."
+                      },
+                      {
+                          "q":  "Comment évolue le risque d\u0027accident de la circulation pour un conducteur consommant un médicament portant le pictogramme rouge de « niveau 3 » ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le risque d\u0027être responsable d\u0027un accident est significativement augmenté (estimé à +25%).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Il n\u0027y a pas d\u0027augmentation du risque, c\u0027est uniquement une recommandation de confort.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le risque est identique à celui d\u0027un médicament de niveau 1.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le patient devient instantanément incapable de voir la route à cause de mydriase bilatérale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les médicaments de niveau 3 portent la mention « Attention, danger : ne pas conduire ». L\u0027étude CESIR-A a montré qu\u0027ils augmentent le risque d\u0027être responsable d\u0027un accident de +25%[cite: 583]."
+                      },
+                      {
+                          "q":  "Quelle méthode épidémiologique représente la « meilleure méthode » absolue pour imputer une relation causale, mais qui reste souvent inapplicable pour les facteurs de risque environnementaux et comportementaux nocifs ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027expérimentation pure (essai thérapeutique), où l\u0027on contrôle et attribue l\u0027exposition au facteur de façon aléatoire entre deux groupes.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027étude cas-témoins rétrospective rigoureusement appariée sur l\u0027âge et le sexe avec calcul précis de l\u0027odds ratio ajusté sur tous les facteurs de confusion",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027observation d\u0027un tableau de contingence 2x2.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La méta-analyse de séries de cas cliniques.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027expérimentation (contrôler l\u0027exposition, ex: randomiser) est la seule méthode qui prouve stricto sensu la causalité. Cependant, il est éthiquement impossible de forcer des humains à fumer (facteur nocif) pour prouver le cancer ; on se base donc sur un faisceau d\u0027arguments (critères de Hill) à partir d\u0027observations[cite: 587, 588]."
+                      },
+                      {
+                          "q":  "Dans l\u0027étude du grand smog londonien de 1952, l\u0027augmentation spectaculaire de la mortalité respiratoire en quelques jours illustre l\u0027impact de quel type de facteur ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un facteur exogène chimique, lié à une forte exposition aiguë à la pollution atmosphérique (dioxyde de soufre et fumées).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un facteur biologique viral extrêmement contagieux (grippe).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un dérèglement endogène brutal et synchrone de la réactivité bronchique chez la totalité des résidents londoniens asthmatiques",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un facteur purement physique lié aux ondes sonores des usines.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le grand smog londonien (hiver 1952) a causé des milliers de morts dus à l\u0027accumulation subite de dioxyde de soufre (SO2) et de fumées de charbon. C\u0027est le parangon de la nocivité d\u0027un facteur chimique environnemental à court terme[cite: 585]."
+                      },
+                      {
+                          "q":  "Si le risque de cancer du poumon chez les très gros fumeurs est de 166/100 000 par an, et chez les non-fumeurs de 7/100 000, quel est le Risque Attribuable (RA) du tabac pour le cancer du poumon dans ce groupe ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "159 cas pour 100 000 personnes-années (166 - 7).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Environ 23,7 (166 / 7).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "0,04 (7 / 166).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le pourcentage total de cancers dans la population.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le Risque Attribuable est la différence absolue de risque : P(M/F) - P(M/non-F). Ici, 166 - 7 = 159. Le chiffre 23,7 correspondrait au Risque Relatif (RR)[cite: 595, 596]."
+                      },
+                      {
+                          "q":  "La « Fraction étiologique du risque chez les exposés » se calcule par la formule : f = ( P(M/F) - P(M/non-F) ) / P(M/F). Que permet-elle d\u0027évaluer concrètement ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La proportion des cas de maladie chez les sujets exposés qui est directement due au facteur d\u0027exposition.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027incidence globale cumulée de la maladie au sein de l\u0027ensemble de la population générale, incluant les sujets sains non exposés",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La probabilité pour un patient sain de tomber malade s\u0027il n\u0027est pas exposé.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La vitesse de propagation d\u0027une maladie infectieuse dans un milieu clos.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La fraction étiologique chez les exposés indique, parmi tous les malades ayant été exposés au facteur de risque, quelle proportion de ces maladies est réellement attribuable à cette exposition spécifique[cite: 596]."
+                      },
+                      {
+                          "q":  "Lorsqu\u0027on dit que l\u0027activité physique est un facteur « bénéfique » pour les maladies cardiovasculaires, comment cela se traduit-il mathématiquement au niveau probabiliste ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "P(Maladie/Activité_Physique) \u003c P(Maladie/Sédentarité), soit un risque relatif (RR) inférieur à 1.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "P(Maladie/Activité_Physique) \u003e P(Maladie/Sédentarité), soit un risque relatif (RR) supérieur à 1.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le RA est strictement égal à 0.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La fraction étiologique du risque est de 100%.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Un facteur est protecteur ou bénéfique (RR \u003c 1) si la probabilité d\u0027apparition de la maladie en présence du facteur est inférieure à sa probabilité en l\u0027absence du facteur[cite: 578]."
+                      },
+                      {
+                          "q":  "Le stress au travail augmente la prévalence de l\u0027infarctus du myocarde. À quelle catégorie de facteurs de risque appartient-il ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un facteur de risque exogène de nature psychologique ou sociale.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un facteur de susceptibilité endogène strictement héréditaire lié au polymorphisme génétique",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un facteur comportemental de type nutritionnel.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un facteur biologique viral lié à l\u0027environnement.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le stress (au travail, dépression) est généré par l\u0027interaction avec le milieu socio-professionnel et affectif. Il est classé dans l\u0027environnement (exogène), au même titre que les facteurs physiques, chimiques, ou biologiques[cite: 586]."
+                      },
+                      {
+                          "q":  "Dans l\u0027étude INTERHEART sur le stress, quelle était la prévalence de l\u0027infarctus du myocarde chez les sujets exposés à un stress permanent au travail comparée aux non-exposés ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La prévalence était de 10% chez les exposés contre 5% chez les non-exposés, ce qui double le risque (RR=2).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle n\u0027était augmentée que d\u0027une fraction minime (3,5% vs 1,9%).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La prévalence était parfaitement identique, démontrant de manière indiscutable que le stress professionnel isolé n\u0027est pas un facteur cardiovasculaire",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le stress diminuait le risque d\u0027infarctus grâce à une stimulation de l\u0027adrénaline.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Selon les données de Rosengren (INTERHEART, 2004), la prévalence de l\u0027IDM en cas de stress permanent au travail passe de 5% (non exposé) à 10% (exposé)[cite: 586]."
+                      },
+                      {
+                          "q":  "Quelle approche épidémiologique consiste à partir d\u0027une maladie unique (ex: infarctus du myocarde) pour identifier rétrospectivement les facteurs d\u0027exposition (tabac, HTA, cholestérol) chez des patients atteints comparés à des personnes saines ?",
+                          "tags":  [
+                                       "CM 4"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027étude cas-témoins (Première approche).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027étude de cohorte prospective longitudinale en population générale",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027étude transversale descriptive.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027étude expérimentale multicentrique.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La « Première approche » mentionnée dans le cours cible une maladie (M) et remonte en arrière pour chercher l\u0027ensemble des facteurs de risque qui la favorisent (F1, F2, F3). Cela correspond méthodologiquement à l\u0027étude cas-témoins[cite: 593]."
+                      }
+                  ]
+}

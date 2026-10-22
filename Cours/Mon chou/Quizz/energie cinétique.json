@@ -1,0 +1,512 @@
+{
+    "name": "CM 1 - Énergies et Cinématique",
+    "folder": "PASS - Physique",
+    "description": "Bases de la cinématique, lois de Newton, forces fondamentales, travail, puissance, énergie cinétique et potentielle.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Dans quel cadre la mécanique classique s'applique-t-elle pour étudier le mouvement d'une quantité de matière ?",
+            "tags": [
+                "Cinématique"
+            ],
+            "options": [
+                {
+                    "text": "Pour un objet macroscopique, non relativiste (v ≪ c) et évoluant hors d'un champ gravitationnel extrême.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Pour des particules subatomiques élémentaires se propageant à des vitesses proches de celle de la lumière.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Exclusivement au sein de systèmes gazeux parfaits monoatomiques maintenus en équilibre thermique stationnaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Pour tout corps solide condensé subissant une singularité gravitationnelle de courbure d'espace-temps infinie.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La mécanique classique s'applique aux objets macroscopiques. Si l'objet est une particule élémentaire, on utilise la mécanique quantique. S'il est trop rapide, la relativité restreinte. S'il est trop dense, la relativité générale[cite: 1164]."
+        },
+        {
+            "q": "Quelle est la définition mathématique exacte du vecteur accélération ?",
+            "tags": [
+                "Cinématique"
+            ],
+            "options": [
+                {
+                    "text": "a = dv/dt = d²OM/dt² (dérivée première de la vitesse ou dérivée seconde de la position)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "a = dOM/dt = ∫ v(t) dt (dérivée première du vecteur position par rapport au temps)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "a = m × (dv/dt) (produit de l'inertie massique par le gradient temporel de vitesse)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "a = 1/2 × (dv/dt)² (dérivée quadratique de la vitesse par rapport au déplacement)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'accélération représente la variation de vitesse par unité de temps. Elle s'obtient en dérivant la vitesse, ou en dérivant deux fois la position (vecteur OM)[cite: 1164]."
+        },
+        {
+            "q": "Que stipule le principe d'inertie (1ère loi de Newton) ?",
+            "tags": [
+                "Lois de Newton"
+            ],
+            "options": [
+                {
+                    "text": "Tout corps persévère dans son état de repos ou de mouvement rectiligne uniforme si la résultante des forces extérieures est nulle.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'accélération acquise par un corps matériel est toujours proportionnelle au produit de sa masse par le carré de sa vitesse.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Toute action dynamique exercée sur un système engendre une réaction élastique colinéaire d'intensité proportionnelle à la constante de rappel.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La quantité de mouvement totale d'un système matériel isolé croît de façon monotone et irréversible au cours du temps.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Formulée par Newton (et avant lui Galilée), cette loi indique qu'un mouvement à vitesse constante « est comme rien » : sans force extérieure, un objet ne subit aucune accélération[cite: 1165]."
+        },
+        {
+            "q": "Comment s'écrit la Relation Fondamentale de la Dynamique (2ème loi de Newton) pour un système de masse m constante ?",
+            "tags": [
+                "Lois de Newton"
+            ],
+            "options": [
+                {
+                    "text": "Σ F_ext = m × a = dp/dt",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Σ F_ext = 0 (état d'équilibre stationnaire permanent)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Σ F_ext = 1/2 m × v² (gradient temporel de charge)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Σ F_ext = d(m × v²)/dt (théorème de l'impulsion cinétique)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La 2ème loi de Newton relie la force à la variation de quantité de mouvement : Σ F_ext = dp/dt. Si la masse est constante, cela se simplifie en m × (dv/dt), soit m × a[cite: 1165]."
+        },
+        {
+            "q": "Parmi les 4 interactions fondamentales, laquelle est responsable de la cohésion du noyau atomique (liant les protons et neutrons) ?",
+            "tags": [
+                "Interactions fondamentales"
+            ],
+            "options": [
+                {
+                    "text": "L'interaction nucléaire forte.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'interaction nucléaire faible.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'interaction électrostatique coulombienne.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'interaction gravitationnelle de Newton.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'interaction forte est de très courte portée mais c'est la plus intense. Elle permet aux nucléons (protons et neutrons) de rester liés dans le noyau malgré la répulsion électrostatique des protons[cite: 1166]."
+        },
+        {
+            "q": "Dans la loi de Coulomb, de quoi dépend l'intensité de la force électrostatique entre deux charges q1 et q2 ?",
+            "tags": [
+                "Interactions fondamentales"
+            ],
+            "options": [
+                {
+                    "text": "Du produit des charges et de l'inverse du carré de la distance : F ∝ |q1 × q2| / r².",
+                    "isCorrect": true
+                },
+                {
+                    "text": "De la somme algébrique des charges et de l'inverse de la distance radiale : F ∝ |q1 + q2| / r.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "De la masse inertielle des particules chargées et de la racine carrée de la permittivité diélectrique du vide.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "De l'orientation du spin des électrons et de l'intégrale spatiale de la fonction d'onde coulombienne.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La norme de la force est F_e = |(1 / 4πε₀) × (q1 × q2) / r²|. Elle décroît avec le carré de la distance[cite: 1166]."
+        },
+        {
+            "q": "Qu'est-ce que le « travail » d'une force en physique ?",
+            "tags": [
+                "Énergie et Travail"
+            ],
+            "options": [
+                {
+                    "text": "Le transfert d'énergie mécanique opéré par l'application d'une force le long d'un déplacement.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'énergie cinétique microscopique totale stockée par un corps matériel au repos thermodynamique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La puissance mécanique instantanée maximale qu'un opérateur biologique peut développer par seconde.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La contrainte tangentielle statique s'opposant au glissement relatif de deux surfaces solides rugueuses.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'énergie ne peut être directement mesurée, seules ses variations le sont. Le travail (W) est synonyme de cette variation d'énergie due à l'action d'une force sur une distance[cite: 1168, 1170]."
+        },
+        {
+            "q": "Comment calcule-t-on le travail élémentaire (dW) d'une force F lors d'un déplacement dl ?",
+            "tags": [
+                "Énergie et Travail"
+            ],
+            "options": [
+                {
+                    "text": "dW = F · dl = ||F|| × ||dl|| × cos(θ) (produit scalaire)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "dW = ||F ∧ dl|| = ||F|| × ||dl|| × sin(θ) (produit vectoriel)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "dW = (||F|| / ||dl||) × tan(θ) (quotient différentiel)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "dW = 1/2 × ||F||² × dl (dérivée de pression)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Seule la composante de la force parallèle au déplacement travaille. Le produit scalaire F·dl permet de prendre en compte l'angle θ entre les deux vecteurs[cite: 1170]."
+        },
+        {
+            "q": "Que se passe-t-il si une force est appliquée perpendiculairement au sens de déplacement d'un objet (θ = 90°) ?",
+            "tags": [
+                "Énergie et Travail"
+            ],
+            "options": [
+                {
+                    "text": "Le travail est rigoureusement nul (dW = 0), la force n'échangeant aucun travail mécanique avec le mobile.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le travail développé est maximal et moteur (dW > 0) car la force maintient la trajectoire curviligne.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le travail est résistant maximal (dW < 0) et dissipe intégralement l'énergie cinétique sous forme thermique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La force annule instantanément la quantité de mouvement scalaire par induction de forces de frottement normales.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Si θ = π/2 (90°), alors cos(90°) = 0. Le travail est nul. La force peut maintenir l'objet sur une surface (force de réaction) mais ne participe pas au mouvement longitudinal[cite: 1170, 1172]."
+        },
+        {
+            "q": "Comment s'exprime le travail élémentaire des forces de pression sur un piston qui fait varier le volume d'un gaz contre le vide ?",
+            "tags": [
+                "Pression et Travail"
+            ],
+            "options": [
+                {
+                    "text": "|dW| = p_int × |dV|",
+                    "isCorrect": true
+                },
+                {
+                    "text": "|dW| = p_int / |dV|",
+                    "isCorrect": false
+                },
+                {
+                    "text": "|dW| = 1/2 × p_int × dV²",
+                    "isCorrect": false
+                },
+                {
+                    "text": "|dW| = (p_int × S) / dV",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La force de pression est F = p_int × S. Le déplacement est dx. Le travail est F × dx = p_int × S × dx. Comme S × dx = dV, on obtient dW = p_int × dV[cite: 1173]."
+        },
+        {
+            "q": "En thermodynamique, si le volume d'un gaz diminue sous l'effet d'un piston (compression), quel est le signe du travail pour le gaz et quelles en sont les conséquences ?",
+            "tags": [
+                "Pression et Travail"
+            ],
+            "options": [
+                {
+                    "text": "Le travail reçu est positif (W > 0) : l'énergie interne du gaz augmente, ce qui élève sa température.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le travail échangé est négatif (W < 0) : le gaz cède de la quantité de mouvement au piston et se refroidit.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le travail est nul (W = 0) car toute compression quasi-statique s'effectue à entropie rigoureusement constante.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le travail est positif mais n'a aucun effet thermique, l'énergie étant absorbée par les degrés de liberté nucléaires.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Lors d'une compression, le gaz reçoit de l'énergie. L'augmentation de l'énergie cinétique de ses particules se traduit macroscopiquement par une hausse de la température[cite: 1173, 1216]."
+        },
+        {
+            "q": "Quelle est la définition physique de la puissance ?",
+            "tags": [
+                "Puissance"
+            ],
+            "options": [
+                {
+                    "text": "P = dW/dt = F · v (quantité d'énergie ou de travail échangée par unité de temps, en Watts)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "P = W × Δt = F ∧ v (énergie mécanique totale cumulée sur la durée de l'interaction dynamique)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "P = dF/dt = m × da/dt (taux de variation de la force appliquée par unité de déplacement spatial)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "P = 1/2 m v² / S (densité surfacique de flux cinétique traversant une section de contrôle)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La puissance (en Watts, 1 W = 1 J/s) mesure la vitesse de transfert de l'énergie. On peut aussi l'écrire P = F · v[cite: 1174]."
+        },
+        {
+            "q": "Que nous dit le théorème de l'énergie cinétique concernant un mobile ?",
+            "tags": [
+                "Énergie cinétique"
+            ],
+            "options": [
+                {
+                    "text": "La variation d'énergie cinétique entre deux états est égale à la somme des travaux des forces extérieures : ΔEc = Σ W(F_ext).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'énergie cinétique d'un solide en translation reste constante si la résultante des moments de torsion appliqués s'annule.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La dérivée seconde de l'énergie cinétique par rapport au temps est égale à la puissance mécanique dissipée par frottement.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'énergie cinétique acquise est inversement proportionnelle à la somme algébrique des travaux des forces intérieures du système.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "ΔE_cin = Σ W_forces_ext. L'énergie cinétique emmagasinée (1/2 mv²) varie uniquement grâce au travail (moteur ou résistant) des forces extérieures[cite: 1178]."
+        },
+        {
+            "q": "Quelle caractéristique principale distingue une force qui dérive d'une énergie potentielle (force conservative) ?",
+            "tags": [
+                "Énergie potentielle"
+            ],
+            "options": [
+                {
+                    "text": "Son travail ne dépend que des positions initiale et finale, et non du chemin géométrique parcouru : dW = -dEp.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Son intensité vectorielle est directement proportionnelle à la vitesse instantanée d'entraînement du point matériel.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle dissipe irréversiblement une fraction de l'énergie mécanique sous forme de rayonnement thermique infrarouge.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Son intégrale curviligne le long d'un contour fermé orienté est strictement égale à la constante de Boltzmann.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les forces comme la gravité ou la force électrostatique sont conservatives. Leur travail s'exprime comme la diminution de l'énergie potentielle (W_AB = E_potA - E_potB), rendant le détail du trajet inutile[cite: 1180, 1181]."
+        },
+        {
+            "q": "Pour un système où n'agissent que des forces dérivant d'une énergie potentielle, quelle grandeur se conserve ?",
+            "tags": [
+                "Énergie potentielle"
+            ],
+            "options": [
+                {
+                    "text": "L'énergie mécanique totale : E_meca = E_cin + E_pot = constante.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'énergie cinétique seule, l'énergie potentielle étant invariante.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La somme algébrique des accélérations tangentielles et normales.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'entropie thermodynamique globale calculée en volume constant.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "D'après le théorème de l'énergie cinétique, dE_cin = dW. Si dW = -dE_pot, alors dE_cin + dE_pot = 0, donc E_cin + E_pot = constante. Toute perte de l'une est compensée par le gain de l'autre[cite: 1180]."
+        },
+        {
+            "q": "Sur une courbe représentant l'énergie potentielle E_pot(x) d'un système, à quoi correspond un point de la courbe où la dérivée est nulle (pente nulle) et forme un minimum local (creux) ?",
+            "tags": [
+                "Équilibre"
+            ],
+            "options": [
+                {
+                    "text": "À une position d'équilibre stable.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "À une position d'équilibre instable.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "À un point de rupture élastique critique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "À une zone de résonance cinétique divergente.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La force est l'opposée de la dérivée de l'énergie potentielle (F = - dE_pot/dx). Si la pente est nulle, la force est nulle (équilibre). Si c'est un creux, toute perturbation engendrera une force de rappel vers le fond du creux (équilibre stable)[cite: 1182]."
+        },
+        {
+            "q": "Dans l'exemple du jongleur qui lance une balle en l'air, pourquoi la hauteur maximale atteinte (H) ne dépend-elle pas de la masse de la balle ?",
+            "tags": [
+                "Énergie",
+                "Application"
+            ],
+            "options": [
+                {
+                    "text": "La masse s'annule dans l'équation de conservation 1/2 m v₀² = m g H, rendant H = v₀² / (2g) indépendant de m.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La force gravitationnelle s'annule au point culminant de la trajectoire parabolique par compensation d'inertie.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La vitesse initiale verticale communiquée par le jongleur est inversement proportionnelle à la racine de la masse.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le travail de la résistance de l'air compense exactement le travail du poids quelle que soit la section droite.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Lorsqu'on pose la conservation de l'énergie : 1/2 m (v_z0)² = mg(H - H0), on constate que la masse (m) se simplifie. L'altitude maximale ne dépend que de la composante verticale de la vitesse initiale et de g[cite: 1179]."
+        },
+        {
+            "q": "Si l'on doit soulever un piano le long d'un plan incliné (sans frottement), pourquoi la force requise est-elle inférieure à celle nécessaire pour le soulever verticalement ?",
+            "tags": [
+                "Travail",
+                "Forces"
+            ],
+            "options": [
+                {
+                    "text": "Seule la composante du poids parallèle à la pente (P_// = mg × sin α) s'oppose au mouvement, la réaction normale ne travaillant pas.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La réaction normale du support développe un travail moteur qui assiste directement l'opérateur dans la poussée ascendante.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'énergie potentielle de pesanteur du solide diminue tout au long de l'ascension sur le plan incliné par effet trigonométrique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La masse gravitationnelle apparente du piano décroît en fonction du cosinus de l'angle d'inclinaison de la rampe d'accès.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans la descente de Gaston (ou la montée d'un objet), la force normale N et la composante perpendiculaire du poids P_perp ne travaillent pas (angle de 90°). Seule P_// travaille. En tirant/poussant, on ne lutte que contre P_//, qui est plus petit que le poids total mg[cite: 1172]."
+        },
+        {
+            "q": "Quelle est l'énergie métabolique de base (puissance au repos) d'un homme moyen et d'une femme moyenne ?",
+            "tags": [
+                "Puissance",
+                "Métabolisme"
+            ],
+            "options": [
+                {
+                    "text": "Environ 73 W pour un homme (~1 510 kcal/j) et 64 W pour une femme (~1 320 kcal/j).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Environ 550 W pour un homme (~11 400 kcal/j) et 480 W pour une femme (~9 900 kcal/j).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Moins de 15 W pour les deux sexes, l'anabolisme basal ne requérant qu'une faible énergie.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Environ 2 200 W pour un homme et 1 800 W pour une femme (équivalent à un appareil thermique).",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La puissance (quantité d'énergie par unité de temps) du métabolisme de base pour assurer les fonctions vitales est d'environ 73 Watts pour un homme moyen et 64 Watts pour une femme. Un travail intense peut la monter à 600-700 W[cite: 1174]."
+        },
+        {
+            "q": "Dans l'arche spatiale Rama, la gravité apparente g'(r) dépend de la distance r à l'axe central. Comment évolue l'énergie potentielle lorsqu'un astronaute descend un escalier de l'axe (r=0) vers le sol (r=R) ?",
+            "tags": [
+                "Énergie potentielle",
+                "Application"
+            ],
+            "options": [
+                {
+                    "text": "Elle diminue (dEp < 0) car la force centrifuge est centrifuge et motrice, orientée dans le même sens que le déplacement.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle augmente (dEp > 0) car l'astronaute doit fournir un travail résistant pour vaincre l'inertie de Coriolis sur les barreaux.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle demeure rigoureusement constante, la gravité artificielle ne dérivant d'aucun potentiel mécanique scalaire conservatif.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle diverge vers l'infini dès que le rayon dépasse le seuil critique où la vitesse tangentielle égale la vitesse orbitale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "En descendant vers le sol (dr > 0 sur l'axe r pointant vers l'extérieur), l'astronaute se déplace dans le sens de la gravité apparente. La force est donc motrice, le travail est positif, et l'énergie potentielle diminue[cite: 1184]."
+        }
+    ]
+}

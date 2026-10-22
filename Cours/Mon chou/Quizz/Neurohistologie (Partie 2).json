@@ -1,0 +1,528 @@
+{
+    "name": "CM 11 - Neurohistologie (Partie 2)",
+    "folder": "PASS - Histologie",
+    "description": "Les cellules gliales, la barrière hémato-encéphalique, l'organisation tissulaire du SNC et du SNP, et les mécanismes de transport axonal et de transmission synaptique.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Dans le Système Nerveux Central, quel est le rôle fondamental de la cellule microgliale ?",
+            "tags": [
+                "Glie",
+                "Microglie"
+            ],
+            "options": [
+                {
+                    "text": "Surveillance immunitaire : macrophage résident du SNC, phagocytose et présentation d'antigènes.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Synthèse continue de la gaine de myéline plurilamellaire autour des axones du système nerveux périphérique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Revêtement épithélioïde cilié des parois ventriculaires pour filtrer et faire circuler le liquide cérébro-spinal.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Soutien mécanique tridimensionnel rigide et émission de pieds périvasculaires bordant la membrane basale capillaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La microglie est l'effecteur principal de la réponse immunitaire du SNC. Issue des monocytes, elle s'active en cas de lésion/infection pour phagocyter et agir comme cellule présentatrice d'antigènes[cite: 1093, 1105]."
+        },
+        {
+            "q": "Comment l'astrocyte participe-t-il à la Barrière Hémato-Encéphalique (BHE) ?",
+            "tags": [
+                "Astrocytes",
+                "BHE"
+            ],
+            "options": [
+                {
+                    "text": "Pieds vasculaires tapissant 99% des capillaires cérébraux pour le filtre et la nutrition.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Sécrétion continue d'un manchon cartilagineux protecteur inextensible autour des volumineuses artères cérébrales.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Phagocytose systématique et neutralisation de toutes les toxines plasmatiques avant leur passage transendothélial.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'astrocyte n'intervient aucunement dans la BHE, cette dernière étant uniquement constituée par la dure-mère crânienne.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les astrocytes établissent de multiples contacts. Leurs pieds périvasculaires enveloppent la quasi-totalité des capillaires sanguins du cerveau, participant de façon cruciale à la Barrière Hémato-Encéphalique (avec l'endothélium continu et la lame basale)[cite: 1098, 1099, 1113]."
+        },
+        {
+            "q": "Quelle protéine de filament intermédiaire est un marqueur cyto-squelettique spécifique de l'astrocyte ?",
+            "tags": [
+                "Astrocytes",
+                "Marqueurs"
+            ],
+            "options": [
+                {
+                    "text": "La protéine gliofibrillaire acide (GFAP).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La myéline basique protéine (MBP) des gaines.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La synaptophysine des vésicules de neurotransmetteur.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La chaîne lourde de myosine non musculaire B.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le cytosquelette des astrocytes est caractérisé par la présence de GFAP, un filament intermédiaire glial spécifique souvent utilisé en immunohistochimie pour les identifier[cite: 1096, 1097]."
+        },
+        {
+            "q": "Quelle différence topographique distingue l'astrocyte protoplasmique de l'astrocyte fibrillaire ?",
+            "tags": [
+                "Astrocytes",
+                "Classification"
+            ],
+            "options": [
+                {
+                    "text": "Protoplasmique (court, ramifié) dans la substance grise ; fibrillaire (long, lisse) dans la substance blanche.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'astrocyte fibrillaire appartient exclusivement aux troncs du SNP, tandis que le protoplasmique est strictement restreint au cortex cérébral.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il n'existe aucune disparité de localisation anatomique, ces deux aspects décrivant simplement deux phases successives du cycle mitotique glial.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'astrocyte protoplasmique tapisse exclusivement la lumière des cavités ventriculaires, alors que le fibrillaire forme la lame basale méningée.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "On distingue l'astrocyte protoplasmique (surtout dans la substance grise, prolongements courts/irréguliers) de l'astrocyte fibrillaire (surtout dans la substance blanche, prolongements longs et effilés)[cite: 1098]."
+        },
+        {
+            "q": "Dans le système nerveux central, quelle cellule gliale est responsable de la myélinisation des axones ?",
+            "tags": [
+                "Glie",
+                "Oligodendrocyte"
+            ],
+            "options": [
+                {
+                    "text": "L'oligodendrocyte interfasciculaire.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La cellule gliale périphérique de Schwann.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'épendymocyte des cavités ventriculaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'astrocyte fibrillaire périvasculaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La myéline du SNC est synthétisée par l'oligodendrocyte (un même oligodendrocyte peut myéliniser plusieurs axones). Dans le SNP, ce rôle est assuré par la cellule de Schwann[cite: 1094, 1101, 1103]."
+        },
+        {
+            "q": "Comment s'organisent les méninges de l'extérieur (crâne) vers l'intérieur (parenchyme cérébral) ?",
+            "tags": [
+                "Méninges",
+                "Anatomie"
+            ],
+            "options": [
+                {
+                    "text": "Dure-mère, puis Arachnoïde, puis Pie-mère.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Pie-mère, puis Dure-mère, puis Arachnoïde.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Arachnoïde, puis Pie-mère, puis Dure-mère.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Dure-mère, puis espace épendymaire, puis Pie-mère.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les 3 couches méningées sont la dure-mère (externe, épaisse, conjonctif dense), l'arachnoïde (moyenne, ajourée pour le LCR), et la pie-mère (interne, très fine, adhérant intimement au SNC)[cite: 1110]."
+        },
+        {
+            "q": "Qu'est-ce qui caractérise histologiquement la substance blanche du SNC ?",
+            "tags": [
+                "SNC",
+                "Substance blanche"
+            ],
+            "options": [
+                {
+                    "text": "Axones myélinisés et oligodendrocytes, sans corps cellulaires de neurones.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Concentration exclusive des péricaryons neuronaux métaboliquement actifs et de leurs volumineuses arborisations dendritiques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Territoire anatomique privilégié concentrant la quasi-totalité des synapses neuro-neuronales au sein du neuropile cortical.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Revêtement épithélial cubique simple pourvu de microvillosités et de cils mobiles sécrétant en continu le liquide céphalo-rachidien.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La substance blanche tire son nom de la myéline entourant les faisceaux d'axones. Contrairement à la substance grise, elle ne contient pas les corps cellulaires des neurones ni les réseaux synaptiques (neuropile)[cite: 1116, 1119]."
+        },
+        {
+            "q": "Comment se nomment et s'organisent les 6 couches du néocortex cérébral de la superficie (I) vers la profondeur (VI) ?",
+            "tags": [
+                "Cortex cérébral",
+                "Néocortex"
+            ],
+            "options": [
+                {
+                    "text": "I: Moléculaire, II: Granulaire ext., III: Pyramidale ext., IV: Granulaire int., V: Ganglionnaire, VI: Polymorphe.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "I: Polymorphe profonde, II: Ganglionnaire motrice, III: Granulaire interne, IV: Pyramidale, V: Moléculaire, VI: Granulaire externe sous-méningée.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le néocortex cérébral est un allocortex simplifié constitué de 3 assises cellulaires : Moléculaire, Purkinje et Granuleuse.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "I: Pie-mère externe, II: Dure-mère fibreuse, III: Espace arachnoïdien, IV: Trame épendymaire, V: Stroma glial, VI: Substance myélinique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le néocortex est structuré en 6 couches distinctes : I (Moléculaire), II (Granulaire ext.), III (Pyramidale ext.), IV (Granulaire int.), V (Ganglionnaire avec gdes c. pyramidales de Betz) et VI (Polymorphe)[cite: 1122, 1123]."
+        },
+        {
+            "q": "Dans le cortex cérébelleux, quelle est la couche moyenne (intermédiaire) ?",
+            "tags": [
+                "Cervelet",
+                "Cortex cérébelleux"
+            ],
+            "options": [
+                {
+                    "text": "La couche des cellules de Purkinje.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La couche moléculaire superficielle.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La couche granuleuse interne des grains.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La couche pyramidale des cellules de Betz.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le cortex du cervelet est composé de seulement 3 couches : la couche moléculaire (externe), la couche moyenne (une seule rangée de grandes cellules de Purkinje), et la couche granuleuse (interne, contenant les grains)[cite: 1130, 1131]."
+        },
+        {
+            "q": "Dans un nerf périphérique, quel tissu conjonctif entoure chaque faisceau de fibres nerveuses et constitue une barrière ?",
+            "tags": [
+                "SNP",
+                "Nerf périphérique"
+            ],
+            "options": [
+                {
+                    "text": "Le périnèvre (cellules périneurales jointives et collagène).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'épinèvre fibreux externe entourant le tronc nerveux dans sa totalité.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'endonèvre lâche vascularisé tapissant l'intervalle entre chaque axone.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La dure-mère périphérique tapissant les gaines osseuses vertébrales.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le tronc nerveux est structuré ainsi : l'épinèvre (externe) entoure l'ensemble du nerf. À l'intérieur, les fibres sont groupées en faisceaux, chaque faisceau étant entouré par le périnèvre. À l'intérieur du faisceau, chaque fibre est dans l'endonèvre[cite: 1138, 1139]."
+        },
+        {
+            "q": "Que contient le ganglion rachidien postérieur dans le Système Nerveux Périphérique ?",
+            "tags": [
+                "SNP",
+                "Ganglion"
+            ],
+            "options": [
+                {
+                    "text": "Somas de neurones sensitifs en T entourés de cellules satellites, sans synapse.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Multiples relais synaptiques moteurs complexes intercalés entre motoneurones alpha spinaux.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Enchevêtrement pur d'axones myélinisés moteurs dépourvu de tout corps cellulaire neuronal.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Noyau autonome végétatif central du nerf vague contrôlant l'innervation parasympathique viscérale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le ganglion rachidien héberge le corps des neurones sensitifs dont le prolongement en T part vers la peau et vers la moelle. Il n'y a pas de synapses à ce niveau. Chaque soma est entouré de petites cellules satellites gliales[cite: 1136]."
+        },
+        {
+            "q": "Comment se réalise le transport axonal antérograde RAPIDE (200 à 400 mm/jour) des vésicules depuis le corps cellulaire vers la synapse ?",
+            "tags": [
+                "Transport axonal",
+                "Antérograde"
+            ],
+            "options": [
+                {
+                    "text": "Kinésines le long des microtubules vers l'extrémité positive (+).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dynéines cytoplasmiques glissant sur les microfilaments d'actine sous-sarcolemmiques vers l'extrémité négative.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Diffusion ionique passive et continue du flux électrolytique le long des intervalles internodaux amyéliniques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Exocytose et transfert paracrine de proche en proche par les cellules de Schwann bordant les étranglements de Ranvier.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le transport antérograde (vers l'avant) des vésicules (neuromédiateurs, mitochondries) est un transport actif utilisant le rail des microtubules et le moteur protéique kinésine. Le transport rétrograde utilise la dynéine[cite: 1151, 1152]."
+        },
+        {
+            "q": "Quel mécanisme garantit le maintien du potentiel de repos de la membrane neuronale (-70 mV) ?",
+            "tags": [
+                "Physiologie",
+                "Potentiel de repos"
+            ],
+            "options": [
+                {
+                    "text": "Pompes Na+/K+ ATPases expulsant 3 Na+ et faisant entrer 2 K+.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ouverture massive et spontanée des canaux calciques voltage-dépendants au niveau du péricaryon.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Diffusion transmembranaire passive des vésicules synaptiques à travers la bicouche phospholipidique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Fixation tonique du glutamate et de l'aspartate sur les corps de Nissl du cytoplasme périnucléaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Au repos, les canaux voltage-dépendants sont inactifs. C'est l'activité continue (consommatrice d'ATP) de la pompe Na+/K+ qui maintient le déséquilibre de charges (l'intérieur de la cellule restant négatif par rapport à l'extérieur)[cite: 1145, 1146]."
+        },
+        {
+            "q": "Comment se propage le potentiel d'action le long d'un axone myélinisé ?",
+            "tags": [
+                "Potentiel d'action",
+                "Conduction saltatoire"
+            ],
+            "options": [
+                {
+                    "text": "Conduction saltatoire de nœud de Ranvier en nœud de Ranvier, rapide et économe.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Propagation continue pas à pas et très lente, dépolarisant chaque micron de la membrane sous la gaine de myéline isolante.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Flux rétrograde continu s'écoulant spontanément depuis la bouton présynaptique terminal vers le cône d'implantation.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Transfert vésiculaire rapide par endocytose médiée par les récepteurs kinésines le long des prolongements gliaux.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La myéline est isolante. Les canaux Na+ voltage-dépendants sont concentrés dans les zones nues (nœuds de Ranvier). Le courant électrique « saute » donc d'un nœud à l'autre (conduction saltatoire), accélérant considérablement l'influx (jusqu'à 100 m/s)[cite: 1148]."
+        },
+        {
+            "q": "Lors de l'arrivée du potentiel d'action à la terminaison présynaptique, quel ion déclenche directement la fusion des vésicules contenant le neurotransmetteur avec la membrane ?",
+            "tags": [
+                "Synapse",
+                "Physiologie"
+            ],
+            "options": [
+                {
+                    "text": "Le calcium (Ca2+) entrant par les canaux voltage-dépendants.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le potassium (K+) expulsé activement de la matrice mitochondriale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le chlore (Cl-) diffusant librement à travers les claudines jonctionnelles.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le magnésium (Mg2+) libéré par dissociation du complexe ATP-magnésien.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La dépolarisation du bouton terminal ouvre des canaux calciques voltage-dépendants. L'afflux de Ca2+ intracellulaire est le signal biochimique déclenchant l'exocytose des vésicules synaptiques dans la fente[cite: 1156]."
+        },
+        {
+            "q": "En physiologie synaptique, qu'est-ce qu'un Potentiel Post-Synaptique Inhibiteur (PPSI) ?",
+            "tags": [
+                "Synapse",
+                "Inhibition"
+            ],
+            "options": [
+                {
+                    "text": "Hyperpolarisation par entrée d'ions Cl-, éloignant du seuil de déclenchement.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dépolarisation brutale et massive de la membrane par ouverture synchrone des canaux sodiques voltage-dépendants.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Recapture astrocytaire rapide et dégradation enzymatique de la sérotonine par la monoamine oxydase mitochondriale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Blocage irréversible du flux axonal antérograde rapide par dépolymérisation des microtubules sous l'effet du calcium.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les neurotransmetteurs inhibiteurs (GABA, glycine) se lient à des récepteurs canaux qui laissent généralement entrer le chlore (Cl-), rendant l'intérieur de la cellule plus négatif (hyperpolarisation), ce qui inhibe la création d'un potentiel d'action[cite: 1157]."
+        },
+        {
+            "q": "À quoi sert l'épendymocyte dans l'organisation du Système Nerveux Central ?",
+            "tags": [
+                "Glie",
+                "Ependymocyte"
+            ],
+            "options": [
+                {
+                    "text": "Épithélium cilié filtrant entre liquide cérébro-spinal et parenchyme nerveux.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Cellule mésenchymateuse spécialisée synthétisant le réseau fibrillaire de collagène I au sein de la substance blanche.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Macrophage hautement actif chargé de dégrader les corps de Nissl et les agrégats de lipofuscine dans les neurones sénescents.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Cellule myélinisante périphérique assurant l'isolation électrique des axones au sein des racines nerveuses crâniennes motrices.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les épendymocytes sont des cellules gliales de type épithélial, cubiques ou prismatiques, bordant les ventricules. Leurs cils et microvillosités participent aux échanges et à la circulation du liquide céphalo-rachidien (LCS)[cite: 1107, 1108]."
+        },
+        {
+            "q": "Dans la substance grise de la moelle épinière, quel est le nom de la zone ventrale contenant les corps cellulaires des motoneurones ?",
+            "tags": [
+                "Moelle épinière",
+                "Anatomie"
+            ],
+            "options": [
+                {
+                    "text": "La corne antérieure (ou corne ventrale).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le ganglion rachidien sensitif dorsal.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le cordon blanc postérieur de Goll et Burdach.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le plancher épendymaire du ventricule cérébelleux.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La moelle épinière est formée d'une substance grise centrale (en forme de H) et de substance blanche périphérique. La région ventrale est la corne antérieure (motrice), contenant les corps cellulaires des motoneurones dont l'axone forme la racine ventrale[cite: 1133, 1134]."
+        },
+        {
+            "q": "Que contient une vésicule de transport transportée de manière rétrograde rapide (environ 300 mm/j) par la dynéine ?",
+            "tags": [
+                "Transport axonal",
+                "Rétrograde"
+            ],
+            "options": [
+                {
+                    "text": "Déchets, organites usagés (mitochondries) et endosomes de signalisation.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Adénosine triphosphate et métabolites glucidiques fraîchement élaborés pour ravitailler la terminaison synaptique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Pools de vésicules synaptiques neuves remplies de neurotransmetteurs peptidiques synthétisés par l'appareil de Golgi.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Molécules d'ARN messager et sous-unités ribosomiques destinées à la traduction locale au sein de la fente synaptique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le transport rétrograde (qui ramène le flux de l'axone vers le soma) transporte notamment des déchets (autophagosomes) pour être dégradés par les lysosomes du soma, et des signaux (endosomes de signalisation). Le transport d'enzymes ou de neurotransmetteurs se fait en antérograde[cite: 1151, 1153]."
+        },
+        {
+            "q": "Dans l'écorce cérébelleuse, quel axone croise les fibres parallèles des grains et s'enroule autour de l'arbre dendritique de la cellule de Purkinje pour lui apporter une forte information excitatrice ?",
+            "tags": [
+                "Cervelet",
+                "Fibres"
+            ],
+            "options": [
+                {
+                    "text": "La fibre grimpante.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La fibre moussue.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'axone de la cellule en panier.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le pied astrocytaire périvasculaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans le cortex cérébelleux, il existe deux grandes afférences : les fibres moussues (qui font synapse sur les grains formant des glomérules) et les fibres grimpantes (qui viennent directement s'enrouler et faire de multiples synapses sur les dendrites de Purkinje)[cite: 1131, 1132]."
+        }
+    ]
+}

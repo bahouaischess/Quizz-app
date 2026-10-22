@@ -1,0 +1,660 @@
+﻿{
+    "name":  "CM 8 - Histoire et enjeux éthiques de l\u0027IVG",
+    "folder":  "PASS - SHS",
+    "description":  "25 questions sur l\u0027histoire de l\u0027avortement, la loi Veil et la clause de conscience.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Quelle est la différence fondamentale entre une IVG et une IMG ?",
+                          "tags":  [
+                                       "Définitions",
+                                       "CM 8"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027IMG n\u0027a aucune restriction de délai et requiert un motif médical grave.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027IVG est sans restriction de délai alors que l\u0027IMG est limitée à 14 semaines.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027IMG concerne les fausses couches spontanées.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027IVG est exclusivement réservée aux mineures.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027IMG (Interruption Médicale de Grossesse) est réalisée sans restriction de délai pour un motif médical grave (péril pour la mère ou affection d\u0027une particulière gravité pour l\u0027enfant)."
+                      },
+                      {
+                          "q":  "Est-il vrai que l\u0027IVG rend systématiquement stérile selon les données de la Haute Autorité de Santé (2001) ?",
+                          "tags":  [
+                                       "Idées reçues",
+                                       "CM 8"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Faux, pratiquée dans un cadre médical adapté, elle ne diminue pas la fécondité.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Vrai, il existe un risque statistique direct de plus de 50% d\u0027infertilité définitive secondaire.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Faux, elle augmente au contraire la fécondité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Vrai, uniquement pour les IVG médicamenteuses.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "C\u0027est une idée fausse. Selon les recommandations de l\u0027HAS de 2001, l\u0027IVG pratiquée dans un cadre médical adapté ne risque pas de rendre stérile."
+                      },
+                      {
+                          "q":  "Quelle proportion de femmes ayant recours à l\u0027IVG utilisaient déjà un moyen de contraception (selon la DREES en 2015) ?",
+                          "tags":  [
+                                       "Statistiques",
+                                       "CM 8"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Plus de 2 cas sur 3.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Moins de 10%.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Environ 1 cas sur 4.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La quasi-totalité n\u0027en utilisait pas.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Dans plus de 2 cas sur 3, les femmes qui ont recours à l\u0027IVG utilisaient un moyen de contraception, contrairement à l\u0027idée reçue qu\u0027elle ne concerne que les femmes sans contraception."
+                      },
+                      {
+                          "q":  "Que prévoyait l\u0027Article 317 du Code Napoléon (1810) concernant l\u0027avortement ?",
+                          "tags":  [
+                                       "Histoire",
+                                       "Droit"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Des peines de prison et d\u0027amende, y compris pour les médecins (travaux forcés).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La peine de mort systématique et sans appel pour toute femme ayant consenti à l\u0027acte.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une simple amende pour propagande anti-conceptuelle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une dépénalisation partielle pour raisons thérapeutiques.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le Code Napoléon de 1810 punissait de prison et d\u0027amende l\u0027avortement, allant jusqu\u0027aux travaux forcés pour le corps médical."
+                      },
+                      {
+                          "q":  "Dans quel contexte historique la loi de 1920 interdisant la propagande anti-conceptuelle a-t-il été votée ?",
+                          "tags":  [
+                                       "Histoire",
+                                       "CM 8"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Dans le contexte d\u0027une politique nataliste suivant la Première Guerre mondiale face au « péril » de dénatalité.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Sous le régime de Vichy afin de contrôler disciplinairement la population active.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Pendant la Révolution française pour des raisons religieuses.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Dans les années 70 en réponse au MLF.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La loi de 1920 s\u0027inscrit dans une politique nataliste forte après les pertes démographiques de la Première Guerre mondiale."
+                      },
+                      {
+                          "q":  "Quel sort a subi Marie-Louise Giraud sous le régime de Vichy en 1942 ?",
+                          "tags":  [
+                                       "Histoire",
+                                       "Vichy"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle a été guillotinée pour avoir procédé à 27 avortements.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle a été exilée à perpétuité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle a été acquittée grâce à Gisèle Halimi.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle a été la première femme à signer le Manifeste des 343.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Sous Vichy, l\u0027avortement est un crime d\u0027État passible de la peine de mort. Marie-Louise Giraud est guillotinée le 30 juillet 1942."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce que la « Nationalisation du corps des femmes » dans le contexte de la répression de l\u0027avortement ?",
+                          "tags":  [
+                                       "Sociologie",
+                                       "Droit"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le fait que les capacités procréatives des femmes étaient considérées comme appartenant à l\u0027État, rendant leur consentement indifférent en droit.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La prise en charge universelle et intégrale à 100% par l\u0027Assurance Maladie de l\u0027ensemble des consultations, actes et soins liés à la maternité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027obligation pour les femmes de s\u0027inscrire sur un registre national de fécondité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La création de maternités publiques gratuites.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le droit pénal de l\u0027époque était indifférent au consentement de la femme, ses capacités procréatives étant des éléments centraux des politiques natalistes de l\u0027État."
+                      },
+                      {
+                          "q":  "Quelle loi autorise la contraception en France en 1967 ?",
+                          "tags":  [
+                                       "Contraception",
+                                       "CM 8"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La loi Neuwirth.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La loi Veil.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La loi Kouchner.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La loi Roudy.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La loi Neuwirth de 1967 autorise la fabrication, l\u0027importation et la vente (sur ordonnance) de contraceptifs en France."
+                      },
+                      {
+                          "q":  "Que revendiquaient les femmes signataires du « Manifeste des 343 » en 1971 ?",
+                          "tags":  [
+                                       "Féminisme",
+                                       "Militantisme"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elles revendiquaient publiquement avoir eu recours à l\u0027avortement, s\u0027exposant ainsi à des poursuites.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elles revendiquaient avec véhémence l\u0027abaissement immédiat de la majorité civile et du droit de vote à 16 ans.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles exigeaient le droit de pratiquer elles-mêmes des accouchements.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles demandaient la fermeture du Planning Familial.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le Manifeste des 343 rassemblait des femmes déclarant publiquement « Je me suis fait avorter », un acte courageux car illégal à l\u0027époque."
+                      },
+                      {
+                          "q":  "Quelle association militante des années 70 pratiquait publiquement des avortements clandestins pour défier la loi ?",
+                          "tags":  [
+                                       "Militantisme",
+                                       "CM 8"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le MLAC (Mouvement pour la Liberté de l\u0027Avortement et de la Contraception).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La HAS (Haute Autorité de Santé).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027OMS (Organisation Mondiale de la Santé) via son antenne européenne d\u0027urgence.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027Ordre des médecins.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le MLAC militait pour la légalisation tout en pratiquant des IVG de manière clandestine pour forcer le changement législatif."
+                      },
+                      {
+                          "q":  "Qui a fondé l\u0027association « Choisir la cause des femmes » en 1972 ?",
+                          "tags":  [
+                                       "Féminisme",
+                                       "CM 8"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Gisèle Halimi et Simone de Beauvoir.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Simone Veil et Marie-Claire Chevalier.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Marie-Louise Giraud et Lucien Sève.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Valéry Giscard d\u0027Estaing et Lucien Neuwirth.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Gisèle Halimi et Simone de Beauvoir ont fondé « Choisir » pour lutter pour la dépénalisation de l\u0027avortement."
+                      },
+                      {
+                          "q":  "Lors du procès de Bobigny en 1972, pourquoi Marie-Claire Chevalier était-elle inculpée ?",
+                          "tags":  [
+                                       "Bobigny",
+                                       "Justice"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Pour avoir recouru à l\u0027avortement après avoir été violée, suite à la dénonciation de son violeur.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Pour avoir organisé et pratiqué des avortements clandestins en série sur des camarades de lycée mineures.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Pour avoir distribué des contraceptifs illégalement.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Pour avoir publié le Manifeste des 343.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Marie-Claire Chevalier, mineure, a été dénoncée par son violeur après s\u0027être fait avorter. Elle a été acquittée suite à la défense de Gisèle Halimi."
+                      },
+                      {
+                          "q":  "Qu\u0027a annoncé Valéry Giscard d\u0027Estaing en 1974 concernant l\u0027avortement ?",
+                          "tags":  [
+                                       "Politique",
+                                       "CM 8"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Qu\u0027aucune poursuite ne serait engagée pour avortement jusqu\u0027au vote d\u0027une nouvelle loi.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Qu\u0027il réinstaurait la peine de mort par décret présidentiel pour les personnes qualifiées de « faiseuses d\u0027anges ».",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Que le délai d\u0027IVG passerait immédiatement à 14 semaines.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Que la contraception serait interdite aux mineures.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En 1974, VGE annonce une suspension des poursuites judiciaires, préparant le terrain pour la loi Veil de 1975."
+                      },
+                      {
+                          "q":  "Quel était le délai légal maximum pour recourir à une IVG défini par la loi Veil en 1975 ?",
+                          "tags":  [
+                                       "Loi Veil",
+                                       "Délai"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "10 semaines de grossesse.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "12 semaines de grossesse.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "14 semaines de grossesse.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Aucun délai n\u0027était imposé.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La loi Veil de 1975 autorisait l\u0027IVG dans un délai initial de 10 semaines de grossesse. Il a été étendu depuis."
+                      },
+                      {
+                          "q":  "La loi Veil de 1975 prévoyait-elle le remboursement de l\u0027IVG par la Sécurité sociale ?",
+                          "tags":  [
+                                       "Loi Veil",
+                                       "Financement"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Non, la loi ne prévoyait pas le remboursement par la Sécurité sociale à l\u0027époque.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Oui, elle était remboursée à 100% dès 1975.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Oui, mais uniquement pour les mineures.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Oui, mais seulement et expressément si le motif était strictement médical d\u0027interruption de grossesse (IMG).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La loi de 1975 dépénalisait l\u0027IVG mais ne prévoyait pas son remboursement. Le remboursement à 100% est une évolution ultérieure."
+                      },
+                      {
+                          "q":  "Quelle évolution juridique majeure a connu l\u0027IVG en France en 2024 ?",
+                          "tags":  [
+                                       "Actualité",
+                                       "Droit"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La constitutionnalisation de la liberté de recourir à l\u0027IVG.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le passage du délai légal à 20 semaines de grossesse.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027interdiction de la clause de conscience pour les médecins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La suppression totale de l\u0027IVG médicamenteuse.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En 2024, la liberté de recourir à l\u0027IVG a été inscrite dans la Constitution française pour la protéger de futures lois restrictives."
+                      },
+                      {
+                          "q":  "Dans le débat sur le statut moral de l\u0027embryon, que désigne l\u0027animation « immédiate » ?",
+                          "tags":  [
+                                       "Éthique",
+                                       "Théologie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027idée que l\u0027âme s\u0027unit au corps dès le moment de la conception.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027idée que l\u0027âme entre au moment de la première respiration.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027idée que le système nerveux central se forme instantanément in vitro.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027idée que le droit reconnaît la personnalité juridique de l\u0027embryon.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027animation immédiate, défendue par des théologiens comme Saint Basile, postule que l\u0027âme entre dans l\u0027embryon dès la conception."
+                      },
+                      {
+                          "q":  "Quelle position théologique Saint Thomas d\u0027Aquin défendait-il concernant l\u0027embryon ?",
+                          "tags":  [
+                                       "Théologie",
+                                       "CM 8"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027animation médiate (l\u0027âme s\u0027unit au corps entre le 40e et 80e jour).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027animation immédiate et absolue de l\u0027embryon dès la première seconde de la conception divine.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La résurrection de l\u0027embryon en cas de fausse couche.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le refus strict de toute intervention médicale sur le fœtus.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Saint Thomas d\u0027Aquin soutenait l\u0027animation médiate, pensant que l\u0027âme s\u0027unissait au corps plus tardivement après la conception."
+                      },
+                      {
+                          "q":  "Quel était le statut de l\u0027embryon en droit français contemporain selon le cours ?",
+                          "tags":  [
+                                       "Droit",
+                                       "Statut"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027embryon n\u0027est pas considéré comme une personne juridique titulaire de droits.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027embryon est juridiquement considéré comme un citoyen à part entière titulaire de droits dès le premier trimestre.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027embryon bénéficie d\u0027un statut de personne juridique conditionnelle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027embryon a exactement les mêmes droits que la mère qui le porte.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En droit français, l\u0027embryon n\u0027a pas la personnalité juridique ; il n\u0027est donc pas titulaire de droits."
+                      },
+                      {
+                          "q":  "Pourquoi Simone Veil a-t-elle refusé d\u0027entrer dans les débats scientifiques et philosophiques sur l\u0027embryon à l\u0027Assemblée ?",
+                          "tags":  [
+                                       "Simone Veil",
+                                       "Discours"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Parce qu\u0027elle jugeait ce problème insoluble et préférait aborder l\u0027IVG sous l\u0027angle de la santé publique.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Parce qu\u0027elle estimait que les députés de l\u0027Assemblée manquaient des compétences requises en embryologie moléculaire.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce qu\u0027elle craignait de froisser le Conseil de l\u0027Ordre des médecins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Parce qu\u0027elle était elle-même partisane de l\u0027animation immédiate.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Simone Veil a délibérément déplacé le débat du terrain métaphysique, jugé insoluble, vers le terrain pragmatique de la santé publique (les dangers des avortements clandestins)."
+                      },
+                      {
+                          "q":  "Outre la santé publique, quel autre enjeu majeur rendait la législation sur l\u0027avortement nécessaire selon le cours ?",
+                          "tags":  [
+                                       "Sociologie",
+                                       "Égalité"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027enjeu de l\u0027égalité entre les hommes et les femmes face au rôle social de la reproduction.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027enjeu purement économique et budgétaire de rationalisation des comptes de la Sécurité sociale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La nécessité d\u0027augmenter le taux de natalité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La création de nouveaux emplois pour les médecins.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Légiférer sur l\u0027avortement, c\u0027est aussi réfléchir au rôle social assigné aux femmes et permettre de s\u0027émanciper du poids exclusif de la reproduction, c\u0027est un enjeu d\u0027égalité."
+                      },
+                      {
+                          "q":  "Quelle est l\u0027origine historique de la « clause de conscience » ?",
+                          "tags":  [
+                                       "Clause de conscience",
+                                       "Histoire"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle vient du refus des objecteurs de conscience d\u0027effectuer leur service militaire ou d\u0027aller à la guerre.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle a été expressément inventée et rédigée par Simone Veil en personne lors des débats parlementaires de la loi de 1975.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle vient du serment d\u0027Hippocrate dans la Grèce antique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle est issue de la Révolution française pour protéger le clergé.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027origine de la clause de conscience se trouve dans l\u0027objection de conscience militaire (pacifisme, refus de la conscription)."
+                      },
+                      {
+                          "q":  "Quelles sont les limites légales de la clause de conscience médicale générale selon le Code de la Santé Publique ?",
+                          "tags":  [
+                                       "Droit",
+                                       "Médecine"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027urgence vitale et le risque de manquer à ses devoirs d\u0027humanité.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le médecin n\u0027a aucune limite, il peut toujours refuser de soigner.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle ne s\u0027applique qu\u0027aux actes non remboursés par la Sécurité sociale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle est limitée à trois refus par an par médecin.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Un médecin peut refuser ses soins sauf en cas d\u0027urgence ou s\u0027il manquerait à ses devoirs d\u0027humanité."
+                      },
+                      {
+                          "q":  "Quelle obligation spécifique assortit la clause de conscience liée à l\u0027IVG depuis 2001 ?",
+                          "tags":  [
+                                       "Loi",
+                                       "IVG"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027obligation pour le médecin de renvoyer la patiente vers un autre professionnel.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027obligation formelle de motiver et justifier son refus par écrit auprès du Conseil départemental de l\u0027Ordre des médecins.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027obligation de rembourser le ticket modérateur de la patiente.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027obligation de suivre une formation éthique annuelle.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Contrairement à la clause générale, la clause spécifique à l\u0027IVG oblige depuis 2001 le professionnel refusant de pratiquer l\u0027acte à réorienter la femme vers un confrère."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce qui représente aujourd\u0027hui une limite factuelle à l\u0027application de l\u0027obligation de réorientation après l\u0027exercice de la clause de conscience ?",
+                          "tags":  [
+                                       "Droit",
+                                       "Société"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les déserts médicaux, qui rendent difficile de trouver un autre praticien à proximité.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le refus des mutuelles de prendre en charge le deuxième rendez-vous.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027interdiction européenne de consulter deux médecins pour le même motif.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La constitutionnalisation de la liberté de recourir à l\u0027IVG qui a abrogé de plein droit la clause de conscience médicale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Bien que le médecin doive réorienter la patiente, les déserts médicaux compliquent cette démarche et peuvent constituer un obstacle à l\u0027effectivité du droit à l\u0027IVG."
+                      }
+                  ]
+}

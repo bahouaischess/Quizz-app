@@ -1,0 +1,528 @@
+{
+    "name": "CM 7 - Tissu osseux (Partie 2)",
+    "folder": "PASS - Tissus",
+    "description": "Organisation, matrice extracellulaire, types cellulaires et mécanismes de l'ostéogenèse et du remodelage du tissu osseux.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Le tissu osseux est un tissu conjonctif spécialisé. Quelles caractéristiques fondamentales le distinguent des autres tissus conjonctifs comme le cartilage ?",
+            "tags": [
+                "Généralités",
+                "Tissu osseux"
+            ],
+            "options": [
+                {
+                    "text": "Substance fondamentale minéralisée rigide et calcifiée, tissu richement vascularisé et innervé.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Tissu totalement avasculaire dépourvu de tout canal nourricier, se nourrissant par simple imbibition du liquide synovial.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Matrice extracellulaire purement cartilagineuse composée à 95% de collagène fibrillaire de type II et d'eau non minéralisée.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Stroma dense composé d'une prépondérance d'adipocytes bruns multiloculaires assurant la thermogenèse osseuse continue.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le tissu osseux est rigide et dur car sa substance fondamentale est calcifiée. Contrairement au cartilage (avasculaire), l'os est très bien vascularisé et innervé, et en constant renouvellement.[cite: 880]"
+        },
+        {
+            "q": "Outre la locomotion et la protection des organes, quel est le principal rôle métabolique de l'os ?",
+            "tags": [
+                "Fonction",
+                "Métabolisme"
+            ],
+            "options": [
+                {
+                    "text": "Principal réservoir minéral de l'organisme (99% du calcium, 88% du phosphore corporel).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Synthèse endocrine et stockage intramédullaire continu de l'insuline et du glucagon pour la régulation de la glycémie à jeun.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Sécrétion hépato-biliaire et stockage exclusif de la totalité des vitamines hydrosolubles et des facteurs de la coagulation.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Séquestration métabolique et neutralisation chimique de l'excès d'acide lactique produit lors de l'effort physique anaérobie.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'os joue un rôle primordial dans le métabolisme phosphocalcique. La phase minérale de sa matrice stocke la quasi-totalité du calcium (99%), du phosphore (88%) et la moitié du magnésium du corps.[cite: 881, 882, 883]"
+        },
+        {
+            "q": "De quoi est principalement constituée la phase organique de la matrice extracellulaire (MEC) osseuse ?",
+            "tags": [
+                "MEC",
+                "Matrice organique"
+            ],
+            "options": [
+                {
+                    "text": "95% de collagène I et glycoprotéines spécifiques (ostéocalcine, ostéopontine).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Matrice amorphe dominée par des protéoglycanes géants d'acide hyaluronique libre et d'épais trousseaux de fibres élastiques sinueuses.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Réseau fibrillaire homogène constitué exclusivement de collagène de type II associé à de la tropoélastine et de la fibrilline matricielle.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Matrice inorganique cristallisée composée à 100% de cristaux d'hydroxyapatite dénuée de tout composant polypeptidique ou enzymatique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La matrice organique de l'os est caractérisée par l'absence d'élastine et de collagène II. Elle est extrêmement riche en collagène de type I (95%) et contient des glycoprotéines spécifiques de la minéralisation comme l'ostéocalcine.[cite: 884, 885]"
+        },
+        {
+            "q": "Comment se présente la phase minérale de la matrice osseuse sur le plan cristallographique ?",
+            "tags": [
+                "MEC",
+                "Minéralisation"
+            ],
+            "options": [
+                {
+                    "text": "Cristaux hexagonaux d'hydroxyapatite s'intercalant entre les fibres de collagène I.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Prismes aciculaires de carbonate de calcium pur cristallisé sous forme de calcite identique à l'émail dentaire coronaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Amas amorphes de chlorure de sodium et de phosphate tricalcique hydraté précipités sans organisation périodique spatiale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Sphérules concentriques d'urate de sodium et d'acide urique insoluble disséminées dans les travées fibreuses périostées.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La phase minérale (calcifiée) est composée d'hydroxyapatite, un phosphate de calcium formant des plaquettes hexagonales qui précipitent et s'intercalent régulièrement entre les fibres de collagène de type I.[cite: 885, 886]"
+        },
+        {
+            "q": "Quelle protéine de la matrice osseuse, sécrétée par l'ostéoblaste, est responsable du « piégeage » initial des ions calcium (Ca++) lors de la minéralisation ?",
+            "tags": [
+                "Ostéoblastes",
+                "Minéralisation"
+            ],
+            "options": [
+                {
+                    "text": "L'ostéocalcine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La myomésine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La fibrilline.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La sclérostine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Lors de la minéralisation, l'ostéoblaste forme des vésicules matricielles. L'ostéocalcine (glycoprotéine de la matrice) y joue un rôle clé pour fixer ou « piéger » les ions calcium (Ca++) afin d'initier la cristallisation.[cite: 886, 887]"
+        },
+        {
+            "q": "Quel est le rôle principal des cellules bordantes de l'os lorsqu'elles sont à l'état quiescent ?",
+            "tags": [
+                "Cellules ostéoformatrices",
+                "Cellules bordantes"
+            ],
+            "options": [
+                {
+                    "text": "Couche protectrice pavimenteuse de surface empêchant l'accès direct des ostéoclastes à la matrice.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Sécrétion continue de métalloprotéases à zinc et de collagénases interstitielles pour résorber les travées de collagène I altéré.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Synthèse active et précipitation de 90% des cristaux d'hydroxyapatite lors de la phase initiale de l'ossification membranaire directe.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Filtration hémodynamique et transport rétrograde des érythroblastes immatures depuis la circulation corticale vers la cavité médullaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les cellules bordantes sont des ostéoblastes au repos (aplatis). Elles tapissent la surface osseuse et constituent une barrière physique qui bloque l'accès des ostéoclastes (cellules résorbantes) à la matrice, sauf lors du déclenchement du remodelage.[cite: 888, 889, 890]"
+        },
+        {
+            "q": "Quelles sont les trois destinées possibles pour un ostéoblaste après sa phase active de production de la MEC osseuse ?",
+            "tags": [
+                "Cellules ostéoformatrices",
+                "Ostéoblastes"
+            ],
+            "options": [
+                {
+                    "text": "Devenir cellule bordante, entrer en apoptose, ou s'emmurer en ostéocyte dans la matrice.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Se différencier par fusion syncytiale en un volumineux ostéoclaste géant multinucléé polarisé à bordure en brosse hautement active.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Subir une dédifférenciation en chondrocyte hypertrophique pour reformer secondairement du cartilage hyalin de conjugaison temporaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Reprendre une prolifération clonale indéfinie sous l'effet du VEGF en formant un cal fibrocartilagineux dense et hautement vascularisé.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Une fois leur tâche de synthèse terminée, la majorité des ostéoblastes deviennent des cellules bordantes ou meurent par apoptose. Environ 1/40 d'entre eux se retrouve emmuré vivant dans la matrice qu'ils viennent de sécréter, devenant ainsi des ostéocytes.[cite: 893, 894]"
+        },
+        {
+            "q": "Comment les ostéocytes communiquent-il entre eux au sein de la matrice osseuse minéralisée solide ?",
+            "tags": [
+                "Ostéocytes",
+                "Communication"
+            ],
+            "options": [
+                {
+                    "text": "Par des prolongements cytoplasmiques logés dans des canalicules, reliés par jonctions GAP.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Par la libération continue de neurotransmetteurs synaptiques classiques au niveau de fentes sous-neurales formées dans l'ostéoplaste.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par l'émission exocytaire de vésicules matricielles riches en collagénases voyageant librement le long des canaux de Volkmann obliques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Aucune communication n'est possible, chaque ostéocyte mature étant rigoureusement isolé au sein de sa logette osseuse imperméable.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'ostéocyte est piégé dans une logette (ostéoplaste) mais reste très connecté. Il possède de longs bras (prolongements cytoplasmiques) passant par de minuscules canaux (canalicules) qui lui permettent d'échanger des nutriments et signaux via des jonctions communicantes avec ses voisins ou les cellules de surface.[cite: 895, 896, 897]"
+        },
+        {
+            "q": "Quelle molécule sécrétée par l'ostéocyte agit comme un inhibiteur direct de l'activité des ostéoblastes ?",
+            "tags": [
+                "Ostéocytes",
+                "Régulation"
+            ],
+            "options": [
+                {
+                    "text": "La sclérostine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'ostéoprotégérine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La leptine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La myéloperoxydase.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les ostéocytes harmonisent le remodelage osseux. Ils sécrètent notamment la sclérostine, une protéine qui va bloquer/inhiber la formation osseuse par les ostéoblastes.[cite: 897, 898]"
+        },
+        {
+            "q": "Quelle est l'origine cytologique des ostéoclastes, les cellules responsables de la résorption osseuse ?",
+            "tags": [
+                "Cellules ostéorésorbantes",
+                "Ostéoclastes"
+            ],
+            "options": [
+                {
+                    "text": "Origine hématopoïétique par fusion de précurseurs de la lignée monocyte-macrophage.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Différenciation locale directe à partir de cellules souches mésenchymateuses multipotentes de la couche interne ostéogène du périoste.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Inversion fonctionnelle et phénotypique complète d'ostéoblastes matures ayant épuisé leur potentiel de synthèse du collagène I.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Dérivation précoce à partir des cellules des crêtes neurales céphaliques au cours de la gastrulation embryonnaire mésodermique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Contrairement aux ostéoblastes/ostéocytes (origine mésenchymateuse), les ostéoclastes sont des cellules géantes multinucléées issues de la moelle hématopoïétique (lignée monocytaire/macrophagique).[cite: 898, 899]"
+        },
+        {
+            "q": "Qu'est-ce que la « lacune de Howship » observée sous un ostéoclaste actif ?",
+            "tags": [
+                "Ostéoclastes",
+                "Résorption"
+            ],
+            "options": [
+                {
+                    "text": "Chambre étanche acide de résorption sous la bordure en brosse où agissent enzymes et protons.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Espace canalaire vasculaire central au sein de l'ostéon abritant le filet nerveux amyélinique et l'artériole nourricière haversienne.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Zone d'amputation cavitaire cicatricielle laissée vacante par l'apoptose massive et spontanée d'un groupe d'ostéocytes sénescents.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Manchon fibrillaire dense périphérique de tropocollagène formant la ligne cémentante limitante externe de l'ostéon lamellaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'ostéoclaste s'accroche fortement à l'os par son bourrelet annulaire (podosomes) créant une zone scellée. Sous sa membrane plissée (bordure en brosse), il sécrète acides et hydrolases dans cette cavité appelée lacune de Howship pour dissoudre l'os.[cite: 899, 900, 901]"
+        },
+        {
+            "q": "Comment l'ostéoblaste régule-t-il l'activation de l'ostéoclaste (couplage) ?",
+            "tags": [
+                "Régulation",
+                "Remodelage"
+            ],
+            "options": [
+                {
+                    "text": "L'ostéoblaste exprime RANKL (activateur) et sécrète l'ostéoprotégérine (leurre inhibiteur).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Sécrétion paracrine d'acide hyaluronique sulfaté qui dissout les podosomes d'ancrage du bourrelet annulaire périphérique ostéoclastique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Libération pulsatile de myofilaments d'actine et de desmine déclenchant la rétraction mécanique spontanée du pré-ostéoclaste au repos.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Injection cytoplasmique directe d'ions calcium libres à travers des canaux transmembranaires de type connexon couplés à la calcitonine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le couplage formatrices/résorbantes est vital. Les ostéoblastes contrôlent les ostéoclastes via deux molécules : RANKL (qui active la fusion et la différenciation des monocytes en ostéoclastes) et l'ostéoprotégérine (un leurre qui bloque cette activation).[cite: 892, 893]"
+        },
+        {
+            "q": "Dans l'os compact mature, quelle structure est définie comme l'unité fonctionnelle cylindrique constituée de lamelles concentriques (ostéon) ?",
+            "tags": [
+                "Os compact",
+                "Ostéon"
+            ],
+            "options": [
+                {
+                    "text": "Le système de Havers.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La trabécule spongieuse.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La table interne crânienne.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La ligne cémentante périphérique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'os compact est très organisé : il est formé de cylindres appelés ostéons (ou systèmes de Havers). Chaque ostéon compte 4 à 15 lamelles osseuses s'enroulant autour d'un canal central neuro-vasculaire (le canal de Havers).[cite: 905, 906, 907]"
+        },
+        {
+            "q": "À quoi servent les « canaux de Volkmann » dans l'os compact ?",
+            "tags": [
+                "Os compact",
+                "Vascularisation"
+            ],
+            "options": [
+                {
+                    "text": "Canaux transversaux reliant les canaux de Havers entre eux, au périoste et à l'endoste.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Canaux transmembranaires invisibles par lesquels l'ostéoclaste excrète activement les ions calcium vers le milieu extracellulaire cortical.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Replis membranaires infimes constituant la bordure en brosse polarisée des macrophages multinucléés au sein des lacunes de résorption.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Conduits lymphatiques exclusifs assurant le drainage interstitiel continu du tissu osseux réticulaire et spongieux de l'oreille interne.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Alors que les canaux de Havers cheminent verticalement au centre de chaque ostéon, les canaux de Volkmann sont perpendiculaires/obliques : ils relient les vaisseaux des canaux de Havers entre eux et assurent le raccordement avec le périoste ou l'endoste.[cite: 911, 912]"
+        },
+        {
+            "q": "Quelle différence structurale existe entre l'os réticulaire (tissu osseux primaire) et l'os lamellaire (tissu osseux secondaire) ?",
+            "tags": [
+                "Classification",
+                "Os réticulaire"
+            ],
+            "options": [
+                {
+                    "text": "Os réticulaire à fibres de collagène entrecroisées désordonnées ; os lamellaire à fibres ordonnées très résistantes.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'os réticulaire est composé uniquement d'hydroxyapatite pure sans collagène, tandis que l'os lamellaire est totalement dépourvu de phase minérale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'os réticulaire primaire s'organise obligatoirement en systèmes de Havers cylindriques concentriques, alors que l'os lamellaire est toujours spongieux.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'os réticulaire primitif est rigoureusement dépourvu de tout type cellulaire résident, contrairement à l'os secondaire qui contient des ostéocytes.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'os primaire (réticulaire ou tissé) est mis en place rapidement (fœtus, fracture) : ses fibres de collagène sont en vrac, peu minéralisées, donc fragiles. Il est ensuite détruit et remplacé (ossification secondaire) par l'os lamellaire, mature, très organisé et très résistant.[cite: 901, 902]"
+        },
+        {
+            "q": "Dans un os plat (comme ceux de la voûte du crâne), comment s'organisent les tissus osseux compact et spongieux ?",
+            "tags": [
+                "Os plat",
+                "Organisation"
+            ],
+            "options": [
+                {
+                    "text": "Deux tables d'os compact (externe et interne) prenant en sandwich une couche d'os spongieux (diploë).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une diaphyse cylindrique allongée d'os cortical compact enserrant deux volumineuses épiphyses spongieuses cartilagineuses aux deux extrémités.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un bloc massif d'os lamellaire compact monobloc totalement dépourvu d'os trabéculaire spongieux et de cavités vasculaires médullaires centrales.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une travée fibrocartilagineuse continue recouverte d'une mince coiffe d'os réticulaire primaire dérivée du cartilage de conjugaison fœtal.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La structure classique de l'os plat (crâne) est comparable à un « sandwich » : l'os spongieux (le diploë, abritant la moelle) est intercalé entre deux plaques d'os compact (table externe côté cuir chevelu, table interne côté cerveau).[cite: 912, 913]"
+        },
+        {
+            "q": "Qu'est-ce que le périoste et quelle est sa fonction ostéogénique ?",
+            "tags": [
+                "Enveloppe osseuse",
+                "Périoste"
+            ],
+            "options": [
+                {
+                    "text": "Enveloppe conjonctive externe de l'os ; sa couche interne ostéogène assure la croissance en épaisseur.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Membrane conjonctive fine tapissant la lumière de la cavité médullaire diaphysaire et assurant la différenciation des lignées hématopoïétiques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Couche de cartilage hyalin fœtal persistant entre diaphyse et épiphyse pour permettre l'accroissement longitudinal statural de l'os long squelettique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Capsule fibro-adipeuse péri-articulaire purement sensorielle dont les corpuscules de Pacini transmettent les vibrations à la voûte osseuse crânienne.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le périoste enveloppe l'os. Il a deux couches : une externe fibreuse protectrice (amarrée par les fibres de Sharpey) et une interne ostéogène cellulaire. Cette dernière contient des cellules souches qui se différencient en pré-ostéoblastes puis ostéoblastes, permettant l'apposition d'os nouveau (croissance en épaisseur).[cite: 913, 915, 916, 921]"
+        },
+        {
+            "q": "Lors de l'ossification primaire endochondrale (développement des os longs), que se passe-t-il juste avant la minéralisation de la matrice cartilagineuse ?",
+            "tags": [
+                "Ossification",
+                "Endochondrale"
+            ],
+            "options": [
+                {
+                    "text": "Les chondrocytes s'hypertrophient, sécrètent de la phosphatase alcaline qui calcifie la matrice, puis meurent.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les pré-ostéoblastes transforment directement le réseau de collagène II en collagène de type I par substitution enzymatique sans matrice calcifiée.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les cellules bordantes aplaties envahissent activement la matrice cartilagineuse saine et la convertissent directement en tissu adipeux jaune uniloculaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le contingent chondrocytaire entre en prolifération mitotique illimitée en bloquant définitivement tout dépôt minéral de cristaux d'hydroxyapatite.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'ossification endochondrale (qui forme l'os en remplaçant un modèle cartilagineux) passe par une étape où les cellules du cartilage (chondrocytes) grossissent (hypertrophie) et sécrètent de la phosphatase alcaline. Cela calcifie leur matrice, ce qui entraîne leur mort. L'espace vide est ensuite envahi par des vaisseaux et des ostéoblastes qui déposent l'os définitif.[cite: 923, 924]"
+        },
+        {
+            "q": "Qu'est-ce que l'ossification « tertiaire » ou remodelage osseux permanent ?",
+            "tags": [
+                "Remodelage",
+                "Cycle osseux"
+            ],
+            "options": [
+                {
+                    "text": "Renouvellement permanent où les ostéoclastes résorbent le vieil os, suivis d'ostéoblastes formant du nouvel os.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Processus réparateur exclusif et exceptionnel mis en jeu uniquement lors de la consolidation osseuse d'une fracture ouverte avec déplacement.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Involution pathologique progressive liée à la ménopause associant une perte osseuse trabéculaire massive à une hyperactivité ostéoclastique non compensée.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Différenciation anormale et métaplasie directe du tissu musculaire strié squelettique traumatisé en travées osseuses denses au sein des aponévroses.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'os mature n'est pas inerte. Il se renouvelle en permanence. C'est l'ossification tertiaire (remodelage) : des ostéoclastes creusent des tunnels dans l'os (os secondaire compact) et des ostéoblastes suivent derrière pour remplir le tunnel de nouvelles lamelles osseuses (nouvel os secondaire). Un cycle dure environ 4 mois.[cite: 918, 925, 926]"
+        },
+        {
+            "q": "Quelle hormone est directement responsable de la mort programmée (apoptose) des ostéoclastes, signant la fin de la phase de résorption osseuse (Phase d'inversion) ?",
+            "tags": [
+                "Remodelage",
+                "Inversion"
+            ],
+            "options": [
+                {
+                    "text": "La calcitonine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La parathormone (PTH).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La vitamine D active.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'érythropoïétine (EPO).",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Lorsqu'il a fini de creuser sa lacune, l'ostéoclaste doit être arrêté pour éviter de détruire tout l'os. C'est la phase d'inversion : l'ostéoclaste meurt par apoptose sous l'action de la calcitonine. Des macrophages viennent ensuite nettoyer (lisser) la lacune avant que les ostéoblastes n'arrivent pour reconstruire l'os.[cite: 928, 929]"
+        }
+    ]
+}

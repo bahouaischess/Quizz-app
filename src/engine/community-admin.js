@@ -150,7 +150,7 @@
                 catalog[sub] = {
                     ...JSON.parse(JSON.stringify(defaults[sub])),
                     isOfficial: true,
-                    author: 'Équipe Universitaire (Cours/)',
+                    author: defaults[sub].author || 'Équipe Universitaire (Cours/)',
                     category: defaults[sub].folder || 'Général'
                 };
             }

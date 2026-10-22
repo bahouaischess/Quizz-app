@@ -1,0 +1,528 @@
+{
+    "name": "CM 10 - Neurohistologie (Partie 1)",
+    "folder": "PASS - Histologie",
+    "description": "Rappels anatomiques et embryologiques, structure du neurone (corps cellulaire, axone, dendrites, synapses) et classifications neuronales.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Sur le plan anatomique, de quelles structures est composé le Système Nerveux Central (SNC) ?",
+            "tags": [
+                "Anatomie",
+                "SNC"
+            ],
+            "options": [
+                {
+                    "text": "Du cerveau, de la moelle épinière, du tronc cérébral et du cervelet.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "De l'encéphale, des nerfs crâniens et des ganglions rachidiens postérieurs.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Uniquement du cerveau (les deux hémisphères) et du tronc cérébral.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "De la moelle épinière et du système nerveux végétatif (sympathique et parasympathique).",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le SNC est formé par le cerveau, la moelle épinière, le tronc cérébral (qui relie le cerveau à la moelle) et le cervelet (appendu à la face postérieure du tronc cérébral)[cite: 1045]."
+        },
+        {
+            "q": "Lors du développement embryonnaire, vers quel jour de grossesse les bords de la gouttière neurale se rapprochent-ils pour former le tube neural ?",
+            "tags": [
+                "Embryologie",
+                "Tube neural"
+            ],
+            "options": [
+                {
+                    "text": "Vers le 24ème jour (J24).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Vers le 15ème jour (J15).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Vers le 35ème jour (J35).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Vers le 2ème mois de développement fœtal.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le développement du système nerveux centralise la formation du tube neural : vers J24, les bords de la gouttière neurale s'accolent pour délimiter la future cavité épendymaire[cite: 1049]."
+        },
+        {
+            "q": "Les cellules des crêtes neurales sont considérées comme un « 4ème feuillet embryonnaire ». De quelle zone précise proviennent-elles ?",
+            "tags": [
+                "Embryologie",
+                "Crêtes neurales"
+            ],
+            "options": [
+                {
+                    "text": "De la zone de jonction entre le neurectoblaste et l'épiblaste II.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "De la région centrale axiale de la chorde dorsale au contact direct du mésoblaste para-axial.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "De la prolifération mitotique précoce de l'endoderme primitif tapissant le lécithocèle secondaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Du mésenchyme somitique latéral sous l'influence inductrice exclusive de la somatopleure extra-embryonnaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les crêtes neurales se forment à la jonction entre le neurectoblaste (qui s'invagine) et l'épiblaste II. Elles vont migrer et donner naissance à une grande diversité de cellules[cite: 1050]."
+        },
+        {
+            "q": "Parmi les cellules suivantes, laquelle ne dérive PAS des cellules des crêtes neurales ?",
+            "tags": [
+                "Embryologie",
+                "Dérivés"
+            ],
+            "options": [
+                {
+                    "text": "Les cellules microgliales du système nerveux central.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les mélanocytes de la basale épidermique synthétisant la mélanine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les cellules gliales de Schwann formant la gaine de myéline périphérique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les cellules chromaffines sécrétrices de catécholamines de la médullo-surrénale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les crêtes neurales donnent naissance aux mélanocytes, aux cellules des leptoméninges (arachnoïde et pie-mère), aux cellules de Schwann, aux cellules de la médullo-surrénale et aux neurones sensitifs. La microglie, en revanche, a une origine hématopoïétique (monocytaire)[cite: 1052, 1105]."
+        },
+        {
+            "q": "Quelles vésicules cérébrales secondaires (issues de la 5ème semaine) dérivent du prosencéphale ?",
+            "tags": [
+                "Embryologie",
+                "Vésicules cérébrales"
+            ],
+            "options": [
+                {
+                    "text": "Le télencéphale et le diencéphale.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le métencéphale et le myélencéphale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le mésencéphale uniquement.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le cervelet et le pont.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le prosencéphale (cerveau antérieur) se divise pour former le télencéphale (qui donnera les hémisphères cérébraux) et le diencéphale (qui donnera le thalamus et l'hypothalamus)[cite: 1051]."
+        },
+        {
+            "q": "En microscopie optique, quel est l'aspect caractéristique du noyau d'un neurone au sein de son corps cellulaire ?",
+            "tags": [
+                "Neurone",
+                "Corps cellulaire"
+            ],
+            "options": [
+                {
+                    "text": "Noyau volumineux à chromatine dispersée et nucléole très proéminent en œil de pigeon.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Noyau dense polylobé et plaqué contre la membrane plasmique comme dans les granulocytes neutrophiles circulants.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Noyau fusiforme compact à chromatine hautement condensée et totalement dépourvu de nucléole sous le sarcolemme.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Noyau réniforme ou encoché présentant une dense couronne périnucléaire de grains azurophiles lysosomiaux.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le noyau neuronal est clair, avec une chromatine dispersée témoignant d'une forte activité de transcription, et présente un nucléole unique et volumineux donnant un aspect en « œil de pigeon »[cite: 1058, 1059]."
+        },
+        {
+            "q": "Que représentent les « corps de Nissl » visibles dans le cytoplasme neuronal après certaines colorations ?",
+            "tags": [
+                "Neurone",
+                "Ultrastructure"
+            ],
+            "options": [
+                {
+                    "text": "Amas d'ergastoplasme (REG) et de ribosomes libres traduisant une vive synthèse protéique.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Inclusions intracytoplasmiques denses de lipofuscine issues de l'accumulation autophagique lysosomiale sénescente.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Réseaux denses de neurofilaments et de microtubules disposés en travées parallèles constituant les neurofibrilles.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Groupements denses de volumineuses mitochondries à crêtes tubulaires exclusivement dédiées à la production d'ATP axonal.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "En microscopie optique, on observe des corps denses basophiles appelés corps de Nissl. En microscopie électronique, ils correspondent au REG et aux polyribosomes très développés pour la synthèse protéique[cite: 1060, 1061]."
+        },
+        {
+            "q": "Quelle proposition caractérise correctement les dendrites des neurones ?",
+            "tags": [
+                "Neurone",
+                "Dendrites"
+            ],
+            "options": [
+                {
+                    "text": "Prolongements multiples ramifiés à diamètre décroissant, à conduction centripète vers le soma.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Prolongement unique cylindrique conservant un calibre rigoureusement constant entouré d'une épaisse gaine de myéline.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Expansions filamenteuses conduisant l'influx nerveux de manière exclusivement centrifuge depuis le péricaryon vers la périphérie.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ramifications collatérales prenant exclusivement naissance au niveau du cône d'implantation situé à l'émergence de l'axone.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les dendrites assurent une conduction centripète (vers le soma), sont multiples, s'affinent à chaque ramification et ne sont jamais recouvertes de myéline[cite: 1064, 1071]."
+        },
+        {
+            "q": "À quoi correspond le « cône d'implantation » (ou segment initial) du neurone ?",
+            "tags": [
+                "Neurone",
+                "Axone"
+            ],
+            "options": [
+                {
+                    "text": "Zone d'émergence de l'axone, sans corps de Nissl et très riche en canaux Na+ (générateur du PA).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Réseau arborescent terminal des dendrites où s'implantent de multiples épines dendritiques spécialisées dans la réception synaptique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Site d'ancrage basal de la première cellule gliale de Schwann initiant la synthèse de la gaine de myéline du système périphérique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Épaississement sous-membranaire de l'élément postsynaptique concentrant les récepteurs canaux ioniques sensibles à l'acétylcholine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le cône d'implantation de l'axone est dépourvu de corps de Nissl (mais contient des ribosomes libres, mitochondries, microtubules). Il possède des granulations sous-membranaires correspondant aux canaux Na+, ce qui en fait le point de départ de l'excitabilité (potentiel d'action)[cite: 1069]."
+        },
+        {
+            "q": "Par quelle technique est-il possible de visualiser avec précision le réseau de neurofibrilles dans le cytoplasme d'un neurone en microscopie optique ?",
+            "tags": [
+                "Histologie",
+                "Microscopie"
+            ],
+            "options": [
+                {
+                    "text": "Par l'imprégnation argentique.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Par la coloration standard à l'Hématéine-Éosine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par la coloration de Nissl au Crésyl violet.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par le Bleu de Toluidine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'imprégnation argentique permet de bien mettre en évidence le réseau de neurofibrilles (microtubules et neurofilaments en réseau parallèle) au sein du péricaryon et des prolongements[cite: 1060]."
+        },
+        {
+            "q": "Concernant la morphologie axonale, qu'est-ce qui différencie un neurone de Golgi de type I d'un neurone de Golgi de type II ?",
+            "tags": [
+                "Classification",
+                "Axone"
+            ],
+            "options": [
+                {
+                    "text": "Type I : axone long (projection) ; Type II : axone court très ramifié localement (interneurone).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le type I est un neurone exclusivement sensoriel afférent, alors que le type II constitue un motoneurone efférent de la corne antérieure.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le type I est caractérisé par une absence totale d'axone vrai, tandis que le type II projette de multiples axones parallèles distincts.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le type I présente un volumineux péricaryon pyramidal néocortical, tandis que le type II adopte une forme fusiforme sans dendrites.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La classification selon la forme de l'axone distingue les neurones de Golgi type I (axone long, voies de projection) et type II (axone court très ramifié localement, typique des interneurones)[cite: 1088]."
+        },
+        {
+            "q": "Où trouve-t-on de manière caractéristique les neurones dits « pseudo-unipolaires » (neurones en T) ?",
+            "tags": [
+                "Classification",
+                "Neurone"
+            ],
+            "options": [
+                {
+                    "text": "Dans les ganglions rachidiens postérieurs de la racine dorsale.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dans la couche nucléaire interne de la rétine visuelle.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Dans la couche pyramidale interne du cortex moteur primaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Dans la corne antérieure motrice ventrale de la moelle épinière.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les neurones pseudo-unipolaires possèdent un prolongement unique qui se bifurque en forme de T : une branche périphérique (captant l'information sensorielle) et une branche centrale (allant vers le SNC). On les retrouve typiquement dans les ganglions rachidiens postérieurs[cite: 1085]."
+        },
+        {
+            "q": "Dans une synapse chimique observée en microscopie électronique, que constitue la « grille présynaptique » ?",
+            "tags": [
+                "Synapse",
+                "Ultrastructure"
+            ],
+            "options": [
+                {
+                    "text": "Épaississement présynaptique interne formant des loges pour guider les vésicules.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Amas central de volumineuses mitochondries logées au sein de la fente synaptique pour régénérer l'ATP extracellulaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Empilement dense de citernes membranaires aplaties situé immédiatement sous la membrane post-synaptique postsynaptique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Feutrage dense de protofilaments de desmine et de tubuline s'opposant au recaptage rétrograde des neuromédiateurs libérés.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'élément pré-synaptique comporte une densification de la face interne de la membrane, organisée en une grille (tri ou hexagonale) formant des loges où s'insèrent les vésicules avant exocytose via les synaptopores[cite: 1077]."
+        },
+        {
+            "q": "Comment un neurone peut-il intégrer de manière optimale les afflux nerveux provenant de sources multiples ?",
+            "tags": [
+                "Dendrites",
+                "Physiologie"
+            ],
+            "options": [
+                {
+                    "text": "Par l'arborisation de ses dendrites et ses nombreuses épines dendritiques réceptrices.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "En accélérant le débit du transport axonal rétrograde par l'intermédiaire des moteurs moléculaires de dynéine cytosolique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "En établissant une continuité syncytiale directe entre son péricaryon et le cytoplasme des neurones présynaptiques adjacents.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "En multipliant le nombre de cônes d'émergence basaux pour générer plusieurs axones moteurs indépendants à partir du même soma.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'arbre dendritique peut recevoir jusqu'à 10 000 synapses (voire 25 000 pour les cellules de Purkinje). Les ramifications et les épines dendritiques définissent la surface disponible et la capacité du neurone à intégrer divers stimuli[cite: 1064]."
+        },
+        {
+            "q": "Quelle protéine transmembranaire de l'élément post-synaptique interagit spécifiquement avec les neuromédiateurs libérés ?",
+            "tags": [
+                "Synapse",
+                "Neurotransmetteurs"
+            ],
+            "options": [
+                {
+                    "text": "Les récepteurs postsynaptiques (canaux ioniques ou couplés aux protéines G).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les cadhérines d'adhérence dépendantes du calcium assurant la cohésion membranaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'acétylcholinestérase estérasique ancrée à la lame basale de la fente synaptique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La synaptophysine membranaire incorporée dans l'enveloppe des vésicules d'exocytose.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les neuromédiateurs libérés dans la fente synaptique vont se fixer sur des récepteurs spécifiques localisés sur la membrane post-synaptique, déclenchant l'ouverture de canaux (dépolarisation/hyperpolarisation) ou l'activation de seconds messagers[cite: 1056, 1079]."
+        },
+        {
+            "q": "Si un neurotransmetteur comme le GABA se lie à son récepteur postsynaptique, quel est l'effet physiologique classique observé ?",
+            "tags": [
+                "Synapse",
+                "Inhibition"
+            ],
+            "options": [
+                {
+                    "text": "Hyperpolarisation par entrée d'ions Cl-, générant un potentiel postsynaptique inhibiteur (PPSI).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dépolarisation membranaire brutale et immédiate par entrée massive d'ions sodium créant un PPSE propagé.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Lyse osmotique irréversible de la membrane postsynaptique par activation directe du système du complément.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Inactivation permanente des dynéines responsables du transport rétrograde le long du cytosquelette de l'axone.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le GABA et la glycine sont des neurotransmetteurs inhibiteurs. Ils ouvrent des canaux laissant passer des ions négatifs (Chlore), provoquant une hyperpolarisation qui éloigne la cellule du seuil de déclenchement du potentiel d'action[cite: 1082]."
+        },
+        {
+            "q": "Quel aspect présentent les vésicules contenant des neuromédiateurs comme l'acétylcholine ou le glutamate en microscopie électronique ?",
+            "tags": [
+                "Synapse",
+                "Vésicules"
+            ],
+            "options": [
+                {
+                    "text": "Ce sont des vésicules arrondies à centre clair.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ce sont des vésicules aplaties à centre clair.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ce sont des petites vésicules à centre très dense aux électrons.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ce sont de très grandes vésicules à centre dense amorphe.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les vésicules synaptiques varient selon le neuromédiateur. Celles contenant l'acétylcholine ou le glutamate sont typiquement arrondies et à centre clair. Le GABA/Glycine donne des vésicules aplaties à centre clair, et les catécholamines donnent des vésicules à centre dense[cite: 1078]."
+        },
+        {
+            "q": "Quelle molécule est un marqueur spécifique des vésicules synaptiques (glycoprotéine membranaire vésiculaire) ?",
+            "tags": [
+                "Synapse",
+                "Marqueurs"
+            ],
+            "options": [
+                {
+                    "text": "La synaptophysine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La GFAP.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La chromatine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La tubuline alpha.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La synaptophysine est une glycoprotéine de la membrane des vésicules synaptiques, essentielle pour leur fonctionnement et fréquemment ciblée en immunohistochimie pour marquer les synapses[cite: 1078]."
+        },
+        {
+            "q": "Dans la classification fonctionnelle des neurones, à quoi servent les interneurones ?",
+            "tags": [
+                "Classification",
+                "Interneurone"
+            ],
+            "options": [
+                {
+                    "text": "Assurer les connexions et le relais d'intégration entre neurones au sein du SNC.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Relier directement sans aucun relais synaptique les aires motrices du cortex cérébral aux rhabdomyocytes squelettiques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Capter exclusivement les variations thermiques et douloureuses au niveau des terminaisons libres de l'épiderme cutané.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Synthétiser de manière continue la gaine de myéline protégeant les axones amyéliniques des gros troncs nerveux crâniens.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les interneurones (neurones d'association) s'intercalent entre les neurones sensitifs et les motoneurones au sein du SNC. Ils intègrent et relaient l'information[cite: 1087]."
+        },
+        {
+            "q": "Quelle structure anatomique sépare le bouton synaptique de l'élément post-synaptique ?",
+            "tags": [
+                "Synapse",
+                "Structure"
+            ],
+            "options": [
+                {
+                    "text": "La fente synaptique (espace intercellulaire de 20 à 50 nm).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La gaine de myéline segmentaire entourant le bouton terminal.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le stroma conjonctif fenêtré émanant du plexus choroïde épendymaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'étranglement annulaire sans myéline formant le nœud de Ranvier.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans la quasi-totalité des synapses humaines (chimiques), il n'y a pas de contact membranaire direct : les éléments sont séparés par la fente synaptique (20-50 nm), où le neurotransmetteur est libéré[cite: 1076, 1079]."
+        }
+    ]
+}

@@ -1,0 +1,267 @@
+{
+    "name": "CM 4 - Tissus Conjonctifs (Partie 1)",
+    "folder": "PASS - Tissus",
+    "description": "Introduction aux tissus conjonctifs, organisation de la matrice extracellulaire, fibres de collagène, réticuline et fibres élastiques.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Quelle affirmation définit le mieux le tissu conjonctif non spécialisé ?",
+            "tags": [
+                "Généralités",
+                "Tissu conjonctif"
+            ],
+            "options": [
+                {
+                    "text": "Une trame tridimensionnelle vascularisée et innervée, formée de cellules non jointives dispersées dans une MEC abondante assurant le soutien stroma des organes.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un ensemble avasculaire et dépourvu d'innervation propre, composé de cellules jointives polarisées reposant obligatoirement sur une lame basale continue.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un tissu excitable hautement différencié constitué de léiomyocytes fusiformes assurant la contraction péristaltique autonome des viscères creux de l'organisme.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une couche monocellulaire pavimenteuse spécialisée dans le transport actif transépithélial d'électrolytes et la sécrétion paracrine d'hormones peptidiques.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Contrairement à l'épithélium, le tissu conjonctif (TC) est vascularisé, innervé, et ses cellules sont non jointives, dispersées dans une abondante matrice extracellulaire (MEC). Il forme la charpente de soutien (stroma) des organes.[cite: 733, 734, 735]"
+        },
+        {
+            "q": "De quels éléments est toujours constituée la Matrice Extracellulaire (MEC) du tissu conjonctif ?",
+            "tags": [
+                "MEC",
+                "Composition"
+            ],
+            "options": [
+                {
+                    "text": "De fibres protéiques (collagène, réticuline, élastine) et d'une substance fondamentale amorphe hydratée riche en GAG et protéoglycanes.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "De cellules résidentes souches mésenchymateuses multipotentes et de cellules dendritiques présentatrices d'antigènes immunitaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "D'un réseau rigide de trabécules minéralisées formées de cristaux d'hydroxyapatite phosphatée associés à de l'ostéocalcine dense.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "D'un plexus anastomotique de capillaires fenêtrés continus entourés de péricytes et de fibres musculaires striées squelettiques.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La MEC est le constituant majeur du TC. Elle se divise en deux éléments : les fibres (collagène, réticuline, élastine) et la substance fondamentale (amorphe, hydratée, contenant sucres et protéines libres).[cite: 735, 737]"
+        },
+        {
+            "q": "Quelle est la principale caractéristique et fonction des fibres de collagène (ex : type I) dans le tissu conjonctif ?",
+            "tags": [
+                "Fibres",
+                "Collagène"
+            ],
+            "options": [
+                {
+                    "text": "Elles sont très abondantes et confèrent au tissu conjonctif sa résistance mécanique aux contraintes d'étirement et de traction axiale.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elles confèrent la propriété de distensibilité réversible permettant la restitution d'énergie élastique lors de la décompression tissulaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elles constituent une barrière de filtration sélective chargée négativement régulant les échanges osmotiques transendothéliaux de macromolécules.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elles assurent la thermogenèse adaptative autonome grâce au découplage de la chaîne respiratoire mitochondriale par la thermogénine UCP1.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les fibres de collagène (type I étant le plus abondant, 90%) sont des fibres très robustes qui assurent la solidité mécanique et la résistance aux contraintes d'étirement du tissu.[cite: 741, 743]"
+        },
+        {
+            "q": "Quelle coloration est fréquemment utilisée en microscopie optique pour visualiser les fibres de collagène en vert ?",
+            "tags": [
+                "Histologie",
+                "Coloration"
+            ],
+            "options": [
+                {
+                    "text": "Le trichrome de Masson au vert lumière.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'hémalun-éosine-safran (HES avec safran jaune).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'orcéine chlorhydrique pour fibres élastiques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'imprégnation argentique de Gordon-Sweet.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "En utilisant des colorants acides, le collagène se colore en vert ou bleu avec le trichrome de Masson, en jaune avec le Safran (HES) et en rose avec l'éosine.[cite: 744]"
+        },
+        {
+            "q": "À propos de l'ultrastructure du collagène observée en microscopie électronique, que représente la striation périodique (640 Å) ?",
+            "tags": [
+                "Ultrastructure",
+                "Collagène"
+            ],
+            "options": [
+                {
+                    "text": "Le décalage régulier en marches d'escalier et le chevauchement longitudinal des molécules de tropocollagène le long de la fibrille.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'enroulement hélicoïdal serré de la gaine périfibrillaire de protéoglycanes à héparane sulfate autour des faisceaux primaires de collagène.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les sites d'ancrage focaux périodiques reliant les intégrines transmembranaires des fibroblastes aux filaments d'actine sous-corticaux.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le dépôt alterné de microcristaux d'apatite carbonatée nucléés par les résidus phosphosérine de l'ostéonectine matricielle amorphe.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les molécules de tropocollagène (les briques de base) s'assemblent longitudinalement en se chevauchant avec un décalage régulier. Ce chevauchement et les espaces créent l'aspect de striation transversale de 640 Angströms typique des fibrilles.[cite: 745, 746]"
+        },
+        {
+            "q": "Quelle enzyme est responsable du clivage des extrémités (COOH et NH2) du procollagène dans l'espace extracellulaire pour former le tropocollagène ?",
+            "tags": [
+                "Collagénèse"
+            ],
+            "options": [
+                {
+                    "text": "La procollagène peptidase (procollagène N- et C-protéinase).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La lysyl hydroxylase dépendante de l'acide ascorbique (vitamine C).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La métalloprotéinase matricielle interstitielle de type collagénase MMP-1.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'élastase neutrophile à sérine active sécrétée par les macrophages activés.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La synthèse intracellulaire par le fibroblaste produit du procollagène. Une fois exporté hors de la cellule, ses extrémités globulaires (amino et carboxy-terminales) sont coupées par la procollagène peptidase pour libérer le tropocollagène capable de polymériser.[cite: 747, 748]"
+        },
+        {
+            "q": "Les fibres de réticuline sont formées de quel type de collagène ?",
+            "tags": [
+                "Fibres",
+                "Réticuline"
+            ],
+            "options": [
+                {
+                    "text": "Du collagène fibrillaire de type III (très glycosylé).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Du collagène fibrillaire dense classique de type I.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Du collagène non fibrillaire en réseau plan de type IV.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Des chaînes polypeptidiques hydrophobes de tropoélastine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La réticuline est constituée de très fines fibrilles de collagène de type III. Elles s'organisent en réseau (« grillage ») et sont particulièrement abondantes sous les membranes basales et dans les organes lymphoïdes.[cite: 743, 751, 752]"
+        },
+        {
+            "q": "Comment observe-t-on spécifiquement les fibres de réticuline en microscopie ?",
+            "tags": [
+                "Histologie",
+                "Réticuline"
+            ],
+            "options": [
+                {
+                    "text": "Par imprégnation aux sels d'argent (argyrophiles, en noir) ou par la réaction histochimique au PAS.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Par la coloration spécifique à la fuchsine-résorcine de Weigert ou à l'orcéine synthétique (en pourpre foncé).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par la coloration standard à l'hématéine-éosine sur laquelle elles forment d'épais trousseaux ondulés rouge vif.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elles sont strictement invisibles en microscopie photonique conventionnelle et nécessitent une cryodécapation sous vide.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Du fait de leur composition (collagène III très glycolysé), les fibres de réticuline fixent très bien les sels d'argent (coloration argentique noire) et sont PAS positives.[cite: 751]"
+        },
+        {
+            "q": "Quelle est la composition ultrastructurale d'une fibre élastique mature ?",
+            "tags": [
+                "Fibres",
+                "Élastine"
+            ],
+            "options": [
+                {
+                    "text": "Un cœur amorphe central d'élastine réticulée entouré d'une couronne périphérique de microfibrilles de fibrilline.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un axe hélicoïdal rigide de tropocollagène I enrobé d'une gaine concentrique continue de glycoprotéines fibronectines.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un réseau polymérisé d'acide hyaluronique sans noyau protéique entouré d'une capsule de chondroïtine-4-sulfate dense.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une alternance transversale de faisceaux myofilamentaires d'actine F et de myosine II stabilisés par la nébuline.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La fibre élastique est constituée d'un cœur (ou centre) d'élastine amorphe, formée par l'agrégation de tropoélastines, qui s'intègre sur un échafaudage périphérique de microfibrilles très denses faites de fibrilline.[cite: 755, 756]"
+        },
+        {
+            "q": "Quel rôle d'« échafaudage » la fibrilline joue-t-elle dans la synthèse des fibres élastiques ?",
+            "tags": [
+                "Biosynthèse",
+                "Élastine"
+            ],
+            "options": [
+                {
+                    "text": "Elle polymérise en premier sous forme de microfibrilles extracellulaires servant de guide sur lequel s'organise et se réticule l'élastine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle hydrolyse les liaisons peptidiques terminales du procollagène pour libérer les précurseurs tropoélastiques nécessaires à la fibrillogenèse.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle bloque spécifiquement l'activité catalytique des élastases leucocytaires pour préserver l'intégrité structurale du tissu conjonctif dense.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle assure le transport vésiculaire intracellulaire de la pro-élastine depuis l'appareil de Golgi jusqu'au pôle sécrétoire basolatéral.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La biosynthèse débute par l'assemblage extracellulaire des microfibrilles de fibrilline, formant une structure (échafaudage). Ensuite, les monomères de tropoélastine s'y déposent pour former la masse centrale d'élastine de la fibre mature.[cite: 756, 757]"
+        }
+    ]
+}

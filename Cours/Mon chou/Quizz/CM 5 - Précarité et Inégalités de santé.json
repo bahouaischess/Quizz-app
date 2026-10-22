@@ -1,0 +1,510 @@
+﻿{
+    "name":  "CM 5 - Précarité et Inégalités de santé",
+    "folder":  "PASS - Santé Publique",
+    "description":  "Compréhension des inégalités sociales de santé, de la précarité, des indicateurs de mesure et de l\u0027universalisme proportionné.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Comment les Inégalités Sociales de Santé (ISS) se répartissent-elles au sein de la population générale ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elles suivent un gradient social : chaque classe sociale présente un niveau de morbidité/mortalité plus bas que la classe immédiatement inférieure, affectant toute l\u0027échelle sociale.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elles constituent une fracture dichotomique nette et discontinue isolant exclusivement les 15% les plus pauvres du reste de la société, épargnant totalement les classes intermédiaires et supérieures.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles sont distribuées de façon aléatoire selon l\u0027exposition génétique, indépendamment des revenus.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles touchent majoritairement les classes moyennes urbaines en raison du stress professionnel.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les ISS ne se limitent pas à une opposition « riches/pauvres ». Elles sont réparties selon un gradient social ou une association dose-réponse qui concerne la totalité de l\u0027échelle sociale[cite: 434, 435]."
+                      },
+                      {
+                          "q":  "Laquelle de ces propositions définit le mieux la notion de précarité ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "C\u0027est l\u0027absence d\u0027une ou plusieurs des sécurités (notamment l\u0027emploi), empêchant d\u0027assumer ses obligations fondamentales ; un état multifactoriel, dynamique et réversible.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "C\u0027est un concept purement monétaire et statique, correspondant strictement à un revenu inférieur à 60% du revenu médian national sans dimension sociale ou humaine.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il s\u0027agit d\u0027un état d\u0027exclusion sociale définitive et irréversible, lié uniquement au logement.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est la privation absolue de droits civiques liée à un manque d\u0027éducation supérieure.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La précarité est l\u0027absence de sécurité (notamment de l\u0027emploi) permettant de jouir de ses droits fondamentaux. Contrairement à la pauvreté (purement économique), la précarité est multifactorielle, dynamique et réversible[cite: 437, 438]."
+                      },
+                      {
+                          "q":  "En France, comment est principalement défini et mesuré le seuil de pauvreté relative monétaire ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Par un niveau de revenus fixé à 60 % du niveau de vie médian de la population française.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Par un budget minimal fixe de 1 400 euros par mois pour une personne seule, sans tenir compte de la moyenne nationale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Par l\u0027incapacité de payer au moins 8 dépenses contraintes parmi une liste de 27 items.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Par le revenu moyen des chômeurs de longue durée.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La pauvreté relative se définit par rapport au niveau de vie du reste de la population, le plus souvent fixé au seuil de 60% du revenu médian (parfois 50%)[cite: 439]."
+                      },
+                      {
+                          "q":  "À quelle approche correspond la mesure de la pauvreté basée sur des « critères de privation » ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle définit la « pauvreté en conditions de vie » (exclusion de certaines pratiques ou consommations, comme l\u0027incapacité de chauffer son logement).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle correspond rigoureusement à la définition formelle de la « pauvreté absolue » mondiale telle qu\u0027établie et mesurée par les agences onusiennes (ONU et Banque Mondiale).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle sert exclusivement à mesurer le gradient social de la mortalité par cancer.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle détermine si un individu a droit au revenu de solidarité active (RSA).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La pauvreté en conditions de vie repose sur l\u0027exclusion de certaines pratiques ou consommations (mesurée par une liste de 27 conséquences de privation)[cite: 440]."
+                      },
+                      {
+                          "q":  "Parmi la triade classique servant à interroger le statut socio-économique, quel est le principal avantage de l\u0027utilisation du « Niveau d\u0027éducation » ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Il est stable au cours de la vie, ne dépend pas de l\u0027état du marché du travail, et permet les comparaisons internationales.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Il est parfaitement hétérogène d\u0027une génération à l\u0027autre et ne subit jamais de biais lié aux réformes éducatives successives ni aux effets de structure par âge.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il s\u0027agit d\u0027une information purement monétaire permettant de deviner le revenu disponible exact.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il permet de classer automatiquement les patients dans la catégorie des 40% les plus pauvres.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le niveau d\u0027éducation est très utilisé car il reste stable à l\u0027âge adulte, reflète les ressources cognitives et permet des comparaisons mondiales. En revanche, son inconvénient est qu\u0027il s\u0027homogénéise au fil des générations[cite: 445]."
+                      },
+                      {
+                          "q":  "Quel est le principal inconvénient de l\u0027utilisation de l\u0027indicateur « Revenus » dans les études épidémiologiques françaises ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027information est difficile à recueillir car taboue, et la notion de revenu est complexe (régularité, composition, part contrainte).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les revenus ne sont jamais associés de manière significative à l\u0027espérance de vie en France.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il existe un biais écologique majeur rendant l\u0027information invalide pour un individu précis.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le revenu médian disponible fluctue si rapidement d\u0027une année sur l\u0027autre qu\u0027il devient totalement impossible à estimer et exploiter par les statisticiens de l\u0027Insee.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les revenus sont une information très « taboue » en France et complexe à obtenir avec justesse (sources diverses, part incompressible des dépenses, revenu disponible réel)[cite: 448]."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce que le score EPICES ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un questionnaire multifactoriel de 11 questions, calculant un score (0 à 100) pour évaluer la précarité et les inégalités de santé.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un indicateur écologique calculant le taux de chômage par zone IRIS.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une mesure biologique du niveau de stress oxydatif induit par la pauvreté infantile.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un outil médico-économique évaluant de façon détaillée le taux de remboursement des soins bucco-dentaires et optiques par les caisses primaires d\u0027Assurance Maladie.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le score EPICES (Évaluation de la précarité et des inégalités de santé dans les Centres d\u0027examens de santé) se base sur 11 questions touchant l\u0027emploi, le logement, les loisirs et le revenu[cite: 450]."
+                      },
+                      {
+                          "q":  "Quel est le risque principal (inconvénient méthodologique) inhérent à l\u0027utilisation des « indicateurs écologiques » (ex: FDep, EDI) ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le risque de « biais écologique », car ils caractérisent une zone géographique sans forcément refléter la situation individuelle de chaque habitant.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027incapacité méthodologique totale et définitive d\u0027intégrer des données composites sur l\u0027emploi, le surpeuplement ou le logement dans le calcul des indices territoriaux.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Ils aggravent involontairement la stigmatisation médicale lors de la consultation clinique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Ils ne permettent de mesurer les inégalités qu\u0027au niveau des pays nordiques.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les indicateurs écologiques (comme le FDep) agrègent des variables à l\u0027échelle d\u0027un territoire. Le principal défaut est le « biais écologique » : attribuer à un individu les caractéristiques moyennes de son quartier[cite: 451, 452]."
+                      },
+                      {
+                          "q":  "Dans le modèle des déterminants de la santé de Dahlgren et Whitehead, que représente le niveau 2 (influences sociales et communautaires) ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les interactions sociales et la pression des pairs qui influencent les comportements individuels de façon favorable ou défavorable.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les conditions macroéconomiques, environnementales et sociopolitiques globales décidées au niveau législatif de l\u0027État pour réguler l\u0027ensemble du marché national.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027âge, le sexe et le patrimoine génétique héréditaire de la personne.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les services et équipements de santé présents sur le lieu de travail.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Dans les 4 niveaux concentriques du modèle de Dahlgren et Whitehead, le Niveau 2 concerne les réseaux sociaux et communautaires (interactions, influence des pairs)[cite: 458, 459]."
+                      },
+                      {
+                          "q":  "Comment la France se positionne-t-elle par rapport aux autres pays d\u0027Europe de l\u0027Ouest concernant les inégalités sociales de mortalité ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La France fait partie des pays où ces inégalités (mortalité selon le niveau d\u0027études) sont les plus marquées, et ces inégalités ne régressent pas.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La France a entièrement éradiqué ces inégalités structurelles grâce à la mise en place de la protection universelle maladie, se hissant au premier rang européen de l\u0027équité.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les inégalités de santé y sont exclusivement limitées à la population de plus de 80 ans.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La France a les inégalités de mortalité les plus faibles pour le cancer mais les plus fortes pour les maladies infectieuses.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Contrairement aux idées reçues sur son système de santé, la France est un des pays européens présentant les inégalités sociales de santé et de mortalité (notamment par cancer) les plus élevées[cite: 429, 465, 466]."
+                      },
+                      {
+                          "q":  "Quel constat dramatique peut-on faire concernant l\u0027espérance de vie à 35 ans en France selon les catégories socioprofessionnelles (1976-2013) ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les cadres vivent significativement plus longtemps que les ouvriers, et l\u0027écart entre ces deux catégories ne s\u0027est pas réduit au fil des décennies.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027espérance de vie des ouvriers a dépassé celle des cadres grâce à la réduction des accidents du travail.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les écarts de mortalité se sont totalement résorbés chez les hommes actifs grâce à la mécanisation, mais persistent massivement parmi les femmes employées du secteur tertiaire.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Toutes les catégories ont vu leur espérance de vie baisser brutalement depuis les années 1990.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les données Insee montrent un écart net entre cadres et ouvriers (plus de 6 ans pour les hommes à 35 ans). Cet écart ne se réduit pas dans le temps, illustrant la persistance du gradient social[cite: 469, 470]."
+                      },
+                      {
+                          "q":  "Comment le niveau d\u0027éducation influence-t-il la survie relative à un cancer, d\u0027après les études présentées ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Une personne issue d\u0027un environnement social défavorisé a une survie au cancer significativement moindre qu\u0027une personne d\u0027un milieu favorisé.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027environnement social et éducatif n\u0027exerce aucun impact direct sur la survie globale au cancer ; seules les caractéristiques génomiques et moléculaires modifient les courbes de survie.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les populations défavorisées ont paradoxalement une meilleure survie grâce à une détection immunitaire plus précoce.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le niveau d\u0027études n\u0027influence que la survie des cancers digestifs, mais pas la survie globale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Il existe un gradient social net dans la survie au cancer : à diagnostic égal, l\u0027espérance de survie est plus faible lorsque l\u0027environnement social ou le niveau d\u0027études du patient est défavorisé[cite: 468]."
+                      },
+                      {
+                          "q":  "Quel impact l\u0027indice de précarité a-t-il sur le suivi prénatal lors de la grossesse en France ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un suivi prénatal sous-optimal (inadéquat) est beaucoup plus fréquent chez les femmes ayant un indice de précarité élevé.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La précarité n\u0027exerce aucune incidence statistique car le système de Sécurité sociale prend automatiquement en charge l\u0027intégralité du parcours de soins prénatals dès le premier mois.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les femmes en situation de précarité bénéficient systématiquement d\u0027un suivi supérieur grâce aux assistantes sociales.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027indice de précarité modifie uniquement le choix de la maternité, mais n\u0027altère en rien la qualité du suivi médical.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les données de la cohorte PreCARE montrent clairement que plus l\u0027indice de précarité est élevé, plus le risque d\u0027avoir un suivi prénatal sous-optimal est fort, y compris chez les femmes nées en France[cite: 473]."
+                      },
+                      {
+                          "q":  "Quel constat peut-on faire concernant les maladies bucco-dentaires des enfants scolarisés en grande section de maternelle ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "On observe dès cet âge un fort gradient social : les enfants d\u0027ouvriers présentent une prévalence beaucoup plus élevée de caries non traitées que les enfants de cadres.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027âge de la grande section de maternelle est trop précoce pour observer des inégalités sociales de santé mesurables ; tous les enfants présentent rigoureusement le même état d\u0027hygiène bucco-dentaire.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les enfants de cadres sont paradoxalement plus atteints en raison d\u0027une consommation excessive de sucres raffinés.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La présence de caries non traitées est strictement limitée aux enfants sans couverture maladie, ce qui représente 1% de la classe.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le gradient social est présent de façon très précoce (dès la maternelle). Plus la catégorie professionnelle des parents est basse, plus on retrouve une proportion importante d\u0027enfants présentant des caries non traitées[cite: 474, 482]."
+                      },
+                      {
+                          "q":  "Comment évolue le comportement tabagique en France (2000-2010) selon les catégories sociales ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le pourcentage de fumeurs a diminué chez les cadres et les plus diplômés, mais a augmenté chez les chômeurs et les ouvriers.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La prévalence du tabagisme régulier a décru de façon parfaitement uniforme et synchrone dans toutes les strates sociales grâce à la politique continue de hausses fiscales sur le paquet.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les cadres sont devenus la catégorie fumant le plus en raison d\u0027un accès facilité aux cigarettes électroniques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le tabagisme est resté parfaitement stable quelles que soient la catégorie sociale ou les études.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Certaines politiques de prévention universelles (non ciblées) ont eu pour effet de creuser les inégalités : le tabagisme a baissé chez les catégories favorisées (cadres, diplômes \u003e Bac) tandis qu\u0027il augmentait ou stagnait chez les plus défavorisées[cite: 479, 480]."
+                      },
+                      {
+                          "q":  "Qu\u0027appelle-t-on l\u0027« universalisme proportionné » en santé publique ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Une politique préventive qui s\u0027adresse à toute la population, mais dont l\u0027intensité et les ressources sont proportionnées aux besoins et aux obstacles des groupes les plus vulnérables.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Une action qui cible exclusivement les 10% les plus pauvres pour éradiquer les inégalités extrêmes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une distribution strictement uniforme, universelle et égalitaire des enveloppes budgétaires de santé allouées à chaque citoyen, indépendamment de toute vulnérabilité ou besoin spécifique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une approche privatisant la gestion des maladies chroniques pour réduire le déficit de la Sécurité sociale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027universalisme proportionné permet de ne laisser personne de côté (action universelle) tout en évitant de creuser les inégalités (intensité proportionnelle au gradient social). Cela permet aussi d\u0027éviter la stigmatisation d\u0027un ciblage pur[cite: 490]."
+                      },
+                      {
+                          "q":  "Pourquoi un « ciblage exclusif » des populations les plus défavorisées est-il jugé insuffisant et risqué pour lutter contre les ISS ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Car il risque d\u0027assimiler leurs modes de vie aux causes des ISS, de stigmatiser un groupe, et de négliger les groupes intermédiaires (classes moyennes) touchés par le gradient.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Car les populations en situation de grande précarité refusent catégoriquement toute démarche institutionnelle d\u0027accompagnement, vouant à l\u0027échec les programmes de prévention ciblés.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Car les inégalités de santé ne touchent pas du tout les groupes les plus pauvres de la société.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Car le ciblage coûte toujours dix fois plus cher qu\u0027un programme de soins gratuits et universels en hôpital privé.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Cibler uniquement la grande pauvreté occulte la réalité du gradient social (qui touche la majorité de la population, y compris la classe moyenne inférieure) et crée des risques forts de stigmatisation comportementale[cite: 490]."
+                      },
+                      {
+                          "q":  "Comment la prévalence de l\u0027obésité varie-t-elle en fonction du revenu ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle augmente significativement lorsque les revenus baissent, et de manière particulièrement marquée chez les femmes des foyers à bas revenus.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027obésité est une maladie touchant principalement les cadres supérieurs et professions libérales en raison d\u0027une sédentarité prolongée et d\u0027un stress professionnel intense.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il n\u0027y a pas de lien prouvé entre les tranches de revenus et l\u0027Indice de Masse Corporelle (IMC).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les revenus favorisent l\u0027obésité à cause d\u0027une plus grande consommation de viande rouge dans les classes aisées.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le risque relatif de surpoids et d\u0027obésité présente un gradient social clair : plus le niveau de revenus ou d\u0027étude diminue, plus la prévalence de l\u0027obésité explose (particulièrement chez les femmes)[cite: 481, 482]."
+                      },
+                      {
+                          "q":  "À l\u0027âge de 60 ans, comment se répartit la proportion de personnes jugeant leur santé « altérée » (mauvaise santé perçue) selon la catégorie socioprofessionnelle ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le gradient est très marqué : la proportion d\u0027ouvriers de 60 ans se déclarant en mauvaise santé (autour de 30%) est environ 4 fois supérieure à celle des anciens cadres.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La santé perçue est mauvaise pour 80% des personnes de 60 ans, quelle que soit leur catégorie socio-professionnelle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les cadres supérieurs se déclarent paradoxalement en moins bonne santé perçue à l\u0027âge de 60 ans en raison des syndromes d\u0027épuisement professionnel accumulés tout au long de leur carrière.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La santé déclarée à 60 ans ne montre plus aucune différence statistique entre employés, artisans et agriculteurs.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027indicateur subjectif de la « mauvaise santé perçue » suit un net gradient social. À 60 ans, un ancien ouvrier a une probabilité bien plus élevée de juger sa santé altérée qu\u0027un ancien cadre[cite: 486]."
+                      },
+                      {
+                          "q":  "Parmi les explications à la persistance (voire à l\u0027aggravation) des inégalités de santé, quel élément joue un rôle temporel fondamental ?",
+                          "tags":  [
+                                       "CM 5 - ISS"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027inscription des disparités dans le temps, présentes dès la grossesse ou la maternelle et dont les effets délétères s\u0027accumulent au cours de la vie.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le fait biologique que les populations les plus vulnérables développent des adaptations génétiques complexes limitant leur réceptivité aux messages préventifs de santé publique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La diminution systématique des budgets de la santé publique depuis 1945.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027exclusion totale des ouvriers des dispositifs de vaccination obligatoire.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les inégalités de santé résultent de processus cumulatifs tout au long de la vie (voire in utero ou en maternelle). Cumuler ces risques et environnements défavorables ancre les ISS dans la durée[cite: 487]."
+                      }
+                  ]
+}

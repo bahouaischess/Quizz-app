@@ -1,0 +1,528 @@
+{
+    "name": "CM 4 - Gaz, Pression et Hydrostatique",
+    "folder": "PASS - Physique",
+    "description": "États de la matière, théorie cinétique des gaz, lois de Dalton, hydrostatique et applications physiologiques (respiration, pression sanguine).",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Comment se compare la masse volumique d'un gaz à pression et température ambiantes par rapport à celle d'un liquide ?",
+            "tags": [
+                "Matière",
+                "Densité"
+            ],
+            "options": [
+                {
+                    "text": "Elle représente environ 0,1 % de celle d'un liquide (ordre de grandeur de 1 kg/m³ contre 1 000 kg/m³).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle est équivalente à environ 15 % de celle de la phase condensée liquide dans les conditions normales.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle est supérieure d'un facteur 10 en raison de la pression d'impulsion créée par l'agitation thermique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle demeure rigoureusement identique, seule la compressibilité isotherme distinguant les deux états.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les gaz sont extrêmement peu denses (rapport de densité d'environ 1/1000 par rapport à l'état liquide). Les molécules y sont éloignées, expliquant leur forte compressibilité[cite: 1208]."
+        },
+        {
+            "q": "Combien de particules (atomes ou molécules) contient exactement une mole de matière ?",
+            "tags": [
+                "Mole",
+                "Avogadro"
+            ],
+            "options": [
+                {
+                    "text": "La constante d'Avogadro N_A, soit environ 6,022 × 10²³ particules.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La constante de Boltzmann k_B, soit environ 1,381 × 10⁻²³ particules.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La constante de Faraday F, soit environ 96 485 particules élémentaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le nombre de Loschmidt, soit environ 2,687 × 10²⁵ entités par mole.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La constante (ou nombre) d'Avogadro relie le nombre de moles (n) au nombre de particules (N) : N = n × N_A (6.022 10^23). Des volumes égaux de gaz parfaits aux mêmes conditions p, T contiennent le même nombre de particules[cite: 1209]."
+        },
+        {
+            "q": "À quelle valeur en Pascals (Unité du Système International) correspond une atmosphère (1 atm) ?",
+            "tags": [
+                "Pression",
+                "Unités"
+            ],
+            "options": [
+                {
+                    "text": "Environ 1,013 × 10⁵ Pa (soit 760 mm Hg ou 1 013 hPa).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Exactement 1,000 × 10³ Pa (soit 10 kPa ou 75 mm Hg).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Environ 9,807 × 10⁶ Pa (équivalent à 100 bars de charge).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Environ 1,333 × 10² Pa (soit 1 torr ou 1 mm de mercure).",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'atmosphère (atm) est l'unité de pression usuelle historique. Dans le SI, la pression est en Pascals (N/m²). 1 atm = 101 325 Pa ~ 10^5 Pa. En médecine, on utilise souvent le millimètre de mercure (760 mmHg)[cite: 1210]."
+        },
+        {
+            "q": "Comment convertit-on une température exprimée en degrés Celsius (t°C) en température absolue Kelvin (T_K) ?",
+            "tags": [
+                "Température",
+                "Kelvin"
+            ],
+            "options": [
+                {
+                    "text": "T_K = t°C + 273,15",
+                    "isCorrect": true
+                },
+                {
+                    "text": "T_K = t°C - 273,15",
+                    "isCorrect": false
+                },
+                {
+                    "text": "T_K = (t°C × 9/5) + 32",
+                    "isCorrect": false
+                },
+                {
+                    "text": "T_K = (t°C + 32) × 5/9",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'échelle Kelvin définit le zéro absolu (-273,15 °C) où l'agitation thermique est nulle. L'incrément (la variation) de 1 K est équivalent à 1 °C, donc on additionne simplement 273,15[cite: 1210]."
+        },
+        {
+            "q": "Quelles sont les hypothèses de base définissant le modèle physique du « gaz parfait » ?",
+            "tags": [
+                "Gaz Parfait",
+                "Modèle"
+            ],
+            "options": [
+                {
+                    "text": "Particules ponctuelles sans volume propre, sans interactions à distance, à chocs élastiques, en milieu homogène et isotrope.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Masse fluide incompressible à liaisons dipolaires de Van der Waals compensant exactement l'agitation cinétique thermique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Mélange réactif subissant des collisions inélastiques avec pertes thermiques régies par la viscosité dynamique newtonienne.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Ensemble ordonné de molécules polyatomiques polarisées en interaction coulombienne permanente à courte portée.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le gaz parfait est un modèle limite validé à très faible densité (p → 0). Les molécules y sont considérées comme des points sans volume propre, interagissant uniquement lors de chocs parfaits sans perte d'énergie (E_tot = E_cin)[cite: 1212]."
+        },
+        {
+            "q": "Quelle est l'équation d'état des gaz parfaits reliant les variables d'état (Pression, Volume, Température) ?",
+            "tags": [
+                "Gaz Parfait",
+                "Équation d'état"
+            ],
+            "options": [
+                {
+                    "text": "p × V = n × R × T (ou p × V = N × k × T)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "p × V² = n × R × T (loi de van der Waals)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "p / V = n × R × T (loi de compression)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "p × T = n × R × V (loi de Gay-Lussac)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'équation d'état pV = nRT réunit les lois historiques de Boyle-Mariotte, Charles et Avogadro. À l'échelle microscopique, R = N_A × k_B, ce qui conduit à l'expression équivalente pV = N k T[cite: 1211]."
+        },
+        {
+            "q": "Pourquoi l'air chaud monte-t-il dans une montgolfière selon les lois des gaz parfaits ?",
+            "tags": [
+                "Archimède",
+                "Densité"
+            ],
+            "options": [
+                {
+                    "text": "À pression constante, le chauffage augmente le volume molaire : la masse volumique diminue et la poussée d'Archimède l'élève.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'élévation thermique détruit les liaisons de valence des molécules d'azote, réduisant leur masse molaire atomique moyenne.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'agitation thermique annule le coefficient gravitationnel d'accélération g par répulsion moléculaire avec la croûte terrestre.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La dilatation thermique crée un vide partiel absolu à la base du ballon, aspirant continuellement la structure vers le haut.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "À pression atmosphérique constante (p = N/V × kT), si la température (T) augmente, la densité volumique (N/V) diminue. L'air chaud est donc moins dense, et subit la poussée d'Archimède, ce qui le fait monter[cite: 1211]."
+        },
+        {
+            "q": "Sur le plan de la théorie cinétique microscopique, quelle est l'origine physique de la pression exercée par un gaz sur les parois de son contenant ?",
+            "tags": [
+                "Pression",
+                "Cinétique"
+            ],
+            "options": [
+                {
+                    "text": "Le transfert moyen de quantité de mouvement lors des chocs élastiques aléatoires des particules sur la surface de paroi.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La force d'attraction gravitationnelle exercée par la masse du contenant qui comprime les atomes périphériques en surface.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La répulsion électrostatique permanente entre les nuages électroniques des molécules gazeuses et les dipôles métalliques de la paroi.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'expansion continue de la structure spatiale du vide quantique interstitiel entre les orbitales des molécules confinées.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Elle résulte des multiples collisions aléatoires des particules sur la paroi, chaque rebond transférant une quantité de mouvement (impulsion) à la paroi, générant ainsi une force moyenne[cite: 1213]."
+        },
+        {
+            "q": "Comment la température absolue (T) d'un gaz parfait est-elle reliée à l'énergie cinétique microscopique de ses particules ?",
+            "tags": [
+                "Température",
+                "Énergie cinétique"
+            ],
+            "options": [
+                {
+                    "text": "Elle est directement proportionnelle à l'énergie cinétique moyenne de translation : <Ec> = 3/2 k_B T.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle est inversement proportionnelle à la vitesse quadratique moyenne des atomes : T = Cte / <v²>.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle dépend exclusivement de l'énergie potentielle d'interaction de liaison intramoléculaire covalente.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle est proportionnelle au carré de l'énergie cinétique de translation : T = α × <Ec>².",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La température est directement proportionnelle à l'énergie cinétique moyenne de translation des particules (E_cin_moy = 3/2 k T)[cite: 1214]."
+        },
+        {
+            "q": "Pour un gaz parfait composé de molécules polyatomiques (ex: O2, N2), qu'est-ce qui différencie son énergie interne de celle d'un gaz monoatomique ?",
+            "tags": [
+                "Gaz polyatomique",
+                "Énergie interne"
+            ],
+            "options": [
+                {
+                    "text": "L'existence de degrés de liberté supplémentaires de rotation et de vibration qui augmentent sa capacité thermique : U = 5/2 NkT.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'absence complète d'énergie cinétique de translation axiale en raison du blocage stérique des liaisons interatomiques rigides.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une réduction systématique de moitié de l'énergie thermique totale sous l'effet du moment d'inertie de spin nucléaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'impossibilité thermodynamique d'effectuer des collisions élastiques sans dissociation photochimique instantanée du composé.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Il possède des degrés de liberté supplémentaires liés à la rotation des molécules sur elles-mêmes et (à plus haute température) à la vibration des liaisons, augmentant son énergie interne (ex: 5/2 kT)[cite: 1215]."
+        },
+        {
+            "q": "Que stipule la loi de Dalton concernant les mélanges de gaz parfaits (sans réaction chimique) ?",
+            "tags": [
+                "Loi de Dalton",
+                "Pression partielle"
+            ],
+            "options": [
+                {
+                    "text": "La pression totale est égale à la somme des pressions partielles de chacun des gaz constitutifs du mélange : P = Σ P_i.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La pression totale correspond à la moyenne géométrique pondérée des pressions individuelles de chaque espèce chimique présente.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La fraction molaire du constituant majoritaire impose sa pression partielle à l'ensemble du volume sans additivité possible.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le volume molaire du mélange se contracte d'un tiers lors de la mise en présence de deux espèces de masses molaires inégales.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La pression totale du mélange est égale à la somme des pressions partielles de chacun des gaz le composant (p = p1 + p2 + ...)[cite: 1216]."
+        },
+        {
+            "q": "Quelle est l'équation fondamentale de l'hydrostatique pour un fluide pesant (liquide incompressible) à l'équilibre ?",
+            "tags": [
+                "Hydrostatique",
+                "Formule"
+            ],
+            "options": [
+                {
+                    "text": "p + ρ g z = constante (soit dp/dz = -ρ g)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "p - ρ g z = constante (soit dp/dz = +ρ g)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "p + 1/2 ρ g z² = constante (forme quadratique)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "p × z = ρ × g (invariance hyperbolique)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "p + ρ · g · z = constante (la pression p augmente avec la profondeur pour compenser le poids de la colonne de fluide)[cite: 1218]."
+        },
+        {
+            "q": "Quel est le principe d'application du Théorème de Pascal utilisé dans les vérins hydrauliques ou les leviers ?",
+            "tags": [
+                "Pascal",
+                "Vérin"
+            ],
+            "options": [
+                {
+                    "text": "La pression s'y transmet intégralement, permettant de démultiplier la force proportionnellement au rapport des sections : F2 = F1 × (S2/S1).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La vitesse du liquide s'y amplifie spontanément, générant une surpression dynamique proportionnelle au carré de la course du piston.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La masse volumique du fluide s'y densifie sous l'action motrice, annulant la résistance hydrodynamique opposée par la charge externe.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La force transmise demeure constante quelle que soit la variation géométrique des surfaces en vertu de la conservation du travail.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La pression se transmet intégralement dans un liquide incompressible à tous les points de même altitude (p1 = p2), permettant de multiplier les forces en jouant sur la surface (F2 = F1 · S2/S1)[cite: 1219]."
+        },
+        {
+            "q": "Lors d'une plongée sous-marine en lac (eau douce de masse volumique ~1000 kg/m³), comment évolue la pression en fonction de la profondeur ?",
+            "tags": [
+                "Plongée",
+                "Hydrostatique"
+            ],
+            "options": [
+                {
+                    "text": "Elle augmente d'environ 1 atmosphère (10⁵ Pa) tous les 10 mètres de profondeur descendus.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle double exactement tous les mètres en raison de la compressibilité progressive de la colonne d'eau.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle demeure invariablement fixée à 1 bar jusqu'à la profondeur de saturation isobare de 50 mètres.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle décroît de façon logarithmique sous l'effet du gradient thermique négatif des couches profondes.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La pression augmente d'environ 1 atmosphère (105 Pa) pour chaque tranche de 10 mètres de profondeur descendue[cite: 1220]."
+        },
+        {
+            "q": "Comment définit-on la « Tension sanguine » (ou tension artérielle, T) en médecine par rapport à la physique des fluides ?",
+            "tags": [
+                "Tension artérielle",
+                "Physiologie"
+            ],
+            "options": [
+                {
+                    "text": "C'est la surpression relative par rapport à la pression atmosphérique extérieure : T = P_absolue - P_atm.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "C'est la pression hydrostatique totale absolue mesurée au sein de la racine de l'aorte ascendante (~880 mmHg).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "C'est la contrainte de cisaillement tangentiel exercée par le débit visqueux pulsé sur la couche de cellules endothéliales.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "C'est la force contractile myocardique isométrique développée par unité de surface de la paroi ventriculaire gauche.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C'est la différence (surpression) entre la pression absolue du sang (p_sang) et la pression atmosphérique extérieure (p_atm) : T = p_sang - p_atm[cite: 1221]."
+        },
+        {
+            "q": "Si un cylindre contenant un gaz est brutalement comprimé (diminution du volume dV < 0), quel est le signe du travail pour le gaz et quelle conséquence cela a-t-il sur son état ?",
+            "tags": [
+                "Thermodynamique",
+                "Travail"
+            ],
+            "options": [
+                {
+                    "text": "Le travail reçu est positif (W > 0) : l'énergie interne du gaz augmente, ce qui élève sa température.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le travail fourni est moteur : le gaz dissipe toute son énergie mécanique et se refroidit brutalement.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le travail est rigoureusement nul : la transformation étant isotherme par définition dans tout gaz parfait.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le travail est positif mais n'a aucun impact thermique, modifiant uniquement la constante de Boltzmann.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le travail reçu par le gaz est positif (la force externe est motrice). Le gaz reçoit de l'énergie, ce qui augmente son énergie cinétique et donc le chauffe[cite: 1222]."
+        },
+        {
+            "q": "Quelle est la définition mathématique précise du travail élémentaire (dW) d'une force de pression (p_int) lors d'une variation de volume (dV) contre le vide ?",
+            "tags": [
+                "Travail",
+                "Pression"
+            ],
+            "options": [
+                {
+                    "text": "|dW| = p_int × |dV|",
+                    "isCorrect": true
+                },
+                {
+                    "text": "|dW| = p_int / |dV|",
+                    "isCorrect": false
+                },
+                {
+                    "text": "|dW| = 1/2 × p_int × dV²",
+                    "isCorrect": false
+                },
+                {
+                    "text": "|dW| = p_int × S × |dV|",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "|dW| = p_int · |dV|[cite: 1223]."
+        },
+        {
+            "q": "Lors de la ventilation pulmonaire, quel processus mécanique permet l'inspiration de l'air dans les poumons ?",
+            "tags": [
+                "Respiration",
+                "Mécanique ventilatoire"
+            ],
+            "options": [
+                {
+                    "text": "L'abaissement du diaphragme accroît le volume thoracique, créant une dépression alvéolaire (P_alv < P_atm) qui aspire l'air.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La rétraction élastique des parois alvéolaires comprime le volume résiduel pour générer une onde de surpression interne.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'échauffement thermique instantané de l'air ambiant dans les fosses nasales engendre un gradient de pression barométrique moteur.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'augmentation de la tension superficielle du surfactant pulmonaire attire mécaniquement l'air extérieur vers les bronchioles.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'expansion de la cage thoracique (par les muscles et le diaphragme) augmente le volume pulmonaire, créant une dépression alvéolaire (p_alv < p_atm) qui aspire l'air[cite: 1224]."
+        },
+        {
+            "q": "Qu'est-ce que la « pression de vapeur saturante » (exemple : la vapeur d'eau dans les poumons à 37°C) ?",
+            "tags": [
+                "Vapeur saturante",
+                "Équilibre"
+            ],
+            "options": [
+                {
+                    "text": "La pression partielle de vapeur à laquelle le taux d'évaporation du liquide équilibre exactement le taux de condensation.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La pression hydrostatique minimale nécessaire pour provoquer la liquéfaction spontanée de l'azote alvéolaire à 37°C.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La surpression barométrique critique au-delà de laquelle l'eau cellulaire entre en ébullition à température corporelle.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La différence algébrique permanente mesurée entre les pressions partielles alvéolaires de dioxygène et de dioxyde de carbone.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C'est la pression partielle du gaz à l'équilibre, lorsque le nombre de molécules qui s'évaporent du liquide est exactement égal à celui qui s'y condense[cite: 1225]."
+        },
+        {
+            "q": "Comment justifie-t-on que la pression est la même dans toutes les directions (isotrope) pour un gaz statique de faible dimension verticale ?",
+            "tags": [
+                "Isotropie",
+                "Cinétique"
+            ],
+            "options": [
+                {
+                    "text": "L'isotropie résulte du caractère aléatoire et chaotique des vecteurs vitesse microscopiques, répartis également selon les trois axes spatiaux.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle découle de l'organisation géométrique périodique cubique à faces centrées imposée par les interactions dipolaires moléculaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle provient de l'invariance gravitationnelle qui aligne rigoureusement les vecteurs impulsion dans le plan horizontal de la cuve.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle est due à l'annihilation mutuelle des charges électrostatiques superficielles induite par l'agitation thermique brownienne.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Car les mouvements thermiques microscopiques des particules sont aléatoires (chaos) et se répartissent également dans toutes les directions de l'espace (moyennes des vitesses égales)[cite: 1226]."
+        }
+    ]
+}

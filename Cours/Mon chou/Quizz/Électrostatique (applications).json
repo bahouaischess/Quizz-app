@@ -1,0 +1,528 @@
+{
+    "name": "CM 3 - Électrostatique : applications",
+    "folder": "PASS - Physique",
+    "description": "Potentiel cellulaire, membrane au repos, potentiel d'action, condensateur, dipôle électrique et électrocardiogramme.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Quelle est la valeur typique du potentiel de repos transmembranaire (Vm) d'une cellule excitable (ex: neurone) ?",
+            "tags": [
+                "Électrophysiologie",
+                "Potentiel de repos"
+            ],
+            "options": [
+                {
+                    "text": "Environ -70 mV.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Environ +30 mV.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Environ -55 mV.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Exactement 0 mV.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Au repos, la répartition asymétrique des ions maintient l'intérieur de la cellule plus négatif que l'extérieur, établissant un potentiel de repos (Vm = V_int - V_ext) d'environ -70 mV[cite: 1251, 1252]."
+        },
+        {
+            "q": "Comment fonctionne la pompe Na/K ATPase responsable du maintien du potentiel de repos ?",
+            "tags": [
+                "Pompe Na/K",
+                "Transport actif"
+            ],
+            "options": [
+                {
+                    "text": "Elle expulse activement 3 Na+ et fait entrer 2 K+ par molécule d'ATP hydrolysée contre leurs gradients électrochimiques.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle transporte passivement 2 Na+ vers l'extérieur pour 3 K+ entrants selon un mécanisme symport électroneutre sans ATP.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle assure la recapture sélective du potassium intracellulaire en échange de la sécrétion apicale de 3 anions chlorure Cl-.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle expulse 2 protons H+ pour 2 ions Na+ selon un échangeur antiporter couplé au gradient transmembranaire de calcium.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La pompe Na-K maintient le déséquilibre électrique en expulsant plus de charges positives (3 Na+) qu'elle n'en fait entrer (2 K+), ce qui contribue à la charge négative intracellulaire[cite: 1251]."
+        },
+        {
+            "q": "Quel ion a un potentiel d'équilibre très négatif (environ -89 mV) et tend à sortir de la cellule au repos à cause de sa force de diffusion ?",
+            "tags": [
+                "Ions",
+                "Potentiel"
+            ],
+            "options": [
+                {
+                    "text": "L'ion Potassium (K+).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'ion Sodium (Na+).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'ion Calcium (Ca2+).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'ion Chlorure (Cl-).",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le K+ est très concentré à l'intérieur (140 mM) par rapport à l'extérieur (5 mM). Son potentiel d'équilibre est de -89 mV. Au repos (-70 mV), il a donc tendance à fuir vers l'extérieur[cite: 1251, 1252]."
+        },
+        {
+            "q": "Lors de la création d'un potentiel d'action, quel phénomène provoque l'inversion brutale de la polarité membranaire (dépolarisation vers +30 mV) ?",
+            "tags": [
+                "Potentiel d'action",
+                "Dépolarisation"
+            ],
+            "options": [
+                {
+                    "text": "L'ouverture des canaux sodiques Na+ voltage-dépendants avec entrée massive de sodium selon son gradient électrochimique.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La sortie massive de potassium K+ par les canaux de fuite tétramériques induisant une surcharge cationique péricellulaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'inactivation brutale de la pompe Na/K ATPase qui permet la neutralisation passive spontanée du potentiel transmembranaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'activation synchrone des canaux chlorures GABAergiques créant un courant d'hyperpolarisation régénératif transitoire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dès que le potentiel de la membrane dépasse le seuil (-55 mV), les canaux Na+ s'ouvrent. Le sodium, très concentré à l'extérieur, s'engouffre dans la cellule, rendant l'intérieur positif[cite: 1253]."
+        },
+        {
+            "q": "Quel mécanisme permet la repolarisation de la membrane après le pic du potentiel d'action ?",
+            "tags": [
+                "Potentiel d'action",
+                "Repolarisation"
+            ],
+            "options": [
+                {
+                    "text": "L'inactivation des canaux Na+ voltage-dépendants et l'ouverture retardée des canaux K+ voltage-dépendants (efflux de charges positives).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'activation synchrone et prolongée des canaux calciques voltage-dépendants de type L générant un plateau dépolarisant persistant.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'inversion enzymatique du sens de transport de la pompe Na/K ATPase fonctionnant alors en mode d'extrusion continue de potassium.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'afflux osmotique rapide d'eau intracellulaire qui dilue les cations cytosoliques pour abaisser passivement le potentiel à -70 mV.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'inactivation des canaux Na+ et l'ouverture retardée des canaux K+, provoquant une sortie massive d'ions K+ qui évacue les charges positives[cite: 1253]."
+        },
+        {
+            "q": "Quel avantage procure la gaine de myéline autour d'un axone concernant la propagation du potentiel d'action ?",
+            "tags": [
+                "Myéline",
+                "Conduction saltatoire"
+            ],
+            "options": [
+                {
+                    "text": "Une conduction saltatoire d'un nœud de Ranvier à l'autre, augmentant la vitesse de conduction tout en réduisant la dépense énergétique.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une augmentation continue de la capacité membranaire spécifique Cm permettant de stabiliser durablement la dépolarisation sur de très longues distances.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La suppression complète de la période réfractaire absolue, autorisant une fréquence de décharge axonale illimitée sans fatigue synaptique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une propagation bidirectionnelle continue et isotrope de l'onde électrique le long des segments internodaux richement myélinisés.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Elle permet une conduction saltatoire (par bonds d'un nœud de Ranvier à l'autre), ce qui rend la propagation beaucoup plus rapide et économe en énergie[cite: 1254]."
+        },
+        {
+            "q": "Comment calcule-t-on la capacité (C) d'un condensateur plan de surface S et d'épaisseur h ?",
+            "tags": [
+                "Condensateur",
+                "Formule"
+            ],
+            "options": [
+                {
+                    "text": "C = (ε × S) / h",
+                    "isCorrect": true
+                },
+                {
+                    "text": "C = (ε × h) / S (inverse dimensionnel)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "C = (S × h) / ε (forme diélectrique)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "C = ε × S × h² (expression volumique)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C = (ε · S) / h[cite: 1255]."
+        },
+        {
+            "q": "Dans un condensateur plan dont les plaques sont soumises à une différence de potentiel ΔV, comment s'exprime l'énergie électrostatique stockée (E_pot) ?",
+            "tags": [
+                "Condensateur",
+                "Énergie"
+            ],
+            "options": [
+                {
+                    "text": "E_pot = 1/2 × C × (ΔV)²",
+                    "isCorrect": true
+                },
+                {
+                    "text": "E_pot = (C × ΔV)² / (2ε₀) (loi d'induction)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "E_pot = 1/2 × C² × (ΔV)³ (dérive cubique)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "E_pot = (ΔV)² / (2 × C) (inverse de capacité)",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "E_pot = 1/2 · C · (ΔV)²[cite: 1255]."
+        },
+        {
+            "q": "Qu'est-ce que le « potentiel Zeta » (ζ) d'un globule rouge ?",
+            "tags": [
+                "Potentiel Zeta",
+                "Globule rouge"
+            ],
+            "options": [
+                {
+                    "text": "Le potentiel électrocinétique mesuré au plan de cisaillement de la double couche ionique, traduisant l'écrantage des charges membranaires.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le potentiel d'action transmembranaire spécifique mesuré lors de la déformation élastique maximale de l'érythrocyte dans les fentes spléniques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La différence de potentiel rédox générée par l'oxydation de l'atome de fer ferreux de l'hème en fer ferrique méthémoglobinique circulant.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le potentiel de repos transmembranaire intracellulaire généré par l'asymétrie de concentration des ions bicarbonate et chlorure.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C'est le potentiel effectif mesuré à la limite de la couche compacte d'ions (épaisseur e) entourant le globule, traduisant un fort écrantage de sa charge négative initiale[cite: 1256]."
+        },
+        {
+            "q": "Comment évolue le potentiel électrique V(x) entre les deux plaques (+σ et -σ) d'un condensateur plan idéal ?",
+            "tags": [
+                "Condensateur",
+                "Potentiel"
+            ],
+            "options": [
+                {
+                    "text": "Il décroît de façon strictement linéaire de l'armature positive vers l'armature négative : V(x) = V₀ - E × x.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il demeure rigoureusement invariant et nul dans tout l'espace compris entre les deux plans conducteurs.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il présente une croissance exponentielle symétrique maximale au niveau du plan médian équidistant des armatures.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il décrit une parabole centrée sur l'axe optique en vertu de la loi de distribution quadratique de Poisson.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Il décroît linéairement (V(x) = V(0) - E·x) de la plaque positive vers la plaque négative[cite: 1255]."
+        },
+        {
+            "q": "Que devient le potentiel V(r) créé par un dipôle électrique à une distance r très grande par rapport à la séparation a des charges ?",
+            "tags": [
+                "Dipôle",
+                "Potentiel lointain"
+            ],
+            "options": [
+                {
+                    "text": "Il décroît en 1/r² (plus rapidement que le potentiel en 1/r d'une charge monopolaire ponctuelle).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il décroît selon la loi en 1/r caractéristique d'une particule ponctuelle sphérique isolée.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il reste rigoureusement invariant dans tout l'espace car les deux charges opposées se neutralisent.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il augmente de façon logarithmique selon le tenseur d'induction de la matrice de permittivité.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Il décroît selon l'inverse du carré de la distance (V(r) ∝ 1/r²), s'affaiblissant plus vite qu'une charge isolée[cite: 1258]."
+        },
+        {
+            "q": "Quelle particularité présente le dipôle électrique global résultant d'une cellule musculaire (ou nerveuse) totalement au repos ?",
+            "tags": [
+                "Dipôle cellulaire",
+                "Repos"
+            ],
+            "options": [
+                {
+                    "text": "Il est rigoureusement nul (p_tot = 0) car la polarisation membranaire est homogène sur toute la surface cellulaire fermée.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il est maximal et aligné selon le grand axe longitudinal de la cellule en raison de la polarisation permanente des myofilaments d'actine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il oscille à la fréquence physiologique de repos en générant un microchamp électromagnétique dipolaire détectable à distance.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il est constant et orienté exclusivement vers le centre de gravité volumique du noyau cellulaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Il est nul (vecteur p_tot = 0) car la répartition des charges (+ dehors, - dedans) est homogène sur toute la membrane[cite: 1259]."
+        },
+        {
+            "q": "Comment naît le dipôle macroscopique responsable du signal ECG lors de l'activation cardiaque ?",
+            "tags": [
+                "ECG",
+                "Dipôle cardiaque"
+            ],
+            "options": [
+                {
+                    "text": "Le front de dépolarisation crée une asymétrie transitoire de potentiel entre tissu activé et tissu encore au repos, générant un dipôle mobile.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le frottement turbulent des hématies chargées sur l'endothélium valvulaire lors de l'éjection systolique génère un dipôle triboélectrique permanent.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'ouverture mécanique des valves atrio-ventriculaires produit une charge piézoélectrique pariétale enregistrée par les électrodes périphériques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'hydrolyse synchrone de l'ATP par les pompes membranaires libère un train d'ondes électrostatiques planes dans le myocarde ventriculaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le front de dépolarisation crée une asymétrie entre la zone déjà dépolarisée et la zone encore au repos, générant un dipôle transitoire qui avance avec l'influx[cite: 1260]."
+        },
+        {
+            "q": "Quelle onde de l'électrocardiogramme (ECG) standard correspond à la dépolarisation des ventricules ?",
+            "tags": [
+                "ECG",
+                "Ondes"
+            ],
+            "options": [
+                {
+                    "text": "Le complexe QRS.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'onde P de dépolarisation auriculaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'onde T de repolarisation ventriculaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le segment isoélectrique PR auriculo-nodal.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'onde P correspond à la dépolarisation des oreillettes, le complexe QRS à la dépolarisation massive des ventricules, et l'onde T à la repolarisation ventriculaire[cite: 1260]."
+        },
+        {
+            "q": "Dans le triangle d'Einthoven pour l'ECG frontal, que mesure exactement la dérivation bipolaire D_I (ou V_I) ?",
+            "tags": [
+                "Einthoven",
+                "Dérivations"
+            ],
+            "options": [
+                {
+                    "text": "La différence de potentiel entre le bras gauche (L) et le bras droit (R) : V_I = V_L - V_R.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La différence de potentiel entre la jambe gauche (F) et le bras droit (R) : V_II = V_F - V_R.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La différence de potentiel entre la jambe gauche (F) et le bras gauche (L) : V_III = V_F - V_L.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La moyenne arithmétique des potentiels des trois membres par rapport à la terre de référence.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La différence de potentiel entre le bras gauche (L) et le bras droit (R), soit V_L - V_R[cite: 1261]."
+        },
+        {
+            "q": "À quoi correspondent les dérivations aVR, aVL et aVF sur un électrocardiogramme ?",
+            "tags": [
+                "ECG",
+                "Dérivations augmentées"
+            ],
+            "options": [
+                {
+                    "text": "Des dérivations unipolaires frontales mesurant le potentiel d'un membre par rapport à la moyenne des deux autres membres (borne centrale de Wilson).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Des enregistrements électro-physiologiques intracavitaires endocavitaires synchronisés avec le pic de vélocité de l'onde de pouls systolique aortique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Des dérivations précordiales horizontales explorant spécifiquement l'activité électrique du septum interventriculaire antérieur.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Des électrodes bipolaires œsophagiennes utilisées exclusivement pour le diagnostic des tachycardies jonctionnelles réciproques.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Ce sont des dérivations unipolaires mesurant la différence de potentiel entre l'un des membres (R, L ou F) et un point central de référence (O) électriquement neutre[cite: 1262]."
+        },
+        {
+            "q": "Comment une pathologie comme un infarctus du myocarde peut-elle altérer de façon notable le tracé de l'ECG (exemple du cours) ?",
+            "tags": [
+                "Pathologie",
+                "ECG"
+            ],
+            "options": [
+                {
+                    "text": "Par une modification morphologique de l'onde T et une déviation pathologique de l'axe dipolaire lors de la repolarisation ventriculaire.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Par la disparition permanente et isolée de l'onde P auriculaire avec conservation stricte de la polarité normale du complexe QRS.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par une inversion systématique des tracés bipolaires D_I et D_III sans aucun retentissement sur les phases de repolarisation myocardique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par l'apparition d'ondes delta rétrogrades géantes en l'absence de tout foyer d'ischémie transmurale sous-épicardique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Elle peut provoquer une forte amplification de l'onde T et une importante rotation de l'axe du vecteur dipôle lors de la repolarisation ventriculaire[cite: 1264]."
+        },
+        {
+            "q": "Quel paramètre géométrique influence directement le potentiel V(r) généré par un dipôle électrique, en plus de la distance r ?",
+            "tags": [
+                "Dipôle",
+                "Trigonométrie"
+            ],
+            "options": [
+                {
+                    "text": "L'angle θ formé entre l'axe orienté du moment dipolaire p et le vecteur position du point de mesure (facteur en cos θ).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le moment cinétique propre de rotation axiale des orbitales moléculaires des ions solvatés autour de leur barycentre géométrique commun.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La masse volumique moyenne du milieu biologique conducteur traversé par les lignes de courant.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La courbure de Gauss de la surface équipotentielle passant par le point d'observation considéré.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'angle θ (theta) entre l'axe du dipôle et la direction du point d'observation (formule incluant cos(θ))[cite: 1258]."
+        },
+        {
+            "q": "En électricité, à quoi correspond l'unité de mesure « Farad » (F) ?",
+            "tags": [
+                "Unités",
+                "Capacité"
+            ],
+            "options": [
+                {
+                    "text": "À la capacité électrique C, équivalente à un Coulomb par Volt (1 F = 1 C/V).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Au potentiel électrostatique V, équivalent à un Joule par Coulomb (1 J/C).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "À la permittivité absolue ε, équivalente à un Newton par mètre carré (N/m²).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "À l'intensité de champ électrique E, équivalente à un Volt par mètre (V/m).",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C'est l'unité de la capacité électrique (C), équivalente à 1 Coulomb par Volt (C/V)[cite: 1255]."
+        },
+        {
+            "q": "Dans l'étude des potentiels d'équilibre des ions (loi de Nernst évoquée), si la pompe Na/K tombait définitivement en panne, que deviendrait le potentiel membranaire ?",
+            "tags": [
+                "Potentiel de repos",
+                "Physiologie"
+            ],
+            "options": [
+                {
+                    "text": "La diffusion passive annulerait progressivement les gradients chimiques : le potentiel de repos Vm s'effondrerait vers 0 mV.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le potentiel se stabiliserait définitivement à la valeur théorique du potentiel d'équilibre de Nernst du potassium (-89 mV).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La membrane développerait une série ininterrompue de potentiels d'action spontanés sans jamais pouvoir se repolariser.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le sodium quitterait passivement le milieu intracellulaire pour fixer le potentiel au potentiel d'équilibre sodique (+61 mV).",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les ions finiraient par diffuser jusqu'à équilibrer totalement les concentrations de part et d'autre, dissipant le potentiel de repos (Vm tendrait vers 0)[cite: 1251]."
+        }
+    ]
+}

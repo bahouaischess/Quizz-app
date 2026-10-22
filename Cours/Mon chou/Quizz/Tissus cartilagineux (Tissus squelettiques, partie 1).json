@@ -1,0 +1,903 @@
+{
+    "name": "Tissus cartilagineux (Tissus squelettiques, partie 1)",
+    "folder": "Histologie",
+    "description": "Tissus squelettiques, généralités du cartilage, trois types de cartilage, chondrocytes et périchondre, croissance appositionnelle et interstitielle, MEC (collagène II, aggrécane, chondrone), cartilage articulaire, de conjugaison, élastique et fibreux.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Concernant les tissus squelettiques :",
+            "tags": [
+                "Généralités"
+            ],
+            "options": [
+                {
+                    "text": "Ce sont des tissus conjonctifs spécialisés, formés d'une matrice extracellulaire (MEC) et de cellules résidentes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il en existe deux types : cartilagineux et osseux",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les cellules résidentes assurent la synthèse, la maintenance et la résorption de la MEC",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ils sont totalement dépourvus de matrice extracellulaire organisée, les cellules résidentes étant jointives et polarisées",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les tissus squelettiques sont impliqués dans la mécanique squelettique. Leur absence de jonctions serrées entre cellules les distingue des épithéliums : la MEC y est au contraire abondante et fait toute la spécificité du tissu."
+        },
+        {
+            "q": "Quelle est la différence de MEC entre le tissu cartilagineux et le tissu osseux ?",
+            "tags": [
+                "Généralités"
+            ],
+            "options": [
+                {
+                    "text": "Cartilage : MEC très hydratée et élastique ; os : MEC très peu hydratée, minéralisée et rigide",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Cartilage : MEC peu hydratée, hautement minéralisée et rigide ; os : MEC très hydratée, compressible et élastique",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les deux matrices extracellulaires sont rigoureusement identiques sur le plan biochimique, seules les cellules résidentes diffèrent",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Cartilage : MEC minéralisée par des cristaux d'hydroxyapatite ; os : MEC exclusivement non minéralisée",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les propriétés spécifiques des deux tissus tiennent au type de MEC et aux cellules résidentes : chondrocytes pour le cartilage, ostéocytes pour l'os."
+        },
+        {
+            "q": "Quels sont les rôles du tissu cartilagineux ?",
+            "tags": [
+                "Généralités"
+            ],
+            "options": [
+                {
+                    "text": "Servir de support et faciliter les mouvements",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Jouer un rôle primordial dans la croissance osseuse (cartilages de conjugaison)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Jouer un rôle important dans la cicatrisation des fractures osseuses",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Assurer directement la minéralisation primaire et le remodelage ostéoclastique physiologique du squelette adulte",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La minéralisation est la propriété de la MEC osseuse. Au début de la vie embryonnaire, la majeure partie du squelette est formée de cartilage, qui devient plus rare après la naissance."
+        },
+        {
+            "q": "Où trouve-t-on principalement du cartilage après la naissance ?",
+            "tags": [
+                "Généralités"
+            ],
+            "options": [
+                {
+                    "text": "Aux surfaces articulaires des os longs, dont il limite l'usure",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dans les disques intervertébraux et les côtes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dans les voies aériennes supérieures",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dans la média contractile et l'intima endothéliale de l'ensemble des vaisseaux sanguins de moyen calibre",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le cartilage est beaucoup moins étendu chez l'adulte que dans le squelette embryonnaire. Les vaisseaux ne contiennent pas de cartilage."
+        },
+        {
+            "q": "Associez chaque type de cartilage à sa localisation :",
+            "tags": [
+                "Types de cartilage"
+            ],
+            "options": [
+                {
+                    "text": "Hyalin : surfaces articulaires, portion antérieure des côtes, voies respiratoires supérieures",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Élastique : oreille, épiglotte",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Fibreux : symphyse pubienne, disques intervertébraux",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Élastique : surfaces articulaires des os longs porteurs et zones de transmission directe des forces de cisaillement",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le cartilage hyalin, ferme mais souple, est le plus répandu : c'est celui qui sert d'exemple pour la description générale du tissu cartilagineux."
+        },
+        {
+            "q": "Quel type de cartilage est le plus répandu, et sert d'exemple pour décrire le tissu cartilagineux en général ?",
+            "tags": [
+                "Types de cartilage"
+            ],
+            "options": [
+                {
+                    "text": "Le cartilage hyalin",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le cartilage élastique",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le cartilage fibreux",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le cartilage articulaire seulement",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le hyalin forme le squelette embryonnaire et subsiste chez l'adulte aux surfaces articulaires, aux côtes et aux voies respiratoires supérieures. Le cartilage articulaire n'en est qu'un cas particulier."
+        },
+        {
+            "q": "Qu'est-ce qu'un chondroplaste ?",
+            "tags": [
+                "Organisation générale"
+            ],
+            "options": [
+                {
+                    "text": "Une logette de la MEC, dépourvue de paroi propre, qui contient un ou plusieurs chondrocytes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une cellule jeune du périchondre",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une armature péricellulaire spécialisée formée de volumineuses fibres de collagène de type I organisées en réseau dense",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une couche du périchondre fibreux",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les chondrocytes sont localisés dans des lacunes au sein de la MEC : ce sont les chondroplastes. Les cellules jeunes du périchondre sont les chondroblastes."
+        },
+        {
+            "q": "Concernant la vascularisation et l'innervation du cartilage :",
+            "tags": [
+                "Organisation générale"
+            ],
+            "options": [
+                {
+                    "text": "Le cartilage n'est pas vascularisé",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les chondrocytes sont nourris par diffusion des métabolites depuis le périchondre",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Pour les cartilages articulaires, les nutriments proviennent du liquide synovial",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le cartilage n'est pas innervé",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le cartilage possède une vascularisation artérielle terminale riche dans toute son épaisseur mais reste totalement dépourvu d'innervation",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Un tissu avasculaire dépend de la diffusion pour sa nutrition, ce qui limite aussi sa capacité de réparation."
+        },
+        {
+            "q": "Pourquoi les traumatismes cartilagineux sont-ils douloureux, alors que le cartilage n'est pas innervé ?",
+            "tags": [
+                "Organisation générale"
+            ],
+            "options": [
+                {
+                    "text": "Parce que la douleur est secondaire à la stimulation des terminaisons nerveuses des tissus adjacents",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Parce que les chondrocytes matures possèdent de fins récepteurs nociceptifs membranaires directement reliés au cortex somatosensoriel",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Parce que le périchondre est directement innervé par des fibres motrices de Sharpey hautement sensibles à l'étirement mécanique",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Parce que la sensation douloureuse est transmise par le réseau microvasculaire intrinsèque de la substance fondamentale cartilagineuse",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le cartilage lui-même n'a ni nerfs ni vaisseaux : la douleur vient des structures voisines (os, synoviale, périchondre...)."
+        },
+        {
+            "q": "Vrai ou faux : « Le cartilage est composé de plusieurs types cellulaires distincts. »",
+            "tags": [
+                "Cellules"
+            ],
+            "options": [
+                {
+                    "text": "Faux",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Vrai",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le cartilage ne comporte qu'un seul type cellulaire, qui existe sous deux populations selon l'état de maturation : les chondroblastes (jeunes) et les chondrocytes (matures)."
+        },
+        {
+            "q": "Comparez chondroblastes et chondrocytes :",
+            "tags": [
+                "Cellules"
+            ],
+            "options": [
+                {
+                    "text": "Les chondroblastes sont des cellules jeunes, localisées dans le périchondre",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les chondroblastes ont une forte activité de synthèse de la MEC",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les chondrocytes sont des cellules matures, situées dans les chondroplastes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les chondrocytes ont une activité de synthèse modérée, pour l'entretien de la MEC",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les chondrocytes sont les précurseurs immatures à intense activité mitotique assurant la mise en place initiale de la matrice extracellulaire",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les chondroblastes sont plus nombreux au cours de l'embryogenèse. Les chondrocytes sont arrondis, avec un gros noyau et des inclusions lipidiques."
+        },
+        {
+            "q": "Concernant l'aspect d'un chondrocyte en microscopie électronique à transmission :",
+            "tags": [
+                "Cellules"
+            ],
+            "options": [
+                {
+                    "text": "Il mesure 20 à 40 µm",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Son noyau est volumineux, central et rond",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Son cytoplasme est basophile, avec du glycogène et des gouttelettes lipidiques",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Son noyau est très aplati, hétérochromatique et systématiquement refoulé en extrême périphérie cellulaire contre la membrane plasmique",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La basophilie du cytoplasme traduit une riche machinerie de synthèse protéique, en lien avec la production de la MEC. Le glycogène et les lipides constituent des réserves énergétiques."
+        },
+        {
+            "q": "Concernant le périchondre :",
+            "tags": [
+                "Périchondre"
+            ],
+            "options": [
+                {
+                    "text": "C'est un tissu conjonctif non spécialisé, à deux couches",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La couche externe, fibreuse et richement vascularisée, est dite nourricière",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La couche interne, chondrogénique, est peu vascularisée et contient les chondroblastes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il recouvre de façon continue et sans exception la totalité des surfaces cartilagineuses de l'organisme, y compris le cartilage articulaire",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le périchondre manque à la surface du cartilage articulaire. Les fibres de Sharpey assurent l'amarrage du périchondre au cartilage."
+        },
+        {
+            "q": "Sur quel cartilage le périchondre est-il absent ?",
+            "tags": [
+                "Périchondre"
+            ],
+            "options": [
+                {
+                    "text": "Le cartilage articulaire",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le cartilage des côtes",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le cartilage de l'épiglotte",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le cartilage de l'oreille",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le cartilage articulaire est nourri par le liquide synovial et l'os sous-chondral, ce qui explique l'absence de périchondre. Le cartilage de conjugaison, lui, est entouré de périchondre."
+        },
+        {
+            "q": "Quels sont les deux modes de croissance du cartilage ?",
+            "tags": [
+                "Croissance"
+            ],
+            "options": [
+                {
+                    "text": "Appositionnelle : de nouveaux chondrocytes sont apportés par le périchondre, la croissance se faisant en épaisseur par la périphérie",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Interstitielle : de nouveaux chondrocytes naissent de la division des chondrocytes du cartilage, en épaisseur ou en longueur",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Appositionnelle : par division mitotique orientée des chondrocytes préexistants au sein même de leurs logettes matricielles",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Interstitielle : par recrutement et différenciation centripète continue de nouvelles cellules souches provenant du périchondre fibreux",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Après la création des centres de chondrification qui mettent en place le squelette embryonnaire, la croissance implique la formation de nouveaux chondrocytes et la synthèse de MEC."
+        },
+        {
+            "q": "Quel est l'enchaînement de la croissance appositionnelle ?",
+            "tags": [
+                "Croissance"
+            ],
+            "options": [
+                {
+                    "text": "Les fibroblastes de la couche fibreuse se divisent, ceux au contact de la couche chondrogène se différencient en chondroblastes par métaplasie, ceux au contact du cartilage deviennent de jeunes chondrocytes qui sécrètent la MEC",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les précurseurs fibroblastiques de la couche externe se multiplient puis migrent directement au cœur de la matrice cartilagineuse sans subir la moindre différenciation en chondroblastes périchondraux",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les chondrocytes de la matrice territoriale se divisent en groupes isogéniques radiaires successifs sans aucune intervention ni prolifération des cellules mésenchymateuses du périchondre interne",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les ostéoblastes sous-chondraux migrent à travers les canaux vasculaires et colonisent le périchondre fibreux pour sécréter la MEC",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le résultat est l'apposition de couches successives de MEC contenant des chondrocytes dans leurs lacunes, à la périphérie du cartilage. C'est dans ces lacunes que pourra ensuite avoir lieu la croissance interstitielle."
+        },
+        {
+            "q": "Concernant la croissance interstitielle :",
+            "tags": [
+                "Croissance"
+            ],
+            "options": [
+                {
+                    "text": "Les chondrocytes jeunes se divisent par mitose dans leur chondroplaste, formant un groupe isogénique",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les chondrocytes néoformés sécrètent de la MEC qui les sépare peu à peu",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un groupe isogénique axial correspond à une croissance en longueur",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un groupe isogénique coronaire correspond à une croissance en épaisseur",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un groupe isogénique axial résulte de mitoses successives planes et permet exclusivement la croissance volumétrique en épaisseur",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La direction du plan de mitose détermine l'orientation de la croissance : axial = longueur, coronaire = épaisseur."
+        },
+        {
+            "q": "Concernant la composition de la MEC cartilagineuse :",
+            "tags": [
+                "MEC cartilagineuse"
+            ],
+            "options": [
+                {
+                    "text": "Elle est synthétisée par les chondroblastes et les chondrocytes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle contient des fibres (collagènes ou élastiques selon le type de cartilage)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Sa substance fondamentale est très riche en protéoglycanes, dont l'aggrécane",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle contient environ 70 % d'eau",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle est entièrement amorphe et strictement dépourvue de toute armature fibrillaire dans tous les types de cartilage",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les variations de composition et d'organisation de la MEC (fibres surtout) déterminent le type de cartilage : hyalin, élastique ou fibreux. Elle contient aussi des protéines spécifiques, comme la chondronectine et l'anchorine."
+        },
+        {
+            "q": "Concernant les fibres de collagène du cartilage hyalin :",
+            "tags": [
+                "MEC cartilagineuse"
+            ],
+            "options": [
+                {
+                    "text": "Le collagène de type II représente environ 90 % du collagène",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il forme des fibres striées transversalement, structure principale de la MEC",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les collagènes VI, IX et X, en petite quantité, stabilisent le réseau de collagène II",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le collagène de type I constitue à lui seul plus de 90 % de la masse fibrillaire totale de la matrice du cartilage hyalin",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le collagène I est le collagène du fibrocartilage, très riche en faisceaux de fibres denses. Le cartilage hyalin est caractérisé par le collagène II, avec une disposition particulière visible en lumière polarisée."
+        },
+        {
+            "q": "Pourquoi la substance fondamentale du cartilage résiste-t-elle à la compression ?",
+            "tags": [
+                "MEC cartilagineuse"
+            ],
+            "options": [
+                {
+                    "text": "Les glycosaminoglycanes (chondroïtine-sulfate, kératane-sulfate), fortement chargés négativement, attirent et retiennent de grandes quantités d'eau : c'est un gel très hydraté",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Parce que sa matrice fondamentale est rigidifiée par un dense réseau cristallin de phosphate de calcium et d'hydroxyapatite",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Parce que son réseau de protéoglycanes hautement hydrophobe expulse activement l'ensemble des molécules d'eau libres, formant une armature rigide et compacte capable de supporter les contraintes compressives majeures",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Parce qu'elle est constituée exclusivement d'un feutrage compact de trousseaux de fibres élastiques anastomosées sous tension",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La minéralisation rigide caractérise l'os, pas le cartilage. L'eau liée aux charges négatives des GAG donne au cartilage sa résistance à la compression et à la déformation."
+        },
+        {
+            "q": "Concernant l'aggrécane :",
+            "tags": [
+                "MEC cartilagineuse"
+            ],
+            "options": [
+                {
+                    "text": "C'est le principal protéoglycane de la substance fondamentale (90 %)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les plus gros portent jusqu'à 100 chaînes de chondroïtine-sulfate",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les plus gros portent jusqu'à 60 chaînes de kératane-sulfate",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il est exclusivement constitué d'un axe fibrillaire entouré de triples hélices de collagène I sans aucun glycosaminoglycane",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'aggrécane est un protéoglycane : un axe protéique portant de nombreuses chaînes de glycosaminoglycanes, d'où sa capacité à retenir l'eau."
+        },
+        {
+            "q": "Concernant les autres protéines de la substance fondamentale du cartilage :",
+            "tags": [
+                "MEC cartilagineuse"
+            ],
+            "options": [
+                {
+                    "text": "La chondronectine, similaire à la fibronectine, ancre les chondrocytes au collagène II de la MEC",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les métalloprotéinases et les aggrécanases dégradent la MEC, ce qui est nécessaire à son renouvellement",
+                    "isCorrect": true
+                },
+                {
+                    "text": "On y trouve aussi des facteurs de croissance et des cytokines",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La chondronectine assure le clivage protéolytique enzymatique des fibrilles de collagène II lors du renouvellement physiologique de la MEC",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La chondronectine est une protéine d'adhérence (comme la fibronectine ou l'anchorine) ; ce sont les enzymes protéolytiques qui dégradent la MEC."
+        },
+        {
+            "q": "Comparez la MEC territoriale et la MEC interterritoriale :",
+            "tags": [
+                "MEC cartilagineuse"
+            ],
+            "options": [
+                {
+                    "text": "La MEC territoriale entoure les groupes de chondrocytes ; elle est riche en glycosaminoglycanes, pauvre en fibres, très basophile",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La MEC interterritoriale est à distance des chondrocytes ; elle est plus riche en fibres et moins riche en glycosaminoglycanes, donc peu basophile",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Dans la zone territoriale, il y a davantage de collagènes VI et IX, en « paniers » péricellulaires",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La MEC interterritoriale concentre la quasi-totalité des glycosaminoglycanes sulfatés, ce qui lui confère une basophilie péricellulaire intense",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C'est la zone territoriale, au contact direct des chondrocytes, qui est la plus basophile, car riche en GAG. L'interterritoriale contient surtout du collagène II en fibres."
+        },
+        {
+            "q": "Qu'est-ce qu'un chondrone ?",
+            "tags": [
+                "MEC cartilagineuse"
+            ],
+            "options": [
+                {
+                    "text": "Une unité structurelle, fonctionnelle et métabolique : chondrocyte(s) + espace péricellulaire + capsule (panier fibreux de la MEC territoriale)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un groupe isogénique axial de jeunes chondrocytes nus totalement dépourvus de matrice extracellulaire territoriale propre",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le manchon fibreux et vascularisé constituant la zone externe du périchondre nourricier au contact des tissus mous environnants",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La bandelette transitionnelle profondément calcifiée et minéralisée délimitant la frontière stricte entre le cartilage hyalin articulaire et l'os sous-chondral",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le chondrone protège les chondrocytes face aux forces de pression et de cisaillement subies par le cartilage."
+        },
+        {
+            "q": "À quoi sert la différence de composition entre MEC territoriale et interterritoriale ?",
+            "tags": [
+                "MEC cartilagineuse"
+            ],
+            "options": [
+                {
+                    "text": "Elle crée un gradient de pression osmotique qui facilite la diffusion des nutriments vers les chondrocytes au sein de la MEC",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle permet le cheminement direct de micro-anses capillaires sanguines fenêtrées dans l'épaisseur même de la substance fondamentale",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle solidarise mécaniquement le feuillet fibreux externe du périchondre à la capsule articulaire par des trousseaux de Sharpey",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle forme une barrière physique imperméable isolant les chondroblastes périchondraux des chondrocytes résidant dans la matrice profonde",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Comme le cartilage est avasculaire, la diffusion à travers la MEC est cruciale ; ce gradient l'aide à alimenter les chondrocytes."
+        },
+        {
+            "q": "Concernant le cartilage articulaire (cas particulier du cartilage hyalin) :",
+            "tags": [
+                "Cartilage hyalin"
+            ],
+            "options": [
+                {
+                    "text": "Il assure le jeu et la mobilité des articulations mobiles",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il n'est pas recouvert de périchondre",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ses nutriments proviennent du liquide synovial et de l'os sous-chondral",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il tire l'intégralité de ses métabolites énergétiques d'un abondant périchondre fibreux externe pourvu d'un réseau capillaire très dense",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Il est soumis à des contraintes mécaniques importantes : traction, cisaillement, compression. L'absence de périchondre explique que ses nutriments viennent de ses deux faces."
+        },
+        {
+            "q": "À quoi la résistance du cartilage articulaire est-elle due ?",
+            "tags": [
+                "Cartilage hyalin"
+            ],
+            "options": [
+                {
+                    "text": "Résistance à la compression : mouvements d'eau depuis et vers la substance fondamentale sous l'effet des contraintes",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Résistance à la tension et au cisaillement : orientation des fibres de collagène de la MEC",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Résistance à la compression : calcification intense et continue de la substance fondamentale par des dépôts massifs de phosphate de calcium",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Résistance à la tension : renforcement par un lacis tridimensionnel de microvaisseaux sanguins anastomosés dans l'épaisseur du tissu",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le cartilage se comporte comme une éponge : l'eau sort sous la pression et revient au repos. Les fibres de collagène, orientées selon les contraintes, résistent à la traction."
+        },
+        {
+            "q": "Quelle est l'orientation des fibres de collagène dans les zones du cartilage articulaire ?",
+            "tags": [
+                "Cartilage hyalin"
+            ],
+            "options": [
+                {
+                    "text": "Zone superficielle : fibres parallèles à la surface articulaire",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Zone de transition : fibres transversales",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Zone radiaire : fibres perpendiculaires à la surface articulaire",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Zone radiaire : fibres de collagène strictement horizontales et parallèles au plan de glissement de la surface articulaire",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les fibres superficielles résistent à l'étirement appliqué à la surface ; les fibres profondes sont perpendiculaires, jusqu'à la zone calcifiée (cartilage sous-chondral). Entre ces fibres longues, des fibres plus courtes forment un réseau tridimensionnel."
+        },
+        {
+            "q": "Concernant le cartilage de conjugaison (ou de croissance) :",
+            "tags": [
+                "Cartilage hyalin"
+            ],
+            "options": [
+                {
+                    "text": "Il permet la croissance en longueur des os longs chez l'enfant",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il est localisé aux deux extrémités des os longs, entre la diaphyse et l'épiphyse",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ses chondrocytes forment des colonnes verticales organisées en couches successives",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il assure le maintien et la reprise de la croissance continue en épaisseur de la diaphyse des os longs chez l'adulte après puberté",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Il permet à la fois la prolifération du cartilage et la formation de l'os calcifié : il disparaît quand la croissance en longueur s'arrête."
+        },
+        {
+            "q": "Quel est l'ordre des zones du cartilage de conjugaison, de l'épiphyse vers la diaphyse ?",
+            "tags": [
+                "Cartilage hyalin"
+            ],
+            "options": [
+                {
+                    "text": "Zone de réserve, zone proliférative, zone de maturation, zone hypertrophique",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Zone proliférative, zone de réserve, zone de maturation, zone hypertrophique",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Zone hypertrophique, zone de maturation, zone proliférative, zone de réserve",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Zone de réserve, zone de maturation, zone proliférative, zone hypertrophique",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La zone de réserve contient des chondrocytes capables de se diviser, la zone proliférative des groupes isogéniques axiaux orientés verticalement. La zone hypertrophique se termine par le front d'ossification."
+        },
+        {
+            "q": "Que deviennent les chondrocytes de la zone hypertrophique du cartilage de conjugaison ?",
+            "tags": [
+                "Cartilage hyalin"
+            ],
+            "options": [
+                {
+                    "text": "Ils augmentent fortement de volume et élargissent leur chondroplaste (résorption de la MEC par les métalloprotéinases)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ils synthétisent du collagène de type X",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ils se chargent en phosphatase alcaline libérée dans la MEC",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ils meurent, ce qui permet le processus d'ossification",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ils subissent des vagues successives de mitoses axiales très accélérées afin de générer de longs cordons longitudinaux de cellules souches indifférenciées",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La division active a lieu dans la zone proliférative. Les chondrocytes hypertrophiques préparent la minéralisation puis disparaissent, laissant la place à l'os."
+        },
+        {
+            "q": "Concernant le cartilage élastique :",
+            "tags": [
+                "Cartilage élastique et fibreux"
+            ],
+            "options": [
+                {
+                    "text": "Il est moins abondant que le cartilage hyalin, surtout dans la sphère ORL (pavillon de l'oreille, conduit auditif externe, épiglotte)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Sa substance fondamentale est moins abondante que celle du hyalin",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Ses chondrocytes sont plus compactés les uns contre les autres",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il contient de très nombreuses fibres d'élastine",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il se caractérise par la prédominance presque exclusive d'épais faisceaux ondulés de collagène de type I serrés les uns contre les autres selon les axes de traction",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les fibres d'élastine confèrent au cartilage ses propriétés élastiques. Le collagène I en faisceaux est la marque du fibrocartilage."
+        },
+        {
+            "q": "Concernant le cartilage fibreux (fibrocartilage) :",
+            "tags": [
+                "Cartilage élastique et fibreux"
+            ],
+            "options": [
+                {
+                    "text": "Il est présent dans les disques intervertébraux et aux sites d'insertion des ligaments et tendons",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il est très riche en fibres de collagène I organisées en faisceaux denses et orientés",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il contient très peu de substance fondamentale",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Sa structure est intermédiaire entre cartilage et tissu conjonctif dense orienté",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il présente un feutrage abondant de fibres d'élastine baignant dans une substance fondamentale volumineuse très hydratée",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C'est ce qui lui donne sa résistance aux forces de tension. Il ressemble au tissu conjonctif dense mais contient des chondrocytes dans des chondroplastes."
+        },
+        {
+            "q": "Concernant le disque intervertébral :",
+            "tags": [
+                "Cartilage élastique et fibreux"
+            ],
+            "options": [
+                {
+                    "text": "L'annulus fibrosus est la partie périphérique, formée de lamelles concentriques de fibrocartilage",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le nucleus pulposus est la partie centrale, une substance gélatineuse",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le nucleus pulposus joue le rôle d'amortisseur hydraulique",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le nucleus pulposus est une structure périphérique fibreuse constituée de couches concentriques de fibres de collagène I",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Annulus (anneau) à la périphérie, nucleus (noyau) au centre : c'est l'association d'un anneau fibreux résistant et d'un noyau gélatineux amortisseur."
+        },
+        {
+            "q": "Associez chaque type de cartilage à ses éléments caractéristiques :",
+            "tags": [
+                "Cartilage élastique et fibreux"
+            ],
+            "options": [
+                {
+                    "text": "Hyalin : fibres de collagène II",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Élastique : fibres élastiques (élastine)",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Fibreux : faisceaux de fibres de collagène I",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Fibreux : prédominance de volumineuses fibres élastiques anastomosées",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "C'est le résumé du cours : la nature et l'organisation des fibres de la MEC déterminent le type de cartilage."
+        }
+    ]
+}

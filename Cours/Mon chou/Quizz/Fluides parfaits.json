@@ -1,0 +1,522 @@
+{
+    "name": "CM 5 - Fluides parfaits",
+    "folder": "PASS - Physique",
+    "description": "Lois de l'hydrodynamique, conservation du débit, théorème de Bernoulli et applications (Venturi, Torricelli, pompes).",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Dans un fluide en mouvement, à quelle grandeur macroscopique est associée la densité volumique d'énergie cinétique des mouvements aléatoires des particules ?",
+            "tags": [
+                "Énergie",
+                "Pression"
+            ],
+            "options": [
+                {
+                    "text": "À la pression hydrostatique ou thermodynamique (p).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "À la vitesse moyenne d'entraînement de la veine fluide.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "À l'énergie potentielle gravitationnelle par unité de volume.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Au gradient transversal de cisaillement visqueux parietal.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans un fluide, les mouvements thermiques aléatoires (dont la vitesse vectorielle moyenne est nulle) génèrent la pression, qui correspond à cette densité volumique d'énergie cinétique microscopique[cite: 1232]."
+        },
+        {
+            "q": "Comment définit-on un « fluide parfait incompressible » en régime permanent ?",
+            "tags": [
+                "Définition",
+                "Fluide parfait"
+            ],
+            "options": [
+                {
+                    "text": "Un fluide sans viscosité, de masse volumique constante, dont les grandeurs sont indépendantes du temps en chaque point.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un écoulement où les contraintes tangentielles de cisaillement restent proportionnelles au gradient transversal de vitesse.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un gaz réel dont le coefficient de compressibilité isotherme demeure rigoureusement nul quelles que soient la pression et la température.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un liquide newtonien dont la vitesse d'écoulement s'annule aux parois selon le profil parabolique de Poiseuille.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Un fluide parfait est caractérisé par l'absence de viscosité (aucun frottement interne). S'il est incompressible, sa masse volumique (rho) est constante. En régime permanent, ses grandeurs (p, v) ne dépendent pas du temps en un point fixe[cite: 1233]."
+        },
+        {
+            "q": "Quelle est la définition mathématique du débit volumique (Q) d'un fluide traversant une section (S) à une vitesse (v) ?",
+            "tags": [
+                "Débit"
+            ],
+            "options": [
+                {
+                    "text": "Q = dV/dt = S × v",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Q = S / (v × dt)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Q = dP/dt = F × v",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Q = 1/2 × ρ × S × v²",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le débit volumique représente le volume de fluide traversant une section droite par unité de temps. Il se calcule par le produit de la section (S) et de la vitesse de l'écoulement (v)[cite: 1234]."
+        },
+        {
+            "q": "Que traduit l'équation de continuité (Q1 = Q2) le long d'un tube de courant pour un liquide incompressible ?",
+            "tags": [
+                "Continuité"
+            ],
+            "options": [
+                {
+                    "text": "La conservation de la masse : le produit de la section par la vitesse moyenne est invariant (S1×v1 = S2×v2).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'invariance stricte de la pression statique locale indépendamment du rétrécissement de la section du conduit.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La dissipation thermique intégrale de l'énergie mécanique par frottement visqueux au niveau du convergent.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La décroissance du débit volumique globale proportionnellement au carré du rayon interne de la tubulure.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Puisqu'il n'y a pas de pertes et que le fluide est incompressible, le volume qui entre est égal au volume qui sort. Si la section (S) diminue, la vitesse (v) doit obligatoirement augmenter pour maintenir le débit (Q) constant[cite: 1235]."
+        },
+        {
+            "q": "En dynamique des fluides, qu'énonce la « loi des nœuds » ?",
+            "tags": [
+                "Loi des nœuds"
+            ],
+            "options": [
+                {
+                    "text": "La somme algébrique des débits volumiques entrant dans une bifurcation est égale à la somme des débits qui en sortent.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La pression statique s'additionne arithmétiquement lors de la ramification d'un tronc artériel principal en branches collatérales.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La vitesse axiale du fluide s'annule obligatoirement à chaque intersection pour permettre la redistribution laminaire du flux.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La perte de charge totale au franchissement du nœud dépend exclusivement de la somme des périmètres des conduits efférents.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Par conservation de la matière, le volume de liquide entrant dans un carrefour pendant un temps dt doit être strictement égal au volume qui en sort (Q_entrant = Σ Q_sortants)[cite: 1235]."
+        },
+        {
+            "q": "Quel est l'énoncé mathématique de la loi de Bernoulli pour un fluide parfait incompressible sur une ligne de courant ?",
+            "tags": [
+                "Bernoulli"
+            ],
+            "options": [
+                {
+                    "text": "p + 1/2 ρ v² + ρ g z = constante",
+                    "isCorrect": true
+                },
+                {
+                    "text": "p + ρ v² + 2 ρ g z = constante",
+                    "isCorrect": false
+                },
+                {
+                    "text": "p - 1/2 ρ v² + ρ g z² = constante",
+                    "isCorrect": false
+                },
+                {
+                    "text": "1/2 p v² + ρ g z = constante",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'équation de Bernoulli traduit la conservation de l'énergie mécanique totale par unité de volume. Elle additionne la pression (p), l'énergie cinétique volumique (1/2 ρ v²) et l'énergie potentielle gravitationnelle volumique (ρ g z)[cite: 1238, 1239]."
+        },
+        {
+            "q": "D'après la relation de Bernoulli, quel phénomène décrit l'« effet Venturi » dans un tube horizontal ?",
+            "tags": [
+                "Venturi"
+            ],
+            "options": [
+                {
+                    "text": "Un resserrement de la section accélère l'écoulement et induit une chute conjointe de la pression statique.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un resserrement de la section ralentit l'écoulement et provoque une surpression dynamique pariétale considérable.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un élargissement de la section entraîne l'aspiration spontanée du fluide par conversion de la charge en chaleur.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un rétrécissement conduit à la cavitation immédiate dès que la vitesse dépasse le seuil critique de Poiseuille.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Si le tube est horizontal (z constant), p + 1/2 ρ v² = constante. Si la section diminue, la vitesse v augmente (conservation du débit). Pour que la somme reste constante, la pression p doit obligatoirement diminuer[cite: 1241]."
+        },
+        {
+            "q": "Pourquoi un anévrisme de l'aorte (dilatation locale) risque-t-il particulièrement de se rompre selon les lois de l'hydrodynamique ?",
+            "tags": [
+                "Anévrisme",
+                "Bernoulli"
+            ],
+            "options": [
+                {
+                    "text": "Le sang ralentit dans la zone élargie : la baisse d'énergie cinétique se convertit en une surpression statique sur la paroi.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'élargissement impose une accélération brutale du débit créant une force d'aspiration pariétale centripète destructrice.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La dilatation crée une perte de charge si élevée que la tension superficielle artérielle dépasse la pression critique de Laplace.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le régime laminaire se transforme instantanément en écoulement supersonique créant une onde de choc hémorragique locale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans l'anévrisme, le rayon (R) augmente, donc la vitesse (v) chute fortement. D'après Bernoulli, la perte d'énergie cinétique se traduit par une hausse de pression. Cette surpression fragilise encore plus la paroi distendue[cite: 1242]."
+        },
+        {
+            "q": "Dans le théorème de Torricelli (cuve percée à sa base), de quoi dépend la vitesse d'éjection du liquide ?",
+            "tags": [
+                "Torricelli"
+            ],
+            "options": [
+                {
+                    "text": "De la hauteur de charge (h) entre la surface libre et l'orifice, selon la relation v = √(2gh).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "De la masse volumique du liquide, les solvants les plus denses étant éjectés à des vitesses nettement supérieures.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Du carré de la pression atmosphérique régnant au niveau du ménisque supérieur de la cuve de stockage.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Du rapport adimensionnel entre le diamètre de l'orifice et le volume total initial du réservoir cylindrique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "En appliquant Bernoulli entre la surface (vitesse nulle, pression Patm) et le trou (pression Patm), l'énergie potentielle de pesanteur (ρgh) est intégralement convertie en énergie cinétique (1/2 ρv²), ce qui donne v = √(2gh). La masse volumique s'annule[cite: 1244]."
+        },
+        {
+            "q": "Que se passerait-il avec un vase de Torricelli percé s'il était placé dans une station spatiale en condition d'apesanteur (g = 0) ?",
+            "tags": [
+                "Apesanteur",
+                "Torricelli"
+            ],
+            "options": [
+                {
+                    "text": "L'eau ne s'écoulerait plus spontanément, faute d'énergie potentielle gravitationnelle à convertir en énergie cinétique.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'eau serait éjectée sous la forme d'un jet continu à vitesse constante propulsé uniquement par la pression atmosphérique interne.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La vitesse d'éjection deviendrait infinie dès l'ouverture de l'orifice en raison de l'absence de résistance gravitationnelle opposée.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le liquide refluerait vers le haut du récipient sous l'effet exclusif de la force d'inertie centrifuge de rotation orbitale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Sans pesanteur, le terme ρgz disparaît. Si les pressions sont égales (Patm partout) et qu'il n'y a pas de gravité, il n'y a aucune force motrice pour générer de l'énergie cinétique : l'eau stagne[cite: 1244]."
+        },
+        {
+            "q": "Comment modélise-t-on l'apport énergétique d'une pompe hydraulique dans l'équation de Bernoulli ?",
+            "tags": [
+                "Pompe",
+                "Bernoulli"
+            ],
+            "options": [
+                {
+                    "text": "On ajoute le terme de surpression mécanique (Δp) fournie par la pompe au membre amont de l'équation.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "On soustrait le produit de la force motrice par le volume massique au terme de pression statique aval.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "On multiplie l'ensemble des termes d'énergie cinétique volumique par le coefficient sans dimension de Reynolds.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "On annule rigoureusement le terme gravitationnel de cote (ρgz) sur toute la portion du circuit motorisée.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La pompe fournit de l'énergie mécanique au fluide. On traduit cela par un ajout de densité d'énergie (Δp) à l'état initial : Energie_amont + Δp = Energie_aval[cite: 1245]."
+        },
+        {
+            "q": "Quelle est la formule permettant de calculer la puissance mécanique (P) fournie par une pompe pour délivrer une surpression Δp avec un débit Q ?",
+            "tags": [
+                "Pompe",
+                "Puissance"
+            ],
+            "options": [
+                {
+                    "text": "P = Δp × Q",
+                    "isCorrect": true
+                },
+                {
+                    "text": "P = Δp / Q",
+                    "isCorrect": false
+                },
+                {
+                    "text": "P = 1/2 × ρ × Q²",
+                    "isCorrect": false
+                },
+                {
+                    "text": "P = Δp × S × v²",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La puissance (énergie par unité de temps) délivrée par la pompe au fluide correspond au produit de la surpression créée par le débit volumique qu'elle maintient : P = Δp × Q[cite: 1245]."
+        },
+        {
+            "q": "Qu'appelle-t-on une « section droite » dans un écoulement fluide ?",
+            "tags": [
+                "Section",
+                "Définition"
+            ],
+            "options": [
+                {
+                    "text": "Une surface sécante orthogonale en chacun de ses points à l'ensemble des lignes de courant du fluide.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un tronçon cylindrique rectiligne au sein duquel le profil de vitesse demeure invariablement axisymétrique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une enveloppe imaginaire parallèle aux trajectoires particulaires au travers de laquelle le flux de masse s'annule.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La section transversale minimale marquant la transition brutale entre régime laminaire régulier et turbulent.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La section droite d'un tube de courant est définie comme la surface coupant les lignes de courant à angle droit. C'est sur cette surface qu'on intègre la vitesse pour calculer le débit[cite: 1234]."
+        },
+        {
+            "q": "Dans l'analogie entre énergie et pression, que représente le terme 1/2 ρ v² de l'équation de Bernoulli ?",
+            "tags": [
+                "Bernoulli",
+                "Énergie cinétique"
+            ],
+            "options": [
+                {
+                    "text": "La densité volumique d'énergie cinétique associée au mouvement macroscopique d'ensemble du fluide.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La fraction d'énergie mécanique volumique irréversiblement dissipée sous forme calorifique par viscosité.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La pression motrice totale exercée perpendiculairement par les molécules sur la paroi solide du tube.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'énergie potentielle gravitationnelle de position rapportée à l'unité de surface de la veine fluide.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Bernoulli exprime la conservation de la densité volumique d'énergie (J/m³ ou Pa). Le terme 1/2 ρ v² est la part d'énergie cinétique macroscopique, p est l'énergie cinétique microscopique (pression), et ρ g z l'énergie potentielle[cite: 1239]."
+        },
+        {
+            "q": "Dans le cas d'une seringue hypodermique où le piston de grande section (S1) pousse un liquide vers une fine aiguille (S2), comment caractérise-t-on la vitesse d'éjection (v2) ?",
+            "tags": [
+                "Seringue",
+                "Continuité"
+            ],
+            "options": [
+                {
+                    "text": "La vitesse v2 est démultipliée par rapport à v1 selon le rapport des sections : v2 = v1 × (S1/S2).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La vitesse v2 est rigoureusement identique à v1 en vertu de la loi de conservation de la quantité de mouvement.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La vitesse v2 diminue drastiquement dans l'aiguille sous l'effet de l'augmentation brutale de la résistance hydrodynamique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La vitesse v2 varie de manière sinusoïdale en fonction de la compressibilité résiduelle de la bulle d'air proximale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Par l'équation de continuité, S1v1 = S2v2. Puisque la section de l'aiguille (S2) est minuscule par rapport à celle du corps de la seringue (S1), la vitesse d'éjection v2 est démultipliée (ex: 100 fois plus rapide)[cite: 1236]."
+        },
+        {
+            "q": "Qu'observe-t-on lorsqu'un fluide parfait rencontre un obstacle frontal dans un tube de courant ?",
+            "tags": [
+                "Obstacle",
+                "Ligne de courant"
+            ],
+            "options": [
+                {
+                    "text": "La vitesse s'annule au point d'arrêt (stagnation) où la pression devient maximale, les lignes de courant contournant le corps.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le fluide franchit l'obstacle par transmission d'une onde de surpression longitudinale sans déflexion de sa trajectoire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une zone de cavitation avec ébullition spontanée à température ambiante apparaît systématiquement à la face antérieure.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'énergie potentielle de pesanteur s'annule instantanément, créant une dépression absolue au sommet de l'obstacle.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Face à un obstacle frontal, le fluide s'arrête (v=0 au point de stagnation) et la pression locale y est maximale. Les lignes de courant épousent la forme de l'obstacle pour l'esquiver en régime laminaire[cite: 1240]."
+        },
+        {
+            "q": "Pourquoi un filet d'eau s'écoulant d'un robinet rétrécit-il en tombant ?",
+            "tags": [
+                "Chute libre",
+                "Continuité"
+            ],
+            "options": [
+                {
+                    "text": "L'accélération gravitationnelle accroît la vitesse de chute, imposant une réduction de la section pour conserver le débit volumique.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La pression atmosphérique comprime latéralement le filet d'eau au fur et à mesure que l'altitude barométrique décroît.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La tension superficielle de l'eau génère une force de cohésion centripète qui contracte spontanément la surface libre.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La viscosité dynamique du liquide augmente de façon non linéaire au cours du temps d'exposition à l'air ambiant.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "En chute libre, l'eau accélère (v2 > v1). Puisque l'eau est incompressible, le débit volumique reste constant. La section S doit donc se réduire inversement proportionnellement à l'augmentation de la vitesse[cite: 1236]."
+        },
+        {
+            "q": "Qu'est-ce qui maintient le débit sanguin constant dans le système circulatoire malgré les énormes variations de section des vaisseaux ?",
+            "tags": [
+                "Hémodynamique",
+                "Continuité"
+            ],
+            "options": [
+                {
+                    "text": "Le principe d'incompressibilité du sang : le débit cardiaque global (~5 L/min) est conservé à chaque niveau de division vasculaire.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La rigidité élastique indéformable des gros troncs artériels qui compense intégralement les pertes de charge microcirculatoires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'absence totale de frottements visqueux dans les lits capillaires terminaux grâce aux propriétés de fluide parfait du plasma.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La pulsatilité cardiaque qui accélère la vitesse circulatoire dans les artérioles au prorata de leur section individuelle cumulée.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Bien que la section totale des capillaires soit immense par rapport à l'aorte (et la vitesse d'écoulement très lente dans les capillaires), le débit global (Q = Somme(Si×vi)) reste constant à tous les étages de la circulation[cite: 1237]."
+        },
+        {
+            "q": "Dans une installation d'aquaponie, comment détermine-t-on la surpression totale (Δp) que la pompe doit fournir pour remonter l'eau d'une hauteur H et l'éjecter à une vitesse v ?",
+            "tags": [
+                "Aquaponie",
+                "Pompe"
+            ],
+            "options": [
+                {
+                    "text": "Δp = ρ g H + 1/2 ρ v²",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Δp = ρ g H - 1/2 ρ v²",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Δp = (ρ g H) / (1/2 ρ v²)",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Δp = p_atm + 2 ρ g H",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "En appliquant Bernoulli entre la pompe (au fond) et la sortie, l'énergie apportée par la pompe sert à compenser le travail du poids (faire monter le fluide de H) et à lui donner une vitesse v à l'air libre (où la pression est Patm des deux côtés)[cite: 1246]."
+        },
+        {
+            "q": "Dans l'étude d'un tube de courant de fluide parfait, quel est le bilan du travail de la pesanteur (dW_g) si le fluide descend d'une altitude z1 vers z2 (avec z1 > z2) ?",
+            "tags": [
+                "Bernoulli",
+                "Pesanteur"
+            ],
+            "options": [
+                {
+                    "text": "Le travail est moteur (dW_g > 0) car la force de pesanteur est orientée dans le sens du déplacement descendant.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le travail est résistant (dW_g < 0) en raison de la force d'inertie opposée par le gradient de pression hydrostatique aval.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le travail est rigoureusement nul car un fluide incompressible n'échange aucun travail mécanique avec le champ gravitationnel.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le travail est conservatif et s'annule identiquement sur toute portion de tube fermée présentant un débit permanent invariant.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le travail du poids s'exprime dW_g = dm × g × (z1 - z2). Si le fluide descend (z1 > z2), la différence est positive : la gravité fournit de l'énergie au système (travail moteur), augmentant ainsi sa pression ou son énergie cinétique en bas[cite: 1238]."
+        }
+    ]
+}

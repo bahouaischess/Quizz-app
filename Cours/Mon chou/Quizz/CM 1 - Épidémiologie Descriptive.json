@@ -1,0 +1,508 @@
+{
+    "name": "CM 1 - Épidémiologie Descriptive",
+    "folder": "PASS - Santé Publique",
+    "description": "Quiz d'entraînement sur les concepts de santé, les indicateurs et les différents types d'épidémiologie.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Selon la définition de l'OMS (1946), comment se caractérise le concept de santé ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Comme un état de complet bien-être physique, mental et social, ne consistant pas seulement en une absence de maladie ou d'infirmité.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Comme un équilibre dynamique et évolutif entre les capacités d'adaptation biopsychosociales de l'organisme et les contraintes écologiques de l'environnement.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Comme l'intégrité biologique optimale vérifiée par l'absence d'anomalies morphologiques ou physiologiques aux examens paracliniques de dépistage.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Comme une capacité individuelle de résilience physique permettant de maintenir un niveau de productivité professionnelle conforme aux normes sociétales.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'OMS définit la santé dès 1946 comme un état de complet bien-être physique, mental et social, et non pas seulement comme l'absence de maladie ou d'infirmité[cite: 259]."
+        },
+        {
+            "q": "À quelle branche de l'épidémiologie appartient l'étude historique de John Snow sur l'épidémie de choléra à Londres, visant à comprendre la propagation et les causes de la maladie ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "À l'épidémiologie descriptive et analytique, en cartographiant les cas et en identifiant la pompe de Broad Street comme déterminant causal.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "À l'épidémiologie évaluative médico-économique, dont le but exclusif était de chiffrer le coût des mesures de quarantaine imposées aux quartiers touchés.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "À la recherche clinique thérapeutique expérimentale randomisée, visant à valider l'innocuité d'un vaccin expérimental contre Vibrio cholerae.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "À l'épidémiologie prédictive et modélisatrice, fondée sur des simulations numériques de dynamique des flux migratoires interurbains.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'étude de John Snow sur le choléra est fondatrice de l'épidémiologie. En cartographiant les cas (descriptive) et en identifiant la pompe à eau contaminée comme facteur de risque (analytique), il a répondu aux questions fondamentales de ces deux branches[cite: 237, 238, 240]."
+        },
+        {
+            "q": "Quel est l'objectif principal de l'étude de cohorte de Framingham initiée en 1948 ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Estimer l'association entre des facteurs d'exposition (tabac, HTA, cholestérol) et le risque de survenue de cardiopathies.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Évaluer à grande échelle le bénéfice préventif d'une politique publique d'assainissement des réseaux d'eau potable dans le Massachusetts.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Recenser de manière descriptive l'ensemble des causes de morbidité infectieuse aiguë afin de guider l'allocation des budgets hospitaliers de l'État.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Démontrer en essai randomisé contrôlé la supériorité d'un nouveau traitement hypotenseur par rapport à un placebo chez les personnes âgées.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'étude de Framingham est un exemple d'épidémiologie analytique visant à identifier les déterminants (facteurs de risque) des maladies cardiovasculaires par un suivi prospectif[cite: 246, 247, 249]."
+        },
+        {
+            "q": "Sur quel principe repose le calcul du taux standardisé de mortalité (standardisation directe) ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Il pondère les taux spécifiques observés par la structure par âge d'une population de référence pour neutraliser l'effet d'âge.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il applique les taux de mortalité d'une population de référence à la structure d'âge de la population observée pour obtenir le SMR attendu.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il rapporte le nombre total de décès observés à la population totale moyenne sans effectuer de découpage par tranche d'âge.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il neutralise l'impact des décès prématurés évitables en ne retenant que la mortalité attribuable aux pathologies cardiovasculaires et tumorales.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La standardisation directe calcule le taux que l'on observerait si la population étudiée avait la même structure par âge que la population de référence, ce qui permet de comparer des populations de structures différentes[cite: 267, 273, 274]."
+        },
+        {
+            "q": "Que signifie un SMR (Standardized Mortality Ratio) supérieur à 1 lors d'une standardisation indirecte ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Il indique une surmortalité dans la population étudiée par rapport à ce qui serait attendu avec les taux de la population de référence.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il traduit une sous-mortalité statistiquement significative confirmant l'efficacité globale des structures locales de prévention.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il atteste que l'espérance de vie sans incapacité dépasse d'au moins deux déviations standard la médiane nationale observée.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il établit une équivalence parfaite et rigoureuse entre le nombre de décès effectivement constatés et le contingent attendu.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le SMR est le rapport des décès observés sur les décès attendus. Un SMR > 1 signifie qu'il y a plus de décès observés qu'attendus, donc une surmortalité[cite: 276]."
+        },
+        {
+            "q": "En France en 2020, quelles sont les trois principales causes de mortalité chez les hommes, par ordre décroissant ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "1. Tumeurs, 2. Maladies cardio-neurovasculaires, 3. Covid-19.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "1. Maladies cardio-neurovasculaires, 2. Tumeurs, 3. Causes externes de décès.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "1. Covid-19, 2. Maladies de l'appareil respiratoire, 3. Tumeurs malignes.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "1. Causes externes, 2. Tumeurs, 3. Pathologies de l'appareil digestif.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Chez les hommes en 2020, les tumeurs (315,8/100 000) restent la première cause, suivies des maladies cardio-neurovasculaires (219,5) et de la Covid-19 (121,6)[cite: 278]."
+        },
+        {
+            "q": "Laquelle de ces propositions définit correctement la « mortalité prématurée » utilisée dans les indicateurs français ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Les décès survenant avant l'âge seuil conventionnel de 65 ans, représentant environ 20% de l'ensemble des décès.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Les décès survenant avant 75 ans, représentant la majorité absolue (plus de 55%) de la mortalité générale en France.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les décès précoces survenant exclusivement au cours de la première année de vie (mortalité infantile stricte).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'ensemble des décès évitables par une réduction active des comportements à risque individuel, sans condition d'âge.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La mortalité prématurée est définie arbitrairement comme la mortalité avant 65 ans et représente environ un cinquième (20%) des décès totaux[cite: 281]. La mortalité liée aux comportements est la mortalité évitable."
+        },
+        {
+            "q": "Comment l'indicateur des Années Potentielles de Vie Perdues (APVP) pondère-t-il les décès ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Il accorde un poids d'autant plus important que le décès survient jeune, mesuré par l'écart entre l'âge au décès et 65 ans.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Il affecte un coefficient unitaire strictement identique à chaque décès constaté dans la cohorte, indépendamment de l'âge de survenue.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il mesure uniquement les gains potentiels de longévité résultant de l'éradication des cardiopathies ischémiques au-delà de 65 ans.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il pondère les décès par le coût médico-social global imputable aux arrêts de travail intervenus durant les dix dernières années de vie.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les APVP sont définies comme la différence entre l'âge au décès et 65 ans. Ainsi, le décès d'un jeune (ex: nouveau-né = 65 APVP) pèse beaucoup plus lourd que celui d'un adulte plus âgé (ex: 52 ans = 13 APVP)[cite: 285]."
+        },
+        {
+            "q": "Quelle est la principale différence entre la prévalence et l'incidence en épidémiologie de la morbidité ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "La prévalence mesure le stock de cas à un moment donné, tandis que l'incidence mesure le flux de nouveaux cas sur une période.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La prévalence mesure un flux dynamique exprimé en personnes-années d'observation, alors que l'incidence constitue une proportion statique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'incidence intègre systématiquement les patients guéris et décédés, alors que la prévalence ne prend en compte que les hospitalisations.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Il s'agit d'une simple distinction terminologique sans impact méthodologique, les deux termes étant interchangeables pour les maladies chroniques.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La prévalence est une proportion statique représentant tous les cas à l'instant T (le stock), tandis que l'incidence est un taux dynamique mesurant l'apparition de nouveaux cas sur une période (le flux)[cite: 295, 296]."
+        },
+        {
+            "q": "Dans quelle condition la formule simplifiée liant prévalence et incidence (P = I x d_maladie) est-elle valide ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Lorsque l'incidence de la maladie est faible et que la situation épidémiologique est stationnaire.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Lorsque la létalité est extrêmement élevée et entraîne le décès de la quasi-totalité des sujets dans les quarante-huit heures.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Lorsque la durée moyenne de la maladie excède obligatoirement une période standardisée d'au moins dix années consécutives.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Exclusivement au sein de populations fermées où la prévalence ponctuelle dépasse le seuil critique de cinquante pour cent.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La formule stricte est P = I x d / [1 + (I x d)]. L'approximation P = I x d n'est valide que si l'incidence est suffisamment faible[cite: 303]."
+        },
+        {
+            "q": "Qu'est-ce qui caractérise la « morbidité diagnostiquée » par rapport à la « morbidité objective mesurée » ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Elle dépend nécessairement du recours effectif aux soins et de la reconnaissance de l'état pathologique par un médecin.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle est systématiquement obtenue au moyen d'enquêtes cliniques standardisées en population générale incluant les non-recourants.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle repose uniquement sur l'auto-évaluation subjective et les déclarations spontanées des usagers lors de questionnaires postaux.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle exclut rigoureusement toutes les affections au long cours pour ne quantifier que les motifs d'admission aux urgences vitales.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La morbidité diagnostiquée est identifiée à partir du recours aux soins (consultations, registres). À l'inverse, la morbidité objective mesurée passe par une recherche systématique (enquêtes, examens) indépendamment du fait que la personne ait consulté ou non[cite: 306, 307]."
+        },
+        {
+            "q": "Selon les données de l'enquête ESPS (2012), quel problème de santé présente un écart majeur entre sa prévalence mesurée objectivement et sa prévalence déclarée par les patients ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "L'hypercholestérolémie (mesurée à 14,4% mais déclarée à seulement 9,6%).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'obésité de grade III (mesurée à 28,5% mais déclarée à plus de 45,2% par les répondants).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les fractures des membres périphériques (systématiquement surdéclarées par rapport aux relevés de radiologie).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La carie dentaire non traitée (dont la prévalence déclarée surestime largement les examens bucco-dentaires objectifs).",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le graphique montre des écarts importants pour des maladies silencieuses. L'hypercholestérolémie est mesurée à 14,4% lors des examens de santé mais seulement 9,6% des gens la déclarent (sous-estimation par méconnaissance)[cite: 312]."
+        },
+        {
+            "q": "Comment définit-on cliniquement la multimorbidité ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "La présence simultanée d'au moins 2 pathologies chroniques chez un même individu.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'association concomitante et obligatoire d'un trouble psychiatrique avéré et d'une atteinte organique dégénérative.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La survenue consécutive d'au moins trois épisodes infectieux aigus nécessitant une antibiothérapie au cours du même hiver.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le fait d'avoir eu recours à au moins quatre lignes de consultations auprès de spécialistes distincts sur les douze derniers mois.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La multimorbidité est définie spécifiquement comme la présence d'au moins deux pathologies chroniques. Sa prévalence augmente fortement avec l'âge[cite: 315]."
+        },
+        {
+            "q": "Dans le cadre de l'épidémiologie descriptive, quel est le rôle principal du Réseau Sentinelles en France ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Surveiller en continu des indicateurs de santé en médecine générale libérale (syndromes grippaux, varicelle, diarrhée).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Centraliser l'ensemble des volets médicaux des certificats de décès hospitaliers pour alimenter le registre de la statistique CépiDc.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Évaluer sur le plan médico-économique l'efficience comparative des différentes stratégies vaccinales recommandées par la HAS.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Coordonner les cohortes épidémiologiques prospectives multicentriques pour identifier les biomarqueurs précoces d'athérosclérose.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le réseau Sentinelles (composé d'environ 1300 généralistes et pédiatres) collecte en continu des informations pour surveiller des phénomènes comme la grippe, la varicelle ou la diarrhée aiguë en soins primaires[cite: 242]."
+        },
+        {
+            "q": "Que permet d'évaluer l'échelle ADL (Activities of Daily Living) utilisée en santé publique ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "L'autonomie fonctionnelle du patient pour les actes élémentaires (hygiène, habillage, repas, continence, transferts).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La qualité de vie subjective globale et l'état psychologique perçu au moyen d'un score standardisé de bien-être mental.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'intensité des douleurs neuropathiques chroniques et leur retentissement sur les phases du sommeil profond du sujet.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le niveau d'exposition domestique aux polluants particulaires atmosphériques mesuré par des capteurs individuels passifs.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'échelle ADL est un indicateur fonctionnel qui évalue l'autonomie du patient dans les activités de la vie quotidienne comme l'hygiène corporelle, l'habillage, l'aller aux toilettes, la locomotion et l'alimentation[cite: 319]."
+        },
+        {
+            "q": "Dans le modèle historique de la CIH (Séquence de Wood), comment se définit l'« incapacité » ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Comme une réduction partielle ou totale de la capacité à accomplir une activité de façon considérée comme normale.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Comme l'altération lésionnelle directe d'une structure anatomique ou le dysfonctionnement d'un mécanisme physiologique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Comme le désavantage social résultant d'une déficience qui limite ou interdit l'accomplissement d'un rôle social normal.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Comme l'agent étiologique microbien ou environnemental initialement responsable du déclenchement du processus morbide.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans la séquence Maladie -> Déficience -> Incapacité -> Handicap de Wood, l'incapacité correspond à la difficulté d'accomplir une activité normalement (ex: difficulté pour écrire), découlant d'une déficience (ex: destruction articulaire)[cite: 330, 331, 332]."
+        },
+        {
+            "q": "Quel élément novateur caractérise la Classification Internationale du Fonctionnement (CIF) de 2001 par rapport à l'ancienne classification CIH ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "L'intégration de facteurs contextuels environnementaux et personnels en interaction dynamique avec les fonctions et activités.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La suppression pure et simple de la dimension organique et lésionnelle au profit d'un indicateur de productivité économique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'incorporation obligatoire du calcul standardisé des années potentielles de vie perdues dans le bilan de compensation du handicap.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'attribution d'une valeur juridique prépondérante à la morbidité perçue par rapport à l'expertise médicale objective.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La CIF (2001) dépasse la séquence linéaire de Wood en séparant le fonctionnement/handicap (fonctions organiques, activités, participation) et les facteurs contextuels (environnementaux et personnels), montrant une interaction globale[cite: 333]."
+        },
+        {
+            "q": "Sur le schéma en pyramide de la sévérité du COVID-19 (Santé publique France), quelle source de données permet d'estimer la morbidité à la base de la pyramide (la moins sévère, en « Ville ») ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Les téléconsultations (Sentinelles, SOS Médecins) et les résultats des tests de dépistage virologique en laboratoire (SI-DEP).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le fichier national des décès consolidé par l'Insee et la certification médicale des causes de décès du CépiDc.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le registre SI-VIC recensant en temps réel les patients admis en unité de réanimation et soins intensifs respiratoires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le réseau Oscour synthétisant exclusivement les résumés de passage aux urgences hospitalières suivis d'une hospitalisation conventionnelle.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La base de la pyramide (haute fréquence, faible sévérité) correspond à la médecine de ville, surveillée par le réseau Sentinelles, SOS médecins, et les tests de laboratoires SI-DEP. Le sommet correspond à la mortalité (CépiDc, Insee)[cite: 245]."
+        },
+        {
+            "q": "L'« Espérance de Vie Sans Incapacité » (EVSI) à la naissance a-t-elle augmenté ou diminué en France entre 2008 et 2022 ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "Elle a globalement augmenté pour atteindre 65,3 ans chez les femmes et 63,8 ans chez les hommes en 2022.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle a reculé continuellement pour passer sous le seuil critique des 55 ans sous l'effet du vieillissement de la population.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle est demeurée strictement invariable à 60 ans pour les deux sexes sur l'ensemble de la période d'observation.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle a progressé exclusivement chez les hommes, creusant un écart inédit de plus de dix années en leur faveur en 2022.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Bien que l'espérance de vie globale stagne récemment, l'EVSI a montré une tendance globale à la hausse depuis 2008, s'établissant à environ 65,3 ans pour les femmes et 63,8 ans pour les hommes en 2022[cite: 658]."
+        },
+        {
+            "q": "Dans une étude évaluant l'impact d'un programme d'approvisionnement en eau potable sur la diminution des diarrhées infantiles, à quelle branche de l'épidémiologie fait-on appel ?",
+            "tags": [
+                "CM 1 - Épidémiologie"
+            ],
+            "options": [
+                {
+                    "text": "À l'épidémiologie évaluative.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "À l'épidémiologie descriptive spatiale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "À l'épidémiologie analytique observationnelle.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "À l'épidémiologie moléculaire fondamentale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'épidémiologie évaluative sert à évaluer l'efficacité des interventions de santé publique ou thérapeutiques, comme l'assainissement de l'eau au Bangladesh face aux maladies diarrhéiques[cite: 251, 256]."
+        }
+    ]
+}

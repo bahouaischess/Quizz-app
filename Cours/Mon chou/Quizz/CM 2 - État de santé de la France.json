@@ -1,0 +1,510 @@
+﻿{
+    "name":  "CM 2 - État de santé de la France",
+    "folder":  "PASS - Santé Publique",
+    "description":  "Les grands problèmes de santé, la transition épidémiologique, la morbidité, la mortalité et les indicateurs en France.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Selon l\u0027OMS (1946), comment est définie la santé ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Comme un état de complet bien-être physique, mental et social, et non seulement comme l\u0027absence de maladie ou d\u0027infirmité.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Comme un état de stabilité biologique homéostatique constant défini par l\u0027absence d\u0027infections et de pathologies chroniques",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme une capacité d\u0027adaptation exclusivement physiologique aux contraintes de l\u0027environnement.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Comme un état objectif mesurable par l\u0027espérance de vie sans incapacité.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027OMS définit la santé de façon positive comme un état de complet bien-être physique, mental et social, qui ne se limite pas à l\u0027absence de maladie[cite: 599]."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce qui caractérise la 3ème phase de la transition épidémiologique (à partir du milieu du XXe siècle) ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La dominance des maladies chroniques et dégénératives (non-transmissibles) avec une prolongation de l\u0027espérance de vie au-delà de 60-70 ans.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La prédominance persistante des maladies infectieuses aiguës et le recul des pandémies avec une espérance de vie de 30-50 ans",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le rôle exclusif de la médecine clinique et de la bactériologie dans la baisse de la mortalité infantile.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La disparition totale des maladies infectieuses au profit exclusif des maladies auto-immunes.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le 3ème âge de la transition épidémiologique est caractérisé par la dominance des maladies dégénératives et chroniques (non-transmissibles) et l\u0027allongement de l\u0027espérance de vie[cite: 614, 615]."
+                      },
+                      {
+                          "q":  "En France (données 2022), quelle est la première cause de décès chez les hommes et la deuxième chez les femmes ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les tumeurs (cancers).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les maladies cardio-neurovasculaires.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La Covid-19.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les causes externes (accidents, suicides).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les tumeurs représentent la première cause de mortalité chez les hommes, tandis que chez les femmes, les maladies cardio-neurovasculaires sont souvent en première ligne (bien que globalement les tumeurs soient la 1ère cause depuis 2004)[cite: 650]."
+                      },
+                      {
+                          "q":  "Quel cancer présente la plus forte incidence (nombre de nouveaux cas) chez l\u0027homme en France en 2023 ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le cancer de la prostate (59 885 cas).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le cancer du poumon (33 438 cas).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le cancer colorectal avec dépistage de masse (34 500 cas diagnostiqués)",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le mélanome cutané.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En 2023, le cancer de la prostate est le plus fréquent chez l\u0027homme, représentant le plus grand nombre de nouveaux cas annuels[cite: 630]."
+                      },
+                      {
+                          "q":  "Quel cancer constitue la première cause de mortalité par cancer chez la femme en France ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le cancer du sein.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le cancer du poumon.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le cancer colorectal.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le cancer de l\u0027ovaire.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le cancer du sein reste le premier cancer en incidence et la première cause de mortalité par cancer chez la femme en France, bien que la mortalité par cancer du poumon augmente fortement (+3% par an)[cite: 631, 636, 639]."
+                      },
+                      {
+                          "q":  "Comment a évolué le taux standardisé de mortalité (TSM) par cancer chez les hommes entre 2010 et 2018 ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Il a diminué d\u0027environ 2% par an.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Il a augmenté de 0,3% par an.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il est resté parfaitement stable.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il a diminué d\u0027environ 5% par an.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Entre 2010 et 2018, le TSM de mortalité par cancer a diminué de 2% par an chez les hommes (et de 0,7% chez les femmes)[cite: 631]."
+                      },
+                      {
+                          "q":  "Quel est le poids des maladies chroniques dans les dépenses de l\u0027assurance maladie en France en 2022 ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elles représentent 59 % des dépenses remboursées (soit 112 milliards d\u0027euros).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elles représentent 25 % des dépenses de santé (soit 45 milliards d\u0027euros).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles représentent moins de 10 % des dépenses, les hospitalisations ponctuelles étant le premier poste.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elles représentent 95 % des dépenses de santé.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En 2022, les maladies chroniques représentent 59% des dépenses de santé, soit environ 112 milliards d\u0027euros[cite: 657]."
+                      },
+                      {
+                          "q":  "Quelle proportion des nouveaux cas de cancer en France est attribuable à des facteurs de risque comportementaux et environnementaux évitables ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Environ 40 %.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Environ 10 %.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Environ 75 %.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Environ 95 %.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En France, 40 % des cancers pourraient être évités en agissant sur des facteurs de risque modifiables (tabac, alcool, sédentarité, alimentation, etc.)[cite: 644]."
+                      },
+                      {
+                          "q":  "Concernant la santé mentale en France, quelle proportion des salariés présenterait une souffrance psychique en lien avec le travail ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Environ 2 %.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Environ 15 %.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Environ 25 %.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Près de 50 %.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les chiffres-clés de la santé mentale indiquent qu\u0027environ 2% des salariés ont une souffrance psychique en lien avec le travail (tandis que 8% des actifs occupés ont une dépression)[cite: 685]."
+                      },
+                      {
+                          "q":  "Quelle est la première cause de décès chez les 25-34 ans en France ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le suicide.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les accidents de transport.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les cancers hématologiques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les surdoses médicamenteuses ou de stupéfiants.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le suicide est la première cause de décès chez les 25-34 ans en France, avec près de 9 000 décès par suicide chaque année toutes tranches d\u0027âge confondues[cite: 685]."
+                      },
+                      {
+                          "q":  "Quel type de pathologie chronique représente le premier poste de dépenses du régime général de l\u0027assurance maladie, avant même les cancers et les maladies cardio-vasculaires ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les troubles mentaux (maladies psychiatriques ou psychotropes).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le diabète de type 2.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les maladies respiratoires obstructives chroniques et l\u0027asthme sévère de l\u0027adulte",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027insuffisance rénale chronique terminale.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les maladies psychiatriques ou traitements psychotropes représentent le 1er poste de dépense par pathologie (environ 20 milliards d\u0027euros), devant les cancers et les maladies cardio-vasculaires[cite: 656, 686]."
+                      },
+                      {
+                          "q":  "Quel paradoxe la DREES a-t-elle souligné en 2022 concernant l\u0027espérance de vie en France ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle reste élevée mais stagne (et est inférieure à celle de 2019), avec un poids croissant des limitations et de la dépendance.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle augmente de manière exponentielle, mais uniquement chez les hommes.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027espérance de vie sans incapacité (EVSI) a rejoint exactement l\u0027espérance de vie globale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027espérance de vie globale a chuté brutalement de plus de 5 ans en raison de la prévalence croissante du surpoids et de l\u0027obésité infantile",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La DREES souligne en 2022 que l\u0027espérance de vie (85,3 ans pour les femmes, 79,4 ans pour les hommes) est élevée mais stagne par rapport à 2019, et s\u0027accompagne d\u0027un poids croissant de la dépendance et des inégalités[cite: 607]."
+                      },
+                      {
+                          "q":  "Parmi les cancers de mauvais pronostic, comment a évolué l\u0027incidence du cancer du pancréas entre 1990 et 2023 ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle a fortement augmenté (+3,5% par an chez les hommes et +3,3% par an chez les femmes).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle a régressé de façon spectaculaire et constante grâce à la réduction globale du tabagisme en population masculine",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle est restée strictement stable sur 30 ans.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027incidence a baissé, mais la mortalité a augmenté.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le cancer du pancréas montre une augmentation annuelle préoccupante de l\u0027incidence (+3,5% par an chez l\u0027homme, +3,3% chez la femme) avec une survie à 5 ans très faible (11%)[cite: 640, 641]."
+                      },
+                      {
+                          "q":  "Quelle est la définition d\u0027un « accident ischémique transitoire » (AIT) ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un déficit neurologique d\u0027origine ischémique avec une régression précoce et complète, et une absence d\u0027image d\u0027infarctus cérébral.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Une hémorragie cérébrale mineure d\u0027installation brutale qui se résorbe spontanément en moins de 24 heures sans aucune séquelle neurologique",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un arrêt cardiaque temporaire entraînant une hypoxie cérébrale sans mort neuronale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un micro-infarctus du myocarde entraînant des troubles visuels transitoires.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027AIT se définit par la régression rapide et complète d\u0027un déficit neurologique dû à une ischémie temporaire, sans lésion cérébrale visible à l\u0027imagerie[cite: 666]."
+                      },
+                      {
+                          "q":  "Quelle cause est identifiée comme la raison majeure de la hausse de 98% des cancers chez l\u0027homme et 104% chez la femme entre 1990 et 2023 ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle est principalement liée aux évolutions démographiques (croissance de la population et vieillissement), puis au risque propre de cancer.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle est exclusivement liée à l\u0027augmentation de la consommation d\u0027aliments ultra-transformés.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle est due majoritairement aux expositions professionnelles aux produits chimiques.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle découle exclusivement de la généralisation des campagnes de dépistage organisé créant un biais d\u0027observation majeur chez les seniors",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La décomposition de l\u0027augmentation des cas montre qu\u0027elle est principalement due à l\u0027évolution démographique (vieillissement de la population pour près de la moitié, puis accroissement de la taille de la population), le risque propre de cancer arrivant ensuite (20% chez l\u0027homme, 47% chez la femme)[cite: 628, 629]."
+                      },
+                      {
+                          "q":  "En santé publique, que signifie réduire les « incapacités évitables » selon les objectifs fixés ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Donner de la vie aux années.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Donner des années à la vie.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Réduire la mortalité infantile.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Diminuer les dépenses de santé globales de 10%.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Réduire les décès évitables revient à « donner des années à la vie », tandis que réduire les incapacités évitables revient à « donner de la vie aux années » (améliorer la qualité de vie et l\u0027EVSI)[cite: 604]."
+                      },
+                      {
+                          "q":  "Parmi ces facteurs de risque associés aux maladies cardiovasculaires, lequel est considéré comme un facteur « non modifiable » ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027hérédité.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027hypertension artérielle.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le diabète.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La dyslipidémie.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027âge, le sexe et l\u0027hérédité sont des facteurs de risque non modifiables des maladies cardiovasculaires. Les autres (diabète, HTA, tabac, etc.) sont modifiables par des traitements ou des changements de comportements[cite: 667]."
+                      },
+                      {
+                          "q":  "Quelle a été la tendance du taux de mortalité infantile en France récemment (données 2021) ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Il augmente en France (3,9/1000 en 2021) et est passé au-dessus de la moyenne européenne.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Il se maintient dans une baisse constante et ininterrompue, demeurant le taux le plus bas de toute l\u0027Europe occidentale",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il s\u0027est stabilisé exactement au niveau de la moyenne de l\u0027Union européenne.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il a chuté drastiquement grâce aux progrès des unités de néonatalogie.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Contrairement à la tendance historique, le taux de mortalité infantile remonte en France (3,9/1000 en 2021), dépassant la moyenne européenne (3,3/1000), en lien avec la prématurité, l\u0027âge maternel, et la précarité[cite: 692]."
+                      },
+                      {
+                          "q":  "Quelle part de la mortalité évitable chez les hommes de moins de 65 ans est attribuable à une mortalité prématurée (rapport DREES) ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La mortalité évitable représente environ un tiers (1/3) de la mortalité prématurée globale.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle représente l\u0027intégralité absolue des décès prématurés survenant avant l\u0027âge seuil de 65 ans chez les hommes",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle représente seulement 5% de la mortalité prématurée.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle est exclusivement liée aux accidents de la route.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La mortalité prématurée (\u003c65 ans) représente 20% des décès totaux. La mortalité évitable (comportements, prévention) représente un tiers (1/3) de cette mortalité prématurée, avec un ratio de 3 hommes pour 1 femme[cite: 651]."
+                      },
+                      {
+                          "q":  "Dans les années 1940-1960, quel processus a principalement caractérisé la « Période santé publique » de l\u0027évolution des problèmes de santé ?",
+                          "tags":  [
+                                       "CM 2"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La transition épidémiologique et démographique avec le déclin des maladies infectieuses et la hausse des maladies chroniques.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La découverte des miasmes et la mise en place de l\u0027assainissement de l\u0027eau.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027avènement exclusif de la bactériologie et l\u0027isolement de la pénicilline.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La diminution spectaculaire des dépenses médicales hospitalières liée à l\u0027éradication mondiale définitive du virus de la variole",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La période santé publique (à partir de 1940-1960) est marquée par la transition épidémiologique : baisse des infections (grâce à l\u0027hygiène/alimentation/services) et augmentation de l\u0027espérance de vie, entraînant l\u0027essor des maladies chroniques[cite: 613]."
+                      }
+                  ]
+}

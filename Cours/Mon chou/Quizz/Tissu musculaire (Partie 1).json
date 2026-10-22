@@ -1,0 +1,398 @@
+{
+    "name": "CM 8 - Tissu musculaire (Partie 1)",
+    "folder": "PASS - Tissus",
+    "description": "Structure générale du muscle, du myocyte strié squelettique, du sarcomère, des myofilaments et du cytosquelette endo/exosarcomérique.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Quelle est la principale caractéristique morphologique du rhabdomyocyte (cellule musculaire striée squelettique) observable en microscopie optique ?",
+            "tags": [
+                "Généralités",
+                "Muscle strié"
+            ],
+            "options": [
+                {
+                    "text": "Cellule cylindrique multinucléée à noyaux périphériques sous le sarcolemme, présentant une striation transversale et longitudinale.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Cellule fusiforme courte possédant un noyau unique central en forme de tire-bouchon entouré de volumineux corps denses cytoplasmiques d'alpha-actinine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Cellule ramifiée anastomosée raccordée par des disques intercalaires transversaux riches en desmosomes et en jonctions communicantes de type GAP.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Cellule pavimenteuse mononucléée dépourvue de membrane basale et totalement dépourvue de myofibrilles organisées en double striation périodique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le rhabdomyocyte (ou fibre musculaire) est un syncytium géant : issu de la fusion de nombreux myoblastes embryonnaires, il contient de très nombreux noyaux ovoïdes plaqués en périphérie sous le sarcolemme, et présente des stries transversales caractéristiques des sarcomères en série.[cite: 938, 944, 945]"
+        },
+        {
+            "q": "Macroscopiquement et histologiquement, comment s'organisent les enveloppes conjonctives d'un muscle squelettique ?",
+            "tags": [
+                "Organisation",
+                "Enveloppes"
+            ],
+            "options": [
+                {
+                    "text": "Épimysium (entoure le muscle), périmysium (faisceaux de fibres et vaisseaux) et endomysium (fibre musculaire individuelle).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'endomysium enveloppe la périphérie globale du muscle, le périmysium cloisonne les myofibrilles et l'épimysium forme l'insertion tendineuse sur le périoste.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le sarcolemme constitue l'aponévrose externe du corps musculaire, secondé par la lame basale réticulaire qui délimite chaque groupe fasciculaire adjacent.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le muscle squelettique est dépourvu de gaine conjonctive fibreuse, les myocytes étant exclusivement solidarisés par des disques intercalaires et desmosomes.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les 3 couches de tissu conjonctif structurent le muscle de l'extérieur vers l'intérieur : Épimysium (muscle global) -> Périmysium (faisceau de fibres, vascularisé) -> Endomysium (fibre unique).[cite: 942, 943]"
+        },
+        {
+            "q": "Parmi les types de rhabdomyocytes, quelles sont les caractéristiques physiologiques des fibres de « Type I » (fibres rouges) ?",
+            "tags": [
+                "Physiologie",
+                "Fibres de type I"
+            ],
+            "options": [
+                {
+                    "text": "Contraction lente, peu fatigables, métabolisme oxydatif aérobie, très riches en mitochondries et en myoglobine rouge.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Fibres à contraction phasique ultra-rapide, très rapidement épuisables, pauvres en myoglobine et fonctionnant sur la voie glycolytique anaérobie pure.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Fibres lisses fusiformes non striées dépourvues de sarcomères et soumises exclusivement à l'innervation végétative autonome sympathique et parasympathique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Fibres glycolytiques blanchâtres à activité ATPase myofibrillaire très rapide à pH 9.4, stockant d'abondantes réserves de glycogène sans lipides.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les fibres de Type I sont les fibres de l'endurance/posture. Elles nécessitent un flux constant d'O2 (métabolisme aérobie), d'où leur très forte densité en mitochondries, en myoglobine (qui fixe l'O2 et donne la couleur rouge) et en capillaires. Elles se contractent lentement sans se fatiguer. Les Type IIb sont l'inverse (force brute brève, anaérobie, fibres blanches).[cite: 945, 946]"
+        },
+        {
+            "q": "En microscopie électronique, comment définit-on un « sarcomère » ?",
+            "tags": [
+                "Ultrastructure",
+                "Sarcomère"
+            ],
+            "options": [
+                {
+                    "text": "Unité contractile élémentaire de la myofibrille, délimitée par deux stries Z successives.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Segment central nu du filament épais de myosine dépourvu de têtes globulaires enzymatiques et situé de part et d'autre de la strie M.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Complexe membranaire fonctionnel associant un tubule T central et deux citernes terminales latérales du réticulum sarcoplasmique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Bande claire isotrope contenant uniquement les filaments fins d'actine et coupée en son milieu par la ligne médiane transversale M.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La myofibrille est une succession de petits cylindres identiques appelés sarcomères. Le sarcomère est le segment compris entre deux stries Z (lignes d'ancrage des filaments d'actine). C'est l'unité motrice élémentaire.[cite: 949, 950]"
+        },
+        {
+            "q": "Comment les bandes (A, I, H) du sarcomère sont-elles agencées au niveau des myofilaments ?",
+            "tags": [
+                "Sarcomère",
+                "Bandes"
+            ],
+            "options": [
+                {
+                    "text": "Bande A sombre (longueur des myosines), strie H centrale claire (myosine seule) et bande I claire (actine seule, coupée par strie Z).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La bande A contient uniquement les filaments fins d'actine F ; la bande I représente la zone de chevauchement dense et la ligne médiane M reste totalement vide.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La strie H centrale concentre le chevauchement maximal entre actine et myosine, tandis que la bande A est constituée uniquement de collagène exosarcomérique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La strie Z contient le complexe d'assemblage myosine-titine et borde de façon discontinue la zone nue centrale de la bande I sarcomérique contractile.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La bande A (Anisotrope, sombre) est de la taille du filament épais. Aux extrémités de la bande A, actine et myosine se chevauchent. Au centre, la strie H est plus claire car elle n'a que la queue des myosines. La bande I (Isotrope, claire) n'a que de l'actine (filament fin) qui s'amarre sur la strie Z.[cite: 951, 952]"
+        },
+        {
+            "q": "De quoi est constituée moléculairement une molécule de myosine « native » dans le myofilament épais ?",
+            "tags": [
+                "Myofilaments",
+                "Myosine"
+            ],
+            "options": [
+                {
+                    "text": "Deux chaînes lourdes (queue hélicoïdale et têtes à activité ATPase) associées à 4 chaînes légères stabilisant les cous.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un double filament hélicoïdal continu d'actine filamenteuse F associé périodiquement à la tropomyosine et au complexe hétérotrimérique de troponine (T, I, C).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une molécule géante élastique de titine s'étendant sans interruption depuis le centre de la ligne M jusqu'à l'ancrage protéique de la strie Z périphérique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un faisceau de trois chaînes polypeptidiques alpha de tropocollagène torsadées en triple hélice droite stabilisées par des ponts hydroxyproline et hydroxylysine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La myosine a la forme d'un club de golf à deux têtes. Ses 2 lourdes chaînes s'enroulent pour former la queue, et s'évasent en têtes globulaires (domaine moteur liant l'actine et l'ATP). Les 4 chaînes légères rigidifient le cou (domaine de transmission).[cite: 959, 960, 961]"
+        },
+        {
+            "q": "Sur le filament fin (actine), quel est le rôle précis du complexe de troponines ?",
+            "tags": [
+                "Myofilaments",
+                "Actine"
+            ],
+            "options": [
+                {
+                    "text": "La troponine C lie le Ca2+, déplaçant la tropomyosine et libérant le site de liaison de l'actine pour la tête de myosine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La sous-unité troponine I hydrolyse directement des molécules d'ATP cytosolique pour imprimer une rotation mécanique spontanée aux filaments fins d'actine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La sous-unité troponine T est une protéine kinase calcium-dépendante qui phosphoryle de manière irréversible la chaîne légère régulatrice de la tête de myosine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le complexe capte et détruit irréversiblement les ions calcium cytosoliques pour induire l'état d'épuisement énergétique responsable de la rigidité cadavérique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le filament fin est régulé. Au repos, la longue tropomyosine masque le site de contact actine/myosine. Quand le Calcium arrive, il se lie à la troponine C, ce qui change la conformation du complexe entier et écarte la tropomyosine. La myosine peut alors s'accrocher à l'actine.[cite: 962]"
+        },
+        {
+            "q": "Dans le muscle strié squelettique, à quoi correspond anatomiquement une « triade » au niveau sarcoplasmique ?",
+            "tags": [
+                "Sarcoplasme",
+                "Triade"
+            ],
+            "options": [
+                {
+                    "text": "Association d'un tubule T et de deux citernes terminales du réticulum sarcoplasmique, à la jonction des bandes A et I.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Agrégation morphologique de trois noyaux musculaires syncytiaux ovoïdes refoulés immédiatement sous la lame basale externe du sarcolemme.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Complexe macromoléculaire stabilisateur réunissant l'actine F, les têtes de myosine et la titine endosarcomérique au niveau de la ligne M centrale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Convergence synaptique de trois arborisations motrices collatérales distinctes venant innerver une fente sous-neurale primaire commune.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La triade est le centre de commande du calcium : le tubule transverse (T) conduit l'onde électrique (potentiel d'action) depuis la surface cellulaire jusqu'au cœur de la fibre, où il est flanqué de part et d'autre par deux réserves de calcium (les citernes terminales du R.S.).[cite: 955, 956, 957]"
+        },
+        {
+            "q": "Quel rôle essentiel joue la protéine Titine (du cytosquelette endosarcomérique) ?",
+            "tags": [
+                "Cytosquelette",
+                "Titine"
+            ],
+            "options": [
+                {
+                    "text": "Protéine élastique géante reliant la myosine à la strie Z, assurant le centrage du filament épais et le rappel élastique.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Protéine filamenteuse inextensible agissant comme un tuteur moléculaire rigide pour calibrer la longueur exacte du filament d'actine F sarcomérique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Glycoprotéine transmembranaire reliant les myofibrilles périphériques à la lame basale par l'intermédiaire des complexes costamériques latéraux.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Enzyme estérasique ancrée à la membrane plasmique assurant l'inactivation catalytique rapide de l'acétylcholine dans la fente synaptique primaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La titine agit comme un ressort massif : elle s'ancre dans la strie Z et parcourt la demi-bande I jusqu'au filament épais. Elle empêche le sarcomère de se déchirer s'il est trop étiré, et le ramène à sa position de repos.[cite: 965, 966]"
+        },
+        {
+            "q": "Dans le cytosquelette sous-sarcolemmique, quelle est la fonction du complexe de la dystrophine (dont le gène est muté dans la myopathie de Duchenne) ?",
+            "tags": [
+                "Cytosquelette",
+                "Dystrophine"
+            ],
+            "options": [
+                {
+                    "text": "Relie l'actine sous-sarcolemmique aux glycoprotéines membranaires et à la laminine matricielle pour amortir les tractions.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Constitue une réserve intracellulaire d'ATP et de créatine phosphate immédiatement mobilisable lors de l'effort physique anaérobie alactique intense.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Remplace l'alpha-actinine au niveau des stries Z pour stabiliser l'enchaînement longitudinal des myofibrilles contractiles au sein du sarcoplasme.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Déclenche la reprise du cycle mitotique et la division nucléaire asymétrique des rhabdomyocytes matures après une contusion musculaire mécanique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La dystrophine est un absorbeur de chocs crucial : elle lie le squelette interne de la fibre musculaire aux protéines complexes transmembranaires (dystroglycanes, sarcoglycanes), elles-mêmes liées à la lame basale externe (laminine-2). Sans elle, la fibre se déchire à chaque contraction (myopathie).[cite: 967, 968]"
+        },
+        {
+            "q": "À quoi servent les « cellules satellites » situées entre le sarcolemme et la lame basale du rhabdomyocyte ?",
+            "tags": [
+                "Régénération",
+                "Cellules satellites"
+            ],
+            "options": [
+                {
+                    "text": "Cellules souches myogéniques quiescentes sous la lame basale, activées pour proliférer et régénérer le muscle après lésion.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Macrophages résidents spécialisés du tissu musculaire chargés de phagocyter l'excès d'acide lactique et les métabolites toxiques d'effort intense.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Cellules gliales périphériques élaborant la gaine de myéline autour des boutons synaptiques terminaux de la plaque motrice sous-sarcolemmique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Cellules épithéliales sécrétrices hautement polarisées responsables de la synthèse continue des constituants de la membrane plasmique sarcolemmique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La fibre musculaire squelettique ne se divise plus (post-mitotique). Les cellules satellites sont d'anciens myoblastes restés quiescents en périphérie. Lorsqu'il y a un trauma (ou hypertrophie sportive), elles prolifèrent, fusionnent entre elles ou avec la fibre abîmée pour la réparer.[cite: 969, 970]"
+        },
+        {
+            "q": "Qu'est-ce qu'une « unité motrice » dans le système neuromusculaire ?",
+            "tags": [
+                "Innervation",
+                "Unité motrice"
+            ],
+            "options": [
+                {
+                    "text": "Ensemble formé par un motoneurone alpha médullaire et toutes les fibres musculaires qu'il innerve.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une fibre musculaire géante plurinucléée recevant simultanément les axones convergents de plusieurs dizaines de motoneurones rachidiens moteurs.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le rassemblement anatomique d'un faisceau musculaire complet entouré de son périmysium et innervé par l'ensemble des filets d'un tronc nerveux périphérique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le groupe de vésicules synaptiques contenant le neurotransmetteur acétylcholine logé dans un unique renflement axonal terminal présynaptique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Un muscle compte des milliers de fibres, mais elles sont commandées par groupes. Un motoneurone lance son axone qui se divise et innerve plusieurs fibres (éparpillées dans le muscle). Quand ce neurone s'active, toutes les fibres de cette unité se contractent simultanément. La gradation de la force dépend du nombre d'unités recrutées.[cite: 971, 977]"
+        },
+        {
+            "q": "Comment l'organisation de la « fente synaptique » de la plaque motrice optimise-t-elle la transmission neuromusculaire ?",
+            "tags": [
+                "Plaque motrice",
+                "Synapse"
+            ],
+            "options": [
+                {
+                    "text": "Le sarcolemme présente des fentes sous-neurales secondaires, multipliant la surface couverte de récepteurs à l'acétylcholine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La cellule gliale de Schwann recouvre hermétiquement la fente primaire pour détruire l'acétylcholine avant tout contact avec le récepteur musculaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La membrane présynaptique de l'axone libère directement l'adénosine triphosphate (ATP) dans les citernes terminales du réticulum sarcoplasmique profond.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Les microfilaments d'actine et les têtes de myosine traversent la membrane plasmique pour s'ancrer directement dans l'axoplasme du bouton présynaptique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "À la jonction neuromusculaire, la membrane de la cellule musculaire est creusée de cryptes (replis) sous le bouton de l'axone. Cela augmente drastiquement la surface disponible pour disposer des récepteurs membranaires afin de capter un maximum du neurotransmetteur (acétylcholine).[cite: 974, 975]"
+        },
+        {
+            "q": "À quoi servent les « fuseaux neuro-musculaires » insérés parallèlement aux fibres musculaires ?",
+            "tags": [
+                "Proprioception",
+                "Fuseau neuromusculaire"
+            ],
+            "options": [
+                {
+                    "text": "Récepteurs proprioceptifs sensibles à l'étirement et à la tension musculaire, déclenchant le réflexe myotatique protecteur.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Micro-glandes endocrines locales sécrétant l'acide lactique et des prostaglandines vasodilatatrices responsables de la douleur d'effort musculaire tardif.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Canaux vasculaires de dérivation anastomotique permettant une hyperhémie locale sans passage par les réseaux artériolaires et capillaires habituels.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Systèmes d'ancrage fibreux tendineux pénétrant profondément dans le périoste osseux sous forme de fibres de Sharpey denses hautement calcifiées.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les fuseaux neuromusculaires sont des organes sensitifs (constitués de fibres musculaires modifiées entourées de terminaisons nerveuses sensitives). Si le muscle s'étire brusquement, le fuseau est étiré et envoie un signal qui va déclencher la contraction réflexe du muscle pour éviter la déchirure.[cite: 976]"
+        },
+        {
+            "q": "Lors d'une forte contraction musculaire isotonique (raccourcissement du muscle), que devient la strie H (zone claire au centre du sarcomère) ?",
+            "tags": [
+                "Contraction",
+                "Sarcomère"
+            ],
+            "options": [
+                {
+                    "text": "Elle rétrécit jusqu'à disparaître, les filaments fins d'actine glissant entre les myosines vers la ligne médiane M.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle s'élargit de façon symétrique car les têtes de myosine s'écartent latéralement pour relâcher définitivement les filaments d'actine adjacents.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La strie H conserve strictement une longueur invariable, tandis que la bande sombre A subit un raccourcissement progressif sous tension élastique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle subit une précipitation cristalline rapide de phosphate de calcium amorphe sous l'effet du flux brutal d'ions calcium sarcoplasmiques libres.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La théorie des filaments glissants explique que ni l'actine ni la myosine ne raccourcissent physiquement. Les têtes de myosine tirent l'actine vers le centre. Résultat : les stries Z se rapprochent, la bande I rétrécit, et la strie H (où il n'y avait que de la myosine) se remplit d'actine jusqu'à disparaître. La bande A (longueur de la myosine) reste constante.[cite: 981, 982]"
+        }
+    ]
+}

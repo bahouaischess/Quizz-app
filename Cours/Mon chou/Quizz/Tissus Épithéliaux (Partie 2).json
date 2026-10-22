@@ -1,0 +1,320 @@
+{
+    "name": "CM 3 - Tissus Épithéliaux (Partie 2)",
+    "folder": "PASS - Tissus",
+    "description": "Classification et histologie des épithéliums glandulaires exocrines, endocrines et amphicrines.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Quelle caractéristique histologique distingue une glande exocrine d'une glande endocrine ?",
+            "tags": [
+                "Épithélium glandulaire",
+                "Exocrine"
+            ],
+            "options": [
+                {
+                    "text": "La glande exocrine déverse son produit vers le milieu extérieur ou une cavité naturelle, via un canal excréteur.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La glande exocrine déverse directement et passivement ses produits élaborés dans la microcirculation capillaire sanguine sans canal excréteur.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La glande exocrine est obligatoirement un stroma unicellulaire isolé logé en profondeur dans le tissu conjonctif lâche sous-jacent.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La glande exocrine sécrète exclusivement des hormones stéroïdiennes dérivées du cholestérol synthétisées par le réticulum lisse.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Une glande exocrine sécrète son produit dans le milieu extérieur (ou une cavité en continuité avec lui) via un canal excréteur. Une glande endocrine déverse ses sécrétions (hormones) directement dans le sang, sans canal excréteur.[cite: 701, 702]"
+        },
+        {
+            "q": "Comment reconnaît-on une cellule sécrétant des protéines (ex : cellule principale gastrique) à l'observation histologique ou ultrastructurale ?",
+            "tags": [
+                "Sécrétion",
+                "Ultrastructure"
+            ],
+            "options": [
+                {
+                    "text": "Réticulum endoplasmique granuleux basal abondant, volumineux nucléole et granules denses apicaux.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elle présente de très larges vacuoles apicales de mucine refoulant un noyau discoïde aplati contre la membrane plasmique basale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle est caractérisée par un réticulum endoplasmique lisse hypertrophié associé à de multiples inclusions lipidiques périnucléaires non membranées.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elle possède de profonds invaginations baso-latérales garnies de volumineuses mitochondries allongées et une bordure apicale en brosse continue.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les cellules sécrétant des protéines sont riches en RER (pour la synthèse protéique) en position basale et stockent les protéines dans des granules de sécrétion au pôle apical. Le noyau y est souvent volumineux.[cite: 704]"
+        },
+        {
+            "q": "Quelle ultrastructure est typique des cellules caliciformes intestinales sécrétant du mucus ?",
+            "tags": [
+                "Sécrétion",
+                "Mucus"
+            ],
+            "options": [
+                {
+                    "text": "Larges vacuoles de mucigène apicales, appareil de Golgi supranucléaire hypertrophié et noyau comprimé à la base.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un cytoplasme compact bourré de mitochondries à crêtes tubulaires entourant un réseau de cavéoles membranaires lisses sans vésicules muqueuses.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un réticulum endoplasmique lisse surdéveloppé en réseau anastomosé continu, dépourvu de ribosomes et d'appareil de Golgi identifiable.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un noyau sphérique central à euchromatine abondante baignant dans un stroma homogène de filaments intermédiaires de vimentine filamenteuse.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La cellule caliciforme accumule le mucigène (précurseur du mucus) dans de larges vésicules apicales qui repoussent et aplatissent le noyau au pôle basal. L'appareil de Golgi y est très actif.[cite: 705]"
+        },
+        {
+            "q": "Quelle est la particularité ultrastructurale d'une cellule sécrétant des stéroïdes (ex : cellule folliculaire de la thèque interne) ?",
+            "tags": [
+                "Sécrétion",
+                "Stéroïdes"
+            ],
+            "options": [
+                {
+                    "text": "Réticulum endoplasmique lisse très développé, mitochondries à crêtes tubulaires et gouttelettes lipidiques.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un ergastoplasme basal très lamellaire associé à de multiples grains denses protéiques d'exocytose s'accumulant massivement au pôle sécrétoire apical.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "D'imposantes vésicules de mucine fusionnées formant un amas amorphe volumineux repoussant la chromatine nucléaire en périphérie immédiate.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une absence quasi-totale d'organites intracellulaires métaboliques et un noyau pycnotique condensé caractéristique d'une involution terminale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les stéroïdes étant des lipides, les cellules qui les synthétisent ont un réticulum endoplasmique lisse (REL) très abondant, de nombreuses mitochondries, et stockent des vacuoles lipidiques libres.[cite: 707]"
+        },
+        {
+            "q": "Dans les glandes exocrines, comment se définit le mode d'extrusion « apocrine » ?",
+            "tags": [
+                "Extrusion",
+                "Exocrine"
+            ],
+            "options": [
+                {
+                    "text": "Le produit lipidique est expulsé avec un dôme de cytoplasme apical qui s'étrangle et se détache de la cellule.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le produit hydrosoluble est libéré de façon discontinue par fusion de la membrane vésiculaire avec le plasmalemme apical sans perte cellulaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La cellule entière accumule le produit jusqu'à pycnose nucléaire et rupture de sa membrane, entraînant la desquamation totale du corps cellulaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le produit lipophile franchit passivement la membrane basale pour être recapté immédiatement par les veinules fenêtrées du stroma conjonctif.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'extrusion apocrine (ex: glandes sudoripares apocrines, glande mammaire) se fait par détachement (étranglement) de la portion apicale du cytoplasme contenant la gouttelette lipidique (aposome).[cite: 710, 712]"
+        },
+        {
+            "q": "Quel mode d'extrusion caractérise la glande sébacée ?",
+            "tags": [
+                "Extrusion",
+                "Glande sébacée"
+            ],
+            "options": [
+                {
+                    "text": "Le mode holocrine : la cellule s'autolyse entièrement et s'élimine avec son contenu lipidique accumulé.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le mode mérocrine : libération d'une sécrétion aqueuse limpide par simple exocytose respectant l'intégrité morphologique de la cellule sécrétrice.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le mode apocrine : détachement sélectif de la calotte cytoplasmique apicale sous la pression d'une volumineuse inclusion d'acides gras insaturés.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le mode endocrine régulé : passage direct des médiateurs sébacés dans le courant circulatoire à travers les fentes de l'endothélium capillaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Dans le mode holocrine, spécifique de la glande sébacée, la cellule se charge de lipides, son noyau devient pycnotique, et la cellule entière meurt et se désintègre pour former la sécrétion.[cite: 713]"
+        },
+        {
+            "q": "Comment distingue-t-on une glande acineuse d'une glande alvéolaire ?",
+            "tags": [
+                "Morphologie",
+                "Adénomère"
+            ],
+            "options": [
+                {
+                    "text": "L'acinus a une lumière centrale très réduite, tandis que l'alvéole présente une large lumière bien béante.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'acinus est constitué d'un tube rectiligne allongé en doigt de gant, alors que l'alvéole est obligatoirement un tube pelotonné sur lui-même.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'acinus possède constamment un canal excréteur arborescent très ramifié, tandis que l'alvéole débouche directement sans aucun canal excréteur intermédiaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'acinus constitue exclusivement une unité endocrine dépourvue de polarité, alors que l'alvéole forme toujours une entité exocrine glandulaire polarisée.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La morphologie de l'adénomère définit le type de glande. L'acinus a une très petite lumière (ex: pancréas exocrine, acini séreux). L'alvéole ressemble à un sac avec une grande lumière centrale.[cite: 718]"
+        },
+        {
+            "q": "Sur le plan morphologique, que désigne le terme « glande composée » ?",
+            "tags": [
+                "Morphologie",
+                "Glande exocrine"
+            ],
+            "options": [
+                {
+                    "text": "C'est une glande dont le canal excréteur (portion non-sécrétoire) est ramifié.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "C'est une glande dont l'adénomère (portion sécrétoire) a des formes multiples (tubules et acini mélangés).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "C'est une glande qui produit à la fois du mucus et des protéines (glande mixte).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "C'est une glande située à l'intérieur de l'épithélium de revêtement.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La classification « composée » ou « simple/non composée » repose sur le comportement du canal excréteur. S'il est ramifié, la glande est composée.[cite: 717, 722]"
+        },
+        {
+            "q": "Quelle est la principale différence histologique entre un acinus séreux et un acinus muqueux ?",
+            "tags": [
+                "Histologie",
+                "Glandes"
+            ],
+            "options": [
+                {
+                    "text": "La cellule séreuse est sombre à lumière étroite et noyau rond parabasal ; la cellule muqueuse est claire, à large lumière et noyau aplati basalement.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La cellule séreuse accumule de volumineuses flaques de mucigène apical, tandis que la cellule muqueuse synthétise des enzymes digestives évacuées par pycnose holocrine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'acinus séreux produit un suc très visqueux et filant riche en glycoprotéines acides, alors que l'acinus muqueux délivre une sécrétion très aqueuse et riche en ions minéraux.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'acinus séreux est une structure épithéliale dépourvue de canal excréteur propre, contrairement à l'acinus muqueux qui s'abouche d'emblée dans un canal strié intralobulaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'acinus séreux (sécrétion aqueuse protéique) a des cellules pyramidales à noyau arrondi et lumière étroite. L'acinus muqueux (sécrétion visqueuse) a de grandes cellules claires, un noyau refoulé et aplati, et une lumière large.[cite: 708]"
+        },
+        {
+            "q": "Quel est le rôle des cellules myoépithéliales associées à certaines glandes exocrines (comme les glandes sudoripares) ?",
+            "tags": [
+                "Cellules",
+                "Glandes"
+            ],
+            "options": [
+                {
+                    "text": "Elles se contractent sous stimulus nerveux ou hormonal pour exprimer le produit glandulaire vers le canal excréteur.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Elles sécrètent activement le film de mucus protecteur qui tapisse la paroi luminale des gros canaux excréteurs interlobulaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elles assurent la néovascularisation capillaire et la nutrition hémodynamique des adénomères épithéliaux avasculaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Elles constituent le contingent de cellules souches indifférenciées destinées au renouvellement permanent de l'épithélium sécrétoire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les cellules myoépithéliales, d'origine épithéliale mais dotées de propriétés contractiles, entourent les acini ou les tubules de certaines glandes (sudoripares, mammaires, salivaires) et favorisent l'excrétion par contraction.[cite: 725]"
+        },
+        {
+            "q": "Comment s'organisent morphologiquement les glandes endocrines de type « trabéculaire » (ex: adéno-hypophyse) ?",
+            "tags": [
+                "Glande endocrine",
+                "Morphologie"
+            ],
+            "options": [
+                {
+                    "text": "En cordons cellulaires anastomosés de cellules jointives, richement vascularisés par des capillaires.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "En lobules sphériques dont les cellules forment un épithélium cubique simple entourant une cavité (follicule).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "En acini ou alvéoles qui se déversent dans un réseau de canaux ramifiés.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "En cellules caliciformes isolées disséminées dans le tissu conjonctif.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les glandes endocrines n'ont pas de canal excréteur. Le type trabéculaire (ou cordonal) est constitué de travées de cellules anastomosées entourées de capillaires pour libérer les hormones dans le sang. Le type folliculaire (ex: thyroïde) forme des vésicules sphériques fermées.[cite: 726]"
+        },
+        {
+            "q": "Qu'est-ce qu'une glande amphicrine hétérotypique ?",
+            "tags": [
+                "Glande amphicrine",
+                "Pancréas"
+            ],
+            "options": [
+                {
+                    "text": "Une glande associant des cellules exocrines et endocrines morphologiquement distinctes (ex: pancréas).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une glande formée d'un unique type cellulaire assurant à la fois les sécrétions exocrines biliaires et les synthèses endocrines plasmatiques (ex: hépatocyte).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une glande dont le produit de sécrétion combine intimement des fractions protéiques séreuses fluides et des composants mucopolysaccharidiques très épais.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une glande exocrine canaliculaire dont les canaux secondaires s'anastomosent avec les capillaires sinusoïdes pour déverser leurs produits dans le sang.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Une glande amphicrine possède une double fonction endocrine et exocrine. Hétérotypique signifie qu'elle possède des types cellulaires différents pour chaque fonction (Pancréas : acini exocrines et îlots de Langerhans endocrines). Homotypique signifie que la même cellule fait les deux (Hépatocyte).[cite: 727]"
+        }
+    ]
+}

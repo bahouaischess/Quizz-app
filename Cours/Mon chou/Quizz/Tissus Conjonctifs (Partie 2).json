@@ -1,0 +1,397 @@
+{
+    "name": "CM 4 - Tissus Conjonctifs (Partie 2)",
+    "folder": "PASS - Tissus",
+    "description": "Étude de la substance fondamentale, des glycoprotéines, des cellules du tissu conjonctif (fibroblastes, adipocytes, macrophages, mastocytes) et classification des différents types de TC.",
+    "prerequisites": [],
+    "questions": [
+        {
+            "q": "Qu'est-ce qu'un glycosaminoglycane (GAG) dans la substance fondamentale du tissu conjonctif ?",
+            "tags": [
+                "MEC",
+                "Substance fondamentale"
+            ],
+            "options": [
+                {
+                    "text": "Un long polymère polyanionique de disaccharides répétés qui piège l'eau et les cations pour former un gel hydraté incompressible.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une endopeptidase matricielle à zinc clivant spécifiquement les domaines carboxy-terminaux insolubles et hautement résistants du tropocollagène I.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un réseau fibreux rigide formé de protofilaments hélicoïdaux d'élastine stabilisés par des ponts tétravalents de desmosine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un récepteur d'adhérence hétérodimérique transmembranaire reliant les filaments intermédiaires de cytokératine à la laminine.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les GAG sont de longs polysaccharides formés de disaccharides répétés. En raison de leurs charges négatives (souvent via sulfatation), ils piègent les ions et l'eau, donnant à la substance fondamentale sa consistance de gel hydraté[cite: 764]."
+        },
+        {
+            "q": "Comment se forme un protéoglycane ?",
+            "tags": [
+                "MEC",
+                "Protéoglycanes"
+            ],
+            "options": [
+                {
+                    "text": "Par la fixation covalente de nombreuses chaînes de GAG sulfatés sur un axe protéique central (core protein).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Par l'auto-assemblage supramoléculaire complexe de trois chaînes polypeptidiques alpha enroulées en triple hélice droite stabilisée par des ponts hydrogène.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par la dimérisation de deux monomères de fibronectine reliés par une paire de ponts disulfures carboxy-terminaux.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par la condensation de molécules de tropoélastine soluble sur un squelette périphérique de microfibrilles de fibrilline.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Un protéoglycane ressemble à une « brosse » où les poils sont les GAG sulfatés (chondroïtine sulfate, etc.) fixés de manière covalente sur un axe protéique (la protéine centrale). Il est donc majoritairement composé de sucres (90%)[cite: 765]."
+        },
+        {
+            "q": "Quelle est la particularité de l'acide hyaluronique parmi les glycosaminoglycanes ?",
+            "tags": [
+                "MEC",
+                "Acide hyaluronique"
+            ],
+            "options": [
+                {
+                    "text": "C'est un GAG géant non sulfaté, sans axe protéique propre, servant d'épine dorsale à l'agrégation de multiples protéoglycanes.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "C'est le seul composant glucidique de la MEC synthétisé sous la forme d'un tétramère hélicoïdal rigide particulièrement riche en liaisons hydroxylysine et galactosylées.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "C'est une enzyme nucléaire sécrétée par les fibroblastes qui inhibe la dégradation enzymatique des fibres élastiques périostées.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "C'est une molécule fortement hydrophobe qui chasse les molécules d'eau pour compacter les fibrilles de collagène dermo-épidermiques.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "L'acide hyaluronique est non sulfaté, très volumineux, et ne se lie pas de façon covalente à une protéine centrale. Au contraire, c'est lui qui sert d'axe géant sur lequel de nombreux protéoglycanes viennent s'accrocher (via des protéines de liaison) pour former des agrégats colossaux[cite: 764, 766, 767]."
+        },
+        {
+            "q": "Quel est le rôle principal de la fibronectine (glycoprotéine de la MEC) ?",
+            "tags": [
+                "MEC",
+                "Glycoprotéines"
+            ],
+            "options": [
+                {
+                    "text": "Assurer l'adhérence matricielle en reliant les intégrines cellulaires aux autres constituants (collagène, héparane sulfate).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Déclencher l'activation en cascade du système du complément par hydrolyse catalytique directe des fractions solubles pro-inflammatoires C3 et C5a.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Former la substance fondamentale amorphe dense responsable des propriétés élastiques réversibles de la crosse aortique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Induire la transcription des immunoglobulines de surface chez les plasmocytes activés lors de la réaction humorale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La fibronectine est une glycoprotéine d'adhérence cellulaire majeure. C'est un dimère qui agit comme un pont : un domaine se lie au collagène, un autre aux protéoglycanes, et un autre aux récepteurs transmembranaires des cellules (intégrines)[cite: 769, 770, 771]."
+        },
+        {
+            "q": "La laminine, glycoprotéine en forme de croix asymétrique, est un composant majeur de quelle structure tissulaire ?",
+            "tags": [
+                "MEC",
+                "Lame basale"
+            ],
+            "options": [
+                {
+                    "text": "De la lame basale épithéliale (associée au collagène IV, nidogène/entactine et perlecan).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "De la matrice cartilagineuse hyaline territoriale riche en collagène de type II et agrécane.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Des gouttelettes triglycéridiques centrales des adipocytes uniloculaires du panicule adipeux.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Des lysosomes azurophiles denses contenant la myéloperoxydase des polynucléaires neutrophiles.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La laminine est fondamentale dans la constitution de la lame basale (lamina lucida/densa). Elle relie les intégrines des cellules épithéliales au réseau de collagène IV et aux protéoglycanes de la lame basale[cite: 772, 775]."
+        },
+        {
+            "q": "Quelle différence distingue fonctionnellement et morphologiquement le fibroblaste du fibrocyte ?",
+            "tags": [
+                "Cellules résidentes",
+                "Fibroblastes"
+            ],
+            "options": [
+                {
+                    "text": "Le fibroblaste est actif, étoilé, proliférant et riche en organites de synthèse, alors que le fibrocyte est quiescent et fusiforme.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le fibroblaste présente une activité phagocytaire majeure d'élimination de débris cellulaires, tandis que le fibrocyte assure la production humorale d'immunoglobulines circulates.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le fibroblaste produit exclusivement la myéline périphérique, alors que le fibrocyte élabore la substance fondamentale amorphe.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le fibroblaste est une cellule épithéliale sécrétrice dérivée de l'endoderme, alors que le fibrocyte provient de la crête neurale.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le fibroblaste est la cellule résidente principale active qui synthétise la MEC (collagène, élastine, GAG). Au repos, il diminue son activité et s'aplatit pour devenir un fibrocyte. Ce processus est réversible[cite: 777, 779]."
+        },
+        {
+            "q": "Lors de la phase 2 de la cicatrisation (bourgeonnement), en quel type cellulaire particulier le fibroblaste se différencie-t-il pour réparer la lésion ?",
+            "tags": [
+                "Cicatrisation"
+            ],
+            "options": [
+                {
+                    "text": "En myofibroblaste, riche en alpha-actine musculaire lisse et hautement actif dans la synthèse collagénique et la rétraction de la plaie.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "En mastocyte tissulaire dégranulant précocement son histamine et ses protéases pour bloquer la diapédèse leucocytaire et pérenniser l'œdème inflammatoire local.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "En ostéoclaste multinucléé polarisé sécrétant des protons H+ et de la cathepsine K pour résorber les travées de néocollagène dégradé par la protéolyse matricielle.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "En adipocyte multiloculaire à thermogénine pour accroître l'oxygénation tissulaire locale par élévation de la température capillaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Pour réparer la plaie, les fibroblastes prolifèrent et se transforment en myofibroblastes. L'actine musculaire lisse leur permet de se contracter (pour rapprocher les berges de la plaie) et ils synthétisent massivement la nouvelle matrice[cite: 780]."
+        },
+        {
+            "q": "Quelles sont les caractéristiques structurales de l'adipocyte de la graisse blanche (uniloculaire) ?",
+            "tags": [
+                "Cellules résidentes",
+                "Adipocytes"
+            ],
+            "options": [
+                {
+                    "text": "Une grande cellule sphérique à vacuole lipidique unique volumineuse repoussant le cytoplasme et un noyau aplati en périphérie.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une cellule polygonale contenant de nombreuses petites inclusions lipidiques dispersées et un noyau central sphérique euchromatique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une cellule dendritique ramifiée sécrétant du collagène de type III associé à des trousseaux de microfibrilles de tropoélastine.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un syncytium volumineux renfermant plusieurs dizaines de noyaux périphériques entourés d'un réseau dense de myofilaments striés.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La graisse blanche est constituée d'adipocytes dits uniloculaires car la gouttelette de graisse unique fusionne et occupe presque tout l'espace intracellulaire (50 à 100 µm), repoussant les organites et le noyau contre la membrane plasmique[cite: 783, 784, 789]."
+        },
+        {
+            "q": "Outre le stockage des lipides, quelle hormone peptidique régulant la satiété au niveau de l'hypothalamus est sécrétée par l'adipocyte blanc ?",
+            "tags": [
+                "Adipocytes",
+                "Fonction endocrine"
+            ],
+            "options": [
+                {
+                    "text": "La leptine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "L'insuline pancréatique.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'adiponectine centrale.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La ghréline gastrique.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le tissu adipeux a une fonction endocrine majeure en sécrétant des adipokines. La leptine informe le cerveau (hypothalamus) de l'état des réserves énergétiques et induit la satiété[cite: 785]."
+        },
+        {
+            "q": "Comment l'adipocyte de la graisse brune (multiloculaire) produit-il de la chaleur (thermogenèse sans frisson) chez le nouveau-né ?",
+            "tags": [
+                "Adipocytes",
+                "Graisse brune"
+            ],
+            "options": [
+                {
+                    "text": "Par la protéine mitochondriale UCP1 (thermogénine) qui découple le gradient de protons de la synthèse d'ATP pour dissiper l'énergie en chaleur.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Par la contraction tétanique rythmique asynchrone des microfilaments d'actomyosine ancrés aux intégrines membranaires des adipocytes multiloculaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par la sécrétion paracrine pulsatile d'histamine et de sérotonine provoquant une hyperémie artériolaire réflexe cutanée permanente.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Par la libération massive d'acides gras libres qui stimulent directement les motoneurones alpha spinaux de la moelle thoraco-lombaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "La graisse brune, riche en mitochondries (d'où sa couleur et son éosinophilie), oxyde les acides gras mais court-circuite la production d'ATP grâce à la protéine UCP1 (thermogénine). L'énergie est alors dissipée sous forme de chaleur pour réchauffer le sang du nourrisson[cite: 786, 788]."
+        },
+        {
+            "q": "En microscopie électronique, comment reconnaît-on un macrophage activé ayant phagocyté des débris ?",
+            "tags": [
+                "Cellules immunitaires",
+                "Macrophage"
+            ],
+            "options": [
+                {
+                    "text": "Un noyau encoché/réniforme, de multiples pseudopodes membranaires et un cytoplasme riche en phagolysosomes à matériel hétérogène.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Un noyau rond parfaitement central à chromatine condensée en mottes hétérogènes denses, totalement dépourvu de tout prolongement cytoplasmique ou vésicule d'endocytose.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un cytoplasme bourré de volumineuses granulations basophiles métachromatiques qui masquent totalement la chromatine nucléaire.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une architecture cellulaire polarisée présentant une bordure en brosse apicale continue et un appareil de Golgi supranucléaire.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les macrophages dérivent des monocytes sanguins. Ce sont de grosses cellules phagocytaires très actives : leur membrane émet des pseudopodes pour capturer les débris/bactéries, qui sont ingérés et fusionnés avec les lysosomes primaires (denses) pour former des phagolysosomes digérant le matériel[cite: 791, 792, 796]."
+        },
+        {
+            "q": "En immunologie, que signifie l'« opsonisation » lors de la phagocytose par le macrophage ?",
+            "tags": [
+                "Immunité",
+                "Phagocytose"
+            ],
+            "options": [
+                {
+                    "text": "Le recouvrement de l'agent pathogène par des opsonines (IgG, C3b) facilitant son arrimage aux récepteurs membranaires macrophagiques.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "La dégranulation exocytaire extracellulaire massive de perforine et de granzyme provoquant la lyse osmotique immédiate de la cible sans ingestion préalable.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La sécrétion autocrine d'interféron gamma qui active la prolifération clonale des lymphocytes B naïfs folliculaires ganglionnaires.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "La transformation épithélioïde des histiocytes en cellules géantes multinucléées de Langhans sous l'influence de l'interleukine 12.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Les opsonines agissent comme des « poignées » : en se fixant d'un côté sur la bactérie et de l'autre sur les récepteurs Fc ou du complément du macrophage, elles rendent la phagocytose beaucoup plus rapide et efficace[cite: 797]."
+        },
+        {
+            "q": "Le mastocyte est la cellule clé des réactions allergiques immédiates. Que se passe-t-il lors du 2ème contact avec l'allergène ?",
+            "tags": [
+                "Cellules immunitaires",
+                "Mastocytes"
+            ],
+            "options": [
+                {
+                    "text": "L'allergène ponte les IgE fixées sur les récepteurs FcεRI mastocytaires, déclenchant une dégranulation immédiate d'histamine et d'héparine.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le mastocyte phagocyte le complexe antigène-anticorps et l'apprête sur ses molécules du CMH de classe I à destination des CD8+ cytotoxiques.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le mastocyte entame une fibrose cicatrisante en déposant d'épaisses bandes de collagène III pour encapsuler définitivement le corps étranger.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "L'allergène provoque une apoptose massive immédiate par activation de la caspase 3 sans libération de médiateurs préformés cytotoxiques.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Lors d'une sensibilisation préalable, des IgE spécifiques de l'allergène se sont fixées sur les récepteurs membranaires du mastocyte. Lors du 2ème contact, la liaison allergène/IgE déclenche instantanément la vidange des grosses granulations métachromatiques riches en médiateurs pro-inflammatoires (vasoactifs)[cite: 801, 803]."
+        },
+        {
+            "q": "Quelles sont les caractéristiques morphologiques du tissu conjonctif lâche aréolaire, le tissu de soutien le plus répandu de l'organisme ?",
+            "tags": [
+                "Classification",
+                "TC Lâche"
+            ],
+            "options": [
+                {
+                    "text": "Une MEC équilibrée contenant les 3 types de fibres sans prédominance, une substance fondamentale abondante et des cellules variées.",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Une prédominance exclusive d'épais faisceaux ondulés de collagène I orientés parallèlement ne laissant aucun espace intercellulaire libre.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Une trame entièrement constituée de lames élastiques fenêtrées concentriques dépourvue de vascularisation capillaire propre.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Un stroma compact formé d'adipocytes uniloculaires contigus comprimant la substance fondamentale en minces cloisons fibreuses.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le TC lâche est un tissu « d'emballage » universel. Sa trame lâche et sa grande quantité d'eau (SF) n'offrent pas une grande résistance mécanique, mais laissent parfaitement circuler les vaisseaux, l'influx nerveux, et diffusent les défenses immunitaires et les nutriments[cite: 806, 807]."
+        },
+        {
+            "q": "Quel type de tissu conjonctif compose le tendon, assurant une résistance maximale aux forces de traction unidirectionnelles ?",
+            "tags": [
+                "Classification",
+                "TC Dense"
+            ],
+            "options": [
+                {
+                    "text": "Le tissu conjonctif dense orienté unitendu (faisceaux de collagène I parallèles serrés le long desquels s'alignent les ténocytes).",
+                    "isCorrect": true
+                },
+                {
+                    "text": "Le tissu conjonctif dense non orienté plexiforme (fibres entrecroisées tridimensionnelles comme dans le derme réticulaire moyen).",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le tissu conjonctif réticulé lymphoïde formant le stroma des ganglions lymphatiques et des cordons spléniques de Billroth.",
+                    "isCorrect": false
+                },
+                {
+                    "text": "Le tissu conjonctif muqueux embryonnaire riche en gelée de Wharton assurant la turgescence hydrique du cordon ombilical fœtal.",
+                    "isCorrect": false
+                }
+            ],
+            "explanation": "Le tendon nécessite une énorme solidité mécanique selon un seul axe. Il est donc constitué d'un TC dense, où la MEC est bourrée de fibres de collagène épaisses, toutes alignées dans le même sens (orienté unitendu), avec très peu de SF et quelques fibrocytes coincés entre les fibres[cite: 808, 809, 811]."
+        }
+    ]
+}

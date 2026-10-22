@@ -1,0 +1,510 @@
+﻿{
+    "name":  "CM 6 - Facteurs de risque liés aux produits et actes de santé (Iatrogénie)",
+    "folder":  "PASS - Santé Publique",
+    "description":  "Comprendre les risques iatrogènes, les événements indésirables associés aux soins (EIAS) et les déterminants systémiques des erreurs médicales.",
+    "prerequisites":  [
+
+                      ],
+    "questions":  [
+                      {
+                          "q":  "Comment définit-on globalement une « affection iatrogène » en santé publique ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Une maladie, un événement ou un effet secondaire occasionnés par le traitement médical, qu\u0027il y ait eu ou non une erreur médicale.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un effet indésirable résultant obligatoirement d\u0027une faute lourde délibérée ou d\u0027une incompétence professionnelle pénalement condamnable du praticien.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Toute infection transmise par l\u0027environnement naturel sans intervention soignante.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027aggravation spontanée d\u0027une pathologie due à l\u0027âge du patient, malgré un traitement conforme.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027iatrogénie recouvre toutes les conséquences néfastes provoquées par l\u0027acte ou le produit de soin. La notion d\u0027erreur ou de faute n\u0027est pas requise pour qualifier un événement de iatrogène[cite: 374]."
+                      },
+                      {
+                          "q":  "Quelle a été la révélation choc du rapport de l\u0027IOM « To Err is Human » publié aux États-Unis en 1999 ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Entre 44 000 et 98 000 personnes décèdent chaque année à l\u0027hôpital des suites d\u0027erreurs médicales, un chiffre supérieur aux décès par accidents de la route.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le système hospitalier est intrinsèquement infaillible, mais une infime minorité de praticiens malveillants concentre la quasi-totalité des décès évitables.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La sécurité des patients est menacée uniquement par les effets indésirables inévitables de la chimiothérapie.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027informatisation des hôpitaux américains a multiplié par dix les erreurs d\u0027administration médicamenteuse.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le rapport de 1999 a médiatisé le fait que les erreurs (en grande partie évitables) constituaient un problème majeur de santé publique, causant près de 100 000 décès/an, soit plus que le SIDA ou les accidents de la route à l\u0027époque[cite: 379, 381]."
+                      },
+                      {
+                          "q":  "Selon les théoriciens de la sécurité des soins (comme J. Reason avec le « Cheese model »), quelle est la cause fondamentale de la majorité des événements indésirables ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La mauvaise qualité de l\u0027organisation et du système médical (causes latentes ou systémiques), plutôt que l\u0027incompétence individuelle.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La négligence volontaire et l\u0027incompétence technique isolée du soignant de première ligne situé en bout de chaîne d\u0027administration.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Exclusivement l\u0027imprévisibilité génétique de la réaction du patient (aléa thérapeutique pur).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le manque d\u0027implication des patients dans leur propre processus de guérison.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027approche systémique démontre que 80% des défaillances proviennent de failles dans le système (organisation du travail, manque de protocole, fatigue, etc.) qui s\u0027alignent pour laisser passer l\u0027erreur individuelle (20%)[cite: 381, 419, 420]."
+                      },
+                      {
+                          "q":  "Comment nomme-t-on le risque lié à une utilisation d\u0027un produit de santé hors de ses indications officielles (hors AMM) ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Le « Misuse » (ou prescription inappropriée).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "L\u0027« Overuse » (ou excès de traitement).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027« Underuse » (ou insuffisance de traitement).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027« Aléa thérapeutique absolu ».",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027utilisation de médicaments prescrits hors indication validée (AMM) relève du « Misuse » (mauvaise utilisation). L\u0027« Overuse » correspondrait à un traitement sans indication/efficacité démontrée, et l\u0027« Underuse » à l\u0027absence de prescription malgré une pathologie nécessitant traitement[cite: 388]."
+                      },
+                      {
+                          "q":  "Quelle est la différence entre un Événement Indésirable (EI) par « commission » et un EI par « omission » au cours des soins ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un EI par commission est l\u0027administration d\u0027un soin non optimal (ex: dose inadaptée), tandis qu\u0027un EI par omission est un défaut de soins (ex: oubli de soins de prévention des escarres).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un événement indésirable par commission concerne obligatoirement un acte chirurgical invasif non maîtrisé, tandis que l\u0027omission relève toujours d\u0027une erreur d\u0027inattention ou de prescription médicamenteuse.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un EI par commission résulte d\u0027un problème technique de la machine, alors que l\u0027omission est une erreur psychologique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Il n\u0027y a pas de différence, les deux termes décrivent la négligence grave intentionnelle du médecin.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La commission désigne une action fautive ou délétère (faire une erreur), tandis que l\u0027omission est le fait de ne pas prodiguer un soin nécessaire, menant à une complication (ex: escarre par manque de personnel pour la mobilisation)[cite: 393]."
+                      },
+                      {
+                          "q":  "Quel rôle est spécifiquement assigné à l\u0027Agence Nationale de Sécurité Sanitaire (ANSES) concernant les produits ingérés ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La Nutrivigilance (effets des compléments alimentaires), la Toxicovigilance et la vigilance vétérinaire.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La Pharmacovigilance des médicaments à usage humain.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027Hémovigilance pour les produits sanguins labiles.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "La Matériovigilance hospitalière pour les implants chirurgicaux actifs, stents et dispositifs médicaux implantables.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les vigilances sanitaires sont divisées : l\u0027ANSM gère les médicaments (pharmacovigilance), les dispositifs médicaux ou le sang. L\u0027ANSES, quant à elle, s\u0027occupe de la nutrivigilance, toxicovigilance et vigilance vétérinaire[cite: 387, 396]."
+                      },
+                      {
+                          "q":  "Pour qu\u0027une infection soit qualifiée de « nosocomiale », quel est le délai minimal classique d\u0027apparition après l\u0027admission en établissement de santé ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Au moins 48 heures d\u0027hospitalisation (sans que l\u0027infection n\u0027ait été en incubation à l\u0027admission).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Immédiatement dès la première minute d\u0027admission dans l\u0027enceinte de l\u0027établissement de santé, quelle que soit la pathologie d\u0027entrée.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Plus de 30 jours après la fin complète du séjour hospitalier.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Seulement si l\u0027infection est due à un staphylocoque doré résistant à la méticilline.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Une infection associée aux soins contractée à l\u0027hôpital est dite nosocomiale si elle apparaît après un délai de 48 heures d\u0027hospitalisation. (En cas de chirurgie, toute infection du site opératoire dans les 30 jours, ou 1 an si prothèse, est a priori nosocomiale)[cite: 404]."
+                      },
+                      {
+                          "q":  "Que définit la classification en « Événement porteur de risque » (ou presqu\u0027accident) en sécurité des soins ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un événement indésirable survenant lors de l\u0027action mais qui finit par se neutraliser spontanément ou par une action volontariste avant d\u0027avoir atteint et blessé le patient.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un aléa thérapeutique rare qui entraîne la mort du patient sans aucune erreur du praticien.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un événement grave imprévisible où le patient subit une prolongation obligatoire de plus de 30 jours consécutifs d\u0027hospitalisation intensive sans aucun recours thérapeutique ni amélioration possible.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Une erreur intentionnelle liée au sous-effectif de l\u0027établissement.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027événement porteur de risque (EPR) est une faille qui a été repérée in extremis ou dont les conséquences n\u0027ont finalement pas atteint le patient. C\u0027est l\u0027équivalent du « presqu\u0027accident »[cite: 405]."
+                      },
+                      {
+                          "q":  "Sur l\u0027échelle de gravité des événements sanitaires indésirables, à quoi correspond un événement de « Niveau 5 » ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Un événement catastrophique difficilement récupérable, aux conséquences importantes et irréversibles (ex: erreur de site chirurgical entraînant l\u0027ablation d\u0027un organe sain).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Un événement mineur causant une simple insatisfaction au patient, corrigé immédiatement.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un événement majeur mais totalement réversible par un simple traitement antibiotique.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Un incident critique à très haut risque qui prolonge l\u0027hospitalisation de plusieurs semaines et nécessite un séjour en réanimation mais ne modifie aucunement le pronostic vital ni fonctionnel.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le niveau 5 est le stade « catastrophique » : l\u0027événement occasionne des séquelles très lourdes, irréversibles ou le décès (erreur de côté opératoire, par exemple)[cite: 406]."
+                      },
+                      {
+                          "q":  "Qu\u0027est-ce qu\u0027un « aléa thérapeutique » dans le cadre juridique et sanitaire français ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "C\u0027est un événement indésirable qui survient en dépit de soins totalement conformes et d\u0027une prise en charge médicale satisfaisante.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "C\u0027est une erreur de diagnostic volontaire destinée à abréger le temps de consultation.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est la conséquence médico-légale directe d\u0027une faute caractérisée d\u0027hygiène hospitalière causée par l\u0027oubli répété du lavage des mains.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "C\u0027est une complication systématiquement fatale survenant lors des actes de médecine esthétique.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027aléa thérapeutique qualifie le risque accidentel inhérent à l\u0027acte médical lui-même, survenant même lorsque l\u0027état de l\u0027art et les règles de prudence ont été strictement respectés (il n\u0027y a donc pas de notion de faute)[cite: 407]."
+                      },
+                      {
+                          "q":  "En France (étude ENEIS 2009), quel secteur concentre le taux d\u0027incidence d\u0027Événements Indésirables Graves (EIG) évitables le plus élevé à l\u0027hôpital ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Les procédures et actes invasifs (1,7 pour 1000 jours d\u0027hospitalisation).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les produits de santé, médicaments et perfusions (1,5 pour 1000 journées d\u0027hospitalisation).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les infections associées aux soins (0,9 pour 1000).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les consultations psychiatriques.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027enquête ENEIS 2009 montre que parmi les EIG évitables (2,6 au total pour 1000 jours d\u0027hospit.), les procédures et actes invasifs (chirurgie, anesthésie, radiologie) représentent le taux le plus élevé avec 1,7[cite: 409]."
+                      },
+                      {
+                          "q":  "Selon l\u0027étude ENCC 2007, quel est l\u0027événement indésirable associé aux soins qui entraîne le surcoût financier moyen par patient le plus important ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La septicémie (environ 20 838 € de surcoût par patient avec une prolongation de séjour de près de 20 jours).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Les escarres (environ 5 600 €).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027oubli peropératoire d\u0027un corps étranger ou d\u0027une compresse textile (environ 21 500 € de frais de réintervention chirurgicale).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le traumatisme obstétrical (environ 529 €).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les infections sanguines sévères (septicémie) prolongent énormément la durée du séjour en soins lourds (19,7 jours) entraînant le coût supplémentaire le plus lourd (plus de 20 000€) parmi les catégories évaluées[cite: 411]."
+                      },
+                      {
+                          "q":  "En médecine ambulatoire (soins primaires), comment caractérise-t-on généralement les événements indésirables (EIAS) comparativement à l\u0027hôpital ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Ils sont très fréquents (environ 1 EIAS tous les 2 jours par médecin) mais ils sont très rarement graves.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Ils sont exceptionnellement rares mais s\u0027accompagnent d\u0027un taux de létalité immédiate supérieur à 50% dès leur survenue au cabinet.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Ils concernent quasi-exclusivement des erreurs de radiothérapie.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Ils ne surviennent que chez les jeunes patients sans comorbidité.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "En ville, le volume d\u0027actes fait que les événements indésirables sont fréquents au quotidien, mais leur nature fait qu\u0027ils n\u0027atteignent heureusement que très rarement les seuils de gravité nécessitant une hospitalisation vitale[cite: 412]."
+                      },
+                      {
+                          "q":  "Dans le modèle de causalité systémique (Swiss Cheese Model), à quoi correspond la barrière des « causes latentes » (ou systémiques) ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "À l\u0027ensemble des vulnérabilités créées par la gestion de l\u0027établissement, les procédures, l\u0027équipement, la formation et l\u0027encadrement, représentant 80% des causes profondes.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Exclusivement aux gestes techniques erronés, maladroits ou inappropriés accomplis en temps réel par le chirurgien lors de l\u0027acte opératoire en contact direct avec l\u0027anatomie du patient au bloc.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "À la prédisposition génétique d\u0027un patient à développer des complications post-opératoires imprévisibles.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Aux défaillances informatiques exclusives des appareils d\u0027IRM.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les plaques du fromage suisse représentent différentes barrières de sécurité. Les failles systémiques (« trous » liés à l\u0027organisation, au matériel, aux procédures défaillantes) constituent l\u0027immense majorité (80%) des conditions préexistantes qui rendent la faute immédiate possible[cite: 420, 421]."
+                      },
+                      {
+                          "q":  "Lors de l\u0027analyse des EIG évitables à l\u0027hôpital (enquête ENEIS 2009), quel facteur de risque a été identifié comme le plus prévalent ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "La défaillance humaine individuelle d\u0027un professionnel (27,6%), étroitement talonnée par la supervision insuffisante et la communication défaillante (facteurs systémiques).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Le défaut d\u0027infrastructures matérielles lourdes qui compte pour plus de 80% des failles.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Le défaut généralisé de culture sécurité, d\u0027encadrement pédagogique et de démarche qualité institutionnelle, responsable à lui seul de l\u0027intégralité des chocs anaphylactiques iatrogènes graves.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Les pénuries nationales d\u0027antibiotiques de dernière génération.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "La défaillance humaine du pro est souvent le déclencheur identifié (27,6%), mais les facteurs systémiques cumulés pèsent le plus lourd : la supervision insuffisante (26,4%), la communication défaillante (24,1%), la mauvaise composition d\u0027équipe, montrant que l\u0027organisation globale est en cause[cite: 422]."
+                      },
+                      {
+                          "q":  "Concernant la iatrogénie liée spécifiquement aux caractéristiques d\u0027un patient (facteurs de risque propres), quel élément n\u0027est PAS un facteur de risque direct ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "L\u0027appartenance à un milieu urbain extrêmement dense (densité de population).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "La polymorbidité et la fragilité liée au grand âge.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027automédication non encadrée et non déclarée au médecin (ex: prise d\u0027AINS).",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "L\u0027erreur d\u0027observance (sevrage inadapté ou surdosage par le patient).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Les facteurs de risque iatrogènes liés au patient tiennent à sa fragilité biologique (âge, enfant, grossesse, comorbidités) ou à son comportement face au traitement (observance, automédication). Le milieu urbain en tant que tel n\u0027est pas un facteur causal direct d\u0027iatrogénie dans ce cadre[cite: 403]."
+                      },
+                      {
+                          "q":  "En chirurgie, les événements indésirables sont fréquents. Selon les études récentes sur ce sujet, dans quels secteurs particuliers surviennent majoritairement ces EIAS liés à l\u0027acte opératoire ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Principalement dans les lits d\u0027hospitalisation de chirurgie classique, devant le bloc opératoire lui-même.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Presque exclusivement aux urgences avant même l\u0027admission du patient.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Essentiellement lors des consultations pré-anesthésiques d\u0027évaluation du risque réalisées plusieurs semaines avant l\u0027admission chirurgicale.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Majoritairement en salle de réveil post-interventionnelle (SSPI).",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027analyse des lieux de survenue des événements indésirables chez les patients opérés montre que le nombre le plus élevé de complications ou d\u0027EIAS se matérialise dans les lits d\u0027hospitalisation post-opératoires, devant le bloc opératoire (lieu de la faute ou de l\u0027aléa initial)[cite: 423]."
+                      },
+                      {
+                          "q":  "Le scandale des prothèses et du Mediator sont d\u0027importants marqueurs de santé publique. À quel type de risque précis ces affaires sont-elles rattachées ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Au risque lié aux produits de santé (médicaments ou dispositifs présentant une malfaçon, ou un profil bénéfice-risque altéré ou mal évalué).",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Au risque d\u0027infection nosocomiale en salle blanche.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Au risque chirurgical direct lié aux gestes techniques invasifs accomplis par omission ou méconnaissance anatomique des voies vasculaires au cours d\u0027une intervention programmée.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "À la biovigilance exclusive des produits sanguins labiles.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Le Mediator (médicament, utilisation coupe-faim/diabète) est un cas d\u0027école de iatrogénie médicamenteuse à vaste échelle, relevant d\u0027une faille dans l\u0027évaluation de la balance bénéfice-risque et du « misuse » par les prescripteurs. Ce sont des risques liés aux *produits* de santé[cite: 373, 388]."
+                      },
+                      {
+                          "q":  "Comment interpréter la notion « d\u0027évitabilité » d\u0027un Événement Indésirable Grave (EIG) en santé publique ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Elle dépend des connaissances scientifiques et des bonnes pratiques disponibles au moment des faits : un EI est évitable si l\u0027application des soins conformes à l\u0027état de l\u0027art aurait pu le prévenir.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Elle est universelle, statique et totalement immuable dans le temps : une complication nosocomiale jugée inévitable au milieu du XXe siècle demeurera toujours strictement inévitable aujourd\u0027hui.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle se juge exclusivement en cas de condamnation pénale du praticien par un tribunal.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Elle ne s\u0027applique qu\u0027aux actes prescrits par des internes en formation.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "L\u0027évitabilité est jugée à la lumière des connaissances et des recommandations du moment. L\u0027évolution des savoirs fait qu\u0027une infection autrefois considérée comme inévitable (aléa pur) peut devenir évitable aujourd\u0027hui grâce à de nouveaux protocoles[cite: 407]."
+                      },
+                      {
+                          "q":  "Selon les experts, quelle est la proportion approximative d\u0027Événements Indésirables Graves (EIG) survenus à l\u0027hôpital qui seraient potentiellement évitables ?",
+                          "tags":  [
+                                       "CM 6 - Iatrogénie"
+                                   ],
+                          "options":  [
+                                          {
+                                              "text":  "Environ 40 à 50 % des événements indésirables graves hospitaliers sont jugés évitables.",
+                                              "isCorrect":  true
+                                          },
+                                          {
+                                              "text":  "Moins de 5 % car l\u0027écrasante majorité relève d\u0027aléas biologiques inhérents au vivant.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Plus de 95 % car la médecine devrait être une science exacte et infaillible.",
+                                              "isCorrect":  false
+                                          },
+                                          {
+                                              "text":  "Zéro pour cent, car il n\u0027existe plus aucune faille dans les systèmes accrédités modernes.",
+                                              "isCorrect":  false
+                                          }
+                                      ],
+                          "explanation":  "Plusieurs données internationales (dont les rapports BMJ ou les études ENEIS françaises) s\u0027accordent sur le fait que la moitié (ou environ 40%) des EIAS sévères (les EIG) pourraient être évités par l\u0027amélioration des organisations ou le strict respect des protocoles[cite: 395, 413, 414]."
+                      }
+                  ]
+}
