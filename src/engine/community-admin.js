@@ -94,6 +94,8 @@
     function restoreIsolatedCustomSubjects(targetAppData) {
         if (!targetAppData || typeof targetAppData !== 'object') return;
         const registry = getCustomSubjectsRegistry();
+        const defaults = window.defaultData || {};
+        let regModified = false;
         let deletedFolders = [];
         try {
             deletedFolders = JSON.parse(localStorage.getItem('myQuizDeletedFolders') || '[]');
@@ -102,6 +104,20 @@
         const deletedSet = new Set(deletedFolders);
 
         Object.keys(registry).forEach(name => {
+            // Si le cours est un cours officiel ou son alias, nettoyer le snapshot périmé du registre custom
+            const cleanName = name.replace(/^CM\s*\d+\s*[-:]\s*/i, '').replace(/^UE\d+\s*[-:]\s*/i, '').trim().toLowerCase();
+            const officialKey = Object.keys(defaults).find(dKey => {
+                if (dKey === name) return true;
+                const cleanD = dKey.replace(/^CM\s*\d+\s*[-:]\s*/i, '').replace(/^UE\d+\s*[-:]\s*/i, '').trim().toLowerCase();
+                return cleanD === cleanName;
+            });
+
+            if (officialKey) {
+                delete registry[name];
+                regModified = true;
+                return;
+            }
+
             if (!targetAppData[name] || !Array.isArray(targetAppData[name].questions) || targetAppData[name].questions.length < (registry[name].questions?.length || 0)) {
                 targetAppData[name] = JSON.parse(JSON.stringify(registry[name]));
                 targetAppData[name].isCustom = true;
@@ -120,6 +136,10 @@
                 targetAppData._folders.push(targetAppData[name].folder);
             }
         });
+
+        if (regModified) {
+            safeSetItem(CUSTOM_SUBJECTS_STORAGE_KEY, JSON.stringify(registry));
+        }
     }
 
     // ------------------------------------------------------------------------
@@ -177,15 +197,63 @@
     }
 
     // ------------------------------------------------------------------------
+    // HELPER : CORRESPONDANCE D'ALIAS (ex: "CM 10 - Neurohistologie (Partie 1)" <-> "Neurohistologie (Partie 1)")
+    // ------------------------------------------------------------------------
+    function cleanSubjectKey(name) {
+        if (!name || typeof name !== 'string') return '';
+        return name
+            .replace(/^CM\s*\d+\s*[-:]\s*/i, '')
+            .replace(/^UE\d+\s*[-:]\s*/i, '')
+            .trim()
+            .toLowerCase();
+    }
+
+    function findExistingSubjectByAlias(canonicalName, targetData) {
+        if (!targetData || typeof targetData !== 'object' || !canonicalName) return null;
+        if (targetData[canonicalName]) return { ...targetData[canonicalName], _keyName: canonicalName };
+
+        const cleanCanonical = cleanSubjectKey(canonicalName);
+        for (const key of Object.keys(targetData)) {
+            if (key.startsWith('_')) continue;
+            if (cleanSubjectKey(key) === cleanCanonical) {
+                return { ...targetData[key], _keyName: key };
+            }
+        }
+        return null;
+    }
+
+    function findCanonicalCommunitySubject(name) {
+        const catalog = getCommunityCatalog();
+        if (catalog[name]) return { canonicalName: name, course: catalog[name] };
+
+        const cleanName = cleanSubjectKey(name);
+        for (const key of Object.keys(catalog)) {
+            if (cleanSubjectKey(key) === cleanName) {
+                return { canonicalName: key, course: catalog[key] };
+            }
+        }
+        return null;
+    }
+
+    // ------------------------------------------------------------------------
     // 3. APPARTENANCE À "MES MATIÈRES"
     // ------------------------------------------------------------------------
     function isUserSubject(subjectName, targetData = null) {
         if (!subjectName || subjectName.startsWith('_')) return false;
         const data = targetData || getAppData();
-        if (!data || !data[subjectName]) return false;
-        if (data[subjectName].deleted) return false;
+        if (!data) return false;
 
-        const s = data[subjectName];
+        let s = data[subjectName];
+        let actualName = subjectName;
+        if (!s) {
+            const alias = findExistingSubjectByAlias(subjectName, data);
+            if (alias) {
+                s = data[alias._keyName];
+                actualName = alias._keyName;
+            }
+        }
+
+        if (!s || s.deleted) return false;
 
         // 1. Si la matière a été explicitement retirée : JAMAIS AFFICHÉE
         if (s.isSelected === false) return false;
@@ -193,12 +261,12 @@
         // 2. Matière personnalisée créée ou uploadée par l'utilisateur : TOUJOURS AFFICHÉE
         if (s.isCustom || s.uploadedByMe) return true;
         const registry = getCustomSubjectsRegistry();
-        if (registry[subjectName]) return true;
+        if (registry[subjectName] || registry[actualName]) return true;
 
         // 3. Matière explicitement ajoutée depuis "Matières de la communauté"
         if (s.isSelected === true) return true;
         const selectedList = getSelectedSubjectsList();
-        if (selectedList.includes(subjectName)) return true;
+        if (selectedList.includes(subjectName) || selectedList.includes(actualName)) return true;
 
         return false;
     }
@@ -213,15 +281,23 @@
 
         if (inMySubjects) {
             // Retirer de mes matières
+            const alias = findExistingSubjectByAlias(subjectName, data);
+            const actualName = alias ? alias._keyName : subjectName;
+
+            if (data[actualName]) {
+                data[actualName].isSelected = false;
+                delete data[actualName].restored;
+            }
             if (data[subjectName]) {
                 data[subjectName].isSelected = false;
                 delete data[subjectName].restored;
             }
-            const selectedList = getSelectedSubjectsList().filter(name => name !== subjectName);
+
+            const selectedList = getSelectedSubjectsList().filter(name => name !== subjectName && name !== actualName);
             saveSelectedSubjectsList(selectedList);
 
             // Si le dossier n'a plus de matière active, le fermer
-            const folder = data[subjectName]?.folder || 'Général';
+            const folder = (data[actualName] || data[subjectName])?.folder || 'Général';
             const remaining = Object.keys(data).filter(sub => !sub.startsWith('_') && data[sub]?.folder === folder && isUserSubject(sub, data));
             if (remaining.length === 0 && window.openFolders) {
                 window.openFolders.delete(folder);
@@ -230,49 +306,136 @@
             if (window.saveData) await window.saveData();
             showCustomToast('Matière retirée', `"${subjectName}" a été retirée de tes matières.`);
         } else {
-            // Ajouter à mes matières
-            const catalog = getCommunityCatalog();
-            const source = catalog[subjectName];
-            if (!source) {
-                if (window.customAlert) window.customAlert('Erreur', 'Matière introuvable dans le catalogue communautaire.');
-                return;
-            }
-
-            if (!data[subjectName]) {
-                data[subjectName] = JSON.parse(JSON.stringify(source));
-                data[subjectName].stats = { attempts: 0, correct: 0, partial: 0 };
-                data[subjectName].dailyValidations = {};
-            }
-
-            data[subjectName].isSelected = true;
-            data[subjectName].deleted = false;
-            data[subjectName].archived = false;
-
-            // CRÉATION AUTOMATIQUE DU DOSSIER DANS appData._folders ET OUVERTURE DU DOSSIER
-            const folder = data[subjectName].folder || 'Général';
-            if (!Array.isArray(data._folders)) {
-                data._folders = ['Général'];
-            }
-            if (!data._folders.includes(folder)) {
-                data._folders.push(folder);
-            }
-
-            // Ouvrir automatiquement le dossier pour qu'il soit immédiatement visible !
-            if (window.openFolders && typeof window.openFolders.add === 'function') {
-                window.openFolders.add(folder);
-            }
-
-            const selectedList = getSelectedSubjectsList();
-            if (!selectedList.includes(subjectName)) {
-                selectedList.push(subjectName);
-                saveSelectedSubjectsList(selectedList);
-            }
-
-            if (window.saveData) await window.saveData();
-            showCustomToast('Matière ajoutée !', `Dossier "${folder}" et matière "${subjectName}" créés dans "Mes Matières".`);
+            // Ajouter à mes matières avec synchronisation automatique des dernières questions
+            await syncCommunitySubject(subjectName, true);
         }
 
         renderCommunity();
+        if (window.renderHome) window.renderHome();
+    }
+
+    // ------------------------------------------------------------------------
+    // SYNCHRONISATION INDIVIDUELLE AVEC LA COMMUNAUTÉ
+    // ------------------------------------------------------------------------
+    async function syncCommunitySubject(subjectName, isInitialAdd = false) {
+        const data = getAppData();
+        if (!data) return;
+
+        const catalog = getCommunityCatalog();
+        let source = catalog[subjectName];
+        let canonicalName = subjectName;
+
+        if (!source) {
+            const match = findCanonicalCommunitySubject(subjectName);
+            if (match) {
+                source = match.course;
+                canonicalName = match.canonicalName;
+            }
+        }
+
+        if (!source) {
+            if (window.customAlert) window.customAlert('Erreur', 'Matière introuvable dans le catalogue communautaire.');
+            return;
+        }
+
+        // Récupérer les stats existantes de l'utilisateur (conservées par ID ou intitulé de question)
+        const alias = findExistingSubjectByAlias(canonicalName, data);
+        const actualName = alias ? alias._keyName : canonicalName;
+
+        const existingStatsMap = new Map();
+        if (data[actualName] && Array.isArray(data[actualName].questions)) {
+            data[actualName].questions.forEach(q => {
+                const stats = q.stats ? { ...q.stats } : null;
+                const sm2 = q.sm2 ? { ...q.sm2 } : null;
+                if (stats || sm2) {
+                    if (q.id) existingStatsMap.set(q.id, { stats, sm2 });
+                    if (q.q) existingStatsMap.set(q.q, { stats, sm2 });
+                }
+            });
+        }
+
+        const oldStats = data[actualName]?.stats || { attempts: 0, correct: 0, partial: 0 };
+        const oldDaily = data[actualName]?.dailyValidations || {};
+
+        // Cloner la matière communautaire à jour (avec les nouvelles questions / options corrigées)
+        const freshSubject = JSON.parse(JSON.stringify(source));
+        if (existingStatsMap.size > 0 && Array.isArray(freshSubject.questions)) {
+            freshSubject.questions.forEach(q => {
+                const saved = existingStatsMap.get(q.id) || existingStatsMap.get(q.q);
+                if (saved) {
+                    if (saved.stats) q.stats = saved.stats;
+                    if (saved.sm2) q.sm2 = saved.sm2;
+                }
+            });
+        }
+
+        data[canonicalName] = freshSubject;
+        data[canonicalName].stats = oldStats;
+        data[canonicalName].dailyValidations = oldDaily;
+        data[canonicalName].isSelected = true;
+        data[canonicalName].deleted = false;
+        data[canonicalName].archived = false;
+
+        // Si la matière existait sous un ancien alias différent (ex: sans préfixe CM), supprimer l'ancien doublon
+        if (actualName !== canonicalName && data[actualName]) {
+            delete data[actualName];
+        }
+
+        // Nettoyer du registre isolé custom pour éviter toute réécriture obsolète au refresh
+        const customReg = getCustomSubjectsRegistry();
+        let regChanged = false;
+        if (customReg[actualName]) { delete customReg[actualName]; regChanged = true; }
+        if (customReg[canonicalName]) { delete customReg[canonicalName]; regChanged = true; }
+        if (regChanged) safeSetItem(CUSTOM_SUBJECTS_STORAGE_KEY, JSON.stringify(customReg));
+
+        // Création / maintien automatique du dossier dans appData._folders
+        const folder = data[canonicalName].folder || 'Général';
+        if (!Array.isArray(data._folders)) data._folders = ['Général'];
+        if (!data._folders.includes(folder)) data._folders.push(folder);
+
+        if (window.openFolders && typeof window.openFolders.add === 'function') {
+            window.openFolders.add(folder);
+        }
+
+        const selectedList = getSelectedSubjectsList();
+        if (!selectedList.includes(canonicalName)) {
+            selectedList.push(canonicalName);
+        }
+        const cleanedSelected = selectedList.filter(name => name !== actualName || actualName === canonicalName);
+        saveSelectedSubjectsList(cleanedSelected);
+
+        if (window.saveData) await window.saveData();
+
+        if (isInitialAdd) {
+            showCustomToast('Matière ajoutée !', `"${canonicalName}" a été ajoutée et synchronisée dans "Mes Matières".`);
+        } else {
+            showCustomToast('Synchronisation réussie !', `"${canonicalName}" est à jour avec les dernières questions.`);
+            renderCommunity();
+            if (window.renderHome) window.renderHome();
+        }
+    }
+
+    // ------------------------------------------------------------------------
+    // SYNCHRONISATION GLOBALE DE TOUTES LES MATIÈRES AJOUTÉES
+    // ------------------------------------------------------------------------
+    async function syncAllCommunitySubjects() {
+        const data = getAppData();
+        if (!data) return;
+
+        const catalog = getCommunityCatalog();
+        let syncedCount = 0;
+
+        for (const subName of Object.keys(catalog)) {
+            if (isUserSubject(subName, data)) {
+                await syncCommunitySubject(subName, false);
+                syncedCount++;
+            }
+        }
+
+        showCustomToast('Synchronisation globale terminée !', `${syncedCount} matière(s) communautaire(s) synchronisée(s) avec succès.`);
+        renderCommunity();
+        if (window.renderHome) window.renderHome();
+    }
         if (window.renderHome) window.renderHome();
     }
 
@@ -399,6 +562,9 @@
                             👁️ Questions
                         </button>
                         ${isAdded ? `
+                            <button class="btn-sync-subject" onclick="window.communityAdmin.syncCommunitySubject('${escapeJsString(sub)}')" title="Mettre à jour avec les dernières questions">
+                                🔄 Sync
+                            </button>
                             <button class="btn-remove-subject" onclick="window.communityAdmin.toggleCommunitySubject('${escapeJsString(sub)}')">
                                 ➖ Retirer
                             </button>
@@ -1022,6 +1188,10 @@
         getCommunityCatalog,
         isUserSubject,
         toggleCommunitySubject,
+        syncCommunitySubject,
+        syncAllCommunitySubjects,
+        findExistingSubjectByAlias,
+        findCanonicalCommunitySubject,
         renderCommunity,
         filterCommunityCourses,
         openCoursePreviewModal,
@@ -1047,4 +1217,6 @@
     window.renderCommunity = renderCommunity;
     window.filterCommunityCourses = filterCommunityCourses;
     window.closeCoursePreviewModal = closeCoursePreviewModal;
+    window.syncAllCommunitySubjects = syncAllCommunitySubjects;
+    window.syncCommunitySubject = syncCommunitySubject;
 })();

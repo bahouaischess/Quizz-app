@@ -465,6 +465,7 @@ function mergeDataWithDefaults(incomingData, currentBase = null) {
     // 2. Préserver d'abord TOUS les cours personnalisés présents dans currentBase (mémoire locale)
     if (currentBase && typeof currentBase === 'object') {
         Object.keys(currentBase).forEach(sub => {
+            if (baseCatalogue && baseCatalogue[sub]) return;
             if (!sub.startsWith('_') && (!merged[sub] || currentBase[sub]?.isCustom) && currentBase[sub]?.questions) {
                 merged[sub] = JSON.parse(JSON.stringify(currentBase[sub]));
             }
@@ -475,7 +476,8 @@ function mergeDataWithDefaults(incomingData, currentBase = null) {
     if (window.communityAdmin && typeof window.communityAdmin.getCustomSubjectsRegistry === 'function') {
         const customReg = window.communityAdmin.getCustomSubjectsRegistry();
         Object.keys(customReg).forEach(sub => {
-            if (!merged[sub] || merged[sub]?.isCustom || (merged[sub]?.questions?.length || 0) <= (customReg[sub]?.questions?.length || 0)) {
+            if (baseCatalogue && baseCatalogue[sub]) return;
+            if (!merged[sub] || merged[sub]?.isCustom) {
                 merged[sub] = JSON.parse(JSON.stringify(customReg[sub]));
             }
         });
@@ -589,21 +591,46 @@ function mergeDataWithDefaults(incomingData, currentBase = null) {
 
     for (let subject in normalizedIn) {
         if (subject.startsWith('_')) continue;
-        if (merged[subject]) {
-            merged[subject].folder = normalizedIn[subject].folder || merged[subject].folder || DEFAULT_FOLDER;
-            merged[subject].course = normalizedIn[subject].course || merged[subject].course || '';
-            merged[subject].description = normalizedIn[subject].description || merged[subject].description || '';
-            merged[subject].prerequisites = normalizedIn[subject].prerequisites || merged[subject].prerequisites || [];
 
-            merged[subject].stats = {
-                attempts: Math.max(Number(merged[subject].stats?.attempts) || 0, Number(normalizedIn[subject].stats?.attempts) || 0),
-                correct: Math.max(Number(merged[subject].stats?.correct) || 0, Number(normalizedIn[subject].stats?.correct) || 0),
-                partial: Math.max(Number(merged[subject].stats?.partial) || 0, Number(normalizedIn[subject].stats?.partial) || 0)
+        // Détection d'alias pour mapper les anciens noms sans préfixe vers le cours officiel
+        let targetSubject = subject;
+        if (!merged[targetSubject] && baseCatalogue) {
+            const cleanSub = subject.replace(/^CM\s*\d+\s*[-:]\s*/i, '').replace(/^UE\d+\s*[-:]\s*/i, '').trim().toLowerCase();
+            for (const bKey of Object.keys(baseCatalogue)) {
+                if (bKey.startsWith('_')) continue;
+                const cleanB = bKey.replace(/^CM\s*\d+\s*[-:]\s*/i, '').replace(/^UE\d+\s*[-:]\s*/i, '').trim().toLowerCase();
+                if (cleanB === cleanSub) {
+                    targetSubject = bKey;
+                    break;
+                }
+            }
+        }
+
+        if (merged[targetSubject]) {
+            merged[targetSubject].folder = normalizedIn[subject].folder || merged[targetSubject].folder || DEFAULT_FOLDER;
+            merged[targetSubject].course = normalizedIn[subject].course || merged[targetSubject].course || '';
+            merged[targetSubject].description = normalizedIn[subject].description || merged[targetSubject].description || '';
+            merged[targetSubject].prerequisites = normalizedIn[subject].prerequisites || merged[targetSubject].prerequisites || [];
+
+            if (typeof normalizedIn[subject].isSelected === 'boolean') {
+                merged[targetSubject].isSelected = normalizedIn[subject].isSelected;
+            }
+            if (typeof normalizedIn[subject].deleted === 'boolean') {
+                merged[targetSubject].deleted = normalizedIn[subject].deleted;
+            }
+            if (typeof normalizedIn[subject].archived === 'boolean') {
+                merged[targetSubject].archived = normalizedIn[subject].archived;
+            }
+
+            merged[targetSubject].stats = {
+                attempts: Math.max(Number(merged[targetSubject].stats?.attempts) || 0, Number(normalizedIn[subject].stats?.attempts) || 0),
+                correct: Math.max(Number(merged[targetSubject].stats?.correct) || 0, Number(normalizedIn[subject].stats?.correct) || 0),
+                partial: Math.max(Number(merged[targetSubject].stats?.partial) || 0, Number(normalizedIn[subject].stats?.partial) || 0)
             };
-            merged[subject].dailyValidations = Object.assign({}, merged[subject].dailyValidations || {}, normalizedIn[subject].dailyValidations || {});
+            merged[targetSubject].dailyValidations = Object.assign({}, merged[targetSubject].dailyValidations || {}, normalizedIn[subject].dailyValidations || {});
 
-            merged[subject].questions.forEach((q, idx) => {
-                const hashId = getQuestionId(subject, q, idx);
+            merged[targetSubject].questions.forEach((q, idx) => {
+                const hashId = getQuestionId(targetSubject, q, idx);
                 const cloudQ = normalizedIn[subject].questions.find(cq => cq.id === q.id || cq.id === hashId || cq.q === q.q);
                 if (cloudQ) {
                     if (cloudQ.stats) {
@@ -617,10 +644,18 @@ function mergeDataWithDefaults(incomingData, currentBase = null) {
                 }
             });
 
-            normalizedIn[subject].questions.forEach(cq => {
-                const exists = merged[subject].questions.some(q => q.id === cq.id || q.q === cq.q);
-                if (!exists) merged[subject].questions.push(cq);
-            });
+            // Ne réinjecter de nouvelles questions que si la matière n'est PAS une matière officielle
+            if (!baseCatalogue || !baseCatalogue[targetSubject]) {
+                normalizedIn[subject].questions.forEach(cq => {
+                    const exists = merged[targetSubject].questions.some(q => q.id === cq.id || q.q === cq.q);
+                    if (!exists) merged[targetSubject].questions.push(cq);
+                });
+            }
+
+            // Si c'était un ancien alias sous un autre nom (ex: sans préfixe CM), supprimer l'ancien doublon orphelin
+            if (targetSubject !== subject && merged[subject]) {
+                delete merged[subject];
+            }
         } else {
             // Matière personnalisée créée/uploadée : préservée intégralement !
             merged[subject] = normalizedIn[subject];

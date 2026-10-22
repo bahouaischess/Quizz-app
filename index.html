@@ -343,6 +343,9 @@
                         <option value="ADDED">✓ Dans mes matières</option>
                         <option value="NOT_ADDED">➕ Pas encore ajoutés</option>
                     </select>
+                    <button class="secondary" type="button" style="margin: 0; padding: 10px 14px; font-size: 0.88em; display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;" onclick="window.communityAdmin && window.communityAdmin.syncAllCommunitySubjects && window.communityAdmin.syncAllCommunitySubjects()" title="Met à jour toutes les matières ajoutées avec les dernières questions officielles">
+                        🔄 Tout synchroniser
+                    </button>
                 </div>
 
                 <div id="community-list" class="dashboard-grid">
