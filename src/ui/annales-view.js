@@ -20,6 +20,7 @@ window.AnnalesApp = (function () {
         globalTimer: null,
         totalElapsedSeconds: 0,
         flaggedQuestions: new Set(),
+        paletteCollapsed: false,
         lastSummary: null,
         resultFilter: 'all'  // 'all' | 'errors' | 'overtime'
     };
@@ -483,11 +484,16 @@ window.AnnalesApp = (function () {
             <div id="exam-overtime-alert" class="overtime-banner hidden"></div>
 
             <div class="exam-body-layout">
-                <!-- PALETTE DE NAVIGATION RAPIDE (DRAWER / SIDEBAR) -->
-                <div class="exam-palette-panel">
-                    <div class="palette-header">
+                <!-- PALETTE DE NAVIGATION RAPIDE (RÉTRACTABLE) -->
+                <div id="exam-palette-panel" class="exam-palette-panel ${state.paletteCollapsed ? 'collapsed' : ''}">
+                    <div class="palette-toggle-bar">
+                        <button id="palette-toggle-btn" class="palette-toggle-btn" type="button" onclick="AnnalesApp.togglePalette()" title="${state.paletteCollapsed ? 'Afficher la liste des questions' : 'Masquer la liste des questions'}">
+                            ${state.paletteCollapsed ? '▶ Questions' : '◀ Masquer'}
+                        </button>
+                    </div>
+                    <div class="palette-header-content">
                         <h4>Questions (${totalQ})</h4>
-                        <span class="palette-prog">${Object.values(state.userAnswers).filter(a => a && a.length > 0).length}/${totalQ} répondues</span>
+                        <span class="palette-prog">${Object.values(state.userAnswers).filter(a => a && a.length > 0).length}/${totalQ}</span>
                     </div>
                     <div class="palette-grid">
                         ${annale.questions.map((questionItem, idx) => {
@@ -518,7 +524,7 @@ window.AnnalesApp = (function () {
                     ${(q.context || q.Context) ? `
                         <div class="exercise-context-box">
                             <div class="ctx-header">📄 Énoncé / Données de l'exercice :</div>
-                            <div class="ctx-body">${escapeHtml(q.context || q.Context).replace(/\n/g, '<br>')}</div>
+                            <div class="ctx-body">${renderFormattedContent(q.context || q.Context)}</div>
                         </div>
                     ` : ''}
 
@@ -536,7 +542,7 @@ window.AnnalesApp = (function () {
 
                     <!-- ÉNONCÉ DE LA QUESTION -->
                     <div class="question-stem-text">
-                        ${escapeHtml(q.question || q.Question || '')}
+                        ${renderFormattedContent(q.question || q.Question || '')}
                     </div>
 
                     <!-- OPTIONS A, B, C, D, E OU SHS -->
@@ -575,6 +581,7 @@ window.AnnalesApp = (function () {
         `;
 
         updateQuestionTimerDisplay();
+        setTimeout(triggerMathTypeset, 25);
     }
 
     function renderQuestionInputArea(q, qNum, currentAnswers) {
@@ -619,7 +626,7 @@ window.AnnalesApp = (function () {
                             <div class="checkbox-indicator ${isChecked ? 'checked' : ''}">
                                 <span class="opt-letter">${letter}</span>
                             </div>
-                            <div class="option-text">${escapeHtml(opt.text)}</div>
+                            <div class="option-text">${renderFormattedContent(opt.text)}</div>
                         </div>
                     `;
                 }).join('')}
@@ -855,6 +862,8 @@ window.AnnalesApp = (function () {
                 ${filteredQuestions.map((qr, idx) => renderQuestionCorrectionCard(qr, idx)).join('')}
             </div>
         `;
+
+        setTimeout(triggerMathTypeset, 50);
     }
 
     function renderQuestionCorrectionCard(qr, idx) {
@@ -881,7 +890,7 @@ window.AnnalesApp = (function () {
                 ${qr.context ? `
                     <div class="exercise-context-box readonly">
                         <div class="ctx-header">📄 Rappel de l'énoncé commun :</div>
-                        <div class="ctx-body">${escapeHtml(qr.context).replace(/\n/g, '<br>')}</div>
+                        <div class="ctx-body">${renderFormattedContent(qr.context)}</div>
                     </div>
                 ` : ''}
 
@@ -896,7 +905,7 @@ window.AnnalesApp = (function () {
                 ` : ''}
 
                 <div class="cor-question-stem">
-                    ${escapeHtml(qr.questionText)}
+                    ${renderFormattedContent(qr.questionText)}
                 </div>
 
                 <!-- BANDEAU COMPARAISON RÉPONSES -->
@@ -937,11 +946,11 @@ window.AnnalesApp = (function () {
                                     ${statusBadge}
                                     ${userChoiceBadge}
                                 </div>
-                                <div class="item-content-text">${escapeHtml(it.text)}</div>
+                                <div class="item-content-text">${renderFormattedContent(it.text)}</div>
                                 ${it.explanation ? `
                                     <div class="item-explanation-box">
                                         <span class="exp-icon">💡</span>
-                                        <div class="exp-text">${escapeHtml(it.explanation)}</div>
+                                        <div class="exp-text">${renderFormattedContent(it.explanation)}</div>
                                     </div>
                                 ` : ''}
                             </div>
@@ -951,7 +960,7 @@ window.AnnalesApp = (function () {
 
                 ${qr.generalNotes ? `
                     <div class="general-rule-box">
-                        <strong>📌 Règle / Conseil pédagogique :</strong> ${escapeHtml(qr.generalNotes)}
+                        <strong>📌 Règle / Conseil pédagogique :</strong> ${renderFormattedContent(qr.generalNotes)}
                     </div>
                 ` : ''}
             </div>
@@ -999,6 +1008,68 @@ window.AnnalesApp = (function () {
             .replace(/'/g, '&#039;');
     }
 
+    // Affichage préservant les tableaux HTML, les exposants (sup) et indices (sub) scientifiques
+    function renderFormattedContent(raw) {
+        if (!raw) return '';
+        let str = String(raw);
+
+        const containsHtml = /<table|<sup|<sub|<div|<tr|<td|<th|<br/i.test(str);
+
+        if (containsHtml) {
+            str = str.replace(/<script\b[^<]*(?:(?!<\/script>)<[^<]*)*<\/script>/gi, '');
+            str = str.replace(/on\w+="[^"]*"/gi, '');
+            str = str.replace(/javascript:[^"']*/gi, '');
+
+            const parts = str.split(/(<\/?[a-z0-9_-]+(?:(?:\s+[\w\-:]+(?:\s*=\s*(?:".*?"|'.*?'|[^'">\s]+))?)+\s*|\s*)\/?>)/gi);
+            let result = '';
+            let insideTable = false;
+            for (let i = 0; i < parts.length; i++) {
+                const p = parts[i];
+                if (!p) continue;
+                if (p.startsWith('<')) {
+                    if (/<table\b/i.test(p)) insideTable = true;
+                    if (/<\/table>/i.test(p)) insideTable = false;
+                    result += p;
+                } else {
+                    if (insideTable) {
+                        result += p;
+                    } else {
+                        result += p.replace(/\n{2,}/g, '<br><br>').replace(/\n/g, '<br>');
+                    }
+                }
+            }
+            return result;
+        }
+
+        return escapeHtml(str).replace(/\n{2,}/g, '<br><br>').replace(/\n/g, '<br>');
+    }
+
+    // Rendu dynamique MathJax (formules LaTeX et équations mathématiques)
+    function triggerMathTypeset(targetEl) {
+        if (window.MathJax && typeof window.MathJax.typesetPromise === 'function') {
+            const el = targetEl || document.getElementById('annales-view') || document.body;
+            if (el) {
+                window.MathJax.typesetPromise([el]).catch(err => {
+                    console.debug('MathJax rendering notice:', err);
+                });
+            }
+        }
+    }
+
+    // Masquer / afficher la palette de navigation pour libérer 100% de la largeur d'écran
+    function togglePalette() {
+        state.paletteCollapsed = !state.paletteCollapsed;
+        const panel = document.getElementById('exam-palette-panel');
+        const toggleBtn = document.getElementById('palette-toggle-btn');
+        if (panel) {
+            panel.classList.toggle('collapsed', state.paletteCollapsed);
+        }
+        if (toggleBtn) {
+            toggleBtn.innerHTML = state.paletteCollapsed ? '▶ Questions' : '◀ Masquer';
+            toggleBtn.title = state.paletteCollapsed ? 'Afficher la liste des questions' : 'Masquer la liste des questions';
+        }
+    }
+
     return {
         init,
         renderHub,
@@ -1007,6 +1078,8 @@ window.AnnalesApp = (function () {
         toggleOption,
         onTextAnswerChange,
         toggleFlag,
+        togglePalette,
+        triggerMathTypeset,
         nextQuestion,
         prevQuestion,
         jumpToQuestion,

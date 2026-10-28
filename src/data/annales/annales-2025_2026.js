@@ -17,7 +17,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\n´ ·-. ˙ ˙·-,’\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nINFORMATIONS RÉGLEMENTAIRES\nINFORMATIONS SUR L\u0027ÉPREUVE\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nEXERCICE\nPour chaque question, une ou plusieurs réponse(s) sont exacte(s). Vous indiquerez la ou les proposition(s) exacte(s).\nLe cancer gastrique est l’un des cancers les plus courants et constitue une véritable problématique de santé publique. En effet, près de 723 000 personnes dans le monde sont décédées des suites de cette tumeur maligne en 2012. Cette situation préoccupante a motivé les chercheurs à étudier les mécanismes d’acquisition d’un caractère métastatique par les cancers de l’estomac afin d’améliorer la prise en charge et la prévention de cette pathologie.\nDe précédentes recherches ont pu mettre en évidence le rôle important de l’EGF, le facteur de croissance épidermique et de Rab35, une protéine G apparentée à la superfamille Ras dans des cancers pulmonaires ou ovariens.\nPour étudier leurs effets dans le cas du cancer gastrique, les chercheurs ont prélevé les cellules humaines gastriques BGC-823 chez des patients atteints du cancer de l’estomac. Ils ont étudié la régulation de l’expression de Rab35 total et actif dans ces cellules en réponse à l’EGF grâce à des western blot (Figures 1A et 1B) et étudié l’effet de Rab35 et de l’EGF dans la migration des cellules (Figures 1C, 1D et 1E). Pour ce faire, ils ont réalisé un test de migration : on provoque une lésion (un\n« scratch ») sur le tapis cellulaire, et on mesure la vitesse à laquelle la cicatrice se referme, ceci reflète la capacité de migration des cellules.\nFigure 1 - A : Western blot réalisé sur des lysats de cellules BCG-823 traitées par différentes concentrations d’EGF. L’expression de Rab35 total et actif a été analysée. La quantification a été réalisée par calcul du rapport : intensité des bandes de Rab35(actif) / intensité des bandes de Rab35(total). B : Western blot réalisé sur des lysats de cellules BGC-823 traitées pendant différentes durées avec de l’EGF à la concentration pour laquelle l’activité de Rab35 est maximale. La quantification a été réalisée par calcul du rapport : intensité des bandes de Rab35(actif) / intensité des bandes de Rab35(total). C : Western blot sur lysat de cellules BGC-823 transfectées avec un siARN dirigé contre Rab35 (siRab35) ou avec un siARn contrôle (NC). D : Photographies évaluant la migration des cellules au moment et 18h après lésion du tapis cellulaire, à la fois pour les cellules NC et traitées par le siRab35, en absence ou présence d’EGF. Histogramme représentant le taux relatif de migration des cellules en fonction des différentes conditions. E : Photographies prises au moment et 24h après lésion du tapis cellulaire. Les cellules ont préalablement été transfectées avec un plasmide codant pour la GFP (contrôle) ou codant pour Rab35 (Rab35-CA). Histogramme représentant le taux relatif de migration des cellules en fonction des conditions. D et E : Le taux relatif de migration a été calculé en normalisant les valeurs obtenues pour les contrôles NC (pour les siRNA Rab35) et GFP (pour Rab35-CA) à 18 ou 24 h à 100%.\n** et *** : différences significatives entre les conditions testées.",
+                              "context":  "´ ·-. ˙ ˙·-,’\nDurée de l’épreuve : 1h30 (Temps majoré : 2h00)\nA LIRE AVANT DE COMMENCER L’EPREUVE\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nEXERCICE\nPour chaque question, une ou plusieurs réponse(s) sont exacte(s). Vous indiquerez la ou les proposition(s) exacte(s).\nLe cancer gastrique est l’un des cancers les plus courants et constitue une véritable problématique de santé publique. En effet, près de 723 000 personnes dans le monde sont décédées des suites de cette tumeur maligne en 2012. Cette situation préoccupante a motivé les chercheurs à étudier les mécanismes d’acquisition d’un caractère métastatique par les cancers de l’estomac afin d’améliorer la prise en charge et la prévention de cette pathologie.\nDe précédentes recherches ont pu mettre en évidence le rôle important de l’EGF, le facteur de croissance épidermique et de Rab35, une protéine G apparentée à la superfamille Ras dans des cancers pulmonaires ou ovariens.\nPour étudier leurs effets dans le cas du cancer gastrique, les chercheurs ont prélevé les cellules humaines gastriques BGC-823 chez des patients atteints du cancer de l’estomac. Ils ont étudié la régulation de l’expression de Rab35 total et actif dans ces cellules en réponse à l’EGF grâce à des western blot (Figures 1A et 1B) et étudié l’effet de Rab35 et de l’EGF dans la migration des cellules (Figures 1C, 1D et 1E). Pour ce faire, ils ont réalisé un test de migration : on provoque une lésion (un\n« scratch ») sur le tapis cellulaire, et on mesure la vitesse à laquelle la cicatrice se referme, ceci reflète la capacité de migration des cellules.\nFigure 1 - A : Western blot réalisé sur des lysats de cellules BCG-823 traitées par différentes concentrations d’EGF. L’expression de Rab35 total et actif a été analysée. La quantification a été réalisée par calcul du rapport : intensité des bandes de Rab35(actif) / intensité des bandes de Rab35(total). B : Western blot réalisé sur des lysats de cellules BGC-823 traitées pendant différentes durées avec de l’EGF à la concentration pour laquelle l’activité de Rab35 est maximale. La quantification a été réalisée par calcul du rapport : intensité des bandes de Rab35(actif) / intensité des bandes de Rab35(total). C : Western blot sur lysat de cellules BGC-823 transfectées avec un siARN dirigé contre Rab35 (siRab35) ou avec un siARn contrôle (NC). D : Photographies évaluant la migration des cellules au moment et 18h après lésion du tapis cellulaire, à la fois pour les cellules NC et traitées par le siRab35, en absence ou présence d’EGF. Histogramme représentant le taux relatif de migration des cellules en fonction des différentes conditions. E : Photographies prises au moment et 24h après lésion du tapis cellulaire. Les cellules ont préalablement été transfectées avec un plasmide codant pour la GFP (contrôle) ou codant pour Rab35 (Rab35-CA). Histogramme représentant le taux relatif de migration des cellules en fonction des conditions. D et E : Le taux relatif de migration a été calculé en normalisant les valeurs obtenues pour les contrôles NC (pour les siRNA Rab35) et GFP (pour Rab35-CA) à 18 ou 24 h à 100%.\n** et *** : différences significatives entre les conditions testées.",
                               "images":  [
                                              "annales_assets/2025_2026/bio_cellulaire/tuto_1/image1.png",
                                              "annales_assets/2025_2026/bio_cellulaire/tuto_1/image2.jpeg"
@@ -844,7 +844,7 @@ window.ANNALES_2025_2026 = [
                                                  "A partir des résultats de la figure ci-dessus et de vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                                                  "L’immunoprécipitation nécessite une étape de centrifugation",
                                                  "Lorsque la quantité de γb-3 augmente, la protéine ATG8f est de moins en moins exprimée dans la cellule",
-                                                 "L’absence de détection de γb-3 dans l’Input (1ère piste du western blot) montre que la protéine n’est pas exprimée de manière endogène dans la cellule",
+                                                 "L’absence de détection de γb-3 dans l’Input (1\u003csup\u003eère\u003c/sup\u003e piste du western blot) montre que la protéine n’est pas exprimée de manière endogène dans la cellule",
                                                  "L\u0027autophagie serait menacée dans ces cellules, car ATG7 interagirait avec Flag",
                                                  "On peut suggérer que l’interaction directe de γb-3 et ATG7 empêcherait ATG8f de se lier à ATG7"
                                              ],
@@ -871,11 +871,11 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "Lorsque la quantité de γb-3 augmente, la protéine ATG8f est de moins en moins exprimée dans la cellule",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - L’absence de détection de γb-3 dans l’Input (1ère piste du western blot) montre que la protéine n’est pas exprimée de manière endogène dans la cellule L’absence de détection de γb-3 dans l’Input (1ère piste du western blot) montre que la protéine n’est pas exprimée de manière endogène dans la cellule"
+                                                  "explanation":  "VRAI - L’absence de détection de γb-3 dans l’Input (1\u003csup\u003eère\u003c/sup\u003e piste du western blot) montre que la protéine n’est pas exprimée de manière endogène dans la cellule L’absence de détection de γb-3 dans l’Input (1\u003csup\u003eère\u003c/sup\u003e piste du western blot) montre que la protéine n’est pas exprimée de manière endogène dans la cellule"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "L’absence de détection de γb-3 dans l’Input (1ère piste du western blot) montre que la protéine n’est pas exprimée de manière endogène dans la cellule",
+                                                  "text":  "L’absence de détection de γb-3 dans l’Input (1\u003csup\u003eère\u003c/sup\u003e piste du western blot) montre que la protéine n’est pas exprimée de manière endogène dans la cellule",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - L\u0027autophagie serait menacée dans ces cellules, car ATG7 interagirait avec Flag"
                                               },
@@ -1220,7 +1220,7 @@ window.ANNALES_2025_2026 = [
                               "question":  "On s’intéresse à une maladie qui provoque une mutation de la phospholipase C. Parmi les propositions suivantes, laquelle (ou lesquelles) est (ou sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "Toute mutation de la phospholipase C entraînera son inactivation, ce qui empêchera le clivage de PIP2",
-                                                 "Une inactivation de la phospholipase C engendrerait une augmentation de la quantité de Ca2+ dans la cellule",
+                                                 "Une inactivation de la phospholipase C engendrerait une augmentation de la quantité de Ca\u003csup\u003e2+\u003c/sup\u003e dans la cellule",
                                                  "Une mutation activatrice de la phospholipase C pourrait être compensée par un traitement utilisant une molécule analogue de la calmoduline K (CAMk)",
                                                  "Une dégradation de DAG et IP3 pourrait être une solution pour pallier les effets d’une mutation activatrice de la phospholipase C",
                                                  "Une mutation de la phospholipase C induisant un défaut de sa conformation pourrait empêcher la sous-unité alpha de la protéine Gq de s’y fixer"
@@ -1234,9 +1234,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Une inactivation de la phospholipase C engendrerait une augmentation de la quantité de Ca2+ dans la cellule",
+                                                  "text":  "Une inactivation de la phospholipase C engendrerait une augmentation de la quantité de Ca\u003csup\u003e2+\u003c/sup\u003e dans la cellule",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Une inactivation de la phospholipase C engendrerait une augmentation de la quantité de Ca2+ dans la cellule"
+                                                  "explanation":  "FAUX - Une inactivation de la phospholipase C engendrerait une augmentation de la quantité de Ca\u003csup\u003e2+\u003c/sup\u003e dans la cellule"
                                               },
                                               {
                                                   "id":  "C",
@@ -1374,13 +1374,13 @@ window.ANNALES_2025_2026 = [
                               "images":  [
                                              "annales_assets/2025_2026/bio_cellulaire/tuto_1/image10.jpeg"
                                          ],
-                              "question":  "On cherche à savoir si deux molécules, PLX-4720 et S63845, ont un effet sur l’apoptose en lien avec les protéines BAX et BAK1. Pour cela, on inactive ces deux protéines à l’aide du système Cre-Lox, générant ainsi des cellules à la fois KO pour BAX et pour BAK1 (BAX-/-BAK1-/-). Les différents effets sont analysés par western blot et les résultats sont présentés dans la figure ci-dessous.",
+                              "question":  "On cherche à savoir si deux molécules, PLX-4720 et S63845, ont un effet sur l’apoptose en lien avec les protéines BAX et BAK1. Pour cela, on inactive ces deux protéines à l’aide du système Cre-Lox, générant ainsi des cellules à la fois KO pour BAX et pour BAK1 (BAX\u003csup\u003e-/-\u003c/sup\u003eBAK1\u003csup\u003e-/-\u003c/sup\u003e). Les différents effets sont analysés par western blot et les résultats sont présentés dans la figure ci-dessous.",
                               "rawOptions":  [
                                                  "Casp : caspase clivée. c-PARP : PARP clivée. BAK1 est une protéine pro-apoptotique impliquée dans la voie intrinsèque de l’apoptose.",
                                                  "D’après l’analyse de la figure ci-dessus et de vos connaissances, laquelle (ou lesquelles) des propositions suivantes est (ou sont) exacte(s) ?",
                                                  "PLX-4720 et S63845 sont dépendantes l’une de l’autre, en clivant le prodomaine des caspases 3 et 7 pour les activer",
                                                  "PLX-4720 et S63845 pourraient être des inhibiteurs de protéines anti-apoptotiques",
-                                                 "Dans les cellules Bax-/- et Bak1-/-, les voies extrinsèque et intrinsèque de l’apoptose sont activées",
+                                                 "Dans les cellules Bax\u003csup\u003e-/-\u003c/sup\u003e et Bak1\u003csup\u003e-/-\u003c/sup\u003e, les voies extrinsèque et intrinsèque de l’apoptose sont activées",
                                                  "Dans les cellules KO pour BAX et BAK1, la protéine p53 est réprimée",
                                                  "Dans les cellules contrôles, en absence de PLX-4720 et S63845, les homodimères Bcl-2 / Bcl-2 sont majoritairement présents, favorisant ainsi la survie cellulaire"
                                              ],
@@ -1411,7 +1411,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Dans les cellules Bax-/- et Bak1-/-, les voies extrinsèque et intrinsèque de l’apoptose sont activées",
+                                                  "text":  "Dans les cellules Bax\u003csup\u003e-/-\u003c/sup\u003e et Bak1\u003csup\u003e-/-\u003c/sup\u003e, les voies extrinsèque et intrinsèque de l’apoptose sont activées",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               }
@@ -1434,7 +1434,7 @@ window.ANNALES_2025_2026 = [
                                                  "Il y a une condensation de la chromatine lors de l\u0027autophagie",
                                                  "L\u0027apoptose entraine une inflammation",
                                                  "La séparation des sous-unités des pro-caspases est l\u0027une des étapes nécessaires à l\u0027activation de ces dernières",
-                                                 "Le clivage internucléosomique de l\u0027ADN est réalisé par la CAD en présence de Ca2+"
+                                                 "Le clivage internucléosomique de l\u0027ADN est réalisé par la CAD en présence de Ca\u003csup\u003e2+\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
@@ -1463,9 +1463,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Le clivage internucléosomique de l\u0027ADN est réalisé par la CAD en présence de Ca2+",
+                                                  "text":  "Le clivage internucléosomique de l\u0027ADN est réalisé par la CAD en présence de Ca\u003csup\u003e2+\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Le clivage internucléosomique de l\u0027ADN est réalisé par la CAD en présence de Ca2+"
+                                                  "explanation":  "FAUX - Le clivage internucléosomique de l\u0027ADN est réalisé par la CAD en présence de Ca\u003csup\u003e2+\u003c/sup\u003e"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -1723,7 +1723,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 3 : Biologie Cellulaire\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nEXERCICE\nPour chaque question, une ou plusieurs réponses sont exactes. Vous indiquerez la ou les proposition(s) exacte(s) :\nLes peroxysomes sont de petits organites impliqués dans la dégradation des acides gras (β-oxydation), un processus qui génère des espèces réactives de l’oxygène (ROS). Ces molécules, lorsqu’elles s’accumulent, peuvent endommager la cellule. Il est donc essentiel de maintenir un équilibre entre la formation et la dégradation des peroxysomes, sous peine de provoquer des pathologies résultant d’un déficit dans la biogenèse du peroxysome.\nUn mécanisme central dans la régulation du nombre de peroxysomes est la pexophagie, forme d’autophagie sélective qui élimine les peroxysomes excédentaires. Elle implique la protéine adap-tatrice p62, qui reconnaît les protéines marquées par ubiquitination et les relie à la protéine LC3 impliquée dans la formation des autophagosomes.\nOn s’intéresse dans cette étude au rôle potentiel de la protéine kinase ATM dans la pexophagie.",
+                              "context":  "Durée de l’épreuve : 1h30\nInformations sur l’épreuve\nEXERCICE\nPour chaque question, une ou plusieurs réponses sont exactes. Vous indiquerez la ou les proposition(s) exacte(s) :\nLes peroxysomes sont de petits organites impliqués dans la dégradation des acides gras (β-oxydation), un processus qui génère des espèces réactives de l’oxygène (ROS). Ces molécules, lorsqu’elles s’accumulent, peuvent endommager la cellule. Il est donc essentiel de maintenir un équilibre entre la formation et la dégradation des peroxysomes, sous peine de provoquer des pathologies résultant d’un déficit dans la biogenèse du peroxysome.\nUn mécanisme central dans la régulation du nombre de peroxysomes est la pexophagie, forme d’autophagie sélective qui élimine les peroxysomes excédentaires. Elle implique la protéine adap-tatrice p62, qui reconnaît les protéines marquées par ubiquitination et les relie à la protéine LC3 impliquée dans la formation des autophagosomes.\nOn s’intéresse dans cette étude au rôle potentiel de la protéine kinase ATM dans la pexophagie.",
                               "images":  [
                                              "annales_assets/2025_2026/bio_cellulaire/tuto_2/image1.png",
                                              "annales_assets/2025_2026/bio_cellulaire/tuto_2/image2.png",
@@ -1738,8 +1738,8 @@ window.ANNALES_2025_2026 = [
                                                  "Comme le nucléoïde, la plaque marginale existe dans les peroxysomes du foie et des reins de nombreux primates",
                                                  "On cherche à caractériser la localisation de la kinase ATM dans les cellules et son association avec les peroxysomes. Pour cela, les chercheurs examinent la répartition subcellulaire de diffé-rentes protéines dans des cellules embryonnaires rénales HEK293 (Figure 1A), l’effet du trai-tement de peroxysomes isolés, avec la protéinase K en présence ou en absence de Triton X-100 (Figure 1B), ainsi que l’impact de différentes durées de traitement au peroxyde d’hydrogène (Figure 1C). Une analyse par immunofluorescence de fibroblastes humains sains (GM15871) et de fibroblastes de patients atteints du syndrome de Zellweger (GM13267) est également réalisée (Figure 1D).",
                                                  "Figure 1 - A : Analyse par western blot d’extraits protéiques suite au fractionnement sub-cellulaire de cellules HEK293. PMP70 est un marqueur de la fraction peroxysomale (P). La LDH, la lamine A/C et la β-intégrine ont servi respectivement de marqueurs pour les fractions cytosolique (C), nucléaire (N) et membranaire (M). WCE : extrait cellulaire total. B : Etude par western blot de peroxysomes isolés issus de cellules HEK293 traités à la protéinase K en présence ou absence de Triton X-100. La protéinase K, est une enzyme dégradant les protéines. Le Triton X-100 est un détergent induisant la dissolution des lipides membranaire. Matrix :",
-                                                 "matrice, WCE : extrait cellulaire total et P : fraction peroxysomale. C : Analyse par western blot de cellules HepG2, traitées ou non avec du H2O2 exogène (0,4 mM) pendant 1, 3 et 6h. pATM correspond à la forme phosphorylée de la protéine ATM sur la sérine 1981 (forme active). Le peroxyde d’hydrogène H2O2 fait partie des ROS et génère un stress oxydatif. WCE : extrait cellulaire total et P : fraction peroxysomale. D : Immunofluorescence sur des fibroblastes issus",
-                                                 "d’un témoin sain (GM15871) et d’un individu atteint du syndrome de Zellweger (GM13267) après traitement ou non avec du H2O2 pendant 1 h. ATM phosphorylée active (p-ATM) appa-raît en vert (première colonne), la catalase en rouge (deuxième colonne) et les noyaux en bleu (DAPI, troisième colonne). Les flèches indiquent une colocalisation. Barre d’échelle : 15 µm. Un agrandissement des zones encadrées est présenté à droite (barre d’échelle : 5 µm)."
+                                                 "matrice, WCE : extrait cellulaire total et P : fraction peroxysomale. C : Analyse par western blot de cellules HepG2, traitées ou non avec du H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e exogène (0,4 mM) pendant 1, 3 et 6h. pATM correspond à la forme phosphorylée de la protéine ATM sur la sérine 1981 (forme active). Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e fait partie des ROS et génère un stress oxydatif. WCE : extrait cellulaire total et P : fraction peroxysomale. D : Immunofluorescence sur des fibroblastes issus",
+                                                 "d’un témoin sain (GM15871) et d’un individu atteint du syndrome de Zellweger (GM13267) après traitement ou non avec du H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pendant 1 h. ATM phosphorylée active (p-ATM) appa-raît en vert (première colonne), la catalase en rouge (deuxième colonne) et les noyaux en bleu (DAPI, troisième colonne). Les flèches indiquent une colocalisation. Barre d’échelle : 15 µm. Un agrandissement des zones encadrées est présenté à droite (barre d’échelle : 5 µm)."
                                              ],
                               "options":  [
                                               {
@@ -1752,7 +1752,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "B",
                                                   "text":  "Les peroxysomes jouent un rôle important dans la synthèse du peroxyde d’hydrogène",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Les peroxysomes jouent un rôle important dans la synthèse du peroxyde d’hydro-gène Les peroxysomes jouent un rôle important dans la synthèse du peroxyde d’hydro-gène → Les peroxysomes jouent un rôle important dans la synthèse du peroxyde d’hydrogène Oui ! La synthèse du peroxyde d’hydrogène (H2O2), le mécanisme peroxydasique qui transforme l’H2O2 en 2 HO2 et inversement . → Les peroxysomes jouent un rôle important dans la synthèse du peroxyde d’hydrogène Oui ! La synthèse du peroxyde d’hydrogène (H2O2), le mécanisme peroxydasique qui transforme l’H2O2 en 2 HO2 et inversement ."
+                                                  "explanation":  "FAUX - Les peroxysomes jouent un rôle important dans la synthèse du peroxyde d’hydro-gène Les peroxysomes jouent un rôle important dans la synthèse du peroxyde d’hydro-gène → Les peroxysomes jouent un rôle important dans la synthèse du peroxyde d’hydrogène Oui ! La synthèse du peroxyde d’hydrogène (H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e), le mécanisme peroxydasique qui transforme l’H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e en 2 HO\u003csub\u003e2\u003c/sub\u003e et inversement . → Les peroxysomes jouent un rôle important dans la synthèse du peroxyde d’hydrogène Oui ! La synthèse du peroxyde d’hydrogène (H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e), le mécanisme peroxydasique qui transforme l’H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e en 2 HO\u003csub\u003e2\u003c/sub\u003e et inversement ."
                                               },
                                               {
                                                   "id":  "C",
@@ -1788,7 +1788,7 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "D’après les résultats de la figure 1 et de vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "En l’absence de H2O2, la protéine kinase ATM est présente dans le cytosol",
+                                                 "En l’absence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e, la protéine kinase ATM est présente dans le cytosol",
                                                  "Le Triton X-100 dégrade les protéines présentes dans le peroxysome",
                                                  "ATM est localisée au niveau de la membrane peroxysomale",
                                                  "En l’absence de Triton X-100, on a une augmentation de l’expression de la catalase",
@@ -1797,9 +1797,9 @@ window.ANNALES_2025_2026 = [
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "En l’absence de H2O2, la protéine kinase ATM est présente dans le cytosol",
+                                                  "text":  "En l’absence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e, la protéine kinase ATM est présente dans le cytosol",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → En l’absence de H2O2, la protéine kinase ATM est présente dans le cytosol → En l’absence de H2O2, la protéine kinase ATM est présente dans le cytosol"
+                                                  "explanation":  "FAUX - → En l’absence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e, la protéine kinase ATM est présente dans le cytosol → En l’absence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e, la protéine kinase ATM est présente dans le cytosol"
                                               },
                                               {
                                                   "id":  "B",
@@ -1840,30 +1840,30 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "D’après les résultats de la figure 1, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "Le traitement au peroxyde d’hydrogène H2O2 augmente la quantité d’ATM",
-                                                 "La phosphorylation d’ATM augmente avec la quantité de H2O2",
+                                                 "Le traitement au peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e augmente la quantité d’ATM",
+                                                 "La phosphorylation d’ATM augmente avec la quantité de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e",
                                                  "La catalase est une protéine retrouvée uniquement au niveau du peroxysome",
                                                  "Dans les fibroblastes issus de patients atteints du syndrome de Zellweger on observe peu d’interactions entre pATM et la catalase",
                                                  "ATM est présente dans le noyau sous ses formes non-phosphorylée et phosphorylée",
-                                                 "Suite à ces premiers résultats, les chercheurs s’intéressent au rôle de la protéine PEX5 dans l’action d’ATM. Les cellules ont été transfectées soit avec un siARN contrôle, soit avec un siARN dirigé contre ATM. Ils ont d’abord évalué l’association potentielle entre les deux protéines par co-immunoprécipitation, en présence ou non de peroxyde d’hydrogène H2O2 exogène (Figure 2A). Ensuite, ils ont introduit une mutation d’ATM en remplaçant une arginine (R) par une",
+                                                 "Suite à ces premiers résultats, les chercheurs s’intéressent au rôle de la protéine PEX5 dans l’action d’ATM. Les cellules ont été transfectées soit avec un siARN contrôle, soit avec un siARN dirigé contre ATM. Ils ont d’abord évalué l’association potentielle entre les deux protéines par co-immunoprécipitation, en présence ou non de peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e exogène (Figure 2A). Ensuite, ils ont introduit une mutation d’ATM en remplaçant une arginine (R) par une",
                                                  "glutamine (Q) au niveau de l’acide aminé 3047 (ATM RQ) puis l’impact de cette modification sur son association à PEX5 a été évalué (Figure 2B). Enfin, la localisation d’ATM, sauvage ou mutée, a été examinée (Figure 2C) et quantifiée (Figures 2D et 2E).",
-                                                 "Figure 2 - A : Expérience de co-immunoprécipitation réalisée sur des lysats protéiques de cellules HepG2 transfectées soit avec un siARN contrôle, soit avec un siARN dirigé contre ATM, puis traitées au H2O2 (0,4 mM, 3 h). ATM totale et phosphorylée et PEX5 ont été détectées par western blot. IP : PEX5 = fraction immunoprécipitée à l’aide d’un anticorps dirigé contre PEX5. Input : lysat cellulaire. B : Immunoprécipitation de la protéine PEX5",
+                                                 "Figure 2 - A : Expérience de co-immunoprécipitation réalisée sur des lysats protéiques de cellules HepG2 transfectées soit avec un siARN contrôle, soit avec un siARN dirigé contre ATM, puis traitées au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e (0,4 mM, 3 h). ATM totale et phosphorylée et PEX5 ont été détectées par western blot. IP : PEX5 = fraction immunoprécipitée à l’aide d’un anticorps dirigé contre PEX5. Input : lysat cellulaire. B : Immunoprécipitation de la protéine PEX5",
                                                  "couplé au tag MYC réalisée sur des lysats protéiques de cellules HEK293 exprimant la forme sauvage (WT) ou mutée (RQ) d’ATM porteuse d’un tag Flag. C : Fractionnement subcellulaire de cellules HEK293 surexprimant soit Flag-ATM sauvage (WT), soit la forme mutée Flag-ATM RQ. WCE : extrait cellulaire total ; N : fraction nucléaire ; P : fraction peroxysomale. D : Images d’immunofluorescence de cellules HEK293 exprimant Flag-ATM WT ou Flag-",
-                                                 "ATM RQ. Les cellules sont préalablement traitées ou non avec du H2O2 (0,4 mM) pendant",
+                                                 "ATM RQ. Les cellules sont préalablement traitées ou non avec du H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e (0,4 mM) pendant",
                                                  "1 h puis ont été immunomarquées. Le Flag apparaît en vert (ATM, première colonne) et la protéine peroxysomale PMP70 en rouge (deuxième colonne). Barre d’échelle : 10 µm. Les zones encadrées sont présentées à plus fort grossissement à droite (barre d’échelle : 5 µm). Les flèches indiquent une colocalisation. E : Quantification du pourcentage d’ATM localisée dans le cytosol à partir des images de la Fig. 2D. ** : différences significatives entre les conditions testées. NS : non significatif."
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "Le traitement au peroxyde d’hydrogène H2O2 augmente la quantité d’ATM",
+                                                  "text":  "Le traitement au peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e augmente la quantité d’ATM",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Le traitement au peroxyde d’hydrogène H2O2 augmente la quantité d’ATM → Le traitement au peroxyde d’hydrogène H2O2 augmente la quantité d’ATM"
+                                                  "explanation":  "FAUX - → Le traitement au peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e augmente la quantité d’ATM → Le traitement au peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e augmente la quantité d’ATM"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "La phosphorylation d’ATM augmente avec la quantité de H2O2",
+                                                  "text":  "La phosphorylation d’ATM augmente avec la quantité de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La phosphorylation d’ATM augmente avec la quantité de H2O2 → La phosphorylation d’ATM augmente avec la quantité de H2O2"
+                                                  "explanation":  "FAUX - → La phosphorylation d’ATM augmente avec la quantité de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e → La phosphorylation d’ATM augmente avec la quantité de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e"
                                               },
                                               {
                                                   "id":  "C",
@@ -1881,7 +1881,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "ATM est présente dans le noyau sous ses formes non-phosphorylée et phosphorylée",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - ATM est présente dans le noyau sous ses formes non-phosphorylée et phosphorylée ATM est présente dans le noyau sous ses formes non-phosphorylée et phosphorylée → ATM est présente dans le noyau sous ses formes non-phosphorylée et phosphorylée → ATM est présente dans le noyau sous ses formes non-phosphorylée et phosphorylée → La protéine PEX5 interagit avec la protéine ATM qu’elle soit phosphorylée ou non Encore une fois, c’est seulement la E qui est bonne. On regarde la figure 2A et on observe une bande pour ATM non phosphorylée dans la situation sans H2O2 et on observe une bande pour pATM lorsqu’on a traité avec le H2O2. On en déduit qu’ATM soit phosphorylée ou non, la protéine PEX5 va dans les deux cas interagir avec celle-ci. → La protéine PEX5 interagit avec la protéine ATM qu’elle soit phosphorylée ou non Encore une fois, c’est seulement la E qui est bonne. On regarde la figure 2A et on observe une bande pour ATM non phosphorylée dans la situation sans H2O2 et on observe une bande pour pATM lorsqu’on a traité avec le H2O2. On en déduit qu’ATM soit phosphorylée ou non, la protéine PEX5 va dans les deux cas interagir avec celle-ci."
+                                                  "explanation":  "VRAI - ATM est présente dans le noyau sous ses formes non-phosphorylée et phosphorylée ATM est présente dans le noyau sous ses formes non-phosphorylée et phosphorylée → ATM est présente dans le noyau sous ses formes non-phosphorylée et phosphorylée → ATM est présente dans le noyau sous ses formes non-phosphorylée et phosphorylée → La protéine PEX5 interagit avec la protéine ATM qu’elle soit phosphorylée ou non Encore une fois, c’est seulement la E qui est bonne. On regarde la figure 2A et on observe une bande pour ATM non phosphorylée dans la situation sans H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e et on observe une bande pour pATM lorsqu’on a traité avec le H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e. On en déduit qu’ATM soit phosphorylée ou non, la protéine PEX5 va dans les deux cas interagir avec celle-ci. → La protéine PEX5 interagit avec la protéine ATM qu’elle soit phosphorylée ou non Encore une fois, c’est seulement la E qui est bonne. On regarde la figure 2A et on observe une bande pour ATM non phosphorylée dans la situation sans H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e et on observe une bande pour pATM lorsqu’on a traité avec le H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e. On en déduit qu’ATM soit phosphorylée ou non, la protéine PEX5 va dans les deux cas interagir avec celle-ci."
                                               }
                                           ],
                               "correctAnswers":  [
@@ -1898,8 +1898,8 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "D’après les résultats de la figure 2 et de vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "La mutation R3047Q et le traitement au H2O2 semblent avoir des effets similaires sur ATM",
-                                                 "Le traitement au H2O2 semble permettre le passage de la protéine ATM vers le noyau",
+                                                 "La mutation R3047Q et le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e semblent avoir des effets similaires sur ATM",
+                                                 "Le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e semble permettre le passage de la protéine ATM vers le noyau",
                                                  "La mutation R3047Q d’ATM semble permettre sa translocation dans le noyau",
                                                  "La protéine PEX5 semble permettre la translocation d’ATM vers le noyau",
                                                  "La protéine PEX5 interagit avec la protéine ATM qu’elle soit phosphorylée ou non"
@@ -1907,15 +1907,15 @@ window.ANNALES_2025_2026 = [
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "La mutation R3047Q et le traitement au H2O2 semblent avoir des effets similaires sur ATM",
+                                                  "text":  "La mutation R3047Q et le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e semblent avoir des effets similaires sur ATM",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La mutation R3047Q et le traitement au H2O2 semblent avoir des effets similaires … Eeeh non, c’est le contraire... Dans la figure 2A, on observe que le traitement au H2O2 favorise l’interaction entre PEX5 et ATM. Alors que dans la figure 2B, on observe une diminution de l’interaction entre PEX5 et ATM mutée. Le traitement à l’H2O2 et la mutation R3047Q semblent donc avoir des effets opposés sur ATM. → La mutation R3047Q et le traitement au H2O2 semblent avoir des effets similaires … Eeeh non, c’est le contraire... Dans la figure 2A, on observe que le traitement au H2O2 favorise l’interaction entre PEX5 et ATM. Alors que dans la figure 2B, on observe une diminution de l’interaction entre PEX5 et ATM mutée. Le traitement à l’H2O2 et la mutation R3047Q semblent donc avoir des effets opposés sur ATM."
+                                                  "explanation":  "FAUX - → La mutation R3047Q et le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e semblent avoir des effets similaires … Eeeh non, c’est le contraire... Dans la figure 2A, on observe que le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise l’interaction entre PEX5 et ATM. Alors que dans la figure 2B, on observe une diminution de l’interaction entre PEX5 et ATM mutée. Le traitement à l’H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e et la mutation R3047Q semblent donc avoir des effets opposés sur ATM. → La mutation R3047Q et le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e semblent avoir des effets similaires … Eeeh non, c’est le contraire... Dans la figure 2A, on observe que le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise l’interaction entre PEX5 et ATM. Alors que dans la figure 2B, on observe une diminution de l’interaction entre PEX5 et ATM mutée. Le traitement à l’H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e et la mutation R3047Q semblent donc avoir des effets opposés sur ATM."
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Le traitement au H2O2 semble permettre le passage de la protéine ATM vers le noyau",
+                                                  "text":  "Le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e semble permettre le passage de la protéine ATM vers le noyau",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Le traitement au H2O2 semble permettre le passage de la protéine ATM vers le noyau → Le traitement au H2O2 semble permettre le passage de la protéine ATM vers le noyau"
+                                                  "explanation":  "FAUX - → Le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e semble permettre le passage de la protéine ATM vers le noyau → Le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e semble permettre le passage de la protéine ATM vers le noyau"
                                               },
                                               {
                                                   "id":  "C",
@@ -2066,11 +2066,11 @@ window.ANNALES_2025_2026 = [
                                                  "En réponse aux ROS, le complexe mTORC1 est inhibé",
                                                  "Le clofibrate a une action temps et dose dépendant",
                                                  "La phosphorylation en position S757 de ULK1 semble favoriser la pexophagie",
-                                                 "La liaison de p62 à PEX5, ainsi que son rôle potentiel dans la pexophagie, est ensuite étudiée. Les chercheurs analysent l’effet de l’ajout de peroxyde d’hydrogène exogène sur les interactions entre ces protéines (Figure 5A). Ils s’intéressent ensuite à la localisation cellulaire de PEX5, p62 et de l’ubiquitine après traitement au H2O2 (Figure 5B). Enfin, la distribution de p62 est également examinée (Figure 5C), ainsi que sa localisation subcellulaire dans des cellules",
+                                                 "La liaison de p62 à PEX5, ainsi que son rôle potentiel dans la pexophagie, est ensuite étudiée. Les chercheurs analysent l’effet de l’ajout de peroxyde d’hydrogène exogène sur les interactions entre ces protéines (Figure 5A). Ils s’intéressent ensuite à la localisation cellulaire de PEX5, p62 et de l’ubiquitine après traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e (Figure 5B). Enfin, la distribution de p62 est également examinée (Figure 5C), ainsi que sa localisation subcellulaire dans des cellules",
                                                  "hépatiques de rat (Figure 5D).",
-                                                 "Figure 5 - A : Immunoprécipitation des extraits protéiques issus de cellules traitées avec du H2O2 (0,4 mM) aux temps indiqués puis analyse par western blot. B : Images représentatives d’immunofluorescence de cellules traitées avec du H2O2 (0,4 mM) pendant 3 h et immunomar-quées pour p62 (en vert, première colonne), PEX5 (en rouge, deuxième colonne) et l’ubiquitine",
-                                                 "(en violet, troisième colonne). Barre d’échelle : 10 µm. Les flèches indiquent une colocalisation des trois protéines. C : Analyse par western blot d’extraits cellulaires totaux (WCE) et de fractions de peroxysomes (P) issus de cellules traitées avec 0,4 mM de H2O2 pendant 1 h. D :",
-                                                 "Images d’immunofluorescence de cellules traitées avec 0,4 mM de H2O2 pendant 1 h et im-",
+                                                 "Figure 5 - A : Immunoprécipitation des extraits protéiques issus de cellules traitées avec du H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e (0,4 mM) aux temps indiqués puis analyse par western blot. B : Images représentatives d’immunofluorescence de cellules traitées avec du H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e (0,4 mM) pendant 3 h et immunomar-quées pour p62 (en vert, première colonne), PEX5 (en rouge, deuxième colonne) et l’ubiquitine",
+                                                 "(en violet, troisième colonne). Barre d’échelle : 10 µm. Les flèches indiquent une colocalisation des trois protéines. C : Analyse par western blot d’extraits cellulaires totaux (WCE) et de fractions de peroxysomes (P) issus de cellules traitées avec 0,4 mM de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pendant 1 h. D :",
+                                                 "Images d’immunofluorescence de cellules traitées avec 0,4 mM de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pendant 1 h et im-",
                                                  "munomarquées pour p62 (vert, première colonne) et PMP70 (rouge, deuxième colonne). Barre",
                                                  "d’échelle : 10 µm. Les images en haute résolution des zones encadrées sont montrées à droite (barre d’échelle : 2,5 µm). Les flèches indiquent une colocalisation."
                                              ],
@@ -2124,24 +2124,24 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "D’après les résultats de la figure 5, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "Le peroxyde d’hydrogène H2O2 pourrait favoriser l’interaction entre PEX5 et p62",
+                                                 "Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser l’interaction entre PEX5 et p62",
                                                  "Comme p62, PEX5 et l’ubiquitine co-localisent suite au traitement oxydatif, cela signifie que ces protéines interagissent ensemble",
                                                  "L’interaction entre p62 et PEX5 est probablement médiée par l’ubiquitination de cette dernière",
-                                                 "On peut supposer que le traitement au H2O2 favorise le passage de p62 dans la matrice du peroxysome",
-                                                 "Le peroxyde d’hydrogène H2O2 favorise la pexophagie",
-                                                 "En réponse à un stress oxydatif (ici H2O2), les chercheurs ont préalablement montré que les autophagosomes se forment et englobent progressivement les peroxysomes. Ils décident de suivre le mécanisme de pexophagie en analysant les protéines peroxysomales PEX1 et PEX14 (Figure",
+                                                 "On peut supposer que le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise le passage de p62 dans la matrice du peroxysome",
+                                                 "Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise la pexophagie",
+                                                 "En réponse à un stress oxydatif (ici H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e), les chercheurs ont préalablement montré que les autophagosomes se forment et englobent progressivement les peroxysomes. Ils décident de suivre le mécanisme de pexophagie en analysant les protéines peroxysomales PEX1 et PEX14 (Figure",
                                                  "6A et 6B). Un peptide SKL (Ser-Lys-Leu) servant de signal d’adressage pour les protéines destinées aux peroxysomes a été fusionné soit à l’EGFP, soit au mRFP (EGFP-SKL et mRFP-SKL) afin de le localiser par fluorescence (Figures 6C et 6D).",
-                                                 "Figure 6 - A : Analyse par western blot de l’expression des protéines peroxysomales PEX1 et PEX14, des protéines mitochondriales SDHA et VDAC, et des marqueurs d’autophagie p62, LC3-I et LC3-II), après traitement de cellules hépatiques de rat par de l’H2O2 (0,4 mM) pendant les temps indiqués, ou avec du CCCP (50 µM, 6 h). Le CCCP est un contrôle positif,",
-                                                 "provoquant la mitophagie (autophagie des mitochondries). B : Quantification de l’intensité des bandes PEX1 et PEX14 du western blot (figure 6A) normalisée sur la GAPDH. L’analyse statistique a été réalisée en prenant le temps 0 comme référence. NS : non significatif. C : Images représentatives de fluorescence de cellules hépatiques de rat transfectées avec les constructions mRFP-SKL et EGFP-SKL puis traitées avec de l’H2O2 pendant 6h. Barre d’échelle : 10 µm. Le",
+                                                 "Figure 6 - A : Analyse par western blot de l’expression des protéines peroxysomales PEX1 et PEX14, des protéines mitochondriales SDHA et VDAC, et des marqueurs d’autophagie p62, LC3-I et LC3-II), après traitement de cellules hépatiques de rat par de l’H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e (0,4 mM) pendant les temps indiqués, ou avec du CCCP (50 µM, 6 h). Le CCCP est un contrôle positif,",
+                                                 "provoquant la mitophagie (autophagie des mitochondries). B : Quantification de l’intensité des bandes PEX1 et PEX14 du western blot (figure 6A) normalisée sur la GAPDH. L’analyse statistique a été réalisée en prenant le temps 0 comme référence. NS : non significatif. C : Images représentatives de fluorescence de cellules hépatiques de rat transfectées avec les constructions mRFP-SKL et EGFP-SKL puis traitées avec de l’H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pendant 6h. Barre d’échelle : 10 µm. Le",
                                                  "nombre de flèches témoigne de la présence importante ou non de co-localisation. L’EGFP est",
                                                  "une protéine fluorescente dégradée à pH acide. D : Quantification, à partir de la figure 6C, de la co-localisation de la protéine mRFP-SKL avec la protéine EFGP-SKL en présence ou non de peroxyde d’hydrogène. * : différence significative entre les deux conditions testées."
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "Le peroxyde d’hydrogène H2O2 pourrait favoriser l’interaction entre PEX5 et p62",
+                                                  "text":  "Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser l’interaction entre PEX5 et p62",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Le peroxyde d’hydrogène H2O2 pourrait favoriser l’interaction entre PEX5 et p62 Le peroxyde d’hydrogène H2O2 pourrait favoriser l’interaction entre PEX5 et p62 → Le peroxyde d’hydrogène H2O2 pourrait favoriser l’interaction entre PEX5 et p62 On peut supposer cela grâce à la figure 5A. En effet, on voit qu’après ajout de H2O2, plus le temps avance, plus on observe une augmentation de l’intensité de la bande correspondant à p62. Or dans cette co-IP, la protéine précipitée est PEX5, on analyse donc les interactions de PEX5 → Le peroxyde d’hydrogène H2O2 pourrait favoriser l’interaction entre PEX5 et p62 On peut supposer cela grâce à la figure 5A. En effet, on voit qu’après ajout de H2O2, plus le temps avance, plus on observe une augmentation de l’intensité de la bande correspondant à p62. Or dans cette co-IP, la protéine précipitée est PEX5, on analyse donc les interactions de PEX5"
+                                                  "explanation":  "VRAI - Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser l’interaction entre PEX5 et p62 Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser l’interaction entre PEX5 et p62 → Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser l’interaction entre PEX5 et p62 On peut supposer cela grâce à la figure 5A. En effet, on voit qu’après ajout de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e, plus le temps avance, plus on observe une augmentation de l’intensité de la bande correspondant à p62. Or dans cette co-IP, la protéine précipitée est PEX5, on analyse donc les interactions de PEX5 → Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser l’interaction entre PEX5 et p62 On peut supposer cela grâce à la figure 5A. En effet, on voit qu’après ajout de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e, plus le temps avance, plus on observe une augmentation de l’intensité de la bande correspondant à p62. Or dans cette co-IP, la protéine précipitée est PEX5, on analyse donc les interactions de PEX5"
                                               },
                                               {
                                                   "id":  "B",
@@ -2157,15 +2157,15 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "On peut supposer que le traitement au H2O2 favorise le passage de p62 dans la matrice du peroxysome",
+                                                  "text":  "On peut supposer que le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise le passage de p62 dans la matrice du peroxysome",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - On peut supposer que le traitement au H2O2 favorise le passage de p62 dans la matrice du peroxysome → On peut supposer que le traitement au H2O2 favorise le passage de p62 dans la … Aïe, aïe, aïe, un piège pas sympathique. On voit dans la figure 5C qu’on a une augmentation de l’intensité de la bande p62 dans la fraction peroxysomale lorsqu’on introduit de l’H2O2 dans le milieu de culture. De même, on observe une co-localisation entre p62 et PMP70 en présence de H2O2, ce qui indique une présence proche de p62 problablement à la membrane du peroxysome. Cependant cela ne nous permet pas de dire que p62 RENTRE dans le peroxysome et est présent dans la matrice. → On peut supposer que le traitement au H2O2 favorise le passage de p62 dans la … Aïe, aïe, aïe, un piège pas sympathique. On voit dans la figure 5C qu’on a une augmentation de l’intensité de la bande p62 dans la fraction peroxysomale lorsqu’on introduit de l’H2O2 dans le milieu de culture. De même, on observe une co-localisation entre p62 et PMP70 en présence de H2O2, ce qui indique une présence proche de p62 problablement à la membrane du peroxysome. Cependant cela ne nous permet pas de dire que p62 RENTRE dans le peroxysome et est présent dans la matrice."
+                                                  "explanation":  "FAUX - On peut supposer que le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise le passage de p62 dans la matrice du peroxysome → On peut supposer que le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise le passage de p62 dans la … Aïe, aïe, aïe, un piège pas sympathique. On voit dans la figure 5C qu’on a une augmentation de l’intensité de la bande p62 dans la fraction peroxysomale lorsqu’on introduit de l’H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e dans le milieu de culture. De même, on observe une co-localisation entre p62 et PMP70 en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e, ce qui indique une présence proche de p62 problablement à la membrane du peroxysome. Cependant cela ne nous permet pas de dire que p62 RENTRE dans le peroxysome et est présent dans la matrice. → On peut supposer que le traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise le passage de p62 dans la … Aïe, aïe, aïe, un piège pas sympathique. On voit dans la figure 5C qu’on a une augmentation de l’intensité de la bande p62 dans la fraction peroxysomale lorsqu’on introduit de l’H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e dans le milieu de culture. De même, on observe une co-localisation entre p62 et PMP70 en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e, ce qui indique une présence proche de p62 problablement à la membrane du peroxysome. Cependant cela ne nous permet pas de dire que p62 RENTRE dans le peroxysome et est présent dans la matrice."
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Le peroxyde d’hydrogène H2O2 favorise la pexophagie",
+                                                  "text":  "Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise la pexophagie",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Le peroxyde d’hydrogène H2O2 favorise la pexophagie Le peroxyde d’hydrogène H2O2 favorise la pexophagie → Le peroxyde d’hydrogène H2O2 favorise la pexophagie → Le peroxyde d’hydrogène H2O2 favorise la pexophagie"
+                                                  "explanation":  "VRAI - Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise la pexophagie Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise la pexophagie → Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise la pexophagie → Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e favorise la pexophagie"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -2185,10 +2185,10 @@ window.ANNALES_2025_2026 = [
                               "question":  "D’après les résultats de la figure 6, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "Le contrôle positif CCCP n’est pas valide car ATM n’est pas activée",
-                                                 "Le peroxyde d’hydrogène H2O2 a un impact sur tous les organites de la cellule",
+                                                 "Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e a un impact sur tous les organites de la cellule",
                                                  "La co-localisation entre l’EGFP et le mRFP est due à leur signal d’adressage",
                                                  "La perte d’interaction entre les deux marqueurs, l’EGFP et le mRFP suggère un passage des peroxysomes dans les lysosomes",
-                                                 "Le peroxyde d’hydrogène H2O2 pourrait favoriser la dégradation des protéines peroxyso-males"
+                                                 "Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser la dégradation des protéines peroxyso-males"
                                              ],
                               "options":  [
                                               {
@@ -2199,9 +2199,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Le peroxyde d’hydrogène H2O2 a un impact sur tous les organites de la cellule",
+                                                  "text":  "Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e a un impact sur tous les organites de la cellule",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Le peroxyde d’hydrogène H2O2 a un impact sur tous les organites de la cellule → Le peroxyde d’hydrogène H2O2 a un impact sur tous les organites de la cellule"
+                                                  "explanation":  "FAUX - → Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e a un impact sur tous les organites de la cellule → Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e a un impact sur tous les organites de la cellule"
                                               },
                                               {
                                                   "id":  "C",
@@ -2217,9 +2217,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Le peroxyde d’hydrogène H2O2 pourrait favoriser la dégradation des protéines peroxyso-males",
+                                                  "text":  "Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser la dégradation des protéines peroxyso-males",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Le peroxyde d’hydrogène H2O2 pourrait favoriser la dégradation des protéines peroxysomales Le peroxyde d’hydrogène H2O2 pourrait favoriser la dégradation des protéines peroxysomales → Le peroxyde d’hydrogène H2O2 pourrait favoriser la dégradation des protéines … Yesss, on finit avec un item sympa ! La figure B montre clairement une décroissance significative de PEX1 et PEX14 après traitement au H2O2. De plus, on voit d’après le panel C qu’en présence de H2O2 il y a un passage des peroxysomes vers les lysosomes ! On peut donc en conclure que H2O2 pourrait favoriser la dégradation des protéines peroxysomales, et on passe sereinement à la question bilan ! → Le peroxyde d’hydrogène H2O2 pourrait favoriser la dégradation des protéines … Yesss, on finit avec un item sympa ! La figure B montre clairement une décroissance significative de PEX1 et PEX14 après traitement au H2O2. De plus, on voit d’après le panel C qu’en présence de H2O2 il y a un passage des peroxysomes vers les lysosomes ! On peut donc en conclure que H2O2 pourrait favoriser la dégradation des protéines peroxysomales, et on passe sereinement à la question bilan ! → L’injection de clofibrate pourrait guérir les personnes atteintes du syndrome de … Alors pour répondre, on va reprendre point par point. On comprend que le clofibrate active ATM ce qui régule tout un système de pexophagie derrière (ATM régule mTORC1 et ULK1). Cependant (car oui il y a toujours un cependant…), on sait aussi que ce clofibrate active PPAR ce qui augmente la production de ROS endogènes ! → L’injection de clofibrate pourrait guérir les personnes atteintes du syndrome de … Alors pour répondre, on va reprendre point par point. On comprend que le clofibrate active ATM ce qui régule tout un système de pexophagie derrière (ATM régule mTORC1 et ULK1). Cependant (car oui il y a toujours un cependant…), on sait aussi que ce clofibrate active PPAR ce qui augmente la production de ROS endogènes !"
+                                                  "explanation":  "FAUX - Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser la dégradation des protéines peroxysomales Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser la dégradation des protéines peroxysomales → Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser la dégradation des protéines … Yesss, on finit avec un item sympa ! La figure B montre clairement une décroissance significative de PEX1 et PEX14 après traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e. De plus, on voit d’après le panel C qu’en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e il y a un passage des peroxysomes vers les lysosomes ! On peut donc en conclure que H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser la dégradation des protéines peroxysomales, et on passe sereinement à la question bilan ! → Le peroxyde d’hydrogène H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser la dégradation des protéines … Yesss, on finit avec un item sympa ! La figure B montre clairement une décroissance significative de PEX1 et PEX14 après traitement au H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e. De plus, on voit d’après le panel C qu’en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e il y a un passage des peroxysomes vers les lysosomes ! On peut donc en conclure que H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e pourrait favoriser la dégradation des protéines peroxysomales, et on passe sereinement à la question bilan ! → L’injection de clofibrate pourrait guérir les personnes atteintes du syndrome de … Alors pour répondre, on va reprendre point par point. On comprend que le clofibrate active ATM ce qui régule tout un système de pexophagie derrière (ATM régule mTORC1 et ULK1). Cependant (car oui il y a toujours un cependant…), on sait aussi que ce clofibrate active PPAR ce qui augmente la production de ROS endogènes ! → L’injection de clofibrate pourrait guérir les personnes atteintes du syndrome de … Alors pour répondre, on va reprendre point par point. On comprend que le clofibrate active ATM ce qui régule tout un système de pexophagie derrière (ATM régule mTORC1 et ULK1). Cependant (car oui il y a toujours un cependant…), on sait aussi que ce clofibrate active PPAR ce qui augmente la production de ROS endogènes !"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -2484,7 +2484,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "Concernant le transporteur d’ions sodium/potassium, il y a la fixation de 3 Na+ puis la fixation de 2 K+ après changement de sa conformation",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Concernant le transporteur d’ions sodium/potassium, il y a la fixation de 3 Na+ puis la fixation de 2 K+ après changement de sa conformation Concernant le transporteur d’ions sodium/potassium, il y a la fixation de 3 Na+ puis la fixation de 2 K+ après changement de sa conformation"
+                                                  "explanation":  "FAUX - Concernant le transporteur d’ions sodium/potassium, il y a la fixation de 3 Na\u003csup\u003e+\u003c/sup\u003e puis la fixation de 2 K\u003csup\u003e+\u003c/sup\u003e après changement de sa conformation Concernant le transporteur d’ions sodium/potassium, il y a la fixation de 3 Na\u003csup\u003e+\u003c/sup\u003e puis la fixation de 2 K\u003csup\u003e+\u003c/sup\u003e après changement de sa conformation"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -2717,7 +2717,7 @@ window.ANNALES_2025_2026 = [
                                                  "Les protéines hétérotrimériques Gs peuvent être impliquées dans l’augmentation de la fré-quence cardiaque",
                                                  "La désensibilisation hétérologue d’un récepteur peut être médiée par l’inactivation de la protéine cible",
                                                  "C’est le clivage de PIP2 par la phospholipase C qui permet de créer les seconds messagers IP3 et DAG lors de l’activation des récepteurs liés à la protéine Gq",
-                                                 "On cherche à étudier le rôle de l’H2O2 dans l’apoptose. Pour cela on analyse l’expression des protéines PARP, Caspase 9, et Caspase 3 ainsi que de leurs formes clivées (C-PARP, C-Caspase et C-Caspase 3) par western blot. La GAPDH a été utilisée comme témoin de charge."
+                                                 "On cherche à étudier le rôle de l’H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e dans l’apoptose. Pour cela on analyse l’expression des protéines PARP, Caspase 9, et Caspase 3 ainsi que de leurs formes clivées (C-PARP, C-Caspase et C-Caspase 3) par western blot. La GAPDH a été utilisée comme témoin de charge."
                                              ],
                               "options":  [
                                               {
@@ -2736,7 +2736,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "Les protéines hétérotrimériques Gs peuvent être impliquées dans l’augmentation de la fré-quence cardiaque",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Les protéines hétérotrimériques Gs peuvent être impliquées dans l’augmentation de la fréquence cardiaque Les protéines hétérotrimériques Gs peuvent être impliquées dans l’augmentation de la fréquence cardiaque → Les protéines hétérotrimériques Gs peuvent être impliquées dans l’augmentation de … Item vrai mais un peu technique ! Parmi les voies de signalisation qui permettent l’augmentation du rythme cardiaque, on retrouve les récepteurs bêta-adrénergiques. Ces récepteurs, ce sont des récepteurs liés à une protéine Gs : ainsi, on peut bien l’utiliser pour augmenter notre fréquence cardiaque ! CQFD : → Les protéines hétérotrimériques Gs peuvent être impliquées dans l’augmentation de … Item vrai mais un peu technique ! Parmi les voies de signalisation qui permettent l’augmentation du rythme cardiaque, on retrouve les récepteurs bêta-adrénergiques. Ces récepteurs, ce sont des récepteurs liés à une protéine Gs : ainsi, on peut bien l’utiliser pour augmenter notre fréquence cardiaque ! CQFD : → La présence de H2O2 active la voie extrinsèque de l’apoptose → La présence de H2O2 active la voie extrinsèque de l’apoptose"
+                                                  "explanation":  "FAUX - Les protéines hétérotrimériques Gs peuvent être impliquées dans l’augmentation de la fréquence cardiaque Les protéines hétérotrimériques Gs peuvent être impliquées dans l’augmentation de la fréquence cardiaque → Les protéines hétérotrimériques Gs peuvent être impliquées dans l’augmentation de … Item vrai mais un peu technique ! Parmi les voies de signalisation qui permettent l’augmentation du rythme cardiaque, on retrouve les récepteurs bêta-adrénergiques. Ces récepteurs, ce sont des récepteurs liés à une protéine Gs : ainsi, on peut bien l’utiliser pour augmenter notre fréquence cardiaque ! CQFD : → Les protéines hétérotrimériques Gs peuvent être impliquées dans l’augmentation de … Item vrai mais un peu technique ! Parmi les voies de signalisation qui permettent l’augmentation du rythme cardiaque, on retrouve les récepteurs bêta-adrénergiques. Ces récepteurs, ce sont des récepteurs liés à une protéine Gs : ainsi, on peut bien l’utiliser pour augmenter notre fréquence cardiaque ! CQFD : → La présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e active la voie extrinsèque de l’apoptose → La présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e active la voie extrinsèque de l’apoptose"
                                               },
                                               {
                                                   "id":  "D",
@@ -2768,9 +2768,9 @@ window.ANNALES_2025_2026 = [
                               "question":  "D’après les résultats de cette figure et de vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "PARP permet la réparation de l’ADN",
-                                                 "On observe une diminution de la synthèse de la caspase 9 en présence de H2O2",
-                                                 "La présence de H2O2 active la voie extrinsèque de l’apoptose",
-                                                 "On peut supposer qu’on a une augmentation de l’expression de la protéine BAX, au niveau de la membrane mitochondriale, en présence de H2O2",
+                                                 "On observe une diminution de la synthèse de la caspase 9 en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e",
+                                                 "La présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e active la voie extrinsèque de l’apoptose",
+                                                 "On peut supposer qu’on a une augmentation de l’expression de la protéine BAX, au niveau de la membrane mitochondriale, en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e",
                                                  "Ces résultats auraient pu être obtenus avec l’utilisation de Bid"
                                              ],
                               "options":  [
@@ -2782,21 +2782,21 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "On observe une diminution de la synthèse de la caspase 9 en présence de H2O2",
+                                                  "text":  "On observe une diminution de la synthèse de la caspase 9 en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - On observe une diminution de la synthèse de la caspase 9 en présence de H2O2 → On observe une diminution de la synthèse de la caspase 9 en présence de H2O2 → On observe une diminution de la synthèse de la caspase 9 en présence de H2O2"
+                                                  "explanation":  "FAUX - On observe une diminution de la synthèse de la caspase 9 en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e → On observe une diminution de la synthèse de la caspase 9 en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e → On observe une diminution de la synthèse de la caspase 9 en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "La présence de H2O2 active la voie extrinsèque de l’apoptose",
+                                                  "text":  "La présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e active la voie extrinsèque de l’apoptose",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "On peut supposer qu’on a une augmentation de l’expression de la protéine BAX, au niveau de la membrane mitochondriale, en présence de H2O2",
+                                                  "text":  "On peut supposer qu’on a une augmentation de l’expression de la protéine BAX, au niveau de la membrane mitochondriale, en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - On peut supposer qu’on a une augmentation de l’expression de la protéine BAX, au niveau de la membrane mitochondriale, en présence de H2O2 On peut supposer qu’on a une augmentation de l’expression de la protéine BAX, au niveau de la membrane mitochondriale, en présence de H2O2"
+                                                  "explanation":  "FAUX - On peut supposer qu’on a une augmentation de l’expression de la protéine BAX, au niveau de la membrane mitochondriale, en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e On peut supposer qu’on a une augmentation de l’expression de la protéine BAX, au niveau de la membrane mitochondriale, en présence de H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e"
                                               },
                                               {
                                                   "id":  "E",
@@ -3408,7 +3408,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 3 : Biologie Cellulaire\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nEXERCICE\nPour chaque question, une ou plusieurs réponses sont exactes. Vous indiquerez la ou les proposition(s) exacte(s) :\nLe virus de l’immunodéficience humaine de type 1 (VIH-1) a infecté environ 88 millions de personnes dans le monde depuis sa découverte au début des années 1980. Il cible principale-ment les lymphocytes T CD4+, des cellules clés du système immunitaire. En les infectant, le VIH-1 détourne leur machinerie cellulaire pour assurer sa propre réplication, ce qui conduit progressivement à leur destruction.\nCe n’est pas le virus en lui-même qui cause la mort du patient, mais l’effondrement des dé-fenses immunitaires qu’il provoque. Le système immunitaire devient alors incapable de lutter efficacement contre les infections opportunistes et le développement de certains cancers. Ce phénomène est caractéristique du stade avancé de la maladie : le syndrome d’immunodéficience acquise (SIDA).\nOn s’intéresse dans cette étude aux deux principales voies d’entrée du VIH-1 dans la cellule hôte : la fusion directe avec la membrane plasmique et l’endocytose. Ces deux mécanismes d’entrée aboutissent au même résultat : l’introduction du génome viral dans la cellule hôte, première étape indispensable à la réplication du VIH-1.",
+                              "context":  "Durée de l’épreuve : 1h30\nInformations sur l’épreuve\nEXERCICE\nPour chaque question, une ou plusieurs réponses sont exactes. Vous indiquerez la ou les proposition(s) exacte(s) :\nLe virus de l’immunodéficience humaine de type 1 (VIH-1) a infecté environ 88 millions de personnes dans le monde depuis sa découverte au début des années 1980. Il cible principale-ment les lymphocytes T CD4+, des cellules clés du système immunitaire. En les infectant, le VIH-1 détourne leur machinerie cellulaire pour assurer sa propre réplication, ce qui conduit progressivement à leur destruction.\nCe n’est pas le virus en lui-même qui cause la mort du patient, mais l’effondrement des dé-fenses immunitaires qu’il provoque. Le système immunitaire devient alors incapable de lutter efficacement contre les infections opportunistes et le développement de certains cancers. Ce phénomène est caractéristique du stade avancé de la maladie : le syndrome d’immunodéficience acquise (SIDA).\nOn s’intéresse dans cette étude aux deux principales voies d’entrée du VIH-1 dans la cellule hôte : la fusion directe avec la membrane plasmique et l’endocytose. Ces deux mécanismes d’entrée aboutissent au même résultat : l’introduction du génome viral dans la cellule hôte, première étape indispensable à la réplication du VIH-1.",
                               "images":  [
                                              "annales_assets/2025_2026/bio_cellulaire/tuto_3/image1.png",
                                              "annales_assets/2025_2026/bio_cellulaire/tuto_3/image2.png",
@@ -4181,7 +4181,7 @@ window.ANNALES_2025_2026 = [
                                                  "Une augmentation de la quantité d’IP3 cytosolique",
                                                  "Une augmentation de la quantité de DAG",
                                                  "La fermeture de canaux calciques de la membrane plasmique",
-                                                 "L’inactivation de plusieurs GMPc entraînant l’ouverture de canaux Ca2+"
+                                                 "L’inactivation de plusieurs GMPc entraînant l’ouverture de canaux Ca\u003csup\u003e2+\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
@@ -4210,9 +4210,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "L’inactivation de plusieurs GMPc entraînant l’ouverture de canaux Ca2+",
+                                                  "text":  "L’inactivation de plusieurs GMPc entraînant l’ouverture de canaux Ca\u003csup\u003e2+\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - L’inactivation de plusieurs GMPc entraînant l’ouverture de canaux Ca2+ → L’inactivation de plusieurs GMPc entraînant l’ouverture de canaux Ca2+ → L’inactivation de plusieurs GMPc entraînant l’ouverture de canaux Ca2+ Les hormones stéroïdes agissent sur des récepteurs nucléaires Les hormones stéroïdes agissent sur des récepteurs nucléaires"
+                                                  "explanation":  "FAUX - L’inactivation de plusieurs GMPc entraînant l’ouverture de canaux Ca\u003csup\u003e2+\u003c/sup\u003e → L’inactivation de plusieurs GMPc entraînant l’ouverture de canaux Ca2+ → L’inactivation de plusieurs GMPc entraînant l’ouverture de canaux Ca2+ Les hormones stéroïdes agissent sur des récepteurs nucléaires Les hormones stéroïdes agissent sur des récepteurs nucléaires"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -5194,7 +5194,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 2 : Biochimie\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nLa glycolyse est une voie métabolique essentielle chez l’homme : elle transforme le glucose en pyruvate en produisant 2 ATP, le pyruvate sera potentiellement introduit dans le cycle de Krebs sous une autre forme. Dans cette voie, une enzyme catalyse une réaction d’importance capitale et cette enzyme c’est l’aldolase EC 4.1.2.13 qui catalyse la séparation du fructose 1,6 bisphosphate en DHAP et G3P Figure 1. Cette réaction est charnière car elle marque à la fois la fin de la phase de préparation et le début de la phase de restitution de la glycolyse, c’est la phase où l’ATP est produit.\nFigure 1 : réaction catalysée par l’aldolase",
+                              "context":  "Durée de l’épreuve : 1h30\nInformations sur l’épreuve\nLa glycolyse est une voie métabolique essentielle chez l’homme : elle transforme le glucose en pyruvate en produisant 2 ATP, le pyruvate sera potentiellement introduit dans le cycle de Krebs sous une autre forme. Dans cette voie, une enzyme catalyse une réaction d’importance capitale et cette enzyme c’est l’aldolase EC 4.1.2.13 qui catalyse la séparation du fructose 1,6 bisphosphate en DHAP et G3P Figure 1. Cette réaction est charnière car elle marque à la fois la fin de la phase de préparation et le début de la phase de restitution de la glycolyse, c’est la phase où l’ATP est produit.\nFigure 1 : réaction catalysée par l’aldolase",
                               "images":  [
                                              "annales_assets/2025_2026/biochimie/tuto_1/image1.png",
                                              "annales_assets/2025_2026/biochimie/tuto_1/image2.png",
@@ -6221,7 +6221,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 2 : Biochimie\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nLa synthèse des acides gras est un processus métabolique important qui permet de produire des acides gras, un intermédiaire de cette synthèse est l’acide palmitique. Il est donc un précurseur d’autres acides gras. L’une des étapes limitantes de cette voie de synthèse est la carboxylation de l’acétyl-CoA en malonyl-CoA Figure 1, catalysée par une enzyme clé : l’acétyl-CoA carboxylase (ACC) EC 6.4.1.2, pour accélérer cette réaction l’ACC va utiliser la biotine (un dérivé de la vitamine B8) comme cofacteur.\nFigure 1 : Réaction catalysée par l’Acétyl-CoA Carboxylase\nSuite à sa production, l’acide palmitique peut être transporté au réticulum endoplasmique pour la désaturation et/ou l’élongation. Figure 2\nFigure 2 : Acide gras en représentation semi-développée",
+                              "context":  "Durée de l’épreuve : 1h30\nInformations sur l’épreuve\nLa synthèse des acides gras est un processus métabolique important qui permet de produire des acides gras, un intermédiaire de cette synthèse est l’acide palmitique. Il est donc un précurseur d’autres acides gras. L’une des étapes limitantes de cette voie de synthèse est la carboxylation de l’acétyl-CoA en malonyl-CoA Figure 1, catalysée par une enzyme clé : l’acétyl-CoA carboxylase (ACC) EC 6.4.1.2, pour accélérer cette réaction l’ACC va utiliser la biotine (un dérivé de la vitamine B8) comme cofacteur.\nFigure 1 : Réaction catalysée par l’Acétyl-CoA Carboxylase\nSuite à sa production, l’acide palmitique peut être transporté au réticulum endoplasmique pour la désaturation et/ou l’élongation. Figure 2\nFigure 2 : Acide gras en représentation semi-développée",
                               "images":  [
                                              "annales_assets/2025_2026/biochimie/tuto_2/image1.png",
                                              "annales_assets/2025_2026/biochimie/tuto_2/image2.png",
@@ -6822,7 +6822,7 @@ window.ANNALES_2025_2026 = [
                                                  "Les oxydo-réductases sont les seules enzymes qui, par leur action, modifient l’équilibre de la réaction",
                                                  "Dans la nomenclature EC, le premier chiffre représente la classe de l’enzyme",
                                                  "Figure 6 : Tableau présentant les étapes de purification de l’ACC pour différents animaux. NB : Pour tous les animaux, on prélève ces fractions dans le foie sauf pour l’oie à qui on prélève dans la glande uropygienne.",
-                                                 "On se demande aussi s’il est possible de purifier la glande uropygienne chez l’oie en utilisant une autre méthode, notée X, appliquée en première étape du suivi de purification. Cette méthode permet d’augmenter l’activité spécifique à 0,030 UI · mg−1 chez l’oie, dans un échantillon de glande uropygienne contenant 2 240 mg de protéines totales."
+                                                 "On se demande aussi s’il est possible de purifier la glande uropygienne chez l’oie en utilisant une autre méthode, notée X, appliquée en première étape du suivi de purification. Cette méthode permet d’augmenter l’activité spécifique à 0,030 UI · mg\u003csup\u003e−1\u003c/sup\u003e chez l’oie, dans un échantillon de glande uropygienne contenant 2 240 mg de protéines totales."
                                              ],
                               "options":  [
                                               {
@@ -7052,13 +7052,13 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "La forme T correspond à la forme relâchée du protomère",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → La forme T correspond à la forme relâchée du protomère → La forme T correspond à la forme relâchée du protomère → L’inhibition de l’Acétyl-CoA Carboxylase par l’acide pantothénique peut être levée … La KM apparente est augmentée mais la Vmax est inchangée : on est donc dans le cas d’un inhibiteur compétitif ! → L’inhibition de l’Acétyl-CoA Carboxylase par l’acide pantothénique peut être levée … La KM apparente est augmentée mais la Vmax est inchangée : on est donc dans le cas d’un inhibiteur compétitif !"
+                                                  "explanation":  "VRAI - → La forme T correspond à la forme relâchée du protomère → La forme T correspond à la forme relâchée du protomère → L’inhibition de l’Acétyl-CoA Carboxylase par l’acide pantothénique peut être levée … La K\u003csub\u003eM\u003c/sub\u003e apparente est augmentée mais la V\u003csub\u003emax\u003c/sub\u003e est inchangée : on est donc dans le cas d’un inhibiteur compétitif ! → L’inhibition de l’Acétyl-CoA Carboxylase par l’acide pantothénique peut être levée … La K\u003csub\u003eM\u003c/sub\u003e apparente est augmentée mais la V\u003csub\u003emax\u003c/sub\u003e est inchangée : on est donc dans le cas d’un inhibiteur compétitif !"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "Pour les enzymes de système V, la fixation du substrat entraîne un déplacement de l’équilibre vers R",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Pour les enzymes de système V, la fixation du substrat entraîne un déplacement de … Vous pouvez facilement vous tromper. C’est pour les enzymes de système K que la fixation du substrat entraîne un déplacement de l’équilibre (T=R) vers R. Pour les enzymes de système V : la fixation du substrat n’entraîne donc aucun déplacement de l’équilibre entre T et R. → Pour les enzymes de système V, la fixation du substrat entraîne un déplacement de … Vous pouvez facilement vous tromper. C’est pour les enzymes de système K que la fixation du substrat entraîne un déplacement de l’équilibre (T=R) vers R. Pour les enzymes de système V : la fixation du substrat n’entraîne donc aucun déplacement de l’équilibre entre T et R. → Dans la situation I-2, le KM apparent est d’environ 2mM → Dans la situation I-2, le KM apparent est d’environ 2mM"
+                                                  "explanation":  "FAUX - → Pour les enzymes de système V, la fixation du substrat entraîne un déplacement de … Vous pouvez facilement vous tromper. C’est pour les enzymes de système K que la fixation du substrat entraîne un déplacement de l’équilibre (T=R) vers R. Pour les enzymes de système V : la fixation du substrat n’entraîne donc aucun déplacement de l’équilibre entre T et R. → Pour les enzymes de système V, la fixation du substrat entraîne un déplacement de … Vous pouvez facilement vous tromper. C’est pour les enzymes de système K que la fixation du substrat entraîne un déplacement de l’équilibre (T=R) vers R. Pour les enzymes de système V : la fixation du substrat n’entraîne donc aucun déplacement de l’équilibre entre T et R. → Dans la situation I-2, le K\u003csub\u003eM\u003c/sub\u003e apparent est d’environ 2mM → Dans la situation I-2, le K\u003csub\u003eM\u003c/sub\u003e apparent est d’environ 2mM"
                                               },
                                               {
                                                   "id":  "E",
@@ -7082,9 +7082,9 @@ window.ANNALES_2025_2026 = [
                               "question":  "D’après la figure 7, quelle est la ou quelles sont les proposition(s) exacte(s) ?",
                               "rawOptions":  [
                                                  "L’acide pantothénique interagit avec l’enzyme libre et complexée à son substrat",
-                                                 "Il est possible de calculer la constante d’inhibition Ki",
+                                                 "Il est possible de calculer la constante d’inhibition K\u003csub\u003ei\u003c/sub\u003e",
                                                  "L’inhibition de l’Acétyl-CoA Carboxylase par l’acide pantothénique peut être levée par dialyse",
-                                                 "Dans la situation I-2, le KM apparent est d’environ 2mM",
+                                                 "Dans la situation I-2, le K\u003csub\u003eM\u003c/sub\u003e apparent est d’environ 2mM",
                                                  "L’acide pantothénique est un inhibiteur suicide de l’Acétyl-CoA Carboxylase"
                                              ],
                               "options":  [
@@ -7096,9 +7096,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Il est possible de calculer la constante d’inhibition Ki",
+                                                  "text":  "Il est possible de calculer la constante d’inhibition K\u003csub\u003ei\u003c/sub\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Il est possible de calculer la constante d’inhibition Ki → Il est possible de calculer la constante d’inhibition Ki → Le désoxyribose compte un groupement -OH sur le carbone 2’"
+                                                  "explanation":  "FAUX - → Il est possible de calculer la constante d’inhibition K\u003csub\u003ei\u003c/sub\u003e → Il est possible de calculer la constante d’inhibition K\u003csub\u003ei\u003c/sub\u003e → Le désoxyribose compte un groupement -OH sur le carbone 2’"
                                               },
                                               {
                                                   "id":  "C",
@@ -7108,7 +7108,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "Dans la situation I-2, le KM apparent est d’environ 2mM",
+                                                  "text":  "Dans la situation I-2, le K\u003csub\u003eM\u003c/sub\u003e apparent est d’environ 2mM",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - → La méthylation des cytosines est un phénomène physiologique"
                                               },
@@ -7162,7 +7162,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "D",
                                                   "text":  "La méthylation des cytosines est un phénomène physiologique",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - La méthylation des cytosines est un phénomène physiologique La méthylation des cytosines est un phénomène physiologique Dans la situation I-2, le KM apparent est d’environ 2mM"
+                                                  "explanation":  "FAUX - La méthylation des cytosines est un phénomène physiologique La méthylation des cytosines est un phénomène physiologique Dans la situation I-2, le K\u003csub\u003eM\u003c/sub\u003e apparent est d’environ 2mM"
                                               },
                                               {
                                                   "id":  "E",
@@ -7400,7 +7400,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Université Paris Cité Faculté de Santé\nAnnée universitaire 2025/2026\nExamen PASS BLANC UE 2\nBIOCHIMIE\n1 Décembre 2025\nINFORMATIONS REGLEMENTAIRES\nCalculatrice autorisée : NON\nCalculatrice autorisée : NON\nLes questions en lien avec les cours d’enzymologie, de molécules du vivants/protéines et de biologie moléculaire sont complémentaires mais peuvent être traitées individuellement\nLes questions en lien avec les cours d’enzymologie, de molécules du vivants/protéines et de biologie moléculaire sont complémentaires mais peuvent être traitées individuellement\nINFORMATIONS SUR L’EPREUVE\nLe livret contient 19 pages numérotées de 1 à 19 et comporte 20 questions. Merci de vérifier au début de l’épreuve que le livret est complet.\nPréparation du sujet H Blons, C Pontoizeau relecture S Gillet MA Loriot N Pallet\nLe livret contient 19 pages numérotées de 1 à 19 et comporte 20 questions. Merci de vérifier au début de l’épreuve que le livret est complet.\nPréparation du sujet H Blons, C Pontoizeau relecture S Gillet MA Loriot N Pallet\nIntroduction et informations générales\nLa maladie de Fabry (MF) est une maladie rare dont la prévalence est d’environ 1 naissance sur 80 000 qui est due à une accumulation de glycosphingolipides neutres (en particulier le globotriaosylcéramide (Gb3)) dans les lysosomes. Elle peut toucher plusieurs organes dont le cœur, le rein et le cerveau.\nCette maladie est causée par des mutations du gène GLA, situé sur le chromosome X . Le gene GLA code l’enzyme α-galactosidase A (α-Gal A appelée également α-Gal), dont la fonction est de dégrader le Gb3. Les mutations de GLA conduisent à un déficit partiel ou total de l’activité enzymatique de l’α-galactosidase A.\nOn rappelle que chez les femmes, une seule copie du gène GLA est exprimée.\nLe gène s’étend sur une région de 12 kilo base (kB) ; la partie codante comprend 1290 paires de bases (pb) et est divisée en sept exons (de 92 à 291 pb).\nUne séquence riche en CpG est identifiée en 5’ du codon d’initiation de la transcription.\nα-Gal A est une protéine ubiquitaire composée de deux sous unités de 429 acides aminés chacunes.\nPartie 1 : Biologie Moléculaire\nCette partie concerne la recherche et l’analyse de mutations impliquées dans différentes familles dont certains membres sont atteints de la maladie de FABRY.\nggtccgcgccgctgagtataatcttaaaagcccaggttacccgcggaaatttATGCTGTCCGGTCACCGTGACAATGCAGCT GAGGAACCCAGAACTACATCTGGGCTGCGCGCTTGCGCTTCGCTTCCTGGCCCTCGTTTCCTGGGACATCCCTGGGGCTAGAG CACTGGACAATGGATTGGCAAGGACGCCTACCATGGGCTGGCTGCACTGGGAGCGCTTCATG TGC AAC CTT GAC TGC\n52\nCAG GAA GAG CCA GAT TCC TGC ATC AGgtatcagatattgggtactcccttcggctagctaaagggca....\n.... ....64\n.atgattattggaatttctctttcagTGAGAAGCTCTTCATGGAGATGGCAGAGCTCATGGTCTCAGAAGGCTG\nGAAGGATGCAGGTTATGAGTACCTCTGCATTGATGACTGTTGGATGGCTCCCCAAAGAGATTCAGAAGGCAG ACTTCAGGCAGACCCTCAGCGCTTT CCT CAT GGG ATT CGC CAG CTA GCT AAT TATgtgagtttatag\nataatgttcttgt.......... ....\n.actcttttcctccctctcatttcagGTTCACAGCAAAGGACTGAAGCTAGGGATTTATGCAGATGTTGGAAATA\nAAACCTGCGCAGGCTTCCCTGGGAGTTTTGGATACTACGACATTGATGCC CAG ACC TTT GCT GAC TGG GGA GTA GAT CTG CTA AAA TTT GAT GGT TGT TAC TGT GAC AGT TTG GAA AAT TTG GCA GAT Ggtaatgttt\n167\ncattccagagatttag.... .... .... ....\nLa figure 1 : séquence des 3 premiers exons du gène GLA, les exons sont en majuscules, les séquences non codantes : 5’ non traduites, début et fin des introns sont en minuscules, les pointillés symbolisent de la séquence intronique, seules les séquences introniques des jonctions intron/exon sont fournies.\nLe site d’initiation de la traduction, les codons 52, 64 et 167 ainsi qu’une séquence d’intérêt (TATA), sont en gras.",
+                              "context":  "Université Paris Cité Faculté de Santé\nExamen PASS BLANC UE 2\n1 Décembre 2025\nDurée de l’épreuve : 1h30 (Temps majoré 2h00)\nA LIRE AVANT DE COMMENCER L’EPREUVE\nCalculatrice autorisée : NON\nCalculatrice autorisée : NON\nLes questions en lien avec les cours d’enzymologie, de molécules du vivants/protéines et de biologie moléculaire sont complémentaires mais peuvent être traitées individuellement\nLes questions en lien avec les cours d’enzymologie, de molécules du vivants/protéines et de biologie moléculaire sont complémentaires mais peuvent être traitées individuellement\nINFORMATIONS SUR L’EPREUVE\nLe livret contient 19 pages numérotées de 1 à 19 et comporte 20 questions. Merci de vérifier au début de l’épreuve que le livret est complet.\nPréparation du sujet H Blons, C Pontoizeau relecture S Gillet MA Loriot N Pallet\nLe livret contient 19 pages numérotées de 1 à 19 et comporte 20 questions. Merci de vérifier au début de l’épreuve que le livret est complet.\nPréparation du sujet H Blons, C Pontoizeau relecture S Gillet MA Loriot N Pallet\nIntroduction et informations générales\nLa maladie de Fabry (MF) est une maladie rare dont la prévalence est d’environ 1 naissance sur 80 000 qui est due à une accumulation de glycosphingolipides neutres (en particulier le globotriaosylcéramide (Gb3)) dans les lysosomes. Elle peut toucher plusieurs organes dont le cœur, le rein et le cerveau.\nCette maladie est causée par des mutations du gène GLA, situé sur le chromosome X . Le gene GLA code l’enzyme α-galactosidase A (α-Gal A appelée également α-Gal), dont la fonction est de dégrader le Gb3. Les mutations de GLA conduisent à un déficit partiel ou total de l’activité enzymatique de l’α-galactosidase A.\nOn rappelle que chez les femmes, une seule copie du gène GLA est exprimée.\nLe gène s’étend sur une région de 12 kilo base (kB) ; la partie codante comprend 1290 paires de bases (pb) et est divisée en sept exons (de 92 à 291 pb).\nUne séquence riche en CpG est identifiée en 5’ du codon d’initiation de la transcription.\nα-Gal A est une protéine ubiquitaire composée de deux sous unités de 429 acides aminés chacunes.\nPartie 1 : Biologie Moléculaire\nCette partie concerne la recherche et l’analyse de mutations impliquées dans différentes familles dont certains membres sont atteints de la maladie de FABRY.\nggtccgcgccgctgagtataatcttaaaagcccaggttacccgcggaaatttATGCTGTCCGGTCACCGTGACAATGCAGCT GAGGAACCCAGAACTACATCTGGGCTGCGCGCTTGCGCTTCGCTTCCTGGCCCTCGTTTCCTGGGACATCCCTGGGGCTAGAG CACTGGACAATGGATTGGCAAGGACGCCTACCATGGGCTGGCTGCACTGGGAGCGCTTCATG TGC AAC CTT GAC TGC\n52\nCAG GAA GAG CCA GAT TCC TGC ATC AGgtatcagatattgggtactcccttcggctagctaaagggca....\n.... ....64\n.atgattattggaatttctctttcagTGAGAAGCTCTTCATGGAGATGGCAGAGCTCATGGTCTCAGAAGGCTG\nGAAGGATGCAGGTTATGAGTACCTCTGCATTGATGACTGTTGGATGGCTCCCCAAAGAGATTCAGAAGGCAG ACTTCAGGCAGACCCTCAGCGCTTT CCT CAT GGG ATT CGC CAG CTA GCT AAT TATgtgagtttatag\nataatgttcttgt.......... ....\n.actcttttcctccctctcatttcagGTTCACAGCAAAGGACTGAAGCTAGGGATTTATGCAGATGTTGGAAATA\nAAACCTGCGCAGGCTTCCCTGGGAGTTTTGGATACTACGACATTGATGCC CAG ACC TTT GCT GAC TGG GGA GTA GAT CTG CTA AAA TTT GAT GGT TGT TAC TGT GAC AGT TTG GAA AAT TTG GCA GAT Ggtaatgttt\n167\ncattccagagatttag.... .... .... ....\nLa figure 1 : séquence des 3 premiers exons du gène GLA, les exons sont en majuscules, les séquences non codantes : 5’ non traduites, début et fin des introns sont en minuscules, les pointillés symbolisent de la séquence intronique, seules les séquences introniques des jonctions intron/exon sont fournies.\nLe site d’initiation de la traduction, les codons 52, 64 et 167 ainsi qu’une séquence d’intérêt (TATA), sont en gras.",
                               "images":  [
 
                                          ],
@@ -8206,7 +8206,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  15,
                               "type":  "QCM",
-                              "context":  "",
+                              "context":  "\u003cdiv class=\"annale-data-table-wrap\"\u003e\u003ctable class=\"annale-data-table\"\u003e\u003ctr\u003e\u003cth\u003eEtape\u003c/th\u003e\u003cth\u003eQuantité de protéines (mg)\u003c/th\u003e\u003cth\u003eActivité totale (UI)\u003c/th\u003e\u003cth\u003eActivité spécifique (UI.mg-1)\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003e1. Extrait soluble\u003c/th\u003e\u003ctd\u003e200\u003c/td\u003e\u003ctd\u003e1000\u003c/td\u003e\u003ctd\u003e5\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003e2. Chromatographie d’affinité\u003c/th\u003e\u003ctd\u003e40\u003c/td\u003e\u003ctd\u003e800\u003c/td\u003e\u003ctd\u003e20\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003e3. Chromatographie échangeuse d’ions\u003c/th\u003e\u003ctd\u003e2\u003c/td\u003e\u003ctd\u003e400\u003c/td\u003e\u003ctd\u003e?\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e",
                               "images":  [
                                              "annales_assets/2025_2026/biochimie/tuto_3/image11.jpeg"
                                          ],
@@ -8218,22 +8218,6 @@ window.ANNALES_2025_2026 = [
                                                  "Un pont disulfure est établi entre le galactose et le résidu C142",
                                                  "Certaines formes modérées de maladie de Fabry, d’apparition plus tardive et ne touchant qu’un seul organe comme le cœur, ont également été décrites. Des chercheurs s’intéressent à deux variants de l’α-galactosidase : le variant C52Y retrouvé chez un patient présentant une forme sévère et le variant R301Q retrouvé chez un patient présentant une forme cardiaque modérée. On précise que le résidu C52 est nécessaire au bon positionnement du résidu W47 dans la protéine.",
                                                  "Afin d’étudier les conséquences des variants C52Y et R310Q sur l’activité enzymatique de l’α-galactosidase, des chercheurs ont surexprimé dans une lignée cellulaire chacun des variants (C52Y et R310Q) ainsi que l’α-galactosidase sauvage qu’ils ont purifiés suivant un protocole en 2 étapes (Tableau 1).",
-                                                 "Etape",
-                                                 "Quantité de protéines (mg)",
-                                                 "Activité totale (UI)",
-                                                 "Activité spécifique (UI.mg-1)",
-                                                 "1. Extrait soluble",
-                                                 "200",
-                                                 "1000",
-                                                 "5",
-                                                 "2. Chromatographie d’affinité",
-                                                 "40",
-                                                 "800",
-                                                 "20",
-                                                 "3. Chromatographie échangeuse d’ions",
-                                                 "2",
-                                                 "400",
-                                                 "?",
                                                  "Tableau 1. Purification de l’α-galactosidase sauvage"
                                              ],
                               "options":  [
@@ -8286,7 +8270,7 @@ window.ANNALES_2025_2026 = [
                                                  "Le rendement total de la purification est de 1%",
                                                  "Les facteurs de purification par étape des étapes 2 et 3 sont identiques",
                                                  "Le facteur de purification total est de 40",
-                                                 "Les chercheurs ont ensuite étudié l’influence de la concentration en substrat (Gb3) sur la vitesse initiale de la réaction pour l’α-galactosidase sauvage, le variant C52Y et le variant R310Q. Les résultats pour l’α-galactosidase sauvage et le variant C52Y sont représentés sur la figure 11 (courbes (a) et (b)). Pour le variant R310Q, les chercheurs ont déterminé une Km égale à 2 mmol.L-1 et une",
+                                                 "Les chercheurs ont ensuite étudié l’influence de la concentration en substrat (Gb3) sur la vitesse initiale de la réaction pour l’α-galactosidase sauvage, le variant C52Y et le variant R310Q. Les résultats pour l’α-galactosidase sauvage et le variant C52Y sont représentés sur la figure 11 (courbes (a) et (b)). Pour le variant R310Q, les chercheurs ont déterminé une Km égale à 2 mmol.L\u003csup\u003e-1\u003c/sup\u003e et une",
                                                  "Vmax égale à 35 UI.mL-1). Les cinétiques ont été réalisées avec la même quantité d’enzyme, que ce soit pour l’α-galactosidase sauvage ou les 2 variants.",
                                                  "Les chercheurs ont par ailleurs étudié in vivo, dans des lymphoblastes, la quantité de transcrits et de protéines pour l’α-galactosidase sauvage et les variants C52Y et R310Q. Les quantités de transcrits étaient comparables entre l’α-galactosidase sauvage et les variants C52Y et R310Q. Les quantités de protéines d’α-galactosidase sauvage et du variant C52Y étaient comparables alors que la quantité de protéine du variant R310Q était diminuée d’environ 80%. In vivo, les activités enzymatiques résiduelles des variants C52Y et R310Q étaient égales respectivement à 2% et 15% de l’activité de l’α-galactosidase sauvage.",
                                                  "Figure 11. Courbes représentant la vitesse initiale Vinitiale en fonction du rapport Vinitiale / [Gb3] pour (a) l’α-galactosidase sauvage et (b) le variant C52Y."
@@ -8318,7 +8302,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Les chercheurs ont ensuite étudié l’influence de la concentration en substrat (Gb3) sur la vitesse initiale de la réaction pour l’α-galactosidase sauvage, le variant C52Y et le variant R310Q. Les résultats pour l’α-galactosidase sauvage et le variant C52Y sont représentés sur la figure 11 (courbes (a) et (b)). Pour le variant R310Q, les chercheurs ont déterminé une Km égale à 2 mmol.L-1 et une",
+                                                  "text":  "Les chercheurs ont ensuite étudié l’influence de la concentration en substrat (Gb3) sur la vitesse initiale de la réaction pour l’α-galactosidase sauvage, le variant C52Y et le variant R310Q. Les résultats pour l’α-galactosidase sauvage et le variant C52Y sont représentés sur la figure 11 (courbes (a) et (b)). Pour le variant R310Q, les chercheurs ont déterminé une Km égale à 2 mmol.L\u003csup\u003e-1\u003c/sup\u003e et une",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               }
@@ -8341,8 +8325,8 @@ window.ANNALES_2025_2026 = [
                                                  "Dans ces conditions, la vitesse initiale de l’enzyme non mutée mesurée pour une concentration en substrat égale à 2 mM est de 17.5 UI.mL-1",
                                                  "Le variant C52Y présente diminution importante de la Vmax ce qui explique la sévérité du phénotype observé",
                                                  "L’efficacité catalytique du variant C52Y est comparable à l’efficacité catalytique de l’α-galactosidase non mutée",
-                                                 "Les chercheurs se sont intéressés à l’effet d’un analogue structural du galactose, le 1-deoxygalactonojirimycin (DGJ) qui pourrait avoir un effet intéressant sur le variant R310Q. Dans un premier temps, les chercheurs ont caractérisé l’effet du DGJ (concentration 250 µmol.L-1) sur l’α-galactosidase",
-                                                 "sauvage. Dans ces conditions, l’équation de la courbe Vinitiale = f(Vinitiale / [Gb3]) est égale à y= -5x +35 (α-galactosidase sauvage + DGJ à la concentration de 250 µmol.L-1)."
+                                                 "Les chercheurs se sont intéressés à l’effet d’un analogue structural du galactose, le 1-deoxygalactonojirimycin (DGJ) qui pourrait avoir un effet intéressant sur le variant R310Q. Dans un premier temps, les chercheurs ont caractérisé l’effet du DGJ (concentration 250 µmol.L\u003csup\u003e-1\u003c/sup\u003e) sur l’α-galactosidase",
+                                                 "sauvage. Dans ces conditions, l’équation de la courbe Vinitiale = f(Vinitiale / [Gb3]) est égale à y= -5x +35 (α-galactosidase sauvage + DGJ à la concentration de 250 µmol.L\u003csup\u003e-1\u003c/sup\u003e)."
                                              ],
                               "options":  [
                                               {
@@ -8371,7 +8355,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Les chercheurs se sont intéressés à l’effet d’un analogue structural du galactose, le 1-deoxygalactonojirimycin (DGJ) qui pourrait avoir un effet intéressant sur le variant R310Q. Dans un premier temps, les chercheurs ont caractérisé l’effet du DGJ (concentration 250 µmol.L-1) sur l’α-galactosidase",
+                                                  "text":  "Les chercheurs se sont intéressés à l’effet d’un analogue structural du galactose, le 1-deoxygalactonojirimycin (DGJ) qui pourrait avoir un effet intéressant sur le variant R310Q. Dans un premier temps, les chercheurs ont caractérisé l’effet du DGJ (concentration 250 µmol.L\u003csup\u003e-1\u003c/sup\u003e) sur l’α-galactosidase",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               }
@@ -8394,7 +8378,7 @@ window.ANNALES_2025_2026 = [
                                                  "Le DGJ peut être éliminé par dialyse",
                                                  "Le DGJ est un inhibiteur non compétitif de l’α-galactosidase",
                                                  "Le pouvoir inhibiteur du DGJ augmente quand on augmente la concentration de Gb3",
-                                                 "Les chercheurs ont ensuite caractérisé l’effet du DGJ sur l’activité du variant R310Q in vivo. Ils ont mesuré l’activité enzymatique résiduelle et la quantité de protéine dans des lymphoblastes exprimant le variant R310Q cultivés en l’absence (0 µmol.L-1) ou en présence de DGJ (0,02 ou 0,2 ou 20 ou 200 µmol.L-1) (Figure 12 a et b). Il est à noter que dans ces conditions les concentrations intracellulaires en DGJ sont bien plus faibles que les concentrations en DGJ du milieu de culture. Par ailleurs, les chercheurs ont également étudié la localisation de l’enzyme R310Q au niveau intracellulaire par fractionnement des compartiments intracellulaires. En l’absence de DGJ, ils ont détecté l’activité enzymatique dans la fraction correspondant à l’appareil de Golgi (compartiment avec pH = 7) mais pas dans la fraction correspondant aux lysosomes (compartiment avec pH = 5). En présence de DGJ, les chercheurs ont détecté l’activité enzymatique dans la fraction correspondant aux lysosomes.",
+                                                 "Les chercheurs ont ensuite caractérisé l’effet du DGJ sur l’activité du variant R310Q in vivo. Ils ont mesuré l’activité enzymatique résiduelle et la quantité de protéine dans des lymphoblastes exprimant le variant R310Q cultivés en l’absence (0 µmol.L\u003csup\u003e-1\u003c/sup\u003e) ou en présence de DGJ (0,02 ou 0,2 ou 20 ou 200 µmol.L\u003csup\u003e-1\u003c/sup\u003e) (Figure 12 a et b). Il est à noter que dans ces conditions les concentrations intracellulaires en DGJ sont bien plus faibles que les concentrations en DGJ du milieu de culture. Par ailleurs, les chercheurs ont également étudié la localisation de l’enzyme R310Q au niveau intracellulaire par fractionnement des compartiments intracellulaires. En l’absence de DGJ, ils ont détecté l’activité enzymatique dans la fraction correspondant à l’appareil de Golgi (compartiment avec pH = 7) mais pas dans la fraction correspondant aux lysosomes (compartiment avec pH = 5). En présence de DGJ, les chercheurs ont détecté l’activité enzymatique dans la fraction correspondant aux lysosomes.",
                                                  "Enfin, les chercheurs ont étudié l’influence de pH sur l’activité de l’enzyme R310Q en présence ou en absence de DGJ sur la protéine purifiée in vitro. En pratique, l’enzyme R310Q a été préincubée pendant différents temps à différents pH avant mesure de l’activité enzymatique en l’absence de DGJ (Figure 12 c). L’enzyme R310Q a ensuite été préincubée pendant différents temps à pH 7 avec différentes concentrations de DGJ avant mesure de l’activité enzymatique (Figure 12 d).",
                                                  "Figure 12. Effet du DGJ à différentes concentrations sur l’activité enzymatique",
                                                  "(a) et l’expression protéique (b) du variant R310Q exprimé dans les lymphoblastes. Pour la Figure (b), le témoin de charge est comparable dans les différents puits (non montré). Activité enzymatique du variant R310Q purifié après incubation à différent temps (c) à différents pH en l’absence de DGJ et",
@@ -8427,7 +8411,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Les chercheurs ont ensuite caractérisé l’effet du DGJ sur l’activité du variant R310Q in vivo. Ils ont mesuré l’activité enzymatique résiduelle et la quantité de protéine dans des lymphoblastes exprimant le variant R310Q cultivés en l’absence (0 µmol.L-1) ou en présence de DGJ (0,02 ou 0,2 ou 20 ou 200 µmol.L-1) (Figure 12 a et b). Il est à noter que dans ces conditions les concentrations intracellulaires en DGJ sont bien plus faibles que les concentrations en DGJ du milieu de culture. Par ailleurs, les chercheurs ont également étudié la localisation de l’enzyme R310Q au niveau intracellulaire par fractionnement des compartiments intracellulaires. En l’absence de DGJ, ils ont détecté l’activité enzymatique dans la fraction correspondant à l’appareil de Golgi (compartiment avec pH = 7) mais pas dans la fraction correspondant aux lysosomes (compartiment avec pH = 5). En présence de DGJ, les chercheurs ont détecté l’activité enzymatique dans la fraction correspondant aux lysosomes.",
+                                                  "text":  "Les chercheurs ont ensuite caractérisé l’effet du DGJ sur l’activité du variant R310Q in vivo. Ils ont mesuré l’activité enzymatique résiduelle et la quantité de protéine dans des lymphoblastes exprimant le variant R310Q cultivés en l’absence (0 µmol.L\u003csup\u003e-1\u003c/sup\u003e) ou en présence de DGJ (0,02 ou 0,2 ou 20 ou 200 µmol.L\u003csup\u003e-1\u003c/sup\u003e) (Figure 12 a et b). Il est à noter que dans ces conditions les concentrations intracellulaires en DGJ sont bien plus faibles que les concentrations en DGJ du milieu de culture. Par ailleurs, les chercheurs ont également étudié la localisation de l’enzyme R310Q au niveau intracellulaire par fractionnement des compartiments intracellulaires. En l’absence de DGJ, ils ont détecté l’activité enzymatique dans la fraction correspondant à l’appareil de Golgi (compartiment avec pH = 7) mais pas dans la fraction correspondant aux lysosomes (compartiment avec pH = 5). En présence de DGJ, les chercheurs ont détecté l’activité enzymatique dans la fraction correspondant aux lysosomes.",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               }
@@ -8567,7 +8551,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 1 : Chimie\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nChimie\nPour simplifier les calculs, on utilisera les ordres de grandeurs ci-dessous :\nln(x) = 2.3 log x\nR = 8.3 J · mol · K−1\nÀ T = 298 K : RT = 5/2 kJ · mol−1 = 2.5 kJ · mol−1\nRT ln x = 0.06 log x F\n2.3RT = 6.0 kJ · mol−1\nF = 100 000 C · mol−1\nExponentielle, logarithme népérien et logartihme décimal\nx\n0,4\n0,5\n0,1\n0,05\n3\n7\n10\nex\n1,5\n1,65\n1,1\n1,05\n20\n1096\n22 000\nln x\n−0,9\n−0,7\n−2,3\n−3,0\n1,1\n0,70\n2,30\nlog x\n−0,4\n−0,3\n−1\n−1,3\n0,5\n0,30\n1\n298 × 568 = 169 · 103\n8 31\n8 31\n,\n1 − 1 = 2,89 · 10−3\n2982150\n156 × 2,89 = 451\n(Certaines grandeurs ont été arrondies afin de faciliter les calculs)\nLes ”aides aux calculs, après arrondi” doivent être utilisées lors du choix des propositions.",
+                              "context":  "Durée de l’épreuve : 1h30\nInformations sur l’épreuve\nPour simplifier les calculs, on utilisera les ordres de grandeurs ci-dessous :\nln(x) = 2.3 log x\nR = 8.3 J · mol · K\u003csup\u003e−1\u003c/sup\u003e\nÀ T = 298 K : RT = 5/2 kJ · mol\u003csup\u003e−1\u003c/sup\u003e = 2.5 kJ · mol\u003csup\u003e−1\u003c/sup\u003e\nRT ln x = 0.06 log x F\n2.3RT = 6.0 kJ · mol\u003csup\u003e−1\u003c/sup\u003e\nF = 100 000 C · mol\u003csup\u003e−1\u003c/sup\u003e\nExponentielle, logarithme népérien et logartihme décimal\n\u003cdiv class=\"annale-data-table-wrap\"\u003e\u003ctable class=\"annale-data-table\"\u003e\u003ctr\u003e\u003cth\u003ex\u003c/th\u003e\u003cth\u003e0,4\u003c/th\u003e\u003cth\u003e0,5\u003c/th\u003e\u003cth\u003e0,1\u003c/th\u003e\u003cth\u003e0,05\u003c/th\u003e\u003cth\u003e3\u003c/th\u003e\u003cth\u003e7\u003c/th\u003e\u003cth\u003e10\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eex\u003c/th\u003e\u003ctd\u003e1,5\u003c/td\u003e\u003ctd\u003e1,65\u003c/td\u003e\u003ctd\u003e1,1\u003c/td\u003e\u003ctd\u003e1,05\u003c/td\u003e\u003ctd\u003e20\u003c/td\u003e\u003ctd\u003e1096\u003c/td\u003e\u003ctd\u003e22 000\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eln x\u003c/th\u003e\u003ctd\u003e−0,9\u003c/td\u003e\u003ctd\u003e−0,7\u003c/td\u003e\u003ctd\u003e−2,3\u003c/td\u003e\u003ctd\u003e−3,0\u003c/td\u003e\u003ctd\u003e1,1\u003c/td\u003e\u003ctd\u003e0,70\u003c/td\u003e\u003ctd\u003e2,30\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003elog x\u003c/th\u003e\u003ctd\u003e−0,4\u003c/td\u003e\u003ctd\u003e−0,3\u003c/td\u003e\u003ctd\u003e−1\u003c/td\u003e\u003ctd\u003e−1,3\u003c/td\u003e\u003ctd\u003e0,5\u003c/td\u003e\u003ctd\u003e0,30\u003c/td\u003e\u003ctd\u003e1\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\n298 × 568 = 169 · 103\n8 31\n8 31\n,\n1 − 1 = 2,89 · 10−3\n2982150\n156 × 2,89 = 451\n(Certaines grandeurs ont été arrondies afin de faciliter les calculs)\nLes ”aides aux calculs, après arrondi” doivent être utilisées lors du choix des propositions.",
                               "images":  [
                                              "annales_assets/2025_2026/chimie/tuto_1/image1.png",
                                              "annales_assets/2025_2026/chimie/tuto_1/image2.png",
@@ -8651,7 +8635,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "Le nombre quantique m ne peut pas prendre de valeur nulle",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Le nombre quantique m ne peut pas prendre de valeur nulle → Le nombre quantique m ne peut pas prendre de valeur nulle → La configuration électronique du cation Zn2+ est 1s22s22p63s23p64s23d8 → La configuration électronique du cation Zn2+ est 1s22s22p63s23p64s23d8"
+                                                  "explanation":  "FAUX - → Le nombre quantique m ne peut pas prendre de valeur nulle → Le nombre quantique m ne peut pas prendre de valeur nulle → La configuration électronique du cation Zn2+ est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e8\u003c/sup\u003e → La configuration électronique du cation Zn2+ est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e8\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "D",
@@ -8663,7 +8647,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "Les orbitales atomiques p ont une symétrie de révolution",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → Les orbitales atomiques p ont une symétrie de révolution → Les orbitales atomiques p ont une symétrie de révolution → La configuration électronique de l’anion Cl– est 1s22s22p63s23p6 → La configuration électronique de l’anion Cl– est 1s22s22p63s23p6 La configuration électronique de l’anion Cl– est 1s22s22p63s23p6 La configuration électronique de l’anion Cl– est 1s22s22p63s23p6"
+                                                  "explanation":  "VRAI - → Les orbitales atomiques p ont une symétrie de révolution → Les orbitales atomiques p ont une symétrie de révolution → La configuration électronique de l’anion Cl– est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e → La configuration électronique de l’anion Cl– est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e La configuration électronique de l’anion Cl\u003csup\u003e–\u003c/sup\u003e est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e La configuration électronique de l’anion Cl\u003csup\u003e–\u003c/sup\u003e est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -8682,10 +8666,10 @@ window.ANNALES_2025_2026 = [
                               "question":  "Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "Le triplet de nombres quantiques (n, l, m) suivant est correct : (2, 1, 0)",
-                                                 "La configuration électronique à l’état fondamental de l’atome de chrome (Cr, Z = 24) est 1s22s22p63s23p64s23d4",
-                                                 "La configuration électronique du cation Zn2+ est 1s22s22p63s23p64s23d8",
+                                                 "La configuration électronique à l’état fondamental de l’atome de chrome (Cr, Z = 24) est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e4\u003c/sup\u003e",
+                                                 "La configuration électronique du cation Zn2+ est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e8\u003c/sup\u003e",
                                                  "Le triplet de nombres quantiques (n, l, m) suivant est correct : (1, 0, −1)",
-                                                 "La configuration électronique de l’anion Cl– est 1s22s22p63s23p6"
+                                                 "La configuration électronique de l’anion Cl– est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
@@ -8696,13 +8680,13 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "La configuration électronique à l’état fondamental de l’atome de chrome (Cr, Z = 24) est 1s22s22p63s23p64s23d4",
+                                                  "text":  "La configuration électronique à l’état fondamental de l’atome de chrome (Cr, Z = 24) est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e4\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La configuration électronique à l’état fondamental de l’atome de chrome (Cr, Z = … Une exception, trop méchant, désolée... Si tu as fait cette erreur, pas de souci. En soi, tu maî-trises la configuration électronique : on remplit les sous-couches de la moins énergétique à la plus énergétique, donc 1s, 2s, etc... Jusqu’à 4s23d4. Sauf qu’attention ! Le chrome est une exception. Regardons votre cours : → La configuration électronique à l’état fondamental de l’atome de chrome (Cr, Z = … Une exception, trop méchant, désolée... Si tu as fait cette erreur, pas de souci. En soi, tu maî-trises la configuration électronique : on remplit les sous-couches de la moins énergétique à la plus énergétique, donc 1s, 2s, etc... Jusqu’à 4s23d4. Sauf qu’attention ! Le chrome est une exception. Regardons votre cours :"
+                                                  "explanation":  "FAUX - → La configuration électronique à l’état fondamental de l’atome de chrome (Cr, Z = … Une exception, trop méchant, désolée... Si tu as fait cette erreur, pas de souci. En soi, tu maî-trises la configuration électronique : on remplit les sous-couches de la moins énergétique à la plus énergétique, donc 1s, 2s, etc... Jusqu’à 4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e4\u003c/sup\u003e. Sauf qu’attention ! Le chrome est une exception. Regardons votre cours : → La configuration électronique à l’état fondamental de l’atome de chrome (Cr, Z = … Une exception, trop méchant, désolée... Si tu as fait cette erreur, pas de souci. En soi, tu maî-trises la configuration électronique : on remplit les sous-couches de la moins énergétique à la plus énergétique, donc 1s, 2s, etc... Jusqu’à 4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e4\u003c/sup\u003e. Sauf qu’attention ! Le chrome est une exception. Regardons votre cours :"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "La configuration électronique du cation Zn2+ est 1s22s22p63s23p64s23d8",
+                                                  "text":  "La configuration électronique du cation Zn2+ est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e8\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -8714,7 +8698,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "La configuration électronique de l’anion Cl– est 1s22s22p63s23p6",
+                                                  "text":  "La configuration électronique de l’anion Cl– est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               }
@@ -8786,7 +8770,7 @@ window.ANNALES_2025_2026 = [
                               "question":  "Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "Une liaison σ est plus forte qu’une liaison π",
-                                                 "Une liaison σ∗ possède 2 plans nodaux",
+                                                 "Une liaison σ\u003csup\u003e∗\u003c/sup\u003e possède 2 plans nodaux",
                                                  "Le recouvrement latéral de deux orbitales atomiques p permet la formation d’une orbitale moléculaire π",
                                                  "Une double liaison est plus longue qu’une simple liaison",
                                                  "Une liaison est dite homolytique si elle est formée par un atome qui met en commun deux électrons et un autre atome qui n’en possède pas"
@@ -8800,15 +8784,15 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Une liaison σ∗ possède 2 plans nodaux",
+                                                  "text":  "Une liaison σ\u003csup\u003e∗\u003c/sup\u003e possède 2 plans nodaux",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Une liaison σ∗ possède 2 plans nodaux → Une liaison σ∗ possède 2 plans nodaux"
+                                                  "explanation":  "FAUX - → Une liaison σ\u003csup\u003e∗\u003c/sup\u003e possède 2 plans nodaux → Une liaison σ\u003csup\u003e∗\u003c/sup\u003e possède 2 plans nodaux"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "Le recouvrement latéral de deux orbitales atomiques p permet la formation d’une orbitale moléculaire π",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Le recouvrement latéral de deux orbitales atomiques p permet la formation d’une … Un nombre n d’OA permet la formation d’un même nombre n d’OM. Ainsi, 2 OA forment 2 OM, une liante qui stabilise la liaison et une anti-liante qui la déstabilise. Pour info : le recouvrement latéral de deux OA p permet la formation d’une OM π et d’une OM π∗ ! → Le recouvrement latéral de deux orbitales atomiques p permet la formation d’une … Un nombre n d’OA permet la formation d’un même nombre n d’OM. Ainsi, 2 OA forment 2 OM, une liante qui stabilise la liaison et une anti-liante qui la déstabilise. Pour info : le recouvrement latéral de deux OA p permet la formation d’une OM π et d’une OM π∗ !"
+                                                  "explanation":  "FAUX - → Le recouvrement latéral de deux orbitales atomiques p permet la formation d’une … Un nombre n d’OA permet la formation d’un même nombre n d’OM. Ainsi, 2 OA forment 2 OM, une liante qui stabilise la liaison et une anti-liante qui la déstabilise. Pour info : le recouvrement latéral de deux OA p permet la formation d’une OM π et d’une OM π\u003csup\u003e∗\u003c/sup\u003e ! → Le recouvrement latéral de deux orbitales atomiques p permet la formation d’une … Un nombre n d’OA permet la formation d’un même nombre n d’OM. Ainsi, 2 OA forment 2 OM, une liante qui stabilise la liaison et une anti-liante qui la déstabilise. Pour info : le recouvrement latéral de deux OA p permet la formation d’une OM π et d’une OM π\u003csup\u003e∗\u003c/sup\u003e !"
                                               },
                                               {
                                                   "id":  "D",
@@ -8835,10 +8819,10 @@ window.ANNALES_2025_2026 = [
                               "images":  [
 
                                          ],
-                              "question":  "Concernant le diagramme énergétique de la molécule HO– , laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                              "question":  "Concernant le diagramme énergétique de la molécule HO\u003csup\u003e–\u003c/sup\u003e , laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "L’orbitale σ∗ est issue de la combinaison en phase d’une OA s de l’atome d’hydrogène et d’une OA p de l’atome d’oxygène",
-                                                 "L’orbitale moléculaire σ∗ est plus énergétique que l’orbitale moléculaire σ",
+                                                 "L’orbitale σ\u003csup\u003e∗\u003c/sup\u003e est issue de la combinaison en phase d’une OA s de l’atome d’hydrogène et d’une OA p de l’atome d’oxygène",
+                                                 "L’orbitale moléculaire σ\u003csup\u003e∗\u003c/sup\u003e est plus énergétique que l’orbitale moléculaire σ",
                                                  "L’ordre de liaison est de 2",
                                                  "Les électrons de l’orbitale 2s de l’oxygène sont impliqués dans la liaison",
                                                  "L’atome d’oxygène possède 3 doublets non liants"
@@ -8846,15 +8830,15 @@ window.ANNALES_2025_2026 = [
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "L’orbitale σ∗ est issue de la combinaison en phase d’une OA s de l’atome d’hydrogène et d’une OA p de l’atome d’oxygène",
+                                                  "text":  "L’orbitale σ\u003csup\u003e∗\u003c/sup\u003e est issue de la combinaison en phase d’une OA s de l’atome d’hydrogène et d’une OA p de l’atome d’oxygène",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - L’orbitale σ∗ est issue de la combinaison en phase d’une OA s de l’atome d’hydrogène et d’une OA p de l’atome d’oxygène → L’orbitale σ∗ est issue de la combinaison en phase d’une OA s de l’atome d’hydrogène … On reprend depuis le début. Première étape : tracer le diagramme énergétique. On sait que H : 1s2 et O– : 1s22s22p5 (car l’oxygène est chargé négativement donc il récupère un e– en plus !) → L’orbitale σ∗ est issue de la combinaison en phase d’une OA s de l’atome d’hydrogène … On reprend depuis le début. Première étape : tracer le diagramme énergétique. On sait que H : 1s2 et O– : 1s22s22p5 (car l’oxygène est chargé négativement donc il récupère un e– en plus !)"
+                                                  "explanation":  "FAUX - L’orbitale σ\u003csup\u003e∗\u003c/sup\u003e est issue de la combinaison en phase d’une OA s de l’atome d’hydrogène et d’une OA p de l’atome d’oxygène → L’orbitale σ\u003csup\u003e∗\u003c/sup\u003e est issue de la combinaison en phase d’une OA s de l’atome d’hydrogène … On reprend depuis le début. Première étape : tracer le diagramme énergétique. On sait que H : 1s\u003csup\u003e2\u003c/sup\u003e et O– : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e5\u003c/sup\u003e (car l’oxygène est chargé négativement donc il récupère un e– en plus !) → L’orbitale σ\u003csup\u003e∗\u003c/sup\u003e est issue de la combinaison en phase d’une OA s de l’atome d’hydrogène … On reprend depuis le début. Première étape : tracer le diagramme énergétique. On sait que H : 1s\u003csup\u003e2\u003c/sup\u003e et O– : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e5\u003c/sup\u003e (car l’oxygène est chargé négativement donc il récupère un e– en plus !)"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "L’orbitale moléculaire σ∗ est plus énergétique que l’orbitale moléculaire σ",
+                                                  "text":  "L’orbitale moléculaire σ\u003csup\u003e∗\u003c/sup\u003e est plus énergétique que l’orbitale moléculaire σ",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - L’orbitale moléculaire σ∗ est plus énergétique que l’orbitale moléculaire σ L’orbitale moléculaire σ∗ est plus énergétique que l’orbitale moléculaire σ → L’orbitale moléculaire σ∗ est plus énergétique que l’orbitale moléculaire σ"
+                                                  "explanation":  "VRAI - L’orbitale moléculaire σ\u003csup\u003e∗\u003c/sup\u003e est plus énergétique que l’orbitale moléculaire σ L’orbitale moléculaire σ\u003csup\u003e∗\u003c/sup\u003e est plus énergétique que l’orbitale moléculaire σ → L’orbitale moléculaire σ\u003csup\u003e∗\u003c/sup\u003e est plus énergétique que l’orbitale moléculaire σ"
                                               },
                                               {
                                                   "id":  "C",
@@ -8893,16 +8877,16 @@ window.ANNALES_2025_2026 = [
                                                  "3",
                                                  "HO",
                                                  "12",
-                                                 "H3CC",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eCC",
                                                  "32",
                                                  "COH",
                                                  "1",
                                                  "OH",
                                                  "Acide lactique",
-                                                 "La théorie VSEPR du carbone 3 est AL4E0",
+                                                 "La théorie VSEPR du carbone 3 est AL\u003csub\u003e4\u003c/sub\u003eE\u003csub\u003e0\u003c/sub\u003e",
                                                  "La géométrie de l’oxygène 1 est tétraédrique",
                                                  "L’angle entre les liaisons du carbone 1 est de 120°",
-                                                 "On retrouve 2 orbitales moléculaires σ entre C3 et O3",
+                                                 "On retrouve 2 orbitales moléculaires σ entre C\u003csub\u003e3\u003c/sub\u003e et O\u003csub\u003e3\u003c/sub\u003e",
                                                  "L’oxygène 2 est de géométrie trigonale plane"
                                              ],
                               "options":  [
@@ -8910,7 +8894,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "A",
                                                   "text":  "3",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - propos de l’acide lactique représenté ci-dessous, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ? → La théorie VSEPR du carbone 3 est AL4E0 → La théorie VSEPR du carbone 3 est AL4E0 Le groupement C – O– est concerné par un effet inductif donneur Le groupement C – O– est concerné par un effet inductif donneur"
+                                                  "explanation":  "VRAI - propos de l’acide lactique représenté ci-dessous, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ? → La théorie VSEPR du carbone 3 est AL\u003csub\u003e4\u003c/sub\u003eE\u003csub\u003e0\u003c/sub\u003e → La théorie VSEPR du carbone 3 est AL\u003csub\u003e4\u003c/sub\u003eE\u003csub\u003e0\u003c/sub\u003e Le groupement C – O\u003csup\u003e–\u003c/sup\u003e est concerné par un effet inductif donneur Le groupement C – O\u003csup\u003e–\u003c/sup\u003e est concerné par un effet inductif donneur"
                                               },
                                               {
                                                   "id":  "B",
@@ -8926,9 +8910,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "H3CC",
+                                                  "text":  "H\u003csub\u003e3\u003c/sub\u003eCC",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → On retrouve 2 orbitales moléculaires σ entre C3 et O3 → On retrouve 2 orbitales moléculaires σ entre C3 et O3 → L’azote du cycle a un effet inductif attracteur → L’azote du cycle a un effet inductif attracteur L’azote du cycle a un effet inductif attracteur L’azote du cycle a un effet inductif attracteur"
+                                                  "explanation":  "VRAI - → On retrouve 2 orbitales moléculaires σ entre C\u003csub\u003e3\u003c/sub\u003e et O\u003csub\u003e3\u003c/sub\u003e → On retrouve 2 orbitales moléculaires σ entre C\u003csub\u003e3\u003c/sub\u003e et O\u003csub\u003e3\u003c/sub\u003e → L’azote du cycle a un effet inductif attracteur → L’azote du cycle a un effet inductif attracteur L’azote du cycle a un effet inductif attracteur L’azote du cycle a un effet inductif attracteur"
                                               },
                                               {
                                                   "id":  "E",
@@ -8942,7 +8926,7 @@ window.ANNALES_2025_2026 = [
                                                      "D",
                                                      "E"
                                                  ],
-                              "generalNotes":  "la théorie VSEPR est de la forme ALnEm avec A l’atome d’intérêt, L le nombre de voisins et E le nombre de doublets non liant. Or le carbone 3 est entouré de deux oxygènes et un carbone : donc il a 3 voisins même si la liaison avec l’un des oxygènes est double. Sa notation est donc AL3E0 (il est donc trigonal plan et hybridé sp2 )."
+                              "generalNotes":  "la théorie VSEPR est de la forme AL\u003csub\u003en\u003c/sub\u003eE\u003csub\u003em\u003c/sub\u003e avec A l’atome d’intérêt, L le nombre de voisins et E le nombre de doublets non liant. Or le carbone 3 est entouré de deux oxygènes et un carbone : donc il a 3 voisins même si la liaison avec l’un des oxygènes est double. Sa notation est donc AL\u003csub\u003e3\u003c/sub\u003eE\u003csub\u003e0\u003c/sub\u003e (il est donc trigonal plan et hybridé sp\u003csup\u003e2\u003c/sup\u003e )."
                           },
                           {
                               "num":  8,
@@ -8961,9 +8945,9 @@ window.ANNALES_2025_2026 = [
                                                  "2",
                                                  "4",
                                                  "6",
-                                                 "Le carbone 2 est hybridé sp3",
-                                                 "L’ensemble des carbones du cycle aromatique sont hybridés sp2",
-                                                 "Le carbone 1 est hybridé sp2 à cause de la présence d’un motif de mésomérie",
+                                                 "Le carbone 2 est hybridé sp\u003csup\u003e3\u003c/sup\u003e",
+                                                 "L’ensemble des carbones du cycle aromatique sont hybridés sp\u003csup\u003e2\u003c/sup\u003e",
+                                                 "Le carbone 1 est hybridé sp\u003csup\u003e2\u003c/sup\u003e à cause de la présence d’un motif de mésomérie",
                                                  "Le DNL de l’oxygène est située dans une orbitale p",
                                                  "La double liaison du carbone 4 implique une orbitale p"
                                              ],
@@ -8972,19 +8956,19 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "A",
                                                   "text":  "1",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → Le carbone 2 est hybridé sp3 → Le carbone 2 est hybridé sp3"
+                                                  "explanation":  "VRAI - → Le carbone 2 est hybridé sp\u003csup\u003e3\u003c/sup\u003e → Le carbone 2 est hybridé sp\u003csup\u003e3\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "B",
                                                   "text":  "2",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - La géométrie de l’oxygène 1 est tétraédrique La géométrie de l’oxygène 1 est tétraédrique → L’ensemble des carbones du cycle aromatique sont hybridés sp2 → L’ensemble des carbones du cycle aromatique sont hybridés sp2"
+                                                  "explanation":  "VRAI - La géométrie de l’oxygène 1 est tétraédrique La géométrie de l’oxygène 1 est tétraédrique → L’ensemble des carbones du cycle aromatique sont hybridés sp\u003csup\u003e2\u003c/sup\u003e → L’ensemble des carbones du cycle aromatique sont hybridés sp\u003csup\u003e2\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "4",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Le carbone 1 est hybridé sp2 à cause de la présence d’un motif de mésomérie → Le carbone 1 est hybridé sp2 à cause de la présence d’un motif de mésomérie → Le carbone 1 est hybridé sp2 à cause de la présence d’un motif de mésomérie"
+                                                  "explanation":  "FAUX - Le carbone 1 est hybridé sp\u003csup\u003e2\u003c/sup\u003e à cause de la présence d’un motif de mésomérie → Le carbone 1 est hybridé sp\u003csup\u003e2\u003c/sup\u003e à cause de la présence d’un motif de mésomérie → Le carbone 1 est hybridé sp\u003csup\u003e2\u003c/sup\u003e à cause de la présence d’un motif de mésomérie"
                                               },
                                               {
                                                   "id":  "D",
@@ -9018,7 +9002,7 @@ window.ANNALES_2025_2026 = [
                                                  "N",
                                                  "O -",
                                                  "N",
-                                                 "H2N",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eN",
                                                  "O",
                                                  "Le groupement C – O– est concerné par un effet inductif donneur",
                                                  "Le groupement C = O a un effet mésomère donneur",
@@ -9047,9 +9031,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "H2N",
+                                                  "text":  "H\u003csub\u003e2\u003c/sub\u003eN",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → Dans la molécule A, l’effet inductif attracteur de NH et de N1 s’additionnent → Dans la molécule A, l’effet inductif attracteur de NH et de N1 s’additionnent Dans la molécule A, l’effet inductif attracteur de NH et de N1 s’additionnent Dans la molécule A, l’effet inductif attracteur de NH et de N1 s’additionnent"
+                                                  "explanation":  "VRAI - → Dans la molécule A, l’effet inductif attracteur de NH et de N\u003csub\u003e1\u003c/sub\u003e s’additionnent → Dans la molécule A, l’effet inductif attracteur de NH et de N\u003csub\u003e1\u003c/sub\u003e s’additionnent Dans la molécule A, l’effet inductif attracteur de NH et de N\u003csub\u003e1\u003c/sub\u003e s’additionnent Dans la molécule A, l’effet inductif attracteur de NH et de N\u003csub\u003e1\u003c/sub\u003e s’additionnent"
                                               },
                                               {
                                                   "id":  "E",
@@ -9084,16 +9068,16 @@ window.ANNALES_2025_2026 = [
                                                  "+",
                                                  "+",
                                                  "OO",
-                                                 "NNH2N",
+                                                 "NNH\u003csub\u003e2\u003c/sub\u003eN",
                                                  "-",
                                                  "OO",
                                                  "B",
                                                  "C",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "Le doublet non liant de l’azote 1 est impliqué dans un motif de mésomérie",
                                                  "L’effet mésomère l’emporte toujours sur l’effet inductif",
                                                  "Dans la molécule A, l’effet inductif attracteur du O est ressenti jusqu’au NH",
-                                                 "Dans la molécule A, l’effet inductif attracteur de NH et de N1 s’additionnent",
+                                                 "Dans la molécule A, l’effet inductif attracteur de NH et de N\u003csub\u003e1\u003c/sub\u003e s’additionnent",
                                                  "Les molécules B et C ont une réactivité différente mais voisine",
                                                  "Les indicateurs de pH sont des composés tantôt naturels, tantôt organiques, utilisés pour vi-sualiser l’évolution du pH d’une solution. L’intérêt des indicateurs de pH réside dans leur couleur, qui change aux alentours de pH caractéristiques de chaque indicateurs, permettant d’en observer les variations assez nettement.",
                                                  "On en propose quelques uns ici.",
@@ -9215,9 +9199,9 @@ window.ANNALES_2025_2026 = [
                                                  "OHOHOHOH",
                                                  "I",
                                                  "ABC",
-                                                 "NO2",
+                                                 "NO\u003csub\u003e2\u003c/sub\u003e",
                                                  "D",
-                                                 "NO2",
+                                                 "NO\u003csub\u003e2\u003c/sub\u003e",
                                                  "E",
                                                  "Le groupement nitro stabilise plus la molécule E que la molécule C",
                                                  "Plus la délocalisation du DNL d’un composé basique est grande, plus le pKa de son couple acido-basique est bas",
@@ -9289,7 +9273,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "NO2",
+                                                  "text":  "NO\u003csub\u003e2\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Dans l’ordre croissant d’acidité, on a C \u003e E \u003e B \u003e D \u003e AN+ \u003e D \u003e C \u003e B \u003e A \u003e D \u003e C \u003e B \u003e A"
                                               }
@@ -9369,24 +9353,24 @@ window.ANNALES_2025_2026 = [
                                                  "Un mélange équimolaire de cholestérol et de molécule B possède une activité optique diffé-rente de celles de chacune des deux molécules",
                                                  "La canavanine est un analogue structurel de l’arginine utilisé par de nombreux légumes pour se protéger des herbivores. Elle présente une certaine toxicité pour l’humain, qui est neutralisée à la cuisson.",
                                                  "On représente ci-dessous la cavanine, une molécule dérivée (via l’ajout d’un groupement alcool), et trois molécules en représentation de Fischer.",
-                                                 "NH2",
-                                                 "ONH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
+                                                 "ONH\u003csub\u003e2\u003c/sub\u003e",
                                                  "OHO",
                                                  "O",
-                                                 "H2NN",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eNN",
                                                  "O",
-                                                 "OHH2NNOH",
+                                                 "OHH\u003csub\u003e2\u003c/sub\u003eNNOH",
                                                  "L-Canavanine",
                                                  "COOH",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "COOH",
                                                  "Dérivé",
                                                  "∗",
                                                  "∗",
-                                                 "NH2",
-                                                 "H2N",
-                                                 "HH2N",
-                                                 "HHNH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eN",
+                                                 "HH\u003csub\u003e2\u003c/sub\u003eN",
+                                                 "HHNH\u003csub\u003e2\u003c/sub\u003e",
                                                  "HHHOHHOH",
                                                  "RR",
                                                  "III",
@@ -9450,33 +9434,33 @@ window.ANNALES_2025_2026 = [
                                                  "3",
                                                  "2",
                                                  "O",
-                                                 "H2NNOH",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eNNOH",
                                                  "COOH",
                                                  "H",
                                                  "Dérivé",
                                                  "O",
                                                  "H",
                                                  "H",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "O",
                                                  "H",
                                                  "H",
-                                                 "NH2",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "HO",
                                                  "H",
-                                                 "H2N",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eN",
                                                  "H",
                                                  "HO",
                                                  "H",
-                                                 "H2N",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eN",
                                                  "H",
                                                  "H",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "H",
                                                  "OH",
                                                  "H",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "H",
                                                  "OH",
                                                  "RR",
@@ -9530,9 +9514,9 @@ window.ANNALES_2025_2026 = [
                               "question":  "Concernant les projections ci-dessus, laquelle (ou lesquelles) des propositions est (sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "La molécule IV est un énantiomère de la molécule V",
-                                                 "La conformation de la molécule V n’est pas la plus stable à cause de l’encombrement des groupements OH et NH2",
+                                                 "La conformation de la molécule V n’est pas la plus stable à cause de l’encombrement des groupements OH et NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "La molécule V est de conformation décalée anti",
-                                                 "La molécule V correspond à la projection de Newman dans l’axe C2 – C3 du dérivé",
+                                                 "La molécule V correspond à la projection de Newman dans l’axe C\u003csub\u003e2\u003c/sub\u003e – C\u003csub\u003e3\u003c/sub\u003e du dérivé",
                                                  "La molécule V est l’énantiomère de la molécule VI"
                                              ],
                               "options":  [
@@ -9544,7 +9528,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "La conformation de la molécule V n’est pas la plus stable à cause de l’encombrement des groupements OH et NH2",
+                                                  "text":  "La conformation de la molécule V n’est pas la plus stable à cause de l’encombrement des groupements OH et NH\u003csub\u003e2\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - → La conformation de la molécule V n’est pas la plus stable à cause de l’encombrement … Pour avoir la conformation la plus stable avec du Newman, on observe seulement les positions relatives des plus gros substituants de chacun des atomes de carbone. On observe donc ici que le COOH et la chaîne carbonée R sont à l’opposé les uns des autres. Donc c’est la conformation la plus stable. → La conformation de la molécule V n’est pas la plus stable à cause de l’encombrement … Pour avoir la conformation la plus stable avec du Newman, on observe seulement les positions relatives des plus gros substituants de chacun des atomes de carbone. On observe donc ici que le COOH et la chaîne carbonée R sont à l’opposé les uns des autres. Donc c’est la conformation la plus stable."
                                               },
@@ -9556,9 +9540,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "La molécule V correspond à la projection de Newman dans l’axe C2 – C3 du dérivé",
+                                                  "text":  "La molécule V correspond à la projection de Newman dans l’axe C\u003csub\u003e2\u003c/sub\u003e – C\u003csub\u003e3\u003c/sub\u003e du dérivé",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - La molécule V correspond à la projection de Newman dans l’axe C2 – C3 du dérivé La molécule V correspond à la projection de Newman dans l’axe C2 – C3 du dérivé"
+                                                  "explanation":  "VRAI - La molécule V correspond à la projection de Newman dans l’axe C\u003csub\u003e2\u003c/sub\u003e – C\u003csub\u003e3\u003c/sub\u003e du dérivé La molécule V correspond à la projection de Newman dans l’axe C\u003csub\u003e2\u003c/sub\u003e – C\u003csub\u003e3\u003c/sub\u003e du dérivé"
                                               },
                                               {
                                                   "id":  "E",
@@ -9588,7 +9572,7 @@ window.ANNALES_2025_2026 = [
                                                  "Au zéro absolu, l’entropie d’un corps pur est nulle",
                                                  "Les états stationnaires d’équilibre et de non-équilibre se retrouvent dans les systèmes fermés",
                                                  "On s’intéresse à une réaction I à T = 298 K, avec une enthalpie libre standard de référence :",
-                                                 "∆rG◦ = −25 kJ · mol−1"
+                                                 "∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e = −25 kJ · mol\u003csup\u003e−1\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
@@ -9644,18 +9628,18 @@ window.ANNALES_2025_2026 = [
                                                  "L’enthalpie libre de Gibbs dépend de la constante d’équilibre",
                                                  "D’après le principe de Le Chatelier, le retrait de produit déplace la réaction dans le sens direct",
                                                  "La loi de Van’t Hoff permet de calculer les changements de quotient de réaction en fonction du changement de température",
-                                                 "On considère maintenant la réaction de combustion de l’éthylène C2H4 dans un environnement avec une température homogène à T0 = 298 K. La réaction de combustion est la suivante :",
-                                                 "α C2H4 + β O2 −7−−-− γ CO2 + δ H2O",
+                                                 "On considère maintenant la réaction de combustion de l’éthylène C\u003csub\u003e2\u003c/sub\u003eH\u003csub\u003e4\u003c/sub\u003e dans un environnement avec une température homogène à T\u003csub\u003e0\u003c/sub\u003e = 298 K. La réaction de combustion est la suivante :",
+                                                 "α C\u003csub\u003e2\u003c/sub\u003eH\u003csub\u003e4\u003c/sub\u003e + β O\u003csub\u003e2\u003c/sub\u003e −7−−-− γ CO\u003csub\u003e2\u003c/sub\u003e + δ H\u003csub\u003e2\u003c/sub\u003eO",
                                                  "Données :",
-                                                 "∆rS◦ = −568 J · mol−1 · K−1",
-                                                 "∆lH◦(C−C) = −610 kJ · mol−1",
-                                                 "∆lH◦(C−H) = −413 kJ · mol−1",
-                                                 "∆lH◦(O−O) = −498 kJ · mol−1",
-                                                 "∆lH◦(C−O) = −803 kJ · mol−1",
-                                                 "∆lH◦(O−H) = −462 kJ · mol−1",
+                                                 "∆\u003csub\u003er\u003c/sub\u003eS\u003csup\u003e◦\u003c/sup\u003e = −568 J · mol\u003csup\u003e−1\u003c/sup\u003e · K\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(C−C) = −610 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(C−H) = −413 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(O−O) = −498 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(C−O) = −803 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(O−H) = −462 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                  "La loi de Van’t Hoff :",
                                                  "ln(K",
-                                                 ") = −∆rH◦3 1 4 + ∆rS◦",
+                                                 ") = −∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e3 1 4 + ∆\u003csub\u003er\u003c/sub\u003eS\u003csup\u003e◦\u003c/sup\u003e",
                                                  "×",
                                                  "×"
                                              ],
@@ -9706,11 +9690,11 @@ window.ANNALES_2025_2026 = [
                               "question":  "À propos de la combustion de l’éthylène, quelle(s) est (sont) la (les) réponse(s) exacte(s) ?",
                               "rawOptions":  [
                                                  "α = 1 ; β = 3 ; γ = 2 et δ = 2",
-                                                 "ΔlH◦(C−O) = 2 × ΔlH◦(C−O)",
-                                                 "ΔrH◦ = −256 kJ · mol−1",
-                                                 "ΔrH◦ = 1304 kJ · mol−1",
-                                                 "ΔrG◦ = −1135 kJ · mol−1",
-                                                 "On est maintenant dans un environnement à T1 = 2150 K (température d’une explosion nu-cléaire). On considère que les variations d’enthalpie et d’entropie de réaction ne changent pas avec la température."
+                                                 "Δ\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(C−O) = 2 × Δ\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(C−O)",
+                                                 "Δ\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e = −256 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "Δ\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e = 1304 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "Δ\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e = −1135 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "On est maintenant dans un environnement à T\u003csub\u003e1\u003c/sub\u003e = 2150 K (température d’une explosion nu-cléaire). On considère que les variations d’enthalpie et d’entropie de réaction ne changent pas avec la température."
                                              ],
                               "options":  [
                                               {
@@ -9721,27 +9705,27 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "ΔlH◦(C−O) = 2 × ΔlH◦(C−O)",
+                                                  "text":  "Δ\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(C−O) = 2 × Δ\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(C−O)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → ΔlH◦(C−O) = 2 × ΔlH◦(C−O)"
+                                                  "explanation":  "FAUX - → Δ\u003csub\u003el\u003c/sub\u003eH◦(C−O) = 2 × Δ\u003csub\u003el\u003c/sub\u003eH◦(C−O)"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "ΔrH◦ = −256 kJ · mol−1",
+                                                  "text":  "Δ\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e = −256 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "ΔrH◦ = 1304 kJ · mol−1",
+                                                  "text":  "Δ\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e = 1304 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "ΔrG◦ = −1135 kJ · mol−1",
+                                                  "text":  "Δ\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e = −1135 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - ΔrG◦ = −1135 kJ · mol−1 ΔrG◦ = −1135 kJ · mol−1 → ΔrG◦ = −1135 kJ · mol−1 → ΔrG◦ = −1135 kJ · mol−1"
+                                                  "explanation":  "VRAI - Δ\u003csub\u003er\u003c/sub\u003eG◦ = −1135 kJ · mol\u003csup\u003e−1\u003c/sup\u003e Δ\u003csub\u003er\u003c/sub\u003eG◦ = −1135 kJ · mol\u003csup\u003e−1\u003c/sup\u003e → Δ\u003csub\u003er\u003c/sub\u003eG◦ = −1135 kJ · mol\u003csup\u003e−1\u003c/sup\u003e → Δ\u003csub\u003er\u003c/sub\u003eG◦ = −1135 kJ · mol\u003csup\u003e−1\u003c/sup\u003e"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -9753,7 +9737,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  20,
                               "type":  "QCM",
-                              "context":  "",
+                              "context":  "\u003cdiv class=\"annale-data-table-wrap\"\u003e\u003ctable class=\"annale-data-table\"\u003e\u003ctr\u003e\u003cth\u003eAcide fort\u003c/th\u003e\u003cth\u003eAcide faible\u003c/th\u003e\u003cth\u003eBase forte\u003c/th\u003e\u003cth\u003eBase faible\u003c/th\u003e\u003cth\u003eHenderson-Hasselbalch\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003e− log[AF]\u003c/th\u003e\u003ctd\u003epKa − log[Af] 2\u003c/td\u003e\u003ctd\u003e14 + log[BF]\u003c/td\u003e\u003ctd\u003e7 + pKa + log[Bf]2\u003c/td\u003e\u003ctd\u003eA [A\u003csup\u003e−\u003c/sup\u003e] BpKa + log[AH]\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e",
                               "images":  [
 
                                          ],
@@ -9763,45 +9747,33 @@ window.ANNALES_2025_2026 = [
                                                  "T1",
                                                  "T0",
                                                  "T0",
-                                                 "K1",
-                                                 "K1",
+                                                 "K\u003csub\u003e1\u003c/sub\u003e",
+                                                 "K\u003csub\u003e1\u003c/sub\u003e",
                                                  "−∆r H◦ 1 1 − 1 2 +",
                                                  "e",
                                                  "e",
                                                  "R",
                                                  "R",
-                                                 "K0",
-                                                 "K0",
-                                                 "D. L’ordre de grandeur de K1 est de 101",
-                                                 "E. L’ordre de grandeur de K1 est de 10−1",
+                                                 "K\u003csub\u003e0\u003c/sub\u003e",
+                                                 "K\u003csub\u003e0\u003c/sub\u003e",
+                                                 "D. L’ordre de grandeur de K\u003csub\u003e1\u003c/sub\u003e est de 101",
+                                                 "E. L’ordre de grandeur de K\u003csub\u003e1\u003c/sub\u003e est de 10−1",
                                                  "On dispose de 4 solutions :",
-                                                 "S1 de 25 mL de H2PO4 – à 0.8 mol/L",
+                                                 "S1 de 25 mL de H\u003csub\u003e2\u003c/sub\u003ePO\u003csub\u003e4\u003c/sub\u003e – à 0.8 mol/L",
                                                  "S2 de 50 mL de HCl à 0.3 mol/L",
-                                                 "S3 de 5 mL d’acide acétique (CH3COOH) avec n = 10 mmol",
-                                                 "S4 de 50 mL de H2CO3 avec [H2CO3] = 1,5 · 10−2 mol/L et [HCO3−] = 1,5 · 10−5 mol/L",
+                                                 "S3 de 5 mL d’acide acétique (CH\u003csub\u003e3\u003c/sub\u003eCOOH) avec n = 10 mmol",
+                                                 "S4 de 50 mL de H\u003csub\u003e2\u003c/sub\u003eCO\u003csub\u003e3\u003c/sub\u003e avec [H\u003csub\u003e2\u003c/sub\u003eCO\u003csub\u003e3\u003c/sub\u003e] = 1,5 · 10−2 mol/L et [HCO\u003csub\u003e3\u003c/sub\u003e\u003csup\u003e−\u003c/sup\u003e] = 1,5 · 10−5 mol/L",
                                                  "Données :",
-                                                 "pKa(H3PO4/H2PO4−) = 2.1",
-                                                 "pKa(H2PO4−/HPO4−2) = 7.2",
-                                                 "pKa(CH3COOH/CH3COO−) = 4.8",
-                                                 "Acide fort",
-                                                 "Acide faible",
-                                                 "Base forte",
-                                                 "Base faible",
-                                                 "Henderson-Hasselbalch",
-                                                 "− log[AF]",
-                                                 "pKa − log[Af] 2",
-                                                 "14 + log[BF]",
-                                                 "7 + pKa + log[Bf]",
-                                                 "2",
-                                                 "A [A−] B",
-                                                 "pKa + log[AH]"
+                                                 "pKa(H\u003csub\u003e3\u003c/sub\u003ePO\u003csub\u003e4\u003c/sub\u003e/H\u003csub\u003e2\u003c/sub\u003ePO\u003csub\u003e4\u003c/sub\u003e\u003csup\u003e−\u003c/sup\u003e) = 2.1",
+                                                 "pKa(H\u003csub\u003e2\u003c/sub\u003ePO\u003csub\u003e4\u003c/sub\u003e\u003csup\u003e−\u003c/sup\u003e/HPO\u003csub\u003e4\u003c/sub\u003e\u003csup\u003e−2\u003c/sup\u003e) = 7.2",
+                                                 "pKa(CH\u003csub\u003e3\u003c/sub\u003eCOOH/CH\u003csub\u003e3\u003c/sub\u003eCOO\u003csup\u003e−\u003c/sup\u003e) = 4.8"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
                                                   "text":  "T1",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La constante d’équilibre augmente quand la température augmente [A−] B [A−] B"
+                                                  "explanation":  "FAUX - → La constante d’équilibre augmente quand la température augmente"
                                               },
                                               {
                                                   "id":  "B",
@@ -9813,37 +9785,31 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "T0",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - K1 tend vers +∞"
+                                                  "explanation":  "FAUX - K\u003csub\u003e1\u003c/sub\u003e tend vers +∞"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "T0",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - L’ordre de grandeur de K1 est de 101 L’ordre de grandeur de K1 est de 101"
+                                                  "explanation":  "VRAI - L’ordre de grandeur de K\u003csub\u003e1\u003c/sub\u003e est de 101 L’ordre de grandeur de K\u003csub\u003e1\u003c/sub\u003e est de 101"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "K1",
+                                                  "text":  "K\u003csub\u003e1\u003c/sub\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - L’ordre de grandeur de K1 est de 10−1"
+                                                  "explanation":  "FAUX - L’ordre de grandeur de K\u003csub\u003e1\u003c/sub\u003e est de 10−1"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "L’ordre de grandeur de K1 est de 101",
+                                                  "text":  "L’ordre de grandeur de K\u003csub\u003e1\u003c/sub\u003e est de 101",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - L’ordre de grandeur de K1 est de 101 L’ordre de grandeur de K1 est de 101"
+                                                  "explanation":  "VRAI - L’ordre de grandeur de K\u003csub\u003e1\u003c/sub\u003e est de 101 L’ordre de grandeur de K\u003csub\u003e1\u003c/sub\u003e est de 101"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "L’ordre de grandeur de K1 est de 10−1",
+                                                  "text":  "L’ordre de grandeur de K\u003csub\u003e1\u003c/sub\u003e est de 10−1",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - L’ordre de grandeur de K1 est de 10−1"
-                                              },
-                                              {
-                                                  "id":  "A",
-                                                  "text":  "[A−] B",
-                                                  "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La constante d’équilibre augmente quand la température augmente [A−] B [A−] B"
+                                                  "explanation":  "FAUX - L’ordre de grandeur de K\u003csub\u003e1\u003c/sub\u003e est de 10−1"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -9862,9 +9828,9 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "La solution 1 a un pH de 4.65",
                                                  "La solution 3 a un pH de 4",
-                                                 "Si on mélange les solutions 1 et 2, H2PO4 – se retrouve complètement consommé en fin de réaction",
+                                                 "Si on mélange les solutions 1 et 2, H\u003csub\u003e2\u003c/sub\u003ePO\u003csub\u003e4\u003c/sub\u003e – se retrouve complètement consommé en fin de réaction",
                                                  "Le pH du mélange des solutions 1 et 2 est de 2.1",
-                                                 "Concernant l’acide phosphorique, à pH = 9 la forme majoritaire est H2PO4 –"
+                                                 "Concernant l’acide phosphorique, à pH = 9 la forme majoritaire est H\u003csub\u003e2\u003c/sub\u003ePO\u003csub\u003e4\u003c/sub\u003e –"
                                              ],
                               "options":  [
                                               {
@@ -9881,21 +9847,21 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "Si on mélange les solutions 1 et 2, H2PO4 – se retrouve complètement consommé en fin de réaction",
+                                                  "text":  "Si on mélange les solutions 1 et 2, H\u003csub\u003e2\u003c/sub\u003ePO\u003csub\u003e4\u003c/sub\u003e – se retrouve complètement consommé en fin de réaction",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Si on mélange les solutions 1 et 2, H2PO4 – se retrouve complètement consommé en … Et non, c’est l’inverse (vous aviez une chance sur 2…). Tout d’abord, il faut se demander si notre réaction est totale, dans ce cas un des deux réactifs sera complètement consommé en fin de réaction = → Si on ajoute une solution de soude (NaOH) à la solution 3, son Ka diminuera Si on ajoute une solution de soude (NaOH) à la solution 3, son Ka diminuera"
+                                                  "explanation":  "FAUX - → Si on mélange les solutions 1 et 2, H\u003csub\u003e2\u003c/sub\u003ePO\u003csub\u003e4\u003c/sub\u003e – se retrouve complètement consommé en … Et non, c’est l’inverse (vous aviez une chance sur 2…). Tout d’abord, il faut se demander si notre réaction est totale, dans ce cas un des deux réactifs sera complètement consommé en fin de réaction = → Si on ajoute une solution de soude (NaOH) à la solution 3, son Ka diminuera Si on ajoute une solution de soude (NaOH) à la solution 3, son Ka diminuera"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "Le pH du mélange des solutions 1 et 2 est de 2.1",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Le pH du mélange des solutions 1 et 2 est de 2.1 → Si on ajoute une solution de 20 mL de soude de 0.5 mol/L à la solution 3, le pH … Reprenons la démarche de l’item D de la question précédente. La réaction se fait entre HO– (base forte) et CH3COOH (acide faible). C’est donc une réaction totale. Si on ajoute une solution de 20 mL de soude de 0.5 mol/L à la solution 3, le pH final sera d’environ 14"
+                                                  "explanation":  "FAUX - → Le pH du mélange des solutions 1 et 2 est de 2.1 → Si on ajoute une solution de 20 mL de soude de 0.5 mol/L à la solution 3, le pH … Reprenons la démarche de l’item D de la question précédente. La réaction se fait entre HO– (base forte) et CH\u003csub\u003e3\u003c/sub\u003eCOOH (acide faible). C’est donc une réaction totale. Si on ajoute une solution de 20 mL de soude de 0.5 mol/L à la solution 3, le pH final sera d’environ 14"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Concernant l’acide phosphorique, à pH = 9 la forme majoritaire est H2PO4 –",
+                                                  "text":  "Concernant l’acide phosphorique, à pH = 9 la forme majoritaire est H\u003csub\u003e2\u003c/sub\u003ePO\u003csub\u003e4\u003c/sub\u003e –",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Concernant l’acide phosphorique, à pH = 9 la forme majoritaire est H2PO4 – Le pH de la solution de soude est d’environ 13.7 Le pH de la solution de soude est d’environ 13.7"
+                                                  "explanation":  "FAUX - → Concernant l’acide phosphorique, à pH = 9 la forme majoritaire est H\u003csub\u003e2\u003c/sub\u003ePO\u003csub\u003e4\u003c/sub\u003e – Le pH de la solution de soude est d’environ 13.7 Le pH de la solution de soude est d’environ 13.7"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -9923,7 +9889,7 @@ window.ANNALES_2025_2026 = [
                               "question":  "Parmi les propositions suivantes, laquelle est (ou lesquelles sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "Plus le pKa d’un couple est élevé, plus la forme acide du couple est stabilisée",
-                                                 "Sachant que le pH de la solution 4 est de 3, le pKa du couple H2CO3/HCO3 – vaut environ 6",
+                                                 "Sachant que le pH de la solution 4 est de 3, le pKa du couple H\u003csub\u003e2\u003c/sub\u003eCO\u003csub\u003e3\u003c/sub\u003e/HCO\u003csub\u003e3\u003c/sub\u003e – vaut environ 6",
                                                  "Si on ajoute une solution de soude (NaOH) à la solution 3, son Ka diminuera",
                                                  "Si on ajoute une solution de 20 mL de soude de 0.5 mol/L à la solution 3, le pH final sera d’environ 14",
                                                  "Le pH de la solution de soude est d’environ 13.7",
@@ -9962,9 +9928,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Sachant que le pH de la solution 4 est de 3, le pKa du couple H2CO3/HCO3 – vaut environ 6",
+                                                  "text":  "Sachant que le pH de la solution 4 est de 3, le pKa du couple H\u003csub\u003e2\u003c/sub\u003eCO\u003csub\u003e3\u003c/sub\u003e/HCO\u003csub\u003e3\u003c/sub\u003e – vaut environ 6",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → Sachant que le pH de la solution 4 est de 3, le pKa du couple H2CO3/HCO3 – vaut … Bingo ! Pour pouvoir retrouver la valeur du pKa, il nous faut une formule le reliant à d’autres valeurs dont on dispose (pH et concentration des espèces) : la formule d’Henderson-Hasselbach. Il nous suffit d’isoler le pKa et d’effectuer l’application numérique : → Sachant que le pH de la solution 4 est de 3, le pKa du couple H2CO3/HCO3 – vaut … Bingo ! Pour pouvoir retrouver la valeur du pKa, il nous faut une formule le reliant à d’autres valeurs dont on dispose (pH et concentration des espèces) : la formule d’Henderson-Hasselbach. Il nous suffit d’isoler le pKa et d’effectuer l’application numérique :"
+                                                  "explanation":  "VRAI - → Sachant que le pH de la solution 4 est de 3, le pKa du couple H\u003csub\u003e2\u003c/sub\u003eCO\u003csub\u003e3\u003c/sub\u003e/HCO\u003csub\u003e3\u003c/sub\u003e – vaut … Bingo ! Pour pouvoir retrouver la valeur du pKa, il nous faut une formule le reliant à d’autres valeurs dont on dispose (pH et concentration des espèces) : la formule d’Henderson-Hasselbach. Il nous suffit d’isoler le pKa et d’effectuer l’application numérique : → Sachant que le pH de la solution 4 est de 3, le pKa du couple H\u003csub\u003e2\u003c/sub\u003eCO\u003csub\u003e3\u003c/sub\u003e/HCO\u003csub\u003e3\u003c/sub\u003e – vaut … Bingo ! Pour pouvoir retrouver la valeur du pKa, il nous faut une formule le reliant à d’autres valeurs dont on dispose (pH et concentration des espèces) : la formule d’Henderson-Hasselbach. Il nous suffit d’isoler le pKa et d’effectuer l’application numérique :"
                                               },
                                               {
                                                   "id":  "C",
@@ -10011,7 +9977,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 1 : Chimie\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nChimie\nPour simplifier les calculs, on utilisera les ordres de grandeurs ci-dessous :\nln(x) = 2,3 log x\nR = 8,3 J · mol · K−1\nÀ T = 298 K : RT = 5/2 kJ · mol−1 = 2,5 kJ · mol−1\nRT ln x = 0,06 log x F\n2,3RT = 6,0 kJ · mol−1\nF = 100 000 C · mol−1\nExponentielle, logarithme népérien et logartihme décimal\nx\n0,1\n2\n3\n5\n8\n13\nex\n1,1\n7,4\n20\n148\n/\n/\nln x\n−2,3\n0,7\n1,1\n1,6\n2,1\n2,6\nlog x\n−1\n0,3\n0,5\n0,7\n0,9\n1,1\n800 = 2671025 = 3421250 = 417\n333\n298 × 35 = 10 500298 × 95 = 28 000298 × 130 = 39 000\n2500 × 2,3 = 5 750\n0,06 × 2,3 = 0,1380,06 × 3,7 = 0,222\n(Certaines grandeurs ont été arrondies afin de faciliter les calculs)\nLes ”aides aux calculs, après arrondi” doivent être utilisées lors du choix des propositions.",
+                              "context":  "Durée de l’épreuve : 1h30\nInformations sur l’épreuve\nPour simplifier les calculs, on utilisera les ordres de grandeurs ci-dessous :\nln(x) = 2,3 log x\nR = 8,3 J · mol · K\u003csup\u003e−1\u003c/sup\u003e\nÀ T = 298 K : RT = 5/2 kJ · mol\u003csup\u003e−1\u003c/sup\u003e = 2,5 kJ · mol\u003csup\u003e−1\u003c/sup\u003e\nRT ln x = 0,06 log x F\n2,3RT = 6,0 kJ · mol\u003csup\u003e−1\u003c/sup\u003e\nF = 100 000 C · mol\u003csup\u003e−1\u003c/sup\u003e\nExponentielle, logarithme népérien et logartihme décimal\n\u003cdiv class=\"annale-data-table-wrap\"\u003e\u003ctable class=\"annale-data-table\"\u003e\u003ctr\u003e\u003cth\u003ex\u003c/th\u003e\u003cth\u003e0,1\u003c/th\u003e\u003cth\u003e2\u003c/th\u003e\u003cth\u003e3\u003c/th\u003e\u003cth\u003e5\u003c/th\u003e\u003cth\u003e8\u003c/th\u003e\u003cth\u003e13\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eex\u003c/th\u003e\u003ctd\u003e1,1\u003c/td\u003e\u003ctd\u003e7,4\u003c/td\u003e\u003ctd\u003e20\u003c/td\u003e\u003ctd\u003e148\u003c/td\u003e\u003ctd\u003e/\u003c/td\u003e\u003ctd\u003e/\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eln x\u003c/th\u003e\u003ctd\u003e−2,3\u003c/td\u003e\u003ctd\u003e0,7\u003c/td\u003e\u003ctd\u003e1,1\u003c/td\u003e\u003ctd\u003e1,6\u003c/td\u003e\u003ctd\u003e2,1\u003c/td\u003e\u003ctd\u003e2,6\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003elog x\u003c/th\u003e\u003ctd\u003e−1\u003c/td\u003e\u003ctd\u003e0,3\u003c/td\u003e\u003ctd\u003e0,5\u003c/td\u003e\u003ctd\u003e0,7\u003c/td\u003e\u003ctd\u003e0,9\u003c/td\u003e\u003ctd\u003e1,1\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\n800 = 2671025 = 3421250 = 417\n333\n298 × 35 = 10 500298 × 95 = 28 000298 × 130 = 39 000\n2500 × 2,3 = 5 750\n0,06 × 2,3 = 0,1380,06 × 3,7 = 0,222\n(Certaines grandeurs ont été arrondies afin de faciliter les calculs)\nLes ”aides aux calculs, après arrondi” doivent être utilisées lors du choix des propositions.",
                               "images":  [
                                              "annales_assets/2025_2026/chimie/tuto_2/image1.png",
                                              "annales_assets/2025_2026/chimie/tuto_2/image2.png",
@@ -10019,42 +9985,42 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Concernant les configurations électroniques, laquelle (lesquelles) des propositions est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "17Cl : 1s22s22p63s23p5",
-                                                 "29Cu : [Ne] 3s23p64s23d10",
-                                                 "La configuration électronique du nickel (Ni) est 1s22s22p63s23p63d10",
-                                                 "Un élément neutre de configuration électronique [Ar] 4s2 est un alcalin",
-                                                 "Un élément non chargé de configuration électronique 1s22s22p63s2 est un alcalino-terreux"
+                                                 "\u003csub\u003e17\u003c/sub\u003eCl : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e5\u003c/sup\u003e",
+                                                 "\u003csub\u003e29\u003c/sub\u003eCu : [Ne] 3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e",
+                                                 "La configuration électronique du nickel (Ni) est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e",
+                                                 "Un élément neutre de configuration électronique [Ar] 4s\u003csup\u003e2\u003c/sup\u003e est un alcalin",
+                                                 "Un élément non chargé de configuration électronique 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e est un alcalino-terreux"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "17Cl : 1s22s22p63s23p5",
+                                                  "text":  "\u003csub\u003e17\u003c/sub\u003eCl : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e5\u003c/sup\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - 17Cl : 1s22s22p63s23p5 17Cl : 1s22s22p63s23p5 → 17Cl : 1s22s22p63s23p5 → 17Cl : 1s22s22p63s23p5"
+                                                  "explanation":  "VRAI - 17Cl : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e5\u003c/sup\u003e 17Cl : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e5\u003c/sup\u003e → \u003csub\u003e17\u003c/sub\u003eCl : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e5\u003c/sup\u003e → \u003csub\u003e17\u003c/sub\u003eCl : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e5\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "29Cu : [Ne] 3s23p64s23d10",
+                                                  "text":  "\u003csub\u003e29\u003c/sub\u003eCu : [Ne] 3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - 29Cu : [Ne] 3s23p64s23d10 → 29Cu : [Ne] 3s23p64s23d10 → 29Cu : [Ne] 3s23p64s23d10"
+                                                  "explanation":  "FAUX - \u003csub\u003e29\u003c/sub\u003eCu : [Ne] 3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e → \u003csub\u003e29\u003c/sub\u003eCu : [Ne] 3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e → \u003csub\u003e29\u003c/sub\u003eCu : [Ne] 3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "La configuration électronique du nickel (Ni) est 1s22s22p63s23p63d10",
+                                                  "text":  "La configuration électronique du nickel (Ni) est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - La configuration électronique du nickel (Ni) est 1s22s22p63s23p63d10 → La configuration électronique du nickel (Ni) est 1s22s22p63s23p63d10 → La configuration électronique du nickel (Ni) est 1s22s22p63s23p63d10"
+                                                  "explanation":  "FAUX - La configuration électronique du nickel (Ni) est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e → La configuration électronique du nickel (Ni) est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e → La configuration électronique du nickel (Ni) est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e6\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "Un élément neutre de configuration électronique [Ar] 4s2 est un alcalin",
+                                                  "text":  "Un élément neutre de configuration électronique [Ar] 4s\u003csup\u003e2\u003c/sup\u003e est un alcalin",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Un élément neutre de configuration électronique [Ar] 4s2 est un alcalin → Un élément neutre de configuration électronique [Ar] 4s2 est un alcalin → Un élément neutre de configuration électronique [Ar] 4s2 est un alcalin"
+                                                  "explanation":  "FAUX - Un élément neutre de configuration électronique [Ar] 4s\u003csup\u003e2\u003c/sup\u003e est un alcalin → Un élément neutre de configuration électronique [Ar] 4s\u003csup\u003e2\u003c/sup\u003e est un alcalin → Un élément neutre de configuration électronique [Ar] 4s\u003csup\u003e2\u003c/sup\u003e est un alcalin"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Un élément non chargé de configuration électronique 1s22s22p63s2 est un alcalino-terreux",
+                                                  "text":  "Un élément non chargé de configuration électronique 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e est un alcalino-terreux",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → Un élément non chargé de configuration électronique 1s22s22p63s2 est un alcalino- … Exactement, la configuration ici est celle du magnésium. Or, il est dans la 2e colonne du tableau, c’est donc un alcalino-terreux. → Un élément non chargé de configuration électronique 1s22s22p63s2 est un alcalino- … Exactement, la configuration ici est celle du magnésium. Or, il est dans la 2e colonne du tableau, c’est donc un alcalino-terreux."
+                                                  "explanation":  "VRAI - → Un élément non chargé de configuration électronique 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e est un alcalino- … Exactement, la configuration ici est celle du magnésium. Or, il est dans la 2e colonne du tableau, c’est donc un alcalino-terreux. → Un élément non chargé de configuration électronique 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e est un alcalino- … Exactement, la configuration ici est celle du magnésium. Or, il est dans la 2e colonne du tableau, c’est donc un alcalino-terreux."
                                               }
                                           ],
                               "correctAnswers":  [
@@ -10107,7 +10073,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "Les atomes du bloc p ont leur couche externe complètement remplie",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Un élément non chargé de configuration électronique 1s22s22p63s2 est un alcalino-terreux Un élément non chargé de configuration électronique 1s22s22p63s2 est un alcalino-terreux → Les atomes du bloc p ont leur couche externe complètement remplie → Les atomes du bloc p ont leur couche externe complètement remplie → L’argent 47Ag et l’Or 79Au ont le même nombre d’électrons de valence → L’argent 47Ag et l’Or 79Au ont le même nombre d’électrons de valence L’argent 47Ag et l’Or 79Au ont le même nombre d’électrons de valence L’argent 47Ag et l’Or 79Au ont le même nombre d’électrons de valence"
+                                                  "explanation":  "VRAI - Un élément non chargé de configuration électronique 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e est un alcalino-terreux Un élément non chargé de configuration électronique 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e est un alcalino-terreux → Les atomes du bloc p ont leur couche externe complètement remplie → Les atomes du bloc p ont leur couche externe complètement remplie → L’argent 47Ag et l’Or 79Au ont le même nombre d’électrons de valence → L’argent 47Ag et l’Or 79Au ont le même nombre d’électrons de valence L’argent \u003csup\u003e47\u003c/sup\u003eAg et l’Or \u003csup\u003e79\u003c/sup\u003eAu ont le même nombre d’électrons de valence L’argent \u003csup\u003e47\u003c/sup\u003eAg et l’Or \u003csup\u003e79\u003c/sup\u003eAu ont le même nombre d’électrons de valence"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -10229,23 +10195,23 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "On s’intéresse à la molécule ci dessous, laquelle (lesquelles) des propositions sui-vantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "H2N",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eN",
                                                  "H N 2",
-                                                 "H2N",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eN",
                                                  "H N 2",
                                                  "3OH",
                                                  "L’azote 1 est de géométrie tétraédrique",
                                                  "La théorie VSEPR sert à déterminer la géométrie des atomes au sein d’une molécule",
                                                  "L’azote 2 est de géométrie trigonale plane",
-                                                 "Le carbone 3 est hybridé sp3",
-                                                 "Dans la molécule HCN, l’azote est AL3E1",
+                                                 "Le carbone 3 est hybridé sp\u003csup\u003e3\u003c/sup\u003e",
+                                                 "Dans la molécule HCN, l’azote est AL\u003csub\u003e3\u003c/sub\u003eE\u003csub\u003e1\u003c/sub\u003e",
                                                  "Le leuco-indigo est une forme réduite de l’indigo, un composé organique extrait de l’indigotier utilisé comme colorant. Un chimiste effectue diverses réactions chimiques sur cette molécule et parvient ainsi à obtenir la molécule A ci-dessous.",
                                                  "1",
                                                  "O2N",
                                                  "H N",
                                                  "234",
                                                  "5",
-                                                 "N2 H",
+                                                 "N\u003csub\u003e2\u003c/sub\u003e H",
                                                  "1",
                                                  "3",
                                                  "HO",
@@ -10255,7 +10221,7 @@ window.ANNALES_2025_2026 = [
                                                  "H N",
                                                  "234",
                                                  "5",
-                                                 "N2 H",
+                                                 "N\u003csub\u003e2\u003c/sub\u003e H",
                                                  "1",
                                                  "3",
                                                  "HO",
@@ -10273,7 +10239,7 @@ window.ANNALES_2025_2026 = [
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "H2N",
+                                                  "text":  "H\u003csub\u003e2\u003c/sub\u003eN",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - quoi ressemble une molécule de NCH ? Le piège (car il y en a toujours) vous mettait sur la voie, bien qu’il était tout de même trompeur. La molécule ressemble à ça : quoi ressemble une molécule de NCH ? Le piège (car il y en a toujours) vous mettait sur la voie, bien qu’il était tout de même trompeur. La molécule ressemble à ça :"
                                               },
@@ -10285,7 +10251,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "H2N",
+                                                  "text":  "H\u003csub\u003e2\u003c/sub\u003eN",
                                                   "isCorrect":  true,
                                                   "explanation":  "VRAI - L’azote 2 est de géométrie trigonale plane L’azote 2 est de géométrie trigonale plane → L’azote 2 est de géométrie trigonale plane → L’azote 2 est de géométrie trigonale plane"
                                               },
@@ -10293,13 +10259,13 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "D",
                                                   "text":  "H N 2",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Le carbone 3 est hybridé sp3 → Le carbone 3 est hybridé sp3"
+                                                  "explanation":  "FAUX - → Le carbone 3 est hybridé sp\u003csup\u003e3\u003c/sup\u003e → Le carbone 3 est hybridé sp\u003csup\u003e3\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "E",
                                                   "text":  "3OH",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Dans la molécule HCN, l’azote est AL3E1 → Dans la molécule HCN, l’azote est AL3E1"
+                                                  "explanation":  "FAUX - → Dans la molécule HCN, l’azote est AL\u003csub\u003e3\u003c/sub\u003eE\u003csub\u003e1\u003c/sub\u003e → Dans la molécule HCN, l’azote est AL\u003csub\u003e3\u003c/sub\u003eE\u003csub\u003e1\u003c/sub\u003e"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -10383,7 +10349,7 @@ window.ANNALES_2025_2026 = [
                                                  "—",
                                                  "HO",
                                                  "À présent, nous allons nous intéresser à l’isoleucine, à la thréonine et à l’histidine. Ces acides aminés ont des rôles essentiels et participent au bon fonctionnement du métabolisme. Les représentations de Cram sont données ci-dessous :",
-                                                 "CH3O",
+                                                 "CH\u003csub\u003e3\u003c/sub\u003eO",
                                                  "O",
                                                  "1",
                                                  "4",
@@ -10403,18 +10369,18 @@ window.ANNALES_2025_2026 = [
                                                  "3",
                                                  "2",
                                                  "N",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "N",
                                                  "3",
                                                  "2",
                                                  "N",
-                                                 "NH2",
-                                                 "H3C",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eC",
                                                  "OH",
-                                                 "OHH3COH",
-                                                 "NH2",
+                                                 "OHH\u003csub\u003e3\u003c/sub\u003eCOH",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "Isoleucine",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "Thréonine",
                                                  "H",
                                                  "Histidine"
@@ -10470,16 +10436,16 @@ window.ANNALES_2025_2026 = [
                                                  "Le carbone C(3) est de configuration absolue S",
                                                  "La projection de Fischer de l’isoleucine ci-dessus est la suivante :",
                                                  "COOH",
-                                                 "HNH2",
-                                                 "HCH3",
+                                                 "HNH\u003csub\u003e2\u003c/sub\u003e",
+                                                 "HCH\u003csub\u003e3\u003c/sub\u003e",
                                                  "HH",
-                                                 "CH3",
+                                                 "CH\u003csub\u003e3\u003c/sub\u003e",
                                                  "La projection de Fischer de l’isoleucine ci-dessus est la suivante :",
                                                  "COOH",
-                                                 "H2NH",
-                                                 "H3CH",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eNH",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eCH",
                                                  "HH",
-                                                 "CH3"
+                                                 "CH\u003csub\u003e3\u003c/sub\u003e"
                                              ],
                               "options":  [
                                               {
@@ -10533,19 +10499,19 @@ window.ANNALES_2025_2026 = [
                                                  "La projection Newman de la thréonine dans l’axe C(2)-C(3) est la suivante :",
                                                  "COOH",
                                                  "HOH",
-                                                 "H2N",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eN",
                                                  "H",
-                                                 "CH3",
+                                                 "CH\u003csub\u003e3\u003c/sub\u003e",
                                                  "La projection Newman de la thréonine dans l’axe C(2)-C(3) est la suivante :",
                                                  "H",
                                                  "OH",
-                                                 "H2N",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eN",
                                                  "H",
                                                  "H",
                                                  "OH",
-                                                 "H2N",
+                                                 "H\u003csub\u003e2\u003c/sub\u003eN",
                                                  "H",
-                                                 "CH3"
+                                                 "CH\u003csub\u003e3\u003c/sub\u003e"
                                              ],
                               "options":  [
                                               {
@@ -10598,16 +10564,16 @@ window.ANNALES_2025_2026 = [
                                                  "Le carbone C(3) est de configuration absolue R",
                                                  "La molécule ci-dessous est une forme tautomère de l’histidine :",
                                                  "N",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "N",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "OH",
                                                  "N",
                                                  "La molécule ci-dessous est une forme tautomère de l’histidine :",
                                                  "N",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "N",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "OH",
                                                  "N"
                                              ],
@@ -10658,19 +10624,19 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "La variation d’enthalpie libre de réaction ∆rG, est nulle à l’équilibre chimique",
+                                                 "La variation d’enthalpie libre de réaction ∆\u003csub\u003er\u003c/sub\u003eG, est nulle à l’équilibre chimique",
                                                  "Une combustion est une réaction irréversible",
                                                  "K dépend uniquement de la température",
                                                  "Une réaction exothermique est spontanée dans le sens direct",
-                                                 "Une réaction avec ∆rG◦ fortement négatif est toujours rapide",
+                                                 "Une réaction avec ∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e fortement négatif est toujours rapide",
                                                  "Un chimiste du nom de Peter Parker se rend compte que les toiles d’araignée sont sensibles aux conditions du milieu. Il étudie une réaction de polymérisation pour créer de nouvelles toiles plus solides et modélise la réaction avec les valeurs suivantes à 300 K :",
-                                                 "Enthalpie standard de réaction : ∆rH◦ = −100 kJ · mol−1",
-                                                 "Entropie standard de réaction : ∆rS◦ = −200 J · K−1 · mol−1"
+                                                 "Enthalpie standard de réaction : ∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e = −100 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "Entropie standard de réaction : ∆\u003csub\u003er\u003c/sub\u003eS\u003csup\u003e◦\u003c/sup\u003e = −200 J · K\u003csup\u003e−1\u003c/sup\u003e · mol\u003csup\u003e−1\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "La variation d’enthalpie libre de réaction ∆rG, est nulle à l’équilibre chimique",
+                                                  "text":  "La variation d’enthalpie libre de réaction ∆\u003csub\u003er\u003c/sub\u003eG, est nulle à l’équilibre chimique",
                                                   "isCorrect":  true,
                                                   "explanation":  "VRAI - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -10694,9 +10660,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Une réaction avec ∆rG◦ fortement négatif est toujours rapide",
+                                                  "text":  "Une réaction avec ∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e fortement négatif est toujours rapide",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → Une réaction avec ∆rG○ fortement négatif est toujours rapide → La constante d’équilibre (KT ) de cette réaction est nécessairement supérieure à 1 Aïeeee ici il faudra bien khemem, mais pas de panique ! Premièrement retrouvons la formule qui relie KT à l’enthalpie libre standard : → La constante d’équilibre (KT ) de cette réaction est nécessairement supérieure à 1 Aïeeee ici il faudra bien khemem, mais pas de panique ! Premièrement retrouvons la formule qui relie KT à l’enthalpie libre standard :"
+                                                  "explanation":  "VRAI - → Une réaction avec ∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e○\u003c/sup\u003e fortement négatif est toujours rapide → La constante d’équilibre (K\u003csub\u003eT\u003c/sub\u003e ) de cette réaction est nécessairement supérieure à 1 Aïeeee ici il faudra bien khemem, mais pas de panique ! Premièrement retrouvons la formule qui relie K\u003csub\u003eT\u003c/sub\u003e à l’enthalpie libre standard : → La constante d’équilibre (K\u003csub\u003eT\u003c/sub\u003e ) de cette réaction est nécessairement supérieure à 1 Aïeeee ici il faudra bien khemem, mais pas de panique ! Premièrement retrouvons la formule qui relie K\u003csub\u003eT\u003c/sub\u003e à l’enthalpie libre standard :"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -10715,33 +10681,33 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "La valeur de l’enthalpie libre standard de réaction (∆rG◦) est de −40 kJ · mol−1",
+                                                 "La valeur de l’enthalpie libre standard de réaction (∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e) est de −40 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                  "La réaction est spontanée dans le sens direct en conditions standards à 300 K",
                                                  "La réaction n’est pas spontanée dans le sens direct en raison de la baisse d’entropie",
                                                  "Si la température augmente, l’équilibre est déplacé dans le sens direct",
-                                                 "La constante d’équilibre (KT ) de cette réaction est nécessairement supérieure à 1",
+                                                 "La constante d’équilibre (K\u003csub\u003eT\u003c/sub\u003e ) de cette réaction est nécessairement supérieure à 1",
                                                  "Considérons la réaction suivante de synthèse de l’ammoniac à la température de 298 K",
-                                                 "1 N2(+ 3 H−−→ NH",
+                                                 "1 N\u003csub\u003e2(\u003c/sub\u003e+ 3 H−−→ NH",
                                                  "2",
                                                  "On donne les valeurs suivantes :",
                                                  "2",
                                                  "2(g)",
                                                  "3(g)",
-                                                 "∆lH◦(N−N) = −160 kJ · mol−1",
-                                                 "∆lH◦(N−N) = −400 kJ · mol−1",
-                                                 "∆lH◦(N−N) = −950 kJ · mol−1",
-                                                 "∆lH◦(H−H) = −450 kJ · mol−1",
-                                                 "∆rH◦ = −100 kJ · mol−1",
-                                                 "S◦(N2(g)) = 200 J · mol−1 · K−1",
-                                                 "S◦(H2(g)) = 130 J · mol−1 · K−1",
-                                                 "S◦(NH3(g)) = 200 J · mol−1 · K−1"
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(N−N) = −160 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(N−N) = −400 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(N−N) = −950 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(H−H) = −450 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e = −100 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "S\u003csup\u003e◦\u003c/sup\u003e(N\u003csub\u003e2(g)\u003c/sub\u003e) = 200 J · mol\u003csup\u003e−1\u003c/sup\u003e · K\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "S\u003csup\u003e◦\u003c/sup\u003e(H\u003csub\u003e2(g)\u003c/sub\u003e) = 130 J · mol\u003csup\u003e−1\u003c/sup\u003e · K\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "S\u003csup\u003e◦\u003c/sup\u003e(NH\u003csub\u003e3(g)\u003c/sub\u003e) = 200 J · mol\u003csup\u003e−1\u003c/sup\u003e · K\u003csup\u003e−1\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "La valeur de l’enthalpie libre standard de réaction (∆rG◦) est de −40 kJ · mol−1",
+                                                  "text":  "La valeur de l’enthalpie libre standard de réaction (∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e) est de −40 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → La valeur de l’enthalpie libre standard de réaction (∆rG○) est de −40 kJ · mol−1 → La valeur de l’enthalpie libre standard de réaction (∆rG○) est de −40 kJ · mol−1 ∆lH◦(N−H) = −417 kJ · mol−1 ∆lH◦(N−H) = −417 kJ · mol−1"
+                                                  "explanation":  "VRAI - → La valeur de l’enthalpie libre standard de réaction (∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e○\u003c/sup\u003e) est de −40 kJ · mol\u003csup\u003e−1\u003c/sup\u003e → La valeur de l’enthalpie libre standard de réaction (∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e○\u003c/sup\u003e) est de −40 kJ · mol\u003csup\u003e−1\u003c/sup\u003e ∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(N−H) = −417 kJ · mol\u003csup\u003e−1\u003c/sup\u003e ∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(N−H) = −417 kJ · mol\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "B",
@@ -10753,7 +10719,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "La réaction n’est pas spontanée dans le sens direct en raison de la baisse d’entropie",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → ∆rS○ = −95 J · mol−1 · K−1 → ∆rS○ = −95 J · mol−1 · K−1 ∆rS◦ = −95 J · mol−1 · K−1 ∆rS◦ = −95 J · mol−1 · K−1"
+                                                  "explanation":  "VRAI - → ∆\u003csub\u003er\u003c/sub\u003eS\u003csup\u003e○\u003c/sup\u003e = −95 J · mol\u003csup\u003e−1\u003c/sup\u003e · K\u003csup\u003e−1\u003c/sup\u003e → ∆\u003csub\u003er\u003c/sub\u003eS\u003csup\u003e○\u003c/sup\u003e = −95 J · mol\u003csup\u003e−1\u003c/sup\u003e · K\u003csup\u003e−1\u003c/sup\u003e ∆\u003csub\u003er\u003c/sub\u003eS\u003csup\u003e◦\u003c/sup\u003e = −95 J · mol\u003csup\u003e−1\u003c/sup\u003e · K\u003csup\u003e−1\u003c/sup\u003e ∆\u003csub\u003er\u003c/sub\u003eS\u003csup\u003e◦\u003c/sup\u003e = −95 J · mol\u003csup\u003e−1\u003c/sup\u003e · K\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "D",
@@ -10763,9 +10729,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "La constante d’équilibre (KT ) de cette réaction est nécessairement supérieure à 1",
+                                                  "text":  "La constante d’équilibre (K\u003csub\u003eT\u003c/sub\u003e ) de cette réaction est nécessairement supérieure à 1",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - La constante d’équilibre (KT ) de cette réaction est nécessairement supérieure à 1 La constante d’équilibre (KT ) de cette réaction est nécessairement supérieure à 1"
+                                                  "explanation":  "FAUX - La constante d’équilibre (K\u003csub\u003eT\u003c/sub\u003e ) de cette réaction est nécessairement supérieure à 1 La constante d’équilibre (K\u003csub\u003eT\u003c/sub\u003e ) de cette réaction est nécessairement supérieure à 1"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -10777,58 +10743,47 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  13,
                               "type":  "QCM",
-                              "context":  "",
+                              "context":  "\u003cdiv class=\"annale-data-table-wrap\"\u003e\u003ctable class=\"annale-data-table\"\u003e\u003ctr\u003e\u003cth\u003e\u003c/th\u003e\u003cth\u003eN\u003csub\u003e2\u003c/sub\u003e\u003c/th\u003e\u003cth\u003eH\u003csub\u003e2\u003c/sub\u003e\u003c/th\u003e\u003cth\u003eNH\u003csub\u003e3\u003c/sub\u003e\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003ep\u003csub\u003ei\u003c/sub\u003e (atm)\u003c/th\u003e\u003ctd\u003e4,0\u003c/td\u003e\u003ctd\u003e1,0\u003c/td\u003e\u003ctd\u003e0,2\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003en\u003csub\u003ei\u003c/sub\u003e (mmol)\u003c/th\u003e\u003ctd\u003e160\u003c/td\u003e\u003ctd\u003e40\u003c/td\u003e\u003ctd\u003e8\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e",
                               "images":  [
 
                                          ],
                               "question":  "Concernant la réaction ci-dessus, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "∆lH◦(N−H) = −417 kJ · mol−1",
-                                                 "∆lH◦(N−H) = −1500 kJ · mol−1",
-                                                 "∆rS◦ = −95 J · mol−1 · K−1",
-                                                 "∆rG◦ = −61 kJ · mol−1",
-                                                 "∆rG◦ = −153 kJ · mol−1",
-                                                 "On utilisera pour la question 14 ∆rG◦ = −50 kJ · mol−1 et on considère les pressions initiales ainsi que les quantités de matière initiales suivantes des différents gaz qu’on considérera présente dans un volume de 1 L :",
-                                                 "N2",
-                                                 "H2",
-                                                 "NH3",
-                                                 "pi (atm)",
-                                                 "4,0",
-                                                 "1,0",
-                                                 "0,2",
-                                                 "ni (mmol)",
-                                                 "160",
-                                                 "40",
-                                                 "8"
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(N−H) = −417 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(N−H) = −1500 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003er\u003c/sub\u003eS\u003csup\u003e◦\u003c/sup\u003e = −95 J · mol\u003csup\u003e−1\u003c/sup\u003e · K\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e = −61 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e = −153 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "On utilisera pour la question 14 ∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e = −50 kJ · mol\u003csup\u003e−1\u003c/sup\u003e et on considère les pressions initiales ainsi que les quantités de matière initiales suivantes des différents gaz qu’on considérera présente dans un volume de 1 L :"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "∆lH◦(N−H) = −417 kJ · mol−1",
+                                                  "text":  "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(N−H) = −417 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "∆lH◦(N−H) = −1500 kJ · mol−1",
+                                                  "text":  "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e(N−H) = −1500 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "∆rS◦ = −95 J · mol−1 · K−1",
+                                                  "text":  "∆\u003csub\u003er\u003c/sub\u003eS\u003csup\u003e◦\u003c/sup\u003e = −95 J · mol\u003csup\u003e−1\u003c/sup\u003e · K\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "∆rG◦ = −61 kJ · mol−1",
+                                                  "text":  "∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e = −61 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "∆rG◦ = −153 kJ · mol−1",
+                                                  "text":  "∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e = −153 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               }
@@ -10850,15 +10805,15 @@ window.ANNALES_2025_2026 = [
                                                  "Le quotient de la réaction de synthèse de l’ammoniac Γ peut être calculé en faisant le rapport des concentrations des produits sur les réactifs",
                                                  "Le quotient de réaction Γ est environ égal à 0,05",
                                                  "Le quotient de réaction Γ est environ égal à 0,1",
-                                                 "∆rG = −55,75 kJ · mol−1",
-                                                 "La constante d’équilibre K = e20",
-                                                 "Le glutathion réduit (GSH) joue un rôle important dans la cellule en tant qu’antioxydant. En effet, il réduit le peroxyde d’hydrogène (H2O2) en eau.",
-                                                 "Cette réaction implique les deux couples redox suivants : GSSG/GSH et H2O2/H2O.",
+                                                 "∆\u003csub\u003er\u003c/sub\u003eG = −55,75 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "La constante d’équilibre K = e\u003csup\u003e20\u003c/sup\u003e",
+                                                 "Le glutathion réduit (GSH) joue un rôle important dans la cellule en tant qu’antioxydant. En effet, il réduit le peroxyde d’hydrogène (H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e) en eau.",
+                                                 "Cette réaction implique les deux couples redox suivants : GSSG/GSH et H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2/\u003c/sub\u003eH\u003csub\u003e2\u003c/sub\u003eO.",
                                                  "Données :",
-                                                 "E◦(GSSG/GSH) = −0,23 V",
-                                                 "E◦(H2O2/H2O) = 1,77 V",
-                                                 "[GSH]i = 5,0 mmol · L−1",
-                                                 "[GSSG]i = [H2O2]i = 1,0 µmol · L−1"
+                                                 "E\u003csup\u003e◦\u003c/sup\u003e(GSSG/GSH) = −0,23 V",
+                                                 "E\u003csup\u003e◦\u003c/sup\u003e(H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2/\u003c/sub\u003eH\u003csub\u003e2\u003c/sub\u003eO) = 1,77 V",
+                                                 "[GSH]\u003csub\u003ei\u003c/sub\u003e = 5,0 mmol · L\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "[GSSG]\u003csub\u003ei\u003c/sub\u003e = [H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e]\u003csub\u003ei\u003c/sub\u003e = 1,0 µmol · L\u003csup\u003e−1\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
@@ -10881,15 +10836,15 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "∆rG = −55,75 kJ · mol−1",
+                                                  "text":  "∆\u003csub\u003er\u003c/sub\u003eG = −55,75 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - ∆rG = −55,75 kJ · mol−1 ∆rG = −55,75 kJ · mol−1"
+                                                  "explanation":  "FAUX - ∆\u003csub\u003er\u003c/sub\u003eG = −55,75 kJ · mol\u003csup\u003e−1\u003c/sup\u003e ∆\u003csub\u003er\u003c/sub\u003eG = −55,75 kJ · mol\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "La constante d’équilibre K = e20",
+                                                  "text":  "La constante d’équilibre K = e\u003csup\u003e20\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - La constante d’équilibre K = e20 La constante d’équilibre K = e20"
+                                                  "explanation":  "FAUX - La constante d’équilibre K = e\u003csup\u003e20\u003c/sup\u003e La constante d’équilibre K = e\u003csup\u003e20\u003c/sup\u003e"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -10907,10 +10862,10 @@ window.ANNALES_2025_2026 = [
                               "question":  "Concernant ces couples d’oxydo-réduction, quelle est la (ou quelles sont les) pro-position(s) exacte(s) ?",
                               "rawOptions":  [
                                                  "La demi-équation du couple GSSG/2GSH est : GSSG + 2 H+ −7−−-− 2 GSH + 2 e–",
-                                                 "La demi-équation du couple H2O2/H2O est : H2O2 + 2 H+ + 2 e– −7−−-− 2 H2O",
-                                                 "L’équation bilan de la réaction est : H2O2 + 2 GSH −−→ 2 GSSG + 2 H2O",
+                                                 "La demi-équation du couple H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e/H\u003csub\u003e2\u003c/sub\u003eO est : H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e + 2 H+ + 2 e– −7−−-− 2 H\u003csub\u003e2\u003c/sub\u003eO",
+                                                 "L’équation bilan de la réaction est : H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e + 2 GSH −−→ 2 GSSG + 2 H\u003csub\u003e2\u003c/sub\u003eO",
                                                  "Dans le sens spontané, l’oxydant le plus fort réagit avec le réducteur le plus fort",
-                                                 "Compte tenu de son potentiel standard, H2O2 est un plus mauvais oxydant que H+"
+                                                 "Compte tenu de son potentiel standard, H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e est un plus mauvais oxydant que H+"
                                              ],
                               "options":  [
                                               {
@@ -10921,13 +10876,13 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "La demi-équation du couple H2O2/H2O est : H2O2 + 2 H+ + 2 e– −7−−-− 2 H2O",
+                                                  "text":  "La demi-équation du couple H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e/H\u003csub\u003e2\u003c/sub\u003eO est : H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e + 2 H+ + 2 e– −7−−-− 2 H\u003csub\u003e2\u003c/sub\u003eO",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - La demi-équation du couple H2O2/H2O est : H2O2 + 2 H+ + 2 e– −z−−-− 2 H2O La demi-équation du couple H2O2/H2O est : H2O2 + 2 H+ + 2 e– −z−−-− 2 H2O"
+                                                  "explanation":  "FAUX - La demi-équation du couple H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e/H\u003csub\u003e2\u003c/sub\u003eO est : H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e + 2 H\u003csup\u003e+\u003c/sup\u003e + 2 e\u003csup\u003e–\u003c/sup\u003e −z−−-− 2 H\u003csub\u003e2\u003c/sub\u003eO La demi-équation du couple H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e/H\u003csub\u003e2\u003c/sub\u003eO est : H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e + 2 H\u003csup\u003e+\u003c/sup\u003e + 2 e\u003csup\u003e–\u003c/sup\u003e −z−−-− 2 H\u003csub\u003e2\u003c/sub\u003eO"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "L’équation bilan de la réaction est : H2O2 + 2 GSH −−→ 2 GSSG + 2 H2O",
+                                                  "text":  "L’équation bilan de la réaction est : H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e + 2 GSH −−→ 2 GSSG + 2 H\u003csub\u003e2\u003c/sub\u003eO",
                                                   "isCorrect":  true,
                                                   "explanation":  "VRAI - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -10939,9 +10894,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Compte tenu de son potentiel standard, H2O2 est un plus mauvais oxydant que H+",
+                                                  "text":  "Compte tenu de son potentiel standard, H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e est un plus mauvais oxydant que H+",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Compte tenu de son potentiel standard, H2O2 est un plus mauvais oxydant que H+ → La constante d’équilibre K = e20"
+                                                  "explanation":  "VRAI - Compte tenu de son potentiel standard, H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e est un plus mauvais oxydant que H+ → La constante d’équilibre K = e\u003csup\u003e20\u003c/sup\u003e"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -10954,7 +10909,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  16,
                               "type":  "QCM",
-                              "context":  "",
+                              "context":  "\u003cdiv class=\"annale-data-table-wrap\"\u003e\u003ctable class=\"annale-data-table\"\u003e\u003ctr\u003e\u003cth\u003eTemps (en ms)\u003c/th\u003e\u003cth\u003e0\u003c/th\u003e\u003cth\u003e26\u003c/th\u003e\u003cth\u003e52\u003c/th\u003e\u003cth\u003e78\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003e[Lactose] (en mol · L\u003csup\u003e−1\u003c/sup\u003e)\u003c/th\u003e\u003ctd\u003e3 · 10−4\u003c/td\u003e\u003ctd\u003e1,5 · 10−4\u003c/td\u003e\u003ctd\u003e7,5 · 10−5\u003c/td\u003e\u003ctd\u003e3,75 · 10−5\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e",
                               "images":  [
 
                                          ],
@@ -10962,25 +10917,15 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "La force électromotrice standard de la pile associée à cette réaction est négative",
                                                  "L’expression de la constante d’équilibre de la réaction est K",
-                                                 "K = e160",
+                                                 "K = e\u003csup\u003e160\u003c/sup\u003e",
                                                  "La force électromotrice E vaut environ 1,86 V",
                                                  "La réaction est endergonique, donc dans le sens direct",
-                                                 "= [GSH]2 [H2O2]eq",
+                                                 "= [GSH]2 [H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e]\u003csub\u003eeq\u003c/sub\u003e",
                                                  "eq",
                                                  "eq",
                                                  "On étudie à présent la réaction d’hydrolyse du lactose, décrite comme suit :",
-                                                 "Lactose + H2O −−→ Galactose + Glucose",
-                                                 "On donne ici la concentration du lactose en fonction du temps au cours de la réaction.",
-                                                 "Temps (en ms)",
-                                                 "0",
-                                                 "26",
-                                                 "52",
-                                                 "78",
-                                                 "[Lactose] (en mol · L−1)",
-                                                 "3 · 10−4",
-                                                 "1,5 · 10−4",
-                                                 "7,5 · 10−5",
-                                                 "3,75 · 10−5"
+                                                 "Lactose + H\u003csub\u003e2\u003c/sub\u003eO −−→ Galactose + Glucose",
+                                                 "On donne ici la concentration du lactose en fonction du temps au cours de la réaction."
                                              ],
                               "options":  [
                                               {
@@ -10997,9 +10942,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "K = e160",
+                                                  "text":  "K = e\u003csup\u003e160\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → L’équation bilan de la réaction est : H2O2 + 2 GSH −−→ 2 GSSG + 2 H2O K = e160 K = e160 → K = e160 → K = e160"
+                                                  "explanation":  "FAUX - → L’équation bilan de la réaction est : H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e + 2 GSH −−→ 2 GSSG + 2 H\u003csub\u003e2\u003c/sub\u003eO K = e\u003csup\u003e160\u003c/sup\u003e K = e\u003csup\u003e160\u003c/sup\u003e → K = e\u003csup\u003e160\u003c/sup\u003e → K = e\u003csup\u003e160\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "D",
@@ -11011,7 +10956,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "La réaction est endergonique, donc dans le sens direct",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Compte tenu de son potentiel standard, H2O2 est un plus mauvais oxydant que H+ =○"
+                                                  "explanation":  "FAUX - → Compte tenu de son potentiel standard, H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e est un plus mauvais oxydant que H+ =○"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -11091,18 +11036,18 @@ window.ANNALES_2025_2026 = [
                                                  "La concentration de lactose suit un déclin exponentiel",
                                                  "Ce graphique décrit la réaction :",
                                                  "1 [Lactose]",
-                                                 "1 [Lactose]0",
+                                                 "1 [Lactose]\u003csub\u003e0\u003c/sub\u003e",
                                                  "t",
                                                  "La L-lysine est un acide aminé essentiel que l’on retrouve notamment dans la viande, les œufs, le poisson mais aussi les légumineuses comme le soja. Elle intervient dans bon nombre de réactions de l’organisme comme la synthèse de la carnitine, une molécule indispensable au métabolisme des acides gras. On donne ci-dessous la formule semi-développée de la L-lysine :",
                                                  "O",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "HO",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "L-Lysine",
                                                  "Données :",
-                                                 "pKa1 = 2,2",
-                                                 "pKa2 = 9",
-                                                 "pKa3 = 10,6"
+                                                 "pKa\u003csub\u003e1\u003c/sub\u003e = 2,2",
+                                                 "pKa\u003csub\u003e2\u003c/sub\u003e = 9",
+                                                 "pKa\u003csub\u003e3\u003c/sub\u003e = 10,6"
                                              ],
                               "options":  [
                                               {
@@ -11156,12 +11101,12 @@ window.ANNALES_2025_2026 = [
                                                  "Dans une solution à pH = 9, il y a autant de forme triacide que diacide",
                                                  "Les réactions acido-basiques atteignent rapidement leur point d’équilibre",
                                                  "On dispose de 4 solutions :",
-                                                 "Solution S1 : 2 L de CH3COOH à 6,5 mol/L de pKa(CH3COOH/CH3COO−) = 4,8",
-                                                 "Solution S2 : 5 L de NH3 à 3 mol/L de pKa(NH4+/NH3) = 9,2",
-                                                 "Solution S3 : 1 L d’une solution de 2 mol de H2S de pKa(H2S/HS−) = 7",
+                                                 "Solution S1 : 2 L de CH\u003csub\u003e3\u003c/sub\u003eCOOH à 6,5 mol/L de pKa(CH\u003csub\u003e3\u003c/sub\u003eCOOH/CH\u003csub\u003e3\u003c/sub\u003eCOO\u003csup\u003e−\u003c/sup\u003e) = 4,8",
+                                                 "Solution S2 : 5 L de NH\u003csub\u003e3\u003c/sub\u003e à 3 mol/L de pKa(NH\u003csub\u003e4\u003c/sub\u003e\u003csup\u003e+\u003c/sup\u003e/NH\u003csub\u003e3\u003c/sub\u003e) = 9,2",
+                                                 "Solution S3 : 1 L d’une solution de 2 mol de H\u003csub\u003e2\u003c/sub\u003eS de pKa(H\u003csub\u003e2\u003c/sub\u003eS/HS\u003csup\u003e−\u003c/sup\u003e) = 7",
                                                  "Solution S4 : 0.4 · 10−4 mmol de HCl",
                                                  "On s’intéresse en parallèle à une autre réaction notée réaction 5 :",
-                                                 "NH3 + H2O −7−−-− NH4+ + HO−"
+                                                 "NH\u003csub\u003e3\u003c/sub\u003e + H\u003csub\u003e2\u003c/sub\u003eO −7−−-− NH\u003csub\u003e4\u003c/sub\u003e\u003csup\u003e+\u003c/sup\u003e + HO\u003csup\u003e−\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
@@ -11226,10 +11171,10 @@ window.ANNALES_2025_2026 = [
                                                  "Soit la réaction (1) une réaction de substitution nucléophile dont la vitesse se note v = k[I]. A la fin de la réaction, 2 molécules sont formées.",
                                                  "H",
                                                  "12",
-                                                 "CH3",
+                                                 "CH\u003csub\u003e3\u003c/sub\u003e",
                                                  "H",
                                                  "12",
-                                                 "CH3",
+                                                 "CH\u003csub\u003e3\u003c/sub\u003e",
                                                  "HO",
                                                  "+ EtOH",
                                                  "?",
@@ -11336,7 +11281,7 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "L’intermédiaire réactionnel est principalement stabilisé par des effets inductifs",
                                                  "Le produit obtenu dévie un faisceau de lumière polarisée",
-                                                 "Un doublet non liant de l’EtOH attaque l’orbitale σ∗(C– Cl)",
+                                                 "Un doublet non liant de l’EtOH attaque l’orbitale σ\u003csup\u003e∗\u003c/sup\u003e(C– Cl)",
                                                  "Lorsque l’enthalpie libre d’activation augmente, la vitesse de la réaction augmente",
                                                  "Lors de la réaction, on observe 2 états de transition",
                                                  "On observe en compétition de la réaction de substitution (1) une réaction d’élimination sur la molécule I. On obtient 3 produits."
@@ -11356,9 +11301,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "Un doublet non liant de l’EtOH attaque l’orbitale σ∗(C– Cl)",
+                                                  "text":  "Un doublet non liant de l’EtOH attaque l’orbitale σ\u003csup\u003e∗\u003c/sup\u003e(C– Cl)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Un doublet non liant de l’EtOH attaque l’orbitale σ∗(C– Cl)"
+                                                  "explanation":  "FAUX - → Un doublet non liant de l’EtOH attaque l’orbitale σ\u003csup\u003e∗\u003c/sup\u003e(C– Cl)"
                                               },
                                               {
                                                   "id":  "D",
@@ -11444,7 +11389,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "La stéréochimie des produits dépend de la position des groupements sur les carbones asy-métriques avant l’élimination",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La stéréochimie des produits dépend de la position des groupements sur les carbones … Comme on l’a vu dans l’item d’avant, la liaison C1 – C2 peut tourner durant la réaction et avant la formation de la liaison π, donc le positionnement des groupements des C* n’importe pas pour la stéréochimie des produits !"
+                                                  "explanation":  "FAUX - → La stéréochimie des produits dépend de la position des groupements sur les carbones … Comme on l’a vu dans l’item d’avant, la liaison C\u003csub\u003e1\u003c/sub\u003e – C\u003csub\u003e2\u003c/sub\u003e peut tourner durant la réaction et avant la formation de la liaison π, donc le positionnement des groupements des C* n’importe pas pour la stéréochimie des produits !"
                                               },
                                               {
                                                   "id":  "D",
@@ -11484,7 +11429,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 1 : Chimie\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nChimie\nPour simplifier les calculs, on utilisera les ordres de grandeurs ci-dessous :\nln(x) = 2,3 log x\nR = 8,3 J · mol · K−1\nÀ T = 298 K : RT = 5/2 kJ · mol−1 = 2,5 kJ · mol−1\nRT ln x = 0,06 log x F\n2,3RT = 6,0 kJ · mol−1\nF = 100 000 C · mol−1\nExponentielle, logarithme népérien et logartihme décimal\nx\n2\n3\n5\n10\n11\n316\nex\n7,4\n20\n148\n/\n/\n/\nln x\n0,7\n1,1\n1,6\n2,3\n2,4\n6\nlog x\n0,3\n0,5\n0,7\n/\n1\n2,5\n102,5 = 31610−2,5 = 316 · 10−5\n(Certaines grandeurs ont été arrondies afin de faciliter les calculs)\nLes ”aides aux calculs, après arrondi” doivent être utilisées lors du choix des propositions.",
+                              "context":  "Durée de l’épreuve : 1h30\nInformations sur l’épreuve\nPour simplifier les calculs, on utilisera les ordres de grandeurs ci-dessous :\nln(x) = 2,3 log x\nR = 8,3 J · mol · K\u003csup\u003e−1\u003c/sup\u003e\nÀ T = 298 K : RT = 5/2 kJ · mol\u003csup\u003e−1\u003c/sup\u003e = 2,5 kJ · mol\u003csup\u003e−1\u003c/sup\u003e\nRT ln x = 0,06 log x F\n2,3RT = 6,0 kJ · mol\u003csup\u003e−1\u003c/sup\u003e\nF = 100 000 C · mol\u003csup\u003e−1\u003c/sup\u003e\nExponentielle, logarithme népérien et logartihme décimal\n\u003cdiv class=\"annale-data-table-wrap\"\u003e\u003ctable class=\"annale-data-table\"\u003e\u003ctr\u003e\u003cth\u003ex\u003c/th\u003e\u003cth\u003e2\u003c/th\u003e\u003cth\u003e3\u003c/th\u003e\u003cth\u003e5\u003c/th\u003e\u003cth\u003e10\u003c/th\u003e\u003cth\u003e11\u003c/th\u003e\u003cth\u003e316\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eex\u003c/th\u003e\u003ctd\u003e7,4\u003c/td\u003e\u003ctd\u003e20\u003c/td\u003e\u003ctd\u003e148\u003c/td\u003e\u003ctd\u003e/\u003c/td\u003e\u003ctd\u003e/\u003c/td\u003e\u003ctd\u003e/\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eln x\u003c/th\u003e\u003ctd\u003e0,7\u003c/td\u003e\u003ctd\u003e1,1\u003c/td\u003e\u003ctd\u003e1,6\u003c/td\u003e\u003ctd\u003e2,3\u003c/td\u003e\u003ctd\u003e2,4\u003c/td\u003e\u003ctd\u003e6\u003c/td\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003elog x\u003c/th\u003e\u003ctd\u003e0,3\u003c/td\u003e\u003ctd\u003e0,5\u003c/td\u003e\u003ctd\u003e0,7\u003c/td\u003e\u003ctd\u003e/\u003c/td\u003e\u003ctd\u003e1\u003c/td\u003e\u003ctd\u003e2,5\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e\n10\u003csup\u003e2,5\u003c/sup\u003e = 31610−2,5 = 316 · 10−5\n(Certaines grandeurs ont été arrondies afin de faciliter les calculs)\nLes ”aides aux calculs, après arrondi” doivent être utilisées lors du choix des propositions.",
                               "images":  [
                                              "annales_assets/2025_2026/chimie/tuto_3/image1.png",
                                              "annales_assets/2025_2026/chimie/tuto_3/image2.png",
@@ -11492,42 +11437,42 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Parmi les propositions suivantes sur les configurations électroniques, laquelle (les-quelles) est (sont) correcte(s) ?",
                               "rawOptions":  [
-                                                 "La configuration électronique du bore est 1s22s22p1",
-                                                 "La configuration électronique du chrome est : [Ar] 4s13d10",
+                                                 "La configuration électronique du bore est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e1\u003c/sup\u003e",
+                                                 "La configuration électronique du chrome est : [Ar] 4s\u003csup\u003e1\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e",
                                                  "L’ion sodium (Na+) et l’ion magnésium (Mg2+) ont la même configuration électronique",
-                                                 "La configuration électronique du phosphore est 1s24s22p63s23p3",
-                                                 "La configuration électronique de l’ion zinc (Zn2+) est : [Ar] 3d104s0"
+                                                 "La configuration électronique du phosphore est 1s\u003csup\u003e2\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e3\u003c/sup\u003e",
+                                                 "La configuration électronique de l’ion zinc (Zn2+) est : [Ar] 3d\u003csup\u003e10\u003c/sup\u003e4s\u003csup\u003e0\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "La configuration électronique du bore est 1s22s22p1",
+                                                  "text":  "La configuration électronique du bore est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e1\u003c/sup\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - La configuration électronique du bore est 1s22s22p1 La configuration électronique du bore est 1s22s22p1 → La configuration électronique du bore est 1s22s22p1 → La configuration électronique du bore est 1s22s22p1"
+                                                  "explanation":  "VRAI - La configuration électronique du bore est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e1\u003c/sup\u003e La configuration électronique du bore est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e1\u003c/sup\u003e → La configuration électronique du bore est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e1\u003c/sup\u003e → La configuration électronique du bore est 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "La configuration électronique du chrome est : [Ar] 4s13d10",
+                                                  "text":  "La configuration électronique du chrome est : [Ar] 4s\u003csup\u003e1\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La configuration électronique du chrome est : [Ar] 4s13d10 → La configuration électronique du chrome est : [Ar] 4s13d10"
+                                                  "explanation":  "FAUX - → La configuration électronique du chrome est : [Ar] 4s\u003csup\u003e1\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e → La configuration électronique du chrome est : [Ar] 4s\u003csup\u003e1\u003c/sup\u003e3d\u003csup\u003e10\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "L’ion sodium (Na+) et l’ion magnésium (Mg2+) ont la même configuration électronique",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - L’atome d’oxygène a un potentiel d’ionisation élevé L’atome d’oxygène a un potentiel d’ionisation élevé → L’ion sodium (Na+) et l’ion magnésium (Mg2+) ont la même configuration électronique Totalement ! La configuration de l’atome de sodium étant 1s22s22p63s1, on enlève un électron, ce qui nous donne : 1s22s22p6. On fait pareil avec le magnésium : 1s22s22p63s2, on enlève les 2 électrons : 1s22s22p6. Mais attendez, on connait cette configuration électroniqie non ? Mais siii, c’est celle du néon ! On a donc : Na+ : [Ne], et Mg2+ : [Ne] ! → L’ion sodium (Na+) et l’ion magnésium (Mg2+) ont la même configuration électronique Totalement ! La configuration de l’atome de sodium étant 1s22s22p63s1, on enlève un électron, ce qui nous donne : 1s22s22p6. On fait pareil avec le magnésium : 1s22s22p63s2, on enlève les 2 électrons : 1s22s22p6. Mais attendez, on connait cette configuration électroniqie non ? Mais siii, c’est celle du néon ! On a donc : Na+ : [Ne], et Mg2+ : [Ne] !"
+                                                  "explanation":  "VRAI - L’atome d’oxygène a un potentiel d’ionisation élevé L’atome d’oxygène a un potentiel d’ionisation élevé → L’ion sodium (Na+) et l’ion magnésium (Mg2+) ont la même configuration électronique Totalement ! La configuration de l’atome de sodium étant 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e1\u003c/sup\u003e, on enlève un électron, ce qui nous donne : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e. On fait pareil avec le magnésium : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e, on enlève les 2 électrons : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e. Mais attendez, on connait cette configuration électroniqie non ? Mais siii, c’est celle du néon ! On a donc : Na+ : [Ne], et Mg2+ : [Ne] ! → L’ion sodium (Na+) et l’ion magnésium (Mg2+) ont la même configuration électronique Totalement ! La configuration de l’atome de sodium étant 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e1\u003c/sup\u003e, on enlève un électron, ce qui nous donne : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e. On fait pareil avec le magnésium : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e, on enlève les 2 électrons : 1s\u003csup\u003e2\u003c/sup\u003e2s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e. Mais attendez, on connait cette configuration électroniqie non ? Mais siii, c’est celle du néon ! On a donc : Na+ : [Ne], et Mg2+ : [Ne] !"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "La configuration électronique du phosphore est 1s24s22p63s23p3",
+                                                  "text":  "La configuration électronique du phosphore est 1s\u003csup\u003e2\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e3\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Selon la règle de Klechkowski, le remplissage des sous-couches dépend de leur classement énergétique Selon la règle de Klechkowski, le remplissage des sous-couches dépend de leur classement énergétique → La configuration électronique du phosphore est 1s24s22p63s23p3 → La configuration électronique du phosphore est 1s24s22p63s23p3"
+                                                  "explanation":  "FAUX - Selon la règle de Klechkowski, le remplissage des sous-couches dépend de leur classement énergétique Selon la règle de Klechkowski, le remplissage des sous-couches dépend de leur classement énergétique → La configuration électronique du phosphore est 1s\u003csup\u003e2\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e3\u003c/sup\u003e → La configuration électronique du phosphore est 1s\u003csup\u003e2\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e3\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "La configuration électronique de l’ion zinc (Zn2+) est : [Ar] 3d104s0",
+                                                  "text":  "La configuration électronique de l’ion zinc (Zn2+) est : [Ar] 3d\u003csup\u003e10\u003c/sup\u003e4s\u003csup\u003e0\u003c/sup\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - L’équation de Schrödinger relie l’énergie d’un système à ses propriétés ondulatoires L’équation de Schrödinger relie l’énergie d’un système à ses propriétés ondulatoires → La configuration électronique de l’ion zinc (Zn2+) est : [Ar] 3d104s0 → La configuration électronique de l’ion zinc (Zn2+) est : [Ar] 3d104s0"
+                                                  "explanation":  "VRAI - L’équation de Schrödinger relie l’énergie d’un système à ses propriétés ondulatoires L’équation de Schrödinger relie l’énergie d’un système à ses propriétés ondulatoires → La configuration électronique de l’ion zinc (Zn2+) est : [Ar] 3d\u003csup\u003e10\u003c/sup\u003e4s\u003csup\u003e0\u003c/sup\u003e → La configuration électronique de l’ion zinc (Zn2+) est : [Ar] 3d\u003csup\u003e10\u003c/sup\u003e4s\u003csup\u003e0\u003c/sup\u003e"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -11558,7 +11503,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "A",
                                                   "text":  "2",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Selon le principe d’exclusion de Pauli, quand une orbitale atomique contient un électron céli-bataire, il aura un spin tel que s = −1 → Selon le principe d’exclusion de Pauli, quand une orbitale atomique contient un … → Selon le principe d’exclusion de Pauli, quand une orbitale atomique contient un … Les deux atomes d’azote sont dans le même état d’hybridation Les deux atomes d’azote sont dans le même état d’hybridation"
+                                                  "explanation":  "VRAI - Selon le principe d’exclusion de Pauli, quand une orbitale atomique contient un électron céli-bataire, il aura un spin tel que s = −\u003csup\u003e1\u003c/sup\u003e → Selon le principe d’exclusion de Pauli, quand une orbitale atomique contient un … → Selon le principe d’exclusion de Pauli, quand une orbitale atomique contient un … Les deux atomes d’azote sont dans le même état d’hybridation Les deux atomes d’azote sont dans le même état d’hybridation"
                                               },
                                               {
                                                   "id":  "B",
@@ -11570,19 +11515,19 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "Si on a le nombre magnétique m = 1, cela signifie qu’il y a une seule orbitale atomique dans la sous-couche donnée",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - L’ion sodium (Na+) et l’ion magnésium (Mg2+) ont la même configuration élec-tronique L’ion sodium (Na+) et l’ion magnésium (Mg2+) ont la même configuration élec-tronique → L’atome d’oxygène a un potentiel d’ionisation élevé → L’atome d’oxygène a un potentiel d’ionisation élevé Les liaisons entre le carbone du méthyle (CH3) et les hydrogènes forment angles de 109◦30𝘚 Les liaisons entre le carbone du méthyle (CH3) et les hydrogènes forment angles de 109◦30𝘚"
+                                                  "explanation":  "VRAI - L’ion sodium (Na\u003csup\u003e+\u003c/sup\u003e) et l’ion magnésium (Mg\u003csup\u003e2+\u003c/sup\u003e) ont la même configuration élec-tronique L’ion sodium (Na\u003csup\u003e+\u003c/sup\u003e) et l’ion magnésium (Mg\u003csup\u003e2+\u003c/sup\u003e) ont la même configuration élec-tronique → L’atome d’oxygène a un potentiel d’ionisation élevé → L’atome d’oxygène a un potentiel d’ionisation élevé Les liaisons entre le carbone du méthyle (CH\u003csub\u003e3\u003c/sub\u003e) et les hydrogènes forment angles de 109◦30𝘚 Les liaisons entre le carbone du méthyle (CH\u003csub\u003e3\u003c/sub\u003e) et les hydrogènes forment angles de 109◦30𝘚"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "L’atome d’oxygène a un potentiel d’ionisation élevé",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - La configuration électronique du phosphore est 1s24s22p63s23p3 → Selon la règle de Klechkowski, le remplissage des sous-couches dépend de leur … Yes ! C’est exactement le principe de cette règle, et j’en profite pour rappeler que pour un atome polyélectronique, l’énergie dépend de n, l et Z ! → Selon la règle de Klechkowski, le remplissage des sous-couches dépend de leur … Yes ! C’est exactement le principe de cette règle, et j’en profite pour rappeler que pour un atome polyélectronique, l’énergie dépend de n, l et Z !"
+                                                  "explanation":  "FAUX - La configuration électronique du phosphore est 1s\u003csup\u003e2\u003c/sup\u003e4s\u003csup\u003e2\u003c/sup\u003e2p\u003csup\u003e6\u003c/sup\u003e3s\u003csup\u003e2\u003c/sup\u003e3p\u003csup\u003e3\u003c/sup\u003e → Selon la règle de Klechkowski, le remplissage des sous-couches dépend de leur … Yes ! C’est exactement le principe de cette règle, et j’en profite pour rappeler que pour un atome polyélectronique, l’énergie dépend de n, l et Z ! → Selon la règle de Klechkowski, le remplissage des sous-couches dépend de leur … Yes ! C’est exactement le principe de cette règle, et j’en profite pour rappeler que pour un atome polyélectronique, l’énergie dépend de n, l et Z !"
                                               },
                                               {
                                                   "id":  "E",
                                                   "text":  "Selon la règle de Klechkowski, le remplissage des sous-couches dépend de leur classement énergétique",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - La configuration électronique de l’ion zinc (Zn2+) est : [Ar] 3d104s0 La configuration électronique de l’ion zinc (Zn2+) est : [Ar] 3d104s0 → L’équation de Schrödinger relie l’énergie d’un système à ses propriétés ondulatoires → L’équation de Schrödinger relie l’énergie d’un système à ses propriétés ondulatoires → La fusion de deux orbitales atomiques donne lieu à deux orbitales moléculaires de … Last piège désolée. Lisez bien les items jusqu’au bout, 2 OA donnent bien 2 OM mais celles-ci ont des niveaux d’énergie différents. Pour rappel, l’orbitale liante dont le remplissage contribue à la formation d’une liaison, est de plus basse énergie puisque c’est tout l’intérêt de faire des liaisons (abaisser le niveau d’énergie du système) alors que l’orbitale anti-liante est plus élevée en énergie. → La fusion de deux orbitales atomiques donne lieu à deux orbitales moléculaires de … Last piège désolée. Lisez bien les items jusqu’au bout, 2 OA donnent bien 2 OM mais celles-ci ont des niveaux d’énergie différents. Pour rappel, l’orbitale liante dont le remplissage contribue à la formation d’une liaison, est de plus basse énergie puisque c’est tout l’intérêt de faire des liaisons (abaisser le niveau d’énergie du système) alors que l’orbitale anti-liante est plus élevée en énergie."
+                                                  "explanation":  "FAUX - La configuration électronique de l’ion zinc (Zn\u003csup\u003e2+\u003c/sup\u003e) est : [Ar] 3d\u003csup\u003e10\u003c/sup\u003e4s\u003csup\u003e0\u003c/sup\u003e La configuration électronique de l’ion zinc (Zn\u003csup\u003e2+\u003c/sup\u003e) est : [Ar] 3d\u003csup\u003e10\u003c/sup\u003e4s\u003csup\u003e0\u003c/sup\u003e → L’équation de Schrödinger relie l’énergie d’un système à ses propriétés ondulatoires → L’équation de Schrödinger relie l’énergie d’un système à ses propriétés ondulatoires → La fusion de deux orbitales atomiques donne lieu à deux orbitales moléculaires de … Last piège désolée. Lisez bien les items jusqu’au bout, 2 OA donnent bien 2 OM mais celles-ci ont des niveaux d’énergie différents. Pour rappel, l’orbitale liante dont le remplissage contribue à la formation d’une liaison, est de plus basse énergie puisque c’est tout l’intérêt de faire des liaisons (abaisser le niveau d’énergie du système) alors que l’orbitale anti-liante est plus élevée en énergie. → La fusion de deux orbitales atomiques donne lieu à deux orbitales moléculaires de … Last piège désolée. Lisez bien les items jusqu’au bout, 2 OA donnent bien 2 OM mais celles-ci ont des niveaux d’énergie différents. Pour rappel, l’orbitale liante dont le remplissage contribue à la formation d’une liaison, est de plus basse énergie puisque c’est tout l’intérêt de faire des liaisons (abaisser le niveau d’énergie du système) alors que l’orbitale anti-liante est plus élevée en énergie."
                                               }
                                           ],
                               "correctAnswers":  [
@@ -11601,12 +11546,12 @@ window.ANNALES_2025_2026 = [
                               "question":  "Parmi les propositions suivantes, laquelle (ou lesquelles) est (ou sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "O",
-                                                 "H3C",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eC",
                                                  "N",
                                                  "N H",
                                                  "Les deux atomes d’azote sont dans le même état d’hybridation",
                                                  "L’oxygène possède un doublet non liant délocalisable",
-                                                 "Les liaisons entre le carbone du méthyle (CH3) et les hydrogènes forment angles de 109○30\u0027",
+                                                 "Les liaisons entre le carbone du méthyle (CH\u003csub\u003e3\u003c/sub\u003e) et les hydrogènes forment angles de 109○30\u0027",
                                                  "Les atomes de carbone et d’oxygène sont reliés par 2 orbitales moléculaires π",
                                                  "La fusion de deux orbitales atomiques donne lieu à deux orbitales moléculaires de même niveau d’énergie"
                                              ],
@@ -11619,7 +11564,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "H3C",
+                                                  "text":  "H\u003csub\u003e3\u003c/sub\u003eC",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - → L’oxygène possède un doublet non liant délocalisable → L’oxygène possède un doublet non liant délocalisable"
                                               },
@@ -11627,7 +11572,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "N",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Les liaisons entre le carbone du méthyle (CH3) et les hydrogènes forment angles de … Tout pile ! Apprenez bien les valeurs des angles au cas où car ça peut tomber. On ne vous fera pas de piège du style 110○ au lieu de 109○ mais on peut inverser les différentes valeurs données. → Les liaisons entre le carbone du méthyle (CH3) et les hydrogènes forment angles de … Tout pile ! Apprenez bien les valeurs des angles au cas où car ça peut tomber. On ne vous fera pas de piège du style 110○ au lieu de 109○ mais on peut inverser les différentes valeurs données."
+                                                  "explanation":  "FAUX - → Les liaisons entre le carbone du méthyle (CH\u003csub\u003e3\u003c/sub\u003e) et les hydrogènes forment angles de … Tout pile ! Apprenez bien les valeurs des angles au cas où car ça peut tomber. On ne vous fera pas de piège du style 110○ au lieu de 109○ mais on peut inverser les différentes valeurs données. → Les liaisons entre le carbone du méthyle (CH\u003csub\u003e3\u003c/sub\u003e) et les hydrogènes forment angles de … Tout pile ! Apprenez bien les valeurs des angles au cas où car ça peut tomber. On ne vous fera pas de piège du style 110○ au lieu de 109○ mais on peut inverser les différentes valeurs données."
                                               },
                                               {
                                                   "id":  "D",
@@ -11660,8 +11605,8 @@ window.ANNALES_2025_2026 = [
                                                  "O",
                                                  "HO",
                                                  "O",
-                                                 "NO2",
-                                                 "NO2",
+                                                 "NO\u003csub\u003e2\u003c/sub\u003e",
+                                                 "NO\u003csub\u003e2\u003c/sub\u003e",
                                                  "Br",
                                                  "Br",
                                                  "Cl",
@@ -11675,7 +11620,7 @@ window.ANNALES_2025_2026 = [
                                                  "4 \u003e 3 \u003e 1 \u003e 2",
                                                  "4 \u003e 1 \u003e 3 \u003e 2",
                                                  "3 \u003e 1 \u003e 2 \u003e 4",
-                                                 "NH2",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "Molécule 2",
                                                  "Molécule 3",
                                                  "Molécule 4",
@@ -11699,7 +11644,7 @@ window.ANNALES_2025_2026 = [
                                                  "HOH",
                                                  "HOH",
                                                  "HOH",
-                                                 "CH2OH",
+                                                 "CH\u003csub\u003e2\u003c/sub\u003eOH",
                                                  "4",
                                                  "D-RiboseMolécule X"
                                              ],
@@ -11730,7 +11675,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "NO2",
+                                                  "text":  "NO\u003csub\u003e2\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - La fusion de deux orbitales atomiques donne lieu à deux orbitales moléculaires de même niveau d’énergie 3 \u003e 1 \u003e 2 \u003e 4"
                                               },
@@ -11757,7 +11702,7 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "La molécule de D-Ribose possède 8 stéréoisomères de configuration",
                                                  "La molécule de D-Ribose est de configuration (1R ; 2R ; 3S)",
-                                                 "Le carbone C(2) de la molécule X est de configuration S",
+                                                 "Le carbone C\u003csub\u003e(2)\u003c/sub\u003e de la molécule X est de configuration S",
                                                  "La molécule X est la forme de Fischer du D-Ribose",
                                                  "La molécule X est le L-Ribose, l’énantiomère du D-Ribose",
                                                  "1",
@@ -11837,9 +11782,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "Le carbone C(2) de la molécule X est de configuration S",
+                                                  "text":  "Le carbone C\u003csub\u003e(2)\u003c/sub\u003e de la molécule X est de configuration S",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Le carbone C(2) de la molécule X est de configuration S Le carbone C(2) de la molécule X est de configuration S → Le carbone C(2) de la molécule X est de configuration S"
+                                                  "explanation":  "VRAI - Le carbone C\u003csub\u003e(2)\u003c/sub\u003e de la molécule X est de configuration S Le carbone C\u003csub\u003e(2)\u003c/sub\u003e de la molécule X est de configuration S → Le carbone C\u003csub\u003e(2)\u003c/sub\u003e de la molécule X est de configuration S"
                                               },
                                               {
                                                   "id":  "D",
@@ -11873,24 +11818,24 @@ window.ANNALES_2025_2026 = [
                                                  "La molécule B est méso mais pas la molécule A",
                                                  "La molécule E est la forme de Cram de la molécule B",
                                                  "Les molécules B et C sont énantiomères",
-                                                 "La molécule D est une projection en Newman de la molécule A sous l’axe C(4) – C(3) en conformation décalée anti",
+                                                 "La molécule D est une projection en Newman de la molécule A sous l’axe C\u003csub\u003e(4)\u003c/sub\u003e – C\u003csub\u003e(3)\u003c/sub\u003e en conformation décalée anti",
                                                  "Toutes les molécules sont méso",
                                                  "Soit la réaction (1) suivante :",
                                                  "EtH",
                                                  "?",
                                                  "?",
-                                                 "1Br",
-                                                 "H3CCOO−",
+                                                 "\u003csup\u003e1\u003c/sup\u003eBr",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eCCOO\u003csup\u003e−\u003c/sup\u003e",
                                                  "Deux réactions en compétition peuvent être produites à partir de ces réactifs : une réaction d’éli-mination et une réaction de substitution. On s’intéresse d’abord à la réaction d’élimination, nommée (1.A), avec ses produits potentiels suivants :",
-                                                 "H3C",
-                                                 "HH3C",
-                                                 "COO−HBrH",
-                                                 "COO−",
-                                                 "EtCOO−",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eC",
+                                                 "HH\u003csub\u003e3\u003c/sub\u003eC",
+                                                 "COO\u003csup\u003e−\u003c/sup\u003eHBrH",
+                                                 "COO\u003csup\u003e−\u003c/sup\u003e",
+                                                 "EtCOO\u003csup\u003e−\u003c/sup\u003e",
                                                  "Molécule F",
                                                  "EtH",
                                                  "Molécule G",
-                                                 "EtCOO−",
+                                                 "EtCOO\u003csup\u003e−\u003c/sup\u003e",
                                                  "Molécule H",
                                                  "EtBr",
                                                  "Molécule I"
@@ -11916,9 +11861,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "La molécule D est une projection en Newman de la molécule A sous l’axe C(4) – C(3) en conformation décalée anti",
+                                                  "text":  "La molécule D est une projection en Newman de la molécule A sous l’axe C\u003csub\u003e(4)\u003c/sub\u003e – C\u003csub\u003e(3)\u003c/sub\u003e en conformation décalée anti",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → La molécule X est la forme de Fischer du D-Ribose La molécule D est une projection en Newman de la molécule A sous l’axe C(4) – C(3) en conformation décalée anti La molécule D est une projection en Newman de la molécule A sous l’axe C(4) – C(3) en conformation décalée anti → La molécule D est une projection en Newman de la molécule A sous l’axe C(4) – C(3) … Etttt oui ! Déjà, souvenons-nous, la molécule E est la forme de Cram de l’énantiomère de A. En faisant l’énantiomère de E, on aura la forme de Cram de A, donc go : → La molécule D est une projection en Newman de la molécule A sous l’axe C(4) – C(3) … Etttt oui ! Déjà, souvenons-nous, la molécule E est la forme de Cram de l’énantiomère de A. En faisant l’énantiomère de E, on aura la forme de Cram de A, donc go :"
+                                                  "explanation":  "VRAI - → La molécule X est la forme de Fischer du D-Ribose La molécule D est une projection en Newman de la molécule A sous l’axe C\u003csub\u003e(4)\u003c/sub\u003e – C\u003csub\u003e(3)\u003c/sub\u003e en conformation décalée anti La molécule D est une projection en Newman de la molécule A sous l’axe C\u003csub\u003e(4)\u003c/sub\u003e – C\u003csub\u003e(3)\u003c/sub\u003e en conformation décalée anti → La molécule D est une projection en Newman de la molécule A sous l’axe C\u003csub\u003e(4)\u003c/sub\u003e – C\u003csub\u003e(3)\u003c/sub\u003e … Etttt oui ! Déjà, souvenons-nous, la molécule E est la forme de Cram de l’énantiomère de A. En faisant l’énantiomère de E, on aura la forme de Cram de A, donc go : → La molécule D est une projection en Newman de la molécule A sous l’axe C\u003csub\u003e(4)\u003c/sub\u003e – C\u003csub\u003e(3)\u003c/sub\u003e … Etttt oui ! Déjà, souvenons-nous, la molécule E est la forme de Cram de l’énantiomère de A. En faisant l’énantiomère de E, on aura la forme de Cram de A, donc go :"
                                               },
                                               {
                                                   "id":  "E",
@@ -12061,7 +12006,7 @@ window.ANNALES_2025_2026 = [
                                                  "OH",
                                                  "OH +",
                                                  "IIIIII",
-                                                 "On donne les couples oxydo-réducteurs (I/III), (II/I) et (O2/OH– ) ainsi que la force élec-",
+                                                 "On donne les couples oxydo-réducteurs (I/III), (II/I) et (O\u003csub\u003e2\u003c/sub\u003e/OH– ) ainsi que la force élec-",
                                                  "(2)",
                                                  "(2)"
                                              ],
@@ -12181,13 +12126,13 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  ",",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - = E − = E − 0 = E○ + 0,03 log → La réaction est totale = E − = E − 0 = E○ + 0,03 log → La réaction est totale = E○ −"
+                                                  "explanation":  "FAUX - = E − = E − 0 = E\u003csup\u003e○\u003c/sup\u003e + 0,03 log → La réaction est totale = E − = E − 0 = E\u003csup\u003e○\u003c/sup\u003e + 0,03 log → La réaction est totale = E\u003csup\u003e○\u003c/sup\u003e −"
                                               },
                                               {
                                                   "id":  "E",
                                                   "text":  "La réaction est totale",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - = E − = E − 0 = E○ + 0,03 log → La réaction est totale = E − = E − 0 = E○ + 0,03 log → La réaction est totale = E○ −"
+                                                  "explanation":  "FAUX - = E − = E − 0 = E\u003csup\u003e○\u003c/sup\u003e + 0,03 log → La réaction est totale = E − = E − 0 = E\u003csup\u003e○\u003c/sup\u003e + 0,03 log → La réaction est totale = E\u003csup\u003e○\u003c/sup\u003e −"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -12210,10 +12155,10 @@ window.ANNALES_2025_2026 = [
                                                  "Lors de l’étape 2, l’atome d’hydrogène attaque la liaison (C– O)",
                                                  "La molécule III est plus stable que la base conjuguée de la molécule II",
                                                  "Une catalyse basique permettrait d’augmenter l’électrophilie de la liaison (C=O)",
-                                                 "En remplaçant OH– par CH3COO– , l’étape 1 est accélérée",
+                                                 "En remplaçant OH– par CH\u003csub\u003e3\u003c/sub\u003eCOO– , l’étape 1 est accélérée",
                                                  "On s’intéresse à la réaction (3) de réduction de l’acétamide en 1-aminoéthanol :",
-                                                 "NH2NH2",
-                                                 "H3CC(g) + H2 (g) H3CCH(g)",
+                                                 "NH\u003csub\u003e2\u003c/sub\u003eNH\u003csub\u003e2\u003c/sub\u003e",
+                                                 "H3CC(g) + H\u003csub\u003e2\u003c/sub\u003e (g) H3CCH(g)",
                                                  "OOH"
                                              ],
                               "options":  [
@@ -12239,13 +12184,13 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "D",
                                                   "text":  "Une catalyse basique permettrait d’augmenter l’électrophilie de la liaison (C=O)",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Une catalyse basique permettrait d’augmenter l’électrophilie de la liaison (C=O) → Une catalyse basique permettrait d’augmenter l’électrophilie de la liaison (C=O) Un petit item de cours faux, mais une c’est une catalyse acide qui va renforcer l’électrophilie de notre liaison C– O puisque l’oxygène va interagir avec les ions H+ du milieu, ce qui l’appauvrit en électrons et le fait encore plus tirer sur ceux de la liaison C– O ! C’est bien schématisé dans votre cours donc jettez y un oeil : → L’atome d’oxygène de l’acétamide est hybridé sp2 → L’atome d’oxygène de l’acétamide est hybridé sp2"
+                                                  "explanation":  "VRAI - Une catalyse basique permettrait d’augmenter l’électrophilie de la liaison (C=O) → Une catalyse basique permettrait d’augmenter l’électrophilie de la liaison (C=O) Un petit item de cours faux, mais une c’est une catalyse acide qui va renforcer l’électrophilie de notre liaison C– O puisque l’oxygène va interagir avec les ions H+ du milieu, ce qui l’appauvrit en électrons et le fait encore plus tirer sur ceux de la liaison C– O ! C’est bien schématisé dans votre cours donc jettez y un oeil : → L’atome d’oxygène de l’acétamide est hybridé sp\u003csup\u003e2\u003c/sup\u003e → L’atome d’oxygène de l’acétamide est hybridé sp\u003csup\u003e2\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "En remplaçant OH– par CH3COO– , l’étape 1 est accélérée",
+                                                  "text":  "En remplaçant OH– par CH\u003csub\u003e3\u003c/sub\u003eCOO– , l’étape 1 est accélérée",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - En remplaçant OH– par CH3COO– , l’étape 1 est accélérée → En remplaçant OH– par CH3COO– , l’étape 1 est accélérée → Les doublets non liant sont plus volumineux que les doublets liants → Les doublets non liant sont plus volumineux que les doublets liants"
+                                                  "explanation":  "VRAI - En remplaçant OH– par CH\u003csub\u003e3\u003c/sub\u003eCOO– , l’étape 1 est accélérée → En remplaçant OH– par CH\u003csub\u003e3\u003c/sub\u003eCOO– , l’étape 1 est accélérée → Les doublets non liant sont plus volumineux que les doublets liants → Les doublets non liant sont plus volumineux que les doublets liants"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -12265,27 +12210,27 @@ window.ANNALES_2025_2026 = [
                               "question":  "Concernant la réaction suivante, laquelle (ou lesquelles) des propositions est(sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "Les deux atomes d’azote ont la même géométrie",
-                                                 "Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale sp3",
+                                                 "Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale sp\u003csup\u003e3\u003c/sup\u003e",
                                                  "L’aminoéthanol est plan",
-                                                 "L’atome d’oxygène de l’acétamide est hybridé sp2",
+                                                 "L’atome d’oxygène de l’acétamide est hybridé sp\u003csup\u003e2\u003c/sup\u003e",
                                                  "Les doublets non liant sont plus volumineux que les doublets liants",
                                                  "On donne les variations d’enthalpie standard de laison :",
-                                                 "∆lH○(C−H) = −435 kJ · mol−1∆lH○(O−H) = −460 kJ · mol−1",
-                                                 "∆lH○(C−C) = −350 kJ · mol−1∆lH○(H−H) = −435 kJ · mol−1",
-                                                 "∆lH○(C−O) = −350 kJ · mol−1∆lH○(C−O) = −720 kJ · mol−1"
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e(C−H) = −435 kJ · mol\u003csup\u003e−1\u003c/sup\u003e∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e(O−H) = −460 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e(C−C) = −350 kJ · mol\u003csup\u003e−1\u003c/sup\u003e∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e(H−H) = −435 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e(C−O) = −350 kJ · mol\u003csup\u003e−1\u003c/sup\u003e∆\u003csub\u003el\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e(C−O) = −720 kJ · mol\u003csup\u003e−1\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
                                                   "text":  "Les deux atomes d’azote ont la même géométrie",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Les deux atomes d’azote ont la même géométrie → Les deux atomes d’azote ont la même géométrie → Les deux atomes d’azote ont la même géométrie → ∆rH○ = 90 kJ · mol−1"
+                                                  "explanation":  "FAUX - Les deux atomes d’azote ont la même géométrie → Les deux atomes d’azote ont la même géométrie → Les deux atomes d’azote ont la même géométrie → ∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e = 90 kJ · mol\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale sp3",
+                                                  "text":  "Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale sp\u003csup\u003e3\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale sp3 Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale sp3 → Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale … Et je dis oui ! Ici notre atome d’azote est, selon la théorie VSEPR, tétraédrique (Cf. item A), il est donc hybridé sp3 et n’est pas impliqué dans un système de conjugaison. On valide cet item. → Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale … Et je dis oui ! Ici notre atome d’azote est, selon la théorie VSEPR, tétraédrique (Cf. item A), il est donc hybridé sp3 et n’est pas impliqué dans un système de conjugaison. On valide cet item. → Au vu de l’enthalpie de la réaction, celle-ci est exergonique"
+                                                  "explanation":  "FAUX - Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale sp\u003csup\u003e3\u003c/sup\u003e Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale sp\u003csup\u003e3\u003c/sup\u003e → Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale … Et je dis oui ! Ici notre atome d’azote est, selon la théorie VSEPR, tétraédrique (Cf. item A), il est donc hybridé sp\u003csup\u003e3\u003c/sup\u003e et n’est pas impliqué dans un système de conjugaison. On valide cet item. → Le doublet non liant de l’atome d’azote de l’aminoéthanol se trouve dans une orbitale … Et je dis oui ! Ici notre atome d’azote est, selon la théorie VSEPR, tétraédrique (Cf. item A), il est donc hybridé sp\u003csup\u003e3\u003c/sup\u003e et n’est pas impliqué dans un système de conjugaison. On valide cet item. → Au vu de l’enthalpie de la réaction, celle-ci est exergonique"
                                               },
                                               {
                                                   "id":  "C",
@@ -12295,15 +12240,15 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "L’atome d’oxygène de l’acétamide est hybridé sp2",
+                                                  "text":  "L’atome d’oxygène de l’acétamide est hybridé sp\u003csup\u003e2\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - L’atome d’oxygène de l’acétamide est hybridé sp2 L’atome d’oxygène de l’acétamide est hybridé sp2 → Selon Van’t Hoff, dans le cas d’une réaction endothermique, si T augmente K diminue → Selon Van’t Hoff, dans le cas d’une réaction endothermique, si T augmente K diminue"
+                                                  "explanation":  "FAUX - L’atome d’oxygène de l’acétamide est hybridé sp\u003csup\u003e2\u003c/sup\u003e L’atome d’oxygène de l’acétamide est hybridé sp\u003csup\u003e2\u003c/sup\u003e → Selon Van’t Hoff, dans le cas d’une réaction endothermique, si T augmente K diminue → Selon Van’t Hoff, dans le cas d’une réaction endothermique, si T augmente K diminue"
                                               },
                                               {
                                                   "id":  "E",
                                                   "text":  "Les doublets non liant sont plus volumineux que les doublets liants",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Les doublets non liant sont plus volumineux que les doublets liants Les doublets non liant sont plus volumineux que les doublets liants la valeur de ∆rH◦ trouvée ne correspond pas à celle déterminée expérimentalement la valeur de ∆rH◦ trouvée ne correspond pas à celle déterminée expérimentalement → la valeur de ∆rH○ trouvée ne correspond pas à celle déterminée expérimentalement Et je dis oui ! L’existence d’un système de conjugaison peut être responsable d’une stabilisation de la molécule. Le calcul de l’enthalpie de réaction via les enthalpies de liaison ignore cette stabi-lisation, donc on trouvera une valeur d’enthalpie plus élevée que celle mesurée expérimentalement (puisque la mesure expérimentale tiendra compte de la baisse énergétique liée à la stabilisation de la molécule). La différence entre la valeur calculée et la valeur trouvée expérimentalement est appelée énergie de résonance. → la valeur de ∆rH○ trouvée ne correspond pas à celle déterminée expérimentalement Et je dis oui ! L’existence d’un système de conjugaison peut être responsable d’une stabilisation de la molécule. Le calcul de l’enthalpie de réaction via les enthalpies de liaison ignore cette stabi-lisation, donc on trouvera une valeur d’enthalpie plus élevée que celle mesurée expérimentalement (puisque la mesure expérimentale tiendra compte de la baisse énergétique liée à la stabilisation de la molécule). La différence entre la valeur calculée et la valeur trouvée expérimentalement est appelée énergie de résonance."
+                                                  "explanation":  "VRAI - Les doublets non liant sont plus volumineux que les doublets liants Les doublets non liant sont plus volumineux que les doublets liants la valeur de ∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e trouvée ne correspond pas à celle déterminée expérimentalement la valeur de ∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e◦\u003c/sup\u003e trouvée ne correspond pas à celle déterminée expérimentalement → la valeur de ∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e trouvée ne correspond pas à celle déterminée expérimentalement Et je dis oui ! L’existence d’un système de conjugaison peut être responsable d’une stabilisation de la molécule. Le calcul de l’enthalpie de réaction via les enthalpies de liaison ignore cette stabi-lisation, donc on trouvera une valeur d’enthalpie plus élevée que celle mesurée expérimentalement (puisque la mesure expérimentale tiendra compte de la baisse énergétique liée à la stabilisation de la molécule). La différence entre la valeur calculée et la valeur trouvée expérimentalement est appelée énergie de résonance. → la valeur de ∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e trouvée ne correspond pas à celle déterminée expérimentalement Et je dis oui ! L’existence d’un système de conjugaison peut être responsable d’une stabilisation de la molécule. Le calcul de l’enthalpie de réaction via les enthalpies de liaison ignore cette stabi-lisation, donc on trouvera une valeur d’enthalpie plus élevée que celle mesurée expérimentalement (puisque la mesure expérimentale tiendra compte de la baisse énergétique liée à la stabilisation de la molécule). La différence entre la valeur calculée et la valeur trouvée expérimentalement est appelée énergie de résonance."
                                               }
                                           ],
                               "correctAnswers":  [
@@ -12321,28 +12266,28 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Concernant la réaction (3), laquelle (ou lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "∆rH○ = 90 kJ · mol−1",
+                                                 "∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e = 90 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                  "Au vu de l’enthalpie de la réaction, celle-ci est exergonique",
                                                  "À l’équilibre, une augmentation de la température déplacera l’équilibre de la réaction dans le sens de formation des réactifs",
                                                  "Selon Van’t Hoff, dans le cas d’une réaction endothermique, si T augmente K diminue",
-                                                 "la valeur de ∆rH○ trouvée ne correspond pas à celle déterminée expérimentalement",
+                                                 "la valeur de ∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e trouvée ne correspond pas à celle déterminée expérimentalement",
                                                  "On s’intéresse à un dérivé de la citrulline, un acide aminé non protéique que l’on retrouve notamment dans les cucurbitacées. On présente ici sa forme totalement protonée :",
                                                  "+",
                                                  "+",
                                                  "+",
                                                  "+",
-                                                 "H3N",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eN",
                                                  "1",
                                                  "2",
                                                  "NOH",
                                                  "H",
-                                                 "3 NH3",
-                                                 "On donne pKa1 = 2,5, pKa2 = 11,5, pKa3 = 12,1."
+                                                 "3 NH\u003csub\u003e3\u003c/sub\u003e",
+                                                 "On donne pKa\u003csub\u003e1\u003c/sub\u003e = 2,5, pKa\u003csub\u003e2\u003c/sub\u003e = 11,5, pKa\u003csub\u003e3\u003c/sub\u003e = 12,1."
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "∆rH○ = 90 kJ · mol−1",
+                                                  "text":  "∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e = 90 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -12366,7 +12311,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "la valeur de ∆rH○ trouvée ne correspond pas à celle déterminée expérimentalement",
+                                                  "text":  "la valeur de ∆\u003csub\u003er\u003c/sub\u003eH\u003csup\u003e○\u003c/sup\u003e trouvée ne correspond pas à celle déterminée expérimentalement",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               }
@@ -12388,8 +12333,8 @@ window.ANNALES_2025_2026 = [
                                                  "La forme acide de l’azote 3 est stabilisé par l’effet inductif attracteur du COO–",
                                                  "L’azote 1 est moins acide que l’azote 3",
                                                  "L’azote 2 n’est pas impliqué dans des réactions acide/base car son doublet n’est pas dispo-nible",
-                                                 "Le pKa1 correspond à celui de la fonction acide carboxylique",
-                                                 "Le pKa2 et le pKa3 peuvent correspondre indifféremment aux azotes 1 et 3"
+                                                 "Le pKa\u003csub\u003e1\u003c/sub\u003e correspond à celui de la fonction acide carboxylique",
+                                                 "Le pKa\u003csub\u003e2\u003c/sub\u003e et le pKa\u003csub\u003e3\u003c/sub\u003e peuvent correspondre indifféremment aux azotes 1 et 3"
                                              ],
                               "options":  [
                                               {
@@ -12412,15 +12357,15 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "Le pKa1 correspond à celui de la fonction acide carboxylique",
+                                                  "text":  "Le pKa\u003csub\u003e1\u003c/sub\u003e correspond à celui de la fonction acide carboxylique",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Le pKa1 correspond à celui de la fonction acide carboxylique Le pKa1 correspond à celui de la fonction acide carboxylique"
+                                                  "explanation":  "FAUX - Le pKa\u003csub\u003e1\u003c/sub\u003e correspond à celui de la fonction acide carboxylique Le pKa\u003csub\u003e1\u003c/sub\u003e correspond à celui de la fonction acide carboxylique"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Le pKa2 et le pKa3 peuvent correspondre indifféremment aux azotes 1 et 3",
+                                                  "text":  "Le pKa\u003csub\u003e2\u003c/sub\u003e et le pKa\u003csub\u003e3\u003c/sub\u003e peuvent correspondre indifféremment aux azotes 1 et 3",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Le pKa2 et le pKa3 peuvent correspondre indifféremment aux azotes 1 et 3"
+                                                  "explanation":  "FAUX - Le pKa\u003csub\u003e2\u003c/sub\u003e et le pKa\u003csub\u003e3\u003c/sub\u003e peuvent correspondre indifféremment aux azotes 1 et 3"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -12438,23 +12383,23 @@ window.ANNALES_2025_2026 = [
                               "question":  "Concernant le dérivé de la citrulline, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                               "rawOptions":  [
                                                  "A pH physiologique, la citrulline a une charge globale négative",
-                                                 "La citrulline est sous sa forme zwitterionique entre pKa1 et pKa2",
-                                                 "Le pHi du dérivé se situe aux alentours de 11,8",
+                                                 "La citrulline est sous sa forme zwitterionique entre pKa\u003csub\u003e1\u003c/sub\u003e et pKa\u003csub\u003e2\u003c/sub\u003e",
+                                                 "Le pH\u003csub\u003ei\u003c/sub\u003e du dérivé se situe aux alentours de 11,8",
                                                  "Cette forme du dérivé est majoritaire à pH = 8,9 :",
                                                  "+",
                                                  "+",
-                                                 "H3N",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eN",
                                                  "1",
                                                  "2−",
                                                  "NO",
                                                  "H",
-                                                 "3 NH2",
+                                                 "3 NH\u003csub\u003e2\u003c/sub\u003e",
                                                  "Parmi toutes les formes du dérivé, on compte 2 ampholytes",
                                                  "On s’intéresse toujours au dérivé de la citruline que l’on mélange avec différents composés :",
-                                                 "Solution A : 4 L de 5,5 mM du dérivé sous forme AH32+",
-                                                 "Solution B : 6 L de CH3CO2NH4 avec [CH3CO2NH4] = 4 mM",
-                                                 "Solution C : 1 L d’ammoniac NH3 avec [NH3] = 4 × 10−4 mM",
-                                                 "On donne pKa(CH3CO2H/CH3CO2−) = 4,8 et pKa(NH4+/NH3) = 9,2."
+                                                 "Solution A : 4 L de 5,5 mM du dérivé sous forme AH\u003csub\u003e3\u003c/sub\u003e\u003csup\u003e2+\u003c/sup\u003e",
+                                                 "Solution B : 6 L de CH\u003csub\u003e3\u003c/sub\u003eCO\u003csub\u003e2\u003c/sub\u003eNH\u003csub\u003e4\u003c/sub\u003e avec [CH\u003csub\u003e3\u003c/sub\u003eCO\u003csub\u003e2\u003c/sub\u003eNH\u003csub\u003e4\u003c/sub\u003e] = 4 mM",
+                                                 "Solution C : 1 L d’ammoniac NH\u003csub\u003e3\u003c/sub\u003e avec [NH\u003csub\u003e3\u003c/sub\u003e] = 4 × 10−4 mM",
+                                                 "On donne pKa(CH\u003csub\u003e3\u003c/sub\u003eCO\u003csub\u003e2\u003c/sub\u003eH/CH\u003csub\u003e3\u003c/sub\u003eCO\u003csub\u003e2\u003c/sub\u003e\u003csup\u003e−\u003c/sup\u003e) = 4,8 et pKa(NH\u003csub\u003e4\u003c/sub\u003e\u003csup\u003e+\u003c/sup\u003e/NH\u003csub\u003e3\u003c/sub\u003e) = 9,2."
                                              ],
                               "options":  [
                                               {
@@ -12465,33 +12410,33 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "A",
-                                                  "text":  "La citrulline est sous sa forme zwitterionique entre pKa1 et pKa2",
+                                                  "text":  "La citrulline est sous sa forme zwitterionique entre pKa\u003csub\u003e1\u003c/sub\u003e et pKa\u003csub\u003e2\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - A pH physiologique, la citrulline a une charge globale négative → A pH physiologique, la citrulline a une charge globale négative → A pH physiologique, la citrulline a une charge globale négative"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Le pHi du dérivé se situe aux alentours de 11,8",
+                                                  "text":  "Le pH\u003csub\u003ei\u003c/sub\u003e du dérivé se situe aux alentours de 11,8",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La citrulline est sous sa forme zwitterionique entre pKa1 et pKa2 → La citrulline est sous sa forme zwitterionique entre pKa1 et pKa2"
+                                                  "explanation":  "FAUX - → La citrulline est sous sa forme zwitterionique entre pKa\u003csub\u003e1\u003c/sub\u003e et pKa\u003csub\u003e2\u003c/sub\u003e → La citrulline est sous sa forme zwitterionique entre pKa\u003csub\u003e1\u003c/sub\u003e et pKa\u003csub\u003e2\u003c/sub\u003e"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "Cette forme du dérivé est majoritaire à pH = 8,9 :",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Le pHi du dérivé se situe aux alentours de 11,8 Le pHi du dérivé se situe aux alentours de 11,8 → Le pHi du dérivé se situe aux alentours de 11,8 → Le pHi du dérivé se situe aux alentours de 11,8 → L’azote 2 n’est pas impliqué dans des réactions acide/base car son doublet n’est pas … Oui ! Comment est-ce qu’on sait ça ? Et bien on voit que le doublet de l’azote 2 est impliqué dans un motif de conjugaison avec le C– O. Ainsi, le doublet est partagé entre les deux et ”n’appartient” pas proprement au NH. Impossible de s’en servir pour capturer un H qui se promène là !"
+                                                  "explanation":  "VRAI - Le pH\u003csub\u003ei\u003c/sub\u003e du dérivé se situe aux alentours de 11,8 Le pH\u003csub\u003ei\u003c/sub\u003e du dérivé se situe aux alentours de 11,8 → Le pH\u003csub\u003ei\u003c/sub\u003e du dérivé se situe aux alentours de 11,8 → Le pH\u003csub\u003ei\u003c/sub\u003e du dérivé se situe aux alentours de 11,8 → L’azote 2 n’est pas impliqué dans des réactions acide/base car son doublet n’est pas … Oui ! Comment est-ce qu’on sait ça ? Et bien on voit que le doublet de l’azote 2 est impliqué dans un motif de conjugaison avec le C– O. Ainsi, le doublet est partagé entre les deux et ”n’appartient” pas proprement au NH. Impossible de s’en servir pour capturer un H qui se promène là !"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "+",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Cette forme du dérivé est majoritaire à pH = 8,9 : → Le pKa1 correspond à celui de la fonction acide carboxylique"
+                                                  "explanation":  "FAUX - Cette forme du dérivé est majoritaire à pH = 8,9 : → Le pKa\u003csub\u003e1\u003c/sub\u003e correspond à celui de la fonction acide carboxylique"
                                               },
                                               {
                                                   "id":  "E",
                                                   "text":  "+",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Parmi toutes les formes du dérivé, on compte 2 ampholytes Parmi toutes les formes du dérivé, on compte 2 ampholytes → Le pKa2 et le pKa3 peuvent correspondre indifféremment aux azotes 1 et 3 → Parmi toutes les formes du dérivé, on compte 2 ampholytes → Parmi toutes les formes du dérivé, on compte 2 ampholytes"
+                                                  "explanation":  "VRAI - Parmi toutes les formes du dérivé, on compte 2 ampholytes Parmi toutes les formes du dérivé, on compte 2 ampholytes → Le pKa\u003csub\u003e2\u003c/sub\u003e et le pKa\u003csub\u003e3\u003c/sub\u003e peuvent correspondre indifféremment aux azotes 1 et 3 → Parmi toutes les formes du dérivé, on compte 2 ampholytes → Parmi toutes les formes du dérivé, on compte 2 ampholytes"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -12509,25 +12454,25 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Concernant les réactions acido-basique, laquelle (lesquelles) des propositions est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "La solution résultant d’un mélange équimolaire de AH32+ et AH a un pH neutre",
+                                                 "La solution résultant d’un mélange équimolaire de AH\u003csub\u003e3\u003c/sub\u003e2+ et AH a un pH neutre",
                                                  "Le pH de la solution B est neutre",
                                                  "Le pH de la solution C est de 8,4",
                                                  "Un mélange de la solution A avec la solution B a un pH d’environ 3,8 à 0,2 près",
                                                  "La réaction entre les espèces de la solution A et de la solution B aurait eu lieu peu importe le solvant utilisé",
-                                                 "On s’intéresse maintenant à la réaction du dérivé en solution aqueuse sous forme de AH2+ à",
+                                                 "On s’intéresse maintenant à la réaction du dérivé en solution aqueuse sous forme de AH\u003csub\u003e2\u003c/sub\u003e+ à",
                                                  "T = 298 K :",
-                                                 "H3O+ + AH2+ −−→ AH32+ + H2O",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eO\u003csup\u003e+\u003c/sup\u003e + AH\u003csub\u003e2\u003c/sub\u003e\u003csup\u003e+\u003c/sup\u003e −−→ AH\u003csub\u003e3\u003c/sub\u003e\u003csup\u003e2+\u003c/sup\u003e + H\u003csub\u003e2\u003c/sub\u003eO",
                                                  "On donne a un instant t les concentrations suivantes :",
-                                                 "[AH32+] = 16 mM",
-                                                 "[AH2+] = 4 mM",
-                                                 "[H3O+] = 4 mM"
+                                                 "[AH\u003csub\u003e3\u003c/sub\u003e\u003csup\u003e2+\u003c/sup\u003e] = 16 mM",
+                                                 "[AH\u003csub\u003e2\u003c/sub\u003e\u003csup\u003e+\u003c/sup\u003e] = 4 mM",
+                                                 "[H\u003csub\u003e3\u003c/sub\u003eO\u003csup\u003e+\u003c/sup\u003e] = 4 mM"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "La solution résultant d’un mélange équimolaire de AH32+ et AH a un pH neutre",
+                                                  "text":  "La solution résultant d’un mélange équimolaire de AH\u003csub\u003e3\u003c/sub\u003e2+ et AH a un pH neutre",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La solution résultant d’un mélange équimolaire de AH32+ et AH a un pH neutre Ouh, genre pour répondre à cet item, je vais devoir faire des allers-retours entre les pages ? Eh vsy, ramenez moi celui qui a écrit ça, je vais lui fai- bref. Alors, on reprend les bases : un mélange équimolaire, c’est un mélange où les espèces ont été introduites avec les mêmes quantités de matière (pour ceux n’ayant pas eu de chimie, quantité de matière = quantité d’entités chimiques). Donc, si on introduit les réactifs AH32+ et AH dans les mêmes quantités, on aura la réaction suivante : → La solution résultant d’un mélange équimolaire de AH32+ et AH a un pH neutre Ouh, genre pour répondre à cet item, je vais devoir faire des allers-retours entre les pages ? Eh vsy, ramenez moi celui qui a écrit ça, je vais lui fai- bref. Alors, on reprend les bases : un mélange équimolaire, c’est un mélange où les espèces ont été introduites avec les mêmes quantités de matière (pour ceux n’ayant pas eu de chimie, quantité de matière = quantité d’entités chimiques). Donc, si on introduit les réactifs AH32+ et AH dans les mêmes quantités, on aura la réaction suivante : l’état final, on a donc dans notre solution : un instant t, nous avons les concentrations, et on sait que : un instant t, nous avons les concentrations, et on sait que :"
+                                                  "explanation":  "FAUX - → La solution résultant d’un mélange équimolaire de AH\u003csub\u003e3\u003c/sub\u003e2+ et AH a un pH neutre Ouh, genre pour répondre à cet item, je vais devoir faire des allers-retours entre les pages ? Eh vsy, ramenez moi celui qui a écrit ça, je vais lui fai- bref. Alors, on reprend les bases : un mélange équimolaire, c’est un mélange où les espèces ont été introduites avec les mêmes quantités de matière (pour ceux n’ayant pas eu de chimie, quantité de matière = quantité d’entités chimiques). Donc, si on introduit les réactifs AH\u003csub\u003e3\u003c/sub\u003e2+ et AH dans les mêmes quantités, on aura la réaction suivante : → La solution résultant d’un mélange équimolaire de AH\u003csub\u003e3\u003c/sub\u003e2+ et AH a un pH neutre Ouh, genre pour répondre à cet item, je vais devoir faire des allers-retours entre les pages ? Eh vsy, ramenez moi celui qui a écrit ça, je vais lui fai- bref. Alors, on reprend les bases : un mélange équimolaire, c’est un mélange où les espèces ont été introduites avec les mêmes quantités de matière (pour ceux n’ayant pas eu de chimie, quantité de matière = quantité d’entités chimiques). Donc, si on introduit les réactifs AH\u003csub\u003e3\u003c/sub\u003e2+ et AH dans les mêmes quantités, on aura la réaction suivante : l’état final, on a donc dans notre solution : un instant t, nous avons les concentrations, et on sait que : un instant t, nous avons les concentrations, et on sait que :"
                                               },
                                               {
                                                   "id":  "B",
@@ -12545,7 +12490,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "D",
                                                   "text":  "Un mélange de la solution A avec la solution B a un pH d’environ 3,8 à 0,2 près",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Un mélange de la solution A avec la solution B a un pH d’environ 3,8 à 0,2 près Un mélange de la solution A avec la solution B a un pH d’environ 3,8 à 0,2 près → Un mélange de la solution A avec la solution B a un pH d’environ 3,8 à 0,2 près Alors, pour ce faire, sans surprise, on va faire un truc long et fastidieux mais qu’il faut vraiment que vous maîtrisiez, et j’ai nommé : la méthode de la réaction prépondérante. On la fait ensemble : → Au moment t, ∆rG ≈ 2,25 kJ · mol−1 → Au moment t, ∆rG ≈ 2,25 kJ · mol−1"
+                                                  "explanation":  "VRAI - Un mélange de la solution A avec la solution B a un pH d’environ 3,8 à 0,2 près Un mélange de la solution A avec la solution B a un pH d’environ 3,8 à 0,2 près → Un mélange de la solution A avec la solution B a un pH d’environ 3,8 à 0,2 près Alors, pour ce faire, sans surprise, on va faire un truc long et fastidieux mais qu’il faut vraiment que vous maîtrisiez, et j’ai nommé : la méthode de la réaction prépondérante. On la fait ensemble : → Au moment t, ∆\u003csub\u003er\u003c/sub\u003eG ≈ 2,25 kJ · mol\u003csup\u003e−1\u003c/sup\u003e → Au moment t, ∆\u003csub\u003er\u003c/sub\u003eG ≈ 2,25 kJ · mol\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "E",
@@ -12564,42 +12509,24 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  17,
                               "type":  "QCM",
-                              "context":  "",
+                              "context":  "\u003cdiv class=\"annale-data-table-wrap\"\u003e\u003ctable class=\"annale-data-table\"\u003e\u003ctr\u003e\u003cth\u003eTemps (jours)\u003c/th\u003e\u003cth\u003e0\u003c/th\u003e\u003cth\u003e2\u003c/th\u003e\u003cth\u003e5\u003c/th\u003e\u003cth\u003e10\u003c/th\u003e\u003cth\u003e15\u003c/th\u003e\u003cth\u003e25\u003c/th\u003e\u003cth\u003e35\u003c/th\u003e\u003cth\u003e50\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003e[H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] (10−1 mol · L\u003csup\u003e−1\u003c/sup\u003e)\u003c/th\u003e\u003ctd\u003e5\u003c/td\u003e\u003ctd\u003e4,17\u003c/td\u003e\u003ctd\u003e3,33\u003c/td\u003e\u003ctd\u003e2,5\u003c/td\u003e\u003ctd\u003e2\u003c/td\u003e\u003ctd\u003e1,43\u003c/td\u003e\u003ctd\u003e1,11\u003c/td\u003e\u003ctd\u003e0,83\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e",
                               "images":  [
 
                                          ],
                               "question":  "Concernant la réaction précédente, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "K ≈ 3,16 × 10−3",
-                                                 "∆rG○ = −15 kJ · mol−1",
+                                                 "∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e○\u003c/sup\u003e = −15 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                  "Au moment t, Γ = 103",
-                                                 "Au moment t, ∆rG ≈ 2,25 kJ · mol−1",
+                                                 "Au moment t, ∆\u003csub\u003er\u003c/sub\u003eG ≈ 2,25 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                  "La réaction est exergonique",
                                                  "Le peroxyde d’hydrogène est un composé présentant des risques de brûlures et d’irritation notamment au niveau de la peau, des poumons et des yeux. A l’échelle cellulaire, il inter-vient dans la formation de radicaux libres responsables de la dégradation des membranes et de dommages à l’ADN. Naturellement produite par la cellule, sa dégradation rapide est donc primordiale. C’est le rôle de la catalase, une enzyme localisée dans le peroxysome et catalysant la réaction de dismutation du peroxyde d’hydrogène présentée ci-dessous :",
-                                                 "2 H2O2(aq) −−k→ 2 H2O(l) + O2(g)",
-                                                 "Soit une solution contenant du peroxyde d’hydrogène à concentration [H2O2]0 = 5,00·10−1 mol · L−1. L’évolution de [H2O2] a été mesurée à T = 27○C en fonction du temps et sans catalase. Les données ont été rapportées sur le tableau et le graphique ci-dessous. On considère que la solution peut provoquer des lésions oculaires jusqu’à une concentration 16 fois inférieure la concentration initiale [H2O2]0. La réaction est totale et la vitesse de la réaction suit la loi de Van’t Hoff.",
-                                                 "Temps (jours)",
-                                                 "0",
-                                                 "2",
+                                                 "2 H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e(aq) −−k→ 2 H\u003csub\u003e2\u003c/sub\u003eO(l) + O\u003csub\u003e2\u003c/sub\u003e(g)",
+                                                 "Soit une solution contenant du peroxyde d’hydrogène à concentration [H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e]\u003csub\u003e0\u003c/sub\u003e = 5,00·10−1 mol · L\u003csup\u003e−1\u003c/sup\u003e. L’évolution de [H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] a été mesurée à T = 27○C en fonction du temps et sans catalase. Les données ont été rapportées sur le tableau et le graphique ci-dessous. On considère que la solution peut provoquer des lésions oculaires jusqu’à une concentration 16 fois inférieure la concentration initiale [H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e]\u003csub\u003e0\u003c/sub\u003e. La réaction est totale et la vitesse de la réaction suit la loi de Van’t Hoff.",
+                                                 "Évolution de [H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] en fonction du temps",
                                                  "5",
-                                                 "10",
-                                                 "15",
-                                                 "25",
-                                                 "35",
-                                                 "50",
-                                                 "[H2O2] (10−1 mol · L−1)",
-                                                 "5",
-                                                 "4,17",
-                                                 "3,33",
-                                                 "2,5",
-                                                 "2",
-                                                 "1,43",
-                                                 "1,11",
-                                                 "0,83",
-                                                 "Évolution de [H2O2] en fonction du temps",
-                                                 "5",
-                                                 "[H2O2] (10−1 mol/L)",
-                                                 "[H2O2] (10−1 mol/L)",
+                                                 "[H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] (10\u003csup\u003e−1\u003c/sup\u003e mol/L)",
+                                                 "[H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] (10\u003csup\u003e−1\u003c/sup\u003e mol/L)",
                                                  "3",
                                                  "2",
                                                  "1",
@@ -12616,21 +12543,21 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "∆rG○ = −15 kJ · mol−1",
+                                                  "text":  "∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e○\u003c/sup\u003e = −15 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - ∆rG◦ = −15 kJ · mol−1 ∆rG◦ = −15 kJ · mol−1 → ∆rG○ = −15 kJ · mol−1 → ∆rG○ = −15 kJ · mol−1 → Le temps de demi-réaction est de 10 jours → Le temps de demi-réaction est de 10 jours"
+                                                  "explanation":  "VRAI - ∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e = −15 kJ · mol\u003csup\u003e−1\u003c/sup\u003e ∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e◦\u003c/sup\u003e = −15 kJ · mol\u003csup\u003e−1\u003c/sup\u003e → ∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e○\u003c/sup\u003e = −15 kJ · mol\u003csup\u003e−1\u003c/sup\u003e → ∆\u003csub\u003er\u003c/sub\u003eG\u003csup\u003e○\u003c/sup\u003e = −15 kJ · mol\u003csup\u003e−1\u003c/sup\u003e → Le temps de demi-réaction est de 10 jours → Le temps de demi-réaction est de 10 jours"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "Au moment t, Γ = 103",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Au moment t, Γ = 103 Au moment t, Γ = 103 → Le temps de demi-réaction est proportionnel à la concentration initiale en H2O2 → Le temps de demi-réaction est proportionnel à la concentration initiale en H2O2"
+                                                  "explanation":  "FAUX - Au moment t, Γ = 103 Au moment t, Γ = 103 → Le temps de demi-réaction est proportionnel à la concentration initiale en H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e → Le temps de demi-réaction est proportionnel à la concentration initiale en H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "Au moment t, ∆rG ≈ 2,25 kJ · mol−1",
+                                                  "text":  "Au moment t, ∆\u003csub\u003er\u003c/sub\u003eG ≈ 2,25 kJ · mol\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Au moment t, ∆rG ≈ 2,25 kJ · mol−1 Au moment t, ∆rG ≈ 2,25 kJ · mol−1 et E et E"
+                                                  "explanation":  "FAUX - Au moment t, ∆\u003csub\u003er\u003c/sub\u003eG ≈ 2,25 kJ · mol\u003csup\u003e−1\u003c/sup\u003e Au moment t, ∆\u003csub\u003er\u003c/sub\u003eG ≈ 2,25 kJ · mol\u003csup\u003e−1\u003c/sup\u003e et E et E"
                                               },
                                               {
                                                   "id":  "E",
@@ -12656,9 +12583,9 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "Il s’agit d’une réaction d’ordre 1",
                                                  "Le temps de demi-réaction est de 10 jours",
-                                                 "Le temps de demi-réaction est proportionnel à la concentration initiale en H2O2",
-                                                 "k = 0,2 L · mol−1 · j−1",
-                                                 "k = 0,1 L · mol−1 · j−1"
+                                                 "Le temps de demi-réaction est proportionnel à la concentration initiale en H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e",
+                                                 "k = 0,2 L · mol\u003csup\u003e−1\u003c/sup\u003e · j\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "k = 0,1 L · mol\u003csup\u003e−1\u003c/sup\u003e · j\u003csup\u003e−1\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
@@ -12675,19 +12602,19 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "Le temps de demi-réaction est proportionnel à la concentration initiale en H2O2",
+                                                  "text":  "Le temps de demi-réaction est proportionnel à la concentration initiale en H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "k = 0,2 L · mol−1 · j−1",
+                                                  "text":  "k = 0,2 L · mol\u003csup\u003e−1\u003c/sup\u003e · j\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "k = 0,1 L · mol−1 · j−1",
+                                                  "text":  "k = 0,1 L · mol\u003csup\u003e−1\u003c/sup\u003e · j\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               }
@@ -12706,45 +12633,45 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Concernant la réaction de dismutation du peroxyde d’hydrogène en absence de catalase, laquelle (ou lesquelles) des proposition(s) suivante(s) est (ou sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "[H2O2]",
-                                                 "[H2O2]",
-                                                 "v = −1 d[H2O2] = d[H2O] = d[O2]",
+                                                 "[H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e]",
+                                                 "[H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e]",
+                                                 "v = −1 d[H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] = d[H\u003csub\u003e2\u003c/sub\u003eO] = d[O\u003csub\u003e2\u003c/sub\u003e]",
                                                  "2dt",
                                                  "dtdt",
-                                                 "La courbe de l’évolution de [H2O2] obtenue est une hyperbole",
-                                                 "La solution ne provoque plus de lésions oculaires après tseuil = 150 j",
+                                                 "La courbe de l’évolution de [H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] obtenue est une hyperbole",
+                                                 "La solution ne provoque plus de lésions oculaires après t\u003csub\u003eseuil\u003c/sub\u003e = 150 j",
                                                  "La dismutation du peroxyde d’hydrogène est une réaction élémentaire On décide maintenant d’ajouter la catalase dans la solution."
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "[H2O2]",
+                                                  "text":  "[H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e]",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - On aurait pu déterminer k en traçant 1 = f (t) On aurait pu déterminer k en traçant 1 = f (t)"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "[H2O2]",
+                                                  "text":  "[H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e]",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "v = −1 d[H2O2] = d[H2O] = d[O2]",
+                                                  "text":  "v = −1 d[H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] = d[H\u003csub\u003e2\u003c/sub\u003eO] = d[O\u003csub\u003e2\u003c/sub\u003e]",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - La courbe de l’évolution de [H2O2] obtenue est une hyperbole La courbe de l’évolution de [H2O2] obtenue est une hyperbole"
+                                                  "explanation":  "FAUX - La courbe de l’évolution de [H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] obtenue est une hyperbole La courbe de l’évolution de [H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] obtenue est une hyperbole"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "2dt",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - La solution ne provoque plus de lésions oculaires après tseuil = 150 j La solution ne provoque plus de lésions oculaires après tseuil = 150 j"
+                                                  "explanation":  "FAUX - La solution ne provoque plus de lésions oculaires après t\u003csub\u003eseuil\u003c/sub\u003e = 150 j La solution ne provoque plus de lésions oculaires après t\u003csub\u003eseuil\u003c/sub\u003e = 150 j"
                                               },
                                               {
                                                   "id":  "E",
                                                   "text":  "dtdt",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - k = 0,1 L · mol−1 · j−1 k = 0,1 L · mol−1 · j−1"
+                                                  "explanation":  "FAUX - k = 0,1 L · mol\u003csup\u003e−1\u003c/sup\u003e · j\u003csup\u003e−1\u003c/sup\u003e k = 0,1 L · mol\u003csup\u003e−1\u003c/sup\u003e · j\u003csup\u003e−1\u003c/sup\u003e"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -12763,10 +12690,10 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "La présence de la catalase accélère la vitesse de réaction en diminuant l’enthalpie libre standard d’activation",
                                                  "La présence de la catalase permet de modifier l’équilibre réactionnel et ainsi former plus de produits",
-                                                 "Pour des réactions extrêmement rapides, ∆G○/= peut être négatif",
+                                                 "Pour des réactions extrêmement rapides, ∆G\u003csup\u003e○/=\u003c/sup\u003e peut être négatif",
                                                  "Si la réaction avait eu lieu à T = 40○C, l’établissement des équilibres aurait été davantage favorisé",
-                                                 "La constante de vitesse k est proportionnelle à ∆G○/=",
-                                                 "Le myrcène est un composé utilisé dans l’industrie du parfum. On étudie la réaction d’un dérivé du myrcène de formule brute C11H18 avec l’acide chlorhydrique HCl. Seul deux produits sont formés lors de la réaction.",
+                                                 "La constante de vitesse k est proportionnelle à ∆G\u003csup\u003e○/=\u003c/sup\u003e",
+                                                 "Le myrcène est un composé utilisé dans l’industrie du parfum. On étudie la réaction d’un dérivé du myrcène de formule brute C\u003csub\u003e11\u003c/sub\u003eH\u003csub\u003e18\u003c/sub\u003e avec l’acide chlorhydrique HCl. Seul deux produits sont formés lors de la réaction.",
                                                  "d",
                                                  "c",
                                                  "f",
@@ -12785,31 +12712,31 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "A",
                                                   "text":  "La présence de la catalase accélère la vitesse de réaction en diminuant l’enthalpie libre standard d’activation",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - La présence de la catalase accélère la vitesse de réaction en diminuant l’enthalpie libre standard d’activation La présence de la catalase accélère la vitesse de réaction en diminuant l’enthalpie libre standard d’activation → La présence de la catalase accélère la vitesse de réaction en diminuant l’enthalpie … Tout pile, les catalyseurs permettent d’augmenter la constante de vitesse k en diminuant ∆G○/=. L’énergie nécessaire pour atteindre l’état de transition est alors plus basse, facilitant et accélérant la réaction. Dites vous qu’avec la catalase, la réaction se fait en quelques millisecondes contre des jours sans, c’est pour ça qu’ils sont super importants ! → La présence de la catalase accélère la vitesse de réaction en diminuant l’enthalpie … Tout pile, les catalyseurs permettent d’augmenter la constante de vitesse k en diminuant ∆G○/=. L’énergie nécessaire pour atteindre l’état de transition est alors plus basse, facilitant et accélérant la réaction. Dites vous qu’avec la catalase, la réaction se fait en quelques millisecondes contre des jours sans, c’est pour ça qu’ils sont super importants ! → C’est une réaction d’ordre 2 → C’est une réaction d’ordre 2"
+                                                  "explanation":  "VRAI - La présence de la catalase accélère la vitesse de réaction en diminuant l’enthalpie libre standard d’activation La présence de la catalase accélère la vitesse de réaction en diminuant l’enthalpie libre standard d’activation → La présence de la catalase accélère la vitesse de réaction en diminuant l’enthalpie … Tout pile, les catalyseurs permettent d’augmenter la constante de vitesse k en diminuant ∆G\u003csup\u003e○/=\u003c/sup\u003e. L’énergie nécessaire pour atteindre l’état de transition est alors plus basse, facilitant et accélérant la réaction. Dites vous qu’avec la catalase, la réaction se fait en quelques millisecondes contre des jours sans, c’est pour ça qu’ils sont super importants ! → La présence de la catalase accélère la vitesse de réaction en diminuant l’enthalpie … Tout pile, les catalyseurs permettent d’augmenter la constante de vitesse k en diminuant ∆G\u003csup\u003e○/=\u003c/sup\u003e. L’énergie nécessaire pour atteindre l’état de transition est alors plus basse, facilitant et accélérant la réaction. Dites vous qu’avec la catalase, la réaction se fait en quelques millisecondes contre des jours sans, c’est pour ça qu’ils sont super importants ! → C’est une réaction d’ordre 2 → C’est une réaction d’ordre 2"
                                               },
                                               {
                                                   "id":  "B",
                                                   "text":  "La présence de la catalase permet de modifier l’équilibre réactionnel et ainsi former plus de produits",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - La présence de la catalase permet de modifier l’équilibre réactionnel et ainsi former plus de produits → La présence de la catalase permet de modifier l’équilibre réactionnel et ainsi former … Nooo ! On ne le répètera jamais assez, mais K ne dépend QUE de la température !! Un catalyseur ne sert qu’à atteindre l’état d’équilibre plus rapidement mais ne le modifie en rien. On n’obtiendra pas plus de produit, mais on le formera plus vite. → La présence de la catalase permet de modifier l’équilibre réactionnel et ainsi former … Nooo ! On ne le répètera jamais assez, mais K ne dépend QUE de la température !! Un catalyseur ne sert qu’à atteindre l’état d’équilibre plus rapidement mais ne le modifie en rien. On n’obtiendra pas plus de produit, mais on le formera plus vite. → v = − 1 d[H2O2] = d[H2O] = d[O2]"
+                                                  "explanation":  "VRAI - La présence de la catalase permet de modifier l’équilibre réactionnel et ainsi former plus de produits → La présence de la catalase permet de modifier l’équilibre réactionnel et ainsi former … Nooo ! On ne le répètera jamais assez, mais K ne dépend QUE de la température !! Un catalyseur ne sert qu’à atteindre l’état d’équilibre plus rapidement mais ne le modifie en rien. On n’obtiendra pas plus de produit, mais on le formera plus vite. → La présence de la catalase permet de modifier l’équilibre réactionnel et ainsi former … Nooo ! On ne le répètera jamais assez, mais K ne dépend QUE de la température !! Un catalyseur ne sert qu’à atteindre l’état d’équilibre plus rapidement mais ne le modifie en rien. On n’obtiendra pas plus de produit, mais on le formera plus vite. → v = − 1 d[H\u003csub\u003e2\u003c/sub\u003eO\u003csub\u003e2\u003c/sub\u003e] = d[H\u003csub\u003e2\u003c/sub\u003eO] = d[O\u003csub\u003e2\u003c/sub\u003e]"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "Pour des réactions extrêmement rapides, ∆G○/= peut être négatif",
+                                                  "text":  "Pour des réactions extrêmement rapides, ∆G\u003csup\u003e○/=\u003c/sup\u003e peut être négatif",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Pour des réactions extrêmement rapides, ∆G○/= peut être négatif → Pour des réactions extrêmement rapides, ∆G○/= peut être négatif → Pour des réactions extrêmement rapides, ∆G○/= peut être négatif → La courbe de l’évolution de [H O ] obtenue est une hyperbole"
+                                                  "explanation":  "FAUX - Pour des réactions extrêmement rapides, ∆G\u003csup\u003e○/=\u003c/sup\u003e peut être négatif → Pour des réactions extrêmement rapides, ∆G\u003csup\u003e○/=\u003c/sup\u003e peut être négatif → Pour des réactions extrêmement rapides, ∆G\u003csup\u003e○/=\u003c/sup\u003e peut être négatif → La courbe de l’évolution de [H O ] obtenue est une hyperbole"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "Si la réaction avait eu lieu à T = 40○C, l’établissement des équilibres aurait été davantage favorisé",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Si la réaction avait eu lieu à T = 40◦C, l’établissement des équilibres aurait été davantage favorisé Si la réaction avait eu lieu à T = 40◦C, l’établissement des équilibres aurait été davantage favorisé → Si la réaction avait eu lieu à T = 40○C, l’établissement des équilibres aurait été … Tout à fait, la température accélère la vitesse de réaction, ce qui permet d’atteindre l’équilibre d’autant plus rapidement. On peut aussi le voir grâce l’équation mentionnée juste en dessous (cf item E). → Si la réaction avait eu lieu à T = 40○C, l’établissement des équilibres aurait été … Tout à fait, la température accélère la vitesse de réaction, ce qui permet d’atteindre l’équilibre d’autant plus rapidement. On peut aussi le voir grâce l’équation mentionnée juste en dessous (cf item E). → La solution ne provoque plus de lésions oculaires après tseuil = 150 j → La molécule de HCl se dissocie en H+, le nucléophile, et Cl– , l’électrophile → La molécule de HCl se dissocie en H+, le nucléophile, et Cl– , l’électrophile"
+                                                  "explanation":  "FAUX - Si la réaction avait eu lieu à T = 40◦C, l’établissement des équilibres aurait été davantage favorisé Si la réaction avait eu lieu à T = 40◦C, l’établissement des équilibres aurait été davantage favorisé → Si la réaction avait eu lieu à T = 40○C, l’établissement des équilibres aurait été … Tout à fait, la température accélère la vitesse de réaction, ce qui permet d’atteindre l’équilibre d’autant plus rapidement. On peut aussi le voir grâce l’équation mentionnée juste en dessous (cf item E). → Si la réaction avait eu lieu à T = 40○C, l’établissement des équilibres aurait été … Tout à fait, la température accélère la vitesse de réaction, ce qui permet d’atteindre l’équilibre d’autant plus rapidement. On peut aussi le voir grâce l’équation mentionnée juste en dessous (cf item E). → La solution ne provoque plus de lésions oculaires après t\u003csub\u003eseuil\u003c/sub\u003e = 150 j → La molécule de HCl se dissocie en H+, le nucléophile, et Cl– , l’électrophile → La molécule de HCl se dissocie en H+, le nucléophile, et Cl– , l’électrophile"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "La constante de vitesse k est proportionnelle à ∆G○/=",
+                                                  "text":  "La constante de vitesse k est proportionnelle à ∆G\u003csup\u003e○/=\u003c/sup\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - La constante de vitesse k est proportionnelle à ∆G○/= → La constante de vitesse k est proportionnelle à ∆G○/= → La constante de vitesse k est proportionnelle à ∆G○/= → La dismutation du peroxyde d’hydrogène est une réaction élémentaire"
+                                                  "explanation":  "VRAI - La constante de vitesse k est proportionnelle à ∆G\u003csup\u003e○/=\u003c/sup\u003e → La constante de vitesse k est proportionnelle à ∆G\u003csup\u003e○/=\u003c/sup\u003e → La constante de vitesse k est proportionnelle à ∆G\u003csup\u003e○/=\u003c/sup\u003e → La dismutation du peroxyde d’hydrogène est une réaction élémentaire"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -12829,7 +12756,7 @@ window.ANNALES_2025_2026 = [
                               "question":  "Concernant la réactivité des réactifs de la réaction, laquelle (lesquelles) des propo-sitions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "C’est une réaction d’ordre 2",
-                                                 "La liaison double Cc – Cd agit comme un nucléophile dans cette réaction",
+                                                 "La liaison double C\u003csub\u003ec\u003c/sub\u003e – C\u003csub\u003ed\u003c/sub\u003e agit comme un nucléophile dans cette réaction",
                                                  "Le carbone c est un bon électrophile",
                                                  "La molécule de HCl se dissocie en H+, le nucléophile, et Cl– , l’électrophile",
                                                  "Il s’agit d’une addition électrophile"
@@ -12843,15 +12770,15 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "La liaison double Cc – Cd agit comme un nucléophile dans cette réaction",
+                                                  "text":  "La liaison double C\u003csub\u003ec\u003c/sub\u003e – C\u003csub\u003ed\u003c/sub\u003e agit comme un nucléophile dans cette réaction",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La liaison double Cc – Cd agit comme un nucléophile dans cette réaction → La liaison double Cc – Cd agit comme un nucléophile dans cette réaction"
+                                                  "explanation":  "FAUX - → La liaison double C\u003csub\u003ec\u003c/sub\u003e – C\u003csub\u003ed\u003c/sub\u003e agit comme un nucléophile dans cette réaction → La liaison double C\u003csub\u003ec\u003c/sub\u003e – C\u003csub\u003ed\u003c/sub\u003e agit comme un nucléophile dans cette réaction"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "Le carbone c est un bon électrophile",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → Le carbone c est un bon électrophile → Le carbone c est un bon électrophile Les électrons d’une orbitale π comblent l’orbitale atomique 1s vide de H+ Les électrons d’une orbitale π comblent l’orbitale atomique 1s vide de H+"
+                                                  "explanation":  "FAUX - → Le carbone c est un bon électrophile → Le carbone c est un bon électrophile Les électrons d’une orbitale π comblent l’orbitale atomique 1s vide de H\u003csup\u003e+\u003c/sup\u003e Les électrons d’une orbitale π comblent l’orbitale atomique 1s vide de H\u003csup\u003e+\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "D",
@@ -12881,33 +12808,33 @@ window.ANNALES_2025_2026 = [
                               "question":  "Concernant la réaction précédente, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "Lors de l’étape cinétiquement déterminante, un doublet non liant comble la lacune d’un carbocation",
-                                                 "Le doublet non liant de l’hydrure comble une orbitale π∗ de Ca – Cb, rompant ainsi l’orbitale",
+                                                 "Le doublet non liant de l’hydrure comble une orbitale π\u003csup\u003e∗\u003c/sup\u003e de C\u003csub\u003ea\u003c/sub\u003e – C\u003csub\u003eb\u003c/sub\u003e, rompant ainsi l’orbitale",
                                                  "π",
                                                  "Les électrons d’une orbitale π comblent l’orbitale atomique 1s vide de H+",
                                                  "Le carbone d du produit porte un atome de chlore",
                                                  "Les produits obtenus forment un mélange racémique",
                                                  "On considère les molécules I, II en quantité équimolaires et la réaction d’addition nucléophile en catalyse base forte suivante :",
-                                                 "H3COO",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eCOO",
                                                  "—",
-                                                 "H3C",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eC",
                                                  "H",
                                                  "Molécule I",
                                                  "O",
-                                                 "H3CO H3C",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eCO H\u003csub\u003e3\u003c/sub\u003eC",
                                                  "Molécule II",
                                                  "OH",
-                                                 "OCH3 H",
+                                                 "OCH\u003csub\u003e3\u003c/sub\u003e H",
                                                  "OH",
-                                                 "H3C",
-                                                 "CH3OHH3C",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eC",
+                                                 "CH\u003csub\u003e3\u003c/sub\u003eOHH3C",
                                                  "H",
-                                                 "H OCH3",
+                                                 "H OCH\u003csub\u003e3\u003c/sub\u003e",
                                                  "Molécule III",
                                                  "+",
-                                                 "H3C",
+                                                 "H\u003csub\u003e3\u003c/sub\u003eC",
                                                  "H",
                                                  "Molécule IV",
-                                                 "OCH3"
+                                                 "OCH\u003csub\u003e3\u003c/sub\u003e"
                                              ],
                               "options":  [
                                               {
@@ -12918,7 +12845,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Le doublet non liant de l’hydrure comble une orbitale π∗ de Ca – Cb, rompant ainsi l’orbitale",
+                                                  "text":  "Le doublet non liant de l’hydrure comble une orbitale π\u003csup\u003e∗\u003c/sup\u003e de C\u003csub\u003ea\u003c/sub\u003e – C\u003csub\u003eb\u003c/sub\u003e, rompant ainsi l’orbitale",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -12959,7 +12886,7 @@ window.ANNALES_2025_2026 = [
                                                  "La molécule I est un intermédiaire réactionnel de la réaction",
                                                  "La double liaison (C– O) correspond au centre nucléophile de la réaction",
                                                  "À pH = 1, on forme le même produit",
-                                                 "En ajoutant équivalent de méthanol CH3OH, la réaction aurait pu aboutir à la formation de la molécule II"
+                                                 "En ajoutant équivalent de méthanol CH\u003csub\u003e3\u003c/sub\u003eOH, la réaction aurait pu aboutir à la formation de la molécule II"
                                              ],
                               "options":  [
                                               {
@@ -12988,9 +12915,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "En ajoutant équivalent de méthanol CH3OH, la réaction aurait pu aboutir à la formation de la molécule II",
+                                                  "text":  "En ajoutant équivalent de méthanol CH\u003csub\u003e3\u003c/sub\u003eOH, la réaction aurait pu aboutir à la formation de la molécule II",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → Les produits obtenus forment un mélange racémique En ajoutant équivalent de méthanol CH3OH, la réaction aurait pu aboutir à la formation de la molécule II"
+                                                  "explanation":  "VRAI - → Les produits obtenus forment un mélange racémique En ajoutant équivalent de méthanol CH\u003csub\u003e3\u003c/sub\u003eOH, la réaction aurait pu aboutir à la formation de la molécule II"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -13011,10 +12938,10 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "On forme majoritairement le composé R",
                                                  "Le mélange des produits obtenu possède un pouvoir rotatoire non nul",
-                                                 "Un DNL de l’oxygène du méthanol attaque l’orbitale π∗ de la liaison C– O",
+                                                 "Un DNL de l’oxygène du méthanol attaque l’orbitale π\u003csup\u003e∗\u003c/sup\u003e de la liaison C– O",
                                                  "La double liaison C– O ne met en jeu qu’une orbitale π",
                                                  "Le composé IV est de configuration R",
-                                                 "À présent, on s’intéresse à l’acide érythronique (C4H8O5), un acide organique dérivé de l’érythrose. Il est lié au métabolisme du glucose et à la voie des pentoses phosphates. Voici sa représentation :",
+                                                 "À présent, on s’intéresse à l’acide érythronique (C\u003csub\u003e4\u003c/sub\u003eH\u003csub\u003e8\u003c/sub\u003eO\u003csub\u003e5\u003c/sub\u003e), un acide organique dérivé de l’érythrose. Il est lié au métabolisme du glucose et à la voie des pentoses phosphates. Voici sa représentation :",
                                                  "3",
                                                  "2",
                                                  "1",
@@ -13026,10 +12953,10 @@ window.ANNALES_2025_2026 = [
                                                  "OHO",
                                                  "Acide Érythronique",
                                                  "On dispose de plusieurs solutions :",
-                                                 "Solution 1 : solution d’acide érythronique de volume V1 = 25 mL et de concentration",
-                                                 "C1 = 10 × 10−1 mol/L. On donne son pKa = 3,0.",
-                                                 "Solution 2 : solution de base forte HO– de volume V2 = 10 mL et de concentration",
-                                                 "C2 = 20 × 10−1 mol/L.",
+                                                 "Solution 1 : solution d’acide érythronique de volume V\u003csub\u003e1\u003c/sub\u003e = 25 mL et de concentration",
+                                                 "C\u003csub\u003e1\u003c/sub\u003e = 10 × 10−1 mol/L. On donne son pKa = 3,0.",
+                                                 "Solution 2 : solution de base forte HO– de volume V\u003csub\u003e2\u003c/sub\u003e = 10 mL et de concentration",
+                                                 "C\u003csub\u003e2\u003c/sub\u003e = 20 × 10−1 mol/L.",
                                                  "Solution 3 : un mélange des solutions 1 et 2."
                                              ],
                               "options":  [
@@ -13047,9 +12974,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "Un DNL de l’oxygène du méthanol attaque l’orbitale π∗ de la liaison C– O",
+                                                  "text":  "Un DNL de l’oxygène du méthanol attaque l’orbitale π\u003csup\u003e∗\u003c/sup\u003e de la liaison C– O",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Un DNL de l’oxygène du méthanol attaque l’orbitale π∗ de la liaison C– O Un DNL de l’oxygène du méthanol attaque l’orbitale π∗ de la liaison C– O → Un DNL de l’oxygène du méthanol attaque l’orbitale π∗ de la liaison C– O Exactement ! Pendant la réaction, l’addition nucléophile sur le carbone va avoir lieu en même temps que la rupture de la liaison π. Cette rupture est due au fait que l’oxygène du méthanol donne les électrons d’un de ses DNL pour remplir la π∗ de la liaison C– O ! → Un DNL de l’oxygène du méthanol attaque l’orbitale π∗ de la liaison C– O Exactement ! Pendant la réaction, l’addition nucléophile sur le carbone va avoir lieu en même temps que la rupture de la liaison π. Cette rupture est due au fait que l’oxygène du méthanol donne les électrons d’un de ses DNL pour remplir la π∗ de la liaison C– O !"
+                                                  "explanation":  "VRAI - Un DNL de l’oxygène du méthanol attaque l’orbitale π\u003csup\u003e∗\u003c/sup\u003e de la liaison C– O Un DNL de l’oxygène du méthanol attaque l’orbitale π\u003csup\u003e∗\u003c/sup\u003e de la liaison C– O → Un DNL de l’oxygène du méthanol attaque l’orbitale π\u003csup\u003e∗\u003c/sup\u003e de la liaison C– O Exactement ! Pendant la réaction, l’addition nucléophile sur le carbone va avoir lieu en même temps que la rupture de la liaison π. Cette rupture est due au fait que l’oxygène du méthanol donne les électrons d’un de ses DNL pour remplir la π\u003csup\u003e∗\u003c/sup\u003e de la liaison C– O ! → Un DNL de l’oxygène du méthanol attaque l’orbitale π\u003csup\u003e∗\u003c/sup\u003e de la liaison C– O Exactement ! Pendant la réaction, l’addition nucléophile sur le carbone va avoir lieu en même temps que la rupture de la liaison π. Cette rupture est due au fait que l’oxygène du méthanol donne les électrons d’un de ses DNL pour remplir la π\u003csup\u003e∗\u003c/sup\u003e de la liaison C– O !"
                                               },
                                               {
                                                   "id":  "D",
@@ -13061,7 +12988,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "Le composé IV est de configuration R",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Le composé IV est de configuration R Le composé IV est de configuration R → En ajoutant équivalent de méthanol CH3OH, la réaction aurait pu aboutir à la … → Le composé IV est de configuration R → Le composé IV est de configuration R"
+                                                  "explanation":  "VRAI - Le composé IV est de configuration R Le composé IV est de configuration R → En ajoutant équivalent de méthanol CH\u003csub\u003e3\u003c/sub\u003eOH, la réaction aurait pu aboutir à la … → Le composé IV est de configuration R → Le composé IV est de configuration R"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -13086,12 +13013,12 @@ window.ANNALES_2025_2026 = [
                                                  "COOH",
                                                  "HOH",
                                                  "OHH",
-                                                 "CH2OH",
+                                                 "CH\u003csub\u003e2\u003c/sub\u003eOH",
                                                  "La projection de Fischer de l’acide érythronique est la suivante :",
                                                  "COOH",
                                                  "OHH",
                                                  "HOH",
-                                                 "CH2OH"
+                                                 "CH\u003csub\u003e2\u003c/sub\u003eOH"
                                              ],
                               "options":  [
                                               {
@@ -13300,7 +13227,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  2,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 5 : Histologie - Embryologie\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nConcernant la préparation et la conservation des tissus en histologie, laquelle (les-quelles) des propositions suivantes est (sont) exacte(s) ?\nL’apposition correspond au dépôt d’une empreinte de cellules sur une lame de verre\nLa fixation de l’échantillon peut se réaliser plusieurs heures après le prélèvement\nLe liquide de Bouin est constitué de formol, d’acide acétique, d’acide picrique et d’eau\nLa congélation directe nécessite d’être réalisée à très basse température (inférieure à -150°C)\nLa congélation indirecte, dans l’azote liquide, ne préserve pas l’ARN",
+                              "context":  "Durée de l’épreuve : 1h\nInformations sur l’épreuve\nConcernant la préparation et la conservation des tissus en histologie, laquelle (les-quelles) des propositions suivantes est (sont) exacte(s) ?\nL’apposition correspond au dépôt d’une empreinte de cellules sur une lame de verre\nLa fixation de l’échantillon peut se réaliser plusieurs heures après le prélèvement\nLe liquide de Bouin est constitué de formol, d’acide acétique, d’acide picrique et d’eau\nLa congélation directe nécessite d’être réalisée à très basse température (inférieure à -150°C)\nLa congélation indirecte, dans l’azote liquide, ne préserve pas l’ARN",
                               "images":  [
                                              "annales_assets/2025_2026/histo_embryo/tuto_1/image1.png",
                                              "annales_assets/2025_2026/histo_embryo/tuto_1/image2.png"
@@ -14932,7 +14859,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  2,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 5 : Histologie - Embryologie\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nConcernant la préparation en microscopie électronique, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?\nLes étapes de préparation de l’échantillon sont : fixation, inclusion, coupe et coloration\nLa fixation se fait avec du formaldéhyde et la post-fixation avec du tétraoxyde d’osmium\nL’inclusion se fait dans de la résine\nLa coupe est réalisée à l’aide d’un ultramicrotome\nLes coupes peuvent être semi-fines (5 µm) ou ultra-fines (1-2 µm)",
+                              "context":  "Durée de l’épreuve : 1h\nInformations sur l’épreuve\nConcernant la préparation en microscopie électronique, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?\nLes étapes de préparation de l’échantillon sont : fixation, inclusion, coupe et coloration\nLa fixation se fait avec du formaldéhyde et la post-fixation avec du tétraoxyde d’osmium\nL’inclusion se fait dans de la résine\nLa coupe est réalisée à l’aide d’un ultramicrotome\nLes coupes peuvent être semi-fines (5 µm) ou ultra-fines (1-2 µm)",
                               "images":  [
                                              "annales_assets/2025_2026/histo_embryo/tuto_2/image1.png",
                                              "annales_assets/2025_2026/histo_embryo/tuto_2/image2.png"
@@ -15069,7 +14996,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "B",
                                                   "text":  "La localisation des fonctions épithéliales est à l’extrémité opposée de la lame basale",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La localisation des fonctions épithéliales est à l’extrémité opposée de la lame basale C’est exact, il faut bien avoir la représentation d’une cellule épithéliale dans sa tête et tout devient facile, on se souvient alors que les fonctions les plus importantes de la cellule comme l’absorption, qui sont à l’opposé de la lame basale. → La localisation des fonctions épithéliales est à l’extrémité opposée de la lame basale C’est exact, il faut bien avoir la représentation d’une cellule épithéliale dans sa tête et tout devient facile, on se souvient alors que les fonctions les plus importantes de la cellule comme l’absorption, qui sont à l’opposé de la lame basale. La structure désignée la lettre F sont liées via les ions Ca2+ La structure désignée la lettre F sont liées via les ions Ca2+"
+                                                  "explanation":  "FAUX - → La localisation des fonctions épithéliales est à l’extrémité opposée de la lame basale C’est exact, il faut bien avoir la représentation d’une cellule épithéliale dans sa tête et tout devient facile, on se souvient alors que les fonctions les plus importantes de la cellule comme l’absorption, qui sont à l’opposé de la lame basale. → La localisation des fonctions épithéliales est à l’extrémité opposée de la lame basale C’est exact, il faut bien avoir la représentation d’une cellule épithéliale dans sa tête et tout devient facile, on se souvient alors que les fonctions les plus importantes de la cellule comme l’absorption, qui sont à l’opposé de la lame basale. La structure désignée la lettre F sont liées via les ions Ca\u003csup\u003e2+\u003c/sup\u003e La structure désignée la lettre F sont liées via les ions Ca\u003csup\u003e2+\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "C",
@@ -15932,7 +15859,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "Les filaments de myosine sont disposés entre les filaments d’actine selon un mode hexagonal régulier avec des ponts d’union",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - La différence de potentiel membranaire est maintenue par des pompes Na+/K+ ATPase La différence de potentiel membranaire est maintenue par des pompes Na+/K+ ATPase"
+                                                  "explanation":  "FAUX - La différence de potentiel membranaire est maintenue par des pompes Na\u003csup\u003e+\u003c/sup\u003e/K\u003csup\u003e+\u003c/sup\u003e ATPase La différence de potentiel membranaire est maintenue par des pompes Na\u003csup\u003e+\u003c/sup\u003e/K\u003csup\u003e+\u003c/sup\u003e ATPase"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -16419,7 +16346,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "La capacitation des spermatozoïdes est réversible",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - La capacitation des spermatozoïdes est réversible La capacitation des spermatozoïdes est réversible → La capacitation des spermatozoïdes est réversible → La capacitation des spermatozoïdes est réversible Pièce intermédiaire (9. Mitochondries, 10. Axonème) → L’éjaculat comprend à 10% de spermatozoïdes et 90% de liquide séminal La réaction acrosomique commence par un influx en Ca2+ dans le cytoplasme spermatique, entraînant la formation de pores dans les membranes La réaction acrosomique commence par un influx en Ca2+ dans le cytoplasme spermatique, entraînant la formation de pores dans les membranes"
+                                                  "explanation":  "VRAI - La capacitation des spermatozoïdes est réversible La capacitation des spermatozoïdes est réversible → La capacitation des spermatozoïdes est réversible → La capacitation des spermatozoïdes est réversible Pièce intermédiaire (9. Mitochondries, 10. Axonème) → L’éjaculat comprend à 10% de spermatozoïdes et 90% de liquide séminal La réaction acrosomique commence par un influx en Ca\u003csup\u003e2+\u003c/sup\u003e dans le cytoplasme spermatique, entraînant la formation de pores dans les membranes La réaction acrosomique commence par un influx en Ca\u003csup\u003e2+\u003c/sup\u003e dans le cytoplasme spermatique, entraînant la formation de pores dans les membranes"
                                               },
                                               {
                                                   "id":  "D",
@@ -16674,7 +16601,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 5 : Histologie - Embryologie\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nQUESTIONS D’HISTOLOGIE HUMAINE",
+                              "context":  "Durée de l’épreuve : 1h\nInformations sur l’épreuve\nQUESTIONS D’HISTOLOGIE HUMAINE",
                               "images":  [
                                              "annales_assets/2025_2026/histo_embryo/tuto_3/image1.png",
                                              "annales_assets/2025_2026/histo_embryo/tuto_3/image2.png"
@@ -18417,7 +18344,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 4 : Physique\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve",
+                              "context":  "Durée de l’épreuve : 1h30\nInformations sur l’épreuve",
                               "images":  [
                                              "annales_assets/2025_2026/physique/tuto_1/image1.png",
                                              "annales_assets/2025_2026/physique/tuto_1/image2.png",
@@ -18426,7 +18353,7 @@ window.ANNALES_2025_2026 = [
                               "question":  "Perceval, pauvre étudiant en médecine, après avoir perdu il ne sait plus combien d’heures à tenter de comprendre ses cours de physique, décide de s’accorder une pause bien méritée dans le petit jardin des Cordeliers.",
                               "rawOptions":  [
                                                  "Mais alors qu’il s’apprête à s’asseoir pour se détendre, il aperçoit un étrange spectacle : un porte-clés se balançant tel un pendule accroché sur une branche. Pauvre Perceval… hanté jusque dans ses pauses par la mécanique, il ne peut s’empêcher de vouloir calculer les paramètres de ce mouvement oscillant.",
-                                                 "Il estime que la masse de la clé au bout est d’environ 50 g, et que l’angle maximal d’oscillation de part et d’autre de la verticale est θmax = 60◦. La chaîne, qu’il considère comme un fil, mesure L = 10 cm et peut être considérée comme inextensible. Les deux forces en présence sont le poids",
+                                                 "Il estime que la masse de la clé au bout est d’environ 50 g, et que l’angle maximal d’oscillation de part et d’autre de la verticale est θ\u003csub\u003emax\u003c/sub\u003e = 60◦. La chaîne, qu’il considère comme un fil, mesure L = 10 cm et peut être considérée comme inextensible. Les deux forces en présence sont le poids",
                                                  "de la clé P→ ainsi que la force de tension du fil T→ (indiqués sur le schéma). La masse de la chaîne",
                                                  "du porte-clés et les forces de frottements seront considérées négligeables durant l’intégralité de l’exercice, la clé est assimilée à une masse ponctuelle."
                                              ],
@@ -18439,7 +18366,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Il estime que la masse de la clé au bout est d’environ 50 g, et que l’angle maximal d’oscillation de part et d’autre de la verticale est θmax = 60◦. La chaîne, qu’il considère comme un fil, mesure L = 10 cm et peut être considérée comme inextensible. Les deux forces en présence sont le poids",
+                                                  "text":  "Il estime que la masse de la clé au bout est d’environ 50 g, et que l’angle maximal d’oscillation de part et d’autre de la verticale est θ\u003csub\u003emax\u003c/sub\u003e = 60◦. La chaîne, qu’il considère comme un fil, mesure L = 10 cm et peut être considérée comme inextensible. Les deux forces en présence sont le poids",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
@@ -18478,10 +18405,10 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "La force de tension exercée par le fil est dirigée selon la tangente au cercle autour du point d’attache",
                                                  "La tension, en coordonées cartésiennes peut être décomposée en une composante horizontale",
-                                                 "Tx = −T sin(θ) et une composante verticale Ty = T cos(θ)",
+                                                 "T\u003csub\u003ex\u003c/sub\u003e = −T sin(θ) et une composante verticale T\u003csub\u003ey\u003c/sub\u003e = T cos(θ)",
                                                  "La force de tension est toujours dirigée vers le point d’attache de la chaîne",
                                                  "La résultante des forces appliquées sur la masse est toujours dirigée vers le centre de rotation",
-                                                 "La force de tension s’annule lorsque le pendule atteint l’angle maximale θmax"
+                                                 "La force de tension s’annule lorsque le pendule atteint l’angle maximale θ\u003csub\u003emax\u003c/sub\u003e"
                                              ],
                               "options":  [
                                               {
@@ -18498,7 +18425,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "Tx = −T sin(θ) et une composante verticale Ty = T cos(θ)",
+                                                  "text":  "T\u003csub\u003ex\u003c/sub\u003e = −T sin(θ) et une composante verticale T\u003csub\u003ey\u003c/sub\u003e = T cos(θ)",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
@@ -18581,8 +18508,8 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Concernant les différentes vitesses de la clé lors de son mouvement oscillant, la-quelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                               "rawOptions":  [
-                                                 "Une formule de la vitesse maximale est vmax = ñ2gL(1 − sin(θ))",
-                                                 "La vitesse maximale est vmax ≈ 3,6 km · h−1 (à 0,2 km · h−1 près)",
+                                                 "Une formule de la vitesse maximale est v\u003csub\u003emax\u003c/sub\u003e = ñ2gL(1 − sin(θ))",
+                                                 "La vitesse maximale est v\u003csub\u003emax\u003c/sub\u003e ≈ 3,6 km · h\u003csup\u003e−1\u003c/sup\u003e (à 0,2 km · h\u003csup\u003e−1\u003c/sup\u003e près)",
                                                  "La vitesse maximale est atteinte lorsque la clé est au point le plus haut de son mouvement",
                                                  "La vitesse est nulle quand l’altitude de la clé est maximale",
                                                  "La vitesse maximale est atteinte quand l’accélération de la clé est nulle"
@@ -18590,13 +18517,13 @@ window.ANNALES_2025_2026 = [
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "Une formule de la vitesse maximale est vmax = ñ2gL(1 − sin(θ))",
+                                                  "text":  "Une formule de la vitesse maximale est v\u003csub\u003emax\u003c/sub\u003e = ñ2gL(1 − sin(θ))",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "La vitesse maximale est vmax ≈ 3,6 km · h−1 (à 0,2 km · h−1 près)",
+                                                  "text":  "La vitesse maximale est v\u003csub\u003emax\u003c/sub\u003e ≈ 3,6 km · h\u003csup\u003e−1\u003c/sup\u003e (à 0,2 km · h\u003csup\u003e−1\u003c/sup\u003e près)",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
@@ -18631,16 +18558,16 @@ window.ANNALES_2025_2026 = [
                               "images":  [
                                              "annales_assets/2025_2026/physique/tuto_1/image4.png"
                                          ],
-                              "question":  "Soient Wascension et Wdescente respectivement le travail du poids lors la ”montée” (ascension) et lors de la ”descente” des clés. Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
+                              "question":  "Soient W\u003csub\u003eascension\u003c/sub\u003e et W\u003csub\u003edescente\u003c/sub\u003e respectivement le travail du poids lors la ”montée” (ascension) et lors de la ”descente” des clés. Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                               "rawOptions":  [
-                                                 "Lors du passage de θmax à θ = 0◦, le travail du poids est de Wdescente = 2,45 × 10−2 J",
-                                                 "Lors du passage de θ = 0◦ à θmax, le travail du poids est de Wascencion = 2,45 × 10−2 J",
+                                                 "Lors du passage de θ\u003csub\u003emax\u003c/sub\u003e à θ = 0◦, le travail du poids est de W\u003csub\u003edescente\u003c/sub\u003e = 2,45 × 10−2 J",
+                                                 "Lors du passage de θ = 0◦ à θ\u003csub\u003emax\u003c/sub\u003e, le travail du poids est de W\u003csub\u003eascencion\u003c/sub\u003e = 2,45 × 10−2 J",
                                                  "Wascencion = −Wdescente",
                                                  "Le travail de la tension du porte-clés est nul à tout instant du mouvement",
                                                  "La position de la clé à θ = 0◦ est un équilibre stable",
                                                  "Soudain, une bourrasque violente atteint la clé alors que la chaîne est à la verticale. La clé est donc détachée instantanément et s’envole en",
                                                  "direction de Perceval (celui-ci se situe sur l’axe",
-                                                 "e→x).",
+                                                 "e→\u003csub\u003ex\u003c/sub\u003e).",
                                                  "Perceval fait le pari que même s’il reste immo-bile, la clé ne l’atteindra pas.",
                                                  "·",
                                                  "·",
@@ -18652,29 +18579,29 @@ window.ANNALES_2025_2026 = [
                                                  "→ex",
                                                  "1, 93 m",
                                                  "1, 93 m",
-                                                 "e→y",
-                                                 "e→x",
-                                                 "e→y",
-                                                 "e→x",
-                                                 "e→y",
-                                                 "e→x",
+                                                 "e→\u003csub\u003ey\u003c/sub\u003e",
+                                                 "e→\u003csub\u003ex\u003c/sub\u003e",
+                                                 "e→\u003csub\u003ey\u003c/sub\u003e",
+                                                 "e→\u003csub\u003ex\u003c/sub\u003e",
+                                                 "e→\u003csub\u003ey\u003c/sub\u003e",
+                                                 "e→\u003csub\u003ex\u003c/sub\u003e",
                                                  "ABC",
-                                                 "e→y",
-                                                 "e→x",
-                                                 "e→y",
-                                                 "e→x",
+                                                 "e→\u003csub\u003ey\u003c/sub\u003e",
+                                                 "e→\u003csub\u003ex\u003c/sub\u003e",
+                                                 "e→\u003csub\u003ey\u003c/sub\u003e",
+                                                 "e→\u003csub\u003ex\u003c/sub\u003e",
                                                  "DE"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "Lors du passage de θmax à θ = 0◦, le travail du poids est de Wdescente = 2,45 × 10−2 J",
+                                                  "text":  "Lors du passage de θ\u003csub\u003emax\u003c/sub\u003e à θ = 0◦, le travail du poids est de W\u003csub\u003edescente\u003c/sub\u003e = 2,45 × 10−2 J",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "Lors du passage de θ = 0◦ à θmax, le travail du poids est de Wascencion = 2,45 × 10−2 J",
+                                                  "text":  "Lors du passage de θ = 0◦ à θ\u003csub\u003emax\u003c/sub\u003e, le travail du poids est de W\u003csub\u003eascencion\u003c/sub\u003e = 2,45 × 10−2 J",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
@@ -18875,7 +18802,7 @@ window.ANNALES_2025_2026 = [
                               "question":  "ó",
                               "rawOptions":  [
                                                  "ó",
-                                                 "La distance d entre l’arbre et le point où elle touche le sol s’exprime par d = v02H",
+                                                 "La distance d entre l’arbre et le point où elle touche le sol s’exprime par d = v\u003csub\u003e0\u003c/sub\u003e2H",
                                                  "g",
                                                  "2g",
                                                  "2g",
@@ -18892,7 +18819,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "La distance d entre l’arbre et le point où elle touche le sol s’exprime par d = v02H",
+                                                  "text":  "La distance d entre l’arbre et le point où elle touche le sol s’exprime par d = v\u003csub\u003e0\u003c/sub\u003e2H",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
@@ -18923,7 +18850,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  2,
                               "type":  "QCM",
-                              "context":  "",
+                              "context":  "\u003cdiv class=\"annale-data-table-wrap\"\u003e\u003ctable class=\"annale-data-table\"\u003e\u003ctr\u003e\u003cth\u003eDérivation\u003c/th\u003e\u003cth\u003eaV\u003csub\u003eL\u003c/sub\u003e\u003c/th\u003e\u003cth\u003eaV\u003csub\u003eR\u003c/sub\u003e\u003c/th\u003e\u003cth\u003eaV\u003csub\u003eF\u003c/sub\u003e\u003c/th\u003e\u003cth\u003eV\u003csub\u003eI\u003c/sub\u003e\u003c/th\u003e\u003cth\u003eVII\u003c/th\u003e\u003cth\u003eVIII\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eMesure (en mV )\u003c/th\u003e\u003ctd\u003e0,42\u003c/td\u003e\u003ctd\u003ex\u003c/td\u003e\u003ctd\u003e0,21\u003c/td\u003e\u003ctd\u003e0,70\u003c/td\u003e\u003ctd\u003e0,56\u003c/td\u003e\u003ctd\u003e-0,14\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e",
                               "images":  [
 
                                          ],
@@ -18934,14 +18861,14 @@ window.ANNALES_2025_2026 = [
                                                  "2",
                                                  "CR",
                                                  "CR",
-                                                 "= aVRR",
+                                                 "= aV\u003csub\u003eR\u003c/sub\u003eR",
                                                  "5",
                                                  "6",
                                                  "43L",
                                                  "2",
                                                  "C1",
-                                                 "γ = 30◦",
-                                                 "aVL",
+                                                 "γ = 30\u003csup\u003e◦\u003c/sup\u003e",
+                                                 "aV\u003csub\u003eL\u003c/sub\u003e",
                                                  "= 3 −→P · −→u",
                                                  "2",
                                                  "2",
@@ -18949,29 +18876,15 @@ window.ANNALES_2025_2026 = [
                                                  "CL",
                                                  "811",
                                                  "910",
-                                                 "VI = √3 −→P · −→u RL",
-                                                 "√3 −→P · −→u LF = VIII",
-                                                 "aVF",
+                                                 "V\u003csub\u003eI\u003c/sub\u003e = √3 −→P · −→u \u003csub\u003eRL\u003c/sub\u003e",
+                                                 "√3 −→P · −→u \u003csub\u003eLF\u003c/sub\u003e = V\u003csub\u003eIII\u003c/sub\u003e",
+                                                 "aV\u003csub\u003eF\u003c/sub\u003e",
                                                  "F",
                                                  "2",
                                                  "2",
                                                  "CF",
                                                  "CF",
-                                                 "VII = √3 −→P · −→u RF",
-                                                 "Dérivation",
-                                                 "aVL",
-                                                 "aVR",
-                                                 "aVF",
-                                                 "VI",
-                                                 "VII",
-                                                 "VIII",
-                                                 "Mesure (en mV )",
-                                                 "0,42",
-                                                 "x",
-                                                 "0,21",
-                                                 "0,70",
-                                                 "0,56",
-                                                 "-0,14"
+                                                 "V\u003csub\u003eII\u003c/sub\u003e = √3 −→P · −→u \u003csub\u003eRF\u003c/sub\u003e"
                                              ],
                               "options":  [
                                               {
@@ -19029,7 +18942,7 @@ window.ANNALES_2025_2026 = [
                                                  "×",
                                                  "×",
                                                  "On cherche à présent à encadrer la valeur de P.",
-                                                 "F · m− ."
+                                                 "F · m\u003csup\u003e−\u003c/sup\u003e ."
                                              ],
                               "options":  [
                                               {
@@ -19086,7 +18999,7 @@ window.ANNALES_2025_2026 = [
                                                  "2",
                                                  "I",
                                                  "I",
-                                                 "3L3",
+                                                 "\u003csub\u003e3\u003c/sub\u003eL3",
                                                  "14,6 C · m ≤ p ≤ 14,9 C · m",
                                                  "14,6 × 103 C · m ≤ p ≤ 14,9 × 103 C · m"
                                              ],
@@ -19130,7 +19043,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  11,
                               "type":  "QCM",
-                              "context":  "",
+                              "context":  "\u003cdiv class=\"annale-data-table-wrap\"\u003e\u003ctable class=\"annale-data-table\"\u003e\u003ctr\u003e\u003cth\u003eDérivation\u003c/th\u003e\u003cth\u003eaV \u003csup\u003e\u0027\u003c/sup\u003eR\u003c/th\u003e\u003cth\u003eV \u0027III\u003c/th\u003e\u003c/tr\u003e\u003ctr\u003e\u003cth\u003eMesure (en mV)\u003c/th\u003e\u003ctd\u003e0,21\u003c/td\u003e\u003ctd\u003e0,90\u003c/td\u003e\u003c/tr\u003e\u003c/table\u003e\u003c/div\u003e",
                               "images":  [
 
                                          ],
@@ -19138,19 +19051,11 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "Le vecteur moment dipolaire est la résultante des vecteurs unitaires de dérivations",
                                                  "Les mesures de potentiel se fondent sur une base triangulaire qui prend pour sommets le bras droit, le bras gauche et les pieds",
-                                                 "Quelle que soit la direction du dipôle, aVL est toujours positif",
+                                                 "Quelle que soit la direction du dipôle, aV\u003csub\u003eL\u003c/sub\u003e est toujours positif",
                                                  "Si l’on considère les dipôles de deux patients, tous deux de même direction mais de sens opposé, toutes leurs dérivations sont de signes opposés",
                                                  "Si l’on considère les dipôles de deux patients, tous deux de même direction mais de sens opposé, toutes leurs dérivations sont de même signe",
                                                  "M. Eclamptusse revient quelques mois plus tard pour réaliser de nouveau un ECG, car il se plaint de douleurs thoraciques.",
                                                  "On présente les nouvelles données suivantes :",
-                                                 "Dérivation",
-                                                 "aV \u0027",
-                                                 "R",
-                                                 "V \u0027",
-                                                 "III",
-                                                 "Mesure (en mV)",
-                                                 "0,21",
-                                                 "0,90",
                                                  "- aV \u0027 -",
                                                  "- aV \u0027 -",
                                                  "-",
@@ -19158,7 +19063,7 @@ window.ANNALES_2025_2026 = [
                                                  "-",
                                                  "-",
                                                  "- aVR -−→",
-                                                 "L’angle α\u0027 est celui formé entre le vecteur dipôle P\u0027 et le vecteur unitaire u−−R→L et orienté de u−−R→L",
+                                                 "L’angle α\u003csup\u003e\u0027\u003c/sup\u003e est celui formé entre le vecteur dipôle P\u003csup\u003e\u0027\u003c/sup\u003e et le vecteur unitaire u−−R→L et orienté de u−−R→L",
                                                  "vers P−→\u0027.",
                                                  "On propose alors d’étudier la direction du nouveau dipôle."
                                              ],
@@ -19177,7 +19082,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "Quelle que soit la direction du dipôle, aVL est toujours positif",
+                                                  "text":  "Quelle que soit la direction du dipôle, aV\u003csub\u003eL\u003c/sub\u003e est toujours positif",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
@@ -19208,10 +19113,10 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) :",
                               "rawOptions":  [
-                                                 "aVR = −0,64 mV",
-                                                 "aVR = 0,64 mV",
-                                                 "α\u0027 ≈ 75◦",
-                                                 "α\u0027 ≈ 16◦",
+                                                 "aV\u003csub\u003eR\u003c/sub\u003e = −0,64 mV",
+                                                 "aV\u003csub\u003eR\u003c/sub\u003e = 0,64 mV",
+                                                 "α\u003csup\u003e\u0027\u003c/sup\u003e ≈ 75◦",
+                                                 "α\u003csup\u003e\u0027\u003c/sup\u003e ≈ 16◦",
                                                  "Le dipôle est dans le secteur 8",
                                                  "L",
                                                  "L",
@@ -19221,25 +19126,25 @@ window.ANNALES_2025_2026 = [
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "aVR = −0,64 mV",
+                                                  "text":  "aV\u003csub\u003eR\u003c/sub\u003e = −0,64 mV",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "aVR = 0,64 mV",
+                                                  "text":  "aV\u003csub\u003eR\u003c/sub\u003e = 0,64 mV",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "α\u0027 ≈ 75◦",
+                                                  "text":  "α\u003csup\u003e\u0027\u003c/sup\u003e ≈ 75◦",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "α\u0027 ≈ 16◦",
+                                                  "text":  "α\u003csup\u003e\u0027\u003c/sup\u003e ≈ 16◦",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
@@ -19333,17 +19238,17 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "La membrane plasmique, qui sépare l’intérieur de la cellule de son environnement, joue un rôle fondamental dans le transport des ions. Sur le plan physique, on peut l’assimiler à un conden-sateur plan, notamment car cette dernière sépare deux milieux conducteurs par une fine couche isolante : la bicouche lipidique.",
                               "rawOptions":  [
-                                                 "On assimile dans cet exercice, une membrane plasmique à un condensateur plan de surface S = 300 µm2, d’épaisseur h = 5 nm séparant le compartiment intracellulaire du milieu ex-tracellulaire, et de permitivité ε = 2,21 × 10−5 µF · m−1.",
+                                                 "On assimile dans cet exercice, une membrane plasmique à un condensateur plan de surface S = 300 µm\u003csup\u003e2\u003c/sup\u003e, d’épaisseur h = 5 nm séparant le compartiment intracellulaire du milieu ex-tracellulaire, et de permitivité ε = 2,21 × 10−5 µF · m\u003csup\u003e−1\u003c/sup\u003e.",
                                                  "−",
                                                  "−",
                                                  "Plaque Extracellulaire",
                                                  "Plaque Intracellulaire",
-                                                 "Vext = +16 mV h = 5 nm Vint = −62 mV"
+                                                 "V\u003csub\u003eext\u003c/sub\u003e = +16 mV h = 5 nm V\u003csub\u003eint\u003c/sub\u003e = −62 mV"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "On assimile dans cet exercice, une membrane plasmique à un condensateur plan de surface S = 300 µm2, d’épaisseur h = 5 nm séparant le compartiment intracellulaire du milieu ex-tracellulaire, et de permitivité ε = 2,21 × 10−5 µF · m−1.",
+                                                  "text":  "On assimile dans cet exercice, une membrane plasmique à un condensateur plan de surface S = 300 µm\u003csup\u003e2\u003c/sup\u003e, d’épaisseur h = 5 nm séparant le compartiment intracellulaire du milieu ex-tracellulaire, et de permitivité ε = 2,21 × 10−5 µF · m\u003csup\u003e−1\u003c/sup\u003e.",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
@@ -19406,7 +19311,7 @@ window.ANNALES_2025_2026 = [
                                                  "Au repos, le champ électrique est dirigé de l’intérieur vers l’extérieur de la cellule",
                                                  "Les plaques intracellulaire et extracellulaire possèdent la même charge en valeur absolue",
                                                  "Le champ électrique total correspond à la moyenne du champ électrique de la plaque intra-cellulaire et du champ électrique de la plaque extracellulaire",
-                                                 "Un ion Na+ situé à l’extérieur de la membrane plasmique sera automatiquement attiré vers la plaque intracellulaire chargée négativement",
+                                                 "Un ion Na\u003csup\u003e+\u003c/sup\u003e situé à l’extérieur de la membrane plasmique sera automatiquement attiré vers la plaque intracellulaire chargée négativement",
                                                  "Le champ électrique décroît linéairement de la plaque positive à la plaque négative"
                                              ],
                               "options":  [
@@ -19430,7 +19335,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "Un ion Na+ situé à l’extérieur de la membrane plasmique sera automatiquement attiré vers la plaque intracellulaire chargée négativement",
+                                                  "text":  "Un ion Na\u003csup\u003e+\u003c/sup\u003e situé à l’extérieur de la membrane plasmique sera automatiquement attiré vers la plaque intracellulaire chargée négativement",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
@@ -19459,12 +19364,12 @@ window.ANNALES_2025_2026 = [
                                                  "C ≈ 1,326 × 10−6 F",
                                                  "2h",
                                                  "2h",
-                                                 "|σ| = 1,76 × 10−2 C · m−2",
-                                                 "|σ| = 3,45 × 10−4 C · m−2",
-                                                 "On considère désormais le cas d’un ion calcium Ca2+ qui traverse la membrane plasmique via l’ouverture soudaine d’un canal calcique afin de rentrer à l’intérieur de la cellule.",
+                                                 "|σ| = 1,76 × 10−2 C · m\u003csup\u003e−2\u003c/sup\u003e",
+                                                 "|σ| = 3,45 × 10−4 C · m\u003csup\u003e−2\u003c/sup\u003e",
+                                                 "On considère désormais le cas d’un ion calcium Ca\u003csup\u003e2+\u003c/sup\u003e qui traverse la membrane plasmique via l’ouverture soudaine d’un canal calcique afin de rentrer à l’intérieur de la cellule.",
                                                  "Ce processus est modélisé comme le déplacement d’une particule chargée libre soumise à un champ électrique uniforme au travers de la membrane. Dans ce modèle, on néglige les frottements et toutes les interactions avec l’environnement cellulaire.",
                                                  "On rappelle la valeur de la charge élémentaire e = 1,6 × 10−19 C, la masse d’un ion calcium",
-                                                 "mCa2+ = 6,64 × 10−26 kg et on donne g = 9,81 m · m−2.",
+                                                 "m\u003csub\u003eCa\u003c/sub\u003e2+ = 6,64 × 10−26 kg et on donne g = 9,81 m · m\u003csup\u003e−2\u003c/sup\u003e.",
                                                  "ε",
                                                  "ε"
                                              ],
@@ -19495,19 +19400,19 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "|σ| = 1,76 × 10−2 C · m−2",
+                                                  "text":  "|σ| = 1,76 × 10−2 C · m\u003csup\u003e−2\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "|σ| = 3,45 × 10−4 C · m−2",
+                                                  "text":  "|σ| = 3,45 × 10−4 C · m\u003csup\u003e−2\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "On considère désormais le cas d’un ion calcium Ca2+ qui traverse la membrane plasmique via l’ouverture soudaine d’un canal calcique afin de rentrer à l’intérieur de la cellule.",
+                                                  "text":  "On considère désormais le cas d’un ion calcium Ca\u003csup\u003e2+\u003c/sup\u003e qui traverse la membrane plasmique via l’ouverture soudaine d’un canal calcique afin de rentrer à l’intérieur de la cellule.",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               }
@@ -19529,10 +19434,10 @@ window.ANNALES_2025_2026 = [
                                                  "F−→",
                                                  "−→P",
                                                  "−→P",
-                                                 "L¨ors¨ du passage de Ca2+ dans le canal calcique, le travail du champ électrique est résistif",
-                                                 "∆Ep,Ca2+ = 0,156 eV",
-                                                 "∆Ep,Ca2+ = −0,156 eV",
-                                                 "∆Ep,Ca2+ = 2,5 × 1020 J"
+                                                 "L¨ors¨ du passage de Ca\u003csup\u003e2+\u003c/sup\u003e dans le canal calcique, le travail du champ électrique est résistif",
+                                                 "∆E\u003csub\u003ep,Ca\u003c/sub\u003e2+ = 0,156 eV",
+                                                 "∆E\u003csub\u003ep,Ca\u003c/sub\u003e2+ = −0,156 eV",
+                                                 "∆E\u003csub\u003ep,Ca\u003c/sub\u003e2+ = 2,5 × 1020 J"
                                              ],
                               "options":  [
                                               {
@@ -19555,13 +19460,13 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "L¨ors¨ du passage de Ca2+ dans le canal calcique, le travail du champ électrique est résistif",
+                                                  "text":  "L¨ors¨ du passage de Ca\u003csup\u003e2+\u003c/sup\u003e dans le canal calcique, le travail du champ électrique est résistif",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "∆Ep,Ca2+ = 0,156 eV",
+                                                  "text":  "∆E\u003csub\u003ep,Ca\u003c/sub\u003e2+ = 0,156 eV",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               }
@@ -19587,16 +19492,16 @@ window.ANNALES_2025_2026 = [
                               "question":  "ó",
                               "rawOptions":  [
                                                  "ó",
-                                                 "vf",
-                                                 "vf",
+                                                 "v\u003csub\u003ef\u003c/sub\u003e",
+                                                 "v\u003csub\u003ef\u003c/sub\u003e",
                                                  "=4 × e × |σ| × h",
                                                  "ó",
                                                  "ó",
                                                  "=4 × e × |∆V |",
                                                  "m",
-                                                 "vf = 6,13 × 102 m · s−1",
-                                                 "vf = 8,67 × 102 m · s−1",
-                                                 "vf = 4,38 × 10−3 m · s−1",
+                                                 "v\u003csub\u003ef\u003c/sub\u003e = 6,13 × 102 m · s\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "v\u003csub\u003ef\u003c/sub\u003e = 8,67 × 102 m · s\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "v\u003csub\u003ef\u003c/sub\u003e = 4,38 × 10−3 m · s\u003csup\u003e−1\u003c/sup\u003e",
                                                  "Cet examen blanc a été réalisé par :",
                                                  "Rédacteurs :",
                                                  "Arthur DU PELOUX (DFGSM2), Assia GUERRAOUI (L.AS 2 Sciences biomédicales), Ava SILVAGNI (DFGSM2), Lilou BIGNAMI-FAUREL (DFGSMa2)",
@@ -19633,13 +19538,13 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "vf",
+                                                  "text":  "v\u003csub\u003ef\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "vf",
+                                                  "text":  "v\u003csub\u003ef\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel de l\u0027A2SUP."
                                               },
@@ -19680,7 +19585,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 4 : Physique\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve",
+                              "context":  "Durée de l’épreuve : 1h30\nInformations sur l’épreuve",
                               "images":  [
                                              "annales_assets/2025_2026/physique/tuto_2/image1.png",
                                              "annales_assets/2025_2026/physique/tuto_2/image2.png"
@@ -19697,77 +19602,77 @@ window.ANNALES_2025_2026 = [
                                                  "C",
                                                  "H",
                                                  "h",
-                                                 "l0",
-                                                 "Son altitude vaut alors zA = h = 1 m. On considère",
+                                                 "l\u003csub\u003e0\u003c/sub\u003e",
+                                                 "Son altitude vaut alors z\u003csub\u003eA\u003c/sub\u003e = h = 1 m. On considère",
                                                  "que l’étudiant a une vitesse initiale nulle au point A.",
-                                                 "On assimile le trampoline à un ressort de longueur à0",
-                                                 "vide l0 = 80 cm et de constante de raideur k = 4000 N ·",
-                                                 "m−1. L’énergie potentielle élastique du ressort vaut Epe = 1 k∆l2 pour un allongement ∆l du ressort par rapport à sa longueur à vide. On néglige les frot2tements et tout autre phénomène",
+                                                 "On assimile le trampoline à un ressort de longueur à\u003csup\u003e0\u003c/sup\u003e",
+                                                 "vide l\u003csub\u003e0\u003c/sub\u003e = 80 cm et de constante de raideur k = 4000 N ·",
+                                                 "m\u003csup\u003e−1\u003c/sup\u003e. L’énergie potentielle élastique du ressort vaut E\u003csub\u003epe\u003c/sub\u003e = 1 k∆l\u003csup\u003e2\u003c/sup\u003e pour un allongement ∆l du ressort par rapport à sa longueur à vide. On néglige les frot2tements et tout autre phénomène",
                                                  "dissipatif durant l’étude de ce mouvement. On assimile l’étudiant à son centre de masse. On",
                                                  "considère que l’étudiant atteint le trampoline sur les fesses, son centre de masse étant alors au contact du trampoline. La scène est schématisée de la manière suivante :",
                                                  "Nous notons :",
-                                                 "A le point duquel la situation commence (point d’altitude zA)",
-                                                 "B le point au niveau duquel l’étudiant se trouve à la hauteur du trampoline, sans l’avoir encore touché (point d’altitude zB)",
+                                                 "A le point duquel la situation commence (point d’altitude z\u003csub\u003eA\u003c/sub\u003e)",
+                                                 "B le point au niveau duquel l’étudiant se trouve à la hauteur du trampoline, sans l’avoir encore touché (point d’altitude z\u003csub\u003eB\u003c/sub\u003e)",
                                                  "C le point au niveau duquel le trampoline est comprimé au maximum (point d’altitude",
-                                                 "zC = 0,37 m)",
-                                                 "D le point où la hauteur est maximale après un rebond (point d’altitude zD)",
+                                                 "z\u003csub\u003eC\u003c/sub\u003e = 0,37 m)",
+                                                 "D le point où la hauteur est maximale après un rebond (point d’altitude z\u003csub\u003eD\u003c/sub\u003e)",
                                                  "On admet qu’il y a une conservation de l’énergie mécanique entre A et C. Au moment du rebond sur le trampoline en C, l’étudiant introduit un apport d’énergie musculaire, dont la force associée est non conservative.",
-                                                 "On considère que notre étudiant atteint une hauteur H = 1,4 m après son rebond. On donne également l’accélération de la pesanteur g telle que g = 9,81 m · s−2."
+                                                 "On considère que notre étudiant atteint une hauteur H = 1,4 m après son rebond. On donne également l’accélération de la pesanteur g telle que g = 9,81 m · s\u003csup\u003e−2\u003c/sup\u003e."
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
                                                   "text":  "D",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - vB ≈ 1,98 m · s−1 vB ≈ 1,98 m · s−1"
+                                                  "explanation":  "FAUX - v\u003csub\u003eB\u003c/sub\u003e ≈ 1,98 m · s\u003csup\u003e−1\u003c/sup\u003e v\u003csub\u003eB\u003c/sub\u003e ≈ 1,98 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "B",
                                                   "text":  "A",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - vB ≈ 4,43 m · s−1"
+                                                  "explanation":  "VRAI - v\u003csub\u003eB\u003c/sub\u003e ≈ 4,43 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "B",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - vB ≈ 3,92 m · s−1"
+                                                  "explanation":  "VRAI - v\u003csub\u003eB\u003c/sub\u003e ≈ 3,92 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "C",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Lors du rebond en C, l’étudiant produit une énergie de ∆Em = −235,44 J"
+                                                  "explanation":  "FAUX - Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = −235,44 J"
                                               },
                                               {
                                                   "id":  "E",
                                                   "text":  "D",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Lors du rebond en C, l’étudiant produit une énergie de ∆Em = 235,44 J Lors du rebond en C, l’étudiant produit une énergie de ∆Em = 235,44 J"
+                                                  "explanation":  "VRAI - Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = 235,44 J Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = 235,44 J"
                                               },
                                               {
                                                   "id":  "A",
-                                                  "text":  "le point duquel la situation commence (point d’altitude zA)",
+                                                  "text":  "le point duquel la situation commence (point d’altitude z\u003csub\u003eA\u003c/sub\u003e)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - vB ≈ 1,98 m · s−1 vB ≈ 1,98 m · s−1"
+                                                  "explanation":  "FAUX - v\u003csub\u003eB\u003c/sub\u003e ≈ 1,98 m · s\u003csup\u003e−1\u003c/sup\u003e v\u003csub\u003eB\u003c/sub\u003e ≈ 1,98 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "le point au niveau duquel l’étudiant se trouve à la hauteur du trampoline, sans l’avoir encore touché (point d’altitude zB)",
+                                                  "text":  "le point au niveau duquel l’étudiant se trouve à la hauteur du trampoline, sans l’avoir encore touché (point d’altitude z\u003csub\u003eB\u003c/sub\u003e)",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - vB ≈ 4,43 m · s−1"
+                                                  "explanation":  "VRAI - v\u003csub\u003eB\u003c/sub\u003e ≈ 4,43 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "le point au niveau duquel le trampoline est comprimé au maximum (point d’altitude",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - vB ≈ 3,92 m · s−1"
+                                                  "explanation":  "VRAI - v\u003csub\u003eB\u003c/sub\u003e ≈ 3,92 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "le point où la hauteur est maximale après un rebond (point d’altitude zD)",
+                                                  "text":  "le point où la hauteur est maximale après un rebond (point d’altitude z\u003csub\u003eD\u003c/sub\u003e)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Lors du rebond en C, l’étudiant produit une énergie de ∆Em = −235,44 J"
+                                                  "explanation":  "FAUX - Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = −235,44 J"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -19784,49 +19689,49 @@ window.ANNALES_2025_2026 = [
                               "images":  [
 
                                          ],
-                              "question":  "Calculer la vitesse atteinte au point B (qu’on note vB) et l’énergie ∆Em produite suite au rebond. Laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
+                              "question":  "Calculer la vitesse atteinte au point B (qu’on note v\u003csub\u003eB\u003c/sub\u003e) et l’énergie ∆E\u003csub\u003em\u003c/sub\u003e produite suite au rebond. Laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "vB ≈ 1,98 m · s−1",
-                                                 "vB ≈ 4,43 m · s−1",
-                                                 "vB ≈ 3,92 m · s−1",
-                                                 "Lors du rebond en C, l’étudiant produit une énergie de ∆Em = −235,44 J",
-                                                 "Lors du rebond en C, l’étudiant produit une énergie de ∆Em = 235,44 J",
-                                                 "Malheureusement, à la suite de sa session de trampoline, notre étudiant se rattrape mal et fait une chute au sol. Il est alors pris de vertiges. Afin de lui venir en aide, ses amis présents à la fac décident de lui maintenir les jambes en l’air, créant une différence de hauteur entre ses pieds et son abdomen de ∆z = 50 cm. On considère la tension veineuse dans les jambes de l’étudiant Tjambe = 30 mmHg. On néglige la viscosité du sang. On rappelle que la masse volumique du sang vaut ρsang = 1,05 kg · L−1. La pression atmosphérique vaut 1 atm.",
+                                                 "v\u003csub\u003eB\u003c/sub\u003e ≈ 1,98 m · s\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "v\u003csub\u003eB\u003c/sub\u003e ≈ 4,43 m · s\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "v\u003csub\u003eB\u003c/sub\u003e ≈ 3,92 m · s\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = −235,44 J",
+                                                 "Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = 235,44 J",
+                                                 "Malheureusement, à la suite de sa session de trampoline, notre étudiant se rattrape mal et fait une chute au sol. Il est alors pris de vertiges. Afin de lui venir en aide, ses amis présents à la fac décident de lui maintenir les jambes en l’air, créant une différence de hauteur entre ses pieds et son abdomen de ∆z = 50 cm. On considère la tension veineuse dans les jambes de l’étudiant T\u003csub\u003ejambe\u003c/sub\u003e = 30 mmHg. On néglige la viscosité du sang. On rappelle que la masse volumique du sang vaut ρ\u003csub\u003esang\u003c/sub\u003e = 1,05 kg · L\u003csup\u003e−1\u003c/sup\u003e. La pression atmosphérique vaut 1 atm.",
                                                  "z",
                                                  "z",
-                                                 "→uz",
+                                                 "→u\u003csub\u003ez\u003c/sub\u003e",
                                                  "O"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "vB ≈ 1,98 m · s−1",
+                                                  "text":  "v\u003csub\u003eB\u003c/sub\u003e ≈ 1,98 m · s\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - vB ≈ 1,98 m · s−1 vB ≈ 1,98 m · s−1"
+                                                  "explanation":  "FAUX - v\u003csub\u003eB\u003c/sub\u003e ≈ 1,98 m · s\u003csup\u003e−1\u003c/sup\u003e v\u003csub\u003eB\u003c/sub\u003e ≈ 1,98 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "vB ≈ 4,43 m · s−1",
+                                                  "text":  "v\u003csub\u003eB\u003c/sub\u003e ≈ 4,43 m · s\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - vB ≈ 4,43 m · s−1"
+                                                  "explanation":  "VRAI - v\u003csub\u003eB\u003c/sub\u003e ≈ 4,43 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "vB ≈ 3,92 m · s−1",
+                                                  "text":  "v\u003csub\u003eB\u003c/sub\u003e ≈ 3,92 m · s\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - vB ≈ 3,92 m · s−1"
+                                                  "explanation":  "VRAI - v\u003csub\u003eB\u003c/sub\u003e ≈ 3,92 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "Lors du rebond en C, l’étudiant produit une énergie de ∆Em = −235,44 J",
+                                                  "text":  "Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = −235,44 J",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Lors du rebond en C, l’étudiant produit une énergie de ∆Em = −235,44 J"
+                                                  "explanation":  "FAUX - Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = −235,44 J"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Lors du rebond en C, l’étudiant produit une énergie de ∆Em = 235,44 J",
+                                                  "text":  "Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = 235,44 J",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Lors du rebond en C, l’étudiant produit une énergie de ∆Em = 235,44 J Lors du rebond en C, l’étudiant produit une énergie de ∆Em = 235,44 J"
+                                                  "explanation":  "VRAI - Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = 235,44 J Lors du rebond en C, l’étudiant produit une énergie de ∆E\u003csub\u003em\u003c/sub\u003e = 235,44 J"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -19843,51 +19748,51 @@ window.ANNALES_2025_2026 = [
                               "images":  [
 
                                          ],
-                              "question":  "A propos de la pression sanguine dans les jambes pjambe et de la pression sanguine dans l’abdomen (horizontal) pabdo, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
+                              "question":  "A propos de la pression sanguine dans les jambes p\u003csub\u003ejambe\u003c/sub\u003e et de la pression sanguine dans l’abdomen (horizontal) p\u003csub\u003eabdo\u003c/sub\u003e, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "pjambe = Tjambe − patm",
-                                                 "pjambe = 1,04 atm",
-                                                 "pabdo = 1,09 atm",
-                                                 "pabdo = 0,91 atm",
-                                                 "Tabdo = 69 mmHg (à ± 1 mmHg près)",
+                                                 "p\u003csub\u003ejambe\u003c/sub\u003e = 1,04 atm",
+                                                 "p\u003csub\u003eabdo\u003c/sub\u003e = 1,09 atm",
+                                                 "p\u003csub\u003eabdo\u003c/sub\u003e = 0,91 atm",
+                                                 "T\u003csub\u003eabdo\u003c/sub\u003e = 69 mmHg (à ± 1 mmHg près)",
                                                  "Notre étudiant se sent toujours mal malgré les efforts de ses camarades. Heureusement, un médecin de l’hôpital Cochin passant pas loin s’arrête et décide de ventiler l’étudiant avec un",
                                                  "3",
                                                  "3",
                                                  "3",
                                                  "3",
                                                  "Le ventilateur utilisé par le médecin est assimilé à une sphère de diamètre d = 10 cm dont le volume est entièrement occupé par le gaz.",
-                                                 "On rappelle la constante des gaz parfaits R = 8,31 J ·mol−1·K−1, les masses molaires respectives de l’oxygène et de l’azote MO = 16 g · mol−1 et MN = 14 g · mol−1. La masse volumique du gaz considéré est estimée à 1,21 kg · m−3. Afin de garantir de bons échanges avec les poumons, le gaz est maintenu à une température physiologique de T = 37◦C."
+                                                 "On rappelle la constante des gaz parfaits R = 8,31 J ·mol\u003csup\u003e−1\u003c/sup\u003e·K\u003csup\u003e−1\u003c/sup\u003e, les masses molaires respectives de l’oxygène et de l’azote M\u003csub\u003eO\u003c/sub\u003e = 16 g · mol\u003csup\u003e−1\u003c/sup\u003e et M\u003csub\u003eN\u003c/sub\u003e = 14 g · mol\u003csup\u003e−1\u003c/sup\u003e. La masse volumique du gaz considéré est estimée à 1,21 kg · m\u003csup\u003e−3\u003c/sup\u003e. Afin de garantir de bons échanges avec les poumons, le gaz est maintenu à une température physiologique de T = 37◦C."
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
                                                   "text":  "pjambe = Tjambe − patm",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - propos de la pression sanguine dans les jambes pjambe et de la pression sanguine dans l’abdomen (horizontal) pabdo, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ? pjambe = Tjambe − patm"
+                                                  "explanation":  "FAUX - propos de la pression sanguine dans les jambes p\u003csub\u003ejambe\u003c/sub\u003e et de la pression sanguine dans l’abdomen (horizontal) p\u003csub\u003eabdo\u003c/sub\u003e, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ? pjambe = Tjambe − patm"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "pjambe = 1,04 atm",
+                                                  "text":  "p\u003csub\u003ejambe\u003c/sub\u003e = 1,04 atm",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - pjambe = 1,04 atm pjambe = 1,04 atm"
+                                                  "explanation":  "FAUX - p\u003csub\u003ejambe\u003c/sub\u003e = 1,04 atm p\u003csub\u003ejambe\u003c/sub\u003e = 1,04 atm"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "pabdo = 1,09 atm",
+                                                  "text":  "p\u003csub\u003eabdo\u003c/sub\u003e = 1,09 atm",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - pabdo = 1,09 atm pabdo = 1,09 atm"
+                                                  "explanation":  "FAUX - p\u003csub\u003eabdo\u003c/sub\u003e = 1,09 atm p\u003csub\u003eabdo\u003c/sub\u003e = 1,09 atm"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "pabdo = 0,91 atm",
+                                                  "text":  "p\u003csub\u003eabdo\u003c/sub\u003e = 0,91 atm",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - p"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "Tabdo = 69 mmHg (à ± 1 mmHg près)",
+                                                  "text":  "T\u003csub\u003eabdo\u003c/sub\u003e = 69 mmHg (à ± 1 mmHg près)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Tabdo = 69 mmHg (à ± 1 mmHg près) Tabdo = 69 mmHg (à ± 1 mmHg près)"
+                                                  "explanation":  "FAUX - T\u003csub\u003eabdo\u003c/sub\u003e = 69 mmHg (à ± 1 mmHg près) T\u003csub\u003eabdo\u003c/sub\u003e = 69 mmHg (à ± 1 mmHg près)"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -19908,7 +19813,7 @@ window.ANNALES_2025_2026 = [
                                                  "Un gaz parfait possède des particules dont les collisions sont élastiques",
                                                  "L’énergie cinétique totale d’un gaz parfait ne dépend que de sa température",
                                                  "L’énergie cinétique totale d’un gaz parfait est égale à la somme des énergies cinétiques de ses particules",
-                                                 "En cas de fièvre, les particules d’O2 et de N2 se déplaceraient plus rapidement dans les poumons de l’étudiant"
+                                                 "En cas de fièvre, les particules d’O\u003csub\u003e2\u003c/sub\u003e et de N\u003csub\u003e2\u003c/sub\u003e se déplaceraient plus rapidement dans les poumons de l’étudiant"
                                              ],
                               "options":  [
                                               {
@@ -19937,9 +19842,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "En cas de fièvre, les particules d’O2 et de N2 se déplaceraient plus rapidement dans les poumons de l’étudiant",
+                                                  "text":  "En cas de fièvre, les particules d’O\u003csub\u003e2\u003c/sub\u003e et de N\u003csub\u003e2\u003c/sub\u003e se déplaceraient plus rapidement dans les poumons de l’étudiant",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - En cas de fièvre, les particules d’O2 et de N2 se déplaceraient plus rapidement dans les poumons de l’étudiant En cas de fièvre, les particules d’O2 et de N2 se déplaceraient plus rapidement dans les poumons de l’étudiant"
+                                                  "explanation":  "VRAI - En cas de fièvre, les particules d’O\u003csub\u003e2\u003c/sub\u003e et de N\u003csub\u003e2\u003c/sub\u003e se déplaceraient plus rapidement dans les poumons de l’étudiant En cas de fièvre, les particules d’O\u003csub\u003e2\u003c/sub\u003e et de N\u003csub\u003e2\u003c/sub\u003e se déplaceraient plus rapidement dans les poumons de l’étudiant"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -19956,52 +19861,52 @@ window.ANNALES_2025_2026 = [
                               "images":  [
 
                                          ],
-                              "question":  "Calculer les pressions partielles en O2 et N2 notées repsectivement pO2 et pN2 ainsi que la masse d’O2, mO2 , contenue dans le gaz du ventilateur. Laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
+                              "question":  "Calculer les pressions partielles en O\u003csub\u003e2\u003c/sub\u003e et N\u003csub\u003e2\u003c/sub\u003e notées repsectivement p\u003csub\u003eO\u003c/sub\u003e2 et p\u003csub\u003eN\u003c/sub\u003e2 ainsi que la masse d’O\u003csub\u003e2\u003c/sub\u003e, m\u003csub\u003eO\u003c/sub\u003e2 , contenue dans le gaz du ventilateur. Laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "pO2 ≈ 67700 Pa",
-                                                 "pO2 ≈ 900 mmHg",
-                                                 "pN2 ≈ 1525 mmHg",
-                                                 "pN2 ≈ 0,34 atm",
-                                                 "mO2 ≈ 0,74 g",
-                                                 "Le médecin se met donc à comprimer l’air dans le ventilateur afin de le faire rentrer dans les poumons de l’étudiant, réduisant donc le volume du ventilateur (sphérique) de moitié. On va considérer que le médecin applique une force homogène sur toute la surface du ventilateur de norme F = 34,7 N . On s’intéresse désormais à la force de pression exercée par le médecin pmain et au travail du gaz dans le ventilateur W (pgaz). On considère ici que la température et la quantité de matière de gaz ne varient pas."
+                                                 "p\u003csub\u003eO\u003c/sub\u003e2 ≈ 67700 Pa",
+                                                 "p\u003csub\u003eO\u003c/sub\u003e2 ≈ 900 mmHg",
+                                                 "p\u003csub\u003eN\u003c/sub\u003e2 ≈ 1525 mmHg",
+                                                 "p\u003csub\u003eN\u003c/sub\u003e2 ≈ 0,34 atm",
+                                                 "m\u003csub\u003eO\u003c/sub\u003e2 ≈ 0,74 g",
+                                                 "Le médecin se met donc à comprimer l’air dans le ventilateur afin de le faire rentrer dans les poumons de l’étudiant, réduisant donc le volume du ventilateur (sphérique) de moitié. On va considérer que le médecin applique une force homogène sur toute la surface du ventilateur de norme F = 34,7 N . On s’intéresse désormais à la force de pression exercée par le médecin p\u003csub\u003emain\u003c/sub\u003e et au travail du gaz dans le ventilateur W (p\u003csub\u003egaz\u003c/sub\u003e). On considère ici que la température et la quantité de matière de gaz ne varient pas."
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "pO2 ≈ 67700 Pa",
+                                                  "text":  "p\u003csub\u003eO\u003c/sub\u003e2 ≈ 67700 Pa",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - pO2 ≈ 67700 Pa pO2 ≈ 67700 Pa présent il faut déterminer une expression de pgaz qui ferait apparaître le volume. Qu’avez-vous dit ? L’équation des gaz parfaits ? Mais qu’ils sont bons ces fyzicien(ne)s ! C’est exactement la formule que nous allons utiliser :"
+                                                  "explanation":  "VRAI - p\u003csub\u003eO\u003c/sub\u003e2 ≈ 67700 Pa p\u003csub\u003eO\u003c/sub\u003e2 ≈ 67700 Pa présent il faut déterminer une expression de p\u003csub\u003egaz\u003c/sub\u003e qui ferait apparaître le volume. Qu’avez-vous dit ? L’équation des gaz parfaits ? Mais qu’ils sont bons ces fyzicien(ne)s ! C’est exactement la formule que nous allons utiliser :"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "pO2 ≈ 900 mmHg",
+                                                  "text":  "p\u003csub\u003eO\u003c/sub\u003e2 ≈ 900 mmHg",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "pN2 ≈ 1525 mmHg",
+                                                  "text":  "p\u003csub\u003eN\u003c/sub\u003e2 ≈ 1525 mmHg",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "pN2 ≈ 0,34 atm",
+                                                  "text":  "p\u003csub\u003eN\u003c/sub\u003e2 ≈ 0,34 atm",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - pN2 ≈ 0,34 atm pN2 ≈ 0,34 atm"
+                                                  "explanation":  "VRAI - p\u003csub\u003eN\u003c/sub\u003e2 ≈ 0,34 atm p\u003csub\u003eN\u003c/sub\u003e2 ≈ 0,34 atm"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "mO2 ≈ 0,74 g",
+                                                  "text":  "m\u003csub\u003eO\u003c/sub\u003e2 ≈ 0,74 g",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - mO2 ≈ 0,74 g → mO2 ≈ 0,74 g → mO2 ≈ 0,74 g"
+                                                  "explanation":  "FAUX - m\u003csub\u003eO\u003c/sub\u003e2 ≈ 0,74 g → mO2 ≈ 0,74 g → mO2 ≈ 0,74 g"
                                               }
                                           ],
                               "correctAnswers":  [
                                                      "A",
                                                      "D"
                                                  ],
-                              "generalNotes":  "les masses molaires étaient données en g · mol−1 or je vous rappelle que l’unité du système international pour la masse est le kg donc on pense à convertir (MO = 16 g · mol−1 = 16 × 10−3 kg · mol−1 et MN = 14 g · mol−1 = 14 × 10−3 kg · mol−1)."
+                              "generalNotes":  "les masses molaires étaient données en g · mol\u003csup\u003e−1\u003c/sup\u003e or je vous rappelle que l’unité du système international pour la masse est le kg donc on pense à convertir (M\u003csub\u003eO\u003c/sub\u003e = 16 g · mol\u003csup\u003e−1\u003c/sup\u003e = 16 × 10−3 kg · mol\u003csup\u003e−1\u003c/sup\u003e et M\u003csub\u003eN\u003c/sub\u003e = 14 g · mol\u003csup\u003e−1\u003c/sup\u003e = 14 × 10−3 kg · mol\u003csup\u003e−1\u003c/sup\u003e)."
                           },
                           {
                               "num":  5,
@@ -20010,42 +19915,42 @@ window.ANNALES_2025_2026 = [
                               "images":  [
 
                                          ],
-                              "question":  "Concernant la force de pression exercée par le médecin pmain et le travail du gaz dans le ventilateur W (pgaz), laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
+                              "question":  "Concernant la force de pression exercée par le médecin p\u003csub\u003emain\u003c/sub\u003e et le travail du gaz dans le ventilateur W (p\u003csub\u003egaz\u003c/sub\u003e), laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "pmain ≈ 1,1 × 103 atm",
-                                                 "pmain ≈ 1,1 × 10−2 Pa",
-                                                 "W (pgaz) ≈ 37 J",
-                                                 "W (pgaz) ≈ −37 J",
-                                                 "W (pgaz) ≈ 43 J"
+                                                 "p\u003csub\u003emain\u003c/sub\u003e ≈ 1,1 × 103 atm",
+                                                 "p\u003csub\u003emain\u003c/sub\u003e ≈ 1,1 × 10−2 Pa",
+                                                 "W (p\u003csub\u003egaz\u003c/sub\u003e) ≈ 37 J",
+                                                 "W (p\u003csub\u003egaz\u003c/sub\u003e) ≈ −37 J",
+                                                 "W (p\u003csub\u003egaz\u003c/sub\u003e) ≈ 43 J"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "pmain ≈ 1,1 × 103 atm",
+                                                  "text":  "p\u003csub\u003emain\u003c/sub\u003e ≈ 1,1 × 103 atm",
                                                   "isCorrect":  true,
                                                   "explanation":  "VRAI - p p"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "pmain ≈ 1,1 × 10−2 Pa",
+                                                  "text":  "p\u003csub\u003emain\u003c/sub\u003e ≈ 1,1 × 10−2 Pa",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "W (pgaz) ≈ 37 J",
+                                                  "text":  "W (p\u003csub\u003egaz\u003c/sub\u003e) ≈ 37 J",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - → Sur le schéma ci-dessus, les surfaces équipotentielles sont représentées → Sur le schéma ci-dessus, les surfaces équipotentielles sont représentées"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "W (pgaz) ≈ −37 J",
+                                                  "text":  "W (p\u003csub\u003egaz\u003c/sub\u003e) ≈ −37 J",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - W (pgaz) ≈ −37 J W (pgaz) ≈ −37 J"
+                                                  "explanation":  "FAUX - W (p\u003csub\u003egaz\u003c/sub\u003e) ≈ −37 J W (p\u003csub\u003egaz\u003c/sub\u003e) ≈ −37 J"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "W (pgaz) ≈ 43 J",
+                                                  "text":  "W (p\u003csub\u003egaz\u003c/sub\u003e) ≈ 43 J",
                                                   "isCorrect":  true,
                                                   "explanation":  "VRAI - Reponse conforme au cours officiel du tutorat."
                                               }
@@ -20072,19 +19977,19 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "A",
                                                   "text":  "(Proposition A)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - propos de la pression sanguine dans les jambes pjambe et de la pression sanguine dans l’abdomen (horizontal) pabdo, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ? pjambe = Tjambe − patm"
+                                                  "explanation":  "FAUX - propos de la pression sanguine dans les jambes p\u003csub\u003ejambe\u003c/sub\u003e et de la pression sanguine dans l’abdomen (horizontal) p\u003csub\u003eabdo\u003c/sub\u003e, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ? pjambe = Tjambe − patm"
                                               },
                                               {
                                                   "id":  "B",
                                                   "text":  "(Proposition B)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - pjambe = 1,04 atm pjambe = 1,04 atm"
+                                                  "explanation":  "FAUX - p\u003csub\u003ejambe\u003c/sub\u003e = 1,04 atm p\u003csub\u003ejambe\u003c/sub\u003e = 1,04 atm"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "(Proposition C)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - pabdo = 1,09 atm pabdo = 1,09 atm"
+                                                  "explanation":  "FAUX - p\u003csub\u003eabdo\u003c/sub\u003e = 1,09 atm p\u003csub\u003eabdo\u003c/sub\u003e = 1,09 atm"
                                               },
                                               {
                                                   "id":  "D",
@@ -20096,7 +20001,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "(Proposition E)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Tabdo = 69 mmHg (à ± 1 mmHg près) Tabdo = 69 mmHg (à ± 1 mmHg près)"
+                                                  "explanation":  "FAUX - T\u003csub\u003eabdo\u003c/sub\u003e = 69 mmHg (à ± 1 mmHg près) T\u003csub\u003eabdo\u003c/sub\u003e = 69 mmHg (à ± 1 mmHg près)"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -20174,17 +20079,17 @@ window.ANNALES_2025_2026 = [
                                                  "Schéma du dipôle (adapté du cours de Mme Grenier)",
                                                  "Données :",
                                                  "q = 1,6 × 10−19 C",
-                                                 "mP = mN = 1,5 × 10−26 kg",
-                                                 "Permittivité du vide : ϵ0 ≈ 8,85 × 10−12 SI",
+                                                 "m\u003csub\u003eP\u003c/sub\u003e = m\u003csub\u003eN\u003c/sub\u003e = 1,5 × 10−26 kg",
+                                                 "Permittivité du vide : ϵ\u003csub\u003e0\u003c/sub\u003e ≈ 8,85 × 10−12 SI",
                                                  "Constante gravitationnelle G ≈ 6,67 × 10−11 SI",
                                                  "Distance a =",
                                                  "−−→ ǁNP ǁ",
                                                  "= 100 pm",
-                                                 "Pesanteur terrestre g ≈ 9,81 m · s−2",
+                                                 "Pesanteur terrestre g ≈ 9,81 m · s\u003csup\u003e−2\u003c/sup\u003e",
                                                  "On appellera −→ le poids de la charge en N , −→ la force électrostatique exercée par P sur N et",
                                                  "−−→P",
                                                  "Fel",
-                                                 "FG,P la force gravitationnelle exercée par P sur N ."
+                                                 "F\u003csub\u003eG,P\u003c/sub\u003e la force gravitationnelle exercée par P sur N ."
                                              ],
                               "options":  [
                                               {
@@ -20240,29 +20145,29 @@ window.ANNALES_2025_2026 = [
                                                  "¨¨",
                                                  "−→",
                                                  "−→",
-                                                 "⨮ ¨FG,P ¨ ⨮ ¨ P ¨ donc les forces gravitationnelles sont négligeables",
-                                                 "⨮ ¨FG,P ¨ ⨮ ¨ P ¨ donc les forces gravitationnelles sont négligeables",
+                                                 "⨮ ¨F\u003csub\u003eG,P\u003c/sub\u003e ¨ ⨮ ¨ P ¨ donc les forces gravitationnelles sont négligeables",
+                                                 "⨮ ¨F\u003csub\u003eG,P\u003c/sub\u003e ¨ ⨮ ¨ P ¨ donc les forces gravitationnelles sont négligeables",
                                                  "¨¨",
                                                  "¨¨",
-                                                 "¨Fel",
-                                                 "¨Fel",
+                                                 "¨F\u003csub\u003eel\u003c/sub\u003e",
+                                                 "¨F\u003csub\u003eel\u003c/sub\u003e",
                                                  "−→",
                                                  "−→",
                                                  "−→",
                                                  "−→",
                                                  "¨¨",
                                                  "¨¨",
-                                                 "⨮ ¨ P ¨ ⨮ ¨FG,P ¨ donc les forces gravitationnelles sont négligeables",
-                                                 "⨮ ¨ P ¨ ⨮ ¨FG,P ¨ donc les forces gravitationnelles sont négligeables",
-                                                 "¨Fel",
-                                                 "¨Fel",
+                                                 "⨮ ¨ P ¨ ⨮ ¨F\u003csub\u003eG,P\u003c/sub\u003e ¨ donc les forces gravitationnelles sont négligeables",
+                                                 "⨮ ¨ P ¨ ⨮ ¨F\u003csub\u003eG,P\u003c/sub\u003e ¨ donc les forces gravitationnelles sont négligeables",
+                                                 "¨F\u003csub\u003eel\u003c/sub\u003e",
+                                                 "¨F\u003csub\u003eel\u003c/sub\u003e",
                                                  "−→",
                                                  "−→",
                                                  "−−→",
                                                  "−−→",
                                                  "−−→",
                                                  "−−→",
-                                                 "¨FG,P ¨ ≈ 1,5 × 10−42 N",
+                                                 "¨F\u003csub\u003eG,P\u003c/sub\u003e ¨ ≈ 1,5 × 10−42 N",
                                                  "On souhaite étudier le potentiel et le champ électrique généré par le dipôle au point L, situé à une distance r telle que r ⨮ a.",
                                                  "On note V (r) le potentiel associé et E(r) le champ électrique.",
                                                  "r",
@@ -20279,7 +20184,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "B",
                                                   "text":  "−→",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Fel ⨮P⨮ FG,Pdonc les forces gravitationnelles sont négligeables Fel ⨮P⨮ FG,Pdonc les forces gravitationnelles sont négligeables"
+                                                  "explanation":  "VRAI - F\u003csub\u003eel\u003c/sub\u003e ⨮P⨮ F\u003csub\u003eG,P\u003c/sub\u003edonc les forces gravitationnelles sont négligeables F\u003csub\u003eel\u003c/sub\u003e ⨮P⨮ F\u003csub\u003eG,P\u003c/sub\u003edonc les forces gravitationnelles sont négligeables"
                                               },
                                               {
                                                   "id":  "C",
@@ -20297,7 +20202,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "−→",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - FG,P≈ 1 FG,P≈ 1"
+                                                  "explanation":  "VRAI - F\u003csub\u003eG,P\u003c/sub\u003e≈ 1 F\u003csub\u003eG,P\u003c/sub\u003e≈ 1"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -20315,15 +20220,15 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :",
                               "rawOptions":  [
-                                                 "V (r) est proportionnel à r−2",
-                                                 "V (r) est proportionnel à r−1",
+                                                 "V (r) est proportionnel à r\u003csup\u003e−2\u003c/sup\u003e",
+                                                 "V (r) est proportionnel à r\u003csup\u003e−1\u003c/sup\u003e",
                                                  "Pour ∆r = +2%, ∆V = +4%",
                                                  "rV",
                                                  "Pour ∆r = +2%, ∆V = −4%",
                                                  "rV",
                                                  "Au point O, le dipôle a un champ électrique nul car le champ électrique des deux charges se compensent",
                                                  "Cependant, Jamy émet un doute sur l’hypothèse précédemment supposée : la distance r est-elle véritablement assez importante pour qu’on puisse réaliser l’approximation ? Etant très attentif aux détails, il se demande comment on pourrait exprimer le potentiel du dipôle de façon rigoureuse.",
-                                                 "On note V (r) l’expression approximative du potentiel autour d’un dipôle, et Ve l’expression",
+                                                 "On note V (r) l’expression approximative du potentiel autour d’un dipôle, et V\u003csub\u003ee\u003c/sub\u003e l’expression",
                                                  ".",
                                                  ".",
                                                  "−−→",
@@ -20332,15 +20237,15 @@ window.ANNALES_2025_2026 = [
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "V (r) est proportionnel à r−2",
+                                                  "text":  "V (r) est proportionnel à r\u003csup\u003e−2\u003c/sup\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - V (r) est proportionnel à r−2 V (r) est proportionnel à r−2"
+                                                  "explanation":  "VRAI - V (r) est proportionnel à r\u003csup\u003e−2\u003c/sup\u003e V (r) est proportionnel à r\u003csup\u003e−2\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "V (r) est proportionnel à r−1",
+                                                  "text":  "V (r) est proportionnel à r\u003csup\u003e−1\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - V (r) est proportionnel à r−1"
+                                                  "explanation":  "FAUX - V (r) est proportionnel à r\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "C",
@@ -20411,10 +20316,10 @@ window.ANNALES_2025_2026 = [
                                                  "ǁPLǁ × ǁNLǁ",
                                                  "−→ ",
                                                  "Soient 3 points H, I et J tels que :",
-                                                 "H est situé à une distance r1 du point O",
-                                                 "I est situé à une distance r2 = 2r1 du point O",
-                                                 "J est situé à une distance r3 = 4r2 du point O",
-                                                 "On note V (r1), V (r2) et V (r3) les potentiels associés respectivement aux points H, I et J."
+                                                 "H est situé à une distance r\u003csub\u003e1\u003c/sub\u003e du point O",
+                                                 "I est situé à une distance r\u003csub\u003e2\u003c/sub\u003e = 2r\u003csub\u003e1\u003c/sub\u003e du point O",
+                                                 "J est situé à une distance r\u003csub\u003e3\u003c/sub\u003e = 4r\u003csub\u003e2\u003c/sub\u003e du point O",
+                                                 "On note V (r\u003csub\u003e1\u003c/sub\u003e), V (r\u003csub\u003e2\u003c/sub\u003e) et V (r\u003csub\u003e3\u003c/sub\u003e) les potentiels associés respectivement aux points H, I et J."
                                              ],
                               "options":  [
                                               {
@@ -20427,7 +20332,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "B",
                                                   "text":  "",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Ve"
+                                                  "explanation":  "FAUX - V\u003csub\u003ee\u003c/sub\u003e"
                                               },
                                               {
                                                   "id":  "C",
@@ -20464,20 +20369,20 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "Pour tout r et θ = π rad, V (r) = V = 0 V",
                                                  "2e",
-                                                 "Pour tout r et θ = π rad, V (r) = Ve = 0 V",
-                                                 "V (r1) = 4",
-                                                 "V (r2)",
-                                                 "V (r1) = 8",
-                                                 "V (r3)",
+                                                 "Pour tout r et θ = π rad, V (r) = V\u003csub\u003ee\u003c/sub\u003e = 0 V",
+                                                 "V (r\u003csub\u003e1\u003c/sub\u003e) = 4",
+                                                 "V (r\u003csub\u003e2\u003c/sub\u003e)",
+                                                 "V (r\u003csub\u003e1\u003c/sub\u003e) = 8",
+                                                 "V (r\u003csub\u003e3\u003c/sub\u003e)",
                                                  "V (r1) = 16",
-                                                 "V (r3)",
-                                                 "E0",
-                                                 "E0",
+                                                 "V (r\u003csub\u003e3\u003c/sub\u003e)",
+                                                 "E\u003csub\u003e0\u003c/sub\u003e",
+                                                 "E\u003csub\u003e0\u003c/sub\u003e",
                                                  "uniforme englobant le dipôle. Il place le dipôle de telle sorte qu’il soit incliné d’un angle θ avec",
                                                  "−−→",
                                                  "−−→",
                                                  "−→p = qNP le moment dipolaire du dipôle",
-                                                 "ED l’énergie potentielle du dipôle dans cette situation.",
+                                                 "E\u003csub\u003eD\u003c/sub\u003e l’énergie potentielle du dipôle dans cette situation.",
                                                  "++++++",
                                                  "p→θ",
                                                  "p→θ",
@@ -20486,7 +20391,7 @@ window.ANNALES_2025_2026 = [
                                                  "On admet que l’énergie potentielle E",
                                                  "du dipôle peut s’exprimer ainsi : E=",
                                                  "−→ −→.",
-                                                 "DD− p · E0"
+                                                 "\u003csub\u003eDD\u003c/sub\u003e− p · E\u003csub\u003e0\u003c/sub\u003e"
                                              ],
                               "options":  [
                                               {
@@ -20503,19 +20408,19 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "Pour tout r et θ = π rad, V (r) = Ve = 0 V",
+                                                  "text":  "Pour tout r et θ = π rad, V (r) = V\u003csub\u003ee\u003c/sub\u003e = 0 V",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - V (r1) = 4 V (r1) = 4"
+                                                  "explanation":  "VRAI - V (r\u003csub\u003e1\u003c/sub\u003e) = 4 V (r\u003csub\u003e1\u003c/sub\u003e) = 4"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "V (r1) = 4",
+                                                  "text":  "V (r\u003csub\u003e1\u003c/sub\u003e) = 4",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - V (r1) = 8"
+                                                  "explanation":  "FAUX - V (r\u003csub\u003e1\u003c/sub\u003e) = 8"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "V (r2)",
+                                                  "text":  "V (r\u003csub\u003e2\u003c/sub\u003e)",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - V (r1) = 16"
                                               }
@@ -20594,23 +20499,23 @@ window.ANNALES_2025_2026 = [
                                                  "4",
                                                  "4",
                                                  "On dispose des données suivantes :",
-                                                 "l’accélération de la pesanteur g = 9,81 m · s−1",
-                                                 "la masse volumique de l’eau ρ = 1 g · cm−3",
+                                                 "l’accélération de la pesanteur g = 9,81 m · s\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "la masse volumique de l’eau ρ = 1 g · cm\u003csup\u003e−3\u003c/sup\u003e",
                                                  "la viscosité de l’eau η = 1,002 · 10−3 Pa · s",
-                                                 "le débit global de l’eau Q = 5 × 10−4 m3 · s−1",
+                                                 "le débit global de l’eau Q = 5 × 10−4 m\u003csup\u003e3\u003c/sup\u003e · s\u003csup\u003e−1\u003c/sup\u003e",
                                                  "+",
                                                  "E",
                                                  "G",
                                                  "+",
-                                                 "dh",
-                                                 "dh",
-                                                 "dv",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
+                                                 "d\u003csub\u003ev\u003c/sub\u003e",
                                                  "+",
                                                  "D",
                                                  "+",
                                                  "H",
-                                                 "dh",
-                                                 "dh",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
                                                  "+",
                                                  "A",
                                                  "P",
@@ -20622,28 +20527,28 @@ window.ANNALES_2025_2026 = [
                                                  "I",
                                                  "M",
                                                  "+",
-                                                 "dh",
-                                                 "dh",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
                                                  "K +",
-                                                 "dh F",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e F",
                                                  "+",
                                                  "L",
-                                                 "dh J",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e J",
                                                  "+",
                                                  "l",
                                                  "+",
                                                  "E",
                                                  "G",
                                                  "+",
-                                                 "dh",
-                                                 "dh",
-                                                 "dv",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
+                                                 "d\u003csub\u003ev\u003c/sub\u003e",
                                                  "+",
                                                  "D",
                                                  "+",
                                                  "H",
-                                                 "dh",
-                                                 "dh",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
                                                  "+",
                                                  "A",
                                                  "P",
@@ -20655,13 +20560,13 @@ window.ANNALES_2025_2026 = [
                                                  "I",
                                                  "M",
                                                  "+",
-                                                 "dh",
-                                                 "dh",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e",
                                                  "K +",
-                                                 "dh F",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e F",
                                                  "+",
                                                  "L",
-                                                 "dh J",
+                                                 "d\u003csub\u003eh\u003c/sub\u003e J",
                                                  "+",
                                                  "l",
                                                  "H",
@@ -20699,7 +20604,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "On dispose des données suivantes :",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - En cas de fièvre, les particules d’O2 et de N2 se déplaceraient plus rapidement dans les poumons de l’étudiant En cas de fièvre, les particules d’O2 et de N2 se déplaceraient plus rapidement dans les poumons de l’étudiant"
+                                                  "explanation":  "VRAI - En cas de fièvre, les particules d’O\u003csub\u003e2\u003c/sub\u003e et de N\u003csub\u003e2\u003c/sub\u003e se déplaceraient plus rapidement dans les poumons de l’étudiant En cas de fièvre, les particules d’O\u003csub\u003e2\u003c/sub\u003e et de N\u003csub\u003e2\u003c/sub\u003e se déplaceraient plus rapidement dans les poumons de l’étudiant"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -20720,7 +20625,7 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "Le débit en B est égal au débit en C",
                                                  "Le débit en C est égal au débit en I",
-                                                 "Le débit en J vaut QJ = 4QB",
+                                                 "Le débit en J vaut Q\u003csub\u003eJ\u003c/sub\u003e = 4Q\u003csub\u003eB\u003c/sub\u003e",
                                                  "On ne peut appliquer le théorème de Bernoulli que le long d’une ligne de courant",
                                                  "Le théorème de Bernoulli ne s’applique pas lorsque le fluide n’est pas en mouvement",
                                                  "La localisation de l’obstruction a pu être identifiée. L’obstacle bouchonne au niveau du tuyau",
@@ -20743,9 +20648,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "Le débit en J vaut QJ = 4QB",
+                                                  "text":  "Le débit en J vaut Q\u003csub\u003eJ\u003c/sub\u003e = 4Q\u003csub\u003eB\u003c/sub\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Le débit en J vaut QJ = 4QB → Le débit en J vaut QJ = 4QB → Le débit en J vaut QJ = 4QB"
+                                                  "explanation":  "FAUX - Le débit en J vaut Q\u003csub\u003eJ\u003c/sub\u003e = 4Q\u003csub\u003eB\u003c/sub\u003e → Le débit en J vaut QJ = 4QB → Le débit en J vaut QJ = 4QB"
                                               },
                                               {
                                                   "id":  "D",
@@ -20780,16 +20685,16 @@ window.ANNALES_2025_2026 = [
                                                  "v= 4Q",
                                                  "h",
                                                  "h",
-                                                 "vE =Q 2",
-                                                 "πdh",
-                                                 "vK ≈ 4,4 × 10−2 m · s−1"
+                                                 "v\u003csub\u003eE\u003c/sub\u003e =Q 2",
+                                                 "πd\u003csub\u003eh\u003c/sub\u003e",
+                                                 "v\u003csub\u003eK\u003c/sub\u003e ≈ 4,4 × 10−2 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
                                                   "text":  "La vitesse au point O de l’obstacle est nulle",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - pC = pB − 16 ρvB"
+                                                  "explanation":  "VRAI - p\u003csub\u003eC\u003c/sub\u003e = p\u003csub\u003eB\u003c/sub\u003e − 16 ρvB"
                                               },
                                               {
                                                   "id":  "B",
@@ -20801,19 +20706,19 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "v= 4Q",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - v pE = pB − ρgH"
+                                                  "explanation":  "FAUX - v p\u003csub\u003eE\u003c/sub\u003e = p\u003csub\u003eB\u003c/sub\u003e − ρgH"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "h",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - v= v= p= p − ρgH − 15 ρv2"
+                                                  "explanation":  "VRAI - v= v= p= p − ρgH − 15 ρv\u003csup\u003e2\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "E",
                                                   "text":  "h",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - vK ≈ 4,4 × 10−2 m · s−1 vK ≈ 4,4 × 10−2 m · s−1 → vK ≈ 4,4 × 10−2 m · s−1 → vK ≈ 4,4 × 10−2 m · s−1"
+                                                  "explanation":  "VRAI - v\u003csub\u003eK\u003c/sub\u003e ≈ 4,4 × 10−2 m · s\u003csup\u003e−1\u003c/sup\u003e v\u003csub\u003eK\u003c/sub\u003e ≈ 4,4 × 10−2 m · s\u003csup\u003e−1\u003c/sup\u003e → vK ≈ 4,4 × 10\u003csup\u003e−2\u003c/sup\u003e m · s\u003csup\u003e−1\u003c/sup\u003e → vK ≈ 4,4 × 10\u003csup\u003e−2\u003c/sup\u003e m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -20833,22 +20738,22 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Concernant les pressions aux points B, C et E, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                               "rawOptions":  [
-                                                 "pC = pB − 15 ρv2",
+                                                 "p\u003csub\u003eC\u003c/sub\u003e = p\u003csub\u003eB\u003c/sub\u003e − \u003csup\u003e15\u003c/sup\u003e ρv\u003csup\u003e2\u003c/sup\u003e",
                                                  "16B",
-                                                 "pC = pB + 15 ρv2",
+                                                 "p\u003csub\u003eC\u003c/sub\u003e = p\u003csub\u003eB\u003c/sub\u003e + 15 ρv\u003csup\u003e2\u003c/sup\u003e",
                                                  "32B",
-                                                 "pE = pB − ρgH",
-                                                 "pE = pB − ρgH − 15 ρv2",
+                                                 "p\u003csub\u003eE\u003c/sub\u003e = p\u003csub\u003eB\u003c/sub\u003e − ρgH",
+                                                 "p\u003csub\u003eE\u003c/sub\u003e = p\u003csub\u003eB\u003c/sub\u003e − ρgH − \u003csup\u003e15\u003c/sup\u003e ρv\u003csup\u003e2\u003c/sup\u003e",
                                                  "16B",
-                                                 "pE = pB − ρgH + 15 ρv2",
+                                                 "p\u003csub\u003eE\u003c/sub\u003e = p\u003csub\u003eB\u003c/sub\u003e − ρgH + 15 ρv\u003csup\u003e2\u003c/sup\u003e",
                                                  "32B",
                                                  "On considère à présent l’eau comme un fluide visqueux. On considère également qu’il n’y a plus d’obstacle en C. La pompe P est désormais activée en amont du point B.",
-                                                 "On note Rtot la résistance totale du circuit entre B et M . On note également ROlga et Rvoisin les résistances des tuyaux horizontaux (montés en série) chez Olga et chez le voisin. Toutes les autres résistances (notamment verticales) sont considérées comme négligeables."
+                                                 "On note R\u003csub\u003etot\u003c/sub\u003e la résistance totale du circuit entre B et M . On note également R\u003csub\u003eOlga\u003c/sub\u003e et R\u003csub\u003evoisin\u003c/sub\u003e les résistances des tuyaux horizontaux (montés en série) chez Olga et chez le voisin. Toutes les autres résistances (notamment verticales) sont considérées comme négligeables."
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "pC = pB − 15 ρv2",
+                                                  "text":  "p\u003csub\u003eC\u003c/sub\u003e = p\u003csub\u003eB\u003c/sub\u003e − \u003csup\u003e15\u003c/sup\u003e ρv\u003csup\u003e2\u003c/sup\u003e",
                                                   "isCorrect":  true,
                                                   "explanation":  "VRAI - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -20860,7 +20765,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "pC = pB + 15 ρv2",
+                                                  "text":  "p\u003csub\u003eC\u003c/sub\u003e = p\u003csub\u003eB\u003c/sub\u003e + 15 ρv\u003csup\u003e2\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - → Il y a plus de perte de pression dans les tuyaux horizontaux du voisin que chez Olga → Il y a plus de perte de pression dans les tuyaux horizontaux du voisin que chez Olga"
                                               },
@@ -20872,7 +20777,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "pE = pB − ρgH",
+                                                  "text":  "p\u003csub\u003eE\u003c/sub\u003e = p\u003csub\u003eB\u003c/sub\u003e − ρgH",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - p= p− ρgH +ρv p= p− ρgH +ρv"
                                               }
@@ -20892,19 +20797,19 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Concernant les résistances des circuits, laquelle (lesquelles) des propositions sui-vantes est (sont) exacte(s) :",
                               "rawOptions":  [
-                                                 "Dans un circuit en série, on a Rtot = Σ Ri",
+                                                 "Dans un circuit en série, on a R\u003csub\u003etot\u003c/sub\u003e = Σ R\u003csub\u003ei\u003c/sub\u003e",
                                                  "Dans un circuit en dérivation, on a 1 = 1",
                                                  "RtotΣ Ri",
                                                  "Il y a plus de perte de pression dans les tuyaux horizontaux du voisin que chez Olga",
                                                  "ROlga = 4",
                                                  "Rvoisin3",
-                                                 "ROlga = 9",
+                                                 "R\u003csub\u003eOlga\u003c/sub\u003e = 9",
                                                  "Rvoisin16"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "Dans un circuit en série, on a Rtot = Σ Ri",
+                                                  "text":  "Dans un circuit en série, on a R\u003csub\u003etot\u003c/sub\u003e = Σ R\u003csub\u003ei\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - → Dans un circuit en série, on a R → Dans un circuit en série, on a R"
                                               },
@@ -20930,7 +20835,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "ROlga = 4",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - ∆p = RtotQ ∆p = RtotQ"
+                                                  "explanation":  "FAUX - ∆p = R\u003csub\u003etot\u003c/sub\u003eQ ∆p = R\u003csub\u003etot\u003c/sub\u003eQ"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -20945,7 +20850,7 @@ window.ANNALES_2025_2026 = [
                               "images":  [
 
                                          ],
-                              "question":  "Concernant la résistance totale Rtot et la perte de charge ∆p totale du circuit entre B et M, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
+                              "question":  "Concernant la résistance totale R\u003csub\u003etot\u003c/sub\u003e et la perte de charge ∆p totale du circuit entre B et M, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                               "rawOptions":  [
                                                  "1",
                                                  "2",
@@ -20959,8 +20864,8 @@ window.ANNALES_2025_2026 = [
                                                  "= 7 R",
                                                  "Olga",
                                                  "tot4Olga",
-                                                 "∆p = (ROlga + Rvoisin)Q",
-                                                 "∆p = RtotQ"
+                                                 "∆p = (R\u003csub\u003eOlga\u003c/sub\u003e + R\u003csub\u003evoisin\u003c/sub\u003e)Q",
+                                                 "∆p = R\u003csub\u003etot\u003c/sub\u003eQ"
                                              ],
                               "options":  [
                                               {
@@ -21014,15 +20919,15 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "On note ∆p la perte de charge et ∆π la surpression de la pompe, toutes deux s’appliquant entre A et K. A propos du théorème de Bernoulli modifié, laquelle des propositions suivantes est exacte :",
                               "rawOptions":  [
-                                                 "pA + ρgzA + 1 ρv2 = pK + ρgzK + 1 ρv2",
+                                                 "p\u003csub\u003eA\u003c/sub\u003e + ρgz\u003csub\u003eA\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e = p\u003csub\u003eK\u003c/sub\u003e + ρgz\u003csub\u003eK\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e",
                                                  "2A2K",
-                                                 "∆π + pA + ρgzA + 1 ρv2 + ∆p = pK + ρgzK + 1 ρv2",
+                                                 "∆π + p\u003csub\u003eA\u003c/sub\u003e + ρgz\u003csub\u003eA\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e + ∆p = p\u003csub\u003eK\u003c/sub\u003e + ρgz\u003csub\u003eK\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e",
                                                  "2A2K",
-                                                 "∆p + pA + ρgzA + 1 ρv2 = pK + ρgzK + 1 ρv2 + ∆π",
+                                                 "∆p + p\u003csub\u003eA\u003c/sub\u003e + ρgz\u003csub\u003eA\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e = p\u003csub\u003eK\u003c/sub\u003e + ρgz\u003csub\u003eK\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e + ∆π",
                                                  "2A2K",
-                                                 "∆π + pA + ρgzA + 1 ρv2 = ∆p + pK + ρgzK + 1 ρv2",
+                                                 "∆π + p\u003csub\u003eA\u003c/sub\u003e + ρgz\u003csub\u003eA\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e = ∆p + p\u003csub\u003eK\u003c/sub\u003e + ρgz\u003csub\u003eK\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e",
                                                  "2A2K",
-                                                 "pA + ρgzA + 1 ρv2 = ∆π + ∆p + pK + ρgzK + 1 ρv2",
+                                                 "p\u003csub\u003eA\u003c/sub\u003e + ρgz\u003csub\u003eA\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e = ∆π + ∆p + p\u003csub\u003eK\u003c/sub\u003e + ρgz\u003csub\u003eK\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e",
                                                  "2A2K",
                                                  "Cet examen blanc a été réalisé par :",
                                                  "Rédacteurs :",
@@ -21057,7 +20962,7 @@ window.ANNALES_2025_2026 = [
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "pA + ρgzA + 1 ρv2 = pK + ρgzK + 1 ρv2",
+                                                  "text":  "p\u003csub\u003eA\u003c/sub\u003e + ρgz\u003csub\u003eA\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e = p\u003csub\u003eK\u003c/sub\u003e + ρgz\u003csub\u003eK\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - présent, on peut remplacer cette expression dans notre formule."
                                               },
@@ -21069,7 +20974,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "∆π + pA + ρgzA + 1 ρv2 + ∆p = pK + ρgzK + 1 ρv2",
+                                                  "text":  "∆π + p\u003csub\u003eA\u003c/sub\u003e + ρgz\u003csub\u003eA\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e + ∆p = p\u003csub\u003eK\u003c/sub\u003e + ρgz\u003csub\u003eK\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -21081,9 +20986,9 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "∆p + pA + ρgzA + 1 ρv2 = pK + ρgzK + 1 ρv2 + ∆π",
+                                                  "text":  "∆p + p\u003csub\u003eA\u003c/sub\u003e + ρgz\u003csub\u003eA\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e = p\u003csub\u003eK\u003c/sub\u003e + ρgz\u003csub\u003eK\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e + ∆π",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - pA + ρgzA + 1 ρv2 = ∆π + ∆p + pK + ρgzK + 1 ρv2"
+                                                  "explanation":  "VRAI - p\u003csub\u003eA\u003c/sub\u003e + ρgz\u003csub\u003eA\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e = ∆π + ∆p + p\u003csub\u003eK\u003c/sub\u003e + ρgz\u003csub\u003eK\u003c/sub\u003e + 1 ρv\u003csup\u003e2\u003c/sup\u003e"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -21111,7 +21016,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 4 : Physique\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve",
+                              "context":  "Durée de l’épreuve : 1h30\nInformations sur l’épreuve",
                               "images":  [
                                              "annales_assets/2025_2026/physique/tuto_3/image1.png",
                                              "annales_assets/2025_2026/physique/tuto_3/image2.png",
@@ -21123,7 +21028,7 @@ window.ANNALES_2025_2026 = [
                                                  "avant que le plâtre ne soit enlevé. La sonde utilisée émetp",
                                                  "+",
                                                  "+",
-                                                 "P0 = 0,381 mW . Sa surface est un disque de rayon",
+                                                 "P\u003csub\u003e0\u003c/sub\u003e = 0,381 mW . Sa surface est un disque de rayon",
                                                  "t",
                                                  "t",
                                                  "On considère ici que l’onde est totalement transmise àB",
@@ -21132,14 +21037,14 @@ window.ANNALES_2025_2026 = [
                                                  "plâtre",
                                                  "tissus",
                                                  "os",
-                                                 "d’épaisseur dp",
+                                                 "d’épaisseur d\u003csub\u003ep\u003c/sub\u003e",
                                                  "= 1 cm, puis un ensemble de tissus mouso",
                                                  "C",
-                                                 "d’impédance constante, incluant la peau et les muscles, d’épaisseur dt = 4,2 cm, avant d’atteindre l’os d’épais-seur do.",
+                                                 "d’impédance constante, incluant la peau et les muscles, d’épaisseur d\u003csub\u003et\u003c/sub\u003e = 4,2 cm, avant d’atteindre l’os d’épais-seur d\u003csub\u003eo\u003c/sub\u003e.",
                                                  "Les points A, B et C correspondent respectivement aux interfaces de contact plâtre-tissus, tissus-os et os-tissus",
                                                  "+",
                                                  "tissus",
-                                                 "de l’autre côté de l’os. Rpt = 0,16 et Rto = 0,57 sont les coefficients de réflexion des interfaces plâtre-tissus et tissus-os respectivement, et Tpt et Tto les coefficients de transmission correspon-dants. On nomme I0 l’intensité initiale émise par la sonde. On appelle IX et LX respectivement l’intensité et le niveau sonore de l’écho reçu par la sonde après réflexion à chaque point X. On donne Iref = 10−12 W · m−2.",
+                                                 "de l’autre côté de l’os. R\u003csub\u003ept\u003c/sub\u003e = 0,16 et R\u003csub\u003eto\u003c/sub\u003e = 0,57 sont les coefficients de réflexion des interfaces plâtre-tissus et tissus-os respectivement, et T\u003csub\u003ept\u003c/sub\u003e et T\u003csub\u003eto\u003c/sub\u003e les coefficients de transmission correspon-dants. On nomme I\u003csub\u003e0\u003c/sub\u003e l’intensité initiale émise par la sonde. On appelle I\u003csub\u003eX\u003c/sub\u003e et L\u003csub\u003eX\u003c/sub\u003e respectivement l’intensité et le niveau sonore de l’écho reçu par la sonde après réflexion à chaque point X. On donne I\u003csub\u003eref\u003c/sub\u003e = 10−12 W · m\u003csup\u003e−2\u003c/sup\u003e.",
                                                  "On ignore l’absorption par les différents milieux pour les 5 premières questions. On rappelle que : R + T = 1."
                                              ],
                               "options":  [
@@ -21147,31 +21052,31 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "A",
                                                   "text":  "tra de déterminer si l’os a pu se régénérer proprementd",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → I0 = 1,5 W · m−2 → I0 = 1,5 W · m−2 LA = 121,8 dB"
+                                                  "explanation":  "FAUX - → I0 = 1,5 W · m\u003csup\u003e−2\u003c/sup\u003e → I0 = 1,5 W · m\u003csup\u003e−2\u003c/sup\u003e L\u003csub\u003eA\u003c/sub\u003e = 121,8 dB"
                                               },
                                               {
                                                   "id":  "B",
                                                   "text":  "avant que le plâtre ne soit enlevé. La sonde utilisée émetp",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → IA = Rpt × I0 → IA = Rpt × I0 La période T de l’onde reste constante La période T de l’onde reste constante LA = 113,8 dB LA = 113,8 dB"
+                                                  "explanation":  "VRAI - → IA = Rpt × I0 → IA = Rpt × I0 La période T de l’onde reste constante La période T de l’onde reste constante L\u003csub\u003eA\u003c/sub\u003e = 113,8 dB L\u003csub\u003eA\u003c/sub\u003e = 113,8 dB"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "+",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La puissance de l’onde transmise diminue à chaque changement de milieu → La puissance de l’onde transmise diminue à chaque changement de milieu LB − L0 ≈ −4,0 dB LB − L0 ≈ −4,0 dB"
+                                                  "explanation":  "FAUX - → La puissance de l’onde transmise diminue à chaque changement de milieu → La puissance de l’onde transmise diminue à chaque changement de milieu L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003e0\u003c/sub\u003e ≈ −4,0 dB L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003e0\u003c/sub\u003e ≈ −4,0 dB"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "+",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Si on double l’épaisseur des tissus mous, IB est réduite de plus d’un tiers IB = I0 × Tpt2 × Rto IB = I0 × Tpt2 × Rto"
+                                                  "explanation":  "VRAI - Si on double l’épaisseur des tissus mous, I\u003csub\u003eB\u003c/sub\u003e est réduite de plus d’un tiers I\u003csub\u003eB\u003c/sub\u003e = I\u003csub\u003e0\u003c/sub\u003e × T\u003csub\u003ept\u003c/sub\u003e\u003csup\u003e2\u003c/sup\u003e × R\u003csub\u003eto\u003c/sub\u003e I\u003csub\u003eB\u003c/sub\u003e = I\u003csub\u003e0\u003c/sub\u003e × T\u003csub\u003ept\u003c/sub\u003e\u003csup\u003e2\u003c/sup\u003e × R\u003csub\u003eto\u003c/sub\u003e"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "P0 = 0,381 mW . Sa surface est un disque de rayon",
+                                                  "text":  "P\u003csub\u003e0\u003c/sub\u003e = 0,381 mW . Sa surface est un disque de rayon",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - L’intensité sonore diminue proportionnellement à la distance parcourue par l’onde IA \u003e IB → IA \u003e IB → IA \u003e IB"
+                                                  "explanation":  "FAUX - L’intensité sonore diminue proportionnellement à la distance parcourue par l’onde I\u003csub\u003eA\u003c/sub\u003e \u003e I\u003csub\u003eB\u003c/sub\u003e → IA \u003e IB → IA \u003e IB"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -21189,42 +21094,42 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "I0 = 1,5 W · m−2",
-                                                 "IA = Rpt × I0",
+                                                 "I\u003csub\u003e0\u003c/sub\u003e = 1,5 W · m\u003csup\u003e−2\u003c/sup\u003e",
+                                                 "I\u003csub\u003eA\u003c/sub\u003e = R\u003csub\u003ept\u003c/sub\u003e × I\u003csub\u003e0\u003c/sub\u003e",
                                                  "La puissance de l’onde transmise diminue à chaque changement de milieu",
-                                                 "Si on double l’épaisseur des tissus mous, IB est réduite de plus d’un tiers",
+                                                 "Si on double l’épaisseur des tissus mous, I\u003csub\u003eB\u003c/sub\u003e est réduite de plus d’un tiers",
                                                  "L’intensité sonore diminue proportionnellement à la distance parcourue par l’onde"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "I0 = 1,5 W · m−2",
+                                                  "text":  "I\u003csub\u003e0\u003c/sub\u003e = 1,5 W · m\u003csup\u003e−2\u003c/sup\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → I0 = 1,5 W · m−2 → I0 = 1,5 W · m−2 LA = 121,8 dB"
+                                                  "explanation":  "FAUX - → I0 = 1,5 W · m\u003csup\u003e−2\u003c/sup\u003e → I0 = 1,5 W · m\u003csup\u003e−2\u003c/sup\u003e L\u003csub\u003eA\u003c/sub\u003e = 121,8 dB"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "IA = Rpt × I0",
+                                                  "text":  "I\u003csub\u003eA\u003c/sub\u003e = R\u003csub\u003ept\u003c/sub\u003e × I\u003csub\u003e0\u003c/sub\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - → IA = Rpt × I0 → IA = Rpt × I0 La période T de l’onde reste constante La période T de l’onde reste constante LA = 113,8 dB LA = 113,8 dB"
+                                                  "explanation":  "VRAI - → IA = Rpt × I0 → IA = Rpt × I0 La période T de l’onde reste constante La période T de l’onde reste constante L\u003csub\u003eA\u003c/sub\u003e = 113,8 dB L\u003csub\u003eA\u003c/sub\u003e = 113,8 dB"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "La puissance de l’onde transmise diminue à chaque changement de milieu",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - → La puissance de l’onde transmise diminue à chaque changement de milieu → La puissance de l’onde transmise diminue à chaque changement de milieu LB − L0 ≈ −4,0 dB LB − L0 ≈ −4,0 dB"
+                                                  "explanation":  "FAUX - → La puissance de l’onde transmise diminue à chaque changement de milieu → La puissance de l’onde transmise diminue à chaque changement de milieu L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003e0\u003c/sub\u003e ≈ −4,0 dB L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003e0\u003c/sub\u003e ≈ −4,0 dB"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "Si on double l’épaisseur des tissus mous, IB est réduite de plus d’un tiers",
+                                                  "text":  "Si on double l’épaisseur des tissus mous, I\u003csub\u003eB\u003c/sub\u003e est réduite de plus d’un tiers",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Si on double l’épaisseur des tissus mous, IB est réduite de plus d’un tiers IB = I0 × Tpt2 × Rto IB = I0 × Tpt2 × Rto"
+                                                  "explanation":  "VRAI - Si on double l’épaisseur des tissus mous, I\u003csub\u003eB\u003c/sub\u003e est réduite de plus d’un tiers I\u003csub\u003eB\u003c/sub\u003e = I\u003csub\u003e0\u003c/sub\u003e × T\u003csub\u003ept\u003c/sub\u003e\u003csup\u003e2\u003c/sup\u003e × R\u003csub\u003eto\u003c/sub\u003e I\u003csub\u003eB\u003c/sub\u003e = I\u003csub\u003e0\u003c/sub\u003e × T\u003csub\u003ept\u003c/sub\u003e\u003csup\u003e2\u003c/sup\u003e × R\u003csub\u003eto\u003c/sub\u003e"
                                               },
                                               {
                                                   "id":  "E",
                                                   "text":  "L’intensité sonore diminue proportionnellement à la distance parcourue par l’onde",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - L’intensité sonore diminue proportionnellement à la distance parcourue par l’onde IA \u003e IB → IA \u003e IB → IA \u003e IB"
+                                                  "explanation":  "FAUX - L’intensité sonore diminue proportionnellement à la distance parcourue par l’onde I\u003csub\u003eA\u003c/sub\u003e \u003e I\u003csub\u003eB\u003c/sub\u003e → IA \u003e IB → IA \u003e IB"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -21244,9 +21149,9 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "La célérité de l’onde ne varie pas durant tout son trajet",
                                                  "La période T de l’onde reste constante",
-                                                 "IB = IA × Rto",
-                                                 "IB = I0 × Tpt2 × Rto",
-                                                 "IA \u003e IB"
+                                                 "I\u003csub\u003eB\u003c/sub\u003e = I\u003csub\u003eA\u003c/sub\u003e × R\u003csub\u003eto\u003c/sub\u003e",
+                                                 "I\u003csub\u003eB\u003c/sub\u003e = I\u003csub\u003e0\u003c/sub\u003e × T\u003csub\u003ept\u003c/sub\u003e\u003csup\u003e2\u003c/sup\u003e × R\u003csub\u003eto\u003c/sub\u003e",
+                                                 "I\u003csub\u003eA\u003c/sub\u003e \u003e I\u003csub\u003eB\u003c/sub\u003e"
                                              ],
                               "options":  [
                                               {
@@ -21263,19 +21168,19 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "IB = IA × Rto",
+                                                  "text":  "I\u003csub\u003eB\u003c/sub\u003e = I\u003csub\u003eA\u003c/sub\u003e × R\u003csub\u003eto\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "IB = I0 × Tpt2 × Rto",
+                                                  "text":  "I\u003csub\u003eB\u003c/sub\u003e = I\u003csub\u003e0\u003c/sub\u003e × T\u003csub\u003ept\u003c/sub\u003e\u003csup\u003e2\u003c/sup\u003e × R\u003csub\u003eto\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "IA \u003e IB",
+                                                  "text":  "I\u003csub\u003eA\u003c/sub\u003e \u003e I\u003csub\u003eB\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - La présence du plâtre entraîne une diminution du niveau sonore entre l’onde émise et celle reçue après réflexion au point B (de plus de 10 dB)"
                                               }
@@ -21294,34 +21199,34 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "LA = 121,8 dB",
-                                                 "LA = 113,8 dB",
-                                                 "LB − L0 ≈ −4,0 dB",
-                                                 "LB − L0 ≈ 4,0 dB",
+                                                 "L\u003csub\u003eA\u003c/sub\u003e = 121,8 dB",
+                                                 "L\u003csub\u003eA\u003c/sub\u003e = 113,8 dB",
+                                                 "L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003e0\u003c/sub\u003e ≈ −4,0 dB",
+                                                 "L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003e0\u003c/sub\u003e ≈ 4,0 dB",
                                                  "La présence du plâtre entraîne une diminution du niveau sonore entre l’onde émise et celle reçue après réflexion au point B (de plus de 10 dB)"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "LA = 121,8 dB",
+                                                  "text":  "L\u003csub\u003eA\u003c/sub\u003e = 121,8 dB",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "LA = 113,8 dB",
+                                                  "text":  "L\u003csub\u003eA\u003c/sub\u003e = 113,8 dB",
                                                   "isCorrect":  true,
                                                   "explanation":  "VRAI - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "LB − L0 ≈ −4,0 dB",
+                                                  "text":  "L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003e0\u003c/sub\u003e ≈ −4,0 dB",
                                                   "isCorrect":  true,
                                                   "explanation":  "VRAI - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "LB − L0 ≈ 4,0 dB",
+                                                  "text":  "L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003e0\u003c/sub\u003e ≈ 4,0 dB",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -21347,26 +21252,26 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "IB \u003e IC",
+                                                 "I\u003csub\u003eB\u003c/sub\u003e \u003e I\u003csub\u003eC\u003c/sub\u003e",
                                                  "to",
                                                  "to",
                                                  "to",
                                                  "to",
                                                  "Tpt2",
-                                                 "LA − LB = 4,0 dB (à ± 1,0 dB)",
-                                                 "LB − LC = 73,3 dB (à ± 1,0 dB)",
+                                                 "L\u003csub\u003eA\u003c/sub\u003e − L\u003csub\u003eB\u003c/sub\u003e = 4,0 dB (à ± 1,0 dB)",
+                                                 "L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003eC\u003c/sub\u003e = 73,3 dB (à ± 1,0 dB)",
                                                  "×",
                                                  "×",
-                                                 "cplatre = 3000 m · s−1",
-                                                 "ctissu = 1540 m · s−1",
-                                                 "cos = 3500 m · s−1"
+                                                 "c\u003csub\u003eplatre\u003c/sub\u003e = 3000 m · s\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "c\u003csub\u003etissu\u003c/sub\u003e = 1540 m · s\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "c\u003csub\u003eos\u003c/sub\u003e = 3500 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "IB \u003e IC",
+                                                  "text":  "I\u003csub\u003eB\u003c/sub\u003e \u003e I\u003csub\u003eC\u003c/sub\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - IB \u003e IC IB \u003e IC bien IB \u003e IC. bien IB \u003e IC."
+                                                  "explanation":  "VRAI - I\u003csub\u003eB\u003c/sub\u003e \u003e I\u003csub\u003eC\u003c/sub\u003e I\u003csub\u003eB\u003c/sub\u003e \u003e I\u003csub\u003eC\u003c/sub\u003e bien I\u003csub\u003eB\u003c/sub\u003e \u003e I\u003csub\u003eC\u003c/sub\u003e. bien I\u003csub\u003eB\u003c/sub\u003e \u003e I\u003csub\u003eC\u003c/sub\u003e."
                                               },
                                               {
                                                   "id":  "B",
@@ -21378,7 +21283,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "to",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - , puisque sa formule est IA = Rpt × I0 (cf Question 1). , puisque sa formule est IA = Rpt × I0 (cf Question 1)."
+                                                  "explanation":  "FAUX - , puisque sa formule est I\u003csub\u003eA\u003c/sub\u003e = R\u003csub\u003ept\u003c/sub\u003e × I\u003csub\u003e0\u003c/sub\u003e (cf Question 1). , puisque sa formule est I\u003csub\u003eA\u003c/sub\u003e = R\u003csub\u003ept\u003c/sub\u003e × I\u003csub\u003e0\u003c/sub\u003e (cf Question 1)."
                                               },
                                               {
                                                   "id":  "D",
@@ -21390,7 +21295,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "to",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - LB − LC = 73,3 dB (à ± 1,0 dB) → LB − LC = 73,3 dB (à ± 1,0 dB) → LB − LC = 73,3 dB (à ± 1,0 dB)"
+                                                  "explanation":  "FAUX - L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003eC\u003c/sub\u003e = 73,3 dB (à ± 1,0 dB) → LB − LC = 73,3 dB (à ± 1,0 dB) → LB − LC = 73,3 dB (à ± 1,0 dB)"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -21406,15 +21311,15 @@ window.ANNALES_2025_2026 = [
                               "images":  [
 
                                          ],
-                              "question":  "Calculer l’épaisseur do de l’os. Laquelle des propositions suivantes est exacte ?",
+                              "question":  "Calculer l’épaisseur d\u003csub\u003eo\u003c/sub\u003e de l’os. Laquelle des propositions suivantes est exacte ?",
                               "rawOptions":  [
-                                                 "do = 1,6 cm (à ± 0,3 cm près)",
-                                                 "do = 2,4 cm (à ± 0,3 cm près)",
-                                                 "do = 3,2 cm (à ± 0,3 cm près)",
-                                                 "do = 4,0 cm (à ± 0,3 cm près)",
-                                                 "do = 4,8 cm (à ± 0,3 cm près)",
+                                                 "d\u003csub\u003eo\u003c/sub\u003e = 1,6 cm (à ± 0,3 cm près)",
+                                                 "d\u003csub\u003eo\u003c/sub\u003e = 2,4 cm (à ± 0,3 cm près)",
+                                                 "d\u003csub\u003eo\u003c/sub\u003e = 3,2 cm (à ± 0,3 cm près)",
+                                                 "d\u003csub\u003eo\u003c/sub\u003e = 4,0 cm (à ± 0,3 cm près)",
+                                                 "d\u003csub\u003eo\u003c/sub\u003e = 4,8 cm (à ± 0,3 cm près)",
                                                  "En réalité, une partie de l’intensité sonore est absorbée par les milieux traversés. On donne",
-                                                 "µp = 270 m−1, µt = 34 m−1 et µo = 350 m−1 les coefficients d’atténuation en intensité dans le",
+                                                 "µ\u003csub\u003ep\u003c/sub\u003e = 270 m\u003csup\u003e−1\u003c/sup\u003e, µ\u003csub\u003et\u003c/sub\u003e = 34 m\u003csup\u003e−1\u003c/sup\u003e et µ\u003csub\u003eo\u003c/sub\u003e = 350 m\u003csup\u003e−1\u003c/sup\u003e les coefficients d’atténuation en intensité dans le",
                                                  "X",
                                                  "X",
                                                  "X",
@@ -21424,33 +21329,33 @@ window.ANNALES_2025_2026 = [
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "do = 1,6 cm (à ± 0,3 cm près)",
+                                                  "text":  "d\u003csub\u003eo\u003c/sub\u003e = 1,6 cm (à ± 0,3 cm près)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - do = 1,6 cm (à ± 0,3 cm près)"
+                                                  "explanation":  "FAUX - d\u003csub\u003eo\u003c/sub\u003e = 1,6 cm (à ± 0,3 cm près)"
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "do = 2,4 cm (à ± 0,3 cm près)",
+                                                  "text":  "d\u003csub\u003eo\u003c/sub\u003e = 2,4 cm (à ± 0,3 cm près)",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - do = 2,4 cm (à ± 0,3 cm près) do = 2,4 cm (à ± 0,3 cm près)"
+                                                  "explanation":  "VRAI - d\u003csub\u003eo\u003c/sub\u003e = 2,4 cm (à ± 0,3 cm près) d\u003csub\u003eo\u003c/sub\u003e = 2,4 cm (à ± 0,3 cm près)"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "do = 3,2 cm (à ± 0,3 cm près)",
+                                                  "text":  "d\u003csub\u003eo\u003c/sub\u003e = 3,2 cm (à ± 0,3 cm près)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - do = 3,2 cm (à ± 0,3 cm près)"
+                                                  "explanation":  "FAUX - d\u003csub\u003eo\u003c/sub\u003e = 3,2 cm (à ± 0,3 cm près)"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "do = 4,0 cm (à ± 0,3 cm près)",
+                                                  "text":  "d\u003csub\u003eo\u003c/sub\u003e = 4,0 cm (à ± 0,3 cm près)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - = c = c do = 4,0 cm (à ± 0,3 cm près)"
+                                                  "explanation":  "FAUX - = c = c d\u003csub\u003eo\u003c/sub\u003e = 4,0 cm (à ± 0,3 cm près)"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "do = 4,8 cm (à ± 0,3 cm près)",
+                                                  "text":  "d\u003csub\u003eo\u003c/sub\u003e = 4,8 cm (à ± 0,3 cm près)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - do = 4,8 cm (à ± 0,3 cm près)"
+                                                  "explanation":  "FAUX - d\u003csub\u003eo\u003c/sub\u003e = 4,8 cm (à ± 0,3 cm près)"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -21472,7 +21377,7 @@ window.ANNALES_2025_2026 = [
                                                  "L’absorption par un milieu est la même peu importe la fréquence des ondes émises",
                                                  "ln(10)",
                                                  "ln(10)",
-                                                 "IA\u0027 = IA × e−µpdp"
+                                                 "I\u003csub\u003eA\u003c/sub\u003e\u003csup\u003e\u0027\u003c/sup\u003e = I\u003csub\u003eA\u003c/sub\u003e × e−µpdp"
                                              ],
                               "options":  [
                                               {
@@ -21503,7 +21408,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "ln(10)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - IA\u0027 = IA × e−µpdp"
+                                                  "explanation":  "FAUX - I\u003csub\u003eA\u003c/sub\u003e\u003csup\u003e\u0027\u003c/sup\u003e = I\u003csub\u003eA\u003c/sub\u003e × e−µpdp"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -21525,11 +21430,11 @@ window.ANNALES_2025_2026 = [
                                                  "−2(µ d",
                                                  "+ µ d )",
                                                  "ep pt t",
-                                                 "IB",
-                                                 "IA\u0027 \u003e IB\u0027",
-                                                 "IA\u0027 \u003c IB\u0027",
-                                                 "LA − LA\u0027 = 23,5 dB (à ± 1,0 dB)",
-                                                 "LB − LB\u0027 = 35,9 dB (à ± 1,0 dB)"
+                                                 "I\u003csub\u003eB\u003c/sub\u003e",
+                                                 "I\u003csub\u003eA\u003c/sub\u003e\u003csup\u003e\u0027\u003c/sup\u003e \u003e I\u003csub\u003eB\u003c/sub\u003e\u003csup\u003e\u0027\u003c/sup\u003e",
+                                                 "I\u003csub\u003eA\u003c/sub\u003e\u003csup\u003e\u0027\u003c/sup\u003e \u003c I\u003csub\u003eB\u003c/sub\u003e\u003csup\u003e\u0027\u003c/sup\u003e",
+                                                 "L\u003csub\u003eA\u003c/sub\u003e − L\u003csub\u003eA\u003c/sub\u003e\u003csup\u003e\u0027\u003c/sup\u003e = 23,5 dB (à ± 1,0 dB)",
+                                                 "L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003eB\u003c/sub\u003e\u003csup\u003e\u0027\u003c/sup\u003e = 35,9 dB (à ± 1,0 dB)"
                                              ],
                               "options":  [
                                               {
@@ -21542,25 +21447,25 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "B",
                                                   "text":  "−2(µ d",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - IA𝘚 \u003e IB𝘚 IA𝘚 \u003e IB𝘚"
+                                                  "explanation":  "VRAI - I\u003csub\u003eA\u003c/sub\u003e\u003csup\u003e𝘚\u003c/sup\u003e \u003e I\u003csub\u003eB\u003c/sub\u003e\u003csup\u003e𝘚\u003c/sup\u003e I\u003csub\u003eA\u003c/sub\u003e\u003csup\u003e𝘚\u003c/sup\u003e \u003e I\u003csub\u003eB\u003c/sub\u003e\u003csup\u003e𝘚\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "C",
                                                   "text":  "+ µ d )",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - IA\u0027 \u003c IB\u0027"
+                                                  "explanation":  "FAUX - I\u003csub\u003eA\u003c/sub\u003e\u003csup\u003e\u0027\u003c/sup\u003e \u003c I\u003csub\u003eB\u003c/sub\u003e\u003csup\u003e\u0027\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "D",
                                                   "text":  "ep pt t",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - LA − LA𝘚 = 23,5 dB (à ± 1,0 dB) LA − LA𝘚 = 23,5 dB (à ± 1,0 dB) → LA − LA\u0027 = 23,5 dB (à ± 1,0 dB) → LA − LA\u0027 = 23,5 dB (à ± 1,0 dB) + +"
+                                                  "explanation":  "VRAI - L\u003csub\u003eA\u003c/sub\u003e − L\u003csub\u003eA\u003c/sub\u003e\u003csup\u003e𝘚\u003c/sup\u003e = 23,5 dB (à ± 1,0 dB) L\u003csub\u003eA\u003c/sub\u003e − L\u003csub\u003eA\u003c/sub\u003e\u003csup\u003e𝘚\u003c/sup\u003e = 23,5 dB (à ± 1,0 dB) → LA − LA\u0027 = 23,5 dB (à ± 1,0 dB) → LA − LA\u0027 = 23,5 dB (à ± 1,0 dB) + +"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "IB",
+                                                  "text":  "I\u003csub\u003eB\u003c/sub\u003e",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - LB − LB𝘚 = 35,9 dB (à ± 1,0 dB) LB − LB𝘚 = 35,9 dB (à ± 1,0 dB) → IA\u0027 = IA × e−µpdp → LB − LB\u0027 = 35,9 dB (à ± 1,0 dB) → LB − LB\u0027 = 35,9 dB (à ± 1,0 dB)"
+                                                  "explanation":  "VRAI - L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003eB\u003c/sub\u003e\u003csup\u003e𝘚\u003c/sup\u003e = 35,9 dB (à ± 1,0 dB) L\u003csub\u003eB\u003c/sub\u003e − L\u003csub\u003eB\u003c/sub\u003e\u003csup\u003e𝘚\u003c/sup\u003e = 35,9 dB (à ± 1,0 dB) → IA\u0027 = IA × e−µpdp → LB − LB\u0027 = 35,9 dB (à ± 1,0 dB) → LB − LB\u0027 = 35,9 dB (à ± 1,0 dB)"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -21583,19 +21488,19 @@ window.ANNALES_2025_2026 = [
                                                  "·",
                                                  "·",
                                                  "·",
-                                                 "zH",
-                                                 "zC",
+                                                 "z\u003csub\u003eH\u003c/sub\u003e",
+                                                 "z\u003csub\u003eC\u003c/sub\u003e",
                                                  "+",
                                                  "+",
                                                  "O",
-                                                 "zH",
-                                                 "zC",
+                                                 "z\u003csub\u003eH\u003c/sub\u003e",
+                                                 "z\u003csub\u003eC\u003c/sub\u003e",
                                                  "+",
                                                  "+",
                                                  "O",
                                                  "On modélise la situation par le schéma ci-dessus, avec C la cheville et H la hanche du coureur, respectivement à 20 cm et 90 cm du sol.",
-                                                 "Nous allons faire l’approximation que la circulation artérielle se fait dans un unique vaisseau équivalent de débit et de section constantes. On s’intéresse à l’écoulement sanguin de haut en bas seulement. On considère t0 l’instant précédent la mise en marche du tapis roulant.",
-                                                 "Soient ρsang la masse volumique du sang, PC et PH les pressions sanguines à la cheville et à la hanche. On considère que le sang est un fluide incompressible et on néglige la viscosité du sang et tout phénomène de frottement contre la paroi vasculaire jusqu’à indication contraire. La température ne change pas au cours du temps dans cette situation."
+                                                 "Nous allons faire l’approximation que la circulation artérielle se fait dans un unique vaisseau équivalent de débit et de section constantes. On s’intéresse à l’écoulement sanguin de haut en bas seulement. On considère t\u003csub\u003e0\u003c/sub\u003e l’instant précédent la mise en marche du tapis roulant.",
+                                                 "Soient ρ\u003csub\u003esang\u003c/sub\u003e la masse volumique du sang, P\u003csub\u003eC\u003c/sub\u003e et P\u003csub\u003eH\u003c/sub\u003e les pressions sanguines à la cheville et à la hanche. On considère que le sang est un fluide incompressible et on néglige la viscosité du sang et tout phénomène de frottement contre la paroi vasculaire jusqu’à indication contraire. La température ne change pas au cours du temps dans cette situation."
                                              ],
                               "options":  [
                                               {
@@ -21618,13 +21523,13 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "zH",
+                                                  "text":  "z\u003csub\u003eH\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "zC",
+                                                  "text":  "z\u003csub\u003eC\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - La présence du plâtre entraîne une diminution du niveau sonore entre l’onde émise et celle reçue après réflexion au point B (de plus de 10 dB)"
                                               }
@@ -21645,9 +21550,9 @@ window.ANNALES_2025_2026 = [
                               "rawOptions":  [
                                                  "Abaisser le plafond de la cabine aurait pour effet d’augmenter la pression de l’air à l’intérieur",
                                                  "Abaisser le plafond de la cabine aurait pour effet de diminuer la pression de l’air à l’intérieur",
-                                                 "L’air dans la cabine a une masse mair = 9 g",
-                                                 "L’air dans la cabine a une masse mair = 9 kg",
-                                                 "L’air dans la cabine a une masse mair = 9,6 kg"
+                                                 "L’air dans la cabine a une masse m\u003csub\u003eair\u003c/sub\u003e = 9 g",
+                                                 "L’air dans la cabine a une masse m\u003csub\u003eair\u003c/sub\u003e = 9 kg",
+                                                 "L’air dans la cabine a une masse m\u003csub\u003eair\u003c/sub\u003e = 9,6 kg"
                                              ],
                               "options":  [
                                               {
@@ -21664,21 +21569,21 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "L’air dans la cabine a une masse mair = 9 g",
+                                                  "text":  "L’air dans la cabine a une masse m\u003csub\u003eair\u003c/sub\u003e = 9 g",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - L’air dans la cabine a une masse mair = 9 g Si on surélève le tapis roulant, la hauteur de la cheville et la hauteur de la hanche seront plus importantes, mais la différence de hauteur, elle, ne changera pas, donc la différence de pression non plus ! Si on surélève le tapis roulant, la hauteur de la cheville et la hauteur de la hanche seront plus importantes, mais la différence de hauteur, elle, ne changera pas, donc la différence de pression non plus !"
+                                                  "explanation":  "FAUX - L’air dans la cabine a une masse m\u003csub\u003eair\u003c/sub\u003e = 9 g Si on surélève le tapis roulant, la hauteur de la cheville et la hauteur de la hanche seront plus importantes, mais la différence de hauteur, elle, ne changera pas, donc la différence de pression non plus ! Si on surélève le tapis roulant, la hauteur de la cheville et la hauteur de la hanche seront plus importantes, mais la différence de hauteur, elle, ne changera pas, donc la différence de pression non plus !"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "L’air dans la cabine a une masse mair = 9 kg",
+                                                  "text":  "L’air dans la cabine a une masse m\u003csub\u003eair\u003c/sub\u003e = 9 kg",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - L’air dans la cabine a une masse mair = 9 kg L’air dans la cabine a une masse mair = 9 kg"
+                                                  "explanation":  "FAUX - L’air dans la cabine a une masse m\u003csub\u003eair\u003c/sub\u003e = 9 kg L’air dans la cabine a une masse m\u003csub\u003eair\u003c/sub\u003e = 9 kg"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "L’air dans la cabine a une masse mair = 9,6 kg",
+                                                  "text":  "L’air dans la cabine a une masse m\u003csub\u003eair\u003c/sub\u003e = 9,6 kg",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - L’air dans la cabine a une masse mair = 9,6 kg"
+                                                  "explanation":  "VRAI - L’air dans la cabine a une masse m\u003csub\u003eair\u003c/sub\u003e = 9,6 kg"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -21695,31 +21600,31 @@ window.ANNALES_2025_2026 = [
                               "images":  [
 
                                          ],
-                              "question":  "À propos de la circulation sanguine dans la jambe du coureur à l’instant t0, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                              "question":  "À propos de la circulation sanguine dans la jambe du coureur à l’instant t\u003csub\u003e0\u003c/sub\u003e, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "PC − PH = ρsangg(zH − zC)",
-                                                 "PC − PH = −ρsangg(zC − zH)",
-                                                 "PH − PC = ρsangg(zH − zC)",
+                                                 "P\u003csub\u003eC\u003c/sub\u003e − P\u003csub\u003eH\u003c/sub\u003e = ρ\u003csub\u003esang\u003c/sub\u003eg(z\u003csub\u003eH\u003c/sub\u003e − z\u003csub\u003eC\u003c/sub\u003e)",
+                                                 "P\u003csub\u003eC\u003c/sub\u003e − P\u003csub\u003eH\u003c/sub\u003e = −ρ\u003csub\u003esang\u003c/sub\u003eg(z\u003csub\u003eC\u003c/sub\u003e − z\u003csub\u003eH\u003c/sub\u003e)",
+                                                 "P\u003csub\u003eH\u003c/sub\u003e − P\u003csub\u003eC\u003c/sub\u003e = ρ\u003csub\u003esang\u003c/sub\u003eg(z\u003csub\u003eH\u003c/sub\u003e − z\u003csub\u003eC\u003c/sub\u003e)",
                                                  "Si on surélève le tapis roulant, en le gardant horizontal, la différence de pression entre la hanche et la cheville augmente",
                                                  "Si on surélève le tapis roulant, en le gardant horizontal, la différence de pression entre la hanche et la cheville reste la même",
-                                                 "Votre patient commence à courir, et pour être plus juste dans vos calculs, on considère désormais le sang comme un fluide visqueux. On considère que l’écoulement sanguin se fait du coeur vers la jambe et on admet que les parois vasculaires sont rigides ici. On note ∆P la perte de charge lors de l’écoulement du sang, vH et vC les vitesses respectives en H et C."
+                                                 "Votre patient commence à courir, et pour être plus juste dans vos calculs, on considère désormais le sang comme un fluide visqueux. On considère que l’écoulement sanguin se fait du coeur vers la jambe et on admet que les parois vasculaires sont rigides ici. On note ∆P la perte de charge lors de l’écoulement du sang, v\u003csub\u003eH\u003c/sub\u003e et v\u003csub\u003eC\u003c/sub\u003e les vitesses respectives en H et C."
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "PC − PH = ρsangg(zH − zC)",
+                                                  "text":  "P\u003csub\u003eC\u003c/sub\u003e − P\u003csub\u003eH\u003c/sub\u003e = ρ\u003csub\u003esang\u003c/sub\u003eg(z\u003csub\u003eH\u003c/sub\u003e − z\u003csub\u003eC\u003c/sub\u003e)",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "PC − PH = −ρsangg(zC − zH)",
+                                                  "text":  "P\u003csub\u003eC\u003c/sub\u003e − P\u003csub\u003eH\u003c/sub\u003e = −ρ\u003csub\u003esang\u003c/sub\u003eg(z\u003csub\u003eC\u003c/sub\u003e − z\u003csub\u003eH\u003c/sub\u003e)",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - → La perte de pression de Poiseuille correspond à une énergie perdue par le fluide (irrécupérable)"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "PH − PC = ρsangg(zH − zC)",
+                                                  "text":  "P\u003csub\u003eH\u003c/sub\u003e − P\u003csub\u003eC\u003c/sub\u003e = ρ\u003csub\u003esang\u003c/sub\u003eg(z\u003csub\u003eH\u003c/sub\u003e − z\u003csub\u003eC\u003c/sub\u003e)",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - → Il exprime la conservation de la densité volumique d’énergie d’un fluide"
                                               },
@@ -21727,7 +21632,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "D",
                                                   "text":  "Si on surélève le tapis roulant, en le gardant horizontal, la différence de pression entre la hanche et la cheville augmente",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Ici, il peut s’énoncer comme PH + 1 ρsangv2 + ρsanggzH + ∆P = PC + 1 ρsangv2"
+                                                  "explanation":  "FAUX - Ici, il peut s’énoncer comme P\u003csub\u003eH\u003c/sub\u003e + 1 ρ\u003csub\u003esang\u003c/sub\u003ev\u003csup\u003e2\u003c/sup\u003e + ρ\u003csub\u003esang\u003c/sub\u003egz\u003csub\u003eH\u003c/sub\u003e + ∆P = P\u003csub\u003eC\u003c/sub\u003e + 1 ρ\u003csub\u003esang\u003c/sub\u003ev\u003csup\u003e2\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "E",
@@ -21753,24 +21658,24 @@ window.ANNALES_2025_2026 = [
                                                  "Il ne prend pas en compte les pertes de Poiseuille",
                                                  "La perte de pression de Poiseuille correspond à une énergie perdue par le fluide (irrécupérable)",
                                                  "Il exprime la conservation de la densité volumique d’énergie d’un fluide",
-                                                 "Ici, il peut s’énoncer comme PH + 1 ρsangv2 + ρsanggzH + ∆P = PC + 1 ρsangv2 + ρsanggzC",
+                                                 "Ici, il peut s’énoncer comme P\u003csub\u003eH\u003c/sub\u003e + 1 ρ\u003csub\u003esang\u003c/sub\u003ev\u003csup\u003e2\u003c/sup\u003e + ρ\u003csub\u003esang\u003c/sub\u003egz\u003csub\u003eH\u003c/sub\u003e + ∆P = P\u003csub\u003eC\u003c/sub\u003e + 1 ρ\u003csub\u003esang\u003c/sub\u003ev\u003csup\u003e2\u003c/sup\u003e + ρ\u003csub\u003esang\u003c/sub\u003egz\u003csub\u003eC\u003c/sub\u003e",
                                                  "2H2C",
-                                                 "Ici, il peut s’énoncer comme PC + 1 ρsangv2 + ρsanggzC + ∆P = PH + 1 ρsangv2 + ρsanggzH",
+                                                 "Ici, il peut s’énoncer comme P\u003csub\u003eC\u003c/sub\u003e + 1 ρ\u003csub\u003esang\u003c/sub\u003ev\u003csup\u003e2\u003c/sup\u003e + ρ\u003csub\u003esang\u003c/sub\u003egz\u003csub\u003eC\u003c/sub\u003e + ∆P = P\u003csub\u003eH\u003c/sub\u003e + 1 ρ\u003csub\u003esang\u003c/sub\u003ev\u003csup\u003e2\u003c/sup\u003e + ρ\u003csub\u003esang\u003c/sub\u003egz\u003csub\u003eH\u003c/sub\u003e",
                                                  "2C2H",
-                                                 "Vous allongez ensuite le patient et pendant qu’il se repose, vous réfléchissez à la circulation sanguine au niveau de son quadriceps, où les artérioles se divisent en capillaires permettant les échanges gazeux. Le schéma ci-après montre le circuit sanguin au niveau d’une portion de muscle, où une artériole A se divise en trois capillaires de même rayon rC et de même longueur LC. On note QA le débit de l’artériole et QC le débit au niveau d’un capillaire. On ne s’intéresse pas à la jonction des capillaires en fin de circuit.",
-                                                 "LA",
-                                                 "rC",
-                                                 "rA",
-                                                 "LA",
-                                                 "rC",
-                                                 "rA",
+                                                 "Vous allongez ensuite le patient et pendant qu’il se repose, vous réfléchissez à la circulation sanguine au niveau de son quadriceps, où les artérioles se divisent en capillaires permettant les échanges gazeux. Le schéma ci-après montre le circuit sanguin au niveau d’une portion de muscle, où une artériole A se divise en trois capillaires de même rayon r\u003csub\u003eC\u003c/sub\u003e et de même longueur L\u003csub\u003eC\u003c/sub\u003e. On note Q\u003csub\u003eA\u003c/sub\u003e le débit de l’artériole et Q\u003csub\u003eC\u003c/sub\u003e le débit au niveau d’un capillaire. On ne s’intéresse pas à la jonction des capillaires en fin de circuit.",
+                                                 "L\u003csub\u003eA\u003c/sub\u003e",
+                                                 "r\u003csub\u003eC\u003c/sub\u003e",
+                                                 "r\u003csub\u003eA\u003c/sub\u003e",
+                                                 "L\u003csub\u003eA\u003c/sub\u003e",
+                                                 "r\u003csub\u003eC\u003c/sub\u003e",
+                                                 "r\u003csub\u003eA\u003c/sub\u003e",
                                                  "Données :",
                                                  "×·",
                                                  "×·",
-                                                 "•Longueur de l’artériole LA = 1 mm",
-                                                 "•Rayon de l’artériole rA = 20 µm",
-                                                 "•Rayon d’un capillaire rC = 1 rA",
-                                                 "•Résistance totale du circuit 5: R= 5,02 × 1015 Pa · s · m−3",
+                                                 "•Longueur de l’artériole L\u003csub\u003eA\u003c/sub\u003e = 1 mm",
+                                                 "•Rayon de l’artériole r\u003csub\u003eA\u003c/sub\u003e = 20 µm",
+                                                 "•Rayon d’un capillaire r\u003csub\u003eC\u003c/sub\u003e = 1 r\u003csub\u003eA\u003c/sub\u003e",
+                                                 "•Résistance totale du circuit 5: R= 5,02 × 1015 Pa · s · m\u003csup\u003e−3\u003c/sup\u003e",
                                                  "tot"
                                              ],
                               "options":  [
@@ -21794,7 +21699,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "Ici, il peut s’énoncer comme PH + 1 ρsangv2 + ρsanggzH + ∆P = PC + 1 ρsangv2 + ρsanggzC",
+                                                  "text":  "Ici, il peut s’énoncer comme P\u003csub\u003eH\u003c/sub\u003e + 1 ρ\u003csub\u003esang\u003c/sub\u003ev\u003csup\u003e2\u003c/sup\u003e + ρ\u003csub\u003esang\u003c/sub\u003egz\u003csub\u003eH\u003c/sub\u003e + ∆P = P\u003csub\u003eC\u003c/sub\u003e + 1 ρ\u003csub\u003esang\u003c/sub\u003ev\u003csup\u003e2\u003c/sup\u003e + ρ\u003csub\u003esang\u003c/sub\u003egz\u003csub\u003eC\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -21819,12 +21724,12 @@ window.ANNALES_2025_2026 = [
                                          ],
                               "question":  "Concernant le débit sanguin et la longueur des capillaires, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "QA = QC",
+                                                 "Q\u003csub\u003eA\u003c/sub\u003e = Q\u003csub\u003eC\u003c/sub\u003e",
                                                  "3",
                                                  "3",
-                                                 "LC = 5,0 × 10−4 m",
-                                                 "LC = 5,0 µm",
-                                                 "LC = 50 µm",
+                                                 "L\u003csub\u003eC\u003c/sub\u003e = 5,0 × 10−4 m",
+                                                 "L\u003csub\u003eC\u003c/sub\u003e = 5,0 µm",
+                                                 "L\u003csub\u003eC\u003c/sub\u003e = 50 µm",
                                                  "≥",
                                                  "≥",
                                                  "tot",
@@ -21846,22 +21751,22 @@ window.ANNALES_2025_2026 = [
                                                  "\u0027",
                                                  "\u0027",
                                                  "tot",
-                                                 "= n(3RA + RC) 3nRA + RC",
-                                                 "= 3RA + RC",
-                                                 "3RA + 3nRC",
-                                                 "= 3RA + RC",
-                                                 "3RA + 3RC",
+                                                 "= n(3R\u003csub\u003eA\u003c/sub\u003e + R\u003csub\u003eC\u003c/sub\u003e) 3nR\u003csub\u003eA\u003c/sub\u003e + R\u003csub\u003eC\u003c/sub\u003e",
+                                                 "= 3R\u003csub\u003eA\u003c/sub\u003e + R\u003csub\u003eC\u003c/sub\u003e",
+                                                 "3R\u003csub\u003eA\u003c/sub\u003e + 3nR\u003csub\u003eC\u003c/sub\u003e",
+                                                 "= 3R\u003csub\u003eA\u003c/sub\u003e + R\u003csub\u003eC\u003c/sub\u003e",
+                                                 "3R\u003csub\u003eA\u003c/sub\u003e + 3R\u003csub\u003eC\u003c/sub\u003e",
                                                  "Augmenter le nombre de capillaires réduit la résistance totale du circuit",
-                                                 "L’hypercapillarisation et l’augmentation à la puissance 4 de la longueur LC entraînent tous deux une diminution de la perte de pression",
+                                                 "L’hypercapillarisation et l’augmentation à la puissance 4 de la longueur L\u003csub\u003eC\u003c/sub\u003e entraînent tous deux une diminution de la perte de pression",
                                                  "×",
                                                  "×"
                                              ],
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "QA = QC",
+                                                  "text":  "Q\u003csub\u003eA\u003c/sub\u003e = Q\u003csub\u003eC\u003c/sub\u003e",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - Rtot = n(3RA + RC) Rtot = n(3RA + RC)"
+                                                  "explanation":  "FAUX - R\u003csub\u003etot\u003c/sub\u003e = n(3R\u003csub\u003eA\u003c/sub\u003e + R\u003csub\u003eC\u003c/sub\u003e) R\u003csub\u003etot\u003c/sub\u003e = n(3R\u003csub\u003eA\u003c/sub\u003e + R\u003csub\u003eC\u003c/sub\u003e)"
                                               },
                                               {
                                                   "id":  "B",
@@ -21873,19 +21778,19 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "C",
                                                   "text":  "3",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - LC = 5,0 × 10−4 m LC = 5,0 × 10−4 m"
+                                                  "explanation":  "FAUX - L\u003csub\u003eC\u003c/sub\u003e = 5,0 × 10−4 m L\u003csub\u003eC\u003c/sub\u003e = 5,0 × 10−4 m"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "LC = 5,0 × 10−4 m",
+                                                  "text":  "L\u003csub\u003eC\u003c/sub\u003e = 5,0 × 10−4 m",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Augmenter le nombre de capillaires réduit la résistance totale du circuit Augmenter le nombre de capillaires réduit la résistance totale du circuit"
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "LC = 5,0 µm",
+                                                  "text":  "L\u003csub\u003eC\u003c/sub\u003e = 5,0 µm",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - L’hypercapillarisation et l’augmentation à la puissance 4 de la longueur LC entraînent tous"
+                                                  "explanation":  "FAUX - L’hypercapillarisation et l’augmentation à la puissance 4 de la longueur L\u003csub\u003eC\u003c/sub\u003e entraînent tous"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -21900,12 +21805,12 @@ window.ANNALES_2025_2026 = [
                               "images":  [
 
                                          ],
-                              "question":  "Calculer Pdissipee la puissance dissipée par écoulement sanguin sur l’intégralité du circuit, suite à une hypercapillarisation telle que n = 7. Laquelle des propositions suivantes est exacte ?",
+                              "question":  "Calculer P\u003csub\u003edissipee\u003c/sub\u003e la puissance dissipée par écoulement sanguin sur l’intégralité du circuit, suite à une hypercapillarisation telle que n = 7. Laquelle des propositions suivantes est exacte ?",
                               "rawOptions":  [
                                                  "Pdissipee \u003c 10−12 W",
-                                                 "3 × 10−12 W ≤ Pdissipee ≤ 4 × 10−12 W",
-                                                 "3 × 10−11 W ≤ Pdissipee ≤ 4 × 10−11 W",
-                                                 "3 × 10−10 W ≤ Pdissipee ≤ 4 × 10−10 W",
+                                                 "3 × 10−12 W ≤ P\u003csub\u003edissipee\u003c/sub\u003e ≤ 4 × 10−12 W",
+                                                 "3 × 10−11 W ≤ P\u003csub\u003edissipee\u003c/sub\u003e ≤ 4 × 10−11 W",
+                                                 "3 × 10−10 W ≤ P\u003csub\u003edissipee\u003c/sub\u003e ≤ 4 × 10−10 W",
                                                  "Pdissipee ≥ 4 × 10−10 W"
                                              ],
                               "options":  [
@@ -21917,21 +21822,21 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "3 × 10−12 W ≤ Pdissipee ≤ 4 × 10−12 W",
+                                                  "text":  "3 × 10−12 W ≤ P\u003csub\u003edissipee\u003c/sub\u003e ≤ 4 × 10−12 W",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - 3 × 10−12 W ≤ Pdissipee ≤ 4 × 10−12 W 3 × 10−12 W ≤ Pdissipee ≤ 4 × 10−12 W"
+                                                  "explanation":  "FAUX - 3 × 10−12 W ≤ P\u003csub\u003edissipee\u003c/sub\u003e ≤ 4 × 10−12 W 3 × 10−12 W ≤ P\u003csub\u003edissipee\u003c/sub\u003e ≤ 4 × 10−12 W"
                                               },
                                               {
                                                   "id":  "C",
-                                                  "text":  "3 × 10−11 W ≤ Pdissipee ≤ 4 × 10−11 W",
+                                                  "text":  "3 × 10−11 W ≤ P\u003csub\u003edissipee\u003c/sub\u003e ≤ 4 × 10−11 W",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - 3 × 10−11 W ≤ Pdissipee ≤ 4 × 10−11 W → Lors de l’ascension, le travail du poids est moteur → Lors de l’ascension, le travail du poids est moteur"
+                                                  "explanation":  "FAUX - 3 × 10−11 W ≤ P\u003csub\u003edissipee\u003c/sub\u003e ≤ 4 × 10−11 W → Lors de l’ascension, le travail du poids est moteur → Lors de l’ascension, le travail du poids est moteur"
                                               },
                                               {
                                                   "id":  "D",
-                                                  "text":  "3 × 10−10 W ≤ Pdissipee ≤ 4 × 10−10 W",
+                                                  "text":  "3 × 10−10 W ≤ P\u003csub\u003edissipee\u003c/sub\u003e ≤ 4 × 10−10 W",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - 3 × 10−10 W ≤ Pdissipee ≤ 4 × 10−10 W → Sur la phase de montée, la vitesse du train est constante → Sur la phase de montée, la vitesse du train est constante"
+                                                  "explanation":  "FAUX - 3 × 10−10 W ≤ P\u003csub\u003edissipee\u003c/sub\u003e ≤ 4 × 10−10 W → Sur la phase de montée, la vitesse du train est constante → Sur la phase de montée, la vitesse du train est constante"
                                               },
                                               {
                                                   "id":  "E",
@@ -21956,17 +21861,17 @@ window.ANNALES_2025_2026 = [
                               "question":  "Un étudiant décide de se rendre au parc d’attraction et fait un tour dans les montagnes russes pour se détendre. Le manège qu’il emprunte se structure de la manière suivante : une montée de A vers B, puis une descente jusqu’en C, avant de s’engager dans un looping de rayon r = 15 m. On néglige les frottements tout au long de l’exercice.",
                               "rawOptions":  [
                                                  "h",
-                                                 "→uy",
+                                                 "→u\u003csub\u003ey\u003c/sub\u003e",
                                                  "B",
                                                  "D",
-                                                 "→ux",
+                                                 "→u\u003csub\u003ex\u003c/sub\u003e",
                                                  "r",
                                                  "θ",
                                                  "AC",
                                                  "·",
                                                  "·",
                                                  "câble exerçant une force de traction constante notée −→T. Le point d’attache de ce câble se situe",
-                                                 "en B. La montée forme une angle θ = 45◦ avec l’horizontale. On rappelle que g = 9,81 m · s−2."
+                                                 "en B. La montée forme une angle θ = 45◦ avec l’horizontale. On rappelle que g = 9,81 m · s\u003csup\u003e−2\u003c/sup\u003e."
                                              ],
                               "options":  [
                                               {
@@ -21977,7 +21882,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "→uy",
+                                                  "text":  "→u\u003csub\u003ey\u003c/sub\u003e",
                                                   "isCorrect":  true,
                                                   "explanation":  "VRAI - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -21995,7 +21900,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "E",
-                                                  "text":  "→ux",
+                                                  "text":  "→u\u003csub\u003ex\u003c/sub\u003e",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               }
@@ -22080,11 +21985,11 @@ window.ANNALES_2025_2026 = [
                                                  ", laquelle",
                                                  "(−→",
                                                  "(−→",
-                                                 "Concernant le travail de la force de traction WAB T ) et la vitesse atteinte au point",
-                                                 "B qu’on note vB, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
-                                                 "WAB",
-                                                 "WAB",
-                                                 "WAB",
+                                                 "Concernant le travail de la force de traction W\u003csub\u003eAB\u003c/sub\u003e T ) et la vitesse atteinte au point",
+                                                 "B qu’on note v\u003csub\u003eB\u003c/sub\u003e, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
+                                                 "W\u003csub\u003eAB\u003c/sub\u003e",
+                                                 "W\u003csub\u003eAB\u003c/sub\u003e",
+                                                 "W\u003csub\u003eAB\u003c/sub\u003e",
                                                  "(−→T) = ma × h + mgh",
                                                  "sin θ",
                                                  "sin θ",
@@ -22092,8 +21997,8 @@ window.ANNALES_2025_2026 = [
                                                  "sin θ",
                                                  "sin θ",
                                                  "sin θ",
-                                                 "vB = 15,0 m · s−1",
-                                                 "vB = 31,3 m · s−1",
+                                                 "v\u003csub\u003eB\u003c/sub\u003e = 15,0 m · s\u003csup\u003e−1\u003c/sup\u003e",
+                                                 "v\u003csub\u003eB\u003c/sub\u003e = 31,3 m · s\u003csup\u003e−1\u003c/sup\u003e",
                                                  "On admet que le trajet du train entre A et B a une durée ∆t = 9,4 s."
                                              ],
                               "options":  [
@@ -22137,7 +22042,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "D",
                                                   "text":  "||−→T|| = mg sin (θ)",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - vB = 15,0 m · s−1 vB = 15,0 m · s−1"
+                                                  "explanation":  "FAUX - v\u003csub\u003eB\u003c/sub\u003e = 15,0 m · s\u003csup\u003e−1\u003c/sup\u003e v\u003csub\u003eB\u003c/sub\u003e = 15,0 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "E",
@@ -22149,7 +22054,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "D",
                                                   "text":  "−→",
                                                   "isCorrect":  false,
-                                                  "explanation":  "FAUX - vB = 15,0 m · s−1 vB = 15,0 m · s−1"
+                                                  "explanation":  "FAUX - v\u003csub\u003eB\u003c/sub\u003e = 15,0 m · s\u003csup\u003e−1\u003c/sup\u003e v\u003csub\u003eB\u003c/sub\u003e = 15,0 m · s\u003csup\u003e−1\u003c/sup\u003e"
                                               },
                                               {
                                                   "id":  "E",
@@ -22159,7 +22064,7 @@ window.ANNALES_2025_2026 = [
                                               },
                                               {
                                                   "id":  "B",
-                                                  "text":  "qu’on note vB, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
+                                                  "text":  "qu’on note v\u003csub\u003eB\u003c/sub\u003e, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                                                   "isCorrect":  true,
                                                   "explanation":  "VRAI - AB = AB ="
                                               }
@@ -22177,21 +22082,21 @@ window.ANNALES_2025_2026 = [
                               "images":  [
 
                                          ],
-                              "question":  "On note vmoy la vitesse moyenne du train entre A et B. Concernant la puissance moyenne de la force de traction Pmoy, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
+                              "question":  "On note v\u003csub\u003emoy\u003c/sub\u003e la vitesse moyenne du train entre A et B. Concernant la puissance moyenne de la force de traction P\u003csub\u003emoy\u003c/sub\u003e, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                               "rawOptions":  [
                                                  "P",
                                                  "moy",
                                                  "= ||−→T||",
                                                  "v",
                                                  "moy",
-                                                 "Pmoy = ||−→T|| × vmoy",
-                                                 "Pmoy ≈ 545 W",
-                                                 "Pmoy ≈ 5122 W",
-                                                 "Pmoy ≈ 38500 W",
+                                                 "P\u003csub\u003emoy\u003c/sub\u003e = ||−→T|| × v\u003csub\u003emoy\u003c/sub\u003e",
+                                                 "P\u003csub\u003emoy\u003c/sub\u003e ≈ 545 W",
+                                                 "P\u003csub\u003emoy\u003c/sub\u003e ≈ 5122 W",
+                                                 "P\u003csub\u003emoy\u003c/sub\u003e ≈ 38500 W",
                                                  "Notre train se trouve maintenant au sommet de la montagne russe au point B. La train va maintenant entamer sa descente jusqu’au point C. On considère l’origine des potentiels aux",
                                                  "C",
                                                  "C",
-                                                 "Durant la phase de descente, les frottements sont négligés. Le train atteint le point C avec une vitesse vC. C’est à cette vitesse, qu’il s’engage dans le looping."
+                                                 "Durant la phase de descente, les frottements sont négligés. Le train atteint le point C avec une vitesse v\u003csub\u003eC\u003c/sub\u003e. C’est à cette vitesse, qu’il s’engage dans le looping."
                                              ],
                               "options":  [
                                               {
@@ -22222,7 +22127,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "moy",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Pmoy ≈ 38500 W Pmoy ≈ 38500 W v v"
+                                                  "explanation":  "VRAI - P\u003csub\u003emoy\u003c/sub\u003e ≈ 38500 W P\u003csub\u003emoy\u003c/sub\u003e ≈ 38500 W v v"
                                               }
                                           ],
                               "correctAnswers":  [
@@ -22245,9 +22150,9 @@ window.ANNALES_2025_2026 = [
                                              "annales_assets/2025_2026/physique/tuto_3/image9.png",
                                              "annales_assets/2025_2026/physique/tuto_3/image10.png"
                                          ],
-                              "question":  "Concernant la vitesse aux points C et D, notées respectivement vC et vD, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
+                              "question":  "Concernant la vitesse aux points C et D, notées respectivement v\u003csub\u003eC\u003c/sub\u003e et v\u003csub\u003eD\u003c/sub\u003e, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                               "rawOptions":  [
-                                                 "vC = vB + √2gh",
+                                                 "v\u003csub\u003eC\u003c/sub\u003e = v\u003csub\u003eB\u003c/sub\u003e + √2gh",
                                                  "B",
                                                  "B",
                                                  "B",
@@ -22292,7 +22197,7 @@ window.ANNALES_2025_2026 = [
                               "options":  [
                                               {
                                                   "id":  "A",
-                                                  "text":  "vC = vB + √2gh",
+                                                  "text":  "v\u003csub\u003eC\u003c/sub\u003e = v\u003csub\u003eB\u003c/sub\u003e + √2gh",
                                                   "isCorrect":  false,
                                                   "explanation":  "FAUX - Reponse conforme au cours officiel du tutorat."
                                               },
@@ -22345,7 +22250,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  2,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 6 : Santé Publique\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nConcernant le concept de santé, laquelle (lesquelles) des propositions suivantes est (sont) exactes ?\nL’épidémiologie n’étudie que la fréquence et la répartition spatiale et temporelle des pro-blèmes de santé dans les populations humaines\nLes études épidémiologiques utilisent des indicateurs complets et efficaces\nLes indicateurs servent à décrire, expliquer, évaluer et prévoir\nLa démarche utilisée par John Snow pour trouver le mode de transmission du choléra illustre la démarche épidémiologique\nIl existe 2 principaux types d’épidémiologie : l’épidémiologie descriptive et l’épidémiologie analytique",
+                              "context":  "Durée de l’épreuve : 45 minutes\nInformations sur l’épreuve\nConcernant le concept de santé, laquelle (lesquelles) des propositions suivantes est (sont) exactes ?\nL’épidémiologie n’étudie que la fréquence et la répartition spatiale et temporelle des pro-blèmes de santé dans les populations humaines\nLes études épidémiologiques utilisent des indicateurs complets et efficaces\nLes indicateurs servent à décrire, expliquer, évaluer et prévoir\nLa démarche utilisée par John Snow pour trouver le mode de transmission du choléra illustre la démarche épidémiologique\nIl existe 2 principaux types d’épidémiologie : l’épidémiologie descriptive et l’épidémiologie analytique",
                               "images":  [
                                              "annales_assets/2025_2026/sante_publique/tuto_1/image1.png",
                                              "annales_assets/2025_2026/sante_publique/tuto_1/image2.png"
@@ -23687,7 +23592,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  2,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 6 : Santé Publique\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nConcernant l’épidémiologie, laquelle (lesquelles) des propositions suivantes est (sont) exactes ?\nLe réseau Sentinelles, composé de 1300 médecins généralistes libéraux et d’une centaine de pédiatres libéraux, est un exemple de démarche d’épidémiologie descriptive en France métropolitaine\nLa Framingham heart study est une étude épidémiologique de cohorte rétrospective cher-chant à identifier les facteurs de risque des maladies cardiovasculaires et cérébro-vasculaires aux Etats-Unis\nLa mortalité prématurée caractérise les décès survenant avant l’âge de 55 ans et représente 20% des décès enregistrés en France\nIl n’est pas intéressant de mesurer la morbidité ressentie et déclarée par rapport à la mor-bidité diagnostiqué car les patients ne sont pas toujours au courant de leurs problèmes de santé\nLes maladies et problèmes oculaires sont la première cause de morbidité en France",
+                              "context":  "Durée de l’épreuve : 45 minutes\nInformations sur l’épreuve\nConcernant l’épidémiologie, laquelle (lesquelles) des propositions suivantes est (sont) exactes ?\nLe réseau Sentinelles, composé de 1300 médecins généralistes libéraux et d’une centaine de pédiatres libéraux, est un exemple de démarche d’épidémiologie descriptive en France métropolitaine\nLa Framingham heart study est une étude épidémiologique de cohorte rétrospective cher-chant à identifier les facteurs de risque des maladies cardiovasculaires et cérébro-vasculaires aux Etats-Unis\nLa mortalité prématurée caractérise les décès survenant avant l’âge de 55 ans et représente 20% des décès enregistrés en France\nIl n’est pas intéressant de mesurer la morbidité ressentie et déclarée par rapport à la mor-bidité diagnostiqué car les patients ne sont pas toujours au courant de leurs problèmes de santé\nLes maladies et problèmes oculaires sont la première cause de morbidité en France",
                               "images":  [
                                              "annales_assets/2025_2026/sante_publique/tuto_2/image1.png",
                                              "annales_assets/2025_2026/sante_publique/tuto_2/image2.png"
@@ -25033,7 +24938,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  2,
                               "type":  "QCM",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 6 : Santé Publique\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nInformations sur l’épreuve\nConcernant l’épidémiologie, laquelle (lesquelles) des propositions est (sont) exacte(s) ?\nL’épidémiologie se définit comme l’étude des maladies infectieuses et des épidémies\nLe réseau Sentinelles est composé de plus d’une dizaine de spécialités médicales différentes\nLe réseau Sentinelles est un exemple d’épidémiologie descriptive\nLa Framingham heart study est un exemple d’épidémiologie analytique\nL’épidémiologie évaluative permet d’évaluer les conséquences d’une maladie sur une popu-lation",
+                              "context":  "Durée de l’épreuve : 45 minutes\nInformations sur l’épreuve\nConcernant l’épidémiologie, laquelle (lesquelles) des propositions est (sont) exacte(s) ?\nL’épidémiologie se définit comme l’étude des maladies infectieuses et des épidémies\nLe réseau Sentinelles est composé de plus d’une dizaine de spécialités médicales différentes\nLe réseau Sentinelles est un exemple d’épidémiologie descriptive\nLa Framingham heart study est un exemple d’épidémiologie analytique\nL’épidémiologie évaluative permet d’évaluer les conséquences d’une maladie sur une popu-lation",
                               "images":  [
                                              "annales_assets/2025_2026/sante_publique/tuto_3/image1.png",
                                              "annales_assets/2025_2026/sante_publique/tuto_3/image2.png",
@@ -25993,7 +25898,7 @@ window.ANNALES_2025_2026 = [
                                                   "id":  "E",
                                                   "text":  "Les contaminants microbiens ont des manifestations à court terme en majorité",
                                                   "isCorrect":  true,
-                                                  "explanation":  "VRAI - Les contaminants microbiens ont des manifestations à court terme en majorité Les contaminants microbiens ont des manifestations à court terme en majorité → Les contaminants microbiens ont des manifestations à court terme en majorité → Les contaminants microbiens ont des manifestations à court terme en majorité → Le dioxyde de carbone est le principal responsable de l’augmentation de l’effet de serre Un grand oui ! Le dioxyde de carbone (CO2) est bien le principal gaz responsable de l’augmentation de l’effet de serre, contribuant à environ 50% de cette hausse. Les autres gaz impliqués sont les CFC (20%) et les oxydes d’azote NOx (15%). → Le dioxyde de carbone est le principal responsable de l’augmentation de l’effet de serre Un grand oui ! Le dioxyde de carbone (CO2) est bien le principal gaz responsable de l’augmentation de l’effet de serre, contribuant à environ 50% de cette hausse. Les autres gaz impliqués sont les CFC (20%) et les oxydes d’azote NOx (15%)."
+                                                  "explanation":  "VRAI - Les contaminants microbiens ont des manifestations à court terme en majorité Les contaminants microbiens ont des manifestations à court terme en majorité → Les contaminants microbiens ont des manifestations à court terme en majorité → Les contaminants microbiens ont des manifestations à court terme en majorité → Le dioxyde de carbone est le principal responsable de l’augmentation de l’effet de serre Un grand oui ! Le dioxyde de carbone (CO\u003csub\u003e2\u003c/sub\u003e) est bien le principal gaz responsable de l’augmentation de l’effet de serre, contribuant à environ 50% de cette hausse. Les autres gaz impliqués sont les CFC (20%) et les oxydes d’azote NOx (15%). → Le dioxyde de carbone est le principal responsable de l’augmentation de l’effet de serre Un grand oui ! Le dioxyde de carbone (CO\u003csub\u003e2\u003c/sub\u003e) est bien le principal gaz responsable de l’augmentation de l’effet de serre, contribuant à environ 50% de cette hausse. Les autres gaz impliqués sont les CFC (20%) et les oxydes d’azote NOx (15%)."
                                               }
                                           ],
                               "correctAnswers":  [
@@ -26330,7 +26235,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QROC",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 7 : SHS\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMERCI DE SCANNER CE QR-CODE ET REMPLIR LE FORMULAIRE ASSOCIÉ POUR NOUS PERMETTRE DE VOUS\nRETROUVER, NOUS NE POURRONS PAS CORRIGER VOS\nCOPIES SINON",
+                              "context":  "Durée de l’épreuve : 1h30\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMERCI DE SCANNER CE QR-CODE ET REMPLIR LE FORMULAIRE ASSOCIÉ POUR NOUS PERMETTRE DE VOUS\nRETROUVER, NOUS NE POURRONS PAS CORRIGER VOS\nCOPIES SINON",
                               "images":  [
                                              "annales_assets/2025_2026/shs/tuto_1/image1.png",
                                              "annales_assets/2025_2026/shs/tuto_1/image2.png",
@@ -26419,7 +26324,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QROC",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 7 : SHS\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMERCI DE SCANNER CE QR-CODE ET REMPLIR LE FORMULAIRE ASSOCIÉ POUR NOUS PERMETTRE DE VOUS\nRETROUVER, NOUS NE POURRONS PAS CORRIGER VOS\nCOPIES SINON",
+                              "context":  "Durée de l’épreuve : 1h30\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMERCI DE SCANNER CE QR-CODE ET REMPLIR LE FORMULAIRE ASSOCIÉ POUR NOUS PERMETTRE DE VOUS\nRETROUVER, NOUS NE POURRONS PAS CORRIGER VOS\nCOPIES SINON",
                               "images":  [
                                              "annales_assets/2025_2026/shs/tuto_2/image1.png",
                                              "annales_assets/2025_2026/shs/tuto_2/image2.png",
@@ -26510,7 +26415,7 @@ window.ANNALES_2025_2026 = [
                           {
                               "num":  1,
                               "type":  "QROC",
-                              "context":  "Association pour l’Accès Santé – Université Paris Cité Année Universitaire 2025-2026\nUE 7 : SHS\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nSeule l’utilisation du stylo à bille noir est autorisée pour cocher les grilles.\nInformations réglementaires\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMERCI DE SCANNER CE QR-CODE ET REMPLIR LE FORMULAIRE ASSOCIÉ POUR NOUS PERMETTRE DE VOUS\nRETROUVER, NOUS NE POURRONS PAS CORRIGER VOS\nCOPIES SINON",
+                              "context":  "Durée de l’épreuve : 1h30\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMerci de vérifier au début de l’épreuve que le sujet est complet.\nMERCI DE SCANNER CE QR-CODE ET REMPLIR LE FORMULAIRE ASSOCIÉ POUR NOUS PERMETTRE DE VOUS\nRETROUVER, NOUS NE POURRONS PAS CORRIGER VOS\nCOPIES SINON",
                               "images":  [
                                              "annales_assets/2025_2026/shs/tuto_3/image1.png",
                                              "annales_assets/2025_2026/shs/tuto_3/image2.png",

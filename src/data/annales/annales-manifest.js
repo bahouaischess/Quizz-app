@@ -1,6 +1,21 @@
 // PASS Paris Cite - Catalogue des Annales
 window.ANNALES_MANIFEST = [
     {
+        "id":  "inedite_sp_2026_s1",
+        "year":  "2026-2027",
+        "semester":  "Semestre 1",
+        "subjectId":  "sante_publique",
+        "subjectName":  "Santé Publique",
+        "ue":  "UE 6",
+        "icon":  "🏥",
+        "tutoId":  "inedite_1",
+        "tutoName":  "Annale Inédite",
+        "title":  "Annale Inédite PASS Paris Cité - UE 6 : Santé Publique (Semestre 1)",
+        "durationMinutes":  20,
+        "questionCount":  20,
+        "isSpecial":  true
+    },
+    {
         "id":  "pass_2024_2025_bio_cellulaire_tuto_1",
         "year":  "2024-2025",
         "semester":  "Semestre 1",
