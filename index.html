@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -13,6 +13,7 @@
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/ui/annales.css">
 </head>
 
 <body>
@@ -60,6 +61,8 @@
             <button class="nav-item active"
                 onclick="showView('workout-hub-view', this); if (window.WorkoutView) WorkoutView.renderHub();"><span
                     class="nav-icon">🏋️</span><span class="nav-label">Entraînement</span></button>
+            <button class="nav-item" onclick="showView('annales-view', this); if (window.AnnalesApp) AnnalesApp.renderHub();"><span
+                    class="nav-icon">📑</span><span class="nav-label">Annales PASS</span></button>
             <button class="nav-item" onclick="showView('home-view', this)"><span class="nav-icon">📚</span><span
                     class="nav-label">Mes Matières</span></button>
             <button class="nav-item" onclick="showView('flashcard-view', this); if (window.flashcardManager) window.flashcardManager.renderView();"><span
@@ -99,6 +102,13 @@
             title="Afficher la barre latérale">›</button>
 
         <div id="main-content">
+
+            <!-- ANNALES OFFICIELLES PASS PARIS CITE -->
+            <div id="annales-view" class="view hidden">
+                <div id="annales-hub-subview"></div>
+                <div id="annales-exam-subview" class="hidden"></div>
+                <div id="annales-results-subview" class="hidden"></div>
+            </div>
 
             <!-- CENTRE D'ENTRAÎNEMENT PRINCIPAL -->
             <div id="workout-hub-view" class="view"></div>
@@ -1153,6 +1163,14 @@
     <script src="app.js"></script>
     <script src="src/engine/community-admin.js"></script>
     <script src="src/engine/flashcards.js"></script>
+    <!-- Annales PASS Paris Cité (S1) -->
+    <script src="src/data/annales/annales-manifest.js"></script>
+    <script src="src/data/annales/nouvelle-annale-sp.js"></script>
+    <script src="src/data/annales/annales-2024_2025.js"></script>
+    <script src="src/data/annales/annales-2025_2026.js"></script>
+    <script src="src/data/annales/annales-2026_2027.js"></script>
+    <script src="src/data/annales/annales-manager.js"></script>
+    <script src="src/ui/annales-view.js"></script>
 </body>
 
 </html>
