@@ -108,6 +108,11 @@ window.AnnalesManager = (function () {
             list.push(normalizeAnnale(window.NOUVELLE_ANNALE_SP));
         }
 
+        // 1bis. Annales inédites (rédigées à partir des cours, un fichier par thème)
+        if (window.ANNALES_INEDITES && Array.isArray(window.ANNALES_INEDITES)) {
+            list.push(...window.ANNALES_INEDITES.map(normalizeAnnale));
+        }
+
         // 2. Année 2026-2027
         if (window.ANNALES_2026_2027 && Array.isArray(window.ANNALES_2026_2027)) {
             list.push(...window.ANNALES_2026_2027.map(normalizeAnnale));
