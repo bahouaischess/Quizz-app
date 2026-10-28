@@ -24,6 +24,101 @@ window.AnnalesApp = (function () {
         resultFilter: 'all'  // 'all' | 'errors' | 'overtime'
     };
 
+    const SUBJECT_ICONS = {
+        'sante_publique': '🏥',
+        'bio_cellulaire': '🔬',
+        'biochimie': '🧪',
+        'chimie': '⚗️',
+        'histo_embryo': '🧬',
+        'physique': '⚡',
+        'shs': '📚'
+    };
+
+    function getSubjectIcon(subjectId, currentIcon) {
+        if (currentIcon && !currentIcon.includes('?')) return currentIcon;
+        return SUBJECT_ICONS[subjectId] || '📝';
+    }
+
+    function normalizeQuestion(q, idx) {
+        if (!q) return null;
+        const letters = ['A', 'B', 'C', 'D', 'E'];
+        const rawOptions = q.options || q.Options || [];
+
+        const options = rawOptions.map((o, optIdx) => {
+            const id = (o.id || o.Id || letters[optIdx] || '').toString().trim().toUpperCase();
+            const text = o.text !== undefined ? o.text : (o.Text !== undefined ? o.Text : '');
+            const isCorrect = o.isCorrect !== undefined ? Boolean(o.isCorrect) : (o.IsCorrect !== undefined ? Boolean(o.IsCorrect) : false);
+            const explanation = o.explanation !== undefined ? o.explanation : (o.Explanation !== undefined ? o.Explanation : '');
+            return { id, text, isCorrect, explanation };
+        });
+
+        const type = q.type || q.Type || 'QCM';
+        if (type === 'QCM' && options.length === 0) {
+            for (let i = 0; i < 5; i++) {
+                options.push({
+                    id: letters[i],
+                    text: `(Proposition ${letters[i]})`,
+                    isCorrect: false,
+                    explanation: ''
+                });
+            }
+        }
+
+        const rawCorrect = q.correctAnswers || q.CorrectAnswers || [];
+        const correctAnswers = Array.isArray(rawCorrect) ? rawCorrect.map(a => a.toString().trim().toUpperCase()) : [];
+
+        if (correctAnswers.length > 0) {
+            options.forEach(opt => {
+                if (correctAnswers.includes(opt.id)) {
+                    opt.isCorrect = true;
+                }
+            });
+        } else {
+            options.forEach(opt => {
+                if (opt.isCorrect && !correctAnswers.includes(opt.id)) {
+                    correctAnswers.push(opt.id);
+                }
+            });
+        }
+
+        return {
+            num: q.num !== undefined ? q.num : (q.Num !== undefined ? q.Num : idx + 1),
+            type: type,
+            context: q.context !== undefined ? q.context : (q.Context !== undefined ? q.Context : ''),
+            images: q.images || q.Images || [],
+            question: q.question !== undefined ? q.question : (q.Question !== undefined ? q.Question : ''),
+            rawOptions: q.rawOptions || q.RawOptions || [],
+            options: options,
+            correctAnswers: correctAnswers,
+            generalNotes: q.generalNotes || q.GeneralNotes || ''
+        };
+    }
+
+    function normalizeAnnale(a) {
+        if (!a) return null;
+        let icon = getSubjectIcon(a.subjectId || a.SubjectId, a.icon || a.Icon);
+
+        const rawQuestions = a.questions || a.Questions || [];
+        const questions = rawQuestions.map((q, idx) => normalizeQuestion(q, idx));
+
+        return {
+            id: a.id || a.Id,
+            year: a.year || a.Year,
+            semester: a.semester || a.Semester || 'Semestre 1',
+            subjectId: a.subjectId || a.SubjectId,
+            subjectName: a.subjectName || a.SubjectName,
+            ue: a.ue || a.Ue || 'UE',
+            icon: icon,
+            tutoId: a.tutoId || a.TutoId,
+            tutoName: a.tutoName || a.TutoName,
+            title: a.title || a.Title,
+            durationMinutes: a.durationMinutes || a.DurationMinutes || (questions.length > 0 ? questions.length : 30),
+            questionCount: questions.length || a.questionCount || a.QuestionCount || 0,
+            isSpecial: Boolean(a.isSpecial || a.IsSpecial),
+            questions: questions
+        };
+    }
+
     // Initialisation
     function init() {
         console.log('[AnnalesApp] Initialisé avec succès.');
@@ -166,12 +261,13 @@ window.AnnalesApp = (function () {
         }).join('');
     }
 
-    function renderAnnaleCard(a) {
+    function renderAnnaleCard(rawA) {
+        const a = normalizeAnnale(rawA);
         const best = window.AnnalesManager ? window.AnnalesManager.getBestResult(a.id) : null;
         const last = window.AnnalesManager ? window.AnnalesManager.getLastResult(a.id) : null;
 
-        const hasImages = a.questions && a.questions.some(q => q.images && q.images.length > 0);
-        const hasContext = a.questions && a.questions.some(q => q.context && q.context.length > 0);
+        const hasImages = a.questions && a.questions.some(q => (q.images || q.Images || []).length > 0);
+        const hasContext = a.questions && a.questions.some(q => Boolean(q.context || q.Context));
 
         return `
             <div class="annale-card ${a.isSpecial ? 'special-glow' : ''}" onclick="AnnalesApp.startExam('${a.id}')">
@@ -226,7 +322,13 @@ window.AnnalesApp = (function () {
     // 2. MODE ÉPREUVE (EXAM PLAYER)
     // ------------------------------------------------------------------------
     function startExam(annaleId) {
-        const annale = window.AnnalesManager ? window.AnnalesManager.getAnnaleById(annaleId) : null;
+        const rawAnnale = window.AnnalesManager ? window.AnnalesManager.getAnnaleById(annaleId) : null;
+        if (!rawAnnale) {
+            alert("Cette épreuve n'est pas encore disponible.");
+            return;
+        }
+
+        const annale = normalizeAnnale(rawAnnale);
         if (!annale || !annale.questions || annale.questions.length === 0) {
             alert("Cette épreuve n'est pas encore disponible.");
             return;
@@ -413,17 +515,17 @@ window.AnnalesApp = (function () {
                     </div>
 
                     <!-- ÉNONCÉ COMMUN / CONTEXTE / ÉTUDE DE CAS -->
-                    ${q.context ? `
+                    ${(q.context || q.Context) ? `
                         <div class="exercise-context-box">
                             <div class="ctx-header">📄 Énoncé / Données de l'exercice :</div>
-                            <div class="ctx-body">${escapeHtml(q.context).replace(/\n/g, '<br>')}</div>
+                            <div class="ctx-body">${escapeHtml(q.context || q.Context).replace(/\n/g, '<br>')}</div>
                         </div>
                     ` : ''}
 
                     <!-- IMAGES / SCHÉMAS / CARTES / MICROGRAPHIES -->
-                    ${q.images && q.images.length > 0 ? `
+                    ${(q.images || q.Images || []).length > 0 ? `
                         <div class="question-images-box">
-                            ${q.images.map(imgSrc => `
+                            ${(q.images || q.Images).map(imgSrc => `
                                 <div class="image-wrapper" onclick="AnnalesApp.openLightbox('${imgSrc}')">
                                     <img src="${imgSrc}" alt="Document d'illustration PASS" loading="lazy">
                                     <span class="zoom-cue">🔍 Cliquez pour agrandir</span>
@@ -434,7 +536,7 @@ window.AnnalesApp = (function () {
 
                     <!-- ÉNONCÉ DE LA QUESTION -->
                     <div class="question-stem-text">
-                        ${escapeHtml(q.question)}
+                        ${escapeHtml(q.question || q.Question || '')}
                     </div>
 
                     <!-- OPTIONS A, B, C, D, E OU SHS -->
@@ -499,7 +601,13 @@ window.AnnalesApp = (function () {
 
         // QCM standard à 5 options (A, B, C, D, E)
         const letters = ['A', 'B', 'C', 'D', 'E'];
-        const options = q.options && q.options.length > 0 ? q.options : letters.map(l => ({ id: l, text: `Proposition ${l}` }));
+        const rawOpts = q.options || q.Options || [];
+        const options = rawOpts.length > 0
+            ? rawOpts.map((opt, idx) => ({
+                id: (opt.id || opt.Id || letters[idx] || '').toString().trim().toUpperCase(),
+                text: opt.text !== undefined ? opt.text : (opt.Text !== undefined ? opt.Text : `Proposition ${letters[idx]}`)
+            }))
+            : letters.map(l => ({ id: l, text: `Proposition ${l}` }));
 
         return `
             <div class="options-container">

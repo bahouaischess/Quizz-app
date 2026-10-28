@@ -6,28 +6,121 @@
 window.AnnalesManager = (function () {
     const STORAGE_KEY = 'quizzhub_annales_history_v1';
 
+    const SUBJECT_ICONS = {
+        'sante_publique': '🏥',
+        'bio_cellulaire': '🔬',
+        'biochimie': '🧪',
+        'chimie': '⚗️',
+        'histo_embryo': '🧬',
+        'physique': '⚡',
+        'shs': '📚'
+    };
+
+    function normalizeQuestion(q, idx) {
+        if (!q) return null;
+        const letters = ['A', 'B', 'C', 'D', 'E'];
+        const rawOptions = q.options || q.Options || [];
+
+        const options = rawOptions.map((o, optIdx) => {
+            const id = (o.id || o.Id || letters[optIdx] || '').toString().trim().toUpperCase();
+            const text = o.text !== undefined ? o.text : (o.Text !== undefined ? o.Text : '');
+            const isCorrect = o.isCorrect !== undefined ? Boolean(o.isCorrect) : (o.IsCorrect !== undefined ? Boolean(o.IsCorrect) : false);
+            const explanation = o.explanation !== undefined ? o.explanation : (o.Explanation !== undefined ? o.Explanation : '');
+            return { id, text, isCorrect, explanation };
+        });
+
+        const type = q.type || q.Type || 'QCM';
+        if (type === 'QCM' && options.length === 0) {
+            for (let i = 0; i < 5; i++) {
+                options.push({
+                    id: letters[i],
+                    text: `(Proposition ${letters[i]})`,
+                    isCorrect: false,
+                    explanation: ''
+                });
+            }
+        }
+
+        const rawCorrect = q.correctAnswers || q.CorrectAnswers || [];
+        const correctAnswers = Array.isArray(rawCorrect) ? rawCorrect.map(a => a.toString().trim().toUpperCase()) : [];
+
+        if (correctAnswers.length > 0) {
+            options.forEach(opt => {
+                if (correctAnswers.includes(opt.id)) {
+                    opt.isCorrect = true;
+                }
+            });
+        } else {
+            options.forEach(opt => {
+                if (opt.isCorrect && !correctAnswers.includes(opt.id)) {
+                    correctAnswers.push(opt.id);
+                }
+            });
+        }
+
+        return {
+            num: q.num !== undefined ? q.num : (q.Num !== undefined ? q.Num : idx + 1),
+            type: type,
+            context: q.context !== undefined ? q.context : (q.Context !== undefined ? q.Context : ''),
+            images: q.images || q.Images || [],
+            question: q.question !== undefined ? q.question : (q.Question !== undefined ? q.Question : ''),
+            rawOptions: q.rawOptions || q.RawOptions || [],
+            options: options,
+            correctAnswers: correctAnswers,
+            generalNotes: q.generalNotes || q.GeneralNotes || ''
+        };
+    }
+
+    function normalizeAnnale(a) {
+        if (!a) return null;
+        let icon = a.icon || a.Icon;
+        if (!icon || icon.includes('?')) {
+            icon = SUBJECT_ICONS[a.subjectId || a.SubjectId] || '📝';
+        }
+
+        const rawQuestions = a.questions || a.Questions || [];
+        const questions = rawQuestions.map((q, idx) => normalizeQuestion(q, idx));
+
+        return {
+            id: a.id || a.Id,
+            year: a.year || a.Year,
+            semester: a.semester || a.Semester || 'Semestre 1',
+            subjectId: a.subjectId || a.SubjectId,
+            subjectName: a.subjectName || a.SubjectName,
+            ue: a.ue || a.Ue || 'UE',
+            icon: icon,
+            tutoId: a.tutoId || a.TutoId,
+            tutoName: a.tutoName || a.TutoName,
+            title: a.title || a.Title,
+            durationMinutes: a.durationMinutes || a.DurationMinutes || (questions.length > 0 ? questions.length : 30),
+            questionCount: questions.length || a.questionCount || a.QuestionCount || 0,
+            isSpecial: Boolean(a.isSpecial || a.IsSpecial),
+            questions: questions
+        };
+    }
+
     // Récupérer l'ensemble des annales disponibles
     function getAllAnnales() {
         const list = [];
 
         // 1. Annale inédite de Santé Publique
         if (window.NOUVELLE_ANNALE_SP) {
-            list.push(window.NOUVELLE_ANNALE_SP);
+            list.push(normalizeAnnale(window.NOUVELLE_ANNALE_SP));
         }
 
         // 2. Année 2026-2027
         if (window.ANNALES_2026_2027 && Array.isArray(window.ANNALES_2026_2027)) {
-            list.push(...window.ANNALES_2026_2027);
+            list.push(...window.ANNALES_2026_2027.map(normalizeAnnale));
         }
 
         // 3. Année 2025-2026
         if (window.ANNALES_2025_2026 && Array.isArray(window.ANNALES_2025_2026)) {
-            list.push(...window.ANNALES_2025_2026);
+            list.push(...window.ANNALES_2025_2026.map(normalizeAnnale));
         }
 
         // 4. Année 2024-2025
         if (window.ANNALES_2024_2025 && Array.isArray(window.ANNALES_2024_2025)) {
-            list.push(...window.ANNALES_2024_2025);
+            list.push(...window.ANNALES_2024_2025.map(normalizeAnnale));
         }
 
         return list;
@@ -71,10 +164,13 @@ window.AnnalesManager = (function () {
     // Calcul officiel des points selon le barème du prompt
     // 0 erreur = 1.0 pt | 1 erreur = 0.7 pt | 2 erreurs = 0.1 pt | >= 3 erreurs = 0.0 pt
     // Dépassement chrono (> 60 secondes sur la question) = pénalité de -0.3 pt
-    function evaluateQuestion(q, userSelection = [], timeSpentSeconds = 0) {
+    function evaluateQuestion(rawQ, userSelection = [], timeSpentSeconds = 0) {
+        const q = normalizeQuestion(rawQ, 0);
         const letters = ['A', 'B', 'C', 'D', 'E'];
-        const userSet = new Set(userSelection);
-        const correctAnswers = q.correctAnswers || (q.options ? q.options.filter(o => o.isCorrect).map(o => o.id) : []);
+        const userSet = new Set((userSelection || []).map(l => l.toString().trim().toUpperCase()));
+        const correctAnswers = q.correctAnswers && q.correctAnswers.length > 0
+            ? q.correctAnswers
+            : (q.options ? q.options.filter(o => o.isCorrect).map(o => o.id) : []);
         const correctSet = new Set(correctAnswers);
 
         // Calcul du nombre d'erreurs (distance de Hamming sur les 5 items)
