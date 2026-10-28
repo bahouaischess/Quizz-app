@@ -5934,7 +5934,9 @@ window.ANNALES_2025_2026 = [
                 "num": 3,
                 "type": "QCM",
                 "context": "On s’intéresse à la description de la famille F1. Figure 2 : Arbre de la famille 1\nP pour père ; M pour mère ; F pour fille ; G pour garçon. Les individus présentant des signes cliniques sont représentés en nuance de gris, l’intensité de la coloration est associée à l’importance des signes cliniques : rénales et cardiaques chez G1.2 uniquement rénales chez F1.3.\nLe deuxième enfant (G1.2) a présenté des signes de maladie de Fabry dans l’enfance ce qui a motivé un séquençage, chez les 3 enfants, du gène GLA par séquençage selon Sanger après amplification des exons en utilisant 7 couples d’amorces localisées dans les régions introniques de part et d’autre des exons permettant l’analyse des jonctions intron-exon.\nUne mutation c.155G>A, a été identifiée chez F1.1(18 ans) et F1.3 (5 ans) à l’état hétérozygote et chez G1.2 (6ans).",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_3/fig_q3_1.png"
+                ],
                 "question": "Compte tenu de vos connaissances, des éléments exposés et des données présentées dans les figures 1 et 2, quelle est la ou quelles sont les proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -7052,7 +7054,9 @@ window.ANNALES_2025_2026 = [
                 "num": 8,
                 "type": "QCM",
                 "context": "COH\nAcide lactique\nLa théorie VSEPR du carbone 3 est AL<sub>4</sub>E<sub>0</sub>\nLa géométrie de l’oxygène 1 est tétraédrique\nL’angle entre les liaisons du carbone 1 est de 120°\nOn retrouve 2 orbitales moléculaires σ entre C<sub>3</sub> et O<sub>3</sub>\nL’oxygène 2 est de géométrie trigonale plane",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q8_1.png"
+                ],
                 "question": "Concernant la molécule présente ci-dessous quelle est la (ou quelles sont les) pro-position(s) exacte(s) ?",
                 "options": [
                     {
@@ -7097,7 +7101,9 @@ window.ANNALES_2025_2026 = [
                 "num": 9,
                 "type": "QCM",
                 "context": "La double liaison du carbone 4 implique une orbitale p",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q9_1.png"
+                ],
                 "question": "O -NO -NConcernant la molécule présente ci-dessous, quelle est la (ou quelles sont les) pro-position(s) exacte(s) ?",
                 "options": [
                     {
@@ -7141,7 +7147,9 @@ window.ANNALES_2025_2026 = [
                 "num": 10,
                 "type": "QCM",
                 "context": "L’azote du cycle a un effet inductif attracteur\nLa molécule contient un bicycle aromatique",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q10_1.png"
+                ],
                 "question": "Concernant les molécule représentées ci-dessous, quelle est la (ou quelles sont les) proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -7182,7 +7190,9 @@ window.ANNALES_2025_2026 = [
                 "num": 11,
                 "type": "QCM",
                 "context": "NH<sub>2</sub>\nLe doublet non liant de l’azote 1 est impliqué dans un motif de mésomérie\nL’effet mésomère l’emporte toujours sur l’effet inductif\nDans la molécule A, l’effet inductif attracteur du O est ressenti jusqu’au NH\nDans la molécule A, l’effet inductif attracteur de NH et de N<sub>1</sub> s’additionnent\nLes molécules B et C ont une réactivité différente mais voisine\nLes indicateurs de pH sont des composés tantôt naturels, tantôt organiques, utilisés pour vi-sualiser l’évolution du pH d’une solution. L’intérêt des indicateurs de pH réside dans leur couleur, qui change aux alentours de pH caractéristiques de chaque indicateurs, permettant d’en observer les variations assez nettement.\nOn en propose quelques uns ici.\nNOH\nCOOH\nN 1Br\nRouge de méthyleBleu de bromothymol (BBT)\nVert malachite",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q11_1.png"
+                ],
                 "question": "A propos des indicateurs de pH, parmi les propositions suivantes, laquelle (les-quelles) des propositions suivantes est(sont) exacte(s) ?",
                 "options": [
                     {
@@ -7226,7 +7236,9 @@ window.ANNALES_2025_2026 = [
                 "num": 12,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q12_1.png"
+                ],
                 "question": "A propos des composés suivants, indiquer quelle(s) proposition(s) est(sont) exacte(s) :",
                 "options": [
                     {
@@ -7267,7 +7279,9 @@ window.ANNALES_2025_2026 = [
                 "num": 13,
                 "type": "QCM",
                 "context": "NO<sub>2</sub>\nLe groupement nitro stabilise plus la molécule E que la molécule C\nPlus la délocalisation du DNL d’un composé basique est grande, plus le pKa de son couple acido-basique est bas\nDans l’ordre croissant d’acidité, on a E > C > B > D > A\nDans l’ordre croissant d’acidité, on a E > D > C > B > A\nDans l’ordre croissant d’acidité, on a C > E > B > D > A\nLe cholestérol est un lipide, constituant essentiel de la membrane cellulaire impliqué dans de nombreux processus biochimiques. Cependant, sa concentration dans les vaisseaux sanguins est un facteur de risque d’accidents cardio-vasculaires. Il est représenté ci-dessous avec les molécules A et B.\nCholestérol\nHOHO",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q13_1.png"
+                ],
                 "question": "Concernent la molécule de cholestérol, quelle(s) est (sont) la (les) réponse(s) exacte(s) ?",
                 "options": [
                     {
@@ -7352,7 +7366,10 @@ window.ANNALES_2025_2026 = [
                 "num": 15,
                 "type": "QCM",
                 "context": "La canavanine est un analogue structurel de l’arginine utilisé par de nombreux légumes pour se protéger des herbivores. Elle présente une certaine toxicité pour l’humain, qui est neutralisée à la cuisson.\nOn représente ci-dessous la cavanine, une molécule dérivée (via l’ajout d’un groupement alcool), et trois molécules en représentation de Fischer.\nNH<sub>2</sub>\nONH<sub>2</sub>\nOHO\nH<sub>2</sub>NN\nOHH<sub>2</sub>NNOH\nL-Canavanine\nCOOH\nNH<sub>2</sub>\nCOOH\nDérivé\nCOOH\nNH<sub>2</sub>\nH<sub>2</sub>N\nHH<sub>2</sub>N\nHHNH<sub>2</sub>\nHHHOHHOH\nIII\nIII",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q15_1.png",
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q15_2.png"
+                ],
                 "question": "Concernant les différents composés ci-dessus, laquelle (ou lesquelles) des proposi-tions est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -7393,7 +7410,12 @@ window.ANNALES_2025_2026 = [
                 "num": 16,
                 "type": "QCM",
                 "context": "On prend le dérivé de la L-Canavanine et des projections de Newman.\nNH<sub>2</sub>OHO\nH<sub>2</sub>NNOH\nCOOH\nDérivé\nCOOH\nNH<sub>2</sub>\nIVV\nCOOH VI",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q16_1.png",
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q16_2.png",
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q16_3.png",
+                    "annales_assets/2025_2026/chimie/tuto_1/fig_q16_4.png"
+                ],
                 "question": "Concernant les projections ci-dessus, laquelle (ou lesquelles) des propositions est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -7886,7 +7908,9 @@ window.ANNALES_2025_2026 = [
                 "num": 5,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q5_1.png"
+                ],
                 "question": "On s'intéresse à la molécule ci dessous, laquelle (lesquelles) des propositions sui-vantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -7927,7 +7951,9 @@ window.ANNALES_2025_2026 = [
                 "num": 6,
                 "type": "QCM",
                 "context": "Le carbone 3 est hybridé sp<sup>3</sup>\nDans la molécule HCN, l’azote est AL<sub>3</sub>E<sub>1</sub>\nLe leuco-indigo est une forme réduite de l’indigo, un composé organique extrait de l’indigotier utilisé comme colorant. Un chimiste effectue diverses réactions chimiques sur cette molécule et parvient ainsi à obtenir la molécule A ci-dessous.\nLeuco-indigo\nMolécule A",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q6_1.png"
+                ],
                 "question": "Concernant les effets électroniques au sein du leuco-indigo et de la molécule A, laquelle (lesquelles) des propositions est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -8009,7 +8035,12 @@ window.ANNALES_2025_2026 = [
                 "num": 8,
                 "type": "QCM",
                 "context": "À présent, nous allons nous intéresser à l’isoleucine, à la thréonine et à l’histidine. Ces acides aminés ont des rôles essentiels et participent au bon fonctionnement du métabolisme. Les représentations de Cram sont données ci-dessous :\nCH<sub>3</sub>O\nOHO\nH<sub>3</sub>C\nOHH<sub>3</sub>COH\nNH<sub>2</sub>\nIsoleucine\nNH<sub>2</sub>\nThréonine\nHistidine",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q8_1.png",
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q8_2.png",
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q8_3.png",
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q8_4.png"
+                ],
                 "question": "À propos de l'isoleucine, quelle est la (ou quelles sont les) proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -8094,7 +8125,11 @@ window.ANNALES_2025_2026 = [
                 "num": 10,
                 "type": "QCM",
                 "context": "HOH\nH<sub>2</sub>N\nCH<sub>3</sub>\nLa projection Newman de la thréonine dans l’axe C(2)-C(3) est la suivante :\nCOOH\nCH<sub>3</sub>",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q10_1.png",
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q10_2.png",
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q10_3.png"
+                ],
                 "question": "À propos de l'histidine, quelle est la (ou quelles sont les) proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -8138,7 +8173,9 @@ window.ANNALES_2025_2026 = [
                 "num": 11,
                 "type": "QCM",
                 "context": "La molécule ci-dessous est une forme tautomère de l’histidine :",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q11_1.png"
+                ],
                 "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -8483,7 +8520,9 @@ window.ANNALES_2025_2026 = [
                 "num": 19,
                 "type": "QCM",
                 "context": "La concentration de lactose suit un déclin exponentiel\nCe graphique décrit la réaction :\n1 [Lactose]\n1 [Lactose]<sub>0</sub>\nLa L-lysine est un acide aminé essentiel que l’on retrouve notamment dans la viande, les œufs, le poisson mais aussi les légumineuses comme le soja. Elle intervient dans bon nombre de réactions de l’organisme comme la synthèse de la carnitine, une molécule indispensable au métabolisme des acides gras. On donne ci-dessous la formule semi-développée de la L-lysine :\nNH<sub>2</sub>\nNH<sub>2</sub>\nL-Lysine\nDonnées :\npKa<sub>1</sub> = 2,2\npKa<sub>2</sub> = 9\npKa<sub>3</sub> = 10,6",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q19_1.png"
+                ],
                 "question": "Concernant la L-lysine, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -8569,7 +8608,9 @@ window.ANNALES_2025_2026 = [
                 "num": 21,
                 "type": "QCM",
                 "context": "Soit la réaction (1) une réaction de substitution nucléophile dont la vitesse se note v = k[I]. A la fin de la réaction, 2 molécules sont formées.\nH<sub>3</sub>CCl\n+ EtOH",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_2/fig_q21_1.png"
+                ],
                 "question": "Concernant la réaction (1), laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -8803,7 +8844,9 @@ window.ANNALES_2025_2026 = [
                 "num": 3,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q3_1.png"
+                ],
                 "question": "Parmi les propositions suivantes, laquelle (ou lesquelles) est (ou sont) exacte(s) ?",
                 "options": [
                     {
@@ -8885,7 +8928,12 @@ window.ANNALES_2025_2026 = [
                 "num": 5,
                 "type": "QCM",
                 "context": "Molécule 1\nNH<sub>2</sub>\nMolécule 2\nMolécule 3\nMolécule 4\nLe ribose est un composant important de notre génome. Sous sa forme apparentée, le désoxy-ribose, il est la matrice fondamentale de l’ADN.\nCOOH\nOHO\nHOOH\nOHOH\nHOH\nHOH\nHOH\nCH<sub>2</sub>OH\nD-RiboseMolécule X",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q5_1.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q5_2.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q5_3.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q5_4.png"
+                ],
                 "question": "Concernant le D-Ribose et ses isomères, parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -8929,7 +8977,10 @@ window.ANNALES_2025_2026 = [
                 "num": 6,
                 "type": "QCM",
                 "context": "CHO\nCHO\nCHO\nOHHOH\nHOH\nOHH\nOHHOH\nHOH\nHOH\nHOH\nHOH\nHOH\nHOH\nCHO\nMolécule A\nCHO\nCHO\nMolécule B\nH OH\nHO H\nCHO\nMolécule C\nHOH\nHOH\nHOC\nHO H\nH OH\nCHO\nMolécule D\nMolécule E",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q6_1.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q6_2.png"
+                ],
                 "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -8975,7 +9026,13 @@ window.ANNALES_2025_2026 = [
                 "num": 7,
                 "type": "QCM",
                 "context": "Soit la réaction (1) suivante :\nEtH\nEtO<sup>–</sup> + H2\n<sup>1</sup>Br\nH<sub>3</sub>CCOO<sup>−</sup>\nDeux réactions en compétition peuvent être produites à partir de ces réactifs : une réaction d’éli-mination et une réaction de substitution. On s’intéresse d’abord à la réaction d’élimination, nommée (1.A), avec ses produits potentiels suivants :\nH<sub>3</sub>C\nHH<sub>3</sub>C\nCOO<sup>−</sup>HBrH\nCOO<sup>−</sup>\nEtCOO<sup>−</sup>\nMolécule F\nEtH\nMolécule G\nEtCOO<sup>−</sup>\nMolécule H\nEtBr\nMolécule I",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q7_1.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q7_2.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q7_3.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q7_4.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q7_5.png"
+                ],
                 "question": "Concernant la réaction (1.A), laquelle (lesquelles) des propositions est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9102,7 +9159,11 @@ window.ANNALES_2025_2026 = [
                 "num": 10,
                 "type": "QCM",
                 "context": "On s’intéresse à la réaction de Cannizzaro (2), mettant en jeu deux molécules de benzaldé-hyde (I) pour former de l’acide benzoïque (II) et de l’alcool benzylique (III) :\nH + HO<sup>–</sup>\nIIIIII\nOn donne les couples oxydo-réducteurs (I/III), (II/I) et (O<sub>2</sub>/OH– ) ainsi que la force élec-\ntromotrice standard de la réaction à T = 298K : E<sup>○</sup> = −0,3 V",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q10_1.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q10_2.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q10_3.png"
+                ],
                 "question": "A propos de la réaction d'oxydo-réduction ci-dessus, laquelle (lesquelles) des pro-positions suivantes est (sont) excate(s) ?",
                 "options": [
                     {
@@ -9147,7 +9208,11 @@ window.ANNALES_2025_2026 = [
                 "num": 11,
                 "type": "QCM",
                 "context": "On donne le schéma réactionnel de la réaction (2) :\nOO OHO\nH + HO\n–Étape 1\nÉtape 2\nH+ Molécule I",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q11_1.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q11_2.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q11_3.png"
+                ],
                 "question": "A propos du mécanisme réactionnel, laquelle des propositions suivantes est exacte ?",
                 "options": [
                     {
@@ -9188,7 +9253,9 @@ window.ANNALES_2025_2026 = [
                 "num": 12,
                 "type": "QCM",
                 "context": "On s’intéresse à la réaction (3) de réduction de l’acétamide en 1-aminoéthanol :\nNH<sub>2</sub>NH<sub>2</sub>\nH3CC(g) + H<sub>2</sub> (g) H3CCH(g)\nOOH",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q12_1.png"
+                ],
                 "question": "Concernant la réaction suivante, laquelle (ou lesquelles) des propositions est(sont) exacte(s) ?",
                 "options": [
                     {
@@ -9273,7 +9340,9 @@ window.ANNALES_2025_2026 = [
                 "num": 14,
                 "type": "QCM",
                 "context": "On s’intéresse à un dérivé de la citrulline, un acide aminé non protéique que l’on retrouve notamment dans les cucurbitacées. On présente ici sa forme totalement protonée :\nH<sub>3</sub>N\nNOH\n3 NH<sub>3</sub>\nOn donne pKa<sub>1</sub> = 2,5, pKa<sub>2</sub> = 11,5, pKa<sub>3</sub> = 12,1.",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q14_1.png"
+                ],
                 "question": "Concernant les molécules ci-dessus, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
@@ -9314,7 +9383,9 @@ window.ANNALES_2025_2026 = [
                 "num": 15,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q15_1.png"
+                ],
                 "question": "Concernant le dérivé de la citrulline, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
@@ -9445,7 +9516,9 @@ window.ANNALES_2025_2026 = [
                 "num": 18,
                 "type": "QCM",
                 "context": "Le peroxyde d’hydrogène est un composé présentant des risques de brûlures et d’irritation notamment au niveau de la peau, des poumons et des yeux. A l’échelle cellulaire, il inter-vient dans la formation de radicaux libres responsables de la dégradation des membranes et de dommages à l’ADN. Naturellement produite par la cellule, sa dégradation rapide est donc primordiale. C’est le rôle de la catalase, une enzyme localisée dans le peroxysome et catalysant la réaction de dismutation du peroxyde d’hydrogène présentée ci-dessous :\n2 H2O2(aq) −−k→ 2 H2O(l) + O2(g)\nSoit une solution contenant du peroxyde d’hydrogène à concentration [H<sub>2</sub>O<sub>2</sub>]<sub>0</sub> = 5,00·10−1 mol · L<sup>−1</sup>. L’évolution de [H<sub>2</sub>O<sub>2</sub>] a été mesurée à T = 27○C en fonction du temps et sans catalase. Les données ont été rapportées sur le tableau et le graphique ci-dessous. On considère que la solution peut provoquer des lésions oculaires jusqu’à une concentration 16 fois inférieure la concentration initiale [H<sub>2</sub>O<sub>2</sub>]<sub>0</sub>. La réaction est totale et la vitesse de la réaction suit la loi de Van’t Hoff.\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Temps (jours)</th><th>0</th><th>2</th><th>5</th><th>10</th><th>15</th><th>25</th><th>35</th><th>50</th></tr><tr><th>[H<sub>2</sub>O<sub>2</sub>] (10−1 mol · L<sup>−1</sup>)</th><td>5</td><td>4,17</td><td>3,33</td><td>2,5</td><td>2</td><td>1,43</td><td>1,11</td><td>0,83</td></tr></table></div>\nÉvolution de [H<sub>2</sub>O<sub>2</sub>] en fonction du temps\nTemps (jours)",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q18_1.png"
+                ],
                 "question": "Concernant la réaction de dismutation du peroxyde d'hydrogène en absence de catalase, laquelle (ou lesquelles) des proposition(s) suivante(s) est (ou sont) exacte(s) ?",
                 "options": [
                     {
@@ -9571,7 +9644,9 @@ window.ANNALES_2025_2026 = [
                 "num": 21,
                 "type": "QCM",
                 "context": "Le myrcène est un composé utilisé dans l’industrie du parfum. On étudie la réaction d’un dérivé du myrcène de formule brute C<sub>11</sub>H<sub>18</sub> avec l’acide chlorhydrique HCl. Seul deux produits sont formés lors de la réaction.\n+ HCl C<sub>11</sub>H<sub>19</sub>Cl",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q21_1.png"
+                ],
                 "question": "Concernant la réactivité des réactifs de la réaction, laquelle (lesquelles) des propo-sitions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9653,7 +9728,12 @@ window.ANNALES_2025_2026 = [
                 "num": 23,
                 "type": "QCM",
                 "context": "Les produits obtenus forment un mélange racémique\nOn considère les molécules I, II en quantité équimolaires et la réaction d’addition nucléophile en catalyse base forte suivante :\nH<sub>3</sub>COO\nH<sub>3</sub>C\nMolécule I\nH<sub>3</sub>CO H<sub>3</sub>C\nMolécule II\nOCH<sub>3</sub> H\nH<sub>3</sub>C\nCH<sub>3</sub>OHH3C\nH OCH<sub>3</sub>\nMolécule III\nH<sub>3</sub>C\nMolécule IV\nOCH<sub>3</sub>",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q23_1.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q23_2.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q23_3.png",
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q23_4.png"
+                ],
                 "question": "Concernant la réaction (1), laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9742,7 +9822,9 @@ window.ANNALES_2025_2026 = [
                 "num": 25,
                 "type": "QCM",
                 "context": "À présent, on s’intéresse à l’acide érythronique (C<sub>4</sub>H<sub>8</sub>O<sub>5</sub>), un acide organique dérivé de l’érythrose. Il est lié au métabolisme du glucose et à la voie des pentoses phosphates. Voici sa représentation :\nOHO\nAcide Érythronique\nOn dispose de plusieurs solutions :\nSolution 1 : solution d’acide érythronique de volume V<sub>1</sub> = 25 mL et de concentration\nC<sub>1</sub> = 10 × 10−1 mol/L. On donne son pKa = 3,0.\nSolution 2 : solution de base forte HO– de volume V<sub>2</sub> = 10 mL et de concentration\nC<sub>2</sub> = 20 × 10−1 mol/L.\nSolution 3 : un mélange des solutions 1 et 2.",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/chimie/tuto_3/fig_q25_1.png"
+                ],
                 "question": "Concernant l'acide érythronique, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -15995,7 +16077,12 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "Soudain, une bourrasque violente atteint la clé alors que la chaîne est à la verticale. La clé est donc détachée instantanément et s’envole en\ndirection de Perceval (celui-ci se situe sur l’axe\ne→<sub>x</sub>).\nPerceval fait le pari que même s’il reste immo-bile, la clé ne l’atteindra pas.\nLa clé est libérée à la vitesse purement hori-zontale de v<sub>0</sub> = 3 m s<sup>−1</sup>, à une hauteur H de 10 m, Perceval, lui, fait 1,93 m et se trouve à 4 m de l’arbre. La bourrasque est considérée instan-tanée, une fois la chaîne détachée elle n’exerce aucune force sur le système.\nClé\nPerceval\ne→<sub>y</sub>\ne→<sub>x</sub>\ne→<sub>y</sub>\ne→<sub>x</sub>\ne→<sub>y</sub>\ne→<sub>x</sub>\nABC\ne→<sub>y</sub>\ne→<sub>x</sub>\ne→<sub>y</sub>\ne→<sub>x</sub>",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/image4.png"
+                    "annales_assets/2025_2026/physique/tuto_1/image4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_5.png"
                 ],
                 "question": "Laquelle des trajectoires ci-dessus va avoir la clé une fois que la chaîne cède. Cochez l'unique bonne réponse :",
                 "options": [
@@ -16038,7 +16125,12 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "Soudain, une bourrasque violente atteint la clé alors que la chaîne est à la verticale. La clé est donc détachée instantanément et s’envole en\ndirection de Perceval (celui-ci se situe sur l’axe\ne→<sub>x</sub>).\nPerceval fait le pari que même s’il reste immo-bile, la clé ne l’atteindra pas.\nLa clé est libérée à la vitesse purement hori-zontale de v<sub>0</sub> = 3 m s<sup>−1</sup>, à une hauteur H de 10 m, Perceval, lui, fait 1,93 m et se trouve à 4 m de l’arbre. La bourrasque est considérée instan-tanée, une fois la chaîne détachée elle n’exerce aucune force sur le système.\nClé\nPerceval\ne→<sub>y</sub>\ne→<sub>x</sub>\ne→<sub>y</sub>\ne→<sub>x</sub>\ne→<sub>y</sub>\ne→<sub>x</sub>\nABC\ne→<sub>y</sub>\ne→<sub>x</sub>\ne→<sub>y</sub>\ne→<sub>x</sub>",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/image4.png"
+                    "annales_assets/2025_2026/physique/tuto_1/image4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_5.png"
                 ],
                 "question": "Concernant le temps t que mettra la clé à arriver au niveau de Perceval, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
@@ -16081,7 +16173,12 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "Soudain, une bourrasque violente atteint la clé alors que la chaîne est à la verticale. La clé est donc détachée instantanément et s’envole en\ndirection de Perceval (celui-ci se situe sur l’axe\ne→<sub>x</sub>).\nPerceval fait le pari que même s’il reste immo-bile, la clé ne l’atteindra pas.\nLa clé est libérée à la vitesse purement hori-zontale de v<sub>0</sub> = 3 m s<sup>−1</sup>, à une hauteur H de 10 m, Perceval, lui, fait 1,93 m et se trouve à 4 m de l’arbre. La bourrasque est considérée instan-tanée, une fois la chaîne détachée elle n’exerce aucune force sur le système.\nClé\nPerceval\ne→<sub>y</sub>\ne→<sub>x</sub>\ne→<sub>y</sub>\ne→<sub>x</sub>\ne→<sub>y</sub>\ne→<sub>x</sub>\nABC\ne→<sub>y</sub>\ne→<sub>x</sub>\ne→<sub>y</sub>\ne→<sub>x</sub>",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/image4.png"
+                    "annales_assets/2025_2026/physique/tuto_1/image4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q5_5.png"
                 ],
                 "question": "On considère que la masse de la clé n'impacte pas sa vitesse initiale. Concernant la chute libre de la clé avec y la variable représentant sa hauteur par rapport au sol, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
@@ -16164,7 +16261,9 @@ window.ANNALES_2025_2026 = [
                 "num": 9,
                 "type": "QCM",
                 "context": "La clé atteint le sol après Perceval\nUn patient âgé aux nombreux antécédents cardiaques, M. Eclamptusse, se présente à l’hôpital pour réaliser un électrocardiogramme de routine.\nOn donne les valeurs des dérivations suivantes ainsi que leurs expressions :\n= aV<sub>R</sub>R\nγ = 30<sup>◦</sup>\naV<sub>L</sub>\nV<sub>I</sub> = √3 −→P · −→u <sub>RL</sub>\n√3 −→P · −→u <sub>LF</sub> = V<sub>III</sub>\naV<sub>F</sub>\nV<sub>II</sub> = √3 −→P · −→u <sub>RF</sub>\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>aV<sub>L</sub></th><th>aV<sub>R</sub></th><th>aV<sub>F</sub></th><th>V<sub>I</sub></th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,42</td><td>x</td><td>0,21</td><td>0,70</td><td>0,56</td><td>-0,14</td></tr></table></div>",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q9_1.png"
+                ],
                 "question": "Parmi les propositions suivantes, indiquer celle qui correspond au secteur dans lequel se trouve le vecteur dipôle cardiaque du patient :",
                 "options": [
                     {
@@ -16369,7 +16468,9 @@ window.ANNALES_2025_2026 = [
                 "num": 14,
                 "type": "QCM",
                 "context": "La membrane plasmique, qui sépare l’intérieur de la cellule de son environnement, joue un rôle fondamental dans le transport des ions. Sur le plan physique, on peut l’assimiler à un conden-sateur plan, notamment car cette dernière sépare deux milieux conducteurs par une fine couche isolante : la bicouche lipidique.\nOn assimile dans cet exercice, une membrane plasmique à un condensateur plan de surface S = 300 µm<sup>2</sup>, d’épaisseur h = 5 nm séparant le compartiment intracellulaire du milieu ex-tracellulaire, et de permitivité ε = 2,21 × 10−5 µF · m<sup>−1</sup>.\nOn considère que le potentiel de la plaque intracellulaire est V<sub>int</sub> = 62 mV et que le potentiel de la plaque extracellulaire est de V<sub>ext</sub> = +16 mV .\nPlaque Extracellulaire\nPlaque Intracellulaire\nV<sub>ext</sub> = +16 mV h = 5 nm V<sub>int</sub> = −62 mV",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q14_1.png"
+                ],
                 "question": "D'après les connaissances acquises en cours, vous pouvez dire que :",
                 "options": [
                     {
@@ -16410,7 +16511,9 @@ window.ANNALES_2025_2026 = [
                 "num": 15,
                 "type": "QCM",
                 "context": "La membrane plasmique, qui sépare l’intérieur de la cellule de son environnement, joue un rôle fondamental dans le transport des ions. Sur le plan physique, on peut l’assimiler à un conden-sateur plan, notamment car cette dernière sépare deux milieux conducteurs par une fine couche isolante : la bicouche lipidique.\nOn assimile dans cet exercice, une membrane plasmique à un condensateur plan de surface S = 300 µm<sup>2</sup>, d’épaisseur h = 5 nm séparant le compartiment intracellulaire du milieu ex-tracellulaire, et de permitivité ε = 2,21 × 10−5 µF · m<sup>−1</sup>.\nOn considère que le potentiel de la plaque intracellulaire est V<sub>int</sub> = 62 mV et que le potentiel de la plaque extracellulaire est de V<sub>ext</sub> = +16 mV .\nPlaque Extracellulaire\nPlaque Intracellulaire\nV<sub>ext</sub> = +16 mV h = 5 nm V<sub>int</sub> = −62 mV",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q14_1.png"
+                ],
                 "question": "Calculer la capacité C et la densité surfacique de charge σ :",
                 "options": [
                     {
@@ -16657,7 +16760,9 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/image1.png"
+                    "annales_assets/2025_2026/physique/tuto_1/image1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q21_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q21_2.png"
                 ],
                 "question": "Sous la coordination de Ridwan ULLAH (DFGSM2, RMEB Fyzik 25-26) et Mehdi DAOUDI (DFGSM2, RMGT Fyzik 25-26)",
                 "options": [
@@ -16758,7 +16863,9 @@ window.ANNALES_2025_2026 = [
                 "num": 1,
                 "type": "QCM",
                 "context": "Un étudiant fraîchement arrivé à la faculté des Saints-Pères décide de rendre son année un peu plus amusante et installe donc un trampoline dans le hall d’entrée. Il commence à sauter. La situation débute lorsque la position de l’étudiant de masse m = 60 kg correspond l’altitude maximale de son premier saut. Il est alors au point A et débute la phase descendante de son saut.\nl<sub>0</sub>\nSon altitude vaut alors z<sub>A</sub> = h = 1 m. On considère\nque l’étudiant a une vitesse initiale nulle au point A.\nOn assimile le trampoline à un ressort de longueur à<sup>0</sup>\nvide l<sub>0</sub> = 80 cm et de constante de raideur k = 4000 N ·\nm<sup>−1</sup>. L’énergie potentielle élastique du ressort vaut E<sub>pe</sub> = 1 k∆l<sup>2</sup> pour un allongement ∆l du ressort par rapport à sa longueur à vide. On néglige les frot2tements et tout autre phénomène\ndissipatif durant l’étude de ce mouvement. On assimile l’étudiant à son centre de masse. On\nconsidère que l’étudiant atteint le trampoline sur les fesses, son centre de masse étant alors au contact du trampoline. La scène est schématisée de la manière suivante :\nNous notons :\nA le point duquel la situation commence (point d’altitude z<sub>A</sub>)\nB le point au niveau duquel l’étudiant se trouve à la hauteur du trampoline, sans l’avoir encore touché (point d’altitude z<sub>B</sub>)\nC le point au niveau duquel le trampoline est comprimé au maximum (point d’altitude\nz<sub>C</sub> = 0,37 m)\nD le point où la hauteur est maximale après un rebond (point d’altitude z<sub>D</sub>)\nOn admet qu’il y a une conservation de l’énergie mécanique entre A et C. Au moment du rebond sur le trampoline en C, l’étudiant introduit un apport d’énergie musculaire, dont la force associée est non conservative.\nOn considère que notre étudiant atteint une hauteur H = 1,4 m après son rebond. On donne également l’accélération de la pesanteur g telle que g = 9,81 m · s<sup>−2</sup>.",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_2/fig_q1_1.png"
+                ],
                 "question": "Calculer la vitesse atteinte au point B (qu'on note v<sub>B</sub>) et l'énergie ∆E<sub>m</sub> produite suite au rebond. Laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -16802,7 +16909,9 @@ window.ANNALES_2025_2026 = [
                 "num": 2,
                 "type": "QCM",
                 "context": "Lors du rebond en C, l’étudiant produit une énergie de ∆E<sub>m</sub> = 235,44 J\nMalheureusement, à la suite de sa session de trampoline, notre étudiant se rattrape mal et fait une chute au sol. Il est alors pris de vertiges. Afin de lui venir en aide, ses amis présents à la fac décident de lui maintenir les jambes en l’air, créant une différence de hauteur entre ses pieds et son abdomen de ∆z = 50 cm. On considère la tension veineuse dans les jambes de l’étudiant T<sub>jambe</sub> = 30 mmHg. On néglige la viscosité du sang. On rappelle que la masse volumique du sang vaut ρ<sub>sang</sub> = 1,05 kg · L<sup>−1</sup>. La pression atmosphérique vaut 1 atm.\n→u<sub>z</sub>",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_2/fig_q2_1.png"
+                ],
                 "question": "A propos de la pression sanguine dans les jambes p<sub>jambe</sub> et de la pression sanguine dans l'abdomen (horizontal) p<sub>abdo</sub>, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -17234,7 +17343,9 @@ window.ANNALES_2025_2026 = [
                 "num": 12,
                 "type": "QCM",
                 "context": "V (r<sub>1</sub>) = 8\nV (r<sub>3</sub>)\nV (r<sub>3</sub>)\nEn attendant la confirmation de ses résultats, Jamy déplace le dipôle afin de le contenir dans un condensateur plan. Il charge les deux armatures et obtient donc un champ électrique −→\nuniforme englobant le dipôle. Il place le dipôle de telle sorte qu’il soit incliné d’un angle θ avec\nla verticale. On note :\n−→p = qNP le moment dipolaire du dipôle\nE<sub>D</sub> l’énergie potentielle du dipôle dans cette situation.\nOn admet que l’énergie potentielle E\ndu dipôle peut s’exprimer ainsi : E=\n<sub>DD</sub>− p · E<sub>0</sub>",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_2/fig_q12_1.png"
+                ],
                 "question": "Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :",
                 "options": [
                     {
@@ -17278,7 +17389,9 @@ window.ANNALES_2025_2026 = [
                 "num": 13,
                 "type": "QCM",
                 "context": "Si θ = 0, on peut affirmer que le dipôle est dans une position d’équilibre stable\nOlga a un souci depuis ce matin : l’eau du lavabo ne s’écoule pas comme il faut. Les canalisations de sa maison sont bouchées. En en parlant avec son père, elle apprend que son voisin est dans la même situation qu’elle, car les canalisations des deux demeures communiquent. C’est une vieille maison dont la tuyauterie n’est pas de première fraîcheur. Il est donc fort possible que des cheveux et des saletés se soient agrégés et aient formé un obstacle compact dans les tuyaux. On considère l’obstacle comme obstruant partiellement le conduit.\nEn se renseignant, elle apprend que le troisième étage de sa maison est à une hauteur H telle que H = 6 m. Pour des normes de sécurité, chaque étage, sous-sol compris, est de même hauteur et mesure h = 1 H. La tuyauterie est la même chez Olga et son voisin : les tuyaux verticaux\nont un diamètre d<sub>v</sub> = 2 d<sub>h</sub> = 12 cm avec d<sub>h</sub> le diamètre de tous les tuyaux horizontaux. Chaque tuyau horizontal de chaque étage de chez Olga a une même longueur L = 18 m et l’on considère que ceux de la maison du voisin ont une longueur l = 3 L.\nOn dispose des données suivantes :\nl’accélération de la pesanteur g = 9,81 m · s<sup>−1</sup>\nla masse volumique de l’eau ρ = 1 g · cm<sup>−3</sup>\nla viscosité de l’eau η = 1,002 · 10−3 Pa · s\nle débit global de l’eau Q = 5 × 10−4 m<sup>3</sup> · s<sup>−1</sup>\nOn précise que le schéma n’est pas à l’échelle.\nOn considère l’eau dans le circuit comme étant un fluide parfait pour les question 13, 14 et 15 uniquement. On ignore la pompe jusqu’à la question 15 incluse.",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_2/fig_q13_1.png"
+                ],
                 "question": "À propos du débit dans les tuyaux et du théorème de Bernoulli, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
@@ -17323,7 +17436,9 @@ window.ANNALES_2025_2026 = [
                 "num": 14,
                 "type": "QCM",
                 "context": "La localisation de l’obstruction a pu être identifiée. L’obstacle bouchonne au niveau du tuyau\nC, de la manière suivante :",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_2/fig_q14_1.png"
+                ],
                 "question": "Concernant la vitesse du fluide, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
@@ -17550,7 +17665,8 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "On surveille la consolidation d’une fracture de la tête (l’extrémité) du radius à l’aide d’une sonde échogra-phique posée à l’extérieur d’un plâtre. Celle-ci permet-\ntra de déterminer si l’os a pu se régénérer proprementd\navant que le plâtre ne soit enlevé. La sonde utilisée émetp\ndes ondes planes d’intensité I<sub>0</sub> et de puissance sonoreA\nP<sub>0</sub> = 0,381 mW . Sa surface est un disque de rayon\nr = 0,9 cm.d\nOn considère ici que l’onde est totalement transmise àB\nl’interface entre la sonde et le plâtre.+\nL’onde émise traverse ainsi une couche de plâtred\nplâtre\ntissus\nd’épaisseur d<sub>p</sub>\n= 1 cm, puis un ensemble de tissus mouso\nd’impédance constante, incluant la peau et les muscles, d’épaisseur d<sub>t</sub> = 4,2 cm, avant d’atteindre l’os d’épais-seur d<sub>o</sub>.\nLes points A, B et C correspondent respectivement aux interfaces de contact plâtre-tissus, tissus-os et os-tissus\ntissus\nde l’autre côté de l’os. R<sub>pt</sub> = 0,16 et R<sub>to</sub> = 0,57 sont les coefficients de réflexion des interfaces plâtre-tissus et tissus-os respectivement, et T<sub>pt</sub> et T<sub>to</sub> les coefficients de transmission correspon-dants. On nomme I<sub>0</sub> l’intensité initiale émise par la sonde. On appelle I<sub>X</sub> et L<sub>X</sub> respectivement l’intensité et le niveau sonore de l’écho reçu par la sonde après réflexion à chaque point X. On donne I<sub>ref</sub> = 10−12 W · m<sup>−2</sup>.\nOn ignore l’absorption par les différents milieux pour les 5 premières questions. On rappelle que : R + T = 1.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/image3.png"
+                    "annales_assets/2025_2026/physique/tuto_3/image3.png",
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q1_1.png"
                 ],
                 "question": "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -17596,7 +17712,8 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "On surveille la consolidation d’une fracture de la tête (l’extrémité) du radius à l’aide d’une sonde échogra-phique posée à l’extérieur d’un plâtre. Celle-ci permet-\ntra de déterminer si l’os a pu se régénérer proprementd\navant que le plâtre ne soit enlevé. La sonde utilisée émetp\ndes ondes planes d’intensité I<sub>0</sub> et de puissance sonoreA\nP<sub>0</sub> = 0,381 mW . Sa surface est un disque de rayon\nr = 0,9 cm.d\nOn considère ici que l’onde est totalement transmise àB\nl’interface entre la sonde et le plâtre.+\nL’onde émise traverse ainsi une couche de plâtred\nplâtre\ntissus\nd’épaisseur d<sub>p</sub>\n= 1 cm, puis un ensemble de tissus mouso\nd’impédance constante, incluant la peau et les muscles, d’épaisseur d<sub>t</sub> = 4,2 cm, avant d’atteindre l’os d’épais-seur d<sub>o</sub>.\nLes points A, B et C correspondent respectivement aux interfaces de contact plâtre-tissus, tissus-os et os-tissus\ntissus\nde l’autre côté de l’os. R<sub>pt</sub> = 0,16 et R<sub>to</sub> = 0,57 sont les coefficients de réflexion des interfaces plâtre-tissus et tissus-os respectivement, et T<sub>pt</sub> et T<sub>to</sub> les coefficients de transmission correspon-dants. On nomme I<sub>0</sub> l’intensité initiale émise par la sonde. On appelle I<sub>X</sub> et L<sub>X</sub> respectivement l’intensité et le niveau sonore de l’écho reçu par la sonde après réflexion à chaque point X. On donne I<sub>ref</sub> = 10−12 W · m<sup>−2</sup>.\nOn ignore l’absorption par les différents milieux pour les 5 premières questions. On rappelle que : R + T = 1.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/image3.png"
+                    "annales_assets/2025_2026/physique/tuto_3/image3.png",
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q1_1.png"
                 ],
                 "question": "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -17642,7 +17759,8 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "On surveille la consolidation d’une fracture de la tête (l’extrémité) du radius à l’aide d’une sonde échogra-phique posée à l’extérieur d’un plâtre. Celle-ci permet-\ntra de déterminer si l’os a pu se régénérer proprementd\navant que le plâtre ne soit enlevé. La sonde utilisée émetp\ndes ondes planes d’intensité I<sub>0</sub> et de puissance sonoreA\nP<sub>0</sub> = 0,381 mW . Sa surface est un disque de rayon\nr = 0,9 cm.d\nOn considère ici que l’onde est totalement transmise àB\nl’interface entre la sonde et le plâtre.+\nL’onde émise traverse ainsi une couche de plâtred\nplâtre\ntissus\nd’épaisseur d<sub>p</sub>\n= 1 cm, puis un ensemble de tissus mouso\nd’impédance constante, incluant la peau et les muscles, d’épaisseur d<sub>t</sub> = 4,2 cm, avant d’atteindre l’os d’épais-seur d<sub>o</sub>.\nLes points A, B et C correspondent respectivement aux interfaces de contact plâtre-tissus, tissus-os et os-tissus\ntissus\nde l’autre côté de l’os. R<sub>pt</sub> = 0,16 et R<sub>to</sub> = 0,57 sont les coefficients de réflexion des interfaces plâtre-tissus et tissus-os respectivement, et T<sub>pt</sub> et T<sub>to</sub> les coefficients de transmission correspon-dants. On nomme I<sub>0</sub> l’intensité initiale émise par la sonde. On appelle I<sub>X</sub> et L<sub>X</sub> respectivement l’intensité et le niveau sonore de l’écho reçu par la sonde après réflexion à chaque point X. On donne I<sub>ref</sub> = 10−12 W · m<sup>−2</sup>.\nOn ignore l’absorption par les différents milieux pour les 5 premières questions. On rappelle que : R + T = 1.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/image3.png"
+                    "annales_assets/2025_2026/physique/tuto_3/image3.png",
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q1_1.png"
                 ],
                 "question": "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -17689,7 +17807,8 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "On surveille la consolidation d’une fracture de la tête (l’extrémité) du radius à l’aide d’une sonde échogra-phique posée à l’extérieur d’un plâtre. Celle-ci permet-\ntra de déterminer si l’os a pu se régénérer proprementd\navant que le plâtre ne soit enlevé. La sonde utilisée émetp\ndes ondes planes d’intensité I<sub>0</sub> et de puissance sonoreA\nP<sub>0</sub> = 0,381 mW . Sa surface est un disque de rayon\nr = 0,9 cm.d\nOn considère ici que l’onde est totalement transmise àB\nl’interface entre la sonde et le plâtre.+\nL’onde émise traverse ainsi une couche de plâtred\nplâtre\ntissus\nd’épaisseur d<sub>p</sub>\n= 1 cm, puis un ensemble de tissus mouso\nd’impédance constante, incluant la peau et les muscles, d’épaisseur d<sub>t</sub> = 4,2 cm, avant d’atteindre l’os d’épais-seur d<sub>o</sub>.\nLes points A, B et C correspondent respectivement aux interfaces de contact plâtre-tissus, tissus-os et os-tissus\ntissus\nde l’autre côté de l’os. R<sub>pt</sub> = 0,16 et R<sub>to</sub> = 0,57 sont les coefficients de réflexion des interfaces plâtre-tissus et tissus-os respectivement, et T<sub>pt</sub> et T<sub>to</sub> les coefficients de transmission correspon-dants. On nomme I<sub>0</sub> l’intensité initiale émise par la sonde. On appelle I<sub>X</sub> et L<sub>X</sub> respectivement l’intensité et le niveau sonore de l’écho reçu par la sonde après réflexion à chaque point X. On donne I<sub>ref</sub> = 10−12 W · m<sup>−2</sup>.\nOn ignore l’absorption par les différents milieux pour les 5 premières questions. On rappelle que : R + T = 1.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/image3.png"
+                    "annales_assets/2025_2026/physique/tuto_3/image3.png",
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q1_1.png"
                 ],
                 "question": "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -17996,7 +18115,9 @@ window.ANNALES_2025_2026 = [
                 "num": 11,
                 "type": "QCM",
                 "context": "Ici, il peut s’énoncer comme P<sub>C</sub> + 1 ρ<sub>sang</sub>v<sup>2</sup> + ρ<sub>sang</sub>gz<sub>C</sub> + ∆P = P<sub>H</sub> + 1 ρ<sub>sang</sub>v<sup>2</sup> + ρ<sub>sang</sub>gz<sub>H</sub>\nVous allongez ensuite le patient et pendant qu’il se repose, vous réfléchissez à la circulation sanguine au niveau de son quadriceps, où les artérioles se divisent en capillaires permettant les échanges gazeux. Le schéma ci-après montre le circuit sanguin au niveau d’une portion de muscle, où une artériole A se divise en trois capillaires de même rayon r<sub>C</sub> et de même longueur L<sub>C</sub>. On note Q<sub>A</sub> le débit de l’artériole et Q<sub>C</sub> le débit au niveau d’un capillaire. On ne s’intéresse pas à la jonction des capillaires en fin de circuit.\nL<sub>C</sub>\nDonnées :\n•Viscosité du sang : η = 310−3 Pa s\n•Longueur de l’artériole L<sub>A</sub> = 1 mm\n•Rayon de l’artériole r<sub>A</sub> = 20 µm\n•Rayon d’un capillaire r<sub>C</sub> = 1 r<sub>A</sub>\n•Résistance totale du circuit 5: R= 5,02 × 1015 Pa · s · m<sup>−3</sup>\ntot",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q11_1.png"
+                ],
                 "question": "Concernant le débit sanguin et la longueur des capillaires, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -18123,7 +18244,9 @@ window.ANNALES_2025_2026 = [
                 "num": 14,
                 "type": "QCM",
                 "context": "Un étudiant décide de se rendre au parc d’attraction et fait un tour dans les montagnes russes pour se détendre. Le manège qu’il emprunte se structure de la manière suivante : une montée de A vers B, puis une descente jusqu’en C, avant de s’engager dans un looping de rayon r = 15 m. On néglige les frottements tout au long de l’exercice.\n→u<sub>y</sub>\n→u<sub>x</sub>\nDans cette première partie, on s’intéressera à la montée du train jusqu’au sommet de la mon-tagne russe. Le mouvement entre A et B est rectiligne. On considère que la montagne russe à une hauteur h = 50 m et que le train de masse m = 600 kg commence son ascension avec une vitesse v<sub>A</sub> nulle et subit une accélération constante a = 1,6 m s<sup>−2</sup> colinéaire et de même sens que le mouvement. Afin d’atteindre le sommet qu’on situe au point B, le train est tracté par un\ncâble exerçant une force de traction constante notée −→T. Le point d’attache de ce câble se situe\nen B. La montée forme une angle θ = 45◦ avec l’horizontale. On rappelle que g = 9,81 m · s<sup>−2</sup>.",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q14_1.png"
+                ],
                 "question": "Concernant l'ascension du train, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -18164,7 +18287,9 @@ window.ANNALES_2025_2026 = [
                 "num": 15,
                 "type": "QCM",
                 "context": "Un étudiant décide de se rendre au parc d’attraction et fait un tour dans les montagnes russes pour se détendre. Le manège qu’il emprunte se structure de la manière suivante : une montée de A vers B, puis une descente jusqu’en C, avant de s’engager dans un looping de rayon r = 15 m. On néglige les frottements tout au long de l’exercice.\n→u<sub>y</sub>\n→u<sub>x</sub>\nDans cette première partie, on s’intéressera à la montée du train jusqu’au sommet de la mon-tagne russe. Le mouvement entre A et B est rectiligne. On considère que la montagne russe à une hauteur h = 50 m et que le train de masse m = 600 kg commence son ascension avec une vitesse v<sub>A</sub> nulle et subit une accélération constante a = 1,6 m s<sup>−2</sup> colinéaire et de même sens que le mouvement. Afin d’atteindre le sommet qu’on situe au point B, le train est tracté par un\ncâble exerçant une force de traction constante notée −→T. Le point d’attache de ce câble se situe\nen B. La montée forme une angle θ = 45◦ avec l’horizontale. On rappelle que g = 9,81 m · s<sup>−2</sup>.",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q14_1.png"
+                ],
                 "question": "Concernant la distance AB et la norme de la force de traction (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {

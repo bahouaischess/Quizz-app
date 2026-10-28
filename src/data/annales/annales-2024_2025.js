@@ -6473,7 +6473,9 @@ window.ANNALES_2024_2025 = [
                 "num": 17,
                 "type": "QCM",
                 "context": "La troisième partie concerne l'étude enzymologique de DNMT3A\nDe nombreuses mutations dans le gène codant DNMT3A ont été rapportées dans les cas de leucémie myéloïde aiguë (LMA) de mauvais pronostic.\nLe variant R882H est retrouvé dans 12% des cas chez les adultes atteints de LMA.\nDans un premier temps, une protéine recombinante de 912 résidus d'acides aminés (DNMT3A) a été exprimée chez E. coli et purifiée en deux étapes.",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/biochimie/tuto_3/fig_q17_1.png"
+                ],
                 "question": "Au vu de vos connaissances, quelle est la ou quelles sont les proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -8928,7 +8930,9 @@ window.ANNALES_2024_2025 = [
                 "num": 1,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q1_1.png"
+                ],
                 "question": "Concernant l'atomistique, quelle est la (ou quelles sont les) proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -9108,7 +9112,9 @@ window.ANNALES_2024_2025 = [
                 "num": 5,
                 "type": "QCM",
                 "context": "Énoncé commun question 5 et 6 :\nOn s’intéresse désormais à la molécule du teriflunomide, qui est un médicament utilisé princi-palement pour traiter la sclérose en plaques.\nCF<sub>3</sub>\nOHO\nH<sub>3</sub>CN",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q5_1.png"
+                ],
                 "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9195,7 +9201,12 @@ window.ANNALES_2024_2025 = [
                 "num": 7,
                 "type": "QCM",
                 "context": "FNH<sub>2</sub>\nNH<sub>2</sub>\nNO<sub>2</sub>\nNO<sub>2</sub>\nOHOH\nIII\nIII\nIVV",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q7_1.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q7_2.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q7_3.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q7_4.png"
+                ],
                 "question": "A propos des structures des molécules I à V ci-dessus, quelle est la (ou quelles sont les) proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -9236,7 +9247,10 @@ window.ANNALES_2024_2025 = [
                 "num": 8,
                 "type": "QCM",
                 "context": "VIVII\nNHNH\nVIIIIX",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q8_1.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q8_2.png"
+                ],
                 "question": "A propos des effets mésomères et inductifs des molécules VI à IX, laquelle (les-quelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9277,7 +9291,9 @@ window.ANNALES_2024_2025 = [
                 "num": 9,
                 "type": "QCM",
                 "context": "NH<sub>2</sub>\nNH<sub>2</sub>\nNH<sub>2</sub>\nNH<sub>2</sub>\nNNN\nAdénineABC",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q9_1.png"
+                ],
                 "question": "Parmi les propositions suivantes concernant l'adénine et les molécules A, B, et C, quelle est la (ou quelles sont les) proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -9318,7 +9334,9 @@ window.ANNALES_2024_2025 = [
                 "num": 10,
                 "type": "QCM",
                 "context": "Le cortisol est une hormone stéroïde produite par les glandes surrénales en réponse au stress. Elle régule le métabolisme, réduit l’inflammation et aide à maintenir l’équilibre de la glycémie.",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q10_1.png"
+                ],
                 "question": "A propos de la molécule de cortisol, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9359,7 +9377,12 @@ window.ANNALES_2024_2025 = [
                 "num": 11,
                 "type": "QCM",
                 "context": "H<sub>3</sub>C\nH<sub>3</sub>\nH<sub>3</sub>C\nMolécule X\nH<sub>3</sub>C\nH<sub>3</sub>CO\nMolécule 1\nMolécule 2\nMolécule 3",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q11_1.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q11_2.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q11_3.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q11_4.png"
+                ],
                 "question": "À propos de la molécule de cortisol et de la molécule X, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9404,7 +9427,12 @@ window.ANNALES_2024_2025 = [
                 "num": 12,
                 "type": "QCM",
                 "context": "L’acide ascorbique, ou vitamine C, est un antioxydant essentiel pour l’organisme, impliqué dans la synthèse du collagène et le soutien du système immunitaire. Sa structure est représentée ci-dessous, ainsi que celle des molécules (A), (B) et (C) :\nCH<sub>2</sub>OH\nHOOH\nVitamine C\nHOHH OR\nRCH<sub>2</sub>OH\nCH<sub>2</sub>OH\nABC",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q12_1.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q12_2.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q12_3.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q12_4.png"
+                ],
                 "question": "À propos de la vitamine C et les molécules (A), (B) et (C), laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9450,7 +9478,9 @@ window.ANNALES_2024_2025 = [
                 "type": "QCM",
                 "context": "On décide de mélanger la molécule ci-dessous avec du cyanure de sodium. On observe la réaction suivante, dont la vitesse ne dépend que de la concentration de 2 réactifs :\nN C<sup>−</sup>+BrNC\nHOOH",
                 "images": [
-                    "annales_assets/2024_2025/chimie/tuto_3/image5.png"
+                    "annales_assets/2024_2025/chimie/tuto_3/image5.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q13_1.png",
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q13_2.png"
                 ],
                 "question": "A propos de la réaction ci-dessus, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -9492,7 +9522,9 @@ window.ANNALES_2024_2025 = [
                 "num": 14,
                 "type": "QCM",
                 "context": "Afin d’étudier la réactivité d’aldéhyde cinnamique, des scientifiques décident de le mélanger avec 2 équivalents de méthanol et d’observer leur réaction :\nH+2 H<sub>3</sub>COH",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q14_1.png"
+                ],
                 "question": "A propos de la réaction ci-dessus, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9536,7 +9568,9 @@ window.ANNALES_2024_2025 = [
                 "num": 15,
                 "type": "QCM",
                 "context": "Dans cette partie nous allons étudier la réaction du 2-bromobutane avec l’éthanol ou l’ion éthanoate. L’élimination et la substitution sont continuellement en compétition :\nH<sub>3</sub>C\nH<sub>3</sub>C\nOEt +HBr\nEtC<sub>4</sub>H<sub>8</sub>+Br<sup>–</sup>+EtOH\nOn sait par ailleurs que v<sub>(a)</sub> = k[C<sub>4</sub>H<sub>7</sub>Br]\npKa(EtOH/EtO– ) = 15,5\npKa(HCN/CN– ) = 9,21",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q15_1.png"
+                ],
                 "question": "Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9577,7 +9611,9 @@ window.ANNALES_2024_2025 = [
                 "num": 16,
                 "type": "QCM",
                 "context": "Lors de la réaction (b), on utilisera cet isomère du 2-bromobutane en tant que réactif.\nH CH<sub>3</sub>\nH3C H(2)Br",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q16_1.png"
+                ],
                 "question": "Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -9755,7 +9791,9 @@ window.ANNALES_2024_2025 = [
                 "num": 20,
                 "type": "QCM",
                 "context": "L’acide aspartique est un acide aminé non essentiel, jouant un rôle dans le cycle de l’urée, mais également dans la néoglucogenèse ou encore la formation de protéines.\nAcide aspartique\nDonnées :\npKa<sub>1</sub> = 2,2\npKa<sub>2</sub> = 3,9\npKa<sub>3</sub> = 9,8",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q20_1.png"
+                ],
                 "question": "Concernant les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -10018,7 +10056,9 @@ window.ANNALES_2024_2025 = [
                 "num": 26,
                 "type": "QCM",
                 "context": "La réaction d’hydrolyse du bromure de tertiobutyle est réalisée dans un solvant constitué d’un mélange de 10% d’eau et de 90% de propanone. On donne pour réaction élémentaire :\n(CH<sub>3</sub>)<sub>3</sub>CBr + H<sub>2</sub>O −−→ (CH<sub>3</sub>)<sub>3</sub>COH + HBr\nLes résultats obtenus à 25○C sont les suivants :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>[(CH<sub>3</sub>)<sub>3</sub>CBr] (mol.L<sup>−1</sup>)</th><th>0,100</th><th>0,090</th><th>0,080</th><th>0,065</th><th>0,050</th><th>0,033</th></tr><tr><th>t (h)</th><td>0</td><td>2</td><td>4</td><td>8</td><td>12</td><td>20</td></tr><tr><th>ln [(CH<sub>3</sub>)<sub>3</sub>CBr] (mol.L<sup>−1</sup>)</th><td>-2,3</td><td>-2,4</td><td>-2,5</td><td>-2,7</td><td>-2,9</td><td>-3,4</td></tr></table></div>\nOn établit ensuite le graphique de l’évolution du logarithme népérien de la concentration en fonction du temps :\nVariation de ln[(CH<sub>3</sub>)<sub>3</sub>CBr] en fonction du temps\nTemps (heures)\nDonnée :\nA t = 2h, v ≈ 4,95 · 10−3 mol · L<sup>−1</sup> · h<sup>−1</sup>",
-                "images": [],
+                "images": [
+                    "annales_assets/2024_2025/chimie/tuto_3/fig_q26_1.png"
+                ],
                 "question": "Parmi les propositions suivantes, laquelle est (ou lesquelles sont) exacte(s) ?",
                 "options": [
                     {

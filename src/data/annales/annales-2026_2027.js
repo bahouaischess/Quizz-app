@@ -2436,7 +2436,9 @@ window.ANNALES_2026_2027 = [
                 "num": 8,
                 "type": "QCM",
                 "context": "Le tétrahydrocannabinol est un composé organique de la famille des cannabinoïdes. Il est dé-couvert et isolé en 1964, et c’est le constituant psychoactif majeur du cannabis.\nCH<sub>3</sub>\nH<sub>3</sub>C\nH<sub>3</sub>C\nOCH<sub>3</sub>\nTHC",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q8_1.png"
+                ],
                 "question": "A propos de la molécule de THC, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s)",
                 "options": [
                     {
@@ -2481,7 +2483,9 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "",
                 "images": [
-                    "annales_assets/2026_2027/chimie/tuto_1/image4.png"
+                    "annales_assets/2026_2027/chimie/tuto_1/image4.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q9_1.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q9_2.png"
                 ],
                 "question": "A propos des composés aromatiques, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -2523,7 +2527,11 @@ window.ANNALES_2026_2027 = [
                 "num": 10,
                 "type": "QCM",
                 "context": "Molécule BMolécule C\nMolécule D\nMolécule E\nMolécule FMolécule G\nLa règle de Hückel précise qu’un composé aromatique doit posséder 2n + 2 électrons délo-calisables sur un cycle plan (composé d’atomes hybridés sp<sup>2</sup>) conjugué sans discontinuité.\nLes molécules A, C, F et G sont aromatiques\nLes molécules B, C, D et E sont aromatiques\nTous les carbones des molécules présentées sont hybridés sp<sup>2</sup>\nL’un des azotes de la molécule F possède un doublet non liant dans une orbitale 2p",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q10_1.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q10_2.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q10_3.png"
+                ],
                 "question": "Concernant les liaisons chimiques entre les atomes, laquelle (lesquelles) des ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -2564,7 +2572,9 @@ window.ANNALES_2026_2027 = [
                 "num": 11,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q11_1.png"
+                ],
                 "question": "Concernant le D-Idose, parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -2605,7 +2615,9 @@ window.ANNALES_2026_2027 = [
                 "num": 12,
                 "type": "QCM",
                 "context": "Z croissant\nLe D-idose possède 4 carbones asymétriques\nLe pouvoir rotatoire spécifique du D-idose est nécessairement (+)\nLe carbone C<sub>2</sub> du D-idose est de configuration R\nLe D-Idose possède 24 stéréoisomères de conformation",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q12_1.png"
+                ],
                 "question": "Concernant les molécules ci-dessous, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -2646,7 +2658,12 @@ window.ANNALES_2026_2027 = [
                 "num": 13,
                 "type": "QCM",
                 "context": "OHHOH\nOHOH\nOHHOH\nOHOH\nCH<sub>2</sub>OH\nMolécule A\nCH<sub>2</sub>OH\nMolécule B\nMolécule C\nLe carbone C<sub>4</sub> de la molécule A est de configuration S\nLa molécule A est la représentation de Fisher de molécule C\nLa configuration absolue de la molécule B est (1S, 2S, 3R, 4R)\nLes trois molécules ont la même formule brute\nLes molécules A et C sont des diastéréoisomères",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q13_1.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q13_2.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q13_3.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q13_4.png"
+                ],
                 "question": "Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) concernant les molécules représentées ci-dessous ?",
                 "options": [
                     {
@@ -2691,7 +2708,13 @@ window.ANNALES_2026_2027 = [
                 "num": 14,
                 "type": "QCM",
                 "context": "HOH\nHOH<sub>2</sub>CH OH\nHO HCH<sub>2</sub>OH\nHO HCH<sub>2</sub>OH\nCH<sub>2</sub>OH\nMolécule A\nMolécule B\nMolécule C\nMolécule D\nLa molécule B correspond à la représentation de Cram de la molécule A suivant l’axe C<sub>1</sub> – C<sub>2</sub>\nLa molécule A correspond à la représentation de Newman de la molécule C suivant l’axe C<sub>2</sub> – C<sub>1</sub>\nUne rotation de 120° autour d’une liaison C– C modifie la configuration absolue\nUn carbone asymétrique de configuration absolue R possède un pouvoir rotatoire positif, noté (+)\nLes molécules C et D sont des énantiomères\nNous allons à présent nous intéresser à la molécule de galactose, un monosaccharide notamment présent dans le lait. Il possède un analogue structural très intéressant : le talose.\nOHOHOOHOHO\nOHOH\nOHOH\nGalactose\nCHO\nHOHOH\nCHO\nOHOH\nTalose\nCHO\nHOH\nHOH\nMolécule A\nHOH\nMolécule B\nOHH\nMolécule C\nR illustrant le reste de la chaine carbonnée dans les molécules A, B et C.",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q14_1.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q14_2.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q14_3.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q14_4.png",
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q14_5.png"
+                ],
                 "question": "Parmi les propositions suivantes, laquelle (ou lesquelles) est (ou sont) exacte(s) ?",
                 "options": [
                     {
@@ -2732,7 +2755,9 @@ window.ANNALES_2026_2027 = [
                 "num": 15,
                 "type": "QCM",
                 "context": "On nous propose cette réaction réalisée dans des conditions non standard à une température constante T = 298 K. On sait que ∆<sub>r</sub>G<sup>◦</sup> = −624 kJ · mol<sup>−1</sup>.\nCC(g) + 3 O<sub>2</sub> (g) −7−-− 2 CO<sub>2</sub> (g) + 2 H<sub>2</sub>O (g)\nDonnées :\nC– HC– CO– OC– OO– H\n∆<sub>l</sub>H<sup>◦</sup> (en kJ · mol<sup>−1</sup>)−413−614−498−805−463",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/chimie/tuto_1/fig_q15_1.png"
+                ],
                 "question": "Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) concernant la réaction représentée au-dessus ?",
                 "options": [
                     {
@@ -5038,7 +5063,8 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "Areej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel F<sub>el</sub>(z) = kzz<sub>r</sub> qui dérive d’une énergie potentielle élastique selon sa longueur z avec z<sub>r</sub> la longueur au repos. La constante de raideur du cordage est notée k. Ici, nous allons nous intéresser à la balle de tennis qu’on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l’air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l’air. On place l’origine des temps au moment où la balle atteint son sommet à z<sub>A</sub> = 3,0 m. On note E<sub>m</sub> l’énergie mécanique associée à la balle, E<sub>c</sub> son énergie cinétique, E<sub>pp</sub> son énergie potentielle de pesanteur et E<sub>pe</sub> son énergie potentielle élastique.\nOn donne : m = 30,0 g la masse de la balle et g = 9,81 m.s<sup>−2</sup> l’accélération de pesanteur.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/image3.png"
+                    "annales_assets/2026_2027/physique/tuto_1/image3.png",
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q1_1.png"
                 ],
                 "question": "Concernant le bilan énergétique de la situation sans frottements de l'air, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -5084,7 +5110,8 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "Areej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel F<sub>el</sub>(z) = kzz<sub>r</sub> qui dérive d’une énergie potentielle élastique selon sa longueur z avec z<sub>r</sub> la longueur au repos. La constante de raideur du cordage est notée k. Ici, nous allons nous intéresser à la balle de tennis qu’on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l’air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l’air. On place l’origine des temps au moment où la balle atteint son sommet à z<sub>A</sub> = 3,0 m. On note E<sub>m</sub> l’énergie mécanique associée à la balle, E<sub>c</sub> son énergie cinétique, E<sub>pp</sub> son énergie potentielle de pesanteur et E<sub>pe</sub> son énergie potentielle élastique.\nOn donne : m = 30,0 g la masse de la balle et g = 9,81 m.s<sup>−2</sup> l’accélération de pesanteur.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/image3.png"
+                    "annales_assets/2026_2027/physique/tuto_1/image3.png",
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q1_1.png"
                 ],
                 "question": "(−→(−→On note z<sub>O</sub> et z<sub>S</sub> les altitudes aux points O et S respectivement. Concernant le",
                 "options": [
@@ -5334,7 +5361,9 @@ window.ANNALES_2026_2027 = [
                 "num": 8,
                 "type": "QCM",
                 "context": "Un P1 fan de sport et d’aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l’effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n3 P→ · →u= aVR5\n2LaV = 3 P→ · →u\n7<sup>C</sup>12\nV<sub>I</sub> = √3P→ · →u<sub>RL</sub>\n√3P→ · →u<sub>LF</sub> = V<sub>III</sub>\naV= 3 P→ · →u\nV<sub>II</sub> = √3P→ · →u<sub>RF</sub>\nF2CF\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>aV<sub>R</sub></th><th>aV<sub>L</sub></th><th>aV<sub>F</sub></th><th>V<sub>I</sub></th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,28</td><td>0,06</td><td>-0,34</td><td>-0,15</td><td>-0,41</td><td>-0,26</td></tr></table></div>\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q8_1.png"
+                ],
                 "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -5379,7 +5408,9 @@ window.ANNALES_2026_2027 = [
                 "num": 9,
                 "type": "QCM",
                 "context": "Un P1 fan de sport et d’aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l’effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n3 P→ · →u= aVR5\n2LaV = 3 P→ · →u\n7<sup>C</sup>12\nV<sub>I</sub> = √3P→ · →u<sub>RL</sub>\n√3P→ · →u<sub>LF</sub> = V<sub>III</sub>\naV= 3 P→ · →u\nV<sub>II</sub> = √3P→ · →u<sub>RF</sub>\nF2CF\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>aV<sub>R</sub></th><th>aV<sub>L</sub></th><th>aV<sub>F</sub></th><th>V<sub>I</sub></th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,28</td><td>0,06</td><td>-0,34</td><td>-0,15</td><td>-0,41</td><td>-0,26</td></tr></table></div>\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q8_1.png"
+                ],
                 "question": "Parmi les propositions suivantes, laquelle correspond au secteur du dipôle P :",
                 "options": [
                     {
@@ -5420,7 +5451,9 @@ window.ANNALES_2026_2027 = [
                 "num": 10,
                 "type": "QCM",
                 "context": "Un P1 fan de sport et d’aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l’effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n3 P→ · →u= aVR5\n2LaV = 3 P→ · →u\n7<sup>C</sup>12\nV<sub>I</sub> = √3P→ · →u<sub>RL</sub>\n√3P→ · →u<sub>LF</sub> = V<sub>III</sub>\naV= 3 P→ · →u\nV<sub>II</sub> = √3P→ · →u<sub>RF</sub>\nF2CF\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>aV<sub>R</sub></th><th>aV<sub>L</sub></th><th>aV<sub>F</sub></th><th>V<sub>I</sub></th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,28</td><td>0,06</td><td>-0,34</td><td>-0,15</td><td>-0,41</td><td>-0,26</td></tr></table></div>\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q8_1.png"
+                ],
                 "question": "PPConcernant la norme du vecteur −→, laquelle (lesquelles) des propositions suivantes",
                 "options": [
                     {
@@ -5594,7 +5627,8 @@ window.ANNALES_2026_2027 = [
                 "context": "VIII\nP<sup>'</sup>\n= ó 4 aV\n<sub>2</sub>VIII 2\nP<sup>'</sup> = 0,69 mV\nP<sup>'</sup> = 0,85 mV\nLors de la contraction du muscle cardiaque, une onde de dépolarisation se propage à travers les cellules du myocarde. À l’échelle locale, le front de dépolarisation qui avance entraîne l’appari-tion d’un bref dipôle électrique.\nPour modéliser simplement ce phénomène à l’échelle cellulaire, on considère un dipôle électrique fondamental constitué de deux charges ponctuelles. Les charges ont pour valeur q = 2,0 10−12 C et celles-ci sont séparées d’une distance a = 5,0 µm. L’ensemble baigne dans un milieu\ndont on simplifiera la constante avec la valeur suivante :\n= 9,0 × 109 N · m<sup>2</sup> · C<sup>−2</sup>.\nRéférence au schéma : Pour visualiser ce système, veuillez vous référer au schéma fourni ci-dessous. Ce schéma place la charge négative (N) et la charge positive (P) sur un axe, séparées par la distance a.",
                 "images": [
                     "annales_assets/2026_2027/physique/tuto_1/image4.png",
-                    "annales_assets/2026_2027/physique/tuto_1/image5.png"
+                    "annales_assets/2026_2027/physique/tuto_1/image5.png",
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q14_1.png"
                 ],
                 "question": "À propos des lignes de champ électrique d'un dipôle dans le schéma ci-dessus, laquelle (lesquelles) des propostitions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -5643,7 +5677,8 @@ window.ANNALES_2026_2027 = [
                 "context": "VIII\nP<sup>'</sup>\n= ó 4 aV\n<sub>2</sub>VIII 2\nP<sup>'</sup> = 0,69 mV\nP<sup>'</sup> = 0,85 mV\nLors de la contraction du muscle cardiaque, une onde de dépolarisation se propage à travers les cellules du myocarde. À l’échelle locale, le front de dépolarisation qui avance entraîne l’appari-tion d’un bref dipôle électrique.\nPour modéliser simplement ce phénomène à l’échelle cellulaire, on considère un dipôle électrique fondamental constitué de deux charges ponctuelles. Les charges ont pour valeur q = 2,0 10−12 C et celles-ci sont séparées d’une distance a = 5,0 µm. L’ensemble baigne dans un milieu\ndont on simplifiera la constante avec la valeur suivante :\n= 9,0 × 109 N · m<sup>2</sup> · C<sup>−2</sup>.\nRéférence au schéma : Pour visualiser ce système, veuillez vous référer au schéma fourni ci-dessous. Ce schéma place la charge négative (N) et la charge positive (P) sur un axe, séparées par la distance a.",
                 "images": [
                     "annales_assets/2026_2027/physique/tuto_1/image4.png",
-                    "annales_assets/2026_2027/physique/tuto_1/image5.png"
+                    "annales_assets/2026_2027/physique/tuto_1/image5.png",
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q14_1.png"
                 ],
                 "question": "Parmi les propositions concernant la répartition de l'énergie autour du dipôle, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
