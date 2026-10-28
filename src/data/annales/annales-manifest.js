@@ -26,8 +26,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 3 : Biologie Cellulaire (2024-2025)",
-        "durationMinutes":  30,
-        "questionCount":  30
+        "durationMinutes":  37,
+        "questionCount":  31
     },
     {
         "id":  "pass_2024_2025_bio_cellulaire_tuto_2",
@@ -40,7 +40,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 3 : Biologie Cellulaire (2024-2025)",
-        "durationMinutes":  30,
+        "durationMinutes":  36,
         "questionCount":  30
     },
     {
@@ -54,7 +54,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 3 : Biologie Cellulaire (2024-2025)",
-        "durationMinutes":  30,
+        "durationMinutes":  36,
         "questionCount":  30
     },
     {
@@ -68,8 +68,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 2 : Biochimie (2024-2025)",
-        "durationMinutes":  21,
-        "questionCount":  21
+        "durationMinutes":  26,
+        "questionCount":  22
     },
     {
         "id":  "pass_2024_2025_biochimie_tuto_2",
@@ -82,8 +82,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 2 : Biochimie (2024-2025)",
-        "durationMinutes":  20,
-        "questionCount":  20
+        "durationMinutes":  28,
+        "questionCount":  23
     },
     {
         "id":  "pass_2024_2025_biochimie_tuto_3",
@@ -96,8 +96,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 2 : Biochimie (2024-2025)",
-        "durationMinutes":  19,
-        "questionCount":  19
+        "durationMinutes":  25,
+        "questionCount":  21
     },
     {
         "id":  "pass_2024_2025_chimie_tuto_1",
@@ -110,8 +110,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 1 : Chimie (2024-2025)",
-        "durationMinutes":  17,
-        "questionCount":  17
+        "durationMinutes":  29,
+        "questionCount":  24
     },
     {
         "id":  "pass_2024_2025_chimie_tuto_2",
@@ -124,7 +124,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 1 : Chimie (2024-2025)",
-        "durationMinutes":  26,
+        "durationMinutes":  31,
         "questionCount":  26
     },
     {
@@ -138,7 +138,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 1 : Chimie (2024-2025)",
-        "durationMinutes":  28,
+        "durationMinutes":  34,
         "questionCount":  28
     },
     {
@@ -152,8 +152,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 5 : Histologie-Embryologie (2024-2025)",
-        "durationMinutes":  28,
-        "questionCount":  28
+        "durationMinutes":  54,
+        "questionCount":  45
     },
     {
         "id":  "pass_2024_2025_histo_embryo_tuto_2",
@@ -166,8 +166,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 5 : Histologie-Embryologie (2024-2025)",
-        "durationMinutes":  28,
-        "questionCount":  28
+        "durationMinutes":  54,
+        "questionCount":  45
     },
     {
         "id":  "pass_2024_2025_histo_embryo_tuto_3",
@@ -180,8 +180,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 5 : Histologie-Embryologie (2024-2025)",
-        "durationMinutes":  27,
-        "questionCount":  27
+        "durationMinutes":  54,
+        "questionCount":  45
     },
     {
         "id":  "pass_2024_2025_physique_tuto_1",
@@ -194,8 +194,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 4 : Physique (2024-2025)",
-        "durationMinutes":  20,
-        "questionCount":  20
+        "durationMinutes":  19,
+        "questionCount":  16
     },
     {
         "id":  "pass_2024_2025_physique_tuto_2",
@@ -208,8 +208,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 4 : Physique (2024-2025)",
-        "durationMinutes":  21,
-        "questionCount":  21
+        "durationMinutes":  20,
+        "questionCount":  17
     },
     {
         "id":  "pass_2024_2025_physique_tuto_3",
@@ -222,8 +222,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 4 : Physique (2024-2025)",
-        "durationMinutes":  23,
-        "questionCount":  23
+        "durationMinutes":  20,
+        "questionCount":  17
     },
     {
         "id":  "pass_2024_2025_sante_publique_tuto_1",
@@ -236,8 +236,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 6 : Santé Publique (2024-2025)",
-        "durationMinutes":  35,
-        "questionCount":  35
+        "durationMinutes":  41,
+        "questionCount":  34
     },
     {
         "id":  "pass_2024_2025_sante_publique_tuto_2",
@@ -250,8 +250,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 6 : Santé Publique (2024-2025)",
-        "durationMinutes":  40,
-        "questionCount":  40
+        "durationMinutes":  47,
+        "questionCount":  39
     },
     {
         "id":  "pass_2024_2025_sante_publique_tuto_3",
@@ -264,7 +264,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 6 : Santé Publique (2024-2025)",
-        "durationMinutes":  40,
+        "durationMinutes":  48,
         "questionCount":  40
     },
     {
@@ -279,7 +279,7 @@ window.ANNALES_MANIFEST = [
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 7 : Sciences Humaines et Sociales (2024-2025)",
         "durationMinutes":  10,
-        "questionCount":  2
+        "questionCount":  5
     },
     {
         "id":  "pass_2024_2025_shs_tuto_2",
@@ -293,7 +293,7 @@ window.ANNALES_MANIFEST = [
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 7 : Sciences Humaines et Sociales (2024-2025)",
         "durationMinutes":  10,
-        "questionCount":  2
+        "questionCount":  5
     },
     {
         "id":  "pass_2024_2025_shs_tuto_3",
@@ -307,7 +307,7 @@ window.ANNALES_MANIFEST = [
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 7 : Sciences Humaines et Sociales (2024-2025)",
         "durationMinutes":  10,
-        "questionCount":  2
+        "questionCount":  5
     },
     {
         "id":  "pass_2025_2026_bio_cellulaire_tuto_1",
@@ -320,7 +320,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 3 : Biologie Cellulaire (2025-2026)",
-        "durationMinutes":  31,
+        "durationMinutes":  37,
         "questionCount":  31
     },
     {
@@ -334,7 +334,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 3 : Biologie Cellulaire (2025-2026)",
-        "durationMinutes":  30,
+        "durationMinutes":  36,
         "questionCount":  30
     },
     {
@@ -348,7 +348,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 3 : Biologie Cellulaire (2025-2026)",
-        "durationMinutes":  32,
+        "durationMinutes":  38,
         "questionCount":  32
     },
     {
@@ -362,7 +362,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 2 : Biochimie (2025-2026)",
-        "durationMinutes":  18,
+        "durationMinutes":  22,
         "questionCount":  18
     },
     {
@@ -376,7 +376,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 2 : Biochimie (2025-2026)",
-        "durationMinutes":  21,
+        "durationMinutes":  25,
         "questionCount":  21
     },
     {
@@ -390,8 +390,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 2 : Biochimie (2025-2026)",
-        "durationMinutes":  20,
-        "questionCount":  20
+        "durationMinutes":  25,
+        "questionCount":  21
     },
     {
         "id":  "pass_2025_2026_chimie_tuto_1",
@@ -404,7 +404,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 1 : Chimie (2025-2026)",
-        "durationMinutes":  22,
+        "durationMinutes":  26,
         "questionCount":  22
     },
     {
@@ -418,7 +418,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 1 : Chimie (2025-2026)",
-        "durationMinutes":  23,
+        "durationMinutes":  28,
         "questionCount":  23
     },
     {
@@ -432,7 +432,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 1 : Chimie (2025-2026)",
-        "durationMinutes":  27,
+        "durationMinutes":  32,
         "questionCount":  27
     },
     {
@@ -446,8 +446,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 5 : Histologie-Embryologie (2025-2026)",
-        "durationMinutes":  28,
-        "questionCount":  28
+        "durationMinutes":  54,
+        "questionCount":  45
     },
     {
         "id":  "pass_2025_2026_histo_embryo_tuto_2",
@@ -460,8 +460,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 5 : Histologie-Embryologie (2025-2026)",
-        "durationMinutes":  30,
-        "questionCount":  30
+        "durationMinutes":  54,
+        "questionCount":  45
     },
     {
         "id":  "pass_2025_2026_histo_embryo_tuto_3",
@@ -474,8 +474,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 5 : Histologie-Embryologie (2025-2026)",
-        "durationMinutes":  30,
-        "questionCount":  30
+        "durationMinutes":  54,
+        "questionCount":  45
     },
     {
         "id":  "pass_2025_2026_physique_tuto_1",
@@ -488,8 +488,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 4 : Physique (2025-2026)",
-        "durationMinutes":  20,
-        "questionCount":  20
+        "durationMinutes":  26,
+        "questionCount":  22
     },
     {
         "id":  "pass_2025_2026_physique_tuto_2",
@@ -502,8 +502,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 4 : Physique (2025-2026)",
-        "durationMinutes":  21,
-        "questionCount":  21
+        "durationMinutes":  22,
+        "questionCount":  18
     },
     {
         "id":  "pass_2025_2026_physique_tuto_3",
@@ -516,8 +516,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 4 : Physique (2025-2026)",
-        "durationMinutes":  19,
-        "questionCount":  19
+        "durationMinutes":  22,
+        "questionCount":  18
     },
     {
         "id":  "pass_2025_2026_sante_publique_tuto_1",
@@ -530,8 +530,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 6 : Santé Publique (2025-2026)",
-        "durationMinutes":  22,
-        "questionCount":  22
+        "durationMinutes":  48,
+        "questionCount":  40
     },
     {
         "id":  "pass_2025_2026_sante_publique_tuto_2",
@@ -544,8 +544,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_2",
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 6 : Santé Publique (2025-2026)",
-        "durationMinutes":  22,
-        "questionCount":  22
+        "durationMinutes":  48,
+        "questionCount":  40
     },
     {
         "id":  "pass_2025_2026_sante_publique_tuto_3",
@@ -558,8 +558,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_3",
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 6 : Santé Publique (2025-2026)",
-        "durationMinutes":  21,
-        "questionCount":  21
+        "durationMinutes":  48,
+        "questionCount":  40
     },
     {
         "id":  "pass_2025_2026_shs_tuto_1",
@@ -573,7 +573,7 @@ window.ANNALES_MANIFEST = [
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 7 : Sciences Humaines et Sociales (2025-2026)",
         "durationMinutes":  10,
-        "questionCount":  2
+        "questionCount":  6
     },
     {
         "id":  "pass_2025_2026_shs_tuto_2",
@@ -587,7 +587,7 @@ window.ANNALES_MANIFEST = [
         "tutoName":  "Tutorat n°2",
         "title":  "Examen Blanc n°2 - UE 7 : Sciences Humaines et Sociales (2025-2026)",
         "durationMinutes":  10,
-        "questionCount":  2
+        "questionCount":  6
     },
     {
         "id":  "pass_2025_2026_shs_tuto_3",
@@ -601,7 +601,7 @@ window.ANNALES_MANIFEST = [
         "tutoName":  "Tutorat n°3",
         "title":  "Examen Blanc n°3 - UE 7 : Sciences Humaines et Sociales (2025-2026)",
         "durationMinutes":  10,
-        "questionCount":  2
+        "questionCount":  6
     },
     {
         "id":  "pass_2026_2027_bio_cellulaire_tuto_1",
@@ -614,7 +614,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 3 : Biologie Cellulaire (2026-2027)",
-        "durationMinutes":  30,
+        "durationMinutes":  36,
         "questionCount":  30
     },
     {
@@ -628,7 +628,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 2 : Biochimie (2026-2027)",
-        "durationMinutes":  18,
+        "durationMinutes":  22,
         "questionCount":  18
     },
     {
@@ -642,7 +642,7 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 1 : Chimie (2026-2027)",
-        "durationMinutes":  22,
+        "durationMinutes":  26,
         "questionCount":  22
     },
     {
@@ -656,8 +656,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 5 : Histologie-Embryologie (2026-2027)",
-        "durationMinutes":  30,
-        "questionCount":  30
+        "durationMinutes":  54,
+        "questionCount":  45
     },
     {
         "id":  "pass_2026_2027_physique_tuto_1",
@@ -670,8 +670,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 4 : Physique (2026-2027)",
-        "durationMinutes":  21,
-        "questionCount":  21
+        "durationMinutes":  22,
+        "questionCount":  18
     },
     {
         "id":  "pass_2026_2027_sante_publique_tuto_1",
@@ -684,8 +684,8 @@ window.ANNALES_MANIFEST = [
         "tutoId":  "tuto_1",
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 6 : Santé Publique (2026-2027)",
-        "durationMinutes":  16,
-        "questionCount":  16
+        "durationMinutes":  44,
+        "questionCount":  37
     },
     {
         "id":  "pass_2026_2027_shs_tuto_1",
@@ -699,6 +699,6 @@ window.ANNALES_MANIFEST = [
         "tutoName":  "Tutorat n°1",
         "title":  "Examen Blanc n°1 - UE 7 : Sciences Humaines et Sociales (2026-2027)",
         "durationMinutes":  10,
-        "questionCount":  2
+        "questionCount":  6
     }
 ];

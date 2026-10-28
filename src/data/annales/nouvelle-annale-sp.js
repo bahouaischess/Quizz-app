@@ -2,7 +2,7 @@
 // ANNALE INÉDITE DE SANTÉ PUBLIQUE - PASS UNIVERSITÉ PARIS CITÉ
 // Conçue selon les standards officiels de Paris Cité (Format Groupe B - QCM isolés)
 // Barème : 0 erreur = 1.0 pt | 1 erreur = 0.7 pt | 2 erreurs = 0.1 pt | >=3 erreurs = 0 pt
-// Chrono officiel : 1 minute par question (Dépassement > 60s = pénalité de -0.3 pt)
+// Chronométrage indicatif avec suivi du temps par question et temps global (sans pénalité de points)
 // ============================================================================
 
 window.NOUVELLE_ANNALE_SP = {

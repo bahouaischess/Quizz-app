@@ -408,20 +408,9 @@ window.AnnalesApp = (function () {
 
         if (!timerBadge || !timerText) return;
 
-        timerText.textContent = `${formatTime(secondsSpent)} / 01:00`;
-
-        if (secondsSpent > 60) {
-            const overtimeSecs = secondsSpent - 60;
-            timerBadge.classList.add('overtime-active');
-            if (overtimeAlert) {
-                overtimeAlert.classList.remove('hidden');
-                overtimeAlert.innerHTML = `⚠️ <strong>Temps dépassé (+${overtimeSecs}s)</strong> : Pénalité de <strong>-0,3 pt</strong> appliquée`;
-            }
-        } else {
-            timerBadge.classList.remove('overtime-active');
-            if (overtimeAlert) {
-                overtimeAlert.classList.add('hidden');
-            }
+        timerText.textContent = `${formatTime(secondsSpent)}`;
+        if (overtimeAlert) {
+            overtimeAlert.classList.add('hidden');
         }
     }
 
@@ -790,16 +779,12 @@ window.AnnalesApp = (function () {
 
                     <div class="scoreboard-details">
                         <div class="score-detail-row">
-                            <span class="detail-label">Points bruts obtenus :</span>
+                            <span class="detail-label">Points obtenus :</span>
                             <span class="detail-val"><strong>${s.totalBaseScore}</strong> / ${s.maxPoints} pts</span>
                         </div>
-                        <div class="score-detail-row ${s.totalPenalties > 0 ? 'penalty-highlight' : ''}">
-                            <span class="detail-label">Pénalités de temps (1 min/Q) :</span>
-                            <span class="detail-val"><strong>-${s.totalPenalties} pt</strong> (${s.overtimeQuestionsCount} questions dépassées)</span>
-                        </div>
                         <div class="score-detail-row total-row">
-                            <span class="detail-label">Score Net Définitif :</span>
-                            <span class="detail-val"><strong>${s.netScore}</strong> / ${s.maxPoints} pts (Note : <strong>${s.scoreSur20}/20</strong>)</span>
+                            <span class="detail-label">Note Officielle :</span>
+                            <span class="detail-val"><strong>${s.scoreSur20} / 20</strong></span>
                         </div>
                         <div class="score-detail-row">
                             <span class="detail-label">Temps total :</span>
@@ -830,10 +815,10 @@ window.AnnalesApp = (function () {
                         <div class="box-num">${s.stats.threePlusErrorsCount}</div>
                         <div class="box-desc">≥3 erreurs (0.0 pt)</div>
                     </div>
-                    <div class="stat-box box-overtime ${s.overtimeQuestionsCount > 0 ? 'has-overtime' : ''}">
+                    <div class="stat-box box-overtime">
                         <span class="box-icon">⏱️</span>
                         <div class="box-num">${s.overtimeQuestionsCount}</div>
-                        <div class="box-desc">>60s (-0.3 pt/q)</div>
+                        <div class="box-desc">>60s (indicatif)</div>
                     </div>
                 </div>
 
@@ -853,7 +838,7 @@ window.AnnalesApp = (function () {
                     ❌ Erreurs uniquement (${s.questionResults.filter(q => q.errorsCount > 0).length})
                 </button>
                 <button class="cor-tab ${state.resultFilter === 'overtime' ? 'active' : ''}" onclick="AnnalesApp.onResultFilterChange('overtime')">
-                    ⚠️ Dépassements de temps (${s.overtimeQuestionsCount})
+                    ⏱️ Questions > 1 min (${s.overtimeQuestionsCount})
                 </button>
             </div>
 
@@ -872,18 +857,17 @@ window.AnnalesApp = (function () {
         const correctAnsStr = qr.correctAnswers.length > 0 ? qr.correctAnswers.join(', ') : 'Aucune';
 
         return `
-            <div class="correction-card ${hasErrors ? 'has-error' : 'is-perfect'} ${qr.isOvertime ? 'has-penalty' : ''}">
+            <div class="correction-card ${hasErrors ? 'has-error' : 'is-perfect'}">
                 <div class="cor-card-header">
                     <div class="cor-q-title">
                         <span class="q-badge">Question ${qr.num}</span>
                         <span class="score-badge ${hasErrors ? 'badge-err' : 'badge-perf'}">
-                            ${qr.baseScore} pt ${qr.isOvertime ? '<span class="penalty-tag">-0,3 pt (chrono)</span>' : ''} = <strong>${qr.netScore} pt</strong>
+                            <strong>${qr.baseScore} pt</strong>
                         </span>
                     </div>
 
                     <div class="cor-time-tag ${qr.isOvertime ? 'time-over' : 'time-ok'}">
                         ⏱️ Temps passé : <strong>${formatTime(qr.timeSpentSeconds)}</strong>
-                        ${qr.isOvertime ? '(Dépassement > 60s)' : '(Dans les temps)'}
                     </div>
                 </div>
 

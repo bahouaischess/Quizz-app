@@ -209,10 +209,10 @@ window.AnnalesManager = (function () {
             baseScore = 0.0;
         }
 
-        // Pénalité de temps : chrono de 1 min (60 s) par question
+        // Chronométrage par question (Purement indicatif, sans pénalité de points)
         const isOvertime = timeSpentSeconds > 60;
-        const timePenalty = isOvertime ? 0.3 : 0.0;
-        const netScore = Math.max(0, parseFloat((baseScore - timePenalty).toFixed(2)));
+        const timePenalty = 0.0;
+        const netScore = parseFloat(baseScore.toFixed(2));
 
         return {
             num: q.num,
@@ -225,7 +225,7 @@ window.AnnalesManager = (function () {
             baseScore: parseFloat(baseScore.toFixed(2)),
             timeSpentSeconds,
             isOvertime,
-            timePenalty: parseFloat(timePenalty.toFixed(2)),
+            timePenalty: 0.0,
             netScore,
             itemAnalysis,
             generalNotes: q.generalNotes || ''
@@ -257,7 +257,6 @@ window.AnnalesManager = (function () {
 
             totalBaseScore += res.baseScore;
             if (res.isOvertime) {
-                totalPenalties += res.timePenalty;
                 overtimeQuestionsCount++;
             }
 
@@ -268,9 +267,9 @@ window.AnnalesManager = (function () {
         });
 
         const maxPoints = questions.length;
-        const netScore = Math.max(0, parseFloat((totalBaseScore - totalPenalties).toFixed(2)));
+        const netScore = parseFloat(totalBaseScore.toFixed(2));
         const scoreSur20 = maxPoints > 0 ? parseFloat(((netScore / maxPoints) * 20).toFixed(2)) : 0;
-        const rawScoreSur20 = maxPoints > 0 ? parseFloat(((totalBaseScore / maxPoints) * 20).toFixed(2)) : 0;
+        const rawScoreSur20 = scoreSur20;
 
         let mention = 'En progression';
         let mentionClass = 'badge-progress';
