@@ -17,7 +17,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 1,
                 "type": "QCM",
-                "context": "Le cancer du sein est la tumeur maligne la plus fréquente chez la femme. Il en existe différents types. Environ 70% des cancers du sein expriment les récepteurs aux œstrogènes ER-α et ER-β, ils sont dits “cancers ER-positifs”. Les œstrogènes sont des hormones stéroïdiennes qui, selon plusieurs études, favorisent la prolifération des cancers du sein ER-positifs via l’activation de leurs récepteurs. Il existe donc des molécules anticancéreuses visant à inhiber cette prolifération.\nC’est le cas du Tamoxifène, qui se lie aux récepteurs aux œstrogènes pour changer leur conformation et empêcher leur interaction avec l’ADN. Cependant, plus de la moitié des patientes traitées par le Tamoxifène développent une résistance à ce médicament. Cela a pour conséquence un rétablissement de la prolifération des cellules cancéreuses au même niveau que celui observé avant le début du traitement par le Tamoxifène.\nDe précédentes études ont mis en évidence un lien entre la résistance au Tamoxifène et les voies de signalisation impliquant les récepteurs à activité tyrosine kinase (RTK), tels que l’EGFR et ses homologues c-erbB2, c-erbB3 et c-erbB4. Pour étudier ce lien, une équipe de chercheurs a travaillé sur une lignée cellulaire humaine de cancer du sein ER-positive, MCF-7.\nIls se sont tout d’abord demandé quel(s) sont les récepteur(s) de la famille des RTK qui joue(nt) un rôle dans cette résistance. Pour cela, ils ont établi une lignée cellulaire MCF-7 résistante au Tamoxifène (TAM-R) à partir des cellules MCF-7 sauvages (WT\n: wild type).\nIls ont ensuite comparé les quantités d’EGFR, c-erbB2, c-erbB3 et c-erbB4 dans des extraits provenant des deux lignées cellulaires. Pour ce faire, ils ont réalisé un western blot pour évaluer la quantité relative des protéines (Figure 1A, panel du haut), et un northern blot pour évaluer la quantité relative de leurs ARN messagers (Figure 1A, panel du bas). Ils ont également marqué l’EGFR, c-erbB2 et c-erbB3 dans ces cellules à l’aide d’une expérience d’immunocytochimie (Figure 1B). Le northern blot est une méthode de détection des ARN qui mobilise des sondes radioactives spécifiques des ARN d’intérêt.\nFigure 1 - A : Western blot (en haut) et northern blot (en bas) réalisés respectivement sur des lysats cellulaires ou sur des ARNm issus de lignées cellulaires MCF-7 sauvages (WT) ou MCF-7 résistantes au Tamoxifène (TAM-R). Les anticorps et sondes utilisés ciblent respectivement les protéines et les ARNm de l’EGFR, c-erbB2, c-erbB3 et c-erbB4. B : Marquage immunocytochimique des protéines EGFR, c-erbB2 et c-erbB3 au sein des cellules MCF-7 sauvages (WT) ou MCF-7 résistantes au Tamoxifène (TAM-R). Total = ensembles des protéines (actives et non-actives).",
+                "context": "Le cancer du sein est la tumeur maligne la plus fréquente chez la femme. Il en existe différents types. Environ 70% des cancers du sein expriment les récepteurs aux œstrogènes ER-\\(\\alpha\\) et ER-\\(\\beta\\), ils sont dits “cancers ER-positifs”. Les œstrogènes sont des hormones stéroïdiennes qui, selon plusieurs études, favorisent la prolifération des cancers du sein ER-positifs via l’activation de leurs récepteurs. Il existe donc des molécules anticancéreuses visant à inhiber cette prolifération.\nC’est le cas du Tamoxifène, qui se lie aux récepteurs aux œstrogènes pour changer leur conformation et empêcher leur interaction avec l’ADN. Cependant, plus de la moitié des patientes traitées par le Tamoxifène développent une résistance à ce médicament. Cela a pour conséquence un rétablissement de la prolifération des cellules cancéreuses au même niveau que celui observé avant le début du traitement par le Tamoxifène.\nDe précédentes études ont mis en évidence un lien entre la résistance au Tamoxifène et les voies de signalisation impliquant les récepteurs à activité tyrosine kinase (RTK), tels que l’EGFR et ses homologues c-erbB2, c-erbB3 et c-erbB4. Pour étudier ce lien, une équipe de chercheurs a travaillé sur une lignée cellulaire humaine de cancer du sein ER-positive, MCF-7.\nIls se sont tout d’abord demandé quel(s) sont les récepteur(s) de la famille des RTK qui joue(nt) un rôle dans cette résistance. Pour cela, ils ont établi une lignée cellulaire MCF-7 résistante au Tamoxifène (TAM-R) à partir des cellules MCF-7 sauvages (WT\n: wild type).\nIls ont ensuite comparé les quantités d’EGFR, c-erbB2, c-erbB3 et c-erbB4 dans des extraits provenant des deux lignées cellulaires. Pour ce faire, ils ont réalisé un western blot pour évaluer la quantité relative des protéines (Figure 1A, panel du haut), et un northern blot pour évaluer la quantité relative de leurs ARN messagers (Figure 1A, panel du bas). Ils ont également marqué l’EGFR, c-erbB2 et c-erbB3 dans ces cellules à l’aide d’une expérience d’immunocytochimie (Figure 1B). Le northern blot est une méthode de détection des ARN qui mobilise des sondes radioactives spécifiques des ARN d’intérêt.\nFigure 1 - A : Western blot (en haut) et northern blot (en bas) réalisés respectivement sur des lysats cellulaires ou sur des ARNm issus de lignées cellulaires MCF-7 sauvages (WT) ou MCF-7 résistantes au Tamoxifène (TAM-R). Les anticorps et sondes utilisés ciblent respectivement les protéines et les ARNm de l’EGFR, c-erbB2, c-erbB3 et c-erbB4. B : Marquage immunocytochimique des protéines EGFR, c-erbB2 et c-erbB3 au sein des cellules MCF-7 sauvages (WT) ou MCF-7 résistantes au Tamoxifène (TAM-R). Total = ensembles des protéines (actives et non-actives).",
                 "images": [
                     "annales_assets/2024_2025/bio_cellulaire/tuto_1/image3.jpeg"
                 ],
@@ -155,7 +155,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "A ce stade, les chercheurs ne savent pas si la résistance au Tamoxifène induit les variations observées, ou si ces variations sont elles-mêmes à l’origine de la résistance. Pour le savoir, ils établissent par manipulation génétique une lignée de cellules MCF-7 non résistantes mais qui surexpriment l’EGFR, à partir des cellules MCF-7 sauvages. Ils évaluent ensuite les quantités de protéine EGFR, du récepteur aux œstrogènes ER-α, et les niveaux de phosphorylation d’ERK et de l’EGFR, grâce à un western blot (Figure 3B). Ils réalisent également une immunofluorescence indirecte dirigée contre l’EGFR dans les deux conditions (Figure 3A).\nFigure 3 - A : Images d’immunofluorescence indirecte sur les cellules MCF-7 sauvages (MCF7 wild type) ou sur les cellules MCF-7 surexprimant l’EGFR (MCF7 EGFR). Les noyaux sont marqués au Hoechst (marquage gris foncé sur la figure). L’EGFR est marqué par l’Alexa488 (marquage gris clair sur la figure). Les flèches indiquent la présence d’EGFR sur le panel de gauche. B : Western blot sur des extraits protéiques de cellules MCF-7 sauvages (MCF7 wild type) ou de cellules MCF-7 surexprimant l’EGFR (MCF7 EGFR). Les cellules ont\npréalablement été traitées ou non avec de l’EGF. Le WB a été révélé à l’aide d’anticorps anti-EGFR, anti- EGFR phosphorylé, anti-ER-α, anti-ERK phosphorylé et anti-tubuline.",
+                "context": "A ce stade, les chercheurs ne savent pas si la résistance au Tamoxifène induit les variations observées, ou si ces variations sont elles-mêmes à l’origine de la résistance. Pour le savoir, ils établissent par manipulation génétique une lignée de cellules MCF-7 non résistantes mais qui surexpriment l’EGFR, à partir des cellules MCF-7 sauvages. Ils évaluent ensuite les quantités de protéine EGFR, du récepteur aux œstrogènes ER-\\(\\alpha\\), et les niveaux de phosphorylation d’ERK et de l’EGFR, grâce à un western blot (Figure 3B). Ils réalisent également une immunofluorescence indirecte dirigée contre l’EGFR dans les deux conditions (Figure 3A).\nFigure 3 - A : Images d’immunofluorescence indirecte sur les cellules MCF-7 sauvages (MCF7 wild type) ou sur les cellules MCF-7 surexprimant l’EGFR (MCF7 EGFR). Les noyaux sont marqués au Hoechst (marquage gris foncé sur la figure). L’EGFR est marqué par l’Alexa488 (marquage gris clair sur la figure). Les flèches indiquent la présence d’EGFR sur le panel de gauche. B : Western blot sur des extraits protéiques de cellules MCF-7 sauvages (MCF7 wild type) ou de cellules MCF-7 surexprimant l’EGFR (MCF7 EGFR). Les cellules ont\npréalablement été traitées ou non avec de l’EGF. Le WB a été révélé à l’aide d’anticorps anti-EGFR, anti- EGFR phosphorylé, anti-ER-\\(\\alpha\\), anti-ERK phosphorylé et anti-tubuline.",
                 "images": [
                     "annales_assets/2024_2025/bio_cellulaire/tuto_1/image5.jpeg",
                     "annales_assets/2024_2025/bio_cellulaire/tuto_1/image6.jpeg"
@@ -229,7 +229,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "Les cellules MCF-7 ont une prolifération relative comprise entre 1 et 2 pour une concentration de 10<sup>-6</sup> M de Tamoxifène",
+                        "text": "Les cellules MCF-7 ont une prolifération relative comprise entre 1 et 2 pour une concentration de \\(10^{-6}\\) M de Tamoxifène",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
@@ -865,7 +865,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "Le récepteur de l'acétylcholine est constitué de cinq sous unités (α, β, ૪, δ et ε)",
+                        "text": "Le récepteur de l'acétylcholine est constitué de cinq sous unités (\\(\\alpha\\), \\(\\beta\\), ૪, \\(\\delta\\) et \\(\\varepsilon\\))",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -967,11 +967,11 @@ window.ANNALES_2024_2025 = [
                 "type": "QCM",
                 "context": "",
                 "images": [],
-                "question": "Une mutation inhibitrice du domaine GTPasique de la sous-unité alpha de la protéine G couplée au récepteur β adrénergique activé par l'adrénaline (une ou plusieurs réponse(s) exacte(s)) :",
+                "question": "Une mutation inhibitrice du domaine GTPasique de la sous-unité alpha de la protéine G couplée au récepteur \\(\\beta\\) adrénergique activé par l'adrénaline (une ou plusieurs réponse(s) exacte(s)) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Défavorise la dissociation du complexe Gβγ de la sous-unité G𝘢",
+                        "text": "Défavorise la dissociation du complexe G\\(\\beta\\)\\(\\gamma\\) de la sous-unité G𝘢",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
@@ -1028,7 +1028,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "Les récepteurs à activité sérine/thréonine kinase sont généralement actifs sous forme de trimères de sous-unités α, β et γ",
+                        "text": "Les récepteurs à activité sérine/thréonine kinase sont généralement actifs sous forme de trimères de sous-unités \\(\\alpha\\), \\(\\beta\\) et \\(\\gamma\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
@@ -1908,7 +1908,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "La membrane plasmique est imperméable au potassium et au glucose mais perméable au CO<sub>2</sub> et à l'O<sub>2</sub>",
+                        "text": "La membrane plasmique est imperméable au potassium et au glucose mais perméable au \\(CO_{2}\\) et à l'\\(O_{2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Exact ! La membrane plasmique est perméable aux gaz (CO2, O2) et aux molécules liposolubles. Elle a une perméabilité relative aux petites molécules polaires non chargées (H20). Et elle est imperméable aux ions (K+) et aux grosses molécules polaires non chargées (glucose)."
                     },
@@ -2647,19 +2647,19 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "L'importine β sert d'adaptateur en se liant à la SLN de la protéine à importe",
+                        "text": "L'importine \\(\\beta\\) sert d'adaptateur en se liant à la SLN de la protéine à importe",
                         "isCorrect": false,
                         "explanation": "FAUX - C’est l’importine α (alpha c’est comme un « a » comme dans « adaptateur ») qui se lie à la SLN. Page n°5 du cours « Le noyau » du Pr. COHEN-SOLAL"
                     },
                     {
                         "id": "C",
-                        "text": "L'importine β est une molécule cargo qui se lie à l'importine alpha et aux protéines Ran-GDP",
+                        "text": "L'importine \\(\\beta\\) est une molécule cargo qui se lie à l'importine alpha et aux protéines Ran-GDP",
                         "isCorrect": true,
                         "explanation": "VRAI - Cette fois-ci c’est tout bon !"
                     },
                     {
                         "id": "D",
-                        "text": "L'importine β interagit avec les nucléoporines",
+                        "text": "L'importine \\(\\beta\\) interagit avec les nucléoporines",
                         "isCorrect": true,
                         "explanation": "VRAI - En effet, c’est aussi un des rôles de l’importine 𝛃. Cette molécule est donc primordiale pour permettre aux protéines d’entrer dans le noyau."
                     },
@@ -3017,7 +3017,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "A présent, les chercheurs s’intéressent à la potentielle implication de DJ-1 dans la voie de signalisation de la β-caténine, toujours dans le contexte du cancer colorectal.\nIls ont travaillé sur la lignée cellulaire HCT116. Ces cellules sont transfectées soit avec un vecteur contrôle (NC ou Vector), soit avec un vecteur contenant le gène codant pour DJ-1 (DJ-1), soit avec un siARN dirigé contre DJ-1 (shDJ-1). Ils ont réalisé un western blot sur le contenu nucléaire ou cytoplasmique de ces cellules (Figure 6A). Ils ont également étudié l’activité du facteur de transcription TCF sur ses gènes cibles grâce à la méthode “Top/Fop Flash” (Figure 6B). TCF est un facteur de transcription activateur qui recrute la β-caténine (un co-activateur de la transcription) au niveau du promoteur de ses gènes cibles, notamment au niveau du promoteur du gène de la cycline D1.\nFigure 6 - A : Western Blot réalisé sur des extraits protéiques issus de cellules HCT116 transfectées soit avec un plasmide contrôle (Vector), soit par un plasmide permettant la surexpression de DJ1 (DJ1), soit avec un siARN contrôle (NC), soit avec un siARN dirigé contre DJ-1 (shDJ-1). (B) Test Top/Fop Flash sur les cellules utilisées dans l’expérience A. Plus le ratio Top/Fop est élevé, plus l’activité transcriptionnelle de TCF sur ses gènes cibles est importante. * et ** : différences significatives entre les 2 conditions observées.",
+                "context": "A présent, les chercheurs s’intéressent à la potentielle implication de DJ-1 dans la voie de signalisation de la \\(\\beta\\)-caténine, toujours dans le contexte du cancer colorectal.\nIls ont travaillé sur la lignée cellulaire HCT116. Ces cellules sont transfectées soit avec un vecteur contrôle (NC ou Vector), soit avec un vecteur contenant le gène codant pour DJ-1 (DJ-1), soit avec un siARN dirigé contre DJ-1 (shDJ-1). Ils ont réalisé un western blot sur le contenu nucléaire ou cytoplasmique de ces cellules (Figure 6A). Ils ont également étudié l’activité du facteur de transcription TCF sur ses gènes cibles grâce à la méthode “Top/Fop Flash” (Figure 6B). TCF est un facteur de transcription activateur qui recrute la \\(\\beta\\)-caténine (un co-activateur de la transcription) au niveau du promoteur de ses gènes cibles, notamment au niveau du promoteur du gène de la cycline D1.\nFigure 6 - A : Western Blot réalisé sur des extraits protéiques issus de cellules HCT116 transfectées soit avec un plasmide contrôle (Vector), soit par un plasmide permettant la surexpression de DJ1 (DJ1), soit avec un siARN contrôle (NC), soit avec un siARN dirigé contre DJ-1 (shDJ-1). (B) Test Top/Fop Flash sur les cellules utilisées dans l’expérience A. Plus le ratio Top/Fop est élevé, plus l’activité transcriptionnelle de TCF sur ses gènes cibles est importante. * et ** : différences significatives entre les 2 conditions observées.",
                 "images": [
                     "annales_assets/2024_2025/bio_cellulaire/tuto_3/image8.jpeg"
                 ],
@@ -3025,7 +3025,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Les effets de DJ-1 et de Wnt sur la β-caténine semblent similaires",
+                        "text": "Les effets de DJ-1 et de Wnt sur la \\(\\beta\\)-caténine semblent similaires",
                         "isCorrect": true,
                         "explanation": "VRAI - D’après les WB (figure 6A), quand on surexprime DJ-1, la quantité de β- caténine nucléaire augmente. Et d’après le cours, Wnt augmente aussi la β- caténine nucléaire. Ces deux protéines vont donc permettre la translocation nucléaire de la β-caténine."
                     },
@@ -3037,19 +3037,19 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "L'activation des récepteurs LRP et Frizzled permet de lever l'ubiquitinylation et la dégradation de la β-caténine",
+                        "text": "L'activation des récepteurs LRP et Frizzled permet de lever l'ubiquitinylation et la dégradation de la \\(\\beta\\)-caténine",
                         "isCorrect": true,
                         "explanation": "VRAI - Exact ! C’est ce qu’on voit dans le cours, la β-caténine, qui n’est plus dégradée, sera libre et pourra aller dans le noyau (cf. p.139 du poly n°2). Cours « Bases moléculaires du développement embryonnaire » du Pr. Thibault COLLIN"
                     },
                     {
                         "id": "D",
-                        "text": "La β-caténine possède une séquence SLN",
+                        "text": "La \\(\\beta\\)-caténine possède une séquence SLN",
                         "isCorrect": true,
                         "explanation": "VRAI - Toutafé ! Puisque la β-caténine est traduite dans le cytoplasme puis transloquée dans le noyau, elle possède forcément une SLN ! Toutes les protéines nucléaires possèdent une SLN."
                     },
                     {
                         "id": "E",
-                        "text": "Les cellules transfectées par un vecteur contrôle présentent une quantité de β-caténine plus importante au niveau cytoplasmique qu'au niveau nucléaire",
+                        "text": "Les cellules transfectées par un vecteur contrôle présentent une quantité de \\(\\beta\\)-caténine plus importante au niveau cytoplasmique qu'au niveau nucléaire",
                         "isCorrect": false,
                         "explanation": "FAUX - Mouahaha… Il est vilain ce piège. Il s’agit de 2 western blots différents, on n’a pas forcément déposé la même quantité de protéines totales dans nos deux expériences (et on ne peut pas le savoir car nos deux témoins de charge sont différents), donc on ne peut pas comparer."
                     }
@@ -3064,7 +3064,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 8,
                 "type": "QCM",
-                "context": "A présent, les chercheurs s’intéressent à la potentielle implication de DJ-1 dans la voie de signalisation de la β-caténine, toujours dans le contexte du cancer colorectal.\nIls ont travaillé sur la lignée cellulaire HCT116. Ces cellules sont transfectées soit avec un vecteur contrôle (NC ou Vector), soit avec un vecteur contenant le gène codant pour DJ-1 (DJ-1), soit avec un siARN dirigé contre DJ-1 (shDJ-1). Ils ont réalisé un western blot sur le contenu nucléaire ou cytoplasmique de ces cellules (Figure 6A). Ils ont également étudié l’activité du facteur de transcription TCF sur ses gènes cibles grâce à la méthode “Top/Fop Flash” (Figure 6B). TCF est un facteur de transcription activateur qui recrute la β-caténine (un co-activateur de la transcription) au niveau du promoteur de ses gènes cibles, notamment au niveau du promoteur du gène de la cycline D1.\nFigure 6 - A : Western Blot réalisé sur des extraits protéiques issus de cellules HCT116 transfectées soit avec un plasmide contrôle (Vector), soit par un plasmide permettant la surexpression de DJ1 (DJ1), soit avec un siARN contrôle (NC), soit avec un siARN dirigé contre DJ-1 (shDJ-1). (B) Test Top/Fop Flash sur les cellules utilisées dans l’expérience A. Plus le ratio Top/Fop est élevé, plus l’activité transcriptionnelle de TCF sur ses gènes cibles est importante. * et ** : différences significatives entre les 2 conditions observées.",
+                "context": "A présent, les chercheurs s’intéressent à la potentielle implication de DJ-1 dans la voie de signalisation de la \\(\\beta\\)-caténine, toujours dans le contexte du cancer colorectal.\nIls ont travaillé sur la lignée cellulaire HCT116. Ces cellules sont transfectées soit avec un vecteur contrôle (NC ou Vector), soit avec un vecteur contenant le gène codant pour DJ-1 (DJ-1), soit avec un siARN dirigé contre DJ-1 (shDJ-1). Ils ont réalisé un western blot sur le contenu nucléaire ou cytoplasmique de ces cellules (Figure 6A). Ils ont également étudié l’activité du facteur de transcription TCF sur ses gènes cibles grâce à la méthode “Top/Fop Flash” (Figure 6B). TCF est un facteur de transcription activateur qui recrute la \\(\\beta\\)-caténine (un co-activateur de la transcription) au niveau du promoteur de ses gènes cibles, notamment au niveau du promoteur du gène de la cycline D1.\nFigure 6 - A : Western Blot réalisé sur des extraits protéiques issus de cellules HCT116 transfectées soit avec un plasmide contrôle (Vector), soit par un plasmide permettant la surexpression de DJ1 (DJ1), soit avec un siARN contrôle (NC), soit avec un siARN dirigé contre DJ-1 (shDJ-1). (B) Test Top/Fop Flash sur les cellules utilisées dans l’expérience A. Plus le ratio Top/Fop est élevé, plus l’activité transcriptionnelle de TCF sur ses gènes cibles est importante. * et ** : différences significatives entre les 2 conditions observées.",
                 "images": [
                     "annales_assets/2024_2025/bio_cellulaire/tuto_3/image8.jpeg"
                 ],
@@ -3078,25 +3078,25 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "La β-caténine semble intervenir sur le promoteur du gène TCF pour augmenter le ratio Top/Fop Flash",
+                        "text": "La \\(\\beta\\)-caténine semble intervenir sur le promoteur du gène TCF pour augmenter le ratio Top/Fop Flash",
                         "isCorrect": false,
                         "explanation": "FAUX - Petit item de compréhension sur la situation. On nous dit que c’est la protéine TCF qui recrute la β-caténine. Mais on n’a aucune information sur l’action de la β - caténine sur les promoteurs du gène codant pour TCF. De plus, aucune expérience ne nous laisse penser que la β-caténine agit sur ce promoteur."
                     },
                     {
                         "id": "C",
-                        "text": "Un excès de β-caténine cytoplasmique pourrait favoriser le développement d'un cancer colorectal",
+                        "text": "Un excès de \\(\\beta\\)-caténine cytoplasmique pourrait favoriser le développement d'un cancer colorectal",
                         "isCorrect": false,
                         "explanation": "FAUX - Dans le WB, lorsque DJ-1 (un pro-oncogène) est présent, on a plus de β- caténine dans le noyau. Et la β-caténine est recrutée (dans le noyau) par TCF pour permettre l’expression de la cycline D1 (protéine favorisant la progression du cycle cellulaire). Donc c’est un excès de β-caténine au niveau nucléaire qui pourrait favoriser le développement de cancer."
                     },
                     {
                         "id": "D",
-                        "text": "La protéine TCF et la β-caténine favorisent la progression du cycle cellulaire",
+                        "text": "La protéine TCF et la \\(\\beta\\)-caténine favorisent la progression du cycle cellulaire",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est ça, 100% legit ! TCF recrute la β-caténine pour favoriser l’expression de la cycline D1. Et la cycline D1 est une protéine qui permet de franchir le premier point de contrôle du cycle cellulaire !"
                     },
                     {
                         "id": "E",
-                        "text": "La protéine DJ-1 semble augmenter l'expression de la β-caténine",
+                        "text": "La protéine DJ-1 semble augmenter l'expression de la \\(\\beta\\)-caténine",
                         "isCorrect": false,
                         "explanation": "FAUX - En présence de DJ-1, on a une augmentation de β-caténine dans le noyau et une diminution dans le cytoplasme. Cela ne nous donne aucune information sur le niveau d’expression de la protéine. Le plus vraisemblable est que la β-caténine a été transloquée dans le noyau."
                     }
@@ -3609,7 +3609,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "L'adaptine AP2 est un complexe cytosolique composé de deux grandes sous-unités α et β et de deux petites sous-unités μ et σ",
+                        "text": "L'adaptine AP2 est un complexe cytosolique composé de deux grandes sous-unités \\(\\alpha\\) et \\(\\beta\\) et de deux petites sous-unités \\(\\mu\\) et \\(\\sigma\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Dans l'endocytose dépendante de la clathrine, la fixation de l’adaptine au récepteur de chargement se fait par un changement de conformation de l'adaptine située côté cytosolique : les sous-unités μ et σ permettent de fixer les récepteurs de chargement membranaires suite à la réception de signaux d'endocytose."
                     },
@@ -3966,7 +3966,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "GSK3β participe à la séquestration de la β-caténine dans le cytoplasme",
+                        "text": "GSK3\\(\\beta\\) participe à la séquestration de la \\(\\beta\\)-caténine dans le cytoplasme",
                         "isCorrect": true,
                         "explanation": "VRAI - Toutafé, rien à rajouter."
                     },
@@ -4130,7 +4130,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "Pour que la glycogénine lie deux glucose entre eux, il faut que le premier glucose soit un anomère β",
+                        "text": "Pour que la glycogénine lie deux glucose entre eux, il faut que le premier glucose soit un anomère \\(\\beta\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
@@ -4179,7 +4179,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "La chaîne principale du glycogène se forme par un enchaînement d'anomères α du glucose",
+                        "text": "La chaîne principale du glycogène se forme par un enchaînement d'anomères \\(\\alpha\\) du glucose",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -4334,31 +4334,31 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "La glycogénine contient exclusivement des hélices α",
+                        "text": "La glycogénine contient exclusivement des hélices \\(\\alpha\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "La glycogénine contient exclusivement des feuillets β",
+                        "text": "La glycogénine contient exclusivement des feuillets \\(\\beta\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Les hélices α sont stabilisées par des liaisons faibles",
+                        "text": "Les hélices \\(\\alpha\\) sont stabilisées par des liaisons faibles",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "La structure secondaire située entre le brin β2 et l'hélice αB est un coude β",
+                        "text": "La structure secondaire située entre le brin \\(\\beta\\)2 et l'hélice \\(\\alpha\\)B est un coude \\(\\beta\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Les brins β6 et β7 sont connectés en épingle à cheveux",
+                        "text": "Les brins \\(\\beta\\)6 et \\(\\beta\\)7 sont connectés en épingle à cheveux",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -4378,7 +4378,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Le domaine encadré sur la topologie correspond à une architecture en sandwich α/β ressemblant au repliement de Rossmann",
+                        "text": "Le domaine encadré sur la topologie correspond à une architecture en sandwich \\(\\alpha\\)/\\(\\beta\\) ressemblant au repliement de Rossmann",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
@@ -4422,7 +4422,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Le coude situé entre les brins β4 et β5 contient trois acides aminés à charge neutre",
+                        "text": "Le coude situé entre les brins \\(\\beta\\)4 et \\(\\beta\\)5 contient trois acides aminés à charge neutre",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
@@ -4471,13 +4471,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "L'angle Psi (Ψ) est situé autour de la liaison entre le carbone α et l'azote de la liaison peptidique",
+                        "text": "L'angle Psi (Ψ) est situé autour de la liaison entre le carbone \\(\\alpha\\) et l'azote de la liaison peptidique",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Le diagramme de Ramachandran montre que la glycogénine possède des feuillets β et des hélices α à pas droit",
+                        "text": "Le diagramme de Ramachandran montre que la glycogénine possède des feuillets \\(\\beta\\) et des hélices \\(\\alpha\\) à pas droit",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
@@ -4592,7 +4592,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": "La séquence du peptide n’est pas électriquement neutre à pH=7\nLa séquence du peptide contient un seul acide aminé aromatique\nDeux acides aminés dans cette séquence peptidique peuvent porter une O-glycosylation\nLa séquence du peptide contient 3 acides aminés hydrophobes\nLa glycogénine forme un complexe avec la glycogène synthase, afin de produire du glycogène. Au sein de ce complexe, la glycogénine permet l’initiation de la synthèse du glycogène en synthétisant une petite amorce de 8 résidus GLU. Qui est ensuite prise en charge par la glycogène synthase (GS).\nLe complexe glycogène synthase-glycogénine (GS-GN) est formé de 2 glycogénines et un tétramère de glycogène synthase. On étudie la formation de ce complexe avec des glycogénines mutées Y194F dans un premier temps puis des glycogénines sauvages dans un second temps.\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>B)</th></tr><tr><th>Figure 4 : Structure tridimensionnelle de l’interaction entre glycogène synthase et glycogénine. Les acides aminés soulignés appartiennent à la glycogénine, ceux encadrés se trouvent sur l’hélice α 10 de la glycogène synthase, tandis que les autres font partie de la structure de la glycogène synthase Spectrométrie de masse des complexes glycogénine - glycogène synthase</th></tr></table></div>",
+                "context": "La séquence du peptide n’est pas électriquement neutre à pH=7\nLa séquence du peptide contient un seul acide aminé aromatique\nDeux acides aminés dans cette séquence peptidique peuvent porter une O-glycosylation\nLa séquence du peptide contient 3 acides aminés hydrophobes\nLa glycogénine forme un complexe avec la glycogène synthase, afin de produire du glycogène. Au sein de ce complexe, la glycogénine permet l’initiation de la synthèse du glycogène en synthétisant une petite amorce de 8 résidus GLU. Qui est ensuite prise en charge par la glycogène synthase (GS).\nLe complexe glycogène synthase-glycogénine (GS-GN) est formé de 2 glycogénines et un tétramère de glycogène synthase. On étudie la formation de ce complexe avec des glycogénines mutées Y194F dans un premier temps puis des glycogénines sauvages dans un second temps.\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>B)</th></tr><tr><th>Figure 4 : Structure tridimensionnelle de l’interaction entre glycogène synthase et glycogénine. Les acides aminés soulignés appartiennent à la glycogénine, ceux encadrés se trouvent sur l’hélice \\(\\alpha\\) 10 de la glycogène synthase, tandis que les autres font partie de la structure de la glycogène synthase Spectrométrie de masse des complexes glycogénine - glycogène synthase</th></tr></table></div>",
                 "images": [
                     "annales_assets/2024_2025/biochimie/tuto_1/image7.jpeg"
                 ],
@@ -4951,13 +4951,13 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 20,
                 "type": "QCM",
-                "context": "Pour étudier l’activité de la glycogénine, les chercheurs purifient un extrait prélevé d’une culture cellulaire. L’activité totale présentée dans le tableau de purification est la moyenne de l’activité totale de plusieurs essais de la même expérience.\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Étapes de purification</th><th>Masse protéines (μg)</th><th>Activité totale/AT (pmol/min)</th><th>Activité spécifique/AS (pmol/min/μg)</th><th>Rendement Global (%)</th></tr><tr><th>1. Crude extract</th><td>940</td><td>843</td><td>0,9</td><td>100</td></tr><tr><th>2. Q-Sepharose</th><td>400</td><td>600</td><td>X</td><td>72</td></tr><tr><th>3. Précipitation</th><td>135</td><td>430</td><td>3,19</td><td>51</td></tr><tr><th>4. Sephacryl S- 200</th><td>64</td><td>316</td><td>4,960</td><td>37,5</td></tr><tr><th>5. UDP-agarose</th><td>25</td><td>158</td><td>6,260</td><td>18,7</td></tr><tr><th>6. Mono Q</th><td>16</td><td>122</td><td>7,530</td><td>14,4</td></tr></table></div>",
+                "context": "Pour étudier l’activité de la glycogénine, les chercheurs purifient un extrait prélevé d’une culture cellulaire. L’activité totale présentée dans le tableau de purification est la moyenne de l’activité totale de plusieurs essais de la même expérience.\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Étapes de purification</th><th>Masse protéines (\\(\\mu\\)g)</th><th>Activité totale/AT (pmol/min)</th><th>Activité spécifique/AS (pmol/min/\\(\\mu\\)g)</th><th>Rendement Global (%)</th></tr><tr><th>1. Crude extract</th><td>940</td><td>843</td><td>0,9</td><td>100</td></tr><tr><th>2. Q-Sepharose</th><td>400</td><td>600</td><td>X</td><td>72</td></tr><tr><th>3. Précipitation</th><td>135</td><td>430</td><td>3,19</td><td>51</td></tr><tr><th>4. Sephacryl S- 200</th><td>64</td><td>316</td><td>4,960</td><td>37,5</td></tr><tr><th>5. UDP-agarose</th><td>25</td><td>158</td><td>6,260</td><td>18,7</td></tr><tr><th>6. Mono Q</th><td>16</td><td>122</td><td>7,530</td><td>14,4</td></tr></table></div>",
                 "images": [],
                 "question": "Compte tenu de vos connaissances et du tableau de purification, parmi les propositions suivantes, laquelle (ou lesquelles) est (ou sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "L'activité spécifique suite à la réalisation d'une Q-Sepharose est de 1,5 pmol/min/μg",
+                        "text": "L'activité spécifique suite à la réalisation d'une Q-Sepharose est de 1,5 pmol/min/\\(\\mu\\)g",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
@@ -5256,13 +5256,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "L'agencement anti-parallèle des brins β est plus stable que l'agencement parallèle",
+                        "text": "L'agencement anti-parallèle des brins \\(\\beta\\) est plus stable que l'agencement parallèle",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Sur le brin Iβ, la distance entre les chaînes latérales de T382 et R384 est estimé à 7 Angstrom",
+                        "text": "Sur le brin I\\(\\beta\\), la distance entre les chaînes latérales de T382 et R384 est estimé à 7 Angstrom",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -5419,13 +5419,13 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "L'activité totale à l'étape 1 est d'environ 4200 µmol/h soit 70 UI",
+                        "text": "L'activité totale à l'étape 1 est d'environ 4200 \\(\\mu\\)mol/h soit 70 UI",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "L'unité de l'activité totale est en masse . temps-<sup>1</sup>",
+                        "text": "L'unité de l'activité totale est en masse . temps-1",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
@@ -5457,7 +5457,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 10,
                 "type": "QCM",
-                "context": "Afin de déterminer les paramètres catalytiques d'IDO1, des cinétiques de transformation du L-Trp ont été réalisées avec des protéines IDO1 recombinantes, en milieu tamponné. Ils étudient la production de kynurénine dans le milieu.\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th></th></tr><tr><th>Figure 6 : Cinétique d'apparition de la kynurénine.</th></tr></table></div>\nDes cinétiques d’IDO1 à plusieurs concentrations de substrat différentes ont été effectuées et ont permis de déterminer Km = 0,3 mM et kcat = 30 min<sup>-1</sup>.",
+                "context": "Afin de déterminer les paramètres catalytiques d'IDO1, des cinétiques de transformation du L-Trp ont été réalisées avec des protéines IDO1 recombinantes, en milieu tamponné. Ils étudient la production de kynurénine dans le milieu.\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th></th></tr><tr><th>Figure 6 : Cinétique d'apparition de la kynurénine.</th></tr></table></div>\nDes cinétiques d’IDO1 à plusieurs concentrations de substrat différentes ont été effectuées et ont permis de déterminer Km = 0,3 mM et kcat = 30 mi\\(n^{-1}\\).",
                 "images": [],
                 "question": "Compte tenu de vos connaissances et de la figure 6, laquelle (lesquelles) des propositions suivantes est (sont) exactes ?",
                 "options": [
@@ -5611,13 +5611,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "La IC50 du galanal est environ égale à 2 µM",
+                        "text": "La IC50 du galanal est environ égale à 2 \\(\\mu\\)M",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "La IC50 du galanal est environ égale 0,2 µM",
+                        "text": "La IC50 du galanal est environ égale 0,2 \\(\\mu\\)M",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
@@ -5815,7 +5815,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 18,
                 "type": "QCM",
-                "context": "Comme les mutations dans la séquence codante peuvent réduire la production de protéines fonctionnelles, les chercheurs ont cherché à savoir si la protéine IDO1 p.K257E pouvait être exprimée normalement dans les cellules en culture. Ils ont donc généré une construction codant pour la forme mutée de l'enzyme au moyen d'une mutagenèse dirigée par PCR. Les vecteurs codant pour l'IDO1 sauvage ou mutée ont été transfectés dans des cellules HEK293, qui n'expriment pas l'IDO1. Les lysats cellulaires ont été soumis à une analyse immunoblot pour estimer les variations de niveaux de protéines IDO1 (Figure 9 A).\nPour évaluer un éventuel défaut du niveau des transcrits IDO1, les chercheurs ont mesuré l'expression basale de l'ARNm IDO1 par densitométrie de bande RT-PCR conventionnelle (Figure 9 B).\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>A)</th></tr><tr><th>B)</th></tr><tr><th>Figure 9 : Analyse par immunoblot de l'IDO1 et de la β-actine dans des lysats de cellules HEK293 transfectées avec un vecteur vide (mock) ou des vecteurs codant pour le type sauvage (WT) ou pour l'IDO1 mutée (p.K257E). Actine : témoin de charge. Analyse RT-PCR de l'ARNm IDO1 dans les cellules transfectées avec un vecteur vide (mock) ou des vecteurs codant pour le type sauvage (WT) ou pour l'IDO1 mutée (p.K257E) ACTB témoin d’amplification.</th></tr></table></div>",
+                "context": "Comme les mutations dans la séquence codante peuvent réduire la production de protéines fonctionnelles, les chercheurs ont cherché à savoir si la protéine IDO1 p.K257E pouvait être exprimée normalement dans les cellules en culture. Ils ont donc généré une construction codant pour la forme mutée de l'enzyme au moyen d'une mutagenèse dirigée par PCR. Les vecteurs codant pour l'IDO1 sauvage ou mutée ont été transfectés dans des cellules HEK293, qui n'expriment pas l'IDO1. Les lysats cellulaires ont été soumis à une analyse immunoblot pour estimer les variations de niveaux de protéines IDO1 (Figure 9 A).\nPour évaluer un éventuel défaut du niveau des transcrits IDO1, les chercheurs ont mesuré l'expression basale de l'ARNm IDO1 par densitométrie de bande RT-PCR conventionnelle (Figure 9 B).\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>A)</th></tr><tr><th>B)</th></tr><tr><th>Figure 9 : Analyse par immunoblot de l'IDO1 et de la \\(\\beta\\)-actine dans des lysats de cellules HEK293 transfectées avec un vecteur vide (mock) ou des vecteurs codant pour le type sauvage (WT) ou pour l'IDO1 mutée (p.K257E). Actine : témoin de charge. Analyse RT-PCR de l'ARNm IDO1 dans les cellules transfectées avec un vecteur vide (mock) ou des vecteurs codant pour le type sauvage (WT) ou pour l'IDO1 mutée (p.K257E) ACTB témoin d’amplification.</th></tr></table></div>",
                 "images": [],
                 "question": "Compte tenu de vos connaissances et de la figure 9, laquelle (lesquelles) des propositions suivantes est (sont) exactes ?",
                 "options": [
@@ -5859,7 +5859,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 19,
                 "type": "QCM",
-                "context": "Afin de comprendre les résultats de l’étude précédente, les chercheurs ont étudié la cinétique du renouvellement de l'IDO1, suivi d'un immunoblot avec un traitement à IFN-γ qui induit la transcription d’IDO1 (Figure 10).\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th></th></tr><tr><th>Figure 10 : Analyse immunoblot de l'IDO1, après son dosage, dans des lysats cellulaires pré-exposés à l'IFN-γ à 10 ng/ml pendant 24 h. Des prélèvement sont pris toutes les heures pendant 6 heures après le prétraitement à l'IFN-γ. L’échantillon SNV correspond à l’échantillon muté. WT : wild type (sauvage) β-actin est ici le témoin de charge.</th></tr></table></div>",
+                "context": "Afin de comprendre les résultats de l’étude précédente, les chercheurs ont étudié la cinétique du renouvellement de l'IDO1, suivi d'un immunoblot avec un traitement à IFN-\\(\\gamma\\) qui induit la transcription d’IDO1 (Figure 10).\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th></th></tr><tr><th>Figure 10 : Analyse immunoblot de l'IDO1, après son dosage, dans des lysats cellulaires pré-exposés à l'IFN-\\(\\gamma\\) à 10 ng/ml pendant 24 h. Des prélèvement sont pris toutes les heures pendant 6 heures après le prétraitement à l'IFN-\\(\\gamma\\). L’échantillon SNV correspond à l’échantillon muté. WT : wild type (sauvage) \\(\\beta\\)-actin est ici le témoin de charge.</th></tr></table></div>",
                 "images": [],
                 "question": "Compte tenu de vos connaissances et de la figure 10, laquelle (lesquelles) des propositions suivantes est (sont) exactes ?",
                 "options": [
@@ -6479,19 +6479,19 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Ln(x) = 2,3 log(x) R = 8,3 J.mol.K<sup>-1</sup>",
+                        "text": "Ln(x) = 2,3 log(x) R = 8,3 J.mol.\\(K^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Eh non ! Le modèle de Bohr est un modèle théorique qui ne s’applique qu’aux systèmes hydrogénoïdes. Il n’est valable que pour les atomes et les ions ne possédant qu’un seul électron (comme l’hydrogène H, l’ion hélium + 2He+, etc…)."
                     },
                     {
                         "id": "A",
-                        "text": "T = 298 K : RT = 5/2 kJ.mol<sup>-1</sup> = 2,5 kJ.mol<sup>-1</sup>",
+                        "text": "T = 298 K : RT = 5/2 kJ.mo\\(l^{-1}\\) = 2,5 kJ.mo\\(l^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Eh non ! Le modèle de Bohr est un modèle théorique qui ne s’applique qu’aux systèmes hydrogénoïdes. Il n’est valable que pour les atomes et les ions ne possédant qu’un seul électron (comme l’hydrogène H, l’ion hélium + 2He+, etc…)."
                     },
                     {
                         "id": "C",
-                        "text": "- (RTln x)/F = 0,06 log x 2,3 RT = 6,0 kJ.mol<sup>-1</sup>",
+                        "text": "- (RTln x)/F = 0,06 log x 2,3 RT = 6,0 kJ.mo\\(l^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Encore un piège, lisez bien ;). L’énergie associée à l’électron le plus proche possible du noyau est de -13,6 eV (en électrons-volts et non en joules !). Ce genre de question tombe souvent, pensez à vérifier la donnée numérique (13,6), son signe (-) et son unité (eV et pas V ou J)."
                     },
@@ -6516,7 +6516,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 2,
                 "type": "QCM",
-                "context": "= 5,7.10<sup>–3</sup>\n(Certaines grandeurs ont été arrondies afin de faciliter les calculs.)\nLes « aides aux calculs, après arrondis » doivent être utilisées lors du choix des propositions.\nLe modèle de Bohr est valable pour l’ensemble des atomes\nLe modèle de Bohr associe à un électron une énergie positive liée à une trajectoire circulaire\nDans le modèle de Bohr, l’énergie associée à l’électron ayant la trajectoire la plus proche possible du noyau est de -13,6 J\nLe modèle de Schrödinger permet de déterminer la localisation exacte de l’électron\nL’énergie d’un électron situé dans la couche M du Magnésium est égale à environ -220 eV",
+                "context": "= 5,7.10–3\n(Certaines grandeurs ont été arrondies afin de faciliter les calculs.)\nLes « aides aux calculs, après arrondis » doivent être utilisées lors du choix des propositions.\nLe modèle de Bohr est valable pour l’ensemble des atomes\nLe modèle de Bohr associe à un électron une énergie positive liée à une trajectoire circulaire\nDans le modèle de Bohr, l’énergie associée à l’électron ayant la trajectoire la plus proche possible du noyau est de -13,6 J\nLe modèle de Schrödinger permet de déterminer la localisation exacte de l’électron\nL’énergie d’un électron situé dans la couche M du Magnésium est égale à environ -220 eV",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_1/image2.jpeg"
                 ],
@@ -6701,31 +6701,31 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "La configuration électronique du chrome 24Cr est [Ag] 4s<sup>1</sup> 3d<sup>5</sup>",
+                        "text": "La configuration électronique du chrome 24Cr est [Ag] 4\\(s^{1}\\) 3\\(d^{5}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Avez-vous repéré une exception à la règle de remplissage ? Le chrome et le cuivre vont préférer remplir à moitié ou totalement leur sous-couche 3d plutôt que la 4s, pour des raisons de stabilité. Or, on a ici simplifié la configuration électronique du chrome avec un gaz rare, l’argon. Wait, you sure about that ? C’est quoi déjà le symbole de l’argon ? C’est Ar. Et on parle de quoi dans l’énoncé ? D’Ag. Je suis au regret de vous annoncer qu’Ag caractérise l’argent et non l’argon ! C’est un piège très vicieux mais vous ne tomberez plus dedans 2 fois après ça, je vous la garantis !"
                     },
                     {
                         "id": "B",
-                        "text": "La configuration du Titane 22Ti est 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>3d<sup>4</sup>",
+                        "text": "La configuration du Titane 22Ti est 1\\(s^{2}\\)2\\(s^{2}\\)2\\(p^{6}\\)3\\(s^{2}\\)3\\(p^{6}\\)3\\(d^{4}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Vous allez où comme ça ?? Klechkowski va vous hanter cette nuit attention. La règle de remplissage nous dit de remplir d’abord les orbitales atomiques les plus basses en énergie. On sait que l’énergie augmente selon n+l croissant, puis n croissant (si deux sous-couches ont une même valeur pour n+l) : On voit que la 4s est plus basse que la 3d, on remplit d’abord la 4s et ensuite la 3d. On a 1s22s22p63s23p64s23d2."
                     },
                     {
                         "id": "C",
-                        "text": "La configuration du Carbone <sup>12</sup>C est 1s<sup>2</sup>2s<sup>2</sup>2p<sup>2</sup>",
+                        "text": "La configuration du Carbone 12C est 1\\(s^{2}\\)2\\(s^{2}\\)2\\(p^{2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Eh oui on ne se fait pas piéger par le 12 qui ne sert à rien d’autre qu’à vous piéger. Si on parle de Carbone, il a un nombre de proton fixé à 6 et on voit qu’il ne possède pas de charge donc il possède 6 électrons également. Ainsi, on peut faire sa configuration électronique et obtenir 1s22s22p2 (oui j’ai pas donné Z, fallait regarder le tableau périodique hehe)."
                     },
                     {
                         "id": "D",
-                        "text": "L'ion Magnésium 12Mg<sup>2+</sup> a pour configuration [Ne]3s<sup>2</sup>3p<sup>2</sup>",
+                        "text": "L'ion Magnésium 12\\(Mg^{2+}\\) a pour configuration [Ne]3\\(s^{2}\\)3\\(p^{2}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Tout d’abord on donne à l’état fondamental Mg : [Ne]3s2. On a ici un ion chargé positivement, on sait que les ions sont des atomes auxquels on a ajouté ou retiré des électrons, soit des charges négatives. Pour obtenir un ion chargé positivement, on lui a retiré des électrons n’est-ce pas ? DONC C’EST BIEN FAUX et on a Mg2+ : [Ne] car on lui retire 2 électrons."
                     },
                     {
                         "id": "E",
-                        "text": "Le Krypton Kr a pour configuration 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>3d<sup>10</sup>4p<sup>6</sup>",
+                        "text": "Le Krypton Kr a pour configuration 1\\(s^{2}\\)2\\(s^{2}\\)2\\(p^{6}\\)3\\(s^{2}\\)3\\(p^{6}\\)3\\(d^{10}\\)4\\(p^{6}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Comptons les électrons vite fait : 2+2+6+2+6+10+6 = 34, si on regarde dans le tableau périodique, le Krypton possède 36 électrons. Il manque donc deux électrons, qu’est ce qui a bien pu se passer … LA 4s ELLE A SAUTÉ. Lisez bien les items les brozeurs. Normalement on a la totale de piège sur cette question, au moins vous serez prêts maintenant."
                     }
@@ -6854,13 +6854,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "Une liaison σ est un recouvrement longitudinal le long de l'axe internucléaire",
+                        "text": "Une liaison \\(\\sigma\\) est un recouvrement longitudinal le long de l'axe internucléaire",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est une définition du cours à connaître par cœur également : une liaison σ se forme par un recouvrement longitudinal (ou axial) le long de l’axe internucléaire entre 2 atomes. Je conseille ++ de visualiser via un schéma :"
                     },
                     {
                         "id": "E",
-                        "text": "Une OM σ* contenant des électrons contribue à la formation d'une liaison covalente entre 2 atomes",
+                        "text": "Une OM \\(\\sigma\\)* contenant des électrons contribue à la formation d'une liaison covalente entre 2 atomes",
                         "isCorrect": false,
                         "explanation": "FAUX - Point de cours important également ! On reprend depuis le début : lors de la combinaison de 2 OA, on a la formation de 2 OM : une liante et une anti-liante, la liante correspond à celle formée par la combinaison de 2 OA en phase, tandis que l’anti-liante correspond à celle formée par la combinaison de 2 OA en opposition de phase (Cf. schéma juste au-dessus). De ce fait, l’OM liante est plus basse en énergie donc plus stable et l’OM anti- liante est plus haute en énergie donc moins stable. L’OM liante, si elle est remplie d’électrons, contribue à former une liaison covalente entre 2 atomes. L’OM anti-liante, au contraire, contribue à fragiliser et détruire la liaison si elle est remplie d’électrons."
                     }
@@ -6891,7 +6891,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "L'OM σ* est plus basse en énergie que la σ, donc moins stable",
+                        "text": "L'OM \\(\\sigma\\)* est plus basse en énergie que la \\(\\sigma\\), donc moins stable",
                         "isCorrect": false,
                         "explanation": "FAUX - On fait très attention quand on lit l’item !! Rappel à connaître par cœur : l’OM σ* (anti-liante) est plus HAUTE en énergie donc moins stable."
                     },
@@ -6929,7 +6929,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "Une liaison 𝜋 est plus forte qu'une liaison σ",
+                        "text": "Une liaison 𝜋 est plus forte qu'une liaison \\(\\sigma\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Une liaison π est plus faible qu’une liaison σ, car le recouvrement latéral de 2 OA est moins efficace que le recouvrement axial. La liaison σ est donc plus stable, en revanche une double liaison σ+π est toujours plus stable qu’une simple liaison σ (logik)."
                     },
@@ -6941,13 +6941,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "Une triple liaison est formée de deux liaisons σ et une liaison 𝜋",
+                        "text": "Une triple liaison est formée de deux liaisons \\(\\sigma\\) et une liaison 𝜋",
                         "isCorrect": false,
                         "explanation": "FAUX - Une triple liaison est formée d’une liaison σ et deux liaisons 𝜋. En effet, on rappelle qu’il y a autant d’OM que d’OA, donc lorsque l’on utilise 2 OA p pour former les OM σ et σ*, il nous reste 4 OA p pour former 2 OM π et 2 OM π*. Lorsque toutes les OM liantes sont remplies (et les OM anti-liantes sont vides), on a donc 1 liaison σ et 2 liaisons π :"
                     },
                     {
                         "id": "E",
-                        "text": "Les électrons 𝜋 sont plus mobiles que les électrons σ",
+                        "text": "Les électrons 𝜋 sont plus mobiles que les électrons \\(\\sigma\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Les électrons π sont moins localisés que les électrons σ en raison du recouvrement latéral des OA qui est moins efficace que le recouvrement axial. De ce fait, les électrons π peuvent donc se délocaliser et ont une grande mobilité contrairement aux électrons σ."
                     }
@@ -7016,7 +7016,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Une hybridation sp<sup>2</sup> correspond à l'association d'une orbitale 2s et deux orbitales 2p",
+                        "text": "Une hybridation s\\(p^{2}\\) correspond à l'association d'une orbitale 2s et deux orbitales 2p",
                         "isCorrect": true,
                         "explanation": "VRAI - Du cours pur et dur ! On obtient alors trois orbitales sp2 et une p pure. On a autant d’orbitales au départ que d’orbitales hybridées."
                     },
@@ -7028,13 +7028,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "Tous les azotes du vemurafenib sont hybridés sp<sup>2</sup>",
+                        "text": "Tous les azotes du vemurafenib sont hybridés s\\(p^{2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - On va commencer par N3, il a 2 atomes voisins et un DNL (AL2E1), il est donc bien sp2. Pour les azotes 1 et 2 la réponse est moins évidente. On pourrait penser qu’ils sont sp3 car ils ont 3 voisins et un DNL mais ce serait oublier les motifs de conjugaisons. Il faut TOUJOURS regarder les motifs de conjugaison lorsqu’on nous demande la géométrie et l’hybridation d’un atome. Ici, le motif est π-σ-DNL. Avec ce genre de motifs, le doublet non liant de l’azote peut se délocaliser pour s’intégrer au système π. Les azotes 1 et 2 exercent donc un effet mésomère donneur : ses électrons du doublet se déplacent vers la double liaison. On observe alors une double liaison et 2 liaisons simples pour chaque azote, soit 𝑨𝑳𝟑𝑬𝟎 : tous les azotes sont bien hybridés sp²."
                     },
                     {
                         "id": "D",
-                        "text": "L'atome de soufre du vemurafenib est 𝐴𝐿<sub>4</sub>𝐸<sub>0</sub>",
+                        "text": "L'atome de soufre du vemurafenib est 𝐴𝐿4𝐸0",
                         "isCorrect": true,
                         "explanation": "VRAI - On utilise VSEPR : on observe 4 atomes voisins pour le soufre et aucun DNL. C’est le début donc tu peux encore être tenté de compter les liaisons plutôt que le nombre de voisins, mais attention, le nombre L correspond bien au nombre de voisins."
                     },
@@ -7126,13 +7126,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "Dans la forme II, l'atome de carbone chargé négativement est hybridé sp<sup>3</sup>",
+                        "text": "Dans la forme II, l'atome de carbone chargé négativement est hybridé s\\(p^{3}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Normalement vous êtes surpris, vous croyez qu’il y a une erreur. En réalité, cet atome de carbone n’est pas sp3, et on va voir pourquoi. On n’oublie pas de dessiner les atomes d’hydrogène implicites si vous en ressentez le besoin : on a donc un carbone lié à 2 atomes de carbone et 1 atome d’hydrogène, et qui porte en plus un doublet non liant. Le carbone est donc AL3E1. Ici, n+m = 4, on est donc sp3 non ? Preeeesque, petite subtilité qui vous a peut-être échappé : ce carbone est impliqué dans un motif de conjugaison (oui encore je sais, mais c’est pour que ça rentre). On le voit bien dans la molécule A, ce même atome de carbone est AL3E0. Dans ce cas, il serait donc hybridé sp2. Comment choisir l’hybridation lorsque 2 formes mésomères semblent en afficher une différente ? Et bien c’est la forme d’hybridation la plus faible qui l’emporte, et qui impose son hybridation à toutes les autres formes ! Ainsi, même dans la molécule II, le carbone chargé négativement est sp2. Courage !"
                     },
                     {
                         "id": "E",
-                        "text": "L'effet mésomère est un effet de polarisation des liaisons π qui ne s'atténue pas au sein d'une molécule",
+                        "text": "L'effet mésomère est un effet de polarisation des liaisons \\(\\pi\\) qui ne s'atténue pas au sein d'une molécule",
                         "isCorrect": true,
                         "explanation": "VRAI - Exactement ! C’est une définition tirée de votre cours :) Retenez bien que l’effet mésomère ne s’atténue pas dans une molécule, la délocalisation peut s’exercer à l’infini si les motifs de conjugaison le permettent. De son côté, l’effet inductif s’atténue effectivement au bout de 3 liaisons !"
                     }
@@ -7160,7 +7160,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "4 électrons π sont impliqués dans le système conjugué de la théobromine",
+                        "text": "4 électrons \\(\\pi\\) sont impliqués dans le système conjugué de la théobromine",
                         "isCorrect": false,
                         "explanation": "FAUX - On en voit effectivement 4 (2 doublets d’électrons π sur le pentacycle de droite), MAIS il ne faut pas oublier les doublets non liants des atomes d’azote ! 3 atomes d’azote sur 4 peuvent délocaliser leur DNL (tous sauf celui en bas à droite qui est déjà impliqué dans une double liaison, soit l’azote n°4). On doit donc considérer tous les DNL délocalisables : on a nos 2 doublets d’électrons π et nos 3 DNL des atomes d’azote, soit 10 électrons en tout !"
                     },
@@ -7178,7 +7178,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "Une des orbitales sp<sup>2</sup> de l'atome d'azote 4 est impliquée dans la délocalisation",
+                        "text": "Une des orbitales s\\(p^{2}\\) de l'atome d'azote 4 est impliquée dans la délocalisation",
                         "isCorrect": false,
                         "explanation": "FAUX - En réalité, non :/ Les orbitales impliquées dans la délocalisation sont plutôt les orbitales p pures ! Les électrons contenus dans les orbitales sp3, sp2 ou sp ne sont JAMAIS JAMAIS délocalisables ! Les OA hybridées (sp, sp², sp3) forment toujours des DNL non délocalisables ou des liaisons σ, jamais de liaison π. Notez bien que les orbitales p pures (ou p tout court d’ailleurs, c’est synonyme) sont orthogonales (perpendiculaires) au plan des liaisons σ."
                     }
@@ -7200,7 +7200,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "La molécule X est aromatique car 6 électrons sont impliqués dans le système π du cycle",
+                        "text": "La molécule X est aromatique car 6 électrons sont impliqués dans le système \\(\\pi\\) du cycle",
                         "isCorrect": true,
                         "explanation": "VRAI - Yes j’aurais pas dit mieux ! On a bien un cycle, qui plus est un cycle plan avec des atomes hybridés sp2, et conjugué sans discontinuité (on a bien une alternance de motifs π- σ-π sur l’ensemble du cycle, que demande le peuple). On compte 3 doublets d’électrons délocalisables au sein du cycle (1 doublet = 2 électrons, tout est dans le nom). On a donc 6 électrons en tout, ok. Mais reste à prouver que notre molécule X est aromatique ! Dernière condition de notre cher Hückel, il faut qu’on trouve une solution n entière vérifiant l’équation 4n + 2 = 6. On résout ça, et on trouve… n = 1 ! Parfait, la molécule est aromatique et on a bien 6 électrons impliqués dans l’aromaticité."
                     },
@@ -7218,7 +7218,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "La délocalisation de l'un des doublets d'électrons π du cycle jusqu'à la fonction cétone",
+                        "text": "La délocalisation de l'un des doublets d'électrons \\(\\pi\\) du cycle jusqu'à la fonction cétone",
                         "isCorrect": true,
                         "explanation": "VRAI - Item bien affirmatif, mais totalement vrai ! Si l’un des doublets du cycle se délocalise, un carbone ne sera plus impliqué dans une double liaison et ne respectera plus la règle de l’octet : on aura formé un carbocation ! Exemple ci-dessous : Le carbone porte une charge positive, car en l’absence de liaisons, il n’a que 3 électrons autour de lui formant les deux liaisons C-C visibles et une liaison C-H implicite, or il est censé en avoir 4 d’après le tableau périodique (on s’en rend compte en établissant sa configuration électronique 1s2 2s2 2p2, on a bien 4 électrons de valence). De plus, le carbone porte également une lacune, puisqu’il ne respecte pas la règle de l’octet (6 électrons en tout au lieu de 8). On a donc bien un carbocation !"
                     },
@@ -7432,7 +7432,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 22,
                 "type": "QCM",
-                "context": "Le D-Glucose et le L-Glucose sont des énantiomères\nLe carbone 2 du D-Glucose est de configuration S\nLa forme de Cram ci-dessous est celle du D-Glucose\nLa projection de Newman ci-dessous correspond à la liaison C1-C2 du D-Glucose\nLa projection de Newman précédente correspond à la liaison C1-C2 du L-Glucose\nOn s’intéresse aux propriétés acido-basiques de l’acide ascorbique, ou vitamine C :\nOn considère également les 3 solutions suivantes :\nSolution A : 100 mL de soude NaOH de concentration 𝑐<sub>A</sub> = 6.10<sup>–3</sup> 𝑚𝑜𝑙. 𝐿<sup>–1</sup>\nSolution B : 5 mmol d’acide chlorhydrique dans un volume de 100 mL\nSolution C : 20 mL d’acide ascorbique (𝐴𝐻<sub>2</sub>) de concentration 𝑐<sub>C</sub> = 4.10<sup>–2</sup> 𝑚𝑜𝑙. 𝐿<sup>–1</sup>\nDonnées :\nOn note AH2, AH<sup>-</sup> et A<sup>2-</sup> les formes de la vitamine C et les pKa correspondants : pKa1 = 4,1 ; pKa2 = 11,8. On rappelle que les groupements les plus réactifs sont les plus acides.\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Af</th><th>𝑝𝐾𝑎 − 𝑐 𝑝𝐻 = 2</th><th>Bf</th><th>𝑝𝐾𝑎 + 𝑐 𝑝𝐻 = 7 + 2</th><th>Ampholyte</th><th>𝑝𝐾𝑎<sub>1</sub> + 𝑝𝐾𝑎<sub>2</sub> 𝑝𝐻 = 2</th></tr><tr><th>AF</th><td>𝑝𝐻 = − log 𝑐</td><td>BF</td><td>𝑝𝐻 = 14 + log 𝑐</td><td>Relation de Henderson</td><td>[𝑏𝑎𝑠𝑒] 𝑝𝐻 = 𝑝𝐾𝑎 + 𝑙𝑜𝑔 [𝑎𝑐𝑖𝑑𝑒]</td></tr></table></div>",
+                "context": "Le D-Glucose et le L-Glucose sont des énantiomères\nLe carbone 2 du D-Glucose est de configuration S\nLa forme de Cram ci-dessous est celle du D-Glucose\nLa projection de Newman ci-dessous correspond à la liaison C1-C2 du D-Glucose\nLa projection de Newman précédente correspond à la liaison C1-C2 du L-Glucose\nOn s’intéresse aux propriétés acido-basiques de l’acide ascorbique, ou vitamine C :\nOn considère également les 3 solutions suivantes :\nSolution A : 100 mL de soude NaOH de concentration 𝑐A = 6.10–3 𝑚𝑜𝑙. 𝐿–1\nSolution B : 5 mmol d’acide chlorhydrique dans un volume de 100 mL\nSolution C : 20 mL d’acide ascorbique (𝐴𝐻2) de concentration 𝑐C = 4.10–2 𝑚𝑜𝑙. 𝐿–1\nDonnées :\nOn note AH2, \\(AH^{-}\\) et \\(A^{2-}\\) les formes de la vitamine C et les pKa correspondants : pKa1 = 4,1 ; pKa2 = 11,8. On rappelle que les groupements les plus réactifs sont les plus acides.\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Af</th><th>𝑝𝐾𝑎 − 𝑐 𝑝𝐻 = 2</th><th>Bf</th><th>𝑝𝐾𝑎 + 𝑐 𝑝𝐻 = 7 + 2</th><th>Ampholyte</th><th>𝑝𝐾𝑎1 + 𝑝𝐾𝑎2 𝑝𝐻 = 2</th></tr><tr><th>AF</th><td>𝑝𝐻 = − log 𝑐</td><td>BF</td><td>𝑝𝐻 = 14 + log 𝑐</td><td>Relation de Henderson</td><td>[𝑏𝑎𝑠𝑒] 𝑝𝐻 = 𝑝𝐾𝑎 + 𝑙𝑜𝑔 [𝑎𝑐𝑖𝑑𝑒]</td></tr></table></div>",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_1/image20.jpeg",
                     "annales_assets/2024_2025/chimie/tuto_1/image21.jpeg",
@@ -7504,7 +7504,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "Le calcul du pH d'une solution de AH<sup>-</sup> nécessite de connaître sa concentration",
+                        "text": "Le calcul du pH d'une solution de \\(AH^{-}\\) nécessite de connaître sa concentration",
                         "isCorrect": false,
                         "explanation": "FAUX - AH- est un ampholyte, pour calculer le pH on utilise 𝑝𝐻= ௣௄௔భା௣௄௔మ ଶ . Le pH ne dépend pas de la concentration."
                     },
@@ -7524,19 +7524,19 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 24,
                 "type": "QCM",
-                "context": "L'équation de combustion complète du méthane (CH4) est la suivante :\nOn nomme ∆<sub>r</sub>𝐻° l’enthalpie standard de la réaction, ∆<sub>r</sub>𝑆° son entropie standard et ∆<sub>r</sub>𝐺° son enthalpie libre standard avec une température de 298K.\nDonnées :\n𝛥𝐻<sub>ƒ</sub>°[𝐶𝐻4(𝑔)] = −74.6 𝑘𝐽/𝑚𝑜𝑙𝛥𝐻<sub>ƒ</sub>°[𝐻2𝑂(𝑔)] = −241.8 𝑘𝐽/𝑚𝑜𝑙\n𝛥𝐻<sub>ƒ</sub>°[𝐶𝑂2(𝑔)] = −393.5 𝑘𝐽/𝑚𝑜𝑙𝛥<sub>r</sub>𝐺° − 800.8 𝑘𝐽/𝑚𝑜𝑙\n𝛥<sub>r</sub>𝐺° = ∆<sub>r</sub>𝐻° − 𝑇∆<sub>r</sub>𝑆°\nLoi de Hess : ∆<sub>r</sub>𝐻° = ∑ 𝛥𝐻<sub>ƒ</sub>°[𝑝𝑟𝑜𝑑𝑢𝑖𝑡𝑠] − ∑ 𝛥𝐻<sub>ƒ</sub>°[𝑟é𝑎𝑐𝑡𝑖𝑓𝑠]",
+                "context": "L'équation de combustion complète du méthane (CH4) est la suivante :\nOn nomme ∆r𝐻° l’enthalpie standard de la réaction, ∆r𝑆° son entropie standard et ∆r𝐺° son enthalpie libre standard avec une température de 298K.\nDonnées :\n𝛥𝐻ƒ°[𝐶𝐻4(𝑔)] = −74.6 𝑘𝐽/𝑚𝑜𝑙𝛥𝐻ƒ°[𝐻2𝑂(𝑔)] = −241.8 𝑘𝐽/𝑚𝑜𝑙\n𝛥𝐻ƒ°[𝐶𝑂2(𝑔)] = −393.5 𝑘𝐽/𝑚𝑜𝑙𝛥r𝐺° − 800.8 𝑘𝐽/𝑚𝑜𝑙\n𝛥r𝐺° = ∆r𝐻° − 𝑇∆r𝑆°\nLoi de Hess : ∆r𝐻° = ∑ 𝛥𝐻ƒ°[𝑝𝑟𝑜𝑑𝑢𝑖𝑡𝑠] − ∑ 𝛥𝐻ƒ°[𝑟é𝑎𝑐𝑡𝑖𝑓𝑠]",
                 "images": [],
                 "question": "Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "∆<sub>r</sub>𝐻° = 𝛥𝐻<sub>ƒ</sub>°[𝐻2𝑂 (𝑔)] + 𝛥𝐻<sub>ƒ</sub>°[𝐶𝑂2(𝑔)] − 𝛥𝐻<sub>ƒ</sub>°[𝐶𝐻4(𝑔)]",
+                        "text": "∆r𝐻° = 𝛥𝐻ƒ°[𝐻2𝑂 (𝑔)] + 𝛥𝐻ƒ°[𝐶𝑂2(𝑔)] − 𝛥𝐻ƒ°[𝐶𝐻4(𝑔)]",
                         "isCorrect": false,
                         "explanation": "FAUX - Dans notre item, on applique la loi de Hess, qui correspond à : ∆௥𝐻° = ෍𝛥𝐻௙°[𝑝𝑟𝑜𝑑𝑢𝑖𝑡𝑠] −෍𝛥𝐻௙°[𝑟é𝑎𝑐𝑡𝑖𝑓𝑠] C’est assez logique, on additionne l’enthalpie standard des éléments qui se forment, et on soustrait l’enthalpie des éléments qui disparaissent. Pour rappel, enthalpie = échange d’énergie thermique avec l’extérieur. Mais il faut veiller au respect des coefficients stœchiométriques. Dans l’équation, 2 moles d’H2O sont mises en jeu, par conséquent on devra placer un 2 devant l’enthalpie de l’eau : ∆௥𝐻° = 2 𝛥𝐻௙°[𝐻2𝑂 (𝑔)] + 𝛥𝐻௙°[𝐶𝑂2(𝑔)] −𝛥𝐻௙°[𝐶𝐻4(𝑔)] Et si certains d’entre vous se demandent pourquoi l’enthalpie de l’O2 n'apparaît pas, c’est parce que le dioxygène gazeux est un corps pur (on le retrouve dans l’atmosphère et il est composé d’un seul type d’atome), par conséquent son enthalpie de formation est égale à 0 kJ/mol !! Attention également : s’il y avait eu un changement d’état dans notre réaction (état différent entre les réactifs et les produits), on aurait additionné l’enthalpie du changement (ex : vaporisation) à la suite de l’enthalpie des produits."
                     },
                     {
                         "id": "B",
-                        "text": "∆<sub>r</sub>𝐻° = −802,5 𝑘𝐽/𝑚𝑜𝑙",
+                        "text": "∆r𝐻° = −802,5 𝑘𝐽/𝑚𝑜𝑙",
                         "isCorrect": true,
                         "explanation": "VRAI - Petite application de la formule qu’on a trouvée juste avant ! ∆𝒓𝑯° = 𝟐 𝜟𝑯𝒇°[𝑯𝟐𝑶 (𝒈)] + 𝜟𝑯𝒇°[𝑪𝑶𝟐(𝒈)] −𝜟𝑯𝒇°[𝑪𝑯𝟒(𝒈)] −𝟐 𝜟𝑯𝒇°[𝑶𝟐(𝒈)] Et avec nos valeurs numériques on obtient : ∆𝒓𝑯° = 𝟐× (−𝟐𝟒𝟏, 𝟖) + (−𝟑𝟗𝟑, 𝟓) −(−𝟕𝟒, 𝟔) −𝟐× 𝟎= −𝟖𝟎𝟐, 𝟓 𝒌𝑱. 𝒎𝒐𝒍ି𝟏 Alors oui, ce sont des additions un peu chiantos à faire sur le brouillon, mais c’est typique de ce que vous aurez à l’exam donc c’est pour votre bien !"
                     },
@@ -7548,7 +7548,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "∆<sub>r</sub>𝑆° = − 5,7 𝐽. 𝐾<sup>-1</sup>. 𝑚𝑜𝑙<sup>-1</sup>",
+                        "text": "∆r𝑆° = − 5,7 𝐽. 𝐾-1. 𝑚𝑜𝑙-1",
                         "isCorrect": true,
                         "explanation": "VRAI - Vu qu’on est des tuteurs en or, on vous a mis la formule qu’on utilise ici dans les données. A l’exam, vous n’aurez pas ce privilège, mais bon vous n’avez pas encore vu la thermo en cours donc on ne va pas s’acharner sur vous. Bref, ici encore, simple application numérique de la formule de l’enthalpie libre ! En thermo, très souvent, vous aurez juste à deviner quelle formule utiliser et à appliquer vos valeurs. 𝜟𝒓𝑮° = ∆𝒓𝑯° −𝑻∆𝒓𝑺° ⟺∆𝒓𝑺° = ∆𝒓𝑯° −∆𝒓𝑮° 𝑻 (on a juste isolé notre entropie standard). Enfin, on applique en veillant bien à mettre la température en KELVINS : ∆𝒓𝑺° = −𝟖𝟎𝟐,𝟓−(−𝟖𝟎𝟎, 𝟖) = 𝟓, 𝟕. 𝟏𝟎ି𝟑𝒌𝑱. 𝑲ି𝟏. 𝒎𝒐𝒍ି𝟏= 𝟓, 𝟕 𝑱. 𝑲ି𝟏. 𝒎𝒐𝒍ି𝟏 Aidez-vous bien des aides aux calculs, elles sont là pour ça (c’est même dans le nom lol)."
                     },
@@ -7635,19 +7635,19 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "[Ga<sup>3+</sup>] : [Ar] 3d<sup>10</sup>",
+                        "text": "[\\(Ga^{3+}\\)] : [Ar] 3\\(d^{10}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - On commence par chercher le numéro atomique Z du Gallium dans le tableau périodique en début de sujet : on trouve Z = 31. On écrit donc sa configuration électronique : 1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p1 (peu importe qu’on écrive la 4s avant ou après la 3d tant que les deux sont remplies dans le bon ordre). Pour former un cation, on fait bien attention à enlever les électrons des sous-couches les plus externes, dans ce cas la 4p puis la 4s. On aura donc 1s2 2s2 2p6 3s2 3p6 3d10 4s0 4p0. On peut enfin simplifier l’écriture de cette configuration en remplaçant 1s2 2s2 2p6 3s2 3p6 par la configuration de l’argon [Ar], le gaz rare précédent."
                     },
                     {
                         "id": "B",
-                        "text": "[Cr] : 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>4</sup>",
+                        "text": "[Cr] : 1\\(s^{2}\\) 2\\(s^{2}\\) 2\\(p^{6}\\) 3\\(s^{2}\\) 3\\(p^{6}\\) 4\\(s^{2}\\) 3\\(d^{4}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Que vois-je ? On nous demande la configuration électronique de l’atome de chrome. Alerte rouge, on est face à l’une des exceptions à la règle de remplissage (le chrome, le cuivre, et on peut plus ou moins considérer la règle des cations (cf. item A) comme une « exception »). En réalité, la sous-couche 3d est particulièrement stable lorsqu’elle est à moitié ou entièrement remplie, car la présence d’électrons dans chaque orbitale lui confère une symétrie. Ainsi, plutôt que de laisser la 3d à un électron d’être stabilisée par symétrie (on a 3d4, il suffirait d’avoir un électron dans chacune de nos 5 OA pour gagner en stabilité), on préfère transférer un électron de la 4s dans la sous-couche 3d, ce qui donne : 1s2 2s2 2p6 3s2 3p6 4s1 3d5. Une image vaut mille mots : Diapo 23 du cours Atomistique, P. Belmont"
                     },
                     {
                         "id": "C",
-                        "text": "[Sr] : 1s<sup>2</sup> 2s<sup>2</sup> 2p<sup>6</sup> 3s<sup>2</sup> 3p<sup>6</sup> 4s<sup>2</sup> 3d<sup>10</sup> 4p<sup>6</sup> 5s<sup>2</sup>",
+                        "text": "[Sr] : 1\\(s^{2}\\) 2\\(s^{2}\\) 2\\(p^{6}\\) 3\\(s^{2}\\) 3\\(p^{6}\\) 4\\(s^{2}\\) 3\\(d^{10}\\) 4\\(p^{6}\\) 5\\(s^{2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Yesss ! Pour un atome aussi volumineux que le strontium (Z=38 dans votre tableau périodique), on ressort notre règle de Klechkowski : En remplissant sous-couche après sous-couche selon le schéma ci-dessus, on obtient bien la configuration de l’énoncé ! On peut d’ailleurs la simplifier avec l’écriture du gaz rare précédent, le krypton Kr (vous savez la kryptonite, le pire ennemi de Superman). On aurait donc [Sr] : [Kr] 5s2."
                     },
@@ -7734,7 +7734,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "Tous les carbones des cycles sont hybridés sp<sup>2</sup>",
+                        "text": "Tous les carbones des cycles sont hybridés s\\(p^{2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - On remarque que tous les carbones des cycles sont impliqués dans des doubles liaisons. Si on prend un carbone au hasard du cycle, on trouve qu’il est lié à 3 atomes voisins donc il est AL3E0 et il ne possède pas de DNL. Il a donc une géométrie triangulaire ce qui correspond à une hybridation sp2. Pas besoin de refaire le raisonnement sur tous les carbones comme ça on économise du temps ++."
                     },
@@ -8236,7 +8236,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "On s’intéresse à présent à la réaction de combustion d’éthane suivante :\n𝒙 𝑪<sub>𝟐</sub>𝑯<sub>𝟔</sub> + 𝒚 𝑶<sub>𝟐</sub> → 𝒛 𝑪𝑶<sub>𝟐</sub> + 𝟔 𝑯<sub>𝟐</sub>𝑶\nDonnées :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>∆lH°298K(C-C)(g) = - 350 kJ.mol<sup>-1</sup></th><th>∆lH°298K(C=C)(g) = - 610 kJ.mol<sup>-1</sup></th></tr><tr><th>∆lH°298 K(C-O)(g) = - 440 kJ.mol<sup>-1</sup></th><td>∆lH°298 K(C=O)(g) = - 800 kJ.mol<sup>-1</sup></td></tr><tr><th>∆lH°298 K(O-O)(g) = - 140 kJ.mol<sup>-1</sup></th><td>∆lH°298 K(O=O)(g) = - 500 kJ.mol<sup>-1</sup></td></tr><tr><th>∆lH°298K(C-H)(g) = - 400 kJ.mol<sup>-1</sup></th><td>∆lH°298K(H-H)(g) = - 440 kJ.mol<sup>-1</sup></td></tr><tr><th>∆lH°298K(O-H)(g) = - 450 kJ.mol<sup>-1</sup></th><td>∆rG° = - 1570 kJ.mol<sup>-1</sup></td></tr></table></div>",
+                "context": "On s’intéresse à présent à la réaction de combustion d’éthane suivante :\n𝒙 𝑪𝟐𝑯𝟔 + 𝒚 𝑶𝟐 → 𝒛 𝑪𝑶𝟐 + 𝟔 𝑯𝟐𝑶\nDonnées :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>∆lH°298K(C-C)(g) = - 350 kJ.mo\\(l^{-1}\\)</th><th>∆lH°298K(C=C)(g) = - 610 kJ.mo\\(l^{-1}\\)</th></tr><tr><th>∆lH°298 K(C-O)(g) = - 440 kJ.mo\\(l^{-1}\\)</th><td>∆lH°298 K(C=O)(g) = - 800 kJ.mo\\(l^{-1}\\)</td></tr><tr><th>∆lH°298 K(O-O)(g) = - 140 kJ.mo\\(l^{-1}\\)</th><td>∆lH°298 K(O=O)(g) = - 500 kJ.mo\\(l^{-1}\\)</td></tr><tr><th>∆lH°298K(C-H)(g) = - 400 kJ.mo\\(l^{-1}\\)</th><td>∆lH°298K(H-H)(g) = - 440 kJ.mo\\(l^{-1}\\)</td></tr><tr><th>∆lH°298K(O-H)(g) = - 450 kJ.mo\\(l^{-1}\\)</th><td>∆rG° = - 1570 kJ.mo\\(l^{-1}\\)</td></tr></table></div>",
                 "images": [],
                 "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
@@ -8328,13 +8328,13 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "On admettra dans la suite que ∆rH° vaut −𝟏𝟓𝟔𝟎 𝒌𝑱. 𝒎𝒐𝒍<sup>–𝟏</sup>, et on posera la constante d’équilibre K à 298 K, 𝑲<sub>𝟐𝟗𝟖</sub> <sub>𝑲</sub> = 𝟏𝟎<sup>𝟔</sup>.",
+                "context": "On admettra dans la suite que ∆rH° vaut −𝟏𝟓𝟔𝟎 𝒌𝑱. 𝒎𝒐𝒍–𝟏, et on posera la constante d’équilibre K à 298 K, 𝑲𝟐𝟗𝟖 𝑲 = 𝟏𝟎𝟔.",
                 "images": [],
                 "question": "Parmi les propositions ci-dessous, laquelle (ou lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "∆<sub>r</sub>𝑆° ≈ 33 𝐽. 𝑚𝑜𝑙<sup>-1</sup>. 𝐾<sup>-1</sup>",
+                        "text": "∆r𝑆° ≈ 33 𝐽. 𝑚𝑜𝑙-1. 𝐾-1",
                         "isCorrect": true,
                         "explanation": "VRAI - On nous donne ∆rG° dans l’énoncé et on a calculé ∆rH° à la question précédente. Pour calculer ∆rS° à T=298K puisqu’on est dans les conditions standards, on utilise la formule suivante : ∆𝐫𝐆° = ∆𝐫𝐇° −𝐓∆𝐫𝐒° 𝐓∆𝐫𝐒° = ∆𝐫𝐇° −∆𝐫𝐆° ∆𝐫𝐒° = ∆𝐫𝐇° −∆𝐫𝐆° 𝐓 ∆𝐫𝐒° = − 𝟏𝟓𝟔𝟎.𝟏𝟎𝟑+ 𝟏𝟓𝟕𝟎. 𝟏𝟎𝟑 ∆𝐫𝐒° = 𝟏𝟎. 𝟏𝟎𝟑 ∆𝐫𝐒° = 𝟏𝟎𝟎 ∆𝐫𝐒° ≈𝟑𝟑 𝐉. 𝐦𝐨𝐥.ି𝟏𝐊ି𝟏"
                     },
@@ -8352,13 +8352,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "A",
-                        "text": "T= 50°C, on trouve K = 10<sup>6</sup>",
+                        "text": "T= 50°C, on trouve K = 106",
                         "isCorrect": true,
                         "explanation": "VRAI - On nous donne ∆rG° dans l’énoncé et on a calculé ∆rH° à la question précédente. Pour calculer ∆rS° à T=298K puisqu’on est dans les conditions standards, on utilise la formule suivante : ∆𝐫𝐆° = ∆𝐫𝐇° −𝐓∆𝐫𝐒° 𝐓∆𝐫𝐒° = ∆𝐫𝐇° −∆𝐫𝐆° ∆𝐫𝐒° = ∆𝐫𝐇° −∆𝐫𝐆° 𝐓 ∆𝐫𝐒° = − 𝟏𝟓𝟔𝟎.𝟏𝟎𝟑+ 𝟏𝟓𝟕𝟎. 𝟏𝟎𝟑 ∆𝐫𝐒° = 𝟏𝟎. 𝟏𝟎𝟑 ∆𝐫𝐒° = 𝟏𝟎𝟎 ∆𝐫𝐒° ≈𝟑𝟑 𝐉. 𝐦𝐨𝐥.ି𝟏𝐊ି𝟏"
                     },
                     {
                         "id": "A",
-                        "text": "25°C, ∆<sub>ƒ</sub>𝑆°(𝑂2) = 0 𝐽. 𝑚𝑜𝑙<sup>-1</sup>. 𝐾<sup>-1</sup>",
+                        "text": "25°C, ∆ƒ𝑆°(𝑂2) = 0 𝐽. 𝑚𝑜𝑙-1. 𝐾-1",
                         "isCorrect": true,
                         "explanation": "VRAI - On nous donne ∆rG° dans l’énoncé et on a calculé ∆rH° à la question précédente. Pour calculer ∆rS° à T=298K puisqu’on est dans les conditions standards, on utilise la formule suivante : ∆𝐫𝐆° = ∆𝐫𝐇° −𝐓∆𝐫𝐒° 𝐓∆𝐫𝐒° = ∆𝐫𝐇° −∆𝐫𝐆° ∆𝐫𝐒° = ∆𝐫𝐇° −∆𝐫𝐆° 𝐓 ∆𝐫𝐒° = − 𝟏𝟓𝟔𝟎.𝟏𝟎𝟑+ 𝟏𝟓𝟕𝟎. 𝟏𝟎𝟑 ∆𝐫𝐒° = 𝟏𝟎. 𝟏𝟎𝟑 ∆𝐫𝐒° = 𝟏𝟎𝟎 ∆𝐫𝐒° ≈𝟑𝟑 𝐉. 𝐦𝐨𝐥.ି𝟏𝐊ି𝟏"
                     }
@@ -8372,7 +8372,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 18,
                 "type": "QCM",
-                "context": "On s’intéresse désormais à la réaction de fermentation lactique, à une température de 𝑻 =\n𝟐𝟕 °𝑪 dont l’équation bilan est la suivante :\n𝑪<sub>𝟔</sub>𝑯<sub>𝟏𝟐</sub>𝑶<sub>𝟔</sub> + 𝟐 𝑨𝑫𝑷 + 𝟐 𝑷𝒊 ; 𝟐 𝑪<sub>𝟑</sub>𝑯<sub>𝟔</sub>𝑶<sub>𝟑</sub> + 𝟐 𝑨𝑻𝑷\nDonnées :\nA un instant t donné, on mesure les concentrations de nos espèces chimiques : [𝐶 𝐻<sub>12</sub>𝑂<sub>6</sub>] = [𝐴𝐷𝑃] = [𝑃𝑖] = 1 × 10<sup>–2</sup> 𝑚𝑜𝑙/𝐿\n[𝐶<sub>3</sub>𝐻<sub>6</sub>𝑂<sub>3</sub>] = [𝐴𝑇𝑃] = 4 × 10<sup>–3</sup>𝑚𝑜𝑙/𝐿",
+                "context": "On s’intéresse désormais à la réaction de fermentation lactique, à une température de 𝑻 =\n𝟐𝟕 °𝑪 dont l’équation bilan est la suivante :\n𝑪𝟔𝑯𝟏𝟐𝑶𝟔 + 𝟐 𝑨𝑫𝑷 + 𝟐 𝑷𝒊 ; 𝟐 𝑪𝟑𝑯𝟔𝑶𝟑 + 𝟐 𝑨𝑻𝑷\nDonnées :\nA un instant t donné, on mesure les concentrations de nos espèces chimiques : [𝐶 𝐻12𝑂6] = [𝐴𝐷𝑃] = [𝑃𝑖] = 1 × 10–2 𝑚𝑜𝑙/𝐿\n[𝐶3𝐻6𝑂3] = [𝐴𝑇𝑃] = 4 × 10–3𝑚𝑜𝑙/𝐿",
                 "images": [],
                 "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
@@ -8390,7 +8390,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "Δ<sub>r</sub>G ≈ −1245 kJ. mol<sup>-1</sup>",
+                        "text": "\\(Δ_{r}\\)G ≈ −1245 kJ. mo\\(l^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Ouiiii, pour calculer la variation d’enthalpie libre de cette réaction, on va appliquer la formule suivante : 𝚫𝐫𝐆= 𝜟𝒓𝑮° + 𝑹𝑻 𝐥𝐧 (𝜞) On ne vous donne pas la valeur de 𝜟𝒓𝑮°mais on se rappelle que : 𝚫𝐫𝐆° = −𝐑𝐓 𝐥𝐧(𝐊) D’où l’égalité : 𝚫𝐫𝐆= −𝐑𝐓 𝐥𝐧(𝐊) + 𝑹𝑻 𝐥𝐧 (𝜞) 𝚫𝐫𝐆= 𝐑𝐓 𝐥𝐧 (𝜞 𝑲) C’est très important de maîtriser toutes vos formules en thermo pour pouvoir jongler de l’une à l’autre. On fait le calcul : 𝚫𝐫𝐆= 𝟖, 𝟑× 𝟑𝟎𝟎× 𝐥𝐧(𝟐, 𝟓𝟔 𝟒, 𝟒) 𝚫𝐫𝐆= 𝟖, 𝟑× 𝟑𝟎𝟎× (−𝟎,𝟓) = −𝟏𝟓𝟎× 𝑹 𝚫𝐫𝐆≈−𝟏𝟐𝟒𝟓 𝐤𝐉/𝐦𝐨𝐥"
                     },
@@ -8416,7 +8416,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 19,
                 "type": "QCM",
-                "context": "L’acide éthylènediaminetétraacétique, plus connu sous le nom d’EDTA, est un acide organique souvent utilisé pour ses propriétés de chélation des ions métalliques. En médecine il est notamment utilisé pour traiter les intoxications par les métaux lourds (plomb, mercure, etc.).\nDonnées :\nOn donne les pKa de l’EDTA : pKa1 = 2,0 ; pKa2 = 2,7 ; pKa3 = 6,2 ; pKa4 = 10,3.\nPour simplifier les notations dans la suite de l’exercice on écrira les formes de l’EDTA comme suit : AH4, AH3-, AH <sup>2-</sup>, AH<sup>3-</sup> et A<sup>4-</sup>.\nOn considère les 3 solutions suivantes :\nUne solution A d’acide bromhydrique (HBr) de concentration 𝑐<sub>A</sub> = 5.10<sup>–2</sup> mol.L<sup>-1</sup> et de volume V = 30 mL\nUne solution B de KOH de concentration 𝑐<sub>B</sub> = 2,5.10<sup>–3</sup> mol.L<sup>-1</sup>\nUne solution C d’EDTA contenant 𝑛 = 4.10<sup>-3</sup> mol dans un volume V = 100 mL\n𝒑𝑲𝒂<sub>𝑲𝑶𝑯</sub> = 𝟏𝟓, 𝟕 et 𝒑𝑲𝒂<sub>𝑯𝑩𝒓</sub> = −𝟗",
+                "context": "L’acide éthylènediaminetétraacétique, plus connu sous le nom d’EDTA, est un acide organique souvent utilisé pour ses propriétés de chélation des ions métalliques. En médecine il est notamment utilisé pour traiter les intoxications par les métaux lourds (plomb, mercure, etc.).\nDonnées :\nOn donne les pKa de l’EDTA : pKa1 = 2,0 ; pKa2 = 2,7 ; pKa3 = 6,2 ; pKa4 = 10,3.\nPour simplifier les notations dans la suite de l’exercice on écrira les formes de l’EDTA comme suit : AH4, AH3-, AH 2-, \\(AH^{3-}\\) et \\(A^{4-}\\).\nOn considère les 3 solutions suivantes :\nUne solution A d’acide bromhydrique (HBr) de concentration 𝑐A = 5.10–2 mol.\\(L^{-1}\\) et de volume V = 30 mL\nUne solution B de KOH de concentration 𝑐B = 2,5.10–3 mol.\\(L^{-1}\\)\nUne solution C d’EDTA contenant 𝑛 = 4.\\(10^{-3}\\) mol dans un volume V = 100 mL\n𝒑𝑲𝒂𝑲𝑶𝑯 = 𝟏𝟓, 𝟕 et 𝒑𝑲𝒂𝑯𝑩𝒓 = −𝟗",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_2/image24.jpeg"
                 ],
@@ -8436,7 +8436,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "A",
-                        "text": "pH = 7, 2 c'est A<sup>4-</sup> qui est majoritaire",
+                        "text": "pH = 7, 2 c'est \\(A^{4-}\\) qui est majoritaire",
                         "isCorrect": true,
                         "explanation": "VRAI - Ouiiii ! Ce premier item peut vous déstabiliser mais il faut en comprendre le sens. On observe sur notre molécule d’EDTA 4 groupements carboxyles (COOH). Aucun de ces groupements n’est soumis à des effets inductifs ou mésomères différents des 3 autres. Ainsi, le premier proton cédé peut provenir de n’importe lequel des groupements, idem pour le second et ainsi de suite."
                     },
@@ -8448,7 +8448,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "Lorsque [AH22-] = [A<sup>3-</sup>], pH = pKa3",
+                        "text": "Lorsque [AH22-] = [\\(A^{3-}\\)], pH = pKa3",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout à fait ! Lorsque les espèces d’un même couple sont présentes à concentration égale, le pH de la solution est égal au pKa du couple. On retrouve cela avec la relation d’Henderson-Hasselbach : 𝒑𝑯= 𝒑𝑲𝒂𝟑+ 𝒍𝒐𝒈[𝑨𝑯𝟑−] [𝑨𝑯𝟐 𝟐− ] Si [AH22-] = [A3-] on a 𝒍𝒐𝒈 [𝑨𝑯𝟑ି] [𝑨𝑯𝟐 𝟐ି ] = 𝟏, soit 𝒑𝑯= 𝒑𝑲𝒂𝟑."
                     }
@@ -8492,7 +8492,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "Une solution de 5.10<sup>-3</sup> mol.L<sup>-1</sup> composée uniquement de A<sup>4-</sup> a un pH = 11",
+                        "text": "Une solution de 5.\\(10^{-3}\\) mol.\\(L^{-1}\\) composée uniquement de \\(A^{4-}\\) a un pH = 11",
                         "isCorrect": false,
                         "explanation": "FAUX - 𝐴ସିest une base faible car son pKa est inférieur à 14 et supérieur à 7. On utilise donc la formule du calcul de pH pour les bases faibles : 𝒑𝑯= 𝟕+ ൫𝒑𝑲𝒂+ 𝒍𝒐𝒈 𝒄𝒃𝒂𝒔𝒆 𝒇𝒂𝒊𝒃𝒍𝒆൯ 𝑝𝐻= 7 + ൫10,3 + 𝑙𝑜𝑔 (5 ⋅10ିଷ)൯ 𝑝𝐻= 7 + 10,3 + log(5) −3 = 7 + 7,3 + 0,7 = 7 + 4 𝑝𝐻= 11 On n’oublie pas de vérifier les conditions : pH ≥ 7,5 et pH ≥ pKa + 1. Petit souci ici, la deuxième condition n’est pas validée : le pKa de notre base est de 10,3, or 11 < 11,3. On ne peut donc pas valider l’item, car on ne peut pas négliger l’autoprotolyse de l’eau."
                     }
@@ -8505,7 +8505,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 21,
                 "type": "QCM",
-                "context": "On décide de faire un mélange contenant la solution A, 200 mL de la solution B et la solutionC. On prend ici une solution d’EDTA sous la forme AH<sup>3-</sup>.",
+                "context": "On décide de faire un mélange contenant la solution A, 200 mL de la solution B et la solutionC. On prend ici une solution d’EDTA sous la forme \\(AH^{3-}\\).",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_2/q21_enonce.png"
                 ],
@@ -8550,7 +8550,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 22,
                 "type": "QCM",
-                "context": "Le pH final de la solution est d’environ 10,78\nLe pH final de la solution est d’environ 5,72\nOn décide maintenant d’étudier la solution C seulement, toujours composée d’EDTA sous la forme AH<sup>3-</sup>.",
+                "context": "Le pH final de la solution est d’environ 10,78\nLe pH final de la solution est d’environ 5,72\nOn décide maintenant d’étudier la solution C seulement, toujours composée d’EDTA sous la forme \\(AH^{3-}\\).",
                 "images": [],
                 "question": "Concernant la solution C, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -8593,7 +8593,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 23,
                 "type": "QCM",
-                "context": "Le pH de la solution C se calcule par la formule 𝑝𝐻 = 7 + pKa+log(c)\nLe pH de la solution C est de 3,8\nLe pH de la solution C est de 8,25\nLorsque l’alcool passe dans l’intestin grêle via le sang, une partie est expirée dans l’air en raison des échanges gazeux qui s’effectuent au niveau des alvéoles pulmonaires. Cette fraction, avec une concentration 2100 fois inférieure à celle dans le sang, peut être détectée par des alcooltests jetables contenant un tube en verre avec des cristaux jaunes de dichromate de potassium (de formule brute K2Cr2O7) qui se colorent en vert au contact de l’alcool.\nOn donne l’équation de la réaction responsable du changement de couleur :\n𝒙 Cr2O72 -+ y CH3CH2OH + z H<sup>+</sup> ; m Cr<sup>3+</sup> + n CH3COOH + l H2O\nDonnées :\n𝐸°Cr202—/Cr3+ = 𝐸°<sub>1</sub> = 1,36 𝑉\n𝐸°CH3C00H/CH3CH20H = 𝐸°2 = 0,05 𝑉",
+                "context": "Le pH de la solution C se calcule par la formule 𝑝𝐻 = 7 + pKa+log(c)\nLe pH de la solution C est de 3,8\nLe pH de la solution C est de 8,25\nLorsque l’alcool passe dans l’intestin grêle via le sang, une partie est expirée dans l’air en raison des échanges gazeux qui s’effectuent au niveau des alvéoles pulmonaires. Cette fraction, avec une concentration 2100 fois inférieure à celle dans le sang, peut être détectée par des alcooltests jetables contenant un tube en verre avec des cristaux jaunes de dichromate de potassium (de formule brute K2Cr2O7) qui se colorent en vert au contact de l’alcool.\nOn donne l’équation de la réaction responsable du changement de couleur :\n𝒙 Cr2O72 -+ y CH3CH2OH + z \\(H^{+}\\) ; m \\(Cr^{3+}\\) + n CH3COOH + l H2O\nDonnées :\n𝐸°Cr202—/Cr3+ = 𝐸°1 = 1,36 𝑉\n𝐸°CH3C00H/CH3CH20H = 𝐸°2 = 0,05 𝑉",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_2/q23_enonce.png"
                 ],
@@ -8639,7 +8639,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 24,
                 "type": "QCM",
-                "context": "𝐶𝐻<sub>3</sub>𝐶𝐻<sub>2</sub>𝑂𝐻\nL’éthanol (CH3CH2OH) est réduit par le dichromate\nx = 2, y = 1 et z = 28\nm = 4, n = 3, l = 11",
+                "context": "𝐶𝐻3𝐶𝐻2𝑂𝐻\nL’éthanol (CH3CH2OH) est réduit par le dichromate\nx = 2, y = 1 et z = 28\nm = 4, n = 3, l = 11",
                 "images": [],
                 "question": "Parmi les propositions suivantes, laquelle est (lesquelles sont) exacte(s) ?",
                 "options": [
@@ -8657,19 +8657,19 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "L'enthalpie libre standard vaut -7,58.10<sup>3</sup> J.mol<sup>-1</sup>",
+                        "text": "L'enthalpie libre standard vaut -7,58.103 J.mo\\(l^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - On reprend depuis le début pour le calcul. On nous demande le calcul de l’enthalpie libre STANDARD, donc ∆rG° et pas ∆rG. Vous devez savoir que ∆rG° peut se calculer en utilisant la différence de potentiel standard (E°) : ∆rG° = -nF∆E°, avec ∆E° = E°oxydant – E°réactifs en considérant l’oxydant et le réducteur dans les réactifs. Dans le cas de notre réaction, l’oxydant est le dichromate et le réducteur est l’éthanol, notre différence de potentiel standard vaut donc : ∆E° = 𝐸°஼௥మைళమష/஼௥యశ - 𝐸°஼ுయ஼ைைு/஼ுయ஼ுమைு = 1,36 – 0,05 = 1,31 V. Il nous reste plus qu’à faire l’application numérique, et on fait très attention à la valeur de n, qui correspond au nombre d’électrons échangés, ici 12 : ∆rG° = -12×96500×1,31 = -1,52.106 J.mol-1(sans aide aux calculs, vous pouviez estimer le résultat et voir qu’il est très loin de celui de l’item)."
                     },
                     {
                         "id": "D",
-                        "text": "La constante d'équilibre K à 298 K vaut 10<sup>200∆E°</sup>",
+                        "text": "La constante d'équilibre K à 298 K vaut 10200∆E°",
                         "isCorrect": true,
                         "explanation": "VRAI - Un tout petit peu de maths pour calculer la constante d’équilibre ! On a vu qu’on a 2 manières de calculer l’enthalpie libre standard : ∆𝒓𝑮° = −𝒏𝑭∆𝑬° d’une part, et ∆𝒓𝑮° = −𝑹𝑻𝒍𝒏𝑲. A partir de ces 2 relations, on peut donc isoler K : −𝒏𝑭∆𝑬° = −𝑹𝑻𝒍𝒏𝑲 ∆𝑬° = 𝑹𝑻 𝒏𝑭𝒍𝒏𝑲 Or à 𝑻= 𝟐𝟗𝟖𝑲, 𝑹𝑻 𝑭𝐥𝐧𝒙= 𝟎,𝟎𝟔𝐥𝐨𝐠𝒙 Donc ∆𝑬° = 𝟎,𝟎𝟔 𝟏𝟐𝒍𝒐𝒈𝑲 ∆𝑬° 𝟏𝟐 𝟎, 𝟎𝟔 = 𝒍𝒐𝒈𝑲 𝑲 = 𝟏𝟎𝟐𝟎𝟎∆𝑬°"
                     },
                     {
                         "id": "E",
-                        "text": "L'équation de Nernst du couple Cr2O72-/Cr<sup>3+</sup> à n'importe quelle température s'écrit 𝐸<sub>1</sub> =",
+                        "text": "L'équation de Nernst du couple Cr2O72-/\\(Cr^{3+}\\) à n'importe quelle température s'écrit 𝐸1 =",
                         "isCorrect": false,
                         "explanation": "FAUX - Alors là il va falloir repartir du début : l’équation de Nernst pour un couple redox s’écrit de manière générale 𝐸 = 𝐸° + ோ் ௡ிln [ை௫]ೌ [ோ௘ௗ]್ . D’abord, la simplification ோ் ி𝑙𝑛𝑥= 0,06 𝑙𝑜𝑔𝑥 n’est valable QUE à T = 298 K !!! Ensuite, il ne faut pas oublier les coefficients stœchiométriques qui doivent être placés en exposants. L’équation de Nernst pour le couple Cr2O72-/Cr3+ à une température quelconque d’écrit donc 𝐸ଵ = 𝐸°ଵ + ଼ ,ଷ×் ଺×ଽ଺ହ଴଴𝑙𝑛 [஼௥మைళమష] [஼௥యశ]మ."
                     }
@@ -8731,7 +8731,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 26,
                 "type": "QCM",
-                "context": "Une réaction élémentaire obéit à la loi de Van’t Hoff : 𝑣 = [𝐴]<sup>a</sup> [𝐵]<sup>b</sup>, avec a et b coefficients stœchiométriques de la réaction\nLa cinétique de la réaction d’isomérisation d’un dérivé de B de l’acide 2O-BA (B-2O-BA) en composé K (K-2O-BA) a été étudiée (réaction x) :\nÀ partir d’une solution composée initialement de [𝐵 − 2𝑂 − 𝐵𝐴]<sub>0</sub> = 1,00. 10<sup>–2</sup> 𝑚𝑜𝑙. 𝐿<sup>–1</sup> et [𝐾 − 2𝑂 − 𝐵𝐴]<sub>0</sub> = 1,00 𝑚𝑜𝑙. 𝐿<sup>–1</sup>, l’évolution de la concentration [𝐵 − 2𝑂 − 𝐵𝐴] a été mesurée en fonction du temps sachant que 𝑘<sub>–1</sub> « 𝑘<sub>1</sub> :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>𝑡 (min)</th><th>0</th><th>10</th><th>20</th><th>30</th><th>40</th></tr><tr><th>[𝐵 − 2𝑂 − 𝐵𝐴] (10<sup>–2</sup> 𝑚𝑜𝑙. 𝐿<sup>–1</sup>)</th><td>1,00</td><td>0,50</td><td>0,25</td><td>0,12</td><td>0,06</td></tr><tr><th>𝑙𝑛[𝐵 − 2𝑂 − 𝐵𝐴]</th><td>0</td><td>-0,69</td><td>-1,38</td><td>-2,12</td><td>-2,81</td></tr></table></div>\nEnsuite le graphique de l’évolution de la concentration en fonction du temps a été établit :",
+                "context": "Une réaction élémentaire obéit à la loi de Van’t Hoff : 𝑣 = [𝐴]a [𝐵]b, avec a et b coefficients stœchiométriques de la réaction\nLa cinétique de la réaction d’isomérisation d’un dérivé de B de l’acide 2O-BA (B-2O-BA) en composé K (K-2O-BA) a été étudiée (réaction x) :\nÀ partir d’une solution composée initialement de [𝐵 − 2𝑂 − 𝐵𝐴]0 = 1,00. 10–2 𝑚𝑜𝑙. 𝐿–1 et [𝐾 − 2𝑂 − 𝐵𝐴]0 = 1,00 𝑚𝑜𝑙. 𝐿–1, l’évolution de la concentration [𝐵 − 2𝑂 − 𝐵𝐴] a été mesurée en fonction du temps sachant que 𝑘–1 « 𝑘1 :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>𝑡 (min)</th><th>0</th><th>10</th><th>20</th><th>30</th><th>40</th></tr><tr><th>[𝐵 − 2𝑂 − 𝐵𝐴] (10–2 𝑚𝑜𝑙. 𝐿–1)</th><td>1,00</td><td>0,50</td><td>0,25</td><td>0,12</td><td>0,06</td></tr><tr><th>𝑙𝑛[𝐵 − 2𝑂 − 𝐵𝐴]</th><td>0</td><td>-0,69</td><td>-1,38</td><td>-2,12</td><td>-2,81</td></tr></table></div>\nEnsuite le graphique de l’évolution de la concentration en fonction du temps a été établit :",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_2/q26_enonce.png",
                     "annales_assets/2024_2025/chimie/tuto_2/q26_enonce_2.png",
@@ -8849,19 +8849,19 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "La configuration électronique du Soufre S est [Ne]3s<sup>2</sup>3p<sup>4</sup>",
+                        "text": "La configuration électronique du Soufre S est [Ne]3\\(s^{2}\\)3\\(p^{4}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Le Soufre a un numéro atomique Z = 16, on va donc faire sa configuration (on fait bien attention à respecter la règle de Klechkowski, soit l’ordre des sous-couches) : 1s22s22p63s23p4, pour l’instant c’est cohérent. On vérifie que le gaz rare précédent est bien le néon (S/O le tuto 2) dans le tableau périodique, c’est bon aussi donc l’item est vrai."
                     },
                     {
                         "id": "B",
-                        "text": "La configuration électronique de l'anion du chlore Cl− est [Ne]3s<sup>2</sup>3p<sup>6</sup>",
+                        "text": "La configuration électronique de l'anion du chlore Cl− est [Ne]3\\(s^{2}\\)3\\(p^{6}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - On a maintenant Z = 17, on a donc 17 + 1 = 18 électrons (dû à la charge), encore une fois on fait la configuration et on a 1s22s22p63s23p6, encore une fois le gaz rare précédent est bien le Néon : on a donc [Ne]3s23p6, qui correspond à [Ar]."
                     },
                     {
                         "id": "C",
-                        "text": "La configuration électronique du Chrome Cr est [Ar]4s<sup>1</sup>35",
+                        "text": "La configuration électronique du Chrome Cr est [Ar]4\\(s^{1}\\)35",
                         "isCorrect": true,
                         "explanation": "VRAI - Ok encore une fois un cas particulier, on commence à les connaitre par cœur. Tout d’abord, le Chrome a bel et bien 6 électrons de valence et le gaz rare précédent est bien l’argon Ar. Maintenant, pourquoi on a [Ar]4s13d5 et pas [Ar]4s23d4 : dans le cas du Chrome, à des fins de stabilité, on remplit d’abord toutes les OA 3d (il y en a 5) dans le sens parallèle avant de saturer la 4s. En d’autres termes, un électron de la 4s va venir se loger de façon parallèle dans la 5e OA 3d pour augmenter la stabilité du Chrome."
                     },
@@ -8935,37 +8935,37 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "On s’intéresse d’abord à l’étude de la molécule de fluorure d’aluminium AlF<sub>3</sub> :",
+                "context": "On s’intéresse d’abord à l’étude de la molécule de fluorure d’aluminium \\(AlF_{3}\\) :",
                 "images": [],
-                "question": "A propos de la molécule de fluorure d'aluminium, laquelle (lesquelles) des propo-sitions suivantes est (sont) exacte(s) ?",
+                "question": "A propos de la molécule de fluorure d’aluminium, laquelle (lesquelles) des propo- sitions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "D'après la théorie VSEPR, la molécule est de géométrie trigonale plane et possède un angle de 120° entre chaque atome de Fluor",
+                        "text": "D’après la théorie VSEPR, la molécule est de géométrie trigonale plane et possède un angle",
                         "isCorrect": true,
                         "explanation": "VRAI - On commence avec un item doux d’application directe de la théorie VSEPR. Tout d’abord, je vous rappelle que la formule générale de la VSEPR s’écrit sous la forme ALnEm avec n le nombre d’atomes voisins et m le nombre de doublets non liants de l’atome central A. Dans ce cas, l’atome central est l’aluminium Al qui ne possède pas de doublet non liant (car il a uniquement 3 électrons de valence), donc on en conclut que m = 0. L’aluminium est cependant lié à 3 atomes de fluor, donc n = 3. On écrit donc selon VSEPR : AL3E0 ou tout simplement AL3. Maintenant, on s’intéresse à la deuxième partie de l’item, qui consiste à déterminer la géométrie ainsi que les angles présents dans la molécule. On calcule donc pour ça n + m = 3 et on se réfère au tableau du cours qui vous donne les géométries selon n + m (que vous devez connaitre par cœur !!❤️). Et on trouve que la molécule est trigonale plane avec un angle de 120° entre chaque atome de fluor (vous pouvez aussi le déduire du fait qu’on soit dans le plan donc un angle global de 360° qu’on divise par le nombre d’atomes liés à l’atome central, donc 360◦ = 120◦)."
                     },
                     {
                         "id": "B",
-                        "text": "La molécule AlF<sub>3</sub> ne possède pas de lacune électronique car elle n'est pas chargée positive-ment",
+                        "text": "La molécule \\(AlF_{3}\\) ne possède pas de lacune électronique car elle n’est pas chargée positive-",
                         "isCorrect": false,
                         "explanation": "FAUX - Ici on a un item doublement faux, il faut faire attention !! ⚠️Une lacune électronique existe quand la règle de l’octet (8 électrons de valence) n’est pas atteinte. L’atome d’aluminium fait 3 liaisons avec 3 atomes de fluor, donc sa couche de valence contient 6 électrons. 8−6 = 2 électrons en moins pour atteindre la règle de l’octet. Ce qui nous affirme qu’une lacune électronique est bien présente. Maintenant, si je reformule l’item, on vous dit qu’une lacune électronique est présente si la molécule est chargée, donc on vous donne une relation de cause à effet entre lacune et charge électronique. Il faut faire très attention à ça parce qu’on ne peut pas lier les deux !! La charge dépend du nombre d’électrons par rapport à l’état fondamental de l’atome (par exemple si on retire un électron à un atome de carbone tétravalent dans son état fondamental, on obtiendra une charge positive) ; alors que la lacune (comme dit précédemment) dépend du respect ou non de la règle de l’octet."
                     },
                     {
                         "id": "C",
-                        "text": "Les trois atomes de fluor sont AL<sub>3</sub>E<sub>1</sub> selon VSEPR",
+                        "text": "Les trois atomes de fluor sont \\(AL_{3}\\)\\(E_{1}\\) selon VSEPR",
                         "isCorrect": false,
                         "explanation": "FAUX - Retour à la PR ! Comme expliqué dans l’item A, le chiffre en dessous du L correspond au nombre d’atomes voisins, tandis que celui en dessous du E correspond au nombre de doublets non liants. Ici, nos 3 atomes de fluor possèdent 1 atome voisin (l’aluminium), et 3 DNL, ils sont donc AL1E3 selon VSEPR."
                     },
                     {
                         "id": "D",
-                        "text": "Toutes les liaisons Al - F de cette molécule sont homolytiques",
+                        "text": "Toutes les liaisons Al – F de cette molécule sont homolytiques",
                         "isCorrect": true,
                         "explanation": "VRAI - Ouiiii, c’est tout bon !! Pour cet item vous pouvez raisonner en écrivant les configurations élec- troniques des deux atomes impliqués dans la liaison, puis en dessinant la représentation de Lewis des deux atomes. Vous trouverez que le fluor possède 3 doublets non liants et 1 électron céliba- taire, alors que l’aluminium possède 3 électrons célibataires. Il y aura donc mise en commun d’un électron de chaque atome pour créer la liaison, ce qui correspond bien à la définition d’une liaison homolytique."
                     },
                     {
                         "id": "E",
-                        "text": "La molécule AlF<sub>3</sub> est un acide de Lewis",
+                        "text": "La molécule \\(AlF_{3}\\) est un acide de Lewis",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est ça, un acide selon Lewis est une espèce capable d’accepter d’un doublet d’électron. On a trouvé dans l’item B que la molécule de fluorure d’aluminium possède bien une lacune électronique, donc qu’elle sera effectivement capable d’accepter une paire d’électrons, c’est bien un acide de Lewis !"
                     }
@@ -8980,7 +8980,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "Énoncé commun question 5 et 6 :\nOn s’intéresse désormais à la molécule du teriflunomide, qui est un médicament utilisé princi-palement pour traiter la sclérose en plaques.\nCF<sub>3</sub>\nOHO\nH<sub>3</sub>CN",
+                "context": "Énoncé commun question 5 et 6 :\nOn s’intéresse désormais à la molécule du teriflunomide, qui est un médicament utilisé princi-palement pour traiter la sclérose en plaques.\n\\(CF_{3}\\)\nOHO\n\\(H_{3}\\)CN",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q5_1.png"
                 ],
@@ -8988,7 +8988,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Les carbones du cycle aromatique présent dans la molécule de teriflunomide sont tous hy-bridés sp<sup>2</sup>",
+                        "text": "Les carbones du cycle aromatique présent dans la molécule de teriflunomide sont tous hy-",
                         "isCorrect": true,
                         "explanation": "VRAI - Pour répondre à cette question, on va appliquer la théorie VSEPR à un des atomes de carbone (les 5 restants étant équivalents). Prenons l’exemple du carbone lié au CF3. Il possède 3 atomes voisins et pas de doublets non liants, il va donc être AL3, il a une géométrie trigonale plane et donc une hybridation sp2. Le cycle aromatique va donc être totalement plan. Pour aller plus vite, vous pouvez retenir qu’un carbone possédant une double liaison au sein d’un cycle est systématiquement hybridé sp2."
                     },
@@ -9000,7 +9000,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "L'atome d'azote du groupement NH est hybridé sp<sup>3</sup>",
+                        "text": "L’atome d’azote du groupement NH est hybridé \\(sp^{3}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - On applique ici encore la théorie VSEPR, on trouve que l’azote est AL3E1, ce qui nous pousse à penser qu’il est bien hybridé sp3. Cependant, l’azote, grâce à son doublet non liant va être impliqué dans des motifs de conjugaison avec le cycle aromatique (dnl-σ-π), il sera donc automatiquement considéré comme étant hybridé sp2 car son DNL peut participer à une double liaison N=C."
                     },
@@ -9032,31 +9032,31 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Le doublet non liant de l'azote (NH) se trouve dans une orbitale p pure",
+                        "text": "Le doublet non liant de l’azote (NH) se trouve dans une orbitale p pure",
                         "isCorrect": true,
                         "explanation": "VRAI - Dans la question d’avant, on a établi que l’azote est hybridé sp2, en vue de son implication dans la conjugaison dans la molécule. Le doublet non liant de l’azote peut donc être délocalisable. Stop, on arrête tout : si un doublet non liant est délocalisable, il est nécessairement contenu dans une p pure, qui pourra former une liaison π avec un autre atome. Dans le cas contraire, si le DNL n’est pas délocalisable, on parlera d’OA hybridée sp2."
                     },
                     {
                         "id": "B",
-                        "text": "En mettant en commun deux orbitales atomiques de deux atomes, on obtient une orbitale moléculaire",
+                        "text": "En mettant en commun deux orbitales atomiques de deux atomes, on obtient une orbitale",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux et archi faux !! La mise en commun de deux orbitales atomiques va donner lieu à la formation de deux orbitales moléculaires, une qui va être liante et stabilisante (de plus basse énergie que l’énergie des deux OA) et une autre qui va être dite antiliante et déstabilisante (de plus haute énergie que l’énergie des deux OA)."
                     },
                     {
                         "id": "C",
-                        "text": "Les orbitales π sont de plus hautes énergies que les orbitales σ",
+                        "text": "Les orbitales \\(\\pi\\) sont de plus hautes énergies que les orbitales \\(\\sigma\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Ouiiii, item de cours à connaître par cœur ! Les liaisons σ sont les liaisons les plus stables, donc les plus basses en énergie. On peut le voir notamment grâce aux diagrammes d’énergie où les liaisons σ sont les premières à être créées."
                     },
                     {
                         "id": "D",
-                        "text": "Une orbitale moléculaire σ résulte forcément du recouvrement axial de deux orbitales ato-miques",
+                        "text": "Une orbitale moléculaire \\(\\sigma\\) résulte forcément du recouvrement axial de deux orbitales ato-",
                         "isCorrect": true,
                         "explanation": "VRAI - Item péremptoire mais dans ce cas-là très vrai ! C’est la définition que vous avez dans votre cours, je n’ai rien à ajouter de plus. Les liaisons π résultent elle d’un recouvrement latéral de deux orbitales atomiques."
                     },
                     {
                         "id": "E",
-                        "text": "Il est possible que 2 orbitales atomiques de 2 atomes différents interagissent même si elles ne sont pas de la même sous-couche",
+                        "text": "Il est possible que 2 orbitales atomiques de 2 atomes différents interagissent même si elles",
                         "isCorrect": true,
                         "explanation": "VRAI - Eh oui ! Cela peut paraitre contre-intuitif, mais les interactions entre OA dépendent avant tout de leur niveau d’énergie ! En un sens heureusement que différentes sous-couches peuvent interagir, sinon les hydrogènes ne pourraient pas se lier à beaucoup de monde avec leur petite sous-couche 1s …"
                     }
@@ -9072,7 +9072,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "FNH<sub>2</sub>\nNH<sub>2</sub>\nNO<sub>2</sub>\nNO<sub>2</sub>\nOHOH\nIII\nIII\nIVV",
+                "context": "\\(FNH_{2}\\)\n\\(NH_{2}\\)\n\\(NO_{2}\\)\n\\(NO_{2}\\)\nOHOH\nIII\nIII\nIVV",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q7_1.png",
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q7_2.png",
@@ -9083,7 +9083,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Les effets inductifs et mésomères attracteurs exercés par un groupement renforcent l'acidité de ce même groupement",
+                        "text": "Les effets inductifs et mésomères attracteurs exercés par un groupement renforcent l’acidité",
                         "isCorrect": false,
                         "explanation": "FAUX - Pour le comprendre, on doit considérer la forme basique de la molécule, ici la forme O-. Ce groupe- ment basique, déjà en surplus électronique, va essayer de répartir un maximum sa charge négative. Pour ce faire, il peut être stabilisé en « donnant » ses électrons : il sera stabilisé en exerçant des effets mésomères et inductifs donneurs. Ce sont les effets attracteurs des groupes adjacents qui vont permettre au groupe déprotoné de se stabiliser ! Ainsi, plus la forme basique est stable, plus elle sera formée tôt et plus le pKa sera faible, ce qui augmente l’acidité."
                     },
@@ -9095,19 +9095,19 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "Le classement des molécules I, II et IV par ordre croissant d'acidité est : II < I < IV",
+                        "text": "Le classement des molécules I, II et IV par ordre croissant d’acidité est : II < I < IV",
                         "isCorrect": true,
                         "explanation": "VRAI - Toutafé ! Attention, on ne compte pas la molécule V ici ! Pour comparer l’acidité des molécules I, II et IV, on va les classer dans l’ordre croissant des effets attracteurs qui s’exercent sur le groupement -OH (en n’oubliant pas que plus l’attraction augmente, plus l’acidité augmente et qu’un effet mésomère attracteur est beaucoup plus fort qu’un effet inductif attracteur chez les non-halogènes, donc IV>I). Commençons par la molécule I, le OH subit un effet inductif attracteur par l’atome de fluor, on le note -I. Ses électrons et sa charge – vont donc mieux se répartir dans la molécule. Pour la molécule II, le dnl du OH va globalement subir un effet inductif attracteur également, par l’azote NH2, mais cet effet attracteur est moins fort que celui du fluor, car le fluor est bien plus électronégatif que l’azote (petit rappel : plus l’électronégativité d’un élément est forte, plus il exerce un effet inductif attracteur). On note cet effet -I également. Quant à la molécule IV, l’hydroxyle exerce un effet mésomère donneur +M avec délocalisation de ses électrons vers le NO2, qui exerce un effet mésomère attracteur (-M). On remarque que seule la molécule IV possède un effet mésomère, plus puissant que l’effet inductif chez les non-halogènes : la molécule IV est la plus acide. Enfin, pour trancher entre I et II, regardons l’effet inductif : celui du fluor est plus puissant, donc il stabilise davantage la forme basique. Dans l’ordre du moins acide au plus acide, on a donc : II<I<IV."
                     },
                     {
                         "id": "D",
-                        "text": "Le groupement NO<sub>2</sub> de la molécule IV possède un fort pouvoir mésomère donneur",
+                        "text": "Le groupement \\(NO_{2}\\) de la molécule IV possède un fort pouvoir mésomère donneur",
                         "isCorrect": false,
                         "explanation": "FAUX - Cf. item B, c’est un fort pouvoir mésomère attracteur car l’azote est capable de former une double liaison C=N."
                     },
                     {
                         "id": "E",
-                        "text": "L'hydroxyle de la molécule V est fortement stabilisé par l'effet mésomère attracteur du groupement nitro",
+                        "text": "L’hydroxyle de la molécule V est fortement stabilisé par l’effet mésomère attracteur du",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention piège ! On remarque que le OH de la molécule V n’est pas inclus dans le système conjugué du cycle car il en est séparé par deux liaisons simples (on n’a pas de système π-σ-dnl mais π-σ-σ- dnl, ce qui ne fonctionne pas) ! Il ne peut donc pas être stabilisé par l’effet mésomère attracteur du cycle conjugué au NO2."
                     }
@@ -9167,7 +9167,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 9,
                 "type": "QCM",
-                "context": "NH<sub>2</sub>\nNH<sub>2</sub>\nNH<sub>2</sub>\nNH<sub>2</sub>\nNNN\nAdénineABC",
+                "context": "\\(NH_{2}\\)\n\\(NH_{2}\\)\n\\(NH_{2}\\)\n\\(NH_{2}\\)\nNNN\nAdénineABC",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q9_1.png"
                 ],
@@ -9193,7 +9193,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "On peut passer de la molécule C à l'adénine grâce à une délocalisation d'électrons dans le système π",
+                        "text": "On peut passer de la molécule C à l'adénine grâce à une délocalisation d'électrons dans le système \\(\\pi\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Tout d’abord, de quoi parle-t-on ici ? On parle de délocalisation d’électrons, donc de mésomérie ! Mais sur la molécule C, un hydrogène lié à l’azote s’est déplacé ! La molécule C ne peut donc pas passer sous forme d’adénine via mésomérie tout simplement parce que ce n’est pas compatible avec un déplacement de proton."
                     },
@@ -9260,7 +9260,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 11,
                 "type": "QCM",
-                "context": "H<sub>3</sub>C\nH<sub>3</sub>\nH<sub>3</sub>C\nMolécule X\nH<sub>3</sub>C\nH<sub>3</sub>CO\nMolécule 1\nMolécule 2\nMolécule 3",
+                "context": "\\(H_{3}\\)C\n\\(H_{3}\\)\n\\(H_{3}\\)C\nMolécule X\n\\(H_{3}\\)C\n\\(H_{3}\\)CO\nMolécule 1\nMolécule 2\nMolécule 3",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q11_1.png",
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q11_2.png",
@@ -9310,7 +9310,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": "L’acide ascorbique, ou vitamine C, est un antioxydant essentiel pour l’organisme, impliqué dans la synthèse du collagène et le soutien du système immunitaire. Sa structure est représentée ci-dessous, ainsi que celle des molécules (A), (B) et (C) :\nCH<sub>2</sub>OH\nHOOH\nVitamine C\nHOHH OR\nRCH<sub>2</sub>OH\nCH<sub>2</sub>OH\nABC",
+                "context": "L’acide ascorbique, ou vitamine C, est un antioxydant essentiel pour l’organisme, impliqué dans la synthèse du collagène et le soutien du système immunitaire. Sa structure est représentée ci-dessous, ainsi que celle des molécules (A), (B) et (C) :\n\\(CH_{2}\\)OH\nHOOH\nVitamine C\nHOHH OR\n\\(RCH_{2}\\)OH\n\\(CH_{2}\\)OH\nABC",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q12_1.png",
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q12_2.png",
@@ -9333,7 +9333,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "La molécule (B) est la projection de Newmann de la vitamine C selon l'axe C<sub>(a)</sub>-C<sub>(b)</sub>",
+                        "text": "La molécule (B) est la projection de Newmann de la vitamine C selon l'axe \\(C_{(a)}\\)-\\(C_{(b)}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - On regarde la molécule dans l’axe C(a)-C(b) : On peut voir le OH à gauche et en haut, le H à droite et le CH2OH en bas sur le premier plan. Sur le 2e plan, du côté du carbone (b), le O-R (on considère R le reste du cycle) se situe en haut à droite, le H en haut à gauche et le carbone du cycle en bas, donc la projection de Newmann est la suivante : R OR H CH2OH H HO"
                     },
@@ -9359,7 +9359,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "On décide de mélanger la molécule ci-dessous avec du cyanure de sodium. On observe la réaction suivante, dont la vitesse ne dépend que de la concentration de 2 réactifs :\nN C<sup>−</sup>+BrNC\nHOOH",
+                "context": "On décide de mélanger la molécule ci-dessous avec du cyanure de sodium. On observe la réaction suivante, dont la vitesse ne dépend que de la concentration de 2 réactifs :\nN \\(C^{-}\\)+BrNC\nHOOH",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/image5.png",
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q13_1.png",
@@ -9408,7 +9408,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 14,
                 "type": "QCM",
-                "context": "Afin d’étudier la réactivité d’aldéhyde cinnamique, des scientifiques décident de le mélanger avec 2 équivalents de méthanol et d’observer leur réaction :\nH+2 H<sub>3</sub>COH",
+                "context": "Afin d’étudier la réactivité d’aldéhyde cinnamique, des scientifiques décident de le mélanger avec 2 équivalents de méthanol et d’observer leur réaction :\nH+2 \\(H_{3}\\)COH",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q14_1.png"
                 ],
@@ -9422,25 +9422,25 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "Au cours de la réaction, il y aura formation d'un hémicétal",
+                        "text": "Au cours de la réaction, il y aura formation d’un hémicétal",
                         "isCorrect": false,
                         "explanation": "FAUX - C’est plutôt un hémiacétal ! Je rappelle la nuance : un hémiAcétal possède 2 chaines dont au moins une composée d’uniquement un hydrogène, tandis que l’hémicétal possède 2 chaines entièrement carbonées. En d’autres termes : Un hémiAcétal est formé à partir d’un Aldéhyde alors qu’un hémiCétal est dérivé d’une cétone. Votre réaction va se faire en présence de deux molécules de méthanol, ainsi on aura formation d’un hémiacétal dans un premier temps, puis d’un acétal en milieu acide. Voici la diapo du cours : Diapo 295 de votre cours de chimie organique, Pr. Broussy Je vous mets également le schéma bilan de la réaction, issu du cours : Diapo 296 de votre cours de chimie organique, Pr. Broussy"
                     },
                     {
                         "id": "C",
-                        "text": "Au cours de la réaction, il y a libération de 2 molécules d'eau",
+                        "text": "Au cours de la réaction, il y a libération de 2 molécules d’eau",
                         "isCorrect": false,
                         "explanation": "FAUX - Il y a la libération d’une molécule d’eau et d’un proton (Cf schéma item B). En effet, si 2 molécules d’eau étaient libérées, on ne pourrait pas avoir les 2 chaînes oxygénées OR caractéristiques d’un acétal."
                     },
                     {
                         "id": "D",
-                        "text": "HO- est un très bon groupement partant",
+                        "text": "\\(HO^{–}\\) est un très bon groupement partant",
                         "isCorrect": false,
                         "explanation": "FAUX - Pas du tout au contraire ! HO– est une base forte (pKa = 16) et l’aptitude nucléofuge (= si un groupement part spontanément) diminue avec la basicité : plus notre base va être forte, moins elle va partir facilement, du moins spontanément."
                     },
                     {
                         "id": "E",
-                        "text": "L'atome d'oxygène 2 change d'hybridation au cours de la réaction",
+                        "text": "L’atome d’oxygène 2 change d’hybridation au cours de la réaction",
                         "isCorrect": true,
                         "explanation": "VRAI - D’après la théorie VSEPR, l’atome est AE1L2 donc il est sp2. Au cours de la réaction, il capte un proton ce qui donne AE2L2 donc sp3. Il n’y a pas de motif de mésomérie, donc on peut bien conclure à un changement d’hybridation."
                     }
@@ -9454,7 +9454,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "Dans cette partie nous allons étudier la réaction du 2-bromobutane avec l’éthanol ou l’ion éthanoate. L’élimination et la substitution sont continuellement en compétition :\nH<sub>3</sub>C\nH<sub>3</sub>C\nOEt +HBr\nEtC<sub>4</sub>H<sub>8</sub>+Br<sup>–</sup>+EtOH\nOn sait par ailleurs que v<sub>(a)</sub> = k[C<sub>4</sub>H<sub>7</sub>Br]\npKa(EtOH/EtO– ) = 15,5\npKa(HCN/CN– ) = 9,21",
+                "context": "Dans cette partie nous allons étudier la réaction du 2-bromobutane avec l’éthanol ou l’ion éthanoate. L’élimination et la substitution sont continuellement en compétition :\n\\(H_{3}\\)C\n\\(H_{3}\\)C\nOEt +HBr\n\\(EtC_{4}\\)\\(H_{8}\\)+\\(Br^{–}\\)+EtOH\nOn sait par ailleurs que \\(v_{(a)}\\) = k[\\(C_{4}\\)\\(H_{7}\\)Br]\npKa(EtOH/EtO– ) = 15,5\npKa(HCN/CN– ) = 9,21",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q15_1.png"
                 ],
@@ -9468,13 +9468,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "L'étape cinétiquement déterminante de cette réaction est la formation d'un carbocation",
+                        "text": "L’étape cinétiquement déterminante de cette réaction est la formation d’un carbocation",
                         "isCorrect": true,
                         "explanation": "VRAI - Alors nous avons vu que nous sommes devant une SN1. Lors d’une SN1, il est écrit dans votre cours que c’est la formation du carbocation qui est cinétiquement déterminante."
                     },
                     {
                         "id": "C",
-                        "text": "Cette réaction n'est pas stéréosélective",
+                        "text": "Cette réaction n’est pas stéréosélective",
                         "isCorrect": true,
                         "explanation": "VRAI - Alors je vous mets ici la réaction pour que ce soit plus visualisable. J’ai volontairement représenté la molécule en 3D et n’hésitez pas à faire de même sur votre feuille. On remarque que l’éthanol peut attaquer de part et d’autre du carbone et la réaction ne sera donc PAS stéréosélective. En revanche, ce n’est pas le cas si c’est une SN2 car le nucléophile attaque en même temps que le nucléofuge s’en va et il n’y a donc qu’un côté possible. EtOH + CH3 Et H Br EtOH CH3 + H Et EtOH Br - Et O + H Et H CH3 Et O Et H CH3 HBr"
                     },
@@ -9486,7 +9486,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "Les électrons du double non liant de l'atome d'oxygène de l'éthanol attaquent l'orbitale σ* de la liaison C-Br",
+                        "text": "Les électrons du double non liant de l’atome d’oxygène de l’éthanol attaquent l’orbitale \\(\\sigma\\)*",
                         "isCorrect": false,
                         "explanation": "FAUX - Encore une fois il faut bien faire la différence entre la SN1 et la SN2 : lors d’une SN2 on attaque bien une orbitale σ* de la liaison C-X (X = nucléofuge). Lors d’une SN1 on attaque l’orbitale 2p du carbone. C’est un point à bien comprendre : faites bien la différence entre orbitale atomique et moléculaire et quelles orbitales sont attaquables. Une lacune sur un carbocation ? On la comble = on attaque une orbitale 2p atomique. On attaque et on rompt directement une liaison ? = Attaque d’une orbitale moléculaire (π* ou σ*)."
                     }
@@ -9500,7 +9500,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 16,
                 "type": "QCM",
-                "context": "Lors de la réaction (b), on utilisera cet isomère du 2-bromobutane en tant que réactif.\nH CH<sub>3</sub>\nH3C H(2)Br",
+                "context": "Lors de la réaction (b), on utilisera cet isomère du 2-bromobutane en tant que réactif.\nH \\(CH_{3}\\)\nH3C H(2)Br",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q16_1.png"
                 ],
@@ -9532,7 +9532,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "Les électrons d'un doublet non liant de la base attaque l'orbitale σ* de la liaison C-H<sub>(2)</sub>",
+                        "text": "Les électrons d’un doublet non liant de la base attaque l’orbitale \\(\\sigma\\)* de la liaison \\(C-H_{(2)}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - C’est exactement ça. L’oxygène attaque l’orbitale σ* de la liaison C-H et les électrons de la liaison vont donc à leur tour se placer dans l’orbitale σ* de la liaison C-Br pour briser la liaison."
                     }
@@ -9547,37 +9547,37 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "On étudie désormais la formation de l’acide propanoïque [H<sub>3</sub>C-CH<sub>2</sub>-COOH<sub>(g)</sub>], que l’on nommera [AP], en connaissant à 298K, son enthalpie standard de combustion et les enthalpies standard de formation suivantes. On sait que l’eau formée lors de cette combustion sera sous l’état gazeux.\nDonnées :\nEnthalpie standard de combustion de AP : ∆<sub>c</sub>H<sup>○</sup> = −1520 kJ · mol<sup>−1</sup>\n∆<sub>f</sub> H<sup>○</sup>(CO<sub>2(g)</sub>) = −400 kJ · mol<sup>−1</sup>\n∆<sub>f</sub> H<sup>○</sup>(H<sub>2</sub>O<sub>(g)</sub>) = −290 kJ · mol<sup>−1</sup>\n∆<sub>c</sub>S<sup>○</sup> = −100 SI",
+                "context": "On étudie désormais la formation de l’acide propanoïque [\\(H_{3}\\)C-\\(CH_{2}\\)-\\(\\text{COOH}_{(g)}\\)], que l’on nommera [AP], en connaissant à 298K, son enthalpie standard de combustion et les enthalpies standard de formation suivantes. On sait que l’eau formée lors de cette combustion sera sous l’état gazeux.\nDonnées :\nEnthalpie standard de combustion de AP : ∆c\\(H^{○}\\) = −1520 kJ · mo\\(l^{-1}\\)\n∆f \\(H^{○}\\)(\\(CO_{2(g)}\\)) = −400 kJ · mo\\(l^{-1}\\)\n∆f \\(H^{○}\\)(\\(H_{2}\\)\\(O_{(g)}\\)) = −290 kJ · mo\\(l^{-1}\\)\n∆c\\(S^{○}\\) = −100 SI",
                 "images": [],
-                "question": "Concernant la réaction de combustion de l'acide propanoïque, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant la réaction de combustion de l’acide propanoïque, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "L'équation de combustion de l'acide propanoïque est AP (g) + O<sub>2</sub> (g) −−→ CO<sub>2</sub> (g) + H<sub>2</sub>O (g)",
+                        "text": "L’équation de combustion de l’acide propanoïque est AP (g) + \\(O_{2} (\\)g) \\(--\\rightarrow\\)\\(CO_{2} (\\)g) + \\(H_{2}\\)O",
                         "isCorrect": false,
                         "explanation": "FAUX - Un petit piège pour commencer, c’est sympa non ? En effet lors d’une réaction de combustion, le composé étudié réagit avec de l’O2 pour donner du CO2 et de l’H2O. Cependant, vous avez oublié quelque chose de très important : la stœchiométrie ! Pensez toujours à vérifier si vos réactions sont équilibrées avant de continuer l’exercice. La bonne réponse était donc AP + 7 2 O2 −−→3 CO2 + 3 H2O pour une mole d’acide propanoïque."
                     },
                     {
                         "id": "B",
-                        "text": "L'enthalpie standard de formation de l'acide propanoïque vaut −550 kJ/mol",
+                        "text": "L’enthalpie standard de formation de l’acide propanoïque vaut \\(-550\\) kJ/mol",
                         "isCorrect": true,
                         "explanation": "VRAI - Oui ! Pour y répondre nous devons utiliser la loi de HESS ! Par définition : ∆rH◦= X ∆fH◦(produits) − X ∆fH◦(réactifs) Il ne faut pas oublier les coefficients stœchiométriques ! On se retrouve donc avec : ∆cH◦= 3∆fH◦(CO2(g)) + 3∆fH◦(H2O(g)) −∆fH◦(AP) −7 2∆fH◦(O2) Or il est dit dans le cours que l’enthalpie de formation d’un corps simple (ici O2) = 0 kJ/mol. Avec une petite manipulation de formule, on trouve donc : ∆fH◦(AP) = 3 × ∆fH◦\u0010 CO2(g) \u0011 + 3 × ∆fH◦(H2O(g)) −∆cH◦ AN : ∆fH◦(AP) = 3 × (−400) + 3 × (−290) −(−1520) = −550 kJ/mol"
                     },
                     {
                         "id": "C",
-                        "text": "La réaction de formation de l'acide propanoïque est exothermique",
+                        "text": "La réaction de formation de l’acide propanoïque est exothermique",
                         "isCorrect": true,
                         "explanation": "VRAI - Par définition, si ∆rH◦< 0, alors la réaction libère de la chaleur (exothermique), l’item est donc vrai 😄."
                     },
                     {
                         "id": "D",
-                        "text": "L'enthalpie standard de formation est l'enthalpie de formation de 1 mole de composé à 298K, P = 1 atm, à partir de corps simples pris dans leur état standard de référence",
+                        "text": "L’enthalpie standard de formation est l’enthalpie de formation de 1 mole de composé à",
                         "isCorrect": true,
                         "explanation": "VRAI - Exact, c’est du cours à 100%."
                     },
                     {
                         "id": "E",
-                        "text": "On considère que la réaction de combustion de l'acide propanoïque a lieu au sein d'un système isolé",
+                        "text": "On considère que la réaction de combustion de l’acide propanoïque a lieu au sein d’un",
                         "isCorrect": false,
                         "explanation": "FAUX - Un système isolé n’échange ni de l’énergie, ni de la matière. Or on étudie ici un système qui libère de la chaleur (énergie). Ce n’est donc pas un système isolé, mais bien un système fermé, qui n’échange pas de matière avec l’extérieur. Courage !"
                     }
@@ -9598,19 +9598,19 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "∆<sub>c</sub>G<sup>○</sup> ≈ −580 kJ · mol<sup>−1</sup>",
+                        "text": "∆c\\(G^{○}\\) ≈ −580 kJ · mo\\(l^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "\\(\\Delta _{c}\\)\\(G^{◦}\\approx -520\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
+                        "text": "\\(\\Delta _{c}\\)\\(G^{\\(^{\\circ}\\)}\\approx -520\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et CBon qu'est-ce qu'on a dans notre poche pour trouver l'enthalpie libre standard ? On a l'enthalpie standard, l'entropie standard, et surtout une formule que vous devez absolument connaître :∆rG○ = ∆rH○ − T ∆rS○Avec T température en Kelvin. Ça tombe bien, on a tout ! On peut donc directement faire l'ap-plication numérique en veillant bien à convertir notre entropie en kJ · K−1 · mol−1 pour ne pas s'embrouiller dans les unités (SI = unité du cours = J · K−1 · mol−1).∆cG○ = −550 − 300 × (−0,1) = −550 + 30 = −520 kJ · mol−1(B VRAI)Même pas besoin d'aide aux calculs, il faut raisonner avec logique (genre multipliez pas par 298K mais 300K ça va plus vite)."
                     },
                     {
                         "id": "C",
-                        "text": "\\(\\Delta _{c}\\)\\(G^{◦}\\approx 800\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
+                        "text": "\\(\\Delta _{c}\\)\\(G^{\\(^{\\circ}\\)}\\approx 800\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
@@ -9622,7 +9622,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "A",
-                        "text": "\\(\\Delta _{c}\\)\\(G^{◦}\\approx -580\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
+                        "text": "\\(\\Delta _{c}\\)\\(G^{\\(^{\\circ}\\)}\\approx -580\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -9636,7 +9636,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 19,
                 "type": "QCM",
-                "context": "Nous étudions en parallèle la réaction de dissolution de NaCl<sub>(s)</sub> dans l’eau à 300K.\nDonnée :\ndiss\n(NaCl<sub>(s)</sub>) = 4 kJ/mol",
+                "context": "Nous étudions en parallèle la réaction de dissolution de \\(\\text{NaCl}_{(s)}\\) dans l’eau à 300K.\nDonnée :\ndiss\n(\\(\\text{NaCl}_{(s)}\\)) = 4 kJ/mol",
                 "images": [],
                 "question": "Concernant les réactions vues précédemment, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -9648,13 +9648,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "A",
-                        "text": "298 K, la constante d'équilibre K de la combustion d'acide propanoïque vaut e<sup>208</sup>",
+                        "text": "298 K, la constante d'équilibre K de la combustion d'acide propanoïque vaut \\(e^{208}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Item plutôt fourbe, je vous l’accorde. En effet, si vous vous êtes souvenu de la formule suivante, ça a pu vous embrouiller : ∆rG = −RT ln K = −RT ln  [C]γ eq[D]δ eq [A]α eq[B]β eq   Ici, on peut croire que ∆rG◦dépend de la concentration des produits C et D à l’équilibre. Mais il faut se souvenir que K NE DÉPEND QUE DE LA TEMPÉRATURE. Si les concentrations en produits augmentent, les concentrations en réactifs vont aussi augmenter pour que K reste inchangée. Donc non, l’enthalpie libre standard ne dépend pas des concentrations des réactifs/produits."
                     },
                     {
                         "id": "C",
-                        "text": "La réaction de dissolution de NaCl<sub>(s)</sub> donne des ions en solution aqueuse",
+                        "text": "La réaction de dissolution de \\(\\text{NaCl}_{(s)}\\) donne des ions en solution aqueuse",
                         "isCorrect": true,
                         "explanation": "VRAI - NaCl (s) −−→Na+ (aq) + Cl– (aq), n’oubliez pas que le NaCl représente du sel, qui est bien dissout dans l’eau."
                     },
@@ -9681,7 +9681,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 20,
                 "type": "QCM",
-                "context": "L’acide aspartique est un acide aminé non essentiel, jouant un rôle dans le cycle de l’urée, mais également dans la néoglucogenèse ou encore la formation de protéines.\nAcide aspartique\nDonnées :\npKa<sub>1</sub> = 2,2\npKa<sub>2</sub> = 3,9\npKa<sub>3</sub> = 9,8",
+                "context": "L’acide aspartique est un acide aminé non essentiel, jouant un rôle dans le cycle de l’urée, mais également dans la néoglucogenèse ou encore la formation de protéines.\nAcide aspartique\nDonnées :\np\\(Ka_{1}\\) = 2,2\np\\(Ka_{2}\\) = 3,9\np\\(Ka_{3}\\) = 9,8",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q20_1.png"
                 ],
@@ -9689,13 +9689,13 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Le pKa<sub>1</sub> correspond à celui de groupement C",
+                        "text": "Le p\\(Ka_{1}\\) correspond à celui de groupement C",
                         "isCorrect": true,
                         "explanation": "VRAI - En effet, le pka1 = 2,2 est le pKa le plus faible, ce qui veut dire que le groupement est le plus acide parmi ceux entourés. Maintenant pourquoi est-ce celui du groupement C et pas celui du groupement A malgré le fait que les deux groupements soient des fonctions acides carboxyliques ? Et bien Jammy, c’est parce que l’azote du groupement NH3 exerce un effet inductif attracteur plus fort sur le groupement C que sur le groupement A, car il en est plus proche. Rappel, un effet inductif attracteur est dû à l’électronégativité d’un atome, et se propage sur 3 liaisons maximum."
                     },
                     {
                         "id": "B",
-                        "text": "La forme diacide de l'acide aspartique est une forme ampholyte",
+                        "text": "La forme diacide de l’acide aspartique est une forme ampholyte",
                         "isCorrect": true,
                         "explanation": "VRAI - Un espèce ampholyte, aussi dite amphotère, est une espèce qui sera à la fois un acide et une base en solution, sa forme majoritaire dépend du pH. La forme diacide de l’acide aspartique est obtenue entre pKa = 2,2 et pKa = 3,9 (car 2 de ses 3 protons qui peuvent partir sont encore présents). Elle est entourée de la forme triacide et de la forme monoacide. pH pKa1 pKa2 pKa3 OH O NH+ O OH OH O NH+ O O− O− O NH+ O O− O− O NH2 O O−"
                     },
@@ -9707,13 +9707,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "A",
-                        "text": "pH = 3,9, on trouve un mélange équimolaire des formes triacide et diacide de l'acide aspartique",
+                        "text": "Le \\(pKa_{1}\\) correspond à celui de groupement C",
                         "isCorrect": true,
                         "explanation": "VRAI - En effet, le pka1 = 2,2 est le pKa le plus faible, ce qui veut dire que le groupement est le plus acide parmi ceux entourés. Maintenant pourquoi est-ce celui du groupement C et pas celui du groupement A malgré le fait que les deux groupements soient des fonctions acides carboxyliques ? Et bien Jammy, c’est parce que l’azote du groupement NH3 exerce un effet inductif attracteur plus fort sur le groupement C que sur le groupement A, car il en est plus proche. Rappel, un effet inductif attracteur est dû à l’électronégativité d’un atome, et se propage sur 3 liaisons maximum."
                     },
                     {
                         "id": "E",
-                        "text": "À pH physiologique, la forme majoritaire de l'acide aspartique est la forme diacide",
+                        "text": "À pH physiologique, la forme majoritaire de l’acide aspartique est la forme diacide",
                         "isCorrect": false,
                         "explanation": "FAUX - Et non, le pH physiologique est aux alentours de 7. Or, à ce moment-là, la forme majoritaire est la forme monoacide. Cf : diagramme prédominance."
                     }
@@ -9727,7 +9727,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 21,
                 "type": "QCM",
-                "context": "On s’intéresse maintenant à la réaction de l’acide aspartique et de la soude. La solution 1 est une solution de la forme diacide d’acide aspartique, notée AH<sub>2</sub>, et la solution 2 est la solution de soude.\nSolution 1 : c<sub>AH</sub>2 = 1,82 M et V<sub>1</sub> = 0,5 L\nSolution 2 : c<sub>NaOH</sub> = 5 mM et V<sub>2</sub> = 1 L\nSolution 3 : mélange de la solution 1 et de la solution 2",
+                "context": "On s’intéresse maintenant à la réaction de l’acide aspartique et de la soude. La solution 1 est une solution de la forme diacide d’acide aspartique, notée \\(AH_{2}\\), et la solution 2 est la solution de soude.\nSolution 1 : \\(c_{AH}\\)2 = 1,82 M et \\(V_{1}\\) = 0,5 L\nSolution 2 : \\(c_{\\text{NaOH}}\\) = 5 mM et \\(V_{2}\\) = 1 L\nSolution 3 : mélange de la solution 1 et de la solution 2",
                 "images": [],
                 "question": "Concernant les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
@@ -9771,7 +9771,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 22,
                 "type": "QCM",
-                "context": "Solution A : acide chlorhydrique [HCl] = 2 × 10−4 mol · L<sup>−1</sup> et V = 500 mL\nSolution B : [H<sub>2</sub>PO<sub>4</sub><sup>−</sup>] = 10−4 M et V = 300 mL, pKaH PO\nSolution C : [H<sub>3</sub>O<sup>+</sup>] = 10−4 M et V = 200 mL\n34 / H2PO4",
+                "context": "Solution A : acide chlorhydrique [HCl] = 2 × \\(10^{-4}\\) mol · \\(L^{-1}\\) et V = 500 mL\nSolution B : [\\(H_{2}\\)\\(PO_{4}^{-}\\)] = \\(10^{-4}\\) M et V = 300 mL, pKaH PO\nSolution C : [\\(H_{3}\\)\\(O^{+}\\)] = \\(10^{-4}\\) M et V = 200 mL\n34 / H2PO4",
                 "images": [],
                 "question": "Concernant les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
@@ -9815,37 +9815,37 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 23,
                 "type": "QCM",
-                "context": "On considère les couples redox suivants :\nCouple 1 : Nitrate/nitrite - NO<sub>3</sub> – / NO<sub>2</sub> –E<sup>○</sup> = +0,94 V\nCouple 2 : Dichromate/chrome - Cr O 2 – / Cr3+\n<sub>2</sub> <sub>7</sub>E<sup>○</sup>,V\nCouple 3 : Ion ferreux/fer - Fe2+ / Fe\nDonnées :\nF = 100 000 C · mol<sup>−1</sup>",
+                "context": "On considère les couples redox suivants :\nCouple 1 : Nitrate/nitrite - \\(NO_{3}\\) – / \\(NO_{2}\\) –\\(E^{○}\\) = +0,94 V\nCouple 2 : Dichromate/chrome - Cr O 2 – / Cr3+\n2 7\\(E^{○}\\),V\nCouple 3 : Ion ferreux/fer - Fe2+ / Fe\nDonnées :\nF = 100 000 C · mo\\(l^{-1}\\)",
                 "images": [],
                 "question": "Parmi les propositions suivantes, laquelle est (ou lesquelles sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "La demi-équation du couple 1 est NO<sub>3</sub> - + 2 H+ + 2 e- = NO<sub>2</sub> - + H<sub>2</sub>O",
+                        "text": "La demi-équation du couple 1 est \\(NO_{3}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout à fait ! Je vous remets les étapes à suivre pour équilibrer une réaction d’oxydo-réduction : 1. Écrire de part et d’autre du ”=” l’oxydant et le réducteur. 2. Équilibrer les atomes autres que l’oxygène et l’hydrogène. 3. Équilibrer l’oxygène en ajoutant autant de molécules d’eau que d’atomes d’oxygène néces- saires. 4. Équilibrer ensuite les hydrogènes en ajoutant autant de protons que nécessaires. 5. Équilibrer les charges en ajoutant des électrons (ils sont toujours du côté de l’oxydant)."
                     },
                     {
                         "id": "B",
-                        "text": "La réduction du dichromate met en jeu autant de protons que d'électrons",
+                        "text": "La réduction du dichromate met en jeu autant de protons que d’électrons",
                         "isCorrect": false,
                         "explanation": "FAUX - Pour répondre à la question on établit la demi-équation du couple 2 en suivant les étapes citées dans l’item A. On obtient Cr2O7 2– + 14 H+ + 6 e– = 2 Cr3 + + 7 H2O."
                     },
                     {
                         "id": "C",
-                        "text": "1 mole de Cr<sub>2</sub>O<sub>7</sub>2 - donne 2 moles de Cr3+",
+                        "text": "1 mole de \\(Cr_{2}\\)\\(O_{7}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Oui ! C’est ce qu’on peut voir dans la demi-équation de la réaction avec les nombres stœchiomé- triques."
                     },
                     {
                         "id": "D",
-                        "text": "L'oxydation de Cr<sub>2</sub>O<sub>7</sub>2 - en Cr3+ met en jeu 6 électrons",
+                        "text": "L’oxydation de \\(Cr_{2}\\)\\(O_{7}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Est-ce que vous avez vu le piège ? Le dichromate est l’oxydant du couple, par conséquent, la réaction qui a lieu pour passer au chrome est une réduction. Petit schéma des familles : ox + e– = red oxydation réduction"
                     },
                     {
                         "id": "E",
-                        "text": "Le fer Fe capte un électron de l'ion ferreux",
+                        "text": "Le fer Fe capte un électron de l’ion ferreux",
                         "isCorrect": false,
                         "explanation": "FAUX - Encore une inversion 🙁. Ce sont les oxydants qui captent les électrons. Les réducteurs, comme le fer, les cèdent."
                     }
@@ -9859,13 +9859,13 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 24,
                 "type": "QCM",
-                "context": "On s’intéresse à la réaction entre les couples 1 et 3. Les concentrations des espèces sont les suivantes :\n[NO<sub>3</sub><sup>−</sup>] = 10−3 mol · L<sup>−1</sup>[Fe<sup>2+</sup>] = 10−2 mol · L<sup>−1</sup>\n[NO<sub>2</sub><sup>−</sup>] = 10−3 mol · L<sup>−1</sup>[H<sup>+</sup>] = 10−6 mol · L<sup>−1</sup>",
+                "context": "On s’intéresse à la réaction entre les couples 1 et 3. Les concentrations des espèces sont les suivantes :\n[\\(NO_{3}^{-}\\)] = \\(10^{-3}\\) mol · \\(L^{-1}\\)[\\(Fe^{2+}\\)] = \\(10^{-2}\\) mol · \\(L^{-1}\\)\n[\\(NO_{2}^{-}\\)] = \\(10^{-3}\\) mol · \\(L^{-1}\\)[\\(H^{+}\\)] = \\(10^{-6}\\) mol · \\(L^{-1}\\)",
                 "images": [],
                 "question": "Parmi les propositions suivantes, laquelle est (ou lesquelles sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "L'oxydant le plus fort parmi les 3 couples est le dichromate",
+                        "text": "L’oxydant le plus fort parmi les 3 couples est le dichromate",
                         "isCorrect": true,
                         "explanation": "VRAI - Pour déterminer l’oxydant le plus fort, on se base sur les potentiels standards des couples. Plus le potentiel standard du couple est élevé, meilleur est l’oxydant de ce couple. Ici on a E◦ 2 > E◦ 1 > E◦ 3. Le dichromate est donc le meilleur oxydant des trois."
                     },
@@ -9877,13 +9877,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "La réaction entre le nitrite et l'ion ferreux est spontanée",
+                        "text": "La réaction entre le nitrite et l’ion ferreux est spontanée",
                         "isCorrect": false,
                         "explanation": "FAUX - On peut déterminer l’équation spontanée en utilisant les potentiels et la méthode du gamma, comme en acide base. La réaction se fait entre l’oxydant le plus fort (ici NO3 –) et le réducteur le plus fort (Fe), pour donner les produits NO2 – et Fe2+. E◦(V ) Oxydant le plus fort Réducteur le plus fort Fe2+ Fe NO3 – NO2 –"
                     },
                     {
                         "id": "D",
-                        "text": "L'équation de la réaction spontanée entre les couples 1 et 3 est NO<sub>3</sub> - + Fe + 2 H+ −7−−-− NO<sub>2</sub> - + Fe2+ + H<sub>2</sub>O",
+                        "text": "L’équation de la réaction spontanée entre les couples 1 et 3 est \\(NO_{3}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - On sait d’après les items précédents que la réaction spontanée qui a lieu se déroule avec le nitrate et le fer comme réactifs. On peut donc établir et équilibrer l’équation de la réaction. D’abord les demi-équations puis l’équation bilan.    NO3 −+ 2 H+ + 2 e−= NO2 −+ H2O Fe = Fe2+ + 2 e− Les deux réactions mettent en jeux le même nombre d’électrons, on a donc : NO3 – + Fe + 2 H+ −−⇀ ↽−−NO2 – + Fe2+ + H2O"
                     },
@@ -9911,7 +9911,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "[NO3−][Fe][NO3−][Fe]On peut exprimer le quotient de la réaction : Γ = <sup>[NO</sup>2−][Fe2+]",
+                        "text": "[NO3−][Fe][NO3−][Fe]On peut exprimer le quotient de la réaction : Γ = [NO2−][Fe2+]",
                         "isCorrect": false,
                         "explanation": "FAUX - [NO3−][Fe] Le quotient se calcule en faisant le rapport de l’activité des produits sur les réactifs. Le souci dans cet item c’est qu’on a oublié H+ du côté des réactifs. Il faut tenir compte de toutes les espèces présentes dans l’équation bilan 😄. Rigoureusement, l’expression correcte est : Γ = [NO2 −][Fe2+][H2O] [NO3 −][Fe][H+]2 Cependant on ne tient pas compte des activités de H2O et Fe car pour les solvants et les solides, elle vaut 1. On peut donc simplifier l’expression en écrivant Γ = [NO2−][Fe2+] [NO3−][H+]2 . Attention à ne pas oublier les coefficients stœchiométriques dans la formule."
                     },
@@ -9929,13 +9929,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "∆<sub>r</sub>G ≈ −1,08 × 105 J.mol<sup>−1</sup>",
+                        "text": "∆rG ≈ −1,08 × 105 J.mo\\(l^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Pour répondre à cet item on fait l’application numérique de la formule précédente. Petite par- ticularité, on nous dit qu’on est à T = 298K, on peut donc écrire E = E◦−0,06 n log Γ. On a donc ∆rG = −nF \u0012 E◦−0,06 n log Γ \u0013 = −2 × 100000 × \u0012 1,38 −0,06 log \u0010 1010\u0011\u0013 = −200000 × 1,08 = −216000 = −2,16 · 105 J.mol−1 Encore une fois la réponse de l’item a été calculé en utilisant Γ = 106."
                     },
                     {
                         "id": "E",
-                        "text": "∆<sub>r</sub>G < 0",
+                        "text": "∆rG < 0",
                         "isCorrect": true,
                         "explanation": "VRAI - Enfin un item vrai ! Cf. item D. De plus on a dit précédemment que la réaction était spontanée cela se traduit également par ∆rG < 0."
                     }
@@ -9948,7 +9948,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 26,
                 "type": "QCM",
-                "context": "La réaction d’hydrolyse du bromure de tertiobutyle est réalisée dans un solvant constitué d’un mélange de 10% d’eau et de 90% de propanone. On donne pour réaction élémentaire :\n(CH<sub>3</sub>)<sub>3</sub>CBr + H<sub>2</sub>O −−→ (CH<sub>3</sub>)<sub>3</sub>COH + HBr\nLes résultats obtenus à 25○C sont les suivants :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>[(CH<sub>3</sub>)<sub>3</sub>CBr] (mol.L<sup>−1</sup>)</th><th>0,100</th><th>0,090</th><th>0,080</th><th>0,065</th><th>0,050</th><th>0,033</th></tr><tr><th>t (h)</th><td>0</td><td>2</td><td>4</td><td>8</td><td>12</td><td>20</td></tr><tr><th>ln [(CH<sub>3</sub>)<sub>3</sub>CBr] (mol.L<sup>−1</sup>)</th><td>-2,3</td><td>-2,4</td><td>-2,5</td><td>-2,7</td><td>-2,9</td><td>-3,4</td></tr></table></div>\nOn établit ensuite le graphique de l’évolution du logarithme népérien de la concentration en fonction du temps :\nVariation de ln[(CH<sub>3</sub>)<sub>3</sub>CBr] en fonction du temps\nTemps (heures)\nDonnée :\nA t = 2h, v ≈ 4,95 · 10−3 mol · L<sup>−1</sup> · h<sup>−1</sup>",
+                "context": "La réaction d’hydrolyse du bromure de tertiobutyle est réalisée dans un solvant constitué d’un mélange de 10% d’eau et de 90% de propanone. On donne pour réaction élémentaire :\n(\\(CH_{3}\\))3CBr + \\(H_{2}\\)O −−→ (\\(CH_{3}\\))3COH + HBr\nLes résultats obtenus à 25○C sont les suivants :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>[(\\(CH_{3}\\))3CBr] (mol.\\(L^{-1}\\))</th><th>0,100</th><th>0,090</th><th>0,080</th><th>0,065</th><th>0,050</th><th>0,033</th></tr><tr><th>t (h)</th><td>0</td><td>2</td><td>4</td><td>8</td><td>12</td><td>20</td></tr><tr><th>ln [(\\(CH_{3}\\))3CBr] (mol.\\(L^{-1}\\))</th><td>-2,3</td><td>-2,4</td><td>-2,5</td><td>-2,7</td><td>-2,9</td><td>-3,4</td></tr></table></div>\nOn établit ensuite le graphique de l’évolution du logarithme népérien de la concentration en fonction du temps :\nVariation de ln[(\\(CH_{3}\\))3CBr] en fonction du temps\nTemps (heures)\nDonnée :\nA t = 2h, v ≈ 4,95 · \\(10^{-3}\\) mol · \\(L^{-1}\\) · \\(h^{-1}\\)",
                 "images": [
                     "annales_assets/2024_2025/chimie/tuto_3/fig_q26_1.png"
                 ],
@@ -9956,19 +9956,19 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "La réaction est d'ordre 1",
+                        "text": "La réaction est d’ordre 1",
                         "isCorrect": true,
                         "explanation": "VRAI - et BExactement ! D'après la courbe ci-dessus, on peut bien voir que la réaction élémentaire est d'ordre1. On peut voir que ln [(CH3)3CBr] = f (t) est une droite, c'est une propriété qui nous permet d'affirmer que la réaction est bien d'ordre 1 (A VRAI)(B FAUX)."
                     },
                     {
                         "id": "B",
-                        "text": "La réaction est d'ordre 2",
+                        "text": "La réaction est d’ordre 2",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Si la température se déroulait à 35○C, le temps de demi-vie et la vitesse de réaction aug-menteraient",
+                        "text": "Si la température se déroulait à \\(35^{\\(^{\\circ}\\)}\\)C, le temps de demi-vie et la vitesse de réaction aug-",
                         "isCorrect": false,
                         "explanation": "FAUX - NONNN ! On sait que k est un paramètre cinétique qui définit la vitesse, donc lorsque la tempé- rature augmente, k augmente. Ainsi, comme on sait que t 1 2 = ln(2) k , alors le temps de demi-vie est réduit lorsqu’on augmente la température. Puisque la constante de vitesse augmente, la réaction se déroule plus rapidement."
                     },
@@ -9980,7 +9980,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "2",
+                        "text": "k s’exprime en L \\(\\cdot\\) \\(\\text{mol}^{-1} \\cdot\\) \\(h^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Mauvaise unité, la réaction étant d’ordre 1, on a [k] = h−1. Attention à bien lire les unités pour ne pas perdre des points bêtement."
                     }
@@ -9994,7 +9994,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 27,
                 "type": "QCM",
-                "context": "k s’exprime en L · mol<sup>−1</sup> · h<sup>−1</sup>\nOn considère k = 0,055 SI.",
+                "context": "k s’exprime en L · mo\\(l^{-1}\\) · \\(h^{-1}\\)\nOn considère k = 0,055 SI.",
                 "images": [],
                 "question": "Parmi les propositions suivantes, laquelle est (ou lesquelles sont) exacte(s) ?",
                 "options": [
@@ -10012,19 +10012,19 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "dépend de la concentration initiale en (CH<sub>3</sub>)<sub>3</sub>CBr",
+                        "text": "dépend de la concentration initiale en (\\(CH_{3}\\))3CBr",
                         "isCorrect": true,
                         "explanation": "VRAI - En effet ! La pente de la droite obtenue correspond à −k pour une loi d’ordre 1, c’est à retenir ! Ici, on peut faire : k = −yB−yA xB−xA. On prend les valeurs de xA = 0h et xB = 20h, on obtient la valeur suivante : k = −−3,4 + 2,3 20 −0 = 1,1 20 = 0,055 h−1 C’est important de savoir lire graphiquement ce type de droite pour obtenir une valeur de k !"
                     },
                     {
                         "id": "D",
-                        "text": "La vitesse peut être exprimée par : v = k [(CH<sub>3</sub>)<sub>3</sub>CBr]",
+                        "text": "La vitesse peut être exprimée par : v = k [(\\(CH_{3}\\))3CBr]",
                         "isCorrect": true,
                         "explanation": "VRAI - Si on nous donne un temps précis, il faut directement reporter notre attention sur le tableau pour voir quelles valeurs nous intéresse. On a donc pour t = 2h une concentration [(CH3)3CBr] = 0,090 mol · L−1. Ok, nous avons la concentration, la constante de vitesse k, il ne nous manque plus que la formule pour calculer la vitesse. Ça tombe bien, on vous la rappelle dans l’item B : ce n’est d’autre que la fameuse loi de Van’t Hoff : v = k [(CH3)3CBr] = 0,055 × 0,090 = 4,95 × 10−3 mol · L−1 · h−1 Il y avait même une petite aide aux calculs à la 1re page pour vous aider !"
                     },
                     {
                         "id": "E",
-                        "text": "On peut calculer k uniquement à partir du graphique ln [(CH<sub>3</sub>)<sub>3</sub>CBr] = f (t)",
+                        "text": "On peut calculer k uniquement à partir du graphique ln [(\\(CH_{3}\\))3CBr] = f (t)",
                         "isCorrect": false,
                         "explanation": "FAUX - [(CH3)3CBr] = f(t), on obtiendrait une droite Et non ! On obtiendrait une droite si la réaction était d’ordre 2 mais ce n’est pas le cas ici. Il faut bien retenir que tracer [A] = f(t) est une méthode pour s’assurer que l’ordre de la réaction élémentaire est bien 2."
                     }
@@ -10039,13 +10039,13 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 28,
                 "type": "QCM",
-                "context": "À t = 2h, v = 4,95 × 10−3 mol · L<sup>−1</sup> · h<sup>−1</sup>\nSi on trace 1 = f (t), on obtiendrait une droite",
+                "context": "À t = 2h, v = 4,95 × \\(10^{-3}\\) mol · \\(L^{-1}\\) · \\(h^{-1}\\)\nSi on trace 1 = f (t), on obtiendrait une droite",
                 "images": [],
                 "question": "Parmi les propositions suivantes, laquelle est (ou lesquelles sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Un catalyseur accélère la vitesse de réaction (k \\(↘\\)et \\(\\Delta\\)\\(G^{◦̸=} ↗)\\)",
+                        "text": "Un catalyseur accélère la vitesse de réaction (k \\(↘\\)et \\(\\Delta\\)\\(G^{\\(^{\\circ}\\)̸=} ↗)\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Et non ! Attention à bien lire l’item dans en entier ! Un catalyseur accélère en effet la vitesse de réaction mais k ↗et ∆G◦̸= ↘. ∆G◦̸= ↘car le catalyseur fournit un chemin réactionnel alternatif ayant une énergie d’activation plus basse. Cela signifie que l’énergie nécessaire pour que les réactifs se transforment en produits diminue, rendant la réaction plus rapide. La constante de vitesse k dépend exponentiellement de ∆G◦̸= selon l’équation suivante : k = Ae−∆G◦̸= RT Lorsque ∆G◦̸= diminue, le terme exponentiel augmente, ce qui fait augmenter k et accélère la vitesse de réaction. Le catalyseur ne modifie pas la variation d’énergie libre standard ∆G◦. J’avoue que c’est un piège un peu méchant mais il faut bien regarder ce qu’il y a dans les parenthèses."
                     },
@@ -10588,35 +10588,35 @@ window.ANNALES_2024_2025 = [
                 "images": [
                     "annales_assets/2024_2025/histo_embryo/tuto_1/image4.jpeg"
                 ],
-                "question": "Concernant ce schéma d'une jonction cellulaire, laquelle (lesquelles) des proposi-tions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant ce schéma d’une jonction cellulaire, laquelle (lesquelles) des proposi- tions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Il s'agit du schéma d'un contact focal",
+                        "text": "Il s’agit du schéma d’un contact focal",
                         "isCorrect": false,
                         "explanation": "FAUX - C’est presque ça ! Dans les cellules épithéliales, il y a deux types de jonctions reliées par des microfi- laments d’actine : les jonctions adhérentes (ou zonula adherens) et les contacts focaux. Ici, on a donc affaire à l’un des deux, mais comment savoir lequel ? Retenez bien 📝, les contacts focaux joignent la cellule épithéliale à la lame basale, tandis que les jonctions adhérentes permettent à deux cellules d’adhérer entre cellules entre elles ! Ce schéma représente donc une jonction adhérente car on voit bien qu’elle relie deux cellules sur le schéma."
                     },
                     {
                         "id": "B",
-                        "text": "Cette famille de jonction permettent de relier les cellules épithéliales adjacentes par leurs microfilaments d'actine, en 1 sur le schéma",
+                        "text": "Cette famille de jonction permettent de relier les cellules épithéliales adjacentes par leurs",
                         "isCorrect": true,
                         "explanation": "VRAI - Exactement !! Les jonctions adhérentes (comme les contacts focaux) se lient bien aux microfilaments d’actine de la cellule. Ainsi les réseaux de microfilaments d’actine des deux cellules voisines sont reliés. ⚠️Attention, il ne faut pas les confondre avec les desmosomes et les hémidesmosomes qui se lient aux filaments intermédiaires !"
                     },
                     {
                         "id": "C",
-                        "text": "L'élément 2, qui se retrouve dans d'autres types de jonctions, correspond à la vinculine",
+                        "text": "L’élément 2, qui se retrouve dans d’autres types de jonctions, correspond à la vinculine",
                         "isCorrect": true,
                         "explanation": "VRAI - Toutafé ✨La vinculine est l’une des protéines qui participe à la liaison des filaments d’actine. On la retrouve aussi bien dans les zonula adherens que dans les contacts focaux !"
                     },
                     {
                         "id": "D",
-                        "text": "En 6, il s'agit de protéines transmembranaires de la famille des cadhérines, qui se lient via le Na<sup>+</sup>",
+                        "text": "En 6, il s’agit de protéines transmembranaires de la famille des cadhérines, qui se lient via",
                         "isCorrect": false,
                         "explanation": "FAUX - Piège très fréquent ici. Lisez bien tous les items jusqu’au bout, surtout s’ils sont très détaillés. Ici, le 6e élément est bien une cadhérine. Cependant, ces dernières se lient grâce au Ca2+ et non au Na+. Petit moyen mnémotechnique : les CAdhérine comme Ca2+, elles se lient donc grâce au calcium."
                     },
                     {
                         "id": "E",
-                        "text": "Les éléments 4 et 7 sont respectivement de la β-actinine et de l'α-actinine",
+                        "text": "Les éléments 4 et 7 sont respectivement de la \\(\\beta -\\)actinine et de l’\\(\\alpha -\\)actinine",
                         "isCorrect": false,
                         "explanation": "FAUX - Vous avez affaire à une inversion très vicieuse, soyez bien attentifs. Pour les éléments 4 et 7, il s’agit de la β- et de l’α-CAténine. Elles lient les filaments d’actine à la CAdhérine. L’α-actinine, elle, stabilise les MF d’actine entre eux : c’est l’élément 5 du schéma ; enfin, la β-actinine, ça n’existe tout simplement pas."
                     }
@@ -11000,7 +11000,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "Ils sont formés de 3 chaînes α codées par plusieurs gènes différents à chaque fois",
+                        "text": "Ils sont formés de 3 chaînes \\(\\alpha\\) codées par plusieurs gènes différents à chaque fois",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention aux items exclusifs ⚠️Le début est tout bon mais les chaînes α sont codées par un ou plusieurs gènes différents."
                     },
@@ -11018,7 +11018,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "Le collagène de type XVII se trouve au niveau des jonctions d'ancrage",
+                        "text": "Le collagène de type XVII se trouve au niveau des jonctions d’ancrage",
                         "isCorrect": true,
                         "explanation": "VRAI - Et oui, bravo si tu t’en souvenais ! Il est également appelé BPAG2 et c’est une protéine transmem- branaire qui se fixe à la lame basale d’hémidesmosomes !"
                     }
@@ -11096,7 +11096,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "La peptidase qui clive les extrémités des chaînes α agit dans le milieu extracellulaire",
+                        "text": "La peptidase qui clive les extrémités des chaînes \\(\\alpha\\) agit dans le milieu extracellulaire",
                         "isCorrect": true,
                         "explanation": "VRAI - Oui, le collagène étant trop gros, sa formation commence dans le milieu intracellulaire mais passe très tôt dans le milieu extracellulaire (les molécules de procollagène sont exocytées)."
                     },
@@ -11255,7 +11255,7 @@ window.ANNALES_2024_2025 = [
                 "type": "QCM",
                 "context": "",
                 "images": [],
-                "question": "Concernant les glycoprotéines du tissu conjonctif, laquelle (lesquelles) des propo-sitions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant les glycoprotéines du tissu conjonctif, laquelle (lesquelles) des propo- sitions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
@@ -11265,13 +11265,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "Les fibronectines sont un assemblage de 3 chaînes protéiques α, β et γ",
+                        "text": "Les fibronectines sont un assemblage de 3 chaînes protéiques \\(\\alpha , \\beta\\) et \\(\\gamma\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Vous y étiez presque. Tout l’item est vrai, sauf le nom de la glycoprotéine. Ici, il s’agit plutôt de la laminine. La fibronectine quant à elle est formée de deux chaînes identiques reliées par des ponts disulfures. C’est une glycoprotéine en forme de V."
                     },
                     {
                         "id": "C",
-                        "text": "La laminine est une très grosse glycoprotéine (environ 1000 MDa) en forme de croix symé-trique",
+                        "text": "La laminine est une très grosse glycoprotéine (environ 1000 MDa) en forme de croix symé-",
                         "isCorrect": false,
                         "explanation": "FAUX - Désolé, mais rien n’est vrai ici ! Faites tout d’abord attention aux unités (même en histo-embryo) : la laminine est très grosse mais pas à ce point, elle fait “seulement” 1000 kDa (et non MDa). Ensuite piège subtile, elle a une forme de croix, oui, mais Asymétrique. Petit schéma du cours pour vous aider : Diapo 14, Tissu Conjonctif partie 2, Pr Mouton-Liger"
                     },
@@ -11283,7 +11283,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "La fibronectine a un rôle clef dans l'adhésion cellulaire, mais aussi dans la différenciation cellulaire, l'homéostasie, ou la phagocytose",
+                        "text": "La fibronectine a un rôle clef dans l’adhésion cellulaire, mais aussi dans la différenciation",
                         "isCorrect": false,
                         "explanation": "FAUX - C’est un item très long, donc faites bien attention jusqu’au bout. A un terme près, l’item était bon, c’est mot pour mot le cours ! En effet, la fibronectine ne participe pas à l’homéostasie qui est l’équilibre des liquides dans le corps (c’est par exemple l’une des fonctions du rein), mais à l’hémostase, qui fait partie du processus de coagulation du sang."
                     }
@@ -11856,7 +11856,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "Le volume globulaire moyen d'un érythrocyte est d'environ 90µm<sup>3</sup>",
+                        "text": "Le volume globulaire moyen d'un érythrocyte est d'environ 90\\(\\mu\\)\\(m^{3}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est dans le cours ! Pour compléter, un GR mesure aussi 7.5 µm de diamètre et a une forme de disque biconcave (structure permettant la déformabilité avec la spectrine) avec une épaisseur de 2.6 µm aux extrémités et de 0.8 µm au centre. Courage, vous allez les retenir 😉!"
                     },
@@ -12519,7 +12519,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Il est composé de molécules de tropocollagène qui se chevauchent latéralement, avec un décalage de 640 à 670 Å",
+                        "text": "Il est composé de molécules de tropocollagène qui se chevauchent latéralement, avec un",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est tout bon, et on peut ajouter que c’est ce décalage qui crée la striation périodique que l’on observe sur les fibres de collagène !"
                     },
@@ -12531,13 +12531,13 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "La collagénèse est un phénomène variable selon les tissus : elle est rapide dans le derme, mais lente dans les os",
+                        "text": "La collagénèse est un phénomène variable selon les tissus : elle est rapide dans le derme,",
                         "isCorrect": true,
                         "explanation": "VRAI - Yep absolument ! En effet, le derme est amené à se régénérer régulièrement, et nécessite donc une régénération rapide de ses constituants (dont le collagène). Au contraire, les tissus osseux se régénèrent plus lentement, donc leur collagénèse est plus longue."
                     },
                     {
                         "id": "D",
-                        "text": "Chaque fibre de collagène est formée de l'assemblage de 3 chaînes α, β et γ entrelacées en une triple hélice",
+                        "text": "Chaque fibre de collagène est formée de l’assemblage de 3 chaînes \\(\\alpha , \\beta\\) et \\(\\gamma\\) entrelacées en",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention il s’agit d’un assemblage de 3 chaînes α entrelacées en une triple hélice. Par la suite, les extrémités carboxylique (COOH) et aminée (NH2) des chaînes α sont clivées, formant ainsi le tropocollagène. Ces dernières forment les fibrilles de collagène, qui ensemble forment une fibre de collagène. Courage !"
                     },
@@ -12564,7 +12564,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Elles ont un diamètre de 0,5 à 10 µm",
+                        "text": "Elles ont un diamètre de 0,5 à 10 \\(\\mu\\)m",
                         "isCorrect": false,
                         "explanation": "FAUX - Vous vous en doutiez, on allait mélanger fibres élastiques et fibres de collagène ! La définition donnée correspond au collagène : de leur côté, le diamètre des fibres élastiques mesure entre 0,5 et 5 µm. C’est précis, mais c’est l’histo !"
                     },
@@ -12894,7 +12894,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "Les chondrocytes mesurent entre 20 et 40 µm de diamètre",
+                        "text": "Les chondrocytes mesurent entre 20 et 40 \\(\\mu\\)m de diamètre",
                         "isCorrect": true,
                         "explanation": "VRAI - Exactement ! C’est un ordre de grandeur à retenir et on fait aussi attention à ne pas se mélanger dans les ordres de grandeur. J’ajoute aussi (petit rappel de votre cours) que les chondrocytes ont un noyau volumineux et central, rond avec 1 ou 2 nucléoles ainsi qu’un cytoplasme basophile avec du glycogène et des inclusions lipidiques."
                     },
@@ -14089,7 +14089,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "Elle entraîne la libération des enzymes acrosomales, qui sont : la hyaluronidase, l'acrosine, la β-N-acétylglucosaminidase",
+                        "text": "Elle entraîne la libération des enzymes acrosomales, qui sont : la hyaluronidase, l'acrosine, la \\(\\beta\\)-N-acétylglucosaminidase",
                         "isCorrect": true,
                         "explanation": "VRAI - Yep, c’est ça ! Oui, les noms sont absolument barbares, mais ils sont à connaître !"
                     },
@@ -14161,7 +14161,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "Pour la microscopie électronique à balayage, on utilise du CO<sub>2</sub> liquide suivi de bains d'alcool de degré croissant",
+                        "text": "Pour la microscopie électronique à balayage, on utilise du \\(CO_{2}\\) liquide suivi de bains d'alcool de degré croissant",
                         "isCorrect": false,
                         "explanation": "FAUX - Bon bah jamais 3 sans 4 écoutez, ici encore j’ai inversé les étapes. Récapitulons ! Pour l’étape de déshydratation en microscopie électronique à balayage, on va d’abord faire des bains d’alcool de degré croissant puis on va utiliser le CO2 liquide en passant par son point critique (c’est-à-dire la température et la pression pour lesquels le CO2 va passer de l’état liquide à l’état gazeux.) Courage ça va le faire !"
                     },
@@ -14543,31 +14543,31 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Leur différenciation se réalise dans l'ordre suivant : synthèse des ribosomes, accumulation d'hémoglobine et expulsion du noyau",
+                        "text": "Leur différenciation se réalise dans l’ordre suivant : synthèse des ribosomes, accumulation",
                         "isCorrect": true,
                         "explanation": "VRAI - Oui, on commence par un item juste ! En effet, la différenciation des érythrocytes comportent trois phases qu’il faut bien retenir dans l’ordre :). Ils sont aussi appelés érythroblastes lors de la phase 1-2, et lors de la phase 3 on les appelle les réticulocytes hihihi."
                     },
                     {
                         "id": "B",
-                        "text": "L'érythropoïétine est indispensable à la survenue de la lignée érythroblastique",
+                        "text": "L’érythropoïétine est indispensable à la survenue de la lignée érythroblastique",
                         "isCorrect": true,
                         "explanation": "VRAI - Toutafé, les cellules souches multipotentes donnent : soit des cellules souches lymphoïdes, soit des cellules souches myéloïdes et en présence d’érythropoïétine (EPO), celles-ci donnent une lignée éry- throblastique ! Sans EPO, la différenciation ne peut pas se faire :)."
                     },
                     {
                         "id": "C",
-                        "text": "Leur forme est un disque biconvexe de 7,5 µm de diamètre",
+                        "text": "Leur forme est un disque biconvexe de 7,5 \\(\\mu\\)m de diamètre",
                         "isCorrect": false,
                         "explanation": "FAUX - Oups désolé cet item était méchant, pour rappel : globules rouges = érythrocytes = hématies. Le disque des globules rouges est biconcave et NON BICONVEXE. Faites attention à ne pas lire les items trop rapidement ! Sinon, toutes les autres infos sont niquel (faites bien attention aux unités et le piège diamètre/rayon) ;)."
                     },
                     {
                         "id": "D",
-                        "text": "Les spectrines sont des hétérodimères antiparallèles associant une chaîne de type α1 et une chaîne de type β2",
+                        "text": "Les spectrines sont des hétérodimères antiparallèles associant une chaîne de type \\(\\alpha 1\\) et une",
                         "isCorrect": false,
                         "explanation": "FAUX - C’est pas cool, je sais, je vous ai rajouté des infos qui n’existent même pas. Du coup si je reprends, les spectrines sont bien des hétérodimères antiparallèles qui comprennent une chaîne de type α et une chaîne de type β. Mais il n’y a pas marqué spécifiquement le type de chaîne α ni β dans votre cours alors l’item est faux."
                     },
                     {
                         "id": "E",
-                        "text": "La partie protéique de l'hémoglobine autrement appelée l'hème contient un atome de fer capable de fixer l'oxygène",
+                        "text": "La partie protéique de l’hémoglobine autrement appelée l’hème contient un atome de fer",
                         "isCorrect": false,
                         "explanation": "FAUX - Non désolé ! Alors l’hémoglobine est composé d’une partie protéique (la globine) et une partie non protéique (l’hème). Au niveau de l’hème, on retrouve un noyau porphyrique et bien un atome de fer capable de fixer les gaz du sang dont l’oxygène. Fun fact c’est l’hème qui donne la couleur rouge au sang hihi :)."
                     }
@@ -14587,7 +14587,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Les granulocytes éosinophiles font une taille de 12 à 14µm",
+                        "text": "Les granulocytes éosinophiles font une taille de 12 à 14\\(\\mu\\)m",
                         "isCorrect": false,
                         "explanation": "FAUX - Eh non, ça ce sont les granulocytes neutrophiles. Pour les éosinophiles, c’est plutôt 11 à 15µm."
                     },
@@ -15001,7 +15001,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "Les cônes sarcoplasmiques contiennent du Golgi, du réticulum granulaire et des mitochon-dries",
+                        "text": "Les cônes sarcoplasmiques contiennent du Golgi, du réticulum granulaire et des mitochon-",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout bon, les cônes sarcoplasmiques correspondes aux extrémités du muscle lisse, c’est la partie du sarcoplasme non myofilamentaire où on y retrouve effectivement les organites nécessaires à la cellule (on peut retenir que les extrémités de la cellule ressemblent à des cônes pour être sûr de leur localisation)."
                     },
@@ -15019,7 +15019,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "Les corps denses contiennent de l'α-actinine",
+                        "text": "Les corps denses contiennent de l’\\(\\alpha -\\)actinine",
                         "isCorrect": true,
                         "explanation": "VRAI - L’α-actinine, que ce soit dans les rhabdomyocytes ou dans les léiomyocytes, sert à fixer l’actine. On en retrouve donc dans le corps dense (qui fixe l’actine) et dans les stries Z pour les rhabdomyocytes."
                     }
@@ -15215,7 +15215,7 @@ window.ANNALES_2024_2025 = [
                 "type": "QCM",
                 "context": "",
                 "images": [],
-                "question": "Concernant le transport axonal du potentiel d'action , laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant le transport axonal du potentiel d’action , laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
@@ -15225,25 +15225,25 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "B",
-                        "text": "En cas de stimulation, il y a un afflux d'ions Na+ et une sortie d'ions K+ lente mais intense",
+                        "text": "En cas de stimulation, il y a un afflux d’ions \\(Na^{+}\\) et une sortie d’ions \\(K^{+}\\) lente mais intense",
                         "isCorrect": false,
                         "explanation": "FAUX - L’item était bon à une exception, y a un afflux d’ion Na+ et une sortie d’ions K+ RAPIDE et intense."
                     },
                     {
                         "id": "C",
-                        "text": "Les canaux Na+ et K+ s'ouvrent simultanément lors de la diffusion du potentiel d'action",
+                        "text": "Les canaux \\(Na^{+}\\) et \\(K^{+}\\) s’ouvrent simultanément lors de la diffusion du potentiel d’action",
                         "isCorrect": false,
                         "explanation": "FAUX - Et non, les canaux Na+ s’ouvrent d’abord pour dépolariser les sites. Après la dépolarisation, les sites de la membrane subissent une inactivation des canaux Na+ et une ouverture des canaux K+."
                     },
                     {
                         "id": "D",
-                        "text": "La transmission de proche en proche indique que la gaine de myéline des axones et ses nœuds de Ranvier permet une conduction saltatoire de l'influx",
+                        "text": "La transmission de proche en proche indique que la gaine de myéline des axones et ses",
                         "isCorrect": true,
                         "explanation": "VRAI - Oui c’est exactement ça, c’est une conduction rapide et énergétiquement économique (le PA ne se transmet que sur l’élément excité)."
                     },
                     {
                         "id": "E",
-                        "text": "Lors de la transmission de proche en proche, à son arrivée au niveau de la terminaison synaptique, le potentiel d'action déclenche l'exocytose des neurotransmetteurs",
+                        "text": "Lors de la transmission de proche en proche, à son arrivée au niveau de la terminaison",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout pile, c’est la finalité de la transmission du potentiel d’action par transport axonal."
                     }
@@ -15440,7 +15440,7 @@ window.ANNALES_2024_2025 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Elle est caractérisée par l'implantation de l'embryon dans la paroi utérine",
+                        "text": "Elle est caractérisée par l’implantation de l’embryon dans la paroi utérine",
                         "isCorrect": false,
                         "explanation": "FAUX - La cavitation correspond à la formation du blastocèle (grande cavité) ce qui permet l’individualisa- tion des deux lignées cellulaires : la masse cellulaire interne (futur embryon) et le trophoblaste (qui donnera les annexes embryonnaires). Elle a lieu à la fin de la première semaine de développement. L’implantation de l’embryon dans la paroi utérine se fait lors de la nidation, donc à la deuxième semaine du développement."
                     },
@@ -15452,19 +15452,19 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "C",
-                        "text": "Elle se caractérise par une expression d'une pompe Na+/K+ ATPase par les blastomères internes",
+                        "text": "Elle se caractérise par une expression d’une pompe \\(Na^{+}/\\)\\(K^{+}\\) ATPase par les blastomères",
                         "isCorrect": false,
                         "explanation": "FAUX - C’est presque ça, mais les pompes sont exprimées par les blastomères externes !!"
                     },
                     {
                         "id": "D",
-                        "text": "Elle débute par la formation de petites lacunes intercellulaires qui fusionnent pour former le blastocèle",
+                        "text": "Elle débute par la formation de petites lacunes intercellulaires qui fusionnent pour former",
                         "isCorrect": true,
                         "explanation": "VRAI - Exactement ! On voit bien dans l’image ci-dessous que les petites lacunes fusionnent pour former une grande cavité : le blastocèle ! Diapo 38, Semaine 1 et 2, Pr Patrat"
                     },
                     {
                         "id": "E",
-                        "text": "L'osmose est responsable du passage des ions Na+ à l'intérieur du blastocyste",
+                        "text": "L’osmose est responsable du passage des ions \\(Na^{+}\\) à l’intérieur du blastocyste",
                         "isCorrect": false,
                         "explanation": "FAUX - Alala le piège ! c’est l’eau (H2O) qui est passé par osmose de l’extérieure vers l’intérieur, en gros l’os- mose correspond au transfert d’eau d’une solution diluée (hypotonique) vers une solution concentrée (hypertonique) au travers d’une membrane semi-perméable (vous allez le revoir en biophysique ;)). Ce n’est pas à apprendre pour l’histo mais retenez bien que l’osmose concerne l’eau en non pas les molécules. Les ions Na+ passent à l’intérieur grâce à la pompe Na+/K+ !"
                     }
@@ -16172,7 +16172,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 1,
                 "type": "QCM",
-                "context": "Nous sommes en juillet 2024, les JO débutent bientôt à Paris. La délégation australienne doit prendre l’avion pour arriver à temps pour la cérémonie. Parmi ces athlètes, une jeune skateuse de 14 ans, future médaillée d’or : Arisa Trew.\nPartie 1\nNotre skateuse, de nature curieuse, s’intéresse à la force de gravitation 𝐹⃗⃗⃗<sub>𝑔</sub>→ et à son travail durant le décollage de l’avion. Au début, durant le décollage depuis Sydney, l’avion est à une altitude\n𝑧<sub>𝑆</sub> = 0 𝑚. Lors de sa phase de croisière atteinte à Charleville (Australie), l’altitude 𝑧<sub>𝐶</sub> de l’avion\nest constante. On approxime l’avion à un point matériel noté A. On néglige les frottements et on se place dans un référentiel terrestre supposé galiléen.\nDonnées :\nConstante de gravitation universelle : 𝐺 = 6,67.10<sup>−11</sup> 𝑁 ⋅ 𝑚<sup>2</sup> ⋅ 𝑘𝑔<sup>−2</sup>\nDistance Sydney-Charleville : 𝑑𝑆𝐶 = 900 𝑘𝑚\n-Masse de la Terre : 𝑚<sub>𝑇</sub> = 5,972 × 10<sup>24</sup> 𝑘𝑔\nMasse initiale de l’avion au décollage : 𝑚<sub>𝐴</sub> = 300 𝑡𝑜𝑛𝑛𝑒𝑠\nAccélération de la pesanteur au sol : 𝑔<sub>𝑆</sub> = 9,81 𝑚 ⋅ 𝑠<sup>−2</sup>\nAccélération de la pesanteur à 𝑧<sub>𝐶</sub> : 𝑔<sub>𝐶</sub> = 9,78 𝑚 ⋅ 𝑠<sup>−2</sup>\nRayon de la Terre : 𝑅<sub>𝑇</sub> = 6371 𝑘𝑚",
+                "context": "Nous sommes en juillet 2024, les JO débutent bientôt à Paris. La délégation australienne doit prendre l’avion pour arriver à temps pour la cérémonie. Parmi ces athlètes, une jeune skateuse de 14 ans, future médaillée d’or : Arisa Trew.\nPartie 1\nNotre skateuse, de nature curieuse, s’intéresse à la force de gravitation 𝐹⃗⃗⃗𝑔→ et à son travail durant le décollage de l’avion. Au début, durant le décollage depuis Sydney, l’avion est à une altitude\n𝑧𝑆 = 0 𝑚. Lors de sa phase de croisière atteinte à Charleville (Australie), l’altitude 𝑧𝐶 de l’avion\nest constante. On approxime l’avion à un point matériel noté A. On néglige les frottements et on se place dans un référentiel terrestre supposé galiléen.\nDonnées :\nConstante de gravitation universelle : 𝐺 = 6,67.\\(10^{-11}\\) 𝑁 ⋅ 𝑚2 ⋅ 𝑘𝑔−2\nDistance Sydney-Charleville : 𝑑𝑆𝐶 = 900 𝑘𝑚\n-Masse de la Terre : 𝑚𝑇 = 5,972 × 1024 𝑘𝑔\nMasse initiale de l’avion au décollage : 𝑚𝐴 = 300 𝑡𝑜𝑛𝑛𝑒𝑠\nAccélération de la pesanteur au sol : 𝑔𝑆 = 9,81 𝑚 ⋅ 𝑠−2\nAccélération de la pesanteur à 𝑧𝐶 : 𝑔𝐶 = 9,78 𝑚 ⋅ 𝑠−2\nRayon de la Terre : 𝑅𝑇 = 6371 𝑘𝑚",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_1/q1_enonce.png"
                 ],
@@ -16217,7 +16217,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 2,
                 "type": "QCM",
-                "context": "𝑧<sub>𝐶</sub> ≈ 11 𝑘𝑚\nOn considère désormais la perte de masse de l’avion liée uniquement à l’émission atmosphérique de CO2. On admettra que l’avion de la délégation australienne, restreinte sur ce vol à 25 athlètes ainsi que 5 membres d’équipage, émet 9 g de CO2 pour 100 m pour 1 passager en moyenne. On précise également la distance Charleville-Paris 𝑑<sub>𝐶𝑃</sub> = 16 100 𝑘𝑚. On admettra que l’avion n’est soumis qu’à son poids et à la force motrice de son moteur à\ncombustion durant tout le temps considéré, et pour cette question on considère le système\n{avion + CO2 éjecté}. Soit 𝑡<sub>𝑓</sub> le temps nécessaire pour atteindre Paris.",
+                "context": "𝑧𝐶 ≈ 11 𝑘𝑚\nOn considère désormais la perte de masse de l’avion liée uniquement à l’émission atmosphérique de CO2. On admettra que l’avion de la délégation australienne, restreinte sur ce vol à 25 athlètes ainsi que 5 membres d’équipage, émet 9 g de CO2 pour 100 m pour 1 passager en moyenne. On précise également la distance Charleville-Paris 𝑑𝐶𝑃 = 16 100 𝑘𝑚. On admettra que l’avion n’est soumis qu’à son poids et à la force motrice de son moteur à\ncombustion durant tout le temps considéré, et pour cette question on considère le système\n{avion + CO2 éjecté}. Soit 𝑡𝑓 le temps nécessaire pour atteindre Paris.",
                 "images": [],
                 "question": "On s’intéresse à l’avion une fois qu’il a atterrit à Paris. Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
@@ -16261,7 +16261,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 3,
                 "type": "QCM",
-                "context": "𝑚<sub>𝐴</sub>(𝑡<sub>𝑓</sub>) = 257 𝑡𝑜𝑛𝑛𝑒𝑠\nPartie 2\nArrivée à Paris, Arisa Trew s’élance, son skate au pied, pour sa 1<sup>ère</sup> épreuve. Elle a son parcours en tête : elle démarre immobile au point A, puis elle va descendre la rampe, prendre de la vitesse et s'envoler au point B’, pour retomber au point C. On nommera 𝑧𝐴 et 𝑧𝐵′ les altitudes aux points A et B’, et on négligera les forces de frottement, ainsi que la masse du skate. Voici l’illustration de sa trajectoire :\nOn précise que les deux tremplins du skate park sont de même longueur, et que la petite plateforme horizontale avant le point A (incluse dans le tremplin) depuis laquelle s’élance la skateuse mesure 1,5𝑚 de long.\nDonnées :\nAngle 𝛼 = 40° ; Distance AA’ : 𝑑𝐴𝐴′ = 9,3 𝑚 ; Masse de la skateuse : 𝑚<sub>𝐴𝑇</sub> = 40 𝑘𝑔 ; Hauteur du point B’ : 𝑧𝐵′ = 2,9 𝑚.\nDans cette partie : 𝑔 = 9,81 𝑚 ⋅ 𝑠<sup>−2</sup>.",
+                "context": "𝑚𝐴(𝑡𝑓) = 257 𝑡𝑜𝑛𝑛𝑒𝑠\nPartie 2\nArrivée à Paris, Arisa Trew s’élance, son skate au pied, pour sa 1ère épreuve. Elle a son parcours en tête : elle démarre immobile au point A, puis elle va descendre la rampe, prendre de la vitesse et s'envoler au point B’, pour retomber au point C. On nommera 𝑧𝐴 et 𝑧𝐵′ les altitudes aux points A et B’, et on négligera les forces de frottement, ainsi que la masse du skate. Voici l’illustration de sa trajectoire :\nOn précise que les deux tremplins du skate park sont de même longueur, et que la petite plateforme horizontale avant le point A (incluse dans le tremplin) depuis laquelle s’élance la skateuse mesure 1,5𝑚 de long.\nDonnées :\nAngle 𝛼 = 40° ; Distance AA’ : 𝑑𝐴𝐴′ = 9,3 𝑚 ; Masse de la skateuse : 𝑚𝐴𝑇 = 40 𝑘𝑔 ; Hauteur du point B’ : 𝑧𝐵′ = 2,9 𝑚.\nDans cette partie : 𝑔 = 9,81 𝑚 ⋅ 𝑠−2.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_1/q3_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_1/image2.jpeg"
@@ -16308,7 +16308,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "𝑣<sub>𝐴</sub>′ = √2𝑔 × cos(𝛼) × 𝑧<sub>𝐴</sub>\n𝑣<sub>𝐴</sub>′ = √2𝑔 × sin(𝛼) × 𝑑<sub>𝐴𝐴</sub>′\n𝑣𝐴′ ≈ 10,83 𝑚. 𝑠<sup>−1</sup>\n𝑣𝐴′ ≈ 11,8 𝑚. 𝑠<sup>−1</sup>\n𝐸<sub>𝐶</sub> 𝐴′ = 𝑚<sub>𝐴𝑇</sub>𝑔 × cos 𝛼 × 𝑑𝐴𝐴′",
+                "context": "𝑣𝐴′ = √2𝑔 × cos(𝛼) × 𝑧𝐴\n𝑣𝐴′ = √2𝑔 × sin(𝛼) × 𝑑𝐴𝐴′\n𝑣𝐴′ ≈ 10,83 𝑚. 𝑠−1\n𝑣𝐴′ ≈ 11,8 𝑚. 𝑠−1\n𝐸𝐶 𝐴′ = 𝑚𝐴𝑇𝑔 × cos 𝛼 × 𝑑𝐴𝐴′",
                 "images": [],
                 "question": "Soit \\(d_{BB}\\)′ la distance \\(BB\\)’. On note \\(E_{tot,B}\\) et \\(E_{tot,B}\\)′ les énergies totales du système {skateuse + skate} respectivement aux points B et B’ du \\(2^{ème}\\) tremplin. Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
@@ -16353,7 +16353,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 6,
                 "type": "QCM",
-                "context": "[𝐸𝑡𝑜𝑡,𝐵′] = 𝑀. 𝐿<sup>2</sup>. 𝑇<sup>−2</sup>\nLe système n’étant soumis qu’à des forces dérivant d’une énergie potentielle on a 𝐸<sub>𝑡𝑜𝑡,𝐵</sub>\nOn considère qu’Arisa fait un deuxième fois son parcours. Dans les tribunes, un fan un peu inconscient lui lance une énorme peluche kangourou aux couleurs de l’Australie pour qu’elle la dédicace avant son parcours. Surprise, la skateuse attrape la peluche de masse 𝑚<sub>𝑝</sub> = 5 𝑘𝑔 à la fin de son 1<sup>er</sup> parcours et décide de faire son 2<sup>ème</sup> parcours avec.\nOn note 𝑣<sub>𝐶</sub> la vitesse d’Arisa en retombant au sol au point C, portant la peluche kangourou. On admettra pour cette question (et uniquement pour cette question)\n𝑣𝐵′ = 8,31 𝑚. 𝑠<sup>−1</sup>. Laquelle des propositions suivantes est exacte :\n10,3 𝑚 ⋅ 𝑠<sup>−1</sup> < 𝑣<sub>𝐶</sub> < 10,5 𝑚 ⋅ 𝑠<sup>−1</sup>\n10,5 𝑚 ⋅ 𝑠<sup>−1</sup> < 𝑣<sub>𝐶</sub> < 10,7 𝑚 ⋅ 𝑠<sup>−1</sup>\n10,7 𝑚 ⋅ 𝑠<sup>−1</sup> < 𝑣<sub>𝐶</sub> < 10,9 𝑚 ⋅ 𝑠<sup>−1</sup>\n10,9 𝑚 ⋅ 𝑠<sup>−1</sup> < 𝑣<sub>𝐶</sub>< 11,1 𝑚 ⋅ 𝑠<sup>−1</sup>\n11,1 𝑚 ⋅ 𝑠<sup>−1</sup> < 𝑣<sub>𝐶</sub> < 11,3 𝑚 ⋅ 𝑠<sup>−1</sup>\nOn s'intéresse à la variation relative d'énergie cinétique au point B entre les deux situations\n(avec (1) et sans (2) peluche). Soit<sup>∆𝐸𝐶</sup> = 𝐸𝑐2(𝐴′)−𝐸𝑐1(𝐴′) la variation relative de l’énergie\ncinétique au point A’ entre les deux parcours.\nOn note 𝐸<sub>𝑐1</sub>(𝐴′) l’énergie cinétique au point A’ au premier parcours et 𝐸<sub>𝑐2</sub>(𝐴′) l’énergie cinétique au point A’ au deuxième parcours.",
+                "context": "[𝐸𝑡𝑜𝑡,𝐵′] = 𝑀. 𝐿2. 𝑇−2\nLe système n’étant soumis qu’à des forces dérivant d’une énergie potentielle on a 𝐸𝑡𝑜𝑡,𝐵\nOn considère qu’Arisa fait un deuxième fois son parcours. Dans les tribunes, un fan un peu inconscient lui lance une énorme peluche kangourou aux couleurs de l’Australie pour qu’elle la dédicace avant son parcours. Surprise, la skateuse attrape la peluche de masse 𝑚𝑝 = 5 𝑘𝑔 à la fin de son 1er parcours et décide de faire son 2ème parcours avec.\nOn note 𝑣𝐶 la vitesse d’Arisa en retombant au sol au point C, portant la peluche kangourou. On admettra pour cette question (et uniquement pour cette question)\n𝑣𝐵′ = 8,31 𝑚. 𝑠−1. Laquelle des propositions suivantes est exacte :\n10,3 𝑚 ⋅ 𝑠−1 < 𝑣𝐶 < 10,5 𝑚 ⋅ 𝑠−1\n10,5 𝑚 ⋅ 𝑠−1 < 𝑣𝐶 < 10,7 𝑚 ⋅ 𝑠−1\n10,7 𝑚 ⋅ 𝑠−1 < 𝑣𝐶 < 10,9 𝑚 ⋅ 𝑠−1\n10,9 𝑚 ⋅ 𝑠−1 < 𝑣𝐶< 11,1 𝑚 ⋅ 𝑠−1\n11,1 𝑚 ⋅ 𝑠−1 < 𝑣𝐶 < 11,3 𝑚 ⋅ 𝑠−1\nOn s'intéresse à la variation relative d'énergie cinétique au point B entre les deux situations\n(avec (1) et sans (2) peluche). \\(\\text{Soit}^{∆𝐸𝐶}\\) = 𝐸𝑐2(𝐴′)−𝐸𝑐1(𝐴′) la variation relative de l’énergie\ncinétique au point A’ entre les deux parcours.\nOn note 𝐸𝑐1(𝐴′) l’énergie cinétique au point A’ au premier parcours et 𝐸𝑐2(𝐴′) l’énergie cinétique au point A’ au deuxième parcours.",
                 "images": [],
                 "question": "Laquelle des propositions suivantes est exacte :",
                 "options": [
@@ -16396,7 +16396,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "[𝐸𝑡𝑜𝑡,𝐵′] = 𝑀. 𝐿<sup>2</sup>. 𝑇<sup>−2</sup>\nLe système n’étant soumis qu’à des forces dérivant d’une énergie potentielle on a 𝐸<sub>𝑡𝑜𝑡,𝐵</sub>\nOn considère qu’Arisa fait un deuxième fois son parcours. Dans les tribunes, un fan un peu inconscient lui lance une énorme peluche kangourou aux couleurs de l’Australie pour qu’elle la dédicace avant son parcours. Surprise, la skateuse attrape la peluche de masse 𝑚<sub>𝑝</sub> = 5 𝑘𝑔 à la fin de son 1<sup>er</sup> parcours et décide de faire son 2<sup>ème</sup> parcours avec.\nOn note 𝑣<sub>𝐶</sub> la vitesse d’Arisa en retombant au sol au point C, portant la peluche kangourou. On admettra pour cette question (et uniquement pour cette question)\n𝑣𝐵′ = 8,31 𝑚. 𝑠<sup>−1</sup>. Laquelle des propositions suivantes est exacte :\n10,3 𝑚 ⋅ 𝑠<sup>−1</sup> < 𝑣<sub>𝐶</sub> < 10,5 𝑚 ⋅ 𝑠<sup>−1</sup>\n10,5 𝑚 ⋅ 𝑠<sup>−1</sup> < 𝑣<sub>𝐶</sub> < 10,7 𝑚 ⋅ 𝑠<sup>−1</sup>\n10,7 𝑚 ⋅ 𝑠<sup>−1</sup> < 𝑣<sub>𝐶</sub> < 10,9 𝑚 ⋅ 𝑠<sup>−1</sup>\n10,9 𝑚 ⋅ 𝑠<sup>−1</sup> < 𝑣<sub>𝐶</sub>< 11,1 𝑚 ⋅ 𝑠<sup>−1</sup>\n11,1 𝑚 ⋅ 𝑠<sup>−1</sup> < 𝑣<sub>𝐶</sub> < 11,3 𝑚 ⋅ 𝑠<sup>−1</sup>\nOn s'intéresse à la variation relative d'énergie cinétique au point B entre les deux situations\n(avec (1) et sans (2) peluche). Soit<sup>∆𝐸𝐶</sup> = 𝐸𝑐2(𝐴′)−𝐸𝑐1(𝐴′) la variation relative de l’énergie\ncinétique au point A’ entre les deux parcours.\nOn note 𝐸<sub>𝑐1</sub>(𝐴′) l’énergie cinétique au point A’ au premier parcours et 𝐸<sub>𝑐2</sub>(𝐴′) l’énergie cinétique au point A’ au deuxième parcours.",
+                "context": "[𝐸𝑡𝑜𝑡,𝐵′] = 𝑀. 𝐿2. 𝑇−2\nLe système n’étant soumis qu’à des forces dérivant d’une énergie potentielle on a 𝐸𝑡𝑜𝑡,𝐵\nOn considère qu’Arisa fait un deuxième fois son parcours. Dans les tribunes, un fan un peu inconscient lui lance une énorme peluche kangourou aux couleurs de l’Australie pour qu’elle la dédicace avant son parcours. Surprise, la skateuse attrape la peluche de masse 𝑚𝑝 = 5 𝑘𝑔 à la fin de son 1er parcours et décide de faire son 2ème parcours avec.\nOn note 𝑣𝐶 la vitesse d’Arisa en retombant au sol au point C, portant la peluche kangourou. On admettra pour cette question (et uniquement pour cette question)\n𝑣𝐵′ = 8,31 𝑚. 𝑠−1. Laquelle des propositions suivantes est exacte :\n10,3 𝑚 ⋅ 𝑠−1 < 𝑣𝐶 < 10,5 𝑚 ⋅ 𝑠−1\n10,5 𝑚 ⋅ 𝑠−1 < 𝑣𝐶 < 10,7 𝑚 ⋅ 𝑠−1\n10,7 𝑚 ⋅ 𝑠−1 < 𝑣𝐶 < 10,9 𝑚 ⋅ 𝑠−1\n10,9 𝑚 ⋅ 𝑠−1 < 𝑣𝐶< 11,1 𝑚 ⋅ 𝑠−1\n11,1 𝑚 ⋅ 𝑠−1 < 𝑣𝐶 < 11,3 𝑚 ⋅ 𝑠−1\nOn s'intéresse à la variation relative d'énergie cinétique au point B entre les deux situations\n(avec (1) et sans (2) peluche). \\(\\text{Soit}^{∆𝐸𝐶}\\) = 𝐸𝑐2(𝐴′)−𝐸𝑐1(𝐴′) la variation relative de l’énergie\ncinétique au point A’ entre les deux parcours.\nOn note 𝐸𝑐1(𝐴′) l’énergie cinétique au point A’ au premier parcours et 𝐸𝑐2(𝐴′) l’énergie cinétique au point A’ au deuxième parcours.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_1/q7_enonce.png"
                 ],
@@ -16442,7 +16442,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 8,
                 "type": "QCM",
-                "context": "−𝑞. Ces deux points sont séparés d’une distance\n𝑎. On étudie le potentiel électrique au point M situé à une distance 𝑅 du milieu 𝑂 du segment [𝑁𝑃]. On considèrera 𝑟 ≫ 𝑎.\nOn notera 𝜃 l’angle entre les vecteurs 𝑁⃗⃗⃗⃗𝑃⃗⃗→ et 𝑂⃗⃗⃗𝑀⃗⃗⃗→ ; et 𝑢⃗⃗⃗<sub>𝑟⃗</sub>→ le vecteur unitaire orienté de 𝑂 vers 𝑀.\nOn donne la permittivité du vide epsilon 𝜖 = 8,8 × 10<sup>−12</sup> 𝐹 ⋅ 𝑚<sup>−1</sup> et l’expression du moment dipolaire : 𝑝→ = 𝑞𝑁⃗⃗⃗⃗𝑃⃗⃗→\nConcernant les champs électriques émis par les charges 𝑁 et 𝑃. Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :\nLe champ émis par la charge 𝑁 est centripète\nLe champ émis par la charge 𝑁 est centrifuge\nLe champ émis par la charge 𝑃 est centripète\nLe champ émis par la charge 𝑃 est centrifuge\nLe champ au point 𝑂 est nul",
+                "context": "−𝑞. Ces deux points sont séparés d’une distance\n𝑎. On étudie le potentiel électrique au point M situé à une distance 𝑅 du milieu 𝑂 du segment [𝑁𝑃]. On considèrera 𝑟 ≫ 𝑎.\nOn notera 𝜃 l’angle entre les vecteurs 𝑁⃗⃗⃗⃗𝑃⃗⃗→ et 𝑂⃗⃗⃗𝑀⃗⃗⃗→ ; et 𝑢⃗⃗⃗𝑟⃗→ le vecteur unitaire orienté de 𝑂 vers 𝑀.\nOn donne la permittivité du vide epsilon 𝜖 = 8,8 × \\(10^{-12}\\) 𝐹 ⋅ 𝑚−1 et l’expression du moment dipolaire : 𝑝→ = 𝑞𝑁⃗⃗⃗⃗𝑃⃗⃗→\nConcernant les champs électriques émis par les charges 𝑁 et 𝑃. Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :\nLe champ émis par la charge 𝑁 est centripète\nLe champ émis par la charge 𝑁 est centrifuge\nLe champ émis par la charge 𝑃 est centripète\nLe champ émis par la charge 𝑃 est centrifuge\nLe champ au point 𝑂 est nul",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_1/q8_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_1/image3.jpeg"
@@ -16537,7 +16537,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 11,
                 "type": "QCM",
-                "context": "‖𝑝→‖ = 1,95 × 10<sup>−29</sup> 𝐶 ⋅ 𝑚\n‖𝑝→‖ = 6,49 × 10<sup>−30</sup> 𝐶 ⋅ 𝑚\nSoit un dipôle électrostatique de charge 𝑄 au point 𝑃 et − 𝑄 au point 𝑁, de moment dipolaire 𝑝→ = 𝑞 × 𝑁⃗⃗⃗⃗𝑃⃗⃗→ suivant l’axe (𝑂𝑥) et centré sur le point 𝑂. Il est plongé dans un champ électrique 𝐸⃗→ = 𝐸<sub>0</sub>. 𝑢⃗⃗⃗<sub>𝑥⃗</sub>→ où 𝐸<sub>0</sub> est une constante en tout point de l’espace. Soit un point 𝑀 de charge 𝑞 placé dans le champ 𝐸, à une distance 𝑂𝑀 = 𝑅 du dipôle. On note :\n𝑉<sub>𝑑𝑖𝑝ô𝑙𝑒</sub> (𝑀), le potentiel au point 𝑀 associé au dipôle seul,\n𝑉<sub>𝐶𝐸</sub> (𝑥), le potentiel au point 𝑀 associé au champ électrique\n𝐸⃗→ seul,\n𝑥<sub>𝑀</sub>, la projection du point 𝑀 sur l’axe (𝑂𝑥),\nEt 𝑉<sub>𝑇𝑂𝑇</sub>(𝑀), le potentiel résultant au point 𝑀 par le dipôle et le champ électrique.\nConcernant 𝑉<sub>𝑑𝑖𝑝ô𝑙𝑒</sub>(𝑀) 𝑒𝑡 𝑉<sub>𝐶𝐸</sub> (𝑥), tout en sachant que le potentiel est nul au point O, et le potentiel total créé en un point M par le dipôle et le champ extérieur, laquelle (lesquelles) des propositions suivantes est (sont) exactes :\nLe potentiel 𝑉<sub>𝑑𝑖𝑝ô𝑙𝑒</sub>(𝑀) ne dépend pas de la charge q placée au point M\n𝐸⃗→ = 𝑑𝑉 𝑢⃗⃗⃗⃗→ avec 𝑢⃗⃗⃗⃗→ le vecteur unitaire qui donne la direction du déplacement de 𝐸⃗→\n𝑉<sub>𝐶𝐸</sub> (𝑥) = 𝐸<sub>0</sub>𝑥 + 𝑐𝑠𝑡𝑒\nEn tout point de l’axe (Ox) : 𝑥 = 𝑟 𝑐𝑜𝑠(θ)\nEn tout point de l’axe (Ox) : 𝑥 = 𝑝 cos(θ)",
+                "context": "‖𝑝→‖ = 1,95 × \\(10^{-29}\\) 𝐶 ⋅ 𝑚\n‖𝑝→‖ = 6,49 × \\(10^{-30}\\) 𝐶 ⋅ 𝑚\nSoit un dipôle électrostatique de charge 𝑄 au point 𝑃 et − 𝑄 au point 𝑁, de moment dipolaire 𝑝→ = 𝑞 × 𝑁⃗⃗⃗⃗𝑃⃗⃗→ suivant l’axe (𝑂𝑥) et centré sur le point 𝑂. Il est plongé dans un champ électrique 𝐸⃗→ = 𝐸0. 𝑢⃗⃗⃗𝑥⃗→ où 𝐸0 est une constante en tout point de l’espace. Soit un point 𝑀 de charge 𝑞 placé dans le champ 𝐸, à une distance 𝑂𝑀 = 𝑅 du dipôle. On note :\n𝑉𝑑𝑖𝑝ô𝑙𝑒 (𝑀), le potentiel au point 𝑀 associé au dipôle seul,\n𝑉𝐶𝐸 (𝑥), le potentiel au point 𝑀 associé au champ électrique\n𝐸⃗→ seul,\n𝑥𝑀, la projection du point 𝑀 sur l’axe (𝑂𝑥),\nEt 𝑉𝑇𝑂𝑇(𝑀), le potentiel résultant au point 𝑀 par le dipôle et le champ électrique.\nConcernant 𝑉𝑑𝑖𝑝ô𝑙𝑒(𝑀) 𝑒𝑡 𝑉𝐶𝐸 (𝑥), tout en sachant que le potentiel est nul au point O, et le potentiel total créé en un point M par le dipôle et le champ extérieur, laquelle (lesquelles) des propositions suivantes est (sont) exactes :\nLe potentiel 𝑉𝑑𝑖𝑝ô𝑙𝑒(𝑀) ne dépend pas de la charge q placée au point M\n𝐸⃗→ = 𝑑𝑉 𝑢⃗⃗⃗⃗→ avec 𝑢⃗⃗⃗⃗→ le vecteur unitaire qui donne la direction du déplacement de 𝐸⃗→\n𝑉𝐶𝐸 (𝑥) = 𝐸0𝑥 + 𝑐𝑠𝑡𝑒\nEn tout point de l’axe (Ox) : 𝑥 = 𝑟 𝑐𝑜𝑠(\\(\\theta\\))\nEn tout point de l’axe (Ox) : 𝑥 = 𝑝 cos(\\(\\theta\\))",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_1/q11_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_1/image5.jpeg",
@@ -16585,7 +16585,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": "𝑉<sub>𝑇𝑂𝑇</sub>\n𝑉<sub>𝑇𝑂𝑇</sub>\n𝑉<sub>𝑇𝑂𝑇</sub>\n(𝑀) = cos(θ) (𝑝\n+ 𝐸<sub>0</sub>𝑅)\n− 𝐸<sub>0</sub>𝑅)",
+                "context": "𝑉𝑇𝑂𝑇\n𝑉𝑇𝑂𝑇\n𝑉𝑇𝑂𝑇\n(𝑀) = cos(\\(\\theta\\)) (𝑝\n+ 𝐸0𝑅)\n− 𝐸0𝑅)",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_1/q12_enonce.png"
                 ],
@@ -16632,7 +16632,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "Le potentiel total est le produit des potentiels individuels liés à chaque charge\nLe champ électrique au point 𝑥 = 0 ne peut pas être calculé car il nous manque des données\nLe champ électrique au point 𝑥 = 0 est nul\nUne charge test positive placée au point 𝑥 = 0 sur l’axe Ox entre les deux charges positives est à l’équilibre\nLe Grand Collisionneur de Hadrons (LHC) est entré en fonctionnement en 2008. Il est constitué d’un anneau de 27 kilomètres de circonférence enterré à 100m sous terre près de Genève. C’est l’accélérateur de particules le plus puissant au monde à ce jour. Les protons sont accélérés jusqu’à une vitesse proche de celle de la lumière, avant de s’entrechoquer et de se désintégrer en une myriade de particules exotiques. Ce sont des accélérateurs qui se chargent de leur faire atteindre une telle vitesse. Le LHC se compose d’une succession d’accélérateurs d’énergies toujours croissantes, qu’on peut assimiler à des condensateurs formant un champ dont les vecteurs 𝐸⃗→ sont horizontaux. On va s’intéresser au mouvement d’un proton dans un de ces accélérateurs.\nPour rappel, la charge élémentaire vaut 𝑒 = 1,60 × 10<sup>−19</sup> 𝐶, la permittivité diélectrique du vide vaut 𝜀<sub>0</sub> = 8,85 × 10<sup>−12</sup> 𝐹 ⋅ 𝑚<sup>−1</sup>, la pesanteur vaut 𝑔 = 9,81 𝑚 ⋅ 𝑠<sup>−2</sup> et la masse d’un proton\nvaut 𝑚 = 1,6 × 10<sup>−18</sup>𝜇𝑔 et 𝐸 = 𝜎\nLe champ électrique généré entre les deux plaques est d’une valeur de 𝐸 = 100 𝑘𝑉 ⋅ 𝑚<sup>−1</sup>, les plaques ont une surface 𝑆 = 220 𝑐𝑚<sup>2</sup> et 𝐿 = 10 𝑚.\nOn négligera les frottements tout au long de l’exercice.",
+                "context": "Le potentiel total est le produit des potentiels individuels liés à chaque charge\nLe champ électrique au point 𝑥 = 0 ne peut pas être calculé car il nous manque des données\nLe champ électrique au point 𝑥 = 0 est nul\nUne charge test positive placée au point 𝑥 = 0 sur l’axe Ox entre les deux charges positives est à l’équilibre\nLe Grand Collisionneur de Hadrons (LHC) est entré en fonctionnement en 2008. Il est constitué d’un anneau de 27 kilomètres de circonférence enterré à 100m sous terre près de Genève. C’est l’accélérateur de particules le plus puissant au monde à ce jour. Les protons sont accélérés jusqu’à une vitesse proche de celle de la lumière, avant de s’entrechoquer et de se désintégrer en une myriade de particules exotiques. Ce sont des accélérateurs qui se chargent de leur faire atteindre une telle vitesse. Le LHC se compose d’une succession d’accélérateurs d’énergies toujours croissantes, qu’on peut assimiler à des condensateurs formant un champ dont les vecteurs 𝐸⃗→ sont horizontaux. On va s’intéresser au mouvement d’un proton dans un de ces accélérateurs.\nPour rappel, la charge élémentaire vaut 𝑒 = 1,60 × \\(10^{-19}\\) 𝐶, la permittivité diélectrique du vide vaut 𝜀0 = 8,85 × \\(10^{-12}\\) 𝐹 ⋅ 𝑚−1, la pesanteur vaut 𝑔 = 9,81 𝑚 ⋅ 𝑠−2 et la masse d’un proton\nvaut 𝑚 = 1,6 × \\(10^{-18}\\)𝜇𝑔 et 𝐸 = 𝜎\nLe champ électrique généré entre les deux plaques est d’une valeur de 𝐸 = 100 𝑘𝑉 ⋅ 𝑚−1, les plaques ont une surface 𝑆 = 220 𝑐𝑚2 et 𝐿 = 10 𝑚.\nOn négligera les frottements tout au long de l’exercice.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_1/q13_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_1/image7.png"
@@ -16681,7 +16681,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 14,
                 "type": "QCM",
-                "context": "𝐶 = 1,95 × 10<sup>−11</sup> 𝐹\n𝐶 = 1,95 × 10<sup>−14</sup> 𝐹\nUn proton entre dans le condensateur au voisinage de la plaque A avec une vitesse initiale 𝑣<sub>0</sub> = 5,0 × 10<sup>7</sup> 𝑚 ⋅ 𝑠<sup>−1</sup>. On s’intéresse aux forces auxquelles il est soumis, 𝐹⃗⃗⃗<sub>𝑒</sub>→ la force électrostatique et 𝑃⃗→, le poids.",
+                "context": "𝐶 = 1,95 × \\(10^{-11}\\) 𝐹\n𝐶 = 1,95 × \\(10^{-14}\\) 𝐹\nUn proton entre dans le condensateur au voisinage de la plaque A avec une vitesse initiale 𝑣0 = 5,0 × 107 𝑚 ⋅ 𝑠−1. On s’intéresse aux forces auxquelles il est soumis, 𝐹⃗⃗⃗𝑒→ la force électrostatique et 𝑃⃗→, le poids.",
                 "images": [],
                 "question": "Laquelle (lesquelles) des propositions suivantes est (ou sont) exacte(s) :",
                 "options": [
@@ -16724,7 +16724,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "électrostatique\n<sup>‖𝐹⃗⃗⃗⃗𝑒</sup>→‖ ≈ 10<sup>8</sup> donc l’action du poids est négligeable comparé à celle de la force\nélectrostatique\nPour les questions 16 et 17, on négligera le poids.",
+                "context": "électrostatique\n‖𝐹⃗⃗⃗⃗𝑒→‖ ≈ 108 donc l’action du poids est négligeable comparé à celle de la force\nélectrostatique\nPour les questions 16 et 17, on négligera le poids.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_1/q15_enonce.png"
                 ],
@@ -16770,7 +16770,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 16,
                 "type": "QCM",
-                "context": "L’énergie potentielle électrostatique du proton augmente pendant son déplacement\nLe potentiel électrostatique augmente linéairement de A vers B\nOn note 𝑣<sub>𝑓</sub> la vitesse du proton au moment où il arrive au bout du condensateur, et 𝑣<sup>′</sup> la même\nvitesse mais si on double ∆𝑉.",
+                "context": "L’énergie potentielle électrostatique du proton augmente pendant son déplacement\nLe potentiel électrostatique augmente linéairement de A vers B\nOn note 𝑣𝑓 la vitesse du proton au moment où il arrive au bout du condensateur, et 𝑣′ la même\nvitesse mais si on double ∆𝑉.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_1/q16_enonce.png"
                 ],
@@ -16816,7 +16816,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "𝑣<sub>𝑓</sub> = 1,4 × 10<sup>7</sup> 𝑚 ⋅ 𝑠<sup>−1</sup>\n𝑣<sub>𝑓</sub> = 5,2 × 10<sup>7</sup> 𝑚 ⋅ 𝑠<sup>−1</sup>\n<sup>𝑓</sup> = 2\nLes scientifiques décident de modifier l’orientation d’un des accélérateurs afin d’observer comment cela influence le comportement d’une nouvelle particule, qui est un électron. La nouvelle configuration est illustrée sur le schéma ci-dessous :\nNotre particule arrive pile à mi-chemin entre les plaques, avec une vitesse initiale 𝑣<sup>′</sup> = 3,5 × 10<sup>7</sup> 𝑚 ⋅ 𝑠<sup>−1</sup>. Ce condensateur génère un champ électrique 𝐸<sup>′</sup> = 10 𝑘𝑉 ⋅\n𝑚<sup>−1</sup>, la surface de ses plaques ainsi que la distance qui les sépare sont identiques à celles du premier condensateur. Pour rappel, la masse d’un électron vaut\n𝑚<sub>𝑒</sub> = 9,1 × 10<sup>−31</sup>𝑘𝑔",
+                "context": "𝑣𝑓 = 1,4 × 107 𝑚 ⋅ 𝑠−1\n𝑣𝑓 = 5,2 × 107 𝑚 ⋅ 𝑠−1\n𝑓 = 2\nLes scientifiques décident de modifier l’orientation d’un des accélérateurs afin d’observer comment cela influence le comportement d’une nouvelle particule, qui est un électron. La nouvelle configuration est illustrée sur le schéma ci-dessous :\nNotre particule arrive pile à mi-chemin entre les plaques, avec une vitesse initiale 𝑣′ = 3,5 × 107 𝑚 ⋅ 𝑠−1. Ce condensateur génère un champ électrique 𝐸′ = 10 𝑘𝑉 ⋅\n𝑚−1, la surface de ses plaques ainsi que la distance qui les sépare sont identiques à celles du premier condensateur. Pour rappel, la masse d’un électron vaut\n𝑚𝑒 = 9,1 × \\(10^{-31}\\)𝑘𝑔",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_1/image8.png",
                     "annales_assets/2024_2025/physique/tuto_1/image9.png",
@@ -16926,7 +16926,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 1,
                 "type": "QCM",
-                "context": "Un schnorchel est un tube d’air rétractable présent dans les sous-marins permettant à ces derniers d’alimenter en air frais leur intérieur et leur moteur diesel. Ce tube creux peut être hissé en dehors de l’eau, au contact de l’air, alors même que le sous-marin reste immergé pour rester discret et limiter les risques d’être détecté. Le capitaine du sous-marin pilote son véhicule pour rejoindre sa colonie.\nNous pouvons assimiler la forme du sous-marin à un\ncylindre de longueur 𝑙<sub>𝑐</sub> = 60 𝑚 et de rayon 𝑟<sub>𝑠</sub> = 5 𝑚 avec à ses deux extrémités, des demi-sphères de même rayon. On néglige le volume du schnorchel par rapport au volume du reste du sous-marin.\nOn considère que l’on se situe dans un référentiel terrestre supposé galiléen et que tous les gaz étudiés sont parfaits. On donne la constante des gaz parfaits 𝑅 = 8,31 𝑆. 𝐼 et le nombre d’Avogadro 𝑁<sub>𝑎</sub> = 6,02 × 10<sup>23</sup> 𝑚𝑜𝑙<sup>−1</sup>.\nDans un premier temps, le sous-marin se trouve sous l’eau avec son schnorchel fermé. On mesure dans le sous-marin une température 𝑇<sub>𝑠</sub> = 25°𝐶 et une fraction en dioxygène de 𝑝<sub>𝑂2</sub> = 21%. De plus, on considère que l’air n’est composé que de 𝑂<sub>2</sub>(<sup>16</sup>𝑂) et de 𝑁<sub>2</sub> (<sup>14</sup>𝑁).",
+                "context": "Un schnorchel est un tube d’air rétractable présent dans les sous-marins permettant à ces derniers d’alimenter en air frais leur intérieur et leur moteur diesel. Ce tube creux peut être hissé en dehors de l’eau, au contact de l’air, alors même que le sous-marin reste immergé pour rester discret et limiter les risques d’être détecté. Le capitaine du sous-marin pilote son véhicule pour rejoindre sa colonie.\nNous pouvons assimiler la forme du sous-marin à un\ncylindre de longueur 𝑙𝑐 = 60 𝑚 et de rayon 𝑟𝑠 = 5 𝑚 avec à ses deux extrémités, des demi-sphères de même rayon. On néglige le volume du schnorchel par rapport au volume du reste du sous-marin.\nOn considère que l’on se situe dans un référentiel terrestre supposé galiléen et que tous les gaz étudiés sont parfaits. On donne la constante des gaz parfaits 𝑅 = 8,31 𝑆. 𝐼 et le nombre d’Avogadro 𝑁𝑎 = 6,02 × 1023 𝑚𝑜𝑙−1.\nDans un premier temps, le sous-marin se trouve sous l’eau avec son schnorchel fermé. On mesure dans le sous-marin une température 𝑇𝑠 = 25°𝐶 et une fraction en dioxygène de 𝑝𝑂2 = 21%. De plus, on considère que l’air n’est composé que de 𝑂2(16𝑂) et de 𝑁2 (14𝑁).",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q1_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_2/image2.jpeg"
@@ -16974,7 +16974,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 2,
                 "type": "QCM",
-                "context": "Un schnorchel est un tube d’air rétractable présent dans les sous-marins permettant à ces derniers d’alimenter en air frais leur intérieur et leur moteur diesel. Ce tube creux peut être hissé en dehors de l’eau, au contact de l’air, alors même que le sous-marin reste immergé pour rester discret et limiter les risques d’être détecté. Le capitaine du sous-marin pilote son véhicule pour rejoindre sa colonie.\nNous pouvons assimiler la forme du sous-marin à un\ncylindre de longueur 𝑙<sub>𝑐</sub> = 60 𝑚 et de rayon 𝑟<sub>𝑠</sub> = 5 𝑚 avec à ses deux extrémités, des demi-sphères de même rayon. On néglige le volume du schnorchel par rapport au volume du reste du sous-marin.\nOn considère que l’on se situe dans un référentiel terrestre supposé galiléen et que tous les gaz étudiés sont parfaits. On donne la constante des gaz parfaits 𝑅 = 8,31 𝑆. 𝐼 et le nombre d’Avogadro 𝑁<sub>𝑎</sub> = 6,02 × 10<sup>23</sup> 𝑚𝑜𝑙<sup>−1</sup>.\nDans un premier temps, le sous-marin se trouve sous l’eau avec son schnorchel fermé. On mesure dans le sous-marin une température 𝑇<sub>𝑠</sub> = 25°𝐶 et une fraction en dioxygène de 𝑝<sub>𝑂2</sub> = 21%. De plus, on considère que l’air n’est composé que de 𝑂<sub>2</sub>(<sup>16</sup>𝑂) et de 𝑁<sub>2</sub> (<sup>14</sup>𝑁).",
+                "context": "Un schnorchel est un tube d’air rétractable présent dans les sous-marins permettant à ces derniers d’alimenter en air frais leur intérieur et leur moteur diesel. Ce tube creux peut être hissé en dehors de l’eau, au contact de l’air, alors même que le sous-marin reste immergé pour rester discret et limiter les risques d’être détecté. Le capitaine du sous-marin pilote son véhicule pour rejoindre sa colonie.\nNous pouvons assimiler la forme du sous-marin à un\ncylindre de longueur 𝑙𝑐 = 60 𝑚 et de rayon 𝑟𝑠 = 5 𝑚 avec à ses deux extrémités, des demi-sphères de même rayon. On néglige le volume du schnorchel par rapport au volume du reste du sous-marin.\nOn considère que l’on se situe dans un référentiel terrestre supposé galiléen et que tous les gaz étudiés sont parfaits. On donne la constante des gaz parfaits 𝑅 = 8,31 𝑆. 𝐼 et le nombre d’Avogadro 𝑁𝑎 = 6,02 × 1023 𝑚𝑜𝑙−1.\nDans un premier temps, le sous-marin se trouve sous l’eau avec son schnorchel fermé. On mesure dans le sous-marin une température 𝑇𝑠 = 25°𝐶 et une fraction en dioxygène de 𝑝𝑂2 = 21%. De plus, on considère que l’air n’est composé que de 𝑂2(16𝑂) et de 𝑁2 (14𝑁).",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q2_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_2/image2.jpeg"
@@ -17066,7 +17066,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "À nombre de mole par unité de volume constant, une augmentation de 10% de la pression de l’air correspond à une augmentation de 10% de la température et une diminution de 10% de la profondeur\nOn peut utiliser la formule 𝑃 = 𝑛𝑅𝑇\npour calculer la pression dans la mer à une\nprofondeur donnée en fonction de la température\nÀ travers le hublot de son sous-marin, le capitaine aperçoit alors une bulle de méthane qui remonte à la surface tout en gagnant en volume. Ce phénomène s’explique par la dépression subie par la bulle de méthane au fur et à mesure qu’elle se rapproche de la surface. Mais l’équipage du sous-marin, pas très doué en physique, n’y comprend rien. Le capitaine décide alors de calculer le travail des forces de pression du gaz situées à l’intérieur de la bulle de méthane, noté 𝑊, pour leur expliquer.\nLe méthane est considéré comme un gaz parfait et dans cette situation son nombre de mole est constant puisqu’il ne se dissout pas sur les parois de la bulle.\nOn considère le passage d’une bulle de méthane d’un volume initial 𝑉<sub>1</sub> = 3 𝐿 à un volume final\n𝑉<sub>2</sub> = 6 𝐿, à une température constante que l’on considère de 5°C. Le capitaine compte un total de 0,5 mole de molécules de méthane.",
+                "context": "À nombre de mole par unité de volume constant, une augmentation de 10% de la pression de l’air correspond à une augmentation de 10% de la température et une diminution de 10% de la profondeur\nOn peut utiliser la formule 𝑃 = 𝑛𝑅𝑇\npour calculer la pression dans la mer à une\nprofondeur donnée en fonction de la température\nÀ travers le hublot de son sous-marin, le capitaine aperçoit alors une bulle de méthane qui remonte à la surface tout en gagnant en volume. Ce phénomène s’explique par la dépression subie par la bulle de méthane au fur et à mesure qu’elle se rapproche de la surface. Mais l’équipage du sous-marin, pas très doué en physique, n’y comprend rien. Le capitaine décide alors de calculer le travail des forces de pression du gaz situées à l’intérieur de la bulle de méthane, noté 𝑊, pour leur expliquer.\nLe méthane est considéré comme un gaz parfait et dans cette situation son nombre de mole est constant puisqu’il ne se dissout pas sur les parois de la bulle.\nOn considère le passage d’une bulle de méthane d’un volume initial 𝑉1 = 3 𝐿 à un volume final\n𝑉2 = 6 𝐿, à une température constante que l’on considère de 5°C. Le capitaine compte un total de 0,5 mole de molécules de méthane.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q4_enonce.png"
                 ],
@@ -17112,7 +17112,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "Apercevant la terre à travers son périscope, le capitaine fait remonter le sous-marin. Pour cela, il actionne un petit moteur qui propulse le sous-marin à la surface, très brièvement, si bien que l’on négligera la phase initiale d’accélération du sous-marin et que l’on considèrera que ce\ndernier remonte à une vitesse constante 𝑣<sub>𝑆</sub> = 0,3 𝑚 ⋅ 𝑠 <sup>−1</sup>. On donne également 𝜌<sub>𝑚𝑒𝑟</sub> = 1050 𝑔. 𝐿<sup>−1</sup>. Dans toute la suite de l'exercice, les frottements sont négligés.",
+                "context": "Apercevant la terre à travers son périscope, le capitaine fait remonter le sous-marin. Pour cela, il actionne un petit moteur qui propulse le sous-marin à la surface, très brièvement, si bien que l’on négligera la phase initiale d’accélération du sous-marin et que l’on considèrera que ce\ndernier remonte à une vitesse constante 𝑣𝑆 = 0,3 𝑚 ⋅ 𝑠 −1. On donne également 𝜌𝑚𝑒𝑟 = 1050 𝑔. 𝐿−1. Dans toute la suite de l'exercice, les frottements sont négligés.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q5_enonce.png"
                 ],
@@ -17158,7 +17158,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 6,
                 "type": "QCM",
-                "context": "La masse du sous-marin est de l’ordre de 10<sup>3</sup> 𝑘𝑔\nLe capitaine décide de tirer un boulet sur la terre ferme pour s’entrainer à la chasse. Pour simplifier le modèle, on approxime le boulet par une bille dans un ressort qui l’éjecte jusqu’au sol. Il étudie la raideur k du ressort avant de se lancer afin de limiter les risques de rater.\nLe ressort forme un angle 𝛼 = 20° avec le sol. Le capitaine réalise alors une expérience en plaçant une bille de masse 𝑚 = 200 𝑔 au bout du ressort. Il positionne le ressort à |Δ𝑟| = 20 𝑐𝑚 de sa longueur à vide et le lâche. Le ressort retourne alors à sa longueur à vide, à l’arrêt.\nOn note 𝐸<sub>𝑝𝑖</sub> l’énergie potentielle de pesanteur initiale de la bille, 𝐸<sub>𝑒𝑖</sub> l’énergie potentielle élastique initiale du ressort et 𝐸<sub>𝑐𝑖</sub> l’énergie cinétique initiale de la bille, 𝐸<sub>𝑝𝑓</sub>, 𝐸<sub>𝑒𝑓</sub> et 𝐸<sub>𝑐𝑓</sub> les énergies respectives une fois le ressort en position de repos et à l’arrêt. Dans la situation finale la bille est sur le point de s’envoler avec une vitesse 𝑣<sup>2</sup> = 3 (𝑚 ⋅ 𝑠<sup>−1</sup>)². On considère comme nulle l’altitude initiale de la bille et on néglige la masse du ressort. On ajoute que pour 𝑦 = 0 𝑚, on a 𝐸<sub>𝑝</sub> = 0 𝐽.\nOn donne 𝑔 = 10 𝑚 ⋅ 𝑠<sup>−2</sup>.",
+                "context": "La masse du sous-marin est de l’ordre de 103 𝑘𝑔\nLe capitaine décide de tirer un boulet sur la terre ferme pour s’entrainer à la chasse. Pour simplifier le modèle, on approxime le boulet par une bille dans un ressort qui l’éjecte jusqu’au sol. Il étudie la raideur k du ressort avant de se lancer afin de limiter les risques de rater.\nLe ressort forme un angle 𝛼 = 20° avec le sol. Le capitaine réalise alors une expérience en plaçant une bille de masse 𝑚 = 200 𝑔 au bout du ressort. Il positionne le ressort à |\\(\\Delta\\)𝑟| = 20 𝑐𝑚 de sa longueur à vide et le lâche. Le ressort retourne alors à sa longueur à vide, à l’arrêt.\nOn note 𝐸𝑝𝑖 l’énergie potentielle de pesanteur initiale de la bille, 𝐸𝑒𝑖 l’énergie potentielle élastique initiale du ressort et 𝐸𝑐𝑖 l’énergie cinétique initiale de la bille, 𝐸𝑝𝑓, 𝐸𝑒𝑓 et 𝐸𝑐𝑓 les énergies respectives une fois le ressort en position de repos et à l’arrêt. Dans la situation finale la bille est sur le point de s’envoler avec une vitesse 𝑣2 = 3 (𝑚 ⋅ 𝑠−1)². On considère comme nulle l’altitude initiale de la bille et on néglige la masse du ressort. On ajoute que pour 𝑦 = 0 𝑚, on a 𝐸𝑝 = 0 𝐽.\nOn donne 𝑔 = 10 𝑚 ⋅ 𝑠−2.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q6_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_2/image3.jpeg"
@@ -17206,7 +17206,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "+ 𝑚𝑔 sin(𝛼) |∆𝑥| = 𝑘|∆𝑥|\n2𝑚𝑔 |∆𝑥 |sin(𝛼) + 𝑚𝑣2\n𝑘 = 52 𝑁 ⋅ 𝑚<sup>−1</sup>\nLes deux parties de cet exercice sont indépendantes l’une de l’autre.\nPartie 1 :\nLes globules rouges sont des cellules présentes dans le sang, on les considèrera comme des particules de charge 𝑄<sub>𝐺𝐵</sub> = −2,8 × 10<sup>−12</sup> 𝐶. Le sang est composé de nombreuses particules chargées comme des protéines ou bien des ions.\nOn s’intéresse au comportement d’un ion sodium placé à proximité d’un globule rouge, ce dernier étant source d’un champ électrique, dans un milieu de permittivité 𝜀 = 4,65 × 10<sup>−8</sup> 𝐹 ⋅ 𝑚<sup>−1</sup>.\nOn considère que le globule rouge est la source d’un\nchamp électrique, semblable à celui autour d’une charge ponctuelle. Les deux particules sont séparées d’une distance 𝑙 = 1 µ𝑚.\nOn donne la charge élémentaire 𝑒 = 1,6 × 10<sup>−19</sup> 𝐶, la masse molaire du sodium 𝑀<sub>𝑠𝑜𝑑𝑖𝑢𝑚</sub> = 23 𝑔 ⋅ 𝑚𝑜𝑙<sup>−1</sup>, et on rappelle que 𝑁<sub>𝐴</sub> = 6,02 × 10<sup>23</sup> 𝑚𝑜𝑙<sup>−1</sup> le nombre d’Avogadro.",
+                "context": "+ 𝑚𝑔 sin(𝛼) |∆𝑥| = 𝑘|∆𝑥|\n2𝑚𝑔 |∆𝑥 |sin(𝛼) + 𝑚𝑣2\n𝑘 = 52 𝑁 ⋅ 𝑚−1\nLes deux parties de cet exercice sont indépendantes l’une de l’autre.\nPartie 1 :\nLes globules rouges sont des cellules présentes dans le sang, on les considèrera comme des particules de charge 𝑄𝐺𝐵 = −2,8 × \\(10^{-12}\\) 𝐶. Le sang est composé de nombreuses particules chargées comme des protéines ou bien des ions.\nOn s’intéresse au comportement d’un ion sodium placé à proximité d’un globule rouge, ce dernier étant source d’un champ électrique, dans un milieu de permittivité 𝜀 = 4,65 × \\(10^{-8}\\) 𝐹 ⋅ 𝑚−1.\nOn considère que le globule rouge est la source d’un\nchamp électrique, semblable à celui autour d’une charge ponctuelle. Les deux particules sont séparées d’une distance 𝑙 = 1 \\(\\mu\\)𝑚.\nOn donne la charge élémentaire 𝑒 = 1,6 × \\(10^{-19}\\) 𝐶, la masse molaire du sodium 𝑀𝑠𝑜𝑑𝑖𝑢𝑚 = 23 𝑔 ⋅ 𝑚𝑜𝑙−1, et on rappelle que 𝑁𝐴 = 6,02 × 1023 𝑚𝑜𝑙−1 le nombre d’Avogadro.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q7_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_2/image4.png"
@@ -17254,7 +17254,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 8,
                 "type": "QCM",
-                "context": "‖𝐹⃗⃗⃗<sub>𝑒</sub>→‖ = 7,67 × 10<sup>−13</sup>𝑁\nOn cherche maintenant à trouver la vitesse 𝑣′ de l’ion de sodium après qu’il ait parcouru 500 𝑛𝑚 à partir de sa position initiale. On considère que sa vitesse initiale est nulle et on néglige la force de frottements et le poids de l’ion.",
+                "context": "‖𝐹⃗⃗⃗𝑒→‖ = 7,67 × \\(10^{-13}\\)𝑁\nOn cherche maintenant à trouver la vitesse 𝑣′ de l’ion de sodium après qu’il ait parcouru 500 𝑛𝑚 à partir de sa position initiale. On considère que sa vitesse initiale est nulle et on néglige la force de frottements et le poids de l’ion.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q8_enonce.png"
                 ],
@@ -17299,7 +17299,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 9,
                 "type": "QCM",
-                "context": "𝑣<sup>′</sup> = 4,01 × 10<sup>7</sup> 𝑚 ⋅ 𝑠<sup>−1</sup>\nPartie 2 :\nOn effectue maintenant l’électrophorèse horizontale des globules rouges d’un patient, plus précisément de la protéine d’hémoglobine contenue dans ces derniers.\nOn assimile la cuve à électrophorèse à un condensateur qui génère un champ électrique 𝐸 = 150 × 10<sup>3</sup> 𝑚𝑉 ⋅ 𝑚<sup>−1</sup>, dont les plaques sont de dimensions suivantes : largeur 𝑙 = 3 𝑐𝑚, longueur 𝐿 = 8 𝑐𝑚. Celles-ci sont éloignées l’une de l’autre d’une distance 𝑑 = 25 𝑐𝑚 et séparées par un diélectrique de permittivité 𝜀 = 4,65 × 10<sup>−8</sup> 𝐹 ⋅ 𝑚<sup>−1</sup>.\nLe schéma ci-dessous représente la cuve à électrophorèse horizontale vue de dessus :\nOn précise que chaque molécule d’hémoglobine, d’une masse 𝑚 = 64 𝑘𝐷𝑎, abrite quatre ions\n𝐹𝑒<sup>2+</sup>, responsables de sa charge électrique qu’on note 𝑞.\nOn précise que 1 𝑘𝐷𝑎 = 1,66 × 10<sup>−24</sup> 𝑘𝑔 et on donne 𝑒 = 1,6 × 10<sup>−19</sup> 𝐶 la valeur de la charge élémentaire.",
+                "context": "𝑣′ = 4,01 × 107 𝑚 ⋅ 𝑠−1\nPartie 2 :\nOn effectue maintenant l’électrophorèse horizontale des globules rouges d’un patient, plus précisément de la protéine d’hémoglobine contenue dans ces derniers.\nOn assimile la cuve à électrophorèse à un condensateur qui génère un champ électrique 𝐸 = 150 × 103 𝑚𝑉 ⋅ 𝑚−1, dont les plaques sont de dimensions suivantes : largeur 𝑙 = 3 𝑐𝑚, longueur 𝐿 = 8 𝑐𝑚. Celles-ci sont éloignées l’une de l’autre d’une distance 𝑑 = 25 𝑐𝑚 et séparées par un diélectrique de permittivité 𝜀 = 4,65 × \\(10^{-8}\\) 𝐹 ⋅ 𝑚−1.\nLe schéma ci-dessous représente la cuve à électrophorèse horizontale vue de dessus :\nOn précise que chaque molécule d’hémoglobine, d’une masse 𝑚 = 64 𝑘𝐷𝑎, abrite quatre ions\n𝐹𝑒2+, responsables de sa charge électrique qu’on note 𝑞.\nOn précise que 1 𝑘𝐷𝑎 = 1,66 × \\(10^{-24}\\) 𝑘𝑔 et on donne 𝑒 = 1,6 × \\(10^{-19}\\) 𝐶 la valeur de la charge élémentaire.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q9_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_2/image5.png"
@@ -17392,7 +17392,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 11,
                 "type": "QCM",
-                "context": "𝐶 = 4,46 × 10<sup>−1</sup> 𝑛𝐹\nLa molécule d’hémoglobine traverse la cuve à partir de la plaque positive, de laquelle elle part avec une vitesse initiale nulle, jusqu’à la plaque négative (où le potentiel est nul). On note 𝑣<sub>𝑓</sub> la vitesse de l’hémoglobine au moment où elle atteint la plaque négative. On néglige les frottements ainsi que l’action du poids.",
+                "context": "𝐶 = 4,46 × \\(10^{-1}\\) 𝑛𝐹\nLa molécule d’hémoglobine traverse la cuve à partir de la plaque positive, de laquelle elle part avec une vitesse initiale nulle, jusqu’à la plaque négative (où le potentiel est nul). On note 𝑣𝑓 la vitesse de l’hémoglobine au moment où elle atteint la plaque négative. On néglige les frottements ainsi que l’action du poids.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q11_enonce.png"
                 ],
@@ -17437,7 +17437,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": "𝑣<sub>𝑓</sub> = 336 𝑚 ⋅ 𝑠<sup>−1</sup>\n𝑣<sub>𝑓</sub> = 672 𝑚 ⋅ 𝑠<sup>−1</sup>\n𝑣<sub>𝑓</sub> = 951𝑚 ⋅ 𝑠<sup>−1</sup>\nEn réalité, l’électrophorèse a lieu dans un gel qui provoque des forces de frottements visqueux sur notre hémoglobine, impactant le mouvement de la molécule de façon non négligeable. La migration de l’hémoglobine dans la cuve, de la plaque positive à la plaque négative, dure 1 heure au total. On fait l’approximation que la vitesse finale est égale à la vitesse moyenne de déplacement sur l’entièreté du trajet.\nOn précise que notre hémoglobine part avec une vitesse initiale nulle.",
+                "context": "𝑣𝑓 = 336 𝑚 ⋅ 𝑠−1\n𝑣𝑓 = 672 𝑚 ⋅ 𝑠−1\n𝑣𝑓 = 951𝑚 ⋅ 𝑠−1\nEn réalité, l’électrophorèse a lieu dans un gel qui provoque des forces de frottements visqueux sur notre hémoglobine, impactant le mouvement de la molécule de façon non négligeable. La migration de l’hémoglobine dans la cuve, de la plaque positive à la plaque négative, dure 1 heure au total. On fait l’approximation que la vitesse finale est égale à la vitesse moyenne de déplacement sur l’entièreté du trajet.\nOn précise que notre hémoglobine part avec une vitesse initiale nulle.",
                 "images": [],
                 "question": "Soit \\(W(F )\\) la quantité de travail de la force de frottements visqueux sur l’ensemble du trajet parcouru par la molécule. Laquelle de ces réponses est exacte :",
                 "options": [
@@ -17480,7 +17480,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "𝑊(𝐹→) = −2,4 × 10<sup>−14</sup> 𝐽\nPartie 1 : Etude d’un fluide parfait\nL’alimentation en eau d’un immeuble nécessite la mise en place d’un grand réseau de canalisation en communication avec un château d’eau.\nNous étudions un immeuble de 5 étages d’une hauteur totale 𝐻<sub>𝑖𝑚𝑚</sub> = 20 𝑚, avec des étages de hauteur ∆ℎ = 2,5 𝑚. Le château d’eau de hauteur 𝐻<sub>1</sub> = 15 𝑚 est situé à une distance 𝑑 = 100 𝑚 de l’immeuble. Il est alimenté en eau par une nappe phréatique grâce à une pompe électrique qui induit une surpression ∆𝜋 à la sortie de la nappe. Le point 𝐴 est à une hauteur\n𝑧<sub>𝐴</sub> = 2,5 𝑚, et le tuyau qui relie la nappe au château d’eau est de rayon 𝑟<sub>1</sub>.\nL’eau est acheminée du château jusqu’à l’immeuble par un tuyau au niveau du sol de rayon\n𝑟<sub>1</sub> = 80 𝑐𝑚. Une fois arrivé à l’immeuble ce tuyau devient vertical avec un rayon inchangé et crée un embranchement pour chacun des 5 étages. Les tuyaux alimentant chaque étage\npossèdent un rayon de 𝑟 = 1 𝑟 , et sont de longueur 𝑙 = 12 𝑚. Le point 𝐷 se situe, lui, au tout\ndébut de la canalisation du rez-de-chaussée, à une hauteur 𝑧<sub>𝐷</sub> = 0 𝑚.\nOn considère pour l’instant que l’eau est un fluide parfait incompressible et qu’aux points 𝐶 et\n𝐴, l’eau possède une vitesse négligeable (𝑣<sub>𝐴</sub> = 𝑣<sub>𝐶</sub> ≈ 0 𝑚. 𝑠<sup>−1</sup>) et est au contact de l’atmosphère. Pour la première partie de l’exercice, on précise également que les robinets des étages n°1 et 5 sont à la pression atmosphérique car ils sont mal refermés laissant passer une quantité d’eau négligeable.\nVoici le schéma illustrant la situation :\nOn précise également que 𝐻<sub>𝑖𝑚𝑚</sub> = 𝑧<sub>𝐵′</sub> et que 𝑧<sub>𝐶</sub> = 30 𝑚.\nOn rappelle que 𝑔 = 9,81 𝑚 ⋅ 𝑠<sup>−2</sup>, que 𝜌<sub>𝑒𝑎𝑢</sub> = 𝜌 = 1 𝑘𝑔 ⋅ 𝐿<sup>−1</sup>, et que 𝑝<sub>𝑥</sub> correspond à la pression au point 𝑥.\nPour simplifier les calculs, on considère que l’ensemble du tuyau horizontal reliant le château d’eau à l’immeuble est à une altitude de 𝑧 = 0 𝑚 (donc 𝑧<sub>𝐷</sub> = 𝑧<sub>𝐹</sub> ≈ 0).",
+                "context": "𝑊(𝐹→) = −2,4 × \\(10^{-14}\\) 𝐽\nPartie 1 : Etude d’un fluide parfait\nL’alimentation en eau d’un immeuble nécessite la mise en place d’un grand réseau de canalisation en communication avec un château d’eau.\nNous étudions un immeuble de 5 étages d’une hauteur totale 𝐻𝑖𝑚𝑚 = 20 𝑚, avec des étages de hauteur ∆ℎ = 2,5 𝑚. Le château d’eau de hauteur 𝐻1 = 15 𝑚 est situé à une distance 𝑑 = 100 𝑚 de l’immeuble. Il est alimenté en eau par une nappe phréatique grâce à une pompe électrique qui induit une surpression ∆𝜋 à la sortie de la nappe. Le point 𝐴 est à une hauteur\n𝑧𝐴 = 2,5 𝑚, et le tuyau qui relie la nappe au château d’eau est de rayon 𝑟1.\nL’eau est acheminée du château jusqu’à l’immeuble par un tuyau au niveau du sol de rayon\n𝑟1 = 80 𝑐𝑚. Une fois arrivé à l’immeuble ce tuyau devient vertical avec un rayon inchangé et crée un embranchement pour chacun des 5 étages. Les tuyaux alimentant chaque étage\npossèdent un rayon de 𝑟 = 1 𝑟 , et sont de longueur 𝑙 = 12 𝑚. Le point 𝐷 se situe, lui, au tout\ndébut de la canalisation du rez-de-chaussée, à une hauteur 𝑧𝐷 = 0 𝑚.\nOn considère pour l’instant que l’eau est un fluide parfait incompressible et qu’aux points 𝐶 et\n𝐴, l’eau possède une vitesse négligeable (𝑣𝐴 = 𝑣𝐶 ≈ 0 𝑚. 𝑠−1) et est au contact de l’atmosphère. Pour la première partie de l’exercice, on précise également que les robinets des étages n°1 et 5 sont à la pression atmosphérique car ils sont mal refermés laissant passer une quantité d’eau négligeable.\nVoici le schéma illustrant la situation :\nOn précise également que 𝐻𝑖𝑚𝑚 = 𝑧𝐵′ et que 𝑧𝐶 = 30 𝑚.\nOn rappelle que 𝑔 = 9,81 𝑚 ⋅ 𝑠−2, que 𝜌𝑒𝑎𝑢 = 𝜌 = 1 𝑘𝑔 ⋅ 𝐿−1, et que 𝑝𝑥 correspond à la pression au point 𝑥.\nPour simplifier les calculs, on considère que l’ensemble du tuyau horizontal reliant le château d’eau à l’immeuble est à une altitude de 𝑧 = 0 𝑚 (donc 𝑧𝐷 = 𝑧𝐹 ≈ 0).",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/image6.png"
                 ],
@@ -17528,7 +17528,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 16,
                 "type": "QCM",
-                "context": "|∆𝜋| = |𝑃<sub>𝑝𝑜𝑚𝑝𝑒</sub>| × 𝑄\nOn se place dans la situation de l’énoncé. Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :\n𝑄<sub>𝐵′</sub> > 𝑄<sub>𝐷</sub>\n𝑄<sub>𝐵′</sub> ≤ 𝑄<sub>𝐷</sub>\n𝑝<sub>𝐸</sub> > 𝑝<sub>𝐶</sub>\n𝑝<sub>𝐸</sub> = 𝑝<sub>𝑐</sub>\n𝑝<sub>𝐻</sub> < 𝑝<sub>𝐵′</sub>\nCalculer ∆𝜋. Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :\n∆𝜋 = 2,69 × 10<sup>2</sup> 𝑃𝑎\n∆𝜋 = 1,7 × 10<sup>5</sup> 𝑃𝑎\n∆𝜋 = 2,2 × 10<sup>5</sup> 𝑃𝑎\n∆𝜋 = 2,7 × 10<sup>5</sup> 𝑃𝑎\n<sup>2</sup> + 𝜌𝑔𝑧\n+ ∆𝜋 = 𝑝 + 1 𝜌𝑣 <sup>2</sup> + 𝜌𝑔𝑧\nLe rayon des tuyaux 𝑟<sub>2</sub> ne sera pas pris en compte lors du calcul de l’altitude des différents points.",
+                "context": "|∆𝜋| = |𝑃𝑝𝑜𝑚𝑝𝑒| × 𝑄\nOn se place dans la situation de l’énoncé. Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :\n𝑄𝐵′ > 𝑄𝐷\n𝑄𝐵′ ≤ 𝑄𝐷\n𝑝𝐸 > 𝑝𝐶\n𝑝𝐸 = 𝑝𝑐\n𝑝𝐻 < 𝑝𝐵′\nCalculer ∆𝜋. Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :\n∆𝜋 = 2,69 × 102 𝑃𝑎\n∆𝜋 = 1,7 × 105 𝑃𝑎\n∆𝜋 = 2,2 × 105 𝑃𝑎\n∆𝜋 = 2,7 × 105 𝑃𝑎\n2 + 𝜌𝑔𝑧\n+ ∆𝜋 = 𝑝 + 1 𝜌𝑣 2 + 𝜌𝑔𝑧\nLe rayon des tuyaux 𝑟2 ne sera pas pris en compte lors du calcul de l’altitude des différents points.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q16_enonce.png"
                 ],
@@ -17576,7 +17576,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "𝑣<sub>𝐵′</sub>\nPartie 2 : Etude d’un fluide visqueux\nÀ la suite d’un accident sanitaire, une substance est déversée dans le château d’eau ce qui fait qu’on ne peut plus considérer l’eau comme un fluide parfait. On considère donc maintenant l’eau comme un fluide visqueux. On précise que les points du schéma se trouvant dans des canalisations sont au centre de celles-ci.\nOn négligera les pertes de charge dans le château d’eau, et on ne s’intéressera pas dans cette partie à la canalisation qui relie la nappe phréatique au château d’eau. La viscosité de l’eau vaut\n𝜂 = 5 × 10<sup>−3</sup> 𝑃𝑎. 𝑠<sup>−1</sup>.\nDe plus, on négligera les pertes de charges dans les tuyaux verticaux de rayon 𝑟<sub>1</sub> de l’immeuble (et donc la résistance aussi de ces tuyaux) uniquement pour les questions 17 et 18.\nOn donne 𝑣<sub>𝐵′</sub> = 1,5 𝑚. 𝑠<sup>−1</sup> la vitesse au centre de la canalisation qui va du point 𝐵′ dans le château d’eau à l’immeuble.",
+                "context": "𝑣𝐵′\nPartie 2 : Etude d’un fluide visqueux\nÀ la suite d’un accident sanitaire, une substance est déversée dans le château d’eau ce qui fait qu’on ne peut plus considérer l’eau comme un fluide parfait. On considère donc maintenant l’eau comme un fluide visqueux. On précise que les points du schéma se trouvant dans des canalisations sont au centre de celles-ci.\nOn négligera les pertes de charge dans le château d’eau, et on ne s’intéressera pas dans cette partie à la canalisation qui relie la nappe phréatique au château d’eau. La viscosité de l’eau vaut\n𝜂 = 5 × \\(10^{-3}\\) 𝑃𝑎. 𝑠−1.\nDe plus, on négligera les pertes de charges dans les tuyaux verticaux de rayon 𝑟1 de l’immeuble (et donc la résistance aussi de ces tuyaux) uniquement pour les questions 17 et 18.\nOn donne 𝑣𝐵′ = 1,5 𝑚. 𝑠−1 la vitesse au centre de la canalisation qui va du point 𝐵′ dans le château d’eau à l’immeuble.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q17_enonce.png"
                 ],
@@ -17622,7 +17622,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 18,
                 "type": "QCM",
-                "context": "𝑄<sub>𝐵′</sub> = 1,5 𝑚<sup>3</sup>. 𝑠<sup>−1</sup>",
+                "context": "𝑄𝐵′ = 1,5 𝑚3. 𝑠−1",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q18_enonce.png"
                 ],
@@ -17669,7 +17669,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 19,
                 "type": "QCM",
-                "context": "+ 𝜌𝑔𝑧 − 9 𝜌𝑣<sup>2</sup> − 𝑅 𝑄𝐵′\n+ 𝜌𝑔𝑧 − 81 𝜌𝑣<sup>2</sup> − 𝑅 𝑄𝐵′\nOn appelle 𝑅<sub>𝑡𝑜𝑡</sub> la résistance totale des canalisations entre 𝐵′ et 𝐹, 𝑅<sub>1</sub> la résistance de la canalisation qui relie le château d’eau à l’immeuble, 𝑅<sub>2</sub> la résistance d’une des canalisations de l’immeuble, et 𝑅<sub>3</sub> la résistance de la canalisation sortant de l’immeuble et allant au point 𝐹. On appelle 𝑅<sub>4</sub> la résistance des canalisations verticales de l’immeuble (de rayon 𝑟<sub>1</sub>).\nOn donne 𝑧<sub>𝐸</sub> = 12,5 𝑚.",
+                "context": "+ 𝜌𝑔𝑧 − 9 𝜌𝑣2 − 𝑅 𝑄𝐵′\n+ 𝜌𝑔𝑧 − 81 𝜌𝑣2 − 𝑅 𝑄𝐵′\nOn appelle 𝑅𝑡𝑜𝑡 la résistance totale des canalisations entre 𝐵′ et 𝐹, 𝑅1 la résistance de la canalisation qui relie le château d’eau à l’immeuble, 𝑅2 la résistance d’une des canalisations de l’immeuble, et 𝑅3 la résistance de la canalisation sortant de l’immeuble et allant au point 𝐹. On appelle 𝑅4 la résistance des canalisations verticales de l’immeuble (de rayon 𝑟1).\nOn donne 𝑧𝐸 = 12,5 𝑚.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_2/q19_enonce.png"
                 ],
@@ -17730,7 +17730,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 1,
                 "type": "QCM",
-                "context": "Le massage cardiaque est une procédure qui est mise en place lorsqu’une personne perd connaissance et que son cœur ainsi que sa respiration se sont arrêtés. Ce geste consiste à appliquer une compression régulière sur la cage thoracique avec un rythme de l’ordre de 120 compressions par minute.\nDans notre situation, ce geste est réalisé par une personne de masse 𝑚 = 80 𝑘𝑔 :\nOn peut approximer la cage thoracique à un ressort de constante de raideur 𝑘 = 2,4 × 10<sup>4</sup> 𝑁. 𝑚<sup>−1</sup> dont la longueur au repos est 𝑧<sub>0</sub> = 30 𝑐𝑚. On précise que la cage thoracique reste intacte pendant l’entièreté du massage, ainsi elle reprend toujours sa forme initiale après une compression. On donne 𝑔 = 9.81 𝑚. 𝑠<sup>−2</sup>.\nPour étudier le mouvement du massage, nous le séparons en deux phases :\nLa phase de compression où le masseur se laisse tomber (sans utiliser ses muscles), ce qui va appliquer une force de compression 𝐹⃗⃗⃗<sub>𝑐</sub>→ que l’on considère comme étant égale à 3/4 du poids 𝑃⃗→\ndu masseur. On a donc 𝐹⃗⃗⃗→ = 3𝑃⃗→.\nLa phase de relâchement où le masseur va compenser l’entièreté de son poids 𝑃⃗→ avec ses muscles, en utilisant une force de relâchement 𝐹⃗⃗⃗<sub>𝑟</sub>→, pour pouvoir remonter à la position initiale du massage.\nLe massage est considéré optimal si la phase de compression permet d’enfoncer la cage thoracique de 5 𝑐𝑚.",
+                "context": "Le massage cardiaque est une procédure qui est mise en place lorsqu’une personne perd connaissance et que son cœur ainsi que sa respiration se sont arrêtés. Ce geste consiste à appliquer une compression régulière sur la cage thoracique avec un rythme de l’ordre de 120 compressions par minute.\nDans notre situation, ce geste est réalisé par une personne de masse 𝑚 = 80 𝑘𝑔 :\nOn peut approximer la cage thoracique à un ressort de constante de raideur 𝑘 = 2,4 × 104 𝑁. 𝑚−1 dont la longueur au repos est 𝑧0 = 30 𝑐𝑚. On précise que la cage thoracique reste intacte pendant l’entièreté du massage, ainsi elle reprend toujours sa forme initiale après une compression. On donne 𝑔 = 9.81 𝑚. 𝑠−2.\nPour étudier le mouvement du massage, nous le séparons en deux phases :\nLa phase de compression où le masseur se laisse tomber (sans utiliser ses muscles), ce qui va appliquer une force de compression 𝐹⃗⃗⃗𝑐→ que l’on considère comme étant égale à 3/4 du poids 𝑃⃗→\ndu masseur. On a donc 𝐹⃗⃗⃗→ = 3𝑃⃗→.\nLa phase de relâchement où le masseur va compenser l’entièreté de son poids 𝑃⃗→ avec ses muscles, en utilisant une force de relâchement 𝐹⃗⃗⃗𝑟→, pour pouvoir remonter à la position initiale du massage.\nLe massage est considéré optimal si la phase de compression permet d’enfoncer la cage thoracique de 5 𝑐𝑚.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q1_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_3/image2.jpeg"
@@ -17777,7 +17777,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 2,
                 "type": "QCM",
-                "context": "Le massage cardiaque est une procédure qui est mise en place lorsqu’une personne perd connaissance et que son cœur ainsi que sa respiration se sont arrêtés. Ce geste consiste à appliquer une compression régulière sur la cage thoracique avec un rythme de l’ordre de 120 compressions par minute.\nDans notre situation, ce geste est réalisé par une personne de masse 𝑚 = 80 𝑘𝑔 :\nOn peut approximer la cage thoracique à un ressort de constante de raideur 𝑘 = 2,4 × 10<sup>4</sup> 𝑁. 𝑚<sup>−1</sup> dont la longueur au repos est 𝑧<sub>0</sub> = 30 𝑐𝑚. On précise que la cage thoracique reste intacte pendant l’entièreté du massage, ainsi elle reprend toujours sa forme initiale après une compression. On donne 𝑔 = 9.81 𝑚. 𝑠<sup>−2</sup>.\nPour étudier le mouvement du massage, nous le séparons en deux phases :\nLa phase de compression où le masseur se laisse tomber (sans utiliser ses muscles), ce qui va appliquer une force de compression 𝐹⃗⃗⃗<sub>𝑐</sub>→ que l’on considère comme étant égale à 3/4 du poids 𝑃⃗→\ndu masseur. On a donc 𝐹⃗⃗⃗→ = 3𝑃⃗→.\nLa phase de relâchement où le masseur va compenser l’entièreté de son poids 𝑃⃗→ avec ses muscles, en utilisant une force de relâchement 𝐹⃗⃗⃗<sub>𝑟</sub>→, pour pouvoir remonter à la position initiale du massage.\nLe massage est considéré optimal si la phase de compression permet d’enfoncer la cage thoracique de 5 𝑐𝑚.",
+                "context": "Le massage cardiaque est une procédure qui est mise en place lorsqu’une personne perd connaissance et que son cœur ainsi que sa respiration se sont arrêtés. Ce geste consiste à appliquer une compression régulière sur la cage thoracique avec un rythme de l’ordre de 120 compressions par minute.\nDans notre situation, ce geste est réalisé par une personne de masse 𝑚 = 80 𝑘𝑔 :\nOn peut approximer la cage thoracique à un ressort de constante de raideur 𝑘 = 2,4 × 104 𝑁. 𝑚−1 dont la longueur au repos est 𝑧0 = 30 𝑐𝑚. On précise que la cage thoracique reste intacte pendant l’entièreté du massage, ainsi elle reprend toujours sa forme initiale après une compression. On donne 𝑔 = 9.81 𝑚. 𝑠−2.\nPour étudier le mouvement du massage, nous le séparons en deux phases :\nLa phase de compression où le masseur se laisse tomber (sans utiliser ses muscles), ce qui va appliquer une force de compression 𝐹⃗⃗⃗𝑐→ que l’on considère comme étant égale à 3/4 du poids 𝑃⃗→\ndu masseur. On a donc 𝐹⃗⃗⃗→ = 3𝑃⃗→.\nLa phase de relâchement où le masseur va compenser l’entièreté de son poids 𝑃⃗→ avec ses muscles, en utilisant une force de relâchement 𝐹⃗⃗⃗𝑟→, pour pouvoir remonter à la position initiale du massage.\nLe massage est considéré optimal si la phase de compression permet d’enfoncer la cage thoracique de 5 𝑐𝑚.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q2_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_3/image2.jpeg"
@@ -17825,7 +17825,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 3,
                 "type": "QCM",
-                "context": "𝑚<sub>𝑜𝑝𝑡</sub> > 85 𝑘𝑔\n𝑚<sub>𝑜𝑝𝑡</sub> < 75 𝑘𝑔",
+                "context": "𝑚𝑜𝑝𝑡 > 85 𝑘𝑔\n𝑚𝑜𝑝𝑡 < 75 𝑘𝑔",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q3_enonce.png"
                 ],
@@ -17870,7 +17870,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "𝑃<sub>𝑚𝑜𝑦</sub> = 80 𝑊 (à 2 𝑊 près)\n𝑃<sub>𝑚𝑜𝑦</sub> = 800 𝑊 (à 20 𝑊 près)\nOn ne nous indique pas la durée des phases de compression et de relâchement, on ne peut donc pas calculer 𝑃<sub>𝑚𝑜𝑦</sub>\nVous travaillez en tant que médecin anesthésiste et êtes responsable de la préparation de l’anesthésie pour une intervention chirurgicale majeure nécessitant une anesthésie générale de longue durée. Pour cette procédure, vous utilisez un mélange de gaz comprenant du sévoflurane, un agent anesthésiant volatil, administré dans un circuit respiratoire.\nLe mélange contient également 64% de protoxyde d'azote (𝑁<sub>2</sub>𝑂) et 34% d'oxygène (𝑂<sub>2</sub>) dans une bouteille fermée de volume fixe 𝑉<sub>𝐵</sub> = 15 𝐿 à une pression de 𝑃<sub>𝐵</sub> = 200 𝑏𝑎𝑟, fournissant, à l’air libre, un débit constant de 4,2 𝐿/𝑚𝑖𝑛. La température initiale dans la salle est de 20°𝐶.\nOn considérera que tous les gaz évoqués dans cet exercice sont des gaz parfaits. On rappelle la constante des gaz parfaits 𝑅 = 8,314 𝐽. 𝐾<sup>−1</sup>. 𝑚𝑜𝑙<sup>−1</sup> , le nombre d’Avogadro 𝑁<sub>𝐴</sub> = 6,022 ×\n10<sup>23</sup> mol<sup>−1</sup>, et on donne 𝑀<sub>𝑁</sub> <sub>𝑂</sub> = 44 g. mol<sup>−1</sup>et M<sub>𝑂</sub> = 32 g. mol<sup>−1</sup>.",
+                "context": "𝑃𝑚𝑜𝑦 = 80 𝑊 (à 2 𝑊 près)\n𝑃𝑚𝑜𝑦 = 800 𝑊 (à 20 𝑊 près)\nOn ne nous indique pas la durée des phases de compression et de relâchement, on ne peut donc pas calculer 𝑃𝑚𝑜𝑦\nVous travaillez en tant que médecin anesthésiste et êtes responsable de la préparation de l’anesthésie pour une intervention chirurgicale majeure nécessitant une anesthésie générale de longue durée. Pour cette procédure, vous utilisez un mélange de gaz comprenant du sévoflurane, un agent anesthésiant volatil, administré dans un circuit respiratoire.\nLe mélange contient également 64% de protoxyde d'azote (𝑁2𝑂) et 34% d'oxygène (𝑂2) dans une bouteille fermée de volume fixe 𝑉𝐵 = 15 𝐿 à une pression de 𝑃𝐵 = 200 𝑏𝑎𝑟, fournissant, à l’air libre, un débit constant de 4,2 𝐿/𝑚𝑖𝑛. La température initiale dans la salle est de 20°𝐶.\nOn considérera que tous les gaz évoqués dans cet exercice sont des gaz parfaits. On rappelle la constante des gaz parfaits 𝑅 = 8,314 𝐽. 𝐾−1. 𝑚𝑜𝑙−1 , le nombre d’Avogadro 𝑁𝐴 = 6,022 ×\n1023 mo\\(l^{-1}\\), et on donne 𝑀𝑁 𝑂 = 44 g. mo\\(l^{-1}\\)et \\(M_{𝑂}\\) = 32 g. mo\\(l^{-1}\\).",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q4_enonce.png"
                 ],
@@ -17916,7 +17916,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "𝑃<sub>𝑁</sub>2𝑂 = 18 800 k𝑃𝑎\n𝑃<sub>𝑁</sub> <sub>𝑂</sub> = 9,73 × 10<sup>4</sup> 𝑚𝑚𝐻𝑔\nVous remarquez que la température dans la salle d'opération a récemment augmenté de plusieurs degrés à cause de la chaleur générée par les équipements médicaux. La nouvelle température dans la salle est de 25°𝐶. Vous vous demandez alors comment cette variation de température pourrait affecter la pression dans la bouteille.",
+                "context": "𝑃𝑁2𝑂 = 18 800 k𝑃𝑎\n𝑃𝑁 𝑂 = 9,73 × 104 𝑚𝑚𝐻𝑔\nVous remarquez que la température dans la salle d'opération a récemment augmenté de plusieurs degrés à cause de la chaleur générée par les équipements médicaux. La nouvelle température dans la salle est de 25°𝐶. Vous vous demandez alors comment cette variation de température pourrait affecter la pression dans la bouteille.",
                 "images": [],
                 "question": "Concernant la variation relative de la pression dans la bouteille après l’augmentation de température, laquelle (lesquelles) de ces propositions est (sont) exacte(s) :",
                 "options": [
@@ -17960,7 +17960,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "La variation relative de la pression est d'environ +25%\nLes molécules de protoxyde d’azote vont en moyenne plus vite que celles d'oxygène\nLes molécules d'oxygène ont plus d'énergie cinétique à 25°𝐶 qu'à 20°𝐶\nConcernant la durée d’utilisation de la bouteille à température constante,\nlaquelle (lesquelles) de ces propositions est (sont) exacte(s) :\nLa durée d’utilisation de la bouteille est d’environ 3,6 minutes\nLa durée d’utilisation de la bouteille est d’environ 3,6 heures\nLa durée d’utilisation de la bouteille est d’environ 12 heures\nLa durée d’utilisation de la bouteille est d’environ 760 minutes\nLa durée d’utilisation de la bouteille est d’environ 900 minutes\nÀ la suite de l’opération réussie, notre patient se trouve en salle de réveil, où il commence à sortir lentement de son anesthésie. Cependant, un chantier à proximité génère des bruits importants qui pourraient le perturber. La salle est dotée de murs épais et de fenêtres à double vitrage. Le chantier est composé d’une scie circulaire produisant une onde sonore sphérique d’une puissance 𝑃<sub>𝑠</sub> = 1,2 𝑊 et d’un marteau piqueur produisant une onde sonore sphérique de puissance 𝑃<sub>𝑚</sub> et de 𝐿<sub>𝑚</sub> = 120 𝑑𝐵 à 1 mètre. Le niveau sonore produit par les personnes présentes sur le chantier est considéré comme négligeable face aux bruits émis par les deux outils. On rappelle que 𝐼<sub>𝑟𝑒𝑓</sub> = 10<sup>−12</sup> 𝑊. 𝑚<sup>−2</sup> et que la vitesse du son dans l’air vaut 𝑐 =\n330 𝑚. 𝑠<sup>−1</sup>.\nOn note 𝐿<sub>𝑥</sub> le niveau sonore associé aux deux outils qui émettent en même temps. On précise qu’il n’y a pas de phénomène d’absorption avant la question 10.",
+                "context": "La variation relative de la pression est d'environ +25%\nLes molécules de protoxyde d’azote vont en moyenne plus vite que celles d'oxygène\nLes molécules d'oxygène ont plus d'énergie cinétique à 25°𝐶 qu'à 20°𝐶\nConcernant la durée d’utilisation de la bouteille à température constante,\nlaquelle (lesquelles) de ces propositions est (sont) exacte(s) :\nLa durée d’utilisation de la bouteille est d’environ 3,6 minutes\nLa durée d’utilisation de la bouteille est d’environ 3,6 heures\nLa durée d’utilisation de la bouteille est d’environ 12 heures\nLa durée d’utilisation de la bouteille est d’environ 760 minutes\nLa durée d’utilisation de la bouteille est d’environ 900 minutes\nÀ la suite de l’opération réussie, notre patient se trouve en salle de réveil, où il commence à sortir lentement de son anesthésie. Cependant, un chantier à proximité génère des bruits importants qui pourraient le perturber. La salle est dotée de murs épais et de fenêtres à double vitrage. Le chantier est composé d’une scie circulaire produisant une onde sonore sphérique d’une puissance 𝑃𝑠 = 1,2 𝑊 et d’un marteau piqueur produisant une onde sonore sphérique de puissance 𝑃𝑚 et de 𝐿𝑚 = 120 𝑑𝐵 à 1 mètre. Le niveau sonore produit par les personnes présentes sur le chantier est considéré comme négligeable face aux bruits émis par les deux outils. On rappelle que 𝐼𝑟𝑒𝑓 = \\(10^{-12}\\) 𝑊. 𝑚−2 et que la vitesse du son dans l’air vaut 𝑐 =\n330 𝑚. 𝑠−1.\nOn note 𝐿𝑥 le niveau sonore associé aux deux outils qui émettent en même temps. On précise qu’il n’y a pas de phénomène d’absorption avant la question 10.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q7_enonce.png"
                 ],
@@ -18006,7 +18006,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 8,
                 "type": "QCM",
-                "context": "En triplant le rayon, 𝐿<sub>𝑥</sub>’ = 𝐿<sub>𝑥</sub> − 6\nUn technicien de l’hôpital, se trouvant à la même distance de la source que le patient, mesure dans la chambre du dessous près d’une fenêtre ouverte un niveau sonore de 𝐿<sub>𝑡</sub> = 75 𝑑𝐵. Ne voulant pas se déplacer pour mesurer, il veut savoir si notre patient pourrait se réveiller… Pour atteindre le patient, l’onde doit traverser la double vitrine ou le mur. Il connaît les caractéristiques suivantes :\nVitesse du son à travers le mur 𝑐<sub>𝑚</sub> = 3400 𝑚. 𝑠<sup>−1</sup>\nVitesse du son à travers la vitrine 𝑐<sub>𝑣</sub> = 4775 𝑚. 𝑠<sup>−1</sup>\nMasse volumique du mur : 𝜌<sub>𝑚</sub> = 2300 𝑘𝑔. 𝑚<sup>−3</sup>\nMasse volumique de la vitrine : 𝜌<sub>𝑣</sub> = 2500 𝑘𝑔. 𝑚<sup>−3</sup>\nCoefficient de transmission d’intensité de l’onde entre l’air et une vitre : 𝑇<sub>𝑎𝑖𝑟−𝑣𝑖𝑡𝑟𝑒</sub> = 0,85\nPar ailleurs, on note 𝑍<sub>𝑚</sub> l’impédance du mur et 𝑍<sub>𝑣</sub> l’impédance d’une vitre.",
+                "context": "En triplant le rayon, 𝐿𝑥’ = 𝐿𝑥 − 6\nUn technicien de l’hôpital, se trouvant à la même distance de la source que le patient, mesure dans la chambre du dessous près d’une fenêtre ouverte un niveau sonore de 𝐿𝑡 = 75 𝑑𝐵. Ne voulant pas se déplacer pour mesurer, il veut savoir si notre patient pourrait se réveiller… Pour atteindre le patient, l’onde doit traverser la double vitrine ou le mur. Il connaît les caractéristiques suivantes :\nVitesse du son à travers le mur 𝑐𝑚 = 3400 𝑚. 𝑠−1\nVitesse du son à travers la vitrine 𝑐𝑣 = 4775 𝑚. 𝑠−1\nMasse volumique du mur : 𝜌𝑚 = 2300 𝑘𝑔. 𝑚−3\nMasse volumique de la vitrine : 𝜌𝑣 = 2500 𝑘𝑔. 𝑚−3\nCoefficient de transmission d’intensité de l’onde entre l’air et une vitre : 𝑇𝑎𝑖𝑟−𝑣𝑖𝑡𝑟𝑒 = 0,85\nPar ailleurs, on note 𝑍𝑚 l’impédance du mur et 𝑍𝑣 l’impédance d’une vitre.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q8_enonce.png"
                 ],
@@ -18052,7 +18052,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 9,
                 "type": "QCM",
-                "context": "La longueur d’onde des sons peut changer au travers de chaque interface\nIntéressons-nous plus particulièrement à nos fenêtres. Nos fenêtres sont équipées de vitres et sont d’une épaisseur totale (comptant le double vitrage) de 𝑤 = 10 𝑚𝑚, de coefficient d'atténuation en intensité 𝜇 = 345 𝑚<sup>−1</sup> et d’une absorption par l’air négligeable. On rappelle\nlog",
+                "context": "La longueur d’onde des sons peut changer au travers de chaque interface\nIntéressons-nous plus particulièrement à nos fenêtres. Nos fenêtres sont équipées de vitres et sont d’une épaisseur totale (comptant le double vitrage) de 𝑤 = 10 𝑚𝑚, de coefficient d'atténuation en intensité 𝜇 = 345 𝑚−1 et d’une absorption par l’air négligeable. On rappelle\nlog",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q9_enonce.png"
                 ],
@@ -18098,7 +18098,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 11,
                 "type": "QCM",
-                "context": "On considère uniquement la transmission du son par le double vitrage. On note\n𝐼<sub>𝑟𝑒ç𝑢</sub> l’intensité reçue et 𝐿<sub>𝑟𝑒ç𝑢</sub> le niveau d’intensité sonore reçu par cette transmission. En considérant que notre patient ne se réveille qu’à partir d’un niveau sonore de 60 𝑑𝐵. On rappelle que l’absorption de l’air est négligée. Laquelle (lesquelles) de ces propositions est (sont) exacte(s) :\n𝐼𝑟𝑒ç𝑢 = 𝐼𝑡 × 𝑒 −𝜇𝑤 × 4𝑇𝑎𝑖𝑟−𝑣𝑖𝑡𝑟𝑒\n𝐿<sub>𝑟𝑒𝑐𝑢</sub> = 𝐿<sub>𝑡</sub> + 10 log( 𝑒 <sup>−𝜇𝑤</sup>) + 40𝑙𝑜𝑔(𝑇<sub>𝑎𝑖𝑟−𝑣𝑖𝑡𝑟𝑒</sub>)\n𝐿<sub>𝑟𝑒𝑐𝑢</sub> = 𝐿<sub>𝑡</sub> + 10𝑙𝑜𝑔(4𝑇<sub>𝑎𝑖𝑟−𝑣𝑖𝑡𝑟𝑒</sub>) - 𝑤𝐴\nLe patient se réveille\nLe patient ne se réveille pas\nPartie 1 : Défibrillateur\nUn défibrillateur est un appareil médical destiné à rétablir un rythme cardiaque normal lors d’épisodes de tachycardie sévère ou d’infarctus du myocarde par le biais d’une décharge électrique.\nIl est constitué de deux palettes de mêmes dimensions et d’un boîtier de commande, chargé de générer la décharge électrique qui sera délivrée au patient pour le réanimer. Les palettes se chargent donc progressivement jusqu’à atteindre une différence de potentiel Δ𝑉 = 1000 𝑉 entre elles au moment de la décharge. La distance entre les deux palettes vaut 𝑑 = 20 𝑐𝑚.\nUn ambulancier, qui se prépare à défibriller un patient, positionne face à face les deux palettes chargées à leur maximum, comme illustré sur le schéma ci-dessous :\nOn assimilera les deux palettes à un condensateur plan électrique de capacité 𝐶.\nOn donne 𝜖<sub>0</sub> = 8,9 × 10<sup>−12</sup> 𝐹 ⋅ 𝑚<sup>−1</sup> la permittivité de l’air entre les palettes. On rappelle la valeur de la charge élémentaire 𝑒 = 1,6 × 10<sup>−19</sup> 𝐶, la valeur de l’accélération de la pesanteur\n𝑔 = 9,81 𝑚 ⋅ 𝑠<sup>−2</sup> ainsi que la formule du champ électrique au sein d’un condensateur 𝐸 = 𝜎.\nOn néglige les frottements tout au long de l’exercice, ainsi que l’action du poids par rapport au(x) autre(s) force(s).",
+                "context": "On considère uniquement la transmission du son par le double vitrage. On note\n𝐼𝑟𝑒ç𝑢 l’intensité reçue et 𝐿𝑟𝑒ç𝑢 le niveau d’intensité sonore reçu par cette transmission. En considérant que notre patient ne se réveille qu’à partir d’un niveau sonore de 60 𝑑𝐵. On rappelle que l’absorption de l’air est négligée. Laquelle (lesquelles) de ces propositions est (sont) exacte(s) :\n𝐼𝑟𝑒ç𝑢 = 𝐼𝑡 × 𝑒 −𝜇𝑤 × 4𝑇𝑎𝑖𝑟−𝑣𝑖𝑡𝑟𝑒\n𝐿𝑟𝑒𝑐𝑢 = 𝐿𝑡 + 10 log( 𝑒 −𝜇𝑤) + 40𝑙𝑜𝑔(𝑇𝑎𝑖𝑟−𝑣𝑖𝑡𝑟𝑒)\n𝐿𝑟𝑒𝑐𝑢 = 𝐿𝑡 + 10𝑙𝑜𝑔(4𝑇𝑎𝑖𝑟−𝑣𝑖𝑡𝑟𝑒) - 𝑤𝐴\nLe patient se réveille\nLe patient ne se réveille pas\nPartie 1 : Défibrillateur\nUn défibrillateur est un appareil médical destiné à rétablir un rythme cardiaque normal lors d’épisodes de tachycardie sévère ou d’infarctus du myocarde par le biais d’une décharge électrique.\nIl est constitué de deux palettes de mêmes dimensions et d’un boîtier de commande, chargé de générer la décharge électrique qui sera délivrée au patient pour le réanimer. Les palettes se chargent donc progressivement jusqu’à atteindre une différence de potentiel \\(\\Delta\\)𝑉 = 1000 𝑉 entre elles au moment de la décharge. La distance entre les deux palettes vaut 𝑑 = 20 𝑐𝑚.\nUn ambulancier, qui se prépare à défibriller un patient, positionne face à face les deux palettes chargées à leur maximum, comme illustré sur le schéma ci-dessous :\nOn assimilera les deux palettes à un condensateur plan électrique de capacité 𝐶.\nOn donne 𝜖0 = 8,9 × \\(10^{-12}\\) 𝐹 ⋅ 𝑚−1 la permittivité de l’air entre les palettes. On rappelle la valeur de la charge élémentaire 𝑒 = 1,6 × \\(10^{-19}\\) 𝐶, la valeur de l’accélération de la pesanteur\n𝑔 = 9,81 𝑚 ⋅ 𝑠−2 ainsi que la formule du champ électrique au sein d’un condensateur 𝐸 = 𝜎.\nOn néglige les frottements tout au long de l’exercice, ainsi que l’action du poids par rapport au(x) autre(s) force(s).",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q11_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_3/image3.png"
@@ -18145,7 +18145,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": "Le champ est moteur pour le déplacement d’un électron de la plaque 𝜎<sup>−</sup> à la plaque 𝜎<sup>+</sup>\nOn étudie un électron de masse 𝑚 = 9,1 × 10<sup>−31</sup> 𝑘𝑔 placé sans vitesse initiale dans le condensateur. On note +𝑄 et −𝑄 la charge respectivement de la palette 𝜎<sup>+</sup>et de la palette 𝜎<sup>−</sup>.",
+                "context": "Le champ est moteur pour le déplacement d’un électron de la plaque 𝜎− à la plaque 𝜎+\nOn étudie un électron de masse 𝑚 = 9,1 × \\(10^{-31}\\) 𝑘𝑔 placé sans vitesse initiale dans le condensateur. On note +𝑄 et −𝑄 la charge respectivement de la palette 𝜎+et de la palette 𝜎−.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q12_enonce.png"
                 ],
@@ -18191,7 +18191,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "Si on place un électron près de la plaque 𝜎<sup>−</sup> en dehors du condensateur, il est repoussé\nL’électron est en mouvement rectiligne uniforme durant son trajet entre la plaque 𝜎<sup>−</sup> et la plaque 𝜎<sup>+</sup>\nPartie 2 : ECG\nUn patient se rend à l’hôpital pour une consultation en cardiologie à la suite de sensations d’essoufflement anormal après un effort.\nLe cardiologue fait passer un ECG à son patient.\nPour simplifier les calculs, on définit le vecteur 𝑃⃗→ =𝑝→\nqui intervient dans le calcul des\ndérivations données sur le schéma suivant :\nLe vecteur 𝒑⃗→ est placé ici arbitrairement, (il représente l’axe du cœur) et tous les vecteurs 𝑢⃗→ sont unitaires.\nIl obtient les valeurs suivantes pour son patient :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>𝑎𝑉<sub>𝐿</sub></th><th>𝑉<sub>𝐼</sub></th><th>𝑎𝑉<sub>𝑅</sub></th><th>𝑉𝐼𝐼</th><th>𝑎𝑉<sub>𝐹</sub></th><th>𝑉𝐼𝐼𝐼</th></tr><tr><th>𝑚𝑉</th><td>1,1</td><td>1.7</td><td>–1,4</td><td>1.16</td><td>0.3</td><td>– 0.5</td></tr></table></div>",
+                "context": "Si on place un électron près de la plaque 𝜎− en dehors du condensateur, il est repoussé\nL’électron est en mouvement rectiligne uniforme durant son trajet entre la plaque 𝜎− et la plaque 𝜎+\nPartie 2 : ECG\nUn patient se rend à l’hôpital pour une consultation en cardiologie à la suite de sensations d’essoufflement anormal après un effort.\nLe cardiologue fait passer un ECG à son patient.\nPour simplifier les calculs, on définit le vecteur 𝑃⃗→ =𝑝→\nqui intervient dans le calcul des\ndérivations données sur le schéma suivant :\nLe vecteur 𝒑⃗→ est placé ici arbitrairement, (il représente l’axe du cœur) et tous les vecteurs 𝑢⃗→ sont unitaires.\nIl obtient les valeurs suivantes pour son patient :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>𝑎𝑉𝐿</th><th>𝑉𝐼</th><th>𝑎𝑉𝑅</th><th>𝑉𝐼𝐼</th><th>𝑎𝑉𝐹</th><th>𝑉𝐼𝐼𝐼</th></tr><tr><th>𝑚𝑉</th><td>1,1</td><td>1.7</td><td>–1,4</td><td>1.16</td><td>0.3</td><td>– 0.5</td></tr></table></div>",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q13_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_3/image4.jpeg"
@@ -18282,7 +18282,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "Le patient est soudainement victime d’un infarctus du myocarde, ce qui provoque un changement dans les valeurs des dérivations enregistrées par la machine. On obtient un nouveau tableau incomplet qui est le suivant :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>𝑎𝑉<sup>′</sup> 𝑅</th><th>𝑉′ 𝐼𝐼𝐼</th></tr><tr><th>𝑚𝑉</th><td>0.3</td><td>1.3</td></tr></table></div>\nOn définit le vecteur 𝑃⃗⃗⃗→′ = 𝑝⃗⃗⃗⃗′→\nLes expressions des dérivations restent les mêmes que celles indiquées sur le schéma initial.",
+                "context": "Le patient est soudainement victime d’un infarctus du myocarde, ce qui provoque un changement dans les valeurs des dérivations enregistrées par la machine. On obtient un nouveau tableau incomplet qui est le suivant :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>𝑎𝑉′ 𝑅</th><th>𝑉′ 𝐼𝐼𝐼</th></tr><tr><th>𝑚𝑉</th><td>0.3</td><td>1.3</td></tr></table></div>\nOn définit le vecteur 𝑃⃗⃗⃗→′ = 𝑝⃗⃗⃗⃗′→\nLes expressions des dérivations restent les mêmes que celles indiquées sur le schéma initial.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q15_enonce.png"
                 ],
@@ -18327,7 +18327,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 16,
                 "type": "QCM",
-                "context": "On étudie l’embranchement du tronc artériel brachio-céphalique (TABC) en artère carotide (C) et artère axillaire (Axi) qui, après échange O2/CO2 dans les capillaires, deviennent respectivement la veine jugulaire (J) et la veine sous-clavière (SC) avant de se rejoindre pour former la Tronc Veineux Brachio-Céphalique (TVBC).\nOn donne 𝑄<sub>2</sub> et 𝑟<sub>2</sub> = 0,6 𝑐𝑚 ainsi que 𝑄<sub>3</sub> et 𝑟<sub>3</sub> = 0,5 𝑐𝑚 le débit et le rayon respectivement de l’artère carotide et de l’artère axillaire. On donne également 𝐿<sub>2</sub> = 0,3 𝑚, 𝐿<sub>3</sub> = 0,5 𝑚, 𝐿<sub>6</sub> = 0,3 𝑚 et 𝐿<sub>7</sub> = 0,5 𝑚 les longueurs respectives de l’artère carotide, l’artère axillaire, la veine jugulaire et la veine sous-clavière.\nSoit 𝑅<sub>𝑒𝑞</sub> la résistance du système {TABC + C + capillaire carotidojugulaire + J + Axi + capillaire sous clavier + SC + TVBC} avec 𝑅<sub>4</sub> la résistance du capillaire carotidojugulaire et\n𝑅<sub>5</sub> la résistance du capillaire sous clavier.\nOn donne également 𝑟<sub>6</sub> = 0,004 𝑚 et 𝑟<sub>7</sub> = 0,003 𝑚 les rayons respectifs des veines jugulaire et sous-clavière.\nParamètres :\n𝜂 = 5 × 10<sup>−3</sup> 𝑃𝑎 ⋅ 𝑠 la viscosité du sang\n𝑣<sub>2</sub> = 0,25 𝑚 ⋅ 𝑠<sup>−1</sup> la vitesse du sang au centre de l’artère carotide\n𝑣<sub>3</sub> = 0,2 𝑚 ⋅ 𝑠<sup>−1</sup> la vitesse du sang au centre de l’artère axillaire.",
+                "context": "On étudie l’embranchement du tronc artériel brachio-céphalique (TABC) en artère carotide (C) et artère axillaire (Axi) qui, après échange O2/CO2 dans les capillaires, deviennent respectivement la veine jugulaire (J) et la veine sous-clavière (SC) avant de se rejoindre pour former la Tronc Veineux Brachio-Céphalique (TVBC).\nOn donne 𝑄2 et 𝑟2 = 0,6 𝑐𝑚 ainsi que 𝑄3 et 𝑟3 = 0,5 𝑐𝑚 le débit et le rayon respectivement de l’artère carotide et de l’artère axillaire. On donne également 𝐿2 = 0,3 𝑚, 𝐿3 = 0,5 𝑚, 𝐿6 = 0,3 𝑚 et 𝐿7 = 0,5 𝑚 les longueurs respectives de l’artère carotide, l’artère axillaire, la veine jugulaire et la veine sous-clavière.\nSoit 𝑅𝑒𝑞 la résistance du système {TABC + C + capillaire carotidojugulaire + J + Axi + capillaire sous clavier + SC + TVBC} avec 𝑅4 la résistance du capillaire carotidojugulaire et\n𝑅5 la résistance du capillaire sous clavier.\nOn donne également 𝑟6 = 0,004 𝑚 et 𝑟7 = 0,003 𝑚 les rayons respectifs des veines jugulaire et sous-clavière.\nParamètres :\n𝜂 = 5 × \\(10^{-3}\\) 𝑃𝑎 ⋅ 𝑠 la viscosité du sang\n𝑣2 = 0,25 𝑚 ⋅ 𝑠−1 la vitesse du sang au centre de l’artère carotide\n𝑣3 = 0,2 𝑚 ⋅ 𝑠−1 la vitesse du sang au centre de l’artère axillaire.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q16_enonce.png",
                     "annales_assets/2024_2025/physique/tuto_3/image5.jpeg",
@@ -18375,7 +18375,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "+ 𝑅<sub>8</sub>\n𝑅<sub>𝑒𝑞</sub>\n= 𝑅<sub>1</sub>\n+ 𝑅<sub>8</sub>",
+                "context": "+ 𝑅8\n𝑅𝑒𝑞\n= 𝑅1\n+ 𝑅8",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q17_enonce.png"
                 ],
@@ -18421,7 +18421,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 18,
                 "type": "QCM",
-                "context": "𝑅<sub>7</sub> ≈ 2 × 10<sup>7</sup> 𝑃𝑎 ⋅ 𝑚<sup>3</sup> ⋅ 𝑠<sup>−1</sup>\n𝑅<sub>7</sub> ≈ 8 × 10<sup>7</sup>𝑃𝑎 ⋅ 𝑚<sup>3</sup> ⋅ 𝑠<sup>−1</sup>\nOn considère le déplacement du sang dans l’artère carotide.",
+                "context": "𝑅7 ≈ 2 × 107 𝑃𝑎 ⋅ 𝑚3 ⋅ 𝑠−1\n𝑅7 ≈ 8 × 107𝑃𝑎 ⋅ 𝑚3 ⋅ 𝑠−1\nOn considère le déplacement du sang dans l’artère carotide.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q18_enonce.png"
                 ],
@@ -18467,7 +18467,7 @@ window.ANNALES_2024_2025 = [
             {
                 "num": 19,
                 "type": "QCM",
-                "context": "𝑄<sub>1</sub> = 0,022 𝐿 ⋅ 𝑠<sup>−1</sup>\n𝑄<sub>1</sub> = 0,044 𝐿 ⋅ 𝑠<sup>−1</sup>\nOn donne 𝑃 = 0,003 𝑊 la puissance dissipée par les frottements dans la veine jugulaire.",
+                "context": "𝑄1 = 0,022 𝐿 ⋅ 𝑠−1\n𝑄1 = 0,044 𝐿 ⋅ 𝑠−1\nOn donne 𝑃 = 0,003 𝑊 la puissance dissipée par les frottements dans la veine jugulaire.",
                 "images": [
                     "annales_assets/2024_2025/physique/tuto_3/q19_enonce.png"
                 ],
@@ -20026,7 +20026,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "D",
-                        "text": "Le CO<sub>2</sub> est lié à tous les secteurs",
+                        "text": "Le \\(CO_{2}\\) est lié à tous les secteurs",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
@@ -23330,7 +23330,7 @@ window.ANNALES_2024_2025 = [
                     },
                     {
                         "id": "E",
-                        "text": "Les trois principaux gaz à effet de serre sont le CO<sub>2</sub>, les CFC et les Nox",
+                        "text": "Les trois principaux gaz à effet de serre sont le \\(CO_{2}\\), les CFC et les Nox",
                         "isCorrect": true,
                         "explanation": "VRAI - En effet l’ozone est le + préoccupant des polluants à l’heure actuelle puisque à la différence du dioxyde d’azote qui baisse mais pas assez et des particules fines qui restent stables, lui augmente. On observe une augmentation exponentielle des niveaux d’ozone sur tout l’hémisphère nord. On peut donc dire que les niveaux de particules fines diminuent plus lentement que ceux de monoxyde de carbone."
                     }

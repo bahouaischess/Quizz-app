@@ -154,7 +154,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "On s’intéresse ensuite à l’implication de RAS dans l’autophagie, notamment avec la voie mTORC1, et à étudier la localisation subcellulaire du complexe impliquant RAS, SLC3A2 et mTOR dans des cellules de myélome multiple. Pour cela, les chercheurs analysent par western blot les conséquences de l’invalidation des isoformes KRAS ou NRAS sur l’activation des voies mTORC1 et MAPK dans différentes lignées cellulaires (Figure 2A). Ils réalisent ensuite une analyse par immunofluorescence afin d’étudier les colocalisations potentielles (Figures 2B-C).\nFigure 2 – A : Analyse par western blot d’extraits protéiques issus des lignées de myélome mul-tiple RPMI 8226, XG2, SKMM1 et L363 après invalidation de KRAS (shKRAS.1 et shKRAS.2) ou de NRAS (shNRAS.1 et shNRAS.2) par interférence ARN. Les niveaux de p-p70S6K et p-4EBP1 sont analysés afin d’évaluer l’activation de la voie mTORC1. Les formes totales de p70S6K, 4EBP1, MEK et RAS sont également détectées. La β-actine est utilisée comme témoin de charge. B : Analyse par immunofluorescence des lignées RPMI 8226 et SKMM1. mTOR est visualisée en rouge, RAS fusionnée à mNeonGreen en vert, SLC3A2 en magenta et LAMP1, marqueur des lysosomes, en cyan. Les pointes de flèche indiquent des zones de colocalisation. C : Détection de l’interaction entre mTOR et RAS par Proximity Ligation Assay (PLA) dans les lignées RPMI 8226 et SKMM1. Les signaux PLA apparaissent en rouge. Les noyaux sont marqués au DAPI (bleu) et la membrane plasmique est visualisée par la WGA (Wheat Germ Agglutinin) en vert. Les images fusionnées (« Merge ») permettent de visualiser la localisation des signaux PLA au sein des cellules. Les flèches indiquent une colocalisation.",
+                "context": "On s’intéresse ensuite à l’implication de RAS dans l’autophagie, notamment avec la voie mTORC1, et à étudier la localisation subcellulaire du complexe impliquant RAS, SLC3A2 et mTOR dans des cellules de myélome multiple. Pour cela, les chercheurs analysent par western blot les conséquences de l’invalidation des isoformes KRAS ou NRAS sur l’activation des voies mTORC1 et MAPK dans différentes lignées cellulaires (Figure 2A). Ils réalisent ensuite une analyse par immunofluorescence afin d’étudier les colocalisations potentielles (Figures 2B-C).\nFigure 2 – A : Analyse par western blot d’extraits protéiques issus des lignées de myélome mul-tiple RPMI 8226, XG2, SKMM1 et L363 après invalidation de KRAS (shKRAS.1 et shKRAS.2) ou de NRAS (shNRAS.1 et shNRAS.2) par interférence ARN. Les niveaux de p-p70S6K et p-4EBP1 sont analysés afin d’évaluer l’activation de la voie mTORC1. Les formes totales de p70S6K, 4EBP1, MEK et RAS sont également détectées. La \\(\\beta\\)-actine est utilisée comme témoin de charge. B : Analyse par immunofluorescence des lignées RPMI 8226 et SKMM1. mTOR est visualisée en rouge, RAS fusionnée à mNeonGreen en vert, SLC3A2 en magenta et LAMP1, marqueur des lysosomes, en cyan. Les pointes de flèche indiquent des zones de colocalisation. C : Détection de l’interaction entre mTOR et RAS par Proximity Ligation Assay (PLA) dans les lignées RPMI 8226 et SKMM1. Les signaux PLA apparaissent en rouge. Les noyaux sont marqués au DAPI (bleu) et la membrane plasmique est visualisée par la WGA (Wheat Germ Agglutinin) en vert. Les images fusionnées (« Merge ») permettent de visualiser la localisation des signaux PLA au sein des cellules. Les flèches indiquent une colocalisation.",
                 "images": [
                     "annales_assets/2026_2027/bio_cellulaire/tuto_1/image4.jpeg"
                 ],
@@ -200,7 +200,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "On s’intéresse ensuite à l’implication de RAS dans l’autophagie, notamment avec la voie mTORC1, et à étudier la localisation subcellulaire du complexe impliquant RAS, SLC3A2 et mTOR dans des cellules de myélome multiple. Pour cela, les chercheurs analysent par western blot les conséquences de l’invalidation des isoformes KRAS ou NRAS sur l’activation des voies mTORC1 et MAPK dans différentes lignées cellulaires (Figure 2A). Ils réalisent ensuite une analyse par immunofluorescence afin d’étudier les colocalisations potentielles (Figures 2B-C).\nFigure 2 – A : Analyse par western blot d’extraits protéiques issus des lignées de myélome mul-tiple RPMI 8226, XG2, SKMM1 et L363 après invalidation de KRAS (shKRAS.1 et shKRAS.2) ou de NRAS (shNRAS.1 et shNRAS.2) par interférence ARN. Les niveaux de p-p70S6K et p-4EBP1 sont analysés afin d’évaluer l’activation de la voie mTORC1. Les formes totales de p70S6K, 4EBP1, MEK et RAS sont également détectées. La β-actine est utilisée comme témoin de charge. B : Analyse par immunofluorescence des lignées RPMI 8226 et SKMM1. mTOR est visualisée en rouge, RAS fusionnée à mNeonGreen en vert, SLC3A2 en magenta et LAMP1, marqueur des lysosomes, en cyan. Les pointes de flèche indiquent des zones de colocalisation. C : Détection de l’interaction entre mTOR et RAS par Proximity Ligation Assay (PLA) dans les lignées RPMI 8226 et SKMM1. Les signaux PLA apparaissent en rouge. Les noyaux sont marqués au DAPI (bleu) et la membrane plasmique est visualisée par la WGA (Wheat Germ Agglutinin) en vert. Les images fusionnées (« Merge ») permettent de visualiser la localisation des signaux PLA au sein des cellules. Les flèches indiquent une colocalisation.",
+                "context": "On s’intéresse ensuite à l’implication de RAS dans l’autophagie, notamment avec la voie mTORC1, et à étudier la localisation subcellulaire du complexe impliquant RAS, SLC3A2 et mTOR dans des cellules de myélome multiple. Pour cela, les chercheurs analysent par western blot les conséquences de l’invalidation des isoformes KRAS ou NRAS sur l’activation des voies mTORC1 et MAPK dans différentes lignées cellulaires (Figure 2A). Ils réalisent ensuite une analyse par immunofluorescence afin d’étudier les colocalisations potentielles (Figures 2B-C).\nFigure 2 – A : Analyse par western blot d’extraits protéiques issus des lignées de myélome mul-tiple RPMI 8226, XG2, SKMM1 et L363 après invalidation de KRAS (shKRAS.1 et shKRAS.2) ou de NRAS (shNRAS.1 et shNRAS.2) par interférence ARN. Les niveaux de p-p70S6K et p-4EBP1 sont analysés afin d’évaluer l’activation de la voie mTORC1. Les formes totales de p70S6K, 4EBP1, MEK et RAS sont également détectées. La \\(\\beta\\)-actine est utilisée comme témoin de charge. B : Analyse par immunofluorescence des lignées RPMI 8226 et SKMM1. mTOR est visualisée en rouge, RAS fusionnée à mNeonGreen en vert, SLC3A2 en magenta et LAMP1, marqueur des lysosomes, en cyan. Les pointes de flèche indiquent des zones de colocalisation. C : Détection de l’interaction entre mTOR et RAS par Proximity Ligation Assay (PLA) dans les lignées RPMI 8226 et SKMM1. Les signaux PLA apparaissent en rouge. Les noyaux sont marqués au DAPI (bleu) et la membrane plasmique est visualisée par la WGA (Wheat Germ Agglutinin) en vert. Les images fusionnées (« Merge ») permettent de visualiser la localisation des signaux PLA au sein des cellules. Les flèches indiquent une colocalisation.",
                 "images": [
                     "annales_assets/2026_2027/bio_cellulaire/tuto_1/image4.jpeg"
                 ],
@@ -246,7 +246,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 6,
                 "type": "QCM",
-                "context": "Les chercheurs s’intéressent désormais à déterminer si MAPK6 (une isoforme de la protéine MAPK) régule l’activation de la voie PI3K/AKT et ses conséquences fonctionnelles. Ils ana-lysent d’abord l’effet de la surexpression de MAPK6 ou de MAPK4 sur la phosphorylation d’AKT dans des cellules exprimant AKT (Figure 3A). Ils étudient ensuite l’impact de l’inva-lidation de MAPK6 sur l’activation d’AKT et de son substrat GSK3β dans plusieurs lignées cellulaires tumorales (Figure 3B). Enfin, ils évaluent les conséquences de cette inhibition sur la prolifération cellulaire à l’aide d’un test colorimétrique dans des cellules PC3 (Figure 3C).\nFigure 3 – A : Analyse par western blot de cellules surexprimant AKT1-FLAG seul ou en présence de quantités croissantes de MAPK6-HA ou de MAPK4-HA. L’expression de MAPK4 et MAPK6 est détectée avec un anticorps anti-HA (IB : HA). L’activation d’AKT est évaluée par la détection de sa phosphorylation sur les résidus Thr308 (p-AKT T308) et Ser473 (p-AKT S473). Le western blot anti-AKT-FLAG vérifie le niveau d’expression total d’AKT. B : Analyse par western blot de plusieurs lignées cellulaires tumorales (MCF7, PC3, H1299 et SUM159) après inhibition de l’expression de MAPK6. Dans les cellules MCF7, MAPK6 est invalidée par des shARN inductibles (iNT : contrôle non ciblant ; clones 3 et 5). Dans les cellules PC3, H1299 et SUM159, MAPK6 est invalidée par deux siARN indépendants (siA4 et siA6), comparés à un siRNA contrôle dirigé contre la luciférase (siLuc). Les western blots détectent MAPK6, les formes phosphorylées d’AKT sur la Thr308 et la Ser473, AKT total, la phosphorylation de GSK3β sur la sérine 9 (p-GSK3β S9), substrat d’AKT, ainsi que la β-actine utilisée comme contrôle de chargement. C : Analyse de la prolifération de cellules PC3 après extinction de MAPK6 par deux siARN indépendants (siA4 et siA6) ou traitement contrôle (siLuc). La prolifération cellulaire est mesurée à différents temps (1, 3 et 5 jours) par un test colorimétrique avec lecture de l’absorbance à 570 nm. Le préfixe “i” indique l’ajout de la condition étudiée. Les résultats sont présentés sous forme de moyenne ± erreur standard. Les différences statistiques sont indiquées par ns (non significatif) et *** (p < 0,001).",
+                "context": "Les chercheurs s’intéressent désormais à déterminer si MAPK6 (une isoforme de la protéine MAPK) régule l’activation de la voie PI3K/AKT et ses conséquences fonctionnelles. Ils ana-lysent d’abord l’effet de la surexpression de MAPK6 ou de MAPK4 sur la phosphorylation d’AKT dans des cellules exprimant AKT (Figure 3A). Ils étudient ensuite l’impact de l’inva-lidation de MAPK6 sur l’activation d’AKT et de son substrat GSK3\\(\\beta\\) dans plusieurs lignées cellulaires tumorales (Figure 3B). Enfin, ils évaluent les conséquences de cette inhibition sur la prolifération cellulaire à l’aide d’un test colorimétrique dans des cellules PC3 (Figure 3C).\nFigure 3 – A : Analyse par western blot de cellules surexprimant AKT1-FLAG seul ou en présence de quantités croissantes de MAPK6-HA ou de MAPK4-HA. L’expression de MAPK4 et MAPK6 est détectée avec un anticorps anti-HA (IB : HA). L’activation d’AKT est évaluée par la détection de sa phosphorylation sur les résidus Thr308 (p-AKT T308) et Ser473 (p-AKT S473). Le western blot anti-AKT-FLAG vérifie le niveau d’expression total d’AKT. B : Analyse par western blot de plusieurs lignées cellulaires tumorales (MCF7, PC3, H1299 et SUM159) après inhibition de l’expression de MAPK6. Dans les cellules MCF7, MAPK6 est invalidée par des shARN inductibles (iNT : contrôle non ciblant ; clones 3 et 5). Dans les cellules PC3, H1299 et SUM159, MAPK6 est invalidée par deux siARN indépendants (siA4 et siA6), comparés à un siRNA contrôle dirigé contre la luciférase (siLuc). Les western blots détectent MAPK6, les formes phosphorylées d’AKT sur la Thr308 et la Ser473, AKT total, la phosphorylation de GSK3\\(\\beta\\) sur la sérine 9 (p-GSK3\\(\\beta\\) S9), substrat d’AKT, ainsi que la \\(\\beta\\)-actine utilisée comme contrôle de chargement. C : Analyse de la prolifération de cellules PC3 après extinction de MAPK6 par deux siARN indépendants (siA4 et siA6) ou traitement contrôle (siLuc). La prolifération cellulaire est mesurée à différents temps (1, 3 et 5 jours) par un test colorimétrique avec lecture de l’absorbance à 570 nm. Le préfixe “i” indique l’ajout de la condition étudiée. Les résultats sont présentés sous forme de moyenne ± erreur standard. Les différences statistiques sont indiquées par ns (non significatif) et *** (p < 0,001).",
                 "images": [
                     "annales_assets/2026_2027/bio_cellulaire/tuto_1/image5.jpeg"
                 ],
@@ -343,35 +343,35 @@ window.ANNALES_2026_2027 = [
                 "images": [
                     "annales_assets/2026_2027/bio_cellulaire/tuto_1/image7.jpeg"
                 ],
-                "question": "D'après vos connaissances et les résultats de la figure 5, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "D’après vos connaissances et les résultats de la figure 5, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "L'interaction physique de MAPK6 avec AKT1 est permise par les acides aminés situés entre les positions 374 et 379 de MAPK6",
+                        "text": "L’interaction physique de MAPK6 avec AKT1 est permise par les acides aminés situés entre",
                         "isCorrect": true,
                         "explanation": "VRAI - Toutafé . Dans l’immunoprécipitation du panel 5A, l’interaction entre MAPK6 et AKT1 n’est détectée qu’à partir de la forme tronquée 1-379, le MAPK6 1-373 n’a pas interagi avec AKT1, on en conclut que les acides aminés 374 à 379 permettent l’interaction."
                     },
                     {
                         "id": "B",
-                        "text": "Dans la figure 5A, le contrôle négatif Ctrl permet de vérifier que l'anticorps anti-FLAG interagit de façon spécifique avec AKT1-His",
+                        "text": "Dans la figure 5A, le contrôle négatif Ctrl permet de vérifier que l’anticorps anti-FLAG",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention ! Ici, la condition Ctrl permet de vérifier que l’anticorps anti-FLAG ne précipite pas AKT1-His en l’absence de protéine MAPK-6 - FLAG. Cela montre que le signal observé dans les autres conditions est bien spécifique et ne résulte pas d’une liaison non spécifique de l’anticorps à AKT1-His. Sinon l’IP ne servirait à rien ."
                     },
                     {
                         "id": "C",
-                        "text": "Le mutant 1-480∆ conserve une activité de phosphorylation sur AKT1 identique à celle de la forme sauvage",
+                        "text": "Le mutant 1-480\\(\\Delta\\)conserve une activité de phosphorylation sur AKT1 identique à celle de",
                         "isCorrect": false,
                         "explanation": "FAUX - Nope, si on s’intéresse à la ligne p-AKT S473, on remarque que le niveau de phosphorylation diminue en présence du mutant délété du domaine d’interaction, donc l’activité de phosphorylation est inférieure à celle de la forme sauvage."
                     },
                     {
                         "id": "D",
-                        "text": "L'interaction physique entre MAPK6 et AKT1 est nécessaire à la phosphorylation d'AKT1 par MAPK6",
+                        "text": "L’interaction physique entre MAPK6 et AKT1 est nécessaire à la phosphorylation d’AKT1",
                         "isCorrect": true,
                         "explanation": "VRAI - Yesss c’est ce que l’on déduit de l’item précédent. Si la délétion du domaine d’interaction de MAPK6 diminue la phosphorylation d’AKT1, c’est que l’interaction physique entre les deux est nécessaire."
                     },
                     {
                         "id": "E",
-                        "text": "L'incapacité du mutant 1 − 480∆ à phosphoryler AKT1 s'explique par l'inactivation de son site catalytique kinase",
+                        "text": "L’incapacité du mutant 1 \\(-480\\Delta\\)à phosphoryler AKT1 s’explique par l’inactivation de son",
                         "isCorrect": false,
                         "explanation": "FAUX - Comme on vient de le voir, l’incapacité à phosphoryler (du moins cette capacité est diminuée) est due à l’inactivation du site d’interaction."
                     }
@@ -385,7 +385,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 9,
                 "type": "QCM",
-                "context": "Les scientifiques cherchent enfin à déterminer si l’inhibition de la voie mTOR modifie les effets de MAPK6 sur l’activation d’AKT et la prolifération cellulaire. Pour cela, ils analysent l’impact de l’extinction de MAPK6, seule ou en présence d’inhibiteurs de mTOR (INK128 ou PP242), sur la\nphosphorylation d’AKT et de GSK3β dans des cellules PC3 (Figure 6A). Ils évaluent ensuite l’effet combiné de l’invalidation de MAPK6 et du traitement par PP242 sur la prolifération des cellules PC3 (Figure 6B), puis sur leur capacité à former des colonies en culture (Figure 6C).\nFigure 6 – A : Analyse par western blot de cellules PC3 transfectées avec un siRNA contrôle dirigé contre la luciférase (siLuc) ou deux siARN ciblant MAPK6 (siA4 et siA6), puis traitées avec du DMSO (contrôle), de l’INK128 ou du PP242, deux inhibiteurs de mTOR. B : Courbes de prolifération de cellules PC3 transfectées avec un siARN contrôle (siLuc) ou des siARN ciblant MAPK6 (siA4 et siA6), puis traitées avec du DMSO ou du PP242. La prolifération cellulaire est suivie pendant plusieurs jours par un test colorimétrique mesurant l’absorbance à 570 nm (OD570). Les différences statistiques sont indiquées par des astérisques. C : Test de formation de colonies (colony formation assay) réalisé sur des cellules PC3 exprimant un shARN contrôle non ciblant (iNT) ou trois shARN dirigés contre MAPK6 (clones 2, 3 et 5). Les cellules sont traitées avec du DMSO ou du PP242. Les images représentatives des colonies formées sont présentées à gauche. À droite, la quantification du nombre de colonies par puits est représentée. Les différences statistiques entre les conditions sont indiquées par des astérisques. La barre d’échelle est indiquée sur les images. La légende indiquée dans ce graphique de haut en bas correspond à l’ordre de gauche à droite de lecture des données sur le graphique.",
+                "context": "Les scientifiques cherchent enfin à déterminer si l’inhibition de la voie mTOR modifie les effets de MAPK6 sur l’activation d’AKT et la prolifération cellulaire. Pour cela, ils analysent l’impact de l’extinction de MAPK6, seule ou en présence d’inhibiteurs de mTOR (INK128 ou PP242), sur la\nphosphorylation d’AKT et de GSK3\\(\\beta\\) dans des cellules PC3 (Figure 6A). Ils évaluent ensuite l’effet combiné de l’invalidation de MAPK6 et du traitement par PP242 sur la prolifération des cellules PC3 (Figure 6B), puis sur leur capacité à former des colonies en culture (Figure 6C).\nFigure 6 – A : Analyse par western blot de cellules PC3 transfectées avec un siRNA contrôle dirigé contre la luciférase (siLuc) ou deux siARN ciblant MAPK6 (siA4 et siA6), puis traitées avec du DMSO (contrôle), de l’INK128 ou du PP242, deux inhibiteurs de mTOR. B : Courbes de prolifération de cellules PC3 transfectées avec un siARN contrôle (siLuc) ou des siARN ciblant MAPK6 (siA4 et siA6), puis traitées avec du DMSO ou du PP242. La prolifération cellulaire est suivie pendant plusieurs jours par un test colorimétrique mesurant l’absorbance à 570 nm (OD570). Les différences statistiques sont indiquées par des astérisques. C : Test de formation de colonies (colony formation assay) réalisé sur des cellules PC3 exprimant un shARN contrôle non ciblant (iNT) ou trois shARN dirigés contre MAPK6 (clones 2, 3 et 5). Les cellules sont traitées avec du DMSO ou du PP242. Les images représentatives des colonies formées sont présentées à gauche. À droite, la quantification du nombre de colonies par puits est représentée. Les différences statistiques entre les conditions sont indiquées par des astérisques. La barre d’échelle est indiquée sur les images. La légende indiquée dans ce graphique de haut en bas correspond à l’ordre de gauche à droite de lecture des données sur le graphique.",
                 "images": [
                     "annales_assets/2026_2027/bio_cellulaire/tuto_1/image8.jpeg"
                 ],
@@ -399,7 +399,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "B",
-                        "text": "L'inhibition de MAPK6 et les inhibiteurs de la voie mTOR modifient significativement le niveau d'expression de GSK3β",
+                        "text": "L'inhibition de MAPK6 et les inhibiteurs de la voie mTOR modifient significativement le niveau d'expression de GSK3\\(\\beta\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Alors alors... Ici il suffisait de lire les lignes du WB pour se rendre compte qu’on ne connaît pas la quantité de GSK3β totale, on a seulement relevé son niveau de phosphorylation sur la sérine 9, ce qui ne nous permet pas de conclure sur le niveau d’expression ."
                     },
@@ -430,7 +430,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 10,
                 "type": "QCM",
-                "context": "Les scientifiques cherchent enfin à déterminer si l’inhibition de la voie mTOR modifie les effets de MAPK6 sur l’activation d’AKT et la prolifération cellulaire. Pour cela, ils analysent l’impact de l’extinction de MAPK6, seule ou en présence d’inhibiteurs de mTOR (INK128 ou PP242), sur la\nphosphorylation d’AKT et de GSK3β dans des cellules PC3 (Figure 6A). Ils évaluent ensuite l’effet combiné de l’invalidation de MAPK6 et du traitement par PP242 sur la prolifération des cellules PC3 (Figure 6B), puis sur leur capacité à former des colonies en culture (Figure 6C).\nFigure 6 – A : Analyse par western blot de cellules PC3 transfectées avec un siRNA contrôle dirigé contre la luciférase (siLuc) ou deux siARN ciblant MAPK6 (siA4 et siA6), puis traitées avec du DMSO (contrôle), de l’INK128 ou du PP242, deux inhibiteurs de mTOR. B : Courbes de prolifération de cellules PC3 transfectées avec un siARN contrôle (siLuc) ou des siARN ciblant MAPK6 (siA4 et siA6), puis traitées avec du DMSO ou du PP242. La prolifération cellulaire est suivie pendant plusieurs jours par un test colorimétrique mesurant l’absorbance à 570 nm (OD570). Les différences statistiques sont indiquées par des astérisques. C : Test de formation de colonies (colony formation assay) réalisé sur des cellules PC3 exprimant un shARN contrôle non ciblant (iNT) ou trois shARN dirigés contre MAPK6 (clones 2, 3 et 5). Les cellules sont traitées avec du DMSO ou du PP242. Les images représentatives des colonies formées sont présentées à gauche. À droite, la quantification du nombre de colonies par puits est représentée. Les différences statistiques entre les conditions sont indiquées par des astérisques. La barre d’échelle est indiquée sur les images. La légende indiquée dans ce graphique de haut en bas correspond à l’ordre de gauche à droite de lecture des données sur le graphique.",
+                "context": "Les scientifiques cherchent enfin à déterminer si l’inhibition de la voie mTOR modifie les effets de MAPK6 sur l’activation d’AKT et la prolifération cellulaire. Pour cela, ils analysent l’impact de l’extinction de MAPK6, seule ou en présence d’inhibiteurs de mTOR (INK128 ou PP242), sur la\nphosphorylation d’AKT et de GSK3\\(\\beta\\) dans des cellules PC3 (Figure 6A). Ils évaluent ensuite l’effet combiné de l’invalidation de MAPK6 et du traitement par PP242 sur la prolifération des cellules PC3 (Figure 6B), puis sur leur capacité à former des colonies en culture (Figure 6C).\nFigure 6 – A : Analyse par western blot de cellules PC3 transfectées avec un siRNA contrôle dirigé contre la luciférase (siLuc) ou deux siARN ciblant MAPK6 (siA4 et siA6), puis traitées avec du DMSO (contrôle), de l’INK128 ou du PP242, deux inhibiteurs de mTOR. B : Courbes de prolifération de cellules PC3 transfectées avec un siARN contrôle (siLuc) ou des siARN ciblant MAPK6 (siA4 et siA6), puis traitées avec du DMSO ou du PP242. La prolifération cellulaire est suivie pendant plusieurs jours par un test colorimétrique mesurant l’absorbance à 570 nm (OD570). Les différences statistiques sont indiquées par des astérisques. C : Test de formation de colonies (colony formation assay) réalisé sur des cellules PC3 exprimant un shARN contrôle non ciblant (iNT) ou trois shARN dirigés contre MAPK6 (clones 2, 3 et 5). Les cellules sont traitées avec du DMSO ou du PP242. Les images représentatives des colonies formées sont présentées à gauche. À droite, la quantification du nombre de colonies par puits est représentée. Les différences statistiques entre les conditions sont indiquées par des astérisques. La barre d’échelle est indiquée sur les images. La légende indiquée dans ce graphique de haut en bas correspond à l’ordre de gauche à droite de lecture des données sur le graphique.",
                 "images": [
                     "annales_assets/2026_2027/bio_cellulaire/tuto_1/image8.jpeg"
                 ],
@@ -699,11 +699,11 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "Dans un croisement de souris exprimant le promoteur Albumine en amont du gène Cre, ces souris ont, dans le foie, leur gène TNF-alpha floxé à l’aide du promoteur Albumine qui se situe devant ces séquences Lox\nEn plaçant un gène GFP après les séquences Lox, une fluorescence pourrait être émise si le gène TNF-alpha est excisé\nChez ces souris, le gène TNF-alpha est floxé par des séquences LoxP dans l’ensemble des cellules de l’organisme",
                 "images": [],
-                "question": "Concernant les méthodes d'études, parmi les propositions suivantes, laquelle (les-quelles) est (sont) exacte(s) ?",
+                "question": "Concernant les méthodes d’études, parmi les propositions suivantes, laquelle (les- quelles) est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Le paratope correspond à la partie de l'antigène reconnu par l'anticorps",
+                        "text": "Le paratope correspond à la partie de l’antigène reconnu par l’anticorps",
                         "isCorrect": false,
                         "explanation": "FAUX - Nope, attention à bien différencier les termes : Épitope : partie de l’antigène reconnue par l’anticorps 🧬 Paratope : site de liaison à l’antigène, présent sur l’anticorps"
                     },
@@ -715,19 +715,19 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "C",
-                        "text": "Le northern blot permet l'analyse qualitative et semi-quantitative des brins d'ARN",
+                        "text": "Le northern blot permet l’analyse qualitative et semi-quantitative des brins d’ARN",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est exact, tous les blots (southern, northern et western) sont semi-quantitatifs et qualitatifs. Qu’est-ce que ça signifie concrètement ? 🤓 Semi-quantitatif : On peut approximer la quantité de l’élément étudié sans donner de valeurs précises. Pour un WB, on peut dire qu’on a environ 2 fois plus de protéine B que de protéine A dans notre échantillon mais impossible de le dire de manière très précise. 🤓 Qualitatif : Confirmer la présence d’une protéine, estimer sa taille ou encore plein d’autres choses en fonction du contexte d’étude (nature des transcrits en fonction du stade du déve- loppement, spécificité tissulaire, intermédiaires de maturation, anomalies d’épissage etc...). Petit moyen mnémotechnique si vous avez du mal à retenir quelle méthode correspond à l’étude de quoi : SNOW DROP →S N O W D R O P 1. Southern →DNA 2. Northern →RNA 3. Western →Protein"
                     },
                     {
                         "id": "D",
-                        "text": "Le β-Mercaptoéthanol permet d'être en condition dénaturante lors d'un western-blot",
+                        "text": "Le \\(\\beta -\\)Mercaptoéthanol permet d’être en condition dénaturante lors d’un western-blot",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention, le β-Mercaptoéthanol permet d’être en condition réductrice (aka réduire les ponts di- sulfures formés entre 2 cystéines), tandis que le SDS est un agent dénaturant qui rompt les liaisons faibles de la protéine (liaisons hydrogènes, hydrophobes...) et la charger négativement !"
                     },
                     {
                         "id": "E",
-                        "text": "Le knock-in correspond à l'inactivation dans tout l'organisme (KI total) d'un gène",
+                        "text": "Le knock-in correspond à l’inactivation dans tout l’organisme (KI total) d’un gène",
                         "isCorrect": false,
                         "explanation": "FAUX - On arrive enfin à notre dernier item . Pour étudier le rôle d’une protéine dans un organisme, on peut observer les conséquences de son absence d’expression, ou au contraire augmenter son expression. Pour réaliser cela, on utilise le knock-out et le knock-in. Le KO (Knock out) d’un gène signifie son inactivation dans tout l’organisme (KO total) ou dans un tissu/cellule spécifique (KO conditionnel). Le KI (Knock in) d’un gène signifie l’augmentation de son expression dans tout l’organisme (KI total) ou dans un tissu/cellule spécifique (KI conditionnel) ! Bon courage !"
                     }
@@ -1195,7 +1195,7 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "",
                 "images": [],
-                "question": "La phosphorylation oxydative est une étape cruciale dans la production énergé-tique des cellules. Les chercheurs s'intéressent au 2,4-dinitrophénol, un agent dit “découplant”, qui permet de déconnecter le transport des électrons de la phos-phorylation de l'ADP en ATP par perméabilisation de la membrane interne de la mitochondrie aux H<sup>+</sup>. En vous basant sur vos connaissances, quel(s) serai(en)t l' (les) effet(s) potentiel(s) de ce découplage ?",
+                "question": "La phosphorylation oxydative est une étape cruciale dans la production énergé-tique des cellules. Les chercheurs s'intéressent au 2,4-dinitrophénol, un agent dit “découplant”, qui permet de déconnecter le transport des électrons de la phos-phorylation de l'ADP en ATP par perméabilisation de la membrane interne de la mitochondrie aux \\(H^{+}\\). En vous basant sur vos connaissances, quel(s) serai(en)t l' (les) effet(s) potentiel(s) de ce découplage ?",
                 "options": [
                     {
                         "id": "A",
@@ -1292,7 +1292,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "B",
-                        "text": "La catalase dans les peroxysomes permet de produire le peroxyde d'hydrogène H<sub>2</sub>O<sub>2</sub>",
+                        "text": "La catalase dans les peroxysomes permet de produire le peroxyde d'hydrogène \\(H_{2}\\)\\(O_{2}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Eh non… La catalase dans les peroxysomes permet de dégrader le peroxyde d’hydrogène H2O2 ! C’est l’oxydase qui permet de produire l’H2O2 dans les peroxysomes à partir de l’O2."
                     },
@@ -1436,25 +1436,25 @@ window.ANNALES_2026_2027 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "En se basant sur la position du CH<sub>2</sub>OH, on peut partir du fait qu'il s'agit de la configuration alpha car il ne se trouve pas au même endroit par rapport au plan que le -OH anomérique",
+                        "text": "En se basant sur la position du \\(CH_{2}\\)OH, on peut partir du fait qu’il s’agit de la configuration",
                         "isCorrect": false,
                         "explanation": "FAUX - Et non, pour déterminer le type d’anomère, il faut regarder la position du -OH anomérique (= celui sur le dernier carbone) par rapport au plan (on s’en moque de la position du CH2OH), ici la position de celui-ci n’est pas précisée (la ligne est ondulée), on ne peut pas savoir s’il s’agit de l’anomère alpha ou bêta."
                     },
                     {
                         "id": "B",
-                        "text": "Il s'agit de la représentation du L-Galactose",
+                        "text": "Il s’agit de la représentation du L-Galactose",
                         "isCorrect": true,
                         "explanation": "VRAI - Le fait que la position du -OH anomérique ne soit pas précisée nous empêche juste de déterminer s’il s’agit de l’anomère alpha ou bêta. Cependant on peut quand même déterminer le type d’énan- tiomère. Pour savoir s’il s’agit de l’énantiomère D ou L, il faut regarder la position du CH2OH, vers le haut D, vers le bas L. Et donc ici c’est bien L (même s’il est beaucoup plus rare, il existe dans la nature !)"
                     },
                     {
                         "id": "C",
-                        "text": "Il s'agit d'un aldo-hexose",
+                        "text": "Il s’agit d’un aldo-hexose",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est du cours, un galactose est un aldose et un hexose, Il faut connaître le tableau qui est dans votre cours ! Diapo 10 - Cours Glucides - Pr. Didier Borderie"
                     },
                     {
                         "id": "D",
-                        "text": "Les aldoses possèdent un alcool primaire positionné en C1 alors que les cétoses possèdent deux alcools primaires situés sur le C1 et le dernier carbonne",
+                        "text": "Les aldoses possèdent un alcool primaire positionné en C1 alors que les cétoses possèdent",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est bien la définition des aldoses et des cétoses."
                     },
@@ -1488,7 +1488,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "B",
-                        "text": "Pour donner le galactose représenté sur la figure 2, une fonction C=O a réagi avec une fonction OH pour former un hémiacétal",
+                        "text": "Pour donner le galactose représenté sur la figure 2, une fonction C=O a réagi avec une",
                         "isCorrect": true,
                         "explanation": "VRAI - Item vrai ! Lors de la cyclisation, l’oxygène de la fonction carbonyle va réagir avec un groupement OH. Cela va donner un hémiacétal, (c’est un nom compliqué pour désigner un groupe fonctionnel formé par un alcool et un groupement aldéhyde.)"
                     },
@@ -1500,13 +1500,13 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "D",
-                        "text": "Dans la représentation de Haworth, le OH anomérique de la forme β-galactopyranose est du même côté du cycle que le CH<sub>2</sub>OH",
+                        "text": "Dans la représentation de Haworth, le OH anomérique de la forme \\(\\beta -\\)galactopyranose est",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est ça ! Pour rappel, pour savoir si on a affaire à un anomère α ou β on regarde la position du OH anomérique (c’est-à-dire celui qui provient de l’ancienne fonction carbonyle). Les anomères α ont le OH anomérique et CH2OH de part et d’autre du cycle alors que les anomères β ont le OH anomérique et CH2OH du même côté du cycle."
                     },
                     {
                         "id": "E",
-                        "text": "Le β-galactopyranose et l'α-galactopyranose sont deux énantiomères",
+                        "text": "Le \\(\\beta -\\)galactopyranose et l’\\(\\alpha -\\)galactopyranose sont deux énantiomères",
                         "isCorrect": false,
                         "explanation": "FAUX - Aïe petit piège : les anomères α et β sont des stéréoisomères : ils ont la même formule développée mais les atomes ou groupes d’atomes ont des positions différentes (le OH n’est pas au même endroit comme on a pu le voir dans la question D). Les énantiomères sont des molécules images dans un miroir. Cela correspond aux formes D et L d’un sucre : le D-galactose et le L-galactose sont des énantiomères."
                     }
@@ -1536,19 +1536,19 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "B",
-                        "text": "Le domaine protéique est une région de la protéine adoptant une structure compacte et indépendante",
+                        "text": "Le domaine protéique est une région de la protéine adoptant une structure compacte et",
                         "isCorrect": true,
                         "explanation": "VRAI - Yees c’est bien ça ! Le domaine est l’unité fondamentale de la structure tertiaire. Un domaine, c’est une partie de la protéine qui va avoir une structure particulière (par exemple en sandwich) et qui a souvent une fonction particulière (comme l’interaction avec une autre protéine). Une protéine peut avoir un ou plusieurs domaines reliés par des boucles."
                     },
                     {
                         "id": "C",
-                        "text": "Une architecture en fagot d'hélice est composée d'hélices α souvent parallèles assemblées en fagot pour former un cœur hydrophobe",
+                        "text": "Une architecture en fagot d’hélice est composée d’hélices \\(\\alpha\\) souvent parallèles assemblées en",
                         "isCorrect": false,
                         "explanation": "FAUX - Aïe petit piège pas sympa ici : tout est bon ici sauf que les hélices α sont souvent antiparallèles dans un fagot d’hélice. Dites-vous que si vous regardez bien, c’est plus facile de relier les hélices avec des boucles lorsqu’elles sont antiparallèles que lorsqu’elles sont parallèles."
                     },
                     {
                         "id": "D",
-                        "text": "Dans une architecture α/β refermée en tonneau α/β, les hélices α forment un tonneau entouré de feuillets β périphériques",
+                        "text": "Dans une architecture \\(\\alpha /\\beta\\) refermée en tonneau \\(\\alpha /\\beta ,\\) les hélices \\(\\alpha\\) forment un tonneau",
                         "isCorrect": false,
                         "explanation": "FAUX - Encore un piège désoléee. Ici, on a inversé les hélices α et les feuillets β : ce sont les feuillets qui forment un tonneau et les hélices qui sont périphériques."
                     },
@@ -1580,25 +1580,25 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "B",
-                        "text": "La figure 3.A est une représentation « Ball and stick » de la structure de l'aldolase",
+                        "text": "La figure 3.A est une représentation « Ball and stick » de la structure de l’aldolase",
                         "isCorrect": false,
                         "explanation": "FAUX - Nooon c’est une représentation cartoon. Comme l’indique son nom, la représentation ball and stick est faite avec des petites boules et bâtons."
                     },
                     {
                         "id": "C",
-                        "text": "L'aldolase est constituée de deux sous-unités et de quatre domaines",
+                        "text": "L’aldolase est constituée de deux sous-unités et de quatre domaines",
                         "isCorrect": false,
                         "explanation": "FAUX - Aïe aïe aïe, c’est presque ça sauf que l’aldolase a 4 sous unités. Faites bien attention à ne pas confondre domaines et sous-unités ! Une sous unité correspond à une chaîne polypeptidique de la protéine. Concrètement, vous allez savoir combien il y en a en sachant combien il y a d’extrémités N-ter ou C-ter. Ici, il y a 4 extrémités N-ter, donc 4 chaînes polypeptidiques donc 4 sous-unités. Le domaine, comme on l’a vu dans la question d’avant correspond à une structure particulière d’une partie de la protéine. Vous allez savoir combien il y en a en regardant la forme de la protéine dans les documents. Ici, on distingue bien 4 domaines !"
                     },
                     {
                         "id": "D",
-                        "text": "L'aldolase présente des domaines avec une architecture en faisceaux orthogonaux",
+                        "text": "L’aldolase présente des domaines avec une architecture en faisceaux orthogonaux",
                         "isCorrect": false,
                         "explanation": "FAUX - Encore un item faux malheureusement... Une architecture en faisceaux orthogonaux correspond à plusieurs faisceaux d’hélices α avec des orientations différentes et appartient à la classe de type essentiellement α (C1). Or, sur la figure, on voit que les domaines ont un mélange de feuillets β et d’hélices β, ils appartiennent donc à la classe α/β."
                     },
                     {
                         "id": "E",
-                        "text": "L'aldolase présente des structures de classe α/β",
+                        "text": "L’aldolase présente des structures de classe \\(\\alpha /\\beta\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Yes ! Cf. item D."
                     }
@@ -1662,31 +1662,31 @@ window.ANNALES_2026_2027 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "L'aldolase possède des motifs β-α-β dans ses sous-unités",
+                        "text": "L’aldolase possède des motifs \\(\\beta -\\alpha -\\beta\\) dans ses sous-unités",
                         "isCorrect": true,
                         "explanation": "VRAI - Et on commence par un item vrai ! On peut voir sur la figure 3b un enchaînement d’un brin β, d’une hélice α, puis d’un brin β, ce qui correspond au motif β-α-β."
                     },
                     {
                         "id": "B",
-                        "text": "Les brins β5b et β5a forment une épingle à cheveux β",
+                        "text": "Les brins \\(\\beta 5\\)b et \\(\\beta 5\\)a forment une épingle à cheveux \\(\\beta\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est ça ! Le motif en épingle à cheveux correspond à deux brins β antiparallèles reliés par une boucle."
                     },
                     {
                         "id": "C",
-                        "text": "On peut voir 15 hélices α et 10 brins β dans la sous unité représentée dans la figure 3.B",
+                        "text": "On peut voir 15 hélices \\(\\alpha\\) et 10 brins \\(\\beta\\) dans la sous unité représentée dans la figure 3.B",
                         "isCorrect": true,
                         "explanation": "VRAI - Ouii, si vous les comptez normalement ça colle."
                     },
                     {
                         "id": "D",
-                        "text": "Les coudes et les boucles contiennent des résidus majoritairement hydrophobes pour per-mettre le bon repliement de la molécule",
+                        "text": "Les coudes et les boucles contiennent des résidus majoritairement hydrophobes pour per-",
                         "isCorrect": false,
                         "explanation": "FAUX - Ah pas sympa mais j’ai changé hydrophile par hydrophobe ! Les boucles et les coudes contiennent majoritairement des résidus hydrophiles. En effet, lors du repliement de la protéine, ils vont être régulièrement à la surface de la protéine, directement en contact avec l’environnement cellulaire qui est un milieu aqueux."
                     },
                     {
                         "id": "E",
-                        "text": "Les coudes et boucles servent uniquement à relier les feuillets β et les hélices α",
+                        "text": "Les coudes et boucles servent uniquement à relier les feuillets \\(\\beta\\) et les hélices \\(\\alpha\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention aux items péremptoires ! Les coudes et les boucles ont d’autres fonctions : par exemple, ils portent souvent les sites de reconnaissances et les sites actifs des molécules. Courage pour la suite, vous êtes les meilleurs !"
                     }
@@ -2018,7 +2018,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "Figure 8 : Tableau présentant l’activité spécifique et la Km pour des aldolases différentes (ne tenir compte que de FDP).\nComparaison des mutations avec la ligne pHAA47 (enzyme WT)\nLecture : L’aldolase A ayant subi une modification de la cystéine 72 en Alanine a une Km de 30µM.",
+                "context": "Figure 8 : Tableau présentant l’activité spécifique et la Km pour des aldolases différentes (ne tenir compte que de FDP).\nComparaison des mutations avec la ligne pHAA47 (enzyme WT)\nLecture : L’aldolase A ayant subi une modification de la cystéine 72 en Alanine a une Km de 30\\(\\mu\\)M.",
                 "images": [
                     "annales_assets/2026_2027/biochimie/tuto_1/image11.png"
                 ],
@@ -2050,7 +2050,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "E",
-                        "text": "K<sub>1</sub>K<sub>1</sub>Dans le cas de la constante de quasi équilibre, Km est semblable a une constante de disso-ciation et se calcule grâce a la formule Km = <sup>K</sup>−1",
+                        "text": "\\(K_{1}\\)\\(K_{1}\\)Dans le cas de la constante de quasi équilibre, Km est semblable a une constante de disso-ciation et se calcule grâce a la formule Km = K−1",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est vrai, il faut connaître les formules en enzymo +++, leur signification, leurs multiples noms (pour ceux qui en ont plusieurs) ainsi que les unités."
                     }
@@ -2090,7 +2090,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "D",
-                        "text": "La Vmax pour l'aldolase B est de 24 µM/s",
+                        "text": "La Vmax pour l'aldolase B est de 24 \\(\\mu\\)M/s",
                         "isCorrect": false,
                         "explanation": "FAUX - On ne peut pas déterminer la Vmax à travers ce document. Km est la concentration pour Vmax/2. Si vous avez coché vrai, vous avez multiplié par 2 Km mais on obtient à la fin une concentration et non une vitesse !"
                     },
@@ -2110,7 +2110,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "La fructose 1,6-bisphosphate aldolase (FBA) de classe II est une enzyme essentielle à la gly-colyse/gluconéogenèse des bactéries, des champignons et des protozoaires. Il est important de noter que les humains ne possèdent pas ce type d’aldolase, mais plutôt une FBA de classe I qui est structurellement et mécanistiquement distincte des FBA de classe II. À ce titre, la FBA de classe II est considérée comme une cible pharmacologique potentielle pour le développement de nouveaux antibiotiques contre les bactéries pathogènes telles que Mycobacterium tuberculosis, l’agent responsable de la tuberculose (TB). À ce jour, plusieurs inhibiteurs compétitifs de type mimétique du substrat de la FBA de classe II ont été développés ; cependant, ils manquent soit de spécificité, soit de puissance, soit de propriétés qui limitent leur potentiel en tant que traitements thérapeutiques possibles. Récemment, grâce à un criblage assisté par des enzymes et basé sur la structure, nous avons identifié l’acide 8-hydroxyquinoléine carboxylique (HCA) qui a une CI50 de 10 ± 1 µM pour la FBA de classe II présente dans M.tuberculosis (MtFBA).\nFigure 9 : Représentation de Lineweaver-Burk en présence de HCA de l’aldolase",
+                "context": "La fructose 1,6-bisphosphate aldolase (FBA) de classe II est une enzyme essentielle à la gly-colyse/gluconéogenèse des bactéries, des champignons et des protozoaires. Il est important de noter que les humains ne possèdent pas ce type d’aldolase, mais plutôt une FBA de classe I qui est structurellement et mécanistiquement distincte des FBA de classe II. À ce titre, la FBA de classe II est considérée comme une cible pharmacologique potentielle pour le développement de nouveaux antibiotiques contre les bactéries pathogènes telles que Mycobacterium tuberculosis, l’agent responsable de la tuberculose (TB). À ce jour, plusieurs inhibiteurs compétitifs de type mimétique du substrat de la FBA de classe II ont été développés ; cependant, ils manquent soit de spécificité, soit de puissance, soit de propriétés qui limitent leur potentiel en tant que traitements thérapeutiques possibles. Récemment, grâce à un criblage assisté par des enzymes et basé sur la structure, nous avons identifié l’acide 8-hydroxyquinoléine carboxylique (HCA) qui a une CI50 de 10 ± 1 \\(\\mu\\)M pour la FBA de classe II présente dans M.tuberculosis (MtFBA).\nFigure 9 : Représentation de Lineweaver-Burk en présence de HCA de l’aldolase",
                 "images": [
                     "annales_assets/2026_2027/biochimie/tuto_1/image12.jpeg"
                 ],
@@ -2266,25 +2266,25 @@ window.ANNALES_2026_2027 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Deux électrons appartenant à une même sous-couche ne peuvent différer que par le nombre quantique de spin",
+                        "text": "Deux électrons appartenant à une même sous-couche ne peuvent différer que par le nombre",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux. Pour une sous-couche p (l = 1), les trois nombres quantiques magnétiques possibles sont m{−1, 0, 1} et les spins possibles sont s = +1/2 ou −1/2. Exemple : — Électron 1 : (n, l, m, s) = (2, 1, −1, +1/2) — Électron 2 : (n, l, m, s) = (2, 1, 0, −1/2) Deux électrons d’une même sous-couche peuvent différer par leur nombre quantique magnétique m tout en ayant le même spin. C’est le Principe d’exclusion de Pauliiiiii."
                     },
                     {
                         "id": "B",
-                        "text": "L'énergie d'ionisation nécessaire pour arracher un électron de He+ est égale à −54,4 eV",
+                        "text": "L’énergie d’ionisation nécessaire pour arracher un électron de \\(He^{+}\\) est égale à \\(-54,4\\) eV",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux. Calculons l’énergie de l’électron de l’hydrogénoïde He+ (Z = 2) à l’état fundamental (n = 1) : E1 = −13,6 × Z2 n2 = −13,6 × 22 12 = −54,4 eV L’énergie d’ionisation Ei correspond à l’énergie minimale pour porter l’électron à l’infini (E∞= 0 eV ) : Ei = E∞−E1 = 0 −(−54,4) = +54,4 eV"
                     },
                     {
                         "id": "C",
-                        "text": "Le Li+ est un hydrogénoïde au même titre que He",
+                        "text": "Le \\(Li^{+}\\) est un hydrogénoïde au même titre que He",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux. Un hydrogénoïde ne possède qu’un seul électron. — Pour le lithium (Z = 3), l’ion Li+ possède 3 −1 = 2 électrons. — Pour l’hélium (Z = 2), l’ion He+ possède 2 −1 = 1 électron. Li+ n’est donc pas un hydrogénoïde (alors que Li2+ en serait un)."
                     },
                     {
                         "id": "D",
-                        "text": "L'alcalino-terreux de la troisième ligne a pour configuration électronique 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>",
+                        "text": "L’alcalino-terreux de la troisième ligne a pour configuration électronique \\(1s^{2}2\\)\\(s^{2}2\\)\\(p^{6}3\\)\\(s^{2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Vrai. L’alcalino-terreux de la troisième période (colonne 2, ligne 3) est le magnésium (Mg, Z = 12). Sa configuration électronique est bien : 1s22s22p63s2"
                     },
@@ -2309,25 +2309,25 @@ window.ANNALES_2026_2027 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "La configuration électronique du Néon (Ne) est : 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>",
+                        "text": "La configuration électronique du Néon (Ne) est : 1\\(s^{2}\\)2\\(s^{2}\\)2\\(p^{6}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Le Néon (Ne) a Z = 10. Sa configuration électronique exacte est ainsi 1s22s22p6."
                     },
                     {
                         "id": "B",
-                        "text": "La configuration électronique du Cuivre (Cu) est : [Ar]4s<sup>1</sup>3d<sup>4</sup>",
+                        "text": "La configuration électronique du Cuivre (Cu) est : [Ar]4\\(s^{1}\\)3\\(d^{4}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Le cuivre (Cu) a Z = 29. De plus, celui-ci fait partie des exceptions avec le chrome, sa configuration exacte est ainsi : [Ar] 4s13d10."
                     },
                     {
                         "id": "C",
-                        "text": "La configuration électronique de l'ion Zinc II (Zn2+) est : 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>3d<sup>10</sup>",
+                        "text": "La configuration électronique de l'ion Zinc II (Zn2+) est : 1\\(s^{2}\\)2\\(s^{2}\\)2\\(p^{6}\\)3\\(s^{2}\\)3\\(p^{6}\\)3\\(d^{10}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - On a Z(Zn2+) = 30 −2 = 28. Sa configuration électronique exacte est ainsi : 1s22s22p63s23p64s03d10. Pour simplifier, on peut supprimer 4s0, on trouve donc : 1s22s22p63s23p63d10. Et faites bien attention. On enlève les 2 électrons de la sous couche la plus externe et pas de la sous couche en cours de remplissage, d’où le fait qu’on enlève 2 électrons de la 4s et pas de la 3d !"
                     },
                     {
                         "id": "D",
-                        "text": "La configuration électronique de l'ion Titane (Ti+) est : 1s<sup>2</sup>2s<sup>2</sup>2p<sup>6</sup>3s<sup>2</sup>3p<sup>6</sup>4s<sup>2</sup>3d<sup>2</sup>",
+                        "text": "La configuration électronique de l'ion Titane (Ti+) est : 1\\(s^{2}\\)2\\(s^{2}\\)2\\(p^{6}\\)3\\(s^{2}\\)3\\(p^{6}\\)4\\(s^{2}\\)3\\(d^{2}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Il s’agit là de la configuration électronique de l’atome de Titane et non de l’ion : 1s22s22p63s23p64s23d2. Pour l’ion Ti+, il faut retirer un électron de la 4s donc : 1s22s22p63s23p64s13d2."
                     },
@@ -2349,11 +2349,11 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "",
                 "images": [],
-                "question": "Concernant les principaux résultats de l'approche quantique et ondulatoire de l'atome, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant les principaux résultats de l’approche quantique et ondulatoire de l’atome, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "La probabilité de trouver un électron dans un volume élémentaire V est proportionnel au carré de la fonction d'onde Ψ2.",
+                        "text": "La probabilité de trouver un électron dans un volume élémentaire V est proportionnel au",
                         "isCorrect": true,
                         "explanation": "VRAI - Item très tordu mais on a : P = R V ∥Ψ2∥dV avec P = 0,95 si on considère V comme celui d’une orbitale atomique (OA) Diapo 12 du cours de chimie"
                     },
@@ -2365,19 +2365,19 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "C",
-                        "text": "La fonction d'onde Ψ est une fonction mathématique qui a un sens physique.",
+                        "text": "La fonction d’onde \\(Ψ\\) est une fonction mathématique qui a un sens physique.",
                         "isCorrect": false,
                         "explanation": "FAUX - La fonction d’onde Ψ est une fonction mathématique qui n’a pas de sens physique. Elle contient seuleument toutes les informations relative à la position et au mouvement de la particule qu’elle décrit ! (Cf diapo 12 item A)."
                     },
                     {
                         "id": "D",
-                        "text": "La fonction d'onde est solution de l'équation de Schrödinger et il existe une quantité finie de solution à cette équation",
+                        "text": "La fonction d’onde est solution de l’équation de Schrödinger et il existe une quantité finie",
                         "isCorrect": false,
                         "explanation": "FAUX - La fonction d’onde est bien solution de l’équation de Schrödinger mais il existe une infinité de solution à cette équation Diapo 10 du cours de chimie"
                     },
                     {
                         "id": "E",
-                        "text": "Quelque soit l'atome étudié, on a : E<sub>n</sub>",
+                        "text": "Quelque soit l’atome étudié, on a : \\(E_{n} = -^{13,6\\times Z2}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - n2 La formule de l’énergie d’une couche , En = −13,6×Z2 n2 est uniquement valable pour les hydrogénoïdes !"
                     }
@@ -2390,25 +2390,25 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "13,6×Z<sup>2</sup>",
+                "context": "13,6×\\(Z^{2}\\)",
                 "images": [],
                 "question": "Concernant l'ion chlorure et l'atome de chlore, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "L'ion chlorure <sub>17</sub>Cl- possède 3 électrons décrits par m = 1",
+                        "text": "L'ion chlorure 17Cl- possède 3 électrons décrits par m = 1",
                         "isCorrect": false,
                         "explanation": "FAUX - FAUX : L’ion chlorure 17Cl–possède 4 électrons décrits par m = 1 1. La configuration électronique de 17Cl– est : 1s22s22p63s23p6 2. On a donc 3 valeurs différentes de n : — Pour n = 1, on a l = 0 et m = 0 — Pour n = 2, on a l = 0, 1 et m = −1, 0, 1 →Pour la couche n = 2 et la sous-couche l = 1, on a une OA décrit par m = 1 ⇒bien retenir qu’il y a une OA avec m = 1 pour l’OA p (l = 1). — Pour n = 3, on a l = 0, 1, 2 et m = −2, −1, 0, 1, 2 : en prenant l = 2 uniquement (car on sait que pour l = 1, on a une OA avec m = 1), on retrouve une autre OA décrit par m = 1. — Par chance, la configuration électronique de Cl– remplit particulièrement l’OA 2p et 3p possèdant chacune une OA avec m = 1. Comme il n’y a que 2 électrons par OA et que la 2p et la 3p est pleine : 2e− 2p + 2e− 3p = 4e− Conclusion : Pour une OA s (l = 0), on a aucune OA avec m = 1 Pour une OA p (l = 1), on a 1 OA avec m = 1 Pour une OA d (l = 2), on a 1 OA avec m = 1"
                     },
                     {
                         "id": "B",
-                        "text": "À l'état fondamental, l'ion chlorure <sub>17</sub>Cl- possède 1 électron célibataire.",
+                        "text": "À l'état fondamental, l'ion chlorure 17Cl- possède 1 électron célibataire.",
                         "isCorrect": false,
                         "explanation": "FAUX - L’ion chlorure 17Cl– possède aucun électron célibataire. 1. La configuration électronique de 17Cl– est : 1s22s22p63s23p6 2. On remarque que toutes les orbitales s et p sont pleines : la configuration électronique de Cl– ressemble à l’Argon (Ar) qui est un gaz rare et donc qui est stable en ayant aucun électron célibataire. Cl ⊖ Représentation de Lewis de l’ion chlorure"
                     },
                     {
                         "id": "C",
-                        "text": "L'énergie d'ionisation de l'ion chlorure <sub>17</sub>Cl- est égal à 231,2 eV",
+                        "text": "L'énergie d'ionisation de l'ion chlorure 17Cl- est égal à 231,2 eV",
                         "isCorrect": false,
                         "explanation": "FAUX - Rappels : L’énergie d’ionisation est l’énergie à fournir pour arracher un électron du niveau n = 1 donc pour un hydrogénoïde, cela équivaut à prendre le contraire de l’énergie de la couche n = 1. L’ion chlorure 17Cl– n’est pas un hydrogénoïde, la formule : E = −En = 13,6×Z2 ne fonctionne donc pas ! ? Items D et E 1. La couche de valence du chlore est caractérisé par 3s23p5, il fait donc partie de l’avant-dernière colonne du tableau périodique. 2. La dernière colonne est la famille des gaz rares tandis que l’avant-dernière est celle des halogènes. Conclusion : l’atome de chlore fait donc partie de la famille des halogènes. (L’item D est donc FAUX et l’item E est VRAI)"
                     },
@@ -2435,35 +2435,35 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "",
                 "images": [],
-                "question": "Concernant les orbitales moléculaires et l'hybridation, laquelle des propositions suivantes est exacte ?",
+                "question": "Concernant les orbitales moléculaires et l’hybridation, laquelle des propositions suivantes est exacte ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Une orbitale moléculaire est une combinaison linéaire d'orbitales atomiques de cœur des atomes constitutifs",
+                        "text": "Une orbitale moléculaire est une combinaison linéaire d’orbitales atomiques de cœur des",
                         "isCorrect": false,
                         "explanation": "FAUX - C’était presque ça ! Le piège ici se trouve dans le fait que les orbitales moléculaires sont formées d’orbitales atomiques de valence (les plus externes) et pas d’orbitales atomiques de coeur (les plus internes). Les OA de coeur sont au coeur de l’atome et donc plus proches du noyau que les OA de valence, ce qui fait qu’elles sont plus difficilement accessible pour former des liaisons, et donc des orbitales moléculaires qui sont formées dû aux liaisons (formation des OM liantes et antiliantes)."
                     },
                     {
                         "id": "B",
-                        "text": "Les orbitales moléculaires peuvent êtres formées d'orbitales atomiques d'énergies éloignées",
+                        "text": "Les orbitales moléculaires peuvent êtres formées d’orbitales atomiques d’énergies éloignées",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux ! Les liaisons (et donc les orbitales moléculaires liantes et antiliantes) sont formées par des orbitales atomique proches en énergie parce que plus la différence d’énergie est grande, moins la liaison sera stable, et moins ce sera rentable de former une liaison (augmentation du caractère antiliant des orbitales antiliantes), sachant que la nature aime la stabilité, et donc une faible différence d’énergie entre les orbitales atomiques de la liaison. De plus, à partir d’une certaine différence d’énergie (la valeur n’est pas à connaître), la formation d’une liaison entre deux OA est impossible."
                     },
                     {
                         "id": "C",
-                        "text": "Sous certaines conditions, la rotation autour d'une double liaison peut être possible",
+                        "text": "Sous certaines conditions, la rotation autour d’une double liaison peut être possible",
                         "isCorrect": true,
                         "explanation": "VRAI - Vrai ! Il est vrai qu’en temps normal les liaisons doubles sont trop rigides pour avoir une rotation (car ça perturberait le recouvrement latéral des orbitales π liantes), je vous remets la diapo juste ici : Diapo 69 du cours de chimie En fait, l’état excité diminue la stabilité des orbitales π et augmente leur caractère antiliant, donc, pour se stabiliser, les orbitales π se mettent en rotation. Une fois l’état fondamental retrouvé, un isomère (Z ou E) peut se transformer en l’autre isomère, c’est ce qu’on appelle l’isomérisation photochimique des doubles liaisons."
                     },
                     {
                         "id": "D",
-                        "text": "Toutes les orbitales de valence participent forcément à l'hybridation si elle a lieu",
+                        "text": "Toutes les orbitales de valence participent forcément à l’hybridation si elle a lieu",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux ! Par exemple, si l’atome est hybridé sp ou sp2, il restera respectivement deux et une orbitale p pure dans sa couche de valence qui ne participent pas à l’hybridation car elles font généralement autre chose. Ces orbitales peuvent par exemple participer à des motifs de mésomérie ou à la formation de doubles liaisons mais ne sont pas des orbitales hybrides, et ne participent pas à l’hybridation. En effet, chaque atome a 3 OA p par niveau d’énergie (et donc dans sa couche de valence), qui sont toujours présentes, même si elles ne participent pas à la formation de liaisons."
                     },
                     {
                         "id": "E",
-                        "text": "Il existe des orbitales hybrides sp<sup>4</sup>",
+                        "text": "Il existe des orbitales hybrides \\(sp^{4}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Non ! Déjà, on sait que les orbitales hybrides citées dans votre cours sont composées d’une orbitale s et d’orbitales p : — les orbitales sp : Une orbitale s et une orbitale p. — les orbitales sp2 : Une orbitale s et deux orbitales p. — les orbitales sp3 : Une orbitale s et trois orbitales p. On voit déjà qu’il n’y a pas d’orbitales sp4 citées dans votre cours, donc on peut déjà invalider l’item, mais je vais vous expliquer pourquoi elles n’existent pas. En fait, c’est impossible de former des orbitales sp4 parce qu’il faudrait une orbitale s et 4 orbitales p de la même couche principale, hors c’est impossible car il y a seulement 3 orbitales p par couche ! Il n’y a donc pas assez d’orbitales p dans la couche pour avoir une hybridation sp4 !"
                     }
@@ -2478,35 +2478,35 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "",
                 "images": [],
-                "question": "Concernant la théorie VSEPR et l'approche de Lewis, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant la théorie VSEPR et l’approche de Lewis, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "La structure de Lewis ne donne pas d'informations sur le niveau d'énergie",
+                        "text": "La structure de Lewis ne donne pas d’informations sur le niveau d’énergie",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "La structure de Lewis ne donne pas d'informations sur les orbitales contenant les électrons liants",
+                        "text": "La structure de Lewis ne donne pas d’informations sur les orbitales contenant les électrons",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "La structure de Lewis n'explique pas l'existence du système à un e- de la molécule H<sub>2</sub>+",
+                        "text": "La structure de Lewis n’explique pas l’existence du système à un \\(e^{–}\\) de la molécule \\(H_{2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et DEt oui, tous ces items sont écrits mot pour mot dans le cours, je n'ai rien inventé teehee ! Vous aviez peut être oublié l'existence de cette diapo, mais n'oubliez pas que TOUT CE QUI EST DANS LES DIAPOS PEUT TOMBER donc surtout, ne faites pas d'impasse sur certaines parties du cours qui ne tombent pas beaucoup, parce qu'on ne sait jamais ce que les profs vont sortir de leur chapeau le jour de l'exam !Je vous remets la diapo juste ici :Diapo 40 du cours de chimieTous les items étaient donc vrais ! (ce qui est très rare en exam, mais bel et bien possible)"
                     },
                     {
                         "id": "D",
-                        "text": "Aucune des deux représentations (VSEPR et Lewis) ne permet de décrire correctement O<sub>2</sub>",
+                        "text": "Aucune des deux représentations (VSEPR et Lewis) ne permet de décrire correctement \\(O_{2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et E"
                     },
                     {
                         "id": "E",
-                        "text": "Dans l'ion cyanure CN- , le carbone a une géométrie linéaire",
+                        "text": "Dans l’ion cyanure \\(CN^{–},\\) le carbone a une géométrie linéaire",
                         "isCorrect": true,
                         "explanation": "VRAI - Pour commencer, je vous dessine la structure de Lewis de l’ion cyanure : C ⊖ N En utilisant le formalisme VSEPR, on voit que le carbone a 1 DNL (qu’on voit sur le schéma). Pour le L, ne vous laissez pas avoir par la triple liaison ! Le nombre L est le nombre d’atomes voisins et pas de liaisons ! Retenez bien ça car c’est un piège récurrent. Le carbone a 1 atome voisin (l’azote), donc il est AL1E1, et n + m = 2, donc le carbone a bien une géométrie linéaire !"
                     }
@@ -2523,7 +2523,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 8,
                 "type": "QCM",
-                "context": "Le tétrahydrocannabinol est un composé organique de la famille des cannabinoïdes. Il est dé-couvert et isolé en 1964, et c’est le constituant psychoactif majeur du cannabis.\nCH<sub>3</sub>\nH<sub>3</sub>C\nH<sub>3</sub>C\nOCH<sub>3</sub>\nTHC",
+                "context": "Le tétrahydrocannabinol est un composé organique de la famille des cannabinoïdes. Il est dé-couvert et isolé en 1964, et c’est le constituant psychoactif majeur du cannabis.\n\\(CH_{3}\\)\n\\(H_{3}\\)C\n\\(H_{3}\\)C\n\\(OCH_{3}\\)\nTHC",
                 "images": [
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q8_1.png"
                 ],
@@ -2537,25 +2537,25 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "B",
-                        "text": "Le carbone α est hybridé sp2",
+                        "text": "Le carbone \\(\\alpha\\) est hybridé sp2",
                         "isCorrect": false,
                         "explanation": "FAUX - Alors, pour connaitre l’hybridation du carbone α, on applique comme d’habitude notre théorie VSEPR. Notre carbone possède 4 atomes voisins, il est de type AL4EO. Il ne s’inscrit dans aucun motif de conjugaison, donc il est hybridé classiquement sp3."
                     },
                     {
                         "id": "C",
-                        "text": "L'une des formes mésomères de cette molécule implique l'apparition d'une charge positive sur l'oxygène du cycle oxane (cycle numéro 2)",
+                        "text": "L’une des formes mésomères de cette molécule implique l’apparition d’une charge positive",
                         "isCorrect": true,
                         "explanation": "VRAI - Ici, on vous parle de l’oxygène porté par le cycle oxane, ou cycle n°2. Cet oxygène a une géométrie de type AL2E2, donc il est théoriquement hybridé sp3 MAIS on vérifie nos motifs de conjugaison et là BAM qu’est-ce qu’on voit : qu’il possède un DNL dans une orbitale p pure, comme dit précédemment, il est bel et bien hybridé sp2. Eh oui, ici l’oxygène est mésomère donneur ! C’est souvent le cas lorsqu’il n’est pas déjà impliqué dans une liaison double, encore une fois, faisons appel à nos superbes diapos de cours : Groupes mésomères accepteurs Diapo 101 du cours de chimie Ainsi, ce DNL va pouvoir se délocaliser vers le cycle n°3, ce qui induira l’apparition d’une charge positive sur l’oxygène. Je vous montre ça ci-dessous : CH3 H C H3 C H3 O CH3 OH α H CH3 H C H3 C H3 O⊕ CH3 ⊖ : OH α H L’item C est donc vrai !"
                     },
                     {
                         "id": "D",
-                        "text": "L'oxygène du groupement hydroxyle est hybridé sp3",
+                        "text": "L’oxygène du groupement hydroxyle est hybridé sp3",
                         "isCorrect": false,
                         "explanation": "FAUX - On a établi en corrigeant la question A que les deux oxygènes de la molécule étaient hybridés sp2, l’item est donc faux. Pensez toujours à bien vérifier quels sont les motifs de conjugaison au sein des molécules pour ne pas tomber dans les pièges concernant l’hybridation des atomes ! \u0018 E →L’effet inductif de l’oxygène du cycle oxane perdure sur l’ensemble du cycle aromatique du … L’effet inductif est un effet électronique lié à la différence d’électronégativité entre atomes. Les atomes les plus électronégatifs, tels que l’oxygènes, l’azote, les halogènes, exercent un effet inductif attracteur (+I) sur d’autres atomes d’électronégativité plus faible, tels que le carbone ou l’hydrogène, dits inductifs donneurs (-I). Ici, l’oxygène du cycle 2 exerce un effet inductif attracteur. Mais la seconde chose à savoir sur l’effet inductif, c’est qu’il se propage uniquement sur trois liaisons ! Ainsi, l’entièreté du cycle aromatique, c’est-à-dire le cycle n°3, ne percevra pas cet effet."
                     },
                     {
                         "id": "E",
-                        "text": "L'effet inductif de l'oxygène du cycle oxane perdure sur l'ensemble du cycle aromatique du THC",
+                        "text": "L’effet inductif de l’oxygène du cycle oxane perdure sur l’ensemble du cycle aromatique du",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -2616,7 +2616,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 10,
                 "type": "QCM",
-                "context": "Molécule BMolécule C\nMolécule D\nMolécule E\nMolécule FMolécule G\nLa règle de Hückel précise qu’un composé aromatique doit posséder 2n + 2 électrons délo-calisables sur un cycle plan (composé d’atomes hybridés sp<sup>2</sup>) conjugué sans discontinuité.\nLes molécules A, C, F et G sont aromatiques\nLes molécules B, C, D et E sont aromatiques\nTous les carbones des molécules présentées sont hybridés sp<sup>2</sup>\nL’un des azotes de la molécule F possède un doublet non liant dans une orbitale 2p",
+                "context": "Molécule BMolécule C\nMolécule D\nMolécule E\nMolécule FMolécule G\nLa règle de Hückel précise qu’un composé aromatique doit posséder 2n + 2 électrons délo-calisables sur un cycle plan (composé d’atomes hybridés s\\(p^{2}\\)) conjugué sans discontinuité.\nLes molécules A, C, F et G sont aromatiques\nLes molécules B, C, D et E sont aromatiques\nTous les carbones des molécules présentées sont hybridés s\\(p^{2}\\)\nL’un des azotes de la molécule F possède un doublet non liant dans une orbitale 2p",
                 "images": [
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q10_1.png",
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q10_2.png",
@@ -2709,7 +2709,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": "Z croissant\nLe D-idose possède 4 carbones asymétriques\nLe pouvoir rotatoire spécifique du D-idose est nécessairement (+)\nLe carbone C<sub>2</sub> du D-idose est de configuration R\nLe D-Idose possède 24 stéréoisomères de conformation",
+                "context": "Z croissant\nLe D-idose possède 4 carbones asymétriques\nLe pouvoir rotatoire spécifique du D-idose est nécessairement (+)\nLe carbone \\(C_{2}\\) du D-idose est de configuration R\nLe D-Idose possède 24 stéréoisomères de conformation",
                 "images": [
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q12_1.png"
                 ],
@@ -2756,7 +2756,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "OHHOH\nOHOH\nOHHOH\nOHOH\nCH<sub>2</sub>OH\nMolécule A\nCH<sub>2</sub>OH\nMolécule B\nMolécule C\nLe carbone C<sub>4</sub> de la molécule A est de configuration S\nLa molécule A est la représentation de Fisher de molécule C\nLa configuration absolue de la molécule B est (1S, 2S, 3R, 4R)\nLes trois molécules ont la même formule brute\nLes molécules A et C sont des diastéréoisomères",
+                "context": "OHHOH\nOHOH\nOHHOH\nOHOH\n\\(CH_{2}\\)OH\nMolécule A\n\\(CH_{2}\\)OH\nMolécule B\nMolécule C\nLe carbone \\(C_{4}\\) de la molécule A est de configuration S\nLa molécule A est la représentation de Fisher de molécule C\nLa configuration absolue de la molécule B est (1S, 2S, 3R, 4R)\nLes trois molécules ont la même formule brute\nLes molécules A et C sont des diastéréoisomères",
                 "images": [
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q13_1.png",
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q13_2.png",
@@ -2805,7 +2805,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 14,
                 "type": "QCM",
-                "context": "HOH\nHOH<sub>2</sub>CH OH\nHO HCH<sub>2</sub>OH\nHO HCH<sub>2</sub>OH\nCH<sub>2</sub>OH\nMolécule A\nMolécule B\nMolécule C\nMolécule D\nLa molécule B correspond à la représentation de Cram de la molécule A suivant l’axe C<sub>1</sub> – C<sub>2</sub>\nLa molécule A correspond à la représentation de Newman de la molécule C suivant l’axe C<sub>2</sub> – C<sub>1</sub>\nUne rotation de 120° autour d’une liaison C– C modifie la configuration absolue\nUn carbone asymétrique de configuration absolue R possède un pouvoir rotatoire positif, noté (+)\nLes molécules C et D sont des énantiomères\nNous allons à présent nous intéresser à la molécule de galactose, un monosaccharide notamment présent dans le lait. Il possède un analogue structural très intéressant : le talose.\nOHOHOOHOHO\nOHOH\nOHOH\nGalactose\nCHO\nHOHOH\nCHO\nOHOH\nTalose\nCHO\nHOH\nHOH\nMolécule A\nHOH\nMolécule B\nOHH\nMolécule C\nR illustrant le reste de la chaine carbonnée dans les molécules A, B et C.",
+                "context": "HOH\n\\(HOH_{2}\\)CH OH\nHO \\(HCH_{2}\\)OH\nHO \\(HCH_{2}\\)OH\n\\(CH_{2}\\)OH\nMolécule A\nMolécule B\nMolécule C\nMolécule D\nLa molécule B correspond à la représentation de Cram de la molécule A suivant l’axe \\(C_{1}\\) – \\(C_{2}\\)\nLa molécule A correspond à la représentation de Newman de la molécule C suivant l’axe \\(C_{2}\\) – \\(C_{1}\\)\nUne rotation de 120° autour d’une liaison C– C modifie la configuration absolue\nUn carbone asymétrique de configuration absolue R possède un pouvoir rotatoire positif, noté (+)\nLes molécules C et D sont des énantiomères\nNous allons à présent nous intéresser à la molécule de galactose, un monosaccharide notamment présent dans le lait. Il possède un analogue structural très intéressant : le talose.\nOHOHOOHOHO\nOHOH\nOHOH\nGalactose\nCHO\nHOHOH\nCHO\nOHOH\nTalose\nCHO\nHOH\nHOH\nMolécule A\nHOH\nMolécule B\nOHH\nMolécule C\nR illustrant le reste de la chaine carbonnée dans les molécules A, B et C.",
                 "images": [
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q14_1.png",
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q14_2.png",
@@ -2823,13 +2823,13 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "B",
-                        "text": "La molécule A correspond à la représentation de Newman du galactose selon l'axe C<sub>2</sub> - C<sub>3</sub>",
+                        "text": "La molécule A correspond à la représentation de Newman du galactose selon l'axe \\(C_{2}\\) - \\(C_{3}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "La molécule C correspond à la représentation de Newman du galactose selon l'axe C<sub>2</sub> - C<sub>3</sub>",
+                        "text": "La molécule C correspond à la représentation de Newman du galactose selon l'axe \\(C_{2}\\) - \\(C_{3}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - HC- CO- OC- OO- H"
                     },
@@ -2854,7 +2854,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "On nous propose cette réaction réalisée dans des conditions non standard à une température constante T = 298 K. On sait que ∆<sub>r</sub>G<sup>◦</sup> = −624 kJ · mol<sup>−1</sup>.\nCC(g) + 3 O<sub>2</sub> (g) −7−-− 2 CO<sub>2</sub> (g) + 2 H<sub>2</sub>O (g)\nDonnées :\nC– HC– CO– OC– OO– H\n∆<sub>l</sub>H<sup>◦</sup> (en kJ · mol<sup>−1</sup>)−413−614−498−805−463",
+                "context": "On nous propose cette réaction réalisée dans des conditions non standard à une température constante T = 298 K. On sait que ∆r\\(G^{\\(^{\\circ}\\)}\\) = −624 kJ · mo\\(l^{-1}\\).\nCC(g) + 3 \\(O_{2}\\) (g) −7−-− 2 \\(CO_{2}\\) (g) + 2 \\(H_{2}\\)O (g)\nDonnées :\nC– HC– CO– OC– OO– H\n∆l\\(H^{\\(^{\\circ}\\)}\\) (en kJ · mo\\(l^{-1}\\))−413−614−498−805−463",
                 "images": [
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q15_1.png"
                 ],
@@ -2911,13 +2911,13 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "B",
-                        "text": "\\(\\Delta _{r}\\)\\(H^{◦}= 1224\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
+                        "text": "\\(\\Delta _{r}\\)\\(H^{\\(^{\\circ}\\)}= 1224\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "\\(\\Delta _{r}\\)\\(H^{◦}= -1224\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
+                        "text": "\\(\\Delta _{r}\\)\\(H^{\\(^{\\circ}\\)}= -1224\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
@@ -2929,7 +2929,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "E",
-                        "text": "\\(\\Delta _{r}\\)\\(S^{◦}= -2.0\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
+                        "text": "\\(\\Delta _{r}\\)\\(S^{\\(^{\\circ}\\)}= -2.0\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - est faux ! Mais, il ne faut pas oublier que la réaction est ici réalisée en CONDITION STANDARD, alors, ∆rS◦ = ∆rS. On peut valider l'"
                     }
@@ -2942,37 +2942,37 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "Le glucose (C<sub>6</sub>H<sub>12</sub>O<sub>6</sub>) est la molécule centrale du métabolisme énergétique...On étudie sa com-bustion à une température de 300 K.\nDonnées :\n∆<sub>f</sub> H<sup>◦</sup>(C<sub>6</sub>H<sub>12</sub>O<sub>6(s)</sub>) = −1274 kJ · mol<sup>−1</sup>S<sup>◦</sup>(C<sub>6</sub>H<sub>12</sub>O<sub>6(s)</sub>) = 212 J · mol<sup>−1</sup> · K<sup>−1</sup>\n∆<sub>f</sub> H<sup>◦</sup>(CO<sub>2(g)</sub>) = −393 kJ · mol<sup>−1</sup>S<sup>◦</sup>(CO<sub>2(g)</sub>) = 214 J · mol<sup>−1</sup> · K<sup>−1</sup>\n∆<sub>f</sub> H<sup>◦</sup>(H<sub>2</sub>O<sub>(l)</sub>) = −286 kJ · mol<sup>−1</sup>S<sup>◦</sup>(H<sub>2</sub>O<sub>(l)</sub>) = 70 J · mol<sup>−1</sup> · K<sup>−1</sup> S<sup>◦</sup>(O<sub>2(g)</sub>) = 205 J · mol<sup>−1</sup> · K<sup>−1</sup>",
+                "context": "Le glucose (\\(C_{6}\\)\\(H_{12}\\)\\(O_{6}\\)) est la molécule centrale du métabolisme énergétique...On étudie sa com-bustion à une température de 300 K.\nDonnées :\n∆f \\(H^{\\(^{\\circ}\\)}\\)(\\(C_{6}\\)\\(H_{12}\\)\\(O_{6(s)}\\)) = −1274 kJ · mo\\(l^{-1}\\)\\(S^{\\(^{\\circ}\\)}\\)(\\(C_{6}\\)\\(H_{12}\\)\\(O_{6(s)}\\)) = 212 J · mo\\(l^{-1}\\) · \\(K^{-1}\\)\n∆f \\(H^{\\(^{\\circ}\\)}\\)(\\(CO_{2(g)}\\)) = −393 kJ · mo\\(l^{-1}\\)\\(S^{\\(^{\\circ}\\)}\\)(\\(CO_{2(g)}\\)) = 214 J · mo\\(l^{-1}\\) · \\(K^{-1}\\)\n∆f \\(H^{\\(^{\\circ}\\)}\\)(\\(H_{2}\\)\\(O_{(l)}\\)) = −286 kJ · mo\\(l^{-1}\\)\\(S^{\\(^{\\circ}\\)}\\)(\\(H_{2}\\)\\(O_{(l)}\\)) = 70 J · mo\\(l^{-1}\\) · \\(K^{-1}\\) \\(S^{\\(^{\\circ}\\)}\\)(\\(O_{2(g)}\\)) = 205 J · mo\\(l^{-1}\\) · \\(K^{-1}\\)",
                 "images": [],
                 "question": "Parmi les propositions suivantes, laquelle est (ou lesquelles sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "La combustion d'une mole de glucose consomme 6 moles de dioxygène",
+                        "text": "La combustion d’une mole de glucose consomme 6 moles de dioxygène",
                         "isCorrect": true,
                         "explanation": "VRAI - MAIS OUI MAIS NON MAIS OUI (vrai) La réaction de combustion complète du glucose s’écrit : C6H12O6(s) + 6 O2(g) −−→6 CO2(g) + 6 H2O(l) Une mole de glucose nécessite donc 6 moles de dioxygène. ? Items B et C Calculons l’enthalpie standard de réaction : ∆rH◦= X ∆fH◦(produits) − X ∆fH◦(réactifs) ∆rH◦= [6 × (−393) + 6 × (−286)] −[−1274 + 6 × (0)] = −2800 kJ · mol−1 La combustion est exothermique (∆rH◦< 0). En augmentant la température du milieu réaction- nel, le système va chercher à s’opposer à cette perturbation. Il va donc favoriser le sens qui permet de consommer la chaleur apportée. Or, le sens qui consomme de la chaleur est le sens endother- mique. Mais notre réaction directe est exothermique. Donc son sens inverse est nécessairement endothermique. Ainsi, l’augmentation de température ne favorise pas la formation des produits de la combustion."
                     },
                     {
                         "id": "B",
-                        "text": "D'après le principe de Le Chatelier, une augmentation de la température du milieu réac-tionnel favoriserait la formation des produits de cette réaction",
+                        "text": "D’après le principe de Le Chatelier, une augmentation de la température du milieu réac-",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "L'enthalpie standard de la réaction de combustion vaut ∆<sub>r</sub>H<sup>◦</sup> ≈ −2800 kJ · mol<sup>−1</sup>",
+                        "text": "L’enthalpie standard de la réaction de combustion vaut \\(\\Delta _{r}\\)\\(H^{\\(^{\\circ}\\)}\\approx -2800\\) kJ \\(\\cdot\\) \\(\\text{mol}^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et D"
                     },
                     {
                         "id": "D",
-                        "text": "L'entropie standard de la réaction de combustion vaut ∆<sub>r</sub>S<sup>◦</sup> ≈ 262 J · mol<sup>−1</sup> · K<sup>−1</sup>",
+                        "text": "L’entropie standard de la réaction de combustion vaut \\(\\Delta _{r}\\)\\(S^{\\(^{\\circ}\\)}\\approx 262\\) J \\(\\cdot\\) \\(\\text{mol}^{-1} \\cdot\\) \\(K^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - On applique la loi de Hess sur les entropies : ∆rS◦= [6 × S◦(CO2) + 6 × S◦(H2O)] −[S◦(glucose) + 6 × S◦(O2)] ∆rS◦= [6 × (214) + 6 × (70)] −[212 + 6 × (205)] = 1704 −1442 = +262 J · mol−1 · K−1"
                     },
                     {
                         "id": "E",
-                        "text": "L'enthalpie libre standard de la réaction de combustion à 300 K vaut ∆<sub>r</sub>G<sup>◦</sup> ≈ −2722 kJ ·",
+                        "text": "L’enthalpie libre standard de la réaction de combustion à 300 K vaut \\(\\Delta _{r}\\)\\(G^{\\(^{\\circ}\\)}\\approx -2722\\) kJ \\(\\cdot\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - On termine cette question par un item FAUUUX Calculons l’enthalpie libre standard : ∆rG◦= ∆rH◦−T∆rS◦ ∆rG◦= −2800 −300 × (0,26) = −2878 kJ · mol−1 La valeur proposée (−2722 kJ · mol−1) est incorrecte."
                     }
@@ -2987,7 +2987,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 18,
                 "type": "QCM",
-                "context": "mol<sup>−1</sup>\nLes plantes sont capables, en présence de lumière, de former du glucose à partir d’ O<sub>2</sub> et de CO<sub>2</sub>. On s’intéresse à cette réaction de synthèse du glucose à 500 K :\nDonnées standards à T = 300 K\nsynthèse\nsynthèse\n= +2 878 kJ · mol<sup>−1</sup>\n= +2 800 kJ · mol<sup>−1</sup>",
+                "context": "mo\\(l^{-1}\\)\nLes plantes sont capables, en présence de lumière, de former du glucose à partir d’ \\(O_{2}\\) et de \\(CO_{2}\\). On s’intéresse à cette réaction de synthèse du glucose à 500 K :\nDonnées standards à T = 300 K\nsynthèse\nsynthèse\n= +2 878 kJ · mo\\(l^{-1}\\)\n= +2 800 kJ · mo\\(l^{-1}\\)",
                 "images": [],
                 "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
@@ -2999,13 +2999,13 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "B",
-                        "text": "La constante d'équilibre K<sub>300</sub> de cette réaction à 300 K vérifie ln K<sub>300</sub> ≈ −1151",
+                        "text": "La constante d'équilibre \\(K_{300}\\) de cette réaction à 300 K vérifie ln \\(K_{300}\\) ≈ −1151",
                         "isCorrect": true,
                         "explanation": "VRAI - Vrai. Pour la synthèse du glucose : ∆rG◦ synthèse = +2878 kJ · mol−1 = +2 878 000 J · mol−1 ln K300 = −∆rG◦ RT = −2 878 000 8,3 × 300 ≈−1151"
                     },
                     {
                         "id": "C",
-                        "text": "Le rapport entre les constantes d'équilibre aux deux températures vérifie ln(K<sub>500</sub>/K<sub>300</sub>) ≈",
+                        "text": "Le rapport entre les constantes d'équilibre aux deux températures vérifie ln(\\(K_{500}\\)/\\(K_{300}\\)) ≈",
                         "isCorrect": true,
                         "explanation": "VRAI - Vrai. D’après la relation de Van ’t Hoff : ln \u0012K500 K300 \u0013 = −∆rH◦ R \u0012 1 500 − \u0013 Avec ∆rH◦ synthèse = +2 800 000 J · mol−1 : ln \u0012K500 K300 \u0013 = −2 800 000 8,3 \u0012 1 500 − \u0013 ≈+450"
                     },
@@ -3034,35 +3034,35 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "L’augmentation de température favorise la formation des produits de cette réaction",
                 "images": [],
-                "question": "À propos des équilibres acido-basiques en solution aqueuse, indiquez la ou les pro-position(s) exacte(s) :",
+                "question": "À propos des équilibres acido-basiques en solution aqueuse, indiquez la ou les pro- position(s) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Selon la théorie de Bronsted, un acide est un donneur de proton H+",
+                        "text": "Selon la théorie de Bronsted, un acide est un donneur de proton \\(H^{+}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - EFFECTIVEMENT ! Selon la théorie de Brønsted, un acide est bien défini comme un donneur de proton H+. C’est la définition fondamentale, vous devez la savoir par cœur car vous allez souvent l’utiliser cette année !!"
                     },
                     {
                         "id": "B",
-                        "text": "L'eau est un solvant ampholyte exempt de toute réaction d'auto- protolyse en l'absence de soluté",
+                        "text": "L’eau est un solvant ampholyte exempt de toute réaction d’auto- protolyse en l’absence de",
                         "isCorrect": false,
                         "explanation": "FAUX - Et non !! L’eau est un solvant ampholyte, certes, mais la réaction d’autoprotolyse de l’eau est un équilibre TOUJOURS présent en solution aqueuse ! Même sans soluté ajouté, les molécules d’eau réagissent entre elles. Souvenez-vous en les reufs !!"
                     },
                     {
                         "id": "C",
-                        "text": "Plus la valeur du pKa est petite, plus l'acide est considéré comme faible",
+                        "text": "Plus la valeur du pKa est petite, plus l’acide est considéré comme faible",
                         "isCorrect": false,
                         "explanation": "FAUX - Aïe aïe aïe toujours pas ! C’est exactement l’inverse. Un acide est d’autant plus fort qu’il cède facilement un H+, ce qui correspond mathématiquement à un pKa PETIT ! Plus la valeur de pKa diminue, plus la force de l’acide augmente."
                     },
                     {
                         "id": "D",
-                        "text": "[AH]eq[AH]eqLa relation de Henderson-Hasselbalch s'exprime par la formule pH = pKa − log 1 [A−]eq 2",
+                        "text": "La relation de Henderson-Hasselbalch s’exprime par la formule pH = pKa \\(-\\)log",
                         "isCorrect": false,
                         "explanation": "FAUX - Toujours faux !! La relation de Henderson-Hasselbalch comporte un signe POSITIF ! La vraie for- mule à apprendre par cœur est : pH = pKa + log [A−]eq [AH]eq !"
                     },
                     {
                         "id": "E",
-                        "text": "En solution aqueuse, il est possible de trouver des acides dont la force est supérieure à celle de l'ion oxonium H<sub>3</sub>O+",
+                        "text": "En solution aqueuse, il est possible de trouver des acides dont la force est supérieure à celle",
                         "isCorrect": false,
                         "explanation": "FAUX - Et toujours pas ! On n’oublie pas la règle du nivellement du solvant !! En solution aqueuse, le solvant (l’eau) nivelle le pouvoir des acides forts. Ainsi, il est strictement IMPOSSIBLE de trouver un acide dont la force est supérieure à celle de l’ion oxonium H3O+. C’est le plus boosté dans l’eau."
                     }
@@ -3093,7 +3093,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "C",
-                        "text": "22Pour une espèce ampholyte : pH = 1 (pKa<sub>1</sub> + pKa<sub>2</sub>)",
+                        "text": "22Pour une espèce ampholyte : pH = 1 (p\\(Ka_{1}\\) + p\\(Ka_{2}\\))",
                         "isCorrect": true,
                         "explanation": "VRAI - 2(pKa1 + pKa2) Pileeeeeeee. C’est des formules à apprendre par coeur et surtout à savoir utiliser !!!!!!!!! En exercice dès qu’on vous donne les pKa d’une espèce amphotère pensez immédiatement à cette formule !!!!!"
                     },
@@ -3105,7 +3105,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "E",
-                        "text": "La constante d'acidité de l'acide CH<sub>3</sub>COOH s'écrit : K<sub>a</sub>",
+                        "text": "La constante d'acidité de l'acide \\(CH_{3}\\)COOH s'écrit : \\(K_{a}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - [CH3COOH] [CH3COO−][H3O+] La réaction de l’acide éthanoïque avec l’eau est : CH3COOH + H2O −−⇀ ↽−−CH3COO−+ H3O+ La constante d’acidité Ka c’est la force d’un acide. On l’exprime ainsi pour un acide AH : Ka = [A−][H3O+] [AH] Donc pour l’acide éthanoïque on a : Ka = [CH3COO−][H3O+] [CH3COOH]"
                     }
@@ -3120,7 +3120,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 21,
                 "type": "QCM",
-                "context": "[CH3COOH]\n[CH3COO<sup>−</sup>][H3O<sup>+</sup>]\nOn s’intéresse maintenant à trois solutions acido-basiques :\nSolution A : C<sub>a</sub> = 0,7mmol · L<sup>−1</sup> d’acide chlorhydrique HCl\nSolution B : C<sub>b</sub> = 6mmol · L<sup>−1</sup> d’hydroxyde de sodium NaOH\nSolution C : C<sub>c</sub> = 0,5mol.·<sup>−1</sup> d’acide méthanoïque CH<sub>2</sub>O<sub>2</sub> de pKa = 3,8",
+                "context": "[CH3COOH]\n[CH3\\(COO^{-}\\)][H3\\(O^{+}\\)]\nOn s’intéresse maintenant à trois solutions acido-basiques :\nSolution A : \\(C_{a}\\) = 0,7mmol · \\(L^{-1}\\) d’acide chlorhydrique HCl\nSolution B : \\(C_{b}\\) = 6mmol · \\(L^{-1}\\) d’hydroxyde de sodium NaOH\nSolution C : \\(C_{c}\\) = 0,5mol.·−1 d’acide méthanoïque \\(CH_{2}\\)\\(O_{2}\\) de pKa = 3,8",
                 "images": [],
                 "question": "À propos du pH des solutions, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -3163,7 +3163,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 22,
                 "type": "QCM",
-                "context": "On nous propose de mélanger les solutions :\nMélange 1 : 10,0 mL de solution B avec 20,0 mL de solution A à C<sub>A</sub> = 0,01 mmol · L<sup>−1</sup>\nMélange 2 : 50,0 mL de solution C avec 25,0 mL de solution B à C<sub>B</sub> = 0,5 mol · L<sup>−1</sup>",
+                "context": "On nous propose de mélanger les solutions :\nMélange 1 : 10,0 mL de solution B avec 20,0 mL de solution A à \\(C_{A}\\) = 0,01 mmol · \\(L^{-1}\\)\nMélange 2 : 50,0 mL de solution C avec 25,0 mL de solution B à \\(C_{B}\\) = 0,5 mol · \\(L^{-1}\\)",
                 "images": [],
                 "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
@@ -3175,7 +3175,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "B",
-                        "text": "Le mélange 1 a un pH d'environ 11",
+                        "text": "Le mélange 1 a un pH d’environ 11",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout à fait. Nous allons reprendre depuis le début de la réaction entre les deux solutions : 1. Calculons n pour chaque espèce (rappel du cours n = C × V ), donc n(H+) = 0,01 · 10−3 × 20 · 10−3 = 2,0 · 10−7 mol et n(OH−) = 6,0 · 10−3 × 10 · 10−3 = 6,0 · 10−5 mol. 2. Cherchons le réactif en excès : n(OH−)excès = 6,0 · 10−5 −2,0 · 10−7 ≈6,0 · 10−5 mol avec le volume total Vf = 20 + 10 = 30 mL = 30 · 10−3 = 3,0 · 10−2 L. 3. Calculons la concentration finale en OH– : [OH−]f = 6,0·10−5 3,0·10−2 = 2,0 · 10−3 mol · L−1 4. Calculons le pH du mélange : on retrouve une base forte donc le calcul est 14+log CBF donc : 14 + log(2,0 · 10−3) = 14 + log(2) + log(10−3) = 14 + 0,3 −3 = 11,3 ? Items C, D et E Et OUII !!! Mais comment en sommes-nous arrivés là ? 1. Voici l’équation de réaction du mélange : HCOOH + HO– −−→HCOO– + H2O 2. Calculons n encore une fois : n(CH2O2) = 5,0·10−1 ×5,0·10−2 = 2,5·10−2 mol et n(OH−) = 5,0·10−1 ×2,5·10−2 = 1,25·10−2 mol (Trouvez des astuces de calculs, par exemple raisonnez surtout en écriture scientifique, promis c’est pas si compliqué !) 3. OH– est le réactif limitant ainsi après réaction : n(CH2O2) = 2,5 · 10−2 −1,25 · 10−2 = 1,25 · 10−2 mol et n(HCOO−) = 1,25 · 10−2 mol 4. Calculons le pH du mélange grâce à la formule d’Henderson-Hasselbalch : pH = pKa + log( [CH2O2] [HCOO−]) avec [CH2O2] [HCOO−] = 1 Et log(1) = 0 Donc pH = pKa = 3,8 On peut alors valider les items C,D et E !!"
                     },
@@ -3187,13 +3187,13 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "D",
-                        "text": "Le pH du mélange 2 est 4,0 ± 0,2",
+                        "text": "Le pH du mélange 2 est 4,0 \\(\\pm 0,2\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Le calcul du mélange 2 s'effectue par la relation d'Henderson-Hasselbach",
+                        "text": "Le calcul du mélange 2 s’effectue par la relation d’Henderson-Hasselbach",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -3408,7 +3408,7 @@ window.ANNALES_2026_2027 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "La taille des molécules observables est généralement de l'ordre du µm",
+                        "text": "La taille des molécules observables est généralement de l'ordre du \\(\\mu\\)m",
                         "isCorrect": true,
                         "explanation": "VRAI - Oui tout pile, la microscopie optique permet d’observer des éléments de 200 µm à 0.2 µm."
                     },
@@ -3670,35 +3670,35 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "",
                 "images": [],
-                "question": "Concernant les jonctions d'ancrage, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant les jonctions d’ancrage, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Les contacts focaux permettent de relier les filaments d'actine intracellulaires à la MEC",
+                        "text": "Les contacts focaux permettent de relier les filaments d’actine intracellulaires à la MEC",
                         "isCorrect": true,
                         "explanation": "VRAI - Oui c’est tout à fait exact ! Les contacts focaux sont des jonctions d’ancrage situées à la base de la cellule épithéliale et qui utilisent les filaments d’actine pour s’ancrer dans la MEC du tissu conjonctif sous-jacent. Il faut bien faire la différence avec les jonctions adhérentes, qui elles, relient les filaments d’actine de cellules épithéliales adjacentes. Diapo 29 - Tissu épithélial - Dr. Mouton-Liger"
                     },
                     {
                         "id": "B",
-                        "text": "Les protéines de liaison de la Macula adherens sont l'α-caténine, la β-caténine et la vinculine",
+                        "text": "Les protéines de liaison de la Macula adherens sont l’\\(\\alpha -\\)caténine, la \\(\\beta -\\)caténine et la vinculine",
                         "isCorrect": false,
                         "explanation": "FAUX - Je sais que les items précis comme ça ne sont pas simples mais c’est important que vous reteniez les détails ! On pourrait penser que l’item est bon, mais il ne faut pas lire trop rapidement. L’erreur réside dans la confusion entre Zonula adherens et Macula adherens. Il est IMPORTANT de marquer dans votre carnet d’erreur que : 🔥 Jonctions adhérentes = Zonula adherens 🔥 Desmosome = Macula adherens L’α-caténine, la β-caténine et la vinculine sont donc des protéines de liaisons des zonula adhe- rens, aussi appelés jonctions adhérentes. Les protéines de la macula adherens sont au contraire la desmoplakine, la plakoglobine, la desmogléine et la desmocolline."
                     },
                     {
                         "id": "C",
-                        "text": "Au sein des contacts focaux, l'actine est directement liée à la taline",
+                        "text": "Au sein des contacts focaux, l’actine est directement liée à la taline",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention ⚠️ il faut bien faire attention aux items avec des mots comme “uniquement” ou dans notre cas “directement” ! Ici, la subtilité c’est que les filaments d’actine dans les contacts focaux ne sont pas directement liés à la taline. L’actine est liée à la vinculine qui est elle-même reliée à la taline, en contact avec les intégrines. Je vous mets le schéma correspondant : Diapo 35 - Tissu épithélial - Dr. Mouton-Liger"
                     },
                     {
                         "id": "D",
-                        "text": "Les plaques intracytoplasmique du desmosome sont formées des protéines nommées desmo-plakine et desmocolline",
+                        "text": "Les plaques intracytoplasmique du desmosome sont formées des protéines nommées desmo-",
                         "isCorrect": false,
                         "explanation": "FAUX - Hehe vous êtes tombé(e)s dans le piège ! Les noms de ces protéines se ressemblent vraiment mais il ne faut pas les mélanger et se souvenir que : ✨ La plaque discoïde intracytoplasmique est formée de la desmoplakine et de la plako- globine ✨ Les protéines d’ancrage transmembranaires sont la desmogléine et la desmocolline"
                     },
                     {
                         "id": "E",
-                        "text": "Les hémidesmosomes d'une cellule épithéliale s'ancrent dans la lame basale du tissu conjonc-tif sous-jacent, mais pas dans la lame réticulaire",
+                        "text": "Les hémidesmosomes d’une cellule épithéliale s’ancrent dans la lame basale du tissu conjonc-",
                         "isCorrect": true,
                         "explanation": "VRAI - Et on finit avec un item vrai ! Mais pourquoi me direz-vous ? Et bien les protéines d’ancrage des hémidesmosomes ne s’ancrent pas dans la totalité de la membrane plasmique, mais bien que dans la lame basale. La lame réticulaire n’est donc pas du tout sollicitée dans le processus d’ancrage mettant en jeu l’hémidesmosome ! Je vous remet le diapo du cours qui le prouve (même si je sais que vous ne doutez pas de votre fidèle correctrice 🐇 ) : Diapo 42 - Tissu épithélial - Dr. Mouton-Liger"
                     }
@@ -4287,23 +4287,23 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "L’association de l’élastine avec les microfibrilles de fibrilline permet la formation des fibres élastiques\nLes fibres de réticuline sont présentes en abondance dans la lame basale sous les cellules épithéliales\nEn coupe histologique, les fibres de réticuline sont colorées en rouge par coloration argentique",
                 "images": [],
-                "question": "Concernant les glycosaminoglycanes (GAG) et les protéoglycanes, laquelle (les-quelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant les glycosaminoglycanes (GAG) et les protéoglycanes, laquelle (les- quelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Les GAG sont des longues chaînes d'unités trisaccharidiques répétées",
+                        "text": "Les GAG sont des longues chaînes d’unités trisaccharidiques répétées",
                         "isCorrect": false,
                         "explanation": "FAUX - Petit piège pas sympa j’avoue… Ce sont des chaînes composées de 70 à 200 unités DIsaccharidiques répétées."
                     },
                     {
                         "id": "B",
-                        "text": "Les GAG retiennent une grande quantité d'eau grâce à leur charge négative",
+                        "text": "Les GAG retiennent une grande quantité d’eau grâce à leur charge négative",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est exactement ça !! Grâce à cette charge négative, ils captent les molécules d’eau et maintiennent ainsi l’hydratation, la souplesse et la résistance des différents tissus du corps, selon leur abondance."
                     },
                     {
                         "id": "C",
-                        "text": "Les GAG sulfatés comme l'héparane sulfate se fixent à une protéine centrale pour former un protéoglycane",
+                        "text": "Les GAG sulfatés comme l’héparane sulfate se fixent à une protéine centrale pour former",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout pile, l’héparane sulfate, la kératane sulfate sont en effet des GAG sulfatés ! Il y a aussi la chondroïtine sulfate et la dermatane sulfate… Mais attention pas l’acide hyaluronique qui est un GAG non-sulfaté."
                     },
@@ -4315,7 +4315,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "E",
-                        "text": "Les protéoglycanes sont majoritairement formés de sucres (∼90%)",
+                        "text": "Les protéoglycanes sont majoritairement formés de sucres (\\(∼90\\)%)",
                         "isCorrect": false,
                         "explanation": "FAUX - Tout pile pas de piège ici ! Les protéoglycanes sont bel et bien majoritairement formés de sucres !"
                     }
@@ -4600,11 +4600,11 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "",
                 "images": [],
-                "question": "Concernant l'hématopoïèse, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant l’hématopoïèse, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Chez le fœtus, jusqu'à la 8ème semaine, l'hématopoïèse se déroule au niveau des îlots de Wolff et Pander",
+                        "text": "Chez le fœtus, jusqu’à la \\(8^{ème}\\) semaine, l’hématopoïèse se déroule au niveau des îlots de",
                         "isCorrect": false,
                         "explanation": "FAUX - Aïe petit piège ! On a inversé “fœtus” et “embryon”... On rappelle que l’hématopoïèse débute à la 3ème semaine chez l’embryon dans la splanchnopleure. C’est donc chez l’embryon que l’hématopoïèse se déroule au niveau des îlots de Wolff et Pander jusqu’à la 8ème semaine ! Plus tard, chez le fœtus, elle se déroule du 2ème au 6ème mois dans le foie et la rate."
                     },
@@ -4616,19 +4616,19 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "C",
-                        "text": "La CSH se divise par mitose et se différencie pour donner naissance à deux cellules souches hématopoïétiques : les cellules souche myéloïde (CFU-L) et les cellules souche lymphoïde (CPU-GEMM)",
+                        "text": "La CSH se divise par mitose et se différencie pour donner naissance à deux cellules souches",
                         "isCorrect": false,
                         "explanation": "FAUX - L’item aurait pu être juste…. Mais il faut faire attention à bien tout lire ! Ici on a inversé les parenthèses ce qui rend l’item faux. En effet, la cellule souche myéloïde est appelée CPU-GEMM et la cellule souche lymphoïde est appelée CFU-L."
                     },
                     {
                         "id": "D",
-                        "text": "Chez l'adulte, l'hématopoïèse se déroule dans la moelle osseuse des os courts et plats",
+                        "text": "Chez l’adulte, l’hématopoïèse se déroule dans la moelle osseuse des os courts et plats",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout juste !"
                     },
                     {
                         "id": "E",
-                        "text": "La cellule souche myéloïde donne un précurseur commun aux granulocytes basophiles et aux monocytes",
+                        "text": "La cellule souche myéloïde donne un précurseur commun aux granulocytes basophiles et aux",
                         "isCorrect": false,
                         "explanation": "FAUX - Pas tout à fait ! Le précurseur des monocytes est le précurseur BFU-GM qui est également commun avec les granulocytes neutrophiles ! Pour rappel, le précurseur des granulocytes basophiles est le précurseur CFU-Bas et celui des granulocytes éosinophiles est CFU-Eo. Je vous mets la diapo du cours avec le schéma qui résume super bien les différentes famille : Diapo 7 - Tissus sanguins et circulants - Pr. Chrétien et Dr. Mouton-Liger"
                     }
@@ -4688,17 +4688,17 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "",
                 "images": [],
-                "question": "Concernant le groupe sanguin et l'hémoglobine, laquelle (lesquelles) des proposi-tions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant le groupe sanguin et l’hémoglobine, laquelle (lesquelles) des proposi- tions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Le groupe sanguin est déterminé par la présence de glycoprotéines appelées antigènes ou agglutinogènes sur les érythrocytes",
+                        "text": "Le groupe sanguin est déterminé par la présence de glycoprotéines appelées antigènes ou",
                         "isCorrect": true,
                         "explanation": "VRAI - Ouiii ! Il existe plus de 300 antigènes érythrocytaires de surface qui ont été identifiés chez l’Homme et plus de 30 systèmes différents de classification de ces antigènes (ex : ABO, Rhésus, Kell, etc)."
                     },
                     {
                         "id": "B",
-                        "text": "Les antigènes du système Kell peuvent être responsables d'une incompatibilité fœto-maternelle en cas de deuxième grossesse",
+                        "text": "Les antigènes du système Kell peuvent être responsables d’une incompatibilité fœto-",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention ! Ce sont les antigènes du système Rhésus qui peuvent être responsables d’une incompa- tibilité foeto-maternelle. Pour rappel, lorsqu’une mère de groupe Rhésus négatif porte un premier fœtus de groupe Rhésus positif, le passage de sang fœtal dans la circulation maternelle déclenche une réaction immunitaire. La mère fabrique alors des agglutinines dirigées contre les antigènes Rhésus positifs. Parmi ces antigènes, la protéine D constitue le facteur majoritaire ; la réaction produit donc principalement des anticorps anti-D. En cas de seconde grossesse avec un nouvel enfant Rhésus positif, ces anticorps anti-D déjà synthé- tisés peuvent attaquer les hématies du fœtus. Cette réaction immunitaire risque de compromettre gravement la nidation ainsi que le développement fœtal."
                     },
@@ -4710,13 +4710,13 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "D",
-                        "text": "La partie non-protéique de l'hémoglobine est constituée de 4 chaînes identiques 2 à 2",
+                        "text": "La partie non-protéique de l’hémoglobine est constituée de 4 chaînes identiques 2 à 2",
                         "isCorrect": false,
                         "explanation": "FAUX - Noooon !!! Attention quand vous allez trop vite ! C’est la partie protéique (= globine) qui est constituée par 4 chaînes protéiques identiques 2 à 2 ! La partie non-protéique est l’hème et est, quant à elle, constituée d’un noyau porphyrique et d’un atome de fer ferreux."
                     },
                     {
                         "id": "E",
-                        "text": "L'hémoglobine fœtale est constituée de 2 chaînes α et de 2 chaînes β",
+                        "text": "L’hémoglobine fœtale est constituée de 2 chaînes \\(\\alpha\\) et de 2 chaînes \\(\\beta\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Petit piège mais vous ne tomberez plus dedans après ! L’hémoglobine fœtale est constituée de 2 chaînes alpha et de 2 chaînes gamma. C’est l’hémoglobine de type HbA1 que l’on retrouve majoritairement chez l’adulte qui est décrit dans l’item."
                     }
@@ -4867,7 +4867,7 @@ window.ANNALES_2026_2027 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Les trois différents types de lymphocytes sont distinguables en histologie ou cytologie stan-dard",
+                        "text": "Les trois différents types de lymphocytes sont distinguables en histologie ou cytologie stan-",
                         "isCorrect": false,
                         "explanation": "FAUX - Eh non… Les trois différents types de lymphocytes (B, T et NK) sont NON distinguables en histologie ou cytologie standard. Ainsi, si, en observant une coupe en histologie, vous voyez des cellules rondes avec un rapport Noyau/Cytoplasme élevé et un noyau sans nucléole et à chromatine dense, vous pourrez conclure qu’il s’agit de lymphocytes, mais sans pouvoir préciser de quel type il s’agit."
                     },
@@ -4885,13 +4885,13 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "D",
-                        "text": "Les lymphocytes T Helper peuvent reconnaître l'antigène présenté par une molécule du CMH de classe I via leur TCR et leur co-récepteur CD4",
+                        "text": "Les lymphocytes T Helper peuvent reconnaître l’antigène présenté par une molécule du",
                         "isCorrect": false,
                         "explanation": "FAUX - Presque ! Effectivement, les lymphocytes T Helper peuvent reconnaître l’antigène via leur TCR et leur co-récepteur CD4 si elle est présentée par une Cellule Présentatrice d’Antigènes (CPA) sur une molécule du CMH de classe II ! En revanche, les lymphocytes T Cytotoxiques, eux, s’activent en reconnaissant un antigène présenté par une molécule du CMH I via leur TCR et leur co-récepteur CD8 ! Eh oui, il s’agit encore d’un piège d’inversion !"
                     },
                     {
                         "id": "E",
-                        "text": "Les lymphocytes NK sont activés par des cytokines tels que l'IFNγ et IL2",
+                        "text": "Les lymphocytes NK sont activés par des cytokines tels que l’IFN\\(\\gamma\\) et IL2",
                         "isCorrect": true,
                         "explanation": "VRAI - Exact (enfin) ! Les lymphocytes NK, contrairement aux lymphocytes B et T, ne sont pas directe- ment activés par un antigène, mais par des cytokines (des molécules de communication cellulaire pouvant jouer un rôle dans l’inflammation) produites par des lymphocytes T Helper activés. Par exemple, l’IFNγ (interféron gamma) et l’IL2 (interleukine 2). Ces lymphocytes NK peuvent tuer des cellules infectées ou tumorales via les perforines qu’ils produisent !"
                     }
@@ -5001,7 +5001,7 @@ window.ANNALES_2026_2027 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Les chondrocytes ont une taille d'environ 20 à 40 µm",
+                        "text": "Les chondrocytes ont une taille d'environ 20 à 40 \\(\\mu\\)m",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est ça bravo !!"
                     },
@@ -5231,40 +5231,40 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 1,
                 "type": "QCM",
-                "context": "Areej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel F<sub>el</sub>(z) = kzz<sub>r</sub> qui dérive d’une énergie potentielle élastique selon sa longueur z avec z<sub>r</sub> la longueur au repos. La constante de raideur du cordage est notée k. Ici, nous allons nous intéresser à la balle de tennis qu’on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l’air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l’air. On place l’origine des temps au moment où la balle atteint son sommet à z<sub>A</sub> = 3,0 m. On note E<sub>m</sub> l’énergie mécanique associée à la balle, E<sub>c</sub> son énergie cinétique, E<sub>pp</sub> son énergie potentielle de pesanteur et E<sub>pe</sub> son énergie potentielle élastique.\nOn donne : m = 30,0 g la masse de la balle et g = 9,81 m.s<sup>−2</sup> l’accélération de pesanteur.",
+                "context": "Areej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel \\(F_{el}\\)(z) = kz\\(z_{r}\\) qui dérive d’une énergie potentielle élastique selon sa longueur z avec \\(z_{r}\\) la longueur au repos. La constante de raideur du cordage est notée k. Ici, nous allons nous intéresser à la balle de tennis qu’on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l’air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l’air. On place l’origine des temps au moment où la balle atteint son sommet à \\(z_{A}\\) = 3,0 m. On note \\(E_{m}\\) l’énergie mécanique associée à la balle, \\(E_{c}\\) son énergie cinétique, \\(E_{pp}\\) son énergie potentielle de pesanteur et \\(E_{pe}\\) son énergie potentielle élastique.\nOn donne : m = 30,0 g la masse de la balle et g = 9,81 m.\\(s^{-2}\\) l’accélération de pesanteur.",
                 "images": [
                     "annales_assets/2026_2027/physique/tuto_1/image3.png",
                     "annales_assets/2026_2027/physique/tuto_1/fig_q1_1.png"
                 ],
-                "question": "Concernant le bilan énergétique de la situation sans frottements de l'air, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "Concernant le bilan énergétique de la situation sans frottements de l’air, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "L'énergie mécanique E<sub>m</sub> s'annule au point culminant",
+                        "text": "L’énergie mécanique \\(E_{m}\\) s’annule au point culminant",
                         "isCorrect": false,
                         "explanation": "FAUX - L’énergie mécanique est constante tout au long de la trajectoire (les forces étant conservatives). Au point culminant, elle est entièrement sous forme d’énergie potentielle de pesanteur et n’est pas nulle. En revanche, l’énergie cinétique est nulle (car énergie potentielle maximale, car hauteur maximale, donc vitesse nulle, donc énergie cinétique nulle). Au niveau du sol, l’énergie mécanique est entièrement sous forme d’énergie cinétique. Attention à ne pas confondre Em, Epp, Epe et Ec ! Petite piqûre de rappel : une force est dite conservative si son travail ne dépend pas du chemin suivi. On dit aussi qu’une force conservative dérive d’une énergie potentielle (dans notre cas, le poids −→ P dérive de l’énergie potentielle de pesanteur Epp et la force de rappel −→ Fel dérive de l’énergie potentielle élastique)"
                     },
                     {
                         "id": "B",
-                        "text": "L'énergie mécanique E<sub>m</sub> reste constante",
+                        "text": "L’énergie mécanique \\(E_{m}\\) reste constante",
                         "isCorrect": true,
                         "explanation": "VRAI - En négligeant les frottements de l’air, le poids et la force de rappel du ressort sont les seules forces qui s’exercent sur la balle. Le poids et la force de rappel étant toutes les deux des forces conservatives, l’énergie mécanique se conserve (rappel : Em = Epp + Epe + Ec). ? Items C et D À la hauteur maximale, la vitesse de la balle s’annule, entraînant une énergie cinétique Ec = 0 J. Par conservation de l’énergie mécanique, l’énergie potentielle de pesanteur Epp y est maximale (on rappelle que dans cette situation, il n’y a pas d’énergie potentielle élastique à prendre en compte). On peut aussi réfléchir dans l’autre sens. A l’altitude maximale, z est maximale, donc mgz est maximale et donc Epp aussi. Ainsi, item C vrai, item D faux."
                     },
                     {
                         "id": "C",
-                        "text": "Lorsque la balle atteint sa hauteur maximale, E<sub>c</sub> est nulle et E<sub>pp</sub> est maximale",
+                        "text": "Lorsque la balle atteint sa hauteur maximale, \\(E_{c}\\) est nulle et \\(E_{pp}\\) est maximale",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Lorsque la balle atteint sa hauteur maximale, E<sub>pp</sub> est nulle et E<sub>c</sub> est maximale",
+                        "text": "Lorsque la balle atteint sa hauteur maximale, \\(E_{pp}\\) est nulle et \\(E_{c}\\) est maximale",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Lors de la phase de descente de la balle, il s'opère une conversion d'énergie cinétique en énergie potentielle de pesanteur",
+                        "text": "Lors de la phase de descente de la balle, il s’opère une conversion d’énergie cinétique en",
                         "isCorrect": false,
                         "explanation": "FAUX - Lors de la descente, l’altitude diminue et la vitesse augmente sous l’effet du champ de pesanteur. Le transfert d’énergie s’opère donc de l’énergie potentielle de pesanteur vers l’énergie cinétique (voir schéma item 1A). L’intégralité de l’énergie potentielle se convertit en énergie cinétique (les frotte- ments sont négligés) étant donné que nous sommes en présence de forces conservatives uniquement : nous n’avons aucune perte d’énergie."
                     }
@@ -5278,7 +5278,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 2,
                 "type": "QCM",
-                "context": "Areej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel F<sub>el</sub>(z) = kzz<sub>r</sub> qui dérive d’une énergie potentielle élastique selon sa longueur z avec z<sub>r</sub> la longueur au repos. La constante de raideur du cordage est notée k. Ici, nous allons nous intéresser à la balle de tennis qu’on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l’air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l’air. On place l’origine des temps au moment où la balle atteint son sommet à z<sub>A</sub> = 3,0 m. On note E<sub>m</sub> l’énergie mécanique associée à la balle, E<sub>c</sub> son énergie cinétique, E<sub>pp</sub> son énergie potentielle de pesanteur et E<sub>pe</sub> son énergie potentielle élastique.\nOn donne : m = 30,0 g la masse de la balle et g = 9,81 m.s<sup>−2</sup> l’accélération de pesanteur.",
+                "context": "Areej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel \\(F_{el}\\)(z) = kz\\(z_{r}\\) qui dérive d’une énergie potentielle élastique selon sa longueur z avec \\(z_{r}\\) la longueur au repos. La constante de raideur du cordage est notée k. Ici, nous allons nous intéresser à la balle de tennis qu’on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l’air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l’air. On place l’origine des temps au moment où la balle atteint son sommet à \\(z_{A}\\) = 3,0 m. On note \\(E_{m}\\) l’énergie mécanique associée à la balle, \\(E_{c}\\) son énergie cinétique, \\(E_{pp}\\) son énergie potentielle de pesanteur et \\(E_{pe}\\) son énergie potentielle élastique.\nOn donne : m = 30,0 g la masse de la balle et g = 9,81 m.\\(s^{-2}\\) l’accélération de pesanteur.",
                 "images": [
                     "annales_assets/2026_2027/physique/tuto_1/image3.png",
                     "annales_assets/2026_2027/physique/tuto_1/fig_q1_1.png"
@@ -5331,31 +5331,31 @@ window.ANNALES_2026_2027 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut 5,4 m · s<sup>−1</sup>",
+                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut 5,4 m · \\(s^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut 7,7 m · s<sup>−1</sup>",
+                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut 7,7 m · \\(s^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - est vrai."
                     },
                     {
                         "id": "C",
-                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut 9,7 m · s<sup>−1</sup>",
+                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut 9,7 m · \\(s^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut 29 m · s<sup>−1</sup>",
+                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut 29 m · \\(s^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et EIci, seul le poids intervient et pas la force de rappel de la raquette (”contact avec la raquette sans s'enfoncer dans le cordage”). On a donc que des forces conservatives. Par conservation de l'énergiemécanique entre le sommet de la trajectoire (zA = 3,0 m, vA = 0 m · s−1) et le contact avec laraquette (zO = 0 m) :Em,A = Em,O ⇐⇒ Ec,A + Ep,A = Ec,O + Ep,OOr, Ec,A = 0 J, car vA = 0 m · s−1 et Ep,O = 0 J, car zO = 0 mE= E1p,Ac,O⇐⇒ mgz=mv⇐⇒ v = 2gzA2f2f2A⇐⇒ v = √2gzfAFaisons le calcul :√√L'"
                     },
                     {
                         "id": "E",
-                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut 59 m · s<sup>−1</sup>",
+                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut 59 m · \\(s^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -5368,19 +5368,19 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "La vitesse de la balle quand elle entre en contact avec la raquette sans s’enfoncer dans le cordage vaut 7,7 m · s<sup>−1</sup>\nLa vitesse de la balle quand elle entre en contact avec la raquette sans s’enfoncer dans le cordage vaut 9,7 m · s<sup>−1</sup>\nLa vitesse de la balle quand elle entre en contact avec la raquette sans s’enfoncer dans le cordage vaut 29 m · s<sup>−1</sup>\nLa vitesse de la balle quand elle entre en contact avec la raquette sans s’enfoncer dans le cordage vaut 59 m · s<sup>−1</sup>",
+                "context": "La vitesse de la balle quand elle entre en contact avec la raquette sans s’enfoncer dans le cordage vaut 7,7 m · \\(s^{-1}\\)\nLa vitesse de la balle quand elle entre en contact avec la raquette sans s’enfoncer dans le cordage vaut 9,7 m · \\(s^{-1}\\)\nLa vitesse de la balle quand elle entre en contact avec la raquette sans s’enfoncer dans le cordage vaut 29 m · \\(s^{-1}\\)\nLa vitesse de la balle quand elle entre en contact avec la raquette sans s’enfoncer dans le cordage vaut 59 m · \\(s^{-1}\\)",
                 "images": [],
                 "question": "On s'intéresse à la déformation du cordage selon un axe dirigé par le vecteur uni-",
                 "options": [
                     {
                         "id": "A",
-                        "text": "taire −→u<sub>z</sub>. On note z la position de la balle lors de la déformation, z<sub>R</sub> la longueur",
+                        "text": "taire −→\\(u_{z}\\). On note z la position de la balle lors de la déformation, \\(z_{R}\\) la longueur",
                         "isCorrect": true,
                         "explanation": "VRAI - et BPar définition, une force conservative dérive d'une énergie potentielle telle que F = −. En unedEpdimension selon l'axe z, cela se simplifie endlF= −dEpeeldz⇐⇒ dE= −F dzpeelL'"
                     },
                     {
                         "id": "B",
-                        "text": "à vide du cordage de la raquette, toujours assimilé à un ressort. On rappelle k la constante de raideur et E<sub>pe</sub> l'énergie potentielle élastique. Concernant ces gran-deurs, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                        "text": "à vide du cordage de la raquette, toujours assimilé à un ressort. On rappelle k la constante de raideur et \\(E_{pe}\\) l'énergie potentielle élastique. Concernant ces gran-deurs, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                         "isCorrect": false,
                         "explanation": "vrai.En réalité, la variation d'altitude ∆z était négligeable : en la négligeant on trouve Epe ≈ 0,88 J.TOUJOURS penser à faire des approximations, quand elles sont pertinentes évidemment. Cela vous évitera beaucoup de calculs fastidieux. Ici ça allait, la perte de temps n'était pas énorme, mais je vous dis ça pour l'avenir, qui sait ?"
                     },
@@ -5398,7 +5398,7 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "E",
-                        "text": "=dE<sub>pe</sub>",
+                        "text": "=d\\(E_{pe}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Ici, on a l'opposé de (z − zR) : (zR − z) > 0, donc−k(z − zR) < 0. On aura la force de rappel élastique orientée vers le bas, ainsi, l'"
                     }
@@ -5412,37 +5412,37 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "La force de rappel dérive de l’énergie potentielle élastique selon la relation en une dimension :\nFel\n= dE<sub>pe</sub>\nF−→el = k(z − z<sub>R</sub>)−→u<sub>z</sub>\nF−→el = −k(z − z<sub>R</sub>)−→u<sub>z</sub>\nF−→el = −k(z<sub>R</sub> − z)−→u<sub>z</sub>",
+                "context": "La force de rappel dérive de l’énergie potentielle élastique selon la relation en une dimension :\nFel\n= d\\(E_{pe}\\)\nF−→el = k(z − \\(z_{R}\\))−→\\(u_{z}\\)\nF−→el = −k(z − \\(z_{R}\\))−→\\(u_{z}\\)\nF−→el = −k(\\(z_{R}\\) − z)−→\\(u_{z}\\)",
                 "images": [],
-                "question": "En considérant l'origine de l'énergie potentielle de pesanteur au niveau de la raquette non déformée (z<sub>O</sub> = 0 m), et en considérant une variation d'altitude",
+                "question": "En considérant l'origine de l'énergie potentielle de pesanteur au niveau de la raquette non déformée (\\(z_{O}\\) = 0 m), et en considérant une variation d'altitude",
                 "options": [
                     {
                         "id": "A",
-                        "text": "∆z = 0,8 cm pendant son enfoncement dans le cordage, quelle est la valeur de l'énergie potentielle élastique E<sub>pe,S</sub> maximale emmagasinée au moment où la balle s'arrête au point S avant de rebondir ? Laquelle des propositions suivantes est exacte ?",
+                        "text": "∆z = 0,8 cm pendant son enfoncement dans le cordage, quelle est la valeur de l'énergie potentielle élastique \\(E_{pe,S}\\) maximale emmagasinée au moment où la balle s'arrête au point S avant de rebondir ? Laquelle des propositions suivantes est exacte ?",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "E<sub>pe,S</sub> = 0,23 J",
+                        "text": "\\(E_{pe,S}\\) = 0,23 J",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "E<sub>pe,S</sub> = 0,89 J",
+                        "text": "\\(E_{pe,S}\\) = 0,89 J",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "E<sub>pe,S</sub> = 1,42 J",
+                        "text": "\\(E_{pe,S}\\) = 1,42 J",
                         "isCorrect": false,
                         "explanation": "FAUX - et EEn l'absence de frottements, l'énergie mécanique du système est conservée entre le point de lâcherinitial (zA = 3,0 m, vA = 0 m · s−1) et le point d'enfoncement maximal dans le cordage (v = 0). Aupoint A, le cordage n'est pas déformé :Em,A = Ec,A + Epp,A + Epe,A = 0 + Epp,A + 0Au point S, la balle est à l'arrêt (Ec,S = 0). On a donc :Em,S = Ec,S + Epp,S + Epe,S = 0 + Epp,S + Epe,S"
                     },
                     {
                         "id": "E",
-                        "text": "E<sub>pe,S</sub> = 4,41 J",
+                        "text": "\\(E_{pe,S}\\) = 4,41 J",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -5455,31 +5455,31 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 6,
                 "type": "QCM",
-                "context": "E<sub>pe,S</sub> = 8,83 J",
+                "context": "\\(E_{pe,S}\\) = 8,83 J",
                 "images": [],
-                "question": "On étudie maintenant un nouveau lancer. Areej lance la balle en direction de la raquette située au sol. La balle quitte sa main à une altitude z<sub>impulsion</sub> = 1,20 m avec une vitesse v<sub>impulsion</sub> = 3,00 m · s<sup>−1</sup>. On s'intéresse exclusivement à la phase d'impulsion, entre l'instant où la balle est immobile dans la main de Areej et l'instant où elle la quitte. Pour simplifier, on négligera la variation d'altitude de la balle durant cette très courte phase, et donc le travail du poids. Que vaut le travail de la force musculaire W<sub>musc</sub> fourni par Areej à la balle ? Laquelle des propositions suivantes est exacte ?",
+                "question": "On étudie maintenant un nouveau lancer. Areej lance la balle en direction de la raquette située au sol. La balle quitte sa main à une altitude \\(z_{\\text{impulsion}}\\) = 1,20 m avec une vitesse \\(v_{\\text{impulsion}}\\) = 3,00 m · \\(s^{-1}\\). On s'intéresse exclusivement à la phase d'impulsion, entre l'instant où la balle est immobile dans la main de Areej et l'instant où elle la quitte. Pour simplifier, on négligera la variation d'altitude de la balle durant cette très courte phase, et donc le travail du poids. Que vaut le travail de la force musculaire \\(W_{\\text{musc}}\\) fourni par Areej à la balle ? Laquelle des propositions suivantes est exacte ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "W<sub>musc</sub> = 0,045 J",
+                        "text": "\\(W_{\\text{musc}}\\) = 0,045 J",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "W<sub>musc</sub> = 0,135 J",
+                        "text": "\\(W_{\\text{musc}}\\) = 0,135 J",
                         "isCorrect": true,
                         "explanation": "vrai."
                     },
                     {
                         "id": "C",
-                        "text": "W<sub>musc</sub> = 0,27 J",
+                        "text": "\\(W_{\\text{musc}}\\) = 0,27 J",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "W<sub>musc</sub> = 135 J",
+                        "text": "\\(W_{\\text{musc}}\\) = 135 J",
                         "isCorrect": false,
                         "explanation": "FAUX - → Il est impossible de la calculer sans connaître la déformation maximale du cordage Le principe de conservation de l'énergie mécanique permet de relier directement l'état initial à l'état final, rendant inutile le calcul des états intermédiaires tels que l'enfoncement dans le cordage. (cf correction items A B et C)"
                     },
@@ -5498,25 +5498,25 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "E<sub>pe,S</sub> = 8,83 J",
+                "context": "\\(E_{pe,S}\\) = 8,83 J",
                 "images": [],
-                "question": "En l'absence de frottements de l'air et en considérant le cordage de la raquette comme un ressort parfaitement élastique, on se demande quelle sera la hauteur maximale h<sub>max</sub> atteinte par la balle après le rebond sur la raquette. On rappelle que la balle a été lancée depuis z<sub>impulsion</sub> = 1,20 m avec une vitesse initiale v<sub>impulsion</sub> = 3,00 m · s<sup>−1</sup> ? Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "En l'absence de frottements de l'air et en considérant le cordage de la raquette comme un ressort parfaitement élastique, on se demande quelle sera la hauteur maximale \\(h_{max}\\) atteinte par la balle après le rebond sur la raquette. On rappelle que la balle a été lancée depuis \\(z_{\\text{impulsion}}\\) = 1,20 m avec une vitesse initiale \\(v_{\\text{impulsion}}\\) = 3,00 m · \\(s^{-1}\\) ? Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "h<sub>max</sub> = 0,46 m",
+                        "text": "\\(h_{max}\\) = 0,46 m",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "h<sub>max</sub> = 1,20 m",
+                        "text": "\\(h_{max}\\) = 1,20 m",
                         "isCorrect": false,
                         "explanation": "FAUX - et CIl suffit d'appliquer le principe de conservation de l'énergie mécanique entre l'instant initial (lâcher de la balle) et l'instant final (hauteur maximale après le rebond). Les forces non conservatives étant négligées, l'énergie mécanique est conservée tout au long du mouvement, y compris lors de l'interaction avec le cordage.1m,initialpp,initialc,initial= E+ E= mgzimpulsion+ mv2impulsion2À la hauteur maximale, la vitesse s'annule : Em,final = mghmaxPar conservation (Em,initial = Em,final) :mgzimpulsion+mv12impulsion2= mghmaxEn divisant par la masse m :gzimpulsion+v12impulsion2= ghmax⇐⇒ hmax = zimpulsion +v impulsion2g2Application numérique :hmax = 1,20 + 2 × 9,81 = 1,66 m3,002?La hauteur maximale dépend de la masse de la balle"
                     },
                     {
                         "id": "C",
-                        "text": "h<sub>max</sub> = 1,66 m",
+                        "text": "\\(h_{max}\\) = 1,66 m",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
@@ -5541,7 +5541,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 8,
                 "type": "QCM",
-                "context": "Un P1 fan de sport et d’aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l’effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n3 P→ · →u= aVR5\n2LaV = 3 P→ · →u\n7<sup>C</sup>12\nV<sub>I</sub> = √3P→ · →u<sub>RL</sub>\n√3P→ · →u<sub>LF</sub> = V<sub>III</sub>\naV= 3 P→ · →u\nV<sub>II</sub> = √3P→ · →u<sub>RF</sub>\nF2CF\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>aV<sub>R</sub></th><th>aV<sub>L</sub></th><th>aV<sub>F</sub></th><th>V<sub>I</sub></th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,28</td><td>0,06</td><td>-0,34</td><td>-0,15</td><td>-0,41</td><td>-0,26</td></tr></table></div>\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
+                "context": "Un P1 fan de sport et d’aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l’effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n3 P→ · →u= aVR5\n2LaV = 3 P→ · →u\n7C12\n\\(V_{I}\\) = √3P→ · →\\(u_{RL}\\)\n√3P→ · →\\(u_{LF}\\) = \\(V_{III}\\)\naV= 3 P→ · →u\n\\(V_{II}\\) = √3P→ · →\\(u_{RF}\\)\nF2CF\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>a\\(V_{R}\\)</th><th>a\\(V_{L}\\)</th><th>a\\(V_{F}\\)</th><th>\\(V_{I}\\)</th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,28</td><td>0,06</td><td>-0,34</td><td>-0,15</td><td>-0,41</td><td>-0,26</td></tr></table></div>\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
                 "images": [
                     "annales_assets/2026_2027/physique/tuto_1/fig_q8_1.png"
                 ],
@@ -5549,31 +5549,31 @@ window.ANNALES_2026_2027 = [
                 "options": [
                     {
                         "id": "A",
-                        "text": "Au repos, le champ −→E des cardiomyocytes pointe vers l'intérieur de la cellule",
+                        "text": "Au repos, le champ \\(-\\rightarrow\\) E des cardiomyocytes pointe vers l’intérieur de la cellule",
                         "isCorrect": true,
                         "explanation": "VRAI - E des cardiomyocytes pointe vers l’intérieur de la cellule On commence cet exercice par des questions de cours car même si on est dans une matière à réflexion, il est important de lire les diapos du cours et de ne pas juste apprendre les formules. Lorsqu’une cellule cardiaque est au repos, elle est polarisée : la face externe de leur membrane chargée positivement et la face interne négativement. Étant donné que le champ −→ E est orienté du coté positif vers le coté négatif, −→ E pointe vers l’intérieur de la cellule."
                     },
                     {
                         "id": "B",
-                        "text": "Le dipôle résultant de l'activité des cardiomyocytes est stable au cours des différentes phases cardiaques pour une personne saine",
+                        "text": "Le dipôle résultant de l’activité des cardiomyocytes est stable au cours des différentes phases",
                         "isCorrect": false,
                         "explanation": "FAUX - Pour se contracter, les cardiomyocytes se dépolarisent ce qui génère un bref dipôle électrique qui progresse le long d’un front de dépolarisation avant de se repolariser pour retourner au potentiel de repos de la membrane des cellules. Cela crée une onde de polarisation/dépolarisation des myocytes résultant en un dipôle qui tourne en 3D selon la phase cardiaque. Donc, le dipôle résultant de l’activité des cardiomyocytes n’est pas stable car il évolue au cours des différentes phases cardiaques. ? Items C, D et E L’ECG consiste en un suivi de l’amplitude et de la rotation du dipôle cardiaque (cf item B. pour comprendre la formation du dipôle cardiaque) par mesure des différences de potentiel entre plusieurs points (item E vrai). Pour ce faire, l’ECG mesure les différences de potentiel du dipôle. Ainsi, la mesure d’une dérivation implique au moins deux éléctrodes (item D vrai). Celui-ci consiste à étudier la distribution des états ”polarisés” et ”dépolarisés” de l’ensemble des cardiomyocytes. On peut donc conclure qu’il ne mesure pas uniquement la polarisation ou la dépolarisation des cardiomyocytes mais les deux à la fois (item C faux). Les items D et E sont ainsi vrais."
                     },
                     {
                         "id": "C",
-                        "text": "Le principe de l'ECG repose uniquement sur l'étude des cardiomyocytes dépolarisés",
+                        "text": "Le principe de l’ECG repose uniquement sur l’étude des cardiomyocytes dépolarisés",
                         "isCorrect": false,
                         "explanation": "faux).Les items D et E sont ainsi vrais."
                     },
                     {
                         "id": "D",
-                        "text": "La mesure d'une dérivation implique plusieurs électrodes",
+                        "text": "La mesure d’une dérivation implique plusieurs électrodes",
                         "isCorrect": true,
                         "explanation": "vrai). Celui-ci consiste à étudier la distribution des états ”polarisés” et ”dépolarisés” de l'ensemble des cardiomyocytes. On peut donc conclure qu'il ne mesure pas uniquement la polarisation ou la dépolarisation des cardiomyocytes mais les deux à la fois ("
                     },
                     {
                         "id": "E",
-                        "text": "Le principe de l'ECG repose sur la mesure des différences de potentiel entre plusieurs points",
+                        "text": "Le principe de l’ECG repose sur la mesure des différences de potentiel entre plusieurs points",
                         "isCorrect": true,
                         "explanation": "vrai).Pour ce faire, l'ECG mesure les différences de potentiel du dipôle. Ainsi, la mesure d'une dérivation implique au moins deux éléctrodes ("
                     }
@@ -5588,7 +5588,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 9,
                 "type": "QCM",
-                "context": "Un P1 fan de sport et d’aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l’effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n3 P→ · →u= aVR5\n2LaV = 3 P→ · →u\n7<sup>C</sup>12\nV<sub>I</sub> = √3P→ · →u<sub>RL</sub>\n√3P→ · →u<sub>LF</sub> = V<sub>III</sub>\naV= 3 P→ · →u\nV<sub>II</sub> = √3P→ · →u<sub>RF</sub>\nF2CF\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>aV<sub>R</sub></th><th>aV<sub>L</sub></th><th>aV<sub>F</sub></th><th>V<sub>I</sub></th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,28</td><td>0,06</td><td>-0,34</td><td>-0,15</td><td>-0,41</td><td>-0,26</td></tr></table></div>\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
+                "context": "Un P1 fan de sport et d’aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l’effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n3 P→ · →u= aVR5\n2LaV = 3 P→ · →u\n7C12\n\\(V_{I}\\) = √3P→ · →\\(u_{RL}\\)\n√3P→ · →\\(u_{LF}\\) = \\(V_{III}\\)\naV= 3 P→ · →u\n\\(V_{II}\\) = √3P→ · →\\(u_{RF}\\)\nF2CF\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>a\\(V_{R}\\)</th><th>a\\(V_{L}\\)</th><th>a\\(V_{F}\\)</th><th>\\(V_{I}\\)</th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,28</td><td>0,06</td><td>-0,34</td><td>-0,15</td><td>-0,41</td><td>-0,26</td></tr></table></div>\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
                 "images": [
                     "annales_assets/2026_2027/physique/tuto_1/fig_q8_1.png"
                 ],
@@ -5633,7 +5633,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 10,
                 "type": "QCM",
-                "context": "Un P1 fan de sport et d’aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l’effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n3 P→ · →u= aVR5\n2LaV = 3 P→ · →u\n7<sup>C</sup>12\nV<sub>I</sub> = √3P→ · →u<sub>RL</sub>\n√3P→ · →u<sub>LF</sub> = V<sub>III</sub>\naV= 3 P→ · →u\nV<sub>II</sub> = √3P→ · →u<sub>RF</sub>\nF2CF\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>aV<sub>R</sub></th><th>aV<sub>L</sub></th><th>aV<sub>F</sub></th><th>V<sub>I</sub></th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,28</td><td>0,06</td><td>-0,34</td><td>-0,15</td><td>-0,41</td><td>-0,26</td></tr></table></div>\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
+                "context": "Un P1 fan de sport et d’aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l’effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n3 P→ · →u= aVR5\n2LaV = 3 P→ · →u\n7C12\n\\(V_{I}\\) = √3P→ · →\\(u_{RL}\\)\n√3P→ · →\\(u_{LF}\\) = \\(V_{III}\\)\naV= 3 P→ · →u\n\\(V_{II}\\) = √3P→ · →\\(u_{RF}\\)\nF2CF\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>a\\(V_{R}\\)</th><th>a\\(V_{L}\\)</th><th>a\\(V_{F}\\)</th><th>\\(V_{I}\\)</th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,28</td><td>0,06</td><td>-0,34</td><td>-0,15</td><td>-0,41</td><td>-0,26</td></tr></table></div>\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
                 "images": [
                     "annales_assets/2026_2027/physique/tuto_1/q10_enonce.png",
                     "annales_assets/2026_2027/physique/tuto_1/fig_q8_1.png"
@@ -5682,7 +5682,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 11,
                 "type": "QCM",
-                "context": ", avec θ l’angle entre −→P et u−−R→F\n2aV<sub>R</sub>\ncos(φ)\n, avec φ l’angle entre −→P et u−−C→R\n2aV<sub>R</sub>\n2aV<sub>R</sub>\n2aV<sub>R</sub>\n2aV<sub>R</sub>\nQuelques mois plus tard, alors qu’il révisait à la bibliothèque, le P1 ressent une grande douleur thoracique. Cette douleur l’inquiète fortement, ce qui le pousse à aller de nouveau chez son médecin. Il obtient alors ce nouveau tableau des différentes dérivations du nouveau dipôle P<sup>'</sup> :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>aV<sub>R</sub></th><th>aV<sub>L</sub></th><th>aV<sub>F</sub></th><th>V<sub>I</sub></th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,05</td><td>-0,92</td><td>0,87</td><td>-0,65</td><td>0,54</td><td>1,19</td></tr></table></div>\nDe plus, on fournit ce tableau qui résume les termes associés en fonction du secteur du dipôle cardiaque (axe QRS) :\nAxe QRS\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>entre −45◦ et +105◦</th><th>axe normal</th></tr><tr><th>entre −90◦ et −45◦</th><td>déviation axiale gauche</td></tr><tr><th>entre +105◦ et +180◦</th><td>déviation axiale droite</td></tr><tr><th>entre −180◦ et −90◦</th><td>déviation axiale supérieure</td></tr></table></div>",
+                "context": ", avec \\(\\theta\\) l’angle entre −→P et u−−R→F\n2a\\(V_{R}\\)\ncos(\\(\\varphi\\))\n, avec \\(\\varphi\\) l’angle entre −→P et u−−C→R\n2a\\(V_{R}\\)\n2a\\(V_{R}\\)\n2a\\(V_{R}\\)\n2a\\(V_{R}\\)\nQuelques mois plus tard, alors qu’il révisait à la bibliothèque, le P1 ressent une grande douleur thoracique. Cette douleur l’inquiète fortement, ce qui le pousse à aller de nouveau chez son médecin. Il obtient alors ce nouveau tableau des différentes dérivations du nouveau dipôle \\(P^{'}\\) :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>a\\(V_{R}\\)</th><th>a\\(V_{L}\\)</th><th>a\\(V_{F}\\)</th><th>\\(V_{I}\\)</th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,05</td><td>-0,92</td><td>0,87</td><td>-0,65</td><td>0,54</td><td>1,19</td></tr></table></div>\nDe plus, on fournit ce tableau qui résume les termes associés en fonction du secteur du dipôle cardiaque (axe QRS) :\nAxe QRS\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>entre −45\\(^{\\circ}\\) et +105\\(^{\\circ}\\)</th><th>axe normal</th></tr><tr><th>entre −90\\(^{\\circ}\\) et −45\\(^{\\circ}\\)</th><td>déviation axiale gauche</td></tr><tr><th>entre +105\\(^{\\circ}\\) et +180\\(^{\\circ}\\)</th><td>déviation axiale droite</td></tr><tr><th>entre −180\\(^{\\circ}\\) et −90\\(^{\\circ}\\)</th><td>déviation axiale supérieure</td></tr></table></div>",
                 "images": [],
                 "question": "Parmi les propositions suivantes sur l’axe QRS, laquelle (lesquelles) des proposi- tions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -5726,9 +5726,9 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": ", avec θ l’angle entre −→P et u−−R→F\n2aV<sub>R</sub>\ncos(φ)\n, avec φ l’angle entre −→P et u−−C→R\n2aV<sub>R</sub>\n2aV<sub>R</sub>\n2aV<sub>R</sub>\n2aV<sub>R</sub>\nQuelques mois plus tard, alors qu’il révisait à la bibliothèque, le P1 ressent une grande douleur thoracique. Cette douleur l’inquiète fortement, ce qui le pousse à aller de nouveau chez son médecin. Il obtient alors ce nouveau tableau des différentes dérivations du nouveau dipôle P<sup>'</sup> :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>aV<sub>R</sub></th><th>aV<sub>L</sub></th><th>aV<sub>F</sub></th><th>V<sub>I</sub></th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,05</td><td>-0,92</td><td>0,87</td><td>-0,65</td><td>0,54</td><td>1,19</td></tr></table></div>\nDe plus, on fournit ce tableau qui résume les termes associés en fonction du secteur du dipôle cardiaque (axe QRS) :\nAxe QRS\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>entre −45◦ et +105◦</th><th>axe normal</th></tr><tr><th>entre −90◦ et −45◦</th><td>déviation axiale gauche</td></tr><tr><th>entre +105◦ et +180◦</th><td>déviation axiale droite</td></tr><tr><th>entre −180◦ et −90◦</th><td>déviation axiale supérieure</td></tr></table></div>",
+                "context": ", avec \\(\\theta\\) l’angle entre −→P et u−−R→F\n2a\\(V_{R}\\)\ncos(\\(\\varphi\\))\n, avec \\(\\varphi\\) l’angle entre −→P et u−−C→R\n2a\\(V_{R}\\)\n2a\\(V_{R}\\)\n2a\\(V_{R}\\)\n2a\\(V_{R}\\)\nQuelques mois plus tard, alors qu’il révisait à la bibliothèque, le P1 ressent une grande douleur thoracique. Cette douleur l’inquiète fortement, ce qui le pousse à aller de nouveau chez son médecin. Il obtient alors ce nouveau tableau des différentes dérivations du nouveau dipôle \\(P^{'}\\) :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>a\\(V_{R}\\)</th><th>a\\(V_{L}\\)</th><th>a\\(V_{F}\\)</th><th>\\(V_{I}\\)</th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,05</td><td>-0,92</td><td>0,87</td><td>-0,65</td><td>0,54</td><td>1,19</td></tr></table></div>\nDe plus, on fournit ce tableau qui résume les termes associés en fonction du secteur du dipôle cardiaque (axe QRS) :\nAxe QRS\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>entre −45\\(^{\\circ}\\) et +105\\(^{\\circ}\\)</th><th>axe normal</th></tr><tr><th>entre −90\\(^{\\circ}\\) et −45\\(^{\\circ}\\)</th><td>déviation axiale gauche</td></tr><tr><th>entre +105\\(^{\\circ}\\) et +180\\(^{\\circ}\\)</th><td>déviation axiale droite</td></tr><tr><th>entre −180\\(^{\\circ}\\) et −90\\(^{\\circ}\\)</th><td>déviation axiale supérieure</td></tr></table></div>",
                 "images": [],
-                "question": "Parmi les propositions suivantes, laquelle correspond au secteur du dipôle P<sup>𝘚</sup> ?",
+                "question": "\\(\\text{Parmi} les \\text{propositions} \\text{suivantes}, \\text{laquelle} \\text{correspond} au \\text{secteur} du dipôle P ^{′}\\) ?",
                 "options": [
                     {
                         "id": "A",
@@ -5769,31 +5769,31 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": ", avec θ l’angle entre −→P et u−−R→F\n2aV<sub>R</sub>\ncos(φ)\n, avec φ l’angle entre −→P et u−−C→R\n2aV<sub>R</sub>\n2aV<sub>R</sub>\n2aV<sub>R</sub>\n2aV<sub>R</sub>\nQuelques mois plus tard, alors qu’il révisait à la bibliothèque, le P1 ressent une grande douleur thoracique. Cette douleur l’inquiète fortement, ce qui le pousse à aller de nouveau chez son médecin. Il obtient alors ce nouveau tableau des différentes dérivations du nouveau dipôle P<sup>'</sup> :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>aV<sub>R</sub></th><th>aV<sub>L</sub></th><th>aV<sub>F</sub></th><th>V<sub>I</sub></th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,05</td><td>-0,92</td><td>0,87</td><td>-0,65</td><td>0,54</td><td>1,19</td></tr></table></div>\nDe plus, on fournit ce tableau qui résume les termes associés en fonction du secteur du dipôle cardiaque (axe QRS) :\nAxe QRS\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>entre −45◦ et +105◦</th><th>axe normal</th></tr><tr><th>entre −90◦ et −45◦</th><td>déviation axiale gauche</td></tr><tr><th>entre +105◦ et +180◦</th><td>déviation axiale droite</td></tr><tr><th>entre −180◦ et −90◦</th><td>déviation axiale supérieure</td></tr></table></div>",
+                "context": ", avec \\(\\theta\\) l’angle entre −→P et u−−R→F\n2a\\(V_{R}\\)\ncos(\\(\\varphi\\))\n, avec \\(\\varphi\\) l’angle entre −→P et u−−C→R\n2a\\(V_{R}\\)\n2a\\(V_{R}\\)\n2a\\(V_{R}\\)\n2a\\(V_{R}\\)\nQuelques mois plus tard, alors qu’il révisait à la bibliothèque, le P1 ressent une grande douleur thoracique. Cette douleur l’inquiète fortement, ce qui le pousse à aller de nouveau chez son médecin. Il obtient alors ce nouveau tableau des différentes dérivations du nouveau dipôle \\(P^{'}\\) :\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>Dérivation</th><th>a\\(V_{R}\\)</th><th>a\\(V_{L}\\)</th><th>a\\(V_{F}\\)</th><th>\\(V_{I}\\)</th><th>VII</th><th>VIII</th></tr><tr><th>Mesure (en mV )</th><td>0,05</td><td>-0,92</td><td>0,87</td><td>-0,65</td><td>0,54</td><td>1,19</td></tr></table></div>\nDe plus, on fournit ce tableau qui résume les termes associés en fonction du secteur du dipôle cardiaque (axe QRS) :\nAxe QRS\n<div class=\"annale-data-table-wrap\"><table class=\"annale-data-table\"><tr><th>entre −45\\(^{\\circ}\\) et +105\\(^{\\circ}\\)</th><th>axe normal</th></tr><tr><th>entre −90\\(^{\\circ}\\) et −45\\(^{\\circ}\\)</th><td>déviation axiale gauche</td></tr><tr><th>entre +105\\(^{\\circ}\\) et +180\\(^{\\circ}\\)</th><td>déviation axiale droite</td></tr><tr><th>entre −180\\(^{\\circ}\\) et −90\\(^{\\circ}\\)</th><td>déviation axiale supérieure</td></tr></table></div>",
                 "images": [],
-                "question": "PPRRExprimer et calculer la norme P<sup>𝘚</sup> du vecteur −→𝘚 en fonction des valeurs de aVet",
+                "question": "PPRRExprimer et calculer la norme \\(P^{𝘚}\\) du vecteur −→𝘚 en fonction des valeurs de aVet",
                 "options": [
                     {
                         "id": "A",
-                        "text": "de V<sub>III</sub>. Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                        "text": "de \\(V_{III}\\). Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "<sub>'</sub>1 A 2V<sub>III</sub> B",
+                        "text": "'1 A 2\\(V_{III}\\) B",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "3R3RP = 23 aV<sub>R</sub> + √3",
+                        "text": "3R3RP = 23 a\\(V_{R}\\) + √3",
                         "isCorrect": true,
                         "explanation": "VRAI - donc on le valide.Items D et EMaintenant qu'on a fait le gros du boulot, il ne reste que l'application numérique. On nous donne dans le tableau des dérivations aVR = 0,05 mV et VIII = 1,19 mV . On a donc :P =9 aVR +'ó42VIII 23=× 0ó49,05 +21,1923= 0,69 mVL'"
                     },
                     {
                         "id": "D",
-                        "text": "P<sup>'</sup>",
+                        "text": "\\(P^{'}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - est vrai."
                     },
@@ -5813,7 +5813,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 14,
                 "type": "QCM",
-                "context": "VIII\nP<sup>'</sup>\n= ó 4 aV\n<sub>2</sub>VIII 2\nP<sup>'</sup> = 0,69 mV\nP<sup>'</sup> = 0,85 mV\nLors de la contraction du muscle cardiaque, une onde de dépolarisation se propage à travers les cellules du myocarde. À l’échelle locale, le front de dépolarisation qui avance entraîne l’appari-tion d’un bref dipôle électrique.\nPour modéliser simplement ce phénomène à l’échelle cellulaire, on considère un dipôle électrique fondamental constitué de deux charges ponctuelles. Les charges ont pour valeur q = 2,0 10−12 C et celles-ci sont séparées d’une distance a = 5,0 µm. L’ensemble baigne dans un milieu\ndont on simplifiera la constante avec la valeur suivante :\n= 9,0 × 109 N · m<sup>2</sup> · C<sup>−2</sup>.\nRéférence au schéma : Pour visualiser ce système, veuillez vous référer au schéma fourni ci-dessous. Ce schéma place la charge négative (N) et la charge positive (P) sur un axe, séparées par la distance a.",
+                "context": "VIII\n\\(P^{'}\\)\n= ó 4 aV\n2VIII 2\n\\(P^{'}\\) = 0,69 mV\n\\(P^{'}\\) = 0,85 mV\nLors de la contraction du muscle cardiaque, une onde de dépolarisation se propage à travers les cellules du myocarde. À l’échelle locale, le front de dépolarisation qui avance entraîne l’appari-tion d’un bref dipôle électrique.\nPour modéliser simplement ce phénomène à l’échelle cellulaire, on considère un dipôle électrique fondamental constitué de deux charges ponctuelles. Les charges ont pour valeur q = 2,0 \\(10^{-12}\\) C et celles-ci sont séparées d’une distance a = 5,0 \\(\\mu\\)m. L’ensemble baigne dans un milieu\ndont on simplifiera la constante avec la valeur suivante :\n= 9,0 × 109 N · \\(m^{2}\\) · \\(C^{-2}\\).\nRéférence au schéma : Pour visualiser ce système, veuillez vous référer au schéma fourni ci-dessous. Ce schéma place la charge négative (N) et la charge positive (P) sur un axe, séparées par la distance a.",
                 "images": [
                     "annales_assets/2026_2027/physique/tuto_1/image4.png",
                     "annales_assets/2026_2027/physique/tuto_1/image5.png",
@@ -5863,17 +5863,17 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "VIII\nP<sup>'</sup>\n= ó 4 aV\n<sub>2</sub>VIII 2\nP<sup>'</sup> = 0,69 mV\nP<sup>'</sup> = 0,85 mV\nLors de la contraction du muscle cardiaque, une onde de dépolarisation se propage à travers les cellules du myocarde. À l’échelle locale, le front de dépolarisation qui avance entraîne l’appari-tion d’un bref dipôle électrique.\nPour modéliser simplement ce phénomène à l’échelle cellulaire, on considère un dipôle électrique fondamental constitué de deux charges ponctuelles. Les charges ont pour valeur q = 2,0 10−12 C et celles-ci sont séparées d’une distance a = 5,0 µm. L’ensemble baigne dans un milieu\ndont on simplifiera la constante avec la valeur suivante :\n= 9,0 × 109 N · m<sup>2</sup> · C<sup>−2</sup>.\nRéférence au schéma : Pour visualiser ce système, veuillez vous référer au schéma fourni ci-dessous. Ce schéma place la charge négative (N) et la charge positive (P) sur un axe, séparées par la distance a.",
+                "context": "VIII\n\\(P^{'}\\)\n= ó 4 aV\n2VIII 2\n\\(P^{'}\\) = 0,69 mV\n\\(P^{'}\\) = 0,85 mV\nLors de la contraction du muscle cardiaque, une onde de dépolarisation se propage à travers les cellules du myocarde. À l’échelle locale, le front de dépolarisation qui avance entraîne l’appari-tion d’un bref dipôle électrique.\nPour modéliser simplement ce phénomène à l’échelle cellulaire, on considère un dipôle électrique fondamental constitué de deux charges ponctuelles. Les charges ont pour valeur q = 2,0 \\(10^{-12}\\) C et celles-ci sont séparées d’une distance a = 5,0 \\(\\mu\\)m. L’ensemble baigne dans un milieu\ndont on simplifiera la constante avec la valeur suivante :\n= 9,0 × 109 N · \\(m^{2}\\) · \\(C^{-2}\\).\nRéférence au schéma : Pour visualiser ce système, veuillez vous référer au schéma fourni ci-dessous. Ce schéma place la charge négative (N) et la charge positive (P) sur un axe, séparées par la distance a.",
                 "images": [
                     "annales_assets/2026_2027/physique/tuto_1/image4.png",
                     "annales_assets/2026_2027/physique/tuto_1/image5.png",
                     "annales_assets/2026_2027/physique/tuto_1/fig_q14_1.png"
                 ],
-                "question": "Parmi les propositions concernant la répartition de l'énergie autour du dipôle, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "Parmi les propositions concernant la répartition de l’énergie autour du dipôle, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Une surface équipotentielle est définie comme une surface où le potentiel reste le même, toujours orthogonale aux lignes de champ électrique",
+                        "text": "Une surface équipotentielle est définie comme une surface où le potentiel reste le même,",
                         "isCorrect": true,
                         "explanation": "VRAI - et BLa définition est exacte, une surface équipotentielle correspond bien à l'ensemble des points de l'espace partageant le même potentiel électrique (et donc la même énergie potentielle pour une charge donnée). Ces surfaces équipotentielles sont orthogonales aux lignes de champ.Diapo n°15 du CM2 ”Électrostatique 1”, Pr. Kouchner"
                     },
@@ -5885,19 +5885,19 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "C",
-                        "text": "La relation E = − dV montre que le champ électrique dépend des variations spatiales du",
+                        "text": "La relation E = \\(-^{dV}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - dl montre que le champ électrique dépend des variations spatiales … C’est exact, dans la formule E = −dV dl , ”dV ” correspond aux ”variations du potentiel” ; de plus ce sont des variations ”spatiales”, d’où ”dl” qui apparaît dans la formule (pour des variations temporelles, on aurait écrit ”dt”). Petit rappel cadeau des formules : ? Items D et E L’idée qu’il faut comprendre ici, c’est qu’une charge test positive q subit une force électrique −→ F = q−→ E . Comme q > 0, la force s’exerce dans le même sens que le champ, qui lui-même pointe vers les potentiels décroissants. La force va donc naturellement s’exercer dans le sens des moindres potentiels. À l’inverse si la charge était négative, q < 0, cette force irait à l’encontre du champ et donc vers les grands potentiels."
                     },
                     {
                         "id": "D",
-                        "text": "potentieldl",
+                        "text": "Le mouvement spontané d’une charge positive l’amène vers le potentiel électrique V exté-",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Le mouvement spontané d'une charge positive l'amène vers le potentiel électrique V exté-rieur le plus élevé",
+                        "text": "Le mouvement spontané d’une charge positive l’amène vers le potentiel électrique V exté-",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -5956,13 +5956,13 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "Ici, la norme du vecteur moment dipolaire vaut ǁ−→p ǁ = 1,0 × 10−20 C · m<sup>−1</sup>\nOn ne peut pas calculer la norme du vecteur moment dipolaire",
+                "context": "Ici, la norme du vecteur moment dipolaire vaut ǁ−→p ǁ = 1,0 × \\(10^{-20}\\) C · \\(m^{-1}\\)\nOn ne peut pas calculer la norme du vecteur moment dipolaire",
                 "images": [],
-                "question": "On observe le potentiel généré par le dipôle en un point M situé à une grande distance r = 3,0 cm du centre du dipôle. L'angle repérant le point M par rapport à l'axe du dipôle est noté θ. Ici p = 6,7 × 10−12 C · m<sup>−1</sup> Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
+                "question": "On observe le potentiel généré par le dipôle en un point M situé à une grande distance r = 3,0 cm du centre du dipôle. L'angle repérant le point M par rapport à l'axe du dipôle est noté \\(\\theta\\). Ici p = 6,7 × \\(10^{-12}\\) C · \\(m^{-1}\\) Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "4πεr4πεrÀ une distance r ⨮ a, le potentiel s'exprime par la formule approchée V (r) = <sup>pcosθ</sup>",
+                        "text": "4\\(\\pi\\)\\(\\varepsilon\\)r4\\(\\pi\\)\\(\\varepsilon\\)rÀ une distance r ⨮ a, le potentiel s'exprime par la formule approchée V (r) = pcos\\(\\theta\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - 4πεr Attention ! Dans un dipôle, le potentiel s’exprime V (r) = p cos θ 4πεr2 le carré est très important Pour retenir (simple moyen mnémotechnique), le potentiel d’une charge est proportionnel à 1 r et le potentiel d’un dipôle est proportionnel à r2 : 1 charge → r 2 charges → r2"
                     },
@@ -5974,19 +5974,19 @@ window.ANNALES_2026_2027 = [
                     },
                     {
                         "id": "C",
-                        "text": "V = 6,7 × 10−3 V",
+                        "text": "V = 6,7 × \\(10^{-3}\\) V",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Si le point M se trouve exactement dans le plan médian séparant les deux charges (θ = 90◦), le potentiel V (r) est maximal",
+                        "text": "Si le point M se trouve exactement dans le plan médian séparant les deux charges (\\(\\theta\\) = 90\\(^{\\circ}\\)), le potentiel V (r) est maximal",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Si le point M se trouve exactement dans le plan médian séparant les deux charges (θ = 90◦), le potentiel V (r) est nul",
+                        "text": "Si le point M se trouve exactement dans le plan médian séparant les deux charges (\\(\\theta\\) = 90\\(^{\\circ}\\)), le potentiel V (r) est nul",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est bien vrai. En se plaçant côté charge négative, l’angle séparant −→p et −−→ OM est donc θ = 180◦ (les 2 vecteurs sont de même direction mais de sens opposés). Le cosinus prend ainsi la valeur −1. Le potentiel V (r) = p cos θ 4πεr2 calculé sera donc affecté d’un signe négatif, tous les autres facteurs étant forcément positifs (p, 4, π, ϵ et r2)."
                     }
@@ -6001,7 +6001,7 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 18,
                 "type": "QCM",
-                "context": "Si le point M se trouve exactement dans le plan médian séparant les deux charges (θ = 90◦), le potentiel V (r) est nul\nSi le point M est dans l’alignement du dipôle du côté de la charge négative, le potentiel mesuré sera de signe négatif\nSoient I, J et K trois points alignés à grande distance du dipôle, tels que :\nI est situé à une distance r<sub>1</sub> du point O\nI est situé à une distance r<sub>2</sub> = 6r<sub>1</sub> du point O\nI est situé à une distance r<sub>3</sub> = 1 r<sub>2</sub> du point O\nOn note V (r<sub>1</sub>), V (r<sub>2</sub>) et V (r<sub>3</sub>) les potentiels respectivement associés aux points I, J et K.",
+                "context": "Si le point M se trouve exactement dans le plan médian séparant les deux charges (\\(\\theta\\) = 90\\(^{\\circ}\\)), le potentiel V (r) est nul\nSi le point M est dans l’alignement du dipôle du côté de la charge négative, le potentiel mesuré sera de signe négatif\nSoient I, J et K trois points alignés à grande distance du dipôle, tels que :\nI est situé à une distance \\(r_{1}\\) du point O\nI est situé à une distance \\(r_{2}\\) = 6\\(r_{1}\\) du point O\nI est situé à une distance \\(r_{3}\\) = 1 \\(r_{2}\\) du point O\nOn note V (\\(r_{1}\\)), V (\\(r_{2}\\)) et V (\\(r_{3}\\)) les potentiels respectivement associés aux points I, J et K.",
                 "images": [],
                 "question": "Laquelle (lesquelles) des propostitions suivantes est (sont) exacte(s) ?",
                 "options": [
