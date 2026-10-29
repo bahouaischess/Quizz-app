@@ -20,7 +20,7 @@ window.AnnalesApp = (function () {
         globalTimer: null,
         totalElapsedSeconds: 0,
         flaggedQuestions: new Set(),
-        paletteCollapsed: false,
+        paletteCollapsed: (typeof window !== 'undefined' && window.innerWidth < 1700), // écrans moyens : plus de place pour les schémas
         lastSummary: null,
         resultFilter: 'all'  // 'all' | 'errors' | 'overtime'
     };
@@ -509,33 +509,34 @@ window.AnnalesApp = (function () {
                         <div class="keyboard-tip">Raccourcis : [A] [B] [C] [D] [E] pour cocher, [←] [→] pour naviguer</div>
                     </div>
 
-                    <!-- ÉNONCÉ COMMUN / CONTEXTE / ÉTUDE DE CAS -->
-                    ${(q.context || q.Context) ? `
-                        <div class="exercise-context-box">
-                            <div class="ctx-header">📄 Énoncé / Données de l'exercice :</div>
-                            <div class="ctx-body">${renderFormattedContent(q.context || q.Context)}</div>
-                        </div>
-                    ` : ''}
-
-                    <!-- IMAGES / SCHÉMAS / CARTES / MICROGRAPHIES -->
-                    ${(q.images || q.Images || []).length > 0 ? `
-                        <div class="question-images-box">
-                            ${(q.images || q.Images).map(imgSrc => `
-                                <div class="image-wrapper" onclick="AnnalesApp.openLightbox('${imgSrc}')">
-                                    <img src="${imgSrc}" alt="Document d'illustration PASS" loading="lazy">
-                                    <span class="zoom-cue">🔍 Cliquez pour agrandir</span>
+                    <!-- ÉNONCÉ COMMUN + SCHÉMAS À GAUCHE, QUESTION ET PROPOSITIONS À DROITE (pas de défilement) -->
+                    ${(() => {
+                        const qImgs = q.images || q.Images || [];
+                        const qCtx = q.context || q.Context || '';
+                        const visuals = (qCtx ? `
+                            <div class="exercise-context-box">
+                                <div class="ctx-header">📄 Énoncé / Données de l'exercice :</div>
+                                <div class="ctx-body">${renderFormattedContent(qCtx)}</div>
+                            </div>` : '') + (qImgs.length > 0 ? `
+                            <div class="question-images-box">
+                                ${qImgs.map(imgSrc => `
+                                    <div class="image-wrapper" onclick="AnnalesApp.openLightbox('${imgSrc}')">
+                                        <img src="${imgSrc}" alt="Document d'illustration PASS" loading="lazy">
+                                        <span class="zoom-cue">🔍 Agrandir</span>
+                                    </div>
+                                `).join('')}
+                            </div>` : '');
+                        return `
+                        <div class="q-layout ${visuals ? 'with-visuals' : ''}">
+                            ${visuals ? `<div class="q-visuals">${visuals}</div>` : ''}
+                            <div class="q-main">
+                                <div class="question-stem-text">
+                                    ${renderFormattedContent(q.question || q.Question || '')}
                                 </div>
-                            `).join('')}
-                        </div>
-                    ` : ''}
-
-                    <!-- ÉNONCÉ DE LA QUESTION -->
-                    <div class="question-stem-text">
-                        ${renderFormattedContent(q.question || q.Question || '')}
-                    </div>
-
-                    <!-- OPTIONS A, B, C, D, E OU SHS -->
-                    ${renderQuestionInputArea(q, qNum, currentAnswers)}
+                                ${renderQuestionInputArea(q, qNum, currentAnswers)}
+                            </div>
+                        </div>`;
+                    })()}
 
                     <!-- FOOTER DE NAVIGATION -->
                     <div class="exam-question-footer">

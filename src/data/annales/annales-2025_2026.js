@@ -391,39 +391,37 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "La fixation de l’EGF sur son récepteur EGFR permet la phosphorylation de ce dernier sur sa partie intracellulaire et le recrutement de protéines possédant des domaines SH2. Les chercheurs décident donc d’inclure l’EGFR à leurs recherches d’interactions protéiques, celui-ci étant potentiellement impliqué dans le cancer touchant les cellules gastriques.\nIls réalisent d’abord une co-immunoprécipitation entre Flag-Grb2 et HA-DENND1A au sein des cellules BGC-823 transfectées avec Flag-Grb2 et HA-DENND1A et traitées ou non avec l’EGF (Figure 5A). Puis, ils réalisent une nouvelle\nco-immunoprécipitation, cette fois-ci entre l’EGFR et Flag-Grb2 sur des cellules BGC-823 transfectées avec Flag-Grb2 et traitées avec ou sans EGF. (Figure 5B). Enfin, ils réalisent une immunofluorescence des cellules exposées ou non à l’EGF en utilisant des anticorps anti-EGFR et anti-DENND1A (Figure 5C).\nFigure 5 : A : Les cellules BGC-823 traitées avec ou sans EGF ont été lysées et la co-immunoprécipitation entre DENND1A et Grb2 a été analysée par western blot. B : Les cellules BGC-823 traitées avec ou sans EGF ont été lysées et la co-immunoprécipitation de Grb2 et l’EGFR a été analysée par western blot. C : Les cellules BGC-823 traitées avec ou sans EGF ont été fixées et doublement marquées avec des anticorps anti-DENND1A et anti-EGFR. Un marquage des noyaux au DAPI a également été réalisé. Les flèches indiquent la co-localisation de l’EGFR et de DENND1A.",
                 "images": [
-                    "annales_assets/2025_2026/bio_cellulaire/tuto_1/q9_enonce.png",
-                    "annales_assets/2025_2026/bio_cellulaire/tuto_1/q9_enonce_2.png",
                     "annales_assets/2025_2026/bio_cellulaire/tuto_1/image7.jpeg"
                 ],
-                "question": "Question 9 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "question": "A partir de vos connaissances et de la figure 5, vous pouvez suggérer que :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "L’EGFR et DENND1A interagissent au niveau de la membrane plasmique",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention à ne pas confondre : les co-IP montrent les interactions et les immunofluorescences montrent les co-localisations. Les co-IP suivies des WB nous permettent de voir qu’il y a une interaction entre Grb2 et DENND1A ainsi qu’entre l’EGFR et Grb2. L’immunofluorescence nous permet, elle, de savoir qu’il y a une co- localisation entre DENND1A et l’EGFR grâce aux flèches sur le Merge de la figure 5C. On n’a pas fait de co-IP entre l’EGFR et DENND1A qui nous permettrait de savoir si les deux interagissent !"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Il y a plus de GAPDH dans les cellules utilisées dans la figure 5B que dans la figure 5A",
                         "isCorrect": false,
                         "explanation": "FAUX - Non ! Encore une fois, on ne compare PAS deux WB différents !!"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Il y a plus de GAPDH dans les cellules utilisées dans la figure 5B que dans la figure 5A",
                         "isCorrect": false,
                         "explanation": "FAUX - ATTENTION même réflexion que pour l’item C de la Q8 ! On ne peut pas comparer deux WB différents. Il y avait peut-être plus de protéines dans les puits pour le WB de la fig B que pour le WB de la fig A. Ce n’est donc pas parce que la bande est plus épaisse qu’il y a plus de protéines au total dans les cellules !"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La stimulation par l’EGF provoque l’internalisation de l’EGFR dans le cytoplasme des cellules",
                         "isCorrect": true,
                         "explanation": "VRAI - Exactement ! On voit ça dans la deuxième photo de la fig C : sans EGF on voit l’EGFR uniquement à la membrane, alors qu’avec l’EGF on voit l’EGFR à la membrane et dans le cytoplasme ;)."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Il pourrait se former un complexe comprenant l’EGFR et DENND1A au niveau de la membrane plasmique",
                         "isCorrect": true,
                         "explanation": "VRAI - En effet, on voit que l’EGFR et DENND1A co-localisent au niveau de la membrane grâce au merge de la fig C. Il est donc possible que cette co-loc se fasse au sein d’un complexe protéique : c’est une supposition, nous n’en sommes pas certains !"
                     }
@@ -1706,7 +1704,8 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "Les chercheurs s’intéressent également au rôle potentiel du clofibrate dans l’action de mTORC1 et ULK1. mTORC1 est un inhibiteur de l’autophagie, et est inhibé par ULK1. Il a été rapporté que mTORC1 active la kinase S6K (phosphorylée sous forme active : p-S6K), cette dernière activant la protéine ribosomale S6 (phosphorylée sous forme active : p-S6). La protéine 4EBP1, qui est une protéine inhibitrice de la traduction est, elle-aussi, activée par mTORC1 (phospho-rylée sous forme active : p-4EBP1). Par ailleurs, ATM active l’AMPK (AMP kinase), qui active ULK1 qui stimule ainsi la pexophagie. L’effet du clofibrate sur l’expression des protéines sous leur forme totale et phosphorylée a été évalué par western blot (Figure 4A et 4B).\nFigure 4 - A et B : Analyse par western blot de cellules hépatiques de rat traitées avec 1 mM de clofibrate pendant les temps indiqués. Les protéines révélées sont listées à gauche des western blots. p-ULK1 (S757) correspond à une forme phosphorylée inactive de la protéine ULK1 et p-ULK1 (S317) correspond à la forme active. ACC est une protéine cible d’AMPK (forme active phosphorylée : p-ACC).",
                 "images": [
-                    "annales_assets/2025_2026/bio_cellulaire/tuto_2/image6.jpeg"
+                    "annales_assets/2025_2026/bio_cellulaire/tuto_2/image6.jpeg",
+                    "annales_assets/2025_2026/bio_cellulaire/tuto_2/image5.jpeg"
                 ],
                 "question": "D'après les résultats de la figure 3 et 4 et de vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -3116,7 +3115,9 @@ window.ANNALES_2025_2026 = [
                 "num": 8,
                 "type": "QCM",
                 "context": "L’absence de colocalisation entre Vps26 et gp41-L753* prouve que le site d’interaction de gp41 avec le rétromère est situé dans la région située au-delà de l’acide aminé 805 de gp41",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/bio_cellulaire/tuto_3/image7.png"
+                ],
                 "question": "D'après vos connaissances et les résultats de la figure 5, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -4338,8 +4339,10 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 3,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 2 : Représentation de Haworth d’un galactose",
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_1/image4.jpeg"
+                ],
                 "question": "Concernant la figure 2, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -4430,8 +4433,11 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 3A : Structure tridimensionnelle de l’aldolase\nFigure 3B : Représentation d’une sous-unité de l’aldolase",
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_1/image5.jpeg",
+                    "annales_assets/2025_2026/biochimie/tuto_1/image6.jpeg"
+                ],
                 "question": "Au vu de vos connaissances et de la figure 3, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -4518,8 +4524,11 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 3A : Structure tridimensionnelle de l’aldolase\nFigure 3B : Représentation d’une sous-unité de l’aldolase",
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_1/image5.jpeg",
+                    "annales_assets/2025_2026/biochimie/tuto_1/image6.jpeg"
+                ],
                 "question": "Au vu de vos connaissances et de la figure 3, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -4653,8 +4662,10 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 10,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Le diagramme de Ramachandran montre que l’aldolase est essentiellement composé d’hélices alpha\nLe diagramme de Ramachandran montre qu’un monomère d’aldolase est de classe essentiel-lement \\(\\alpha\\)\nLe diagramme de Ramachandran montre qu’un monomère d’aldolase est de classe mixte\nFigure 5 : représentation in silico du site actif de l’aldolase",
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_1/image8.jpeg"
+                ],
                 "question": "Concernant la figure 5 sur le site actif de l'aldolase, laquelle (lesquelles) des pro-positions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -4925,8 +4936,10 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 16,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 8 : Tableau présentant l’activité spécifique et la Km pour des aldolases différentes (ne tenir compte que de FDP) Comparaison des mutations avec la ligne pHAA47 (enzyme wt)\nLecture : L’aldolase A ayant subi une modification de la cystéine 72 en Alanine a une Km de 30\\(\\mu\\)M.",
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_1/image11.png"
+                ],
                 "question": "En vous reposant sur la figure 8 et de vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -4971,7 +4984,8 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "La fructose 1,6-bisphosphate aldolase (FBA) de classe II est une enzyme essentielle à la gly-colyse/gluconéogenèse des bactéries, des champignons et des protozoaires. Il est important de noter que les humains ne possèdent pas ce type d’aldolase, mais plutôt une FBA de classe I qui est structurellement et mécanistiquement distincte des FBA de classe II. À ce titre, la FBA de classe II est considérée comme une cible pharmacologique potentielle pour le développement de nouveaux antibiotiques contre les bactéries pathogènes telles que Mycobacterium tuberculosis, l’agent responsable de la tuberculose (TB). À ce jour, plusieurs inhibiteurs compétitifs de type mimétique du substrat de la FBA de classe II ont été développés ; cependant, ils manquent soit de spécificité, soit de puissance, soit de propriétés qui limitent leur potentiel en tant que traitements thérapeutiques possibles. Récemment, grâce à un criblage assisté par des enzymes et basé sur la structure, nous avons identifié l’acide 8-hydroxyquinoléine carboxylique (HCA) qui a une CI50 de 10 ± 1 M pour la FBA de classe II présente dans M. tuberculosis (MtFBA).\nFigure 9 : Représentation de Lineweaver-Burk en présence de HCA de l’aldolase",
                 "images": [
-                    "annales_assets/2025_2026/biochimie/tuto_1/image12.jpeg"
+                    "annales_assets/2025_2026/biochimie/tuto_1/image12.jpeg",
+                    "annales_assets/2025_2026/biochimie/tuto_1/image11.png"
                 ],
                 "question": "En vous basant sur la figure 9 et de vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -5121,7 +5135,9 @@ window.ANNALES_2025_2026 = [
                 "num": 2,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_2/fig2_q2.png"
+                ],
                 "question": "Concernant l’acide gras représenté dans la figure 2, laquelle (lesquelles) des propo- sitions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -5164,7 +5180,9 @@ window.ANNALES_2025_2026 = [
                 "num": 3,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_2/fig2_q3.png"
+                ],
                 "question": "À l’aide de vos connaissances et de la figure 2, indiquez laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -5253,8 +5271,10 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 3 : Représentation tridimensionnelle du domaine carboxyltransférase de l’ACC",
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_2/image5.jpeg"
+                ],
                 "question": "A l’aide de vos connaissances et de la figure 3, indiquez quelle(s) est(sont) le(s) proposition(s) exacte(s) :",
                 "options": [
                     {
@@ -5791,8 +5811,10 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 7 : Activité de l’Acétyl-CoA Carboxylase en présence de l’acide pantothénique (N présente l’activité mesurée de l’enzyme sans inhibiteur ; I-1 et I-2 l’activité en présence d’acide pantothénique)",
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_2/image9.jpeg"
+                ],
                 "question": "D'après la figure 7, quelle est la ou quelles sont les proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -6166,41 +6188,39 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "Afin de comprendre les différences de symptomatologie entre les 2 filles, il a été entrepris\nUn dosage urinaire de Gb3\nUn Northern-Blot et une RT-PCR quantitative de l’ARNm de GLA sur les cellules sanguines pour tous et sur du tissu rénal obtenu par biopsie pour F1.3\nUne analyse de la méthylation de la région promotrice du gène GLA\nChez les 3 enfants, leurs parents et 2 individus sans lien familial ni maladie de FABRY appelés CTRL1 (femme) et CTRL2 (homme)\nLes résultats sont présentés dans la figure 3",
                 "images": [
-                    "annales_assets/2025_2026/biochimie/tuto_3/q4_enonce.png",
-                    "annales_assets/2025_2026/biochimie/tuto_3/q4_enonce_2.png",
                     "annales_assets/2025_2026/biochimie/tuto_3/image2.png",
                     "annales_assets/2025_2026/biochimie/tuto_3/image3.png",
                     "annales_assets/2025_2026/biochimie/tuto_3/image4.png"
                 ],
-                "question": "Question 4 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "question": "Compte tenu de vos connaissances, des éléments exposés et des données présentées dans les figures 2 et 3, quelle est la ou quelles sont les proposition(s) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La mutation \\(GLA\\) c.155G>A est une mutation perte de fonction",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La mutation \\(GLA\\) c.155G>A est une mutation gain de fonction",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "La technique de Northern Blot ne permet pas de mettre en évidence de différence d’expression des ARNm",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Il n’y a pas de transcrit alternatif de \\(GLA\\) exprimé dans les cellules sanguines",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La taille du transcrit \\(GLA\\) est <1400 bases",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -6215,7 +6235,9 @@ window.ANNALES_2025_2026 = [
                 "num": 5,
                 "type": "QCM",
                 "context": "La taille du transcrit GLA est <1400 bases",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_3/fig_q5_p5_1.png"
+                ],
                 "question": "Compte tenu de vos connaissances, des éléments exposés et des données présentées dans les figures 2 et 3, quelle est la ou quelles sont les proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -6582,8 +6604,10 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "\\(\\alpha\\)-Gal A est une protéine homodimérique. Le gène GLA code pour une sous-unité de 429 acides aminés.\nLa structure tridimensionnelle d’une sous-unité ainsi que le diagramme topologique associé sont représentés Figure 9. La structure quaternaire de l’\\(\\alpha\\)-galactosidase est également représentée Figure 9.\nFigure 9. (a) Structure tertiaire et (b) diagramme topologique de la sous-unité de l’\\(\\alpha\\)-galactosidase codée par le gène GLA. (c) Structure quaternaire de l’\\(\\alpha\\)-galactosidase. Des molécules de galactose fixées au site actif de l’enzyme sont représentées sur les différentes structures.",
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_3/image10.png"
+                ],
                 "question": "Compte tenu de vos connaissances et de la figure 9, quelle est la (ou quelles sont les) proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -6626,8 +6650,10 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 14,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "\\(\\alpha\\)-Gal A est une protéine homodimérique. Le gène GLA code pour une sous-unité de 429 acides aminés.\nLa structure tridimensionnelle d’une sous-unité ainsi que le diagramme topologique associé sont représentés Figure 9. La structure quaternaire de l’\\(\\alpha\\)-galactosidase est également représentée Figure 9.\nFigure 9. (a) Structure tertiaire et (b) diagramme topologique de la sous-unité de l’\\(\\alpha\\)-galactosidase codée par le gène GLA. (c) Structure quaternaire de l’\\(\\alpha\\)-galactosidase. Des molécules de galactose fixées au site actif de l’enzyme sont représentées sur les différentes structures.",
+                "images": [
+                    "annales_assets/2025_2026/biochimie/tuto_3/image10.png"
+                ],
                 "question": "Compte tenu de vos connaissances et de la figure 9, quelle est la (ou quelles sont les) proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -7225,38 +7251,36 @@ window.ANNALES_2025_2026 = [
                 "num": 7,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2025_2026/chimie/tuto_1/q7_enonce.png"
-                ],
-                "question": "Question 7 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "A propos de l’acide lactique représenté ci-dessous, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?\n[schéma : acide lactique]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La théorie VSEPR du carbone 3 est \\(AL_4E_0\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention : la théorie VSEPR est de la forme ALnEm avec A l’atome d’intérêt, L le nombre de voisins et E le nombre de doublets non liant. Or le carbone 3 est entouré de deux oxygènes et un carbone : donc il a 3 voisins même si la liaison avec l’un des oxygènes est double. Sa notation est donc AL3E0 (il est donc trigonal plan et hybridé sp2 😉)."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La géométrie de l’oxygène 1 est tétraédrique",
                         "isCorrect": true,
                         "explanation": "VRAI - Il a 2 DNL et 2 voisins donc sa théorie VESPR est AL2E2 (cf item précédent). Comme son DNL n’est pas délocalisable, il est bien de géométrie tétraédrique (et hybridé sp3) !"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "L’angle entre les liaisons du carbone 1 est de \\(120^{\\circ}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention, valeur numérique plus ou moins à savoir : le carbone 1 est AL4E0 donc tétraédrique ; l’angle est donc de 109,3°. Un angle de 120° est synonyme de géométrie trigonale plan !"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "On retrouve 2 orbitales moléculaires \\(\\sigma\\) entre \\(\\text{C}_3\\) et \\(\\text{O}_3\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Dès qu’il y a une liaison simple, c’est une orbitale σ. Par contre, s’il y avait eu une liaison double, on aurait bien eu une π et une σ. Petit mémo : sigma = squelette. Dès que deux atomes sont reliés, il y a toujours une σ et elle est unique."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "L’oxygène 2 est de géométrie trigonale plane",
                         "isCorrect": true,
                         "explanation": "VRAI - Rapidement, on voit que le DNL de l’oxygène 2 est délocalisable, ainsi, il ne lui reste qu’un DNL propre à lui, on a donc AL2E1, ce qui correspond bien à une géométrie trigonale plane."
                     }
@@ -7274,35 +7298,35 @@ window.ANNALES_2025_2026 = [
                 "images": [
                     "annales_assets/2025_2026/chimie/tuto_1/q8_enonce.png"
                 ],
-                "question": "Question 8 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "question": "Concernant la molécule présente ci-dessous quelle est la (ou quelles sont les) proposition(s) exacte(s) ?\n[schéma]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le carbone 2 est hybridé \\(sp^{3}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est exactement ça ! Notre carbone fait 3 liaisons avec des hydrogènes et une liaison avec un autre carbone, donc AL4E0 avec L le nombre d’atomes voisins et E le nombre de doublet non-liant, donc sp3."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "L’ensemble des carbones du cycle aromatique sont hybridés \\(sp^{2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Vrai ! C’est du cours ! Mais on peut déterminer l’hybridation de chaque carbone individuellement tel que AL3E0, ce qui correspond bien à une hybridation sp2."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le carbone 1 est hybridé \\(sp^{2}\\) à cause de la présence d’un motif de mésomérie",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux ! Une double liaison n’est pas toujours impliquée dans un motif de mésomérie, ici il n’y en a aucun. On rappelle les motifs de mésomérie possibles : • liaison multiple - liaison simple - liaison multiple (π −σ −π) • liaison multiple - liaison simple - DNL (π −σ −p) • liaison multiple - liaison simple - lacune (π −σ −p) • liaison multiple - liaison simple - un électron (π −σ −·) Ici, ce qui bloque c’est bien la partie ”présence d’un motif de mésomérie”, mais en effet le carbone 1 est hybridé sp2 (AL3E0)."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Le DNL de l’oxygène est située dans une orbitale \\(p\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux, il n’y a pas de motif de mésomérie, il est donc situé dans une orbitale sp2. Pour savoir que l’oxygène est hybridé sp2, il fallait faire la théorie VSEPR qui donne AL1E2 en sachant que le DNL n’était pas délocalisable."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La double liaison du carbone 4 implique une orbitale \\(p\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est ça, on n’oublie pas que les liaisons doubles nécessitent forcément l’interaction latérale d’une orbitale p de chacun des atomes impliqués."
                     }
@@ -7321,35 +7345,35 @@ window.ANNALES_2025_2026 = [
                 "images": [
                     "annales_assets/2025_2026/chimie/tuto_1/q9_enonce.png"
                 ],
-                "question": "Question 9 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "question": "Concernant la molécule présente ci-dessous, quelle est la (ou quelles sont les) proposition(s) exacte(s) ?\n[schéma]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le groupement \\(\\text{C} - \\text{O}^{-}\\) est concerné par un effet inductif donneur",
                         "isCorrect": true,
                         "explanation": "VRAI - Ça semble un peu contre-intuitif, mais c’est super important : la notion d’électronégativité ne s’applique que dans le cas des atomes neutres, ici la charge négative indique que l’oxygène est vraiment ”saturé” d’électrons (pas la saturation des couches, il en a juste trop), il va donc essayer d’en donner un peu via un effet +I."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Le groupement \\(\\text{C} = \\text{O}\\) a un effet mésomère donneur",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux, il est mésomère attracteur car il aura tendance à se mettre sous la forme O– comme il est lié au carbone par une double liaison. On va donc avoir un enchainement : H2N O O - N"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Il y a 18 électrons impliqués dans un motif de mésomérie",
                         "isCorrect": false,
                         "explanation": "FAUX - Il y en a 14, on peut voir les motifs de conjugaison possible dans les items précédents."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "L’azote du cycle a un effet inductif attracteur",
                         "isCorrect": true,
                         "explanation": "VRAI - Vrai ! Il est l’atome le plus électronégatif donc il va attirer les électrons vers lui, ce qui lui confère un effet inductif attracteur (attracteur, qui tire vers lui). \u0014 Item E Vrai, on reprend par étape pour voir si on remplit bien nos règles de Huckel : — La molécule possède un ou plusieurs cycles — Le cycle est plan. On peut faire la VSEPR pour vérifier : il est AL3E0 pour les carbones, et AL2E1 pour l’azote — Le système est conjugué sans discontinuité sur l’ensemble du cycle — 4n + 2 e– sont délocalisables, avec ici n = 2 En vérité cette forme de bicycle est assez notoire niveau aromaticité (en gros c’est un tap-in, comme le benzène)."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La molécule contient un bicycle aromatique",
                         "isCorrect": true,
                         "explanation": "VRAI - → Les molécules B et C ont une réactivité différente mais voisineEh non, on dirait peut-être pas à cause de la forme des molécules qui est plutôt semblable, mais avec des charges qui sont réparties différemment. Et si je vous disais que ces deux molécules ne sont en fait qu'une seule molécule ? Magique n'est-ce pas ? En effet ce sont deux formes mésomères d'une seule et même molécule.Pour passer de la molécule B à la molécule C, on délocalise le DNL de l'azote (à droite) juuuusqu'à N=O :-O -O N+NH2N++NH2O-BO CSachant que c'est la même molécule, la réactivité est exactement la même."
                     }
@@ -7365,38 +7389,36 @@ window.ANNALES_2025_2026 = [
                 "num": 10,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2025_2026/chimie/tuto_1/q10_enonce.png"
-                ],
-                "question": "Question 10 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "Concernant les molécule représentées ci-dessous, quelle est la (ou quelles sont les) proposition(s) exacte(s) ?\n[schéma : molécules A, B et C]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le doublet non liant de l’azote 1 est impliqué dans un motif de mésomérie",
                         "isCorrect": false,
                         "explanation": "FAUX - Sachant que l’atome d’azote est déjà impliqué dans une liaison double, on sait qu’il a déjà son orbitale p impliquée dans le système π. Ainsi, on ne peut pas placer le DNL dans une orbitale p pour qu’il soit délocalisable."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "L’effet mésomère l’emporte toujours sur l’effet inductif",
                         "isCorrect": false,
                         "explanation": "FAUX - Non, la chimie c’est comme le français, il y a toujours des exceptions, l’effet inductif d’un halogène prévaut sur son effet mésomère."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Dans la molécule A, l’effet inductif attracteur du O est ressenti jusqu’au NH",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux, l’effet inductif est transmis de proche en proche, mais s’atténue au fur et à mesure, et on le néglige au bout de 3 liaisons. Ici, l’effet attracteur de l’oxygène s’arrêtera dans un cercle de 3 liaisons autour de lui. O NH N"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Dans la molécule A, l’effet inductif attracteur de NH et de \\(\\text{N}_1\\) s’additionnent",
                         "isCorrect": true,
                         "explanation": "VRAI - Oui, ils se trouvent côte à côte, et donc ils additionnent leur effet inductif attracteur de part et d’autre. L’additivité de l’effet inductif est une propriété qui est donnée dans votre cours."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Les molécules B et C ont une réactivité différente mais voisine",
                         "isCorrect": false,
                         "explanation": "FAUX - Eh non, on dirait peut-être pas à cause de la forme des molécules qui est plutôt semblable, mais avec des charges qui sont réparties différemment. Et si je vous disais que ces deux molécules ne sont en fait qu’une seule molécule ? Magique n’est-ce pas ? En effet ce sont deux formes mésomères d’une seule et même molécule. Pour passer de la molécule B à la molécule C, on délocalise le DNL de l’azote (à droite) juuuusqu’à N=O : O - N+ O NH2 B O - N+ O - N + H2 C Sachant que c’est la même molécule, la réactivité est exactement la même."
                     }
@@ -7457,38 +7479,36 @@ window.ANNALES_2025_2026 = [
                 "num": 12,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2025_2026/chimie/tuto_1/q12_enonce.png"
-                ],
-                "question": "Question 12 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "A propos des composés suivants, indiquer quelle(s) proposition(s) est(sont) exacte(s) :\n[schéma : composés A, B, C, D et E]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le groupement nitro stabilise plus la molécule E que la molécule C",
                         "isCorrect": false,
                         "explanation": "FAUX - Héhé, cet item est là pour préshot les trois derniers ! Nous sommes d’accord que la mésomérie, donc la délocalisation des électrons π, permet de stabiliser la molécule. Les électrons, en sautant partout, en font diminuer l’énergie. Plus la délocalisation sur la molécule est grande, plus elle est stable. Et, principe ESSENTIEL en chimie : la nature recherche TOUJOURS la stabilité. Quand on regarde nos composés C et E, on voit qu’ils ont tous les deux un groupement nitro, mais pas en même position. Pour le composé C, le nitro est en méta tandis que pour le composé E, il est en para. Alors pour rappel, ortho, méta et para par rapport à un groupement, c’est ça : OH ortho meta para On voit que lorsque le groupement nitro est en méta, bahhh la délocalisation des électrons π ne passe pas par le groupement nitro. Regardez : NO2 O − Donc c’est nul. Par contre, lorsque le groupement nitro est en para, la délocalisation passe par lui ! Elle est donc plus grande, le composé est alors plus stable. N + O − O O − On a raisonné avec la forme basique pour faciliter un peu la visualisation, mais il suffit d’inverser la manière de réfléchir. Si l’effet mésomère donneur de l’oxygène portant l’hydrogène labile stabilise sa forme basique, alors il déstabilise sa forme acide. On a donc bien le nitro qui déstabilise la molécule E (qui est représentée sous sa forme acide)."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Plus la délocalisation du DNL d’un composé basique est grande, plus le \\(pKa\\) de son couple acido-basique est bas",
                         "isCorrect": true,
                         "explanation": "VRAI - Wow, y a beaucoup de mots dans cet item. Mais il reprend ce qu’on a dit à l’item d’avant ! Dans le cas de molécules impliquées dans un couple acide/base, c’est la forme la plus stable qui va être privilégiée, nous sommes d’accord. Lorsqu’un composé est très acide, il va perdre très vite son hydrogène ! Mais pourquoi est-ce qu’il fait ça ? Parce que sa base conjuguée est très stable, d’où le fait qu’il recherche à prendre sa forme basique le plus vite possible. L’item est donc bon ! ? Items C, D et E Bon ! La big question de classification des molécules selon leur acidité. Les items d’avant vous aidaient un peu à comprendre comment résoudre ceux-ci. Vous savez maintenant que plus la forme basique d’un couple acide/base est stable, plus ce composé est acide. Ce genre d’items peut être un peu laborieux et difficile à comprendre, mais pour vous aider à bien visualiser les effets mésomères, considérez à chaque fois les bases conjuguées de chaque composé. On va les étudier un par un : A →Le DNL de l’oxygène de la base conjuguée n’est pas du tout délocalisable. Il n’y a rien qui vient spécialement stabiliser la molécule, c’est pas fou globalement. B →Le cycle est aromatique, le DNL de l’oxygène de la base conjuguée peut se délocaliser au sein de ce cycle. C’est pas mal, c’est déjà plus stable ! C et E →on a déjà étudié leur cas dans la correction de l’item A. En méta, le nitro ne stabilise pas l’O– par un effet -M. Donc C n’a pas la stabilisation de E (il n’a pas ce juice). Donc E est très stabilisé. Tandis que C n’est quasiment pas du tout stabilisé. On va devoir considérer l’effet -I du groupement nitro même si il se trouve à plus de 3 liaisons, pour pouvoir départager avec B. On a donc ce très léger -I qui stabilise trèèèès légèrement C, juste un petit peu plus que B. D →Oh, on a un atome d’iode fort sympathique et un petit motif de conjugaison qui permet une délocalisation. Rappelez-vous bien que l’effet inductif des halogènes est fort. L’atome d’iode est à trois liaisons de l’oxygène, ça fait un peu loin mais son effet inductif attracteur s’applique toujours ! Et face à cet effet inductif, on néglige l’effet mésomère donneur (car l’iode est un halogène). Maintenant qu’on a tout décortiqué, on peut classer nos composés par ordre croissant d’acidité : E > D > C > B > A Voilààà j’espère que ça va ! La mésomérie c’est vraiment pas simple au début, mais courage, vous allez en venir à bout et comprendre comment ça fonctionne !"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Dans l’ordre croissant d’acidité, on a \\(E > C > B > D > A\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Dans l’ordre croissant d’acidité, on a \\(E > D > C > B > A\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Dans l’ordre croissant d’acidité, on a \\(C > E > B > D > A\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -8736,39 +8756,36 @@ window.ANNALES_2025_2026 = [
                 "num": 18,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2025_2026/chimie/tuto_2/q18_enonce.png",
-                    "annales_assets/2025_2026/chimie/tuto_2/q18_enonce_2.png"
-                ],
-                "question": "Question 18 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "Concernant la réaction ci-dessus, laquelle (ou lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La vitesse de la réaction peut s’exprimer \\(v = -\\dfrac{d[\\text{Lactose}]}{dt} = k[\\text{Lactose}]^{2}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - dt = k[Lactose]2 Le début partait si bien... Vous l’aurez remarqué à l’aide du tableau, nous sommes dans le cas d’une réaction d’ordre 1. En effet, on a ici un suivi de la concentration du lactose en fonction du temps. Et que remarque-t-on ? Que la concentration diminue de moitié à des intervalles de temps pré- cis, toutes les 26 ms ! Lorsqu’on a des périodes régulières, avec donc un t1/2 qui est constant, on étudie bien une cinétique d’ordre 1. Il est très important d’identifier directement avec les données de l’énoncé si la cinétique que vous étudiez est d’ordre 1 ou 2. C’est pourquoi il faut que vous connaissiez biiieeeennnn les propriétés de chacun des cas de figure. La formule de la vitesse d’une réaction d’ordre 1 c’est bien v = −1 a × d[Lactose] dt avec a le coefficient stoechiométrique, ici égal à 1. Et on sait aussi que v = k[Lactose], parce que la réaction ne dépend que de sa concentration ! ? Items B et C Absolument !! On est dans une cinétique d’ordre 1. L’expression du temps de demi-réaction s’ex- prime de la manière suivante t1/2 = ln 2 ak . Comme on l’a vu avant, a c’est le coefficient stoechiomé- trique du lactose qui vaut donc 1. Donc on a bien k = ln 2 t1/2. Et comme on le voit ici, la concentration initiale de lactose n’entre pas en ligne de compte. Les items B et C sont bons !"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "On peut écrire \\(k = \\dfrac{\\ln 2}{t_{1/2}}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le temps de demi-réaction ne dépend pas de la concentration initiale",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La concentration de lactose suit un déclin exponentiel",
                         "isCorrect": true,
                         "explanation": "VRAI - Ouiiii c’est bien ça ! Encore une fois, l’un des caractéristiques d’une réaction de cinétique d’ordre 1 c’est un déclin exponentiel de la concentration du réactif au cours du temps. Dans le cas d’une réaction avec une cinétique d’ordre 2, le déclin est hyperbolique ! Vraiment, touuut ça c’est impor- tant à savoir, ça s’improvise pas forcément, donc vraiment apprenez bien les spécificités de chaque ordre ! \u0018 Item E Bon, d’où est-ce que sort ce graphique ? Et bien il démontre l’évolution de l’inverse de la concen- tration de réactifs en fonction du temps. Et typiquement, cette droite croissante témoigne d’une cinétique d’ordre 2, non d’ordre 1 ! Le même graphique pour une cinétique d’ordre 1 aurait donné ça : ln[Lactose] t ln[Lactose]0 Bon courage pour la suite les boss ! La cinétique c’est un petit chapitre vraiment sympa, mais je crois en vous, vous allez slay la correction du reste !!"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Ce graphique décrit la réaction : [graphique : \\(\\dfrac{1}{[\\text{Lactose}]}\\) en fonction de \\(t\\), droite croissante d’ordonnée à l’origine \\(\\dfrac{1}{[\\text{Lactose}]_0}\\)]",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -9163,38 +9180,36 @@ window.ANNALES_2025_2026 = [
                 "num": 4,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2025_2026/chimie/tuto_3/q4_enonce.png"
-                ],
-                "question": "Question 4 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "Concernant le classement d’acidité de la fonction acide (COOH) des molécules 1, 2, 3 et 4, parmi les propositions suivantes, laquelle est exacte ?\n[schéma : molécules 1, 2, 3 et 4]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(1 > 2 > 3 > 4\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - un effet inductif attracteur aussi, mais vu qu'on ne vous le donne pas dans le cours, pas besoin de le retenir (et ce n'était pas nécessaire de le savoir pour départager)."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(1 > 4 > 3 > 2\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(4 > 3 > 1 > 2\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - O, tout comme dans la molécule 2. Mais il faut se rappeler de certaines choses, le brome est un halogène, et c'est un mauvais mésomère donneur (recouvrement latérale d'une orbitale"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(4 > 1 > 3 > 2\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(3 > 1 > 2 > 4\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -9685,35 +9700,35 @@ window.ANNALES_2025_2026 = [
                     "annales_assets/2025_2026/chimie/tuto_3/q15_enonce_2.png",
                     "annales_assets/2025_2026/chimie/tuto_3/fig_q15_1.png"
                 ],
-                "question": "Question 15 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "question": "Concernant le dérivé de la citrulline, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "A \\(pH\\) physiologique, la citrulline a une charge globale négative",
                         "isCorrect": false,
                         "explanation": "FAUX - Hm, on ne vous donne dans l’énoncé que la forme totalement protonée, c’est-à-dire la forme la plus acide. Pour pouvoir répondre à notre question, on va devoir analyser les groupements acido- basiques en fonction du pH : pH pKa1 = 2, 5 pKa2 = 11, 5 pKa3 = 12, 1 7, 4 AH3 2+ AH2 + AH A– On voit qu’à pH physiologique, c’est-à-dire aux environs de 7,4, on se situe entre le pKa1 et le pKa2. Ainsi, entre ces deux bornes-là, le dérivé est chargé positivement !"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La citrulline est sous sa forme zwitterionique entre \\(pKa_1\\) et \\(pKa_2\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Aïe aïe aïe, on la forme zwitterionique correspond donc à la forme ayant une charge globale neutre mais des charges dispersées dans la molécule. On regarde la forme neutre de notre dérivé sur le diagramme de prédominance, on sait qu’il y a des charges dans la molécule. On remarque bien qu’il se trouve entre pKa2 et pKa3."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le \\(pH_i\\) du dérivé se situe aux alentours de 11,8",
                         "isCorrect": true,
                         "explanation": "VRAI - Yes ! Petit rappel, le pHi est le pH isoélectrique, c’est-à-dire le pH auquel notre molécule porte une charge neutre. Ça, c’est la définition de base, mais on la lie à un autre concept, qui est celui de la solubilité ! En effet, l’eau est un solvant polaire, qui adore les charges : les ions et les molécules chargées sont hyyyyper solubles dans l’eau, par exemple ! Donc le pH auquel le dérivé est le moins soluble, c’est celui où il est neutre : le pHi ! On l’a vu à la correction de l’item B, c’est entre pKa2 et pKa3. Ainsi, pour calculer pile la valeur du pHi et bien on fait la moyenne entre les deux pKa : pHi = pKa2+pKa3 = 11,8. Tadaaaaa ! \u0018 Item D Alors alors ! On a tracé notre diagramme tout à l’heure et on a vu qu’entre les pKa1 et pKa2, il n’y a que la fonction COO– qui est déprotonée. Donc non, pas de NH2 inopiné !"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Cette forme du dérivé est majoritaire à \\(pH = 8{,}9\\) : [schéma]",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Parmi toutes les formes du dérivé, on compte 2 ampholytes",
                         "isCorrect": true,
                         "explanation": "VRAI - Et oui, exactement ! Pour rappel, un ampholyte est une espèce qui est à la fois l’acide d’un couple et la base d’un autre. La citrulline présente 4 formes acido-basiques. C’est très clair sur le diagramme de prédominance qu’on a tracé à la correction de l’item A, mais l’on voit bien que AH2 + et AH sont des ampholytes. Ils sont impliqués dans les couples suivants : — AH3 2+/AH2 + — AH2 +/AH — AH/A– Et voilà ! J’espère que ça a été, bon courage pour le reste de la correction les chefs, vous allez gérer !"
                     }
@@ -9864,38 +9879,36 @@ window.ANNALES_2025_2026 = [
                 "num": 19,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2025_2026/chimie/tuto_3/q19_enonce.png"
-                ],
-                "question": "Question 19 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "Concernant la réaction de dismutation du peroxyde d’hydrogène en absence de catalase, laquelle (ou lesquelles) des proposition(s) suivante(s) est (ou sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "On aurait pu déterminer \\(k\\) en traçant \\(\\dfrac{1}{[\\text{H}_2\\text{O}_2]} = f(t)\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - [H2O2] = f(t) Exactement ! Comme il s’agit d’une réaction d’ordre 2, la fonction [H2O2] = f(t) est une droite et k peux être calculé en déterminant la pente de la droite. Il est important que vous sachiez le faire si jamais on vous met un graphique de ce type. C’est d’ailleurs valable pour l’ordre 1 avec le graphe ln[A] = f(t). Je vous remets les diapos correspondantes. Diapo 237 et 239 du cours de chimie, Pr. Belmont, Broussy, Maurel et Over"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(v = -\\dfrac{1}{2}\\dfrac{d[\\text{H}_2\\text{O}_2]}{dt} = \\dfrac{d[\\text{H}_2\\text{O}]}{dt} = \\dfrac{d[\\text{O}_2]}{dt}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - d[H2O2] dt = d[H2O] dt = d[O2] dt Lorsqu’on vous présente ce type de formule pour la vitesse, il faut faire attention à 2 choses : — que le moins soit bien devant les espèces qui disparaissent — ne pas oublier les coefficients stœchiométriques Ici 2 molécules d’eau sont produites, donc il manque le 1 2 devant d[H2O] dt ."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "La courbe de l’évolution de \\([\\text{H}_2\\text{O}_2]\\) obtenue est une hyperbole",
                         "isCorrect": true,
                         "explanation": "VRAI - Yess ! Lorsque la cinétique est d’ordre 2, [H2O2] = f(t) est une hyperbole. Dans une cinétique d’ordre 1, le déclin est exponentiel."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La solution ne provoque plus de lésions oculaires après \\(t_{\\text{seuil}} = 150\\,j\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - On a 2 choses à vérifier dans cet item. Dans l’énoncé, il est dit que la solution présente des dangers oculaires jusqu’à une concentration 16 fois inférieure à [H2O2]0, soit pour une concentration [H2O2]seuil= 0,5 16 = 3,125·10−2 mol ·L−1. La solution aura atteint cette concentration à tseuil = t1/16. Or souvenez-vous ! La réaction est d’ordre 2, ce qui veut dire que les périodes successives doubles et pour atteindre t1/16, il faut 4 périodes (car 16 = 24), soit 1 + 2 + 4 + 8 = 15 t1/2. Donc : tseuil = 15 t1/2 = 15 × 10 = 150 j."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La dismutation du peroxyde d’hydrogène est une réaction élémentaire",
                         "isCorrect": false,
                         "explanation": "FAUX - Alors on pourrait croire que oui puisque la loi de vitesse suit la loi cinétique de Van’t Hoff v = k × [A]a[B]b avec A et B les réactifs et a et b leurs coefficients stœchiométriques. En effet, on a déterminé dans l’item précédent que v = k × [H2O2]2. Mais cela ne prouve pas que la réaction est élémentaire. Pour rappel, une réaction élémentaire est une réaction qui se déroule en une seule étape, un choc et qui obéit obligatoirement à la loi de Van’t Hoff. Cependant, la réciproque n’est pas vraie : une réaction qui suit la loi de Van’t Hoff n’est pas forcément élémentaire. Ici, aucune information ne nous permet de le confirmer, donc on ne peut pas valider l’item. D’ailleurs en l’occurence, cette réaction se déroule bel et bien en plusieurs étapes."
                     }
@@ -14492,35 +14505,35 @@ window.ANNALES_2025_2026 = [
                     "annales_assets/2025_2026/histo_embryo/tuto_3/q4_enonce.png",
                     "annales_assets/2025_2026/histo_embryo/tuto_3/image3.jpeg"
                 ],
-                "question": "Question 4 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "question": "Concernant le schéma ci-dessous, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?\n[schéma]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La structure désignée par le chiffre 1 ne comprend pas de cytosquelette",
                         "isCorrect": true,
                         "explanation": "VRAI - Toutafé !!! Il s’agit d’une zone amorphe, donc qui n’est pas soutenue par le cytosquelette."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La structure désignée par le chiffre 2 correspond aux filaments intermédiaires",
                         "isCorrect": false,
                         "explanation": "FAUX - Aïe aïe aïe, la petite inversion qui fait mal. Les microvillosités (ce à quoi correspond ce beau schéma) sont soutenues par un squelette de filaments d’actine et non de filaments intermédiaires ! Les filaments intermédiaires se trouvent juste en dessous comme on peut le voir sur ce beau schéma : Diapo 51 - Tissu épithélial - Dr. Mouton-Liger"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "L’élément désigné par le chiffre 3 permet de solidariser les autres éléments du cytosquelette",
                         "isCorrect": true,
                         "explanation": "VRAI - Exactement !! Il s’agit de la fimbrine, qui permet de solidariser les filaments d’actine !"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Il s’agit d’une spécialisation mobile qui augmentent la surface d’échange",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention, les microvillosités sont des spécialisations non mobiles. À ne pas confondre avec les cils !!"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "On retrouve cette spécialisation au niveau de l’épithélium respiratoire",
                         "isCorrect": false,
                         "explanation": "FAUX - Ooof non dommage ! La spécialisation représentée sur le schéma est une microvillosité et on la retrouve notamment au niveau du plateau strié au niveau de l’intestin. Ce sont les cils qui sont retrouvés au niveau de l’épithélium respiratoire, parce que ce sont des spécialisations mobiles et on en a besoin dans ces zones là pour notamment faire bouger le mucus."
                     }
@@ -16397,40 +16410,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 1,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Le pendule sur l'arbre (questions 1 à 8)\nPerceval, pauvre étudiant en médecine, après avoir perdu il ne sait plus combien d'heures à tenter de comprendre ses cours de physique, décide de s'accorder une pause bien méritée dans le petit jardin des Cordeliers.\nMais alors qu'il s'apprête à s'asseoir pour se détendre, il aperçoit un étrange spectacle : un porte-clés se balançant tel un pendule accroché sur une branche. Pauvre Perceval... hanté jusque dans ses pauses par la mécanique, il ne peut s'empêcher de vouloir calculer les paramètres de ce mouvement oscillant.\nIl estime que la masse de la clé au bout est d'environ 50 g, et que l'angle maximal d'oscillation de part et d'autre de la verticale est \\(\\theta_{max} = 60^{\\circ}\\). La chaîne, qu'il considère comme un fil, mesure \\(L = 10\\ \\text{cm}\\) et peut être considérée comme inextensible. Les deux forces en présence sont le poids de la clé \\(\\vec{P}\\) ainsi que la force de tension du fil \\(\\vec{T}\\) (indiqués sur le schéma). La masse de la chaîne du porte-clés et les forces de frottements seront considérées négligeables durant l'intégralité de l'exercice, la clé est assimilée à une masse ponctuelle.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q1_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q1_1.png"
                 ],
-                "question": "Question 1 - voir l’énoncé ci-dessus.",
+                "question": "Concernant les forces qui s'appliquent au pendule, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La force de tension exercée par le fil est dirigée selon la tangente au cercle autour du point d'attache",
                         "isCorrect": false,
                         "explanation": "FAUX - Bon, premier tuto et premier item ! Que de plaisir, en plus de la physique, bravo d’avoir eu le courage d’ouvrir cette correction. On commence par un item faux : la tangente au cercle est perpendiculaire à la chaîne. Or ici, on vous parle de la tension de cette même chaîne. Il est vraiment important de savoir que la tension est TOUJOURS dirigée le long de la chaîne (on dit que la tension a une direction ”raidale”) et vers le centre (en l’occurence vers le point d’attache)."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La tension, en coordonnées cartésiennes peut être décomposée en une composante horizontale \\(T_x = -T\\sin(\\theta)\\) et une composante verticale \\(T_y = T\\cos(\\theta)\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - La tension est une force bien connue, dirigée le long du fil (eh oui, c’est bien son rôle), donc tou- jours orientée vers le point de suspension. Ici, on veut la décomposer, donc il faut y aller par étapes. Premièrement, il faut bien comprendre que nous sommes dans un repère orthonormé. Il y a donc toujours une dimension verticale (axe des ordonnées) et une dimension horizontale (axe des abscisses). Si vous regardez bien, c’est notre petit repère dessiné près de votre schéma du pendule. Pour déterminer l’expression de notre tension⃗T, il faut faire appel à la trigonométrie et le fameux CAH SOH TOA. On a donc : cos(θ) = Ty T et sin(θ) = Tx T . Ainsi, on obtient que : — La composante horizontale vaut Tx = −T sin(θ), — La composante verticale Ty = T cos(θ) (La composante horizontale est négative car⃗Tx et⃗ex sont de sens opposés ; de façon générale,⃗Tx sera toujours dans un sens opposé au déplacement de la clé) Donc item B vrai !"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "La force de tension est toujours dirigée vers le point d'attache de la chaîne",
                         "isCorrect": true,
                         "explanation": "VRAI - On l’a plus ou moins dit dans l’item A, donc l’item est vrai. J’aimerais cependant préciser que cet item est valable uniquement dans les conditions de notre problème : c’est-à-dire une chaîne inextensible et toujours tendue."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La résultante des forces appliquées sur la masse est toujours dirigée vers le centre de rotation",
                         "isCorrect": false,
                         "explanation": "FAUX - Alors, on vient de voir qu’il y a une force de tension et le poids (eh oui, c’est dans la continuité des items précédents). Nous allons donc les additionner VECTORIELLEMENT (c’est la définition même d’une résultante) :⃗ F =⃗T +⃗P ⇐⇒⃗F = \u0010 −T sin(θ)⃗ex + T cos(θ)⃗ey \u0011 −mg⃗ey ⇐⇒⃗F = \u0010 −T sin(θ) \u0011⃗ ex + \u0010 T cos(θ) −mg \u0011⃗ ey Sinon, il est aussi possible de raisonner de façon purement vectorielle (avec un joli petit schéma pour bien vous imager la chose, si vous doutez en méca : tracez, c’est un temps dépensé plus qu’utilement).⃗ T⃗ P⃗ F⃗ ex⃗ ey Maintenant pour aller un peu plus loin, il est bien aussi de savoir que la force de tension n’est qu’une réaction vis à vis du poids, puisque si on posait le pendule en position d’équilibre sur le sol celle-ci n’existerait pas, de ce fait elle ne peut pas être que dirigé vers le centre."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La force de tension s'annule lorsque le pendule atteint l'angle maximale \\(\\theta_{max}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Il y avait deux manières de réfléchir. La première : s’il n’y a plus de force de tension, il n’y a plus rien pour contraindre le fil à maintenir la clé qui se balançait, et donc elle tombe. De ce fait, on peut en déduire que la force de tension est toujours présente. On peut même aller plus loin dans cette réflexion en faisant un petit bilan des forces. Lorsqu’on atteint l’angle maximal θmax : nous savons que la trajectoire de la masse continue de suivre le cercle, si on supprime la force de tension l’accélération sera dirigée vers le bas verticale au sol, or notre masse ne tombe pas, c’est bien qu’il y a une force qui permet à l’objet de reprendre son mouvement, bingo c’est la force de tension (c’est comme ça que marche un pendule). Sinon, on pouvait s’y prendre mathématiquement, mais honnêtement je vais vous épargner ça, car vous n’avez pas le temps nécessaire pour vous y pencher dès le début. Sachez néanmoins que c’est possible (tout est possible en physique, anyway)."
                     }
@@ -16444,40 +16456,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 2,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Le pendule sur l'arbre (questions 1 à 8)\nPerceval, pauvre étudiant en médecine, après avoir perdu il ne sait plus combien d'heures à tenter de comprendre ses cours de physique, décide de s'accorder une pause bien méritée dans le petit jardin des Cordeliers.\nMais alors qu'il s'apprête à s'asseoir pour se détendre, il aperçoit un étrange spectacle : un porte-clés se balançant tel un pendule accroché sur une branche. Pauvre Perceval... hanté jusque dans ses pauses par la mécanique, il ne peut s'empêcher de vouloir calculer les paramètres de ce mouvement oscillant.\nIl estime que la masse de la clé au bout est d'environ 50 g, et que l'angle maximal d'oscillation de part et d'autre de la verticale est \\(\\theta_{max} = 60^{\\circ}\\). La chaîne, qu'il considère comme un fil, mesure \\(L = 10\\ \\text{cm}\\) et peut être considérée comme inextensible. Les deux forces en présence sont le poids de la clé \\(\\vec{P}\\) ainsi que la force de tension du fil \\(\\vec{T}\\) (indiqués sur le schéma). La masse de la chaîne du porte-clés et les forces de frottements seront considérées négligeables durant l'intégralité de l'exercice, la clé est assimilée à une masse ponctuelle.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q2_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q1_1.png"
                 ],
-                "question": "Question 2 - voir l’énoncé ci-dessus.",
+                "question": "Concernant les énergies potentielle, cinétique, mécanique et le travail du poids de la bille, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "L'énergie cinétique augmente quand l'énergie totale diminue",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "L'énergie potentielle de la bille diminue quand sa vitesse augmente",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le travail du poids est nul entre deux positions de hauteur identique",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Le travail élémentaire du poids sur un déplacement infinitésimal de la bille peut être moteur ou résistif selon l'instant auquel on observe le mouvement",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La somme des énergies potentielle et cinétique est constante",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -16493,40 +16504,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 3,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Le pendule sur l'arbre (questions 1 à 8)\nPerceval, pauvre étudiant en médecine, après avoir perdu il ne sait plus combien d'heures à tenter de comprendre ses cours de physique, décide de s'accorder une pause bien méritée dans le petit jardin des Cordeliers.\nMais alors qu'il s'apprête à s'asseoir pour se détendre, il aperçoit un étrange spectacle : un porte-clés se balançant tel un pendule accroché sur une branche. Pauvre Perceval... hanté jusque dans ses pauses par la mécanique, il ne peut s'empêcher de vouloir calculer les paramètres de ce mouvement oscillant.\nIl estime que la masse de la clé au bout est d'environ 50 g, et que l'angle maximal d'oscillation de part et d'autre de la verticale est \\(\\theta_{max} = 60^{\\circ}\\). La chaîne, qu'il considère comme un fil, mesure \\(L = 10\\ \\text{cm}\\) et peut être considérée comme inextensible. Les deux forces en présence sont le poids de la clé \\(\\vec{P}\\) ainsi que la force de tension du fil \\(\\vec{T}\\) (indiqués sur le schéma). La masse de la chaîne du porte-clés et les forces de frottements seront considérées négligeables durant l'intégralité de l'exercice, la clé est assimilée à une masse ponctuelle.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q3_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q1_1.png"
                 ],
-                "question": "Question 3 - voir l’énoncé ci-dessus.",
+                "question": "Concernant les différentes vitesses de la clé lors de son mouvement oscillant, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Une formule de la vitesse maximale est \\(v_{max} = \\sqrt{2gL(1 - \\sin(\\theta))}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La vitesse maximale est \\(v_{max} \\approx 3{,}6\\ \\text{km}\\cdot\\text{h}^{-1}\\) (à \\(0{,}2\\ \\text{km}\\cdot\\text{h}^{-1}\\) près)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "La vitesse maximale est atteinte lorsque la clé est au point le plus haut de son mouvement",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La vitesse est nulle quand l'altitude de la clé est maximale",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La vitesse maximale est atteinte quand l'accélération de la clé est nulle",
                         "isCorrect": false,
                         "explanation": "FAUX - Item annulé par l'errata du tutorat."
                     }
@@ -16540,41 +16550,44 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Le pendule sur l'arbre (questions 1 à 8)\nPerceval, pauvre étudiant en médecine, après avoir perdu il ne sait plus combien d'heures à tenter de comprendre ses cours de physique, décide de s'accorder une pause bien méritée dans le petit jardin des Cordeliers.\nMais alors qu'il s'apprête à s'asseoir pour se détendre, il aperçoit un étrange spectacle : un porte-clés se balançant tel un pendule accroché sur une branche. Pauvre Perceval... hanté jusque dans ses pauses par la mécanique, il ne peut s'empêcher de vouloir calculer les paramètres de ce mouvement oscillant.\nIl estime que la masse de la clé au bout est d'environ 50 g, et que l'angle maximal d'oscillation de part et d'autre de la verticale est \\(\\theta_{max} = 60^{\\circ}\\). La chaîne, qu'il considère comme un fil, mesure \\(L = 10\\ \\text{cm}\\) et peut être considérée comme inextensible. Les deux forces en présence sont le poids de la clé \\(\\vec{P}\\) ainsi que la force de tension du fil \\(\\vec{T}\\) (indiqués sur le schéma). La masse de la chaîne du porte-clés et les forces de frottements seront considérées négligeables durant l'intégralité de l'exercice, la clé est assimilée à une masse ponctuelle.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q4_enonce.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q4_enonce_2.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q1_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_5.png"
                 ],
-                "question": "Question 4 - voir l’énoncé ci-dessus.",
+                "question": "Soient \\(W_{ascension}\\) et \\(W_{descente}\\) respectivement le travail du poids lors la \"montée\" (ascension) et lors de la \"descente\" des clés. Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Lors du passage de \\(\\theta_{\\max}\\) à \\(\\theta = 0^{\\circ}\\), le travail du poids est de \\(W_{descente} = 2{,}45 \\times 10^{-2}\\ \\text{J}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Lors du passage de \\(\\theta = 0^{\\circ}\\) à \\(\\theta_{\\max}\\), le travail du poids est de \\(W_{ascencion} = 2{,}45 \\times 10^{-2}\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(W_{ascencion} = -W_{descente}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Le travail de la tension du porte-clés est nul à tout instant du mouvement",
                         "isCorrect": true,
                         "explanation": "VRAI - Concernant le travail de la tension, le travail est par définition le produit scalaire d’une force et du déplacement. La tension est toujours perpendiculaire au déplacement donc le produit scalaire est nul, le travail de la tension est nul. Hop hop hop on valide l’item D à toute vitesse."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La position de la clé à \\(\\theta = 0^{\\circ}\\) est un équilibre stable",
                         "isCorrect": true,
                         "explanation": "VRAI - Alors, pour les équilibres il faut réfléchir avec les schémas. Imaginez que la clé soit à l’arrêt (vi- tesse nulle) tout en bas du pendule, maintenant vous la poussez un tout petit peu, il se passe quoi ? Si vous avez répondu qu’elle revenait à sa position d’équilibre, bingo vous êtes des cracks. C’est un équilibre stable car, et je cite votre cours, « la force ramène le système à la position d’équilibre ». Pour clarifier, je vous propose un petit schéma :⃗ T⃗ T⃗ P⃗ P P⃗F P⃗F⃗ ex⃗ ey On voit bien que lorsque le pendule est décalé à droite, la résultante des forces est vers la gauche, et inversement pour un décalage de l’autre coté. Les forces ramènent dont bien à la position d’équilbre. Voilà l’item E est validé et on peut tous se féliciter d’avoir traversé ce début de tuto ensemble, c’était pas évident. Courage vous avez déjà énormément progressé, j’en suis certain."
                     }
@@ -16590,40 +16603,44 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "",
+                "context": "Soudain, une bourrasque violente atteint la clé alors que la chaîne est à la verticale. La clé est donc détachée instantanément et s'envole en direction de Perceval (celui-ci se situe sur l'axe \\(\\vec{e_x}\\)).\nPerceval fait le pari que même s'il reste immobile, la clé ne l'atteindra pas.\nLa clé est libérée à la vitesse purement horizontale de \\(v_0 = 3\\ \\text{m}\\cdot\\text{s}^{-1}\\), à une hauteur \\(H\\) de 10 m, Perceval, lui, fait 1,93 m et se trouve à 4 m de l'arbre. La bourrasque est considérée instantanée, une fois la chaîne détachée elle n'exerce aucune force sur le système.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q5_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q1_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_5.png"
                 ],
-                "question": "Question 5 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle des trajectoires ci-dessus va avoir la clé une fois que la chaîne cède. Cochez l'unique bonne réponse :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Ce sera la trajectoire A",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Ce sera la trajectoire B",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Ce sera la trajectoire C",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Ce sera la trajectoire D",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Ce sera la trajectoire E",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -16636,40 +16653,44 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 6,
                 "type": "QCM",
-                "context": "",
+                "context": "Soudain, une bourrasque violente atteint la clé alors que la chaîne est à la verticale. La clé est donc détachée instantanément et s'envole en direction de Perceval (celui-ci se situe sur l'axe \\(\\vec{e_x}\\)).\nPerceval fait le pari que même s'il reste immobile, la clé ne l'atteindra pas.\nLa clé est libérée à la vitesse purement horizontale de \\(v_0 = 3\\ \\text{m}\\cdot\\text{s}^{-1}\\), à une hauteur \\(H\\) de 10 m, Perceval, lui, fait 1,93 m et se trouve à 4 m de l'arbre. La bourrasque est considérée instantanée, une fois la chaîne détachée elle n'exerce aucune force sur le système.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q6_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q1_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_5.png"
                 ],
-                "question": "Question 6 - voir l’énoncé ci-dessus.",
+                "question": "Concernant le temps \\(t\\) que mettra la clé à arriver au niveau de Perceval, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(t = 1{,}33\\ \\text{s}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(t = 1{,}78\\ \\text{s}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(t = 1{,}28\\ \\text{s}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(t = 1{,}67\\ \\text{s}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(t = 1{,}76\\ \\text{s}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -16682,40 +16703,44 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "",
+                "context": "Soudain, une bourrasque violente atteint la clé alors que la chaîne est à la verticale. La clé est donc détachée instantanément et s'envole en direction de Perceval (celui-ci se situe sur l'axe \\(\\vec{e_x}\\)).\nPerceval fait le pari que même s'il reste immobile, la clé ne l'atteindra pas.\nLa clé est libérée à la vitesse purement horizontale de \\(v_0 = 3\\ \\text{m}\\cdot\\text{s}^{-1}\\), à une hauteur \\(H\\) de 10 m, Perceval, lui, fait 1,93 m et se trouve à 4 m de l'arbre. La bourrasque est considérée instantanée, une fois la chaîne détachée elle n'exerce aucune force sur le système.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q7_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q1_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_5.png"
                 ],
-                "question": "Question 7 - voir l’énoncé ci-dessus.",
+                "question": "On considère que la masse de la clé n'impacte pas sa vitesse initiale. Concernant la chute libre de la clé avec \\(y\\) la variable représentant sa hauteur par rapport au sol, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le travail du poids le long de la chute est \\(W_{\\text{chute}} = \\int_{h}^{0} -mg\\,dy\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Le travail du poids le long de la chute est \\(W_{\\text{chute}} = \\int_{0}^{h} -mg\\,dy\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le travail du poids est moteur",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La masse de la clé n'a aucune incidence sur la trajectoire de la chute",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Une clé plus lourde demandera plus d'énergie et ira donc moins loin",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -16730,41 +16755,44 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 8,
                 "type": "QCM",
-                "context": "",
+                "context": "Soudain, une bourrasque violente atteint la clé alors que la chaîne est à la verticale. La clé est donc détachée instantanément et s'envole en direction de Perceval (celui-ci se situe sur l'axe \\(\\vec{e_x}\\)).\nPerceval fait le pari que même s'il reste immobile, la clé ne l'atteindra pas.\nLa clé est libérée à la vitesse purement horizontale de \\(v_0 = 3\\ \\text{m}\\cdot\\text{s}^{-1}\\), à une hauteur \\(H\\) de 10 m, Perceval, lui, fait 1,93 m et se trouve à 4 m de l'arbre. La bourrasque est considérée instantanée, une fois la chaîne détachée elle n'exerce aucune force sur le système.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q8_enonce.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q8_enonce_2.png"
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_5.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q8_1.png"
                 ],
-                "question": "Question 8 - voir l’énoncé ci-dessus.",
+                "question": "Concernant la fin de la trajectoire de la clé, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La distance \\(d\\) entre l'arbre et le point où elle touche le sol s'exprime par \\(d = v_0\\sqrt{\\dfrac{2H}{g}}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La distance \\(d\\) entre l'arbre et le point où elle touche le sol s'exprime par \\(d = v_0\\sqrt{\\dfrac{H}{2g}}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "La clé touche Perceval",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La clé atteint le sol avant Perceval",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La clé atteint le sol après Perceval",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -16777,40 +16805,44 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 9,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 2 - ECGériatrie (Questions 9 à 13)\nUn patient âgé aux nombreux antécédents cardiaques, M. Eclamptusse, se présente à l'hôpital pour réaliser un électrocardiogramme de routine.\nOn donne les valeurs des dérivations suivants ainsi que leurs expressions :\n\\(aV_L = 0{,}42\\ \\text{mV}\\)\n\\(aV_R = x\\ \\text{mV}\\)\n\\(aV_F = 0{,}21\\ \\text{mV}\\)\n\\(V_I = 0{,}70\\ \\text{mV}\\)\n\\(V_{II} = 0{,}56\\ \\text{mV}\\)\n\\(V_{III} = -0{,}14\\ \\text{mV}\\)",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q9_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_5.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q8_1.png"
                 ],
-                "question": "Question 9 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions suivantes, indiquer celle qui correspond au secteur dans lequel se trouve le vecteur dipôle cardiaque du patient :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Secteur 4",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Secteur 6",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Secteur 10",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Secteur 11",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Secteur 12",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -16823,40 +16855,44 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 10,
                 "type": "QCM",
-                "context": "",
+                "context": "On donne \\(\\overrightarrow{P} = \\dfrac{\\overrightarrow{p}}{4\\pi\\epsilon r^2}\\). On donne également \\(r = 0{,}5\\ \\text{m}\\) et on suppose la permittivité diélectrique du corps humain comme étant égale à \\(\\epsilon = 1{,}1 \\times 10^{4}\\ \\text{F}\\cdot\\text{m}^{-1}\\).\nOn cherche à présent à encadrer la valeur de P.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q10_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q10_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_5.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q8_1.png"
                 ],
-                "question": "Question 10 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(0{,}3\\ \\text{mV} \\leq P \\leq 0{,}5\\ \\text{mV}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(0{,}7\\ \\text{mV} \\leq P \\leq 0{,}9\\ \\text{mV}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(P = \\sqrt{\\dfrac{2}{3} aV_L^2 + \\dfrac{V_I^2}{\\sqrt{3}}}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - s 3aV 2 L + V 2 I √ Ça reprend ce que je vous ai expliqué juste avant ! Il faut bien être vigilant aux parenthèses dans les expressions littérales ! L’item aurait été bon si j’avais écrit ceci : P = r\u0010 3aVL \u00112 + \u0010 VI √ \u00112 ou bien P = r 9aV 2 L + V 2 I 3 . Les parenthèses peuvent être fourbes, faites-y bien attention ! ? Items D et E Ici, la formule vous était donnée, il vous suffit alors de remplacer juste les valeurs pour trouver la valeur de ∥−→p ∥. On sait que −→ P = −→p 4πϵr2, on peut donc s’en servir ! P = p 4πϵr2 ⇐⇒p = P × 4πϵr2 Et plus qu’à faire l’application numérique ! p = 0,428 × 10−3 × 4 × π × 1,1 × 104 × 0,52 = 14,79 C · m L’item à valider était donc le D ! Vous obteniez le E si vous oubliez de passer les mV en V ! De l’application de formule toute mignonne !"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(14{,}6\\ \\text{C}\\cdot\\text{m} \\leq p \\leq 14{,}9\\ \\text{C}\\cdot\\text{m}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(14{,}6 \\times 10^{3}\\ \\text{C}\\cdot\\text{m} \\leq p \\leq 14{,}9 \\times 10^{3}\\ \\text{C}\\cdot\\text{m}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -16870,40 +16906,44 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 11,
                 "type": "QCM",
-                "context": "",
+                "context": "On donne \\(\\overrightarrow{P} = \\dfrac{\\overrightarrow{p}}{4\\pi\\epsilon r^2}\\). On donne également \\(r = 0{,}5\\ \\text{m}\\) et on suppose la permittivité diélectrique du corps humain comme étant égale à \\(\\epsilon = 1{,}1 \\times 10^{4}\\ \\text{F}\\cdot\\text{m}^{-1}\\).\nOn cherche à présent à encadrer la valeur de P.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q10_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q11_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_5.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q8_1.png"
                 ],
-                "question": "Question 11 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions suivantes, laquelle est exacte :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le vecteur moment dipolaire est la résultante des vecteurs unitaires de dérivations",
                         "isCorrect": false,
                         "explanation": "FAUX - Oulàà, attention à ne pas se laisser avoir par la pseudo-aura de rigueur mathématique qui émane de l’item ! Certes, le vecteur dipôle cardiaque est bien la résultante de vecteurs, mais pas du tout des vecteurs unitaires ! Les vecteurs unitaires ont tous une norme de 1 et pointent dans des sens opposés deux par deux. Leur résultante aboutirait à un vecteur nul, un point au centre du cercle ! En revanche, le dipôle cardiaque est bien la résultante de toutes les ondes de polarisation et dépolarisation des myocytes qui, elles, varient au rythme du battement cardiaque. Vous trouverez des explications plus précises dans votre deuxième cours d’électrostat, à partir de la diapo 13."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Les mesures de potentiel se fondent sur une base triangulaire qui prend pour sommets le bras droit, le bras gauche et les pieds",
                         "isCorrect": true,
                         "explanation": "VRAI - Ahhh, un item de cours ! Ça fait plaisir entre deux calculs, quand même ! Et bien, tout à fait, on se base sur ce qu’on appelle le triangle de Einthoven, un triangle équilatéral qui prend pour sommets le bras droit (R), le gauche (L) et les pieds (F), et a pour centre le coeur (C). Je vous mets le schéma du cours, comme ça, ça vous parlera. Diapo 15 du deuxième cours d’électrostatique du Pr. GRENIER Ces sommets correspondent aux directions prises par les dérivations aVR, aVL et aVF, soit −−→ uCR, −−→ uCL et −−→ uCF. Ensuite, les trois autres dérivations, VI, VII et VIII, se construisent à partir des trois premières : leurs directions sont respectivement données par les vecteurs −−→ uRL, −−→ uRF et −−→ uLF. Ce triangle est essentiel pour tout construire !"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Quelle que soit la direction du dipôle, \\(aV_L\\) est toujours positif",
                         "isCorrect": false,
                         "explanation": "FAUX - Cet item c’est un peu du n’importe quoi... Le signe de n’importe quelle dérivation dépend TOTALEMENT de la direction du dipôle ! Regar- dez, il suffit que notre dipôle soit situé dans les secteurs 6 à 11 pour qu’aVL prenne une valeur négative ! (car sa valeur dépend d’un produit scalaire) ? Items D et E On a besoin d’étudier un truc ici : l’angle entre deux vecteurs, en l’occurrence ici les dipôles de deux patients. C’est exactement ce qu’on fait depuis le début. Pourquoi ça ? Parce que selon sa valeur, le cosinus de cet angle sera positif ou négatif. Deux vecteurs dipôles de même direction mais de sens opposé sont bien séparés par un angle plat, de 180◦. Or, on sait que cos(180◦) = −1. Ainsi, toutes les dérivations d’un dipôle seront multipliées par -1 pour obtenir les dérivations de l’autre dipôle. Et lorsqu’on multiplie quelque chose par -1, et bien, on change son signe ! Donc les dérivations des deux dipôles sont bien de signe opposé entre elles !"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Si l'on considère les dipôles de deux patients, tous deux de même direction mais de sens opposé, toutes leurs dérivations sont de signes opposés",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Si l'on considère les dipôles de deux patients, tous deux de même direction mais de sens opposé, toutes leurs dérivations sont de même signe",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -16917,40 +16957,44 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": "",
+                "context": "M. Eclamptusse revient quelques mois plus tard pour réaliser de nouveau un ECG, car il se plaint de douleurs thoraciques.\nOn présente les nouvelles données suivantes :\n\\(aV_R' = 0{,}21\\ \\text{mV}\\)\n\\(V_{III}' = 0{,}90\\ \\text{mV}\\)\nLe patient a, à présent un dipôle cardiaque tel que \\(\\|\\overrightarrow{P'}\\| = 0{,}54\\ \\text{mV}\\). On donne également \\(\\left|\\dfrac{aV_R'}{aV_R}\\right| = 0{,}33\\).\nL'angle \\(\\alpha'\\) est celui formé entre le vecteur dipôle \\(\\overrightarrow{P'}\\) et le vecteur unitaire \\(\\overrightarrow{u_{RL}}\\) et orienté de \\(\\overrightarrow{u_{RL}}\\) vers \\(\\overrightarrow{P'}\\).\nOn propose alors d'étudier la direction du nouveau dipôle.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q12_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q12_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_5.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q8_1.png"
                 ],
-                "question": "Question 12 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(aV_R = -0{,}64\\ \\text{mV}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(aV_R = 0{,}64\\ \\text{mV}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(\\alpha' \\approx 75^{\\circ}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\alpha' \\approx 16^{\\circ}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Le dipôle est dans le secteur 8",
                         "isCorrect": true,
                         "explanation": "VRAI - L’item est on ne peut plus vrai ! Il découlait des deux précédents, à vrai dire. Quel que soit le sens dans lequel vous avez réfléchi, normalement vous arriviez au même résultat. À partir des valeurs des deux nouvelles dérivations, vous avez déterminé que le dipôle cardiaque pouvait se trouver dans trois secteurs : 7, 8 ou 9. Mais ce n’est pas tout, vous avez à présent l’angle α′ ! Qu’il forme un angle de 75◦avec le vecteur −−→ u′ CR, un angle de 16◦avec le vecteur −−→ uLF ou un angle de 135◦avec le vecteur −−→ uRL (auquel cas, c’est bien l’angle α qu’on considère ; fondamentalement ça change rien, on appelle juste l’angle différemment selon le vecteur qu’on prend pour calculer l’angle), on arrivait dans tous les cas dans le secteur 8 ! Bravo, vous êtes venus à bout de cette question !"
                     }
@@ -16964,40 +17008,44 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "",
+                "context": "Au même moment, Mme Lifrentèle est admise aux urgences pour un infarctus du myocarde.\nPar chance, elle est prise en charge par l'équipe de réanimation et son état est stable. On lui réalise un électrocardiogramme pour s'assurer que tout est en ordre. Les médecins obtiennent la mesure suivante : \\(aV_L'' = 0{,}49\\ \\text{mV}\\).\nOn note \\(\\theta\\) l'angle que forme le vecteur dipôle cardiaque de Mme Lifrentèle avec \\(\\overrightarrow{u_{RL}}\\) et on donne \\(\\sin(\\theta) \\approx 0{,}6691\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q13_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q13_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_1.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_2.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_3.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_4.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q4_5.png",
+                    "annales_assets/2025_2026/physique/tuto_1/fig_q8_1.png"
                 ],
-                "question": "Question 13 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(\\cos(\\theta) \\approx 0{,}5612\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(\\cos(\\theta) \\approx 0{,}7432\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(\\tan(\\theta) \\approx 0{,}9003\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\tan(\\theta) = -1\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(\\tan(\\theta) = 0{,}5\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -17011,40 +17059,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 14,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 3 (questions 14 à 17)\nLa membrane plasmique, qui sépare l'intérieur de la cellule de son environnement, joue un rôle fondamental dans le transport des ions. Sur le plan physique, on peut l'assimiler à un condensateur plan, notamment car cette dernière sépare deux milieux conducteurs par une fine couche isolante : la bicouche lipidique.\nOn assimile dans cet exercice, une membrane plasmique à un condensateur plan de surface \\(S = 300\\ \\mu\\text{m}^2\\), d'épaisseur \\(h = 5\\ \\text{nm}\\) séparant le compartiment intracellulaire du milieu extracellulaire, et de permitivité \\(\\varepsilon = 2{,}21 \\times 10^{-5}\\ \\mu\\text{F}\\cdot\\text{m}^{-1}\\).\nOn considère que le potentiel de la plaque intracellulaire est \\(V_{int} = -62\\ \\text{mV}\\) et que le potentiel de la plaque extracellulaire est de \\(V_{ext} = +16\\ \\text{mV}\\).\nPlaque Extracellulaire : \\(V_{\\text{ext}} = +16\\ \\text{mV}\\)\n\\(h = 5\\ \\text{nm}\\)\nPlaque Intracellulaire : \\(V_{\\text{int}} = -62\\ \\text{mV}\\)",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q14_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q14_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q14_1.png"
                 ],
-                "question": "Question 14 - voir l’énoncé ci-dessus.",
+                "question": "D'après les connaissances acquises en cours, vous pouvez dire que :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Au repos, le champ électrique est dirigé de l'intérieur vers l'extérieur de la cellule",
                         "isCorrect": false,
                         "explanation": "FAUX - On ne vous le dira probablement jamais assez, mais la règle d’or en physique c’est de faire un petit schéma. Vous avez de la chance, une base de schéma est donnée dans l’énoncé. Donc dans cette situation on sait que h = 5 nm , que Vint = −62 mV et que Vext = +16 mV . Quelle est la plaque positive donc ? C’est évidemment Vext ! Annotons notre joli schéma : Vext = +16 mV Plaque extracellulaire + + + + + + + Vint = −62 mV Plaque intracellulaire − − − − − − − h = 5 nm Maintenant qu’on a ce schéma on peut revenir à la question. Dans un condensateur, le champ électrique se dirige toujours de la plaque positive vers la plaque négative. Vext = +16 mV Plaque extracellulaire + + + + + + + Vint = −62 mV Plaque intracellulaire − − − − − − − h = 5 nm⃗ E Donc le champ électrique est bien entrant dans la cellule !"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Les plaques intracellulaire et extracellulaire possèdent la même charge en valeur absolue",
                         "isCorrect": true,
                         "explanation": "VRAI - Cet item c’est du cours par coeur, par coeur, par coeur ! En fait c’est même la définition de ce qu’est un condensateur. Allez on la répète une fois ensemble : un condensateur est un ensemble de deux plaques chargées uniformément et de charges opposées. Même si le potentiel est différent, la charge est bien identique en valeur absolue. Maintenant, on la note dans son carnet d’erreur et on ne l’oublie plus jamais je compte sur vous ;)"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le champ électrique total correspond à la moyenne du champ électrique de la plaque intracellulaire et du champ électrique de la plaque extracellulaire",
                         "isCorrect": false,
                         "explanation": "FAUX - Ouhlala il n’est pas beau cet item. Rappelez vous du schéma suivant : Diapo 10 du cours Electrostatique 1 de la Pr Grenier Le champ électrique créé par la plaque positive s’additionne au champ électrique créé par la plaque négative. On peut donc écrire la formule suivante : −−−−−−−−→ Econdensateur = −−→ Eint + −−→ Eext Donc non il n’est pas question de moyenne ici mais bien de somme."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Un ion \\(Na^{+}\\) situé à l'extérieur de la membrane plasmique sera automatiquement attiré vers la plaque intracellulaire chargée négativement",
                         "isCorrect": false,
                         "explanation": "FAUX - Plusieurs petites choses à vérifier pour cet item. Premièrement, est-ce que la plaque intracellulaire est bien chargé négativement ? Ouiiiii et ça on l’a déja vu à l’item A. Maintenant, est ce qu’un ion Na+, situé à l’extérieur de la membrane, va se diriger vers la plaque négative ? Eh bien la réponse est non, et si vous vous êtes trompés, pas de soucis on va reprendre ça ensemble. Regardons à nouveau le schéma de votre cours : Diapo 10 du cours Electrostatique 1 de la Pr Grenier Sur ce schéma on voit bien qu’à l’extérieur de notre condensateur, le champ lié à la plaque positive et le champ lié à la plaque négative s’annulent. Donc si on place une particule à l’extérieur de notre condensateur aka la membrane plasmique, eh bien celle-ci sera soumise à un champ électrique nul, donc peu importe sa charge elle n’ira nulle part. C’est encore une règle d’or à ne pas oublier en éléctrostat : à l’extérieur d’un condensateur, le champ est NUL."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Le champ électrique décroît linéairement de la plaque positive à la plaque négative",
                         "isCorrect": false,
                         "explanation": "FAUX - Hop, hop, hop, je vous arrête tout de suite ! Le champ éléctrique dans le condensateur est UNI- FORME !!! Ce qui varie linéairement dans un condensateur c’est le potentiel. Je vous rappelle donc la formule à connaitre : ∆V = E × h"
                     }
@@ -17057,41 +17104,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 3 (questions 14 à 17)\nLa membrane plasmique, qui sépare l'intérieur de la cellule de son environnement, joue un rôle fondamental dans le transport des ions. Sur le plan physique, on peut l'assimiler à un condensateur plan, notamment car cette dernière sépare deux milieux conducteurs par une fine couche isolante : la bicouche lipidique.\nOn assimile dans cet exercice, une membrane plasmique à un condensateur plan de surface \\(S = 300\\ \\mu\\text{m}^2\\), d'épaisseur \\(h = 5\\ \\text{nm}\\) séparant le compartiment intracellulaire du milieu extracellulaire, et de permitivité \\(\\varepsilon = 2{,}21 \\times 10^{-5}\\ \\mu\\text{F}\\cdot\\text{m}^{-1}\\).\nOn considère que le potentiel de la plaque intracellulaire est \\(V_{int} = -62\\ \\text{mV}\\) et que le potentiel de la plaque extracellulaire est de \\(V_{ext} = +16\\ \\text{mV}\\).\nPlaque Extracellulaire : \\(V_{\\text{ext}} = +16\\ \\text{mV}\\)\n\\(h = 5\\ \\text{nm}\\)\nPlaque Intracellulaire : \\(V_{\\text{int}} = -62\\ \\text{mV}\\)",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q14_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q15_enonce.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q15_enonce_2.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q14_1.png"
                 ],
-                "question": "Question 15 - voir l’énoncé ci-dessus.",
+                "question": "Calculer la capacité \\(C\\) et la densité surfacique de charge \\(\\sigma\\) :",
                 "options": [
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(|\\sigma| = \\dfrac{|\\Delta V| \\times \\varepsilon}{2h}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(|\\sigma| = \\dfrac{|\\Delta V| \\times \\varepsilon}{2h}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(|\\sigma| = \\dfrac{|\\Delta V| \\times \\varepsilon}{2h}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(|\\sigma| = 1{,}76 \\times 10^{-2}\\ \\text{C}\\cdot\\text{m}^{-2}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(|\\sigma| = 3{,}45 \\times 10^{-4}\\ \\text{C}\\cdot\\text{m}^{-2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -17105,40 +17150,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 16,
                 "type": "QCM",
-                "context": "",
+                "context": "On considère désormais le cas d'un ion calcium \\(Ca^{2+}\\) qui traverse la membrane plasmique via l'ouverture soudaine d'un canal calcique afin de rentrer à l'intérieur de la cellule.\nCe processus est modélisé comme le déplacement d'une particule chargée libre soumise à un champ électrique uniforme au travers de la membrane. Dans ce modèle, on néglige les frottements et toutes les interactions avec l'environnement cellulaire.\nOn rappelle la valeur de la charge élémentaire \\(e = 1{,}6 \\times 10^{-19}\\ \\text{C}\\), la masse d'un ion calcium \\(m_{Ca^{2+}} = 6{,}64 \\times 10^{-26}\\ \\text{kg}\\) et on donne \\(g = 9{,}81\\ \\text{m}\\cdot\\text{m}^{-2}\\).\nOn redonne par ailleurs la formule suivante : \\(|E| = \\dfrac{|\\sigma|}{\\varepsilon}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q14_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q16_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q14_1.png"
                 ],
-                "question": "Question 16 - voir l’énoncé ci-dessus.",
+                "question": "À propos du passage de \\(Ca^{2+}\\) à travers la membrane plasmique vous pouvez dire que :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(\\dfrac{\\|\\overrightarrow{F_e}\\|}{\\|\\overrightarrow{P}\\|} = 3{,}84 \\times 10^{12}\\) donc le poids est négligeable devant la force électrique",
                         "isCorrect": false,
                         "explanation": "FAUX - Fe −→ P = 3,84 × 1012 donc le poids est négligeable devant la force électrique Pour répondre à ce premier item, il faut commencer par calculer la valeur du poids et de la force électrique. Pour le poids rien de difficile, appliquons la formule que vous connaissez depuis votre plus tendre enfance ! −→ P = m ·⃗g =⇒ −→ P = 6,64 × 10−26 × 9,81 = 6,51 × 10−25 N Maintenant passons à la force électrique ! La formule à connaitre est la suivante : −→ Fe = q × −→ E Pour ce qui est du champ électrique on va utiliser : −→ E = |σ| ε . −→ E = |σ| ε = 3,45 × 10−4 2,21 × 10−11 = 1,56 × 107 V · m−1 Pour la force électrique, il ne nous reste plus qu’à estimer la valeur de la charge de notre ion Ca2+. Et comment sait-on cela ? Il faut regarder notre ion pour déterminer la charge qu’il porte ! Ca2+ porte 2 charges élémentaires positives, donc sa charge ne sera rien d’autre que q = 2 × e ! Place au calcul à présent : −→ Fe = 2 × e × −→ E =⇒ −→ Fe = 2 × 1,6 × 10−19 × 1,56 × 107 = 4,99 × 10−12 N Maintenant calculons le rapport −→ Fe − → P : −→ Fe −→ P = 4,99 × 10−12 6,51 × 10−25 = 7,7 × 1012 Le poids est bien négligeable devant la force électrique mais attention les amis, la valeur donnée dans l’item n’est pas correcte, elle ne prend pas en compte les deux charges positives de l’ion, donc l’item est faux !"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Lors du passage de \\(Ca^{2+}\\) dans le canal calcique, le travail du champ électrique est résistif",
                         "isCorrect": false,
                         "explanation": "FAUX - Lorsque l’ion Ca2+ rentre dans la membrane plasmique, comme celui-ci est chargé positivement, il cherchera naturellement à se diriger vers la plaque négative, c’est-à-dire la plaque intracellulaire. Or qui d’autre est orienté vers la plaque négative ?!? Le champ −→ E !!! Expliqué de manière plus fysik, notre ion étant chargé positivement, la force électrique est dirigée dans le même sens que le champ, donc le champ est moteur pour Ca2+. ? Items C, D et E La variation d’énergie potentielle d’une particule lors du passage à travers un condensateur est une question qui revient souvent mais qui n’est pas si difficile si vous retenez bien la formule suivante : ∆Ep = q × ∆V Il ne nous reste plus qu’à appliquer la formule : ∆Ep = q × ∆V ∆Ep,Ca2+ = 2 × e × (Vint −Vext) Faites bien attention au ∆V qui correpond dans notre cas au passage de l’extérieur vers l’intérieur de la cellule ! ∆Ep,Ca2+ = 2 × 1,6 × 10−19 × (−0,062 −0,016) = −2,496 × 1020 J Maintenant comment convertir nos joules en électrovolts ? Pour cela il faut se poser pour réfléchir : 1 eV correspond à 1,6 × 10−19 J Donc maintenant simple produit en croix : 1.602 · 10−19 J 1 eV −2.496 · 10−20 J ∆Ep,Ca2+ en eV On trouve donc : ∆Ep,Ca2+ = −2,496 × 1020 × 1 1,602 × 10−19 = −0,156 eV Mais alors est ce que c’est logique que notre ion perde en énergie potentielle ? Eh bien oui Jamy ! Rappelez vous du champ électrique. Ce dernier descend les potentiels, et comme notre ion va dans le même sens que le champ, alors il tend à perdre de l’énergie potentielle. Pour faire un petit parallèle avec la méca : quand un ion avance dans un condensateur poussé par sa charge, c’est comme s’il ”tombait”. Donc de la même manière que lorsqu’un objet chute il perd en énergie potentielle de pesanteur, notre ion perd en énergie potentielle électrique."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(\\Delta E_{p,Ca^{2+}} = 0{,}156\\ \\text{eV}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\Delta E_{p,Ca^{2+}} = -0{,}156\\ \\text{eV}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(\\Delta E_{p,Ca^{2+}} = 2{,}5 \\times 10^{20}\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -17151,40 +17195,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "",
+                "context": "On considère désormais le cas d'un ion calcium \\(Ca^{2+}\\) qui traverse la membrane plasmique via l'ouverture soudaine d'un canal calcique afin de rentrer à l'intérieur de la cellule.\nCe processus est modélisé comme le déplacement d'une particule chargée libre soumise à un champ électrique uniforme au travers de la membrane. Dans ce modèle, on néglige les frottements et toutes les interactions avec l'environnement cellulaire.\nOn rappelle la valeur de la charge élémentaire \\(e = 1{,}6 \\times 10^{-19}\\ \\text{C}\\), la masse d'un ion calcium \\(m_{Ca^{2+}} = 6{,}64 \\times 10^{-26}\\ \\text{kg}\\) et on donne \\(g = 9{,}81\\ \\text{m}\\cdot\\text{m}^{-2}\\).\nOn redonne par ailleurs la formule suivante : \\(|E| = \\dfrac{|\\sigma|}{\\varepsilon}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_1/q14_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_1/q17_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_1/ctx_q14_1.png"
                 ],
-                "question": "Question 17 - voir l’énoncé ci-dessus.",
+                "question": "En considérant que l'ion \\(Ca^{2+}\\) entre dans le canal avec une vitesse initiale \\(v_0\\) nulle et que le déplacement de cet ion se fait dans le vide, que peut on dire de sa vitesse à l'état final ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(v_f = \\sqrt{\\dfrac{4 \\times e \\times |\\sigma| \\times h}{\\varepsilon \\times m}}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(v_f = \\sqrt{\\dfrac{4 \\times e \\times |\\Delta V|}{m}}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(v_f = 6{,}13 \\times 10^{2}\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(v_f = 8{,}67 \\times 10^{2}\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(v_f = 4{,}38 \\times 10^{-3}\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -17215,40 +17258,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 1,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Un trampoline à la faculté des Saints-Pères (questions 1 à 5)\nUn étudiant fraîchement arrivé à la faculté des Saints-Pères décide de rendre son année un peu plus amusante et installe donc un trampoline dans le hall d'entrée. Il commence à sauter. La situation débute lorsque la position de l'étudiant de masse \\(m = 60\\ \\text{kg}\\) correspond à l'altitude maximale de son premier saut. Il est alors au point \\(A\\) et débute la phase descendante de son saut. Son altitude vaut alors \\(z_A = h = 1\\ \\text{m}\\). On considère que l'étudiant a une vitesse initiale nulle au point \\(A\\).\nOn assimile le trampoline à un ressort de longueur à vide \\(l_0 = 80\\ \\text{cm}\\) et de constante de raideur \\(k = 4000\\ \\text{N}\\cdot\\text{m}^{-1}\\). L'énergie potentielle élastique du ressort vaut \\(E_{pe} = \\dfrac{1}{2}k\\Delta l^2\\) pour un allongement \\(\\Delta l\\) du ressort par rapport à sa longueur à vide. On néglige les frottements et tout autre phénomène dissipatif durant l'étude de ce mouvement. On assimile l'étudiant à son centre de masse. On considère que l'étudiant atteint le trampoline sur les fesses, son centre de masse étant alors au contact du trampoline. La scène est schématisée de la manière suivante :\nNous notons :\n— \\(A\\) le point duquel la situation commence (point d'altitude \\(z_A\\))\n— \\(B\\) le point au niveau duquel l'étudiant se trouve à la hauteur du trampoline, sans l'avoir encore touché (point d'altitude \\(z_B\\))\n— \\(C\\) le point au niveau duquel le trampoline est comprimé au maximum (point d'altitude \\(z_C = 0{,}37\\ \\text{m}\\))\n— \\(D\\) le point où la hauteur est maximale après un rebond (point d'altitude \\(z_D\\))\nOn admet qu'il y a une conservation de l'énergie mécanique entre \\(A\\) et \\(C\\). Au moment du rebond sur le trampoline en \\(C\\), l'étudiant introduit un apport d'énergie musculaire, dont la force associée est non conservative.\nOn considère que notre étudiant atteint une hauteur \\(H = 1{,}4\\ \\text{m}\\) après son rebond. On donne également l'accélération de la pesanteur \\(g\\) telle que \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q1_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q1_1.png"
                 ],
-                "question": "Question 1 - voir l’énoncé ci-dessus.",
+                "question": "Calculer la vitesse atteinte au point \\(B\\) (qu'on note \\(v_B\\)) et l'énergie \\(\\Delta E_m\\) produite suite au rebond. Laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(v_B \\approx 1{,}98\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - t-il une énergie potentielle élastique au point B ? Eh bien la"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(v_B \\approx 4{,}43\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(v_B \\approx 3{,}92\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et EItems C, D et EPour répondre à la deuxième partie de la question, nous allons utiliser la loi de l'hydrostatique entre deux points :pjambe + ρsanggzjambe = pabdo + ρsanggzabdopabdo = pjambe + ρsangg∆zpabdo = pjambe + ρsangg(zjambe − zabdo)Afin de garantir l'homogénéité des unités, il est nécessaire de convertir la pjambe en Pa, ρ en kg ·m−3et z en m.- pjambe = 1,04 atm = 1,04 × 105 Pa- ρsang = 1,05 kg · L−1 = 1,05 × 103 kg · m−3 car 1 m3 = 1000 L- ∆z = 50cm = 5 × 10−1 mOn peut donc passer au calcul :pabdo = pjambe + ρsangg∆z = 1,04 × 105 + 1,05 × 103 × 9,81 × 0,5 = 1,09 × 105 PaEt on passe à la conversion en mmHg :pabdo = 1,09 × 760 = 829,5 mmHgEt pour la tension :Tabdo = pabdo − patm = 829,5 − 760 = 69,5 mmHg"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Lors du rebond en \\(C\\), l'étudiant produit une énergie de \\(\\Delta E_m = -235{,}44\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Lors du rebond en \\(C\\), l'étudiant produit une énergie de \\(\\Delta E_m = 235{,}44\\ \\text{J}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Items C, D et EPour répondre à la deuxième partie de la question, nous allons utiliser la loi de l'hydrostatique entre deux points :pjambe + ρsanggzjambe = pabdo + ρsanggzabdopabdo = pjambe + ρsangg∆zpabdo = pjambe + ρsangg(zjambe − zabdo)Afin de garantir l'homogénéité des unités, il est nécessaire de convertir la pjambe en Pa, ρ en kg ·m−3et z en m.- pjambe = 1,04 atm = 1,04 × 105 Pa- ρsang = 1,05 kg · L−1 = 1,05 × 103 kg · m−3 car 1 m3 = 1000 L- ∆z = 50cm = 5 × 10−1 mOn peut donc passer au calcul :pabdo = pjambe + ρsangg∆z = 1,04 × 105 + 1,05 × 103 × 9,81 × 0,5 = 1,09 × 105 PaEt on passe à la conversion en mmHg :pabdo = 1,09 × 760 = 829,5 mmHgEt pour la tension :Tabdo = pabdo − patm = 829,5 − 760 = 69,5 mmHg"
                     }
@@ -17262,40 +17304,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 2,
                 "type": "QCM",
-                "context": "",
+                "context": "Malheureusement, à la suite de sa session de trampoline, notre étudiant se rattrape mal et fait une chute au sol. Il est alors pris de vertiges. Afin de lui venir en aide, ses amis présents à la fac décident de lui maintenir les jambes en l'air, créant une différence de hauteur entre ses pieds et son abdomen de \\(\\Delta z = 50\\ \\text{cm}\\). On considère la tension veineuse dans les jambes de l'étudiant \\(T_{jambe} = 30\\ \\text{mmHg}\\). On néglige la viscosité du sang. On rappelle que la masse volumique du sang vaut \\(\\rho_{sang} = 1{,}05\\ \\text{kg}\\cdot\\text{L}^{-1}\\). La pression atmosphérique vaut \\(1\\ \\text{atm}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q2_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q2_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q1_1.png",
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q2_1.png"
                 ],
-                "question": "Question 2 - voir l’énoncé ci-dessus.",
+                "question": "A propos de la pression sanguine dans les jambes \\(p_{jambe}\\) et de la pression sanguine dans l'abdomen (horizontal) \\(p_{abdo}\\), laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(p_{jambe} = T_{jambe} - p_{atm}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et BPauvre étudiant, dis donc, il n'a vraiment pas eu de chance ! Pour corriger cette question, il est nécessaire d'être au point sur les formules de cours et les conversions d'unités utilisées pour mesurer la pression. Faisons un petit rappel :patm = 105 Pa1 atm = 105 Pa = 760 mmHgMaintenant que nous sommes tous bien au clair sur les conversions, nous pouvons attaquer la correction. Le premier item peut être invalidé grâce à la première formule que nous venons de- La tension s'exprime : T = pjambe − patmrevoir Tjambe = pjambe − patm ⇐⇒ pjambe = patm + Tjambe.Place au calcul :pjambe = patm + Tjambe = 760 + 30 = 790 mmHgEt pour la conversion, cela donne :pjambe= 790 × 1 = 1,04 atm760Allez les copains, continuez comme ça vous êtes les meilleurs ! Ne vous en faites pas pour les conver-sions. Au début, on se mélange dans les formules, mais avec de l'entrainement je suis persuadée que vous allez vous en sortir !"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(p_{jambe} = 1{,}04\\ \\text{atm}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(p_{abdo} = 1{,}09\\ \\text{atm}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(p_{abdo} = 0{,}91\\ \\text{atm}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(T_{abdo} = 69\\ \\text{mmHg}\\) (à \\(\\pm 1\\ \\text{mmHg}\\) près)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -17310,40 +17352,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 3,
                 "type": "QCM",
-                "context": "",
+                "context": "Notre étudiant se sent toujours mal malgré les efforts de ses camarades. Heureusement, un médecin de l'hôpital Cochin passant pas loin s'arrête et décide de ventiler l'étudiant avec un gaz parfait composé de \\(\\dfrac{2}{3}\\) d'\\(O_2\\) et de \\(\\dfrac{1}{3}\\) de \\(N_2\\).\nLe ventilateur utilisé par le médecin est assimilé à une sphère de diamètre \\(d = 10\\ \\text{cm}\\) dont le volume est entièrement occupé par le gaz.\nOn rappelle la constante des gaz parfaits \\(R = 8{,}31\\ \\text{J}\\cdot\\text{mol}^{-1}\\cdot\\text{K}^{-1}\\), les masses molaires respectives de l'oxygène et de l'azote \\(M_O = 16\\ \\text{g}\\cdot\\text{mol}^{-1}\\) et \\(M_N = 14\\ \\text{g}\\cdot\\text{mol}^{-1}\\). La masse volumique du gaz considéré est estimée à \\(1{,}21\\ \\text{kg}\\cdot\\text{m}^{-3}\\). Afin de garantir de bons échanges avec les poumons, le gaz est maintenu à une température physiologique de \\(T = 37°C\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q2_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q3_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q1_1.png",
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q2_1.png"
                 ],
-                "question": "Question 3 - voir l’énoncé ci-dessus.",
+                "question": "Concernant les gaz parfaits, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Un gaz parfait est dans un système fermé",
                         "isCorrect": false,
                         "explanation": "FAUX - et BPour commencer l'étude de notre gaz parfait, il est important de se resituer sur la définition du gaz parfait. Un gaz parfait doit posséder les caractéristiques suivantes :Le gaz doit être homogène et isotropeIl peut être assimilé à des points matériels sans interactionsLes collisions entre ses particules doivent être élastiques (pas de perte d'énergie lors de la collision, exemple des billes avec lesquelles on jouait dans la cour de récré en primaire)Le gaz doit être dans un système isolé, il n'échange ni énergie, ni matière avec l'extérieurLe gaz doit être en équilibre, c'est-à-dire que ses paramètres p, V , et T ne dépendent pas du tempsItems C, D et ELorsque l'on veut calculer l'énergie cinétique totale d'un gaz parfait, on utilise la formule suivante :3E=× n × R × TtotAinsi nous pouvons déjà éliminer l'item C, car d'autres grandeurs que le température apparaissent. Ensuite, cette énergie peut aussi être assimilée à la somme des énergies cinétiques moyennes de ses2particules. En effet, pour une particule, on a : Ecin = 3 × k × T . Ainsi, si la température augmente,l'énergie cinétique de chaque particule augmente, et e2n se souvenant que l'énergie cinétique s'écritaussi Ecin = 1 mv¯2, on peut conclure qu'en cas de fièvre, l'énergie cinétique de chaque particuleaugmente et d2onc que la vitesse des particules augmente aussi.On pouvait aussi réfléchir sans formule pour l'"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Un gaz parfait possède des particules dont les collisions sont élastiques",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "L'énergie cinétique totale d'un gaz parfait ne dépend que de sa température",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "L'énergie cinétique totale d'un gaz parfait est égale à la somme des énergies cinétiques de ses particules",
                         "isCorrect": true,
                         "explanation": "VRAI - et E"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "En cas de fièvre, les particules d'\\(O_2\\) et de \\(N_2\\) se déplaceraient plus rapidement dans les poumons de l'étudiant",
                         "isCorrect": true,
                         "explanation": "VRAI - En effet, la température correspond à l'agi-tation des particules, ainsi plus cette température est élevé et plus cette agitation est forte, ce qui signifie que l'énergie cinétique des particules augmente !"
                     }
@@ -17358,40 +17400,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "",
+                "context": "Notre étudiant se sent toujours mal malgré les efforts de ses camarades. Heureusement, un médecin de l'hôpital Cochin passant pas loin s'arrête et décide de ventiler l'étudiant avec un gaz parfait composé de \\(\\dfrac{2}{3}\\) d'\\(O_2\\) et de \\(\\dfrac{1}{3}\\) de \\(N_2\\).\nLe ventilateur utilisé par le médecin est assimilé à une sphère de diamètre \\(d = 10\\ \\text{cm}\\) dont le volume est entièrement occupé par le gaz.\nOn rappelle la constante des gaz parfaits \\(R = 8{,}31\\ \\text{J}\\cdot\\text{mol}^{-1}\\cdot\\text{K}^{-1}\\), les masses molaires respectives de l'oxygène et de l'azote \\(M_O = 16\\ \\text{g}\\cdot\\text{mol}^{-1}\\) et \\(M_N = 14\\ \\text{g}\\cdot\\text{mol}^{-1}\\). La masse volumique du gaz considéré est estimée à \\(1{,}21\\ \\text{kg}\\cdot\\text{m}^{-3}\\). Afin de garantir de bons échanges avec les poumons, le gaz est maintenu à une température physiologique de \\(T = 37°C\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q2_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q4_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q1_1.png",
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q2_1.png"
                 ],
-                "question": "Question 4 - voir l’énoncé ci-dessus.",
+                "question": "Calculer les pressions partielles en \\(O_2\\) et \\(N_2\\) notées repsectivement \\(p_{O_2}\\) et \\(p_{N_2}\\) ainsi que la masse d'\\(O_2\\), \\(m_{O_2}\\), contenue dans le gaz du ventilateur. Laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(p_{O_2} \\approx 67700\\ \\text{Pa}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et D2"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(p_{O_2} \\approx 900\\ \\text{mmHg}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(p_{N_2} \\approx 1525\\ \\text{mmHg}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(p_{N_2} \\approx 0{,}34\\ \\text{atm}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(m_{O_2} \\approx 0{,}74\\ \\text{g}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Désormais les champions, nous pouvons passer au calcul de la masse d’O2. Pour cela nous allons commencer par calculer le nombre de moles total présent dans notre gaz, puis nous appliquerons à nouveau la loi de Dalton qui dit que ni = xi × ntot avec xi la proportion de gaz i dans le gaz complet. Pour calculer ntot nous allons repartir de p × V = n × R × T et isoler ntot : ntot = p × Vgaz R × T = 1,016 × 105 × 5,24 × 10−4 8,31 × 310 = 0,0207 mol Appliquons la loi de Dalton, pour xO2 = 2 3 : nO2 = 0,0207 × 2 3 = 0,0138 mol Et maintenant le bouquet final en reprenant une formule toute mignonne : mO2 = nO2 × MO2 = 0,0138 × 2 × 16 = 0,44 g Allez question suivante accrochez-vous !"
                     }
@@ -17405,40 +17447,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "",
+                "context": "Le médecin se met donc à comprimer l'air dans le ventilateur afin de le faire rentrer dans les poumons de l'étudiant, réduisant donc le volume du ventilateur (sphérique) de moitié. On va considérer que le médecin applique une force homogène sur toute la surface du ventilateur de norme \\(F = 34{,}7\\ \\text{N}\\). On s'intéresse désormais à la force de pression exercée par le médecin \\(p_{main}\\) et au travail du gaz dans le ventilateur \\(W(p_{gaz})\\). On considère ici que la température et la quantité de matière de gaz ne varient pas.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q5_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q5_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q1_1.png",
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q2_1.png"
                 ],
-                "question": "Question 5 - voir l’énoncé ci-dessus.",
+                "question": "Concernant la force de pression exercée par le médecin \\(p_{main}\\) et le travail du gaz dans le ventilateur \\(W(p_{gaz})\\), laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(p_{main} \\approx 1{,}1 \\times 10^{3}\\ \\text{atm}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et E"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(p_{main} \\approx 1{,}1 \\times 10^{-2}\\ \\text{Pa}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(W(p_{gaz}) \\approx 37\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - → Sur le schéma ci-dessus, les surfaces équipotentielles sont représentéesAttention à ne pas tout mélanger. Les surfaces équipotentielles sont données par des lignes équipo-tentielles (parce qu'on est en 2D, mais en 3D ce sont bien des surfaces) qui, elles, sont perpendicu-laires aux lignes de champ ! Les surfaces équipotentielles d'un dipôle, ce sont les pointillés rouges dans ce schéma :Surfaces équipotentielles d'un dipôle (en pointillés), diapo n°10 du cours n°3 de Pr. GrenierDonc les surfaces équipotentielles ne sont pas indiquées dans le schéma de l'énoncé. Les tracés que vous voyez sur le schéma de l'énoncé correspondent aux lignes de champ qui permettent notamment de prédire la trajectoire d'une charge qu'on placerait dans le champ du dipôle.Items D et EQue dit le cours ? Il nous dit que le potentiel descend suivant les lignes de champ, cf. diapo 14 du cours n°2 ! L'"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(W(p_{gaz}) \\approx -37\\ \\text{J}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - est invalidé, le potentiel ne reste pas constant sur une ligne de champ.Pour répondre à l'item E, on peut utiliser la formule E = − . Que signifie concrètement cettedVformule ? Eh bien, quand on va dans le sens du champ −→E , cela contribue à faire diminuer, à fairedrdécroître le potentiel (d'où le signe − dans la formule). Ainsi, pour une charge test positive, lepotentiel est maximal en P , et plus on s'approche de la charge négative (en suivant les lignes du champ −→E ), plus le potentiel diminue et ce, jusqu'en N ."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(W(p_{gaz}) \\approx 43\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -17451,40 +17493,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 6,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 2 : Dipôle électrique (questions 6 à 12)\nJamy, stagiaire au laboratoire, souhaite étudier les dipôles. Il considère deux charges isolées \\(P\\) et \\(N\\) de charges respectives \\(q\\) et \\(-q\\), telles que représentées sur le schéma ci-dessous. Ces charges sont considérées immobiles.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q6_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q6_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q6_1.png"
                 ],
-                "question": "Question 6 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Les lignes de champ sont orientées de la charge positive \\(P\\) vers la charge négative \\(N\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et BOn commence avec des questions de cours. D'après vos diapos, les lignes de champ partent des charges positives et rentrent dans les charges négatives. En effet, si on considère une charge test positive, celle-ci est repoussée par la charge positive du dipôle et attirée par la charge négative.Puisque F→ = qE→ avec q > 0, le champ est orienté dans le même sens que la force de Coulomb, doncde +q vers −q."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Les lignes de champ sont orientées de la charge négative \\(N\\) vers la charge positive \\(P\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Sur le schéma ci-dessus, les surfaces équipotentielles sont représentées",
                         "isCorrect": false,
                         "explanation": "FAUX - Attention à ne pas tout mélanger. Les surfaces équipotentielles sont données par des lignes équipo- tentielles (parce qu’on est en 2D, mais en 3D ce sont bien des surfaces) qui, elles, sont perpendicu- laires aux lignes de champ ! Les surfaces équipotentielles d’un dipôle, ce sont les pointillés rouges dans ce schéma : Surfaces équipotentielles d’un dipôle (en pointillés), diapo n°10 du cours n°3 de Pr. Grenier Donc les surfaces équipotentielles ne sont pas indiquées dans le schéma de l’énoncé. Les tracés que vous voyez sur le schéma de l’énoncé correspondent aux lignes de champ qui permettent notamment de prédire la trajectoire d’une charge qu’on placerait dans le champ du dipôle. ? Items D et E Que dit le cours ? Il nous dit que le potentiel descend suivant les lignes de champ, cf. diapo 14 du cours n°2 ! L’item D est invalidé, le potentiel ne reste pas constant sur une ligne de champ. Pour répondre à l’item E, on peut utiliser la formule E = −dV dr . Que signifie concrètement cette formule ? Eh bien, quand on va dans le sens du champ −→ E , cela contribue à faire diminuer, à faire décroître le potentiel (d’où le signe −dans la formule). Ainsi, pour une charge test positive, le potentiel est maximal en P, et plus on s’approche de la charge négative (en suivant les lignes du champ −→ E ), plus le potentiel diminue et ce, jusqu’en N."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Le potentiel électrique reste constant sur une ligne de champ",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Le potentiel électrique diminue en suivant les lignes de champ de la charge positive à la négative",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -17498,40 +17539,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 2 : Dipôle électrique (questions 6 à 12)\nJamy, stagiaire au laboratoire, souhaite étudier les dipôles. Il considère deux charges isolées \\(P\\) et \\(N\\) de charges respectives \\(q\\) et \\(-q\\), telles que représentées sur le schéma ci-dessous. Ces charges sont considérées immobiles.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q6_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q7_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q6_1.png"
                 ],
-                "question": "Question 7 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Les lignes de champ permettent d'avoir des informations sur la force électrostatique subie par une particule chargée",
                         "isCorrect": true,
                         "explanation": "VRAI - Les lignes de champ sont en effet très pratiques car elles permettent de connaître la direction de la force électrostatique qui va s’appliquer à la particule chargée (on le voit notamment dans la formule −→ F = q−→ E qui fait le lien entre champ et force)."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Le champ électrique généré par des charges sources ne varient pas selon la particule cible",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout pile, c’est bien ça ! À partir d’une (ou des) charge(s) source(s), on va pouvoir déterminer un champ associé, et ce dernier permettra d’étudier l’effet de ce(s) charges sur une autre charge cible théorique, à n’importe quel endroit, à n’importe quel temps, SANS avoir à connaître quoique ce soit sur la cible. Par exemple, en reprenant le schéma de l’énoncé, les lignes de champ indiquent qu’une particule chargée qui se situe sur la lettre P va subir une accélération horizontale (due à la force électrostatique des deux charges sources)."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le champ électrique comme le potentiel électrique peuvent s'ajouter vectoriellement en présence de plusieurs charges sources",
                         "isCorrect": false,
                         "explanation": "FAUX - L’item est quelque peu subtil. Le champ électrique tout comme le potentiel sont additifs oui, mais... les potentiels sont des scalaires, pas des vecteurs : donc pas d’addition vectorielle entre deux potentiels. Par contre, en ce qui concerne les champs, ceux-ci peuvent effectivement s’additionner vectoriellement, dans le cas où on a plusieurs charges. ? Items D et E Pour répondre à cet item, il faut une bonne compréhension des formules et notamment celle-ci : E = −dV dr . En effet, plus la valeur du champ E est grande, plus la variation de potentiel local −dV dr est grande aussi. Ces items vous permettaient de faire la ”traduction en français” d’une des formules du cours."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Plus le champ électrique est intense, plus la variation locale du potentiel électrique est faible",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Plus le champ électrique est intense, plus la variation locale du potentiel électrique est forte",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -17546,40 +17586,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 8,
                 "type": "QCM",
-                "context": "",
+                "context": "Jamy souhaite désormais réaliser quelques expériences avec un dipôle, mais avant cela, il entame quelques calculs pour vérifier l'influence des forces externes autres que la force électrostatique. Pour la question suivante, on s'intéresse aux forces externes subies par la charge \\(N\\).\nSchéma du dipôle (adapté du cours de Mme Grenier)\nDonnées :\n\\(q = 1{,}6 \\times 10^{-19}\\ \\text{C}\\)\n\\(m_P = m_N = 1{,}5 \\times 10^{-26}\\ \\text{kg}\\)\nPermittivité du vide : \\(\\epsilon_0 \\approx 8{,}85 \\times 10^{-12}\\ \\text{SI}\\)\nConstante gravitationnelle \\(G \\approx 6{,}67 \\times 10^{-11}\\ \\text{SI}\\)\nDistance \\(a = \\|\\overrightarrow{NP}\\| = 100\\ \\text{pm}\\)\nPesanteur terrestre \\(g \\approx 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\)\nOn appellera \\(\\overrightarrow{P}\\) le poids de la charge en \\(N\\), \\(\\overrightarrow{F_{el}}\\) la force électrostatique exercée par \\(P\\) sur \\(N\\) et \\(\\overrightarrow{F_{G,P}}\\) la force gravitationnelle exercée par \\(P\\) sur \\(N\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q8_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q8_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q6_1.png",
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q8_1.png"
                 ],
-                "question": "Question 8 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(\\|\\overrightarrow{F_{el}}\\| \\gg \\|\\overrightarrow{F_{G,P}}\\| \\gg \\|\\overrightarrow{P}\\|\\) donc les forces gravitationnelles sont négligeables",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(\\|\\overrightarrow{F_{el}}\\| \\gg \\|\\overrightarrow{P}\\| \\gg \\|\\overrightarrow{F_{G,P}}\\|\\) donc les forces gravitationnelles sont négligeables",
                         "isCorrect": true,
                         "explanation": "VRAI - et EBilan : On voit que la force électrostatique joue un rôle beaucoup plus important (d'un coeffcient multiplicateur de 1017 par rapport au poids !) que les deux forces gravitationnelles qu'on pourra négliger sans souci.Si tu as trouvé l'item C, c'est parce que tu as oublié le facteur 4π dans la force électrostatique !Si tu as trouvé l'item D, c'est parce que tu as ajouté le facteur 1 dans la force gravitationnelle.4π"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(\\|\\overrightarrow{F_{el}}\\| \\approx 2{,}9 \\times 10^{-7}\\ \\text{N}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\|\\overrightarrow{F_{G,P}}\\| \\approx 1{,}2 \\times 10^{-43}\\ \\text{N}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(\\|\\overrightarrow{F_{G,P}}\\| \\approx 1{,}5 \\times 10^{-42}\\ \\text{N}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -17593,40 +17633,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 9,
                 "type": "QCM",
-                "context": "",
+                "context": "On souhaite étudier le potentiel et le champ électrique généré par le dipôle au point \\(L\\), situé à une distance \\(r\\) telle que \\(r \\gg a\\).\nOn note \\(V(r)\\) le potentiel associé et \\(E(r)\\) le champ électrique.\nOn s'intéresse à la variation relative de potentiel si on éloigne le point \\(L\\) de \\(\\dfrac{\\Delta r}{r} = +2\\%\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q9_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q9_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q6_1.png",
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q8_1.png"
                 ],
-                "question": "Question 9 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(V(r)\\) est proportionnel à \\(r^{-2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et DǁP−→Lǁ × ǁ−N→LǁV = q e4πϵ01 1ǁP−→Lǁ−ǁN→LǁV = q e4πϵ0V =−P Lǁ × ǁNLǁǁ−P→Lǁ × ǁ−N→Lǁ→ǁNLǁ−→−→−ǁP−→Lǁe4πϵ0qǁǁ−→NLǁ − ǁP Lǁ−→Eh oui, on valide également l'"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(V(r)\\) est proportionnel à \\(r^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Pour \\(\\dfrac{\\Delta r}{r} = +2\\%\\), \\(\\dfrac{\\Delta V}{V} = +4\\%\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Pour \\(\\dfrac{\\Delta r}{r} = +2\\%\\), \\(\\dfrac{\\Delta V}{V} = -4\\%\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - V = q e4πϵ01 1ǁP−→Lǁ−ǁN→LǁV = q e4πϵ0V =−P Lǁ × ǁNLǁǁ−P→Lǁ × ǁ−N→Lǁ→ǁNLǁ−→−→−ǁP−→Lǁe4πϵ0qǁǁ−→NLǁ − ǁP Lǁ−→Eh oui, on valide également l'"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Au point \\(O\\), le dipôle a un champ électrique nul car le champ électrique des deux charges se compensent",
                         "isCorrect": false,
                         "explanation": "FAUX - On peut répondre à cet item en raisonnant de façon qualitative sur un schéma que voici. Diapo n°5 du cours n°2 ”Électrostatique 1”, Pr. Grenier On se rend compte que, au point O, c’est-à-dire au milieu des 2 charges, il y a bien un champ non nul qui s’exerce. Intuitivement, étant donné que la charge positive émet un champ centrifuge et que la charge négative émet un champ centripète, le champ résultant est d’autant plus ”intense”."
                     }
@@ -17640,40 +17680,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 10,
                 "type": "QCM",
-                "context": "",
+                "context": "Cependant, Jamy émet un doute sur l'hypothèse précédemment supposée : la distance \\(r\\) est-elle véritablement assez importante pour qu'on puisse réaliser l'approximation ? Etant très attentif aux détails, il se demande comment on pourrait exprimer le potentiel du dipôle de façon rigoureuse.\nOn note \\(V(r)\\) l'expression approximative du potentiel autour d'un dipôle, et \\(V_e\\) l'expression exacte du potentiel. On note également \\(\\overrightarrow{p}\\) le vecteur moment dipolaire tel que \\(\\overrightarrow{p} = q\\overrightarrow{NP}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q10_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q10_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q6_1.png",
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q8_1.png"
                 ],
-                "question": "Question 10 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(V_e = \\dfrac{q}{4\\pi\\epsilon_0}\\left(\\dfrac{1}{\\|\\overrightarrow{PL}\\|} - \\dfrac{1}{\\|\\overrightarrow{NL}\\|}\\right)\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - .. et c'est tout ? Minute papillon ! Regardons ce qui se passe si on met3 ǁP−→Lǁ1 − ǁN−→Lǁ−1 4au même dénominateur."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(V_e = \\dfrac{q}{4\\pi\\epsilon_0}\\left(\\dfrac{1}{\\|\\overrightarrow{PL}\\|} + \\dfrac{1}{\\|\\overrightarrow{NL}\\|}\\right)\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(V_e = \\dfrac{2q}{4\\pi\\epsilon_0 r}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - de la question 7. Eh oui, on va additionner les potentiels ici pour déterminer l'expression exacte du potentiel total dû aux deux charges du dipôle. L'expression du potentiel d'une charge isolée, c'est :V (d) = 4πϵ0dOr, le point L est soumis aux potentiels de P ET de N . Donc le potentiel résultant sera la somme des deux potentiels évoqués (qu'on va noter VP et VN ). Attention à ne pas s'emmêler les pinceaux, d c'est la distance entre la charge source et le point où on souhaite connaître le potentiel, donc iciQil s'agit de ǁP−→Lǁ et ǁ−N→Lǁ et PAS r. On ajoute bien les deux contributions pour avoir le potentielgénéré par le dipôle, on obtient ainsi :V = V + V=qePN4πϵ ǁP Lǁ4−q0−→+πϵ ǁNLǁ−→=4πϵ0q 0ǁP−→LǁǁN→Lǁ1 −−1On coche l'"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(V_e = \\dfrac{q}{4\\pi\\epsilon_0}\\left(\\dfrac{\\|\\overrightarrow{NL}\\| - \\|\\overrightarrow{PL}\\|}{\\|\\overrightarrow{PL}\\| \\times \\|\\overrightarrow{NL}\\|}\\right)\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et ESouviens-toi de l'"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(V_e = \\dfrac{q}{4\\pi\\epsilon_0}\\left(\\dfrac{\\|\\overrightarrow{NL}\\| + \\|\\overrightarrow{PL}\\|}{\\|\\overrightarrow{PL}\\| \\times \\|\\overrightarrow{NL}\\|}\\right)\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -17687,40 +17727,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 11,
                 "type": "QCM",
-                "context": "",
+                "context": "Soient 3 points \\(H\\), \\(I\\) et \\(J\\) tels que :\n— \\(H\\) est situé à une distance \\(r_1\\) du point \\(O\\)\n— \\(I\\) est situé à une distance \\(r_2 = 2r_1\\) du point \\(O\\)\n— \\(J\\) est situé à une distance \\(r_3 = 4r_2\\) du point \\(O\\)\nOn note \\(V(r_1)\\), \\(V(r_2)\\) et \\(V(r_3)\\) les potentiels associés respectivement aux points \\(H\\), \\(I\\) et \\(J\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q11_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q11_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q6_1.png",
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q8_1.png"
                 ],
-                "question": "Question 11 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Pour tout \\(r\\) et \\(\\theta = \\dfrac{\\pi}{2}\\ \\text{rad}\\), \\(V(r) = V_e = 0\\ \\text{V}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et CP−→PL =q a22+ r2OL[D) : θ2−−→NL =q a22+ r2NL'ensemble des points L(r) se trouve sur la demi-droite [D) Si on reprend la formule trouvée précédemment, pour ǁP−→Lǁ = ǁ−N→Lǁ, on a :V =qe4πϵ0ǁP LǁǁN→Lǁ−→11− −N.B. : pour θ = π rad, cos(θ) = −1. Donc V (r) ou Ve ne seront pas nuls dans ce cas-là.Items C, D, et ELa fameuse question des rapports ! On y va. = 0V V (r2)(r ) q1=4πє0r12= q4πϵ r022r224πє0r2q24πϵ0r2 ×q1==r213rr2142=342r1 2r1= 22 = 4Et maintenant, même chose pour les items D et E. qV V (r3)(r )1=4πє0r2 q4πϵ r02r24πє0r32113r342344r2 2q1=4πϵ0r2 ×q3==r23==34 × 2r1r142= 8 = 642r1r1Ces items tombent régulièrement à l'examen, donc à maîtriser ++"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Pour tout \\(r\\) et \\(\\theta = \\pi\\ \\text{rad}\\), \\(V(r) = V_e = 0\\ \\text{V}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(\\dfrac{V(r_1)}{V(r_2)} = 4\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\dfrac{V(r_1)}{V(r_3)} = 8\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - : θ2−−→NL =q a22+ r2NL'ensemble des points L(r) se trouve sur la demi-droite [D) Si on reprend la formule trouvée précédemment, pour ǁP−→Lǁ = ǁ−N→Lǁ, on a :V =qe4πϵ0ǁP LǁǁN→Lǁ−→11− −N.B. : pour θ = π rad, cos(θ) = −1. Donc V (r) ou Ve ne seront pas nuls dans ce cas-là.Items C, D, et ELa fameuse question des rapports ! On y va. = 0V V (r2)(r ) q1=4πє0r12= q4πϵ r022r224πє0r2q24πϵ0r2 ×q1==r213rr2142=342r1 2r1= 22 = 4Et maintenant, même chose pour les items D et E. qV V (r3)(r )1=4πє0r2 q4πϵ r02r24πє0r32113r342344r2 2q1=4πϵ0r2 ×q3==r23==34 × 2r1r142= 8 = 642r1r1Ces items tombent régulièrement à l'examen, donc à maîtriser ++"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(\\dfrac{V(r_1)}{V(r_3)} = 16\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -17734,40 +17774,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": "",
+                "context": "En attendant la confirmation de ses résultats, Jamy déplace le dipôle afin de le contenir dans un condensateur plan. Il charge les deux armatures et obtient donc un champ électrique \\(\\overrightarrow{E_0}\\) uniforme englobant le dipôle. Il place le dipôle de telle sorte qu'il soit incliné d'un angle \\(\\theta\\) avec la verticale. On note :\n— \\(\\overrightarrow{p} = q\\overrightarrow{NP}\\) le moment dipolaire du dipôle\n— \\(E_D\\) l'énergie potentielle du dipôle dans cette situation.\nOn admet que l'énergie potentielle \\(E_D\\) du dipôle peut s'exprimer ainsi : \\(E_D = -\\overrightarrow{p} \\cdot \\overrightarrow{E_0}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q12_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q12_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q6_1.png",
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q8_1.png"
                 ],
-                "question": "Question 12 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des propositions suivantes est(sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Si \\(\\theta = 0\\), l'énergie potentielle du dipôle est minimale",
                         "isCorrect": true,
                         "explanation": "VRAI - et C.Items C, D et EOn n'a pas forcément besoin des items précédents pour résoudre ça. Voyons cela avec 3 explications pour 3 fois plus de compréhension !1ère explication :1) Imaginons déjà le dipôle dans sa position d'équilibre. Le condensateur exerce une force F−−e→,P =q−E→0 sur la charge positive et −F−e→,N = −q−E→0 sur la charge négative. Les forces se compensent donc ily a équilibre (quelques schémas ici...).++++++−−→Fe,NE→0−−→NP−−→Fe,P−−−−−−2) Maintenant tournons un peu le dipôle, dans le sens horaire :++++++−−→Fe,NE→0−−→NP−−→Fe,P−−−−−−++++++Np→θE→0P−−−−−−Si on étudie l'expression obtenue, q, NP et E0 ne varient pas. Donc on étudie cos(θ). Pour θ = 0, cos(0) = 1 et ED est minimale (dans ce cas, ED = −q × NP × E0).Pour θ = π, cos(π) = −1 et ED est maximale (dans ce cas, ED = −q × NP × E0 × (−1) =q × NP × E0).On valide les items A et C.Items C, D et EOn n'a pas forcément besoin des items précédents pour résoudre ça. Voyons cela avec 3 explications pour 3 fois plus de compréhension !1ère explication :1) Imaginons déjà le dipôle dans sa position d'équilibre. Le condensateur exerce une force F−−e→,P =q−E→0 sur la charge positive et −F−e→,N = −q−E→0 sur la charge négative. Les forces se compensent donc ily a équilibre (quelques schémas ici...).++++++−−→Fe,NE→0−−→NP−−→Fe,P−−−−−−2) Maintenant tournons un peu le dipôle, dans le sens horaire :++++++−−→Fe,NE→0−−→NP−−→Fe,P−−−−−−?Les forces électrostatiques poussent la charge P vers le bas et N vers le haut. On a donc un mouvement qui va ”encourager” le dipôle à revenir dans sa position d'équilibre. Idem si on tourne le dipôle dans l'autre sens : les forces vont repousser le dipôle vers sa position d'équilibre.On peut donc en déduire qu'il s'agit effectivement d'une position d'équilibre stable - tout mini-déplacement (rotation) tend à faire revenir le dipôle dans sa position initiale d'équilibre.2ème explication :Pour avoir le cœur net, ou pour ceux qui n'ont pas forcément l'intuition (ça viendra avec lapratique !), étudions l'expression ED, sous forme scalaire. ED = −qNP × E0 × cos(−N−→P ; E−→0). Enfaisant tourner un peu le dipôle, donc en faisant variant cos(−N−→P ; E−→0), on fait augmenter ED.Par exemple, en tournant de θ' = π rad soit 30 degrés,6ED(θ') = −qNP × E0 × cos(−N−→P ; E−→0)= −qNP × E × cos(0 +)0π√36Or, √3 < 1 donc ED(θ') > ED(0) (attention, ED et ED(θ') sont négatifs). Si l'énergie potentielle= −qNP × E0 × 2est pl2us importante après rotation du dipôle, cela signifie nécessairement que notre dipôle est dans une position plus instable ; ainsi, elle va chercher à diminuer son énergie potentielle, comment ? En retrouvant sa position d'origine.3ème explication : La dernière façon de raisonner était peut-être la plus simple. En reprenant l'item A, étant donné que l'énergie potentielle du dipôle est minimale pour θ = 0, cela signifie qu'on est dans un cas d'équilibre stable (cf. Items A et B).C'est la fin de cet exercice, bravo à vous d'être arrivés jusqu'ici ! On ne lâche rien, plus qu'un exo !"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Si \\(\\theta = 0\\), l'énergie potentielle du dipôle est maximale",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Si \\(\\theta = \\pi\\), l'énergie potentielle du dipôle est maximale",
                         "isCorrect": true,
                         "explanation": "VRAI - et ELes forces électrostatiques poussent la charge P vers le bas et N vers le haut. On a donc un mouvement qui va ”encourager” le dipôle à revenir dans sa position d'équilibre. Idem si on tourne le dipôle dans l'autre sens : les forces vont repousser le dipôle vers sa position d'équilibre.On peut donc en déduire qu'il s'agit effectivement d'une position d'équilibre stable - tout mini-déplacement (rotation) tend à faire revenir le dipôle dans sa position initiale d'équilibre.2ème explication :Pour avoir le cœur net, ou pour ceux qui n'ont pas forcément l'intuition (ça viendra avec lapratique !), étudions l'expression ED, sous forme scalaire. ED = −qNP × E0 × cos(−N−→P ; E−→0). Enfaisant tourner un peu le dipôle, donc en faisant variant cos(−N−→P ; E−→0), on fait augmenter ED.Par exemple, en tournant de θ' = π rad soit 30 degrés,6ED(θ') = −qNP × E0 × cos(−N−→P ; E−→0)= −qNP × E × cos(0 +)0π√36Or, √3 < 1 donc ED(θ') > ED(0) (attention, ED et ED(θ') sont négatifs). Si l'énergie potentielle= −qNP × E0 × 2est pl2us importante après rotation du dipôle, cela signifie nécessairement que notre dipôle est dans une position plus instable ; ainsi, elle va chercher à diminuer son énergie potentielle, comment ? En retrouvant sa position d'origine.3ème explication : La dernière façon de raisonner était peut-être la plus simple. En reprenant l'item A, étant donné que l'énergie potentielle du dipôle est minimale pour θ = 0, cela signifie qu'on est dans un cas d'équilibre stable (cf. Items A et B).C'est la fin de cet exercice, bravo à vous d'être arrivés jusqu'ici ! On ne lâche rien, plus qu'un exo !"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Si \\(\\theta = 0\\), on peut affirmer que le dipôle est dans une position d'équilibre instable",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Si \\(\\theta = 0\\), on peut affirmer que le dipôle est dans une position d'équilibre stable",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -17782,40 +17822,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 3 : Une fuite d'eau dans l'immeuble (questions 13 à 18)\nOlga a un souci depuis ce matin : l'eau du lavabo ne s'écoule pas comme il faut. Les canalisations de sa maison sont bouchées. En en parlant avec son père, elle apprend que son voisin est dans la même situation qu'elle, car les canalisations des deux demeures communiquent. C'est une vieille maison dont la tuyauterie n'est pas de première fraîcheur. Il est donc fort possible que des cheveux et des saletés se soient agrégés et aient formé un obstacle compact dans les tuyaux. On considère l'obstacle comme obstruant partiellement le conduit.\nEn se renseignant, elle apprend que le troisième étage de sa maison est à une hauteur H telle que \\(H = 6\\ \\text{m}\\). Pour des normes de sécurité, chaque étage, sous-sol compris, est de même hauteur et mesure \\(h = \\dfrac{1}{2}H\\). La tuyauterie est la même chez Olga et son voisin : les tuyaux verticaux ont un diamètre \\(d_v = \\dfrac{3}{2}d_h = 12\\ \\text{cm}\\) avec \\(d_h\\) le diamètre de tous les tuyaux horizontaux. Chaque tuyau horizontal de chaque étage de chez Olga a une même longueur \\(L = 18\\ \\text{m}\\) et l'on considère que ceux de la maison du voisin ont une longueur \\(l = \\dfrac{3}{4}L\\).\nOn dispose des données suivantes :\nl'accélération de la pesanteur \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-1}\\)\nla masse volumique de l'eau \\(\\rho = 1\\ \\text{g}\\cdot\\text{cm}^{-3}\\)\nla viscosité de l'eau \\(\\eta = 1{,}002 \\cdot 10^{-3}\\ \\text{Pa}\\cdot\\text{s}\\)\nle débit global de l'eau \\(Q = 5 \\times 10^{-4}\\ \\text{m}^3\\cdot\\text{s}^{-1}\\)\nOn précise que le schéma n'est pas à l'échelle.\nOn considère l'eau dans le circuit comme étant un fluide parfait pour les question 13, 14 et 15 uniquement. On ignore la pompe jusqu'à la question 15 incluse.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q13_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q13_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q13_1.png"
                 ],
-                "question": "Question 13 - voir l’énoncé ci-dessus.",
+                "question": "À propos du débit dans les tuyaux et du théorème de Bernoulli, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le débit en B est égal au débit en C",
                         "isCorrect": false,
                         "explanation": "FAUX - Alors alors, voyons voir tout ça. Dans cette situation, nous avons un écoulement qui se fait en parallèle, donc la formule de débit qui va bien est la suivante : Qtot = X Qi. Ici, les diamètres des tuyaux horizontaux sont tous les mêmes, donc le débit en B se subdivise en 4 débits identiques dans les 4 tuyaux horizontaux. Ceci nous donne : QB = Q = 4QC Donc, on voit bien que QB̸ = QC."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Le débit en C est égal au débit en I",
                         "isCorrect": true,
                         "explanation": "VRAI - On nous parle de deux points C et I, qui se trouvent dans le même tuyau horizontal. L’eau étant incompressible, et vu qu’on est dans le cas d’un écoulement en série, le débit se conserve, donc QC = QI."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le débit en J vaut \\(Q_J = 4Q_B\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - J se situe à l’un des embranchements du circuit. De la même manière qu’en C (cf. item A), on a : QB = Q = 4QJ ⇐⇒QJ = 1 4Q"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "On ne peut appliquer le théorème de Bernoulli que le long d'une ligne de courant",
                         "isCorrect": true,
                         "explanation": "VRAI - Exactement ! C’est la condition pour pouvoir appliquer le théorème de Bernoulli. Et pour preuve, voici la diapo qui le montre : Diapo 10 du cours sur les fluides parfaits du Pr Grenier"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Le théorème de Bernoulli ne s'applique pas lorsque le fluide n'est pas en mouvement",
                         "isCorrect": false,
                         "explanation": "FAUX - Et pourquoi pas ? Le théorème est bien sûr applicable, même si certaines valeurs sont nulles ! Voici ce que ça donne lorsque les vitesses sont nulles : pB + ρgzB = pC + ρgzC Ça vous dit quelque chose cette formule, non ? Et oui, c’est bien la loi de l’hydrostatique ! Cette loi est juste un cas particulier du théorème de Bernoulli, pour le cas où les vitesses sont nulles."
                     }
@@ -17829,40 +17868,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 14,
                 "type": "QCM",
-                "context": "",
+                "context": "La localisation de l'obstruction a pu être identifiée. L'obstacle bouchonne au niveau du tuyau \\(C\\), de la manière suivante :",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q13_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q14_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q13_1.png"
                 ],
-                "question": "Question 14 - voir l’énoncé ci-dessus.",
+                "question": "Concernant la vitesse du fluide, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La vitesse au point \\(O\\) de l'obstacle est nulle",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "L'eau s'écoule plus vite sur les côtés de l'obstacle qu'en amont",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(v_E = \\dfrac{4Q}{\\pi {d_h}^2}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et DLa fameuse question de calcul de vitesse ! En l'occurrence, pour pouvoir y répondre, il faut se servir de la formule du débit, qui dit que Q = Sv avec la section S = πr2 d'un tuyau de rayon r.Dans le tuyau E, on a un débit :Q= 1 QE4⇐⇒ SEvE = 4 Q1⇐⇒ πABd 22h× vE = 4 Q1⇐⇒ π ××d24hv=Q1E⇐⇒ v=Q ×144E42⇐⇒ v=E Q 2π × dhπdh"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(v_E = \\dfrac{Q}{\\pi {d_h}^2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et Eπ (12 · 10)−22 ≈ 4,4 × 10−2 m · s−1Items C et DLa fameuse question de calcul de vitesse ! En l'occurrence, pour pouvoir y répondre, il faut se servir de la formule du débit, qui dit que Q = Sv avec la section S = πr2 d'un tuyau de rayon r.Dans le tuyau E, on a un débit :Q= 1 QE4⇐⇒ SEvE = 4 Q1⇐⇒ πABd 22h× vE = 4 Q1⇐⇒ π ××d24hv=Q1E⇐⇒ v=Q ×144E42⇐⇒ v=E Q 2π × dhπdh"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(v_K \\approx 4{,}4 \\times 10^{-2}\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - On nous demande de répéter le même procédé avec un autre point, cette fois-ci. Ce sera autrement moins relou, car le point K est dans un tuyau vertical et on a déjà la valeur de dv. Et figurez vous que le débit au point K est le même que celui au point B ! En effet, on est en bout de circuit, et donc c’est rigoureusement le même volume d’eau par unité de temps qui ”traverse” le point B que le point K : le débit au point K est égal au débit global ! Ainsi, on commence par les mêmes étapes qu’aux items précédents : vK = Q π \u0010 dv \u00112 = 4Q πdv 2 = 4 × 5 × 10−4 π (12 · 10−2)2 ≈4,4 × 10−2 m · s−1 On trouve en fait un résultat pas très satisfaisant et c’est justement parce qu’on considère que l’eau est un fluide parfait ! Dans la réalité ce n’est pas ça du tout, on fait ici un tas d’approximations. Non seulement le fluide n’est pas complètement incompressible, mais il y a également des frottements et l’écoulement n’est pas toujours parfaitement laminaire. Bref, plein de raisons qui expliquent qu’en vrai, l’eau ne s’écoule pas à cette vitesse exactement dans vos tuyaux !"
                     }
@@ -17878,41 +17916,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "",
+                "context": "La localisation de l'obstruction a pu être identifiée. L'obstacle bouchonne au niveau du tuyau \\(C\\), de la manière suivante :",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q13_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q15_enonce.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q15_enonce_2.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q13_1.png"
                 ],
-                "question": "Question 15 - voir l’énoncé ci-dessus.",
+                "question": "Concernant les pressions aux points \\(B\\), \\(C\\) et \\(E\\), laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(p_C = p_B - \\dfrac{15}{16}\\rho v_B^2\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - : v − v=v. Ainsi,B2E2B2C2B2E216 B152p= p − ρgH +ρ(1EB2v − v )BE22=⇒ p= p − ρgH +ρ ×v1EB2152=⇒ p= p − ρgH +ρv1516 BEB32B2"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(p_C = p_B + \\dfrac{15}{32}\\rho v_B^2\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et ELa relation v − vest exactement la même que pour v − v . Donc on a : v − v=v. Ainsi,B2E2B2C2B2E216 B152p= p − ρgH +ρ(1EB2v − v )BE22=⇒ p= p − ρgH +ρ ×v1EB2152=⇒ p= p − ρgH +ρv1516 BEB32B2"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(p_E = p_B - \\rho g H\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - → Il y a plus de perte de pression dans les tuyaux horizontaux du voisin que chez OlgaUn item inhabituel me direz-vous. Mais on peut s'aider de ce qu'on sait.Déjà, on peut réfléchir sur la situation physique. Le seul paramètre qui change entre les tuyaux d'Olga et ceux du voisin est la longueur de ces tuyaux horizontaux. Intuitivement, plus le tuyau est long, plus la différence entre la pression de départ et la pression d'arrivée est importante et donc, plus la perte de pression est importante. Or, les tuyaux de chez Olga sont plus longs que ceux du voisin. On peut donc se dire qu'il y a plus de perte de pression dans les tuyaux horizontaux de chez Olga que du voisin.Si on réfléchit à partir des formules, on sait que la perte de pression (ou perte de charge) dans un tuyau s'écrit :∆Le débit se conserve dans un écoulement en série (dans chacun des tuyaux horizontaux) dont Q ne change pas dans les tuyaux de chez Olga et chez le voisin. Idem pour le rayon des tuyaux. Seule lap = RQ ⇐⇒ ∆p =8ηLπa4× Qlongueur de ces derniers diffère. On a : l = 3 L donc L > l. Ainsi :4L > l =⇒8ηL8ηl πa4 > πa4=⇒ ROlga > Rvoisin =⇒ ROlgaQ > RvoisinQ =⇒ ∆pOlga > ∆pvoisinL'item est donc faux.Items D et EC'est parti pour cette question qui est un classique de Mme Grenier aux examens !8ROlgaRvoisin= πa4 8ηl πa4ηL=8πa4 × 8ηllηLπa4 = L =3 L3L = 1 = 4443NB : ici, a correspond au rayon des tuyaux horizontaux, donc a = d .12h"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(p_E = p_B - \\rho g H - \\dfrac{15}{16}\\rho v_B^2\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(p_E = p_B - \\rho g H + \\dfrac{15}{32}\\rho v_B^2\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -17926,40 +17962,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 16,
                 "type": "QCM",
-                "context": "",
+                "context": "On considère à présent l'eau comme un fluide visqueux. On considère également qu'il n'y a plus d'obstacle en \\(C\\). La pompe P est désormais activée en amont du point \\(B\\).\nOn note \\(R_{tot}\\) la résistance totale du circuit entre \\(B\\) et \\(M\\). On note également \\(R_{Olga}\\) et \\(R_{voisin}\\) les résistances des tuyaux horizontaux (montés en série) chez Olga et chez le voisin. Toutes les autres résistances (notamment verticales) sont considérées comme négligeables.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q13_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q16_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q13_1.png"
                 ],
-                "question": "Question 16 - voir l’énoncé ci-dessus.",
+                "question": "Concernant les résistances des circuits, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Dans un circuit en série, on a \\(R_{tot} = \\sum R_i\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Ri C’est exactement ça ! Dans un circuit en série, lorsqu’on a nos résistances les unes à la suite des autres, la résistance totale de tout le circuit est bien égale à la somme de chacune des résistances individuelles. Ça se traduit par cette expression, mathématiquement !"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Dans un circuit en dérivation, on a \\(\\dfrac{1}{R_{tot}} = \\dfrac{1}{\\sum R_i}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Rtot = P Ri Je reconnais solennellement que c’est petit de ma part. La bonne expression, c’est celle-ci : Rtot = X 1 Ri Retenez-la bien, soyez sûrs et certains de vos formules ! Ça vous sauve la vie quand on vous demande d’exprimer des valeurs. Les formules ne sont pas un calvaire, elles vous aident à y voir clair pour retomber sur vos pattes !"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Il y a plus de perte de pression dans les tuyaux horizontaux du voisin que chez Olga",
                         "isCorrect": false,
                         "explanation": "FAUX - Un item inhabituel me direz-vous. Mais on peut s’aider de ce qu’on sait. Déjà, on peut réfléchir sur la situation physique. Le seul paramètre qui change entre les tuyaux d’Olga et ceux du voisin est la longueur de ces tuyaux horizontaux. Intuitivement, plus le tuyau est long, plus la différence entre la pression de départ et la pression d’arrivée est importante et donc, plus la perte de pression est importante. Or, les tuyaux de chez Olga sont plus longs que ceux du voisin. On peut donc se dire qu’il y a plus de perte de pression dans les tuyaux horizontaux de chez Olga que du voisin. Si on réfléchit à partir des formules, on sait que la perte de pression (ou perte de charge) dans un tuyau s’écrit : ∆p = RQ ⇐⇒∆p = 8ηL πa4 × Q Le débit se conserve dans un écoulement en série (dans chacun des tuyaux horizontaux) dont Q ne change pas dans les tuyaux de chez Olga et chez le voisin. Idem pour le rayon des tuyaux. Seule la longueur de ces derniers diffère. On a : l = 3 4L donc L > l. Ainsi : L > l =⇒8ηL πa4 > 8ηl πa4 =⇒ROlga > Rvoisin =⇒ROlgaQ > RvoisinQ =⇒∆pOlga > ∆pvoisin L’item est donc faux. ? Items D et E C’est parti pour cette question qui est un classique de Mme Grenier aux examens ! ROlga Rvoisin = 8ηL πa4 8ηl πa4 = 8ηL πa4 × πa4 8ηl = L l = L 4L = 1 = 4 NB : ici, a correspond au rayon des tuyaux horizontaux, donc a = 1 2dh."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\dfrac{R_{Olga}}{R_{voisin}} = \\dfrac{4}{3}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(\\dfrac{R_{Olga}}{R_{voisin}} = \\dfrac{9}{16}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -17973,40 +18008,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "",
+                "context": "On considère à présent l'eau comme un fluide visqueux. On considère également qu'il n'y a plus d'obstacle en \\(C\\). La pompe P est désormais activée en amont du point \\(B\\).\nOn note \\(R_{tot}\\) la résistance totale du circuit entre \\(B\\) et \\(M\\). On note également \\(R_{Olga}\\) et \\(R_{voisin}\\) les résistances des tuyaux horizontaux (montés en série) chez Olga et chez le voisin. Toutes les autres résistances (notamment verticales) sont considérées comme négligeables.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q13_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q17_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q13_1.png"
                 ],
-                "question": "Question 17 - voir l’énoncé ci-dessus.",
+                "question": "Concernant la résistance totale \\(R_{tot}\\) et la perte de charge \\(\\Delta p\\) totale du circuit entre B et M, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(R_{tot} = \\dfrac{1}{2}R_{Olga}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(R_{tot} = \\dfrac{7}{16}R_{Olga}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(R_{tot} = \\dfrac{7}{4}R_{Olga}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\Delta p = (R_{Olga} + R_{voisin})Q\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(\\Delta p = R_{tot}Q\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -18020,40 +18054,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 18,
                 "type": "QCM",
-                "context": "",
+                "context": "On considère à présent l'eau comme un fluide visqueux. On considère également qu'il n'y a plus d'obstacle en \\(C\\). La pompe P est désormais activée en amont du point \\(B\\).\nOn note \\(R_{tot}\\) la résistance totale du circuit entre \\(B\\) et \\(M\\). On note également \\(R_{Olga}\\) et \\(R_{voisin}\\) les résistances des tuyaux horizontaux (montés en série) chez Olga et chez le voisin. Toutes les autres résistances (notamment verticales) sont considérées comme négligeables.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_2/q13_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_2/q18_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_2/ctx_q13_1.png"
                 ],
-                "question": "Question 18 - voir l’énoncé ci-dessus.",
+                "question": "On note \\(\\Delta p\\) la perte de charge et \\(\\Delta\\pi\\) la surpression de la pompe, toutes deux s'appliquant entre \\(A\\) et \\(K\\). A propos du théorème de Bernoulli modifié, laquelle des propositions suivantes est exacte :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(p_A + \\rho g z_A + \\dfrac{1}{2}\\rho v_A^2 = p_K + \\rho g z_K + \\dfrac{1}{2}\\rho v_K^2\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(\\Delta\\pi + p_A + \\rho g z_A + \\dfrac{1}{2}\\rho v_A^2 + \\Delta p = p_K + \\rho g z_K + \\dfrac{1}{2}\\rho v_K^2\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(\\Delta p + p_A + \\rho g z_A + \\tfrac{1}{2}\\rho v_A^2 = p_K + \\rho g z_K + \\tfrac{1}{2}\\rho v_K^2 + \\Delta\\pi\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\Delta\\pi + p_A + \\rho g z_A + \\tfrac{1}{2}\\rho v_A^2 = \\Delta p + p_K + \\rho g z_K + \\tfrac{1}{2}\\rho v_K^2\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et EOh, voilà une utilisation du théorème de Bernoulli modifié ! On se base sur le théorème de Bernoulli classique, qui dit ça :p + ρgz +ρv= p1AAMaintenant, il s'agit d'ajouter à cette expression la surpression de la pompe ∆π et la perte de charge ∆p. Mais où met-on quoi ? Réfléchissons ensemble.On étudie la pression à un point avant et la pression à un point après la pompe. Le taf de la pompe est d'augmenter la pression, pour que le fluide en question (en l'occurrence l'eau) puisse avoir assez de force pour monter dans des étages typiquement. Donc la pression après la pompe est bien supérieure à celle avant la pompe. Pour maintenir la conservation de l'énergie, il faut ajouter le ∆π à la pression en A pour en avoir plus d'énergie totale en aval, vers K.Intéressons-nous à présent au ∆p. Il symbolise la pression perdue en cours de route suite à des frottements dus à la viscosité de l'eau. Tout au long du trajet, on perd de la pression. Logiquement, la pression au début du trajet est supérieure à celle à la fin du trajet. Donc, la quantité d'énergie globale (cinétique aléatoire, cinétique d'ensemble et gravitationnelle) qui arrive en amont du côté de A se répartit entre les frottements ∆p (irrécupérable) et ce qui reste dans l'eau (cinétique aléatoire+ cinétique d'ensemble + gravitationnelle) du côté de K. Donc on met ∆p du côté de K.On peut donc combiner les deux effets, la perte de charge et la surpression de la pompe ! Ça nous donne comme expression finale :2A2K+ ρgz+ρv1K2K2∆π + p + ρgz +ρv= ∆p + p1AA2A2K+ ρgz+ρv1K2K2"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(p_A + \\rho g z_A + \\tfrac{1}{2}\\rho v_A^2 = \\Delta\\pi + \\Delta p + p_K + \\rho g z_K + \\tfrac{1}{2}\\rho v_K^2\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - RREnsuite, voyons l'"
                     }
@@ -18082,40 +18115,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 1,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Imagerie médicale (questions 1 à 7)\nOn surveille la consolidation d'une fracture de la tête (l'extrémité) du radius à l'aide d'une sonde échographique posée à l'extérieur d'un plâtre. Celle-ci permettra de déterminer si l'os a pu se régénérer proprement avant que le plâtre ne soit enlevé. La sonde utilisée émet des ondes planes d'intensité \\(I_0\\) et de puissance sonore \\(P_0 = 0{,}381\\ \\text{mW}\\). Sa surface est un disque de rayon \\(r = 0{,}9\\ \\text{cm}\\).\nOn considère ici que l'onde est totalement transmise à l'interface entre la sonde et le plâtre.\nL'onde émise traverse ainsi une couche de plâtre d'épaisseur \\(d_p = 1\\ \\text{cm}\\), puis un ensemble de tissus mous d'impédance constante, incluant la peau et les muscles, d'épaisseur \\(d_t = 4{,}2\\ \\text{cm}\\), avant d'atteindre l'os d'épaisseur \\(d_o\\).\nLes points \\(A\\), \\(B\\) et \\(C\\) correspondent respectivement aux interfaces de contact plâtre-tissus, tissus-os et os-tissus de l'autre côté de l'os. \\(R_{pt} = 0{,}16\\) et \\(R_{to} = 0{,}57\\) sont les coefficients de réflexion des interfaces plâtre-tissus et tissus-os respectivement, et \\(T_{pt}\\) et \\(T_{to}\\) les coefficients de transmission correspondants. On nomme \\(I_0\\) l'intensité initiale émise par la sonde. On appelle \\(I_X\\) et \\(L_X\\) respectivement l'intensité et le niveau sonore de l'écho reçu par la sonde après réflexion à chaque point \\(X\\). On donne \\(I_{ref} = 10^{-12}\\ \\text{W}\\cdot\\text{m}^{-2}\\).\nOn ignore l'absorption par les différents milieux pour les 5 premières questions. On rappelle que : \\(R + T = 1\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q1_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q1_1.png"
                 ],
-                "question": "Question 1 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(I_0 = 1{,}5\\ \\text{W}\\cdot\\text{m}^{-2}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Commençons cet exercice en déterminant notre intensité initiale. On va beaucoup s’en servir par la suite. L’énoncé nous donne la puissance de l’onde émise par la sonde, et on nous dit que la sonde a une surface circulaire dont on nous donne le rayon. Eh bien parfait, on va utiliser la formule qui relie les 3 et on peut calculer : I0 = P0 S = P0 πr2 = 0,381 × 10−3 π × (0,9 × 10−2)2 = 1,5 W · m−2 C’est tout bon ! On note précieusement cette valeur pour la suite."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(I_A = R_{pt} \\times I_0\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - La formule est correcte ! IA correspond à l’intensité de l’onde qui se réfléchit au point A. Jusqu’ici, un seul milieu a été traversé, une partie de l’onde se réfléchit au bout de ce milieu et l’intensité correspondante reçue correspond à l’intensité initiale multipliée par le coefficient de réflexion de l’interface à laquelle elle se réfléchit."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "La puissance de l'onde transmise diminue à chaque changement de milieu",
                         "isCorrect": true,
                         "explanation": "VRAI - De quoi dépend Ptransmise la puissance de l’onde transmise ? De l’intensité sonore transmise Itransmise et de la surface S (Ptransmise = Itransmise×S). Comme on est dans le cas d’une onde plane, la surface ne varie pas. Cependant, à chaque changement de milieu, l’intensité incidente Iincident est subdivisée en une intensité qui va être réfléchie (cette fraction de l’onde ne franchira pas l’interface entre les deux milieux) et une intensité qui va être transmise (cette fraction de l’onde franchira l’interface entre les deux milieux). Ainsi, Itransmise < Iincident, et étant donné que Ptransmise est proportionnelle à Itransmise, la puissance de l’onde transmise diminue à chaque changement de milieu. ? Items D et E Attention, on lit bien l’énoncé et on ne se fait pas avoir ! L’onde émise est plane donc l’intensité ne subit pas d’atténuation géométrique (surface constante dans la formule I = P S ). Et puisqu’on ne prend pas encore en compte l’absorption par le milieu (= pas d’atténuation par absorption), cela signifie que la distance n’a aucun impact sur l’intensité !"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Si on double l'épaisseur des tissus mous, \\(I_B\\) est réduite de plus d'un tiers",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "L'intensité sonore diminue proportionnellement à la distance parcourue par l'onde",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -18130,40 +18162,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 2,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Imagerie médicale (questions 1 à 7)\nOn surveille la consolidation d'une fracture de la tête (l'extrémité) du radius à l'aide d'une sonde échographique posée à l'extérieur d'un plâtre. Celle-ci permettra de déterminer si l'os a pu se régénérer proprement avant que le plâtre ne soit enlevé. La sonde utilisée émet des ondes planes d'intensité \\(I_0\\) et de puissance sonore \\(P_0 = 0{,}381\\ \\text{mW}\\). Sa surface est un disque de rayon \\(r = 0{,}9\\ \\text{cm}\\).\nOn considère ici que l'onde est totalement transmise à l'interface entre la sonde et le plâtre.\nL'onde émise traverse ainsi une couche de plâtre d'épaisseur \\(d_p = 1\\ \\text{cm}\\), puis un ensemble de tissus mous d'impédance constante, incluant la peau et les muscles, d'épaisseur \\(d_t = 4{,}2\\ \\text{cm}\\), avant d'atteindre l'os d'épaisseur \\(d_o\\).\nLes points \\(A\\), \\(B\\) et \\(C\\) correspondent respectivement aux interfaces de contact plâtre-tissus, tissus-os et os-tissus de l'autre côté de l'os. \\(R_{pt} = 0{,}16\\) et \\(R_{to} = 0{,}57\\) sont les coefficients de réflexion des interfaces plâtre-tissus et tissus-os respectivement, et \\(T_{pt}\\) et \\(T_{to}\\) les coefficients de transmission correspondants. On nomme \\(I_0\\) l'intensité initiale émise par la sonde. On appelle \\(I_X\\) et \\(L_X\\) respectivement l'intensité et le niveau sonore de l'écho reçu par la sonde après réflexion à chaque point \\(X\\). On donne \\(I_{ref} = 10^{-12}\\ \\text{W}\\cdot\\text{m}^{-2}\\).\nOn ignore l'absorption par les différents milieux pour les 5 premières questions. On rappelle que : \\(R + T = 1\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q2_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q1_1.png"
                 ],
-                "question": "Question 2 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La célérité de l'onde ne varie pas durant tout son trajet",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La période \\(T\\) de l'onde reste constante",
                         "isCorrect": true,
                         "explanation": "VRAI - et DItems C et DEn imagerie (comme dans beaucoup de chapitres en fyzik finalement), c'est important de bien visualiser ce qu'il se passe. Ici, ce qu'on doit savoir c'est le parcours de notre onde qui se réfléchit en B et qui revient à la sonde. Et il faudra que ce parcours reste bien clair durant tout l'exo.L'onde d'intensité initiale I0 va passer du plâtre au tissu (→ ×Tpt), se réfléchir à l'interface tissus-os(→ ×Rto) et passer du tissu au plâtre (→ ×Tpt) avant d'être perçue par la sonde. Ce qui nousdonne bien comme formule IB = I0 × Tpt × Rto × Tpt = I0 × Tpt2 × Rto.On aurait également pu l'écrire IB = I0 × (1 − Rpt)2 × Rto, puisque, on n'oublie pas, T et R sontdes coefficients qui, additionnés, valent 1 (T + R = 1 donc R = 1 − T et T = 1 − R)."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(I_B = I_A \\times R_{to}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et DEn imagerie (comme dans beaucoup de chapitres en fyzik finalement), c'est important de bien visualiser ce qu'il se passe. Ici, ce qu'on doit savoir c'est le parcours de notre onde qui se réfléchit en B et qui revient à la sonde. Et il faudra que ce parcours reste bien clair durant tout l'exo.L'onde d'intensité initiale I0 va passer du plâtre au tissu (→ ×Tpt), se réfléchir à l'interface tissus-os(→ ×Rto) et passer du tissu au plâtre (→ ×Tpt) avant d'être perçue par la sonde. Ce qui nousdonne bien comme formule IB = I0 × Tpt × Rto × Tpt = I0 × Tpt2 × Rto.On aurait également pu l'écrire IB = I0 × (1 − Rpt)2 × Rto, puisque, on n'oublie pas, T et R sontdes coefficients qui, additionnés, valent 1 (T + R = 1 donc R = 1 − T et T = 1 − R)."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(I_B = I_0 \\times T_{pt}^{\\ 2} \\times R_{to}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(I_A > I_B\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Hehehe ça surprend hein ? On pourrait croire que l’onde qui va plus loin en passant par un autre milieu serait plus atténuée que celle qui ne passe que par un seul milieu, et pourtant. Cette erreur de raisonnement logique, si vous l’avez faite, vient du fait que pour le moment on ignore les absorptions par le milieu. Maintenant vérifions notre inéquation. On va calculer les deux intensités (avec la bonne formule) : IA = Rpt × I0 = 0,16 × 1,5 = 0,24 W · m−2 IB = I0 × Tpt 2 × Rto = I0 × (1 −Rpt)2 × Rto = 1,5 × (1 −0,16)2 × 0,57 = 0,60 W · m−2 On a finalement : IB > IA ! Ce résultat s’explique par le fait que nous avons deux interfaces aux propriétés différentes. D’une part, l’interface plâtre-tissu est peu réflexive (donc très transmissive) et d’autre part, l’interface tissu-os est beaucoup plus réflexive (donc assez peu transmissive)."
                     }
@@ -18177,40 +18208,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 3,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Imagerie médicale (questions 1 à 7)\nOn surveille la consolidation d'une fracture de la tête (l'extrémité) du radius à l'aide d'une sonde échographique posée à l'extérieur d'un plâtre. Celle-ci permettra de déterminer si l'os a pu se régénérer proprement avant que le plâtre ne soit enlevé. La sonde utilisée émet des ondes planes d'intensité \\(I_0\\) et de puissance sonore \\(P_0 = 0{,}381\\ \\text{mW}\\). Sa surface est un disque de rayon \\(r = 0{,}9\\ \\text{cm}\\).\nOn considère ici que l'onde est totalement transmise à l'interface entre la sonde et le plâtre.\nL'onde émise traverse ainsi une couche de plâtre d'épaisseur \\(d_p = 1\\ \\text{cm}\\), puis un ensemble de tissus mous d'impédance constante, incluant la peau et les muscles, d'épaisseur \\(d_t = 4{,}2\\ \\text{cm}\\), avant d'atteindre l'os d'épaisseur \\(d_o\\).\nLes points \\(A\\), \\(B\\) et \\(C\\) correspondent respectivement aux interfaces de contact plâtre-tissus, tissus-os et os-tissus de l'autre côté de l'os. \\(R_{pt} = 0{,}16\\) et \\(R_{to} = 0{,}57\\) sont les coefficients de réflexion des interfaces plâtre-tissus et tissus-os respectivement, et \\(T_{pt}\\) et \\(T_{to}\\) les coefficients de transmission correspondants. On nomme \\(I_0\\) l'intensité initiale émise par la sonde. On appelle \\(I_X\\) et \\(L_X\\) respectivement l'intensité et le niveau sonore de l'écho reçu par la sonde après réflexion à chaque point \\(X\\). On donne \\(I_{ref} = 10^{-12}\\ \\text{W}\\cdot\\text{m}^{-2}\\).\nOn ignore l'absorption par les différents milieux pour les 5 premières questions. On rappelle que : \\(R + T = 1\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q3_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q1_1.png"
                 ],
-                "question": "Question 3 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(L_A = 121{,}8\\ \\text{dB}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - I0 Rto BIB= 10 log A (1I0(1 − Rpt)2 Rto1− Rpt 2) BLB∗B− L= 10 log A 1 B = 1,5 dB < 10 dBLa diminution évoquée existe bel et bien mais elle ne dépasse pas les 10 dB."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(L_A = 113{,}8\\ \\text{dB}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et C(1 − 0,16)2LB∗ − LB :LB∗B− L= 10 log= 10 logAABABIB∗Iref− 10 logABIBIrefIB∗− logABBIBIrefIref= 10(log(IB∗) − log(Iref ) − (log(IB) − log(Iref )))= 10(log(IB∗) − log(IB))= 10 log34IB∗= 10 log A I0 Rto BIB= 10 log A (1I0(1 − Rpt)2 Rto1− Rpt 2) BLB∗B− L= 10 log A 1 B = 1,5 dB < 10 dBLa diminution évoquée existe bel et bien mais elle ne dépasse pas les 10 dB."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(L_B - L_0 \\approx -4{,}0\\ \\text{dB}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(L_B - L_0 \\approx 4{,}0\\ \\text{dB}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La présence du plâtre entraîne une diminution du niveau sonore entre l'onde émise et celle reçue après réflexion au point \\(B\\) (de plus de \\(10\\ \\text{dB}\\))",
                         "isCorrect": false,
                         "explanation": "FAUX - Un peu de compréhension : ici l’item vous demande d’imaginer la situation où on n’aurait pas de plâtre, c’est-à-dire que la sonde serait directement sur la peau et l’onde n’aurait qu’un seul milieu à traverser pour atteindre le point B. Son intensité serait ainsi seulement IB∗= I0 × Rto, soit 0,86 W · m−2. En comparant avec notre IB, on obtient une diminution de 0,26 W · m−2 causée par la présence de l’interface plâtre-tissus. Est-ce que c’est une différence importante ? Ça se discute. Voyons ce que donne la différence LB∗−LB : LB∗−LB = 10 log IB∗ Iref ! −10 log IB Iref ! = 10 log IB∗ Iref ! −log IB Iref !! = 10(log(IB∗) −log(Iref) −(log(IB) −log(Iref))) = 10(log(IB∗) −log(IB)) = 10 log \u0012IB∗ IB \u0013 = 10 log I0 Rto I0(1 −Rpt)2 Rto ! = 10 log (1 −Rpt)2 ! LB∗−LB = 10 log (1 −0,16)2 ! = 1,5 dB < 10 dB La diminution évoquée existe bel et bien mais elle ne dépasse pas les 10 dB."
                     }
@@ -18224,40 +18254,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Imagerie médicale (questions 1 à 7)\nOn surveille la consolidation d'une fracture de la tête (l'extrémité) du radius à l'aide d'une sonde échographique posée à l'extérieur d'un plâtre. Celle-ci permettra de déterminer si l'os a pu se régénérer proprement avant que le plâtre ne soit enlevé. La sonde utilisée émet des ondes planes d'intensité \\(I_0\\) et de puissance sonore \\(P_0 = 0{,}381\\ \\text{mW}\\). Sa surface est un disque de rayon \\(r = 0{,}9\\ \\text{cm}\\).\nOn considère ici que l'onde est totalement transmise à l'interface entre la sonde et le plâtre.\nL'onde émise traverse ainsi une couche de plâtre d'épaisseur \\(d_p = 1\\ \\text{cm}\\), puis un ensemble de tissus mous d'impédance constante, incluant la peau et les muscles, d'épaisseur \\(d_t = 4{,}2\\ \\text{cm}\\), avant d'atteindre l'os d'épaisseur \\(d_o\\).\nLes points \\(A\\), \\(B\\) et \\(C\\) correspondent respectivement aux interfaces de contact plâtre-tissus, tissus-os et os-tissus de l'autre côté de l'os. \\(R_{pt} = 0{,}16\\) et \\(R_{to} = 0{,}57\\) sont les coefficients de réflexion des interfaces plâtre-tissus et tissus-os respectivement, et \\(T_{pt}\\) et \\(T_{to}\\) les coefficients de transmission correspondants. On nomme \\(I_0\\) l'intensité initiale émise par la sonde. On appelle \\(I_X\\) et \\(L_X\\) respectivement l'intensité et le niveau sonore de l'écho reçu par la sonde après réflexion à chaque point \\(X\\). On donne \\(I_{ref} = 10^{-12}\\ \\text{W}\\cdot\\text{m}^{-2}\\).\nOn ignore l'absorption par les différents milieux pour les 5 premières questions. On rappelle que : \\(R + T = 1\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q4_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q1_1.png"
                 ],
-                "question": "Question 4 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(I_B > I_C\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et B"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(I_C = I_B \\times T_{to}^2\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et CJe dis oui oui oui ! D'abord la formule pour calculer les deux intensités. On a déjà déterminé la formule pour IB, qui était I0 × Tpt2 × Rto. De la même manière, on peut exprimer IC :I= I × T× T× R× T× T= I × T× R× TC0pttototopt0pt2to2Par contre il n'est pas possible de faire apparaître IA ici (enfin, pas comme présenté dans l'itemIC = IB × Tto2toC), puisque sa formule est IA = Rpt × I0 (cf Question 1).Ensuite, on peut vérifier l'"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(I_C = I_A \\times T_{to}^2\\ T_{pt}^{\\ 2}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(L_A - L_B = 4{,}0\\ \\text{dB}\\) (à \\(\\pm 1{,}0\\ \\text{dB}\\))",
                         "isCorrect": false,
                         "explanation": "FAUX - Pour calculer une différence entre deux niveaux sonores (comme on l’a déjà fait à l’item Q3E), soit on calcule les deux valeurs puis on soustrait l’une à l’autre, soit on passe par du calcul littéral. Les deux méthodes sont équivalentes en soi, mais pour gagner du temps on va faire avec la seconde méthode : LA −LB = 10 log IA Iref ! −10 log IB Iref ! = 10 log \u0012IA IB \u0013 = 10 log I0 × Rpt I0 × (1 −Rpt)2 × Rto ! = 10 log Rpt (1 −Rpt)2 × Rto ! LA −LB = 10 log 0,16 (1 −0,16)2 × 0,57 ! = −4,0 dB"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(L_B - L_C = 73{,}3\\ \\text{dB}\\) (à \\(\\pm 1{,}0\\ \\text{dB}\\))",
                         "isCorrect": false,
                         "explanation": "FAUX - LB −LC = 10 log IB Iref ! −10 log IC Iref ! = 10 log \u0012IB IC \u0013 Et comme IC = IB × Tto 2 : LB −LC = 10 log IB IB × Tto ! = 10 log Tto ! = 10 log(T −2 to ) = −20 log(Tto) = −20 log(0,43) LB −LC = 7,3 dB"
                     }
@@ -18271,40 +18300,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "",
+                "context": "On souhaite désormais déterminer l'épaisseur de l'os. La sonde perçoit l'onde réfléchie au point \\(C\\) après un temps \\(t_C = 7{,}48 \\times 10^{-2}\\ \\text{ms}\\) entre l'émission et la réception. On donne les célérités de l'onde dans les milieux correspondants :\n\\(c_{platre} = 3000\\ \\text{m}\\cdot\\text{s}^{-1}\\)\n\\(c_{tissu} = 1540\\ \\text{m}\\cdot\\text{s}^{-1}\\)\n\\(c_{os} = 3500\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q1_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q5_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q1_1.png"
                 ],
-                "question": "Question 5 - voir l’énoncé ci-dessus.",
+                "question": "Calculer l'épaisseur \\(d_o\\) de l'os. Laquelle des propositions suivantes est exacte ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(d_o = 1{,}6\\ \\text{cm}\\) (à \\(\\pm 0{,}3\\ \\text{cm}\\) près)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(d_o = 2{,}4\\ \\text{cm}\\) (à \\(\\pm 0{,}3\\ \\text{cm}\\) près)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(d_o = 3{,}2\\ \\text{cm}\\) (à \\(\\pm 0{,}3\\ \\text{cm}\\) près)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(d_o = 4{,}0\\ \\text{cm}\\) (à \\(\\pm 0{,}3\\ \\text{cm}\\) près)",
                         "isCorrect": false,
                         "explanation": "FAUX - et Eque met l'onde pour atteindre C est : tOn connaît le temps tC qu'il faut à notre onde pour atteindre le point C et revenir. Donc le tempsC(aller)= t(la durée d'un trajet aller de l'onde).12CCe temps tC(aller) correspond à la somme des durées passées dans chaque milieu (plâtre, tissu et os).De plus, on rappelle que v = d ⇐⇒ t = d . L'idée est de faire apparaître dos dans une expressionoù on aurait toutes les autres tdonnées. Covncrètement, cela donne que :tC(aller) = tplatre + ttissu + tos12 tC = cdpdtdo do = 1 t platretissuos++ccdp dcos2 C−c−t cd = coos2 CA1platretissutdpdtdo = 3500 ×2 × 7 48A−cplatretissu−c1,×10−5B−1 × 10−23000−4,2 × 10−21540B= 2 4, cmRemarque de Pr. Grenier : il est très important de trouver le résultat sous forme littérale avant de rentrer les chiffres dans la calculatrice, cela évite bien des erreurs."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(d_o = 4{,}8\\ \\text{cm}\\) (à \\(\\pm 0{,}3\\ \\text{cm}\\) près)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -18317,40 +18345,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 6,
                 "type": "QCM",
-                "context": "",
+                "context": "En réalité, une partie de l'intensité sonore est absorbée par les milieux traversés. On donne \\(\\mu_p = 270\\ \\text{m}^{-1}\\), \\(\\mu_t = 34\\ \\text{m}^{-1}\\) et \\(\\mu_o = 350\\ \\text{m}^{-1}\\) les coefficients d'atténuation en intensité dans le plâtre, les tissus et l'os respectivement. On note \\(I'_X\\) et \\(L'_X\\) respectivement l'intensité et le niveau sonore de l'écho qui revient à la sonde depuis le point \\(X\\) avec prise en compte de l'absorption.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q6_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q6_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q1_1.png"
                 ],
-                "question": "Question 6 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "L'intensité subit une atténuation proportionnelle à la distance traversée dans un milieu",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Le niveau sonore décroît linéairement du point \\(A\\) au point \\(B\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et D× e−2µ dp pMathématiquement, cela donne :I= I × e'A0−µ dp p× Rpt× e−µ dp p= I × e0−2µ dp p× R= IptAVoilà !! Plus qu'une question pour cet exo, courage !"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "L'absorption par un milieu est la même peu importe la fréquence des ondes émises",
                         "isCorrect": false,
                         "explanation": "FAUX - Voilà un point sur lequel on n’insiste pas tant, et pourtant il est aussi à retenir ! L’absorption dépend certes des propriétés physiques du milieu, mais aussi de la fréquence de l’onde ! Vous retiendrez que l’absorption augmente avec la fréquence. Voici un petit graphique, qui vous le montre avec des exemples concrets : Diapo n°18 du cours 8 ”Ondes - Échographie” de Pr. Grenier"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Le coefficient d'atténuation en niveau sonore s'exprime \\(A = \\dfrac{10\\mu}{\\ln(10)}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - 10µ ln(10) C’est ça ! Et cette petite formule nous permettant de passer de µ à A va pouvoir simplifier nos calculs pour la question suivante. Voici d’où vient la formule : pour passer de l’intensité au niveau sonore on fait L = 10 log \u0010 I Iref \u0011 . Et on mesure l’intensité atténuée avec la formule I(x) = I0 ×e−µx. Si on injecte cette formule dans la première, on aura : L(x) = 10 log I0 × e−µx Iref ! = 10 log I0 Iref ! + 10 log(e−µx) = L0 + 10 × −µx ln(10) = L0 − 10µ ln(10)x Rappel : log(x) = ln(x) ln(10) Par identification avec la formule L(x) = L0 −Ax, on trouve notre absorption A = 10µ ln(10)"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(I'_A = I_A \\times e^{-\\mu_p d_p}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - ′ = IA × e−µpdp Même si la formule est, dans la forme, correcte, on n’oublie jamais le contexte. L’onde fait un trajet aller+retour ! Il faut donc multiplier la distance parcourue par 2. La formule correcte serait : IA ′ = IA × e−2µpdp Si on détaille un peu plus, l’onde d’intensité initiale I0 passe dans le plâtre (→×e−µpdp), puis est réfléchie à l’interface plâtre-tissus (→×Rpt), et enfin l’onde repasse dans le plâtre (→×e−µpdp). Mathématiquement, cela donne : I′ A = I0 × e−µpdp × Rpt × e−µpdp = I0 × e−2µpdp × Rpt = IA × e−2µpdp Voilà !! Plus qu’une question pour cet exo, courage !"
                     }
@@ -18364,40 +18391,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "",
+                "context": "En réalité, une partie de l'intensité sonore est absorbée par les milieux traversés. On donne \\(\\mu_p = 270\\ \\text{m}^{-1}\\), \\(\\mu_t = 34\\ \\text{m}^{-1}\\) et \\(\\mu_o = 350\\ \\text{m}^{-1}\\) les coefficients d'atténuation en intensité dans le plâtre, les tissus et l'os respectivement. On note \\(I'_X\\) et \\(L'_X\\) respectivement l'intensité et le niveau sonore de l'écho qui revient à la sonde depuis le point \\(X\\) avec prise en compte de l'absorption.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q6_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q7_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q1_1.png"
                 ],
-                "question": "Question 7 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des réponses suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(\\dfrac{I'_B}{I_B} = e^{-2(\\mu_p d_p + \\mu_t d_t)}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - ′ IB = e−2(µpdp + µtdt) L’onde se réfléchissant au point B traverse une épaisseur dp de plâtre, puis une épaisseur dt de tissu, puis fait le même chemin dans l’autre sens (chaque milieu (plâtre + tissu) est traversé deux fois). On peut donc écrire, en prenant en compte l’absorption, que : I′ B = IB × e−2(µpdp+µtdt) ⇐⇒IB ′ IB = e−2(µpdp+µtdt) ? Items B et C Souvenez-vous plus tôt, quand on ne prenait pas en compte l’absorption (quelle idée saugrenue !), on avait vu que IA < IB. Maintenant qu’on prend en compte cette fameuse absorption, vérifions si c’est toujours le cas ! Et ça tombe bien, on a déjà déterminé les formules pour I′ A et I′ B (et IA et IB ont été calculés à la Q2). IA ′ = IA × e−2µpdp = 0,24 × e−2×270×0,01 = 1,08 × 10−3 W · m−2 IB ′ = IB × e−2(µpdp+µtdt) = 0,60 × e−2(270×0,01+34×0,042) = 1,56 × 10−4 W · m−2 Et victoireee nous trouvâmes enfin que IA ′ > IB ′ !"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(I'_A > I'_B\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - traverse une épaisseur dp de plâtre, puis une épaisseur dt de tissu, puis fait le même chemin dans l'autre sens (chaque milieu (plâtre + tissu) est traversé deux fois). On peut donc écrire, en prenant en compte l'absorption, que :"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(I'_A < I'_B\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(L_A - L'_A = 23{,}5\\ \\text{dB}\\) (à \\(\\pm 1{,}0\\ \\text{dB}\\))",
                         "isCorrect": true,
                         "explanation": "VRAI - ′ = 23,5 dB (à ± 1,0 dB) On finit cet exo avec les différences de niveau sonores. Pour répondre à notre item, L′ A est égale à LA dont on retranche l’absorption subie lors de la traversée des milieux : L′ A = LA −Ap × 2dp LA −L′ A = Ap × 2dp LA −L′ A = 10µp ln(10) × 2dp LA −L′ A = 10 × 270 ln(10) × 2 × 0,01 = 23,5 dB"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(L_B - L'_B = 35{,}9\\ \\text{dB}\\) (à \\(\\pm 1{,}0\\ \\text{dB}\\))",
                         "isCorrect": true,
                         "explanation": "VRAI - ′ = 35,9 dB (à ± 1,0 dB) Pareil qu’à l’item précedent (sauf que cette fois, deux milieux sont traversés : le plâtre et le tissu) : L′ B = LB −Ap × 2dp −At × 2dt LB −L′ B = Ap × 2dp + At × 2dt LB −L′ B = 10µp ln(10) × 2dp + 10µt ln(10) × 2dt LB −L′ B = 10 × 270 ln(10) × 2 × 0,01 + 10 × 34 ln(10) × 2 × 0,042 = 35,9 dB Grr pow pow et c’est fini !! C’est déjà la fin des ondes c’est trop triste snif. Sachez que les ondes c’est un chapitre qui reviendra souvent aux annales, ce qui signifie que si vous avez pas réussi cet exo pour ce tuto, c’est vraaaaiim- meeeent pas grave. Il y a encore tout plein d’entraînements qui vous attendent, c’est-à-dire encore plein d’occasions de comprendre, s’exercer, progresser et réussir ! J’ai foi en vous, vous allez tout défoncer bandes de ."
                     }
@@ -18413,40 +18439,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 8,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 2 : Un tapis de course (questions 8 à 13)\nUn coureur amateur vient dans votre cabinet pour un contrôle de santé. Pour commencer, vous le faites courir sur un tapis roulant contenu dans une cabine étanche de volume \\(V_1 = 8\\ \\text{m}^3\\) et étudiez l'écoulement sanguin au niveau de sa jambe. Le volume occupé par le coureur et le tapis est \\(V_0 = 0{,}5\\ \\text{m}^3\\). On donne la masse volumique de l'air \\(\\rho_{air} = 1{,}2\\ \\text{kg}\\cdot\\text{m}^{-3}\\) et l'accélération de la pesanteur \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\). On considère la cabine fermée comme étant un système isolé et on considère par ailleurs que l'air s'y trouvant est un gaz parfait. Nous allons négliger le volume d'air dans la bouche et les poumons du coureur.\nOn modélise la situation par le schéma ci-dessus, avec \\(C\\) la cheville et \\(H\\) la hanche du coureur, respectivement à 20 cm et 90 cm du sol.\nNous allons faire l'approximation que la circulation artérielle se fait dans un unique vaisseau équivalent de débit et de section constantes. On s'intéresse à l'écoulement sanguin de haut en bas seulement. On considère \\(t_0\\) l'instant précédent la mise en marche du tapis roulant.\nSoient \\(\\rho_{sang}\\) la masse volumique du sang, \\(P_C\\) et \\(P_H\\) les pressions sanguines à la cheville et à la hanche. On considère que le sang est un fluide incompressible et on néglige la viscosité du sang et tout phénomène de frottement contre la paroi vasculaire jusqu'à indication contraire. La température ne change pas au cours du temps dans cette situation.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q8_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q8_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q8_1.png"
                 ],
-                "question": "Question 8 - voir l’énoncé ci-dessus.",
+                "question": "Concernant l'air contenu dans la cabine, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Abaisser le plafond de la cabine aurait pour effet d'augmenter la pression de l'air à l'intérieur",
                         "isCorrect": true,
                         "explanation": "VRAI - et BDans ce premier item, on nous demande la variation qualitative de la pression dans la cabine quand on abaisse le plafond, c'est-à-dire qu'on diminue le volume de la cabine. On sort notre merveilleuse loi des gaz parfaits, qui s'écrit PV = nRT .La cabine est ici considérée comme un système isolé donc la quantité de matière d'air n est constante, R est une constante par définition (constante des gaz parfaits), et on nous indique qu'il n'y a pas de changement de température. Ainsi, on passe de PV = nRT à PV = cst oufaire diminuer leVvolumeV de cette même cabine, ce qui provoque une augmentation de la pressionà l'intérieur.Items C, D et E= nRT= cst . On voit ainsi que le fait d'abaisser le plafond de la cabine revient àOn cherche la masse de l'air dans la cabine. On a le volume d'air dans la cabine et la massevolumique de l'air. Ces trois grandeurs sont reliées par la formule ρair = mair , qui donne mair =ρair × V . On considère le volume d'air dans la cabine, donc le volume de la cabine auquel onVsoustrait le volume occupé par le coureur et le tapis. Ainsi, V = V1 − V0 et mair = ρair × (V1 − V0). Passons à l'application numérique : mair = 1,2 × (8 − 0,5) = 9 kg. C'est donc l'"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Abaisser le plafond de la cabine aurait pour effet de diminuer la pression de l'air à l'intérieur",
                         "isCorrect": false,
                         "explanation": "FAUX - et EItems D et ED'après les items précédents, la différence de pression entre la hanche (point H) et la cheville (point C) dépend uniquement de constantes (ρsang et g) et de la différence de hauteur entre H etC. Si on surélève le tapis roulant, la hauteur de la cheville et la hauteur de la hanche seront plus importantes, mais la différence de hauteur, elle, ne changera pas, donc la différence de pression non plus !"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "L'air dans la cabine a une masse \\(m_{air} = 9\\ \\text{g}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "L'air dans la cabine a une masse \\(m_{air} = 9\\ \\text{kg}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - qui est juste !"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "L'air dans la cabine a une masse \\(m_{air} = 9{,}6\\ \\text{kg}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -18460,40 +18485,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 9,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 2 : Un tapis de course (questions 8 à 13)\nUn coureur amateur vient dans votre cabinet pour un contrôle de santé. Pour commencer, vous le faites courir sur un tapis roulant contenu dans une cabine étanche de volume \\(V_1 = 8\\ \\text{m}^3\\) et étudiez l'écoulement sanguin au niveau de sa jambe. Le volume occupé par le coureur et le tapis est \\(V_0 = 0{,}5\\ \\text{m}^3\\). On donne la masse volumique de l'air \\(\\rho_{air} = 1{,}2\\ \\text{kg}\\cdot\\text{m}^{-3}\\) et l'accélération de la pesanteur \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\). On considère la cabine fermée comme étant un système isolé et on considère par ailleurs que l'air s'y trouvant est un gaz parfait. Nous allons négliger le volume d'air dans la bouche et les poumons du coureur.\nOn modélise la situation par le schéma ci-dessus, avec \\(C\\) la cheville et \\(H\\) la hanche du coureur, respectivement à 20 cm et 90 cm du sol.\nNous allons faire l'approximation que la circulation artérielle se fait dans un unique vaisseau équivalent de débit et de section constantes. On s'intéresse à l'écoulement sanguin de haut en bas seulement. On considère \\(t_0\\) l'instant précédent la mise en marche du tapis roulant.\nSoient \\(\\rho_{sang}\\) la masse volumique du sang, \\(P_C\\) et \\(P_H\\) les pressions sanguines à la cheville et à la hanche. On considère que le sang est un fluide incompressible et on néglige la viscosité du sang et tout phénomène de frottement contre la paroi vasculaire jusqu'à indication contraire. La température ne change pas au cours du temps dans cette situation.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q8_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q9_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q8_1.png"
                 ],
-                "question": "Question 9 - voir l’énoncé ci-dessus.",
+                "question": "À propos de la circulation sanguine dans la jambe du coureur à l'instant \\(t_0\\), laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(P_C - P_H = \\rho_{sang} g (z_H - z_C)\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - validé)PC − PH = −ρsangg(zC − zH)("
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(P_C - P_H = -\\rho_{sang} g (z_C - z_H)\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et CLes trois premiers items nous font chercher une différence de pression entre deux points qui ont des hauteurs différentes. On utilise la loi de Bernoulli, qu'on va appliquer aux points C et H. Ici, on nous dit que la circulation se fait dans un unique vaisseau équivalent dont le débit et la section sont constantes. Or, Q = Sv, donc la vitesse est également constante. Ainsi, vC = vH : on peut d'ores et déjà les retirer de notre égalité de Bernoulli.Cela donne donc :PC + ρsanggzC = PH + ρsanggzHPC − PH = ρsangg(zH − zC)("
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(P_H - P_C = \\rho_{sang} g (z_H - z_C)\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Si on surélève le tapis roulant, en le gardant horizontal, la différence de pression entre la hanche et la cheville augmente",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Si on surélève le tapis roulant, en le gardant horizontal, la différence de pression entre la hanche et la cheville reste la même",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -18508,41 +18532,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 10,
                 "type": "QCM",
-                "context": "",
+                "context": "Votre patient commence à courir, et pour être plus juste dans vos calculs, on considère désormais le sang comme un fluide visqueux. On considère que l'écoulement sanguin se fait du cœur vers la jambe et on admet que les parois vasculaires sont rigides ici. On note \\(\\Delta P\\) la perte de charge lors de l'écoulement du sang, \\(v_H\\) et \\(v_C\\) les vitesses respectives en \\(H\\) et \\(C\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q10_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q10_enonce.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q10_enonce_2.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q8_1.png",
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q10_1.png"
                 ],
-                "question": "Question 10 - voir l’énoncé ci-dessus.",
+                "question": "À propos du théorème de Bernoulli modifié, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Il ne prend pas en compte les pertes de Poiseuille",
                         "isCorrect": false,
                         "explanation": "FAUX - Si ! Le théorème de Bernoulli ”normal” exprime la conservation d’énergie entre deux points d’un fluide parfait, où il n’y a pas de frottements. Mais pour un fluide visqueux, il y a des pertes par frottements, qu’on appelle aussi pertes de Poiseuille, et qui font ”perdre” de l’énergie au fluide. Pour en tenir compte, on modifie le théorème de Bernoulli en ajoutant la perte de charge (généralement notée ∆P), en aval, car l’énergie disponible en amont se répartit entre les pertes de Poiseuille d’une part et l’énergie qui reste disponible pour le liquide d’autre part."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La perte de pression de Poiseuille correspond à une énergie perdue par le fluide (irrécupérable)",
                         "isCorrect": true,
                         "explanation": "VRAI - Cet item est une phrase tirée d’une des diapos de Mme Grenier. La voici : Diapo n°7 du cours 6 ”Fluides visqueux” du Pr. Grenier"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Il exprime la conservation de la densité volumique d'énergie d'un fluide",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout pile ! Le théorème de Bernoulli exprime la conservation de l’énergie entre deux points d’une même ligne de courant ; cette énergie est la somme de la pression, de l’énergie cinétique de l’écou- lement dans son ensemble et de l’énergie potentielle de pesanteur. Ces énergies ne sont pas définies selon la masse mais selon la masse volumique, ce qui permet de considérer une énergie ”par unité de volume”. ? Items D et E Vous commencez à avoir l’habitude de ce genre d’item. La question, c’est donc : où placer ∆P ? La perte de charge se fait tout au long du parcours du sang, donc la pression est plus faible en C qu’en H. Ainsi, pour rétablir l’égalité, on place ∆P du côté de C : PC + 1 2ρsangv2 C + ρsanggzC + ∆P = PH + 1 2ρsangv2 H + ρsanggzH"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Ici, il peut s'énoncer comme \\(P_H + \\dfrac{1}{2}\\rho_{sang} v_H^2 + \\rho_{sang} g z_H + \\Delta P = P_C + \\dfrac{1}{2}\\rho_{sang} v_C^2 + \\rho_{sang} g z_C\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Ici, il peut s'énoncer comme \\(P_C + \\dfrac{1}{2}\\rho_{sang} v_C^2 + \\rho_{sang} g z_C + \\Delta P = P_H + \\dfrac{1}{2}\\rho_{sang} v_H^2 + \\rho_{sang} g z_H\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -18557,41 +18580,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 11,
                 "type": "QCM",
-                "context": "",
+                "context": "Vous allongez ensuite le patient et pendant qu'il se repose, vous réfléchissez à la circulation sanguine au niveau de son quadriceps, où les artérioles se divisent en capillaires permettant les échanges gazeux. Le schéma ci-après montre le circuit sanguin au niveau d'une portion de muscle, où une artériole \\(A\\) se divise en trois capillaires de même rayon \\(r_C\\) et de même longueur \\(L_C\\). On note \\(Q_A\\) le débit de l'artériole et \\(Q_C\\) le débit au niveau d'un capillaire. On ne s'intéresse pas à la jonction des capillaires en fin de circuit.\nDonnées :\nViscosité du sang : \\(\\eta = 3 \\times 10^{-3}\\ \\text{Pa}\\cdot\\text{s}\\)\nLongueur de l'artériole : \\(L_A = 1\\ \\text{mm}\\)\nRayon de l'artériole : \\(r_A = 20\\ \\mu\\text{m}\\)\nRayon d'un capillaire : \\(r_C = \\dfrac{1}{5} r_A\\)\nRésistance totale du circuit : \\(R_{tot} = 5{,}02 \\times 10^{15}\\ \\text{Pa}\\cdot\\text{s}\\cdot\\text{m}^{-3}\\)",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q10_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q11_enonce.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q11_enonce_2.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q8_1.png",
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q10_1.png"
                 ],
-                "question": "Question 11 - voir l’énoncé ci-dessus.",
+                "question": "Concernant le débit sanguin et la longueur des capillaires, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(Q_A = Q_C\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(Q_A = \\dfrac{1}{3} Q_C\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(L_C = 5{,}0 \\times 10^{-4}\\ \\text{m}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(L_C = 5{,}0\\ \\mu\\text{m}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(L_C = 50\\ \\mu\\text{m}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -18604,40 +18626,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": "",
+                "context": "Le coureur revient à votre cabinet deux ans plus tard. Vous l'examinez de nouveau mais constatez qu'il n'a pas vraiment pris de muscle. Vous vous dites que le coureur a sûrement eu une hypercapillarisation, c'est-à-dire une augmentation du nombre de capillaires apportant l'oxygène aux muscles. Ainsi, on considère que sur la portion de muscle étudiée plus haut, le nombre de capillaires initial a été multiplié par \\(n\\) avec \\(n \\geq 2\\) (les nouveaux capillaires ayant la même longueur et le même rayon que les anciens).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q10_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q12_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q8_1.png",
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q10_1.png"
                 ],
-                "question": "Question 12 - voir l’énoncé ci-dessus.",
+                "question": "On note \\(R'_{tot}\\) la nouvelle résistance hydraulique du circuit et on admet que le débit reste le même en tout point. Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(\\dfrac{R_{tot}}{R'_{tot}} = \\dfrac{n(3R_A + R_C)}{3nR_A + R_C}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et Dπr4Ainsi, la résistance du circuit après hypercapillarisation est plus basse que la résistance initiale, donc l'item est juste.Plus simplement, ajouter des tuyaux en dérivation dans le cadre de l'écoulement d'un fluide permet de faire baisser la résistance : l'écoulement du fluide se divise en plus de chemins, donc l'écoulementest facilité (c'est cela qu'exprime la formule 1 =Σ 1 RtotRi)."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(\\dfrac{R_{tot}}{R'_{tot}} = \\dfrac{3R_A + R_C}{3R_A + 3nR_C}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et COn rappelle la formule de la résistance totale du circuit avec trois capillaires : Rtot = RA + RC .Le 3 ici fait référence aux trois capillaires présentés à la question précédente. Ainsi, si on mul3tiplie par n le nombre de capillaires, le circuit n'en contient plus 3 mais 3n.La résistance totale devient donc : R= R +'totAR3nCCalculons maintenant le rapport demandé dans les trois premiers items :3RA+RC Rtot = R+RR'A3 C=3= 3 RA + RC3× 3nRA + RC3nRtot = n(3RA + RC)totRA+ RC3nRA+RC3n3nR'tot3nRA + RCOn valide l'"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(\\dfrac{R_{tot}}{R'_{tot}} = \\dfrac{3R_A + R_C}{3R_A + 3R_C}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Ainsi, la résistance du circuit après hypercapillarisation est plus basse que la résistance initiale, donc l'item est juste.Plus simplement, ajouter des tuyaux en dérivation dans le cadre de l'écoulement d'un fluide permet de faire baisser la résistance : l'écoulement du fluide se divise en plus de chemins, donc l'écoulementest facilité (c'est cela qu'exprime la formule 1 =Σ 1 RtotRi)."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Augmenter le nombre de capillaires réduit la résistance totale du circuit",
                         "isCorrect": true,
                         "explanation": "VRAI - Pour savoir l’effet d’une augmentation du nombre de capillaires sur la résistance du circuit, revenons à notre rapport. On a : Rtot R′ tot = n(3RA + RC) 3nRA + RC = 3nRA + nRC 3nRA + RC Ici, le numérateur est plus grand que le dénominateur. En effet, on a nRC > RC (l’énoncé nous précise que n ≥2 donc pas de souci là-dessus). Donc, en reconstituant les expressions de Rtot et R′ tot, on trouve : nRC > RC ⇐⇒3nRA + nRC > 3nRA + RC ⇐⇒Rtot > R′ tot Ainsi, la résistance du circuit après hypercapillarisation est plus basse que la résistance initiale, donc l’item est juste. Plus simplement, ajouter des tuyaux en dérivation dans le cadre de l’écoulement d’un fluide permet de faire baisser la résistance : l’écoulement du fluide se divise en plus de chemins, donc l’écoulement est facilité (c’est cela qu’exprime la formule Rtot = P 1 Ri)."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "L'hypercapillarisation et l'augmentation à la puissance 4 de la longueur \\(L_C\\) entraînent tous deux une diminution de la perte de pression",
                         "isCorrect": false,
                         "explanation": "FAUX - On s’interroge maintenant sur l’effet du changement de certaines grandeurs sur la perte de pression ! Pour cela, revenons à sa formule, ∆P = RQ. La perte de pression est proportionnelle à la résistance, donc, de façon générale, une variation de la résistance (augmentation ou diminution) entraînera la même variation sur la perte de pression (on considère que le débit ne change pas). Or, on a établi à l’item précédent qu’une hypercapillarisation a pour effet la diminution de la résistance du circuit, donc elle permet aussi une diminution de la perte de pression. Maintenant, qu’en est-il d’une augmentation de la longueur LC des capillaires ? La formule générale de la résistance est R = 8ηL πr4 , R est proportionnel à L donc, de manière générale, une augmentation de longueur se traduit par une augmentation de résistance, et donc une augmentation de la perte de pression. Physiquement, si les capillaires sont plus longs, les couches de fluide ont plus d’espace (et de temps) pour produire des frottements entre elles et surtout contre la paroi, donc la perte de pression est plus importante. On résume : augmenter la longueur LC des capillaires augmente la perte de pression. Or, l’hy- percapillarisation entraîne une diminution de cette même perte de pression. L’item E est donc faux ! Remarque : au passage, la mention de la puissance 4 dans l’item ne change rien à notre raisonne- ment."
                     }
@@ -18651,40 +18673,40 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "",
+                "context": "On indique que dans le circuit (artériole + capillaires) considéré, \\(7{,}2 \\times 10^{-6}\\ \\text{cm}^3\\) de sang s'écoulent chaque minute. On observe également un raccourcissement des capillaires tel que leur longueur est désormais de \\(L_C = 1{,}5 \\times 10^{-4}\\ \\text{m}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q10_contexte.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q13_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q8_1.png",
+                    "annales_assets/2025_2026/physique/tuto_3/fig_q10_1.png"
                 ],
-                "question": "Question 13 - voir l’énoncé ci-dessus.",
+                "question": "Calculer \\(P_{dissipee}\\) la puissance dissipée par écoulement sanguin sur l'intégralité du circuit, suite à une hypercapillarisation telle que \\(n = 7\\). Laquelle des propositions suivantes est exacte ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(P_{dissipee} < 10^{-12}\\ \\text{W}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et E"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(3 \\times 10^{-12}\\ \\text{W} \\leq P_{dissipee} \\leq 4 \\times 10^{-12}\\ \\text{W}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(3 \\times 10^{-11}\\ \\text{W} \\leq P_{dissipee} \\leq 4 \\times 10^{-11}\\ \\text{W}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - → Lors de l'ascension, le travail du poids est moteurPour le travail du poids je vous propose un raisonnement qui pourra s'appliquer peu importe l'exercice ! Ici, nous sommes en montée, donc le poids s'oppose à notre déplacement, notre poids nous empêche de monter ! Eh oui, nous on va vers le haut et le poids nous pousse vers le bas, donc on ne va pas dans le même sens ! Donc le travail du poids est résistif ! Au contraire, si on avait été en descente, le poids nous aurait aidé à descendre, il aurait donc été moteur !Cela se répercute donc sur l'écriture du travail du poids : WAB(−→P ) = −mgh en montée (travailrésistif donc négatif) et WAB(−→P ) = +mgh en descente (travail moteur donc positif) ! Cette formule,vous pouvez soit la connaître par coeur, soit la retrouver rapidement comme vous préférez (même si on vous encouragera toujours à réfléchir par vous-mêmes)."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(3 \\times 10^{-10}\\ \\text{W} \\leq P_{dissipee} \\leq 4 \\times 10^{-10}\\ \\text{W}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - → Sur la phase de montée, la vitesse du train est constantePour répondre à cet item, il fallait relever dans l'énoncé que le train ”subit une accélérationconstante a = 1,6 m · s−2”. Si l'accélération est non nulle, cela signifie que la vitesse varie. Lavitesse du train aurait été constante si l'accélération était nulle."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(P_{dissipee} \\geq 4 \\times 10^{-10}\\ \\text{W}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - → Sur la phase de montée, le train va plus vite lorsqu'il est proche du sommet (en B) que lorsqu'il est …Comme cela a été dit à l'item précédent, l'accélération est non nulle, donc il y a une variation de lavitesse du train. Ici, l'accélération est positive. Or, on sait que a = dv . Cela implique que la vitesseaugmente (puisque la dérivée de la vitesse est positive). Ainsi, la vidttesse sera plus importante à la fin de la montée (vers B) qu'au départ (proche de A)."
                     }
@@ -18697,40 +18719,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 14,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 3 : Les montagnes russes (questions 14 à 18)\nUn étudiant décide de se rendre au parc d'attraction et fait un tour dans les montagnes russes pour se détendre. Le manège qu'il emprunte se structure de la manière suivante : une montée de \\(A\\) vers \\(B\\), puis une descente jusqu'en \\(C\\), avant de s'engager dans un looping de rayon \\(r = 15\\ \\text{m}\\). On néglige les frottements tout au long de l'exercice.\nDans cette première partie, on s'intéressera à la montée du train jusqu'au sommet de la montagne russe. Le mouvement entre \\(A\\) et \\(B\\) est rectiligne. On considère que la montagne russe à une hauteur \\(h = 50\\ \\text{m}\\) et que le train de masse \\(m = 600\\ \\text{kg}\\) commence son ascension avec une vitesse \\(v_A\\) nulle et subit une accélération constante \\(a = 1{,}6\\ \\text{m}\\cdot\\text{s}^{-2}\\) colinéaire et de même sens que le mouvement. Afin d'atteindre le sommet qu'on situe au point \\(B\\), le train est tracté par un câble exerçant une force de traction constante notée \\(\\overrightarrow{T}\\). Le point d'attache de ce câble se situe en \\(B\\). La montée forme une angle \\(\\theta = 45°\\) avec l'horizontale. On rappelle que \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q14_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q14_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q14_1.png"
                 ],
-                "question": "Question 14 - voir l’énoncé ci-dessus.",
+                "question": "Concernant l'ascension du train, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Lors de l'ascension, le travail de la force de traction est moteur",
                         "isCorrect": true,
                         "explanation": "VRAI - et BC'est parti pour la correction du dernier exo du dernier tuto de FYZIK !! (c'est passé trop viteee)Pour répondre à ce premier item, plusieurs manières de raisonner ! Ma préférée, et sans doute la plus rapide, est de se poser la question suivante : ”Est ce que la force de traction est en faveur du déplacement ou alors est-ce qu'elle s'y oppose ?!?”. La"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Lors de l'ascension, le travail de la force de traction est résistif",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Lors de l'ascension, le travail du poids est moteur",
                         "isCorrect": false,
                         "explanation": "FAUX - Pour le travail du poids je vous propose un raisonnement qui pourra s’appliquer peu importe l’exercice ! Ici, nous sommes en montée, donc le poids s’oppose à notre déplacement, notre poids nous empêche de monter ! Eh oui, nous on va vers le haut et le poids nous pousse vers le bas, donc on ne va pas dans le même sens ! Donc le travail du poids est résistif ! Au contraire, si on avait été en descente, le poids nous aurait aidé à descendre, il aurait donc été moteur ! Cela se répercute donc sur l’écriture du travail du poids : WAB(−→ P ) = −mgh en montée (travail résistif donc négatif) et WAB(−→ P ) = +mgh en descente (travail moteur donc positif) ! Cette formule, vous pouvez soit la connaître par coeur, soit la retrouver rapidement comme vous préférez (même si on vous encouragera toujours à réfléchir par vous-mêmes)."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Sur la phase de montée, la vitesse du train est constante",
                         "isCorrect": false,
                         "explanation": "FAUX - Pour répondre à cet item, il fallait relever dans l’énoncé que le train ”subit une accélération constante a = 1,6 m · s−2”. Si l’accélération est non nulle, cela signifie que la vitesse varie. La vitesse du train aurait été constante si l’accélération était nulle."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Sur la phase de montée, le train va plus vite lorsqu'il est proche du sommet (en \\(B\\)) que lorsqu'il est proche du départ (en \\(A\\))",
                         "isCorrect": true,
                         "explanation": "VRAI - Comme cela a été dit à l’item précédent, l’accélération est non nulle, donc il y a une variation de la vitesse du train. Ici, l’accélération est positive. Or, on sait que a = dv dt . Cela implique que la vitesse augmente (puisque la dérivée de la vitesse est positive). Ainsi, la vitesse sera plus importante à la fin de la montée (vers B) qu’au départ (proche de A)."
                     }
@@ -18744,40 +18765,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 3 : Les montagnes russes (questions 14 à 18)\nUn étudiant décide de se rendre au parc d'attraction et fait un tour dans les montagnes russes pour se détendre. Le manège qu'il emprunte se structure de la manière suivante : une montée de \\(A\\) vers \\(B\\), puis une descente jusqu'en \\(C\\), avant de s'engager dans un looping de rayon \\(r = 15\\ \\text{m}\\). On néglige les frottements tout au long de l'exercice.\nDans cette première partie, on s'intéressera à la montée du train jusqu'au sommet de la montagne russe. Le mouvement entre \\(A\\) et \\(B\\) est rectiligne. On considère que la montagne russe à une hauteur \\(h = 50\\ \\text{m}\\) et que le train de masse \\(m = 600\\ \\text{kg}\\) commence son ascension avec une vitesse \\(v_A\\) nulle et subit une accélération constante \\(a = 1{,}6\\ \\text{m}\\cdot\\text{s}^{-2}\\) colinéaire et de même sens que le mouvement. Afin d'atteindre le sommet qu'on situe au point \\(B\\), le train est tracté par un câble exerçant une force de traction constante notée \\(\\overrightarrow{T}\\). Le point d'attache de ce câble se situe en \\(B\\). La montée forme une angle \\(\\theta = 45°\\) avec l'horizontale. On rappelle que \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q14_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q15_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q14_1.png"
                 ],
-                "question": "Question 15 - voir l’énoncé ci-dessus.",
+                "question": "Concernant la distance \\(AB\\) et la norme de la force de traction \\(||\\overrightarrow{T}||\\), laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(AB = \\dfrac{\\cos(\\theta)}{h}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - + g sin (θ))ǁ−→T ǁ = 600 × (1,6 + 9,81 × sin(45◦)) = 5122 N"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(AB = \\dfrac{h}{\\sin(\\theta)}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et E= ma − (− sin (θ) × mg)revenons à notre deuxième loi de Newton :ǁ−→T ǁ = max − Px= m(a + g sin (θ))ǁ−→T ǁ = 600 × (1,6 + 9,81 × sin(45◦)) = 5122 N"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(AB = \\dfrac{h}{\\sin(\\theta)}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et E= ma − (− sin (θ) × mg)revenons à notre deuxième loi de Newton :ǁ−→T ǁ = max − Px= m(a + g sin (θ))ǁ−→T ǁ = 600 × (1,6 + 9,81 × sin(45◦)) = 5122 N"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(||\\overrightarrow{T}|| = mg\\sin(\\theta)\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(||\\overrightarrow{T}|| = -mg\\sin(\\theta)\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -18791,40 +18811,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 16,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 3 : Les montagnes russes (questions 14 à 18)\nUn étudiant décide de se rendre au parc d'attraction et fait un tour dans les montagnes russes pour se détendre. Le manège qu'il emprunte se structure de la manière suivante : une montée de \\(A\\) vers \\(B\\), puis une descente jusqu'en \\(C\\), avant de s'engager dans un looping de rayon \\(r = 15\\ \\text{m}\\). On néglige les frottements tout au long de l'exercice.\nDans cette première partie, on s'intéressera à la montée du train jusqu'au sommet de la montagne russe. Le mouvement entre \\(A\\) et \\(B\\) est rectiligne. On considère que la montagne russe à une hauteur \\(h = 50\\ \\text{m}\\) et que le train de masse \\(m = 600\\ \\text{kg}\\) commence son ascension avec une vitesse \\(v_A\\) nulle et subit une accélération constante \\(a = 1{,}6\\ \\text{m}\\cdot\\text{s}^{-2}\\) colinéaire et de même sens que le mouvement. Afin d'atteindre le sommet qu'on situe au point \\(B\\), le train est tracté par un câble exerçant une force de traction constante notée \\(\\overrightarrow{T}\\). Le point d'attache de ce câble se situe en \\(B\\). La montée forme une angle \\(\\theta = 45°\\) avec l'horizontale. On rappelle que \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q14_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q16_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q14_1.png"
                 ],
-                "question": "Question 16 - voir l’énoncé ci-dessus.",
+                "question": "Concernant le travail de la force de traction \\(W_{AB}(\\overrightarrow{T})\\) et la vitesse atteinte au point \\(B\\) qu'on note \\(v_B\\), laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(W_{AB}(\\overrightarrow{T}) = ma \\times \\dfrac{h}{\\sin\\theta} + mgh\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(W_{AB}(\\overrightarrow{T}) = m^2 g^2 h \\times \\dfrac{h}{\\sin\\theta}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(W_{AB}(\\overrightarrow{T}) = mh\\left(\\dfrac{a}{\\sin\\theta} + g\\right)\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(v_B = 15{,}0\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - On admet que le trajet du train entre A et B a une durée ∆t = 9,4 s."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(v_B = 31{,}3\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -18839,40 +18858,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "",
+                "context": "On admet que le trajet du train entre \\(A\\) et \\(B\\) a une durée \\(\\Delta t = 9{,}4\\ \\text{s}\\).",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q14_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q17_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q14_1.png"
                 ],
-                "question": "Question 17 - voir l’énoncé ci-dessus.",
+                "question": "On note \\(v_{moy}\\) la vitesse moyenne du train entre \\(A\\) et \\(B\\). Concernant la puissance moyenne de la force de traction \\(P_{moy}\\), laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(P_{moy} = \\dfrac{||\\overrightarrow{T}||}{v_{moy}}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(P_{moy} = ||\\overrightarrow{T}|| \\times v_{moy}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(P_{moy} \\approx 545\\ \\text{W}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et D.Ec + Ep= Ec + Ep1CCD2mv + mgz=mv+ mgz1DC2C2D2D12mv=mv+ 2C212mgr(car zC = 0 et zD = 2r)122Dmv=mv − 2D212C2mgrv2 = 212mv − 2CmgrD1 mv= v − 4DC222grv=v − 4DvD =ñ2óCgrv=v + 23ñv + 2B2gh− 4gr42Dv=v + 2ñ2DñBgh − 4grB2g(Et c'est ainsi que se clôture ce tuto de physique... Si j'ai un mot à vous dire c'est BRAVO ! Je vous félicite d'être parvenus jusqu'au bout de cette correction, et plus encore pour tous les efforts que vous avez fourni jusque-là !! On sait que ce moment de l'année est difficile, mais ne lâchez rien et profitez de la période des annales pour progresser encore plus. Sur ce, bon courage mes piwans !!!"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(P_{moy} \\approx 5122\\ \\text{W}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et ELa puissance quésaco ? La puissance est une formule que vous ne connaissez peut-être pas encore mais bientôt vous la maîtriserez sur le bout des doigts ! Je vous la donne ici et vous pouvez la noter sur votre carnet d'erreur si vous ne l'aviez pas retrouvée. Il n'y a rien de grave à cela, pas d'inquiétude les tutos sont là pour S'ENTRAINER ! Alors on y va ? Dans le cours, vous avez cettela formule de la puissance moyednt ne qui correspond au travail de la force de traction entre A et Bsur l'intervalle de temps ∆t. Ainsi, on a :formule de la puissance : P = dW . Elle n'est pas directement exploitable, mais on peut en déduirePmoy =WAB(−→T )∆tOk, rien à voir avec les items proposés en fait ! Mais ce n'est pas une raison pour les exclure hein ! On va passer ça dans la machine à laver et vous allez voir que cette formule va bien changer !P=W( T )AB−→moy∆t=|| T || × AB−→−→∆t= || T || ×AB−→∆t= || T || × vmoyOn se fait l'application numérique ? Alors pour ça, on peut passer par P−→moy−→P=moyAB ∆tT )comme vous préférez.= || T || × vou parmoyW( P= ||−→T || × vmoymoy= || T || ×−→AB ∆t= || T || ×−→sin(θ)∆th= 5122 ×50Et si on repart de l'autre formule :Pmoy = 3,85 × 104 W = 38500 Wsin(45◦) × 9,4P=W( T )AB−→mh moy∆t=∆tsin(θ)Aa+ g=B600 9,4× 50 ×Asin(45◦)1,6+ 9,81BBravo les amis ! Je suis super fière de vous, vraiment continuez de vous accrocher vous êtes les meilleurs !"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(P_{moy} \\approx 38500\\ \\text{W}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -18886,40 +18904,39 @@ window.ANNALES_2025_2026 = [
             {
                 "num": 18,
                 "type": "QCM",
-                "context": "",
+                "context": "Notre train se trouve maintenant au sommet de la montagne russe au point \\(B\\). La train va maintenant entamer sa descente jusqu'au point \\(C\\). On considère l'origine des potentiels aux points de même altitude que \\(C\\), donc \\(E_{pC} = 0\\ \\text{J}\\), avec un axe des altitudes orienté vers le haut. Durant la phase de descente, les frottements sont négligés. Le train atteint le point \\(C\\) avec une vitesse \\(v_C\\). C'est à cette vitesse, qu'il s'engage dans le looping.",
                 "images": [
-                    "annales_assets/2025_2026/physique/tuto_3/q14_contexte_2.png",
-                    "annales_assets/2025_2026/physique/tuto_3/q18_enonce.png"
+                    "annales_assets/2025_2026/physique/tuto_3/ctx_q14_1.png"
                 ],
-                "question": "Question 18 - voir l’énoncé ci-dessus.",
+                "question": "Concernant la vitesse aux points \\(C\\) et \\(D\\), notées respectivement \\(v_C\\) et \\(v_D\\), laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(v_C = v_B + \\sqrt{2gh}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et BEn l'absence de frottements sur l'air et sur les rails, le train n'est plus soumis qu'à une seule force extérieure, son poids, qui dérive d'une énergie potentielle Ep = mgz puisqu'on a choisi d'avoir une origine des énergies potentielles en bas au point C. Nous pouvons donc appliquer la conservation de l'énergie totale (cinétique + potentielle) entre les points B et C. C'est parti !C2CB1 m1C222ññBCBEc + Ep= Ec + Ep2Items C, D et ECC. v=v+ 2ghñ12v=mvmghmv=mv + mghñ222 ñv=v + 22B1 m2+CBh − 2r)12BghC× 2ghB2=v+ 2g("
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(v_C = \\sqrt{v_B^2 \\times 2gh}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(v_C = \\sqrt{v_B^2 + 2gh}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(v_D = \\sqrt{v_C^2 - 4gr}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(v_D = \\sqrt{v_B^2 + 2g(h - 2r)}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -19136,7 +19153,9 @@ window.ANNALES_2025_2026 = [
                 "num": 5,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/sante_publique/tuto_1/fig_q5_p2_1.png"
+                ],
                 "question": "A partir des données présentes dans ce graphique et à l'aide de vos connaissances, indiquez laquelle ou (lesquelles) des propositions suivantes est (sont) exacte(s).",
                 "options": [
                     {
@@ -19578,7 +19597,9 @@ window.ANNALES_2025_2026 = [
                 "num": 15,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/sante_publique/tuto_1/fig_q15_p6_1.png"
+                ],
                 "question": "En utilisant le graphique, indiquez laquelle (lesquelles) des propositions suivantes est (sont) exacte(s).",
                 "options": [
                     {
@@ -19622,7 +19643,9 @@ window.ANNALES_2025_2026 = [
                 "num": 16,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/sante_publique/tuto_1/fig_q16_p7_1.png"
+                ],
                 "question": "Concernant ce graphique, quelle(s) est (sont) la (les) proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -19756,7 +19779,9 @@ window.ANNALES_2025_2026 = [
                 "num": 19,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/sante_publique/tuto_1/fig_q19_p9_1.png"
+                ],
                 "question": "Le graphique ci-dessous présente l’évolution des taux de décès par AVC selon le sexe entre 2000 et 2013. En utilisant le graphique, concernant l’état de la santé en France , indiquez laquelle (lesquelles) des propositions suivantes est (sont) exacte(s).",
                 "options": [
                     {
@@ -19801,37 +19826,37 @@ window.ANNALES_2025_2026 = [
                 "type": "QCM",
                 "context": "",
                 "images": [
-                    "annales_assets/2025_2026/sante_publique/tuto_1/q20_enonce.png"
+                    "annales_assets/2025_2026/sante_publique/tuto_1/fig_q20_p10_1.png"
                 ],
-                "question": "Question 20 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "question": "Indiquez laquelle (lesquelles) des propositions suivantes est (sont) exacte(s). (Graphique : Grandes causes de mortalité en France en 2022 et tendances récentes)",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "En 2022, les premières causes de décès des 65-84 ans en France sont les maladies de l’appareil circulatoire",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux ce sont les tumeurs :(. Je sais qu’il s’agit d’un document très long mais vous pourrez mal- heureusement en avoir à l’examen."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Entre 2019 et 2022, tous âges confondus, le taux de mortalité dû aux tumeurs a régressé",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout à fait !"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Une part importante des cancers est évitable par prévention des facteurs de risques comportementaux comme la consommation de tabac, la consommation d’alcool, la nutrition et l’activité physique",
                         "isCorrect": true,
                         "explanation": "VRAI - Exactement !!! Pour prévenir les décès évitables, il faut miser sur la prévention primaire. D’ailleurs, les objectifs d’une politique de santé publique sont de réduire les décès évitables, les incapaci- tés évitables et les inégalités face à la santé tout en améliorant la qualité de vie des personnes handicapées ou malades."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La population avec le taux de mortalité dû aux tumeurs le plus élevé est la population des 85 ans et plus",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux et archi faux ! Regardez les grandes tendances présentes sur le graphique avant de commencer à répondre aux items, c’est la population ayant le taux de mortalité dû aux tumeurs le plus faible."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Les quatre grandes causes de décès en France en 2020 tous âges confondus sont dans l’ordre croissant : les symptômes et états morbides mal définis, les maladies de l’appareil circulatoire, le Covid-19, les tumeurs",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux… J’ai tout mélangé, désolée. Dans l’ordre croissant ça donne : covid-19, symptômes et états morbides mal définis, maladies de l’appareil circulatoire et tumeurs."
                     }
@@ -19846,38 +19871,36 @@ window.ANNALES_2025_2026 = [
                 "num": 21,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2025_2026/sante_publique/tuto_1/q21_enonce.png"
-                ],
-                "question": "Question 21 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "Concernant le graphique ci- dessous, indiquez laquelle (lesquelles) des propositions suivantes est (sont) exacte(s).\n[graphique : Graphique 1 - Taux standardisés de mortalité prématurée]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "En 2017, il y a eu 255 décès prématurés pour 100 000 personnes, tous sexes confondus",
                         "isCorrect": false,
                         "explanation": "FAUX - Non ! Il s’agit du chiffre donné pour les hommes uniquement ! Tous sexes confondus, il y avait 189 décès prématurés sur 100 000."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La mortalité évitable représente \\(\\dfrac{1}{3}\\) de la mortalité prématurée",
                         "isCorrect": true,
                         "explanation": "VRAI - 3 de la mortalité prématurée Yes ! C’est du cours. Vous êtes des boss ;)."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le taux standardisé de mortalité prématurée des femmes dont les 15-24 ans est inférieur au taux standardisé de mortalité prématurée des femmes",
                         "isCorrect": true,
                         "explanation": "VRAI - Exactement ! Ne confondez pas les courbes. Je sais que c’est long de tout lire mais avec de l’entraî- nement, ça va le faire !"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Le sexe ratio global de la mortalité prématurée et évitable est de 3 hommes pour une femme",
                         "isCorrect": true,
                         "explanation": "VRAI - Exactement ça. Pour m’en souvenir, je me disais que les hommes ont plus tendance à se mettre en danger que les femmes."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "En 2010, la population d’hommes décédés prématurément était plus importante que la population de femmes décédées prématurément",
                         "isCorrect": false,
                         "explanation": "FAUX - Nope ! Ne m’en voulez pas, je sais que c’est méchant… Ce n’est pas une population, mais un taux standardisé qui est présenté dans le document (c’est dans le titre)..."
                     }
@@ -20517,7 +20540,9 @@ window.ANNALES_2025_2026 = [
                 "num": 36,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/sante_publique/tuto_1/fig_q36_p16_1.png"
+                ],
                 "question": "Concernant le graphique ci-dessous, laquelle (lesquelles) des propositions est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -20561,7 +20586,9 @@ window.ANNALES_2025_2026 = [
                 "num": 37,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/sante_publique/tuto_1/fig_q37_p17_1.png"
+                ],
                 "question": "Concernant ce graphique présentant la santé psychique selon l'indice d'activité phy-sique pour une population de 15 ans et plus, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -21069,7 +21096,9 @@ window.ANNALES_2025_2026 = [
                 "num": 8,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/sante_publique/tuto_2/fig_q8_p4_1.png"
+                ],
                 "question": "À partir du graphique ci-dessous et de vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -22015,38 +22044,36 @@ window.ANNALES_2025_2026 = [
                 "num": 29,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2025_2026/sante_publique/tuto_2/q29_enonce.png"
-                ],
-                "question": "Question 29 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "Concernant le pilotage et le contrôle du système de soins, laquelle (lesquelles) des propositions est (sont) exactes",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La loi de financement de la sécurité sociale fixe l’objectif prévisionnel des dépenses de l’Assurance maladie pour l’année en cours",
                         "isCorrect": false,
                         "explanation": "FAUX - Hep hep hep, prenez bien le temps de lire l’item jusqu’au bout. La LFSS (Loi de financement de la sécurité sociale) détermine une prévision des dépenses de l’Assurance maladie pour l’année suivante."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "L’agence de la biomédecine peut donner des avis scientifiques aux décideurs politiques",
                         "isCorrect": true,
                         "explanation": "VRAI - Bien joué ! Je m’explique, l’agence de la biomédecine étant avant tout une agence sanitaire, elle peut donner des avis aux décideurs politiques (par exemple sur tout ce qui touche à la greffe d’organes)."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "L’ANSES contribue notamment à la protection de la santé des végétaux",
                         "isCorrect": true,
                         "explanation": "VRAI - Eh oui ça peut paraître peu intuitif mais l’ANSES (Agence nationale de sécurité sanitaire de l’alimentation de l’environnement et du travail) assure notamment la protection de la santé et du bien-être des animaux, mais aussi de la santé des végétaux."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La couverture maladie universelle (CMU) a été remplacée par la PUMa (Protection universelle maladie) en 2019",
                         "isCorrect": false,
                         "explanation": "FAUX - Aïe c’est vraiment pas sympa comme item je sais, mais la CMU a été remplacée par la PUMa en 2016."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "L’agence Santé Publique France est à l’origine du “Mois sans tabac”",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout à fait, cette campagne permet à un maximum de fumeurs d’arrêter de fumer en même temps."
                     }
@@ -23207,7 +23234,9 @@ window.ANNALES_2025_2026 = [
                 "num": 15,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2025_2026/sante_publique/tuto_3/fig_q15_p10_1.png"
+                ],
                 "question": "Concernant le graphique ci-dessous, laquelle (lesquelles) de ces propositions est (sont) exacte(s) ?",
                 "options": [
                     {

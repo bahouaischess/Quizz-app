@@ -202,7 +202,8 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "On s’intéresse ensuite à l’implication de RAS dans l’autophagie, notamment avec la voie mTORC1, et à étudier la localisation subcellulaire du complexe impliquant RAS, SLC3A2 et mTOR dans des cellules de myélome multiple. Pour cela, les chercheurs analysent par western blot les conséquences de l’invalidation des isoformes KRAS ou NRAS sur l’activation des voies mTORC1 et MAPK dans différentes lignées cellulaires (Figure 2A). Ils réalisent ensuite une analyse par immunofluorescence afin d’étudier les colocalisations potentielles (Figures 2B-C).\nFigure 2 – A : Analyse par western blot d’extraits protéiques issus des lignées de myélome mul-tiple RPMI 8226, XG2, SKMM1 et L363 après invalidation de KRAS (shKRAS.1 et shKRAS.2) ou de NRAS (shNRAS.1 et shNRAS.2) par interférence ARN. Les niveaux de p-p70S6K et p-4EBP1 sont analysés afin d’évaluer l’activation de la voie mTORC1. Les formes totales de p70S6K, 4EBP1, MEK et RAS sont également détectées. La \\(\\beta\\)-actine est utilisée comme témoin de charge. B : Analyse par immunofluorescence des lignées RPMI 8226 et SKMM1. mTOR est visualisée en rouge, RAS fusionnée à mNeonGreen en vert, SLC3A2 en magenta et LAMP1, marqueur des lysosomes, en cyan. Les pointes de flèche indiquent des zones de colocalisation. C : Détection de l’interaction entre mTOR et RAS par Proximity Ligation Assay (PLA) dans les lignées RPMI 8226 et SKMM1. Les signaux PLA apparaissent en rouge. Les noyaux sont marqués au DAPI (bleu) et la membrane plasmique est visualisée par la WGA (Wheat Germ Agglutinin) en vert. Les images fusionnées (« Merge ») permettent de visualiser la localisation des signaux PLA au sein des cellules. Les flèches indiquent une colocalisation.",
                 "images": [
-                    "annales_assets/2026_2027/bio_cellulaire/tuto_1/image4.jpeg"
+                    "annales_assets/2026_2027/bio_cellulaire/tuto_1/image4.jpeg",
+                    "annales_assets/2026_2027/bio_cellulaire/tuto_1/image3.jpeg"
                 ],
                 "question": "D'après les résultats de la figure 1 et 2 et en vous appuyant sur vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
@@ -1476,8 +1477,10 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 3,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 2 : Représentation de Haworth d’un galactose",
+                "images": [
+                    "annales_assets/2026_2027/biochimie/tuto_1/image4.jpeg"
+                ],
                 "question": "Concernant la figure 2 et vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -1568,8 +1571,11 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 3.A : Structure tridimensionnelle de l’aldolase\nFigure 3.B : Représentation d’une sous-unité de l’aldolase",
+                "images": [
+                    "annales_assets/2026_2027/biochimie/tuto_1/image5.jpeg",
+                    "annales_assets/2026_2027/biochimie/tuto_1/image6.jpeg"
+                ],
                 "question": "Concernant vos connaissances sur les structures tertiaires et la figure 3, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -1656,8 +1662,11 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 3.A : Structure tridimensionnelle de l’aldolase\nFigure 3.B : Représentation d’une sous-unité de l’aldolase",
+                "images": [
+                    "annales_assets/2026_2027/biochimie/tuto_1/image5.jpeg",
+                    "annales_assets/2026_2027/biochimie/tuto_1/image6.jpeg"
+                ],
                 "question": "Concernant vos connaissances et la figure 3, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -1793,8 +1802,10 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 10,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 5 : Représentation in silico du site actif de l’aldolase",
+                "images": [
+                    "annales_assets/2026_2027/biochimie/tuto_1/image8.jpeg"
+                ],
                 "question": "À l'aide de vos connaissances et de la figure 5, quelle est (ou quelles sont) la (les) proposition(s) exacte(s) ?",
                 "options": [
                     {
@@ -1931,8 +1942,11 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Les acides aminés : S, T et Y sont capables de recevoir un phosphate sur leur groupement\nFigure 6 : Western Blot présentant les effets de la présence de GroEL/ES, DnaK/J et de l’ATP sur l’aldolase. On révèle la présence d’aldolase à l’aide d’anticorps reconnaissant l’aldolase dénaturée et correctement repliée.\n(pt = fond du culot ; sup = surnageant)\nFigure 7 : Mesure de l’activité enzymatique de la Fda (= aldolase) en fonction de la présence ou de l’absence de DnaK/J, GroEL/ES, et d’ATP. On mesure également la présence de l’aldolase solubilisée.\nEn blanc : le % d’activité de la Fda native. En gris : le % d’aggrégats solubilisés de Fda.",
+                "images": [
+                    "annales_assets/2026_2027/biochimie/tuto_1/image9.png",
+                    "annales_assets/2026_2027/biochimie/tuto_1/image10.jpeg"
+                ],
                 "question": "Concernant les mécanismes de repliement des protéines et les figures 6 et 7, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -2066,8 +2080,10 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 16,
                 "type": "QCM",
-                "context": "",
-                "images": [],
+                "context": "Figure 8 : Tableau présentant l’activité spécifique et la Km pour des aldolases différentes (ne tenir compte que de FDP).\nComparaison des mutations avec la ligne pHAA47 (enzyme WT)\nLecture : L’aldolase A ayant subi une modification de la cystéine 72 en Alanine a une Km de 30\\(\\mu\\)M.",
+                "images": [
+                    "annales_assets/2026_2027/biochimie/tuto_1/image11.png"
+                ],
                 "question": "En vous appuyant de la figure 8 et de vos connaissances, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -2570,38 +2586,36 @@ window.ANNALES_2026_2027 = [
                 "num": 9,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2026_2027/chimie/tuto_1/q9_enonce.png"
-                ],
-                "question": "Question 9 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "A propos des composés aromatiques, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?\n[schéma : molécules A à G]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La règle de Hückel précise qu’un composé aromatique doit posséder \\(2n + 2\\) électrons délocalisables sur un cycle plan (composé d’atomes hybridés \\(sp^{2}\\)) conjugué sans discontinuité.",
                         "isCorrect": false,
                         "explanation": "FAUX - Yo la team on se retrouve dans une nouvelle vidéo ASMR (tsais la meuf qui a tout whippin) bref cet item est faux, si vous l’avez lu trop vite vous êtes probablement tombés droit dans le panneau mais un composé aromatique comporte au moins un cycle sur lequel on 4n + 2e−délocalisables et non pas 2. Sinon la définition est parfaite ! ? Items B et C On reprend notre définition ! D’après les règles de Hückel, un composé (molécule ou ion) est aro- matique s’il présente : — un ou des cycles — un squelette σ plan (avec des atomes hybridés sp2) au niveau du ou des cycles — un système conjugué sans discontinuité, c’est-à-dire des motifs π −σ −π ou π −σ-lacune ou π −σ-dnl sur l’ensemble du(es) cycle(s) — 4n + 2 électrons délocalisables impliqués dans le système conjugué du(es) cycle(s) avec n désignant un entier naturel (0, 1, 2...) Et on regarde à présent une par une nos magnifiques molécules pour vois si elles correspondent aux critères d’aromaticité : — Molécule A : Non aromatique, ce n’est pas un cycle ! — Molécule B : Aromatique, c’est un cycle (triangulaire certes), avec un motif de conjugaison π −σ −lacune, et les deux électrons de l’unique liaison π sont délocalisables, or 2 = 0×2+2 (avec n = 0 donc). — Molécule C : Aromatique, la molécule présente bien un cycle conjugué avec alternance de liaisons simples et doubles (motif π −σ −π) avec 14 électrons délocalisables et 14 = 4×3+2 (avec n=3) — Molécule D : Aromatique, on identifie un cycle benzénique plan avec un motif π −σ −π répété sur tout le cycle et comportant 6 électrons délocalisables et 6 = 4 × 1 + 2 (avec n=1) — Molécule E : Aromatique, cette fois on travaille dans un bicycle et on vérifie bien que le premier cycle est totalement conjugué avec une alternance de liaisons simples et doubles tandis que le deuxième cycle présente à la fois un motif π −σ −π ET un motif π −σ −dnl parce qu’on n’oublie pas le doublet non liant sur l’azote qui participe à la délocalisation ! Cela nous fait au total 10 électrons délocalisables sur le bicycle et 10 = 4×2+2 (avec n=2). — Molécule F : Aromatique, le cycle comporte certes deux atomes d’azote mais leurs doublets non liants n’interviennent en aucun cas dans la conjugaison puisque le cycle en lui-même présente une alternance de liaisons doubles et simples avec 6 électrons délocalisables. On a donc 6 = 4 × 1 + 2 (avec n = 1). — Molécule G : Non aromatique, le cycle de la molécule présente certes une alternance de liaisons simples et doubles mais on a 4 électrons délocalisables. Or, on ne peut écrire 4 sous la forme 4n + 2 avec n entier."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Les molécules A, C, F et G sont aromatiques",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Les molécules B, C, D et E sont aromatiques",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Tous les carbones des molécules présentées sont hybridés \\(sp^{2}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Je suis méchante, je le sais mais l’item est faux. En effet, parmi toutes ces molécules, on ne compte que deux carbone hybridé sp3, et ils sont portés par la molécule E ! Avouez que vous ne les aviez pas vus venir ceux-là. Si vous y regardez bien, ça fait sens. On a un carbone asymétrique, qui possède quatre atomes voisins et aucun DNL : il est AL4E0, et comme son n + m = 4 il a une géométrie tétraédrique, correspondant à une hybridation sp3. On vérifie tout de même s’il n’est pas impliqué dans un motif de conjugaison, et c’est bon ! Aucun atome autour de lui n’est hybridé sp2, donc pas de raison qu’il puisse participer à la mésomérie de la molécule : toutes ses orbitales sont bien hybridées sp3. On suit le même raisonnement pour son voisin, le carbone du groupement méthyle : il est AL4E0, donc hybridé sp3 selon VSEPR."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "L’un des azotes de la molécule F possède un doublet non liant dans une orbitale \\(2p\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Et décidément on persiste (kiluidi que c’est elle qui rédige) sur une lignée d’items faux ! Les deux azotes de la molécule F sont engagés dans des doubles liaisons. Ainsi, d’après VSEPR, ils sont AL2E1 (on n’oublie par leur DNL), ce qui correspond à une géométrie trigonale plane (c’est logique, on est dans un cycle aromatique donc plan), et à une hybridation sp2. Qui dit hybridation sp2 dit une orbitale p pure qui permet de former une liaison π, puisque, je vous le rappelle, les OM π ne se forment qu’à partir du recouvrement latéral de deux OA p pures. Ici, les OA p pures des deux atomes d’azote sont déjà mobilisées dans des liaisons π, on en déduit que les DNL se situent chacun dans une OA hybride sp2, et ne sont pas délocalisables. Conclusion, ne partez pas du principe qu’un azote impliqué dans un motif de conjugaison peut toujours délocaliser son DNL !"
                     }
@@ -2665,35 +2679,35 @@ window.ANNALES_2026_2027 = [
                 "images": [
                     "annales_assets/2026_2027/chimie/tuto_1/q11_enonce.png"
                 ],
-                "question": "Question 11 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "question": "Concernant le D-Idose, parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?\n[schéma]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Pour déterminer la configuration absolue, on classe les substituants selon le numéro atomique \\(Z\\) croissant",
                         "isCorrect": false,
                         "explanation": "FAUX - Et non ! Selon les règles Cahn-Ingold-Prelog (CIP), pour déterminer la configuration absolue, il faut classer les substituants selon le Z DEcroissant, donc les substituants dont le numéro atomique est le plus élevé sont prioritaires. On vérifie ensuite que le 4ème substituant est placé à l’arrière du plan, puis on observe le sens de rotation de 1 vers 2, puis vers 3."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Le D-idose possède 4 carbones asymétriques",
                         "isCorrect": true,
                         "explanation": "VRAI - Pile ! On dit que le carbone est asymétrique s’il est lié aux 4 substituants différents. Dans la molécule de D-idose, les carbones C1, C2, C3 et C4 sont bien liés aux 4 groupes d’atomes différents. On parle bien de substituants et non d’atomes, car on ne regarde pas uniquement les atomes directement liés au carbone asymétrique mais bien tout le long de la chaine jusqu’au premier point de différence"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le pouvoir rotatoire spécifique du D-idose est nécessairement (+)",
                         "isCorrect": false,
                         "explanation": "FAUX - On ne confond pas la série (D ou L) et le pouvoir rotatoire (+ ou -) ! Dans le nom “D-idose”, la lettre D indique uniquement la configuration relative du dernier carbone asymétrique, c’est-à-dire du C4. Lorsque la molécule est représentée en projection de Fischer avec le groupe CHO en haut, le OH de C5 se trouve à droite. Cela permet de classer l’idose dans la série D, mais cette notation ne donne aucune information sur le sens de déviation de la lumière. Alors que le pouvoir rotatoire spécifique est une propriété expérimentale mesurée dans le laboratoire."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Le carbone \\(\\text{C}_2\\) du D-idose est de configuration R",
                         "isCorrect": true,
                         "explanation": "VRAI - Pour déterminer la configuration des carbones asymétriques, on commence par classer les 4 substi- tuants selon les règles de Cahn–Ingold–Prelog : on classe selon le numéro atomique Z decroissant, et en cas d’égalité, on avance le long des deux chaînes jusqu’au premier point de différence. Ensuite, on regarde le sens 1-2-3. Si on tourne dans le sens horaire, la configuration est R. Si on tourne dans le sens anti-horaire, la configuration est S. ATTENTION PIEGE : le 4ème substituant doit être placé en arrière du plan, sinon il faut inverser le résultat. Le sens horaire donne alors S et le sens antihoraire donne R. On utilise donc cette methode pour le D-idose : L’oxygène, dont le numéro atomique est le plus élevé, est prioritaire. L’hydrogène, le plus léger, occupe la 4ème position. On voit que le carbone C2 est lié aux carbones C1 et C3. Pour départager les deux chaînes carbonées liées au carbone asymétrique, on compare, atome par atome, les éléments auxquels les carbones voisins sont liés. Le carbone C1 est lié à un carbone qui est lui-même doublement lié à un oxygène. Selon les règles CIP, une double liaison est traitée comme si l’atome était lié à deux atomes. Cette branche est donc prioritaire. O OH O H H OH OH O H C1 O C O O H H C3 O C O C H H Enfin, on tourne selon 1-2-3 et on obtient la rotation dans le sens horaire. Le carbone C2 est donc bien de configuration R."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Le D-Idose possède \\(2^{4}\\) stéréoisomères de conformation",
                         "isCorrect": false,
                         "explanation": "FAUX - On fait attention à ce qu’on lit !!! Le piège se trouve dans le mot « conformation ». Le D-idose pos- sède 4 carbones asymétriques. Pour une molécule comportant n centres stéréogènes et ne présentant pas de forme méso : 2n donne le nombre maximal de stéréoisomères de configuration 2n−1 donne le nombre de couples d’énantiomères Pour n = 4, on obtient donc 24 = 16 stéréoisomères de configuration. Ces 16 molécules forment 24−1 = 8 paires d’énantiomères. Il ne s’agit pas de conformères. Pour passer d’un stéréoisomères de configuration à l’autre il faut casser une liaison. Les conformères sont seulement différentes positions spatiales d’une même mo- lécule, obtenues par rotation autour de liaisons simples. P’tit mémooo : configURation - RUpture ; confORmation - ROtation."
                     }
@@ -2708,38 +2722,36 @@ window.ANNALES_2026_2027 = [
                 "num": 12,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2026_2027/chimie/tuto_1/q12_enonce.png"
-                ],
-                "question": "Question 12 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "Concernant les molécules ci-dessous, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?\n[schéma : molécules A, B et C]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le carbone \\(\\text{C}_4\\) de la molécule A est de configuration S",
                         "isCorrect": false,
                         "explanation": "FAUX - Comment trouver la configuration en Fisher ? C’est presque tout pareil qu’avec Cram : on classe nos substituants selon Z décroissant en appliquant les règles de CIP (Cahn-Ingold-Prelog). On obtient donc : COH H OH O H H H OH H O H C H2OH On dirait que la configuration est bien S mais ATTENTION !!! Dans la représentation de Fisher, les liaisons horizontales nous montrent les substituants qui sont en avant du plan, alors que les verticales (la chaine carbonée) sont en arrière. Notre 4ème substituant est donc en avant du plan, il faut inverser la configuration, on a donc une configuration R."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La molécule A est la représentation de Fisher de molécule C",
                         "isCorrect": false,
                         "explanation": "FAUX - Rappel sur passage du Cram à Fisher : on place mentalement un bonhomme le long de la chaîne carbonée. Sa tête doit etre dirigée vers le carbone le plus oxydé, donc vers CHO ; ses pieds sont dirigés vers CH2OH ; les liaisons horizontales sont dirigées vers notre bonhomme, et les liaisons verticales vers l’arrière. On peut également utiliser une autre méthode : on tourne notre molécule en Cram pour qu’elle soit verticale, avec le carbone le plus oxydé en haut. Ensuite, les liaisons horizontales qui sont en arrière du plan vont rester du même côté et celles qui sont en avant du plan vont passer en arrière, et donc changer de côté. Enfin, on redresse notre molécule et on obtient : HO OH H O OH H O O HO OH OH H O H O O COH O H H O H H H OH H OH CH2OH On voit bien que la molécule C est la représentation de Cram de la molécule B, et non de la molécule A"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "La configuration absolue de la molécule B est (1S, 2S, 3R, 4R)",
                         "isCorrect": true,
                         "explanation": "VRAI - Exact !! On fait comme pour l’item A mais pour tous les carbones de la molécule B, en classant les substituants selon le Z décroissant et en faisant attention à bien inverser le résultat trouvé car en Fisher le 4ème substituant est en avant du plan : COH O H H O H H H OH H OH CH2OH On obtient bien la configuration absolue (1S, 2S, 3R, 4R)"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Les trois molécules ont la même formule brute",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout est bon ! Les trois représentations ont bien la même formule brute : C6H12O6. Comme on l’a vu dans l’item B, les molécules B et C correspondent en réalité à la même molécule. La molécule A et la molécule représentée par B/C ont le même enchaînement d’atomes, mais diffèrent par la configuration du carbone C2 : ce sont donc des stéréoisomères de configuration, les OH changent de place dans l’espace, mais le nombre d’atomes ne bouge pas."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Les molécules A et C sont des diastéréoisomères",
                         "isCorrect": true,
                         "explanation": "VRAI - Bingo ! Les molecules A et C sont bien des diastéréoisomères. Les diastéréoisomères sont des 2 diastéréoisomères de configuration qui ne sont pas images l’un de l’autre dans un miroir. On passe donc du Cram à Fisher pour mieux visualiser la molécule C (Cf item B, on se retrouve avec la molécule B). On voit bien qu’il n’y a qu’une seule différence dans la position des substituants. Ce sont donc bien des diastéréoisomères."
                     }
@@ -2756,42 +2768,40 @@ window.ANNALES_2026_2027 = [
                 "type": "QCM",
                 "context": "OHHOH\nOHOH\nOHHOH\nOHOH\n\\(CH_{2}\\)OH\nMolécule A\n\\(CH_{2}\\)OH\nMolécule B\nMolécule C\nLe carbone \\(C_{4}\\) de la molécule A est de configuration S\nLa molécule A est la représentation de Fisher de molécule C\nLa configuration absolue de la molécule B est (1S, 2S, 3R, 4R)\nLes trois molécules ont la même formule brute\nLes molécules A et C sont des diastéréoisomères",
                 "images": [
-                    "annales_assets/2026_2027/chimie/tuto_1/q13_enonce.png",
-                    "annales_assets/2026_2027/chimie/tuto_1/q13_enonce_2.png",
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q13_1.png",
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q13_2.png",
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q13_3.png",
                     "annales_assets/2026_2027/chimie/tuto_1/fig_q13_4.png"
                 ],
-                "question": "Question 13 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "question": "Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) concernant les molécules représentées ci-dessous ?\n[schéma : molécules A (Newman), B, C et D (Cram)]",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La molécule B correspond à la représentation de Cram de la molécule A suivant l’axe \\(\\text{C}_1\\) – \\(\\text{C}_2\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - pas le temps, on va privilégier la méthode la plus rapide. Mais alors, comment on passe de Newman à Cram ? Voici la diapo de votre cours illustrant la méthode, puisque une image vaut mieux que milles mots :Diapo 159 du cours de chimieSuper, maintenant que vous avez la méthode en tête, on reporte ça sur nos molécules. Tout d'abord, on peut voir que les items mentionnent quelque chose d'assez important : l'axe de visée. Concrè-tement c'est le sens dans lequel il faut regarder nos molécules. L'"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La molécule A correspond à la représentation de Newman de la molécule C suivant l’axe \\(\\text{C}_2\\) – \\(\\text{C}_1\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Une rotation de \\(120^{\\circ}\\) autour d’une liaison C–C modifie la configuration absolue",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux ! C’est la règle d’or en stéréochimie. Si vous tournez autour d’une liaison C-C, les substituants vont simplement changer de position dans l’espace. Ils vont simplement tourner. Vous pouvez vous amuser à le faire et à ensuite refaire la configuration absolue, la configuration absolue ne change pas lorsque vous faites une simple rotation. En revanche, lorsque on rompt une liaison, la configuration absolue change. Si vous tentez d’interchanger deux substituants (donc liaisons rompues), la configuration absolue change. Diapo 158 du cours de chimie"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Un carbone asymétrique de configuration absolue R possède un pouvoir rotatoire positif, noté (+)",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux ! Le pouvoir rotatoire et la configuration absolue n’ont aucun lien. Un carbone asymétrique de configuration R peut très bien avoir un pouvoir rotatoire négatif, et un carbone asymétrique de configuration S peut avoir un pouvoir rotatoire positif. La configuration absolue d’un carbone asymétrique est déterminée grâce aux règles CIP, tandis que le pouvoir rotatoire nous indique le sens dans lequel le carbone asymétrique fait tourner le plan de la lumière polarisée."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Les molécules C et D sont des énantiomères",
                         "isCorrect": true,
                         "explanation": "VRAI - On finit sur un item vrai. Petit rappel d’abord, les énantiomères sont des molécules chirales, images l’une de l’autre dans un miroir. En gros, vous prenez une molécule, vous inversez la configu- ration absolue de TOUS les carbones asymétriques, et vous avez son énantiomère. C’est exactement ce que l’on va vérifier ici ! Prenons la molécule C : La configuration absolue du carbone 2 d’après les règles CIP : OH (1) > Chaîne carbonée (2) > CH2OH (3) > H (4) On a donc une configuration absolue en S pour le carbone 2 MAIS on oublie pas : Lorsque le 4e substituant est devant, on INVERSE la configuration absolue ! C’est le cas ici, le H est devant donc on inverse : le carbone 2 est donc de R ! La configuration absolue du carbone 1 d’après les règles CIP : 🧠 OH (1) > CHO (2) > Chaîne carbonée (3) > H (4) De même, le H est devant, on inverse notre configuration absolue et on tombe sur une configuration absolue en S. Prenons la molécule D : La configuration absolue du carbone 2 d’après les règles CIP : 🧠 OH (1) > Chaîne carbonée (2) > CH2OH (3) > H (4) Ici, le 4e substituant (le H) est derrière, pas besoin d’inverser la configuration absolue. Le carbone 2 est donc S. La configuration absolue du carbone 1 d’après les règles CIP : 🧠 OH (1) > CHO (2) > Chaîne carbonée (3) > H (4) De même, le 4e substituant étant derrière, on inverse pas la configuration absolue. Le carbone 1 est donc R Pour résumer : HOC S O H H R OH H CH2OH Molécule C HOC R O H H S OH H CH2OH Molécule D Et comme on a pu le voir au dessus, quand 2 molécules ont TOUTES leurs configurations absolues d’inversées, on parle d’énantiomères. C’est bien le cas ici ! L’item était donc vrai."
                     }
@@ -2988,38 +2998,36 @@ window.ANNALES_2026_2027 = [
                 "num": 18,
                 "type": "QCM",
                 "context": "mo\\(l^{-1}\\)\nLes plantes sont capables, en présence de lumière, de former du glucose à partir d’ \\(O_{2}\\) et de \\(CO_{2}\\). On s’intéresse à cette réaction de synthèse du glucose à 500 K :\nDonnées standards à T = 300 K\nsynthèse\nsynthèse\n= +2 878 kJ · mo\\(l^{-1}\\)\n= +2 800 kJ · mo\\(l^{-1}\\)",
-                "images": [
-                    "annales_assets/2026_2027/chimie/tuto_1/q18_enonce.png"
-                ],
-                "question": "Question 18 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Un système à l’état stationnaire de non-équilibre ne peut pas échanger d’énergie avec le milieu extérieur",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux. Un système à l’état stationnaire de non-équilibre peut échanger de la matière et/ou de l’éner- gie avec l’extérieur ; ses variables macroscopiques restent simplement constantes dans le temps."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La constante d’équilibre \\(K_{300}\\) de cette réaction à \\(300\\,K\\) vérifie \\(\\ln K_{300} \\approx -1151\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Vrai. Pour la synthèse du glucose : ∆rG◦ synthèse = +2878 kJ · mol−1 = +2 878 000 J · mol−1 ln K300 = −∆rG◦ RT = −2 878 000 8,3 × 300 ≈−1151"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le rapport entre les constantes d’équilibre aux deux températures vérifie \\(\\ln(K_{500}/K_{300}) \\approx +450\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Vrai. D’après la relation de Van ’t Hoff : ln \u0012K500 K300 \u0013 = −∆rH◦ R \u0012 1 500 − \u0013 Avec ∆rH◦ synthèse = +2 800 000 J · mol−1 : ln \u0012K500 K300 \u0013 = −2 800 000 8,3 \u0012 1 500 − \u0013 ≈+450"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(K_{500} = e^{-450}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Faux. On combine les résultats précédents : ln K500 = ln K300 + ln \u0012K500 K300 \u0013 ≈−1151 + 450 = −701 D’où K500 ≈e−701 (et non e−450)."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "L’augmentation de température favorise la formation des produits de cette réaction",
                         "isCorrect": true,
                         "explanation": "VRAI - Vrai. La réaction de synthèse étant endothermique (∆rH◦> 0), une hausse de température déplace l’équilibre dans le sens direct (formation du glucose), conformément au principe de Le Chatelier. C’est le même raisonnement qu’à la question 17."
                     }
@@ -5233,40 +5241,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 1,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Une raquette de tennis\nAreej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel \\(F_{el}(z) = k \\times |z - z_r|\\) qui dérive d'une énergie potentielle élastique selon sa longueur \\(z\\) avec \\(z_r\\) la longueur au repos. La constante de raideur du cordage est notée \\(k\\). Ici, nous allons nous intéresser à la balle de tennis qu'on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l'air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l'air. On place l'origine des temps au moment où la balle atteint son sommet à \\(z_A = 3{,}0\\ \\text{m}\\). On note \\(E_m\\) l'énergie mécanique associée à la balle, \\(E_c\\) son énergie cinétique, \\(E_{pp}\\) son énergie potentielle de pesanteur et \\(E_{pe}\\) son énergie potentielle élastique.\nOn donne : \\(m = 30{,}0\\ \\text{g}\\) la masse de la balle et \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\) l'accélération de pesanteur.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q1_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q1_1.png"
                 ],
-                "question": "Question 1 - voir l’énoncé ci-dessus.",
+                "question": "Concernant le bilan énergétique de la situation sans frottements de l'air, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "L'énergie mécanique \\(E_m\\) s'annule au point culminant",
                         "isCorrect": false,
                         "explanation": "FAUX - L’énergie mécanique est constante tout au long de la trajectoire (les forces étant conservatives). Au point culminant, elle est entièrement sous forme d’énergie potentielle de pesanteur et n’est pas nulle. En revanche, l’énergie cinétique est nulle (car énergie potentielle maximale, car hauteur maximale, donc vitesse nulle, donc énergie cinétique nulle). Au niveau du sol, l’énergie mécanique est entièrement sous forme d’énergie cinétique. Attention à ne pas confondre Em, Epp, Epe et Ec ! Petite piqûre de rappel : une force est dite conservative si son travail ne dépend pas du chemin suivi. On dit aussi qu’une force conservative dérive d’une énergie potentielle (dans notre cas, le poids −→ P dérive de l’énergie potentielle de pesanteur Epp et la force de rappel −→ Fel dérive de l’énergie potentielle élastique)"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "L'énergie mécanique \\(E_m\\) reste constante",
                         "isCorrect": true,
                         "explanation": "VRAI - En négligeant les frottements de l’air, le poids et la force de rappel du ressort sont les seules forces qui s’exercent sur la balle. Le poids et la force de rappel étant toutes les deux des forces conservatives, l’énergie mécanique se conserve (rappel : Em = Epp + Epe + Ec). ? Items C et D À la hauteur maximale, la vitesse de la balle s’annule, entraînant une énergie cinétique Ec = 0 J. Par conservation de l’énergie mécanique, l’énergie potentielle de pesanteur Epp y est maximale (on rappelle que dans cette situation, il n’y a pas d’énergie potentielle élastique à prendre en compte). On peut aussi réfléchir dans l’autre sens. A l’altitude maximale, z est maximale, donc mgz est maximale et donc Epp aussi. Ainsi, item C vrai, item D faux."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Lorsque la balle atteint sa hauteur maximale, \\(E_c\\) est nulle et \\(E_{pp}\\) est maximale",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Lorsque la balle atteint sa hauteur maximale, \\(E_{pp}\\) est nulle et \\(E_c\\) est maximale",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Lors de la phase de descente de la balle, il s'opère une conversion d'énergie cinétique en énergie potentielle de pesanteur",
                         "isCorrect": false,
                         "explanation": "FAUX - Lors de la descente, l’altitude diminue et la vitesse augmente sous l’effet du champ de pesanteur. Le transfert d’énergie s’opère donc de l’énergie potentielle de pesanteur vers l’énergie cinétique (voir schéma item 1A). L’intégralité de l’énergie potentielle se convertit en énergie cinétique (les frotte- ments sont négligés) étant donné que nous sommes en présence de forces conservatives uniquement : nous n’avons aucune perte d’énergie."
                     }
@@ -5280,40 +5287,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 2,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Une raquette de tennis\nAreej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel \\(F_{el}(z) = k \\times |z - z_r|\\) qui dérive d'une énergie potentielle élastique selon sa longueur \\(z\\) avec \\(z_r\\) la longueur au repos. La constante de raideur du cordage est notée \\(k\\). Ici, nous allons nous intéresser à la balle de tennis qu'on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l'air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l'air. On place l'origine des temps au moment où la balle atteint son sommet à \\(z_A = 3{,}0\\ \\text{m}\\). On note \\(E_m\\) l'énergie mécanique associée à la balle, \\(E_c\\) son énergie cinétique, \\(E_{pp}\\) son énergie potentielle de pesanteur et \\(E_{pe}\\) son énergie potentielle élastique.\nOn donne : \\(m = 30{,}0\\ \\text{g}\\) la masse de la balle et \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\) l'accélération de pesanteur.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q2_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q1_1.png"
                 ],
-                "question": "Question 2 - voir l’énoncé ci-dessus.",
+                "question": "On note \\(z_O\\) et \\(z_S\\) les altitudes aux points \\(O\\) et \\(S\\) respectivement. Concernant le travail du poids \\(W_{A\\to O}(\\overrightarrow{P})\\) de la balle de masse \\(m\\) se déplaçant du point \\(A\\) vers le point \\(O\\), laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(W_{A\\to O}(\\overrightarrow{P}) = -mg(z_A - z_O)\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - : L'expression −mg(zA − zO) est fausse car elle ajoute un signe négatif en trop-"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(W_{A\\to O}(\\overrightarrow{P}) = mg(z_A - z_O)\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et CPremière méthode : le travail d'une force lors d'un déplacement d'un point A vers un point B se calcule avec le produit scalaire classique :Si nous étions dans le cas d'une force non conservative, il aurait fallu passer par la définition du travail élémentaire, et donc les variations infinitésimales puisque le travail d'une force non conservative dépend directement du trajet parcouru. On aurait dû passer par la définition suivanteEn définissant un axe vertical z orienté vers le haut :WAB(−→P ) = −→P · A−→O−→F · −→dl .- Le vecteur poids −→P est dirigé vers le bas. Donc on a −→P = m−→g = −mg−→uz.initiale : (zO − zA) donc on peut noter A−→O = (zO − zA)−→uz.Calculons le produit scalaire :WAO(−→P ) = −→P · A−→O = −mg−→uz · (zO − zA)−→uz = −mg(zO − zA)−→uz · −→uz = −mg(zO − zA)- Le vecteur déplacement A−→O a pour coordonnée verticale la position finale moins la position(rappel : −→uz est un vecteur unitaire et −→uz2 = ǁ−→uzǁ2 = 12 = 1)En distribuant le signe négatif dans la parenthèse pour inverser les termes : WAO(−→P ) = mg(zA−zO)-"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(W_{A\\to O}(\\overrightarrow{P}) = mg(z_O - z_A)\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Deuxième méthode : en passant par la définition d’un travail infinitésimal : dW(−→ F ) = −→ F · −→ dl. Pour le poids, on a donc : dW(−→ P ) = −→ P · −→ dz ⇐⇒dW(−→ P ) = P · dz · cos( \\ −→ P , −→u z) Or, \\ −→ P , −→u z = π (c’est-à-dire l’angle entre −→ P et −→u z est égal à π, autrement dit ces 2 vecteurs sont de sens opposés), donc cos( \\ −→ P , −→u z) = −1 : dW(−→ P ) = −P × dz En intégrant : W(−→ P ) = Z O A dW(−→ P ) = Z O A −Pdz = Z O A −mgdz = −mg Z O A dz = −mg[z]O A = −mg(zO −zA) Or −mg(zO −zA) = mg(zA −zO) Ainsi l’item B est vrai : on vous l’a prouvé de 2 manières différentes, c pas bo ca ? C’est la beauté de la phyzik !"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Le travail du poids est indépendant du chemin suivi",
                         "isCorrect": true,
                         "explanation": "VRAI - Le poids étant une force conservative, son travail ne dépend pas du chemin suivi."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Le poids dérive de l'énergie potentielle élastique",
                         "isCorrect": false,
                         "explanation": "FAUX - Une force conservative dérive en effet d’une énergie potentielle. Ici, le poids dérive de l’énergie potentielle de pesanteur, et non pas élastique."
                     }
@@ -5327,40 +5333,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 3,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Une raquette de tennis\nAreej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel \\(F_{el}(z) = k \\times |z - z_r|\\) qui dérive d'une énergie potentielle élastique selon sa longueur \\(z\\) avec \\(z_r\\) la longueur au repos. La constante de raideur du cordage est notée \\(k\\). Ici, nous allons nous intéresser à la balle de tennis qu'on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l'air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l'air. On place l'origine des temps au moment où la balle atteint son sommet à \\(z_A = 3{,}0\\ \\text{m}\\). On note \\(E_m\\) l'énergie mécanique associée à la balle, \\(E_c\\) son énergie cinétique, \\(E_{pp}\\) son énergie potentielle de pesanteur et \\(E_{pe}\\) son énergie potentielle élastique.\nOn donne : \\(m = 30{,}0\\ \\text{g}\\) la masse de la balle et \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\) l'accélération de pesanteur.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q3_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q1_1.png"
                 ],
-                "question": "Question 3 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions suivantes, laquelle des propositions suivantes est exacte ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut \\(5{,}4\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut \\(7{,}7\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - est vrai."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut \\(9{,}7\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut \\(29\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et EIci, seul le poids intervient et pas la force de rappel de la raquette (”contact avec la raquette sans s'enfoncer dans le cordage”). On a donc que des forces conservatives. Par conservation de l'énergiemécanique entre le sommet de la trajectoire (zA = 3,0 m, vA = 0 m · s−1) et le contact avec laraquette (zO = 0 m) :Em,A = Em,O ⇐⇒ Ec,A + Ep,A = Ec,O + Ep,OOr, Ec,A = 0 J, car vA = 0 m · s−1 et Ep,O = 0 J, car zO = 0 mE= E1p,Ac,O⇐⇒ mgz=mv⇐⇒ v = 2gzA2f2f2A⇐⇒ v = √2gzfAFaisons le calcul :√√L'"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La vitesse de la balle quand elle entre en contact avec la raquette sans s'enfoncer dans le cordage vaut \\(59\\ \\text{m}\\cdot\\text{s}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -5373,40 +5378,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 4,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Une raquette de tennis\nAreej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel \\(F_{el}(z) = k \\times |z - z_r|\\) qui dérive d'une énergie potentielle élastique selon sa longueur \\(z\\) avec \\(z_r\\) la longueur au repos. La constante de raideur du cordage est notée \\(k\\). Ici, nous allons nous intéresser à la balle de tennis qu'on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l'air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l'air. On place l'origine des temps au moment où la balle atteint son sommet à \\(z_A = 3{,}0\\ \\text{m}\\). On note \\(E_m\\) l'énergie mécanique associée à la balle, \\(E_c\\) son énergie cinétique, \\(E_{pp}\\) son énergie potentielle de pesanteur et \\(E_{pe}\\) son énergie potentielle élastique.\nOn donne : \\(m = 30{,}0\\ \\text{g}\\) la masse de la balle et \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\) l'accélération de pesanteur.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q4_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q1_1.png"
                 ],
-                "question": "Question 4 - voir l’énoncé ci-dessus.",
+                "question": "On s'intéresse à la déformation du cordage selon un axe dirigé par le vecteur unitaire \\(\\vec{u_z}\\). On note \\(z\\) la position de la balle lors de la déformation, \\(z_R\\) la longueur à vide du cordage de la raquette, toujours assimilé à un ressort. On rappelle \\(k\\) la constante de raideur et \\(E_{pe}\\) l'énergie potentielle élastique. Concernant ces grandeurs, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "La force de rappel dérive de l'énergie potentielle élastique selon la relation en une dimension : \\(F_{el} = -\\dfrac{dE_{pe}}{dz}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et BPar définition, une force conservative dérive d'une énergie potentielle telle que F = −. En unedEpdimension selon l'axe z, cela se simplifie endlF= −dEpeeldz⇐⇒ dE= −F dzpeelL'"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "La force de rappel dérive de l'énergie potentielle élastique selon la relation en une dimension : \\(F_{el} = \\dfrac{dE_{pe}}{dz}\\)",
                         "isCorrect": false,
                         "explanation": "vrai.En réalité, la variation d'altitude ∆z était négligeable : en la négligeant on trouve Epe ≈ 0,88 J.TOUJOURS penser à faire des approximations, quand elles sont pertinentes évidemment. Cela vous évitera beaucoup de calculs fastidieux. Ici ça allait, la perte de temps n'était pas énorme, mais je vous dis ça pour l'avenir, qui sait ?"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(\\overrightarrow{F_{el}} = k(z - z_R)\\overrightarrow{u_z}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - : F−→el = k(z − zR)−→uzOn a z − zR < 0. En effet, le ressort est comprimé, ainsi le ressort aura une altitude inférieure à lala longueur à vide : z < zR. De plus, la constante de raideur k est positive, ainsi on a pour l'instantk(z − zR)−→uz < 0.On se pose pour réfléchir 2 secondes.Qu'est-ce que ça veut dire ? Ça signifie que la force de rappel serait dans le sens opposé au vecteur unitaire −→uz. Mais c'est pas ce qu'on veut, ainsi on introduit un petit − :−k(z − zR)−→uz > 0 Donc l'"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\overrightarrow{F_{el}} = -k(z - z_R)\\overrightarrow{u_z}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - est VRAI.Mais on va pas oublier le petit"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(\\overrightarrow{F_{el}} = -k(z_R - z)\\overrightarrow{u_z}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Ici, on a l'opposé de (z − zR) : (zR − z) > 0, donc−k(z − zR) < 0. On aura la force de rappel élastique orientée vers le bas, ainsi, l'"
                     }
@@ -5420,40 +5424,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 5,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Une raquette de tennis\nAreej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel \\(F_{el}(z) = k \\times |z - z_r|\\) qui dérive d'une énergie potentielle élastique selon sa longueur \\(z\\) avec \\(z_r\\) la longueur au repos. La constante de raideur du cordage est notée \\(k\\). Ici, nous allons nous intéresser à la balle de tennis qu'on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l'air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l'air. On place l'origine des temps au moment où la balle atteint son sommet à \\(z_A = 3{,}0\\ \\text{m}\\). On note \\(E_m\\) l'énergie mécanique associée à la balle, \\(E_c\\) son énergie cinétique, \\(E_{pp}\\) son énergie potentielle de pesanteur et \\(E_{pe}\\) son énergie potentielle élastique.\nOn donne : \\(m = 30{,}0\\ \\text{g}\\) la masse de la balle et \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\) l'accélération de pesanteur.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q5_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q1_1.png"
                 ],
-                "question": "Question 5 - voir l’énoncé ci-dessus.",
+                "question": "En considérant l'origine de l'énergie potentielle de pesanteur au niveau de la raquette non déformée (\\(z_O = 0\\ \\text{m}\\)), et en considérant une variation d'altitude \\(\\Delta z = 0{,}8\\ \\text{cm}\\) pendant son enfoncement dans le cordage, quelle est la valeur de l'énergie potentielle élastique \\(E_{pe,S}\\) maximale emmagasinée au moment où la balle s'arrête au point \\(S\\) avant de rebondir ? Laquelle des propositions suivantes est exacte ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(E_{pe,S} = 0{,}23\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(E_{pe,S} = 0{,}89\\ \\text{J}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(E_{pe,S} = 1{,}42\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(E_{pe,S} = 4{,}41\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et EEn l'absence de frottements, l'énergie mécanique du système est conservée entre le point de lâcherinitial (zA = 3,0 m, vA = 0 m · s−1) et le point d'enfoncement maximal dans le cordage (v = 0). Aupoint A, le cordage n'est pas déformé :Em,A = Ec,A + Epp,A + Epe,A = 0 + Epp,A + 0Au point S, la balle est à l'arrêt (Ec,S = 0). On a donc :Em,S = Ec,S + Epp,S + Epe,S = 0 + Epp,S + Epe,S"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(E_{pe,S} = 8{,}83\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -5466,40 +5469,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 6,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Une raquette de tennis\nAreej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel \\(F_{el}(z) = k \\times |z - z_r|\\) qui dérive d'une énergie potentielle élastique selon sa longueur \\(z\\) avec \\(z_r\\) la longueur au repos. La constante de raideur du cordage est notée \\(k\\). Ici, nous allons nous intéresser à la balle de tennis qu'on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l'air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l'air. On place l'origine des temps au moment où la balle atteint son sommet à \\(z_A = 3{,}0\\ \\text{m}\\). On note \\(E_m\\) l'énergie mécanique associée à la balle, \\(E_c\\) son énergie cinétique, \\(E_{pp}\\) son énergie potentielle de pesanteur et \\(E_{pe}\\) son énergie potentielle élastique.\nOn donne : \\(m = 30{,}0\\ \\text{g}\\) la masse de la balle et \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\) l'accélération de pesanteur.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q6_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q1_1.png"
                 ],
-                "question": "Question 6 - voir l’énoncé ci-dessus.",
+                "question": "On étudie maintenant un nouveau lancer. Areej lance la balle en direction de la raquette située au sol. La balle quitte sa main à une altitude \\(z_{impulsion} = 1{,}20\\ \\text{m}\\) avec une vitesse \\(v_{impulsion} = 3{,}00\\ \\text{m}\\cdot\\text{s}^{-1}\\). On s'intéresse exclusivement à la phase d'impulsion, entre l'instant où la balle est immobile dans la main de Areej et l'instant où elle la quitte. Pour simplifier, on négligera la variation d'altitude de la balle durant cette très courte phase, et donc le travail du poids. Que vaut le travail de la force musculaire \\(W_{musc}\\) fourni par Areej à la balle ? Laquelle des propositions suivantes est exacte ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(W_{musc} = 0{,}045\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(W_{musc} = 0{,}135\\ \\text{J}\\)",
                         "isCorrect": true,
                         "explanation": "vrai."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(W_{musc} = 0{,}27\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(W_{musc} = 135\\ \\text{J}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - → Il est impossible de la calculer sans connaître la déformation maximale du cordage Le principe de conservation de l'énergie mécanique permet de relier directement l'état initial à l'état final, rendant inutile le calcul des états intermédiaires tels que l'enfoncement dans le cordage. (cf correction items A B et C)"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Le travail musculaire ne peut pas être calculé car la force n'est pas conservative",
                         "isCorrect": false,
                         "explanation": "FAUX - Le théorème de l’énergie cinétique est universel en mécanique classique et s’applique à la somme des travaux de toutes les forces, qu’elles soient conservatives ou non conservatives (comme la force musculaire). C’est l’application de la conservation de l’énergie mécanique qui nécessite de ne pas avoir de forces non conservatives."
                     }
@@ -5512,40 +5514,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 7,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 1 : Une raquette de tennis\nAreej achète une nouvelle raquette de tennis et décide de tester la qualité de celle-ci. Pour ce faire, elle place la raquette au sol et lance une balle pour tester la capacité de rebond de la raquette. Le cordage agit comme un ressort avec une force de rappel \\(F_{el}(z) = k \\times |z - z_r|\\) qui dérive d'une énergie potentielle élastique selon sa longueur \\(z\\) avec \\(z_r\\) la longueur au repos. La constante de raideur du cordage est notée \\(k\\). Ici, nous allons nous intéresser à la balle de tennis qu'on va considérer comme étant indéformable et ponctuelle. On considère ici que seule la raquette se comporte comme un ressort. On néglige également les frottements de l'air. La situation est représentée par le schéma suivant, dans lequel la raquette est représentée vue de profil :\nAreej lance la balle en l'air. On place l'origine des temps au moment où la balle atteint son sommet à \\(z_A = 3{,}0\\ \\text{m}\\). On note \\(E_m\\) l'énergie mécanique associée à la balle, \\(E_c\\) son énergie cinétique, \\(E_{pp}\\) son énergie potentielle de pesanteur et \\(E_{pe}\\) son énergie potentielle élastique.\nOn donne : \\(m = 30{,}0\\ \\text{g}\\) la masse de la balle et \\(g = 9{,}81\\ \\text{m}\\cdot\\text{s}^{-2}\\) l'accélération de pesanteur.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q1_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q7_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q1_1.png"
                 ],
-                "question": "Question 7 - voir l’énoncé ci-dessus.",
+                "question": "En l'absence de frottements de l'air et en considérant le cordage de la raquette comme un ressort parfaitement élastique, on se demande quelle sera la hauteur maximale \\(h_{max}\\) atteinte par la balle après le rebond sur la raquette. On rappelle que la balle a été lancée depuis \\(z_{impulsion} = 1{,}20\\ \\text{m}\\) avec une vitesse initiale \\(v_{impulsion} = 3{,}00\\ \\text{m}\\cdot\\text{s}^{-1}\\) ? Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(h_{max} = 0{,}46\\ \\text{m}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(h_{max} = 1{,}20\\ \\text{m}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et CIl suffit d'appliquer le principe de conservation de l'énergie mécanique entre l'instant initial (lâcher de la balle) et l'instant final (hauteur maximale après le rebond). Les forces non conservatives étant négligées, l'énergie mécanique est conservée tout au long du mouvement, y compris lors de l'interaction avec le cordage.1m,initialpp,initialc,initial= E+ E= mgzimpulsion+ mv2impulsion2À la hauteur maximale, la vitesse s'annule : Em,final = mghmaxPar conservation (Em,initial = Em,final) :mgzimpulsion+mv12impulsion2= mghmaxEn divisant par la masse m :gzimpulsion+v12impulsion2= ghmax⇐⇒ hmax = zimpulsion +v impulsion2g2Application numérique :hmax = 1,20 + 2 × 9,81 = 1,66 m3,002?La hauteur maximale dépend de la masse de la balle"
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(h_{max} = 1{,}66\\ \\text{m}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Il est impossible de la calculer sans connaître la déformation maximale du cordage",
                         "isCorrect": false,
                         "explanation": "FAUX - Le principe de conservation de l’énergie mécanique permet de relier directement l’état initial à l’état final, rendant inutile le calcul des états intermédiaires tels que l’enfoncement dans le cordage. (cf correction items A B et C)"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La hauteur maximale dépend de la masse de la balle",
                         "isCorrect": false,
                         "explanation": "FAUX - Comme démontré en correction des items A, B et C, hmax ne dépend pas de la masse."
                     }
@@ -5558,40 +5559,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 8,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 2 : Un P1 sportif\nUn P1 fan de sport et d'aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l'effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n\\(\\dfrac{3}{2}\\vec{P}\\cdot\\vec{u}_{CR} = aV_R\\)\n\\(aV_L = \\dfrac{3}{2}\\vec{P}\\cdot\\vec{u}_{CL}\\)\n\\(V_I = \\sqrt{3}\\vec{P}\\cdot\\vec{u}_{RL}\\)\n\\(V_{II} = \\sqrt{3}\\vec{P}\\cdot\\vec{u}_{RF}\\)\n\\(\\sqrt{3}\\vec{P}\\cdot\\vec{u}_{LF} = V_{III}\\)\n\\(aV_F = \\dfrac{3}{2}\\vec{P}\\cdot\\vec{u}_{CF}\\)\nAngle \\(\\gamma = +30^\\circ\\) (secteur 1)\nDérivation \\(aV_R\\) : mesure = 0,28 mV\nDérivation \\(aV_L\\) : mesure = 0,06 mV\nDérivation \\(aV_F\\) : mesure = -0,34 mV\nDérivation \\(V_I\\) : mesure = -0,15 mV\nDérivation \\(V_{II}\\) : mesure = -0,41 mV\nDérivation \\(V_{III}\\) : mesure = -0,26 mV\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q8_contexte_2.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q8_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png"
                 ],
-                "question": "Question 8 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions suivantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Au repos, le champ \\(\\overrightarrow{E}\\) des cardiomyocytes pointe vers l'intérieur de la cellule",
                         "isCorrect": true,
                         "explanation": "VRAI - E des cardiomyocytes pointe vers l’intérieur de la cellule On commence cet exercice par des questions de cours car même si on est dans une matière à réflexion, il est important de lire les diapos du cours et de ne pas juste apprendre les formules. Lorsqu’une cellule cardiaque est au repos, elle est polarisée : la face externe de leur membrane chargée positivement et la face interne négativement. Étant donné que le champ −→ E est orienté du coté positif vers le coté négatif, −→ E pointe vers l’intérieur de la cellule."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Le dipôle résultant de l'activité des cardiomyocytes est stable au cours des différentes phases cardiaques pour une personne saine",
                         "isCorrect": false,
                         "explanation": "FAUX - Pour se contracter, les cardiomyocytes se dépolarisent ce qui génère un bref dipôle électrique qui progresse le long d’un front de dépolarisation avant de se repolariser pour retourner au potentiel de repos de la membrane des cellules. Cela crée une onde de polarisation/dépolarisation des myocytes résultant en un dipôle qui tourne en 3D selon la phase cardiaque. Donc, le dipôle résultant de l’activité des cardiomyocytes n’est pas stable car il évolue au cours des différentes phases cardiaques. ? Items C, D et E L’ECG consiste en un suivi de l’amplitude et de la rotation du dipôle cardiaque (cf item B. pour comprendre la formation du dipôle cardiaque) par mesure des différences de potentiel entre plusieurs points (item E vrai). Pour ce faire, l’ECG mesure les différences de potentiel du dipôle. Ainsi, la mesure d’une dérivation implique au moins deux éléctrodes (item D vrai). Celui-ci consiste à étudier la distribution des états ”polarisés” et ”dépolarisés” de l’ensemble des cardiomyocytes. On peut donc conclure qu’il ne mesure pas uniquement la polarisation ou la dépolarisation des cardiomyocytes mais les deux à la fois (item C faux). Les items D et E sont ainsi vrais."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le principe de l'ECG repose uniquement sur l'étude des cardiomyocytes dépolarisés",
                         "isCorrect": false,
                         "explanation": "faux).Les items D et E sont ainsi vrais."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La mesure d'une dérivation implique plusieurs électrodes",
                         "isCorrect": true,
                         "explanation": "vrai). Celui-ci consiste à étudier la distribution des états ”polarisés” et ”dépolarisés” de l'ensemble des cardiomyocytes. On peut donc conclure qu'il ne mesure pas uniquement la polarisation ou la dépolarisation des cardiomyocytes mais les deux à la fois ("
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Le principe de l'ECG repose sur la mesure des différences de potentiel entre plusieurs points",
                         "isCorrect": true,
                         "explanation": "vrai).Pour ce faire, l'ECG mesure les différences de potentiel du dipôle. Ainsi, la mesure d'une dérivation implique au moins deux éléctrodes ("
                     }
@@ -5606,40 +5606,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 9,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 2 : Un P1 sportif\nUn P1 fan de sport et d'aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l'effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n\\(\\dfrac{3}{2}\\vec{P}\\cdot\\vec{u}_{CR} = aV_R\\)\n\\(aV_L = \\dfrac{3}{2}\\vec{P}\\cdot\\vec{u}_{CL}\\)\n\\(V_I = \\sqrt{3}\\vec{P}\\cdot\\vec{u}_{RL}\\)\n\\(V_{II} = \\sqrt{3}\\vec{P}\\cdot\\vec{u}_{RF}\\)\n\\(\\sqrt{3}\\vec{P}\\cdot\\vec{u}_{LF} = V_{III}\\)\n\\(aV_F = \\dfrac{3}{2}\\vec{P}\\cdot\\vec{u}_{CF}\\)\nAngle \\(\\gamma = +30^\\circ\\) (secteur 1)\nDérivation \\(aV_R\\) : mesure = 0,28 mV\nDérivation \\(aV_L\\) : mesure = 0,06 mV\nDérivation \\(aV_F\\) : mesure = -0,34 mV\nDérivation \\(V_I\\) : mesure = -0,15 mV\nDérivation \\(V_{II}\\) : mesure = -0,41 mV\nDérivation \\(V_{III}\\) : mesure = -0,26 mV\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q8_contexte_2.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q9_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png"
                 ],
-                "question": "Question 9 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions suivantes, laquelle correspond au secteur du dipôle \\(P\\) :",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Secteur 3",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Secteur 4",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Secteur 5",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Secteur 7",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Secteur 10",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -5652,40 +5651,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 10,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 2 : Un P1 sportif\nUn P1 fan de sport et d'aventure a décidé de se lancer dans une randonnée passionnante de 20 km autour des différents campus. Néanmoins, à cause de l'effort important que cela représente, des essoufflements anormaux sont apparus. Pour comprendre ce qui lui arrive, il va voir un médecin qui décide de lui réaliser un ECG. Ce dernier nous donne ces informations :\n\\(\\dfrac{3}{2}\\vec{P}\\cdot\\vec{u}_{CR} = aV_R\\)\n\\(aV_L = \\dfrac{3}{2}\\vec{P}\\cdot\\vec{u}_{CL}\\)\n\\(V_I = \\sqrt{3}\\vec{P}\\cdot\\vec{u}_{RL}\\)\n\\(V_{II} = \\sqrt{3}\\vec{P}\\cdot\\vec{u}_{RF}\\)\n\\(\\sqrt{3}\\vec{P}\\cdot\\vec{u}_{LF} = V_{III}\\)\n\\(aV_F = \\dfrac{3}{2}\\vec{P}\\cdot\\vec{u}_{CF}\\)\nAngle \\(\\gamma = +30^\\circ\\) (secteur 1)\nDérivation \\(aV_R\\) : mesure = 0,28 mV\nDérivation \\(aV_L\\) : mesure = 0,06 mV\nDérivation \\(aV_F\\) : mesure = -0,34 mV\nDérivation \\(V_I\\) : mesure = -0,15 mV\nDérivation \\(V_{II}\\) : mesure = -0,41 mV\nDérivation \\(V_{III}\\) : mesure = -0,26 mV\nOn précise pour cet exercice que les angles sont orientés dans le sens horaire.",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q8_contexte_2.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q10_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png"
                 ],
-                "question": "Question 10 - voir l’énoncé ci-dessus.",
+                "question": "Concernant la norme du vecteur \\(\\overrightarrow{P}\\), laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(P = \\dfrac{V_{II}}{\\sqrt{3}}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(P = \\dfrac{V_{II}}{\\sqrt{3}\\cos(\\theta)}\\), avec \\(\\theta\\) l'angle entre \\(\\overrightarrow{P}\\) et \\(\\overrightarrow{u_{RF}}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(P = \\dfrac{2aV_R}{3\\cos(\\phi)}\\), avec \\(\\phi\\) l'angle entre \\(\\overrightarrow{P}\\) et \\(\\overrightarrow{u_{CR}}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - 2aVR 3cos(φ), avec φ l’angle entre −→ P et −−→ uCR Pour cet item, on fait la même chose que ceux juste avant donc on va aller un peu plus vite. Cette fois, on prend la formule de aVR et on applique les mêmes transformation que la première fois et on prend φ l’angle entre −→ P et −→u CR. On obtient donc : aVR = 3 2 × −→ P · −→u CR ⇐⇒aVR = 3 2 × P × ∥−−→ uCR ′∥× cos(φ) =⇒aVR = 3 2 × P × 1 × cos(φ) =⇒P = aVR × 2 3 × cos(φ) L’item C est vrai. ? Items D et E Pour déterminer un encadrement de la norme du dipôle, je vous rappelle la méthode présentée dans l’extra ECG. 1) −→ P est situé dans le secteur 4 (cf. Question 9) 2) Par observation sur le schéma de l’ECG, la dérivation la plus proche de −→ P est aVR. 3) On doit désormais isoler P dans cette formule : aVR = 3 2 × −→ P · −→u CR =⇒P = aVR × 2 3 × cos(φ) (cf. item C pour le détail). 4) Il ne nous reste donc qu’à déterminer un encadrement de l’angle formé entre −→ P et −→u CR. Chaque secteur a un angle de 30◦ce qui donne 30◦< φ < 60◦. Certes 30◦< φ < 60◦, mais cos(30◦) > φ > cos(60◦) (tracez le cercle trigonométrique si vous êtes pas d’accord) Puis on inverse tout : cos(30◦) < φ < cos(60◦) Ensuite on multiplie tout par 2aVR , pour retrouver −→ P : 2aVR × cos(30◦) < −→ P < 2aVR × cos(60◦) Finalement, on se retrouve avec l’expression finale : 2aVR 3cos(30◦) < −→ P < 2aVR 3cos(60◦) On trouve donc un encadrement similaire à l’item D, on valide donc l’item mais attention à ne pas se précipiter et à invalider l’item E. Même si on a des valeurs différentes pour les angles, cela ne veut pas forcément dire que c’est faux car si on fait un ”tour” de plus sur le cercle, on trouve un encadrement de 390◦< φ < 420◦. Ce qui donne : 2aVR 3cos(390◦) < −→ P < 2aVR 3cos(420) L’item E est vrai."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\dfrac{2aV_R}{3\\cos(30^\\circ)} < P < \\dfrac{2aV_R}{3\\cos(60^\\circ)}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - et ECe qui donne :23cos(390◦)aVR<P<¨¨−→23cos(420)aVRL'"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(\\dfrac{2aV_R}{3\\cos(390^\\circ)} < P < \\dfrac{2aV_R}{3\\cos(420^\\circ)}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - est vrai."
                     }
@@ -5701,40 +5699,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 11,
                 "type": "QCM",
-                "context": "",
+                "context": "Quelques mois plus tard, alors qu'il révisait à la bibliothèque, le P1 ressent une grande douleur thoracique. Cette douleur l'inquiète fortement, ce qui le pousse à aller de nouveau chez son médecin. Il obtient alors ce nouveau tableau des différentes dérivations du nouveau dipôle \\(P'\\) :\nDérivation \\(aV_R\\) : mesure = 0,05 mV\nDérivation \\(aV_L\\) : mesure = -0,92 mV\nDérivation \\(aV_F\\) : mesure = 0,87 mV\nDérivation \\(V_I\\) : mesure = -0,65 mV\nDérivation \\(V_{II}\\) : mesure = 0,54 mV\nDérivation \\(V_{III}\\) : mesure = 1,19 mV\nDe plus, on fournit ce tableau qui résume les termes associés en fonction du secteur du dipôle cardiaque (axe QRS) :\nAxe QRS\nentre \\(-45^\\circ\\) et \\(+105^\\circ\\) : axe normal\nentre \\(-90^\\circ\\) et \\(-45^\\circ\\) : déviation axiale gauche\nentre \\(+105^\\circ\\) et \\(+180^\\circ\\) : déviation axiale droite\nentre \\(-180^\\circ\\) et \\(-90^\\circ\\) : déviation axiale supérieure",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q11_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q11_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png"
                 ],
-                "question": "Question 11 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions suivantes sur l'axe QRS, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Si \\(aV_L\\) est négatif, on peut avoir une déviation axiale droite",
                         "isCorrect": true,
                         "explanation": "VRAI - et BRappel : une dérivation prend une valeur positive si l'axe de QRS (= direction et sens de −→P ) estdans le même demi-disque situé à ±90◦ que la dérivation et prend une valeur négative lorsque l'axede QRS est dans le demi-disque opposé.aVL est situé à −30◦. Elle prend une valeur négative lorsque l'axe de QRS est situé dans le secteur5, 6, 7, 8, 9 ou 10.La déviation axiale droite est dans l'intervalle [105◦; 180◦], qui est inclus dans le secteur 9 (situé entre 90◦ et 120◦) jusqu'au secteur 7 (entre 150◦ et 180◦). Donc si aVL est négatif, on peut avoir une déviation axiale droite, l'"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Si \\(aV_L\\) est négatif, on peut avoir une déviation axiale gauche",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Si \\(V_I\\) est positif, on peut affirmer que l'axe de QRS est normal",
                         "isCorrect": false,
                         "explanation": "FAUX - VI est situé à 0◦et prend une valeur positive pour tout axe QRS compris dans le secteur 1, 2, 3, 10, 11 ou 12. Cela correspond bien à une partie de l’axe normal [−45◦; 105◦] (inclus dans les secteurs 2 à 9) mais pas que puisque ça correspond aussi à la dérivation axiale gauche qui est dans un intervalle [−90◦; −45◦] qui est inclus dans les secteurs 2 et 3. On ne peut donc pas affirmer que l’axe de QRS est normal, le patient pourrait présenter une dérivation axiale gauche. L’item C est donc faux. ? Items D et E Ces deux derniers items sont des items qui se contredisent donc il suffit de trouver la réponse pour l’un pour déduire pour l’autre. La dérivation VII a un angle de 60◦donc il prend une valeur négative lorsque l’axe de QRS est situé dans le secteur 2, 3, 4, 5, 6 ou 7 Étant donné que l’axe de QRS est normal entre −45◦et 105◦(secteurs 2 à 9), il est aussi normal entre −45◦et −30◦(secteurs 1 et 2). Or, pour ces valeurs d’angle, VII est négatif. Donc si VII est négatif, on peut avoir un axe normal et on n’a pas forcément une déviation. L’item D est faux et l’item E est vrai."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Si \\(V_{II}\\) est négatif, on a forcément une déviation",
                         "isCorrect": false,
                         "explanation": "FAUX - est faux et l'"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Si \\(V_{II}\\) est négatif, l'onde QRS peut avoir un axe normal",
                         "isCorrect": true,
                         "explanation": "VRAI - est vrai."
                     }
@@ -5748,40 +5745,39 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 12,
                 "type": "QCM",
-                "context": "",
+                "context": "Quelques mois plus tard, alors qu'il révisait à la bibliothèque, le P1 ressent une grande douleur thoracique. Cette douleur l'inquiète fortement, ce qui le pousse à aller de nouveau chez son médecin. Il obtient alors ce nouveau tableau des différentes dérivations du nouveau dipôle \\(P'\\) :\nDérivation \\(aV_R\\) : mesure = 0,05 mV\nDérivation \\(aV_L\\) : mesure = -0,92 mV\nDérivation \\(aV_F\\) : mesure = 0,87 mV\nDérivation \\(V_I\\) : mesure = -0,65 mV\nDérivation \\(V_{II}\\) : mesure = 0,54 mV\nDérivation \\(V_{III}\\) : mesure = 1,19 mV\nDe plus, on fournit ce tableau qui résume les termes associés en fonction du secteur du dipôle cardiaque (axe QRS) :\nAxe QRS\nentre \\(-45^\\circ\\) et \\(+105^\\circ\\) : axe normal\nentre \\(-90^\\circ\\) et \\(-45^\\circ\\) : déviation axiale gauche\nentre \\(+105^\\circ\\) et \\(+180^\\circ\\) : déviation axiale droite\nentre \\(-180^\\circ\\) et \\(-90^\\circ\\) : déviation axiale supérieure",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q11_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q12_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png"
                 ],
-                "question": "Question 12 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions suivantes, laquelle correspond au secteur du dipôle \\(P'\\) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Secteur 2",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Secteur 4",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Secteur 7",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Secteur 8",
                         "isCorrect": true,
                         "explanation": "VRAI - et EÉtant donné que la question 9 est similaire à celle-ci, on va passer assez vite dessus mais si vous avez un doute sur la méthode n'hésitez pas à remonter pour voir une correction plus détaillée et à poser vos questions sur le forum Discord.Revenons alors à notre exercice et procédons étape par étape en commençant du début du tableau jusqu'à la fin.1) aVR est positif donc le dipôle se situe du même côté que cette dérivation. On élimine donc tous les secteurs situés à l'opposé (1, 2, 9, 10, 11 et 12) ce qui donne :aVRR 5678VIII432L112aVLCVI910 11FVIIaVF2) aVL est négatif donc on élimine en plus des précédents les secteurs 3 et 4 ce qui donne :aVRR675432CL112aVLVI8VIII910 11FVIIaVF"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Secteur 9",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -5794,41 +5790,40 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 13,
                 "type": "QCM",
-                "context": "",
+                "context": "Quelques mois plus tard, alors qu'il révisait à la bibliothèque, le P1 ressent une grande douleur thoracique. Cette douleur l'inquiète fortement, ce qui le pousse à aller de nouveau chez son médecin. Il obtient alors ce nouveau tableau des différentes dérivations du nouveau dipôle \\(P'\\) :\nDérivation \\(aV_R\\) : mesure = 0,05 mV\nDérivation \\(aV_L\\) : mesure = -0,92 mV\nDérivation \\(aV_F\\) : mesure = 0,87 mV\nDérivation \\(V_I\\) : mesure = -0,65 mV\nDérivation \\(V_{II}\\) : mesure = 0,54 mV\nDérivation \\(V_{III}\\) : mesure = 1,19 mV\nDe plus, on fournit ce tableau qui résume les termes associés en fonction du secteur du dipôle cardiaque (axe QRS) :\nAxe QRS\nentre \\(-45^\\circ\\) et \\(+105^\\circ\\) : axe normal\nentre \\(-90^\\circ\\) et \\(-45^\\circ\\) : déviation axiale gauche\nentre \\(+105^\\circ\\) et \\(+180^\\circ\\) : déviation axiale droite\nentre \\(-180^\\circ\\) et \\(-90^\\circ\\) : déviation axiale supérieure",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q11_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q13_enonce.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q13_enonce_2.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png",
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q13_1.png"
                 ],
-                "question": "Question 13 - voir l’énoncé ci-dessus.",
+                "question": "Exprimer et calculer la norme \\(P'\\) du vecteur \\(\\overrightarrow{P'}\\) en fonction des valeurs de \\(aV_R\\) et de \\(V_{III}\\). Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(P' = \\dfrac{1}{2}\\left(\\dfrac{2}{3}aV_R + \\dfrac{V_{III}}{\\sqrt{3}}\\right)\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(P' = \\sqrt{\\dfrac{2}{3}aV_R + \\dfrac{V_{III}}{\\sqrt{3}}}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(P' = \\sqrt{\\dfrac{4}{9}aV_R^{\\,2} + \\dfrac{V_{III}^{\\,2}}{3}}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - donc on le valide.Items D et EMaintenant qu'on a fait le gros du boulot, il ne reste que l'application numérique. On nous donne dans le tableau des dérivations aVR = 0,05 mV et VIII = 1,19 mV . On a donc :P =9 aVR +'ó42VIII 23=× 0ó49,05 +21,1923= 0,69 mVL'"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(P' = 0{,}69\\ \\text{mV}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - est vrai."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(P' = 0{,}85\\ \\text{mV}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     }
@@ -5842,40 +5837,40 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 14,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 3 : Le signal cardiaque\nLors de la contraction du muscle cardiaque, une onde de dépolarisation se propage à travers les cellules du myocarde. À l'échelle locale, le front de dépolarisation qui avance entraîne l'apparition d'un bref dipôle électrique.\nPour modéliser simplement ce phénomène à l'échelle cellulaire, on considère un dipôle électrique fondamental constitué de deux charges ponctuelles. Les charges ont pour valeur \\(|q| = 2{,}0 \\times 10^{-12}\\ \\text{C}\\) et celles-ci sont séparées d'une distance \\(a = 5{,}0\\ \\mu\\text{m}\\). L'ensemble baigne dans un milieu dont on simplifiera la constante avec la valeur suivante : \\(\\dfrac{1}{4\\pi\\varepsilon} = 9{,}0 \\times 10^{9}\\ \\text{N}\\cdot\\text{m}^2\\cdot\\text{C}^{-2}\\).\nRéférence au schéma : Pour visualiser ce système, veuillez vous référer au schéma fourni ci-dessous. Ce schéma place la charge négative (N) et la charge positive (P) sur un axe, séparées par la distance \\(a\\).",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q11_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q14_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png",
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q13_1.png"
                 ],
-                "question": "Question 14 - voir l’énoncé ci-dessus.",
+                "question": "À propos des lignes de champ électrique d'un dipôle dans le schéma ci-dessus, laquelle (lesquelles) des propostitions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le champ électrique pointe toujours de la charge positive vers la charge négative",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Le champ électrique représente la force électrique exercée par un objet sur une charge de 1 C en tout point de l'espace",
                         "isCorrect": true,
                         "explanation": "VRAI - Toutafé ! C’est la définition du cours. Pour vous en convaincre, le champ et la force électrique sont liés : −→ F = q−→ E On remarque alors que si q = 1 C, alors −→ F = −→ E . C’est l’expression mathématique de ”Le champ équivaut à la force électrique qu’exerce un corps sur une charge de +1 C.” Il est nécessaire de préciser qu’il s’agit d’une charge test, imaginaire : elle n’existe pas en tant que tel. ? Items A et C Correction rapide : (vous comprendrez pourquoi on a corrigé l’item B avant) en reprenant la définition de l’item B, une charge de + 1C, donc positive, est attirée par les charges négatives et repoussée par les positives. Elle subit donc une force électrique qui l’éloigne des charge + et la rapproche des charges -. Ainsi, les lignes de champ sont dirigées du + vers le −. Pour mieux comprendre (p’tit rappel de cours ) : Une charge positive a une forte éner- gie potentielle quand elle est à proximité d’une autre charge positive, comme l’énonce la formule : Epe = qQ 4πϵr2 En d’autre termes, elle n’est pas contente là où elle est et aimerait vraiment bouger loin de cette autre charge positive. A l’inverse, elle a une faible énergie potentielle quand elle est proche d’une charge négative (qQ est alors négatif comme les signes sont opposés). Autrement dit, elle est bieeeng, elle a pas envie de bouger. On dit qu’elle est dans un état plus stable. Et dans la nature, le but dans la vie de tous les corps en physique est d’être le plus stable possible a.k.a, d’avoir l’énergie potentielle la plus faible possible. Une force conservative peut se définir comme l’expression mathématique de ce qui fait baisser une énergie potentielle d’un système : F = −dEp dl (l’augmentation de la norme de la force conservative va faire diminuer l’énergie potentielle, et ainsi stabiliser le système) La force électrique (= force conservative) traduit le fait que notre charge test de +1 C va se déplacer de la charge + vers la charge −. On retrouve ainsi le sens des lignes de champ. Par convention, le champ électrique et ses lignes de champ fuient toujours la charge positive pour se diriger vers la charge négative. L’item A est donc vrai tandis que le C propose l’inverse (faites attention aux pièges d’inversion). Celui-là il tombe tout le temps vraiment faites gaffe."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Pour un couple de charges égales et opposées (dipôle), les lignes de champ sortent de la charge négative pour aller vers la charge positive",
                         "isCorrect": false,
                         "explanation": "FAUX - → La relation E = −montre que le champ électrique dépend des variations spatiales …dV dlce sont des variations ”spatiales”, d'dolù ”dl” qui apparaît dans la formule (pour des variations temporelles, on aurait écrit ”dt”). Petit rappel cadeau des formules :Items D et EL'idée qu'il faut comprendre ici, c'est qu'une charge test positive q subit une force électrique−→Fvers les potentiels décroissants. La force va donc naturellement s'exercer dans le sens des moindres potentiels. À l'inverse si la charge était négative, q < 0, cette force irait à l'encontre du champ et donc vers les grands potentiels."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Le champ électrique est orienté dans le sens des potentiels décroissants",
                         "isCorrect": true,
                         "explanation": "VRAI - Cf. ci-dessus : les forces conservatives étant toujours orientées de manière à faire baisser l’énergie potentielle d’un système, on peut dire que le champ est orienté de là où le potentiel est le plus haut vers là où il est la plus bas en tout point de l’espace. Pour rappel, on appelle ”potentiel électrique” le champ scalaire attribuant à tout point de l’espace l’énergie potentielle électrique d’une charge de 1 C (exactement comme le champ électrique mais pour des énergies potentielles et non des forces). Ainsi, on peut dire que le champ ”descend les potentiels”."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Les lignes de champ sont tangentes en tout point au champ électrique et donnent la direction de ce champ",
                         "isCorrect": true,
                         "explanation": "VRAI - La ligne de champ est bien définie géométriquement comme la courbe qui est tangente en tout point au vecteur champ électrique."
                     }
@@ -5891,40 +5886,40 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 15,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 3 : Le signal cardiaque\nLors de la contraction du muscle cardiaque, une onde de dépolarisation se propage à travers les cellules du myocarde. À l'échelle locale, le front de dépolarisation qui avance entraîne l'apparition d'un bref dipôle électrique.\nPour modéliser simplement ce phénomène à l'échelle cellulaire, on considère un dipôle électrique fondamental constitué de deux charges ponctuelles. Les charges ont pour valeur \\(|q| = 2{,}0 \\times 10^{-12}\\ \\text{C}\\) et celles-ci sont séparées d'une distance \\(a = 5{,}0\\ \\mu\\text{m}\\). L'ensemble baigne dans un milieu dont on simplifiera la constante avec la valeur suivante : \\(\\dfrac{1}{4\\pi\\varepsilon} = 9{,}0 \\times 10^{9}\\ \\text{N}\\cdot\\text{m}^2\\cdot\\text{C}^{-2}\\).\nRéférence au schéma : Pour visualiser ce système, veuillez vous référer au schéma fourni ci-dessous. Ce schéma place la charge négative (N) et la charge positive (P) sur un axe, séparées par la distance \\(a\\).",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q11_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q15_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png",
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q13_1.png"
                 ],
-                "question": "Question 15 - voir l’énoncé ci-dessus.",
+                "question": "Parmi les propositions concernant la répartition de l'énergie autour du dipôle, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Une surface équipotentielle est définie comme une surface où le potentiel reste le même, toujours orthogonale aux lignes de champ électrique",
                         "isCorrect": true,
                         "explanation": "VRAI - et BLa définition est exacte, une surface équipotentielle correspond bien à l'ensemble des points de l'espace partageant le même potentiel électrique (et donc la même énergie potentielle pour une charge donnée). Ces surfaces équipotentielles sont orthogonales aux lignes de champ.Diapo n°15 du CM2 ”Électrostatique 1”, Pr. Kouchner"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Les surfaces équipotentielles sont toujours parallèles aux lignes de champ électrique",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "La relation \\(E = -\\frac{dV}{dl}\\) montre que le champ électrique dépend des variations spatiales du potentiel",
                         "isCorrect": true,
                         "explanation": "VRAI - dl montre que le champ électrique dépend des variations spatiales … C’est exact, dans la formule E = −dV dl , ”dV ” correspond aux ”variations du potentiel” ; de plus ce sont des variations ”spatiales”, d’où ”dl” qui apparaît dans la formule (pour des variations temporelles, on aurait écrit ”dt”). Petit rappel cadeau des formules : ? Items D et E L’idée qu’il faut comprendre ici, c’est qu’une charge test positive q subit une force électrique −→ F = q−→ E . Comme q > 0, la force s’exerce dans le même sens que le champ, qui lui-même pointe vers les potentiels décroissants. La force va donc naturellement s’exercer dans le sens des moindres potentiels. À l’inverse si la charge était négative, q < 0, cette force irait à l’encontre du champ et donc vers les grands potentiels."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Le mouvement spontané d'une charge positive l'amène vers le potentiel électrique \\(V\\) extérieur le plus élevé",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Le mouvement spontané d'une charge positive l'amène vers le potentiel électrique \\(V\\) extérieur le plus faible",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     }
@@ -5939,40 +5934,40 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 16,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 3 : Le signal cardiaque\nLors de la contraction du muscle cardiaque, une onde de dépolarisation se propage à travers les cellules du myocarde. À l'échelle locale, le front de dépolarisation qui avance entraîne l'apparition d'un bref dipôle électrique.\nPour modéliser simplement ce phénomène à l'échelle cellulaire, on considère un dipôle électrique fondamental constitué de deux charges ponctuelles. Les charges ont pour valeur \\(|q| = 2{,}0 \\times 10^{-12}\\ \\text{C}\\) et celles-ci sont séparées d'une distance \\(a = 5{,}0\\ \\mu\\text{m}\\). L'ensemble baigne dans un milieu dont on simplifiera la constante avec la valeur suivante : \\(\\dfrac{1}{4\\pi\\varepsilon} = 9{,}0 \\times 10^{9}\\ \\text{N}\\cdot\\text{m}^2\\cdot\\text{C}^{-2}\\).\nRéférence au schéma : Pour visualiser ce système, veuillez vous référer au schéma fourni ci-dessous. Ce schéma place la charge négative (N) et la charge positive (P) sur un axe, séparées par la distance \\(a\\).",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q11_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q16_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png",
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q13_1.png"
                 ],
-                "question": "Question 16 - voir l’énoncé ci-dessus.",
+                "question": "On étudie les caractéristiques du vecteur moment dipolaire \\(\\overrightarrow{p}\\). Laquelle (lesquelles) des propostitions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le vecteur moment dipolaire \\(\\overrightarrow{p}\\) est orienté de la charge négative (N) vers la charge positive (P)",
                         "isCorrect": true,
                         "explanation": "VRAI - L’orientation est correcte. Contrairement à la chimie, en physique on oriente toujours le vecteur moment dipolaire −→p de la charge négative vers la charge positive. L’orientation du vecteur moment dipolaire est à distinguer de l’orientation du champ électrique."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Le vecteur moment dipolaire a pour norme le produit de la charge par la distance, soit \\(\\|\\overrightarrow{p}\\| = q \\times a \\times \\cos(\\theta)\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - L’expression du moment dipolaire est : −→p = q−−→ NP =⇒∥−→p ∥= q × ∥−−→ NP∥= q × a avec la charge absolue q et la distance a séparant les deux pôles. ? Items C, D et E Plus qu’à remplacer par les valeurs qu’on oublie pas de convertir ! ∥−→p ∥= q × a = 2,0 × 10−12 × 5,0 × 10−6 = 1,0 × 10−17 C · m Faites-vous confiance, la formule avec le cos(θ) sort de nulle part, on pouvait bien calculer la norme du vecteur moment dipolaire."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Ici, la norme du vecteur moment dipolaire vaut \\(\\|\\overrightarrow{p}\\| = 1{,}0 \\times 10^{-17}\\ \\text{C}\\cdot\\text{m}^{-1}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Une charge qui se situerait dans le plan médian est par définition équidistante des deux charges. Le potentiel généré par les deux pôles est donc identique en norme donc V = 0 C · m−1.Si on réfléchit de façon qualitative, on sait que le potentiel sera maximal au niveau de la charge positive. En effet, en reprenant notre charge test de 1 C, on constate que son potentiel est très grand au niveau de la charge +, la charge test a alors très ”envie” de partir loin, beaucoup plus que si elle est situé sur le plan médian entre les deux charges du dipôle, d'où le fait que le potentiel n'y soit pas maximal."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Ici, la norme du vecteur moment dipolaire vaut \\(\\|\\overrightarrow{p}\\| = 1{,}0 \\times 10^{-20}\\ \\text{C}\\cdot\\text{m}^{-1}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - mais pas l'"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "On ne peut pas calculer la norme du vecteur moment dipolaire",
                         "isCorrect": false,
                         "explanation": "FAUX - → Si le point M est dans l'alignement du dipôle du côté de la charge négative, le …C'est bien vrai. En se plaçant côté charge négative, l'angle séparant −→p et O−−M→ est donc θ = 180◦4πεr2(les 2 vecteurs sont de même direction mais de sens opposés). Le cosinus prend ainsi la valeur −1.Le potentiel V (r) = p cos θ calculé sera donc affecté d'un signe négatif, tous les autres facteursétant forcément positifs (p, 4, π, ϵ et)."
                     }
@@ -5986,41 +5981,40 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 17,
                 "type": "QCM",
-                "context": "",
+                "context": "Exercice 3 : Le signal cardiaque\nLors de la contraction du muscle cardiaque, une onde de dépolarisation se propage à travers les cellules du myocarde. À l'échelle locale, le front de dépolarisation qui avance entraîne l'apparition d'un bref dipôle électrique.\nPour modéliser simplement ce phénomène à l'échelle cellulaire, on considère un dipôle électrique fondamental constitué de deux charges ponctuelles. Les charges ont pour valeur \\(|q| = 2{,}0 \\times 10^{-12}\\ \\text{C}\\) et celles-ci sont séparées d'une distance \\(a = 5{,}0\\ \\mu\\text{m}\\). L'ensemble baigne dans un milieu dont on simplifiera la constante avec la valeur suivante : \\(\\dfrac{1}{4\\pi\\varepsilon} = 9{,}0 \\times 10^{9}\\ \\text{N}\\cdot\\text{m}^2\\cdot\\text{C}^{-2}\\).\nRéférence au schéma : Pour visualiser ce système, veuillez vous référer au schéma fourni ci-dessous. Ce schéma place la charge négative (N) et la charge positive (P) sur un axe, séparées par la distance \\(a\\).",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q11_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q17_enonce.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q17_enonce_2.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png",
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q13_1.png"
                 ],
-                "question": "Question 17 - voir l’énoncé ci-dessus.",
+                "question": "On observe le potentiel généré par le dipôle en un point \\(M\\) situé à une grande distance \\(r = 3{,}0\\ \\text{cm}\\) du centre du dipôle. L'angle repérant le point \\(M\\) par rapport à l'axe du dipôle est noté \\(\\theta\\). Ici \\(p = 6{,}7 \\times 10^{-12}\\ \\text{C}\\cdot\\text{m}^{-1}\\) Laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "À une distance \\(r \\gg a\\), le potentiel s'exprime par la formule approchée \\(V(r) = \\dfrac{p\\cos\\theta}{4\\pi\\varepsilon r}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - 4πεr Attention ! Dans un dipôle, le potentiel s’exprime V (r) = p cos θ 4πεr2 le carré est très important Pour retenir (simple moyen mnémotechnique), le potentiel d’une charge est proportionnel à 1 r et le potentiel d’un dipôle est proportionnel à r2 : 1 charge → r 2 charges → r2"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Si le point \\(M\\) est dans l'alignement du dipôle du côté de la charge positive, le potentiel vaut \\(V = 6{,}7 \\times 10^{-3}\\ \\text{V}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - L’item est correct. Pour commencer, la valeur de l’angle θ ne vous est pas donné... Ici on vous dit que le point M est dans l’alignement du dipôle du côté de la charge positive : ainsi le point M est dans la continuité du vecteur moment dipolaire (qui pointe de la charge négative à la charge positive). On a donc −→p et −−→ OM de même direction et de même sens : θ = 0◦, avec θ l’angle séparant ces 2 vecteurs. On peut maintenant poser le calcul étape par étape. V (r) = p cos θ 4πεr2 = 4πϵ × p cos θ r2 = 9,0 × 109 × 6,7 × 10−12 × cos(0) (3,0 × 10−2)2 = 6,7 × 10−3 V ? Items C et D Il faut faire attention ! Sur le plan médian qui sépare les deux charges, l’angle θ vaut exactement 90◦. Or, cos(90◦) = 0. Le potentiel V (r) = p cos θ 4πεr2 y est donc nul, et non maximal ! On valide l’item D mais pas l’item C. Une charge qui se situerait dans le plan médian est par définition équidistante des deux charges. Le potentiel généré par les deux pôles est donc identique en norme donc V = 0 C · m−1. Si on réfléchit de façon qualitative, on sait que le potentiel sera maximal au niveau de la charge positive. En effet, en reprenant notre charge test de 1 C, on constate que son potentiel est très grand au niveau de la charge +, la charge test a alors très ”envie” de partir loin, beaucoup plus que si elle est situé sur le plan médian entre les deux charges du dipôle, d’où le fait que le potentiel n’y soit pas maximal."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Si le point \\(M\\) se trouve exactement dans le plan médian séparant les deux charges (\\(\\theta = 90^\\circ\\)), le potentiel \\(V(r)\\) est maximal",
                         "isCorrect": false,
                         "explanation": "FAUX - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "Si le point \\(M\\) se trouve exactement dans le plan médian séparant les deux charges (\\(\\theta = 90^\\circ\\)), le potentiel \\(V(r)\\) est nul",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "Si le point \\(M\\) est dans l'alignement du dipôle du côté de la charge négative, le potentiel mesuré sera de signe négatif",
                         "isCorrect": true,
                         "explanation": "VRAI - C’est bien vrai. En se plaçant côté charge négative, l’angle séparant −→p et −−→ OM est donc θ = 180◦ (les 2 vecteurs sont de même direction mais de sens opposés). Le cosinus prend ainsi la valeur −1. Le potentiel V (r) = p cos θ 4πεr2 calculé sera donc affecté d’un signe négatif, tous les autres facteurs étant forcément positifs (p, 4, π, ϵ et r2)."
                     }
@@ -6035,40 +6029,40 @@ window.ANNALES_2026_2027 = [
             {
                 "num": 18,
                 "type": "QCM",
-                "context": "",
+                "context": "Soient \\(I\\), \\(J\\) et \\(K\\) trois points alignés à grande distance du dipôle, tels que :\n— \\(I\\) est situé à une distance \\(r_1\\) du point \\(O\\)\n— \\(I\\) est situé à une distance \\(r_2 = 6r_1\\) du point \\(O\\)\n— \\(I\\) est situé à une distance \\(r_3 = \\dfrac{1}{2}r_2\\) du point \\(O\\)\nOn note \\(V(r_1)\\), \\(V(r_2)\\) et \\(V(r_3)\\) les potentiels respectivement associés aux points \\(I\\), \\(J\\) et \\(K\\).",
                 "images": [
-                    "annales_assets/2026_2027/physique/tuto_1/q11_contexte.png",
-                    "annales_assets/2026_2027/physique/tuto_1/q18_enonce.png"
+                    "annales_assets/2026_2027/physique/tuto_1/ctx_q8_1.png",
+                    "annales_assets/2026_2027/physique/tuto_1/fig_q13_1.png"
                 ],
-                "question": "Question 18 - voir l’énoncé ci-dessus.",
+                "question": "Laquelle (lesquelles) des propostitions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "\\(\\dfrac{V(r_1)}{V(r_2)} = 6\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et BUne question sur les rapports pour terminer ! Comme vous pouvez l'imaginer, on part des rapports donnés dans les items, certains (beaucoup !) de facteurs vont se simplifier et on trouvera notre"
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "\\(\\dfrac{V(r_1)}{V(r_2)} = 36\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "\\(\\dfrac{V(r_3)}{V(r_1)} = 3\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - et DOn continue de la même manière ! On peut quand même noter au préalable que : r3 = 1 r2 =12× 6r = 3r . Ainsi :211V V (r1)(r )3p cos θ=p cos θ4πεr32=p cos 424πεr214πεr2 × p cos θθπεr13==rr2123r1423r3=3 3r1r1 42=3 4123=19"
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "\\(\\dfrac{V(r_3)}{V(r_1)} = \\dfrac{1}{9}\\)",
                         "isCorrect": true,
                         "explanation": "VRAI - Voir le corrigé officiel du tutorat."
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "\\(\\dfrac{V(r_2)}{V(r_3)} = 2\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - V (r3) = 2 Et pour finir en beauté : V (r2) V (r3) = p cos θ 4πεr2 p cos θ 4πεr2 = p cos θ 4πεr2 × 4πεr2 p cos θ = r2 r2 = \u0012r3 r2 \u00132 = \u00123r1 6r1 \u00132 = \u00123 \u00132 = \u00121 \u00132 = 1 ✨ BRAVO Bravo à vous pour ce tuto 1, vous avez déja fait une impor- tante partie du programme et la suite est bien plus sympa 🔥 🔥 ! Mot de votre RM EB : n’abandonnez pas la phyzik la team, vraiment, je vous assure qu’on y prend du plaisir avec de l’entrainement ! Tié un tigre du Bengale . Et si jamais tout n’est pas clair, venez en souk ! On sera ravis de ré- pondre à vos questions, et n’hésitez pas à les poser sur le forum Discord ! Encore une fois, BRAVO MES PRINCES ET PRIN- CESSES A LA VANILLE"
                     }
@@ -6459,7 +6453,9 @@ window.ANNALES_2026_2027 = [
                 "num": 9,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/sante_publique/tuto_1/fig_q9_p5_1.png"
+                ],
                 "question": "D'après vos connaissances et par lecture du graphique, parmi les propositions sui-vantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -6728,7 +6724,9 @@ window.ANNALES_2026_2027 = [
                 "num": 15,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/sante_publique/tuto_1/fig_q15_p9_1.png"
+                ],
                 "question": "D’après vos connaissances et par lecture du graphique, parmi les propositions sui- vantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {
@@ -7356,38 +7354,36 @@ window.ANNALES_2026_2027 = [
                 "num": 29,
                 "type": "QCM",
                 "context": "",
-                "images": [
-                    "annales_assets/2026_2027/sante_publique/tuto_1/q29_enonce.png"
-                ],
-                "question": "Question 29 - lire l’énoncé et les propositions dans l’image ci-dessus.",
+                "images": [],
+                "question": "Les 200 000 habitants d’une ville ont été suivis sur 15 ans afin d’étudier la survenue d’une maladie M. Au sein de ce groupe, 80 000 personnes ont été exposées à un facteur F et 120 000 personnes n’y ont pas été exposées. Parmi les exposés, 6 400 ont développé la maladie M tandis que chez les non exposés, 2 400 l’ont développée. Concernant les différents types de risque, laquelle (lesquelles) des propositions suivantes est (sont) exacte(s) ?",
                 "options": [
                     {
                         "id": "A",
-                        "text": "Proposition A",
+                        "text": "Le risque attribuable est de 0,06",
                         "isCorrect": true,
                         "explanation": "VRAI - Tout juste ! Le risque attribuable au facteur F est : RA = P(M/F) −P(M/ ¯F) = 0,08 −0,02 = 0,06 ."
                     },
                     {
                         "id": "B",
-                        "text": "Proposition B",
+                        "text": "Le risque relatif est de 0,06",
                         "isCorrect": false,
                         "explanation": "FAUX - Et non, le risque relatif pour la maladie M en relation avec l’exposition au facteur F est : RR = P(M/F) P(M/ ¯F) = 0,08 0,02 = 4 ."
                     },
                     {
                         "id": "C",
-                        "text": "Proposition C",
+                        "text": "Le risque relatif est de 0,4",
                         "isCorrect": false,
                         "explanation": "FAUX - Toujours pas ! Le risque relatif est bien de 4 et non 0,4. La question est un peu méchante (désolée ), faîtes bien attention à vérifier vos résultats et à bien lire les items pour éviter les erreurs d’inattention. \u0018 Item D Attention aux détails ! Il s’agit de la formule de la fraction étiologique du risque liée au facteur F en population générale. La formule de la fraction étiologique du risque liée au facteur F chez les exposés est : f = RA P(M/F) ."
                     },
                     {
                         "id": "D",
-                        "text": "Proposition D",
+                        "text": "La formule de la fraction étiologique du risque chez les exposés liée à un facteur F est : \\(f = \\dfrac{RA}{P(M)}\\)",
                         "isCorrect": false,
                         "explanation": "FAUX - la formule de la fraction étiologique du risque liée au facteur F chez les exposés :f =P (M/F )0,08RA=0,06= 0,75Retenez bien les formules et entraînez-vous +++. Bon courage!"
                     },
                     {
                         "id": "E",
-                        "text": "Proposition E",
+                        "text": "La fraction étiologique de la maladie M liée au facteur F chez les exposés est de 0,75",
                         "isCorrect": true,
                         "explanation": "VRAI - Oui !!! Nous avons vu à l’item D la formule de la fraction étiologique du risque liée au facteur F chez les exposés : f = RA P(M/F) = 0,06 0,08 = 0,75 Retenez bien les formules et entraînez-vous +++. Bon courage 😉 !"
                     }
@@ -7629,7 +7625,9 @@ window.ANNALES_2026_2027 = [
                 "num": 35,
                 "type": "QCM",
                 "context": "",
-                "images": [],
+                "images": [
+                    "annales_assets/2026_2027/sante_publique/tuto_1/fig_q35_p20_1.png"
+                ],
                 "question": "D’après vos connaissances et par lecture du graphique, parmi les propositions sui- vantes, laquelle (lesquelles) est (sont) exacte(s) ?",
                 "options": [
                     {

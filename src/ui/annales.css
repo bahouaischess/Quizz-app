@@ -1449,3 +1449,56 @@
         border-radius: 4px;
         cursor: pointer;
     }
+
+/* Mise en page « sans défilement » : énoncé commun + schémas à gauche, question et propositions à droite */
+.q-layout.with-visuals {
+    display: grid;
+    grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+}
+
+.q-layout.with-visuals .q-visuals {
+    position: sticky;
+    top: 12px;
+    max-height: calc(100vh - 24px);
+    overflow-y: auto;
+    padding-right: 4px;
+}
+
+.q-layout .question-images-box {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 12px;
+    margin: 0 0 16px 0;
+}
+
+.q-layout .image-wrapper {
+    flex: 1 1 200px;
+    padding: 8px;
+    min-width: 0;
+}
+
+.q-layout .image-wrapper img {
+    max-height: 300px;
+    max-width: 100%;
+}
+
+.q-layout.with-visuals .exercise-context-box {
+    margin-bottom: 14px;
+    padding: 14px 16px;
+}
+
+@media (max-width: 1100px) {
+    .q-layout.with-visuals {
+        grid-template-columns: 1fr;
+    }
+
+    .q-layout.with-visuals .q-visuals {
+        position: static;
+        max-height: none;
+        overflow: visible;
+    }
+}
