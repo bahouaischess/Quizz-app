@@ -1,0 +1,619 @@
+{
+  "name": "CM 10 - Endocytose-Exocytose",
+  "folder": "PASS - Biologie Cellulaire",
+  "description": "Quiz approfondi de niveau PASS sur l'endocytose et l'exocytose : classification (phagocytose, macropinocytose, clathrine, cavéoles), dynamine, trafic endosomal (MVB, complexe ESCRT, recyclage vs dégradation), récepteurs LDL/transferrine/EGFR, transcytose, fusion membranaire par les complexes SNARE (v-SNARE, t-SNARE, synaptotagmine) et cibles des toxines botulique et tétanique.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Quels sont les trois critères fondamentaux permettant la classification des phénomènes d'endocytose cités dans le cours ?",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Classification endocytose"
+      ],
+      "options": [
+        {
+          "text": "La présence ou non d'un revêtement protéique sur la face cytosolique des vésicules.",
+          "isCorrect": true
+        },
+        {
+          "text": "La nature des éléments du milieu extracellulaire internalisés et leur volume.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'intervention ou non d'une protéine G monomérique de scission : la dynamine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La teneur exacte en uracile de l'ADN génomique de la cellule.",
+          "isCorrect": false
+        },
+        {
+          "text": "La présence obligatoire de ribosomes 70S sur la membrane d'endocytose.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les 3 critères sont : présence de manteau (clathrine/cavéoline vs nu), nature/volume du matériel (solutés, grosses particules), et implication ou non de la dynamine."
+    },
+    {
+      "q": "Concernant la macropinocytose :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Macropinocytose"
+      ],
+      "options": [
+        {
+          "text": "C'est un mécanisme d'internalisation de volumes liquidiens sans revêtement protéique de type manteau.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est déclenchée après activation de récepteurs membranaires par des signaux comme des facteurs de croissance.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle repose sur le remaniement du cytosquelette d'actine formant des protubérances lamellaires ondulantes à la surface cellulaire appelées 'ruffles'.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les macropinosomes s'acidifient puis fusionnent avec les endosomes tardifs/endolysosomes généralement sans recyclage de cargaison vers la membrane.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est utilisée de manière constitutive par les cellules dendritiques pour échantillonner les antigènes extracellulaires.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes. La macropinocytose utilise des ruffles d'actine sans manteau pour former de volumineux macropinosomes routés vers les lysosomes sans recyclage."
+    },
+    {
+      "q": "Concernant la phagocytose :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Phagocytose"
+      ],
+      "options": [
+        {
+          "text": "Elle permet l'ingestion de grosses particules (> 0,5 µm) telles que des bactéries, des débris cellulaires ou des corps apoptotiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est l'apanage de cellules spécialisées appelées phagocytes professionnels (macrophages, polynucléaires neutrophiles, cellules dendritiques).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle nécessite la polymérisation active de microfilaments d'actine pour émettre des pseudopodes englobant la particule.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le phagosome formé fusionne ensuite avec les lysosomes pour constituer un phagolysosome acide et destructeur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle s'effectue en l'absence complète de tout récepteur membranaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La phagocytose nécessite des récepteurs spécifiques (récepteurs aux fragments Fc des immunoglobulines, récepteurs du complément, récepteurs de phosphatidylsérine) et dépend de l'actine."
+    },
+    {
+      "q": "Dans l'endocytose médiée par récepteurs dépendante de la clathrine, quel est le rôle de la GTPase dynamine ?",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Dynamine",
+        "Scission"
+      ],
+      "options": [
+        {
+          "text": "Former un anneau oligomérique en spirale autour du col de la vésicule bourgeonnante et hydrolyser le GTP pour assurer la scission (pincement) de la vésicule.",
+          "isCorrect": true
+        },
+        {
+          "text": "Phosphoryler l'ADN génomique en phase G1 du cycle cellulaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "Bloquer l'entrée des ions calcium à travers les canaux voltage-dépendants.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dégager les débris de ribosomes du feuillet exoplasmique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La dynamine est une mécanomolécule GTPase qui s'enroule autour du col des vésicules à manteau de clathrine (et cavéoles) et hydrolyse le GTP pour trancher le col membranaire (fission)."
+    },
+    {
+      "q": "Concernant l'adaptateur AP2 dans les puits de clathrine de la membrane plasmique :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "AP2",
+        "Adaptateur clathrine"
+      ],
+      "options": [
+        {
+          "text": "Il fait le pont physique entre les récepteurs transmembranaires et le manteau externe de clathrine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il reconnaît des motifs de tri d'endocytose spécifiques sur la queue cytosolique des récepteurs (ex: motifs basés sur la tyrosine YxxPhi ou motifs di-leucine).",
+          "isCorrect": true
+        },
+        {
+          "text": "Il interagit spécifiquement avec les phosphoinositides membranaires tels que le PIP2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il catalyse directement la synthèse des molécules de cholestérol dans le noyau.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "AP2 lie PIP2 et les signaux d'endocytose cytosoliques (YxxPhi, di-leucine) des récepteurs, recrutant les triskélions de clathrine à la face interne de la membrane plasmique."
+    },
+    {
+      "q": "Quel complexe protéique et quelle chaperonne sont responsables du déshabillage rapide du manteau de clathrine après la formation de la vésicule ?",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Déshabillage",
+        "Auxiline",
+        "Hsp70"
+      ],
+      "options": [
+        {
+          "text": "La chaperonne Hsc70 (famille Hsp70) assistée par la co-chaperonne auxiline.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le complexe ribonucléoprotéique SRP couplé au translocon Sec61.",
+          "isCorrect": false
+        },
+        {
+          "text": "La pompe à protons V-ATPase lysosomale.",
+          "isCorrect": false
+        },
+        {
+          "text": "La glucosyltransférase UGGT dépendante du calcium.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'auxiline recrute l'ATPase Hsc70 qui hydrolyse l'ATP pour détacher rapidement les triskélions de clathrine de la vésicule, permettant sa fusion ultérieure."
+    },
+    {
+      "q": "Concernant le cycle de l'endocytose du cholestérol via le récepteur des lipoprotéines de basse densité (LDLR) :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "LDL",
+        "LDLR"
+      ],
+      "options": [
+        {
+          "text": "Le LDL circulant se fixe sur le récepteur LDLR au niveau de puits tapissés de clathrine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans l'endosome précoce au pH légèrement acide (~6,0 à 6,5), le changement conformationnel induit la dissociation du LDL de son récepteur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le récepteur LDLR libre est trié dans des tubules d'endosomes de recyclage pour retourner intact à la membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La particule de LDL est acheminée vers les lysosomes où ses esters de cholestérol sont hydrolysés en cholestérol libre utilisable par la cellule.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans l'hypercholestérolémie familiale, des mutations peuvent toucher le gène du LDLR (ex: motif cytosolique NPxY), empêchant son recrutement dans les puits de clathrine.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes. Le LDLR est recyclé tandis que la particule de LDL est lysée en cholestérol. Les mutations du motif NPxY empêchent la capture par AP2 (hypercholestérolémie familiale)."
+    },
+    {
+      "q": "Concernant le transport et l'endocytose du fer via le récepteur de la transferrine (TfR) :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Transferrine",
+        "TfR"
+      ],
+      "options": [
+        {
+          "text": "La ferrotransferrine (liant deux ions Fe3+) se lie au TfR à la surface cellulaire à pH neutre (7,4).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans la lumière acide de l'endosome précoce, les ions Fe3+ se dissocient de la transferrine et sont transportés vers le cytosol.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'apotransferrine (dépourvue de fer) reste fermement liée au TfR au pH acide de l'endosome.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le complexe apotransferrine-TfR est recyclé vers la membrane plasmique, où, au pH extracellulaire neutre (7,4), l'apotransferrine se détache du récepteur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le récepteur de la transferrine et l'apotransferrine sont intégralement détruits dans le lysosome à chaque cycle d'endocytose.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La transferrine et son récepteur sont TOUS LES DEUX recyclés : seul le fer se détache à pH acide. L'apotransferrine ne se dissocie du récepteur qu'une fois revenue au pH neutre extérieur."
+    },
+    {
+      "q": "Concernant la désensibilisation et la dégradation de récepteurs comme le récepteur de l'EGF (EGFR) :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "EGFR",
+        "ESCRT",
+        "MVB"
+      ],
+      "options": [
+        {
+          "text": "L'activation soutenue de l'EGFR entraîne sa mono-ubiquitinylation ou poly-ubiquitinylation sur sa queue cytosolique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les récepteurs ubiquitinylés sont reconnus par les complexes multiprotéiques ESCRT au niveau des endosomes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les complexes ESCRT provoquent l'invagination de la membrane endosomale vers l'intérieur, formant des vésicules intraluminales (ILVs).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'endosome contenant ces vésicules intraluminales est appelé corps multivésiculaire (MVB) ou endosome tardif.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fusion du MVB avec le lysosome conduit à la dégradation complète du récepteur et de son ligand, empêchant la poursuite du signal.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes. L'ubiquitination de l'EGFR recrute ESCRT, créant les ILVs dans les MVBs pour détruire récepteur et ligand dans le lysosome (down-regulation définitive)."
+    },
+    {
+      "q": "Concernant la transcytose :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Transcytose"
+      ],
+      "options": [
+        {
+          "text": "C'est un transport transcellulaire orienté permettant à des macromolécules d'entrer par endocytose à un pôle d'une cellule épithéliale polarisée et de sortir par exocytose au pôle opposé.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle permet le transfert des immunoglobulines G (IgG) maternelles de la mère au fœtus à travers le placenta via le récepteur FcRn.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle permet la sécrétion des immunoglobulines A (IgA) dimériques à travers les entérocytes vers la lumière intestinale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle implique la destruction totale des macromolécules transportées dans les crêtes mitochondriales.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La transcytose transporte des molécules intactes d'un pôle à l'autre sans dégradation lysosomale (transfert des anticorps maternels IgG via FcRn ou sécrétion d'IgA)."
+    },
+    {
+      "q": "Concernant les cavéoles :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Cavéoles"
+      ],
+      "options": [
+        {
+          "text": "Ce sont de petites invaginations membranaires en forme de flacon de 50 à 100 nm de diamètre.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur membrane est enrichie en cholestérol et sphingolipides (radeaux lipidiques).",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur armature protéique principale est constituée de cavéolines (protéines intégrales dimériques associées à des cavines).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le détachement de la cavéole fait intervenir la GTPase dynamine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles sont le lieu exclusif de la transcription des ARN ribosomiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les cavéoles sont des microdomaines lipidiques en flacon stabilisés par les cavéolines, dépendant de la dynamine pour leur scission, impliquées dans la signalisation et la mécanosensation."
+    },
+    {
+      "q": "Concernant l'adressage et l'arrimage vésiculaire contrôlés par les petites GTPases de la famille Rab :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "GTPases Rab",
+        "Arrimage"
+      ],
+      "options": [
+        {
+          "text": "Les protéines Rab sont des commutateurs moléculaires monomériques spécifiques de chaque organite et vésicule de transport.",
+          "isCorrect": true
+        },
+        {
+          "text": "Rab-GTP recrute des facteurs d'attachement (effecteurs de Rab) filamenteux sur la membrane cible pour capturer la vésicule.",
+          "isCorrect": true
+        },
+        {
+          "text": "Après fusion membranaire, la protéine Rab hydrolyse son GTP en GDP et est extraite de la membrane par un facteur GDI pour être recyclée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les protéines Rab sont codées par l'ADN mitochondrial circulaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les GTPases Rab assurent la fidélité de l'adressage vésiculaire : Rab-GTP s'ancre et recrute les effecteurs d'arrimage, puis Rab-GDP est extrait par GDI pour un nouveau cycle."
+    },
+    {
+      "q": "Concernant les protéines SNARE assurant la fusion membranaire :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "SNARE",
+        "Fusion membranaire"
+      ],
+      "options": [
+        {
+          "text": "On distingue les v-SNARE situées sur la vésicule et les t-SNARE situées sur la membrane cible.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les v-SNARE et t-SNARE s'enroulent pour former un faisceau ultra-stable de 4 hélices alpha (complexe trans-SNARE).",
+          "isCorrect": true
+        },
+        {
+          "text": "Cet enroulement rapproche les deux bicouches lipidiques à moins de 1,5 nm, expulsant l'eau et forçant la fusion membranaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le complexe trans-SNARE nécessite obligatoirement l'action d'une ADN polymérase pour catalyser la fusion.",
+          "isCorrect": false
+        },
+        {
+          "text": "Après la fusion, le complexe cis-SNARE stable est désassemblé par l'ATPase NSF assistée d'alpha-SNAP pour permettre le recyclage.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les complexes SNARE (v-SNARE + t-SNARE) forment un faisceau de 4 hélices alpha qui force la fusion des bicouches. Après fusion, l'ATPase NSF et alpha-SNAP dissocient le complexe."
+    },
+    {
+      "q": "Dans la libération des neurotransmetteurs à la synapse (exocytose régulée) :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Synaptotagmine",
+        "Synapse"
+      ],
+      "options": [
+        {
+          "text": "La synaptobrévine (VAMP) agit comme la v-SNARE vésiculaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "La syntaxine et SNAP-25 agissent comme les t-SNARE de la membrane présynaptique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La synaptotagmine est une protéine transmembranaire de la vésicule synaptique qui sert de senseur calcique principal.",
+          "isCorrect": true
+        },
+        {
+          "text": "En l'absence de calcium, la fusion complète est bloquée par la complexine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fixation du Ca2+ sur les domaines C2 de la synaptotagmine lève l'inhibition de la complexine et déclenche la fusion ultra-rapide en moins d'une milliseconde.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions résument parfaitement le mécanisme moléculaire de l'exocytose synaptique : synaptobrévine (v-SNARE), syntaxine + SNAP-25 (t-SNARE), synaptotagmine (senseur Ca2+) et complexine (frein)."
+    },
+    {
+      "q": "Concernant le mécanisme d'action des toxines botulique et tétanique :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Toxine botulique",
+        "Tétanique"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des endopeptidases à zinc extrêmement puissantes sécrétées par des bactéries du genre Clostridium.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles pénètrent dans les terminaisons nerveuses et clivent spécifiquement des protéines du complexe SNARE (synaptobrévine, syntaxine ou SNAP-25).",
+          "isCorrect": true
+        },
+        {
+          "text": "La toxine botulique bloque la libération d'acétylcholine à la jonction neuromusculaire, entraînant une paralysie flasque.",
+          "isCorrect": true
+        },
+        {
+          "text": "La toxine tétanique migre de manière rétrograde et bloque la libération de neurotransmetteurs inhibiteurs (GABA, glycine), provoquant une paralysie spastique et des spasmes musculaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles agissent en polymérisant la clathrine dans le nucléole.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les neurotoxines clostridiennes (botulique et tétanique) sont des protéases à zinc qui dégradent les SNAREs, bloquant l'exocytose de neurotransmetteurs (ACh pour le botulisme -> paralysie flasque ; GABA/glycine pour le tétanos -> spasmes spastiques)."
+    },
+    {
+      "q": "Comment évolue le pH intraluminal le long de la voie d'endocytose vers la dégradation ?",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "pH",
+        "Endosomes",
+        "Lysosomes"
+      ],
+      "options": [
+        {
+          "text": "Endosome précoce : pH ~6,0 à 6,5 -> Endosome tardif : pH ~5,5 -> Lysosome : pH ~4,5 à 5,0.",
+          "isCorrect": true
+        },
+        {
+          "text": "Endosome précoce : pH ~8,5 -> Endosome tardif : pH ~9,0 -> Lysosome : pH ~12,0.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'acidification progressive est assurée par l'activité continue des pompes à protons V-ATPase qui pompent des H+ vers la lumière.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pH reste strictement neutre et identique à celui du cytosol (7,4) à toutes les étapes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La voie endosomale subit une acidification progressive (de pH 6,5 dans l'endosome précoce à 4,5-5 dans le lysosome) grâce aux pompes V-ATPase."
+    },
+    {
+      "q": "Quelle protéine ATPase assure le désassemblage du complexe cis-SNARE après la fusion membranaire ?",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "NSF",
+        "SNARE"
+      ],
+      "options": [
+        {
+          "text": "L'ATPase NSF assistée de la protéine adaptatrice alpha-SNAP.",
+          "isCorrect": true
+        },
+        {
+          "text": "La catalase peroxysomale à hème.",
+          "isCorrect": false
+        },
+        {
+          "text": "La pompe Na+/K+ ATPase dépendante de l'ouabaïne.",
+          "isCorrect": false
+        },
+        {
+          "text": "La dynamine monomérique à hélice alpha.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'ATPase NSF (N-ethylmaleimide-Sensitive Factor) et son adaptateur alpha-SNAP hydrolysent l'ATP pour détordre et séparer les complexes SNAREs afin qu'ils soient recyclés."
+    },
+    {
+      "q": "Concernant les corps multivésiculaires (MVB) :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "MVB",
+        "Exosomes"
+      ],
+      "options": [
+        {
+          "text": "Ils correspondent à des endosomes tardifs contenant de multiples vésicules intraluminales (ILVs).",
+          "isCorrect": true
+        },
+        {
+          "text": "Si un MVB fusionne avec la membrane plasmique au lieu de fusionner avec un lysosome, ses vésicules intraluminales sont libérées dans le milieu extracellulaire sous forme d'exosomes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les exosomes peuvent transporter des protéines, des lipides et des microARN vers d'autres cellules.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les MVB sont formés par bourgeonnement vers l'extérieur dans le cytoplasme sans implication de la membrane endosomale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les ILVs sont formées par invagination vers la lumière de l'endosome. La fusion d'un MVB avec la membrane plasmique libère ces petites vésicules sous forme d'exosomes (communication intercellulaire)."
+    },
+    {
+      "q": "Concernant l'adaptation membranaire lors des cycles intenses d'exocytose et d'endocytose :",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Homéostasie membranaire"
+      ],
+      "options": [
+        {
+          "text": "L'exocytose ajoute de la surface membranaire à la membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'endocytose retire de la membrane plasmique, permettant de maintenir constante la surface totale de la cellule.",
+          "isCorrect": true
+        },
+        {
+          "text": "À la synapse, l'exocytose rapide des vésicules synaptiques est compensée par une endocytose compensatrice tout aussi rapide pour reformer le stock de vésicules.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une cellule humaine peut renouveler l'équivalent de l'intégralité de sa membrane plasmique en quelques dizaines de minutes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La membrane plasmique ne peut subir d'endocytose qu'une seule fois au cours de toute l'existence de l'organisme.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Exocytose et endocytose s'équilibrent pour maintenir la surface cellulaire constante. À la terminaison nerveuse, l'endocytose compensatrice recycle rapidement la membrane vésiculaire."
+    },
+    {
+      "q": "Quel motif peptidique présent sur la queue cytosolique du récepteur LDLR est muté dans certaines formes d'hypercholestérolémie familiale ?",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "NPxY",
+        "LDLR"
+      ],
+      "options": [
+        {
+          "text": "Le motif tétrapeptidique Asn-Pro-X-Tyr (NPxY).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le motif KDEL.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le motif SKL C-terminal.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le motif doigt de zinc du récepteur aux œstrogènes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le motif NPxY sur le domaine cytosolique du LDLR est le signal d'internalisation reconnu par l'adaptateur de clathrine ; sa mutation empêche l'endocytose du LDL et cause l'hypercholestérolémie familiale."
+    },
+    {
+      "q": "Parmi les assertions suivantes sur les voies d'endocytose, laquelle est FAUSSE ?",
+      "tags": [
+        "CM 10 - Endocytose-Exocytose",
+        "Voies endocytose"
+      ],
+      "options": [
+        {
+          "text": "La phagocytose concerne des particules de plus de 0,5 µm et dépend de la polymérisation d'actine.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'endocytose par puits de clathrine nécessite la dynamine pour détacher la vésicule de la membrane.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les macropinosomes sont recouverts d'une épaisse coque géométrique de coatomères COP I.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cavéoles sont des microdomaines enrichis en cholestérol et cavéolines.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'endocytose permet l'internalisation de nutriments, de récepteurs et de fluides extracellulaires.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La proposition fausse est la C : la macropinocytose est un processus SANS revêtement (sans manteau de COP ou de clathrine), dépendant des protrusions d'actine (ruffles)."
+    }
+  ]
+}

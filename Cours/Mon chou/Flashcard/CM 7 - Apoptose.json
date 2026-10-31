@@ -1,0 +1,213 @@
+[
+  {
+    "recto": "Définir l'apoptose et citer 3 de ses caractéristiques morphologiques majeures.",
+    "verso": "Mort cellulaire programmée, active et régulée.\nCaractéristiques : condensation de la chromatine le long de la membrane nucléaire, rétraction cytoplasmique, bourgeonnement membranaire et formation de corps apoptotiques (sans lyse précoce ni inflammation).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Apoptose",
+      "Morphologie"
+    ]
+  },
+  {
+    "recto": "Quelles sont les différences morphologiques majeures entre apoptose et nécrose ?",
+    "verso": "- Apoptose : cellule isolée, intégrité membranaire initiale préservée, chromatine condensée, phagocytose propre sans inflammation.\n- Nécrose : groupe de cellules, gonflement cellulaire (oncosis), éclatement précoce de la membrane, inflammation aiguë.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Apoptose vs Nécrose"
+    ]
+  },
+  {
+    "recto": "Comment interpréter les profils Annexine V / IP en cytométrie en flux ?",
+    "verso": "- Annexine V- / IP- : Cellules vivantes.\n- Annexine V+ / IP- : Cellules en apoptose précoce (PS externalisée, membrane imperméable).\n- Annexine V+ / IP+ : Apoptose tardive / nécrose secondaire.\n- Annexine V- / IP+ : Nécrose primaire.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Annexine V",
+      "Iodure de Propidium",
+      "Cytométrie"
+    ]
+  },
+  {
+    "recto": "Quelle est la caractéristique biochimique de la fragmentation de l'ADN en apoptose ?",
+    "verso": "Clivage internucléosomique régulier par la DNase CAD en fragments multiples de 180 à 200 paires de bases (aspect en échelle d'ADN sur gel).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Fragmentation ADN",
+      "Échelle d'ADN"
+    ]
+  },
+  {
+    "recto": "Comment la DNAse CAD est-elle activée lors de l'apoptose ?",
+    "verso": "Dans la cellule vivante, CAD est liée à son inhibiteur ICAD. La caspase 3 effectrice clive ICAD, libérant CAD qui transloque au noyau et coupe l'ADN internucléosomique.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "CAD",
+      "ICAD",
+      "Caspase 3"
+    ]
+  },
+  {
+    "recto": "Que sont les caspases et quelle est leur spécificité catalytique ?",
+    "verso": "Cystéine-protéases essentielles à l'apoptose, synthétisées sous forme de procaspases inactives, qui clivent spécifiquement leurs protéines cibles après un résidu d'acide aspartique (Asp).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Caspases",
+      "Spécificité catalytique"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caspases initiatrices vs effectrices de l'apoptose ?",
+    "verso": "- Initiatrices : caspase 8 (voie extrinsèque) et caspase 9 (voie intrinsèque).\n- Effectrices (exécutrices) : caspases 3, 6 et 7.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Caspases initiatrices",
+      "Effectrices"
+    ]
+  },
+  {
+    "recto": "Citer 3 substrats majeurs des caspases effectrices.",
+    "verso": "1) ICAD (déclenche la fragmentation de l'ADN par CAD).\n2) Lamines nucléaires (dégradées par la caspase 6 -> rupture du noyau).\n3) PARP (Poly-ADP-ribose polymérase, bloquant la réparation de l'ADN).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Substrats caspases",
+      "PARP",
+      "Lamines"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le DISC dans la voie extrinsèque ?",
+    "verso": "Death-Inducing Signaling Complex : complexe multiprotéique formé sous la membrane suite à la liaison d'un ligand de mort (FasL/TNF), associant le domaine DD du récepteur, l'adaptateur FADD et la procaspase 8.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "DISC",
+      "FasL",
+      "FADD",
+      "Voie extrinsèque"
+    ]
+  },
+  {
+    "recto": "Comment la protéine Bid relie-t-elle la voie extrinsèque à la voie intrinsèque ?",
+    "verso": "La caspase 8 clive Bid en tBid (truncated Bid) qui transloque à la membrane externe mitochondriale et active Bax/Bak, déclenchant la libération de cytochrome c.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Bid",
+      "tBid",
+      "Diaphonie"
+    ]
+  },
+  {
+    "recto": "Quelle est la composition et la structure de l'apoptosome ?",
+    "verso": "Complexe oligomérique heptamérique cytosolique en forme de roue de charrette composé d'Apaf-1 et de cytochrome c en présence de dATP/ATP, recrutant et activant la procaspase 9 via son domaine CARD.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Apoptosome",
+      "Apaf-1",
+      "Cytochrome c"
+    ]
+  },
+  {
+    "recto": "Citer 2 protéines anti-apoptotiques et 2 protéines pro-apoptotiques de la famille Bcl-2.",
+    "verso": "- Anti-apoptotiques (survie) : Bcl-2, Bcl-xL, Mcl-1.\n- Pro-apoptotiques (mort) : Bax, Bak (effecteurs porogènes) et Bid, Bad, Bim (BH3-only).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Bcl-2",
+      "Bax",
+      "Famille Bcl-2"
+    ]
+  },
+  {
+    "recto": "Comment Bax déclenche-t-il la voie intrinsèque à la mitochondrie ?",
+    "verso": "Bax s'oligomérise dans la membrane externe mitochondriale pour former des pores permettant la fuite du cytochrome c de l'espace intermembranaire vers le cytosol.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Bax",
+      "MOMP",
+      "Pores mitochondriaux"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle de la protéine p53 dans l'induction de l'apoptose ?",
+    "verso": "Facteur de transcription activé par les dommages à l'ADN, p53 stimule l'expression de gènes pro-apoptotiques comme Bax et Puma pour éliminer la cellule génétiquement altérée.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "p53",
+      "Dommages ADN",
+      "Suppresseur de tumeur"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que les IAP (Inhibitors of Apoptosis Proteins) ?",
+    "verso": "Protéines cytosoliques de survie qui se lient aux caspases actives (3, 7, 9) pour inhiber leur activité enzymatique ou promouvoir leur dégradation par le protéasome.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "IAP",
+      "Survie cellulaire"
+    ]
+  },
+  {
+    "recto": "À quoi sert le test au bleu de trypan ?",
+    "verso": "À quantifier la viabilité cellulaire : les cellules mortes/nécrotiques absorbent le colorant bleu du fait de la perte d'étanchéité membranaire, alors que les cellules vivantes restent incolores.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Bleu de trypan",
+      "Viabilité"
+    ]
+  },
+  {
+    "recto": "Donner deux exemples de rôles physiologiques essentiels de l'apoptose.",
+    "verso": "1) Individualisation des doigts par élimination du tissu interdigital chez l'embryon.\n2) Élimination des cellules immunitaires autoréactives et des cellules infectées/endommagées.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Physiologie",
+      "Espaces interdigitaux"
+    ]
+  },
+  {
+    "recto": "Quelles pathologies résultent respectivement d'un défaut vs d'un excès d'apoptose ?",
+    "verso": "- Défaut d'apoptose : Cancers (survie anormale), maladies auto-immunes.\n- Excès d'apoptose : Maladies neurodégénératives (Alzheimer, Parkinson), atrophie tissulaire, ischémie.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Pathologies",
+      "Cancers",
+      "Neurodégénérescence"
+    ]
+  },
+  {
+    "recto": "Quelle est la durée de vie moyenne approximative d'un entérocyte et d'un globule rouge ?",
+    "verso": "Entérocyte : ~7 jours. Globule rouge (érythrocyte) : ~3 mois (environ 120 jours).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "Durée de vie",
+      "Entérocyte",
+      "Hématie"
+    ]
+  },
+  {
+    "recto": "Qu'observe-t-on lors de la coloration au May-Grünwald Giemsa (MGG) d'une cellule en apoptose ?",
+    "verso": "Un noyau condensé, très sombre (pycnose), souvent morcelé en plusieurs fragments sphériques denses (caryorrhexis).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 7 - Apoptose",
+    "tags": [
+      "MGG",
+      "Pycnose"
+    ]
+  }
+]

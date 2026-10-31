@@ -1,0 +1,634 @@
+{
+  "name": "CM 4 - Macromolécules, glucides et lipides",
+  "folder": "PASS - Molécules du vivant",
+  "description": "Glucides (oses, isomérie, épimères, cyclisation, osides, polysaccharides, GAGs, glycoprotéines) et Lipides (acides gras, glycérophospholipides, sphingolipides, cholestérol, ancrage membranaire).",
+  "prerequisites": [
+    "CM 1 - Acides Aminés"
+  ],
+  "questions": [
+    {
+      "q": "Concernant la stéréochimie des oses et leur appartenance aux séries D ou L :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Oses"
+      ],
+      "options": [
+        {
+          "text": "L'appartenance à la série D ou L est déterminée par la configuration du carbone asymétrique le plus éloigné de la fonction carbonyle (carbone subterminal Cn-1).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans la projection de Fischer, si le groupement -OH du carbone Cn-1 est à droite, l'ose appartient à la série D.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les oses naturels du métabolisme humain appartiennent très majoritairement à la série D.",
+          "isCorrect": true
+        },
+        {
+          "text": "Tous les oses de la série D sont obligatoirement dextrogyres (+) au polarimètre.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le D-glucose et le L-glucose sont deux molécules énantiomères images l'une de l'autre dans un miroir.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La série D/L dépend de la position du OH sur le Cn-1 (C5 pour un hexose) par rapport au D-glycéraldéhyde. La quasi-totalité des oses physiologiques sont D. La série D n'implique pas le signe du pouvoir rotatoire (le D-fructose est lévogyre). D-glucose et L-glucose sont énantiomères stricts."
+    },
+    {
+      "q": "Concernant les relations d'isomérie entre les hexoses :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Épimères"
+      ],
+      "options": [
+        {
+          "text": "Le D-glucose et le D-galactose sont des épimères en C-4.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le D-glucose et le D-mannose sont des épimères en C-2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le D-galactose et le D-mannose sont des épimères entre eux.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le D-glucose et le D-fructose sont des isomères de fonction (aldose vs cétose).",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux épimères ne diffèrent que par la configuration absolue d'un seul et unique carbone asymétrique.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le D-glucose est épimère en C4 avec le D-galactose et en C2 avec le D-mannose. En revanche, le galactose et le mannose diffèrent par la configuration de DEUX carbones (C2 et C4) : ce sont des diastéréoisomères non épimères. Le glucose (aldohexose) et le fructose (cétohexose) sont isomères de fonction."
+    },
+    {
+      "q": "À propos de la cyclisation des oses et de l'anomérie :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Anomérie"
+      ],
+      "options": [
+        {
+          "text": "La cyclisation résulte de l'attaque nucléophile intramoléculaire d'un OH alcoolique sur le carbone carbonyle formant un hémiacétal.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le carbone carbonyle devient un nouveau centre chiral asymétrique appelé carbone anomérique (C1 pour les aldoses, C2 pour les cétoses).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour la série D, l'anomère bêta possède son -OH anomérique du même côté du plan du cycle que le groupement terminal -CH2OH (vers le haut en représentation de Haworth).",
+          "isCorrect": true
+        },
+        {
+          "text": "La mutarotation correspond à l'interconversion spontanée en solution aqueuse entre les formes anomériques alpha et bêta via la forme linéaire ouverte.",
+          "isCorrect": true
+        },
+        {
+          "text": "À l'équilibre à 20°C, la forme linéaire ouverte du D-glucose représente plus de 50% des molécules en solution.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La cyclisation crée un carbone anomérique (C1 des aldoses). L'anomère bêta a son OH anomérique du même côté que CH2OH (haut en série D). La mutarotation traduit l'équilibre en solution (le D-glucose est à ~64% bêta, ~36% alpha, et <0,02% sous forme ouverte linéaire)."
+    },
+    {
+      "q": "Concernant les dérivés d'oses modifiés :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Oses modifiés"
+      ],
+      "options": [
+        {
+          "text": "L'oxydation ménagée de la fonction hémiacétalique en C1 d'un aldose produit un acide aldonique (ex. acide gluconique).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'oxydation sélective de la fonction alcool primaire en C6 donne un acide uronique (ex. acide D-glucuronique).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide D-glucuronique joue un rôle majeur dans la détoxification hépatique par glucurono-conjugaison.",
+          "isCorrect": true
+        },
+        {
+          "text": "La glucosamine est obtenue par substitution du -OH en C2 du glucose par un groupement amine -NH2.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide N-acétylneuraminique (acide sialique) est un dérivé à 9 carbones chargé négativement à pH physiologique.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes : C1 oxydé = acide aldonique ; C6 oxydé = acide uronique (composant des GAGs et substrat de la glucuronoconjugaison hépatique) ; osamines en C2 ; et acide sialique (NANA, 9 carbones, carboxylé négatif)."
+    },
+    {
+      "q": "Parmi les disaccharides suivants, lequel est NON RÉDUCTEUR ?",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Disaccharides"
+      ],
+      "options": [
+        {
+          "text": "Le saccharose (alpha-D-glucopyranosyl-(1<->2)-bêta-D-fructofuranoside).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le lactose (bêta-D-galactopyranosyl-(1->4)-D-glucopyranose).",
+          "isCorrect": false
+        },
+        {
+          "text": "Le maltose (alpha-D-glucopyranosyl-(1->4)-D-glucopyranose).",
+          "isCorrect": false
+        },
+        {
+          "text": "Le cellobiose (bêta-D-glucopyranosyl-(1->4)-D-glucopyranose).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le saccharose est un diholoside non réducteur car la liaison osidique engage les DEUX carbones anomériques (C1 du glucose et C2 du fructose) : il n'y a plus aucun OH hémiacétalique libre capable de s'ouvrir pour réduire la liqueur de Fehling."
+    },
+    {
+      "q": "Concernant le glycogène et la cellulose :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Polysaccharides"
+      ],
+      "options": [
+        {
+          "text": "Le glycogène est un polyoside de réserve animale hautement ramifié formé d'unités de D-glucose.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le glycogène, la chaîne principale est en alpha(1->4) et les branchements sont en alpha(1->6) tous les 8 à 12 résidus.",
+          "isCorrect": true
+        },
+        {
+          "text": "La cellulose est un polymère linéaire végétal constitué de résidus de glucose unis par des liaisons bêta(1->4).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'homme ne peut pas digérer la cellulose car il ne possède pas d'enzyme capable d'hydrolyser les liaisons bêta(1->4) osidiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le glycogène ne comporte qu'une seule extrémité non réductrice et des milliers d'extrémités réductrices.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le glycogène a une seule extrémité réductrice (liée à la glycogénine) et de très nombreuses extrémités NON réductrices permettant une mobilisation rapide du glucose. La cellulose a des liaisons bêta(1->4) non hydrolysables par l'amylase humaine."
+    },
+    {
+      "q": "À propos des glycosaminoglycanes (GAGs) :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "GAGs"
+      ],
+      "options": [
+        {
+          "text": "Ce sont de longs hétéropolysaccharides linéaires non ramifiés formés de répétitions d'unités disaccharidiques (acide uronique + hexosamine).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide hyaluronique est le seul GAG non sulfaté et n'est pas lié de façon covalente à une protéine centrale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les chondroïtines sulfates, héparanes sulfates et kératanes sulfates sont riches en groupements sulfates ionisés négativement.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans les protéoglycanes, les chaînes de GAGs sont généralement attachées à une sérine de la protéine par un motif trisaccharidique spécifique Xylose-Galactose-Galactose.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéoglycanes sont composés à 95% de protéines et à 5% de glucides.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les protéoglycanes sont composés à ~95% de glucides (GAGs) et seulement ~5% de protéines ! L'acide hyaluronique est le seul non sulfaté et non fixé par liaison covalente. La fixation des autres GAGs se fait sur Ser via le pont O-osidique Xyl-Gal-Gal-GlcA."
+    },
+    {
+      "q": "Concernant les acides gras des lipides humains :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Acides gras"
+      ],
+      "options": [
+        {
+          "text": "Les acides gras naturels possèdent presque tous un nombre pair d'atomes de carbone en raison de leur synthèse à partir d'unités acétyl-CoA à 2 carbones.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide palmitique est un acide gras saturé à 16 carbones (C16:0).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide oléique est un acide gras mono-insaturé à 18 carbones noté C18:1 omega-9 (ou Delta-9).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les doubles liaisons des acides gras insaturés naturels sont presque exclusivement de configuration stérique TRANS.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'acide linoléique (C18:2 omega-6) et l'acide alpha-linolénique (C18:3 omega-3) sont des acides gras strictement indispensables apportés par l'alimentation.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les doubles liaisons naturelles sont presque toutes CIS (créant un coude rigide à 30° dans la chaîne aliphatique qui fluidifie les membranes). Les acides linoléique (omega-6) et alpha-linolénique (omega-3) sont indispensables chez l'homme."
+    },
+    {
+      "q": "L'acide arachidonique (C20:4 omega-6) :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Acides gras"
+      ],
+      "options": [
+        {
+          "text": "Possède 20 atomes de carbone et 4 doubles liaisons en configuration cis isolées par des ponts méthylènes (-CH2-).",
+          "isCorrect": true
+        },
+        {
+          "text": "Est le précurseur direct des eicosanoïdes : prostaglandines, thromboxanes et leucotriènes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Est libéré des glycérophospholipides membranaires sous l'action de la phospholipase A2 (PLA2).",
+          "isCorrect": true
+        },
+        {
+          "text": "Est un acide gras saturé formant des cires solides à 80°C.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'acide arachidonique (C20:4 Delta-5,8,11,14 ou omega-6) est libéré par la PLA2 en C2 des phospholipides membranaires, puis métabolisé par les cyclooxygénases (COX) en prostaglandines/thromboxanes et par les lipoxygénases (LOX) en leucotriènes."
+    },
+    {
+      "q": "Concernant la structure des triglycérides (triacylglycérols) :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Triglycérides"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des triesters du glycérol et de trois molécules d'acides gras.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce sont des lipides totalement neutres, apolaires et anhydres hautement insolubles dans l'eau.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils constituent la principale forme de réserve énergétique à long terme de l'organisme humain dans les adipocytes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils forment la trame structurale en bicouche de la membrane plasmique des cellules eucaryotes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les triglycérides sont hydrophobes et forment des gouttelettes lipidiques de réserve énergétique dans le tissu adipeux. Ils ne forment PAS de bicouche membranaire (rôle dévolu aux lipides amphipathiques : phospholipides, sphingolipides, cholestérol)."
+    },
+    {
+      "q": "La structure de base commune à tous les glycérophospholipides est :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Glycérophospholipides"
+      ],
+      "options": [
+        {
+          "text": "L'acide phosphatidique (diacylglycérol estérifié en C3 par un groupement phosphate).",
+          "isCorrect": true
+        },
+        {
+          "text": "La sphingosine liée à un acide gras.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le cholestérol estérifié par l'acide oléique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le maltose relié à un alcool gras.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'acide phosphatidique (1,2-diacylglycérol-3-phosphate) est la brique de base et le précurseur biosynthétique de tous les glycérophospholipides membranaires."
+    },
+    {
+      "q": "Concernant la charge électrique des glycérophospholipides à pH physiologique (7,4) :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Phospholipides"
+      ],
+      "options": [
+        {
+          "text": "La phosphatidylcholine (lécithine) et la phosphatidyléthanolamine sont zwitterioniques de charge globale neutre (0).",
+          "isCorrect": true
+        },
+        {
+          "text": "La phosphatidylsérine porte une charge globale nette négative (-1).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le phosphatidylinositol porte une charge nette négative (-1).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide phosphatidique porte une charge négative (-2).",
+          "isCorrect": true
+        },
+        {
+          "text": "Tous les glycérophospholipides sans exception sont chargés positivement (+2) à pH 7,4.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "PC et PE associent un phosphate négatif (-1) et une amine quaternaire ou primaire positive (+1) => charge nette 0. PS possède phosphate (-1), carboxylate (-1) et amine (+1) => charge -1. PI a un phosphate (-1) et un inositol non chargé => charge -1. L'acide phosphatidique est à -2."
+    },
+    {
+      "q": "Quelle est la localisation normale de la phosphatidylsérine (PS) dans une cellule vivante saine et que signifie son extériorisation ?",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Asymétrie membranaire"
+      ],
+      "options": [
+        {
+          "text": "Elle est activement maintenue sur le feuillet interne (cytoplasmique) de la membrane plasmique par des flippases.",
+          "isCorrect": true
+        },
+        {
+          "text": "Son exposition sur le feuillet externe constitue un signal 'eat me' déclenchant la phagocytose de la cellule en apoptose.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sur les plaquettes activées, son extériorisation sert de support catalytique chargé négativement pour les facteurs de coagulation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est naturellement présente à 99% sur le feuillet externe des érythrocytes circulants.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La PS est séquestrée sur le feuillet interne par une flippase dépendante de l'ATP. Lors de l'apoptose ou de l'activation plaquettaire, la scramblase extériorise la PS, servant de signal de clairance phagocytaire et de surface procoagulante."
+    },
+    {
+      "q": "La cardiolipine (diphosphatidylglycérol) est un lipide particulier retrouvé préférentiellement dans :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Cardiolipine"
+      ],
+      "options": [
+        {
+          "text": "La membrane mitochondriale interne où elle participe au fonctionnement optimal des complexes de la chaîne respiratoire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le suc gastrique pour neutraliser l'acidité stomacale.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le feuillet externe de la membrane des hématies uniquement.",
+          "isCorrect": false
+        },
+        {
+          "text": "La gaine de myéline sous forme de triglycéride neutre.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La cardiolipine possède 4 chaînes d'acides gras et 2 phosphates reliés par un glycérol central. Elle est quasi exclusive de la membrane mitochondriale interne chez les eucaryotes (et membrane bactérienne), essentielle aux complexes de la chaîne respiratoire."
+    },
+    {
+      "q": "Le précurseur commun de tous les sphingolipides est :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Sphingolipides"
+      ],
+      "options": [
+        {
+          "text": "Le céramide (sphingosine liée à un acide gras par une liaison amide en C2).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le squalène cyclisé.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le diacylglycérol triphosphate.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'acide mévalonique libre.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La sphingosine (alcool aminé en C18) acylée sur sa fonction amine en C2 par un acide gras forme le CÉRAMIDE, squelette structural universel des sphingomyélines, cérébrosides et gangliosides."
+    },
+    {
+      "q": "Concernant les sphingomyélines :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Sphingomyélines"
+      ],
+      "options": [
+        {
+          "text": "Ce sont les seuls sphingolipides qui sont également des phospholipides (sphingophospholipides).",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur fonction alcool en C1 est estérifiée par une phosphocholine (ou une phosphoéthanolamine).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles sont particulièrement abondantes dans la gaine de myéline entourant les axones nerveux.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles sont formées à partir d'un squelette de glycérol à 3 carbones.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La sphingomyéline = céramide + phosphocholine. Elle contient du phosphore (sphingophospholipide) mais PAS de glycérol (son squelette est la sphingosine). Elle est un constituant majeur de la myéline."
+    },
+    {
+      "q": "Les gangliosides sont des sphingoglycolipides membranaires caractérisés par :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Gangliosides"
+      ],
+      "options": [
+        {
+          "text": "La présence d'un oligosaccharide complexe ramifié lié au céramide comportant au moins un résidu d'acide sialique (NANA).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une charge électrique nette négative conférée par l'acide sialique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une abondance prédominante dans le feuillet externe de la membrane plasmique des cellules nerveuses (substance grise).",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur rôle de récepteurs membranaires pour des toxines bactériennes (ex. toxine cholérique pour le ganglioside GM1).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une absence totale d'acides gras dans leur structure.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les gangliosides comportent un céramide lié à une chaîne oligosaccharidique acide portant un ou plusieurs acides sialiques (NANA). Ils sont exposés sur la face externe membranaire (reconnaissance, adhésion, fixation de virus et de toxines comme celle du choléra sur GM1)."
+    },
+    {
+      "q": "Concernant le cholestérol :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Cholestérol"
+      ],
+      "options": [
+        {
+          "text": "C'est un stérol constitué d'un noyau tétracyclique cyclopentanophénanthrénique rigide (noyau stérane à 4 cycles A, B, C, D).",
+          "isCorrect": true
+        },
+        {
+          "text": "Il possède une seule fonction polaire : un groupement hydroxyle (-OH) libre en position C-3.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il module la fluidité et la perméabilité des membranes biologiques eucaryotes en s'intercalant entre les chaînes d'acides gras.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est le précurseur de la synthèse des hormones stéroïdes, de la vitamine D3 et des acides biliaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est un composant majeur et abondant des membranes bactériennes et végétales.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le cholestérol est le stérol animal par excellence (noyau stérane + OH en C3 + chaîne en C17). Il est absent des membranes bactériennes (sauf mycoplasmes) et remplacé par des phytostérols (stigmastérol, sitostérol) chez les plantes."
+    },
+    {
+      "q": "Qu'appelle-t-on les radeaux lipidiques ('lipid rafts') membranaires ?",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Microdomaines membranaires"
+      ],
+      "options": [
+        {
+          "text": "Des microdomaines membranaires rigides et épaissis enrichis en cholestérol et en sphingolipides à longues chaînes saturées.",
+          "isCorrect": true
+        },
+        {
+          "text": "Des vacuoles cytoplasmiques dégradant le glycogène cellulaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "Des vésicules d'exocytose transportant l'insuline vers la circulation sanguine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Des pores formés par la polymérisation d'acides aminés libres.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les rafts lipidiques sont des microdomaines membranaires en phase liquide ordonnée (Lo), enrichis en cholestérol, sphingomyélines et gangliosides, servant de plates-formes pour l'ancrage de protéines de signalisation (ex. récepteurs, protéines à ancre GPI)."
+    },
+    {
+      "q": "Concernant le clivage enzymatique des glycérophospholipides par les phospholipases :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Phospholipases"
+      ],
+      "options": [
+        {
+          "text": "La phospholipase A1 (PLA1) hydrolyse spécifiquement la liaison ester de l'acide gras en C-1.",
+          "isCorrect": true
+        },
+        {
+          "text": "La phospholipase A2 (PLA2) hydrolyse la liaison ester en C-2, libérant souvent un acide gras insaturé (acide arachidonique) et un lysophospholipide.",
+          "isCorrect": true
+        },
+        {
+          "text": "La phospholipase C (PLC) coupe avant le phosphate, libérant un 1,2-diacylglycérol (DAG) et un dérivé phosphorylé (ex. IP3).",
+          "isCorrect": true
+        },
+        {
+          "text": "La phospholipase D (PLD) coupe après le phosphate, libérant de l'acide phosphatidique et l'alcool libre.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les phospholipases détruisent le noyau aromatique du cholestérol.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "PLA1 coupe en C1 ; PLA2 coupe en C2 (libérant l'acide gras souvent polyinsaturé et un lysophospholipide lytique) ; PLC coupe entre glycérol et phosphate (signalisation DAG + IP3) ; PLD libère l'acide phosphatidique."
+    },
+    {
+      "q": "L'ancrage des protéines à la membrane par 'prénylation' implique :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Ancrage lipidique"
+      ],
+      "options": [
+        {
+          "text": "La liaison thioéther d'un résidu farnésyle (C15) ou géranylgéranyle (C20) sur une cystéine C-terminale.",
+          "isCorrect": true
+        },
+        {
+          "text": "La reconnaissance d'un motif tétrapeptidique C-terminal CAAX (où C = Cys, A = acide aminé aliphatique, X = résidu variable).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le clivage protéolytique des 3 résidus terminaux -AAX suivi de la méthylation du nouveau carboxyle C-terminal.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ancrage de petites protéines G oncogéniques comme la protéine Ras.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une liaison amide irréversible sur la proline N-terminale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La prénylation fixe un groupe isoprénoïde hydrophobe (farnésyle C15 ou géranylgéranyle C20) sur la Cys du motif CAAX en C-terminal, indispensable au ciblage membranaire de Ras et Rho."
+    },
+    {
+      "q": "Concernant les lipoprotéines plasmatiques transportant les lipides dans le sang :",
+      "tags": [
+        "CM 4 - Glucides et Lipides",
+        "Lipoprotéines"
+      ],
+      "options": [
+        {
+          "text": "Les chylomicrons transportent les lipides d'origine alimentaire exogène depuis l'intestin vers les tissus.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les VLDL sont synthétisées par le foie pour exporter les triglycérides d'origine endogène.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les LDL (lipoprotéines de basse densité) sont les principaux transporteurs plasmatiques de cholestérol vers les tissus périphériques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les HDL assurent le transport retour du cholestérol en excès des tissus vers le foie pour son élimination biliaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les lipoprotéines comportent un cœur hydrophobe de triglycérides et d'esters de cholestérol entouré d'une monocouche de phospholipides, de cholestérol libre et d'apolipoprotéines.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions décrivent l'architecture et les rôles fondamentaux des lipoprotéines : structure en micelle avec cœur apolaire et monocouche amphipathique superficielle ; chylomicrons (exogène), VLDL/LDL (endogène), et HDL (transport retour protecteur anti-athérogène)."
+    }
+  ]
+}

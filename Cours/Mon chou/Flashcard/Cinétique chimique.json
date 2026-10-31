@@ -1,0 +1,182 @@
+[
+  {
+    "recto": "Quelle est la définition générale de la vitesse volumique d'une réaction aA + bB -> cC + dD à volume constant ?",
+    "verso": "v = -(1/a)*(d[A]/dt) = -(1/b)*(d[B]/dt) = +(1/c)*(d[C]/dt) = +(1/d)*(d[D]/dt). C'est une grandeur toujours positive, exprimée en mol.L^-1.s^-1.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Vitesse",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence entre vitesse de réaction et vitesse de disparition d'un réactif A ?",
+    "verso": "La vitesse de disparition est v_disp(A) = -d[A]/dt. La vitesse globale est v = v_disp(A) / a, où a est le coefficient stœchiométrique de A.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Vitesse",
+      "Stœchiométrie"
+    ]
+  },
+  {
+    "recto": "Quelle est l'unité de la constante de vitesse k pour les ordres 0, 1 et 2 ?",
+    "verso": "Ordre 0 : mol.L^-1.s^-1\nOrdre 1 : s^-1\nOrdre 2 : L.mol^-1.s^-1 (ou mol^-1.L.s^-1)\nFormule générale : (mol.L^-1)^(1-n) . s^-1.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Constante k",
+      "Unités"
+    ]
+  },
+  {
+    "recto": "Quelle est la loi intégrée et le temps de demi-réaction t1/2 d'une réaction d'ordre 1 (A -> Produits) ?",
+    "verso": "Loi intégrée : ln[A] = ln[A]0 - kt  <=>  [A](t) = [A]0 * e^(-kt)\nDemi-vie : t1/2 = ln(2) / k ≈ 0,693 / k (indépendant de [A]0).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Ordre 1",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la loi intégrée et le temps de demi-réaction t1/2 d'une réaction d'ordre 2 (2A -> Produits avec v = k[A]^2) ?",
+    "verso": "Loi intégrée : 1/[A] = 1/[A]0 + kt\nDemi-vie : t1/2 = 1 / (k * [A]0) (inversement proportionnel à la concentration initiale).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Ordre 2",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la loi intégrée et le temps de demi-réaction t1/2 d'une réaction d'ordre 0 (A -> Produits avec v = k) ?",
+    "verso": "Loi intégrée : [A] = [A]0 - kt\nDemi-vie : t1/2 = [A]0 / (2k) (proportionnel à la concentration initiale).\nTemps de disparition complète : t_tot = [A]0 / k.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Ordre 0",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la loi de van 't Hoff pour un acte élémentaire ?",
+    "verso": "Pour un acte élémentaire uniquement, les ordres partiels de la réaction sont égaux aux coefficients stœchiométriques (molécularité = ordre).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Acte élémentaire",
+      "Loi de van 't Hoff"
+    ]
+  },
+  {
+    "recto": "En quoi consiste la méthode d'isolement d'Ostwald (dégénérescence de l'ordre) ?",
+    "verso": "On place un réactif B en très large excès ([B]0 >> [A]0) pour que sa concentration reste quasi-constante. La loi v = k[A]^alpha[B]^beta devient v = k_app[A]^alpha avec k_app = k[B]0^beta.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Ostwald",
+      "Méthode cinétique"
+    ]
+  },
+  {
+    "recto": "Quelle est l'équation d'Arrhenius et la signification de chaque terme ?",
+    "verso": "k = A * exp(-Ea / (RT))\nk : constante de vitesse\nA : facteur pré-exponentiel (même unité que k)\nEa : énergie d'activation (J.mol^-1)\nR : constante des gaz parfaits (8,314 J.K^-1.mol^-1)\nT : température en Kelvin (K).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Arrhenius",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Comment déterminer graphiquement l'énergie d'activation Ea selon Arrhenius ?",
+    "verso": "En traçant ln(k) en fonction de 1/T. On obtient une droite de pente -Ea/R et d'ordonnée à l'origine ln(A). Donc Ea = -R * pente.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Arrhenius",
+      "Graphique"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un état de transition (complexe activé) ?",
+    "verso": "Configuration moléculaire au maximum d'énergie potentielle sur le chemin réactionnel d'un acte élémentaire. Durée de vie extrêmement courte (~ 10^-13 s), non isolable.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "État de transition",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un intermédiaire réactionnel par rapport à l'état de transition ?",
+    "verso": "L'intermédiaire réactionnel est une espèce chimique correspondant à un minimum relatif (creux de potentiel) entre deux états de transition. Il a une durée de vie mesurable et des liaisons réelles.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Intermédiaire réactionnel",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Quelle est la relation entre les constantes cinétiques k1, k-1 et la constante d'équilibre K pour une réaction réversible élémentaire A <=> B ?",
+    "verso": "K = k1 / k-1. À l'équilibre dynamique, v1 = v-1  <=>  k1 [A]eq = k-1 [B]eq.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Équilibre",
+      "Constante K"
+    ]
+  },
+  {
+    "recto": "Quels sont les effets d'un catalyseur sur une réaction chimique ?",
+    "verso": "1) Abaisse l'énergie d'activation Ea en changeant le mécanisme.\n2) Augmente la vitesse dans les deux sens.\n3) Ne modifie PAS l'état d'équilibre ni les grandeurs thermodynamiques (Delta_r G°, Keq).\n4) Régénéré intact en fin de cycle.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Catalyseur",
+      "Propriétés"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'étape cinétiquement limitante (ou déterminante) ?",
+    "verso": "Dans une suite d'étapes consécutives, c'est l'acte élémentaire le plus lent (barrière d'activation Ea la plus haute), qui impose sa vitesse à la réaction globale.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Étape limitante",
+      "Mécanisme"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'approximation de l'état quasi-stationnaire (AEQS) ?",
+    "verso": "Pour un intermédiaire réactionnel très réactif [IR] présent en très faible concentration, on pose d[IR]/dt ≈ 0 (vitesse d'apparition = vitesse de disparition).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "AEQS",
+      "Approximation"
+    ]
+  },
+  {
+    "recto": "Après combien de demi-vies reste-t-il moins de 1 % d'un réactif lors d'une cinétique d'ordre 1 ?",
+    "verso": "7 demi-vies : (1/2)^7 = 1/128 ≈ 0,78 % (< 1 %). (À 6 demi-vies, il reste 1/64 ≈ 1,56 %).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Ordre 1",
+      "Calcul rapide"
+    ]
+  },
+  {
+    "recto": "Quelle est l'équation reliant deux constantes k(T1) et k(T2) selon Arrhenius ?",
+    "verso": "ln(k(T2) / k(T1)) = - (Ea / R) * (1/T2 - 1/T1) = (Ea / R) * ((T2 - T1) / (T1 * T2)).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Cinétique chimique",
+    "tags": [
+      "Arrhenius",
+      "Calcul"
+    ]
+  }
+]

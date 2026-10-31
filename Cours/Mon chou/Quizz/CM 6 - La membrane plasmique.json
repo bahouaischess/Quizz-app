@@ -1,0 +1,611 @@
+{
+  "name": "CM 6 - La membrane plasmique",
+  "folder": "PASS - Biologie Cellulaire",
+  "description": "Quiz approfondi de niveau PASS sur la membrane plasmique : structure en mosaïque fluide, asymétrie lipidique (flippase/floppase/scramblase), radeaux lipidiques, protéines membranaires, transports passifs et actifs (pompe Na+/K+, symport SGLT, transporteurs ABC).",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant les propriétés structurales générales de la membrane plasmique, quelle(s) proposition(s) est (sont) exacte(s) ?",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Structure"
+      ],
+      "options": [
+        {
+          "text": "Son épaisseur moyenne est de l'ordre de 7 à 8 nm.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle présente une organisation asymétrique et une composition chimique hétérogène.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est constituée d'environ 50 molécules lipidiques pour une molécule protéique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les membranes de certains organites intracellulaires (comme le RE ou les mitochondries) représentent des surfaces cumulées bien plus importantes que la membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est rigide, statique et totalement imperméable aux molécules hydrophobes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La membrane plasmique mesure 7-8 nm d'épaisseur, est asymétrique, fluide et dynamique. Il y a environ 50 lipides par molécule de protéine. Le RE et les mitochondries ont des surfaces membranaires très largement supérieures."
+    },
+    {
+      "q": "Concernant la composition lipidique et l'asymétrie de la bicouche membranaire :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Asymétrie lipidique"
+      ],
+      "options": [
+        {
+          "text": "La phosphatidylcholine (PC) et la sphingomyéline (SM) sont préférentiellement situées sur le feuillet extracellulaire (exoplasmique).",
+          "isCorrect": true
+        },
+        {
+          "text": "La phosphatidylsérine (PS) et la phosphatidyléthanolamine (PE) sont préférentiellement concentrées sur le feuillet cytosolique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La phosphatidylsérine porte une charge nette négative à pH physiologique, conférant une polarité électrique à la face interne.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les glycolipides sont exclusivement localisés sur le feuillet cytosolique interne.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'extériorisation de la phosphatidylsérine sur le feuillet externe est un signal de reconnaissance précoce pour les macrophages lors de l'apoptose.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les glycolipides sont STRICTEMENT sur la face extracellulaire (glycocalyx). La PS est sur la face interne ; son basculement sur la face externe (« eat-me signal ») marque l'apoptose."
+    },
+    {
+      "q": "Concernant les enzymes assurant les mouvements transversaux des lipides (translocases) :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Flippase",
+        "Floppase",
+        "Scramblase"
+      ],
+      "options": [
+        {
+          "text": "La flippase transporte spécifiquement la phosphatidylsérine et la phosphatidyléthanolamine du feuillet externe vers le feuillet cytosolique avec consommation d'ATP.",
+          "isCorrect": true
+        },
+        {
+          "text": "La floppase (transporteur ABC) déplace les phospholipides du feuillet cytosolique vers le feuillet externe en consommant de l'ATP.",
+          "isCorrect": true
+        },
+        {
+          "text": "La scramblase permet un mélange bidirectionnel des phospholipides selon leur gradient de concentration sans consommation d'ATP.",
+          "isCorrect": true
+        },
+        {
+          "text": "La scramblase est activée par une élévation de la concentration intracellulaire en calcium (Ca2+) lors de l'apoptose ou de l'activation plaquettaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le flip-flop spontané non catalysé des phospholipides est un événement extrêmement rapide qui survient plusieurs millions de fois par seconde.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le flip-flop spontané sans enzyme est extrêmement rare et lent (heures/jours). Les flippases/floppases dépendent de l'ATP, alors que la scramblase est dépendante du calcium et INDÉPENDANTE de l'ATP."
+    },
+    {
+      "q": "Concernant le cholestérol membranaire et son impact sur la fluidité :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Cholestérol",
+        "Fluidité"
+      ],
+      "options": [
+        {
+          "text": "C'est une molécule amphipathique comportant un groupement polaire hydroxyle (-OH) et un noyau stéroïde apolaire rigide.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il s'intercale entre les chaînes d'acides gras des phospholipides.",
+          "isCorrect": true
+        },
+        {
+          "text": "À température physiologique élevée, il limite le mouvement des chaînes hydrocarbonées et réduit la fluidité membranaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "À basse température, il empêche l'empilement compact et la gélification des lipides, maintenant un état fluide minimal.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est totalement absent de toutes les membranes des cellules de mammifères.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le cholestérol agit comme un véritable tampon thermique de fluidité membranaire : il modère la fluidité à chaud et prévient la cristallisation/gélification à froid."
+    },
+    {
+      "q": "Concernant les radeaux lipidiques (lipid rafts) :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Lipid rafts"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des microdomaines membranaires enrichis en cholestérol et en sphingolipides.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils se trouvent dans une phase liquide ordonnée plus compacte et plus épaisse que le reste de la bicouche.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils résistent à la solubilisation par des détergents non ioniques (comme le Triton X-100) à basse température (4 °C).",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils concentrent des protéines membranaires spécifiques telles que les protéines à ancre GPI et des kinases de signalisation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils sont constitués exclusivement de molécules d'eau liquide pure.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les radeaux lipidiques sont des microdomaines ordonnés riches en cholestérol et sphingolipides, résistants aux détergents non ioniques à froid, servant de plates-formes de signalisation."
+    },
+    {
+      "q": "Concernant les modes d'association des protéines à la membrane plasmique :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Protéines membranaires"
+      ],
+      "options": [
+        {
+          "text": "Les protéines intrinsèques (intégrales) traversent la bicouche via une ou plusieurs hélices alpha composées d'acides aminés hydrophobes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines périphériques (extrinsèques) sont liées non covalemment à des protéines transmembranaires ou aux têtes polaires des lipides.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'extraction des protéines périphériques nécessite l'utilisation obligatoire de détergents dénaturants puissants comme le SDS.",
+          "isCorrect": false
+        },
+        {
+          "text": "Certaines protéines cytosoliques sont ancrées à la membrane par des modifications lipidiques covalentes (myristoylation, palmitoylation ou prénylation).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines à ancre GPI sont orientées exclusivement vers la face extracellulaire de la membrane.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les protéines périphériques se détachent par des variations douces de force ionique ou de pH (pas besoin de détergent). Les détergents sont indispensables pour extraire les protéines intrinsèques."
+    },
+    {
+      "q": "Concernant le glycocalyx (manteau glucidique) cellulaire :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Glycocalyx"
+      ],
+      "options": [
+        {
+          "text": "Il est composé des chaînes d'oligosaccharides des glycoprotéines, glycolipides et protéoglycanes membranaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est strictement localisé sur la face extracellulaire de la membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il protège la cellule contre les agressions mécaniques et chimiques enzymatiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il participe à la reconnaissance intercellulaire et à l'adhésion.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est situé directement dans le nucléoplasme en contact avec l'hétérochromatine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le glycocalyx forme un feutrage glucidique protecteur et de reconnaissance uniquement présent sur la surface externe de la cellule."
+    },
+    {
+      "q": "Concernant la perméabilité sélective de la bicouche lipidique pure (sans transporteurs) :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Perméabilité sélective"
+      ],
+      "options": [
+        {
+          "text": "Les gaz dissous (O2, CO2, N2) diffusent très librement et rapidement à travers la bicouche.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les petites molécules hydrophobes (hormones stéroïdes) traversent facilement par diffusion simple.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les ions minéraux inorganiques (Na+, K+, Ca2+, Cl-) traversent instantanément et spontanément la bicouche lipidique pure.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les grosses molécules polaires non chargées (comme le glucose ou le saccharose) ne peuvent pas traverser librement par diffusion simple.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'eau peut traverser très lentement la bicouche par diffusion simple, mais son transport rapide nécessite des aquaporines.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La bicouche lipidique pure est rigoureusement imperméable aux ions inorganiques en raison de leur charge et de leur sphère d'hydratation."
+    },
+    {
+      "q": "Concernant la diffusion facilitée par des transporteurs (perméases) vs la diffusion simple :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Diffusion facilitée",
+        "Cinétique"
+      ],
+      "options": [
+        {
+          "text": "La diffusion facilitée s'effectue dans le sens du gradient électrochimique, sans consommation d'énergie métabolique (ATP).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le transport par perméase implique des changements de conformation réversibles de la protéine de transport.",
+          "isCorrect": true
+        },
+        {
+          "text": "La diffusion facilitée présente une cinétique saturable caractérisée par une vitesse maximale (Vmax) et une constante de Michaelis (Km).",
+          "isCorrect": true
+        },
+        {
+          "text": "La diffusion simple suit une cinétique non saturable proportionnelle au gradient de concentration (loi de Fick).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les transporteurs GLUT (ex: GLUT1 à GLUT5) sont des exemples typiques de transporteurs de diffusion facilitée du glucose.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes. La diffusion facilitée est passive mais saturable (type Michaelis-Menten), contrairement à la diffusion simple linéaire non saturable."
+    },
+    {
+      "q": "Concernant les canaux ioniques membranaires :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Canaux ioniques"
+      ],
+      "options": [
+        {
+          "text": "Ils permettent un flux passif d'ions extrêmement rapide (> 10^7 ions par seconde).",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils sont hautement sélectifs pour un ion donné en fonction de sa taille et de sa charge.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils alternent entre des états ouvert et fermé régulés par le potentiel de membrane (voltage-dépendants), un ligand ou une force mécanique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils hydrolysent obligatoirement une molécule d'ATP à chaque passage d'un ion unique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ils participent activement à la genèse et à la propagation des signaux électriques (potentiels d'action).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les canaux ioniques sont des pores aqueux passifs (sans dépense d'ATP), très sélectifs et à très haut débit (> 10^7 ions/s)."
+    },
+    {
+      "q": "Concernant la pompe Na+/K+ ATPase (transport actif primaire) :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Pompe Na+/K+"
+      ],
+      "options": [
+        {
+          "text": "Elle hydrolyse une molécule d'ATP pour expulser 3 ions Na+ et faire entrer 2 ions K+ contre leurs gradients électrochimiques respectifs.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est électrogène et contribue au maintien du potentiel de repos de la membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle maintient des concentrations physiologiques intracellulaires faibles en Na+ (~10-15 mM) et élevées en K+ (~140 mM).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est spécifiquement inhibée par des cardiotoniques tels que l'ouabaïne et la digoxine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle fait sortir 3 ions K+ et entrer 2 ions Na+ sans hydrolyse d'ATP.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La pompe Na+/K+ ATPase de classe P sort 3 Na+ et fait entrer 2 K+ par ATP hydrolysé. Elle est inhibée par l'ouabaïne et les digitaliques."
+    },
+    {
+      "q": "Concernant le transport actif secondaire du glucose par les symports SGLT :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Symport SGLT",
+        "Glucose"
+      ],
+      "options": [
+        {
+          "text": "Le transport du glucose contre son gradient de concentration est couplé au transport thermodynamiquement favorable du Na+ selon son gradient électrochimique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le gradient de Na+ moteur est préalablement généré et maintenu par la pompe Na+/K+ ATPase basolatérale.",
+          "isCorrect": true
+        },
+        {
+          "text": "SGLT1 et SGLT2 sont situés au pôle apical des entérocytes intestinaux et des cellules tubulaires rénales.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il s'agit d'un mécanisme d'antiport où le glucose et le Na+ migrent dans des directions strictement opposées.",
+          "isCorrect": false
+        },
+        {
+          "text": "Au pôle basolatéral de l'entérocyte, le glucose quitte la cellule par diffusion facilitée via des transporteurs GLUT2.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "SGLT est un SYMPORT (Na+ et glucose entrent ensemble dans le même sens). Au pôle basolatéral, GLUT2 permet la sortie passive de glucose vers le sang, et la pompe Na+/K+ maintient le gradient de Na+."
+    },
+    {
+      "q": "Concernant les transporteurs de la superfamille ABC (ATP-Binding Cassette) :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Transporteurs ABC",
+        "MDR1"
+      ],
+      "options": [
+        {
+          "text": "Ils utilisent l'énergie de l'hydrolyse de l'ATP pour transporter divers substrats (xénobiotiques, lipides, médicaments) à travers la membrane.",
+          "isCorrect": true
+        },
+        {
+          "text": "La P-glycoprotéine (MDR1 / ABCB1) est impliquée dans la résistance multidrogue des cellules cancéreuses en expulsant les agents chimiothérapeutiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine CFTR, dont les mutations causent la mucoviscidose, appartient à la famille des transporteurs ABC.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils ne possèdent aucun domaine intracellulaire liant les nucléotides.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les transporteurs ABC possèdent deux domaines catalytiques liant l'ATP (NBD). MDR1 expulse les chimiothérapies (résistance multidrogue). CFTR est un régulateur de canal chlorure ABC."
+    },
+    {
+      "q": "Concernant les mouvements des lipides au sein d'un même feuillet de la bicouche membranaire :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Mouvements lipidiques"
+      ],
+      "options": [
+        {
+          "text": "La diffusion latérale permet à un phospholipide de changer de position avec ses voisins à une vitesse d'environ 1 à 2 µm par seconde.",
+          "isCorrect": true
+        },
+        {
+          "text": "La rotation sur son grand axe longitudinal est un mouvement très rapide.",
+          "isCorrect": true
+        },
+        {
+          "text": "La flexion des chaînes hydrocarbonées d'acides gras contribue à la fluidité de la bicouche.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les lipides sont immobiles et scellés par des liaisons covalentes peptidiques indestructibles.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Au sein d'un même feuillet, les mouvements (diffusion latérale, rotation, flexion) sont extrêmement rapides et spontanés, conférant à la membrane son statut de fluide bidimensionnel."
+    },
+    {
+      "q": "Quel facteur augmente la fluidité de la membrane plasmique ?",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Fluidité",
+        "Facteurs"
+      ],
+      "options": [
+        {
+          "text": "Une proportion accrue d'acides gras insaturés présentant des doubles liaisons en configuration cis créant des coudes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Des chaînes d'acides gras courtes réduisant les interactions hydrophobes de van der Waals.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une température ambiante élevée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une saturation totale de toutes les chaînes carbonées avec des acides gras très longs (> 26 carbones).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les insaturations cis (coudes), les chaînes courtes et une température élevée augmentent la fluidité. La saturation et les chaînes longues favorisent l'empilement rigide."
+    },
+    {
+      "q": "Concernant la technique FRAP (Fluorescence Recovery After Photobleaching) appliquée à la membrane :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "FRAP"
+      ],
+      "options": [
+        {
+          "text": "Elle permet de mesurer expérimentalement la mobilité et le coefficient de diffusion latérale des protéines ou lipides membranaires marqués.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle implique l'extinction irréversible par un faisceau laser intense de la fluorescence dans une petite zone définie de la membrane.",
+          "isCorrect": true
+        },
+        {
+          "text": "La récupération de la fluorescence dans la zone blanchie reflète la diffusion latérale de molécules fluorescentes intactes environnantes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle sert exclusivement à mesurer le poids sec de l'ADN nucléolaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le FRAP mesure la mobilité latérale : après photo-blanchiment au laser, le retour progressif de la fluorescence dans la zone blanchie atteste de la diffusion latérale des molécules non blanchies."
+    },
+    {
+      "q": "Concernant l'ancre GPI (GlycosylPhosphatidylInositol) :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Ancre GPI"
+      ],
+      "options": [
+        {
+          "text": "Elle ancre des protéines de manière covalente au feuillet extracellulaire de la membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle peut être clivée spécifiquement par une phospholipase C (PI-PLC), libérant la protéine soluble dans le milieu extracellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est assemblée dans le cytosol sans passer par le réticulum endoplasmique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les protéines à ancre GPI sont fréquemment enrichies dans les radeaux lipidiques.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'ancre GPI est ajoutée dans la lumière du RE à l'extrémité C-terminale des protéines, les orientant vers l'extérieur. La PI-PLC permet leur libération régulée."
+    },
+    {
+      "q": "Concernant les échangeurs ioniques de transport actif secondaire :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Antiport",
+        "Échangeurs"
+      ],
+      "options": [
+        {
+          "text": "L'échangeur Na+/H+ (NHE) fait entrer du Na+ selon son gradient et expulse un proton H+ contre son gradient pour réguler le pH intracellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'échangeur Na+/Ca2+ (NCX) utilise l'entrée de Na+ pour expulser le Ca2+ hors de la cellule.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce sont des systèmes d'antiport.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils hydrolysent directement de l'ATP à chaque cycle de transport.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "NHE et NCX sont des antiports de transport actif secondaire : ils exploitent le gradient de Na+ sans hydrolyser directement d'ATP."
+    },
+    {
+      "q": "Concernant les aquaporines :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Aquaporines"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des canaux hydriques transmembranaires tétramériques permettant le passage ultra-rapide et sélectif de molécules d'eau.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles sont strictement imperméables aux protons (H3O+) et aux ions minéraux, préservant le gradient électrochimique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles sont particulièrement abondantes dans les cellules tubulaires rénales et les érythrocytes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le transport d'eau par les aquaporines se fait contre le gradient osmotique en consommant de l'ATP.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les aquaporines facilitent le transport passif de l'eau selon le gradient osmotique, sans dépense énergétique, et bloquent rigoureusement le passage des protons."
+    },
+    {
+      "q": "Quelle protéine assure le stockage du calcium dans la lumière du réticulum sarcoplasmique des myocytes ?",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Calcium",
+        "SERCA"
+      ],
+      "options": [
+        {
+          "text": "La pompe Ca2+ ATPase SERCA associée à la calséquestrine intra-réticulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le canal CFTR activé par la toxine du tétanos.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'aquaporine 4 mitochondriale.",
+          "isCorrect": false
+        },
+        {
+          "text": "La scramblase dépendante de l'ATP.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La pompe SERCA (Sarco/Endoplasmic Reticulum Ca2+ ATPase) séquestre le calcium dans le réticulum, où il est tamponné par la calséquestrine."
+    },
+    {
+      "q": "Concernant le potentiel de repos de la membrane plasmique des cellules animales :",
+      "tags": [
+        "CM 6 - Membrane plasmique",
+        "Potentiel de repos"
+      ],
+      "options": [
+        {
+          "text": "Il est négatif à l'intérieur par rapport à l'extérieur (typiquement environ -70 mV).",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est principalement déterminé par la perméabilité de repos aux ions potassium (K+) à travers des canaux de fuite potassiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'asymétrie de concentration des ions est entretenue en permanence par la pompe Na+/K+ ATPase.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est rigoureusement égal à +150 mV dans toutes les cellules vivantes au repos.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le potentiel de repos (-70 mV) résulte de la fuite passive de K+ vers l'extérieur et du maintien actif des gradients ioniques par la pompe Na+/K+ ATPase."
+    }
+  ]
+}

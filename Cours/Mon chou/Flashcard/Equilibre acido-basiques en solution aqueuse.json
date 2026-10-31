@@ -1,0 +1,203 @@
+[
+  {
+    "recto": "Quelle est la définition d'un acide et d'une base selon Brønsted ?",
+    "verso": "Acide : espèce chimique capable de céder au moins un proton H+.\nBase : espèce chimique capable de capter au moins un proton H+.\nCouple : AH <=> A- + H+.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Brønsted",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Quelle est l'expression de la constante d'acidité Ka et du pKa pour le couple AH/A- ?",
+    "verso": "Ka = ([A-] * [H3O+]) / [AH] (l'activité de l'eau vaut 1).\npKa = -log10(Ka)  <=>  Ka = 10^(-pKa).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Ka",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la relation d'Henderson-Hasselbalch reliant pH et pKa ?",
+    "verso": "pH = pKa + log([A-] / [AH]).\nSi [A-] = [AH]  =>  pH = pKa.\nSi pH = pKa + 1  =>  [A-]/[AH] = 10 (91 % de forme basique).\nSi pH = pKa - 1  =>  [AH]/[A-] = 10 (91 % de forme acide).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Henderson-Hasselbalch",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule du pH d'un monoacide fort de concentration C0 (avec C0 >= 10^-6 M) ?",
+    "verso": "pH = -log(C0).\n(Exemple : HCl à 10^-3 M => pH = 3).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Acide fort",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule du pH d'une monobase forte de concentration C0 (avec C0 >= 10^-6 M) à 25 °C ?",
+    "verso": "pH = 14 + log(C0).\n(Exemple : NaOH à 10^-2 M => pH = 14 - 2 = 12).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Base forte",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule approchée du pH d'un monoacide faible peu dissocié (pKa - log C0) ?",
+    "verso": "pH = (1/2) * (pKa - log C0).\nValable si l'acide est peu dissocié : alpha < 0,1, soit pH <= pKa - 1.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Acide faible",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule approchée du pH d'une monobase faible peu protonée ?",
+    "verso": "pH = 7 + (1/2) * (pKa + log C0).\nValable si la base est peu protonée : pH >= pKa + 1.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Base faible",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule du pH d'une solution d'ampholyte (ex : HCO3-, zwitterion d'un acide aminé) ?",
+    "verso": "pH = (1/2) * (pKa1 + pKa2).\nRemarque cruciale : cette valeur est indépendante de la concentration de l'ampholyte.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Ampholyte",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une solution tampon et quand son pouvoir tampon est-il maximal ?",
+    "verso": "Une solution constituée d'un acide faible et de sa base conjuguée en concentrations voisines. Son pH varie très peu par dilution modérée ou ajout modéré d'acide/base. Son pouvoir tampon est maximal quand [AH] = [A-], soit à pH = pKa.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Tampon",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Quelle est la définition du point isoélectrique (pHi ou pI) d'un acide aminé ?",
+    "verso": "Le pH auquel la charge électrique nette globale moyenne de la molécule est nulle (forme zwitterionique pure). À ce pH, la molécule ne migre pas dans un champ électrique.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Point isoélectrique",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Comment calcule-t-on le pHi d'un acide aminé acide (Aspartate, Glutamate) ?",
+    "verso": "pHi = (1/2) * (pKa1_alpha-COOH + pKaR_chaine-latérale-COOH).\n(Moyenne des deux pKa les plus acides encadrant la forme neutre).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "pHi",
+      "Acide aminé acide"
+    ]
+  },
+  {
+    "recto": "Comment calcule-t-on le pHi d'un acide aminé basique (Lysine, Arginine, Histidine) ?",
+    "verso": "pHi = (1/2) * (pKa2_alpha-NH3+ + pKaR_chaine-latérale-NH3+).\n(Moyenne des deux pKa les plus basiques encadrant la forme neutre).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "pHi",
+      "Acide aminé basique"
+    ]
+  },
+  {
+    "recto": "Quelle est la relation entre Ka, Kb et Ke pour un couple acide/base conjugué dans l'eau ?",
+    "verso": "Ka * Kb = Ke = 10^-14 (à 25 °C).\npKa + pKb = pKe = 14.\nPlus un acide est fort (Ka grand, pKa petit), plus sa base conjuguée est faible (Kb petit, pKb grand).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Ka",
+      "Kb",
+      "Ke"
+    ]
+  },
+  {
+    "recto": "Quel est le comportement d'un acide fort très dilué (ex : HCl à 10^-8 mol.L^-1) ?",
+    "verso": "On ne peut pas négliger l'autoprotolyse de l'eau ! Le pH ne vaut pas 8, mais reste légèrement inférieur à 7 : pH ≈ 6,98 (calcul par l'équation du second degré via l'électroneutralité).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Piège",
+      "Acide fort dilué"
+    ]
+  },
+  {
+    "recto": "Quelle est la zone de virage théorique d'un indicateur coloré acido-basique de pKi ?",
+    "verso": "Zone de virage : pH = [pKi - 1 ; pKi + 1].\nÀ pH < pKi - 1 : teinte acide dominante ([HInd] > 10 [Ind-]).\nÀ pH > pKi + 1 : teinte basique dominante ([Ind-] > 10 [HInd]).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Indicateur coloré",
+      "Zone de virage"
+    ]
+  },
+  {
+    "recto": "Quel est le pH d'une solution de sel NH4Cl (acide fort + base faible) et de CH3COONa (acide faible + base forte) ?",
+    "verso": "NH4Cl (sel acide) : pH = (1/2)*(pKa - log C0) < 7.\nCH3COONa (sel basique) : pH = 7 + (1/2)*(pKa + log C0) > 7.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Sels",
+      "Calcul pH"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'effet nivelant de l'eau sur les acides et bases ?",
+    "verso": "Tous les acides plus forts que H3O+ (pKa < 0) réagissent totalement avec l'eau pour donner H3O+ (acide le plus fort dans l'eau). Toutes les bases plus fortes que OH- (pKa > 14) réagissent totalement pour former OH-.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Nivellement",
+      "Solvant"
+    ]
+  },
+  {
+    "recto": "Quelle est la loi de dilution d'Ostwald pour un acide faible ?",
+    "verso": "alpha = Ka / (Ka + [H3O+]). Quand la concentration C0 tend vers 0 (dilution infinie), le coefficient de dissociation alpha tend vers 1 (l'acide faible se dissocie de plus en plus).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Ostwald",
+      "Dissociation"
+    ]
+  },
+  {
+    "recto": "Quel est le principal système tampon du plasma sanguin extracellulaire ?",
+    "verso": "Le couple CO2 dissous (H2CO3) / HCO3- (acide carbonique / bicarbonate), avec un pKa de 6,1 et un rapport [HCO3-] / [CO2] ≈ 20 à pH physiologique = 7,4.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Tampon sanguin",
+      "Physiologie"
+    ]
+  },
+  {
+    "recto": "Que vaut le pH à la demi-équivalence lors du titrage d'un acide faible par une base forte ?",
+    "verso": "À V = VE/2, la moitié de l'acide a été transformée en sa base conjuguée ([AH] = [A-]), donc pH = pKa. La solution a alors son pouvoir tampon maximal.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Equilibre acido-basiques en solution aqueuse",
+    "tags": [
+      "Titrage",
+      "Demi-équivalence"
+    ]
+  }
+]

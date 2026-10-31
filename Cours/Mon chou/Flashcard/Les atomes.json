@@ -1,0 +1,182 @@
+[
+  {
+    "recto": "Quelle est la composition du noyau atomique et la formule liant A, Z et N ?",
+    "verso": "Le noyau contient Z protons (charge +e) et N neutrons (neutres).\nNombre de masse A = Z + N (nucléons totaux).\nN = A - Z.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Noyau",
+      "Composition"
+    ]
+  },
+  {
+    "recto": "Quelle est la valeur de l'unité de masse atomique (1 u ou 1 Da) ?",
+    "verso": "1 u = 1 Dalton = 1/12 de la masse d'un atome de 12C = 1,66054.10^-27 kg = 1,66054.10^-24 g = 1 / (N_A * 10^3) kg.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Dalton",
+      "Constantes"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule de l'énergie des niveaux dans un hydrogénoïde selon le modèle de Bohr ?",
+    "verso": "En = -13,6 * (Z^2 / n^2) (en eV).\nPour H (Z=1) : E1 = -13,6 eV ; E2 = -3,4 eV ; E_infini = 0 eV.\nÉnergie d'ionisation EI = 13,6 * Z^2 (eV).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Bohr",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelles sont les séries spectrales de l'hydrogène et leur domaine du spectre électromagnétique ?",
+    "verso": "Lyman : retour à n=1 (Ultraviolet - UV)\nBalmer : retour à n=2 (Visible)\nPaschen : retour à n=3 (Infrarouge proche - IR)\nBrackett : retour à n=4 (IR).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Spectroscopie",
+      "Séries"
+    ]
+  },
+  {
+    "recto": "Quels sont les 4 nombres quantiques et leurs valeurs permises ?",
+    "verso": "1) n (principal) : 1, 2, 3... (couche)\n2) l (secondaire / azimutal) : 0 <= l <= n-1 (s:0, p:1, d:2, f:3)\n3) ml (magnétique) : -l <= ml <= +l (2l+1 orbitales)\n4) ms (spin) : -1/2 ou +1/2.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Nombres quantiques",
+      "Règles"
+    ]
+  },
+  {
+    "recto": "Combien d'orbitales et d'électrons au maximum peut contenir une couche n ?",
+    "verso": "Nombre d'orbitales (cases) = n^2.\nNombre maximal d'électrons = 2 * n^2.\n(Pour n=1 : 1 orb, 2 e- ; n=2 : 4 orb, 8 e- ; n=3 : 9 orb, 18 e- ; n=4 : 16 orb, 32 e-).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Capacité",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Qu'énonce le principe d'exclusion de Pauli ?",
+    "verso": "Deux électrons d'un même atome ne peuvent pas avoir leurs quatre nombres quantiques identiques. Une orbitale contient au maximum 2 électrons de spins opposés.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Pauli",
+      "Principe"
+    ]
+  },
+  {
+    "recto": "Qu'énonce la règle de remplissage de Klechkowski ?",
+    "verso": "Les sous-couches se remplissent par ordre de (n + l) croissant. En cas d'égalité, par ordre de n croissant.\nOrdre : 1s < 2s < 2p < 3s < 3p < 4s < 3d < 4p < 5s < 4d < 5p...",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Klechkowski",
+      "Règle"
+    ]
+  },
+  {
+    "recto": "Quelles sont les deux exceptions majeures à Klechkowski pour Z <= 30 ?",
+    "verso": "Chrome Cr (Z=24) : [Ar] 4s1 3d5 (stabilité de la demi-couche d5).\nCuivre Cu (Z=29) : [Ar] 4s1 3d10 (stabilité de la sous-couche complète d10).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Exceptions",
+      "Cr et Cu"
+    ]
+  },
+  {
+    "recto": "Qu'énonce la règle de Hund ?",
+    "verso": "À l'état fondamental, sur des orbitales dégénérées (même énergie, ex : 2px, 2py, 2pz), les électrons occupent le maximum de cases avec des spins parallèles (multiplicité de spin maximale).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Hund",
+      "Règle"
+    ]
+  },
+  {
+    "recto": "Lors de l'ionisation d'un métal de transition du bloc d (ex : Fe -> Fe2+), quels électrons partent en premier ?",
+    "verso": "Toujours les électrons 4s (couche externe n=4) avant les électrons 3d ! Fe ([Ar] 4s2 3d6) -> Fe2+ ([Ar] 3d6) + 2e-.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Ionisation",
+      "Bloc d"
+    ]
+  },
+  {
+    "recto": "Comment évolue le rayon atomique dans le tableau périodique ?",
+    "verso": "Augmente de haut en bas dans une colonne (nouvelles couches n).\nDiminue de gauche à droite sur une période (charge nucléaire effective Z* croissante qui resserre le nuage).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Rayon atomique",
+      "Périodicité"
+    ]
+  },
+  {
+    "recto": "Comment évolue l'énergie d'ionisation (EI) et l'électronégativité (EN) dans le tableau ?",
+    "verso": "Toutes deux augmentent de bas en haut dans une colonne, et de gauche à droite sur une période. (Maximum en haut à droite : F pour EN, He pour EI).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Ionisation",
+      "Électronégativité"
+    ]
+  },
+  {
+    "recto": "Pourquoi l'azote N a-t-il une EI1 supérieure à l'oxygène O ?",
+    "verso": "L'azote a une sous-couche 2p3 demi-remplie stable. L'oxygène (2p4) possède une orbitale avec une paire d'électrons dont la répulsion facilite l'éjection du premier électron pour former O+ (2p3).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Anomalie",
+      "N vs O"
+    ]
+  },
+  {
+    "recto": "Quelle est l'échelle d'électronégativité de Pauling pour les principaux éléments ?",
+    "verso": "F (4,0) > O (3,5) > Cl ≈ N (3,0) > Br (2,8) > I ≈ C ≈ S (2,5) > H (2,2) > P (2,1) > Métaux (< 2,0).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Pauling",
+      "Valeurs clés"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la charge nucléaire effective Z* et la constante d'écran sigma de Slater ?",
+    "verso": "Z* = Z - sigma.\nZ* est la charge positive nette réellement ressentie par un électron, atténuée par l'effet répulsif d'écran (sigma) des autres électrons.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Slater",
+      "Z effectif"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un isotope ?",
+    "verso": "Nucléides ayant le même numéro atomique Z (même élément chimique, même nombre de protons et d'électrons) mais un nombre de masse A différent (nombre de neutrons différent).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Isotopes",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Quelle est la géométrie spatiale d'une orbitale s et d'une orbitale p ?",
+    "verso": "Orbitale s (l=0) : symétrie sphérique.\nOrbitale p (l=1) : deux lobes opposés séparés par un plan nodal passant par le noyau (probabilité de présence nulle au noyau).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Les atomes",
+    "tags": [
+      "Orbitales",
+      "Géométrie"
+    ]
+  }
+]

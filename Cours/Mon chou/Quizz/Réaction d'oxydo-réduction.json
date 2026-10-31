@@ -1,0 +1,632 @@
+{
+  "name": "Chimie - Réaction d'oxydo-réduction",
+  "folder": "PASS - Chimie",
+  "description": "Couples oxydant/réducteur, nombres d'oxydation, demi-équations redox en milieu acide/basique, piles électrochimiques (Daniell, anode, cathode), électrode normale à hydrogène (ENH), formule de Nernst, influence du pH et potentiel standard biologique E°', enthalpie libre standard Delta_r G° = -nF Delta E°, constante d'équilibre K, règle du gamma et dismutation.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant les définitions fondamentales de l'oxydo-réduction :",
+      "tags": [
+        "Oxydo-réduction",
+        "Définitions",
+        "Couple redox"
+      ],
+      "options": [
+        {
+          "text": "Un réducteur est une espèce chimique capable de céder un ou plusieurs électrons (il subit une oxydation).",
+          "isCorrect": true
+        },
+        {
+          "text": "Un oxydant est une espèce chimique capable de capter un ou plusieurs électrons (il subit une réduction).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une oxydation correspond à une perte d'électrons et s'accompagne d'une augmentation du nombre d'oxydation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une réduction correspond à un gain d'électrons et s'accompagne d'une diminution du nombre d'oxydation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans une réaction redox en solution, des électrons libres circulent librement dans le solvant aqueux.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les électrons n'existent jamais à l'état libre en solution aqueuse ! Le transfert d'électrons est immédiat et direct entre le réducteur et l'oxydant (ou via un circuit électrique conducteur externe dans le cas d'une pile électrochimique)."
+    },
+    {
+      "q": "À propos des règles de détermination du nombre d'oxydation (n.o.) d'un élément :",
+      "tags": [
+        "Nombre d'oxydation",
+        "Règles",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "Le nombre d'oxydation d'un corps pur simple (ex : Fe(s), O2(g), Cl2(g), N2(g)) est rigoureusement nul.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans un ion monoatomique, le n.o. est égal à la charge algébrique de cet ion (ex : +II pour Fe2+, -I pour Cl-).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le n.o. de l'hydrogène est égal à +I dans tous ses composés, sauf dans les hydrures métalliques (NaH, CaH2) où il vaut -I.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le n.o. de l'oxygène est égal à -II dans la plupart des composés, sauf dans les peroxydes (H2O2) où il vaut -I et dans OF2 où il vaut +II.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans une molécule neutre, la somme des nombres d'oxydation de tous les atomes est strictement positive.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans une molécule neutre, la somme algébrique des n.o. est STRICTEMENT NULLE. Dans un ion polyatomique, elle est égale à la charge nette de l'ion."
+    },
+    {
+      "q": "Quel est le nombre d'oxydation de l'atome de manganèse dans l'ion permanganate MnO4- et dans l'ion manganèse(II) Mn2+ ?",
+      "tags": [
+        "Nombre d'oxydation",
+        "MnO4-",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "+VII dans MnO4- et +II dans Mn2+.",
+          "isCorrect": true
+        },
+        {
+          "+IV dans MnO4- et +II dans Mn2+": false,
+          "text": "+IV dans MnO4- et +II dans Mn2+.",
+          "isCorrect": false
+        },
+        {
+          "text": "+V dans MnO4- et +I dans Mn2+.",
+          "isCorrect": false
+        },
+        {
+          "text": "+VII dans MnO4- et 0 dans Mn2+.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans MnO4- : n.o.(Mn) + 4 * n.o.(O) = -1. Avec n.o.(O) = -II, n.o.(Mn) + 4*(-2) = -1 => n.o.(Mn) - 8 = -1 => n.o.(Mn) = +VII. Dans l'ion simple Mn2+, n.o.(Mn) = +II. La réduction de MnO4- en Mn2+ met donc en jeu un gain de 5 électrons (VII -> II)."
+    },
+    {
+      "q": "Quel est le nombre d'oxydation du chrome dans l'ion dichromate Cr2O7^2- ?",
+      "tags": [
+        "Nombre d'oxydation",
+        "Cr2O7^2-",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "+III",
+          "isCorrect": false
+        },
+        {
+          "text": "+IV",
+          "isCorrect": false
+        },
+        {
+          "text": "+VI",
+          "isCorrect": true
+        },
+        {
+          "text": "+VII",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "2 * n.o.(Cr) + 7 * (-2) = -2 => 2 * n.o.(Cr) - 14 = -2 => 2 * n.o.(Cr) = +12 => n.o.(Cr) = +VI pour chaque atome de chrome."
+    },
+    {
+      "q": "Quelle est la demi-équation électronique équilibrée du couple MnO4- / Mn2+ en milieu acide aqueux ?",
+      "tags": [
+        "Demi-équation",
+        "MnO4-",
+        "Équilibrage"
+      ],
+      "options": [
+        {
+          "text": "MnO4- + 8 H+ + 5 e- <=> Mn2+ + 4 H2O",
+          "isCorrect": true
+        },
+        {
+          "text": "MnO4- + 4 H+ + 5 e- <=> Mn2+ + 2 H2O",
+          "isCorrect": false
+        },
+        {
+          "text": "MnO4- + 8 H+ + 3 e- <=> Mn2+ + 4 H2O",
+          "isCorrect": false
+        },
+        {
+          "text": "MnO4- + 5 e- <=> Mn2+ + 4 O2-",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Équilibrage méthodique : 1 Mn de chaque côté. On équilibre les 4 O avec 4 H2O. On équilibre les 8 H avec 8 H+. On équilibre les charges : à gauche charge totale = -1 + 8 = +7 ; à droite charge totale = +2. Il faut donc ajouter 5 e- à gauche (+7 - 5 = +2) : MnO4- + 8 H+ + 5 e- <=> Mn2+ + 4 H2O."
+    },
+    {
+      "q": "Concernant la pile Daniell constituée d'une électrode de zinc plongeant dans une solution de Zn2+ et d'une électrode de cuivre plongeant dans une solution de Cu2+ reliées par un pont salin (E°(Zn2+/Zn) = -0,76 V et E°(Cu2+/Cu) = +0,34 V) :",
+      "tags": [
+        "Pile Daniell",
+        "Anode et Cathode",
+        "Fonctionnement"
+      ],
+      "options": [
+        {
+          "text": "L'électrode de zinc est l'anode (pôle négatif - de la pile), siège de l'oxydation : Zn(s) -> Zn2+ + 2 e-.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'électrode de cuivre est la cathode (pôle positif + de la pile), siège de la réduction : Cu2+ + 2 e- -> Cu(s).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le circuit extérieur, les électrons circulent spontanément de l'anode de zinc vers la cathode de cuivre.",
+          "isCorrect": true
+        },
+        {
+          "text": "La force électromotrice standard de la pile Daniell est Delta E° = E°(cathode) - E°(anode) = 0,34 - (-0,76) = 1,10 V.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pont salin sert uniquement à maintenir un contact thermique sans rôle ionique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Moyen mnémotechnique concours : Anode = Oxydation (voyelles) = pôle négatif dans une pile. Cathode = Réduction (consonnes) = pôle positif. Le pont salin assure la fermeture du circuit électrique et maintient la neutralité électrique des deux compartiments par migration d'ions (anions vers l'anode, cations vers la cathode)."
+    },
+    {
+      "q": "À propos de l'Électrode Normale à Hydrogène (ENH) :",
+      "tags": [
+        "ENH",
+        "Électrode de référence",
+        "Conventions"
+      ],
+      "options": [
+        {
+          "text": "Elle met en jeu le couple redox 2 H+(aq) + 2 e- <=> H2(g) sur une électrode de platine platiné inerte.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans les conditions standard, l'activité des ions H+ vaut 1 (pH = 0) et la pression de H2(g) vaut 1 bar (ou 1 atm).",
+          "isCorrect": true
+        },
+        {
+          "text": "Par convention internationale, son potentiel standard d'électrode est fixé à 0,000 V à TOUTES les températures : E°(H+/H2) = 0 V.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle constitue l'origine de l'échelle des potentiels redox standard d'oxydo-réduction.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ENH a un potentiel standard de +1,00 V à 25 °C.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'ENH est la référence universelle dont le potentiel est défini arbitrairement et exactement comme 0 V par convention internationale."
+    },
+    {
+      "q": "Selon la relation de Nernst, quelle est l'expression du potentiel d'électrode E d'un couple a Ox + n e- <=> b Red à 298 K (en utilisant 0,059 V ou 0,06 V) ?",
+      "tags": [
+        "Nernst",
+        "Formule",
+        "Potentiel redox"
+      ],
+      "options": [
+        {
+          "text": "E = E° + (0,059 / n) * log([Ox]^a / [Red]^b)",
+          "isCorrect": true
+        },
+        {
+          "text": "E = E° - (0,059 / n) * log([Ox]^a / [Red]^b)",
+          "isCorrect": false
+        },
+        {
+          "text": "E = E° + (0,059 / n) * ln([Ox]^a / [Red]^b)",
+          "isCorrect": false
+        },
+        {
+          "text": "E = E° + (0,059 / n) * log([Red]^b / [Ox]^a)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Relation de Nernst fondamentale : E = E° + (RT / nF) * ln(a_Ox^a / a_Red^b) = E° + (0,059 / n) * log([Ox]^a / [Red]^b). Le terme (RT/F)*ln(10) vaut 0,05916 V à 25 °C (souvent arrondi à 0,06 V dans les calculs rapides du concours)."
+    },
+    {
+      "q": "Pour le couple Fe3+ / Fe2+ (E° = +0,77 V), quel est le potentiel d'électrode E d'une solution contenant [Fe3+] = 0,1 mol.L^-1 et [Fe2+] = 0,001 mol.L^-1 à 25 °C ? (On prend 0,06 V dans la formule de Nernst)",
+      "tags": [
+        "Calcul",
+        "Nernst",
+        "Fe3+/Fe2+"
+      ],
+      "options": [
+        {
+          "text": "E = +0,65 V",
+          "isCorrect": false
+        },
+        {
+          "text": "E = +0,77 V",
+          "isCorrect": false
+        },
+        {
+          "text": "E = +0,83 V",
+          "isCorrect": false
+        },
+        {
+          "text": "E = +0,89 V",
+          "isCorrect": true
+        },
+        {
+          "text": "E = +0,95 V",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Fe3+ + 1 e- <=> Fe2+ (n=1). E = E° + (0,06 / 1) * log([Fe3+]/[Fe2+]) = 0,77 + 0,06 * log(0,1 / 0,001) = 0,77 + 0,06 * log(100) = 0,77 + 0,06 * 2 = 0,77 + 0,12 = +0,89 V !"
+    },
+    {
+      "q": "Pour le couple de l'ion permanganate MnO4- + 8 H+ + 5 e- <=> Mn2+ + 4 H2O (E° = +1,51 V), quelle est l'expression du potentiel de Nernst en fonction du pH à concentrations en MnO4- et Mn2+ égales ? (Avec 0,06 V)",
+      "tags": [
+        "Nernst",
+        "Dépendance au pH",
+        "MnO4-"
+      ],
+      "options": [
+        {
+          "text": "E = E° - 0,096 * pH",
+          "isCorrect": true
+        },
+        {
+          "text": "E = E° - 0,06 * pH",
+          "isCorrect": false
+        },
+        {
+          "text": "E = E° + 0,096 * pH",
+          "isCorrect": false
+        },
+        {
+          "text": "E = E° - (0,06 / 5) * pH",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "E = E° + (0,06 / 5) * log([MnO4-] * [H+]^8 / [Mn2+]). Si [MnO4-] = [Mn2+], le rapport vaut [H+]^8. E = E° + (0,06 / 5) * log([H+]^8) = E° + (0,06 * 8 / 5) * log[H+] = E° - (0,48 / 5) * pH = E° - 0,096 * pH. Le pouvoir oxydant de MnO4- diminue fortement quand le pH augmente !"
+    },
+    {
+      "q": "En biochimie et biologie cellulaire, le potentiel standard apparent noté E°' est défini :",
+      "tags": [
+        "E°'",
+        "Biochimie",
+        "pH 7"
+      ],
+      "options": [
+        {
+          "text": "À la température de 25 °C ou 37 °C et au pH physiologique de 7,0 (activité de H+ = 10^-7).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour le couple NAD+ + 2 H+ + 2 e- <=> NADH + H+, le potentiel standard biologique E°' vaut environ -0,32 V.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour le couple H+/H2, alors que E° = 0,00 V (à pH = 0), le potentiel standard biologique E°' à pH = 7 vaut E°' = 0 - 0,06 * 7 = -0,42 V.",
+          "isCorrect": true
+        },
+        {
+          "text": "E°' est strictement identique à E° quelle que soit la participation des protons.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans la cellule vivante, [H+] n'est pas de 1 M (pH 0, ce qui détruirait toute macromolécule) mais de 10^-7 M (pH 7). On utilise donc E°' qui intègre la concentration [H+] = 10^-7 M dans la valeur tabulée."
+    },
+    {
+      "q": "Quelle est la relation thermodynamique fondamentale reliant la variation d'enthalpie libre standard de réaction Delta_r G° et la force électromotrice standard Delta E° d'une réaction redox ?",
+      "tags": [
+        "Delta_r G°",
+        "Delta E°",
+        "Faraday",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "Delta_r G° = - n * F * Delta E°",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r G° = + n * F * Delta E°",
+          "isCorrect": false
+        },
+        {
+          "text": "Delta_r G° = - n * R * T * Delta E°",
+          "isCorrect": false
+        },
+        {
+          "text": "Delta_r G° = - F * Delta E° / n",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta_r G° = - n F Delta E° (avec Delta E° = E°_Oxydant - E°_Réducteur). Comme F > 0 (constante de Faraday ≈ 96 500 C.mol^-1) et n > 0 (nombre d'électrons échangés), une réaction spontanée (Delta_r G° < 0) correspond impérativement à Delta E° > 0 !"
+    },
+    {
+      "q": "À 298 K, quelle relation lie la constante d'équilibre K d'une réaction redox mettant en jeu n électrons à la différence de potentiel standard Delta E° ? (On prend 0,06 V)",
+      "tags": [
+        "Constante K",
+        "Delta E°",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "log(K) = (n * Delta E°) / 0,06",
+          "isCorrect": true
+        },
+        {
+          "text": "log(K) = Delta E° / (0,06 * n)",
+          "isCorrect": false
+        },
+        {
+          "text": "K = exp(n * Delta E°)",
+          "isCorrect": false
+        },
+        {
+          "text": "log(K) = - (n * Delta E°) / 0,06",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta_r G° = -RT ln(K) = -2,3 RT log(K) et Delta_r G° = - n F Delta E°. Donc 2,3 RT log(K) = n F Delta E° => log(K) = n * Delta E° / (2,3 RT / F) = n * Delta E° / 0,059 ≈ (n * Delta E°) / 0,06."
+    },
+    {
+      "q": "Une réaction redox met en jeu l'échange de n = 2 électrons et possède Delta E° = +0,30 V à 25 °C. Que vaut la constante d'équilibre K de cette réaction ? (Avec 0,06 V)",
+      "tags": [
+        "Calcul",
+        "Constante K",
+        "Delta E°"
+      ],
+      "options": [
+        {
+          "text": "K = 10",
+          "isCorrect": false
+        },
+        {
+          "text": "K = 10^5",
+          "isCorrect": false
+        },
+        {
+          "text": "K = 10^10",
+          "isCorrect": true
+        },
+        {
+          "text": "K = 10^-10",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "log(K) = (2 * 0,30) / 0,06 = 0,60 / 0,06 = 10. Donc K = 10^10. Un simple écart de potentiel standard de 0,30 V pour 2 électrons correspond à une constante d'équilibre de 10 milliards (réaction totale) !"
+    },
+    {
+      "q": "La règle du gamma pour la prévision des réactions redox stipule que :",
+      "tags": [
+        "Règle du gamma",
+        "Spontanéité",
+        "Prévision"
+      ],
+      "options": [
+        {
+          "text": "L'oxydant du couple ayant le potentiel standard le plus élevé (le plus fort pouvoir oxydant) réagit spontanément avec le réducteur du couple ayant le potentiel le plus bas (le plus fort pouvoir réducteur).",
+          "isCorrect": true
+        },
+        {
+          "text": "Plus l'écart Delta E° = E°(Ox1) - E°(Red2) est grand et positif, plus la réaction est favorisée thermodynamiquement.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'oxydant le plus faible réagit avec le réducteur le plus faible.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une réaction redox est thermodynamiquement impossible si Delta E° > 0.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "En traçant l'échelle des potentiels E° : l'oxydant situé 'en haut' réagit avec le réducteur situé 'en bas' selon un tracé en forme de lettre grecque gamma (gamma direct)."
+    },
+    {
+      "q": "On donne les potentiels standard suivants : E°(Ag+/Ag) = +0,80 V et E°(Cu2+/Cu) = +0,34 V. Que se passe-t-il si l'on plonge une lame de cuivre métallique Cu(s) dans une solution de nitrate d'argent (Ag+) ?",
+      "tags": [
+        "Règle du gamma",
+        "Cuivre et Argent",
+        "Application"
+      ],
+      "options": [
+        {
+          "text": "Il y a formation spontanée d'argent métallique Ag(s) sur la lame et la solution se colore en bleu par apparition d'ions Cu2+.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'équation bilan est : 2 Ag+ + Cu(s) -> 2 Ag(s) + Cu2+.",
+          "isCorrect": true
+        },
+        {
+          "text": "Aucune réaction ne se produit car le cuivre est un métal noble.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'argent métallique s'oxyde pour former des ions Ag+.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "E°(Ag+/Ag) = 0,80 V > E°(Cu2+/Cu) = 0,34 V. L'oxydant fort Ag+ réagit spontanément avec le réducteur Cu : 2 Ag+ + Cu -> 2 Ag(s) + Cu2+. Le dépôt gris métallique d'argent et la coloration bleue caractéristique des ions cuivriques hydratés en sont la preuve visuelle."
+    },
+    {
+      "q": "Qu'est-ce qu'une réaction de dismutation en oxydo-réduction ?",
+      "tags": [
+        "Dismutation",
+        "Définition",
+        "Exemples"
+      ],
+      "options": [
+        {
+          "text": "Une réaction dans laquelle une même espèce chimique joue à la fois le rôle d'oxydant et de réducteur pour donner deux espèces à des degrés d'oxydation différents.",
+          "isCorrect": true
+        },
+        {
+          "text": "La décomposition de l'eau oxygénée : 2 H2O2 -> 2 H2O + O2 est une dismutation de l'oxygène (qui passe de -I à -II et 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "La dismutation de l'ion chloreux ou de l'ion cuivreux : 2 Cu+ -> Cu(s) + Cu2+.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction inverse d'une dismutation est appelée médiamutation (ou rétrodismutation).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une dismutation ne peut avoir lieu qu'en présence d'un acide fort.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans une dismutation, l'atome à un degré d'oxydation intermédiaire s'oxyde en une espèce de n.o. supérieur et se réduit en une espèce de n.o. inférieur. L'eau oxygénée (O à -I) se dismute en eau (O à -II) et dioxygène (O à 0)."
+    },
+    {
+      "q": "Quelle est la valeur de la constante de Faraday F ?",
+      "tags": [
+        "Faraday",
+        "Constante",
+        "Valeur"
+      ],
+      "options": [
+        {
+          "text": "F = N_A * e ≈ 96 485 C.mol^-1 (souvent arrondie à 96 500 C.mol^-1).",
+          "isCorrect": true
+        },
+        {
+          "text": "F représente la charge électrique absolue portée par une mole d'électrons.",
+          "isCorrect": true
+        },
+        {
+          "text": "F = 1,602.10^-19 C.",
+          "isCorrect": false
+        },
+        {
+          "text": "F = 8,314 J.K^-1.mol^-1.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "F = N_A * e = (6,022.10^23 mol^-1) * (1,602.10^-19 C) ≈ 96 485 C/mol. C'est la charge d'une mole d'électrons."
+    },
+    {
+      "q": "Une pile fonctionne en débitant un courant continu I = 0,965 A pendant une durée Delta t = 1000 secondes. Quelle est la quantité de matière d'électrons n(e-) ayant circulé dans le circuit ?",
+      "tags": [
+        "Faraday",
+        "Calcul",
+        "Quantité d'électricité"
+      ],
+      "options": [
+        {
+          "text": "0,01 mole d'électrons.",
+          "isCorrect": true
+        },
+        {
+          "text": "0,1 mole d'électrons.",
+          "isCorrect": false
+        },
+        {
+          "text": "1 mole d'électrons.",
+          "isCorrect": false
+        },
+        {
+          "text": "965 moles d'électrons.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Q = I * Delta t = 0,965 A * 1000 s = 965 C. Comme Q = n(e-) * F, n(e-) = Q / F = 965 C / 96 500 C.mol^-1 = 0,01 mole d'électrons !"
+    },
+    {
+      "q": "Dans une chaîne respiratoire mitochondriale, les électrons sont transférés du NADH (E°' = -0,32 V) jusqu'au dioxygène O2 (E°' = +0,82 V pour le couple O2/H2O). Quelle est la variation de potentiel Delta E°' et la variation d'enthalpie libre standard Delta_r G°' pour le transfert de 2 électrons ?",
+      "tags": [
+        "Chaîne respiratoire",
+        "Calcul bioénergétique",
+        "Delta G°'"
+      ],
+      "options": [
+        {
+          "text": "Delta E°' = +1,14 V ; Delta_r G°' ≈ - 220 kJ.mol^-1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta E°' = +0,50 V ; Delta_r G°' ≈ - 96 kJ.mol^-1.",
+          "isCorrect": false
+        },
+        {
+          "text": "Delta E°' = -1,14 V ; Delta_r G°' ≈ + 220 kJ.mol^-1.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le processus est endergonique et nécessite de l'énergie.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta E°' = E°'(O2/H2O) - E°'(NAD+/NADH) = +0,82 - (-0,32) = +1,14 V. Delta_r G°' = - n * F * Delta E°' = - 2 * 96 500 C.mol^-1 * 1,14 V = - 220 020 J.mol^-1 ≈ - 220 kJ.mol^-1. Cette énergie colossale libérée est utilisée par les complexes mitochondriaux pour pomper des protons et synthétiser l'ATP."
+    },
+    {
+      "q": "Concernant l'électrolyse par rapport à la pile :",
+      "tags": [
+        "Électrolyse",
+        "Comparaison",
+        "Pile"
+      ],
+      "options": [
+        {
+          "text": "L'électrolyse est un processus forcé non spontané réalisé grâce à un générateur externe de courant continu.",
+          "isCorrect": true
+        },
+        {
+          "text": "À l'anode, il se produit toujours une oxydation (dans la pile comme dans l'électrolyseur).",
+          "isCorrect": true
+        },
+        {
+          "text": "À la cathode, il se produit toujours une réduction (dans la pile comme dans l'électrolyseur).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans une électrolyse, l'anode est reliée au pôle positif (+) du générateur et la cathode au pôle négatif (-).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une électrolyse se produit spontanément sans apport d'énergie électrique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Règle mnémotechnique universelle : Anode = Oxydation et Cathode = Réduction TOUJOURS ! En revanche, les polarités s'inversent : dans une pile spontanée, l'anode d'oxydation est le pôle (-). Dans l'électrolyseur forcé, l'anode d'oxydation est reliée au pôle (+) du générateur pour lui arracher ses électrons."
+    },
+    {
+      "q": "Le bleu de méthylène est un indicateur redox : il est bleu sous sa forme oxydée et incolore sous sa forme réduite (leuco). Le virage de l'indicateur se produit dans une zone de potentiel :",
+      "tags": [
+        "Indicateurs redox",
+        "Bleu de méthylène",
+        "Zone de virage"
+      ],
+      "options": [
+        {
+          "text": "E = E°_ind +/- (0,06 / n) V",
+          "isCorrect": true
+        },
+        {
+          "text": "E = E°_ind +/- 1 unité de pH",
+          "isCorrect": false
+        },
+        {
+          "text": "La forme réduite est rouge vif.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'indicateur ne dépend pas du potentiel.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "De même qu'un indicateur acido-basique vire à pH = pKa +/- 1, un indicateur d'oxydo-réduction possède une zone de virage en potentiel E = E° +/- (0,06 / n) V correspondant à un rapport [Ox]/[Red] compris entre 0,1 et 10."
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+[
+  {
+    "recto": "Quelle est la définition de la structure secondaire d'une protéine ?",
+    "verso": "Arrangement spatial tridimensionnel local et périodique régulier du squelette polypeptidique, stabilisé principalement par des liaisons hydrogène entre groupements C=O et N-H du squelette.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Définition",
+      "Structure secondaire"
+    ]
+  },
+  {
+    "recto": "Quels sont les paramètres géométriques de l'hélice alpha classique ?",
+    "verso": "Enroulement droit (dextrogyre), 3,6 acides aminés par tour de spire, pas de 0,54 nm (5,4 Å), et progression axiale de 0,15 nm (1,5 Å) par résidu.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Hélice alpha",
+      "Géométrie"
+    ]
+  },
+  {
+    "recto": "Comment se disposent les liaisons hydrogène au sein de l'hélice alpha ?",
+    "verso": "Parallèlement à l'axe de l'hélice, reliant le carbonyle C=O du résidu i à l'amine N-H du résidu (i + 4).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Hélice alpha",
+      "Liaisons hydrogène"
+    ]
+  },
+  {
+    "recto": "Où se projettent les chaînes latérales (R) des acides aminés dans une hélice alpha ?",
+    "verso": "Vers l'extérieur de l'hélice, perpendiculairement à son axe, évitant ainsi l'encombrement stérique au sein du cœur carboné dense.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Hélice alpha",
+      "Chaînes latérales"
+    ]
+  },
+  {
+    "recto": "Pourquoi la proline et la glycine sont-elles des briseurs d'hélice alpha ?",
+    "verso": "La proline a une structure cyclique rigide bloquant l'angle phi et manque d'hydrogène sur son azote amidique ; la glycine confère une entropie conformationnelle excessive défavorable au repliement rigide.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Proline",
+      "Glycine",
+      "Hélice alpha"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une hélice alpha amphipathique ?",
+    "verso": "Une hélice présentant une face longitudinale hydrophobe et une face hydrophile, visualisable par une projection en roue hélicoïdale (ou diagramme de Wenxiang).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Hélice amphipathique",
+      "Wenxiang"
+    ]
+  },
+  {
+    "recto": "Quelle est la distance axiale entre résidus dans un brin bêta étiré comparée à l'hélice alpha ?",
+    "verso": "Environ 3,5 Å dans le brin bêta contre 1,5 Å dans l'hélice alpha (le brin bêta est donc une conformation beaucoup plus étirée).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Brin bêta",
+      "Distance résidus"
+    ]
+  },
+  {
+    "recto": "Comment s'orientent les chaînes latérales dans un feuillet bêta ?",
+    "verso": "Alternativement de part et d'autre (au-dessus et en dessous) du plan médian plissé du feuillet.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Feuillet bêta",
+      "Chaînes latérales"
+    ]
+  },
+  {
+    "recto": "Pourquoi le feuillet bêta antiparallèle est-il plus stable que le feuillet parallèle ?",
+    "verso": "Parce que ses liaisons hydrogène inter-brins sont rectilignes, colinéaires et perpendiculaires à l'axe des brins, tandis qu'elles sont inclinées et déformées en disposition parallèle.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Feuillet antiparallèle",
+      "Stabilité"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un coude bêta (beta-turn) et quels acides aminés y prédominent ?",
+    "verso": "Structure compacte de 4 résidus permettant un demi-tour à 180° de la chaîne (liaison H entre C=O de i et N-H de i+3) ; riche en Glycine et Proline.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Coude bêta",
+      "Proline/Glycine"
+    ]
+  },
+  {
+    "recto": "Quelles sont les propriétés structurales des boucles ('loops') ?",
+    "verso": "Segments non périodiques, plus longs et flexibles que les coudes, situés en surface des protéines, riches en résidus hydrophiles et portant souvent les sites actifs ou antigéniques.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Boucles",
+      "Propriétés"
+    ]
+  },
+  {
+    "recto": "Décrire la structure de la triple hélice de tropocollagène.",
+    "verso": "Trois chaînes polypeptidiques individuelles enroulées en hélice gauche de type polyproline II, associées ensemble en une super-hélice droite, avec répétition du motif (Gly-X-Y)n.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Collagène",
+      "Triple hélice"
+    ]
+  },
+  {
+    "recto": "Quelle est l'anomalie structurale à l'origine de la pathogénicité de la protéine prion (PrP) ?",
+    "verso": "Transition conformationnelle sans altération de la séquence primaire : la forme normale PrPC riche en hélices alpha (~40%) se transforme en forme pathogène PrPSC enrichie en feuillets bêta (>40%), insoluble et résistante aux protéases.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Prion",
+      "Transition bêta"
+    ]
+  },
+  {
+    "recto": "Qu'appelle-t-on la conformation 'cross-bêta' des fibres amyloïdes ?",
+    "verso": "Agencement structural universel des dépôts amyloïdes où les brins bêta plissés sont orientés perpendiculairement à l'axe longitudinal de la fibre.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Amyloïde",
+      "Cross-bêta"
+    ]
+  },
+  {
+    "recto": "Comment le motif structural en doigt de zinc (zinc finger) se lie-t-il à l'ADN ?",
+    "verso": "Un atome de Zn2+ coordonné par 2 Cys et 2 His stabilise une unité compacte dont l'hélice alpha s'insère dans le grand sillon de l'ADN pour lire la séquence de bases.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Doigt de zinc",
+      "ADN"
+    ]
+  },
+  {
+    "recto": "Quels réactifs sont utilisés pour réduire les ponts disulfures des protéines ?",
+    "verso": "Le dithiothréitol (DTT) et le bêta-mercaptoéthanol (beta-ME).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Pont disulfure",
+      "DTT"
+    ]
+  },
+  {
+    "recto": "Quelle information fournit le diagramme de Ramachandran ?",
+    "verso": "La cartographie des angles dièdres (phi, psi) stériquement autorisés ou interdits pour chaque résidu d'une chaîne polypeptidique.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Ramachandran",
+      "Angles dièdres"
+    ]
+  },
+  {
+    "recto": "Quelle structure secondaire traverse typiquement la membrane plasmique des protéines transmembranaires ?",
+    "verso": "Une hélice alpha hydrophobe d'environ 20 résidus d'acides aminés (longueur ~ 30 Å) comblant l'épaisseur de la région apolaire de la bicouche lipidique.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structures secondaires",
+    "tags": [
+      "Membrane",
+      "Hélice transmembranaire"
+    ]
+  }
+]

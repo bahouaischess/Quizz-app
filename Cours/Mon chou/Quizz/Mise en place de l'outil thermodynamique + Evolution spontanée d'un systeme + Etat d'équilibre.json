@@ -1,0 +1,658 @@
+{
+  "name": "Chimie - Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+  "folder": "PASS - Chimie",
+  "description": "Systèmes thermodynamiques, variables et fonctions d'état, Premier Principe (U, H, Qv, Qp), Deuxième Principe (S, création d'entropie), Troisième Principe (Nernst), Enthalpie libre de Gibbs (G), critères de spontanéité, quotient réactionnel Qr, constante d'équilibre K et couplage énergétique.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant la classification thermodynamique des systèmes :",
+      "tags": [
+        "Systèmes thermodynamiques",
+        "Classification",
+        "Définitions"
+      ],
+      "options": [
+        {
+          "text": "Un système ouvert échange à la fois de la matière et de l'énergie avec le milieu extérieur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un système fermé échange de l'énergie (travail, chaleur) mais pas de matière avec l'extérieur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un système isolé n'échange ni matière ni énergie avec le milieu extérieur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une cellule vivante ou un être humain est un exemple typique de système fermé.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un calorimètre parfaitement adiabatique et rigide fermé hermétiquement est une approximation de système isolé.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les êtres vivants (cellules, organismes) sont des systèmes OUVERTS en régime stationnaire : ils consomment des nutriments (matière), éliminent des déchets et échangent de la chaleur avec l'environnement."
+    },
+    {
+      "q": "À propos des variables et fonctions d'état en thermodynamique :",
+      "tags": [
+        "Variables d'état",
+        "Fonctions d'état",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Une variable intensive est indépendante de la quantité de matière du système (ex : T, P, masse volumique, concentration).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une variable extensive est proportionnelle à la taille ou à la quantité de matière du système (ex : V, m, n, U, H, S, G).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour une fonction d'état (comme U, H, S, G), la variation Delta X entre deux états ne dépend que de l'état initial et de l'état final, et non du chemin suivi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le travail W et la chaleur Q sont des fonctions d'état dont la différentielle est totale exacte.",
+          "isCorrect": false
+        },
+        {
+          "text": "Sur un cycle thermodynamique fermé (état final = état initial), la variation de toute fonction d'état est rigoureusement nulle (Delta U_cycle = 0, Delta H_cycle = 0).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "W et Q sont des grandeurs de transfert qui DÉPENDENT DU CHEMIN SUIVI : ce ne sont PAS des fonctions d'état (leurs différentielles notées delta_W et delta_Q ne sont pas exactes). Sur un cycle fermé, Delta U = 0 mais W_cycle + Q_cycle = 0 avec W et Q non nuls en général."
+    },
+    {
+      "q": "Concernant le Premier Principe de la thermodynamique :",
+      "tags": [
+        "Premier principe",
+        "Énergie interne",
+        "Enthalpie"
+      ],
+      "options": [
+        {
+          "text": "L'énergie interne U d'un système isolé se conserve : Delta U = 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour un système fermé, Delta U = W + Q.",
+          "isCorrect": true
+        },
+        {
+          "text": "À volume constant (transformation isochore sans travail autre que les forces de pression), la chaleur échangée est égale à la variation d'énergie interne : Qv = Delta U.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'enthalpie est définie par la fonction H = U + P*V.",
+          "isCorrect": true
+        },
+        {
+          "text": "À pression constante (transformation isobare), la chaleur échangée est égale à la variation d'enthalpie : Qp = Delta H.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont rigoureusement exactes et constituent le socle du Premier Principe. Qv = Delta U car W = -intégrale(P dV) = 0. Qp = Delta H car dH = dU + P dV + V dP = delta_Q - P dV + P dV + 0 = delta_Q."
+    },
+    {
+      "q": "Concernant le Deuxième Principe de la thermodynamique et l'entropie S :",
+      "tags": [
+        "Deuxième principe",
+        "Entropie",
+        "Spontanéité"
+      ],
+      "options": [
+        {
+          "text": "L'entropie S est une fonction d'état extensive mesurant le désordre microscopique ou le nombre de micro-états accessibles (S = kB * ln Omega).",
+          "isCorrect": true
+        },
+        {
+          "text": "La variation d'entropie se décompose en dS = dSe + dSi, où dSe est le flux d'entropie échangé et dSi l'entropie créée.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'entropie créée dSi est toujours strictement positive pour une transformation irréversible (réelle/spontanée) et nulle pour une transformation réversible : dSi >= 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour un système isolé (dSe = 0), l'entropie ne peut que croître ou rester constante : Delta S_iso >= 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'entropie d'un système fermé non isolé ne peut jamais diminuer, même s'il cède de la chaleur à l'extérieur.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour un système non isolé, Delta S peut parfaitement être négatif si dSe < 0 (refroidissement, congélation de l'eau). C'est pour le système ISOLÉ (ou l'univers = système + extérieur) que Delta S_univers >= 0 obligatoirement !"
+    },
+    {
+      "q": "Le Troisième Principe de la thermodynamique (principe de Nernst) énonce que :",
+      "tags": [
+        "Troisième principe",
+        "Nernst",
+        "Zéro absolu"
+      ],
+      "options": [
+        {
+          "text": "L'entropie de tout corps pur cristallisé parfait est nulle à la température du zéro absolu (0 Kelvin) : S(0 K) = 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il permet de définir des entropies molaires absolues S°m à toute température T > 0 K.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'entropie molaire standard d'un corps pur S°m(T) est toujours strictement positive pour T > 0 K.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'enthalpie standard de formation d'un corps pur simple à 298 K est nulle, mais son entropie standard S°m(298 K) n'est jamais nulle.",
+          "isCorrect": true
+        },
+        {
+          "text": "La température de 0 K peut être atteinte en un nombre fini d'étapes adiabatiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le zéro absolu (0 K) est une limite inaccessible en pratique (principe d'inaccessibilité). À 298 K, S°m > 0 pour tout corps (ex: S°m(O2 gas) ≈ 205 J.K^-1.mol^-1), contrairement à Delta_f H° qui est conventionnellement nul pour les corps simples de référence."
+    },
+    {
+      "q": "L'enthalpie libre de Gibbs G est définie par G = H - T*S. À température et pression constantes (T et P constantes), quelle est la condition d'évolution spontanée d'un système réactionnel ?",
+      "tags": [
+        "Enthalpie libre",
+        "Gibbs",
+        "Critère de spontanéité"
+      ],
+      "options": [
+        {
+          "text": "dG <= 0 (Delta G < 0 pour une évolution spontanée irréversible).",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta G = 0 lorsque le système atteint son état d'équilibre thermodynamique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une réaction avec Delta G > 0 est dite endergonique et ne peut pas évoluer spontanément dans le sens direct.",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta G > 0 signifie que la réaction évolue spontanément dans le sens inverse.",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta H < 0 est une condition nécessaire et suffisante pour qu'une réaction soit spontanée.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta H < 0 (exothermicité) n'est NI nécessaire NI suffisant ! Une réaction endothermique (Delta H > 0) peut être parfaitement spontanée si le terme entropique T Delta S est grand et positif (Delta G = Delta H - T Delta S < 0). Le seul critère absolu à T et P constantes est le signe de Delta G !"
+    },
+    {
+      "q": "L'enthalpie libre de réaction s'exprime par Delta_r G = Delta_r G° + R*T*ln(Qr). À l'équilibre thermodynamique :",
+      "tags": [
+        "Équilibre",
+        "Constante K",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "Delta_r G = 0",
+          "isCorrect": true
+        },
+        {
+          "text": "Qr = K (la constante d'équilibre)",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r G° = - R*T*ln(K)",
+          "isCorrect": true
+        },
+        {
+          "text": "K = exp(-Delta_r G° / (R*T))",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r G° = 0",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ATTENTION CONFUSION FRÉQUENTE : à l'équilibre, c'est Delta_r G qui vaut 0, et PAS Delta_r G° ! Delta_r G° est une constante tabulée dans les conditions standard, qui fixe la valeur de K par Delta_r G° = -RT ln K."
+    },
+    {
+      "q": "Une réaction chimique à 298 K possède une constante d'équilibre K = 10^5. Que vaut son enthalpie libre standard de réaction Delta_r G° ? (On donne R*T*ln(10) ≈ 5,7 kJ.mol^-1 à 298 K)",
+      "tags": [
+        "Calcul",
+        "Delta_r G°",
+        "Constante K"
+      ],
+      "options": [
+        {
+          "text": "- 28,5 kJ.mol^-1",
+          "isCorrect": true
+        },
+        {
+          "+ 28,5 kJ.mol^-1": false,
+          "text": "+ 28,5 kJ.mol^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "- 5,7 kJ.mol^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "0 kJ.mol^-1",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta_r G° = -RT ln K = -RT * ln(10^5) = -5 * RT ln(10) = -5 * 5,7 kJ.mol^-1 = - 28,5 kJ.mol^-1. Comme K >> 1, Delta_r G° est fortement négatif (réaction très favorable thermodynamiquement)."
+    },
+    {
+      "q": "Soit une réaction réversible pour laquelle K = 50 à 25 °C. Dans un état donné, les concentrations mesurées donnent un quotient réactionnel Qr = 200. Comment le système évolue-t-il spontanément ?",
+      "tags": [
+        "Critère d'évolution",
+        "Quotient réactionnel",
+        "Sens de réaction"
+      ],
+      "options": [
+        {
+          "text": "Le système évolue dans le sens direct (sens 1 de formation des produits).",
+          "isCorrect": false
+        },
+        {
+          "text": "Le système évolue dans le sens inverse (sens -1 de formation des réactifs) car Qr > K.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le système est à l'équilibre car Qr et K sont tous deux positifs.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'enthalpie libre de réaction Delta_r G est strictement positive dans cet état.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le système ne peut pas évoluer sans apport de chaleur.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Comme Qr (200) > K (50), il y a un excès de produits par rapport à l'équilibre. Delta_r G = RT ln(Qr/K) = RT ln(200/50) = RT ln(4) > 0. Le système évolue donc spontanément dans le sens inverse (-1) pour consommer des produits et reformer des réactifs jusqu'à ce que Qr devienne égal à K."
+    },
+    {
+      "q": "Une réaction chimique possède Delta_r H° = - 100 kJ.mol^-1 et Delta_r S° = - 200 J.K^-1.mol^-1. À quelle température le système bascule-t-il entre spontanéité et non-spontanéité (température d'inversion T_inv) ?",
+      "tags": [
+        "Calcul",
+        "Température d'inversion",
+        "Spontanéité"
+      ],
+      "options": [
+        {
+          "text": "200 K",
+          "isCorrect": false
+        },
+        {
+          "text": "500 K (soit 227 °C)",
+          "isCorrect": true
+        },
+        {
+          "text": "1000 K",
+          "isCorrect": false
+        },
+        {
+          "text": "La réaction est spontanée à toute température.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta_r G° = Delta_r H° - T Delta_r S°. À l'inversion, Delta_r G° = 0 <=> T_inv = Delta_r H° / Delta_r S°. Attention aux unités : Delta_r H° = -100 000 J.mol^-1 et Delta_r S° = -200 J.K^-1.mol^-1. T_inv = (-100 000) / (-200) = 500 K. Comme Delta H < 0 et Delta S < 0, la réaction est spontanée à basse température (T < 500 K) et non spontanée à haute température (T > 500 K)."
+    },
+    {
+      "q": "Dans quel(s) cas une réaction chimique est-elle SPONTANÉE À TOUTE TEMPÉRATURE ?",
+      "tags": [
+        "Signe Delta H et Delta S",
+        "Spontanéité",
+        "Règles"
+      ],
+      "options": [
+        {
+          "text": "Delta_r H° < 0 et Delta_r S° > 0",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r H° > 0 et Delta_r S° < 0",
+          "isCorrect": false
+        },
+        {
+          "text": "Delta_r H° < 0 et Delta_r S° < 0",
+          "isCorrect": false
+        },
+        {
+          "text": "Delta_r H° > 0 et Delta_r S° > 0",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta_r G° = Delta_r H° - T Delta_r S°. Si Delta H < 0 (favorable) et Delta S > 0 (favorable), le terme -T Delta S est négatif à toute température T > 0 K. La somme de deux grandeurs négatives est toujours strictement négative : Delta G° < 0 à toute température !"
+    },
+    {
+      "q": "Une réaction avec Delta_r H° > 0 (endothermique) et Delta_r S° < 0 (perte d'entropie) est :",
+      "tags": [
+        "Signe Delta H et Delta S",
+        "Non spontanéité"
+      ],
+      "options": [
+        {
+          "text": "Spontanée à haute température.",
+          "isCorrect": false
+        },
+        {
+          "text": "Spontanée à basse température.",
+          "isCorrect": false
+        },
+        {
+          "text": "Impossible spontanément à toute température (Delta_r G° > 0 toujours).",
+          "isCorrect": true
+        },
+        {
+          "text": "À l'équilibre à toute température.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta H > 0 et -T Delta S > 0 : les deux contributions s'opposent à la réaction. Delta_r G° est strictement positif quelle que soit la température. La réaction ne peut jamais être spontanée dans ces conditions."
+    },
+    {
+      "q": "Pour la vaporisation de l'eau liquide H2O(l) -> H2O(g) à 1 atm, les signes de Delta_r H° et Delta_r S° sont :",
+      "tags": [
+        "Changement d'état",
+        "Vaporisation",
+        "Signes"
+      ],
+      "options": [
+        {
+          "text": "Delta_r H° > 0 et Delta_r S° > 0",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r H° < 0 et Delta_r S° < 0",
+          "isCorrect": false
+        },
+        {
+          "text": "Delta_r H° > 0 et Delta_r S° < 0",
+          "isCorrect": false
+        },
+        {
+          "text": "Delta_r H° < 0 et Delta_r S° > 0",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La vaporisation nécessite un apport de chaleur (rupture des liaisons hydrogène), donc Delta H > 0 (endothermique). Le passage de liquide à gaz crée un désordre moléculaire immense, donc Delta S > 0. La vaporisation devient spontanée à haute température (T > Teb = 373 K à 1 atm)."
+    },
+    {
+      "q": "Le couplage énergétique dans les cellules vivantes (ex : phosphorylation du glucose couplée à l'hydrolyse de l'ATP) repose sur le fait que :",
+      "tags": [
+        "Couplage énergétique",
+        "ATP",
+        "Bioénergétique"
+      ],
+      "options": [
+        {
+          "text": "Les enthalpies libres standard sont additives : Delta_r G°_global = Delta_r G°_1 + Delta_r G°_2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une réaction endergonique non spontanée (Delta_r G°1 > 0) peut être rendue spontanée si elle est couplée à une réaction fortement exergonique (Delta_r G°2 << 0) telle que la somme soit négative.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hydrolyse de l'ATP en ADP + Pi libère environ -30,5 kJ.mol^-1 dans les conditions standard.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le couplage thermodynamique nécessite obligatoirement un intermédiaire réactionnel commun catalysé par une enzyme.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le couplage permet de violer le deuxième principe de la thermodynamique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le couplage ne viole aucun principe : la variation globale d'enthalpie libre de l'ensemble du système couplé est négative (Delta G_global < 0), ce qui respecte parfaitement le deuxième principe !"
+    },
+    {
+      "q": "Concernant l'activité chimique a_i d'un constituant dans l'expression de Qr :",
+      "tags": [
+        "Activité chimique",
+        "Quotient réactionnel",
+        "Conventions"
+      ],
+      "options": [
+        {
+          "text": "Pour un soluté en solution diluée, l'activité est a_i = [i] / C° (avec C° = 1 mol.L^-1).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour un solvant (comme l'eau en solution aqueuse diluée), l'activité est conventionnellement égale à 1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour un solide pur non dissous ou un liquide pur dans sa phase, l'activité est égale à 1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour un gaz parfait dans un mélange gazeux, l'activité est a_i = P_i / P° (avec P° = 1 bar ou 1 atm).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'activité chimique possède la même unité que la grandeur physique correspondante (mol/L ou bar).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'activité chimique est TOUJOURS une grandeur SANS DIMENSION (adimensionnelle), car elle est définie par le rapport à l'état standard (C/C° ou P/P°)."
+    },
+    {
+      "q": "Quelle est la relation reliant l'énergie interne U et l'enthalpie H pour une réaction chimique mettant en jeu des gaz parfaits à température T constante ?",
+      "tags": [
+        "Relation H et U",
+        "Gaz parfaits",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "Delta_r H = Delta_r U + Delta n_gaz * R * T",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r H = Delta_r U - Delta n_gaz * R * T",
+          "isCorrect": false
+        },
+        {
+          "text": "Delta_r H = Delta_r U si le nombre de moles de gaz ne varie pas (Delta n_gaz = 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r H est toujours strictement égal à Delta_r U.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "H = U + PV. Pour les gaz parfaits, PV = n_gaz RT. Donc Delta H = Delta U + Delta(PV) = Delta U + Delta n_gaz * RT. Si Delta n_gaz = 0, Delta H = Delta U."
+    },
+    {
+      "q": "La combustion complète d'une mole de méthanol liquide à 298 K : CH3OH(l) + 3/2 O2(g) -> CO2(g) + 2 H2O(l). Que vaut Delta n_gaz pour cette réaction ?",
+      "tags": [
+        "Delta n_gaz",
+        "Calcul",
+        "Stœchiométrie"
+      ],
+      "options": [
+        {
+          "text": "+ 0,5 mole",
+          "isCorrect": false
+        },
+        {
+          "text": "- 0,5 mole",
+          "isCorrect": true
+        },
+        {
+          "text": "+ 1,5 mole",
+          "isCorrect": false
+        },
+        {
+          "text": "0 mole",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta n_gaz = n_gaz(produits) - n_gaz(réactifs). Les espèces liquides (CH3OH et H2O) ne comptent pas ! Côté produits : 1 mole de CO2(g). Côté réactifs : 1,5 mole de O2(g). Donc Delta n_gaz = 1 - 1,5 = - 0,5 mole."
+    },
+    {
+      "q": "À propos du potentiel chimique mu_i d'un constituant i :",
+      "tags": [
+        "Potentiel chimique",
+        "Définition",
+        "Équilibre"
+      ],
+      "options": [
+        {
+          "text": "Le potentiel chimique est l'enthalpie libre molaire partielle : mu_i = (dG / dni)_{T, P, n_j}.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il s'exprime par mu_i = mu_i° + R*T*ln(a_i).",
+          "isCorrect": true
+        },
+        {
+          "text": "La matière diffuse spontanément des régions de fort potentiel chimique vers les régions de faible potentiel chimique.",
+          "isCorrect": true
+        },
+        {
+          "text": "À l'équilibre entre deux phases (ex : liquide-vapeur), le potentiel chimique du constituant est identique dans les deux phases : mu_i(liq) = mu_i(vap).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le potentiel chimique est une grandeur extensive.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le potentiel chimique est une grandeur INTENSIVE (énergie par mole, en J.mol^-1), analogue à la pression pour le volume ou la température pour l'énergie thermique. L'égalité des potentiels chimiques caractérise l'équilibre matériel."
+    },
+    {
+      "q": "Pour la synthèse de l'ammoniac : N2(g) + 3 H2(g) <=> 2 NH3(g), que vaut l'expression du quotient réactionnel Qr en fonction des pressions partielles ?",
+      "tags": [
+        "Quotient réactionnel",
+        "Pressions partielles",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "Qr = (P_NH3)^2 / [ (P_N2) * (P_H2)^3 ]",
+          "isCorrect": true
+        },
+        {
+          "text": "Qr = [ (P_N2) * (P_H2)^3 ] / (P_NH3)^2",
+          "isCorrect": false
+        },
+        {
+          "text": "Qr = (2 * P_NH3) / (P_N2 + 3 * P_H2)",
+          "isCorrect": false
+        },
+        {
+          "text": "Qr = (P_NH3) / [ (P_N2) * (P_H2) ]",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Qr = produit des activités des produits élevées à leurs puissances stœchiométriques divisé par le produit des réactifs. Ici : a(NH3)^2 / (a(N2) * a(H2)^3) = P(NH3)^2 / (P(N2) * P(H2)^3)."
+    },
+    {
+      "q": "L'expression Delta_r G° = - R*T*ln(K) implique que :",
+      "tags": [
+        "Constante K",
+        "Delta_r G°",
+        "Interprétation"
+      ],
+      "options": [
+        {
+          "text": "Si Delta_r G° < 0, alors K > 1 (l'équilibre favorise les produits).",
+          "isCorrect": true
+        },
+        {
+          "text": "Si Delta_r G° > 0, alors K < 1 (l'équilibre favorise les réactifs).",
+          "isCorrect": true
+        },
+        {
+          "text": "Si Delta_r G° = 0, alors K = 1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si Delta_r G° est très négatif (ex : - 100 kJ.mol^-1), la réaction peut être considérée comme quasi-totale à l'équilibre.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si une réaction a un K très grand, elle se produit instantanément en quelques microsecondes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "PIÈGE CLASSIQUE : la thermodynamique (K, Delta_r G°) indique SI une réaction est possible et où se situe l'équilibre, mais ne dit RIEN sur la VITESSE à laquelle elle s'y rend ! La combustion du diamant en graphite a un Delta G° négatif et un K immense, mais la vitesse est nulle à température ambiante (cinétiquement bloquée)."
+    },
+    {
+      "q": "Le travail d'expansion volumique élémentaire des forces de pression exercées par l'extérieur sur un système s'exprime par :",
+      "tags": [
+        "Travail",
+        "Forces de pression",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "delta_W = - P_ext * dV",
+          "isCorrect": true
+        },
+        {
+          "text": "delta_W = + P_ext * dV",
+          "isCorrect": false
+        },
+        {
+          "text": "Lors d'une compression (dV < 0), le travail reçu par le système est positif (W > 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "Lors d'une détente (dV > 0), le système fournit du travail à l'extérieur (W < 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le vide (P_ext = 0), le travail d'expansion est nul (détente de Joule-Gay-Lussac).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Par convention thermodynamique (convention du banquier : ce qui entre est positif, ce qui sort est négatif) : delta_W = - P_ext dV. Lors d'une compression, le milieu extérieur fournit de l'énergie au système (W > 0)."
+    },
+    {
+      "q": "Concernant la chaleur latente molaire de changement d'état L (ou Delta_chgt H°) :",
+      "tags": [
+        "Changement d'état",
+        "Chaleur latente",
+        "Enthalpie"
+      ],
+      "options": [
+        {
+          "text": "Elle correspond à l'enthalpie molaire échangée lors du changement d'état à température et pression constantes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fusion, la vaporisation et la sublimation sont des transformations endothermiques (L > 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "La solidification, la liquéfaction et la condensation sont des transformations exothermiques (L < 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "À la température de changement d'état sous 1 atm, les deux phases sont en équilibre et Delta_chgt G° = 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'entropie de changement d'état s'exprime par Delta_chgt S° = Delta_chgt H° / T_chgt.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "À l'équilibre liquide-vapeur ou solide-liquide sous pression constante : Delta G = Delta H - T Delta S = 0, d'où Delta S = Delta H / T. Rompre des liaisons intermoléculaires requiert toujours un apport d'énergie (fusion, vap, sub > 0)."
+    }
+  ]
+}

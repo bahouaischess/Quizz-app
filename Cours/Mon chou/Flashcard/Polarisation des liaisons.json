@@ -1,0 +1,162 @@
+[
+  {
+    "recto": "Quelle est la définition et la formule du moment dipolaire permanent de liaison mu ?",
+    "verso": "mu = delta * e * d.\ndelta : charge partielle (fraction de charge élémentaire)\ne : charge de l'électron (1,602.10^-19 C)\nd : longueur de liaison internucléaire en mètres.\nUnité : Coulomb.mètre (SI) ou Debye (1 D = 3,336.10^-30 C.m).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Moment dipolaire",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Comment calcule-t-on le pourcentage de caractère ionique partiel d'une liaison ?",
+    "verso": "% ionique = (mu_expérimental / mu_théorique_ionique) * 100\nAvec mu_théorique = 1 * e * d (transfert total d'un électron à la distance d).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Caractère ionique",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Pourquoi CO2 et CCl4 sont-ils apolaires malgré des liaisons individuelles très polaires ?",
+    "verso": "Parce que leur symétrie géométrique régulière (linéaire pour CO2, tétraédrique régulière pour CCl4) entraîne l'annulation vectorielle exacte de la somme de tous les moments dipolaires de liaison (somme vectorielle = 0).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Symétrie",
+      "Apolarité"
+    ]
+  },
+  {
+    "recto": "Quels sont les 3 types d'interactions de Van der Waals et leur nature ?",
+    "verso": "1) Keesom : Dipôle permanent - Dipôle permanent (molécules polaires)\n2) Debye : Dipôle permanent - Dipôle induit (polaire + polarisable)\n3) London : Dipôle instantané - Dipôle induit (toutes molécules, forces de dispersion).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Van der Waals",
+      "Types"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qui détermine l'intensité des forces de London entre molécules ?",
+    "verso": "La polarisabilité du nuage électronique (augmente avec la taille, le nombre d'électrons et la masse molaire) et la surface de contact géométrique (molécules linéaires > ramifiées sphériques).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "London",
+      "Facteurs"
+    ]
+  },
+  {
+    "recto": "Quelles sont les conditions strictes pour établir une liaison hydrogène ?",
+    "verso": "1) Un atome d'hydrogène lié par covalence à un atome très électronégatif et petit (F, O, N) = donneur.\n2) Un doublet non liant sur un autre atome petit et très électronégatif (F, O, N) = accepteur.\nÉnergie : 10 à 40 kJ/mol.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Liaison hydrogène",
+      "Conditions"
+    ]
+  },
+  {
+    "recto": "Pourquoi l'eau bout-elle à 100 °C et le sulfure d'hydrogène H2S à -60 °C ?",
+    "verso": "L'eau établit un réseau tridimensionnel très dense de liaisons hydrogène (4 liaisons H par molécule), nécessitant une grande énergie thermique pour être rompu. Le soufre n'est pas assez électronégatif pour former des liaisons H dans H2S.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "H2O vs H2S",
+      "Ébullition"
+    ]
+  },
+  {
+    "recto": "Combien de liaisons hydrogène unissent les paires A-T et G-C dans l'ADN ?",
+    "verso": "- Adénine - Thymine (A-T) : 2 liaisons hydrogène.\n- Guanine - Cytosine (G-C) : 3 liaisons hydrogène (les séquences riches en GC ont une température de fusion plus élevée).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "ADN",
+      "Paires de bases"
+    ]
+  },
+  {
+    "recto": "Pourquoi l'ortho-nitrophénol est-il plus volatil que le para-nitrophénol ?",
+    "verso": "L'ortho-nitrophénol forme une liaison hydrogène INTRAMOLÉCULAIRE qui le referme sur lui-même, réduisant les interactions intermoléculaires. Le para-nitrophénol forme des liaisons INTERmoléculaires liant fortement les molécules entre elles.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Nitrophénol",
+      "Intra vs Inter"
+    ]
+  },
+  {
+    "recto": "Pourquoi la glace flotte-t-elle sur l'eau liquide (anomalie de densité) ?",
+    "verso": "Dans la glace, les liaisons hydrogène imposent un réseau cristallin hexagonal très ouvert et aéré (lacunaire). À la fusion, le réseau s'affaisse partiellement, rendant l'eau liquide plus dense que la glace à 0 °C.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Glace",
+      "Densité"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle de la constante diélectrique epsilon_r de l'eau sur la dissolution des sels ?",
+    "verso": "L'eau possède une permittivité relative élevée (epsilon_r ≈ 80) qui divise par 80 la force d'attraction électrostatique de Coulomb entre cations et anions, facilitant leur dissociation et solvatation.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Constante diélectrique",
+      "Dissolution"
+    ]
+  },
+  {
+    "recto": "Pourquoi l'acétone pure ne forme-t-elle pas de liaison hydrogène avec elle-même ?",
+    "verso": "Elle possède un accepteur (doublet sur l'oxygène de C=O) mais AUCUN donneur (aucun hydrogène lié à F, O ou N : ses H sont sur des carbones C-H). Elle peut en revanche accepter une liaison H d'une molécule d'eau.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Acétone",
+      "Piège liaison H"
+    ]
+  },
+  {
+    "recto": "Quel isomère du 1,2-dichloroéthène est polaire ?",
+    "verso": "L'isomère cis (Z) est polaire (mu > 0 D) car les dipôles C-Cl s'additionnent. L'isomère trans (E) est apolaire (mu = 0 D) car ils s'opposent et s'annulent.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Cis/trans",
+      "Polarité"
+    ]
+  },
+  {
+    "recto": "Quelle est la hiérarchie des énergies des interactions chimiques ?",
+    "verso": "Liaison covalente (200 - 500 kJ/mol) > Liaison hydrogène (10 - 40 kJ/mol) > Interactions de Van der Waals (0,5 - 5 kJ/mol).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Énergies",
+      "Comparaison"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une interaction ion-dipôle ?",
+    "verso": "Interaction électrostatique attractive entre un ion chargé et le dipôle d'une molécule polaire (ex : hydratation de Na+ par l'oxygène delta- de H2O). Énergie : 40 à 100 kJ/mol (décroît en 1/r^2).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "Ion-dipôle",
+      "Hydratation"
+    ]
+  },
+  {
+    "recto": "Pourquoi le n-pentane a-t-il une Teb plus élevée que le néopentane ?",
+    "verso": "La chaîne linéaire allongée du n-pentane offre une plus grande surface de contact intermoléculaire que la sphère compacte du néopentane, créant des forces de London plus importantes.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Polarisation des liaisons",
+    "tags": [
+      "London",
+      "Isomères"
+    ]
+  }
+]

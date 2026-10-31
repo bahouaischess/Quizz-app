@@ -1,0 +1,662 @@
+{
+  "name": "Chimie - Equilibre acido-basiques en solution aqueuse",
+  "folder": "PASS - Chimie",
+  "description": "Couples acido-basiques de Brønsted, Ka, autoprotolyse de l'eau, calculs de pH (acides/bases forts et faibles, ampholytes, sels), solutions tampons, acides aminés et pHi, titrages et indicateurs colorés.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Selon la théorie de Brønsted-Lowry, quelle(s) définition(s) est/sont EXACTE(S) ?",
+      "tags": [
+        "Brønsted",
+        "Définitions",
+        "Acide-Base"
+      ],
+      "options": [
+        {
+          "text": "Un acide est une espèce chimique capable de céder au moins un proton H+.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une base est une espèce chimique capable de capter au moins un proton H+.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un acide de Brønsted est obligatoirement une molécule électriquement neutre.",
+          "isCorrect": false
+        },
+        {
+          "text": "À tout acide AH correspond une base conjuguée A- telle que AH <=> A- + H+.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une base de Brønsted doit obligatoirement posséder au moins un doublet non liant pour fixer un proton.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Un acide peut être neutre (CH3COOH), cationique (NH4+) ou anionique (H2PO4-). Pour capter un proton (lacune électronique), la base de Brønsted doit posséder un doublet d'électrons disponible (non liant ou doublet pi)."
+    },
+    {
+      "q": "À propos du produit ionique de l'eau Ke et du pH de l'eau pure :",
+      "tags": [
+        "Autoprotolyse",
+        "Ke",
+        "Température"
+      ],
+      "options": [
+        {
+          "text": "L'autoprotolyse de l'eau est une réaction endothermique : 2 H2O <=> H3O+ + OH-.",
+          "isCorrect": true
+        },
+        {
+          "text": "À 25 °C, Ke = 1,0.10^-14 et le pH de l'eau pure est égal à 7,0.",
+          "isCorrect": true
+        },
+        {
+          "text": "À 37 °C (température corporelle), le produit ionique Ke est supérieur à 1,0.10^-14, donc le pH de l'eau pure y est inférieur à 7,0.",
+          "isCorrect": true
+        },
+        {
+          "text": "À 37 °C, l'eau pure devient acide car son pH est inférieur à 7,0.",
+          "isCorrect": false
+        },
+        {
+          "text": "Par définition, une solution aqueuse est neutre si et seulement si [H3O+] = [OH-].",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La neutralité d'une solution aqueuse est définie par [H3O+] = [OH-], ce qui équivaut à pH = (1/2) pKe. Comme l'autoprotolyse est endothermique, selon la loi de Van 't Hoff, Ke augmente avec T (à 37 °C, Ke ≈ 2,4.10^-14, d'où pKe ≈ 13,6 et pH_neutre ≈ 6,8). L'eau pure reste strictement neutre à 37 °C car [H3O+] = [OH-] !"
+    },
+    {
+      "q": "Quelle est l'expression de la constante d'acidité Ka pour le couple acide éthanoïque / ion éthanoate CH3COOH / CH3COO- dans l'eau ?",
+      "tags": [
+        "Constante d'acidité",
+        "Ka",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "Ka = ([CH3COO-] * [H3O+]) / [CH3COOH]",
+          "isCorrect": true
+        },
+        {
+          "text": "Ka = ([CH3COOH] * [OH-]) / [CH3COO-]",
+          "isCorrect": false
+        },
+        {
+          "text": "Ka = ([CH3COO-] * [H3O+]) / ([CH3COOH] * [H2O])",
+          "isCorrect": false
+        },
+        {
+          "text": "Ka = [CH3COOH] / ([CH3COO-] * [H3O+])",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Par convention, l'activité de l'eau (solvant) est égale à 1 dans les solutions diluées. L'expression de Ka ne comporte donc pas le terme [H2O]. Ka = ([CH3COO-] * [H3O+]) / [CH3COOH]."
+    },
+    {
+      "q": "On considère un couple acide/base faible AH/A- de pKa = 4,8. Dans une solution à pH = 6,8 :",
+      "tags": [
+        "Diagramme de prédominance",
+        "Henderson-Hasselbalch",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "La forme acide AH prédomine largement sur la forme basique A-.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le rapport des concentrations [A-] / [AH] est égal à 100.",
+          "isCorrect": true
+        },
+        {
+          "text": "La forme basique A- représente plus de 99 % de la concentration totale en soluté.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le rapport [AH] / [A-] vaut 0,01.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les concentrations [AH] et [A-] sont égales car on est en solution tampon.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Selon Henderson-Hasselbalch : pH = pKa + log([A-]/[AH]) => log([A-]/[AH]) = 6,8 - 4,8 = 2 => [A-]/[AH] = 10^2 = 100. Donc [AH]/[A-] = 0,01. La forme basique représente 100/101 ≈ 99,01 % du total. Les concentrations sont égales uniquement à pH = pKa !"
+    },
+    {
+      "q": "On dissout de l'acide chlorhydrique HCl (acide fort) dans de l'eau pure à la concentration C0 = 1,0.10^-8 mol.L^-1 à 25 °C. Quel est le pH de cette solution ?",
+      "tags": [
+        "Piège classique",
+        "Acide fort très dilué",
+        "Calcul pH"
+      ],
+      "options": [
+        {
+          "text": "pH = 8,0",
+          "isCorrect": false
+        },
+        {
+          "text": "pH = 7,0",
+          "isCorrect": false
+        },
+        {
+          "text": "pH légèrement inférieur à 7 (environ 6,98)",
+          "isCorrect": true
+        },
+        {
+          "text": "pH = 6,0",
+          "isCorrect": false
+        },
+        {
+          "text": "pH = 1,0",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Piège redoutable du concours PASS ! Si on applique aveuglément pH = -log C0, on trouve pH = 8, ce qui signifierait qu'ajouter un acide rend la solution basique ! Lorsque C0 < 10^-6 mol.L^-1, on ne peut pas négliger l'autoprotolyse de l'eau. Par électroneutralité : [H3O+] = [Cl-] + [OH-] = C0 + Ke/[H3O+], soit [H3O+]^2 - C0 [H3O+] - Ke = 0. On trouve [H3O+] ≈ 1,05.10^-7 mol.L^-1, soit pH ≈ 6,98 (légèrement inférieur à 7, la solution reste très faiblement acide)."
+    },
+    {
+      "q": "Quel est le pH d'une solution d'acide formique HCOOH de concentration C0 = 0,01 mol.L^-1 et de pKa = 3,8, sachant que l'acide est faiblement dissocié ?",
+      "tags": [
+        "Calcul",
+        "Acide faible",
+        "Formule usuelle"
+      ],
+      "options": [
+        {
+          "text": "pH = 2,0",
+          "isCorrect": false
+        },
+        {
+          "text": "pH = 2,9",
+          "isCorrect": true
+        },
+        {
+          "text": "pH = 3,8",
+          "isCorrect": false
+        },
+        {
+          "text": "pH = 4,8",
+          "isCorrect": false
+        },
+        {
+          "text": "pH = 5,8",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Formule usuelle pour un monoacide faible peu dissocié : pH = (1/2) * (pKa - log C0). Ici, -log(0,01) = 2. Donc pH = (1/2) * (3,8 + 2) = (1/2) * 5,8 = 2,9. Vérification de l'approximation : pH = 2,9 <= pKa - 1 = 2,8 (limite très proche, dissociation < 10%)."
+    },
+    {
+      "q": "Quel est le pH d'une solution aqueuse d'ammoniaque NH3 (base faible) de concentration C0 = 0,1 mol.L^-1, sachant que pour le couple NH4+/NH3, pKa = 9,2 ?",
+      "tags": [
+        "Calcul",
+        "Base faible",
+        "Formule usuelle"
+      ],
+      "options": [
+        {
+          "text": "pH = 5,1",
+          "isCorrect": false
+        },
+        {
+          "text": "pH = 9,2",
+          "isCorrect": false
+        },
+        {
+          "text": "pH = 11,1",
+          "isCorrect": true
+        },
+        {
+          "text": "pH = 13,0",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour une monobase faible peu protonée : pH = 7 + (1/2) * (pKa + log C0). Ici log C0 = log(0,1) = -1. Donc pH = 7 + (1/2) * (9,2 - 1) = 7 + (1/2) * 8,2 = 7 + 4,1 = 11,1. Vérification : pH = 11,1 >= pKa + 1 = 10,2 (la base est bien majoritaire)."
+    },
+    {
+      "q": "Une solution aqueuse contient un ampholyte (comme l'hydrogénocarbonate HCO3- ou l'ion hydrogénophosphate HPO4^2-). En solution suffisamment concentrée, le pH :",
+      "tags": [
+        "Ampholyte",
+        "Formule pH",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "S'exprime par pH = (1/2) * (pKa1 + pKa2).",
+          "isCorrect": true
+        },
+        {
+          "text": "Est rigoureusement indépendant de la concentration initiale de l'ampholyte.",
+          "isCorrect": true
+        },
+        {
+          "text": "S'exprime par pH = 7 + (1/2) * (pKa2 - pKa1).",
+          "isCorrect": false
+        },
+        {
+          "text": "Varie fortement avec la dilution.",
+          "isCorrect": false
+        },
+        {
+          "text": "Correspond au point isoélectrique dans le cas d'un acide aminé neutre.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Pour une espèce amphotère issue d'un diacide AH2 (pKa1 et pKa2), la réaction prépondérante est la dismutation de l'ampholyte : 2 AH- <=> AH2 + A^2-. La constante d'équilibre est K = Ka2 / Ka1 = [AH2][A^2-]/[AH-]^2. En combinant les équations, on obtient [H3O+] = sqrt(Ka1 * Ka2), d'où pH = (1/2)(pKa1 + pKa2). Cette valeur est indépendante de C0."
+    },
+    {
+      "q": "On prépare une solution en mélangeant 100 mL d'acide éthanoïque à 0,2 mol.L^-1 et 100 mL d'éthanoate de sodium à 0,2 mol.L^-1 (pKa = 4,75). Quelles propositions sont VRAIES ?",
+      "tags": [
+        "Solution tampon",
+        "Propriétés",
+        "Capacité tampon"
+      ],
+      "options": [
+        {
+          "text": "Le pH de la solution obtenue est égal à 4,75.",
+          "isCorrect": true
+        },
+        {
+          "text": "Cette solution est une solution tampon.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pH de cette solution varie très peu lors d'une dilution modérée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pouvoir tampon de cette solution est maximal car [base conjuguée] = [acide conjugué].",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ajout d'une petite quantité d'acide fort ou de base forte fait varier brutalement le pH de plusieurs unités.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Comme [acide] = [base], pH = pKa + log(1) = 4,75. C'est une solution tampon idéale. Son pouvoir tampon (dC/dpH) est maximal pour pH = pKa. Son pH est insensible à une dilution modérée et résiste à l'ajout modéré d'acide fort ou de base forte."
+    },
+    {
+      "q": "L'alanine est un acide aminé sans chaîne latérale ionisable : pKa1 (-COOH) = 2,34 et pKa2 (-NH3+) = 9,69. Quelle est la valeur de son point isoélectrique (pHi ou pI) ?",
+      "tags": [
+        "Acide aminé",
+        "Point isoélectrique",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "pHi = 2,34",
+          "isCorrect": false
+        },
+        {
+          "text": "pHi = 6,01",
+          "isCorrect": true
+        },
+        {
+          "text": "pHi = 7,00",
+          "isCorrect": false
+        },
+        {
+          "text": "pHi = 9,69",
+          "isCorrect": false
+        },
+        {
+          "text": "pHi = 12,03",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour un acide alpha-aminé monoacide monobase (chaîne latérale neutre), la forme zwitterionique globale neutre (NH3+-CH(CH3)-COO-) est encadrée par pKa1 et pKa2. Le point isoélectrique est la moyenne : pHi = (pKa1 + pKa2) / 2 = (2,34 + 9,69) / 2 = 12,03 / 2 = 6,015 ≈ 6,01."
+    },
+    {
+      "q": "L'acide glutamique possède trois groupements ionisables : alpha-COOH (pKa1 = 2,19), gamma-COOH de chaîne latérale (pKaR = 4,25) et alpha-NH3+ (pKa2 = 9,67). Quel est son point isoélectrique (pHi) ?",
+      "tags": [
+        "Acide aminé acide",
+        "pHi",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "pHi = 3,22",
+          "isCorrect": true
+        },
+        {
+          "text": "pHi = 5,37",
+          "isCorrect": false
+        },
+        {
+          "text": "pHi = 6,96",
+          "isCorrect": false
+        },
+        {
+          "text": "pHi = 2,19",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour un acide aminé acide (Aspartate, Glutamate), à pH très acide la forme est AH3 (+1). Quand le pH monte, le 1er COOH se déprotone à pKa1=2,19 pour donner la forme zwitterionique globale neutre AH2 (0). Puis le COOH latéral se déprotone à pKaR=4,25 pour donner AH- (-1), et enfin le NH3+ à pKa2=9,67 (-2). La forme neutre est donc encadrée par pKa1 et pKaR : pHi = (2,19 + 4,25) / 2 = 6,44 / 2 = 3,22 !"
+    },
+    {
+      "q": "Concernant la lysine, un acide aminé basique de pKa1 = 2,18 (alpha-COOH), pKa2 = 8,95 (alpha-NH3+) et pKaR = 10,53 (epsilon-NH3+) :",
+      "tags": [
+        "Acide aminé basique",
+        "pHi",
+        "Charges"
+      ],
+      "options": [
+        {
+          "text": "Son point isoélectrique est pHi = (8,95 + 10,53) / 2 = 9,74.",
+          "isCorrect": true
+        },
+        {
+          "text": "À pH physiologique (7,4), la lysine porte une charge nette globale positive (+1).",
+          "isCorrect": true
+        },
+        {
+          "text": "À pH = 12, la charge nette globale de la lysine est négative (-1).",
+          "isCorrect": true
+        },
+        {
+          "text": "Son point isoélectrique est pHi = (2,18 + 8,95) / 2 = 5,56.",
+          "isCorrect": false
+        },
+        {
+          "text": "À son pHi, la mobilité électrophorétique nette de la lysine est nulle.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Pour un acide aminé basique, la forme neutre se situe entre pKa2 et pKaR, d'où pHi = (8,95 + 10,53)/2 = 9,74. À pH = 7,4 (inférieur au pHi), les deux groupements amine sont protonés (+2) et le carboxylate déprotoné (-1), soit charge nette +1. Au pHi, la charge nette est nulle, donc la mobilité électrophorétique s'annule."
+    },
+    {
+      "q": "Soit un sel d'acide fort et de base faible, tel que le chlorure d'ammonium NH4Cl en solution aqueuse :",
+      "tags": [
+        "Sels",
+        "Calcul pH",
+        "Sel acide"
+      ],
+      "options": [
+        {
+          "text": "La solution obtenue est neutre (pH = 7) car Cl- et NH4+ se neutralisent.",
+          "isCorrect": false
+        },
+        {
+          "text": "La solution est acide car NH4+ est un acide faible alors que Cl- est un ion spectateur neutre.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pH se calcule par la formule d'un acide faible : pH = (1/2) * (pKa - log C0).",
+          "isCorrect": true
+        },
+        {
+          "text": "La solution est basique à cause de l'ammoniac résiduel.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "NH4Cl se dissocie totalement en NH4+ et Cl-. Cl- est la base conjuguée d'un acide fort (HCl), c'est une base infiniment faible (spectateur). NH4+ est un acide faible (pKa = 9,2). La solution se comporte donc comme une solution d'acide faible de concentration C0 : pH = (1/2)(pKa - log C0) < 7."
+    },
+    {
+      "q": "Soit un sel d'acide faible et de base forte, comme l'acétate de sodium CH3COONa :",
+      "tags": [
+        "Sels",
+        "Calcul pH",
+        "Sel basique"
+      ],
+      "options": [
+        {
+          "text": "La solution est basique car CH3COO- est une base faible et Na+ est un ion spectateur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pH s'exprime par pH = 7 + (1/2) * (pKa + log C0).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pH est strictement égal à 7,0 quelle que soit la concentration.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le pH est donné par pH = -log C0.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "CH3COONa -> Na+ + CH3COO-. Na+ est indifférent (spectateur). CH3COO- est une base faible. Son pH est donc celui d'une base faible de concentration C0 : pH = 7 + (1/2)(pKa + log C0) > 7."
+    },
+    {
+      "q": "À propos des indicateurs colorés acido-basiques (couple HInd / Ind-) :",
+      "tags": [
+        "Indicateurs colorés",
+        "Zone de virage",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Un indicateur coloré est un couple acide/base faible dont les formes acide et basique ont des teintes différentes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La zone de virage de l'indicateur s'étend approximativement sur l'intervalle de pH [pKi - 1 ; pKi + 1].",
+          "isCorrect": true
+        },
+        {
+          "text": "L'œil humain perçoit la couleur de la forme acide dès lors que [HInd] >= 10 * [Ind-].",
+          "isCorrect": true
+        },
+        {
+          "text": "L'œil humain perçoit la couleur de la forme basique dès lors que [Ind-] >= 10 * [HInd].",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour doser un acide fort par une base forte, l'hélianthine (zone de virage 3,1 - 4,4) et la phénolphtaléine (zone de virage 8,2 - 10,0) sont toutes deux utilisables car le saut de pH à l'équivalence est très abrupt (de 4 à 10).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont vraies ! La zone de virage théorique correspond à l'intervalle où aucune forme n'écrase totalement l'autre à l'œil nu (ratio entre 0,1 et 10), soit pH = pKi +/- 1. Pour un dosage fort-fort, le saut de pH est immense (environ de 4 à 10), donc ces deux indicateurs conviennent."
+    },
+    {
+      "q": "On considère un mélange tampon physiologique bicarbonate / acide carbonique dans le sang artériel : H2CO3 / HCO3- (pKa = 6,1). Sachant que le pH du sang artériel est de 7,40, quel est le rapport [HCO3-] / [H2CO3] ? (On donne 10^1,3 ≈ 20)",
+      "tags": [
+        "Tampon sanguin",
+        "Bicarbonate",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "1",
+          "isCorrect": false
+        },
+        {
+          "text": "4",
+          "isCorrect": false
+        },
+        {
+          "text": "10",
+          "isCorrect": false
+        },
+        {
+          "text": "20",
+          "isCorrect": true
+        },
+        {
+          "text": "100",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "pH = pKa + log([HCO3-]/[H2CO3]) => log([HCO3-]/[H2CO3]) = 7,40 - 6,10 = 1,30. Donc [HCO3-]/[H2CO3] = 10^1,30 ≈ 20. Dans le sang, il y a 20 fois plus de base bicarbonate que d'acide carbonique dissous (CO2 dissous), ce qui constitue une réserve alcaline majeure contre l'acidose métabolique."
+    },
+    {
+      "q": "Quelle est la valeur du coefficient de dissociation alpha d'un acide faible AH à la concentration C0 en fonction de Ka et [H3O+] ?",
+      "tags": [
+        "Coefficient de dissociation",
+        "Ostwald",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "alpha = [A-] / C0",
+          "isCorrect": true
+        },
+        {
+          "text": "alpha = Ka / (Ka + [H3O+])",
+          "isCorrect": true
+        },
+        {
+          "text": "alpha augmente quand la solution est diluée (loi de dilution d'Ostwald).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour un acide fort, alpha = 1 en solution aqueuse.",
+          "isCorrect": true
+        },
+        {
+          "text": "alpha = [H3O+] / (Ka + [H3O+])",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "alpha = [A-]/C0 = [A-]/([AH] + [A-]). En divisant par [A-] et en remplaçant [AH]/[A-] par [H3O+]/Ka : alpha = 1 / (1 + [H3O+]/Ka) = Ka / (Ka + [H3O+]). Quand on dilue (C0 diminue), [H3O+] diminue, donc alpha augmente vers 1 (loi de dilution d'Ostwald)."
+    },
+    {
+      "q": "L'acide phosphorique H3PO4 est un triacide de pKa1 = 2,1 ; pKa2 = 7,2 ; pKa3 = 12,4. À pH = 7,2, quelles sont les espèces majoritaires en solution ?",
+      "tags": [
+        "Polyacide",
+        "Espèces majoritaires",
+        "Diagramme de prédominance"
+      ],
+      "options": [
+        {
+          "text": "H3PO4 et H2PO4- en proportions égales.",
+          "isCorrect": false
+        },
+        {
+          "text": "H2PO4- et HPO4^2- en concentrations égales.",
+          "isCorrect": true
+        },
+        {
+          "text": "HPO4^2- et PO4^3- en concentrations égales.",
+          "isCorrect": false
+        },
+        {
+          "text": "PO4^3- uniquement.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À pH = pKa2 = 7,2, on a [H2PO4-] = [HPO4^2-]. Ces deux espèces représentent chacune environ 50 % du phosphore total, les deux autres (H3PO4 et PO4^3-) étant en quantité ultra-minoritaire (< 10^-5)."
+    },
+    {
+      "q": "Quelle est l'expression du pouvoir tampon (ou indice tampon beta) d'une solution selon Van Slyke ?",
+      "tags": [
+        "Indice tampon",
+        "Van Slyke",
+        "Définition"
+      ],
+      "options": [
+        {
+          "text": "beta = dCb / dpH = - dCa / dpH",
+          "isCorrect": true
+        },
+        {
+          "text": "beta est toujours une quantité positive.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour un couple AH/A- à concentration totale C, beta est maximal lorsque pH = pKa.",
+          "isCorrect": true
+        },
+        {
+          "text": "beta s'exprime en mol.L^-1.unité de pH^-1.",
+          "isCorrect": true
+        },
+        {
+          "text": "beta = dpH / dCb",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'indice tampon de Van Slyke beta mesure la quantité de base forte (dCb) ou d'acide fort (dCa) à ajouter pour faire varier le pH d'une unité. beta = dCb/dpH = -dCa/dpH > 0. Il est maximal au pKa et vaut alors beta_max ≈ 0,576 * C."
+    },
+    {
+      "q": "On titre 20 mL d'acide éthanoïque à 0,1 mol.L^-1 par de la soude NaOH à 0,1 mol.L^-1. Au point de demi-équivalence (V = 10 mL de soude ajoutée) :",
+      "tags": [
+        "Dosage acido-basique",
+        "Demi-équivalence",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Le pH de la solution est strictement égal au pKa de l'acide éthanoïque.",
+          "isCorrect": true
+        },
+        {
+          "text": "La moitié de la quantité initiale d'acide éthanoïque a été transformée en ion éthanoate.",
+          "isCorrect": true
+        },
+        {
+          "text": "La solution possède son pouvoir tampon maximal.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pH est égal à 7,0.",
+          "isCorrect": false
+        },
+        {
+          "text": "La pente de la courbe dpH/dVb passe par un minimum.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "À la demi-équivalence, [AH] = [A-], d'où pH = pKa. La solution est dans son état tampon optimal, la variation de pH est la plus lente (pente dpH/dVb minimale). Le pH ne vaut 7 que si c'était un acide fort titré par une base forte à l'équivalence !"
+    },
+    {
+      "q": "Concernant le nivellement de la force des acides et des bases par l'eau (effet nivelant du solvant) :",
+      "tags": [
+        "Nivellement",
+        "Solvant",
+        "Force relative"
+      ],
+      "options": [
+        {
+          "text": "Dans l'eau, tous les acides forts (HCl, HNO3, HClO4) ont la même force apparente car ils sont totalement dissociés en H3O+.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide le plus fort qui puisse exister dans l'eau est le cation oxonium H3O+.",
+          "isCorrect": true
+        },
+        {
+          "text": "La base la plus forte qui puisse exister dans l'eau est l'ion hydroxyde OH-.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour différencier la force intrinsèque d'acides forts comme HCl et HClO4, il faut utiliser un solvant moins basique que l'eau, comme l'acide acétique pur.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'eau permet de classer tous les acides ayant un pKa compris entre -5 et 20.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'échelle d'acidité accessible dans l'eau est limitée par son produit ionique, c'est-à-dire pKa compris entre 0 (H3O+/H2O) et 14 (H2O/OH-). En dehors de cet intervalle [0 ; 14], les acides et bases sont nivelés par l'eau."
+    },
+    {
+      "q": "Quelle est la valeur du pH d'une solution de soude NaOH (base forte) à C0 = 1,0.10^-2 mol.L^-1 à 25 °C ?",
+      "tags": [
+        "Calcul",
+        "Base forte",
+        "pH"
+      ],
+      "options": [
+        {
+          "text": "pH = 2",
+          "isCorrect": false
+        },
+        {
+          "text": "pH = 7",
+          "isCorrect": false
+        },
+        {
+          "text": "pH = 12",
+          "isCorrect": true
+        },
+        {
+          "text": "pH = 14",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour une base forte : [OH-] = C0 = 10^-2 mol.L^-1. [H3O+] = Ke / [OH-] = 10^-14 / 10^-2 = 10^-12 mol.L^-1. Donc pH = -log(10^-12) = 12 (ou pH = 14 + log C0 = 14 - 2 = 12)."
+    }
+  ]
+}

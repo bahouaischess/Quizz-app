@@ -1,0 +1,224 @@
+[
+  {
+    "recto": "Quel est l'ordre de sédimentation des organites cellulaires lors d'une centrifugation différentielle ?",
+    "verso": "1) 500-1 000 g : fraction nucléaire et gros débris ; 2) 10 000 g : mitochondries, lysosomes, peroxysomes ; 3) 100 000 g : microsomes (fragments de RE et Golgi) ; surnageant : cytosol (protéines solubles).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Centrifugation",
+      "Fractionnement subcellulaire"
+    ]
+  },
+  {
+    "recto": "À quel pH la solubilité aqueuse d'une protéine est-elle minimale et pourquoi ?",
+    "verso": "Au pH égal à son point isoélectrique (pH = pHi), car sa charge électrique nette est nulle, ce qui minimise les répulsions électrostatiques intermoléculaires et favorise l'agrégation.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Précipitation",
+      "pHi"
+    ]
+  },
+  {
+    "recto": "Expliquer le mécanisme du 'salting-out' (relargage au sulfate d'ammonium).",
+    "verso": "À forte concentration en sel, les ions captent les molécules d'eau de solvatation de la protéine, démasquant ses surfaces hydrophobes qui s'associent, provoquant une précipitation réversible non dénaturante.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Salting-out",
+      "Sulfate d'ammonium"
+    ]
+  },
+  {
+    "recto": "Quel est le principe de la dialyse et son utilisation classique ?",
+    "verso": "Séparation par diffusion passive à travers une membrane semi-perméable à seuil de coupure défini (cut-off) : retient les macromolécules tout en éliminant ou échangeant les sels et petits métabolites.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Dialyse",
+      "Dessalage"
+    ]
+  },
+  {
+    "recto": "Quel est l'ordre d'élution des molécules en chromatographie d'exclusion stérique (gel filtration) ?",
+    "verso": "Les molécules les plus grosses (exclues des pores) sortent en premier dans le volume mort (Vo) ; les plus petites molécules (qui pénètrent dans le réseau poreux) sortent en dernier.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Exclusion stérique",
+      "Ordre d'élution"
+    ]
+  },
+  {
+    "recto": "Comment fonctionne une résine échangeuse d'anions (ex. DEAE) ?",
+    "verso": "La résine porte des charges positives fixes et retient les protéines chargées négativement (quand pH > pHi). L'élution se fait par augmentation de NaCl ou par baisse du pH.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Échangeuse d'anions",
+      "DEAE"
+    ]
+  },
+  {
+    "recto": "Comment purifie-t-on une protéine recombinante portant une étiquette His-tag (6xHis) ?",
+    "verso": "Par chromatographie d'affinité sur colonne de chélation métallique chargée en nickel (Ni2+-NTA) ; élution spécifique par compétition avec de l'imidazole.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "His-tag",
+      "Nickel",
+      "Affinité"
+    ]
+  },
+  {
+    "recto": "Quels sont les deux rôles majeurs du SDS dans l'électrophorèse SDS-PAGE ?",
+    "verso": "1) Dénaturer les protéines en chaîne linéaire ; 2) Conférer une charge négative uniforme proportionnelle à la masse (~1,4 g SDS/g protéine), permettant une séparation fondée uniquement sur la masse moléculaire.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "SDS-PAGE",
+      "Principe"
+    ]
+  },
+  {
+    "recto": "Quel est le principe de l'isoélectrofocalisation (IEF) ?",
+    "verso": "Séparation des protéines selon leur pHi le long d'un gradient de pH stable sous champ électrique : chaque protéine migre jusqu'à ce que le pH du milieu égale son pHi, où sa charge devient nulle.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "IEF",
+      "pHi"
+    ]
+  },
+  {
+    "recto": "Quels sont les deux paramètres de séparation de l'électrophorèse bidimensionnelle (2D-PAGE) ?",
+    "verso": "1re dimension : séparation selon le point isoélectrique (pHi) par IEF ; 2de dimension : séparation selon la masse moléculaire apparente par SDS-PAGE.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "2D-PAGE",
+      "Dimensions"
+    ]
+  },
+  {
+    "recto": "Citer les deux méthodes d'ionisation 'douces' en spectrométrie de masse des protéines.",
+    "verso": "MALDI (ionisation laser assistée par matrice, produit des ions monochargés [M+H]+) et ESI (ionisation par électronébulisation, produit des ions multichargés [M+zH]^z+).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "MALDI",
+      "ESI",
+      "Spectrométrie de masse"
+    ]
+  },
+  {
+    "recto": "Comment l'analyseur de masse TOF (Temps de Vol) sépare-t-il les ions ?",
+    "verso": "À énergie cinétique égale conférée par l'accélération, les ions de faible rapport m/z voyagent plus vite dans le tube de vol et touchent le détecteur les premiers (temps proportionnel à sqrt(m/z)).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "TOF",
+      "Temps de vol"
+    ]
+  },
+  {
+    "recto": "Où coupe spécifiquement la trypsine utilisée en protéomique ?",
+    "verso": "Après la fonction carboxyle des résidus basiques Lysine (Lys) et Arginine (Arg), sauf si le résidu suivant est une Proline.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Trypsine",
+      "Coupure spécifique"
+    ]
+  },
+  {
+    "recto": "Quel est le principe du séquençage peptidique par spectrométrie de masse tandem (MS/MS) ?",
+    "verso": "Sélection d'un ion peptidique en MS1, fragmentation par collision de gaz (CID), et mesure des masses des fragments (séries d'ions b et y) en MS2 pour déduire la séquence en acides aminés.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "MS/MS",
+      "Séquençage"
+    ]
+  },
+  {
+    "recto": "Quelles sont les 5 grandes étapes du Western Blot ?",
+    "verso": "1) Séparation par SDS-PAGE ; 2) Transfert sur membrane (nitrocellulose/PVDF) ; 3) Saturation des sites non spécifiques (lait/BSA) ; 4) Incubation avec anticorps primaire spécifique ; 5) Révélation par anticorps secondaire couplé à une enzyme (HRP).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Western Blot",
+      "Protocole"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence fondamentale entre une immunoprécipitation (IP) et une co-immunoprécipitation (Co-IP) ?",
+    "verso": "L'IP isole et purifie une protéine cible unique reconnue par l'anticorps ; la Co-IP isole un complexe multiprotéique natif pour identifier les partenaires d'interaction de la protéine appât.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "IP vs Co-IP",
+      "Interactions"
+    ]
+  },
+  {
+    "recto": "Décrire le principe d'un dosage ELISA sandwich.",
+    "verso": "Un anticorps de capture fixé au puits piège l'antigène protéique, puis un anticorps de détection dirigé contre un épitope distinct est ajouté, suivi d'un couplage enzymatique pour une quantification colorimétrique proportionnelle.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "ELISA",
+      "Sandwich"
+    ]
+  },
+  {
+    "recto": "Que mesurent les signaux FSC et SSC en cytométrie de flux (FACS) ?",
+    "verso": "FSC (Forward Scatter, diffusion frontale dans l'axe du laser) évalue la taille cellulaire ; SSC (Side Scatter, diffusion orthogonale à 90°) évalue la granularité et la complexité interne.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "FACS",
+      "FSC/SSC"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la technologie Luminex ?",
+    "verso": "Dosage multiplex en suspension utilisant des billes magnétiques identifiées par un code-barres fluorescent interne et fonctionnalisées par des anticorps pour mesurer simultanément des dizaines de protéines.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Luminex",
+      "Multiplex"
+    ]
+  },
+  {
+    "recto": "Quelles sont les 5 fractions de l'électrophorèse des protéines sériques (EPS) normales ?",
+    "verso": "Albumine (55-65%), Alpha-1-globulines, Alpha-2-globulines, Bêta-globulines et Gamma-globulines (immunoglobulines).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "EPS",
+      "Fractions"
+    ]
+  },
+  {
+    "recto": "Que traduit la présence d'un pic étroit dans la zone des gamma-globulines à l'EPS ?",
+    "verso": "Une prolifération clonale de plasmocytes sécrétant une immunoglobuline monoclonale (ex. myélome multiple de Kahler).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Pic monoclonal",
+      "Myélome"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le 'docking' moléculaire in silico ?",
+    "verso": "Simulation bio-informatique prédisant l'orientation et l'affinité de liaison de petites molécules chimiques ou médicaments dans la poche active d'une cible protéique 3D.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Méthodes d'étude",
+    "tags": [
+      "Docking",
+      "In silico"
+    ]
+  }
+]

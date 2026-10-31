@@ -1,0 +1,605 @@
+{
+  "name": "CM 3 - Méthodes 2",
+  "folder": "PASS - Biologie Cellulaire",
+  "description": "Quiz approfondi de niveau PASS sur les méthodes d'étude génétiques : ARN interférents (siRNA), système Cre/LoxP, modèles murins transgéniques (LIRKO, MIRKO, NIRKO) et technologie CRISPR/Cas9.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant le principe général des manipulations génétiques in vitro et in vivo, quelle(s) proposition(s) est (sont) exacte(s) ?",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "Génétique",
+        "KO/KI"
+      ],
+      "options": [
+        {
+          "text": "Une approche de type Knock-Out (KO) vise à inactiver l'expression ou la fonction d'un gène d'intérêt.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une approche de type Knock-In (KI) consiste exclusivement à induire une délétion aléatoire de chromosomes entiers.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un KO total induit l'invalidation du gène cible dans toutes les cellules de l'organisme dès le développement embryonnaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un KO conditionnel permet d'invalider un gène uniquement dans un tissu ou type cellulaire ciblé, ou à un temps précis du développement.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les études in vitro sur lignées cellulaires permettent d'analyser l'effet d'une manipulation génétique dans un environnement physiologique multicellulaire complexe.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le KO correspond à une perte de fonction (invalidation génique). Le KI est une insertion génique ciblée (gain de fonction, gène rapporteur, mutation ponctuelle). Les KO conditionnels évitent la létalité embryonnaire fréquente des KO totaux."
+    },
+    {
+      "q": "Concernant le mécanisme d'action des petits ARN interférents (siRNA) :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "siRNA"
+      ],
+      "options": [
+        {
+          "text": "Les siRNA sont de petits fragments d'ARN double brin d'environ 21 à 23 nucléotides.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils s'intègrent de manière covalente et irréversible dans l'ADN génomique de la cellule cible.",
+          "isCorrect": false
+        },
+        {
+          "text": "Après incorporation dans le complexe multiprotéique RISC, le brin guide s'apparie spécifiquement à l'ARNm cible pour provoquer son clivage ou bloquer sa traduction.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'extinction génique par transfection transitoire de siRNA (Knock-Down) est généralement temporaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les siRNA n'agissent qu'en stimulant la réplication de l'ADN télomérique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les siRNA (21-23 nt) agissent par le complexe RISC pour dégrader l'ARNm complémentaire (silencing post-transcriptionnel). Ils ne modifient pas l'ADN génomique et leur effet est transitoire (Knock-down)."
+    },
+    {
+      "q": "Dans le système de recombinaison homologue site-spécifique Cre/LoxP :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "Cre/LoxP"
+      ],
+      "options": [
+        {
+          "text": "La recombinase Cre reconnaît spécifiquement de courtes séquences d'ADN appelées sites loxP.",
+          "isCorrect": true
+        },
+        {
+          "text": "Lorsque deux sites loxP sont orientés dans le même sens direct de part et d'autre d'une séquence cible, la Cre excise définitivement ce segment d'ADN.",
+          "isCorrect": true
+        },
+        {
+          "text": "La recombinase Cre est une enzyme eucaryote humaine naturellement présente dans tous les tissus somatiques.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ce système permet d'obtenir des invalidations géniques restreintes à un type cellulaire spécifique en plaçant la Cre sous le contrôle d'un promoteur tissu-spécifique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour obtenir un KO conditionnel, on croise des souris 'floxées' (portant des sites loxP) avec des souris exprimant la recombinase Cre.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La Cre est une recombinase issue du bactériophage P1 (bactérienne). Elle excise la séquence située entre deux sites loxP de même orientation. Le croisement souris floxée x souris Cre tissu-spécifique génère un KO cellulaire ciblé."
+    },
+    {
+      "q": "Pour invalider spécifiquement l'expression d'un récepteur ou d'une enzyme dans les hépatocytes (cellules du foie), quel promoteur utilise-t-on couramment pour diriger la Cre ?",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "Cre/LoxP",
+        "Foie"
+      ],
+      "options": [
+        {
+          "text": "Le promoteur du gène de l'albumine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le promoteur de la protéine basique de la myéline (MBP).",
+          "isCorrect": false
+        },
+        {
+          "text": "Le promoteur de l'alpha-actine cardiaque.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le promoteur du transporteur de dopamine DAT.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'albumine étant synthétisée quasi exclusivement par les hépatocytes, son promoteur permet d'exprimer la Cre uniquement dans le foie (ex: modèle LIRKO)."
+    },
+    {
+      "q": "Concernant le modèle de souris LIRKO (Liver Insulin Receptor Knock-Out) :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "Modèles murins",
+        "LIRKO"
+      ],
+      "options": [
+        {
+          "text": "Le récepteur de l'insuline est invalidé dans tout l'organisme de la souris.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ces souris présentent une insulino-résistance marquée et une intolérance au glucose.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce modèle est obtenu par croisement entre des souris IR-lox et des souris exprimant la Cre sous promoteur de l'albumine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La capture de glucose par les myocytes squelettiques est totalement nulle dès la naissance.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La souris LIRKO est invalidée sélectivement dans le foie (Albumine-Cre x IR-lox). Elle développe une intolérance sévère au glucose et une résistance à l'insuline hépatique."
+    },
+    {
+      "q": "Concernant le modèle de souris MIRKO (Muscle Insulin Receptor Knock-Out) :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "Modèles murins",
+        "MIRKO"
+      ],
+      "options": [
+        {
+          "text": "L'expression du récepteur de l'insuline est abolie dans les cellules musculaires grâce à l'utilisation du promoteur de l'actine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La capture de glucose stimulée par l'insuline est fortement diminuée dans le tissu musculaire squelettique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le glucose excédentaire est redirigé vers le tissu adipeux blanc, où la synthèse de triglycérides augmente.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ces souris deviennent obèses en accumulant une masse graisseuse accrue.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ces souris meurent obligatoirement in utero au stade blastocyste.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Chez la souris MIRKO (Actine-Cre x IR-lox), la baisse de captation du glucose musculaire détourne le glucose vers le tissu adipeux, favorisant la lipogenèse et le développement d'une obésité."
+    },
+    {
+      "q": "Concernant le modèle de souris NIRKO (Neuron Insulin Receptor Knock-Out) :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "Modèles murins",
+        "NIRKO"
+      ],
+      "options": [
+        {
+          "text": "La Cre recombinase est exprimée sous le contrôle du promoteur neuronal NEX.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'invalidation du récepteur de l'insuline dans le système nerveux central entraîne une augmentation du poids corporel et de la masse adipeuse.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce modèle démontre que l'insuline cérébrale participe au contrôle central du métabolisme énergétique et de l'adiposité.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le récepteur de l'insuline est également détruit dans les cellules musculaires et pancréatiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La souris NIRKO (NEX-Cre x IR-lox) présente une invalidation sélective neuronale, entraînant une prise de poids et une accumulation de tissu adipeux (Bruning et al., Science 2000)."
+    },
+    {
+      "q": "Quelle conséquence observe-t-on lors de l'invalidation tissu-spécifique de la Lipoprotéine Lipase (LPL) dans les neurones via le système NEX-Cre x LPL-lox ?",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "Modèles murins",
+        "LPL"
+      ],
+      "options": [
+        {
+          "text": "Une modification du métabolisme lipidique central et une augmentation significative du poids de l'animal.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une disparition immédiate de tout le tissu adipeux périphérique chez l'embryon.",
+          "isCorrect": false
+        },
+        {
+          "text": "La prolifération incontrôlée de mélanocytes épidermiques.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une insensibilité complète aux anesthésiques locaux.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'invalidation de la LPL dans les neurones altère la signalisation lipidique hypothalamique et conduit à une prise de poids et à l'obésité chez la souris."
+    },
+    {
+      "q": "Concernant les souris mutées pour le récepteur MC4R (récepteur 4 à la mélanocortine) :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "MC4R",
+        "Obésité"
+      ],
+      "options": [
+        {
+          "text": "Ce modèle murin permet de reproduire une pathologie monogénique humaine causant une obésité précoce sévère.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les souris MC4R KO présentent une hyperphagie et une prise de masse grasse massive.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le récepteur MC4R est une porine transmembranaire de la membrane externe des peroxysomes.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ce modèle valide l'intérêt de la transgenèse animale pour modéliser des maladies génétiques humaines.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les mutations de MC4R sont la cause monogénique la plus fréquente d'obésité sévère précoce chez l'homme, parfaitement reproduite chez la souris MC4R KO."
+    },
+    {
+      "q": "Concernant le locus bactérien CRISPR naturel :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR",
+        "Origine"
+      ],
+      "options": [
+        {
+          "text": "Il constitue un système d'immunité adaptative permettant aux bactéries de mémoriser et détruire l'ADN d'agents pathogènes envahissants (bactériophages).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le locus est constitué d'une alternance de courtes séquences répétées et de séquences variables appelées espaceurs (spacers) issues de génomes viraux.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines Cas1 et Cas2 participent à l'étape d'acquisition en intégrant de nouveaux fragments d'ADN étranger dans le locus.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le transcrit primaire du locus CRISPR est maturé en petits ARN appelés ARNcr (CRISPR-RNA).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le locus CRISPR code exclusivement pour les enzymes de la chaîne respiratoire mitochondriale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "CRISPR-Cas est un système immunitaire procaryote : Cas1/Cas2 intègrent des espaceurs étrangers, le locus est transcrit puis clivé en ARNcr guidant la nucléase Cas lors d'infections ultérieures."
+    },
+    {
+      "q": "Concernant l'endonucléase Cas9 et son mécanisme de coupure :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR/Cas9",
+        "PAM"
+      ],
+      "options": [
+        {
+          "text": "Cas9 est guidée vers sa cible par un ARN guide (ARNg) complémentaire d'une séquence de 17 à 20 nucléotides sur l'ADN génomique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La reconnaissance et la coupure nécessitent impérativement la présence d'un motif adjacent au proto-espaceur (PAM), typiquement la séquence 5'-NGG-3'.",
+          "isCorrect": true
+        },
+        {
+          "text": "La coupure double brin de l'ADN généré par Cas9 s'effectue exactement 3 nucléotides en amont (avant) du motif PAM.",
+          "isCorrect": true
+        },
+        {
+          "text": "Cas9 est incapable d'induire de cassure double brin sans la présence simultanée de trypsine.",
+          "isCorrect": false
+        },
+        {
+          "text": "En l'absence de matrice d'ADN donneuse, la cassure est réparée par la voie NHEJ, source d'indels causant une perte de fonction génique (KO).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Cas9 est programmée par un ARNg (17-20 nt) reconnaissant une séquence cible flanquée d'un PAM (NGG). Cas9 coupe les 2 brins exactement 3 pb avant le PAM. La réparation par NHEJ crée des indels et inactive le gène."
+    },
+    {
+      "q": "Pourquoi et comment utilise-t-on le système FokI-dCas9 pour limiter les coupures hors-cible (off-target) ?",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR",
+        "dCas9-FokI"
+      ],
+      "options": [
+        {
+          "text": "On utilise une forme catalytiquement inactive de Cas9 appelée dCas9 ('dead' Cas9) fusionnée au domaine nucléase FokI.",
+          "isCorrect": true
+        },
+        {
+          "text": "La nucléase FokI doit obligatoirement former un dimère pour être capable de couper l'ADN double brin.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'activité de coupure nécessite le recrutement simultané de deux complexes dCas9-FokI par deux ARNg séparés d'une distance précise de 13 à 17 nucléotides.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce système augmente considérablement la probabilité d'effectuer des coupures non spécifiques dans tout le génome.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ce dispositif permet de diviser par dix la spécificité de reconnaissance génomique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "FokI est active uniquement sous forme dimérique. La fusion FokI-dCas9 impose la liaison de deux ARNg distants de 13-17 nt pour dimériser FokI, augmentant drastiquement la spécificité et évitant les coupures off-target."
+    },
+    {
+      "q": "Concernant la modulation de l'expression transcriptionnelle d'un gène sans coupure de l'ADN à l'aide de la protéine dCas9 :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR",
+        "Modulation"
+      ],
+      "options": [
+        {
+          "text": "La simple liaison de la protéine dCas9 sur le promoteur d'un gène peut gêner la machinerie de transcription et diminuer l'expression du gène.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fusion de dCas9 avec le domaine répresseur KRAB permet une inhibition transcriptionnelle active et puissante.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fusion de dCas9 avec le peptide viral VP64 permet d'activer la transcription en recrutant des facteurs de transcription sur le promoteur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ces approches modifient irréversiblement la séquence nucléotidique primaire du gène cible.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "dCas9 ne coupe pas l'ADN : elle sert d'outil d'adressage moléculaire. Seule, elle crée un encombrement stérique répresseur ; avec KRAB, elle réprime activement ; avec VP64, elle stimule la transcription sans muter la séquence."
+    },
+    {
+      "q": "Dans les modèles thérapeutiques expérimentaux de la Dystrophie Musculaire de Duchenne (DMD) utilisant CRISPR/Cas9 :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR",
+        "Duchenne"
+      ],
+      "options": [
+        {
+          "text": "L'utilisation de deux ARNg ciblant les régions flanquant l'exon muté (ex: exon 23) permet d'exciser cet exon du génome.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réparation par NHEJ permet de relier les extrémités d'ADN et de restaurer le cadre de lecture de la dystrophine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine produite après cette excision est tronquée mais conserve une fonctionnalité suffisante pour améliorer le phénotype musculaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "La mutation causale de la DMD chez l'homme touche le gène codant la sous-unité alpha du récepteur GABA-A.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le saut d'exon génomique par CRISPR/Cas9 (deux ARNg flanquant l'exon 23 muté) permet d'exciser la mutation, rétablissant la lecture d'une dystrophine raccourcie mais fonctionnelle."
+    },
+    {
+      "q": "Comment le système CRISPR/Cas9 peut-il être utilisé dans un modèle de la Maladie de Huntington ?",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR",
+        "Huntington"
+      ],
+      "options": [
+        {
+          "text": "En utilisant deux ARNg ciblant les séquences flanquant la répétition anormale de triplets CAG dans le gène huntingtin pour exciser cette expansion toxique.",
+          "isCorrect": true
+        },
+        {
+          "text": "En suractivant l'expression de la huntingtine mutée par fusion de dCas9 avec la protéine Cre.",
+          "isCorrect": false
+        },
+        {
+          "text": "En bloquant spécifiquement la respiration mitochondriale dans les hépatocytes.",
+          "isCorrect": false
+        },
+        {
+          "text": "En empêchant la réplication de l'ADN bactérien intestinal.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Deux ARNg ciblent les régions de part et d'autre de l'expansion de trinucléotides CAG dans le gène de la huntingtine, excisant la séquence pathologique par coupure double brin réparée par NHEJ."
+    },
+    {
+      "q": "Concernant la souris ZnT8 KO :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "Modèles murins",
+        "ZnT8"
+      ],
+      "options": [
+        {
+          "text": "Elle présente un poids plus élevé que les souris sauvages (WT).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle possède une plus grande sensibilité à développer un diabète.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle synthétise de la mélanocortine de manière incontrôlée.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle ne possède aucun lymphocyte B fonctionnel.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le transporteur de zinc ZnT8 est impliqué dans la maturation/stockage de l'insuline dans les cellules bêta ; son KO rend les souris plus corpulentes et prédisposées au diabète."
+    },
+    {
+      "q": "Quelle est la distance approximative de la séquence cible reconnue par l'ARN guide (ARNg) chez Cas9 ?",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR",
+        "ARNg"
+      ],
+      "options": [
+        {
+          "text": "17 à 20 nucléotides.",
+          "isCorrect": true
+        },
+        {
+          "text": "170 à 200 nucléotides.",
+          "isCorrect": false
+        },
+        {
+          "text": "3 à 5 nucléotides.",
+          "isCorrect": false
+        },
+        {
+          "text": "1 500 nucléotides.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'ARNg contient une séquence de guidage (spacer) complémentaire de 17 à 20 nucléotides sur le brin cible d'ADN."
+    },
+    {
+      "q": "Pour éliminer expérimentalement un segment génomique de grande taille (de plusieurs kilobases) avec CRISPR/Cas9, quelle stratégie applique-t-on ?",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR",
+        "Délétion"
+      ],
+      "options": [
+        {
+          "text": "L'utilisation combinée de deux ARNg guidant Cas9 pour induire simultanément deux cassures double brin de part et d'autre de la région à éliminer.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'incubation des cellules avec du SDS concentré à 95 °C pendant 24 heures.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'injection intramusculaire de GFP purifiée.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'utilisation exclusive d'un anticorps primaire monoclonal dirigé contre la tubuline.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'utilisation de 2 ARNg permet d'effectuer deux cassures double brin distantes, éliminant le fragment d'ADN intermédiaire lors de la ré-abouchement par jonction non homologue (NHEJ)."
+    },
+    {
+      "q": "Concernant la réparation des cassures double brin induites par Cas9 :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR",
+        "Réparation ADN"
+      ],
+      "options": [
+        {
+          "text": "La voie NHEJ (Non-Homologous End Joining) est active tout au long du cycle cellulaire mais est sujette à erreurs (insertions/délétions).",
+          "isCorrect": true
+        },
+        {
+          "text": "La voie HDR (Homology-Directed Repair) utilise une matrice d'ADN homologue pour introduire une modification précise ou un Knock-In.",
+          "isCorrect": true
+        },
+        {
+          "text": "La voie NHEJ est rigoureusement fidèle et ne commet jamais la moindre erreur d'appariement.",
+          "isCorrect": false
+        },
+        {
+          "text": "La recombinaison par HDR ne peut jamais avoir lieu en présence d'une matrice d'ADN exogène.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "NHEJ recolle les bouts de manière imprécise (indels -> décalage du cadre de lecture -> KO). HDR utilise une matrice d'ADN pour réparer précisément ou insérer une séquence (KI)."
+    },
+    {
+      "q": "Parmi les éléments suivants, lesquels composent le locus CRISPR chez les bactéries ?",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR",
+        "Structure"
+      ],
+      "options": [
+        {
+          "text": "Une séquence leader.",
+          "isCorrect": true
+        },
+        {
+          "text": "Des courtes séquences répétées palindromiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Des séquences espaceurs (spacers) issues d'agents infectieux passés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Des gènes cas codant les enzymes associées au système CRISPR.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le gène codant la néostigmine humaine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le locus CRISPR bactérien est constitué d'une séquence leader, de répétitions courtes, d'espaceurs viraux intercalés, et de gènes cas adjacents (comme Cas1, Cas2, Cas9)."
+    },
+    {
+      "q": "Concernant le peptide VP64 utilisé avec dCas9 :",
+      "tags": [
+        "CM 3 - Méthodes 2",
+        "CRISPR",
+        "VP64"
+      ],
+      "options": [
+        {
+          "text": "C'est un activateur transcriptionnel d'origine virale capable de recruter l'ARN polymérase et les facteurs de transcription.",
+          "isCorrect": true
+        },
+        {
+          "text": "C'est une protéase qui découpe l'ADN en fragments de 180 paires de bases.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il bloque de manière irréversible la traduction au niveau des ribosomes 80S.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il agit en chélatant les ions bivalents du cytosol.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "VP64 est un tétramère du domaine d'activation VP16 du virus de l'herpès (HSV). Fusionné à dCas9, il active puissamment la transcription des gènes cibles ciblés par l'ARNg."
+    }
+  ]
+}

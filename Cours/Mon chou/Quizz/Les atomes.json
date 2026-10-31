@@ -1,0 +1,658 @@
+{
+  "name": "Chimie - Les atomes",
+  "folder": "PASS - Chimie",
+  "description": "Structure de l'atome, hydrogénoïdes et modèle de Bohr, nombres quantiques, principes de Pauli, Hund et Klechkowski, exceptions du Cr et Cu, classification périodique, rayon atomique, énergie d'ionisation et électronégativité.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant la structure fondamentale de l'atome, quelle(s) affirmation(s) est/sont VRAIE(S) ?",
+      "tags": [
+        "Structure atomique",
+        "Noyau",
+        "Masse"
+      ],
+      "options": [
+        {
+          "text": "Le noyau atomique est constitué de nucléons : les protons de charge +e et les neutrons de charge nulle.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le numéro atomique Z représente le nombre de protons du noyau, et le nombre de masse A représente le nombre total de nucléons.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le nombre de neutrons dans un noyau est N = A - Z.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'atome est électriquement neutre car il possède un nombre d'électrons exactement égal à son nombre de protons Z.",
+          "isCorrect": true
+        },
+        {
+          "text": "La quasi-totalité de la masse de l'atome est concentrée dans son cortège électronique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La masse du proton et du neutron est environ 1836 fois supérieure à celle de l'électron. La quasi-totalité de la masse atomique (> 99,95 %) est donc concentrée dans le noyau, tandis que le cortège électronique occupe la quasi-totalité du volume (structure lacunaire)."
+    },
+    {
+      "q": "Concernant le modèle de Bohr pour l'atome d'hydrogène et les ions hydrogénoïdes :",
+      "tags": [
+        "Modèle de Bohr",
+        "Hydrogénoïdes",
+        "Énergie"
+      ],
+      "options": [
+        {
+          "text": "Un ion hydrogénoïde est un cation ne possédant qu'un unique électron (ex : He+, Li2+, Be3+).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'énergie des niveaux quantifiés s'exprime par En = -13,6 * (Z^2 / n^2) en électron-volts (eV).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour l'atome d'hydrogène (Z=1), l'état fondamental correspond à n=1 avec E1 = -13,6 eV.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'énergie d'ionisation correspond à l'énergie nécessaire pour faire passer l'électron de son état fondamental (n=1) à l'infini (n=infini, E=0), soit EI = +13,6 eV pour H.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'énergie d'ionisation de l'ion Li2+ (Z=3) est égale à 13,6 eV.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour Li2+ (Z=3) : E1 = -13,6 * (3^2 / 1^2) = -13,6 * 9 = -122,4 eV. L'énergie d'ionisation de Li2+ vaut donc +122,4 eV (9 fois plus que l'hydrogène), et non 13,6 eV !"
+    },
+    {
+      "q": "À propos des séries spectrales de l'atome d'hydrogène :",
+      "tags": [
+        "Spectroscopie",
+        "Séries spectrales",
+        "Transitions"
+      ],
+      "options": [
+        {
+          "text": "La série de Lyman correspond aux transitions électroniques aboutissant au niveau n=1 (domaine des ultraviolets).",
+          "isCorrect": true
+        },
+        {
+          "text": "La série de Balmer correspond aux transitions aboutissant au niveau n=2 (domaine du visible).",
+          "isCorrect": true
+        },
+        {
+          "text": "La série de Paschen correspond aux transitions aboutissant au niveau n=3 (domaine de l'infrarouge).",
+          "isCorrect": true
+        },
+        {
+          "text": "Lorsqu'un électron passe d'un niveau supérieur n2 à un niveau inférieur n1, il y a émission d'un photon d'énergie Delta E = h*nu = h*c / lambda.",
+          "isCorrect": true
+        },
+        {
+          "text": "La longueur d'onde émise est d'autant plus grande que la différence d'énergie Delta E entre les deux niveaux est élevée.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta E = h*c / lambda <=> lambda = h*c / Delta E. La longueur d'onde lambda est INVERSEMENT proportionnelle à l'énergie du photon. Plus Delta E est grand, plus lambda est courte (et la fréquence nu élevée)."
+    },
+    {
+      "q": "Dans la description quantique de l'atome, quelles sont les contraintes et significations des quatre nombres quantiques (n, l, ml, ms) ?",
+      "tags": [
+        "Nombres quantiques",
+        "Définitions",
+        "Règles"
+      ],
+      "options": [
+        {
+          "text": "n (nombre quantique principal) est un entier strictement positif (n >= 1) définissant la couche électronique et l'énergie principale.",
+          "isCorrect": true
+        },
+        {
+          "text": "l (nombre quantique secondaire ou azimutal) prend les valeurs entières 0 <= l <= n-1 et définit la forme de l'orbitale atomique (sous-couche s, p, d, f).",
+          "isCorrect": true
+        },
+        {
+          "text": "ml (nombre quantique magnétique) prend les valeurs entières -l <= ml <= +l (soit 2l + 1 valeurs possibles) et définit l'orientation spatiale de l'orbitale.",
+          "isCorrect": true
+        },
+        {
+          "text": "ms (nombre quantique de spin) ne peut prendre que deux valeurs : +1/2 ou -1/2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour n = 3, la valeur l = 3 est autorisée et correspond à une sous-couche f.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour une couche n, l est strictement inférieur à n (l <= n-1). Pour n=3, les valeurs autorisées de l sont 0 (3s), 1 (3p) et 2 (3d). La sous-couche f (l=3) n'apparaît qu'à partir de la couche n=4 !"
+    },
+    {
+      "q": "Quel est le nombre total d'orbitales atomiques (cases quantiques) et le nombre maximal d'électrons pouvant être logés dans la couche principale n = 4 ?",
+      "tags": [
+        "Capacité électronique",
+        "Couche n=4",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "8 orbitales et 16 électrons.",
+          "isCorrect": false
+        },
+        {
+          "text": "16 orbitales et 32 électrons.",
+          "isCorrect": true
+        },
+        {
+          "text": "32 orbitales et 64 électrons.",
+          "isCorrect": false
+        },
+        {
+          "text": "4 orbitales et 8 électrons.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour une couche n : le nombre d'orbitales est n^2 = 4^2 = 16 orbitales (une 4s, trois 4p, cinq 4d, sept 4f, soit 1+3+5+7 = 16). Comme chaque orbitale peut contenir au maximum 2 électrons de spins opposés, la capacité électronique maximale est 2*n^2 = 2 * 16 = 32 électrons."
+    },
+    {
+      "q": "Le principe d'exclusion de Pauli stipule que :",
+      "tags": [
+        "Pauli",
+        "Principe d'exclusion",
+        "Électrons"
+      ],
+      "options": [
+        {
+          "text": "Deux électrons d'un même atome ne peuvent jamais avoir leurs quatre nombres quantiques identiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une orbitale atomique (définie par n, l, ml) ne peut contenir au maximum que deux électrons, et ceux-ci doivent obligatoirement avoir des spins opposés (antiparallèles).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les électrons occupent en priorité les orbitales de plus basse énergie.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dans une sous-couche dégénérée, les électrons occupent le maximum de cases avec des spins parallèles.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'attribution des quatre nombres quantiques uniques est l'énoncé du principe de Pauli. Le remplissage par énergie croissante est la règle de Klechkowski, et la multiplicité maximale de spin est la règle de Hund."
+    },
+    {
+      "q": "La règle de Klechkowski (principe de stabilité) établit que le remplissage des sous-couches électroniques se fait par :",
+      "tags": [
+        "Klechkowski",
+        "Règle de remplissage",
+        "Énergie"
+      ],
+      "options": [
+        {
+          "text": "Valeurs croissantes de la somme (n + l).",
+          "isCorrect": true
+        },
+        {
+          "text": "En cas d'égalité de la somme (n + l), par valeur croissante de n.",
+          "isCorrect": true
+        },
+        {
+          "text": "La sous-couche 4s (n+l = 4+0 = 4) se remplit AVANT la sous-couche 3d (n+l = 3+2 = 5).",
+          "isCorrect": true
+        },
+        {
+          "text": "La sous-couche 5s se remplit après la sous-couche 4d.",
+          "isCorrect": false
+        },
+        {
+          "text": "La sous-couche 3d se remplit avant la 3p.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour 4s : n+l = 4+0 = 4. Pour 3d : n+l = 3+2 = 5. Donc 4s se remplit avant 3d. Pour 5s (5+0=5) et 4d (4+2=6) : 5s se remplit avant 4d."
+    },
+    {
+      "q": "Quelle est la configuration électronique de l'atome de chrome (Z = 24) dans son état fondamental ?",
+      "tags": [
+        "Klechkowski",
+        "Exception",
+        "Chrome"
+      ],
+      "options": [
+        {
+          "text": "1s2 2s2 2p6 3s2 3p6 4s2 3d4",
+          "isCorrect": false
+        },
+        {
+          "text": "1s2 2s2 2p6 3s2 3p6 4s1 3d5",
+          "isCorrect": true
+        },
+        {
+          "text": "[Ar] 4s0 3d6",
+          "isCorrect": false
+        },
+        {
+          "text": "[Ar] 4s2 3d4",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Exception majeure à la règle de Klechkowski à connaître par cœur en PASS ! Le chrome Cr (Z=24) adopte la configuration stable [Ar] 4s1 3d5 (sous-couche 3d à demi-remplie avec 5 électrons de spins parallèles, particulièrement stable par échange de spin et symétrie sphérique), plutôt que 4s2 3d4."
+    },
+    {
+      "q": "Quelle est la configuration électronique de l'atome de cuivre (Z = 29) dans son état fondamental ?",
+      "tags": [
+        "Klechkowski",
+        "Exception",
+        "Cuivre"
+      ],
+      "options": [
+        {
+          "text": "1s2 2s2 2p6 3s2 3p6 4s2 3d9",
+          "isCorrect": false
+        },
+        {
+          "text": "1s2 2s2 2p6 3s2 3p6 4s1 3d10",
+          "isCorrect": true
+        },
+        {
+          "text": "[Ar] 4s2 3d9",
+          "isCorrect": false
+        },
+        {
+          "text": "[Ar] 4s0 3d11",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Autre exception fondamentale : le cuivre Cu (Z=29) a pour configuration [Ar] 4s1 3d10. La sous-couche 3d totalement saturée (d10) confère une stabilité thermodynamique supérieure à 4s2 3d9."
+    },
+    {
+      "q": "Lors de l'ionisation du fer Fe (Z = 26, configuration fondamentale [Ar] 4s2 3d6) pour former le cation ferreux Fe2+ :",
+      "tags": [
+        "Ionisation",
+        "Métaux de transition",
+        "Fe2+"
+      ],
+      "options": [
+        {
+          "text": "Les électrons arrachés en premier sont les deux électrons de la sous-couche 4s.",
+          "isCorrect": true
+        },
+        {
+          "text": "La configuration électronique de l'ion Fe2+ est [Ar] 3d6.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les électrons arrachés proviennent de la sous-couche 3d.",
+          "isCorrect": false
+        },
+        {
+          "text": "La configuration de Fe2+ est [Ar] 4s2 3d4.",
+          "isCorrect": false
+        },
+        {
+          "text": "Pour les métaux de transition, les orbitales 4s se remplissent avant les 3d, mais les électrons 4s sont perdus les premiers lors de l'ionisation car ils ont la plus grande extension spatiale (n=4 le plus externe).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Règle cruciale pour les éléments du bloc d : lors de l'ionisation, on retire TOUJOURS en premier les électrons de la couche principale n la plus élevée (ici les électrons 4s) ! Fe -> Fe2+ + 2e- donne [Ar] 3d6 (et Fe3+ donne [Ar] 3d5)."
+    },
+    {
+      "q": "La règle de Hund (règle de multiplicité maximale) stipule que :",
+      "tags": [
+        "Hund",
+        "Multiplicité de spin",
+        "Règles"
+      ],
+      "options": [
+        {
+          "text": "À l'état fondamental, pour des orbitales de même énergie (dégénérées), les électrons se répartissent de manière à rendre maximale la somme des nombres quantiques de spin (S = somme ms).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les électrons occupent successivement des orbitales vides avec des spins parallèles avant de s'apparier.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'atome de carbone (Z=6, 1s2 2s2 2p2) possède 2 électrons célibataires de spins parallèles dans ses orbitales 2p.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'atome d'azote (Z=7, 1s2 2s2 2p3) possède 3 électrons célibataires occupant chacun une orbitale 2px, 2py, 2pz avec des spins parallèles.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les électrons préfèrent s'apparier immédiatement dans la même case quantique pour former un doublet stable.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'appariement d'électrons dans une même orbitale coûte de l'énergie de répulsion coulombienne. Hund impose que les électrons occupent autant de cases quantiques séparées que possible avec des spins parallèles pour minimiser les répulsions et maximiser l'énergie d'échange."
+    },
+    {
+      "q": "Combien d'électrons de valence possède un atome de phosphore P (Z = 15) ?",
+      "tags": [
+        "Électrons de valence",
+        "Phosphore",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "3 électrons de valence",
+          "isCorrect": false
+        },
+        {
+          "text": "5 électrons de valence",
+          "isCorrect": true
+        },
+        {
+          "text": "15 électrons de valence",
+          "isCorrect": false
+        },
+        {
+          "text": "8 électrons de valence",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "P (Z=15) a pour configuration 1s2 2s2 2p6 3s2 3p3, soit [Ne] 3s2 3p3. Les électrons de valence sont ceux de la couche externe la plus élevée (n=3) : 2 (dans 3s) + 3 (dans 3p) = 5 électrons de valence (groupe 15 du tableau périodique)."
+    },
+    {
+      "q": "Concernant l'évolution du rayon atomique dans la classification périodique :",
+      "tags": [
+        "Rayon atomique",
+        "Périodicité",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Le rayon atomique augmente de haut en bas le long d'une colonne (groupe).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le rayon atomique diminue de gauche à droite le long d'une période (ligne).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'augmentation du rayon le long d'une colonne est due à l'ajout de nouvelles couches électroniques principales (n augmente).",
+          "isCorrect": true
+        },
+        {
+          "text": "La diminution du rayon le long d'une période est due à l'augmentation de la charge nucléaire effective Z* qui attire plus fortement les électrons de la même couche.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'atome de césium (Cs) a un rayon atomique plus petit que l'atome de fluor (F).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le césium Cs (en bas à gauche du tableau) a l'un des plus grands rayons atomiques, tandis que le fluor F et l'hélium He (en haut à droite) ont les plus petits rayons atomiques."
+    },
+    {
+      "q": "À propos de l'énergie de première ionisation (EI1) des atomes neutres :",
+      "tags": [
+        "Énergie d'ionisation",
+        "Périodicité",
+        "Tendances"
+      ],
+      "options": [
+        {
+          "text": "Elle correspond à l'énergie minimale requise pour arracher un électron à un atome gazeux dans son état fondamental : A(g) -> A+(g) + e-.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est toujours strictement positive (processus endoénergétique).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle augmente globalement de gauche à droite sur une période.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle diminue globalement de haut en bas dans une colonne.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les gaz nobles (colonne 18) possèdent les énergies d'ionisation les plus élevées de leur période en raison de leur octet de valence complet et stable.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont vraies ! L'ionisation demande toujours de fournir de l'énergie (EI > 0). L'hélium possède l'énergie d'ionisation la plus haute de tous les éléments (~ 24,6 eV)."
+    },
+    {
+      "q": "Pourquoi l'énergie de première ionisation de l'azote (Z = 7, configuration 2s2 2p3) est-elle LÉGÈREMENT SUPÉRIEURE à celle de l'oxygène (Z = 8, configuration 2s2 2p4), en dépit de la tendance générale croissante le long de la période ?",
+      "tags": [
+        "Anomalie d'ionisation",
+        "Azote vs Oxygène",
+        "Hund"
+      ],
+      "options": [
+        {
+          "text": "L'azote possède une sous-couche 2p à demi-remplie (2p3) particulièrement stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "Chez l'oxygène (2p4), l'arrachage d'un électron élimine la répulsion électronique au sein de l'orbitale doublement occupée pour aboutir à une sous-couche 2p3 demi-remplie très stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'oxygène a une charge nucléaire Z plus faible que l'azote.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'électron arraché chez l'azote provient de l'orbitale 2s.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "C'est l'anomalie classique du programme PASS ! Pour l'azote, arracher un électron détruit la sous-couche demi-remplie très stable 2p3 (coût énergétique élevé). Pour l'oxygène, arracher le 4ème électron lève la répulsion de la paire appariée et donne la configuration 2p3 stable de l'ion O+."
+    },
+    {
+      "q": "Concernant l'électronégativité selon l'échelle de Pauling :",
+      "tags": [
+        "Électronégativité",
+        "Pauling",
+        "Périodicité"
+      ],
+      "options": [
+        {
+          "text": "Elle mesure la tendance d'un atome engagé dans une liaison chimique à attirer vers lui les électrons de cette liaison.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le fluor (F) est l'élément le plus électronégatif du tableau périodique (valeur fixée à 4,0 ou 3,98).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'électronégativité augmente de gauche à droite sur une période et de bas en haut dans une colonne.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les métaux alcalins (Cs, Fr) ont les électronégativités les plus faibles (~ 0,7 - 0,8).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'oxygène est moins électronégatif que le chlore.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'ordre des électronégativités des éléments les plus électronégatifs est F (4,0) > O (3,5) > Cl ≈ N (3,0) > Br (2,8) > I ≈ C ≈ S (2,5) > H (2,2). L'oxygène est le deuxième élément le plus électronégatif, nettement supérieur au chlore !"
+    },
+    {
+      "q": "Parmi les séries d'éléments suivantes, laquelle est correctement classée par ordre DÉCROISSANT d'électronégativité de Pauling ?",
+      "tags": [
+        "Classement",
+        "Électronégativité",
+        "Pauling"
+      ],
+      "options": [
+        {
+          "text": "F > O > N > C > H > Na",
+          "isCorrect": true
+        },
+        {
+          "text": "Na > H > C > N > O > F",
+          "isCorrect": false
+        },
+        {
+          "text": "O > F > N > H > C > Na",
+          "isCorrect": false
+        },
+        {
+          "text": "F > Cl > Br > I > At",
+          "isCorrect": true
+        },
+        {
+          "text": "N > O > F > C > B",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "F (4,0) > O (3,5) > N (3,0) > C (2,5) > H (2,2) > Na (0,9). Pour les halogènes, dans la colonne de haut en bas : F (4,0) > Cl (3,0) > Br (2,8) > I (2,5) > At (2,2)."
+    },
+    {
+      "q": "À propos du concept de charge nucléaire effective Z* ressentie par un électron selon le modèle de Slater :",
+      "tags": [
+        "Slater",
+        "Écran",
+        "Charge nucléaire effective"
+      ],
+      "options": [
+        {
+          "text": "Z* = Z - sigma, où sigma est la constante d'écran due aux autres électrons de l'atome.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les électrons de cœur font écran à la charge nucléaire ressentie par les électrons de valence.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un électron d'une couche externe (n supérieur) n'exerce aucun effet d'écran sur les électrons des couches internes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Z* est toujours supérieur ou égal au numéro atomique réel Z.",
+          "isCorrect": false
+        },
+        {
+          "text": "Pour l'atome d'hydrogène, la constante d'écran sigma est nulle et Z* = Z = 1.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "sigma >= 0, donc Z* = Z - sigma <= Z. La charge effective ressentie est toujours inférieure ou égale à la charge réelle Z en raison de la répulsion des autres électrons."
+    },
+    {
+      "q": "Les isotopes d'un même élément chimique :",
+      "tags": [
+        "Isotopes",
+        "Définition",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Possèdent le même numéro atomique Z mais des nombres de masse A différents.",
+          "isCorrect": true
+        },
+        {
+          "text": "Possèdent le même nombre de protons mais des nombres de neutrons différents.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ont exactement les mêmes propriétés chimiques qualitatives car ils ont le même cortège électronique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ont des masses atomiques différentes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sont toujours instables et radioactifs.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "De très nombreux isotopes sont parfaitement stables (ex: Carbone 12 et 13, Oxygène 16, 17 et 18, Hydrogène 1 et 2 Deutérium). Seuls certains isotopes sont radioactifs (ex: Carbone 14, Tritium)."
+    },
+    {
+      "q": "Concernant la forme géométrique des orbitales atomiques :",
+      "tags": [
+        "Orbitales atomiques",
+        "Forme",
+        "Géométrie"
+      ],
+      "options": [
+        {
+          "text": "Une orbitale s (l=0) possède une symétrie sphérique centrée sur le noyau.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les orbitales p (l=1) ont une forme bilobée (deux lobes de signes opposés séparés par un plan nodal passant par le noyau).",
+          "isCorrect": true
+        },
+        {
+          "text": "Il existe 3 orbitales p orientées selon les trois axes orthogonaux : px, py, pz.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il existe 5 orbitales d (l=2) orientées dans l'espace.",
+          "isCorrect": true
+        },
+        {
+          "text": "La probabilité de présence de l'électron au noyau dans une orbitale p est maximale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les orbitales p possèdent un plan nodal passant par le noyau, où la fonction d'onde s'annule : la probabilité de présence de l'électron au noyau pour une orbitale p est NULLE (seules les orbitales s ont une densité non nulle au noyau)."
+    },
+    {
+      "q": "Quelle est la configuration électronique du gaz rare Krypton (Z = 36) ?",
+      "tags": [
+        "Gaz rare",
+        "Configuration",
+        "Krypton"
+      ],
+      "options": [
+        {
+          "text": "1s2 2s2 2p6 3s2 3p6 4s2 3d10 4p6",
+          "isCorrect": true
+        },
+        {
+          "text": "[Ar] 4s2 3d10 4p6",
+          "isCorrect": true
+        },
+        {
+          "text": "[Ar] 4s2 4p6",
+          "isCorrect": false
+        },
+        {
+          "text": "1s2 2s2 2p6 3s2 3p6 4s2 4p6 3d10",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Kr (Z=36) correspond à la saturation de la couche n=4 jusqu'à 4p : [Ar] 4s2 3d10 4p6, soit un total de 18 + 2 + 10 + 6 = 36 électrons."
+    },
+    {
+      "q": "L'affinité électronique (AE) d'un atome correspond à :",
+      "tags": [
+        "Affinité électronique",
+        "Définition",
+        "Énergie"
+      ],
+      "options": [
+        {
+          "text": "L'énergie échangée lors de la capture d'un électron par un atome gazeux neutre : A(g) + e- -> A-(g).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les halogènes (F, Cl, Br, I) ont une forte tendance à capter un électron pour acquérir la configuration stable de gaz noble.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le chlore Cl est l'élément qui possède la plus forte affinité électronique du tableau périodique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est identique à l'électronégativité de Pauling.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'affinité électronique est une grandeur énergétique mesurable (J ou eV) pour l'addition d'un électron à un atome isolé, alors que l'électronégativité est une grandeur sans dimension caractérisant un atome lié au sein d'une molécule. Le chlore a une AE légèrement plus exothermique que le fluor en raison de la forte répulsion électronique dans la petite sous-couche 2p du fluor."
+    }
+  ]
+}

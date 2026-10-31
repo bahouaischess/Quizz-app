@@ -1,0 +1,664 @@
+{
+  "name": "Chimie - Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+  "folder": "PASS - Chimie",
+  "description": "Isomérie de constitution (chaîne, position, fonction), tautomérie, conformations (butane, cyclohexane chaise/bateau), chiralité, énantiomères, racémiques, règles CIP, R/S, Fischer, D/L, composés méso et diastéréoisomères.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant les isomères de constitution, quelle(s) proposition(s) est/sont EXACTE(S) ?",
+      "tags": [
+        "Isomérie de constitution",
+        "Classification",
+        "Définition"
+      ],
+      "options": [
+        {
+          "text": "Ils possèdent la même formule brute mais des formules développées planes différentes.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'éthanol (CH3-CH2-OH) et le méthoxyméthane (CH3-O-CH3) sont des isomères de fonction.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pentan-2-one et le pentan-3-one sont des isomères de position.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le butane et le 2-méthylpropane (isobutane) sont des isomères de chaîne (ou de squelette).",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux isomères de constitution possèdent obligatoirement les mêmes propriétés physiques et chimiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les isomères de constitution ont des enchaînements d'atomes différents (liaisons différentes). Ils ont donc des propriétés physiques (Tf, Teb, solubilité) et chimiques très distinctes. L'éthanol (alcool, liquide à 20°C) et le méthoxyméthane (éther, gaz à 20°C) sont un exemple frappant d'isomères de fonction."
+    },
+    {
+      "q": "À propos de la conformation du cyclohexane :",
+      "tags": [
+        "Conformation",
+        "Cyclohexane",
+        "Stabilité"
+      ],
+      "options": [
+        {
+          "text": "La conformation 'chaise' est exempte de tension de cycle : les angles C-C-C valent 109,5° et toutes les liaisons C-H sont en conformation décalée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans la conformation chaise, chaque carbone porte une liaison axiale (perpendiculaire au plan moyen) et une liaison équatoriale (dans le plan moyen).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'inversion de cycle chaise-chaise transforme toutes les liaisons axiales en liaisons équatoriales, et inversement.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour un cyclohexane monosubstitué (ex : méthylcyclohexane), le conformère avec le groupe en position équatoriale est le plus stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "La position axiale d'un substituant est défavorisée en raison des interactions stériques 1,3-diaxiales avec les hydrogènes axiaux situés du même côté du cycle.",
+          "isCorrect": true
+        },
+        {
+          "text": "La conformation 'bateau' est plus stable que la conformation chaise.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La conformation bateau est nettement MOINS stable que la chaise (environ 25 à 30 kJ/mol au-dessus) en raison d'éclipsages de liaisons et de la répulsion stérique entre les hydrogènes 'mâts' (flagpole). La position équatoriale évite les interactions 1,3-diaxiales défavorables."
+    },
+    {
+      "q": "Concernant la chiralité moléculaire :",
+      "tags": [
+        "Chiralité",
+        "Symétrie",
+        "Conditions"
+      ],
+      "options": [
+        {
+          "text": "Une molécule est chirale si et seulement si elle n'est pas superposable à son image dans un miroir plan.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une molécule possédant un plan de symétrie (sigma) ou un centre d'inversion (i) est obligatoirement achirale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toute molécule possédant au moins un carbone asymétrique est obligatoirement chirale.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une molécule chirale possède nécessairement une activité optique (elle dévie le plan de polarisation de la lumière).",
+          "isCorrect": true
+        },
+        {
+          "text": "Il existe des molécules chirales ne possédant aucun carbone asymétrique (chiralité axiale, planaire ou hélicoïdale).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Une molécule avec des carbones asymétriques peut être ACHIRALE si elle possède un plan ou centre de symétrie interne : c'est le cas des composés MÉSO ! Il existe aussi des molécules chirales sans centre asymétrique (ex: allènes substitués, biphényles encombrés comme le BINAP par atropoisomérie, hélicènes)."
+    },
+    {
+      "q": "Selon la loi de Biot pour le pouvoir rotatoire alpha = [alpha]_D^T * l * C :",
+      "tags": [
+        "Loi de Biot",
+        "Pouvoir rotatoire",
+        "Polarimétrie"
+      ],
+      "options": [
+        {
+          "text": "alpha est l'angle de déviation du plan de polarisation de la lumière, mesuré en degrés (°).",
+          "isCorrect": true
+        },
+        {
+          "text": "[alpha]_D^T est le pouvoir rotatoire spécifique, caractéristique d'un énantiomère pur à une longueur d'onde et température données.",
+          "isCorrect": true
+        },
+        {
+          "text": "l est la longueur du tube polarimétrique, généralement exprimée en décimètres (dm).",
+          "isCorrect": true
+        },
+        {
+          "text": "C est la concentration de la solution en g.mL^-1 (ou g.cm^-3).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une substance dextrogyre dévie le plan vers la droite (alpha > 0), notée (+).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une substance lévogyre est obligatoirement de configuration absolue (S).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "PIÈGE MAJEUR : Il n'existe AUCUNE relation directe entre le signe du pouvoir rotatoire (+ ou -, mesuré expérimentalement au polarimètre) et la configuration absolue (R ou S, déterminée par les règles CIP) ! Un composé (R) peut être dextrogyre ou lévogyre."
+    },
+    {
+      "q": "Deux énantiomères :",
+      "tags": [
+        "Énantiomères",
+        "Propriétés physico-chimiques"
+      ],
+      "options": [
+        {
+          "text": "Sont des stéréoisomères images l'un de l'autre dans un miroir plan et non superposables.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ont des températures de fusion et d'ébullition strictement identiques en milieu achiral.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ont des solubilités identiques dans un solvant achiral comme l'eau pure.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ont des pouvoirs rotatoires spécifiques égaux en valeur absolue mais de signes opposés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ont obligatoirement la même activité biologique vis-à-vis des récepteurs cellulaires ou des enzymes chirales.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans un environnement chiral (comme le corps humain, les enzymes, les récepteurs constitués de L-acides aminés), deux énantiomères interagissent différemment (analogie clé-serrure ou main-gant). L'un peut être un médicament actif et l'autre inactif voire toxique (ex: thalidomide, ibuprofène S-actif)."
+    },
+    {
+      "q": "À propos d'un mélange racémique (ou racémate) :",
+      "tags": [
+        "Mélange racémique",
+        "Activité optique"
+      ],
+      "options": [
+        {
+          "text": "C'est un mélange équimolaire (50:50) de deux énantiomères.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est optiquement inactif : son pouvoir rotatoire est rigoureusement nul (alpha = 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'inactivité optique est due à une compensation externe entre les déviations de sens opposé des deux énantiomères.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'inactivité optique d'un mélange racémique est due à un plan de symétrie interne aux molécules.",
+          "isCorrect": false
+        },
+        {
+          "text": "On peut dédoubler (résoudre) un mélange racémique en faisant réagir les énantiomères avec un réactif chiral énantiopur pour former des diastéréoisomères séparables.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La compensation d'un racémique est EXTERNE (due au mélange des 2 molécules inverses). La compensation interne caractérise les composés méso. Le dédoublement chimique par un acide ou une base chirale pure transforme le mélange d'énantiomères en diastéréoisomères, qui ont des propriétés physiques différentes et peuvent être séparés par cristallisation ou chromatographie."
+    },
+    {
+      "q": "Dans les règles de Cahn-Ingold-Prelog (CIP), comment classe-t-on les quatre substituants suivants liés à un carbone asymétrique : -OH, -CH3, -CH2-OH, -H ?",
+      "tags": [
+        "CIP",
+        "Classement",
+        "Priorité"
+      ],
+      "options": [
+        {
+          "text": "-OH (1) > -CH2-OH (2) > -CH3 (3) > -H (4)",
+          "isCorrect": true
+        },
+        {
+          "text": "-CH2-OH (1) > -OH (2) > -CH3 (3) > -H (4)",
+          "isCorrect": false
+        },
+        {
+          "text": "-OH (1) > -CH3 (2) > -CH2-OH (3) > -H (4)",
+          "isCorrect": false
+        },
+        {
+          "text": "-H (1) > -CH3 (2) > -CH2-OH (3) > -OH (4)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Au rang 1 : O (Z=8) > C (Z=6) > H (Z=1). Donc -OH est prioritaire (1) et -H est le dernier (4). Pour départager les deux carbones au rang 1 : dans -CH2-OH, le carbone est lié à (O, H, H). Dans -CH3, le carbone est lié à (H, H, H). Comme O l'emporte sur H, -CH2-OH est (2) et -CH3 est (3). L'ordre est donc 1: -OH, 2: -CH2-OH, 3: -CH3, 4: -H."
+    },
+    {
+      "q": "Soit la molécule de (R)-butan-2-ol. Si l'on échange deux substituants quelconques fixés sur son carbone asymétrique, quelle molécule obtient-on ?",
+      "tags": [
+        "Inversion de configuration",
+        "Carbone asymétrique",
+        "Règles"
+      ],
+      "options": [
+        {
+          "text": "Le (S)-butan-2-ol (son énantiomère).",
+          "isCorrect": true
+        },
+        {
+          "text": "La même molécule (R)-butan-2-ol sous une autre conformation.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un diastéréoisomère du butan-2-ol.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un isomère de constitution.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Règle absolue : permuter DEUX substituants sur un centre stéréogène tétraédrique inverse sa configuration absolue (R devient S, et S devient R). Permuter deux paires de substituants (deux permutations) redonne la configuration initiale."
+    },
+    {
+      "q": "On observe un carbone asymétrique selon les règles CIP : les substituants sont classés a (1) > b (2) > c (3) > d (4). Le substituant d (le moins prioritaire) est dirigé VERS L'ARRIÈRE (dans le plan arrière ou en tirets). Si le trajet 1 -> 2 -> 3 tourne dans le SENS HORAIRE (des aiguilles d'une montre), la configuration est :",
+      "tags": [
+        "CIP",
+        "Configuration absolue",
+        "R/S"
+      ],
+      "options": [
+        {
+          "text": "(R) (Rectus)",
+          "isCorrect": true
+        },
+        {
+          "text": "(S) (Sinister)",
+          "isCorrect": false
+        },
+        {
+          "text": "(D) (Dextrogyre)",
+          "isCorrect": false
+        },
+        {
+          "text": "(E) (Entgegen)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Par définition : groupe 4 en arrière, 1 -> 2 -> 3 dans le sens horaire correspond à (R) (Rectus = droit). Sens anti-horaire = (S) (Sinister = gauche)."
+    },
+    {
+      "q": "Si le substituant 4 (le moins prioritaire) pointe VERS L'AVANT (en coin plein / coin épais) lors de la lecture d'une molécule :",
+      "tags": [
+        "CIP",
+        "Méthodologie",
+        "R/S"
+      ],
+      "options": [
+        {
+          "text": "Le sens de rotation apparent 1 -> 2 -> 3 donne la configuration inverse de la réalité.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si le trajet 1 -> 2 -> 3 tourne dans le sens horaire, le centre est de configuration (S).",
+          "isCorrect": true
+        },
+        {
+          "text": "Si le trajet 1 -> 2 -> 3 tourne dans le sens trigonométrique (anti-horaire), le centre est de configuration (R).",
+          "isCorrect": true
+        },
+        {
+          "text": "On ne peut pas déterminer la configuration tant qu'on n'a pas mesuré le pouvoir rotatoire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Quand le substituant 4 est vers l'avant, l'observateur regarde la molécule par derrière. Le sens apparent de rotation est donc inversé : horaire apparent => configuration réelle (S) ; anti-horaire apparent => configuration réelle (R)."
+    },
+    {
+      "q": "Concernant la projection de Fischer :",
+      "tags": [
+        "Fischer",
+        "Conventions",
+        "Stéréochimie"
+      ],
+      "options": [
+        {
+          "text": "La chaîne carbonée principale est disposée verticalement.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le carbone le plus oxydé est conventionnellement placé en haut.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les liaisons horizontales pointent vers l'avant (vers l'observateur).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les liaisons verticales pointent vers l'arrière (s'éloignent de l'observateur).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une rotation de 90° dans le plan de la feuille conserve la configuration absolue de la molécule.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "En projection de Fischer : horizontal = en avant, vertical = en arrière. Une rotation de 90° dans le plan inverse les liaisons horizontales et verticales, donc inverse la configuration (R devient S) ! Seule une rotation de 180° dans le plan conserve la stéréochimie."
+    },
+    {
+      "q": "À propos de la série D et L de Fischer pour les sucres (oses) :",
+      "tags": [
+        "Fischer",
+        "Série D et L",
+        "Glucides"
+      ],
+      "options": [
+        {
+          "text": "L'appartenance à la série D ou L est déterminée par la position du groupement hydroxyle (-OH) porté par le carbone asymétrique de plus grand numéro (le carbone chiral le plus bas en Fischer).",
+          "isCorrect": true
+        },
+        {
+          "text": "Si ce -OH est situé à DROITE en projection de Fischer, l'ose appartient à la série D.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si ce -OH est situé à GAUCHE en projection de Fischer, l'ose appartient à la série L.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un ose de la série D est obligatoirement dextrogyre (+).",
+          "isCorrect": false
+        },
+        {
+          "text": "La quasi-totalité des sucres naturels chez l'homme appartient à la série D.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La nomenclature D/L est purement conformationnelle/stéréochimique par comparaison avec le D-glycéraldéhyde. Elle n'a aucun lien avec le signe du pouvoir rotatoire : le D-fructose est par exemple fortement lévogyre (d'où son ancien nom de lévulose) !"
+    },
+    {
+      "q": "À propos de la série D et L pour les acides alpha-aminés en projection de Fischer :",
+      "tags": [
+        "Acides aminés",
+        "Fischer",
+        "Série D et L"
+      ],
+      "options": [
+        {
+          "text": "Le groupement carboxylate -COOH est placé en haut de la projection de Fischer.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si le groupement amine -NH2 est à GAUCHE, l'acide aminé appartient à la série L.",
+          "isCorrect": true
+        },
+        {
+          "text": "La quasi-totalité des acides aminés constitutifs des protéines naturelles sont de la série L.",
+          "isCorrect": true
+        },
+        {
+          "text": "Tous les L-acides aminés naturels possèdent la configuration absolue (S), à l'exception notable de la cystéine qui est (R).",
+          "isCorrect": true
+        },
+        {
+          "text": "La glycine appartient à la série L.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La glycine (NH2-CH2-COOH) possède deux atomes d'hydrogène sur son carbone central : elle n'a AUCUN carbone asymétrique, est achirale et n'appartient ni à la série D ni à la série L. Pour la cystéine, la présence de l'atome de soufre (Z=16) dans la chaîne -CH2-SH rend ce groupement prioritaire sur -COOH (Z=6), ce qui inverse la désignation CIP en (R) tout en restant de la série L !"
+    },
+    {
+      "q": "Soit le butane-2,3-diol, CH3-CH(OH)-CH(OH)-CH3. Combien possède-t-il de stéréoisomères au total ?",
+      "tags": [
+        "Composé méso",
+        "Stéréoisomères",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "2 stéréoisomères",
+          "isCorrect": false
+        },
+        {
+          "text": "3 stéréoisomères (un couple d'énantiomères et un stéréoisomère méso achiral)",
+          "isCorrect": true
+        },
+        {
+          "text": "4 stéréoisomères",
+          "isCorrect": false
+        },
+        {
+          "text": "8 stéréoisomères",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La molécule possède 2 carbones asymétriques identiques (mêmes substituants). La formule générale 2^n donnerait 4, mais les formes (2R, 3S) et (2S, 3R) sont superposables par rotation de 180° car la molécule possède un plan de symétrie : c'est la forme MÉSO (achirale). Il y a donc au total 3 stéréoisomères : (2R, 3R), (2S, 3S) qui forment un couple d'énantiomères, et le méso (2R, 3S)."
+    },
+    {
+      "q": "Concernant un composé méso, quelle proposition est FAUSSE ?",
+      "tags": [
+        "Composé méso",
+        "Chiralité",
+        "Activité optique"
+      ],
+      "options": [
+        {
+          "text": "Un composé méso possède au moins deux centres stéréogènes.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un composé méso est achiral et superposable à son image dans un miroir.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un composé méso est optiquement actif car il contient des carbones asymétriques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un composé méso possède un plan de symétrie ou un centre d'inversion.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un composé méso ne peut pas être dédoublé en énantiomères.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La proposition fausse est que le composé méso serait optiquement actif. Au contraire, un composé méso est ACHIRAL et donc OPTIQUEMENT INACTIF (pouvoir rotatoire nul par compensation interne) !"
+    },
+    {
+      "q": "Deux molécules sont qualifiées de diastéréoisomères si :",
+      "tags": [
+        "Diastéréoisomères",
+        "Définition",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Elles sont des stéréoisomères de configuration qui ne sont pas des énantiomères (non superposables et pas images dans un miroir).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles ont des propriétés physiques différentes (points de fusion, solubilités, spectres RMN différents).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour une molécule ayant 2 centres stéréogènes, inverser la configuration d'un seul centre conduit à un diastéréoisomère.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles possèdent obligatoirement des pouvoirs rotatoires opposés.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les isomères cis et trans d'un alcène sont des diastéréoisomères.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les diastéréoisomères ont des géométries relatives et distances internucléaires différentes, donc des propriétés physiques différentes (séparables par distillation ou chromatographie achirale). Leurs pouvoirs rotatoires n'ont aucun lien (ils ne sont pas opposés, contrairement aux énantiomères)."
+    },
+    {
+      "q": "Dans la projection de Newman du butane selon l'axe C2-C3, quel est l'angle dièdre entre les deux groupements méthyles dans la conformation anti-périplanaire (la plus stable) ?",
+      "tags": [
+        "Newman",
+        "Butane",
+        "Angle dièdre"
+      ],
+      "options": [
+        {
+          "text": "0°",
+          "isCorrect": false
+        },
+        {
+          "text": "60°",
+          "isCorrect": false
+        },
+        {
+          "text": "120°",
+          "isCorrect": false
+        },
+        {
+          "text": "180°",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La conformation anti-périplanaire place les deux groupements les plus volumineux (les deux méthyles) à un angle dièdre de 180°, ce qui minimise la répulsion stérique de Van der Waals. L'angle de 60° correspond à la conformation 'gauche' (décalée mais moins stable de 3,8 kJ/mol)."
+    },
+    {
+      "q": "Concernant la stéréochimie des conformations du butane :",
+      "tags": [
+        "Conformations",
+        "Énergie potentielle",
+        "Butane"
+      ],
+      "options": [
+        {
+          "text": "La conformation syn-périplanaire (éclipsée avec theta = 0° entre les méthyles) correspond au maximum absolu d'énergie potentielle.",
+          "isCorrect": true
+        },
+        {
+          "text": "La conformation anti-périplanaire (décalée avec theta = 180°) correspond au minimum absolu d'énergie.",
+          "isCorrect": true
+        },
+        {
+          "text": "La conformation gauche (theta = 60° ou 300°) correspond à un minimum relatif d'énergie.",
+          "isCorrect": true
+        },
+        {
+          "text": "La barrière de rotation autour de la liaison C2-C3 est infranchissable à température ambiante.",
+          "isCorrect": false
+        },
+        {
+          "text": "À température ambiante, la rotation est rapide et les conformères s'interconvertissent continuellement.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La barrière d'énergie de rotation C-C n'est que de 12 à 20 kJ/mol, ce qui est très largement inférieur à l'énergie thermique disponible à 25 °C (RT ≈ 2,5 kJ/mol). Les conformères ne sont donc pas isolables à température ambiante."
+    },
+    {
+      "q": "Une molécule possède 3 carbones asymétriques tous différents. Quel est le nombre maximal théorique de stéréoisomères de configuration ?",
+      "tags": [
+        "Stéréoisomères",
+        "Calcul",
+        "2^n"
+      ],
+      "options": [
+        {
+          "text": "3",
+          "isCorrect": false
+        },
+        {
+          "text": "6",
+          "isCorrect": false
+        },
+        {
+          "text": "8 (soit 4 couples d'énantiomères)",
+          "isCorrect": true
+        },
+        {
+          "text": "16",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour n centres chiraux non équivalents, le nombre maximal de stéréoisomères de configuration est 2^n = 2^3 = 8 stéréoisomères, regroupés en 4 paires d'énantiomères."
+    },
+    {
+      "q": "Que sont deux épimères en chimie organique et biochimie ?",
+      "tags": [
+        "Épimères",
+        "Définition",
+        "Glucides"
+      ],
+      "options": [
+        {
+          "text": "Deux diastéréoisomères qui ne diffèrent que par la configuration absolue d'un SEUL carbone asymétrique parmi plusieurs.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le D-glucose et le D-galactose sont des épimères en C4.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le D-glucose et le D-mannose sont des épimères en C2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux épimères sont des énantiomères.",
+          "isCorrect": false
+        },
+        {
+          "text": "Deux énantiomères inversent TOUS leurs centres chiraux, alors que deux épimères n'en inversent qu'un seul.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Deux épimères sont des diastéréoisomères particuliers qui ne diffèrent que par un unique centre asymétrique. Inverser tous les centres conduirait à l'énantiomère."
+    },
+    {
+      "q": "Soit l'acide lactique CH3-CH(OH)-COOH. L'énantiomère dextrogyre a un pouvoir rotatoire spécifique [alpha] = +2,6 °.dm^-1.g^-1.mL. Une solution contient un mélange des deux énantiomères et présente un pouvoir rotatoire spécifique apparent de +1,3 °.dm^-1.g^-1.mL. Quel est l'excès énantiomérique (ee) et la composition molaire du mélange ?",
+      "tags": [
+        "Excès énantiomérique",
+        "Calcul",
+        "Pureté optique"
+      ],
+      "options": [
+        {
+          "text": "ee = 50 % ; mélange composé de 75 % d'énantiomère (+) et 25 % d'énantiomère (-).",
+          "isCorrect": true
+        },
+        {
+          "text": "ee = 50 % ; mélange composé de 50 % (+) et 50 % (-).",
+          "isCorrect": false
+        },
+        {
+          "text": "ee = 25 % ; mélange composé de 62,5 % (+) et 37,5 % (-).",
+          "isCorrect": false
+        },
+        {
+          "text": "ee = 100 % ; solution optiquement pure.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ee = [alpha]_obs / [alpha]_pur = 1,3 / 2,6 = 0,50, soit 50 % d'excès énantiomérique. La fraction de l'énantiomère majoritaire (+) est X(+) = (1 + ee)/2 = (1 + 0,5)/2 = 0,75 (75 %). La fraction de l'énantiomère minoritaire (-) est 25 %."
+    },
+    {
+      "q": "Concernant la liaison double et les stéréoisomères Z / E :",
+      "tags": [
+        "Z/E",
+        "CIP",
+        "Alcènes"
+      ],
+      "options": [
+        {
+          "text": "La rotation autour de la liaison double C=C est bloquée à température ambiante par le recouvrement latéral de la liaison pi.",
+          "isCorrect": true
+        },
+        {
+          "text": "La configuration est dite Z (zusammen) si les deux substituants de plus haute priorité CIP sur chaque carbone sont du même côté du plan de référence.",
+          "isCorrect": true
+        },
+        {
+          "text": "La configuration est dite E (entgegen) si les deux substituants prioritaires sont de côtés opposés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les isomères Z et E sont des énantiomères.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les isomères Z et E sont des diastéréoisomères géométriques ayant des températures d'ébullition et moments dipolaires différents.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les isomères géométriques Z et E sont des DIASTÉRÉOISOMÈRES (ils ne sont pas images l'un de l'autre dans un miroir). Ils ont des propriétés physiques très différentes (ex: solubilité, point de fusion, moment dipolaire)."
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+[
+  {
+    "recto": "Quelle est la définition générale d'un acide alpha-aminé standard ?",
+    "verso": "Molécule organique comportant sur le même carbone alpha (Ca) une fonction carboxyle (-COOH), une fonction amine primaire (-NH2, sauf la proline qui est une amine secondaire), un atome d'hydrogène et une chaîne latérale variable (R).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Définition",
+      "Structure"
+    ]
+  },
+  {
+    "recto": "Quel est le seul acide aminé standard achiral (dépourvu de carbone asymétrique) ?",
+    "verso": "La glycine (Gly, G), dont la chaîne latérale est un simple atome d'hydrogène (-H), conférant deux substituants identiques sur le carbone alpha.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Stéréochimie",
+      "Glycine"
+    ]
+  },
+  {
+    "recto": "Quels sont les deux acides aminés protéinogènes possédant deux carbones asymétriques ?",
+    "verso": "L'isoleucine (Ile, I) et la thréonine (Thr, T), possédant chacun un carbone asymétrique en C-alpha et en C-bêta.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Stéréochimie",
+      "Carbone chiral"
+    ]
+  },
+  {
+    "recto": "À quelle série stéréochimique de Fischer appartiennent tous les acides aminés des protéines eucaryotes ?",
+    "verso": "À la série L (le groupement alpha-NH3+ est projeté à gauche dans la représentation de Fischer standard avec -COOH en haut).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Stéréochimie",
+      "Série L"
+    ]
+  },
+  {
+    "recto": "Quelle est la masse molaire moyenne d'un résidu d'acide aminé dans une chaîne polypeptidique ?",
+    "verso": "Environ 110 Da (Daltons), tenant compte de la soustraction des 18 Da de H2O éliminé lors de la création de la liaison peptidique.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Masse",
+      "Généralités"
+    ]
+  },
+  {
+    "recto": "Citer la liste des 8 acides aminés strictement essentiels chez l'adulte.",
+    "verso": "Leucine, Thréonine, Lysine, Tryptophane, Phénylalanine, Valine, Méthionine, Isoleucine. (Mnémonique: Le Très Lyrique Trépied Fait Vachement Méditer Iseult). L'Histidine est essentielle chez l'enfant.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Nutrition",
+      "Acides aminés essentiels"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le 21e acide aminé naturel et comment est-il incorporé ?",
+    "verso": "La sélénocystéine (Sec, U) : son groupement -SH est remplacé par un sélénol -SeH (pKa ~ 5,2). Elle est codée par le codon UGA grâce à une structure en tige-boucle ARNm appelée élément SECIS.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Sélénocystéine",
+      "21e AA"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la pyrrolysine (22e acide aminé) ?",
+    "verso": "Un acide aminé dérivé de la lysine portant un cycle pyrroline, codé par le codon stop UAG chez certaines archées et bactéries méthanogènes.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Pyrrolysine",
+      "22e AA"
+    ]
+  },
+  {
+    "recto": "Définir la forme zwitterionique (ou amphion) d'un acide aminé.",
+    "verso": "Forme dipolaire électriquement neutre portant simultanément une charge négative sur le carboxylate (-COO-) et une charge positive sur l'ammonium (-NH3+), prédominante au point isoélectrique (pHi).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Propriétés acido-basiques",
+      "Zwitterion"
+    ]
+  },
+  {
+    "recto": "Comment se calcule le point isoélectrique (pHi) d'un acide aminé diacide (Asp, Glu) ?",
+    "verso": "pHi = (pK1 + pKR) / 2, car la forme neutre se situe entre la dissociation du premier -COOH (alpha) et celle du -COOH de la chaîne latérale.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Calcul pHi",
+      "Acides"
+    ]
+  },
+  {
+    "recto": "Comment se calcule le point isoélectrique (pHi) d'un acide aminé dibasique (Lys, Arg) ?",
+    "verso": "pHi = (pKR + pK2) / 2, car la forme neutre se situe entre la dissociation de l'alpha-NH3+ et de l'amine de la chaîne latérale.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Calcul pHi",
+      "Bases"
+    ]
+  },
+  {
+    "recto": "Quel acide aminé possède une chaîne latérale avec un pKR proche de 6,0 et quel est son intérêt fonctionnel ?",
+    "verso": "L'histidine (His, H) avec son cycle imidazole (pKR ~ 6,0). Étant partiellement ionisée au pH physiologique (7,4), elle joue un rôle pivot de donneur/accepteur de protons dans les sites catalytiques enzymatiques.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Histidine",
+      "Catalyse"
+    ]
+  },
+  {
+    "recto": "Quel acide aminé absorbe le plus fortement la lumière UV à 280 nm ?",
+    "verso": "Le tryptophane (Trp, W), grâce à son double hétérocycle aromatique conjugué (noyau indole).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Spectrophotométrie",
+      "Aromatiques"
+    ]
+  },
+  {
+    "recto": "Quelle est la réaction colorée de la ninhydrine avec les acides aminés ?",
+    "verso": "Oxydation et désamination libérant du pourpre de Ruhemann (absorption à 570 nm) avec les amines primaires, et un dérivé jaune (440 nm) avec la proline (amine secondaire).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Ninhydrine",
+      "Dosage"
+    ]
+  },
+  {
+    "recto": "Quel est le principe du séquençage d'Edman ?",
+    "verso": "Réaction du phénylisothiocyanate (PITC) sur l'amine N-terminale libre, suivie d'un clivage acide sélectif libérant un dérivé phénylthiohydantoïne (PTH-AA) sans rompre le reste de la chaîne peptidique.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Edman",
+      "Séquençage"
+    ]
+  },
+  {
+    "recto": "Que permet le réactif d'Ellman (DTNB) ?",
+    "verso": "Le dosage spectrophotométrique quantitatif à 412 nm des groupements thiols (-SH) libres de la cystéine par libération de l'anion jaune 2-nitro-5-thiobenzoate (TNB2-).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Ellman",
+      "Cystéine"
+    ]
+  },
+  {
+    "recto": "Quelle modification post-traductionnelle subissent les résidus de proline et lysine du collagène ?",
+    "verso": "Une hydroxylation (formation d'hydroxyproline et hydroxylysine) catalysée par des hydroxylases dépendantes du Fe2+, de l'alpha-cétoglutarate et de la vitamine C (acide ascorbique).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Collagène",
+      "Hydroxylation"
+    ]
+  },
+  {
+    "recto": "Quelle réaction dépendante de la vitamine K est indispensable à la coagulation sanguine ?",
+    "verso": "La gamma-carboxylation des résidus glutamate (Glu) en acide gamma-carboxyglutamique (Gla), permettant la chélation du calcium (Ca2+) par la prothrombine et les facteurs VII, IX, X.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "Vitamine K",
+      "Coagulation"
+    ]
+  },
+  {
+    "recto": "Sur quel résidu et motif consensus a lieu la N-glycosylation des protéines ?",
+    "verso": "Sur la fonction amide d'une asparagine (Asn, N) incluse dans le motif consensus Asn-X-Ser ou Asn-X-Thr (où X peut être n'importe quel acide aminé sauf la proline).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "N-glycosylation",
+      "Asparagine"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'ancre GPI (glypiation) ?",
+    "verso": "Liaison amide entre le carboxyle (-COOH) de l'acide aminé C-terminal d'une protéine extracellulaire et l'éthanolamine d'un glycosylphosphatidylinositol inséré dans le feuillet externe de la membrane.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Acides Aminés",
+    "tags": [
+      "GPI",
+      "Ancrage membranaire"
+    ]
+  }
+]

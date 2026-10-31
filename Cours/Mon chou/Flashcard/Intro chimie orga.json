@@ -1,0 +1,183 @@
+[
+  {
+    "recto": "Quelle est la différence entre rupture homolytique et hétérolytique ?",
+    "verso": "Homolyse : rupture symétrique de la liaison covalente (1 électron pour chaque fragment) formant deux radicaux libres.\nHétérolyse : rupture dissymétrique (les deux électrons vont au fragment le plus électronégatif) formant un cation et un anion.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Homolyse",
+      "Hétérolyse"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un nucléophile et un électrophile ?",
+    "verso": "Nucléophile (base de Lewis) : espèce riche en électrons (doublet libre, charge négative, liaison pi) qui attaque les centres déficitaires.\nÉlectrophile (acide de Lewis) : espèce déficitaire en électrons (lacune, charge positive ou partielle delta+) qui accepte un doublet.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Nucléophile",
+      "Électrophile"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un nucléofuge et quelle est la règle d'or pour un bon groupe partant ?",
+    "verso": "Nucléofuge = groupe partant qui emporte le doublet électronique de liaison.\nRègle : Un bon nucléofuge est une base conjuguée très faible d'un acide fort (ex : I- > Br- > Cl- >> F- ; TsO- ; H2O).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Nucléofuge",
+      "Règle"
+    ]
+  },
+  {
+    "recto": "Quel est l'ordre de stabilité des carbocations alkyles et pourquoi ?",
+    "verso": "Tertiaire (3°) > Secondaire (2°) > Primaire (1°) > Méthyle.\nStabilisés par effet inductif donneur (+I) et hyperconjugaison des groupements alkyles qui dispersent la charge positive.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Carbocation",
+      "Stabilité"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure et l'hybridation d'un carbocation alkyle simple ?",
+    "verso": "Le carbone chargé est hybridé sp2, géométrie plane trigonale (angles à 120°), avec une orbitale 2p vacante perpendiculaire au plan.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Carbocation",
+      "Géométrie"
+    ]
+  },
+  {
+    "recto": "Quel est l'ordre de stabilité des carbanions alkyles ?",
+    "verso": "Méthyle > Primaire (1°) > Secondaire (2°) > Tertiaire (3°).\n(Inverse des carbocations ! Les groupes donneurs +I intensifient la charge négative et déstabilisent le carbanion).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Carbanion",
+      "Stabilité"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence entre contrôle cinétique et contrôle thermodynamique ?",
+    "verso": "Cinétique (basse T, temps court) : produit formé le plus vite (énergie d'activation Ea la plus faible).\nThermodynamique (haute T, temps long, équilibre) : produit le plus stable (Delta_r G° le plus bas).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Contrôle cinétique",
+      "Contrôle thermodynamique"
+    ]
+  },
+  {
+    "recto": "Qu'énonce la règle de Markovnikov ?",
+    "verso": "Lors de l'addition électrophile d'un acide HX sur un alcène asymétrique, le proton H+ se fixe sur le carbone le moins substitué (le plus hydrogéné) pour former le carbocation le plus stable.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Markovnikov",
+      "Règle"
+    ]
+  },
+  {
+    "recto": "Qu'énonce la règle de Zaïtsev pour les éliminations ?",
+    "verso": "L'élimination conduit préférentiellement à l'alcène le plus substitué (le plus stable thermodynamiquement), généralement avec prédominance de l'isomère E (trans).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Zaïtsev",
+      "Règle"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques clés d'un mécanisme SN2 ?",
+    "verso": "1) Une seule étape concertée (état de transition bipyramidal).\n2) Vitesse v = k[Substrat][Nucléophile] (ordre 2).\n3) Attaque dorsale à 180° avec inversion de Walden.\n4) Réactivité : Méthyle > 1° > 2° >> 3° (sensible à l'encombrement).\n5) Favorisé par solvants polaires aprotiques (acétone, DMSO).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "SN2",
+      "Caractéristiques"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques clés d'un mécanisme SN1 ?",
+    "verso": "1) Deux étapes avec carbocation intermédiaire plan.\n2) Étape limitante = départ du nucléofuge : v = k[Substrat] (ordre 1).\n3) Perte de stéréochimie : attaque équiprobable sur les 2 faces => racémisation.\n4) Réactivité : 3° > 2° >> 1° (carbocation stable nécessaire).\n5) Favorisé par solvants polaires protiques (H2O, alcools).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "SN1",
+      "Caractéristiques"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une réaction stéréospécifique par rapport à stéréosélective ?",
+    "verso": "Stéréosélective : forme préférentiellement un stéréoisomère parmi plusieurs possibles.\nStéréospécifique : le mécanisme impose qu'un réactif de départ de configuration donnée donne exclusivement un stéréoisomère déterminé (ex : SN2).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Stéréospécifique",
+      "Stéréosélectif"
+    ]
+  },
+  {
+    "recto": "Donner un exemple de solvant polaire protique et polaire aprotique.",
+    "verso": "Polaire protique (donneur de liaison H) : H2O, éthanol, méthanol, acide acétique.\nPolaire aprotique (pas de liaison H acide) : DMSO, DMF, acétone, acétonitrile.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Solvants",
+      "Exemples"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence fondamentale entre tautomérie et mésomérie ?",
+    "verso": "Tautomères : vrais isomères de constitution en équilibre chimique (déplacement d'un proton et rupture de liaisons sigma).\nFormes mésomères : représentations limites d'une même molécule unique (déplacement d'électrons pi ou non liants uniquement, squelette nucléaire fixe).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Tautomérie",
+      "Mésomérie"
+    ]
+  },
+  {
+    "recto": "Pourquoi un carbocation allylique ou benzylique est-il particulièrement stable ?",
+    "verso": "Grâce à la délocalisation de la charge positive par mésomérie avec les électrons pi de la double liaison ou du cycle benzénique (stabilisation par résonance).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Allylique",
+      "Résonance"
+    ]
+  },
+  {
+    "recto": "Comment calcule-t-on le nombre d'oxydation d'un carbone dans une molécule organique ?",
+    "verso": "Chaque liaison avec un atome plus électronégatif (O, N, halogène) apporte +1.\nChaque liaison avec un atome moins électronégatif (H) apporte -1.\nChaque liaison avec un carbone (C-C) apporte 0.\nOn somme ces contributions.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Nombre d'oxydation",
+      "Calcul"
+    ]
+  },
+  {
+    "recto": "Qu'appelle-t-on fonction monovalente, divalente et trivalente ?",
+    "verso": "Monovalente (1 liaison avec hétéroatome) : alcools, amines, halogénoalcanes.\nDivalente (2 liaisons) : aldéhydes, cétones, acétals.\nTrivalente (3 liaisons) : acides carboxyliques, esters, amides, nitriles, chlorures d'acyle.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Valence",
+      "Fonctions"
+    ]
+  },
+  {
+    "recto": "Pourquoi le tert-butylate (t-BuO-) est-il une base forte mais un très mauvais nucléophile ?",
+    "verso": "L'encombrement stérique important des 3 groupements méthyles bloque l'accès aux carbones électrophiles (faible nucléophilie), mais ne gène pas la capture d'un petit proton H+ (forte basicité).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Intro chimie orga",
+    "tags": [
+      "Nucléophile",
+      "Base",
+      "Stérique"
+    ]
+  }
+]

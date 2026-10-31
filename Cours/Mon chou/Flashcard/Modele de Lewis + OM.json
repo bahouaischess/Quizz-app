@@ -1,0 +1,172 @@
+[
+  {
+    "recto": "Quelle est la formule de la charge formelle (CF) d'un atome dans une structure de Lewis ?",
+    "verso": "CF = e_valence - e_non-liants - (1/2 * e_liants)\n= V - NL - L (où V = valence libre, NL = électrons des doublets libres, L = nombre de liaisons simples).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "Charge formelle",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Pourquoi les éléments de la période 2 ne peuvent-ils jamais être hypervalents ?",
+    "verso": "Car la couche n=2 ne dispose que des sous-couches 2s et 2p (4 orbitales), limitant strictement la couche de valence à 8 électrons (octet infranchissable). Pas d'orbitales d disponibles.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "Hypervalence",
+      "Règle de l'octet"
+    ]
+  },
+  {
+    "recto": "Donner la géométrie VSEPR des types AX2, AX3, AX2E, AX4, AX3E et AX2E2.",
+    "verso": "- AX2 : Linéaire (180°, BeCl2, CO2)\n- AX3 : Triangulaire plane (120°, BF3)\n- AX2E : Coudée (< 120°, SO2)\n- AX4 : Tétraédrique (109,5°, CH4)\n- AX3E : Pyramide trigonale (~107°, NH3)\n- AX2E2 : Coudée (~104,5°, H2O).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "VSEPR",
+      "Géométries classiques"
+    ]
+  },
+  {
+    "recto": "Quelle est la hiérarchie des forces de répulsion des doublets selon VSEPR ?",
+    "verso": "Doublet non liant - Doublet non liant > Doublet non liant - Doublet liant > Doublet liant - Doublet liant.\n(Les doublets libres occupent plus de volume angulaire).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "VSEPR",
+      "Répulsion"
+    ]
+  },
+  {
+    "recto": "Dans une bipyramide trigonale (AX5 et dérivés AX4E, AX3E2, AX2E3), où se placent les doublets libres ?",
+    "verso": "TOUJOURS en position équatoriale (à 120° les uns des autres) pour minimiser le nombre de répulsions fortes à 90°.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "VSEPR",
+      "Bipyramide trigonale"
+    ]
+  },
+  {
+    "recto": "Quelle est la géométrie de XeF4 (AX4E2) et de SF4 (AX4E) ?",
+    "verso": "- XeF4 (AX4E2) : Plan-carré (les 2 doublets libres sont à l'opposé en axial).\n- SF4 (AX4E) : Bascule / Balançoire (see-saw, doublet libre en équatorial).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "VSEPR",
+      "XeF4 et SF4"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques des hybridations sp, sp2 et sp3 ?",
+    "verso": "- sp : 2 orbitales hybrides à 180° (linéaire) + 2 orbitales p pures.\n- sp2 : 3 orbitales hybrides à 120° (plan) + 1 orbitale p pure.\n- sp3 : 4 orbitales hybrides à 109,5° (tétraédrique) sans p pure.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "Hybridation",
+      "sp, sp2, sp3"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence entre une liaison sigma et une liaison pi ?",
+    "verso": "sigma : recouvrement axial/frontal le long de l'axe internucléaire, symétrie cylindrique, plus forte, rotation libre.\npi : recouvrement latéral d'orbitales p parallèles, plan nodal contenant les noyaux, plus faible, bloque la rotation.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "Liaison sigma",
+      "Liaison pi"
+    ]
+  },
+  {
+    "recto": "Quelles sont les 3 conditions pour former une OM par LCAO ?",
+    "verso": "1) Énergies des orbitales atomiques proches (Delta E faible).\n2) Symétries compatibles par rapport à l'axe de liaison.\n3) Recouvrement spatial non nul (intégrale de recouvrement S > 0).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "LCAO",
+      "Conditions"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule de l'indice de liaison (ordre de liaison OL) en OM ?",
+    "verso": "OL = (n_électrons_liants - n_électrons_antiliants) / 2.\nSi OL = 0, la molécule n'est pas stable (ex: He2).\nPlus OL est élevé, plus la liaison est courte et stable.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "Indice de liaison",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Pourquoi O2 est-il paramagnétique selon la théorie des OM ?",
+    "verso": "Ses deux derniers électrons occupent deux orbitales antiliantes dégénérées pi*2px et pi*2py avec des spins parallèles (règle de Hund). Il possède donc 2 électrons célibataires.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "O2",
+      "Paramagnétisme"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'interaction sp et quelles molécules diatomiques concerne-t-elle ?",
+    "verso": "Mélange des orbitales 2s et 2pz proches en énergie. Elle inverse l'ordre de sigma_2pz et pi_2p (sigma_2pz passe AU-DESSUS de pi_2p). Concerne Li2, Be2, B2, C2 et N2 (Z <= 7). (Pas d'inversion pour O2 et F2).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "Interaction sp",
+      "Inversion OM"
+    ]
+  },
+  {
+    "recto": "Quelle est la configuration des OM de valence de N2 et son indice de liaison ?",
+    "verso": "Configuration : sigma_2s^2 sigma*_2s^2 (pi_2px=pi_2py)^4 sigma_2pz^2.\nOL = (8 - 2)/2 = 3 (triple liaison, diamagnétique).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "N2",
+      "OM"
+    ]
+  },
+  {
+    "recto": "Pourquoi He2 n'existe pas alors que He2+ existe ?",
+    "verso": "He2 a 4 e- : OL = (2 - 2)/2 = 0 (instable).\nHe2+ a 3 e- : OL = (2 - 1)/2 = 0,5 (liaison à 1 électron, stable et paramagnétique).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "He2 et He2+",
+      "Stabilité"
+    ]
+  },
+  {
+    "recto": "Dans une OM liante hétéronucléaire polarisée (ex: HF), de quel atome l'OM est-elle la plus proche ?",
+    "verso": "De l'atome le plus électronégatif (F) : l'OM liante est plus basse en énergie et a son plus fort coefficient sur cet atome.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "Hétéronucléaire",
+      "Polarisation OM"
+    ]
+  },
+  {
+    "recto": "Quelle est la géométrie de l'ion I3- (22 e- de valence) ?",
+    "verso": "AX2E3 : Linéaire (angle de 180°), avec les 3 doublets non liants situés dans le plan équatorial.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "I3-",
+      "VSEPR"
+    ]
+  },
+  {
+    "recto": "Quelle est la caractéristique nodale d'une orbitale antiliante sigma* ?",
+    "verso": "Elle présente un plan nodal perpendiculaire à l'axe internucléaire où la probabilité de présence de l'électron s'annule (densité nulle entre les noyaux).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Modele de Lewis + OM",
+    "tags": [
+      "OM antiliante",
+      "Plan nodal"
+    ]
+  }
+]

@@ -1,0 +1,496 @@
+[
+  {
+    "recto": "Quelle est la définition microscopique de la pression d'un gaz sur une paroi ?",
+    "verso": "La pression correspond à la force (liée au transfert de quantité de mouvement) par unité de surface générée par les collisions aléatoires des particules sur la paroi.",
+    "subject": "Physique",
+    "folder": "Physique / Gaz",
+    "tags": [
+      "Pression",
+      "Microscopique"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un « gaz parfait » en physique ?",
+    "verso": "Un modèle idéalisé de gaz où les particules sont des points matériels sans interaction à distance (E_pot = 0), subissant uniquement des collisions parfaitement élastiques, dans un milieu homogène et isotrope.",
+    "subject": "Physique",
+    "folder": "Physique / Gaz",
+    "tags": [
+      "Gaz Parfait",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Quelle est l'équation d'état des gaz parfaits liant p, V, N et T ?",
+    "verso": "pV = NkT (avec N le nombre de particules et k la constante de Boltzmann) ou pV = nRT (avec n le nombre de moles et R la constante des gaz parfaits).",
+    "subject": "Physique",
+    "folder": "Physique / Gaz",
+    "tags": [
+      "Gaz Parfait",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Comment la température d'un gaz parfait est-elle reliée à l'énergie cinétique microscopique ?",
+    "verso": "La température est proportionnelle à l'énergie cinétique moyenne de translation des particules. Formule : E_cin_moyenne = (3/2) kT.",
+    "subject": "Physique",
+    "folder": "Physique / Gaz",
+    "tags": [
+      "Température",
+      "Énergie Cinétique"
+    ]
+  },
+  {
+    "recto": "Que stipule la loi de Dalton pour un mélange de gaz parfaits ?",
+    "verso": "La pression totale d'un mélange de gaz parfaits est égale à la somme des pressions partielles de chacun des gaz constitutifs (p = p1 + p2 + ...).",
+    "subject": "Physique",
+    "folder": "Physique / Gaz",
+    "tags": [
+      "Loi de Dalton",
+      "Mélange"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la « pression partielle » d'un gaz dans un mélange ?",
+    "verso": "C'est la pression qu'exercerait ce gaz s'il occupait, à lui seul, le volume total du mélange à la même température.",
+    "subject": "Physique",
+    "folder": "Physique / Gaz",
+    "tags": [
+      "Pression partielle"
+    ]
+  },
+  {
+    "recto": "Quelle est la définition mathématique du travail élémentaire (dW) d'une force de pression (p_int) lors d'une variation de volume (dV) contre le vide ?",
+    "verso": "dW = p_int * dV. (Le travail est positif pour le piston si le gaz se détend dV > 0).",
+    "subject": "Physique",
+    "folder": "Physique / Énergie",
+    "tags": [
+      "Travail",
+      "Pression"
+    ]
+  },
+  {
+    "recto": "Sur Terre, pourquoi l'air chaud (gaz parfait) monte-t-il par rapport à l'air froid ?",
+    "verso": "À pression atmosphérique constante (p = N/V * kT), si la température (T) augmente, la densité volumique (N/V) diminue. L'air chaud est donc moins dense, et subit la poussée d'Archimède, ce qui le fait monter.",
+    "subject": "Physique",
+    "folder": "Physique / Gaz",
+    "tags": [
+      "Archimède",
+      "Température"
+    ]
+  },
+  {
+    "recto": "Comment convertit-on une température de degrés Celsius (°C) en Kelvin (K) ?",
+    "verso": "T(K) = t(°C) + 273,15.",
+    "subject": "Physique",
+    "folder": "Physique / Unités",
+    "tags": [
+      "Température",
+      "Kelvin"
+    ]
+  },
+  {
+    "recto": "Pour un gaz parfait monoatomique, l'énergie interne U(T) dépend uniquement d'un paramètre. Lequel et quelle est la formule ?",
+    "verso": "L'énergie interne ne dépend que de la Température (T). La formule est : U(T) = (3/2) NkT = (3/2) nRT.",
+    "subject": "Physique",
+    "folder": "Physique / Gaz",
+    "tags": [
+      "Énergie interne",
+      "Température"
+    ]
+  },
+  {
+    "recto": "Quel paramètre macroscopique correspond à la densité volumique de l'énergie cinétique aléatoire d'un gaz ?",
+    "verso": "La pression (p).",
+    "subject": "Physique",
+    "folder": "Physique / Gaz",
+    "tags": [
+      "Pression",
+      "Énergie"
+    ]
+  },
+  {
+    "recto": "Quelle est l'origine du frottement (ou viscosité) dans un fluide réel ?",
+    "verso": "Le transfert de quantité de mouvement lors des collisions entre les couches de fluide s'écoulant à des vitesses différentes, ainsi que les frottements sur les parois.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Visqueux",
+    "tags": [
+      "Viscosité",
+      "Frottement"
+    ]
+  },
+  {
+    "recto": "Dans un tube cylindrique, comment caractérise-t-on le profil de vitesse d'un fluide visqueux en écoulement laminaire ?",
+    "verso": "Le profil de vitesse est parabolique. La vitesse est maximale au centre (v_max) et nulle (v=0) sur les parois du tube.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Visqueux",
+    "tags": [
+      "Profil de vitesse"
+    ]
+  },
+  {
+    "recto": "Dans un écoulement visqueux parabolique, quel est le lien entre la vitesse moyenne (v_bar) et la vitesse maximale au centre (v_max) ?",
+    "verso": "La vitesse moyenne est égale à la moitié de la vitesse maximale : v_bar = v_max / 2.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Visqueux",
+    "tags": [
+      "Vitesse",
+      "Débit"
+    ]
+  },
+  {
+    "recto": "À quoi correspond la « perte de charge » (Delta_p) dans un écoulement de fluide visqueux ?",
+    "verso": "C'est la perte de pression irréversible le long du trajet (p_amont > p_aval) due à la dissipation d'énergie par les frottements visqueux.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Visqueux",
+    "tags": [
+      "Perte de charge",
+      "Pression"
+    ]
+  },
+  {
+    "recto": "Que stipule la loi de Poiseuille pour un tuyau cylindrique ?",
+    "verso": "La perte de charge (Delta_p) est proportionnelle à la résistance hydraulique (R) et au débit (Q) : Delta_p = R * Q. \nAvec R = (8 * eta * L) / (pi * a^4).",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Visqueux",
+    "tags": [
+      "Poiseuille",
+      "Résistance Hydraulique"
+    ]
+  },
+  {
+    "recto": "D'après la formule de Poiseuille, comment varie la résistance hydraulique en fonction du rayon du tube (a) ?",
+    "verso": "La résistance hydraulique est inversement proportionnelle à la puissance 4 du rayon (1/a^4). Une petite diminution du rayon augmente donc considérablement la résistance.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Visqueux",
+    "tags": [
+      "Poiseuille",
+      "Rayon"
+    ]
+  },
+  {
+    "recto": "Lors de la mise en parallèle de vaisseaux sanguins (ex: réseau de capillaires), comment évolue la résistance hydraulique équivalente par rapport à un vaisseau unique ?",
+    "verso": "La résistance équivalente chute considérablement (1/R_eq = Somme(1/R_i)). Cela permet de compenser l'énorme résistance individuelle des petits capillaires.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Visqueux",
+    "tags": [
+      "Résistance en parallèle",
+      "Réseau sanguin"
+    ]
+  },
+  {
+    "recto": "Quelle est l'analogie électrique de l'équation de perte de charge hydraulique Delta_p = R * Q ?",
+    "verso": "La loi d'Ohm : Delta_V = R * i (où la perte de potentiel correspond à la perte de pression, et le courant électrique correspond au débit).",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Visqueux",
+    "tags": [
+      "Analogie électrique"
+    ]
+  },
+  {
+    "recto": "Comment la viscosité (eta) d'un liquide varie-t-elle avec la température ?",
+    "verso": "Pour un liquide, la viscosité diminue lorsque la température augmente.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Visqueux",
+    "tags": [
+      "Viscosité",
+      "Température"
+    ]
+  },
+  {
+    "recto": "Quelle est la définition d'une « ligne de courant » ?",
+    "verso": "C'est la trajectoire suivie par un volume infinitésimal de fluide. Elle est tangente en tout point au vecteur vitesse de l'écoulement.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Parfaits",
+    "tags": [
+      "Ligne de courant"
+    ]
+  },
+  {
+    "recto": "Quelle équation exprime la conservation du débit (ou conservation de la masse pour un fluide incompressible) le long d'un tube de courant ?",
+    "verso": "Q1 = Q2, ce qui implique S1 * v1 = S2 * v2. Le fluide accélère là où la section rétrécit.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Parfaits",
+    "tags": [
+      "Conservation du débit"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'effet Venturi ?",
+    "verso": "Dans un écoulement parfait horizontal, un rétrécissement de la section entraîne une accélération du fluide (v augmente), ce qui provoque une diminution de la pression (p diminue).",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Parfaits",
+    "tags": [
+      "Venturi",
+      "Pression"
+    ]
+  },
+  {
+    "recto": "Énoncez l'équation de Bernoulli (conservation de l'énergie volumique) pour un fluide parfait incompressible.",
+    "verso": "p + 1/2rhov² + rhogz = constante le long d'une ligne de courant.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Parfaits",
+    "tags": [
+      "Bernoulli",
+      "Équation"
+    ]
+  },
+  {
+    "recto": "Dans la loi hydrostatique des liquides (fluide au repos, v=0), comment évolue la pression en fonction de la profondeur ?",
+    "verso": "p + rhogz = constante. La pression augmente linéairement avec la profondeur (quand z diminue, p augmente : dp = -rhogdz).",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Parfaits",
+    "tags": [
+      "Hydrostatique",
+      "Profondeur"
+    ]
+  },
+  {
+    "recto": "À quelle variation de pression (en atmosphères) correspond une descente de 10 mètres dans de l'eau ?",
+    "verso": "La pression augmente d'environ 1 atmosphère tous les 10 mètres de profondeur dans l'eau.",
+    "subject": "Physique",
+    "folder": "Physique / Fluides Parfaits",
+    "tags": [
+      "Hydrostatique",
+      "Plongée"
+    ]
+  },
+  {
+    "recto": "Quelle est la définition du « champ électrique » (vecteur E) généré par une distribution de charges ?",
+    "verso": "C'est la source de force par unité de charge. Il détermine la force de Coulomb (F = q * E) que subirait une charge test (q) placée à cet endroit.",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Champ électrique",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Comment détermine-t-on le sens du vecteur champ électrique (E) créé par une charge ponctuelle Q ?",
+    "verso": "Le champ E « fuit » (est centrifuge) une charge source positive (Q > 0) et « pointe vers » (est centripète) une charge source négative (Q < 0).",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Champ électrique",
+      "Sens"
+    ]
+  },
+  {
+    "recto": "Comment se comportent les lignes de champ électrique d'un corps parfaitement conducteur ?",
+    "verso": "À l'intérieur du conducteur, le champ est nul (lignes absentes). À l'extérieur, les lignes de champ émergent ou arrivent toujours perpendiculairement à la surface du conducteur.",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Conducteur",
+      "Lignes de champ"
+    ]
+  },
+  {
+    "recto": "Quelle est la relation mathématique entre le potentiel électrique V et le champ électrique E (à une dimension r) ?",
+    "verso": "Le champ électrique est l'opposé de la dérivée spatiale (gradient) du potentiel : E = - dV/dr (soit dV = -E * dr).",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Potentiel",
+      "Champ électrique"
+    ]
+  },
+  {
+    "recto": "Comment s'oriente le champ électrique par rapport aux surfaces équipotentielles ?",
+    "verso": "Le vecteur champ électrique (E) est toujours strictement perpendiculaire aux surfaces équipotentielles, et il pointe vers les potentiels décroissants.",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Équipotentielles",
+      "Champ électrique"
+    ]
+  },
+  {
+    "recto": "Quelle est la définition du Potentiel électrique V en un point ?",
+    "verso": "C'est l'énergie potentielle électrique (E_p) disponible par unité de charge en ce point. (E_p = q * V).",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Potentiel électrique",
+      "Énergie potentielle"
+    ]
+  },
+  {
+    "recto": "Dans quel sens une charge électrique positive (q > 0) se déplace-t-elle spontanément sous l'effet d'un champ électrique ?",
+    "verso": "Elle se déplace dans le sens du champ E, c'est-à-dire qu'elle « descend » les potentiels (vers des potentiels V plus faibles), ce qui fait diminuer son énergie potentielle.",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Potentiel électrique",
+      "Mouvement spontané"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un dipôle électrique ?",
+    "verso": "C'est un couple de deux charges électriques opposées et de même valeur absolue (+q et -q), séparées par une très faible distance.",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Dipôle",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Comment est orienté le vecteur moment dipolaire (p) ?",
+    "verso": "Il est dirigé de la charge négative vers la charge positive (vecteur NP). Sa norme est p = q * a (où a est la distance entre les charges).",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Moment dipolaire"
+    ]
+  },
+  {
+    "recto": "Dans un condensateur plan, comment est le champ électrique entre les deux plaques (supposées infinies) ?",
+    "verso": "Le champ électrique (E) est uniforme, perpendiculaire aux plaques, dirigé de la plaque positive (+sigma) vers la plaque négative (-sigma), avec une intensité E = sigma / epsilon.",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Condensateur plan",
+      "Champ électrique"
+    ]
+  },
+  {
+    "recto": "Quelle est la définition de la capacité C d'un condensateur ?",
+    "verso": "C'est sa capacité à stocker une charge Q sous une différence de potentiel Delta_V. Formule : C = |Q| / |Delta_V|. Son unité est le Farad (F).",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Capacité",
+      "Condensateur"
+    ]
+  },
+  {
+    "recto": "Pour un condensateur plan, de quels paramètres dépend sa capacité C ?",
+    "verso": "Elle ne dépend que de sa géométrie (Surface S des plaques, distance h entre elles) et de la permittivité (epsilon) de l'isolant. C = (epsilon * S) / h.",
+    "subject": "Physique",
+    "folder": "Physique / Électrostatique",
+    "tags": [
+      "Capacité",
+      "Paramètres"
+    ]
+  },
+  {
+    "recto": "Comment la membrane cellulaire au repos (polarisée) génère-t-elle un potentiel membranaire (V_m = V_int - V_ext) négatif ?",
+    "verso": "La pompe Na+/K+ maintient activement un excès de Na+ à l'extérieur. La membrane, agissant comme un condensateur, possède un excès de charges positives dehors et de charges négatives dedans, créant un potentiel de repos d'environ -70 mV.",
+    "subject": "Physique",
+    "folder": "Physique / Électrophysiologie",
+    "tags": [
+      "Membrane",
+      "Potentiel de repos"
+    ]
+  },
+  {
+    "recto": "Qu'observe-t-on au niveau du dipôle électrique global d'une cellule au repos (totalement polarisée) ?",
+    "verso": "Le dipôle résultant global est nul (p_tot = 0) car les charges s'équilibrent de manière homogène sur toute la surface de la cellule, ce qui ne crée aucun potentiel détectable au loin.",
+    "subject": "Physique",
+    "folder": "Physique / Électrophysiologie",
+    "tags": [
+      "Dipôle cellulaire",
+      "Repos"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qui génère l'onde électrique enregistrée par l'électrocardiogramme (ECG) ?",
+    "verso": "C'est la progression du front de dépolarisation/repolarisation sur le muscle cardiaque, qui crée un dipôle électrique transitoire résultant macroscopique (p_tot ≠ 0) dont l'amplitude et l'orientation tournent dans l'espace.",
+    "subject": "Physique",
+    "folder": "Physique / Électrophysiologie",
+    "tags": [
+      "ECG",
+      "Dipôle"
+    ]
+  },
+  {
+    "recto": "À quel phénomène cardiaque correspond l'onde QRS sur un électrocardiogramme ?",
+    "verso": "Elle correspond à la dépolarisation des ventricules (qui masque la repolarisation des oreillettes).",
+    "subject": "Physique",
+    "folder": "Physique / Électrophysiologie",
+    "tags": [
+      "ECG",
+      "QRS"
+    ]
+  },
+  {
+    "recto": "Que mesure exactement la dérivation V_I dans le triangle d'Einthoven de l'ECG frontal ?",
+    "verso": "La différence de potentiel V_L - V_R (gauche - droite), qui est proportionnelle à la projection du dipôle cardiaque sur le vecteur pointant du bras droit vers le bras gauche.",
+    "subject": "Physique",
+    "folder": "Physique / Électrophysiologie",
+    "tags": [
+      "ECG",
+      "Dérivations"
+    ]
+  },
+  {
+    "recto": "Lors de la genèse d'un potentiel d'action neuronal, que provoque l'atteinte du potentiel seuil (vers -55 mV) ?",
+    "verso": "Elle déclenche l'ouverture massive des canaux sodiques (Na+) voltage-dépendants, entraînant un flux massif entrant de charges positives, ce qui dépolarise puis inverse brutalement le potentiel de membrane (vers +30 mV).",
+    "subject": "Physique",
+    "folder": "Physique / Électrophysiologie",
+    "tags": [
+      "Potentiel d'action",
+      "Sodium"
+    ]
+  },
+  {
+    "recto": "Lors du potentiel d'action, à quoi sert l'ouverture retardée des canaux potassiques (K+) ?",
+    "verso": "Elle permet un flux massif sortant d'ions K+ (qui fuient les charges positives de l'intérieur), ce qui évacue les charges positives et permet la repolarisation de la membrane vers son potentiel de repos négatif.",
+    "subject": "Physique",
+    "folder": "Physique / Électrophysiologie",
+    "tags": [
+      "Potentiel d'action",
+      "Potassium"
+    ]
+  },
+  {
+    "recto": "Quel rôle mécanique joue la composante de la force d'un poids perpendiculaire au déplacement (P_perp) sur un plan incliné ?",
+    "verso": "Elle ne fournit aucun travail (dW = 0 car vecteur déplacement et force sont orthogonaux). Elle « plaque » simplement l'objet contre le sol, générant la force de réaction du support, mais n'est pas motrice.",
+    "subject": "Physique",
+    "folder": "Physique / Énergie",
+    "tags": [
+      "Travail",
+      "Forces"
+    ]
+  },
+  {
+    "recto": "Que stipule le Théorème de l'Énergie Cinétique ?",
+    "verso": "La variation de l'énergie cinétique d'un système entre deux points est égale à la somme des travaux de toutes les forces extérieures appliquées à ce système sur ce trajet (Delta_Ecin = W_total).",
+    "subject": "Physique",
+    "folder": "Physique / Énergie",
+    "tags": [
+      "Théorème",
+      "Énergie Cinétique"
+    ]
+  },
+  {
+    "recto": "Comment définit-on la notion de puissance (P) en mécanique ?",
+    "verso": "C'est la quantité d'énergie (ou de travail) échangée par unité de temps. P = dW / dt = Force * Vitesse. Elle s'exprime en Watts (J/s).",
+    "subject": "Physique",
+    "folder": "Physique / Énergie",
+    "tags": [
+      "Puissance",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une force dérivant d'une énergie potentielle (force conservative) ?",
+    "verso": "C'est une force (comme la gravité ou l'électrostatique) dont le travail ne dépend pas du chemin suivi, mais uniquement des points de départ et d'arrivée. Le travail est égal à l'opposé de la variation d'énergie potentielle (W_AB = - Delta_Epot).",
+    "subject": "Physique",
+    "folder": "Physique / Énergie",
+    "tags": [
+      "Énergie Potentielle",
+      "Forces conservatives"
+    ]
+  },
+  {
+    "recto": "Pour une particule soumise à une énergie potentielle E_pot(x) en 1D, comment reconnaît-on graphiquement une position d'équilibre stable ?",
+    "verso": "C'est un minimum local de la courbe E_pot(x). En ce point, la force (dérivée F = - dE_pot/dx) est nulle, et toute petite perturbation crée une force de rappel vers le fond du puits.",
+    "subject": "Physique",
+    "folder": "Physique / Énergie",
+    "tags": [
+      "Équilibre",
+      "Énergie Potentielle"
+    ]
+  }
+]

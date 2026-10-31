@@ -1,0 +1,608 @@
+{
+  "name": "CM 3 suite - Structure tertiaire et quaternaire des protéines",
+  "folder": "PASS - Molécules du vivant",
+  "description": "Structure tertiaire (domaines structuraux, classifications SCOP/CATH, repliements canoniques alpha, bêta et alpha/bêta) et structure quaternaire (oligomérie, allostérie, hémoglobine, immunoglobulines, canaux membranaires).",
+  "prerequisites": [
+    "CM 3 - Protéines- Structures secondaires"
+  ],
+  "questions": [
+    {
+      "q": "Concernant la structure tertiaire des protéines :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Structure tertiaire"
+      ],
+      "options": [
+        {
+          "text": "Elle correspond à l'arrangement tridimensionnel complet de l'ensemble des atomes d'une seule chaîne polypeptidique dans l'espace.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est principalement stabilisée par l'effet hydrophobe qui enfouit les résidus apolaires au cœur de la protéine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle peut comporter des liaisons covalentes de type ponts disulfures intra-caténaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle implique obligatoirement l'association de plusieurs chaînes polypeptidiques distinctes.",
+          "isCorrect": false
+        },
+        {
+          "text": "Sa surface présente des potentiels électrostatiques variables visualisables par modélisation moléculaire.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La structure tertiaire est la conformation 3D d'une chaîne polypeptidique unique stabilisée par des interactions faibles (effet hydrophobe moteur, liaisons H, ponts salins, van der Waals) et parfois des ponts disulfures intra-chaîne. L'association de plusieurs chaînes définit la structure quaternaire."
+    },
+    {
+      "q": "Qu'est-ce qu'un domaine structural (ou domaine protéique) ?",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Domaines"
+      ],
+      "options": [
+        {
+          "text": "Une unité modulaire compacte de repliement autonome au sein d'une chaîne polypeptidique possédant souvent une fonction propre.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un acide aminé modifié par glycosylation enzymatique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une liaison peptidique rompue par une endopeptidase.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une région nécessairement constituée de plus de 10 000 résidus d'acides aminés.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Un domaine protéique est une unité structurale et fonctionnelle modulaire, capable de se replier de façon autonome (généralement 50 à 300 résidus). Les protéines multidomaines résultent souvent de duplications ou recombinaisons de gènes."
+    },
+    {
+      "q": "Concernant les classifications structurales des domaines protéiques SCOP et CATH :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Classifications"
+      ],
+      "options": [
+        {
+          "text": "SCOP hiérarchise les domaines selon quatre niveaux principaux : Classe, Repliement (Fold), Superfamille et Famille.",
+          "isCorrect": true
+        },
+        {
+          "text": "CATH hiérarchise selon : Classe (C), Architecture (A), Topologie (T) et Superfamille homologue (H).",
+          "isCorrect": true
+        },
+        {
+          "text": "La classe structurale est principalement déterminée par la proportion et le type de structures secondaires (tout alpha, tout bêta, alpha/bêta, alpha+bêta).",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux protéines ne peuvent avoir le même repliement structural que si elles possèdent plus de 95% d'identité de séquence en acides aminés.",
+          "isCorrect": false
+        },
+        {
+          "text": "La structure tertiaire 3D est généralement bien plus conservée au cours de l'évolution que la séquence primaire.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "SCOP et CATH classifient les domaines selon leur contenu en structures secondaires et leur topologie. Fait fondamental en biologie évolutive : la structure tertiaire (le 'fold') est beaucoup plus conservée que la séquence primaire (ex: superfamille des globines)."
+    },
+    {
+      "q": "L'architecture en faisceau de 4 hélices antiparallèles (four-helix bundle ou up-down bundle) est illustrée par :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Architecture alpha"
+      ],
+      "options": [
+        {
+          "text": "Le cytochrome b562 et la myohémérythrine.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'immunoglobuline G monomérique.",
+          "isCorrect": false
+        },
+        {
+          "text": "La porine bactérienne OmpF.",
+          "isCorrect": false
+        },
+        {
+          "text": "La triose phosphate isomérase.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le cytochrome b562 et la myohémérythrine (protéine fixatrice d'oxygène à fer non héminique chez certains invertébrés marins) adoptent une architecture classique en fagot de 4 hélices alpha antiparallèles."
+    },
+    {
+      "q": "Concernant le repliement des globines (ex. Myoglobine de Kendrew, 1958) :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Myoglobine"
+      ],
+      "options": [
+        {
+          "text": "C'est une architecture à faisceaux d'hélices orthogonaux (orthogonal bundle) de classe essentiellement alpha.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle comporte 8 hélices alpha désignées de A à H connectées par des segments non hélicoïdaux courts.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hème est logé dans une poche hydrophobe délimitée notamment par l'histidine proximale (F8) et l'histidine distale (E7).",
+          "isCorrect": true
+        },
+        {
+          "text": "La myoglobine est un tétramère allostérique constitué de 4 sous-unités identiques.",
+          "isCorrect": false
+        },
+        {
+          "text": "Son fer héminique doit être maintenu à l'état ferreux (Fe2+) pour lier réversiblement le dioxygène O2.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La myoglobine est une protéine MONOMÉRIQUE (classe tout alpha, 8 hélices A à H). Le fer Fe2+ de l'hème est lié à His F8 (proximale) tandis que His E7 (distale) stabilise O2 par liaison hydrogène et évite l'oxydation en Fe3+."
+    },
+    {
+      "q": "La Retinol Binding Protein (RBP) est un exemple caractéristique d'architecture :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Architecture bêta"
+      ],
+      "options": [
+        {
+          "text": "En tonneau bêta alterné (up-and-down beta-barrel) formant une cavité interne hydrophobe fixant le rétinol.",
+          "isCorrect": true
+        },
+        {
+          "text": "En hélice alpha isolée flottant dans le cytosol.",
+          "isCorrect": false
+        },
+        {
+          "text": "En sandwich alpha/bêta fermé par des ponts disulfures inter-chaînes.",
+          "isCorrect": false
+        },
+        {
+          "text": "En triple hélice de collagène insoluble.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La RBP (protéine de transport de la vitamine A) adopte un tonneau bêta up-and-down à 8 brins antiparallèles, dont le centre hydrophobe loge parfaitement la molécule de rétinol."
+    },
+    {
+      "q": "La superoxyde dismutase (SOD) et les domaines variables des immunoglobulines partagent une architecture de type :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Architecture bêta"
+      ],
+      "options": [
+        {
+          "text": "Sandwich bêta constitué de deux feuillets bêta antiparallèles superposés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Tonneau alpha/bêta à 12 hélices alpha concentriques.",
+          "isCorrect": false
+        },
+        {
+          "text": "Faisceau orthogonal de 8 hélices droites.",
+          "isCorrect": false
+        },
+        {
+          "text": "Pelote statistique dépourvue d'organisation secondaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La SOD et les domaines d'immunoglobulines possèdent un repliement en 'sandwich bêta' (ou tonneau aplati) formé de 2 feuillets bêta antiparallèles étroitement plaqués l'un contre l'autre par des résidus hydrophobes."
+    },
+    {
+      "q": "Le tonneau TIM (TIM barrel) découvert dans la triose phosphate isomérase :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Tonneau TIM"
+      ],
+      "options": [
+        {
+          "text": "Est une architecture alpha/bêta refermée composée de 8 motifs répétitifs bêta-alpha-bêta disposés en (alpha/bêta)8.",
+          "isCorrect": true
+        },
+        {
+          "text": "Comporte un cylindre central constitué de 8 brins bêta parallèles entouré par 8 hélices alpha périphériques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Est l'un des domaines enzymatiques les plus répandus dans le monde vivant (retrouvé ex. dans la pyruvate kinase).",
+          "isCorrect": true
+        },
+        {
+          "text": "Présente son site actif catalytique situé au niveau des boucles du côté C-terminal des brins bêta.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ne contient aucun résidu d'acide aminé polaire dans toute sa structure.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le tonneau TIM est constitué de 8 brins bêta parallèles centraux formant un cylindre interne, entouré de 8 hélices alpha externes. Le site catalytique est systématiquement situé au niveau des boucles C-terminales reliant les brins bêta aux hélices."
+    },
+    {
+      "q": "L'arrangement de Rossmann (Rossmann fold) :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Repliement de Rossmann"
+      ],
+      "options": [
+        {
+          "text": "Est une architecture alpha/bêta ouverte en sandwich avec un feuillet bêta central parallèle bordé d'hélices alpha.",
+          "isCorrect": true
+        },
+        {
+          "text": "Constitue le domaine structural canonique de liaison aux dinucléotides comme le NAD+, le NADP+ et le FAD.",
+          "isCorrect": true
+        },
+        {
+          "text": "Comporte une séquence signature riche en glycine (motif consensus GXGXXG) permettant le contact étroit avec le pyrophosphate du coenzyme.",
+          "isCorrect": true
+        },
+        {
+          "text": "Se retrouve dans les déshydrogénases telles que la lactate déshydrogénase et la malate déshydrogénase.",
+          "isCorrect": true
+        },
+        {
+          "text": "Est strictement restreint aux protéines virales à ARN.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le repliement de Rossmann est une structure ouverte alpha/bêta/alpha caractéristique des enzymes à coenzymes nucléotidiques (déshydrogénases à NAD+/FAD), marquée par une boucle riche en glycine interagissant avec les phosphates."
+    },
+    {
+      "q": "Concernant la structure quaternaire des protéines :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Structure quaternaire"
+      ],
+      "options": [
+        {
+          "text": "Elle correspond à l'assemblage non covalent (ou parfois stabilisé par ponts disulfures) de plusieurs sous-unités polypeptidiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une protéine formée de 2 sous-unités identiques est qualifiée d'homodimère.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une protéine formée de 2 sous-unités différentes est qualifiée d'hétérodimère.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est indispensable à l'existence de mécanismes de coopérativité et de régulation allostérique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La myoglobine possède une structure quaternaire tétramérique allostérique identique à celle de l'hémoglobine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La structure quaternaire associe plusieurs sous-unités (protomères) identiques ou différentes. Elle permet la coopérativité et l'allostérie. La myoglobine est MONOMÉRIQUE (sans structure quaternaire), contrairement à l'hémoglobine (tétramère alpha2 beta2)."
+    },
+    {
+      "q": "Concernant l'hémoglobine humaine de l'adulte (HbA) :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Hémoglobine"
+      ],
+      "options": [
+        {
+          "text": "C'est un hétérotétramère composé de deux sous-unités alpha et deux sous-unités bêta (alpha2 bêta2).",
+          "isCorrect": true
+        },
+        {
+          "text": "Chaque sous-unité renferme un groupement prosthétique hème capable de fixer une molécule de dioxygène O2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sa courbe de saturation par l'oxygène en fonction de la pO2 est hyperbolique comme celle de la myoglobine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle présente une coopérativité positive : la liaison d'une première molécule d'O2 favorise la fixation des suivantes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La transition allostérique fait passer l'hémoglobine de l'état T (tendu, faible affinité) à l'état R (relâché, haute affinité).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'HbA est un tétramère alpha2 beta2. Sa courbe de saturation est SIGMOÏDE (effet coopératif positif), passant de l'état T désoxygéné (stabilisé par des ponts salins inter-sous-unités) à l'état R oxygéné. La courbe de la myoglobine monomérique est hyperbolique."
+    },
+    {
+      "q": "Quels effecteurs allostériques diminuent l'affinité de l'hémoglobine pour l'oxygène (effet Bohr et régulation physiologique) ?",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Allostérie"
+      ],
+      "options": [
+        {
+          "text": "Une augmentation de la concentration en protons H+ (baisse du pH).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une augmentation de la pression partielle en dioxyde de carbone (pCO2).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une augmentation de la concentration en 2,3-bisphosphoglycérate (2,3-BPG).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une hausse de la température corporelle.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'inhalation de monoxyde de carbone (CO) à forte dose.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les effecteurs allostériques hétérotropes négatifs stabilisent l'état T et déplacent la courbe de fixation d'O2 vers la droite (effet Bohr : H+ et CO2 ; 2,3-BPG ; température), facilitant le relargage de l'O2 dans les tissus actifs."
+    },
+    {
+      "q": "L'aspartate transcarbamylase (ATCase) d'E. coli est un modèle d'enzyme allostérique régulée par rétroinhibition :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "ATCase"
+      ],
+      "options": [
+        {
+          "text": "Elle catalyse la première étape engagée de la biosynthèse des nucléotides pyrimidiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sa structure quaternaire comprend 12 sous-unités : 6 sous-unités catalytiques (2 trimères c3) et 6 sous-unités régulatrices (3 dimères r2).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le CTP (cytidine triphosphate), produit final de la voie, est un inhibiteur allostérique rétroactif.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ATP (nucléotide purique) agit comme un activateur allostérique hétérotrope déplaçant l'équilibre vers l'état R actif.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle suit une cinétique michaelienne classique sans aucune transition coopérative.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'ATCase est un complexe (c3)2(r2)3 allostérique de 12 sous-unités. CTP inhibe (rétrocontrôle négatif) et ATP active l'enzyme pour équilibrer la synthèse des purines et des pyrimidines. Sa cinétique vis-à-vis de l'aspartate est sigmoïde."
+    },
+    {
+      "q": "À propos du nucléosome et des octamères d'histones :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Histones"
+      ],
+      "options": [
+        {
+          "text": "L'octamère d'histones est constitué d'un tétramère central (H3)2-(H4)2 associé à deux dimères H2A-H2B.",
+          "isCorrect": true
+        },
+        {
+          "text": "Environ 146 à 147 paires de bases d'ADN s'enroulent autour de l'octamère d'histones sur 1,65 tour d'hélice gauche.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les histones sont des protéines très basiques riches en résidus lysine et arginine portant des charges positives.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'interaction ADN-histones repose principalement sur des liaisons covalentes irréversibles.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les extrémités N-terminales des histones ('queues' d'histones) sont le siège de modifications épigénétiques réversibles (acétylation, méthylation).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le cœur nucléosomique est un octamère protéique formé d'un tétramère (H3)2(H4)2 et de deux dimères H2A-H2B. Les charges positives des Lys/Arg interagissent électrostatiquement avec les phosphates négatifs de l'ADN."
+    },
+    {
+      "q": "Concernant la structure quaternaire d'une immunoglobuline G (IgG) humaine :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Immunoglobulines"
+      ],
+      "options": [
+        {
+          "text": "Elle est constituée de 4 chaînes polypeptidiques : 2 chaînes lourdes identiques (H) et 2 chaînes légères identiques (L).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les chaînes sont reliées entre elles par des ponts disulfures inter-caténaires et des interactions hydrophobes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Chaque chaîne légère comporte 2 domaines d'immunoglobuline (un variable VL et un constant CL).",
+          "isCorrect": true
+        },
+        {
+          "text": "Chaque chaîne lourde gamma comporte 4 domaines d'immunoglobuline (un variable VH et trois constants CH1, CH2, CH3).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le site de reconnaissance de l'antigène (paratope) est formé par les boucles hypervariables (CDR) des domaines VH et VL.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Une molécule d'IgG est un hétérotétramère H2L2 stabilisé par des ponts disulfures interchaînes. Les fragments Fab (contenant VH-CH1 et VL-CL) portent les sites de fixation de l'antigène (3 boucles hypervariables CDR par domaine variable)."
+    },
+    {
+      "q": "La digestion ménagée d'une IgG par la papaïne produit :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Immunoglobulines"
+      ],
+      "options": [
+        {
+          "text": "Deux fragments Fab monovalents et un fragment Fc cristallisable.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un fragment F(ab')2 bivalent et des peptides Fc dégradés.",
+          "isCorrect": false
+        },
+        {
+          "text": "Quatre chaînes polypeptidiques totalement isolées.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une hydrolyse totale en acides aminés libres.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La papaïne coupe au-dessus de la région charnière, générant 2 fragments Fab monovalents et 1 fragment Fc. À l'inverse, la pepsine coupe en dessous de la charnière, donnant 1 fragment F(ab')2 bivalent et des petits fragments Fc."
+    },
+    {
+      "q": "Concernant le canal potassique membranaire (ex. KcsA) :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Canaux membranaires"
+      ],
+      "options": [
+        {
+          "text": "C'est un tétramère associant 4 sous-unités identiques autour d'un pore central de conduction.",
+          "isCorrect": true
+        },
+        {
+          "text": "Son filtre de sélectivité comporte la séquence signature hautement conservée TVGYG.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les oxygènes carbonyles du squelette peptidique du filtre miment parfaitement la sphère d'hydratation des ions K+.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les ions Na+, bien que plus petits, franchissent le pore plus rapidement que les ions K+.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le coût énergétique de déshydratation du Na+ est trop élevé car les oxygènes du filtre sont trop éloignés pour le coordonner de façon optimale.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le canal K+ est un homotétramère. Le filtre de sélectivité (TVGYG) oriente ses oxygènes carbonyles vers la lumière du pore, remplaçant exactement les 8 molécules d'eau de la sphère d'hydratation du K+. Le Na+, plus petit, ne peut pas s'ajuster correctement et reste bloqué à l'extérieur."
+    },
+    {
+      "q": "L'aquaporine 1 (AQP1) se présente sous forme de :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Canaux membranaires"
+      ],
+      "options": [
+        {
+          "text": "Un tétramère membranaire où chaque monomère constitue un pore aqueux individuel et fonctionnel.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un canal unique formé uniquement par la juxtaposition des 4 sous-unités en leur centre.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une structure soluble sécrétée dans le suc pancréatique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un dimère lié exclusivement par des liaisons ester phosphoriques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'aquaporine 1 s'assemble en tétramère dans la membrane, mais contrairement au canal K+, chaque monomère d'AQP1 contient son propre canal aqueux indépendant (4 canaux fonctionnels par tétramère), avec un motif NPA (Asn-Pro-Ala) sélectif de l'eau empêchant le passage des protons."
+    },
+    {
+      "q": "Le motif 'fermeture éclair à leucine' (leucine zipper) :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Oligomérisation"
+      ],
+      "options": [
+        {
+          "text": "Permet la dimérisation de facteurs de transcription par l'engrènement de deux hélices alpha amphipathiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Comporte des résidus de leucine situés en position d d'une répétition d'heptades d'acides aminés (un résidu tous les 7).",
+          "isCorrect": true
+        },
+        {
+          "text": "S'associe souvent à une région basique adjacente riche en Arg et Lys responsable de la fixation sur l'ADN (motif bZIP).",
+          "isCorrect": true
+        },
+        {
+          "text": "Ne peut former que des homodimères et jamais d'hétérodimères.",
+          "isCorrect": false
+        },
+        {
+          "text": "Est retrouvé dans des facteurs oncogéniques majeurs tels que Fos et Jun.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le motif leucine zipper (bZIP) assure l'oligomérisation par super-hélice 'coiled-coil' via des leucines espacées de 7 résidus. Il peut former des homodimères (Jun-Jun) ou des hétérodimères (Fos-Jun), qui se fixent sur les séquences cibles de l'ADN via leur domaine basique."
+    },
+    {
+      "q": "Dans l'hémoglobine, le 2,3-bisphosphoglycérate (2,3-BPG) se fixe :",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Hémoglobine"
+      ],
+      "options": [
+        {
+          "text": "Dans la cavité centrale délimitée par les deux sous-unités bêta de l'état désoxygéné T.",
+          "isCorrect": true
+        },
+        {
+          "text": "Directement sur le fer héminique à la place de l'oxygène.",
+          "isCorrect": false
+        },
+        {
+          "text": "Sur la chaîne latérale de l'histidine distale E7.",
+          "isCorrect": false
+        },
+        {
+          "text": "Sur le fragment Fc des anticorps circulants.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le 2,3-BPG (fortement chargé négativement) se loge dans la cavité centrale positive de l'hémoglobine désoxygénée (état T) entre les deux chaînes bêta, stabilisant l'état T et réduisant l'affinité pour O2. Lors du passage à l'état R, la cavité se rétrécit et expulse le BPG."
+    },
+    {
+      "q": "Pourquoi l'hémoglobine fœtale (HbF : alpha2 gamma2) possède-t-elle une affinité plus élevée pour l'oxygène que l'hémoglobine adulte (HbA : alpha2 bêta2) ?",
+      "tags": [
+        "CM 3 suite - Tertiaire et Quaternaire",
+        "Hémoglobine fœtale"
+      ],
+      "options": [
+        {
+          "text": "Les chaînes gamma possèdent une sérine à la place d'une histidine basique (His143) de la chaîne bêta, diminuant la fixation du 2,3-BPG.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'HbF ne possède aucun atome de fer dans ses hèmes.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'HbF est un monomère ne présentant aucun effet allostérique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les chaînes alpha fœtales sont remplacées par des chaînes d'immunoglobulines.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans la chaîne gamma de l'HbF, l'His143 est remplacée par une Ser neutre. Cela supprime deux charges positives dans la cavité centrale, diminuant fortement l'affinité pour le 2,3-BPG. Moins inhibée par le BPG, l'HbF a une plus haute affinité pour O2 que l'HbA, permettant le transfert d'O2 de la mère au fœtus à travers le placenta."
+    }
+  ]
+}

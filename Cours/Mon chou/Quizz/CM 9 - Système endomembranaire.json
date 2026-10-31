@@ -1,0 +1,618 @@
+{
+  "name": "CM 9 - Système endomembranaire",
+  "folder": "PASS - Biologie Cellulaire",
+  "description": "Quiz approfondi de niveau PASS sur le système endomembranaire : organisation et flux, RER et translocation co-traductionnelle (SRP, Sec61), N-glycosylation et contrôle qualité (BiP, calnexine, ERAD, UPR), REL (synthèse lipidique, détox P450, calcium), appareil de Golgi et manteaux vésiculaires (COP I, COP II, clathrine, tri M6P vers lysosomes).",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant les constituants et les caractéristiques du système endomembranaire eucaryote :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Organisation"
+      ],
+      "options": [
+        {
+          "text": "Il comprend le réticulum endoplasmique (rugueux et lisse), l'enveloppe nucléaire, l'appareil de Golgi, les endosomes et les lysosomes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les mitochondries et les peroxysomes font partie intégrante du système endomembranaire car ils échangent des vésicules COP II en permanence.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'enveloppe nucléaire est en continuité physique directe avec la membrane du réticulum endoplasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La lumière des compartiments du système endomembranaire est topologiquement équivalente au milieu extracellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans un hépatocyte, la surface membranaire du système endomembranaire représente plus de la moitié de la surface membranaire totale de la cellule.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le système endomembranaire comprend l'enveloppe nucléaire, le RE, le Golgi, les endosomes et lysosomes. Les mitochondries et peroxysomes en sont STRICTEMENT exclus. La lumière des organites correspond topologiquement à l'espace extracellulaire."
+    },
+    {
+      "q": "Concernant la translocation co-traductionnelle des protéines solubles dans le RER :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "RER",
+        "Translocation",
+        "SRP"
+      ],
+      "options": [
+        {
+          "text": "La synthèse de toutes les protéines commence sur des ribosomes libres dans le cytosol.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'émergence d'un peptide signal N-terminal hydrophobe est reconnue par la particule de reconnaissance du signal (SRP).",
+          "isCorrect": true
+        },
+        {
+          "text": "La particule SRP est une ribonucléoprotéine cytosolique composée de 6 protéines et d'un ARN 7SL.",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison de la SRP sur le ribosome bloque temporairement l'élongation de la chaîne polypeptidique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le complexe ribosome-SRP se fixe sur le récepteur de la SRP situé sur la membrane du RE, permettant le transfert sur le translocon Sec61.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces étapes résument la translocation co-traductionnelle : peptide signal hydrophobe -> fixation SRP (ARN 7SL + 6 protéines) -> pause de traduction -> liaison au récepteur SRP -> translocon Sec61 -> reprise de traduction."
+    },
+    {
+      "q": "Concernant le translocon Sec61 et le devenir du peptide signal :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Sec61",
+        "Peptidase"
+      ],
+      "options": [
+        {
+          "text": "Le complexe Sec61 forme un pore aqueux dynamique traversant la membrane du réticulum.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour les protéines solubles luminales, le peptide signal N-terminal est clivé par la signal peptidase luminale lors de la translocation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour les protéines transmembranaires, des séquences hydrophobes d'arrêt de transfert permettent l'ancrage dans la bicouche lipidique par ouverture latérale du translocon.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sec61 expulse systématiquement la chaîne polypeptidique vers le nucléole.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le translocon Sec61 possède une porte axiale et une porte latérale qui s'ouvre pour insérer les segments transmembranaires hydrophobes dans la bicouche lipidique."
+    },
+    {
+      "q": "Concernant la N-glycosylation des protéines dans le réticulum endoplasmique :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "N-glycosylation"
+      ],
+      "options": [
+        {
+          "text": "Elle consiste en un transfert en bloc d'un oligosaccharide précurseur composé de 14 résidus glucidiques (2 GlcNAc, 9 mannoses, 3 glucoses).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'oligosaccharide précurseur est pré-assemblé sur un lipide transporteur membranaire ancré dans le RE : le dolichol-phosphate.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le transfert est catalysé dans la lumière du RE par l'oligosaccharyltransférase (OST).",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison s'établit sur le groupement amine de la chaîne latérale d'un résidu asparagine inséré dans le consensus Asn-X-Ser/Thr (où X n'est pas une proline).",
+          "isCorrect": true
+        },
+        {
+          "text": "La N-glycosylation s'effectue exclusivement dans le cytosol après la libération de la protéine complètement repliée.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La N-glycosylation est co-translocationnelle dans la lumière du RE : transfert en bloc de 14 sucres depuis le dolichol-phosphate vers une Asn du motif Asn-X-Ser/Thr par l'OST."
+    },
+    {
+      "q": "Concernant le contrôle qualité du repliement protéique dans le RE (cycle calnexine / calréticuline) :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Contrôle qualité",
+        "Calnexine"
+      ],
+      "options": [
+        {
+          "text": "L'élimination successive de 2 résidus de glucose par les glucosidases I et II génère une glycoprotéine monoglycosylée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce résidu unique de glucose terminal est spécifiquement reconnu par les lectines chaperonnes calnexine (membranaire) ou calréticuline (soluble).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'enzyme UGGT (glucosyltransférase) sert de senseur de conformation : elle rajoute un glucose si la protéine est mal repliée pour lui donner une nouvelle chance de repliement.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine disulfure isomérase (PDI) catalyse la formation et le réarrangement correct des ponts disulfures.",
+          "isCorrect": true
+        },
+        {
+          "text": "La chaperonne luminale BiP (famille Hsp70) consomme du GTP pour couper l'ADN double brin.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Calnexine et calréticuline retiennent les glycoprotéines monoglycosylées. UGGT reglucosyle les protéines mal repliées. PDI forme les ponts disulfures. BiP est une chaperonne ATP-dépendante qui empêche l'agrégation."
+    },
+    {
+      "q": "Que devient une protéine anormale dont le mauvais repliement persiste malgré les cycles de chaperonnage dans le RE ?",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "ERAD"
+      ],
+      "options": [
+        {
+          "text": "Elle est prise en charge par la voie ERAD (Endoplasmic Reticulum-Associated Degradation).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle subit une rétrotranslocation vers le cytosol à travers un canal translocon.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le cytosol, elle est polyubiquitinylée puis dégradée par le protéasome 26S.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est immédiatement sécrétée dans le sang par exocytose constitutive rapide.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La voie ERAD élimine les protéines mal conformées en les rétrotransloquant vers le cytosol, où elles sont étiquetées par polyubiquitination et détruites par le protéasome 26S."
+    },
+    {
+      "q": "Concernant la réponse UPR (Unfolded Protein Response) déclenchée par un stress du réticulum :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "UPR"
+      ],
+      "options": [
+        {
+          "text": "Elle est activée lors de l'accumulation excessive de protéines mal repliées dans la lumière du RE.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le titrage de la chaperonne BiP libère et active trois capteurs membranaires de stress : IRE1, PERK et ATF6.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle induit une phosphorylation du facteur eIF2alpha entraînant une inhibition globale de la traduction pour soulager le RE.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle stimule la transcription de nouveaux gènes de chaperonnes et de composants de l'ERAD.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si le stress persiste et ne peut être résolu, la voie UPR déclenche l'apoptose de la cellule (notamment via CHOP).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes. L'UPR active IRE1, PERK et ATF6 pour freiner la traduction générale, augmenter la capacité de repliement, ou enclencher l'apoptose si l'échec est irréversible."
+    },
+    {
+      "q": "Concernant les fonctions du Réticulum Endoplasmique Lisse (REL) :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "REL",
+        "Fonctions"
+      ],
+      "options": [
+        {
+          "text": "Il est le siège majeur de la biosynthèse des lipides cellulaires (phospholipides et cholestérol).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans les cellules endocrines spécialisées (surrénales, gonades), il assure la synthèse des hormones stéroïdes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans les hépatocytes, il héberge les enzymes de détoxification de la famille des cytochromes P450.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans les cellules musculaires, il forme le réticulum sarcoplasmique spécialisé dans le stockage et la libération du Ca2+.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le foie, il possède la glucose-6-phosphatase permettant la libération de glucose libre dans le sang.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes. Le REL synthétise lipides/stéroïdes, détoxifie les xénobiotiques via les CYP450, stocke le calcium (SERCA) et produit du glucose libre (G6Pase)."
+    },
+    {
+      "q": "Concernant la biosynthèse et la répartition des phospholipides au niveau du REL :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Synthèse lipidique",
+        "Scramblase"
+      ],
+      "options": [
+        {
+          "text": "Les nouveaux phospholipides sont synthétisés exclusivement sur le feuillet cytosolique de la membrane du RE.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une scramblase membranaire du RE transfère rapidement et de manière non sélective des phospholipides vers le feuillet luminal pour équilibrer la bicouche.",
+          "isCorrect": true
+        },
+        {
+          "text": "La scramblase du réticulum endoplasmique nécessite l'hydrolyse d'ATP à chaque transfert de lipide.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le REL participe également à la fourniture de lipides pour la biogenèse des membranes des peroxysomes et des mitochondries.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les phospholipides sont insérés sur la face cytosolique du RE, puis une scramblase symétrique INDÉPENDANTE d'ATP les équilibre entre les deux feuillets."
+    },
+    {
+      "q": "Concernant les vésicules recouvertes de COP II :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "COP II",
+        "Trafic vésiculaire"
+      ],
+      "options": [
+        {
+          "text": "Elles assurent le transport antérograde du réticulum endoplasmique vers l'appareil de Golgi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur assemblage est contrôlé par la petite protéine G monomérique Sar1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sar1-GTP s'ancre dans la membrane du RE par une hélice amphipathique et recrute les protéines adaptatrices Sec23/Sec24.",
+          "isCorrect": true
+        },
+        {
+          "text": "La coque externe du manteau COP II est formée par l'assemblage de sous-unités Sec13/Sec31.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le déshabillage du manteau intervient après hydrolyse du GTP par Sar1 sous l'action d'une GAP avant la fusion membranaire.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "COP II transporte du RE vers le cis-Golgi. Contrôlé par Sar1-GTP : Sec23/24 (manteau interne) et Sec13/31 (coque externe). Le déshabillage par hydrolyse du GTP de Sar1 est indispensable à la fusion."
+    },
+    {
+      "q": "Concernant les vésicules recouvertes de COP I :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "COP I",
+        "Transport rétrograde"
+      ],
+      "options": [
+        {
+          "text": "Elles assurent le transport rétrograde de l'appareil de Golgi vers le réticulum endoplasmique (et entre citernes golgiennes).",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur assemblage est régulé par la petite GTPase ARF1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles permettent de recycler vers le RE des lipides et des protéines résidentes du RE échappées dans le flux vésiculaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles transportent directement les hormones sécrétées dans le plasma sanguin en traversant la membrane plasmique sans fusion.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "COP I assure le transport rétrograde (Golgi vers RE et rétrograde intra-golgien) sous le contrôle d'ARF1, recyclant les composants résidents du RE."
+    },
+    {
+      "q": "Comment les protéines solubles résidentes de la lumière du RE (comme BiP ou PDI) sont-elles récupérées depuis le Golgi ?",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Signal KDEL"
+      ],
+      "options": [
+        {
+          "text": "Grâce à un signal peptidique C-terminal spécifique de séquence KDEL (Lys-Asp-Glu-Leu).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le signal KDEL est reconnu par un récepteur transmembranaire dans l'appareil de Golgi où le pH est légèrement plus acide.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le complexe récepteur-KDEL est incorporé dans des vésicules recouvertes de COP I pour être ramené vers le RE.",
+          "isCorrect": true
+        },
+        {
+          "text": "Au pH neutre de la lumière du RE, le ligand KDEL se détache spontanément de son récepteur, qui est ensuite recyclé.",
+          "isCorrect": true
+        },
+        {
+          "text": "Par dégradation systématique dans le protéasome nucléaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le récepteur du KDEL fixe les protéines résidentes au pH plus acide du Golgi, les ramène au RE via COP I, et les libère au pH neutre du RE."
+    },
+    {
+      "q": "Concernant la polarité structurale et fonctionnelle de l'appareil de Golgi :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Appareil de Golgi",
+        "Polarité"
+      ],
+      "options": [
+        {
+          "text": "Il est formé d'un empilement de citernes aplaties ou dictyosomes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le réseau cis-golgien (CGN) est orienté vers le RE et reçoit les vésicules de transport COP II.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le réseau trans-golgien (TGN) est orienté vers la membrane plasmique et constitue le site de tri majeur des protéines.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les citernes médianes et trans hébergent des glycosyltransférases séquentiellement ordonnées pour la maturation des sucres.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'appareil de Golgi ne communique avec aucun autre compartiment cellulaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le Golgi est hautement polarisé : face cis d'entrée (CGN face au RE) -> citernes médianes -> face trans de sortie (TGN vers lysosomes, granules ou membrane)."
+    },
+    {
+      "q": "Quelles modifications biochimiques majeures se déroulent au sein de l'appareil de Golgi ?",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Golgi",
+        "Modifications"
+      ],
+      "options": [
+        {
+          "text": "L'élagage des mannoses et l'addition séquentielle de nouveaux sucres (GlcNAc, galactose, acide sialique / NANA) sur les N-glycanes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La O-glycosylation par addition séquentielle de glucides sur les groupements hydroxyles (-OH) de résidus sérine ou thréonine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La sulfatation de résidus tyrosines et de glycosaminoglycanes au niveau du TGN.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réplication de l'ADN génomique à partir de promoteurs d'histones.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le Golgi assure le remodelage des N-glycanes, la O-glycosylation (mucines, protéoglycanes), la sulfatation et le clivage protéolytique de pro-protéines."
+    },
+    {
+      "q": "Concernant l'adressage des enzymes lysosomales (hydrolases acides) depuis l'appareil de Golgi :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Mannose-6-Phosphate",
+        "M6P"
+      ],
+      "options": [
+        {
+          "text": "Dans le cis-Golgi, les hydrolases portent un marqueur spécifique : le Mannose-6-Phosphate (M6P).",
+          "isCorrect": true
+        },
+        {
+          "text": "La formation du M6P nécessite la reconnaissance d'un motif structural 3D sur l'hydrolase par une GlcNAc-phosphotransférase.",
+          "isCorrect": true
+        },
+        {
+          "text": "Au niveau du TGN, le récepteur au Mannose-6-Phosphate (MPR) recrute les protéines pour les incorporer dans des vésicules à clathrine à destination des endosomes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans l'endosome au pH acide (~6,0), l'hydrolase se dissocie du récepteur MPR, et le récepteur est recyclé vers le TGN.",
+          "isCorrect": true
+        },
+        {
+          "text": "La maladie des cellules I (I-cell disease) est causée par un déficit de cette phosphotransférase : les hydrolases déversées hors de la cellule ne rejoignent pas les lysosomes.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions résument parfaitement le ciblage M6P. En cas de déficit en GlcNAc-phosphotransférase (maladie des inclusions cellulaires / I-cell), les hydrolases sont sécrétées, vidant les lysosomes."
+    },
+    {
+      "q": "Concernant les vésicules recouvertes de clathrine :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Clathrine"
+      ],
+      "options": [
+        {
+          "text": "Elles participent à la fois à l'endocytose à partir de la membrane plasmique et au transport du TGN vers les endosomes/lysosomes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La clathrine est constituée de structures trimériques appelées triskélions (3 chaînes lourdes et 3 chaînes légères).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les triskélions s'assemblent spontanément en réseaux géométriques d'hexagones et de pentagones courbant la membrane.",
+          "isCorrect": true
+        },
+        {
+          "text": "La clathrine se fixe directement aux lipides sans aucune protéine adaptatrice.",
+          "isCorrect": false
+        },
+        {
+          "text": "La scission de la vésicule au niveau de son col membranaire fait intervenir la GTPase dynamine.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La clathrine s'assemble en triskélions via des complexes adaptateurs (AP1 au TGN, AP2 à la membrane). La dynamine coupe le col de la vésicule."
+    },
+    {
+      "q": "Concernant les lysosomes de la cellule eucaryote :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Lysosomes"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des organites délimités par une simple membrane lipidique contenant une quarantaine d'hydrolases acides.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur pH intraluminal acide (environ 4,5 à 5,0) est maintenu par une pompe à protons V-ATPase dépendante de l'ATP.",
+          "isCorrect": true
+        },
+        {
+          "text": "La membrane lysosomale est protégée de l'autodigestion par une forte glycosylation luminale (LAMP).",
+          "isCorrect": true
+        },
+        {
+          "text": "Si le lysosome se rompt accidentellement, ses hydrolases détruisent instantanément et intégralement la cellule car leur activité est maximale au pH neutre (7,4).",
+          "isCorrect": false
+        },
+        {
+          "text": "Ils constituent le site terminal de dégradation pour l'endocytose, la phagocytose et l'autophagie.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les hydrolases lysosomales ne fonctionnent qu'à pH acide (~4,5-5,0) ; si une vésicule éclate dans le cytosol à pH neutre (7,2-7,4), ces enzymes sont inactives, protégeant la cellule."
+    },
+    {
+      "q": "Concernant la sécrétion constitutive vs la sécrétion régulée dans la voie de sortie du Golgi :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Sécrétion"
+      ],
+      "options": [
+        {
+          "text": "La sécrétion constitutive existe dans toutes les cellules et s'effectue en continu sans nécessité de signal de régulation.",
+          "isCorrect": true
+        },
+        {
+          "text": "La sécrétion constitutive apporte de nouveaux lipides et protéines transmembranaires à la membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La sécrétion régulée est spécifique de cellules spécialisées (neurones, cellules endocrines, cellules exocrines pancréatiques).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans la sécrétion régulée, les protéines sont concentrées et stockées dans des granules de sécrétion qui fusionnent avec la membrane suite à un signal (ex: influx de Ca2+).",
+          "isCorrect": true
+        },
+        {
+          "text": "La sécrétion constitutive nécessite obligatoirement l'ouverture de canaux sodiques voltage-dépendants.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La sécrétion constitutive est automatique, non régulée et universelle. La sécrétion régulée stocke le matériel dans des vésicules à cœur dense qui ne fusionnent qu'en réponse à un signal (pic de Ca2+)."
+    },
+    {
+      "q": "Concernant la motilité des vésicules de transport dans le cytosol :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Transport vésicules"
+      ],
+      "options": [
+        {
+          "text": "Le transport sur de longues distances s'effectue le long des microtubules grâce à des protéines motrices consommant de l'ATP (kinésines et dynéines).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le transport et le positionnement périphérique sous-membranaire font intervenir les microfilaments d'actine et les myosines.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les vésicules recouvertes de leur manteau protéique dense de COP ou de clathrine peuvent fusionner directement avec la membrane cible sans déshabillage.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le déshabillage du manteau est un prérequis obligatoire pour permettre l'interaction des protéines d'amarrage (Rab) et de fusion (SNARE).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le manteau doit impérativement être éliminé par désassemblage (GTPase GAP) pour exposer les machineries d'arrimage (Rab) et de fusion (SNARE) sur microtubules/actine."
+    },
+    {
+      "q": "Quelle modification glucidique caractéristique permet d'adresser sélectivement les hydrolases néosynthétisées vers les lysosomes ?",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "M6P"
+      ],
+      "options": [
+        {
+          "text": "L'addition d'un motif Mannose-6-Phosphate (M6P) sur les N-glycanes dans le cis-Golgi.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fixation d'un acide gras palmitique sur la queue C-terminale.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'excision de tous les résidus d'acides aminés aromatiques par la trypsine.",
+          "isCorrect": false
+        },
+        {
+          "text": "La phosphorylation d'un résidu glycine N-terminal par la PKA.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le Mannose-6-Phosphate (M6P) est le signal universel d'adressage des enzymes lysosomales depuis le Golgi."
+    },
+    {
+      "q": "Concernant le transport des longues molécules structurales comme le collagène :",
+      "tags": [
+        "CM 9 - Système endomembranaire",
+        "Collagène",
+        "COP II"
+      ],
+      "options": [
+        {
+          "text": "Les molécules rigides de procollagène mesurent environ 300 nm et ne peuvent pas entrer dans des vésicules sphériques standard de 60-80 nm.",
+          "isCorrect": true
+        },
+        {
+          "text": "Des protéines spécialisées modifient l'emballage des vésicules COP II pour former de grands transporteurs adaptés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Des mutations touchant ces protéines d'emballage du collagène peuvent entraîner des anomalies sévères d'ossification et de développement squelettique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le collagène est synthétisé et maturé exclusivement à l'intérieur des cavités des peroxysomes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le procollagène (300 nm) nécessite des vésicules COP II géantes spécialisées ; des mutations dans les gènes de ce trafic altèrent la sécrétion de collagène et causent des dysplasies osseuses."
+    }
+  ]
+}

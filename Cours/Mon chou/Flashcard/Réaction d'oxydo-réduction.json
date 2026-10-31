@@ -1,0 +1,162 @@
+[
+  {
+    "recto": "Qu'est-ce qu'un réducteur et un oxydant ?",
+    "verso": "Réducteur : espèce capable de CÉDER des électrons (il subit une OXYDATION, son n.o. augmente).\nOxydant : espèce capable de CAPTER des électrons (il subit une RÉDUCTION, son n.o. diminue).\nOx + n e- <=> Red.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Oxydant",
+      "Réducteur"
+    ]
+  },
+  {
+    "recto": "Quelles sont les règles clés pour le nombre d'oxydation (n.o.) de H, O et des corps simples ?",
+    "verso": "- Corps simple pur (O2, Fe, H2) : n.o. = 0\n- Hydrogène : +I (sauf hydrures métalliques NaH : -I)\n- Oxygène : -II (sauf peroxydes H2O2 : -I et OF2 : +II)\n- Somme dans molécule neutre = 0 ; dans ion = charge de l'ion.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Nombre d'oxydation",
+      "Règles"
+    ]
+  },
+  {
+    "recto": "Quelle est la règle pour l'anode et la cathode dans TOUT système électrochimique (pile ou électrolyse) ?",
+    "verso": "- ANODE = siège de l'OXYDATION (perte d'électrons).\n- CATHODE = siège de la RÉDUCTION (gain d'électrons).\n(Dans une pile : Anode = (-) et Cathode = (+). Dans une électrolyse : Anode = (+) et Cathode = (-)).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Anode et Cathode",
+      "Règle absolue"
+    ]
+  },
+  {
+    "recto": "Quelle est la définition de l'Électrode Normale à Hydrogène (ENH) et son potentiel conventionnel ?",
+    "verso": "Couple 2 H+(aq, 1 M) + 2 e- <=> H2(g, 1 bar) sur platine platiné.\nPar convention internationale : E°(H+/H2) = 0,000 V à toute température.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "ENH",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule de Nernst à 298 K pour le couple a Ox + n e- <=> b Red ?",
+    "verso": "E = E° + (0,059 / n) * log([Ox]^a / [Red]^b) (souvent 0,06/n en calcul rapide).\nSi le couple met en jeu des protons H+, le pH intervient directement dans l'expression de E.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Nernst",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la relation entre Delta_r G° et la force électromotrice standard Delta E° ?",
+    "verso": "Delta_r G° = - n * F * Delta E°\nAvec F ≈ 96 500 C.mol^-1 (Faraday) et Delta E° = E°_cathode - E°_anode.\nRéaction spontanée : Delta_r G° < 0  <=>  Delta E° > 0.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Delta_r G°",
+      "Delta E°"
+    ]
+  },
+  {
+    "recto": "Quelle est la relation liant la constante d'équilibre K à Delta E° à 25 °C ?",
+    "verso": "log10(K) = (n * Delta E°) / 0,059 ≈ (n * Delta E°) / 0,06.\n(Si Delta E° = +0,30 V avec n=2, log K = 10, K = 10^10).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Constante K",
+      "Delta E°"
+    ]
+  },
+  {
+    "recto": "Qu'énonce la règle du gamma pour prévoir la spontanéité d'une réaction redox ?",
+    "verso": "L'oxydant du couple au potentiel le plus élevé réagit spontanément avec le réducteur du couple au potentiel le plus faible.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Règle du gamma",
+      "Spontanéité"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le potentiel standard apparent E°' en biochimie ?",
+    "verso": "Le potentiel standard mesuré à pH physiologique = 7,0 (au lieu de pH = 0 pour E°). Pour H+/H2 : E° = 0 V, mais E°' = - 0,06 * 7 = - 0,42 V.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "E°'",
+      "Biochimie"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une réaction de dismutation ?",
+    "verso": "Réaction où une espèce à un nombre d'oxydation intermédiaire réagit sur elle-même pour s'oxyder et se réduire simultanément (ex : 2 H2O2 -> 2 H2O + O2).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Dismutation",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Quelle est la définition et la valeur de la constante de Faraday F ?",
+    "verso": "F = N_A * e ≈ 96 485 C.mol^-1 (ou 96 500 C.mol^-1).\nC'est la charge électrique absolue portée par une mole d'électrons.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Faraday",
+      "Constante"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule liant intensité du courant I, durée Delta t et quantité de matière d'électrons n(e-) ?",
+    "verso": "Q = I * Delta t = n(e-) * F  <=>  n(e-) = (I * Delta t) / F.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Faraday",
+      "Calcul d'électrons"
+    ]
+  },
+  {
+    "recto": "Quelle est la demi-équation électronique du permanganate MnO4- en milieu acide ?",
+    "verso": "MnO4- + 8 H+ + 5 e- <=> Mn2+ + 4 H2O.\n(Mn passe de +VII à +II).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "MnO4-",
+      "Demi-équation"
+    ]
+  },
+  {
+    "recto": "Quelle est la demi-équation électronique du dichromate Cr2O7^2- en milieu acide ?",
+    "verso": "Cr2O7^2- + 14 H+ + 6 e- <=> 2 Cr3+ + 7 H2O.\n(Cr passe de +VI à +III, gain de 3 e- par Cr, soit 6 e- au total).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Cr2O7^2-",
+      "Demi-équation"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle du pont salin dans une pile électrochimique ?",
+    "verso": "1) Assure la continuité électrique du circuit en permettant le passage des ions.\n2) Maintient la neutralité électrique des compartiments anodique et cathodique.\n3) Évite le mélange direct des solutions d'oxydant et de réducteur.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Pont salin",
+      "Rôle"
+    ]
+  },
+  {
+    "recto": "Comment varie le potentiel de réduction d'un couple dont l'oxydant réagit avec des protons H+ lorsque le pH augmente ?",
+    "verso": "Il DIMINUE selon E = E° - (0,06 * m / n) * pH. Le pouvoir oxydant de l'espèce est donc plus fort en milieu acide qu'en milieu basique.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Réaction d'oxydo-réduction",
+    "tags": [
+      "Nernst",
+      "Effet du pH"
+    ]
+  }
+]

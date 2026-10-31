@@ -1,0 +1,636 @@
+{
+  "name": "CM 12 - La fécondation",
+  "folder": "PASS - Embryologie",
+  "description": "Fécondation (capacitation, réaction acrosomique, interaction gamétique, activation ovocytaire, blocage de la polyspermie) et 1re et 2e semaines du développement embryonnaire (segmentation, compaction, blastocyste, nidation, disque didermique, cavités embryonnaires).",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant la capacitation des spermatozoïdes dans les voies génitales féminines :",
+      "tags": [
+        "CM 12 - Fécondation",
+        "Capacitation"
+      ],
+      "options": [
+        {
+          "text": "C'est un ensemble de modifications physiologiques et biochimiques indispensables rendant le spermatozoïde fécondant.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle comporte un efflux de cholestérol membranaire augmentant la fluidité de la membrane plasmique spermatique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle s'accompagne d'une hyperactivation de la motilité caractérisée par des battements flagellaires asymétriques de grande amplitude.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle provoque l'extrusion immédiate du noyau spermatique dans la glaire cervicale.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle permet le démasquage des récepteurs membranaires indispensables à la reconnaissance de la zone pellucide.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La capacitation a lieu lors du transit dans les voies génitales femelles : efflux de cholestérol membranaire (induit par l'albumine), phosphorylation de protéines sur tyrosines, entrée de calcium, démasquage de récepteurs et motilité hyperactivée."
+    },
+    {
+      "q": "Où se déroule physiologiquement la fécondation chez l'espèce humaine ?",
+      "tags": [
+        "CM 12 - Fécondation",
+        "Localisation"
+      ],
+      "options": [
+        {
+          "text": "Dans l'ampoule de la trompe utérine (trompe de Fallope).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans la cavité utérine centrale.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dans le canal cervical du col de l'utérus.",
+          "isCorrect": false
+        },
+        {
+          "text": "À l'intérieur du stroma ovarien profond.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La fécondation s'effectue physiologiquement dans le tiers externe de la trompe utérine, plus précisément au niveau de l'ampoule tubaire."
+    },
+    {
+      "q": "Concernant la traversée des enveloppes ovocytaires par le spermatozoïde :",
+      "tags": [
+        "CM 12 - Fécondation",
+        "Réaction acrosomique"
+      ],
+      "options": [
+        {
+          "text": "La traversée du cumulus oophorus (corona radiata) est facilitée par l'hyaluronidase membranaire spermatique (PH-20).",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison primaire du spermatozoïde à acrosome intact s'effectue sur les glycoprotéines ZP3 et ZP4 de la zone pellucide.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction acrosomique correspond à l'exocytose du contenu de l'acrosome par fusion de sa membrane externe avec la membrane plasmique spermatique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison secondaire du spermatozoïde à acrosome réagi à la zone pellucide fait intervenir la glycoprotéine ZP2.",
+          "isCorrect": true
+        },
+        {
+          "text": "La traversée de la zone pellucide s'effectue sans aucune intervention d'enzymes protéolytiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le franchissement du cumulus utilise l'hyaluronidase. La liaison primaire à ZP3/ZP4 déclenche la réaction acrosomique (exocytose calcium-dépendante libérant l'acrosine et des protéases). Le spermatozoïde réagi se lie à ZP2 pour perforer la zone pellucide."
+    },
+    {
+      "q": "Quelle molécule de la membrane du spermatozoïde se lie spécifiquement au récepteur ovocytaire Juno (associé à la tétraspanine CD9) lors de la fusion gamétique ?",
+      "tags": [
+        "CM 12 - Fécondation",
+        "Fusion gamétique"
+      ],
+      "options": [
+        {
+          "text": "Izumo 1.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acrosine active.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'aquaporine 2.",
+          "isCorrect": false
+        },
+        {
+          "text": "La transferrine fœtale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La fusion des membranes gamétiques nécessite l'interaction directe entre la protéine transmembranaire spermatique Izumo 1 et son récepteur ovocytaire Juno (protéine à ancre GPI, membre de la famille FolR4), en collaboration avec CD9."
+    },
+    {
+      "q": "L'activation ovocytaire est initiée par l'introduction dans l'ovocyte d'une enzyme spermatique spécifique :",
+      "tags": [
+        "CM 12 - Fécondation",
+        "Activation ovocytaire"
+      ],
+      "options": [
+        {
+          "text": "La phospholipase C zêta (PLC-zêta).",
+          "isCorrect": true
+        },
+        {
+          "text": "La trypsine pancréatique.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'amylase salivaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'ADN polymérase bêta.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La PLC-zêta apportée par le spermatozoïde hydrolyse le PIP2 ovocytaire en IP3 et DAG, déclenchant des oscillations calciques intracellulaires répétées indispensables à la reprise de la méiose II et à l'activation ovocytaire."
+    },
+    {
+      "q": "Concernant les mécanismes de blocage de la polyspermie :",
+      "tags": [
+        "CM 12 - Fécondation",
+        "Blocage polyspermie"
+      ],
+      "options": [
+        {
+          "text": "La réaction corticale correspond à l'exocytose calcium-dépendante des granules corticaux ovocytaires dans l'espace périvitellin.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ovastacine libérée par les granules corticaux clive spécifiquement la protéine ZP2, empêchant toute nouvelle fixation de spermatozoïdes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction de zone modifie la zone pellucide pour la rendre imperméable aux autres spermatozoïdes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le récepteur ovocytaire Juno est rapidement relargué dans des vésicules extracellulaires pour neutraliser les spermatozoïdes surnuméraires.",
+          "isCorrect": true
+        },
+        {
+          "text": "La polyspermie est un événement obligatoire et bénéfique permettant d'augmenter le caryotype embryonnaire à 92 chromosomes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La polyspermie est létale (triploïdie, avortement précoce). Elle est bloquée par l'exocytose des granules corticaux : clivage de ZP2 par l'ovastacine, modification des sucres de ZP3, relargage de Juno, et durcissement de la zone pellucide."
+    },
+    {
+      "q": "Quels événements caractérisent l'ovocyte immédiatement après la fécondation ?",
+      "tags": [
+        "CM 12 - Fécondation",
+        "Zygote"
+      ],
+      "options": [
+        {
+          "text": "L'achèvement de la deuxième division méiotique et l'expulsion du deuxième globule polaire (GP2).",
+          "isCorrect": true
+        },
+        {
+          "text": "La décondensation de la chromatine spermatique avec remplacement des protamines par des histones ovocytaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "La formation de deux pronoyaux (pronuclei mâle et femelle) visibles entre 16 et 22 heures post-fécondation.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'apport du centrosome mitotique fonctionnel par le centriole proximal du spermatozoïde (sperm aster).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'inactivation irréversible de tout métabolisme énergétique chez le zygote.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La fécondation relance la méiose II avec émission du 2e globule polaire. Les protamines du spermatozoïde sont remplacées par des histones. Deux pronuclei (mâle et femelle) se forment (16-22h). Le spermatozoïde apporte le centriole proximal formant le centrosome de division."
+    },
+    {
+      "q": "La segmentation au cours de la première semaine du développement embryonnaire correspond à :",
+      "tags": [
+        "CM 12 - Première semaine",
+        "Segmentation"
+      ],
+      "options": [
+        {
+          "text": "Une succession de mitoses rapides, réductrices, où le volume total de l'œuf ne change pas et le rapport nucléo-cytoplasmique augmente.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une première division de segmentation survenant environ 30 à 36 heures après la fécondation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une légère asynchronie mitotique pouvant faire passer l'embryon par un stade transitoire à 3 blastomères.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une augmentation exponentielle de la taille globale de l'œuf qui atteint 10 centimètres au 3e jour.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'obtention au 4e jour (stade 16 à 32 cellules) d'une morula rappelant la forme d'une petite mûre.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La segmentation est réductrice car enfermée dans la zone pellucide rigide indéformable : l'œuf conserve son diamètre initial (~100-120 micromètres) tandis que les cellules filles (blastomères) deviennent de plus en plus petites. 2 cellules à 30-36h, morula à 16-32 cellules à J4."
+    },
+    {
+      "q": "Concernant la compaction de la morula au 4e jour de développement :",
+      "tags": [
+        "CM 12 - Première semaine",
+        "Compaction"
+      ],
+      "options": [
+        {
+          "text": "Elle constitue la première différenciation morphologique et cellulaire de l'embryon.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle implique la mise en place de jonctions adhérentes dépendantes de la E-cadhérine entre les blastomères.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules périphériques externes se polarisent et développent des jonctions serrées (étanches) au pôle apical.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules internes restent apolaires, sphériques et reliées par des jonctions communicantes (GAP).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules périphériques expriment le facteur de transcription Cdx2 et formeront le trophectoderme.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La compaction à 16-32 cellules (J4) crée deux lignages : cellules externes polarisées jointives (E-cadhérine, jonctions serrées, Cdx2+, Eomes+) formant le trophectoderme ; cellules internes apolaires (jonctions GAP, Oct4+, Nanog+) formant la masse cellulaire interne (embryoblaste)."
+    },
+    {
+      "q": "Les cellules de la masse cellulaire interne (MCI ou embryoblaste) du blastocyste sont caractérisées par :",
+      "tags": [
+        "CM 12 - Première semaine",
+        "Masse cellulaire interne"
+      ],
+      "options": [
+        {
+          "text": "L'expression des facteurs de transcription de pluripotence Oct4, Sox2 et Nanog.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur pluripotence, c'est-à-dire leur capacité à donner l'ensemble des tissus des 3 feuillets embryonnaires ainsi que les cellules germinales.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur capacité à dériver in vitro en cellules souches embryonnaires (ESC).",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur transformation exclusive et directe en syncytiotrophoblaste invasif.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'embryoblaste (MCI) exprime Oct4, Sox2 et Nanog, garantissant la pluripotence (origine de tous les tissus embryonnaires et des cellules souches embryonnaires ES). Le trophoblaste dérive quant à lui du trophectoderme externe (Cdx2+)."
+    },
+    {
+      "q": "Le mécanisme de cavitation conduisant à la formation du blastocèle repose sur :",
+      "tags": [
+        "CM 12 - Première semaine",
+        "Blastocyste"
+      ],
+      "options": [
+        {
+          "text": "L'activité de pompes Na+/K+ ATPases situées sur la membrane basolatérale des cellules du trophectoderme créant un gradient osmotique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un appel d'eau transcellulaire depuis l'environnement tubaire/utérin vers l'intérieur à travers des aquaporines.",
+          "isCorrect": true
+        },
+        {
+          "text": "La confluence de lacunes intercellulaires en une grande cavité liquidienne centrale appelée blastocèle.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'étanchéité assurée par les jonctions serrées apicales du trophectoderme évitant toute fuite du liquide.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hydrolyse complète de tout l'ADN embryonnaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les pompes Na+/K+ basolatérales du trophectoderme accumulent des ions sodium dans l'espace interne. L'eau suit par osmose (aquaporines), gonflant le blastocèle grâce à l'imperméabilité des jonctions serrées apicales."
+    },
+    {
+      "q": "L'éclosion du blastocyste (hatching) au 5e-6e jour post-fécondation correspond à :",
+      "tags": [
+        "CM 12 - Première semaine",
+        "Éclosion"
+      ],
+      "options": [
+        {
+          "text": "La sortie du blastocyste hors de la zone pellucide par digestion protéolytique enzymatique (strypsine) et poussée mécanique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La division de l'embryon en deux jumeaux siamois obligatoires.",
+          "isCorrect": false
+        },
+        {
+          "text": "La fixation irréversible du blastocyste sur les cils de la trompe utérine.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'expulsion du blastocèle vers l'extérieur de la cavité utérine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'éclosion (J5-J6) est la rupture et l'échappement du blastocyste hors de la zone pellucide sous l'action de protéases trophoblastiques (strypsine) et de contractions rythmiques d'expansion. Le blastocyste nu peut alors adhérer à l'endomètre."
+    },
+    {
+      "q": "L'activation du génome embryonnaire (EGA / transition materno-embryonnaire) se produit chez l'homme :",
+      "tags": [
+        "CM 12 - Contrôle génétique",
+        "EGA"
+      ],
+      "options": [
+        {
+          "text": "Au stade de 4 à 8 cellules (vers le 3e jour de développement).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dès la première seconde suivant la fusion gamétique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Uniquement au 9e mois de grossesse.",
+          "isCorrect": false
+        },
+        {
+          "text": "Au moment de la gastrulation en 3e semaine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Avant le stade 4-8 cellules, le développement dépend entièrement des ARN messagers et protéines maternels accumulés dans l'ovocyte. L'activation transcriptionnelle du génome embryonnaire propre débute au stade 4-8 cellules (J3) chez l'espèce humaine."
+    },
+    {
+      "q": "Concernant la fenêtre d'implantation et la réceptivité endométriale lors de la nidation :",
+      "tags": [
+        "CM 12 - Deuxième semaine",
+        "Nidation"
+      ],
+      "options": [
+        {
+          "text": "Elle correspond à la phase sécrétoire moyenne du cycle menstruel (entre le 20e et le 24e jour du cycle, soit 6 à 8 jours post-ovulation).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est sous l'influence hormonale combinée des œstrogènes et de la progestérone sécrétée par le corps jaune.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle s'accompagne de l'apparition de pinopodes et de modifications des intégrines à la surface de l'épithélium endométrial.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle survient pendant la phase proliférative précoce lors des règles.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La réceptivité endométriale (fenêtre d'implantation, J20-J24 du cycle) requiert une imprégnation progestative optimale (corps jaune) caractérisée par des glandes utérines spiralées sécrétant du glycogène et des pinopodes épithéliaux."
+    },
+    {
+      "q": "La nidation du blastocyste s'effectue selon les étapes chronologiques suivantes :",
+      "tags": [
+        "CM 12 - Deuxième semaine",
+        "Étapes de nidation"
+      ],
+      "options": [
+        {
+          "text": "Apposition (J6) -> Adhésion (J7) -> Intrusion (J7-J8) -> Invasion du stroma utérin (J8-J9).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le blastocyste s'oriente préférentiellement en présentant son pôle embryonnaire face à l'épithélium utérin.",
+          "isCorrect": true
+        },
+        {
+          "text": "Au contact de l'endomètre, le trophoblaste se différencie en cytotrophoblaste interne et syncytiotrophoblaste externe invasif.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le syncytiotrophoblaste sécrète des métalloprotéases matricielles (MMP) et l'hormone gonadotrophine chorionique humaine (hCG).",
+          "isCorrect": true
+        },
+        {
+          "text": "La nidation ne traverse jamais l'épithélium de surface de l'endomètre.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'implantation interstitielle humaine est invasive (apposition J6, adhésion J7, intrusion et invasion J8-J9). Le pôle embryonnaire s'implante d'abord. Le syncytiotrophoblaste sécrète hCG (maintien du corps jaune) et des enzymes protéolytiques digérant la matrice."
+    },
+    {
+      "q": "La réaction déciduale (décidualisation) de l'endomètre :",
+      "tags": [
+        "CM 12 - Deuxième semaine",
+        "Décidualisation"
+      ],
+      "options": [
+        {
+          "text": "Est la transformation des fibroblastes du stroma endométrial en cellules déciduales volumineuses, polygonales, riches en glycogène et lipides.",
+          "isCorrect": true
+        },
+        {
+          "text": "Nécessite la présence de progestérone.",
+          "isCorrect": true
+        },
+        {
+          "text": "Permet de contrôler et limiter l'invasion trophoblastique pour éviter la perforation utérine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Fournit un environnement nutritif et immunotolérant pour l'embryon précoce.",
+          "isCorrect": true
+        },
+        {
+          "text": "Déclenche la desquamation immédiate de toute la muqueuse utérine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La réaction déciduale transforme les cellules stromales en cellules déciduales nutritives sous l'effet de la progestérone. Elle crée une barrière limitant l'invasion du syncytiotrophoblaste et un microenvironnement tolérogène."
+    },
+    {
+      "q": "Au 8e jour post-fécondation, la masse cellulaire interne (embryoblaste) se différencie en :",
+      "tags": [
+        "CM 12 - Deuxième semaine",
+        "Disque didermique"
+      ],
+      "options": [
+        {
+          "text": "Un disque embryonnaire didermique composé de l'épiblaste (cellules cylindriques dorsales) et de l'hypoblaste (cellules cubiques ventrales).",
+          "isCorrect": true
+        },
+        {
+          "text": "Trois feuillets définitifs : ectoderme, mésoderme et endoderme.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un tube neural dorsal fermé.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une sphère d'adipocytes matures.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À J8, la masse cellulaire interne donne le disque embryonnaire didermique (2 feuillets) : l'époblaste (dorsal, futures cellules de l'embryon et amnioblastes) et l'hypoblaste / endoderme primitif (ventral, adjacent au blastocèle)."
+    },
+    {
+      "q": "Concernant la formation de la cavité amniotique et de la vésicule vitelline :",
+      "tags": [
+        "CM 12 - Deuxième semaine",
+        "Cavités embryonnaires"
+      ],
+      "options": [
+        {
+          "text": "La cavité amniotique apparaît au 8e jour par cavitation au sein de l'épiblaste, tapissée dorsalement par les amnioblastes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La membrane de Heuser est formée au 9e jour par migration de cellules hypoblastiques tapissant la face interne du cytotrophoblaste.",
+          "isCorrect": true
+        },
+        {
+          "text": "La vésicule vitelline primitive (lécithocèle primaire) est délimitée par l'hypoblaste et la membrane de Heuser.",
+          "isCorrect": true
+        },
+        {
+          "text": "Au 11e-12e jour, la vésicule vitelline secondaire plus petite se forme suite à un étranglement de la vésicule primitive.",
+          "isCorrect": true
+        },
+        {
+          "text": "La cavité amniotique disparaît totalement dès la fin de la 2e semaine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À J8 : cavité amniotique au-dessus de l'épiblaste. À J9 : membrane de Heuser issue de l'hypoblaste délimitant la vésicule vitelline primitive. À J11-J12 : la vésicule vitelline secondaire se forme par bourgeonnement/étranglement (reliquats expulsés en kystes exocœlomiques)."
+    },
+    {
+      "q": "Le mésenchyme extra-embryonnaire (MEE) et le cœlome externe (cavité choriale) :",
+      "tags": [
+        "CM 12 - Deuxième semaine",
+        "Cœlome externe"
+      ],
+      "options": [
+        {
+          "text": "Le MEE apparaît vers J10-J11 entre la membrane de Heuser et la face interne du cytotrophoblaste.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le creusement de lacunes dans le MEE forme la vaste cavité du cœlome externe (cavité choriale).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le cœlome externe scinde le MEE en un feuillet somatopleural (externe, sous le trophoblaste) et un feuillet splanchnopleural (recouvrant la vésicule vitelline).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'embryon reste rattaché à la sphère choriale par un cordon de MEE non clivé : le pédicule de fixation (futur cordon ombilical).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le cœlome externe remplit l'intérieur du ventricule gauche du cœur.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le MEE apparaît à J10 et se creuse pour former le cœlome externe (cavité choriale) entourant l'œuf, dédoublant le MEE en somatopleure et splanchnopleure, ne laissant que le pédicule de fixation suspenseur."
+    },
+    {
+      "q": "À la fin de la 2e semaine du développement embryonnaire (J14) :",
+      "tags": [
+        "CM 12 - Deuxième semaine",
+        "Bilan J14"
+      ],
+      "options": [
+        {
+          "text": "L'œuf est entièrement enfoui dans l'endomètre, la brèche d'implantation étant comblée par un bouchon de fibrine puis réépithélialisée.",
+          "isCorrect": true
+        },
+        {
+          "text": "La circulation utéro-lacunaire primitive est fonctionnelle dans le syncytiotrophoblaste.",
+          "isCorrect": true
+        },
+        {
+          "text": "Des villosités choriales primaires sont formées par des travées cytotrophoblastiques s'enfonçant dans le syncytiotrophoblaste.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le disque embryonnaire est didermique, formé de l'épiblaste et de l'hypoblaste.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les membres supérieurs et les doigts sont complètement individualisés.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À J14, l'œuf est complètement implanté : disque didermique (épiblaste + hypoblaste), 2 cavités (cavité amniotique + vésicule vitelline IIaire), cœlome externe, villosités primaires cytotrophoblastiques, réseau lacunaire syncytiotrophoblastique avec sang maternel. L'organogenèse n'a pas encore débuté."
+    },
+    {
+      "q": "Concernant la grossesse extra-utérine (GEU) :",
+      "tags": [
+        "CM 12 - Pathologie",
+        "GEU"
+      ],
+      "options": [
+        {
+          "text": "Elle correspond à l'implantation anormale du blastocyste en dehors de la cavité utérine normale.",
+          "isCorrect": true
+        },
+        {
+          "text": "La localisation la plus fréquente est la trompe utérine (plus de 95% des cas, notamment dans l'ampoule).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle représente une urgence médico-chirurgicale en raison du risque de rupture tubaire et d'hémorragie cataclysmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un antécédent d'infection génitale haute (salpingite) avec altération des cils tubaires est un facteur de risque majeur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle aboutit naturellement à un accouchement par voie basse sans risque à 40 semaines d'aménorrhée.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La GEU (95% tubaire) est une urgence vitale liée au risque d'hémorragie par rupture de la trompe. Les salpingites altérant la muqueuse tubaire et les cils sont le principal facteur de risque."
+    },
+    {
+      "q": "L'hormone hCG (gonadotrophine chorionique humaine) :",
+      "tags": [
+        "CM 12 - Deuxième semaine",
+        "hCG"
+      ],
+      "options": [
+        {
+          "text": "Est sécrétée précocement par le syncytiotrophoblaste dès l'implantation embryonnaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Maintient l'activité du corps jaune ovarien en corps jaune gravidique, assurant la poursuite de la sécrétion de progestérone.",
+          "isCorrect": true
+        },
+        {
+          "text": "Est la molécule détectée dans le sang et les urines par les tests de grossesse dès la 2e semaine post-fécondation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Empêche l'apparition des règles et la desquamation de l'endomètre.",
+          "isCorrect": true
+        },
+        {
+          "text": "Est produite par les neurones du cortex cérébral de l'adulte.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'hCG est sécrétée par le syncytiotrophoblaste dès l'invasion (J8-J9). Elle mime l'action de la LH, maintient le corps jaune gravidique producteur de progestérone et constitue la base diagnostique des tests de grossesse."
+    }
+  ]
+}

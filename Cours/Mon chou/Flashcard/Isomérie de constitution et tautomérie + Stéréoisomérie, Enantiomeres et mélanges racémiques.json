@@ -1,0 +1,182 @@
+[
+  {
+    "recto": "Qu'est-ce que l'isomérie de constitution et quels sont ses 3 types principaux ?",
+    "verso": "Même formule brute mais formule développée (connectivité des atomes) différente.\n1) Isomérie de chaîne (squelette)\n2) Isomérie de position (emplacement de la fonction ou insaturation)\n3) Isomérie de fonction (nature du groupe fonctionnel différente, ex: alcool vs éther).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Isomérie de constitution",
+      "Types"
+    ]
+  },
+  {
+    "recto": "Quelle est la définition d'une molécule chirale et sa condition géométrique de symétrie ?",
+    "verso": "Une molécule est chirale si elle n'est pas superposable à son image dans un miroir plan. Elle ne doit posséder ni plan de symétrie (sigma), ni centre d'inversion (i).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Chiralité",
+      "Symétrie"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un carbone asymétrique (C*) ?",
+    "verso": "Un atome de carbone hybridé sp3 tétraédrique lié à 4 atomes ou groupes d'atomes différents.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Carbone asymétrique",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Que sont deux énantiomères et quelles sont leurs propriétés comparées ?",
+    "verso": "Stéréoisomères images l'un de l'autre dans un miroir et non superposables.\nMêmes propriétés physiques et chimiques en milieu achiral (Tf, Teb, solubilité).\nPouvoirs rotatoires opposés (+[alpha] et -[alpha]).\nPropriétés biologiques et réactivité différentes en milieu chiral.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Énantiomères",
+      "Propriétés"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un mélange racémique et pourquoi est-il optiquement inactif ?",
+    "verso": "Mélange équimolaire (50:50) de deux énantiomères. Optiquement inactif (alpha = 0) par compensation externe des déviations opposées.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Racémique",
+      "Activité optique"
+    ]
+  },
+  {
+    "recto": "Quelle est la loi de Biot reliant pouvoir rotatoire mesuré et spécifique ?",
+    "verso": "alpha = [alpha]_D^T * l * C.\nalpha : angle mesuré en degrés (°)\n[alpha] : pouvoir rotatoire spécifique\nl : longueur de cuve en dm (1 dm = 10 cm)\nC : concentration en g.mL^-1.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Loi de Biot",
+      "Polarimétrie"
+    ]
+  },
+  {
+    "recto": "Y a-t-il un lien entre le signe du pouvoir rotatoire (+ / -) et la configuration absolue (R / S) ?",
+    "verso": "NON, ABSOLUMENT AUCUN ! Le signe (+ ou -) est mesuré expérimentalement au polarimètre, tandis que R ou S est attribué selon les règles arbitraires CIP sur le papier.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Piège",
+      "R/S vs +/-"
+    ]
+  },
+  {
+    "recto": "Quelle est la 1ère règle de Cahn, Ingold et Prelog (CIP) pour classer les substituants ?",
+    "verso": "Priorité selon le numéro atomique Z décroissant des atomes directement liés au centre stéréogène (rang 1) : I (53) > Br (35) > Cl (17) > S (16) > P (15) > F (9) > O (8) > N (7) > C (6) > H (1) > doublet non liant (0).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "CIP",
+      "Priorité Z"
+    ]
+  },
+  {
+    "recto": "Comment départager deux substituants ayant le même atome au rang 1 selon CIP ?",
+    "verso": "On compare les atomes du rang 2 par ordre décroissant de Z. Dès la première différence observée, le substituant ayant l'atome de plus fort Z l'emporte.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "CIP",
+      "Rang 2"
+    ]
+  },
+  {
+    "recto": "Comment traite-t-on les liaisons multiples dans les règles CIP ?",
+    "verso": "Une liaison double ou triple est dupliquée ou triplée par des atomes fictifs équivalents liés par des liaisons simples : -C=O équivaut à un carbone lié à deux oxygènes (O, O). -C≡N équivaut à un carbone lié à 3 azotes (N, N, N).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "CIP",
+      "Liaisons multiples"
+    ]
+  },
+  {
+    "recto": "Comment détermine-t-on la configuration (R) ou (S) d'un carbone stéréogène ?",
+    "verso": "Substituant de plus faible priorité (4) placé en arrière :\n- Si 1 -> 2 -> 3 tourne dans le sens horaire : (R) (Rectus).\n- Si 1 -> 2 -> 3 tourne dans le sens trigonométrique (anti-horaire) : (S) (Sinister).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "R/S",
+      "Règle"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un composé méso ?",
+    "verso": "Une molécule possédant des centres asymétriques mais qui est achirale et optiquement inactive en raison d'un plan ou centre de symétrie interne (ex : (2R, 3S)-butane-2,3-diol).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Composé méso",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un diastéréoisomère ?",
+    "verso": "Des stéréoisomères de configuration qui ne sont pas des énantiomères (non superposables et pas images dans un miroir). Ils ont des propriétés physiques et chimiques différentes.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Diastéréoisomère",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Quelles sont les conventions de la projection de Fischer ?",
+    "verso": "1) Chaîne carbonée verticale avec le carbone le plus oxydé en haut.\n2) Liaisons horizontales = vers l'avant (vers l'observateur).\n3) Liaisons verticales = vers l'arrière (s'éloignent).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Fischer",
+      "Conventions"
+    ]
+  },
+  {
+    "recto": "Comment définit-on la série D ou L d'un ose en projection de Fischer ?",
+    "verso": "Par la position du groupement -OH sur le carbone asymétrique de plus grand numéro (le plus bas) :\n- À droite = série D\n- À gauche = série L.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Série D et L",
+      "Oses"
+    ]
+  },
+  {
+    "recto": "Comment définit-on la série D ou L d'un acide aminé en projection de Fischer ?",
+    "verso": "Carbone le plus oxydé (-COOH) en haut, chaîne R en bas :\n- -NH2 à gauche = série L (acides aminés naturels des protéines)\n- -NH2 à droite = série D.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Série D et L",
+      "Acides aminés"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule du nombre maximal de stéréoisomères pour n centres chiraux ?",
+    "verso": "N_max = 2^n (s'il n'y a pas de symétrie interne réduisant ce nombre par présence de forme méso).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Formule",
+      "2^n"
+    ]
+  },
+  {
+    "recto": "Comment calcule-t-on l'excès énantiomérique (ee) ?",
+    "verso": "ee = |([alpha]_mélange) / ([alpha]_pur)| = |(%énantiomère1 - %énantiomère2)|.\nPour un mélange à ee = 60%, %majoritaire = (100 + 60)/2 = 80% et %minoritaire = 20%.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Isomérie de constitution et tautomérie + Stéréoisomérie, Enantiomeres et mélanges racémiques",
+    "tags": [
+      "Excès énantiomérique",
+      "Formule"
+    ]
+  }
+]

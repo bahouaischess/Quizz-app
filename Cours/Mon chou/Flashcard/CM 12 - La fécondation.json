@@ -1,0 +1,224 @@
+[
+  {
+    "recto": "Définir la capacitation des spermatozoïdes.",
+    "verso": "Maturation physiologique acquise par les spermatozoïdes dans les voies génitales féminines : efflux de cholestérol membranaire, hyperactivation de la motilité et démasquage des récepteurs pellucides.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Capacitation",
+      "Spermatozoïde"
+    ]
+  },
+  {
+    "recto": "Où a lieu la fécondation chez la femme ?",
+    "verso": "Dans le tiers externe de la trompe utérine, au niveau de l'ampoule tubaire.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Fécondation",
+      "Ampoule tubaire"
+    ]
+  },
+  {
+    "recto": "À quelles glycoprotéines pellucides se lient successivement les spermatozoïdes ?",
+    "verso": "Liaison primaire du spermatozoïde intact sur ZP3 / ZP4 (déclenche la réaction acrosomique) ; puis liaison secondaire du spermatozoïde à acrosome réagi sur ZP2.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Zone pellucide",
+      "ZP3/ZP2"
+    ]
+  },
+  {
+    "recto": "Quelles protéines assurent la reconnaissance et fusion des membranes gamétiques ?",
+    "verso": "Izumo 1 sur la membrane équatoriale du spermatozoïde se lie spécifiquement au récepteur Juno (FolR4) associé à la tétraspanine CD9 sur la membrane plasmique ovocytaire.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Izumo 1",
+      "Juno",
+      "Fusion"
+    ]
+  },
+  {
+    "recto": "Quel facteur spermatique déclenche l'activation ovocytaire ?",
+    "verso": "La phospholipase C zêta (PLC-zêta) soluble, qui produit de l'IP3 et génère des oscillations calciques intracellulaires répétées dans l'ovocyte.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "PLC-zêta",
+      "Activation ovocytaire"
+    ]
+  },
+  {
+    "recto": "Comment se déroule la réaction corticale bloquant la polyspermie ?",
+    "verso": "L'onde calcique induit l'exocytose des granules corticaux libérant l'ovastacine (clive ZP2), des glycosidases (inactivent ZP3) et provoquant le relargage de Juno et le durcissement de la zone pellucide.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Réaction corticale",
+      "Polyspermie"
+    ]
+  },
+  {
+    "recto": "Quel élément ultrastructural essentiel apporte le spermatozoïde pour les mitoses du zygote ?",
+    "verso": "Son centriole proximal, qui s'associe aux composants péricentriolaires ovocytaires pour reconstituer le centrosome mitotique (sperm aster), l'ovocyte étant dépourvu de centriole.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Centrosome",
+      "Centriole proximal"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques de la segmentation lors de la 1re semaine ?",
+    "verso": "Mitoses successives réductrices (la taille totale de l'œuf ne varie pas dans la zone pellucide, le ratio N/C augmente) et asynchrones : 2 blastomères (30-36h), 4 (40-50h), morula à 16-32 cellules (J4).",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Segmentation",
+      "Morula"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la compaction de la morula à J4 ?",
+    "verso": "Première différenciation morphologique : les cellules externes se polarisent (E-cadhérine, jonctions serrées apicales, Cdx2+) formant le trophectoderme ; les cellules internes restent apolaires (jonctions GAP, Oct4+) formant la masse cellulaire interne.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Compaction",
+      "E-cadhérine",
+      "Cdx2/Oct4"
+    ]
+  },
+  {
+    "recto": "Comment se forme le blastocèle lors de la cavitation (J4-J5) ?",
+    "verso": "Les Na+/K+ ATPases basolatérales du trophectoderme pompent le sodium vers l'intérieur, créant un appel d'eau osmotique transcellulaire via les aquaporines, retenu par les jonctions serrées étanches.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Cavitation",
+      "Blastocyste"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'éclosion du blastocyste (hatching) et quand survient-elle ?",
+    "verso": "À J5-J6, le blastocyste s'échappe de sa zone pellucide par digestion protéolytique (strypsine) et poussée mécanique, devenant un blastocyste nu prêt pour l'implantation.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Éclosion",
+      "Hatching"
+    ]
+  },
+  {
+    "recto": "À quel stade a lieu l'activation du génome embryonnaire (EGA) chez l'homme ?",
+    "verso": "Au stade 4 à 8 cellules (environ J3 post-fécondation), marquant la transition materno-embryonnaire où le zygote prend le contrôle de sa propre transcription.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "EGA",
+      "Transition materno-embryonnaire"
+    ]
+  },
+  {
+    "recto": "Quand se situe la fenêtre d'implantation endométriale ?",
+    "verso": "Pendant la phase lutéale/sécrétoire moyenne du cycle menstruel, entre J20 et J24 (soit 6 à 8 jours post-ovulation), sous l'effet de la progestérone (apparition de pinopodes).",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Fenêtre d'implantation",
+      "Réceptivité"
+    ]
+  },
+  {
+    "recto": "Quelles sont les 4 étapes chronologiques de la nidation interstitielle humaine ?",
+    "verso": "1) Apposition (J6) ; 2) Adhésion (J7) ; 3) Intrusion à travers l'épithélium (J7-J8) ; 4) Invasion du stroma utérin par le syncytiotrophoblaste (J8-J9).",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Nidation",
+      "Chronologie"
+    ]
+  },
+  {
+    "recto": "En quoi se différencie le trophoblaste lors de l'implantation ?",
+    "verso": "En cytotrophoblaste interne (cellules individuelles mitotiques) et syncytiotrophoblaste externe (masse multinucléée invasive sécrétant hCG et métalloprotéases MMPs).",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Cytotrophoblaste",
+      "Syncytiotrophoblaste"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la réaction déciduale ?",
+    "verso": "Transformation des fibroblastes du stroma endométrial en cellules déciduales volumineuses chargées de glycogène et lipides sous l'effet de la progestérone, contrôlant l'invasion trophoblastique.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Décidualisation",
+      "Endomètre"
+    ]
+  },
+  {
+    "recto": "Quels sont les deux feuillets du disque embryonnaire didermique à J8 ?",
+    "verso": "L'épiblaste dorsal (cellules cylindriques pluripotentes) et l'hypoblaste ventral / endoderme primitif (cellules cubiques bordant le blastocèle).",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Disque didermique",
+      "Épiblaste/Hypoblaste"
+    ]
+  },
+  {
+    "recto": "Comment se forme la cavité amniotique à J8 ?",
+    "verso": "Par cavitation au sein de l'épiblaste ; son toit est formé par une couche de cellules épiblastiques modifiées aplaties appelées amnioblastes.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Cavité amniotique",
+      "Amnioblastes"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la membrane de Heuser (J9) ?",
+    "verso": "Fine membrane d'origine hypoblastique tapissant la face interne du cytotrophoblaste et délimitant la vésicule vitelline primitive (lécithocèle primaire).",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Membrane de Heuser",
+      "Vésicule vitelline primitive"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le cœlome externe (cavité choriale) et que sépare-t-il à J12-J13 ?",
+    "verso": "Cavité creusée dans le mésenchyme extra-embryonnaire, dédoublant celui-ci en somatopleure (sous le trophoblaste) et splanchnopleure (autour de la vésicule vitelline), ne laissant que le pédicule de fixation.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Cœlome externe",
+      "Mésenchyme extra-embryonnaire"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une villosité choriale primaire (J11-J13) ?",
+    "verso": "Un axe cellulaire de cytotrophoblaste plein s'enfonçant dans le syncytiotrophoblaste périphérique, première ébauche des villosités placentaires.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "Villosité primaire",
+      "Placenta"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle biologique fondamental de l'hormone hCG sécrétée par le syncytiotrophoblaste ?",
+    "verso": "Maintenir le corps jaune ovarien (devenu corps jaune gravidique) en activité pour qu'il continue à sécréter la progestérone indispensable au maintien de la grossesse, empêchant la survenue des règles.",
+    "subject": "Embryologie",
+    "folder": "PASS - Embryologie / Fécondation et Semaines 1-2",
+    "tags": [
+      "hCG",
+      "Corps jaune gravidique"
+    ]
+  }
+]

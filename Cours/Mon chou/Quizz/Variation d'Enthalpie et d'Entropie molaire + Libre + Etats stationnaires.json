@@ -1,0 +1,635 @@
+{
+  "name": "Chimie - Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+  "folder": "PASS - Chimie",
+  "description": "Enthalpies standard de formation (Delta_f H°), loi de Hess, enthalpies de liaison, loi de Kirchhoff, entropie standard (Delta_r S°, rôle de Delta n_gaz), loi de Van 't Hoff, principe de modération de Le Chatelier, et thermodynamique des états stationnaires du vivant (systèmes ouverts, structures dissipatives de Prigogine, AEQS, homéostasie).",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant l'enthalpie standard de formation Delta_f H° d'un composé chimique à 298 K :",
+      "tags": [
+        "Enthalpie de formation",
+        "État standard",
+        "Conventions"
+      ],
+      "options": [
+        {
+          "text": "Elle correspond à la variation d'enthalpie standard lors de la synthèse d'une mole de ce composé à partir de ses éléments constitutifs pris dans leur état standard de référence à 298 K.",
+          "isCorrect": true
+        },
+        {
+          "text": "Par convention internationale, l'enthalpie standard de formation de tout élément sous sa forme physique la plus stable à 1 bar et 298 K est rigoureusement NULLE.",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_f H°(O2, gaz) = 0 kJ.mol^-1 à 298 K.",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_f H°(C, graphite) = 0 kJ.mol^-1 à 298 K.",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_f H°(C, diamant) est nul à 298 K.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'état standard de référence du carbone à 298 K est le GRAPHITE, donc Delta_f H°(graphite) = 0. Le diamant est une variété allotropique métastable plus énergétique : Delta_f H°(diamant) = +1,9 kJ/mol (non nul !)."
+    },
+    {
+      "q": "Selon la loi de Hess, l'enthalpie standard de réaction Delta_r H° d'une réaction aA + bB -> cC + dD s'exprime par :",
+      "tags": [
+        "Loi de Hess",
+        "Delta_r H°",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "Delta_r H° = c * Delta_f H°(C) + d * Delta_f H°(D) - [ a * Delta_f H°(A) + b * Delta_f H°(B) ]",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r H° = somme [ nu_i * Delta_f H°(produits) ] - somme [ nu_j * Delta_f H°(réactifs) ]",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r H° est indépendante du chemin réactionnel suivi car H est une fonction d'état.",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r H° = somme [ nu_j * Delta_f H°(réactifs) ] - somme [ nu_i * Delta_f H°(produits) ]",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Loi de Hess : Produits MOINS Réactifs pondérés par les coefficients stœchiométriques. H étant une fonction d'état, on peut additionner les équations thermochimiques comme des équations algébriques."
+    },
+    {
+      "q": "La combustion d'une mole de glucose C6H12O6(s) + 6 O2(g) -> 6 CO2(g) + 6 H2O(l) dégage 2810 kJ dans les conditions standard. Quelles propositions sont VRAIES ?",
+      "tags": [
+        "Combustion du glucose",
+        "Enthalpie",
+        "Thermodynamique"
+      ],
+      "options": [
+        {
+          "text": "L'enthalpie molaire standard de réaction est Delta_r H° = - 2810 kJ.mol^-1.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction est fortement exothermique (Delta_r H° < 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le système cède de l'énergie thermique (chaleur) au milieu extérieur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour la combustion de 2 moles de glucose, la chaleur échangée à pression constante est Qp = - 5620 kJ.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction est endothermique car elle produit de l'énergie.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Une réaction qui DÉGAGE de l'énergie est EXOTHERMIQUE et son enthalpie de réaction est NÉGATIVE (convention du système : l'énergie quitte le système, donc Delta H < 0). Pour 2 moles, Delta H = 2 * (-2810) = -5620 kJ."
+    },
+    {
+      "q": "Comment calcule-t-on l'enthalpie standard de réaction Delta_r H° à partir des énergies de dissociation de liaison (notées D ou E_liaison > 0) pour des espèces en phase gazeuse ?",
+      "tags": [
+        "Énergie de liaison",
+        "Delta_r H°",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "Delta_r H° = somme [ D(liaisons rompues chez les réactifs) ] - somme [ D(liaisons formées chez les produits) ]",
+          "isCorrect": true
+        },
+        {
+          "text": "La rupture d'une liaison chimique est toujours un processus endothermique (nécessite un apport d'énergie, D > 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "La formation d'une liaison chimique est toujours un processus exothermique (libère de l'énergie).",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r H° = somme [ D(liaisons formées) ] - somme [ D(liaisons rompues) ]",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour les énergies de liaison (qui sont tabulées positives pour la rupture) : il faut ROMPRE les liaisons des réactifs (coût énergétique +) puis FORMER celles des produits (libération d'énergie -). D'où Delta_r H° = Somme(rompues) - Somme(formées). (Inverse de Hess !)."
+    },
+    {
+      "q": "La loi de Kirchhoff régit la dépendance en température de l'enthalpie de réaction : d(Delta_r H°) / dT = Delta_r Cp°. Si la capacité calorifique molaire de réaction Delta_r Cp° est considérée constante entre T1 et T2 :",
+      "tags": [
+        "Kirchhoff",
+        "Température",
+        "Capacité calorifique"
+      ],
+      "options": [
+        {
+          "text": "Delta_r H°(T2) = Delta_r H°(T1) + Delta_r Cp° * (T2 - T1)",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r Cp° = somme [ nu_i * Cp°m(produits) ] - somme [ nu_j * Cp°m(réactifs) ]",
+          "isCorrect": true
+        },
+        {
+          "text": "Si Delta_r Cp° ≈ 0, l'enthalpie standard de réaction est quasi-indépendante de la température (approximation d'Ellingham).",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r H° est strictement indépendante de la température dans tous les cas réels.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'enthalpie de réaction varie avec la température selon la relation intégrée de Kirchhoff : Delta_r H°(T2) = Delta_r H°(T1) + intégrale(Delta_r Cp° dT). Elle n'est constante que si Delta_r Cp° est négligeable (approximation classique d'Ellingham)."
+    },
+    {
+      "q": "Concernant l'entropie molaire standard S°m(298 K) des substances :",
+      "tags": [
+        "Entropie standard",
+        "Ordres de grandeur",
+        "Troisième principe"
+      ],
+      "options": [
+        {
+          "text": "En vertu du Troisième Principe, S°m(298 K) est TOUJOURS strictement positive pour tout corps pur.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'entropie molaire standard d'un gaz est nettement supérieure à celle d'un liquide, elle-même supérieure à celle d'un solide : S°m(gaz) >> S°m(liquide) > S°m(solide).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour une même molécule, l'entropie augmente avec la température.",
+          "isCorrect": true
+        },
+        {
+          "text": "Delta_r S°(298 K) est toujours obligatoirement positive.",
+          "isCorrect": false
+        },
+        {
+          "text": "Delta_r S° = somme [ nu_i * S°m(produits) ] - somme [ nu_j * S°m(réactifs) ].",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Bien que l'entropie absolue S°m d'un corps pur soit toujours positive, la VARIATION d'entropie d'une réaction Delta_r S° peut être positive ou négative selon que le désordre augmente ou diminue au cours de la réaction !"
+    },
+    {
+      "q": "Pour quelle(s) réaction(s) la variation d'entropie standard Delta_r S° est-elle très probablement STRICTEMENT POSITIVE ?",
+      "tags": [
+        "Signe de Delta_r S°",
+        "Delta n_gaz",
+        "Exemples"
+      ],
+      "options": [
+        {
+          "text": "CaCO3(s) -> CaO(s) + CO2(g) (dégagement d'un gaz à partir d'un solide).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dissolution d'un cristal de NaCl dans l'eau : NaCl(s) -> Na+(aq) + Cl-(aq).",
+          "isCorrect": true
+        },
+        {
+          "text": "N2(g) + 3 H2(g) -> 2 NH3(g) (passage de 4 moles de gaz à 2 moles).",
+          "isCorrect": false
+        },
+        {
+          "text": "2 H2(g) + O2(g) -> 2 H2O(l) (consommation de 3 moles de gaz).",
+          "isCorrect": false
+        },
+        {
+          "text": "Combustion complète du glucose produisant 6 moles de gaz à partir de 6 moles de gaz : Delta n_gaz = 0.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La création de moles gazeuses (Delta n_gaz > 0) entraîne une forte augmentation du désordre translationnel, donc Delta_r S° >> 0 (ex : CaCO3 donne 1 mole de gaz). Pour la synthèse de l'ammoniac ou de l'eau liquide, Delta n_gaz < 0 donc Delta_r S° < 0."
+    },
+    {
+      "q": "Loi de Van 't Hoff : d(ln K) / dT = Delta_r H° / (R * T^2). Quelle(s) conclusion(s) en découle(nt) ?",
+      "tags": [
+        "Van 't Hoff",
+        "Déplacement d'équilibre",
+        "Température"
+      ],
+      "options": [
+        {
+          "text": "Pour une réaction EXOTHERMIQUE (Delta_r H° < 0), d(ln K)/dT < 0 : la constante d'équilibre K diminue lorsque la température augmente.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour une réaction ENDOTHERMIQUE (Delta_r H° > 0), d(ln K)/dT > 0 : la constante d'équilibre K augmente lorsque la température augmente.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une augmentation de température déplace toujours l'état d'équilibre dans le sens ENDOTHERMIQUE (principe de Le Chatelier).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour une réaction ATHERMIQUE (Delta_r H° = 0, ex : estérification), la constante d'équilibre K est indépendante de la température.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une élévation de température favorise toujours les produits, quel que soit le signe de Delta_r H°.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Loi fondamentale de Van 't Hoff : chauffer un système à l'équilibre favorise la réaction dans le sens qui consomme de la chaleur (sens endothermique). Si la réaction est exothermique, la chauffer déplace l'équilibre vers les réactifs (K diminue)."
+    },
+    {
+      "q": "Forme intégrée de la loi de Van 't Hoff entre T1 et T2 (en supposant Delta_r H° constante) :",
+      "tags": [
+        "Van 't Hoff",
+        "Formule intégrée",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "ln(K(T2) / K(T1)) = - (Delta_r H° / R) * (1/T2 - 1/T1)",
+          "isCorrect": true
+        },
+        {
+          "text": "ln(K(T2) / K(T1)) = (Delta_r H° / R) * ((T2 - T1) / (T1 * T2))",
+          "isCorrect": true
+        },
+        {
+          "text": "ln(K(T2) / K(T1)) = + (Delta_r H° / R) * (1/T2 - 1/T1)",
+          "isCorrect": false
+        },
+        {
+          "text": "Le tracé de ln(K) en fonction de 1/T est une droite de pente - Delta_r H° / R.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Intégration : ln K = - Delta_r H°/(RT) + Delta_r S°/R. La pente de ln K en fonction de 1/T est -Delta_r H°/R, ce qui permet de mesurer expérimentalement l'enthalpie de réaction !"
+    },
+    {
+      "q": "Selon le principe de modération de Le Chatelier :",
+      "tags": [
+        "Le Chatelier",
+        "Déplacement d'équilibre",
+        "Perturbations"
+      ],
+      "options": [
+        {
+          "text": "Si l'on impose une perturbation à un système en équilibre chimique, le système évolue dans le sens qui tend à s'opposer à cette perturbation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une augmentation de la pression totale (à T constante) déplace l'équilibre dans le sens qui diminue le nombre de moles de gaz (Delta n_gaz < 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ajout d'un réactif à volume constant déplace l'équilibre dans le sens de la consommation de ce réactif (sens direct).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ajout d'un gaz inerte (ex : argon) à volume constant modifie la constante d'équilibre K et déplace l'équilibre.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'élimination continue d'un produit au fur et à mesure de sa formation (ex : distillation de l'eau lors d'une estérification) déplace l'équilibre vers une conversion totale des réactifs.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "À volume constant, l'ajout d'un gaz inerte augmente la pression totale mais NE MODIFIE PAS les pressions partielles des réactifs et produits : il n'y a donc AUCUN déplacement d'équilibre ! L'élimination d'un produit déplace continuellement l'équilibre vers la droite (rendement 100%)."
+    },
+    {
+      "q": "Quelle est la différence fondamentale en biologie entre un ÉQUILIBRE THERMODYNAMIQUE VRAI et un ÉTAT STATIONNAIRE (steady state) ?",
+      "tags": [
+        "État stationnaire",
+        "Équilibre",
+        "Bioénergétique"
+      ],
+      "options": [
+        {
+          "text": "À l'équilibre thermodynamique, les flux nets de matière et d'énergie sont nuls, Delta_r G = 0, et la production d'entropie interne s'annule : dSi/dt = 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour un être vivant ou une cellule, l'atteinte de l'équilibre thermodynamique vrai correspond à la MORT cellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans un état stationnaire, les concentrations des intermédiaires restent constantes au cours du temps (d[X]/dt = 0), mais les flux de matière et d'énergie ne sont PAS nuls (v_entrée = v_sortie != 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le maintien d'un état stationnaire biologique requiert une consommation continue d'énergie libre (Delta G_global < 0) et produit continuellement de l'entropie dissipée vers l'extérieur (dSi/dt > 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "Un état stationnaire est un système fermé isolé.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Concept majeur du cours PASS Paris Cité : la vie maintient un ordre interne élevé (basse entropie) en fonctionnant comme un SYSTÈME OUVERT en ÉTAT STATIONNAIRE hors équilibre, en dissipant de l'énergie (nutriments -> chaleur + déchets). L'équilibre vrai (Delta G = 0) est l'arrêt de toute fonction métabolique (la mort)."
+    },
+    {
+      "q": "Selon la thermodynamique des processus irréversibles d'Ilya Prigogine :",
+      "tags": [
+        "Prigogine",
+        "Structures dissipatives",
+        "Entropie"
+      ],
+      "options": [
+        {
+          "text": "Les organismes vivants sont des 'structures dissipatives' ouvertes fonctionnant loin de l'équilibre thermodynamique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La variation totale d'entropie du système biologique s'écrit dS = dSe + dSi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour maintenir sa structure hautement ordonnée (dS_organisme <= 0), l'organisme doit évacuer vers le milieu extérieur plus d'entropie qu'il n'en produit (dSe < 0 avec |dSe| >= dSi).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'entropie de l'univers global (système + extérieur) ne cesse de croître : dS_univers > 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les êtres vivants violent le deuxième principe de la thermodynamique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les êtres vivants ne violent aucun principe : ils 'exportent' de l'entropie dans l'environnement (par le rejet de chaleur et de molécules dégradées) pour maintenir leur propre entropie interne basse. L'univers global voit son entropie totale augmenter."
+    },
+    {
+      "q": "Soit la chaîne métabolique simple : A -> B -> C en état stationnaire dans une cellule. Si la vitesse d'entrée v1 de transformation de A en B est de 5 mmol.L^-1.min^-1, que vaut la vitesse v2 de transformation de B en C en régime stationnaire ?",
+      "tags": [
+        "État stationnaire",
+        "Flux métabolique",
+        "Calcul"
+      ],
+      "options": [
+        {
+          "text": "v2 = 5 mmol.L^-1.min^-1",
+          "isCorrect": true
+        },
+        {
+          "text": "v2 = 0 mmol.L^-1.min^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "v2 = 2,5 mmol.L^-1.min^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "v2 = 10 mmol.L^-1.min^-1",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Par définition de l'état stationnaire pour l'intermédiaire B : d[B]/dt = v_apparition - v_disparition = v1 - v2 = 0. Donc obligatoirement v2 = v1 = 5 mmol.L^-1.min^-1. La concentration [B] reste constante car le flux traversant est conservatif."
+    },
+    {
+      "q": "On donne les enthalpies standard de formation suivantes à 298 K :\nDelta_f H°(CO2, g) = - 393 kJ.mol^-1\nDelta_f H°(H2O, l) = - 286 kJ.mol^-1\nDelta_f H°(CH4, g) = - 75 kJ.mol^-1\nQuelle est l'enthalpie standard de combustion du méthane : CH4(g) + 2 O2(g) -> CO2(g) + 2 H2O(l) ?",
+      "tags": [
+        "Loi de Hess",
+        "Calcul",
+        "Combustion"
+      ],
+      "options": [
+        {
+          "text": "- 890 kJ.mol^-1",
+          "isCorrect": true
+        },
+        {
+          "+ 890 kJ.mol^-1": false,
+          "text": "+ 890 kJ.mol^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "- 604 kJ.mol^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "- 965 kJ.mol^-1",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Delta_r H° = Delta_f H°(CO2) + 2 * Delta_f H°(H2O) - [ Delta_f H°(CH4) + 2 * Delta_f H°(O2) ]. Comme O2 est un corps pur simple dans son état de référence, Delta_f H°(O2) = 0. Delta_r H° = -393 + 2*(-286) - (-75) = -393 - 572 + 75 = -965 + 75 = - 890 kJ.mol^-1."
+    },
+    {
+      "q": "Une réaction d'estérification : Acide + Alcool <=> Ester + Eau possède une enthalpie de réaction Delta_r H° ≈ 0 kJ.mol^-1 (athermalité). Que vaut sa constante d'équilibre K à 100 °C si elle vaut 4 à 20 °C ?",
+      "tags": [
+        "Estérification",
+        "Athermalité",
+        "Van 't Hoff"
+      ],
+      "options": [
+        {
+          "text": "K = 4 à 100 °C également car la réaction est athermique.",
+          "isCorrect": true
+        },
+        {
+          "text": "K = 40 car la température a augmenté.",
+          "isCorrect": false
+        },
+        {
+          "text": "K = 0,4 car la réaction s'inverse.",
+          "isCorrect": false
+        },
+        {
+          "text": "K = 1 à l'ébullition.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Selon Van 't Hoff : d(ln K)/dT = Delta_r H° / (RT^2). Puisque Delta_r H° ≈ 0, d(ln K)/dT = 0, donc la constante K ne dépend pas de la température ! Pour une estérification classique d'alcool primaire, K reste invariablement égale à 4 (rendement limite de 67% pour un mélange équimolaire)."
+    },
+    {
+      "q": "Pour la réaction 2 NO2(g) (brun roux) <=> N2O4(g) (incolore), la réaction est exothermique dans le sens direct (Delta_r H° = - 57 kJ.mol^-1). Si l'on plonge une ampoule contenant ce mélange à l'équilibre dans de l'eau glacée :",
+      "tags": [
+        "Le Chatelier",
+        "NO2 et N2O4",
+        "Expérience classique"
+      ],
+      "options": [
+        {
+          "text": "L'équilibre se déplace dans le sens direct (formation de N2O4).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le mélange s'incolore progressivement.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le mélange devient plus foncé.",
+          "isCorrect": false
+        },
+        {
+          "text": "La constante K a diminué.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Refroidir le système (diminuer T) déplace l'équilibre dans le sens EXOTHERMIQUE (sens direct qui dégage de la chaleur pour s'opposer au refroidissement). N2O4 incolore est formé, donc le mélange s'incolore ! Si on chauffait, le mélange brunirait par formation de NO2."
+    },
+    {
+      "q": "Si l'on COMPRIME à température constante le mélange gazeux 2 NO2(g) <=> N2O4(g) en réduisant de moitié le volume de l'enceinte :",
+      "tags": [
+        "Le Chatelier",
+        "Pression",
+        "Déplacement"
+      ],
+      "options": [
+        {
+          "text": "L'augmentation de pression déplace l'équilibre dans le sens qui diminue le nombre de moles de gaz (sens direct : 2 moles -> 1 mole).",
+          "isCorrect": true
+        },
+        {
+          "text": "La proportion de N2O4 augmente par rapport à l'état initial.",
+          "isCorrect": true
+        },
+        {
+          "text": "La constante d'équilibre K augmente.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'équilibre ne se déplace pas car T est constante.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La compression augmente la pression totale : le système réagit en déplaçant l'équilibre vers le côté avec le moins de molécules gazeuses (sens direct, 1 mole de N2O4 contre 2 de NO2). Attention : la constante thermodynamique K NE CHANGE PAS (elle ne dépend que de T), c'est la composition qui s'ajuste !"
+    },
+    {
+      "q": "Concernant le concept d'homéostasie chez l'homme :",
+      "tags": [
+        "Homéostasie",
+        "Physiologie",
+        "État stationnaire"
+      ],
+      "options": [
+        {
+          "text": "L'homéostasie est le maintien de la stabilité des paramètres physico-chimiques du milieu intérieur (glycémie, pH sanguin, volémie, température corporelle).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle correspond dynamiquement à un état stationnaire entretenu par des mécanismes de rétroaction (feed-back négatif).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle correspond à un équilibre thermodynamique mortel.",
+          "isCorrect": false
+        },
+        {
+          "text": "La rupture prolongée d'un état stationnaire homéostasique conduit à la pathologie ou au décès.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'homéostasie est l'illustration biologique par excellence de l'état stationnaire dynamique. L'organisme dépense constamment de l'énergie métabolique pour maintenir constants ses paramètres internes face aux fluctuations extérieures."
+    },
+    {
+      "q": "Dans une réaction enzymatique obéissant à l'approximation de l'état quasi-stationnaire de Briggs-Haldane pour le complexe enzyme-substrat [ES] : E + S <=> ES -> E + P :",
+      "tags": [
+        "Briggs-Haldane",
+        "AEQS",
+        "Enzymologie"
+      ],
+      "options": [
+        {
+          "text": "On pose que la vitesse de formation de ES est égale à sa vitesse de décomposition : d[ES]/dt ≈ 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "La concentration [ES] s'ajuste quasi-instantanément et reste constante pendant la phase initiale de la réaction.",
+          "isCorrect": true
+        },
+        {
+          "text": "Cette approximation permet d'établir l'équation de vitesse de Michaelis-Menten : v = Vmax * [S] / (KM + [S]).",
+          "isCorrect": true
+        },
+        {
+          "text": "La concentration en substrat [S] reste rigoureusement constante pendant des heures sans apport.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'AEQS sur le complexe [ES] stipule que dès la brève période de pré-état stationnaire franchie, [ES] reste quasi-constante (d[ES]/dt ≈ 0) tant que [S] >> [E_total], ce qui permet de démontrer l'équation de Michaelis-Menten."
+    },
+    {
+      "q": "La chaleur échangée réversiblement par un système à température T est liée à la variation d'entropie par la relation de Clausius :",
+      "tags": [
+        "Clausius",
+        "Entropie",
+        "Chaleur réversible"
+      ],
+      "options": [
+        {
+          "text": "dS = delta_Q_rev / T",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour une transformation irréversible : dS > delta_Q_irrev / T",
+          "isCorrect": true
+        },
+        {
+          "text": "L'entropie créée est dSi = dS - delta_Q / T >= 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "dS = T * delta_Q",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'inégalité de Clausius stipule dS >= delta_Q / T, avec égalité stricte pour une transformation réversible. L'entropie créée dSi = dS - delta_Q/T est positive ou nulle."
+    },
+    {
+      "q": "Pour la réaction N2(g) + 3 H2(g) <=> 2 NH3(g) (synthèse de Haber-Bosch), Delta_r H° = - 92 kJ.mol^-1 et Delta n_gaz = -2. Pour maximiser le rendement en ammoniac à l'équilibre, il faut industriellement :",
+      "tags": [
+        "Haber-Bosch",
+        "Optimisation",
+        "Le Chatelier"
+      ],
+      "options": [
+        {
+          "text": "Travailler à TRÈS HAUTE PRESSION (150 à 250 bars) pour déplacer l'équilibre vers la diminution de volume (sens direct).",
+          "isCorrect": true
+        },
+        {
+          "text": "Travailler à la température la plus basse possible du point de vue thermodynamique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Utiliser un catalyseur (fer activé) et une température modérée (~ 450 °C) comme compromis indispensable pour avoir une vitesse de réaction acceptable.",
+          "isCorrect": true
+        },
+        {
+          "text": "Travailler à très basse pression dans le vide.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Cas classique de compromis thermo/cinétique : la réaction étant exothermique et Delta n_gaz < 0, la thermodynamique exige haute pression et basse température. Mais à basse température, la réaction est infiniment trop lente ! On utilise donc un catalyseur au fer à 450 °C et 200 bars."
+    },
+    {
+      "q": "L'énergie libre de Helmholtz A (ou F) est définie par A = U - T*S. Quelle est sa signification physique principale ?",
+      "tags": [
+        "Helmholtz",
+        "Énergie libre",
+        "Volume constant"
+      ],
+      "options": [
+        {
+          "text": "Elle représente la fonction caractéristique adaptée aux transformations à TEMPÉRATURE ET VOLUME CONSTANTS (T et V constants).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour une transformation spontanée à T et V constants, dA <= 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle mesure le travail maximal récupérable lors d'une transformation isotherme : W_max = Delta A.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est identique à l'enthalpie libre de Gibbs G.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "G = H - TS est adaptée à T et P constantes (conditions biologiques habituelles), tandis que A = U - TS est adaptée à T et V constants (systèmes fermés rigides). Le travail total maximal reçu vaut Delta A."
+    }
+  ]
+}

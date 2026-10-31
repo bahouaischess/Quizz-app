@@ -1,0 +1,613 @@
+{
+  "name": "CM 1 - Organisation de la cellule eucaryote",
+  "folder": "PASS - Biologie Cellulaire",
+  "description": "Quiz de niveau PASS sur l'organisation de la cellule eucaryote, ordres de grandeur, théorie cellulaire, compartimentation et différences avec les procaryotes.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant l'histoire de la biologie cellulaire et la théorie cellulaire, quelle(s) proposition(s) est (sont) exacte(s) ?",
+      "tags": [
+        "CM 1 - Organisation",
+        "Histoire",
+        "Théorie cellulaire"
+      ],
+      "options": [
+        {
+          "text": "La théorie de la préformation postulait que l'embryon se développait progressivement sous l'influence de facteurs environnementaux.",
+          "isCorrect": false
+        },
+        {
+          "text": "Schleiden et Schwann ont étendu le concept de cellule comme unité fonctionnelle et structurale à la fois au règne végétal et animal.",
+          "isCorrect": true
+        },
+        {
+          "text": "Rudolf Virchow a formulé en 1858 l'aphorisme « omnis cellula e cellula », affirmant que toute cellule provient d'une cellule préexistante.",
+          "isCorrect": true
+        },
+        {
+          "text": "Aristote était un défenseur de la préformation au IVe siècle avant J.-C.",
+          "isCorrect": false
+        },
+        {
+          "text": "Nicolas Hartsoeker défendait l'épigenèse en affirmant avoir visualisé un animalcule complet préformé dans le spermatozoïde.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Schleiden (1838, botaniste) et Schwann (1839, physiologiste) ont fondé la théorie cellulaire. Virchow a complété cette théorie en 1858 (« omnis cellula e cellula »). Hartsoeker soutenait la préformation (homoncule), tandis qu'Aristote et Wolff défendaient l'épigenèse (développement progressif)."
+    },
+    {
+      "q": "Concernant les ordres de grandeur en biologie cellulaire, quelle est la proposition exacte ?",
+      "tags": [
+        "CM 1 - Organisation",
+        "Ordres de grandeur"
+      ],
+      "options": [
+        {
+          "text": "Les cellules eucaryotes animales mesurent classiquement entre 10 et 100 µm de diamètre.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un ribosome mesure environ 2 µm de diamètre.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le diamètre moyen d'une bactérie procaryote classique est de l'ordre de 10 à 20 nm.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'ovocyte humain est une cellule microscopique d'environ 1 µm, invisible à l'œil nu.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une molécule de phospholipide transmembranaire mesure environ 500 nm de longueur.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les cellules eucaryotes mesurent entre 10 et 100 µm (l'ovocyte humain atteint ~100-120 µm). Les bactéries mesurent 0,3 à 2 µm, les ribosomes ~20-30 nm, et les phospholipides ~2 nm."
+    },
+    {
+      "q": "Parmi les constituants chimiques de la cellule eucaryote, quels sont les pourcentages pondéraux approximatifs exacts ?",
+      "tags": [
+        "CM 1 - Organisation",
+        "Composition"
+      ],
+      "options": [
+        {
+          "text": "Eau : environ 70 % de la masse totale de la cellule.",
+          "isCorrect": true
+        },
+        {
+          "text": "Protéines : environ 15 % de la masse totale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Lipides : environ 2 % de la masse totale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Glucides : environ 20 % de la masse totale.",
+          "isCorrect": false
+        },
+        {
+          "text": "Acides nucléiques (ADN et ARN) : environ 15 % de la masse totale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La composition moyenne de la cellule est : eau ~70 %, protéines ~15 %, lipides ~2 %, sucres ~2 %, acides nucléiques (ADN+ARN) ~1 %."
+    },
+    {
+      "q": "Concernant les définitions des compartiments cellulaires, quelle proposition est exacte ?",
+      "tags": [
+        "CM 1 - Organisation",
+        "Cytosol",
+        "Cytoplasme"
+      ],
+      "options": [
+        {
+          "text": "Le cytoplasme correspond uniquement au liquide intracellulaire après élimination de tout le cytosquelette et des organites.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le cytosol est la phase liquide qui baigne les organites et le cytosquelette.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le cytosol contient l'ensemble des organites intracellulaires délimités par une membrane.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le cytoplasme est strictement synonyme de hyaloplasme.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le cytosol (ou hyaloplasme) est la fraction liquide intracellulaire soluble. Le cytoplasme comprend le cytosol, le cytosquelette et les organites (à l'exclusion ou inclusion selon les repères du noyau, le polycopié précisant : cytoplasme = cytosol + cytosquelette + organites)."
+    },
+    {
+      "q": "Quelles caractéristiques distinguent les cellules eucaryotes des cellules procaryotes ?",
+      "tags": [
+        "CM 1 - Organisation",
+        "Eucaryotes vs Procaryotes"
+      ],
+      "options": [
+        {
+          "text": "Les cellules procaryotes possèdent un chromosome unique généralement circulaire situé directement dans le cytoplasme sans enveloppe nucléaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "La transcription et la traduction sont physiquement découplées dans le temps et dans l'espace chez les eucaryotes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules eucaryotes possèdent des ribosomes 70S dans leur cytosol.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les cellules animales sont entourées d'une paroi riche en peptidoglycane assurant leur rigidité mécanique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les procaryotes sont dépourvus de compartimentation endomembranaire interne délimitée par des membranes lipidiques.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les eucaryotes possèdent des ribosomes 80S dans le cytosol (et 70S dans les mitochondries). Les cellules animales n'ont pas de paroi (le peptidoglycane est exclusif des parois bactériennes). Chez les eucaryotes, transcription nucléaire et traduction cytosolique sont découplées."
+    },
+    {
+      "q": "Concernant la structure et la fonction du noyau des cellules eucaryotes, quelle(s) assertion(s) est (sont) exacte(s) ?",
+      "tags": [
+        "CM 1 - Organisation",
+        "Noyau"
+      ],
+      "options": [
+        {
+          "text": "L'enveloppe nucléaire est constituée d'une double membrane lipidique perforée de pores nucléaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les cellules eucaryotes de l'organisme humain adulte possèdent obligatoirement un noyau fonctionnel.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le nucléole est le site privilégié de la transcription des ARNm codant les protéines du cytosquelette.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'hétérochromatine correspond à une chromatine décondensée hautement active sur le plan transcriptionnel.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'enveloppe nucléaire est en continuité physique directe avec la membrane du réticulum endoplasmique.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les hématies (érythrocytes) matures humaines sont dépourvues de noyau. Le nucléole est le siège de la transcription des ARNr et de l'assemblage des sous-unités ribosomiques. L'hétérochromatine est condensée et transcriptionnellement inactive, contrairement à l'euchromatine."
+    },
+    {
+      "q": "Concernant les organites à double membrane contenant de l'ADN chez les eucaryotes animaux :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Organites",
+        "Double membrane"
+      ],
+      "options": [
+        {
+          "text": "Seuls le noyau et les mitochondries sont délimités par une double membrane lipidique dans la cellule animale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le réticulum endoplasmique et l'appareil de Golgi possèdent chacun une double membrane lipidique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les lysosomes et les peroxysomes possèdent une double bicouche lipidique protectrice contre les hydrolases acides.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'appareil de Golgi contient un génome circulaire autonome codant les glycosyltransférases.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans la cellule animale, seuls le noyau et la mitochondrie possèdent une double membrane et contiennent de l'ADN. RE, Golgi, lysosomes et peroxysomes possèdent une simple membrane."
+    },
+    {
+      "q": "À propos du cytosquelette de la cellule eucaryote, quelles propositions sont vraies ?",
+      "tags": [
+        "CM 1 - Organisation",
+        "Cytosquelette"
+      ],
+      "options": [
+        {
+          "text": "Il est composé de trois types de filaments : les microfilaments d'actine, les microtubules et les filaments intermédiaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le centrosome constitue le centre organisateur majeur des microtubules dans la cellule animale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les filaments intermédiaires sont constitués de tubuline alpha et bêta polymérisée en présence de GTP.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le cytosquelette est une armature statique et rigide qui ne subit aucun remaniement durant la vie cellulaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le cytosquelette joue un rôle déterminant dans les mouvements intracellulaires d'organites, la cytokinèse et la migration cellulaire.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le cytosquelette est extrêmement dynamique (mitose, migration, trafic vésiculaire). Les microtubules sont formés de dimères de tubuline alpha/bêta, tandis que les filaments intermédiaires sont formés de protéines fibreuses (lamines, kératines, vimentine...)."
+    },
+    {
+      "q": "Concernant la membrane plasmique de la cellule eucaryote :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Membrane plasmique"
+      ],
+      "options": [
+        {
+          "text": "Elle permet le passage libre et spontané de tous les ions minéraux et molécules hydrophiles sans nécessiter de protéines membranaires.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les molécules liposolubles (hydrophobes) traversent librement la bicouche lipidique par diffusion simple.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines transmembranaires interviennent dans le transport sélectif de nutriments et la détection de signaux extracellulaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le glycocalyx est un feutrage glucidique exclusivement localisé sur la face cytosolique de la membrane.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle sépare le milieu intracellulaire (cytosol) du milieu extracellulaire.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La membrane plasmique est imperméable aux ions et molécules hydrosolubles non assistées. Les molécules hydrophobes traversent par diffusion. Le glycocalyx est situé sur la face extracellulaire."
+    },
+    {
+      "q": "Concernant le système endomembranaire de la cellule eucaryote, quelle est la proposition fausse ?",
+      "tags": [
+        "CM 1 - Organisation",
+        "Système endomembranaire"
+      ],
+      "options": [
+        {
+          "text": "Le réticulum endoplasmique rugueux est recouvert de ribosomes sur sa face cytosolique et participe à la synthèse des protéines.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'appareil de Golgi participe à la maturation et au tri des protéines destinées à la sécrétion ou aux lysosomes.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les mitochondries font partie intégrante du système endomembranaire et communiquent par flux vésiculaire permanent avec le réticulum.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le réticulum endoplasmique lisse participe notamment à la synthèse des lipides.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les endosomes sont des compartiments formés à partir d'invaginations de la membrane plasmique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les mitochondries (et peroxysomes) ne font pas partie du système endomembranaire car elles ne participent pas au transport vésiculaire direct avec le RE/Golgi."
+    },
+    {
+      "q": "Concernant les systèmes de recyclage et de dégradation intracellulaire :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Dégradation"
+      ],
+      "options": [
+        {
+          "text": "Les lysosomes contiennent des hydrolases acides fonctionnant à pH neutre (pH 7,4).",
+          "isCorrect": false
+        },
+        {
+          "text": "Le protéasome est un complexe enzymatique cylindrique dépourvu de membrane lipidique qui dégrade les protéines cytosoliques polyubiquitinylées.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les peroxysomes sont des organites impliqués dans des réactions d'oxydation cellulaire utilisant de l'oxygène moléculaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le protéasome est localisé à l'intérieur de la lumière des lysosomes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les hydrolases lysosomales fonctionnent à pH acide (~4,5 - 5,0). Le protéasome est un complexe multiprotéique non membranaire situé dans le cytosol et le noyau, indépendant des lysosomes."
+    },
+    {
+      "q": "Concernant les étapes de vie et le destin d'une cellule eucaryote chez les métazoaires :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Cycle cellulaire",
+        "Destin cellulaire"
+      ],
+      "options": [
+        {
+          "text": "Une cellule somatique différenciée conserve obligatoirement une capacité de division illimitée.",
+          "isCorrect": false
+        },
+        {
+          "text": "La mitose permet d'obtenir deux cellules filles génétiquement identiques à la cellule mère diploïde.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules germinales sont à l'origine directe de la production des gamètes haploïdes nécessaires à la reproduction sexuée.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'apoptose correspond à une mort cellulaire brutale par nécrose provoquée par la lyse osmotique de la membrane.",
+          "isCorrect": false
+        },
+        {
+          "text": "La matrice extracellulaire fournit une charpente mécanique indispensable à la survie de la plupart des cellules adhérentes.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'apoptose est une mort cellulaire programmée et contrôlée, très différente de la nécrose. Les cellules somatiques différenciées ont souvent un potentiel prolifératif limité (sénescence réplicative). Les cellules germinales génèrent les gamètes."
+    },
+    {
+      "q": "Concernant les ribosomes cellulaires :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Ribosomes"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des organites délimités par une simple membrane lipidique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ils sont constitués d'ARN ribosomiques et de protéines ribosomiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils peuvent être libres dans le cytosol ou associés à la membrane du réticulum endoplasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils synthétisent les protéines par traduction de l'ARN messager.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les ribosomes cytosoliques eucaryotes ont un coefficient de sédimentation de 70S.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les ribosomes sont des complexes ribonucléoprotéiques dépourvus de membrane lipidique. Les ribosomes cytosoliques eucaryotes sont de 80S (formés des sous-unités 60S et 40S)."
+    },
+    {
+      "q": "Concernant la motilité et la dynamique cellulaire liée au cytosquelette :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Cytosquelette",
+        "Migration"
+      ],
+      "options": [
+        {
+          "text": "La migration d'un fibroblaste implique des réarrangements spatio-temporels du cytosquelette et la déformation de la membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le noyau cellulaire reste rigoureusement fixe et immobile au centre géométrique lors de la migration cellulaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "Lors de la mitose, le réseau de microtubules se réorganise pour former le fuseau mitotique assurant la ségrégation des chromosomes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules en suspension comme les leucocytes ne possèdent aucun microfilament d'actine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le noyau bouge et se repositionne lors de la migration. Les leucocytes possèdent une dynamique d'actine très active pour diapédèse et chimiotactisme. Le fuseau mitotique est formé de microtubules."
+    },
+    {
+      "q": "Concernant la paroi des différents types cellulaires du monde vivant :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Paroi cellulaire"
+      ],
+      "options": [
+        {
+          "text": "Les cellules animales sont dépourvues de paroi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules végétales possèdent une paroi pecto-cellulosique externe à leur membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les champignons possèdent une paroi polysaccharidique (contenant notamment de la chitine).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les bactéries à Gram positif possèdent une paroi très fine dépourvue de peptidoglycane.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les cellules animales possèdent une paroi de cholestérol pur d'environ 5 µm d'épaisseur.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les cellules animales n'ont pas de paroi. Les bactéries Gram+ possèdent une couche épaisse de peptidoglycane. Végétaux : paroi pecto-cellulosique ; champignons : paroi polysaccharidique."
+    },
+    {
+      "q": "Concernant la production d'énergie au sein de la cellule eucaryote :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Mitochondrie",
+        "ATP"
+      ],
+      "options": [
+        {
+          "text": "La mitochondrie produit l'essentiel de l'ATP cellulaire par phosphorylation oxydative en présence d'oxygène.",
+          "isCorrect": true
+        },
+        {
+          "text": "La glycolyse anaérobie se déroule intégralement dans la matrice mitochondriale.",
+          "isCorrect": false
+        },
+        {
+          "text": "La membrane interne mitochondriale présente de nombreux replis appelés crêtes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les mitochondries sont incapables de se diviser ou de fusionner.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La glycolyse se déroule dans le cytosol. La membrane interne mitochondriale forme des crêtes. Les mitochondries forment un réseau très dynamique subissant en permanence fusion et fission."
+    },
+    {
+      "q": "Concernant la matrice extracellulaire (MEC) :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Matrice extracellulaire"
+      ],
+      "options": [
+        {
+          "text": "Elle constitue une charpente macromoléculaire protéique entourant les cellules dans les tissus.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est strictement absente chez tous les organismes multicellulaires.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle peut servir de réservoir pour le stockage de facteurs de croissance et de molécules signal.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les cellules du corps humain nécessitent obligatoirement un ancrage à la MEC pour survivre.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle participe à la structuration tridimensionnelle des tissus.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les cellules sanguines circulantes (hématies, leucocytes) ne nécessitent pas d'ancrage matriciel direct pour survivre, contrairement aux cellules adhérentes épithéliales ou fibroblastiques."
+    },
+    {
+      "q": "Quelle molécule constitue la matrice génétique pour la transcription des ARN dans le noyau eucaryote ?",
+      "tags": [
+        "CM 1 - Organisation",
+        "ADN",
+        "Génome"
+      ],
+      "options": [
+        {
+          "text": "L'ADN génomique linéaire associé aux histones.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ARN ribosomique 28S cytosolique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les lipides du feuillet interne de l'enveloppe nucléaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le peptidoglycane nucléoplasmique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'ADN linéaire double brin nucléaire associé aux histones sert de matrice pour la transcription des différents ARN."
+    },
+    {
+      "q": "Concernant la transition de l'état unicellulaire au stade multicellulaire chez les métazoaires :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Multicellularité"
+      ],
+      "options": [
+        {
+          "text": "Elle a nécessité l'apparition de systèmes de jonctions intercellulaires pour la reconnaissance et l'adhésion.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle s'accompagne d'une spécialisation et différenciation fonctionnelle des cellules en tissus distincts.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle confère des avantages sélectifs comme une meilleure résistance face aux prédateurs et une dispersion accrue.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle implique la perte totale de tout mécanisme de communication intercellulaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le passage à la multicellularité repose sur l'émergence d'interactions cellulaires, jonctions, communication coordonnée et différenciation fonctionnelle."
+    },
+    {
+      "q": "Parmi les affirmations suivantes sur les différences entre hétérochromatine et euchromatine :",
+      "tags": [
+        "CM 1 - Organisation",
+        "Chromatine"
+      ],
+      "options": [
+        {
+          "text": "L'euchromatine est visible au microscope électronique comme des zones claires peu denses aux électrons.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'euchromatine correspond à des régions d'ADN transcriptionnellement actives accessibles aux ARN polymérases.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hétérochromatine est préférentiellement localisée en périphérie du noyau, sous la lamina nucléaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hétérochromatine est totalement dépourvue de protéines histones.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dans les cellules quiescentes ou sénescentes, l'hétérochromatine disparaît intégralement.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'hétérochromatine est très dense, enrichie en histones méthylées condensées, souvent associée à la lamina nucléaire en périphérie. L'euchromatine est décondensée et transcriptionnellement active."
+    },
+    {
+      "q": "Quelle proposition résume le mieux le concept d'organite cellulaire ?",
+      "tags": [
+        "CM 1 - Organisation",
+        "Organite"
+      ],
+      "options": [
+        {
+          "text": "Tout agrégat macromoléculaire soluble présent dans le hyaloplasme sans frontière physique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un compartiment intracellulaire délimité par une ou deux membranes lipidiques et dédié à une fonction métabolique ou structurale spécialisée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une structure rigide externe sécrétée par la cellule pour se protéger de la pression osmotique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un filament protéique non membranaire appartenant exclusivement au réseau du cytosquelette.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Un organite est un compartiment intracellulaire délimité par au moins une membrane lipidique possédant une fonction propre au sein de la cellule."
+    }
+  ]
+}

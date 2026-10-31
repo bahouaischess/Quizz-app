@@ -1,0 +1,647 @@
+{
+  "name": "Chimie - Molécules conjuguées et aromatiques",
+  "folder": "PASS - Chimie",
+  "description": "Systèmes conjugués (pi-sigma-pi, pi-sigma-n, pi-sigma-v), mésomérie et hybride de résonance, énergie de résonance, règles de Hückel pour l'aromaticité (4n+2), antiaromaticité (4n), structure du benzène, hétérocycles aromatiques (pyridine vs pyrrole, furane, thiophène), ions aromatiques (cyclopropényle, cyclopentadiényle, tropylium), effets mésomères (+M, -M) et spectroscopie UV-Visible.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Qu'est-ce qu'un système conjugué en chimie organique ?",
+      "tags": [
+        "Conjugaison",
+        "Définition",
+        "Système pi"
+      ],
+      "options": [
+        {
+          "text": "Une alternance continue d'orbitales p parallèles permettant le recouvrement latéral et la délocalisation des électrons pi ou n sur au moins 3 atomes adjacents.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une alternance de type pi - sigma - pi (ex : buta-1,3-diène).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une alternance de type pi - sigma - n (double liaison séparée d'un doublet non liant par une liaison simple).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une alternance de type pi - sigma - lacune v (ex : cation allylique).",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux doubles liaisons séparées par deux carbones saturés sp3 (-CH2-CH2-).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour qu'il y ait conjugaison, les orbitales p doivent être contiguës (séparées par une seule liaison sigma). Deux carbones sp3 saturés intercalés interrompent complètement le recouvrement p et isolent les insaturations."
+    },
+    {
+      "q": "Concernant l'écriture et les règles de validité des formes mésomères (ou de résonance) :",
+      "tags": [
+        "Mésomérie",
+        "Règles",
+        "Formes limites"
+      ],
+      "options": [
+        {
+          "text": "Seuls les électrons pi et les doublets non liants n (ou électrons célibataires) se déplacent ; la position de tous les noyaux atomiques reste rigoureusement fixe.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les formes mésomères doivent obligatoirement posséder la même charge globale nette.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le nombre total d'électrons célibataires doit être conservé dans toutes les formes limites.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les éléments de la deuxième période (C, N, O, F) ne doivent jamais dépasser 8 électrons de valence dans aucune forme mésomère.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les formes mésomères sont des molécules réelles en équilibre chimique rapide oscillant d'une forme à l'autre.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "PIÈGE MAJEUR : les formes mésomères ne sont PAS des molécules réelles et il n'y a AUCUN équilibre physique ! La molécule réelle est unique et invariante dans le temps : c'est l'HYBRIDE DE RÉSONANCE, dont la structure et l'énergie sont une moyenne pondérée des formes limites."
+    },
+    {
+      "q": "Comment évalue-t-on la contribution relative (poids) d'une forme mésomère à l'hybride de résonance ?",
+      "tags": [
+        "Formes mésomères",
+        "Stabilité relative",
+        "Poids"
+      ],
+      "options": [
+        {
+          "text": "Une forme respectant la règle de l'octet pour tous les atomes de la période 2 contribue plus qu'une forme à octet incomplet.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une forme avec le nombre maximal de liaisons covalentes est plus contributive.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une forme neutre (sans séparation de charges) est plus contributive qu'une forme avec charges formelles séparées.",
+          "isCorrect": true
+        },
+        {
+          "text": "En cas de séparation de charges, la forme où la charge négative est portée par l'atome le plus électronégatif est la plus stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une forme plaçant une charge formelle positive sur le fluor et négative sur le carbone est prépondérante.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le fluor étant l'élément le plus électronégatif, lui attribuer une charge positive au profit d'un carbone négatif constitue une forme à très haute énergie et contribution quasiment négligeable."
+    },
+    {
+      "q": "Qu'appelle-t-on énergie de résonance (ou énergie de mésomérie) d'une molécule conjuguée ?",
+      "tags": [
+        "Énergie de résonance",
+        "Thermodynamique",
+        "Stabilisation"
+      ],
+      "options": [
+        {
+          "text": "Le gain de stabilité thermodynamique apporté par la délocalisation électronique par rapport à une structure de Lewis hypothétique localisée la plus stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est toujours positive (la molécule réelle est plus stable que n'importe quelle forme limite fictive).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour le benzène, l'énergie de résonance est particulièrement élevée (environ 150 kJ.mol^-1 ou 36 kcal.mol^-1).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle correspond à l'énergie cinétique de rotation de la molécule.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'énergie de résonance mesure la stabilisation apportée par la délocalisation. Pour le benzène, la comparaison entre l'enthalpie d'hydrogénation réelle et celle d'un 'cyclohexatriène' théorique met en évidence une stabilisation exceptionnelle de 150 kJ/mol (énergie d'aromaticité)."
+    },
+    {
+      "q": "Quelles sont les QUATRE conditions strictes de la règle de Hückel pour qu'une molécule soit qualifiée d'AROMATIQUE ?",
+      "tags": [
+        "Hückel",
+        "Aromaticité",
+        "Critères"
+      ],
+      "options": [
+        {
+          "text": "La molécule (ou le système) doit être CYCLIQUE.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le cycle doit être PLAN (tous les atomes hybridés sp2 ou sp avec leurs orbitales p parallèles).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le système doit être ENTIÈREMENT CONJUGUÉ (chaque atome du cycle possède une orbitale p participante).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le système délocalisé doit contenir exactement (4n + 2) électrons pi (où n est un entier naturel : n = 0, 1, 2, 3...).",
+          "isCorrect": true
+        },
+        {
+          "text": "La molécule doit contenir au moins 6 atomes de carbone et obligatoirement un cycle benzénique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La règle de Hückel ne restreint absolument pas l'aromaticité aux cycles à 6 carbones ! Le cation cyclopropényle (cycle à 3 sommets, 2 e- pi, n=0), l'anion cyclopentadiényle (5 sommets, 6 e- pi, n=1) ou le pyrrole sont tous pleinement aromatiques."
+    },
+    {
+      "q": "Une molécule cyclique, plane et entièrement conjuguée possédant 4n électrons pi (n >= 1, ex : 4 ou 8 électrons pi) est qualifiée de :",
+      "tags": [
+        "Antiaromaticité",
+        "Hückel",
+        "Stabilité"
+      ],
+      "options": [
+        {
+          "text": "Aromatique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Antiaromatique (molécule particulièrement instable thermodynamiquement).",
+          "isCorrect": true
+        },
+        {
+          "text": "Composé méso.",
+          "isCorrect": false
+        },
+        {
+          "text": "Isomère de fonction.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La règle de Hückel classe les cycles plans conjugués à 4n électrons pi comme ANTIAROMATIQUES. La délocalisation y est déstabilisante par rapport à des liaisons localisées (ex: cyclobutadiène à 4 e- pi, extrêmement instable et hautement réactif)."
+    },
+    {
+      "q": "Le cyclooctatétraène (C8H8, cycle à 8 carbones avec 4 doubles liaisons alternées, 8 électrons pi) :",
+      "tags": [
+        "Cyclooctatétraène",
+        "Conformation",
+        "Non-aromatique"
+      ],
+      "options": [
+        {
+          "text": "S'il était plan, il serait antiaromatique avec ses 8 électrons pi (4n avec n=2).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour éviter cette déstabilisation antiaromatique, il adopte une conformation non plane en forme de 'baignoire' (tub shape).",
+          "isCorrect": true
+        },
+        {
+          "text": "Puisqu'il n'est pas plan, il est NON-AROMATIQUE et se comporte chimiquement comme un polyène ordinaire (réactions d'addition faciles).",
+          "isCorrect": true
+        },
+        {
+          "text": "C'est une molécule aromatique ultra-stable.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le cyclooctatétraène adopte une géométrie en baignoire non plane, ce qui rompt le recouvrement parallèle des orbitales p : il n'est donc pas antiaromatique, mais simplement non-aromatique, avec des doubles liaisons C=C réactives."
+    },
+    {
+      "q": "À propos de la structure du benzène C6H6 :",
+      "tags": [
+        "Benzène",
+        "Longueur de liaison",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Tous les atomes de carbone et d'hydrogène sont strictement coplanaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les 6 liaisons carbone-carbone ont rigoureusement la même longueur (0,139 nm).",
+          "isCorrect": true
+        },
+        {
+          "text": "La longueur des liaisons C-C du benzène (0,139 nm) est intermédiaire entre une liaison simple C-C (0,154 nm) et une double liaison C=C (0,134 nm).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le benzène réagit préférentiellement par des réactions de SUBSTITUTION électrophile aromatique (SEAr) plutôt que par addition, afin de préserver son sextet aromatique stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le benzène est une alternance rapide de 3 simples et 3 doubles liaisons oscillant en permanence.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les liaisons du benzène ne sont PAS une alternance de liaisons simples et doubles : elles sont rigoureusement équivalentes (ordre de liaison = 1,5), formant un anneau délocalisé parfait. Le benzène refuse les additions pour conserver son aromaticité."
+    },
+    {
+      "q": "Parmi les espèces suivantes, laquelle/lesquelles est/sont AROMATIQUE(S) selon la règle de Hückel ?",
+      "tags": [
+        "Aromaticité",
+        "Exemples",
+        "Ions aromatiques"
+      ],
+      "options": [
+        {
+          "text": "Le cation cyclopropényle (cycle à 3 chaînons avec 1 double liaison et 1 charge +, 2 e- pi, n=0).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'anion cyclopentadiényle (cycle à 5 chaînons avec 2 doubles liaisons et 1 carbanion, 6 e- pi, n=1).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le cation cycloheptatriényle ou ion tropylium (cycle à 7 chaînons avec 3 doubles liaisons et 1 carbocation, 6 e- pi, n=1).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pyridine (cycle à 6 sommets avec 1 azote, 6 e- pi, n=1).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le cyclopentadiène neutre (cycle à 5 sommets avec un carbone -CH2- saturé sp3).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le cyclopentadiène neutre possède un carbone sp3 saturé qui coupe la conjugaison : il n'est pas entièrement conjugué et donc NON aromatique. En revanche, sa déprotonation donne l'anion cyclopentadiényle à 6 e- pi aromatique (expliquant le pKa très bas de 16 pour un hydrocarbure !)."
+    },
+    {
+      "q": "Concernant la pyridine (C5H5N) et le pyrrole (C4H5N) :",
+      "tags": [
+        "Hétérocycles",
+        "Pyridine",
+        "Pyrrole",
+        "Basicité"
+      ],
+      "options": [
+        {
+          "text": "La pyridine et le pyrrole sont tous les deux des hétérocycles aromatiques à 6 électrons pi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans la pyridine, le doublet non liant de l'azote est situé dans une orbitale hybride sp2 dans le plan du cycle et NE PARTICIPE PAS au sextet aromatique pi.",
+          "isCorrect": true
+        },
+        {
+          "text": "La pyridine est une base azotée disponible pour capter un proton sans détruire son aromaticité.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le pyrrole, le doublet non liant de l'azote est situé dans une orbitale p pure et PARTICIPE directement au sextet aromatique de 6 électrons pi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pyrrole est une base très forte car son azote possède un doublet libre très disponible.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "QUESTION FONDAMENTALE PASS : dans le pyrrole, le doublet de l'azote fait partie intégrante du sextet aromatique (4 e- des 2 doubles liaisons + 2 e- de l'azote = 6 e- pi). Protoner cet azote détruirait l'aromaticité ! Le pyrrole est donc une base extrêmement faible (pKa du cation conjugué ≈ -3,8), non basique en milieu physiologique. Dans la pyridine, le doublet est orthogonal au système pi et reste basique."
+    },
+    {
+      "q": "Concernant le furane (C4H4O) et le thiophène (C4H4S) :",
+      "tags": [
+        "Furane",
+        "Thiophène",
+        "Aromaticité"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des hétérocycles aromatiques à 5 sommets possédant 6 électrons pi.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hétéroatome (O ou S) engage un seul de ses deux doublets non liants dans le système aromatique pi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le second doublet non liant de l'hétéroatome reste localisé dans une orbitale hybride sp2 dans le plan du cycle.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les deux doublets non liants de l'oxygène participent simultanément au système aromatique pi.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Un atome ne peut fournir qu'UNE SEULE orbitale p perpendiculaire au cycle pour le système pi délocalisé ! L'un des doublets est dans cette orbitale p (participant aux 6 e- pi), tandis que l'autre est dans une orbitale sp2 dans le plan du cycle (ne participant pas)."
+    },
+    {
+      "q": "Dans le buta-1,3-diène (CH2=CH-CH=CH2) dans son état fondamental :",
+      "tags": [
+        "Butadiène",
+        "OM pi",
+        "Longueur de liaison"
+      ],
+      "options": [
+        {
+          "text": "Les 4 atomes de carbone sont hybridés sp2 et coplanaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "La combinaison des 4 orbitales 2p donne 4 orbitales moléculaires pi (deux liantes pi1, pi2 et deux antiliantes pi3*, pi4*).",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison centrale C2-C3 (0,148 nm) est significativement plus courte qu'une liaison simple C-C standard d'alcane (0,154 nm).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les 4 électrons pi occupent les deux orbitales liantes pi1 et pi2.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'orbitale HOMO (la plus haute occupée) est pi1.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans le butadiène, 4 électrons occupent pi1 (2 e-) et pi2 (2 e-). L'orbitale HOMO est donc pi2, et la LUMO (la plus basse vacante) est pi3*. Le raccourcissement de C2-C3 prouve le caractère partiel de double liaison conféré par la délocalisation."
+    },
+    {
+      "q": "À propos des effets électroniques mésomères (+M et -M) :",
+      "tags": [
+        "Effets mésomères",
+        "+M et -M",
+        "Substituants"
+      ],
+      "options": [
+        {
+          "text": "Un groupement est dit mésomère donneur (+M) s'il cède de la densité électronique au système conjugué adjacent grâce à un doublet non liant (ex : -OH, -OCH3, -NH2, halogènes).",
+          "isCorrect": true
+        },
+        {
+          "text": "Un groupement est dit mésomère attracteur (-M) s'il attire les électrons du système conjugué via une liaison multiple avec un hétéroatome électronégatif (ex : -NO2, -C=O, -CN, -COOH).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'effet mésomère se transmet sans atténuation tout au long d'un système conjugué continu.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'effet inductif (+I ou -I) s'atténue très rapidement avec la distance (quasiment négligeable au-delà de 3 liaisons sigma).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'effet inductif l'emporte toujours en intensité sur l'effet mésomère, quelle que soit la nature du substituant.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Règle générale : l'effet mésomère l'emporte presque TOUJOURS sur l'effet inductif (ex: dans l'aniline ou le phénol, -NH2 et -OH sont fortement donneurs globaux car +M >> -I). La seule exception majeure concerne les HALOGÈNES sur un cycle aromatique, où l'effet inductif attracteur -I l'emporte sur l'effet donneur +M."
+    },
+    {
+      "q": "Sur le cycle aromatique du phénol (C6H5-OH), l'effet mésomère donneur (+M) du groupement -OH active le cycle et oriente la substitution électrophile aromatique :",
+      "tags": [
+        "Substitution électrophile",
+        "Orientation",
+        "Phénol"
+      ],
+      "options": [
+        {
+          "text": "Exclusivement en position méta.",
+          "isCorrect": false
+        },
+        {
+          "text": "En positions ortho et para.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le groupement -OH désactive le cycle aromatique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les formes mésomères font apparaître des charges formelles négatives sur les carbones ortho et para.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le doublet de l'oxygène se délocalise sur le cycle benzénique. Les formes mésomères montrent l'apparition d'une charge partielle négative spécifiquement sur les positions ORTHO et PARA, qui deviennent très nucléophiles et réagissent rapidement avec les électrophiles."
+    },
+    {
+      "q": "Sur le nitrobenzène (C6H5-NO2), le groupement nitro (-NO2) est :",
+      "tags": [
+        "Nitrobenzène",
+        "-M et -I",
+        "Désactivation"
+      ],
+      "options": [
+        {
+          "text": "Fortement désactivant par effets attracteurs -M et -I.",
+          "isCorrect": true
+        },
+        {
+          "text": "Orienteur en position méta pour les substitutions électrophiles ultérieures.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les formes mésomères font apparaître des charges positives en positions ortho et para, rendant la position méta la moins défavorisée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Fortement activant en ortho et para.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le groupement -NO2 appauvrit tout le cycle en électrons (-I et -M). Les positions ortho et para portent des charges positives dans les formes limites : elles sont extrêmement désactivées. L'attaque électrophile ne peut se faire (très lentement) qu'en position méta."
+    },
+    {
+      "q": "L'aniline (C6H5-NH2) a un pKa de son acide conjugué (C6H5-NH3+) égal à 4,6, alors que la cyclohexylamine (C6H11-NH2) a un pKa de 10,6. Pourquoi l'aniline est-elle environ 1 million de fois MOINS BASIQUE que la cyclohexylamine ?",
+      "tags": [
+        "Aniline",
+        "Basicité",
+        "Délocalisation"
+      ],
+      "options": [
+        {
+          "text": "Le doublet non liant de l'azote de l'aniline est délocalisé par mésomérie sur le cycle aromatique, réduisant sa disponibilité pour capter un proton.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protonation de l'aniline supprime la délocalisation mésomère du doublet de l'azote, ce qui est énergétiquement très coûteux.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans la cyclohexylamine, le cycle est saturé : le doublet de l'azote n'est pas délocalisé et reste totalement disponible pour fixer un proton.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'azote de l'aniline est hybridé sp et ne possède pas de doublet libre.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La délocalisation mésomère (+M) du doublet de NH2 dans le cycle aromatique stabilise la forme neutre de l'aniline. La protonation en anilinium C6H5-NH3+ détruit cette stabilisation par résonance, ce qui affaiblit considérablement la basicité de l'aniline par rapport aux amines aliphatiques."
+    },
+    {
+      "q": "Parmi les composés polycycliques aromatiques suivants, lequel/lesquels respecte(nt) la règle de Hückel ?",
+      "tags": [
+        "Hydrocarbures aromatiques",
+        "Naphtalène",
+        "Anthracène"
+      ],
+      "options": [
+        {
+          "text": "Le naphtalène (10 électrons pi, n = 2).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'anthracène (14 électrons pi, n = 3).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le phénanthrène (14 électrons pi, n = 3).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'azulène (10 électrons pi, n = 2, système bicyclique condensé 5-7).",
+          "isCorrect": true
+        },
+        {
+          "text": "Tous ces hydrocarbures sont aromatiques.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Tous ces composés respectent 4n+2 : 10 e- pi (n=2 pour naphtalène et azulène) et 14 e- pi (n=3 pour anthracène et phénanthrène). Ils sont entièrement conjugués, plans et aromatiques."
+    },
+    {
+      "q": "Concernant l'absorption des radiations lumineuses (spectroscopie UV-Visible) par les molécules conjuguées :",
+      "tags": [
+        "Spectroscopie UV-Visible",
+        "Conjugaison",
+        "Effet bathochrome"
+      ],
+      "options": [
+        {
+          "text": "L'absorption correspond à la transition électronique d'un électron de l'orbitale HOMO vers l'orbitale LUMO (transition pi -> pi*).",
+          "isCorrect": true
+        },
+        {
+          "text": "Plus la conjugaison s'étend (nombre de doubles liaisons alternées croissant), plus l'écart énergétique Delta E = E(LUMO) - E(HOMO) DIMINUE.",
+          "isCorrect": true
+        },
+        {
+          "text": "La diminution de Delta E entraîne un déplacement de l'absorption vers les plus grandes longueurs d'onde (effet bathochrome ou déplacement vers le rouge).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le bêta-carotène (11 doubles liaisons conjuguées) absorbe dans le bleu et apparaît de couleur orange.",
+          "isCorrect": true
+        },
+        {
+          "text": "Plus une molécule est conjuguée, plus elle absorbe dans l'ultraviolet lointain à très courte longueur d'onde.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'extension de la conjugaison resserre l'écart HOMO-LUMO (Delta E diminue). Comme lambda = h*c / Delta E, la longueur d'onde d'absorption augmente (effet bathochrome). Lorsque lambda entre dans le domaine visible (400 - 750 nm), la molécule devient colorée !"
+    },
+    {
+      "q": "Pourquoi l'acide acétique CH3-COOH (pKa = 4,75) est-il beaucoup plus acide que l'éthanol CH3-CH2-OH (pKa = 16) ?",
+      "tags": [
+        "Acidité",
+        "Carboxylate",
+        "Stabilisation mésomère"
+      ],
+      "options": [
+        {
+          "text": "L'anion acétate CH3-COO- est stabilisé par délocalisation mésomère de la charge négative sur les deux atomes d'oxygène équivalents.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'anion éthanolate CH3-CH2-O- porte sa charge négative localisée sur un seul atome d'oxygène.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans l'ion acétate, les deux liaisons C-O ont rigoureusement la même longueur intermédiaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'éthanol est un acide fort dans l'eau.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans CH3-COO-, la charge négative est partagée équitablement entre 2 oxygènes par mésomérie : [O=C-O-] <-> [-O-C=O]. Cette stabilisation par résonance déplace fortement l'équilibre vers la déprotonation, rendant l'acide carboxylique plus de 10^11 fois plus acide que l'alcool !"
+    },
+    {
+      "q": "Le cation tropylium (C7H7+) est remarquablement stable en solution aqueuse car :",
+      "tags": [
+        "Tropylium",
+        "Cation aromatique",
+        "Hückel"
+      ],
+      "options": [
+        {
+          "text": "C'est un cycle plan heptagonal à 6 électrons pi délocalisés (n = 1).",
+          "isCorrect": true
+        },
+        {
+          "text": "La charge positive est délocalisée de façon équivalente sur les 7 atomes de carbone du cycle.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il possède une énergie de résonance aromatique élevée.",
+          "isCorrect": true
+        },
+        {
+          "text": "C'est un radical libre hautement instable.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'ion cycloheptatriényle (tropylium) a 3 doubles liaisons conjuguées avec une lacune électronique sur le 7ème carbone. Il a 6 électrons pi sur 7 atomes, respectant Hückel (4n+2 avec n=1) : il est aromatique et particulièrement stable."
+    },
+    {
+      "q": "Quelle est la définition d'un effet hyperauxochrome (ou effet hyperchrome) en spectroscopie moléculaire ?",
+      "tags": [
+        "Spectroscopie",
+        "Effet hyperchrome",
+        "Définitions"
+      ],
+      "options": [
+        {
+          "text": "Une augmentation de l'intensité de l'absorption (augmentation du coefficient d'extinction molaire epsilon).",
+          "isCorrect": true
+        },
+        {
+          "text": "Un déplacement du maximum d'absorption vers les grandes longueurs d'onde.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une diminution de l'intensité de l'absorption.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un déplacement vers les courtes longueurs d'onde.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Rappels de spectroscopie PASS : Bathochrome = déplacement vers les grandes longueurs d'onde (rouge) ; Hypsochrome = déplacement vers les courtes longueurs d'onde (bleu) ; Hyperchrome = augmentation de l'absorbance (epsilon augmente) ; Hypochrome = diminution de l'absorbance."
+    },
+    {
+      "q": "L'addition d'un équivalent de brome Br2 sur le buta-1,3-diène à basse température (-80 °C) donne majoritairement :",
+      "tags": [
+        "Butadiène",
+        "Addition 1,2 vs 1,4",
+        "Contrôle cinétique"
+      ],
+      "options": [
+        {
+          "text": "Le produit d'addition 1,2 : le 3,4-dibromobut-1-ène (produit cinétique).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le produit d'addition 1,4 : le 1,4-dibromobut-2-ène (produit thermodynamique).",
+          "isCorrect": false
+        },
+        {
+          "text": "La réaction ne se produit pas à basse température.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un polymère exclusivement.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À basse température (-80 °C, contrôle cinétique), l'addition 1,2 est majoritaire car l'attaque sur le carbocation allylique a lieu sur le carbone adjacent le plus proche. À haute température (40 °C, contrôle thermodynamique), l'addition 1,4 prédomine car l'alcène interne disubstitué obtenu est plus stable que l'alcène terminal monosubstitué."
+    }
+  ]
+}

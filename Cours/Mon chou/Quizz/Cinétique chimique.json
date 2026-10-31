@@ -1,0 +1,667 @@
+{
+  "name": "Chimie - Cinétique chimique",
+  "folder": "PASS - Chimie",
+  "description": "Vitesses de réaction, ordres partiels et globaux, lois intégrées (ordre 0, 1, 2), temps de demi-réaction, loi d'Arrhenius, théorie du complexe activé et catalyse.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant la vitesse globale d'une réaction chimique aA + bB -> cC + dD en milieu homogène et à volume constant, quelle(s) proposition(s) est/sont EXACTE(S) ?",
+      "tags": [
+        "Vitesse de réaction",
+        "Stœchiométrie",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "La vitesse de réaction v s'exprime par v = -(1/a)*(d[A]/dt) = -(1/b)*(d[B]/dt) = +(1/c)*(d[C]/dt) = +(1/d)*(d[D]/dt).",
+          "isCorrect": true
+        },
+        {
+          "text": "La vitesse de réaction est toujours une grandeur positive ou nulle.",
+          "isCorrect": true
+        },
+        {
+          "text": "La vitesse de disparition d'un réactif A est égale à d[A]/dt.",
+          "isCorrect": false
+        },
+        {
+          "text": "Si le coefficient stœchiométrique de A est a = 2, la vitesse de disparition de A est deux fois plus petite que la vitesse globale de la réaction.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'unité usuelle de la vitesse volumique de réaction dans le SI est le mol.L^-1.s^-1.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La vitesse globale v = -(1/a) d[A]/dt = (1/c) d[C]/dt. Par définition, v >= 0. La vitesse de disparition de A est v_disp(A) = -d[A]/dt. Si a = 2, v_disp(A) = -d[A]/dt = 2*v, donc elle est DEUX FOIS PLUS GRANDE que la vitesse globale v, et non pas deux fois plus petite. L'unité SI est bien mol.L^-1.s^-1."
+    },
+    {
+      "q": "Une réaction chimique admet une loi de vitesse de la forme v = k * [A]^alpha * [B]^beta. Quelle(s) affirmation(s) est/sont VRAIE(S) ?",
+      "tags": [
+        "Ordre de réaction",
+        "Constante de vitesse"
+      ],
+      "options": [
+        {
+          "text": "Les ordres partiels alpha et beta sont obligatoirement égaux aux coefficients stœchiométriques a et b de l'équation bilan.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'ordre global de la réaction est la somme des ordres partiels, soit n = alpha + beta.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les ordres partiels peuvent être nuls, fractionnaires ou même négatifs.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une réaction chimique possède toujours un ordre cinétique défini.",
+          "isCorrect": false
+        },
+        {
+          "text": "La constante de vitesse k dépend de la température selon la loi d'Arrhenius, mais elle est indépendante des concentrations des réactifs.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les ordres partiels sont expérimentaux et ne coïncident avec les coefficients stœchiométriques QUE pour un acte élémentaire (loi de van 't Hoff). De nombreuses réactions complexes n'admettent pas d'ordre cinétique. Les ordres peuvent être nuls, fractionnaires ou négatifs (effet inhibiteur). La constante k dépend de T (Arrhenius) et de la présence d'un catalyseur, mais pas des concentrations."
+    },
+    {
+      "q": "Quelle est l'unité de la constante de vitesse k pour une réaction d'ordre global 2 ?",
+      "tags": [
+        "Constante de vitesse",
+        "Unités",
+        "Ordre 2"
+      ],
+      "options": [
+        {
+          "text": "s^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "mol.L^-1.s^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "L.mol^-1.s^-1",
+          "isCorrect": true
+        },
+        {
+          "text": "L^2.mol^-2.s^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "Grandeur sans dimension",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "v = k [A]^2. Comme [v] = mol.L^-1.s^-1 et [[A]^2] = mol^2.L^-2, [k] = [v] / [[A]^2] = (mol.L^-1.s^-1)/(mol^2.L^-2) = L.mol^-1.s^-1 (ou mol^-1.L.s^-1). Pour rappel : ordre 0 -> mol.L^-1.s^-1 ; ordre 1 -> s^-1 ; ordre 2 -> L.mol^-1.s^-1 ; ordre n -> (mol.L^-1)^(1-n).s^-1."
+    },
+    {
+      "q": "Pour une réaction d'ordre 1 du type A -> Produits, avec une constante de vitesse k = 0,0693 min^-1, quel est le temps de demi-réaction t1/2 ?",
+      "tags": [
+        "Calcul",
+        "Ordre 1",
+        "Temps de demi-réaction"
+      ],
+      "options": [
+        {
+          "text": "5 minutes",
+          "isCorrect": false
+        },
+        {
+          "text": "10 minutes",
+          "isCorrect": true
+        },
+        {
+          "text": "14,4 minutes",
+          "isCorrect": false
+        },
+        {
+          "text": "20 minutes",
+          "isCorrect": false
+        },
+        {
+          "text": "Il est impossible de répondre sans connaître la concentration initiale [A]0.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour un ordre 1, t1/2 = ln(2)/k. Avec ln(2) ≈ 0,693, t1/2 = 0,693 / 0,0693 min^-1 = 10 minutes. Remarque fondamentale : pour un ordre 1, t1/2 est rigoureusement INDÉPENDANT de la concentration initiale [A]0."
+    },
+    {
+      "q": "Une substance médicamenteuse A se décompose selon une cinétique d'ordre 1 avec t1/2 = 4 heures. Au bout de combien de temps reste-t-il exactement 12,5 % de la dose initiale ?",
+      "tags": [
+        "Calcul",
+        "Demi-vie",
+        "Ordre 1"
+      ],
+      "options": [
+        {
+          "text": "8 heures",
+          "isCorrect": false
+        },
+        {
+          "text": "12 heures",
+          "isCorrect": true
+        },
+        {
+          "text": "16 heures",
+          "isCorrect": false
+        },
+        {
+          "text": "24 heures",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Après n demi-vies, la fraction restante est (1/2)^n. 1 demi-vie (4h) -> 50% ; 2 demi-vies (8h) -> 25% ; 3 demi-vies (12h) -> 12,5%. Il faut donc 3 * 4 h = 12 heures."
+    },
+    {
+      "q": "Concernant le temps de demi-réaction t1/2 d'une réaction d'ordre 2 du type 2A -> Produits (v = k[A]^2), quelle proposition est VRAIE ?",
+      "tags": [
+        "Ordre 2",
+        "Temps de demi-réaction"
+      ],
+      "options": [
+        {
+          "text": "t1/2 est indépendant de la concentration initiale en réactif.",
+          "isCorrect": false
+        },
+        {
+          "text": "t1/2 est inversement proportionnel à la concentration initiale : t1/2 = 1 / (k * [A]0).",
+          "isCorrect": true
+        },
+        {
+          "text": "t1/2 est directement proportionnel à la concentration initiale : t1/2 = [A]0 / (2k).",
+          "isCorrect": false
+        },
+        {
+          "text": "t1/2 augmente lorsque la concentration initiale augmente.",
+          "isCorrect": false
+        },
+        {
+          "text": "t1/2 = ln(2) / k.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour une réaction d'ordre 2 (loi v = k[A]^2 où -d[A]/dt = 2k[A]^2 ou conventionnellement d[A]/dt = -k[A]^2), 1/[A] - 1/[A]0 = kt. À t1/2, [A] = [A]0/2, d'où 2/[A]0 - 1/[A]0 = kt1/2 => t1/2 = 1/(k[A]0). Donc t1/2 est inversement proportionnel à la concentration initiale : plus la solution est concentrée, plus la réaction est rapide et plus t1/2 est court !"
+    },
+    {
+      "q": "Dans la méthode d'intégration graphique, quelle relation linéaire permet d'affirmer avec certitude qu'une réaction A -> Produits est d'ordre 1 ?",
+      "tags": [
+        "Cinétique",
+        "Linéarisation",
+        "Ordre 1"
+      ],
+      "options": [
+        {
+          "text": "[A] = f(t) est une droite de pente négative -k.",
+          "isCorrect": false
+        },
+        {
+          "text": "1/[A] = f(t) est une droite de pente positive +k.",
+          "isCorrect": false
+        },
+        {
+          "text": "ln([A]) = f(t) est une droite de pente négative -k.",
+          "isCorrect": true
+        },
+        {
+          "text": "1/[A]^2 = f(t) est une droite de pente positive +2k.",
+          "isCorrect": false
+        },
+        {
+          "text": "ln([A]0/[A]) = f(t) est une courbe exponentielle décroissante.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'intégration de -d[A]/dt = k[A] donne ln([A]) = ln([A]0) - kt. Le tracé de ln([A]) en fonction du temps t est une droite de pente -k et d'ordonnée à l'origine ln([A]0). [A] = f(t) linéaire caractérise l'ordre 0, tandis que 1/[A] = f(t) linéaire caractérise l'ordre 2."
+    },
+    {
+      "q": "La méthode de dégénérescence de l'ordre (ou méthode d'isolement d'Ostwald) consiste à :",
+      "tags": [
+        "Ostwald",
+        "Dégénérescence de l'ordre",
+        "Méthodologie"
+      ],
+      "options": [
+        {
+          "text": "Diminuer la température à 0 K pour bloquer les réactions secondaires.",
+          "isCorrect": false
+        },
+        {
+          "text": "Introduire un réactif B en très large excès par rapport au réactif A ([B]0 >> [A]0), de sorte que [B] reste quasi-constante au cours du temps.",
+          "isCorrect": true
+        },
+        {
+          "text": "Mesurer la vitesse initiale en fixant la concentration de tous les réactifs à une mole par litre.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ajouter un inhibiteur compétitif irréversible pour ralentir la vitesse de disparition du réactif limitant.",
+          "isCorrect": false
+        },
+        {
+          "text": "Faire varier la pression totale du système pour modifier l'ordre moléculaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Si [B]0 >> [A]0, la variation de [B] au cours du temps est négligeable, donc [B](t) ≈ [B]0. La loi v = k [A]^alpha [B]^beta devient v = k_app [A]^alpha avec k_app = k [B]0^beta (constante apparente). Cela permet de déterminer l'ordre partiel alpha isolément."
+    },
+    {
+      "q": "À propos de la loi d'Arrhenius k = A * exp(-Ea / (R*T)), quelles propositions sont EXACTES ?",
+      "tags": [
+        "Arrhenius",
+        "Énergie d'activation",
+        "Température"
+      ],
+      "options": [
+        {
+          "text": "A est le facteur pré-exponentiel (ou facteur de fréquence), exprimé dans la même unité que k.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ea est l'énergie d'activation (en J.mol^-1 ou kJ.mol^-1), qui représente la barrière énergétique minimale que doivent franchir les réactifs pour se transformer en produits.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une augmentation de température entraîne une augmentation de la constante de vitesse k pour toute réaction ayant Ea > 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le tracé de ln(k) en fonction de 1/T est une droite de pente positive égale à +Ea/R.",
+          "isCorrect": false
+        },
+        {
+          "text": "Plus l'énergie d'activation Ea est élevée, plus la vitesse de réaction est sensible aux variations de température.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "ln(k) = ln(A) - Ea/(RT). Le tracé de ln(k) en fonction de 1/T donne une droite de pente NÉGATIVE égale à -Ea/R (et non pas positive). Toutes les autres affirmations sont rigoureusement vraies : plus Ea est grande, plus la pente en valeur absolue est forte, rendant k extrêmement sensible à T."
+    },
+    {
+      "q": "La théorie de l'état de transition (complexe activé) stipule que :",
+      "tags": [
+        "État de transition",
+        "Complexe activé",
+        "Diagramme énergétique"
+      ],
+      "options": [
+        {
+          "text": "L'état de transition correspond à un minimum local d'énergie potentielle dans lequel la molécule peut être isolée et stockée.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'état de transition correspond au maximum énergétique le long de la coordonnée de réaction pour un acte élémentaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'état de transition possède une durée de vie infinie et des liaisons chimiques parfaitement stables.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un intermédiaire de réaction correspond à un puits de potentiel (minimum relatif d'énergie) entre deux états de transition.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'énergie d'activation Ea correspond à la différence d'enthalpie libre standard de la réaction globale Delta_r G°.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'état de transition est un point-selle (maximum d'énergie sur le chemin réactionnel), de durée de vie ultra-courte (de l'ordre de la vibration moléculaire ~ 10^-13 s), non isolable. En revanche, un intermédiaire réactionnel (carbocation, radical...) se situe dans un creux (minimum relatif) et possède une durée de vie finie mesurable. Ea ne doit pas être confondue avec Delta_r G° !"
+    },
+    {
+      "q": "Soit la réaction équilibrée (renversable) A <=> B, où la réaction directe suit une cinétique d'ordre 1 de constante k1, et la réaction inverse suit un ordre 1 de constante k-1. À l'équilibre dynamique :",
+      "tags": [
+        "Réaction équilibrée",
+        "Constante d'équilibre",
+        "Micro-réversibilité"
+      ],
+      "options": [
+        {
+          "text": "La vitesse de la réaction directe v1 est égale à la vitesse de la réaction inverse v-1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les concentrations [A] et [B] sont obligatoirement égales à l'équilibre.",
+          "isCorrect": false
+        },
+        {
+          "text": "La constante d'équilibre thermodynamique s'exprime par K = k1 / k-1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les réactions directe et inverse cessent complètement d'avoir lieu à l'équilibre.",
+          "isCorrect": false
+        },
+        {
+          "text": "La vitesse nette de transformation d[B]/dt s'annule à l'équilibre.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "À l'équilibre chimique, le système est dynamique : v1 = v-1 = k1 [A]eq = k-1 [B]eq, donc la vitesse nette d[B]/dt = v1 - v-1 = 0. La constante K = [B]eq / [A]eq = k1 / k-1. Les concentrations ne sont pas forcément égales ([B]eq/[A]eq dépend de K)."
+    },
+    {
+      "q": "Concernant le rôle et les propriétés d'un catalyseur, quelle(s) proposition(s) est/sont EXACTE(S) ?",
+      "tags": [
+        "Catalyseur",
+        "Thermodynamique",
+        "Cinétique"
+      ],
+      "options": [
+        {
+          "text": "Un catalyseur augmente la vitesse de la réaction en diminuant l'énergie d'activation Ea du processus.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un catalyseur déplace l'état d'équilibre final vers une production accrue de produits.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un catalyseur accélère de façon identique la réaction directe et la réaction inverse pour un processus réversible.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un catalyseur modifie l'enthalpie libre standard de réaction Delta_r G°.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un catalyseur participe au mécanisme réactionnel mais est régénéré intact à la fin du cycle catalytique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un catalyseur peut rendre thermodynamiquement possible une réaction dont le Delta_r G° est strictement positif sans apport d'énergie externe.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Un catalyseur modifie uniquement la CINÉTIQUE (en ouvrant un nouveau chemin réactionnel avec un ou plusieurs états de transition d'énergie d'activation plus faible). Il n'affecte en RIEN les grandeurs thermodynamiques d'état (Delta_r G°, Delta_r H°, Keq). Il accélère autant le sens direct que le sens inverse (k1 et k-1 augmentent dans le même rapport), atteignant l'équilibre plus vite sans le déplacer !"
+    },
+    {
+      "q": "Une réaction d'ordre 1 possède une énergie d'activation Ea = 50 kJ.mol^-1 à 300 K. Si l'on augmente la température, que devient la constante de vitesse k ? (On donne R = 8,314 J.K^-1.mol^-1)",
+      "tags": [
+        "Arrhenius",
+        "Sens de variation"
+      ],
+      "options": [
+        {
+          "text": "k augmente.",
+          "isCorrect": true
+        },
+        {
+          "text": "k diminue.",
+          "isCorrect": false
+        },
+        {
+          "text": "k reste constante car l'ordre est 1.",
+          "isCorrect": false
+        },
+        {
+          "text": "k s'annule car l'énergie thermique détruit les réactifs.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Selon Arrhenius, d(ln k)/dT = Ea / (RT^2). Puisque Ea > 0, d(ln k)/dT > 0, donc k augmente toujours avec la température pour une réaction activée thermiquement."
+    },
+    {
+      "q": "Pour une réaction d'ordre 0 du type A -> Produits avec une vitesse v = k :",
+      "tags": [
+        "Ordre 0",
+        "Cinétique",
+        "Lois de vitesse"
+      ],
+      "options": [
+        {
+          "text": "La vitesse de réaction est indépendante de la concentration en réactif A tant que A est présent.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'équation intégrée est [A] = [A]0 - k*t.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le temps de demi-réaction est donné par t1/2 = [A]0 / (2k).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le temps nécessaire à la disparition complète du réactif A est t_total = [A]0 / k.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'unité de k pour un ordre 0 est la seconde (s).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour un ordre 0 : v = -d[A]/dt = k => [A] = [A]0 - kt. À t1/2, [A]0/2 = [A]0 - k t1/2 => t1/2 = [A]0 / (2k). À disparition totale ([A]=0), t = [A]0 / k. L'unité de k est mol.L^-1.s^-1 (et non s)."
+    },
+    {
+      "q": "On étudie la réaction 2 NO (g) + O2 (g) -> 2 NO2 (g). Lorsque l'on double la concentration initiale de NO en maintenant celle de O2 constante, la vitesse initiale est multipliée par 4. Lorsque l'on triple la concentration de O2 en maintenant celle de NO constante, la vitesse initiale est multipliée par 3. Quels sont les ordres partiels et l'ordre global ?",
+      "tags": [
+        "Calcul",
+        "Ordre partiel",
+        "Ordre global"
+      ],
+      "options": [
+        {
+          "text": "Ordre partiel par rapport à NO = 2 ; ordre partiel par rapport à O2 = 1 ; ordre global = 3.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ordre partiel par rapport à NO = 1 ; ordre partiel par rapport à O2 = 2 ; ordre global = 3.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ordre partiel par rapport à NO = 2 ; ordre partiel par rapport à O2 = 2 ; ordre global = 4.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ordre partiel par rapport à NO = 4 ; ordre partiel par rapport à O2 = 3 ; ordre global = 7.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "v0 = k [NO]^alpha [O2]^beta. Quand [NO] est multiplié par 2 : 2^alpha = 4 = 2^2 => alpha = 2. Quand [O2] est multiplié par 3 : 3^beta = 3 = 3^1 => beta = 1. L'ordre global n = 2 + 1 = 3."
+    },
+    {
+      "q": "La molécularité d'un acte élémentaire :",
+      "tags": [
+        "Molécularité",
+        "Acte élémentaire",
+        "Définition"
+      ],
+      "options": [
+        {
+          "text": "Représente le nombre d'entités réactives (atomes, molécules, ions) qui entrent en collision lors de cet acte.",
+          "isCorrect": true
+        },
+        {
+          "text": "Est toujours un nombre entier strictement positif, valant le plus souvent 1 (monomoléculaire) ou 2 (bimoléculaire).",
+          "isCorrect": true
+        },
+        {
+          "text": "Peut être égale à 0 pour une réaction spontanée.",
+          "isCorrect": false
+        },
+        {
+          "text": "Est égale aux ordres partiels de cet acte élémentaire selon la loi de van 't Hoff.",
+          "isCorrect": true
+        },
+        {
+          "text": "Peut couramment valoir 4 ou 5 dans les solutions liquides.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La molécularité est le nombre de molécules participant au choc élémentaire. Les chocs trimoléculaires sont déjà rarissimes, et au-delà de 3, la probabilité d'une collision simultanée est quasiment nulle. La molécularité ne peut pas valoir 0 (il faut au moins 1 molécule qui se dissocie)."
+    },
+    {
+      "q": "Quelle est l'expression de la constante de vitesse k selon la théorie d'Eyring (théorie du complexe activé) ?",
+      "tags": [
+        "Eyring",
+        "Complexe activé",
+        "Thermodynamique cinétique"
+      ],
+      "options": [
+        {
+          "text": "k = (kB * T / h) * exp(-Delta G_act# / (R*T))",
+          "isCorrect": true
+        },
+        {
+          "text": "k = (h / (kB * T)) * exp(-Delta G_act# / (R*T))",
+          "isCorrect": false
+        },
+        {
+          "text": "k = A * exp(+Delta H_act# / (R*T))",
+          "isCorrect": false
+        },
+        {
+          "text": "k = (kB * T / h) * exp(Delta S_act# / R) * exp(-Delta H_act# / (R*T))",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Selon Eyring : k = (kB T / h) exp(-Delta G# / RT). Or Delta G# = Delta H# - T Delta S#, donc k = (kB T / h) exp(Delta S# / R) exp(-Delta H# / RT). Le terme d'entropie d'activation Delta S# reflète la perte de degrés de liberté lors de la formation du complexe activé (souvent négative pour une réaction bimoléculaire)."
+    },
+    {
+      "q": "Dans une réaction consécutive A -> B -> C (deux réactions d'ordre 1 de constantes respectives k1 et k2) :",
+      "tags": [
+        "Réactions consécutives",
+        "Intermédiaire réactionnel",
+        "Étape cinétiquement déterminante"
+      ],
+      "options": [
+        {
+          "text": "Si k1 << k2, l'étape 1 est l'étape cinétiquement limitante (ou déterminante), et la vitesse de formation de C est contrôlée par k1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si k1 >> k2, l'intermédiaire B s'accumule transitoirement dans le milieu réactionnel.",
+          "isCorrect": true
+        },
+        {
+          "text": "La concentration en A décroît selon une loi exponentielle simple : [A](t) = [A]0 * exp(-k1*t).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'approximation de l'état quasi-stationnaire (AEQS) sur l'intermédiaire B est applicable dès lors que B est très réactif et que sa concentration reste très faible (k2 >> k1).",
+          "isCorrect": true
+        },
+        {
+          "text": "La concentration en C commence à croître instantanément avec une vitesse maximale dès t = 0.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À t=0, [B]=0, donc la vitesse de formation de C (v = k2[B]) est NULLE à t=0 (il y a un temps de latence ou période d'induction). Toutes les autres propositions sont des piliers fondamentaux de la cinétique des réactions consécutives."
+    },
+    {
+      "q": "Une réaction d'ordre 1 a une constante k = 0,02 s^-1. Quelle fraction du réactif initial a DISPARU au bout de 50 secondes ? (On donne e^-1 ≈ 0,37)",
+      "tags": [
+        "Calcul",
+        "Ordre 1",
+        "Fraction disparue"
+      ],
+      "options": [
+        {
+          "text": "37 %",
+          "isCorrect": false
+        },
+        {
+          "text": "50 %",
+          "isCorrect": false
+        },
+        {
+          "text": "63 %",
+          "isCorrect": true
+        },
+        {
+          "text": "73 %",
+          "isCorrect": false
+        },
+        {
+          "text": "100 %",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Piège classique concours PASS : fraction RESTANTE vs fraction DISPARUE ! [A](t) = [A]0 exp(-k*t) = [A]0 exp(-0,02 * 50) = [A]0 exp(-1) = 0,37 [A]0. La fraction restante est 37%. Donc la fraction DISPARUE est 1 - 0,37 = 0,63, soit 63 % !"
+    },
+    {
+      "q": "Parmi les facteurs suivants, lequel/lesquels NE MODIFIE(NT) PAS la constante de vitesse k d'une réaction en solution aqueuse ?",
+      "tags": [
+        "Facteurs cinétiques",
+        "Constante k",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "La concentration initiale des réactifs.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le volume total du réacteur (à concentration constante).",
+          "isCorrect": true
+        },
+        {
+          "text": "La température du milieu réactionnel.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'ajout d'un catalyseur approprié.",
+          "isCorrect": false
+        },
+        {
+          "text": "La nature du solvant.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La constante k dépend de la température (Arrhenius), du solvant (constante diélectrique, solvatation), de la force ionique, et du catalyseur. En revanche, k est totalement INDÉPENDANTE des concentrations des réactifs et du volume du réacteur !"
+    },
+    {
+      "q": "Pour une réaction enzymatique obéissant au modèle de Michaelis-Menten : à très forte concentration en substrat ([S] >> KM), la cinétique est d'ordre :",
+      "tags": [
+        "Enzymologie",
+        "Ordre 0",
+        "Michaelis-Menten"
+      ],
+      "options": [
+        {
+          "text": "Ordre 0 par rapport au substrat, avec une vitesse v = Vmax.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ordre 1 par rapport au substrat, avec v = (Vmax/KM)*[S].",
+          "isCorrect": false
+        },
+        {
+          "text": "Ordre 2 par rapport au substrat.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ordre fractionnaire 1/2.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "v = Vmax [S] / (KM + [S]). Si [S] >> KM, KM + [S] ≈ [S], d'où v ≈ Vmax (constante indépendante de [S]) : cinétique d'ordre 0 par saturation des sites actifs de l'enzyme."
+    },
+    {
+      "q": "Concernant la méthode différentielle de Van 't Hoff pour la détermination de l'ordre d'une réaction v = k [A]^alpha :",
+      "tags": [
+        "Van 't Hoff",
+        "Méthode différentielle",
+        "Ordre"
+      ],
+      "options": [
+        {
+          "text": "On trace ln(v) en fonction de ln([A]) et la pente de la droite obtenue est égale à l'ordre partiel alpha.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ordonnée à l'origine de cette droite correspond à ln(k).",
+          "isCorrect": true
+        },
+        {
+          "text": "Cette méthode nécessite de déterminer les vitesses instantanées par la tangente à la courbe [A] = f(t) à différents instants.",
+          "isCorrect": true
+        },
+        {
+          "text": "La méthode différentielle ne peut s'appliquer qu'aux réactions d'ordre 1.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "v = k [A]^alpha => ln(v) = ln(k) + alpha * ln([A]). Le tracé de ln(v) en fonction de ln([A]) est une droite de pente alpha et d'ordonnée à l'origine ln(k). Elle est générale et s'applique à n'importe quel ordre."
+    }
+  ]
+}

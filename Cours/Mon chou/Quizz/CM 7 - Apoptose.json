@@ -1,0 +1,613 @@
+{
+  "name": "CM 7 - Apoptose",
+  "folder": "PASS - Biologie Cellulaire",
+  "description": "Quiz approfondi de niveau PASS sur l'apoptose : caractéristiques morphologiques et biochimiques vs nécrose/autophagie, externalisation de la phosphatidylsérine (Annexine V/IP), caspases, voies extrinsèque (DISC) et intrinsèque (mitochondriale, apoptosome, famille Bcl-2/Bax, p53).",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant les différences morphologiques et cellulaires entre l'apoptose et la nécrose :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Apoptose vs Nécrose"
+      ],
+      "options": [
+        {
+          "text": "L'apoptose est une mort cellulaire programmée caractérisée par la condensation de la chromatine et la formation de corps apoptotiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'apoptose induit une rupture précoce de la membrane plasmique avec libération explosive du contenu cellulaire dans le milieu extracellulaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "La nécrose se caractérise par un gonflement irréversible de la cellule (oncosis), la rupture des membranes et le déclenchement d'une réaction inflammatoire locale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les corps apoptotiques sont rapidement phagocytés par les cellules avoisinantes ou les macrophages sans réaction inflammatoire.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'autophagie se caractérise principalement par une vacuolisation importante du cytoplasme sans condensation initiale de la chromatine.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'apoptose conserve l'intégrité membranaire initiale, condense la chromatine et génère des corps apoptotiques phagocytés sans inflammation. La nécrose provoque un éclatement cellulaire inflammatoire."
+    },
+    {
+      "q": "Concernant l'analyse de la mort cellulaire par cytométrie en flux combinant l'Annexine V-FITC et l'Iodure de Propidium (IP) :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Annexine V",
+        "Iodure de Propidium"
+      ],
+      "options": [
+        {
+          "text": "L'Annexine V se lie avec une haute affinité à la phosphatidylsérine externalisée sur le feuillet externe de la membrane.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'iodure de propidium (IP) est un intercalant de l'ADN qui ne pénètre que dans les cellules dont la membrane plasmique a perdu son intégrité.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules en apoptose précoce sont caractérisées par le profil Annexine V positive et IP négative (Annexine V+ / IP-).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules viables saines sont caractérisées par le profil double négatif (Annexine V- / IP-).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules nécrotiques primaires ou en apoptose très tardive sont typiquement IP positives (IP+).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes. Annexine V+/IP- = apoptose précoce ; Annexine V-/IP- = vivantes ; IP+ = cellules dont la membrane est rompue (nécrose ou apoptose tardive)."
+    },
+    {
+      "q": "Quelle est la signature biochimique classique de la fragmentation de l'ADN lors de l'apoptose ?",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Fragmentation ADN",
+        "CAD"
+      ],
+      "options": [
+        {
+          "text": "Un clivage régulier internucléosomique générant des fragments multiples de 180 à 200 paires de bases (aspect en échelle sur gel).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une dégradation totale et aléatoire sous forme de smear flou continu sans aucune taille préférentielle.",
+          "isCorrect": false
+        },
+        {
+          "text": "La duplication spontanée de tous les télomères chromosomiques.",
+          "isCorrect": false
+        },
+        {
+          "text": "La méthylation irréversible des quatre histones du nucléosome.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La nucléase CAD coupe l'ADN entre les nucléosomes, libérant des fragments de taille multiple du pas nucléosomique (~180-200 pb), produisant l'échelle d'ADN caractéristique."
+    },
+    {
+      "q": "Concernant l'activation de la désoxyribonucléase activée par les caspases (CAD) :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "CAD",
+        "ICAD"
+      ],
+      "options": [
+        {
+          "text": "Dans les cellules vivantes, la CAD est maintenue inactive par son association avec son inhibiteur ICAD.",
+          "isCorrect": true
+        },
+        {
+          "text": "La caspase 3 effectrice clive spécifiquement ICAD, libérant ainsi la CAD active.",
+          "isCorrect": true
+        },
+        {
+          "text": "La CAD active transloque dans le noyau et clive l'ADN génomique en présence d'ions magnésium (Mg2+).",
+          "isCorrect": true
+        },
+        {
+          "text": "La CAD est une protéine de la chaîne respiratoire mitochondriale codée par l'ADNmt.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La caspase 3 active dégrade l'inhibiteur ICAD, libérant la nucléase CAD qui segmente l'ADN internucléosomique en fragments de 180-200 pb."
+    },
+    {
+      "q": "Concernant la famille enzymatique des caspases :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Caspases",
+        "Structure"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des cystéines-protéases qui clivent leurs substrats protéiques spécifiquement après un résidu aspartate (Asp).",
+          "isCorrect": true
+        },
+        {
+          "text": "Chez l'homme, il existe une famille d'environ 11 caspases.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles sont synthétisées sous forme de précurseurs inactifs appelés procaspases.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur activation nécessite le clivage de leur prodomaine, la séparation et le réarrangement en tétramère actif formé de deux grandes et deux petites sous-unités.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles possèdent un atome de plomb dans leur site catalytique actif.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les caspases (Cysteine-Aspartate Proteases) possèdent une cystéine catalytique et clivent après un résidu Aspartate. Elles sont activées par clivage protéolytique de leur prodomaine."
+    },
+    {
+      "q": "Concernant les cibles protéiques majeures des caspases effectrices (caspase 3 et caspase 6) :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Caspases effectrices",
+        "Cibles"
+      ],
+      "options": [
+        {
+          "text": "La caspase 3 clive et inactive l'enzyme de réparation de l'ADN PARP (Poly-ADP Ribose Polymérase).",
+          "isCorrect": true
+        },
+        {
+          "text": "La caspase 3 clive l'inhibiteur ICAD pour activer la CAD.",
+          "isCorrect": true
+        },
+        {
+          "text": "La caspase 6 dégrade les lamines nucléaires, participant à la désorganisation de l'enveloppe nucléaire et du noyau.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les caspases effectrices synthétisent du glycogène pour apporter de l'énergie à la cellule mourante.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le clivage des protéines du cytosquelette contribue à la rétraction cellulaire et au bourgeonnement membranaire.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La caspase 3 clive ICAD et PARP (bloquant la réparation de l'ADN). La caspase 6 clive les lamines A/B/C de la lamina nucléaire. Le cytosquelette est également démantelé."
+    },
+    {
+      "q": "Concernant la voie extrinsèque de l'apoptose (voie des récepteurs de mort) :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Voie extrinsèque",
+        "DISC"
+      ],
+      "options": [
+        {
+          "text": "Elle est déclenchée par des ligands extracellulaires tels que le Fas-Ligand (FasL), le TNF ou TRAIL.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fixation du ligand trimérique induit la trimérisation du récepteur membranaire (ex: Fas / CD95) et le regroupement de ses domaines de mort intracellulaires (DD).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le complexe multiprotéique formé sous la membrane est appelé le DISC (Death-Inducing Signaling Complex).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le DISC recrute des protéines adaptatrices (comme FADD) qui recrutent et activent la procaspase 8 initiatrice.",
+          "isCorrect": true
+        },
+        {
+          "text": "La caspase 8 active peut cliver directement la procaspase 3 effectrice pour propager l'apoptose.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La voie extrinsèque fonctionne via FasL/TNF -> récepteurs à domaine DD -> formation du DISC avec FADD -> activation de la caspase 8 initiatrice -> activation de la caspase 3 effectrice."
+    },
+    {
+      "q": "Comment la voie extrinsèque peut-elle interagir avec la voie intrinsèque mitochondriale pour amplifier le signal apoptotique ?",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Bid",
+        "Diaphonie"
+      ],
+      "options": [
+        {
+          "text": "La caspase 8 activée clive la protéine cytosolique Bid en fragment tBid (truncated Bid).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le fragment tBid transloque à la membrane externe mitochondriale et active les protéines pro-apoptotiques Bax et Bak.",
+          "isCorrect": true
+        },
+        {
+          "text": "Cette diaphonie favorise la libération du cytochrome c dans le cytosol et enclenche la voie mitochondriale.",
+          "isCorrect": true
+        },
+        {
+          "text": "tBid bloque de manière irréversible le pore aqueux des aquaporines.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le clivage de Bid par la caspase 8 produit tBid, qui migre vers la mitochondrie et active Bax/Bak, reliant et amplifiant la voie extrinsèque via la voie intrinsèque (cellules de type II)."
+    },
+    {
+      "q": "Concernant la voie intrinsèque (mitochondriale) de l'apoptose :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Voie intrinsèque",
+        "Apoptosome"
+      ],
+      "options": [
+        {
+          "text": "Elle est déclenchée par des signaux de stress intracellulaire tels que des dommages irréparables à l'ADN, un stress oxydatif ou l'activation d'oncoprotéines.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle implique la perméabilisation de la membrane externe de la mitochondrie sous le contrôle de protéines de la famille Bcl-2/Bax.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le cytochrome c est libéré de l'espace intermembranaire mitochondrial vers le cytosol.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le cytochrome c cytosolique se lie à la protéine Apaf-1 pour former le complexe multimérique de l'apoptosome.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'apoptosome recrute et active la procaspase 9 initiatrice.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Voie intrinsèque : stress -> perméabilité mitochondriale (Bax) -> libération de cytochrome c -> liaison à Apaf-1 en présence de dATP -> assemblage de l'apoptosome -> activation de la caspase 9 -> caspase 3."
+    },
+    {
+      "q": "Concernant l'apoptosome :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Apoptosome"
+      ],
+      "options": [
+        {
+          "text": "C'est un complexe heptamérique formé de molécules d'Apaf-1 associées au cytochrome c.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il possède une structure géométrique en forme de roue de charrette à 7 branches.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il recrute la procaspase 9 par l'intermédiaire de domaines d'interaction homotypiques CARD.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est localisé dans la matrice mitochondriale sous la membrane interne.",
+          "isCorrect": false
+        },
+        {
+          "text": "La caspase 9 activée au sein de l'apoptosome clive et active les caspases effectrices (comme la caspase 3).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'apoptosome est un complexe héxamérique/heptamérique CYTOSOLIQUE formé d'Apaf-1 et de cytochrome c liant la procaspase 9 via son domaine CARD."
+    },
+    {
+      "q": "Concernant l'équilibre fonctionnel entre les protéines de la famille Bcl-2 et Bax :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Bcl-2",
+        "Bax"
+      ],
+      "options": [
+        {
+          "text": "Les protéines telles que Bcl-2 et Bcl-xL sont des molécules anti-apoptotiques favorisant la survie cellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines telles que Bax et Bak sont des molécules pro-apoptotiques favorisant la mort cellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les membres de la famille Bcl-2 et Bax peuvent former des homodimères ou des hétérodimères à la membrane externe mitochondriale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Bcl-2 inhibe la libération du cytochrome c hors de la mitochondrie.",
+          "isCorrect": true
+        },
+        {
+          "text": "Bax forme des pores oligomériques dans la membrane externe mitochondriale facilitant la fuite du cytochrome c.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le ratio Bcl-2 (protecteur anti-apoptotique) / Bax (pro-apoptotique porogène) régit le point de non-retour de la perméabilisation mitochondriale et de la mort cellulaire."
+    },
+    {
+      "q": "Concernant le rôle de la protéine p53 dans l'apoptose :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "p53"
+      ],
+      "options": [
+        {
+          "text": "p53 est un facteur de transcription activé en réponse à des cassures de l'ADN génomique ou à des radiations ionisantes.",
+          "isCorrect": true
+        },
+        {
+          "text": "En cas de dommages à l'ADN irréparables, p53 stimule la transcription de gènes pro-apoptotiques comme Bax.",
+          "isCorrect": true
+        },
+        {
+          "text": "La perte de fonction de p53 par mutation favorise l'échappement des cellules cancéreuses à l'apoptose.",
+          "isCorrect": true
+        },
+        {
+          "text": "p53 est une enzyme lysosomale dégradant les glycolipides du glycocalyx.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "p53 (« gardien du génome ») induit l'arrêt de cycle ou l'apoptose par transcription de cibles pro-apoptotiques (Bax, Puma). Sa mutation est observée dans plus de 50 % des cancers humains."
+    },
+    {
+      "q": "Concernant les molécules inhibant l'apoptose (signaux de survie cellulaire) :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Signaux de survie",
+        "IAP"
+      ],
+      "options": [
+        {
+          "text": "Les protéines de la famille des IAP (Inhibitors of Apoptosis Proteins) se lient aux caspases et bloquent leur activité catalytique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine kinase Akt promeut la survie cellulaire en phosphorylant et inhibant des facteurs pro-apoptotiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines chaperonnes de la famille Hsp (comme Hsp70) peuvent inhiber l'assemblage de l'apoptosome.",
+          "isCorrect": true
+        },
+        {
+          "text": "Bcl-2 empêche l'oligomérisation de Bax à la membrane mitochondriale.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'injection de cytochrome c purifié dans le cytosol protège durablement la cellule contre la mort cellulaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "IAP, Akt, Hsp70 et Bcl-2 sont des freins majeurs de l'apoptose. Le cytochrome c dans le cytosol enclenche directement la formation de l'apoptosome et l'activation des caspases."
+    },
+    {
+      "q": "Quel test cytologique rapide utilisant un colorant vital permet d'identifier spécifiquement les cellules en nécrose par perte d'imperméabilité membranaire ?",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Bleu trypan"
+      ],
+      "options": [
+        {
+          "text": "Le test au bleu de trypan (les cellules mortes/nécrotiques apparaissent bleues car elles ne peuvent exclure le colorant).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le test au rouge neutre qui colore uniquement les mitochondries vivantes en vert.",
+          "isCorrect": false
+        },
+        {
+          "text": "La coloration de Gram qui colore les lysosomes en violet.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le test à l'acide osmique spécifique des ARNt cytosoliques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le bleu de trypan est exclu par les membranes intactes des cellules viables ; seules les cellules à membrane altérée (nécrose ou mort tardive) se colorent en bleu."
+    },
+    {
+      "q": "Quelle coloration hématologique classique permet d'observer morphologiquement la condensation nucléaire des cellules apoptotiques au microscope optique ?",
+      "tags": [
+        "CM 7 - Apoptose",
+        "MGG"
+      ],
+      "options": [
+        {
+          "text": "La coloration de May-Grünwald-Giemsa (MGG).",
+          "isCorrect": true
+        },
+        {
+          "text": "La coloration au noir Soudan B.",
+          "isCorrect": false
+        },
+        {
+          "text": "La réaction à l'or colloïdal de Golgi.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'imprégnation argentique de Cajal.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le May-Grünwald Giemsa (MGG) permet de visualiser les noyaux denses, pycnotiques et fragmentés caractéristiques des cellules en apoptose."
+    },
+    {
+      "q": "Concernant les rôles physiologiques indispensables de l'apoptose au cours de la vie :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Physiologie",
+        "Rôles"
+      ],
+      "options": [
+        {
+          "text": "Élimination des toiles interdigitales au cours du développement embryonnaire pour individualiser les doigts.",
+          "isCorrect": true
+        },
+        {
+          "text": "Renouvellement permanent de l'épithélium intestinal (durée de vie des entérocytes d'environ 7 jours).",
+          "isCorrect": true
+        },
+        {
+          "text": "Élimination des lymphocytes autoréactifs dangereux lors de la sélection thymique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Élimination des cellules endommagées ou infectées par un virus.",
+          "isCorrect": true
+        },
+        {
+          "text": "Formation d'une cicatrice fibreuse inflammatoire hypertrophique à chaque division cellulaire saine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'apoptose élimine les cellules surnuméraires (espaces interdigitaux), maintient l'homéostasie tissulaire (intestin ~7 j, neutrophiles ~5 j) et protège contre l'auto-immunité et les cancers."
+    },
+    {
+      "q": "Quelles conséquences pathologiques résultent d'un DÉFAUT d'apoptose dans l'organisme ?",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Pathologie",
+        "Défaut apoptose"
+      ],
+      "options": [
+        {
+          "text": "L'accumulation de cellules anormales favorisant la tumorigenèse et le développement de cancers.",
+          "isCorrect": true
+        },
+        {
+          "text": "La persistance de lymphocytes autoréactifs favorisant le développement de maladies auto-immunes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une atrophie tissulaire aiguë foudroyante de tous les organes vitaux.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'apparition de résistances aux chimiothérapies induisant l'apoptose.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Un défaut d'apoptose mène à la prolifération anormale, aux cancers et aux maladies auto-immunes. Un excès d'apoptose provoque à l'inverse des pathologies dégénératives (neurodégénérescence, atrophie)."
+    },
+    {
+      "q": "Concernant la durée de vie moyenne de différentes populations cellulaires de l'organisme humain citées dans le cours :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Durée de vie cellulaire"
+      ],
+      "options": [
+        {
+          "text": "Les cellules épithéliales intestinales vivent environ 7 jours.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les globules rouges (hématies) ont une durée de vie d'environ 3 mois (120 jours).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les polynucléaires neutrophiles ont une durée de vie courte d'environ 5 jours.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les plaquettes sanguines circulent environ 8 jours.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules nerveuses matures sont renouvelées intégralement toutes les 48 heures.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Entérocytes ~7 j, hématies ~3 mois (120 j), neutrophiles ~5 j, plaquettes ~8 j, cellules osseuses ~30 ans, et cellules nerveuses généralement pérennes non remplacées."
+    },
+    {
+      "q": "Lors du traitement de cellules leucémiques par l'acide tout-trans rétinoïque (ATRA) :",
+      "tags": [
+        "CM 7 - Apoptose",
+        "ATRA",
+        "Expérience"
+      ],
+      "options": [
+        {
+          "text": "On observe une induction progressive de la différenciation et de la mort cellulaire par apoptose.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'analyse par cytométrie en flux montre une augmentation de la proportion de cellules Annexine V positives au fil des jours.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ATRA est un analogue de la vitamine A utilisé en thérapeutique hématologique.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ATRA détruit instantanément les membranes lipidiques par saponification à froid.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'ATRA (dérivé de la vitamine A) est utilisé dans la leucémie promyélocytaire aiguë (APL) : il restaure la différenciation cellulaire et déclenche l'apoptose des blastes tumoraux."
+    },
+    {
+      "q": "Qu'est-ce que le domaine DD (Death Domain) présent sur les récepteurs de mort comme Fas ?",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Death Domain",
+        "DD"
+      ],
+      "options": [
+        {
+          "text": "Un module d'interaction protéine-protéine intracellulaire homotypique permettant de recruter des adaptateurs (comme FADD) portant également un domaine DD.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une séquence de 34 paires de bases reconnue par la recombinase Cre.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une sous-unité catalytique capable d'hydrolyser l'ATP en AMPc.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un pore lipidique laissant fuiter les enzymes de la matrice mitochondriale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le domaine de mort (DD) est un domaine d'interaction homotypique : le DD du récepteur Fas s'associe au DD de la protéine adaptatrice FADD pour constituer le DISC."
+    },
+    {
+      "q": "Quelle caspase est considérée comme la caspase initiatrice clé de la voie extrinsèque ?",
+      "tags": [
+        "CM 7 - Apoptose",
+        "Caspase 8",
+        "Initiatrice"
+      ],
+      "options": [
+        {
+          "text": "La procaspase 8.",
+          "isCorrect": true
+        },
+        {
+          "text": "La procaspase 9.",
+          "isCorrect": false
+        },
+        {
+          "text": "La procaspase 3.",
+          "isCorrect": false
+        },
+        {
+          "text": "La procaspase 6.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Caspase initiatrice extrinsèque = caspase 8 (au niveau du DISC). Caspase initiatrice intrinsèque = caspase 9 (au niveau de l'apoptosome). Caspases effectrices = 3, 6, 7."
+    }
+  ]
+}

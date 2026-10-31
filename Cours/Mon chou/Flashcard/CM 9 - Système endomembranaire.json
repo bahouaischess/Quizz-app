@@ -1,0 +1,217 @@
+[
+  {
+    "recto": "Quels compartiments constituent le système endomembranaire ?",
+    "verso": "Enveloppe nucléaire, réticulum endoplasmique (REG et REL), appareil de Golgi, endosomes, lysosomes et vésicules de transport. (Mitochondries et peroxysomes en sont EXCLUS).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "Système endomembranaire",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la particule SRP et quelle est sa fonction lors de la translocation au RE ?",
+    "verso": "Ribonucléoprotéine cytosolique (6 protéines + ARN 7SL) reconnaissant le peptide signal hydrophobe N-terminal, interrompant temporairement la traduction et adressant le ribosome au récepteur SRP sur la membrane du RE.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "SRP",
+      "Peptide signal",
+      "Translocation"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle du translocon Sec61 ?",
+    "verso": "Pore aqueux dynamique transmembranaire du RE permettant le passage de la chaîne polypeptidique grandissante vers la lumière et s'ouvrant latéralement pour insérer les segments transmembranaires dans la bicouche.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "Sec61",
+      "Translocon"
+    ]
+  },
+  {
+    "recto": "Détailler la structure et le transfert de l'oligosaccharide précurseur en N-glycosylation.",
+    "verso": "Oligosaccharide à 14 résidus (2 GlcNAc + 9 mannoses + 3 glucoses) assemblé sur le dolichol-phosphate, transféré en bloc par l'oligosaccharyltransférase (OST) sur une Asn du motif Asn-X-Ser/Thr dans le RE.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "N-glycosylation",
+      "Dolichol",
+      "OST"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle du cycle calnexine / calréticuline dans le contrôle qualité du RE ?",
+    "verso": "Ces lectines chaperonnes lient les glycoprotéines portant 1 seul glucose terminal pour assister leur repliement. L'UGGT reglucosyle les protéines mal repliées pour un nouveau cycle de contrôle.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "Calnexine",
+      "Calréticuline",
+      "UGGT"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la voie ERAD ?",
+    "verso": "Endoplasmic Reticulum-Associated Degradation : rétrotranslocation vers le cytosol des protéines dont le mauvais repliement persiste, suivie de leur polyubiquitinylation et de leur dégradation par le protéasome 26S.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "ERAD",
+      "Protéasome",
+      "Rétrotranslocation"
+    ]
+  },
+  {
+    "recto": "Quels sont les 3 capteurs de stress membranaire activés lors de l'UPR ?",
+    "verso": "IRE1, PERK et ATF6, libérés suite au titrage de la chaperonne BiP par les protéines mal repliées accumulées.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "UPR",
+      "IRE1",
+      "PERK",
+      "ATF6"
+    ]
+  },
+  {
+    "recto": "Citer 4 fonctions majeures du réticulum endoplasmique lisse (REL).",
+    "verso": "1) Synthèse des lipides (phospholipides, cholestérol).\n2) Synthèse des hormones stéroïdes.\n3) Détoxification par les cytochromes P450.\n4) Stockage et libération du Ca2+ (pompe SERCA).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "REL",
+      "Fonctions"
+    ]
+  },
+  {
+    "recto": "Comment la membrane du RE équilibre-t-elle ses deux feuillets lors de la synthèse des phospholipides ?",
+    "verso": "Grâce à une scramblase du RE bidirectionnelle et INDÉPENDANTE d'ATP qui redistribue symétriquement les phospholipides néosynthétisés sur le feuillet cytosolique vers le feuillet luminal.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "Scramblase",
+      "Phospholipides"
+    ]
+  },
+  {
+    "recto": "Quelle est la direction et la GTPase associée aux vésicules recouvertes de COP II ?",
+    "verso": "Transport antérograde du réticulum endoplasmique vers l'appareil de Golgi (CGN). Régulé par la petite GTPase Sar1.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "COP II",
+      "Sar1",
+      "Antérograde"
+    ]
+  },
+  {
+    "recto": "Quelle est la direction et la GTPase associée aux vésicules recouvertes de COP I ?",
+    "verso": "Transport rétrograde de l'appareil de Golgi vers le réticulum endoplasmique (et transport intra-golgien rétrograde). Régulé par la petite GTPase ARF1.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "COP I",
+      "ARF1",
+      "Rétrograde"
+    ]
+  },
+  {
+    "recto": "Comment fonctionne le signal de récupération KDEL ?",
+    "verso": "Tétrapeptide C-terminal (Lys-Asp-Glu-Leu) des protéines solubles résidentes du RE. Reconnu au pH acide du Golgi par le récepteur KDEL, incorporé dans des vésicules COP I vers le RE, et libéré au pH neutre du RE.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "KDEL",
+      "Recyclage",
+      "COP I"
+    ]
+  },
+  {
+    "recto": "Distinguer le réseau cis-golgien (CGN) du réseau trans-golgien (TGN).",
+    "verso": "- CGN : face d'entrée orientée vers le RE recevant les vésicules COP II.\n- TGN : face de sortie orientée vers la membrane plasmique, site de tri et bourgeonnement vers les lysosomes, granules de sécrétion ou membrane.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "Golgi",
+      "CGN",
+      "TGN"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la O-glycosylation et où se produit-elle ?",
+    "verso": "Greffe séquentielle de chaînes osidiques sur l'hydroxyle (-OH) de résidus Sérine ou Thréonine sans intermédiaire lipidique, réalisée dans l'appareil de Golgi (mucines, protéoglycanes).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "O-glycosylation",
+      "Golgi"
+    ]
+  },
+  {
+    "recto": "Quel signal assure l'adressage des enzymes solubles vers les lysosomes et où est-il apposé ?",
+    "verso": "Le Mannose-6-Phosphate (M6P), apposé sur les N-glycanes dans le cis-Golgi par la GlcNAc-phosphotransférase, puis reconnu par le récepteur au M6P dans le TGN.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "M6P",
+      "Lysosomes",
+      "Tri golgien"
+    ]
+  },
+  {
+    "recto": "Quelle est la cause moléculaire de la maladie des cellules I (I-cell disease) ?",
+    "verso": "Déficit en GlcNAc-phosphotransférase : absence de formation du marqueur M6P sur les enzymes lysosomales, qui sont sécrétées par défaut dans le milieu extracellulaire au lieu d'aller aux lysosomes.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "I-cell disease",
+      "GlcNAc-phosphotransférase"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure de base d'un manteau de clathrine ?",
+    "verso": "Des triskélions formés de 3 chaînes lourdes et 3 chaînes légères s'assemblant en réseau d'hexagones et de pentagones, reliés à la membrane via des complexes adaptateurs (AP1 au TGN, AP2 à la membrane plasmique).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "Clathrine",
+      "Triskélion",
+      "AP1",
+      "AP2"
+    ]
+  },
+  {
+    "recto": "Comment le pH acide des lysosomes est-il maintenu et pourquoi protège-t-il la cellule ?",
+    "verso": "Maintenu à pH 4,5-5,0 par une pompe à protons V-ATPase dépendante de l'ATP. Si un lysosome se rompt, les hydrolases sont inactives au pH neutre (7,4) du cytosol, évitant l'autolyse cellulaire.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "Lysosomes",
+      "V-ATPase",
+      "Hydrolases acides"
+    ]
+  },
+  {
+    "recto": "Distinguer la sécrétion constitutive de la sécrétion régulée.",
+    "verso": "- Constitutive : continue, non régulée, sans signal, universelle à toutes les cellules (protéines de matrice, renouvellement membranaire).\n- Régulée : spécifique des cellules sécrétrices, stockage en granules denses, libération déclenchée par un signal avec afflux de Ca2+.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "Sécrétion constitutive",
+      "Sécrétion régulée"
+    ]
+  },
+  {
+    "recto": "Pourquoi le déshabillage du manteau vésiculaire est-il indispensable avant la fusion ?",
+    "verso": "Car le manteau protéique rigide masque stériquement les protéines Rab (arrimage) et les protéines SNARE (fusion) nécessaires à la reconnaissance et à l'accolement des membranes.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 9 - Système endomembranaire",
+    "tags": [
+      "Déshabillage",
+      "Fusion",
+      "SNARE"
+    ]
+  }
+]

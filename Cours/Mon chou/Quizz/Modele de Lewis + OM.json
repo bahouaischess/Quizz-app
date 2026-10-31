@@ -1,0 +1,666 @@
+{
+  "name": "Chimie - Modele de Lewis + OM",
+  "folder": "PASS - Chimie",
+  "description": "Modèle de Lewis, charges formelles, hypervalence et hypovalence, théorie VSEPR de Gillespie (AXnEm, angles et déformations), hybridations (sp, sp2, sp3), liaisons sigma et pi, théorie LCAO des orbitales moléculaires, diatomiques homonucléaires (N2, O2 paramagnétique, interaction sp) et hétéronucléaires.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant la charge formelle (CF) d'un atome dans une structure de Lewis, quelle(s) proposition(s) est/sont VRAIE(S) ?",
+      "tags": [
+        "Lewis",
+        "Charge formelle",
+        "Formule"
+      ],
+      "options": [
+        {
+          "text": "CF = (nombre d'e- de valence de l'atome libre) - (nombre d'e- non liants) - (1/2 * nombre d'e- liants).",
+          "isCorrect": true
+        },
+        {
+          "text": "La somme algébrique des charges formelles de tous les atomes d'une molécule neutre est égale à zéro.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour un ion polyatomique, la somme des charges formelles est égale à la charge globale de l'ion.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans l'ion ammonium NH4+, l'azote porte une charge formelle de +1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans l'ion hydronium H3O+, l'oxygène porte une charge formelle de -1.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans H3O+ : oxygène a 6 e- de valence, 1 doublet non liant (2 e-) et 3 liaisons simples (3 e- partagés), d'où CF = 6 - 2 - 3 = +1 (et non -1 !). Dans NH4+ : N a 5 - 0 - 4 = +1. La formule générale est CF = V - NL - L."
+    },
+    {
+      "q": "À propos des exceptions à la règle de l'octet (hypervalence et hypovalence) :",
+      "tags": [
+        "Règle de l'octet",
+        "Hypervalence",
+        "Hypovalence"
+      ],
+      "options": [
+        {
+          "text": "Les éléments de la deuxième période (C, N, O, F) ne peuvent jamais dépasser l'octet car ils ne disposent que des sous-couches 2s et 2p (4 orbitales au maximum).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les éléments de la troisième période (P, S, Cl) peuvent être hypervalents (étendre leur octet) grâce à la disponibilité énergétique d'orbitales 3d vacantes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le trifluorure de bore BF3, l'atome de bore est hypovalent (entouré de seulement 6 électrons) et possède une lacune électronique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le pentafluorure de phosphore PCl5, l'atome de phosphore est entouré de 10 électrons de valence (hypervalence).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'atome d'azote dans NF5 est hypervalent et entouré de 10 électrons.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "NF5 N'EXISTE PAS car l'azote appartient à la 2ème période (n=2) et ne possède AUCUNE sous-couche d pour accueillir plus de 8 électrons ! En revanche, PF5 existe parfaitement car le phosphore est sur la 3ème période (3d accessibles)."
+    },
+    {
+      "q": "Selon la théorie VSEPR de Gillespie, quelle est la géométrie et la notation AXnEm de la molécule d'eau H2O ?",
+      "tags": [
+        "VSEPR",
+        "H2O",
+        "Géométrie"
+      ],
+      "options": [
+        {
+          "text": "AX2E2, géométrie coudée (angulaire), angle H-O-H d'environ 104,5°.",
+          "isCorrect": true
+        },
+        {
+          "text": "AX2, géométrie linéaire, angle de 180°.",
+          "isCorrect": false
+        },
+        {
+          "text": "AX4, géométrie tétraédrique parfaite, angle de 109,5°.",
+          "isCorrect": false
+        },
+        {
+          "text": "AX3E, géométrie pyramidale à base trigonale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'oxygène dans H2O forme 2 liaisons simples avec H (n=2) et porte 2 doublets non liants (m=2) : c'est un édifice AX2E2. L'arrangement des doublets est tétraédrique, mais la forme géométrique de la molécule est COUDÉE. La répulsion accrue entre les 2 doublets non liants comprime l'angle H-O-H de 109,5° à 104,5°."
+    },
+    {
+      "q": "Concernant la répulsion relative des paires d'électrons selon les règles de Gillespie (VSEPR) :",
+      "tags": [
+        "VSEPR",
+        "Répulsions",
+        "Angles de valence"
+      ],
+      "options": [
+        {
+          "text": "Répulsion doublet libre - doublet libre > doublet libre - doublet liant > doublet liant - doublet liant.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un doublet non liant occupe un volume angulaire plus grand qu'un doublet liant car il n'est attiré que par un seul noyau.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une liaison multiple (double ou triple) exerce une répulsion stérique plus forte qu'une liaison simple.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans NH3 (AX3E), l'angle H-N-H (~107°) est plus petit que l'angle tétraédrique idéal de CH4 (109,5°) en raison de la répulsion du doublet non liant de l'azote.",
+          "isCorrect": true
+        },
+        {
+          "text": "Tous les angles de valence dans les molécules de type AX4, AX3E et AX2E2 sont rigoureusement égaux à 109,5°.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les doublets non liants déforment les angles : CH4 (AX4) = 109,5° ; NH3 (AX3E) = 107° ; H2O (AX2E2) = 104,5°. Les répulsions diminuent dans l'ordre : NL-NL > NL-L > L-L."
+    },
+    {
+      "q": "Dans une géométrie bipyramidale trigonale (type AX5 comme PCl5) ou ses dérivés à doublets libres (AX4E comme SF4, AX3E2 comme ClF3, AX2E3 comme XeF2), sur quel(s) site(s) se positionnent préférentiellement les doublets non liants ?",
+      "tags": [
+        "VSEPR",
+        "AX5",
+        "Doublets libres"
+      ],
+      "options": [
+        {
+          "text": "Sur les sites axiaux, car ils offrent plus d'espace.",
+          "isCorrect": false
+        },
+        {
+          "text": "Sur les sites équatoriaux, afin de minimiser le nombre de répulsions à 90° avec les doublets voisins.",
+          "isCorrect": true
+        },
+        {
+          "text": "Indifféremment sur les sites axiaux ou équatoriaux car l'énergie est identique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Toujours sur le noyau central sans orientation.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans la bipyramide trigonale, les positions équatoriales ont seulement deux voisins à 90° (et deux à 120°), tandis que les positions axiales ont trois voisins à 90°. Les doublets libres, plus volumineux, se placent TOUJOURS en position équatoriale pour minimiser les interactions très déstabilisantes à 90°."
+    },
+    {
+      "q": "Quelle est la géométrie de la molécule de tétrafluorure de xénon XeF4 selon VSEPR ?",
+      "tags": [
+        "VSEPR",
+        "XeF4",
+        "Géométrie"
+      ],
+      "options": [
+        {
+          "text": "AX4, tétraédrique.",
+          "isCorrect": false
+        },
+        {
+          "text": "AX4E, bascule (see-saw).",
+          "isCorrect": false
+        },
+        {
+          "text": "AX4E2, plan-carré (carrée plane).",
+          "isCorrect": true
+        },
+        {
+          "text": "AX6, octaédrique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le xénon (gaz noble) apporte 8 e- de valence + 4 fluorures = 12 électrons autour de Xe, soit 6 paires : 4 liaisons Xe-F et 2 doublets non liants. C'est un dérivé octaédrique AX4E2. Les 2 doublets non liants se placent à l'opposé (positions axiales à 180°), conférant à la molécule une géométrie PLAN-CARRÉ parfaite (D4h)."
+    },
+    {
+      "q": "Concernant l'hybridation des orbitales atomiques selon Pauling :",
+      "tags": [
+        "Hybridation",
+        "sp3, sp2, sp",
+        "Géométrie"
+      ],
+      "options": [
+        {
+          "text": "L'hybridation sp correspond au mélange d'une orbitale s et d'une orbitale p, formant 2 orbitales hybrides colinéaires orientées à 180°.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hybridation sp2 mélange une orbitale s et deux orbitales p, formant 3 orbitales hybrides coplanaires orientées à 120°.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hybridation sp3 mélange une orbitale s et trois orbitales p, formant 4 orbitales hybrides orientées vers les sommets d'un tétraèdre régulier (109,5°).",
+          "isCorrect": true
+        },
+        {
+          "text": "Un atome hybridé sp conserve deux orbitales p pures non hybridées perpendiculaires entre elles.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un atome de carbone engagé dans une double liaison (alcène) est typiquement hybridé sp3.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans un alcène (>C=C<), chaque carbone forme 3 liaisons sigma (AX3) et est donc hybridé sp2, avec 1 orbitale p pure perpendiculaire qui forme la liaison pi."
+    },
+    {
+      "q": "Quelle est la différence fondamentale entre une liaison sigma (sigma) et une liaison pi (pi) ?",
+      "tags": [
+        "Liaisons sigma et pi",
+        "Recouvrement",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "La liaison sigma résulte d'un recouvrement axial (frontal) le long de l'axe internucléaire et présente une symétrie de révolution.",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison pi résulte d'un recouvrement latéral d'orbitales p parallèles et possède un plan nodal contenant les noyaux.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une liaison sigma est généralement plus forte (énergie de dissociation plus élevée) qu'une liaison pi.",
+          "isCorrect": true
+        },
+        {
+          "text": "La rotation autour d'une liaison simple sigma est libre à température ambiante, tandis que la rotation autour d'une liaison double (sigma + pi) est bloquée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une liaison triple est constituée de trois liaisons sigma identiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Une liaison triple est constituée d'UNE liaison sigma axiale et de DEUX liaisons pi latérales perpendiculaires entre elles (ex : N2, acétylène)."
+    },
+    {
+      "q": "Dans la théorie des Orbitales Moléculaires (LCAO), quelles sont les TROIS conditions indispensables pour que deux orbitales atomiques forment des orbitales moléculaires stables ?",
+      "tags": [
+        "LCAO",
+        "Conditions de recouvrement",
+        "OM"
+      ],
+      "options": [
+        {
+          "text": "Avoir des énergies atomiques voisines (Delta E faible).",
+          "isCorrect": true
+        },
+        {
+          "text": "Posséder la même symétrie par rapport à l'axe internucléaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Présenter un recouvrement spatial non nul (intégrale de recouvrement S != 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "Avoir exactement le même nombre quantique principal n.",
+          "isCorrect": false
+        },
+        {
+          "text": "Avoir des nombres quantiques de spin ms opposés avant toute interaction.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les 3 conditions fondamentales LCAO sont : proximité énergétique, compatibilité de symétrie et bon recouvrement spatial. Des orbitales de n différents peuvent se combiner si leurs énergies sont proches (ex: 1s de H et 2p de F dans HF)."
+    },
+    {
+      "q": "La combinaison linéaire de deux orbitales atomiques de même énergie produit :",
+      "tags": [
+        "LCAO",
+        "OM liante et antiliante",
+        "Énergie"
+      ],
+      "options": [
+        {
+          "text": "Une orbitale moléculaire liante d'énergie inférieure à celle des OA de départ.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une orbitale moléculaire antiliante d'énergie supérieure à celle des OA de départ.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'orbitale antiliante est plus déstabilisante que l'orbitale liante n'est stabilisante.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'orbitale liante possède un plan nodal entre les deux noyaux où la densité électronique s'annule.",
+          "isCorrect": false
+        },
+        {
+          "text": "La densité électronique entre les deux noyaux est accrue dans l'orbitale liante par interférence constructive.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "C'est l'orbitale ANTILIANTE qui possède un plan nodal internucléaire (interférence destructive, densité nulle entre les noyaux). L'orbitale liante concentre au contraire la densité électronique entre les noyaux, faisant écran à leur répulsion mutuelle."
+    },
+    {
+      "q": "Comment calcule-t-on l'indice de liaison (ou ordre de liaison, OL) dans la théorie des orbitales moléculaires ?",
+      "tags": [
+        "Indice de liaison",
+        "Formule",
+        "OM"
+      ],
+      "options": [
+        {
+          "text": "OL = (nombre d'électrons dans les OM liantes - nombre d'électrons dans les OM antiliantes) / 2",
+          "isCorrect": true
+        },
+        {
+          "text": "OL = (nombre d'électrons liants + nombre d'électrons antiliants) / 2",
+          "isCorrect": false
+        },
+        {
+          "text": "Si OL = 0, la molécule diatomique n'est pas stable et ne peut pas exister à l'état lié.",
+          "isCorrect": true
+        },
+        {
+          "text": "Plus l'indice de liaison est élevé, plus la longueur de liaison est courte et plus l'énergie de dissociation est grande.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'indice de liaison est obligatoirement un nombre entier (1, 2 ou 3).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'ordre de liaison peut être fractionnaire ! Par exemple, pour l'ion H2+ : 1 électron liant, 0 antiliant => OL = 1/2 = 0,5. Pour O2+ : OL = 2,5. Plus OL est grand, plus la liaison est courte et robuste."
+    },
+    {
+      "q": "Pourquoi la molécule de dioxygène O2 est-elle paramagnétique à l'état fondamental, ce que le modèle de Lewis était totalement incapable d'expliquer ?",
+      "tags": [
+        "O2",
+        "Paramagnétisme",
+        "OM"
+      ],
+      "options": [
+        {
+          "text": "La configuration électronique des OM de valence de O2 se termine par (pi*_2px)^1 (pi*_2py)^1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les deux derniers électrons occupent deux orbitales antiliantes dégénérées pi* avec des spins parallèles selon la règle de Hund.",
+          "isCorrect": true
+        },
+        {
+          "text": "O2 possède deux électrons célibataires, conférant à la molécule un moment magnétique permanent.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le modèle de Lewis représentait O2 avec une double liaison et des doublets tous appariés (diamagnétique).",
+          "isCorrect": true
+        },
+        {
+          "text": "O2 est diamagnétique et repoussé par les champs magnétiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le paramagnétisme de O2 liquide (attiré par les pôles d'un aimant) est l'un des plus grands triomphes de la théorie des orbitales moléculaires ! O2 possède 12 e- de valence : sigma_2s^2, sigma*_2s^2, sigma_2pz^2, pi_2px^2, pi_2py^2, pi*_2px^1, pi*_2py^1. Ordre de liaison = (8 - 4)/2 = 2, et 2 électrons non appariés (paramagnétisme)."
+    },
+    {
+      "q": "À propos du phénomène d'interaction sp (ou mélange sp) dans les molécules diatomiques homonucléaires de la deuxième période (Li2, Be2, B2, C2, N2) :",
+      "tags": [
+        "Interaction sp",
+        "Inversion des OM",
+        "N2 vs O2"
+      ],
+      "options": [
+        {
+          "text": "Pour B2, C2 et N2, la faible différence d'énergie entre les orbitales 2s et 2p permet une interaction entre les orbitales de symétrie sigma.",
+          "isCorrect": true
+        },
+        {
+          "text": "Cette interaction sp abaisse l'énergie de sigma_2s et repousse l'orbitale sigma_2pz AU-DESSUS des orbitales pi_2px et pi_2py (inversion des niveaux).",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour N2, l'ordre énergétique est : sigma_2s < sigma*_2s < (pi_2px = pi_2py) < sigma_2pz.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour O2 et F2, la différence d'énergie 2s-2p est trop grande : il n'y a pas d'inversion, sigma_2pz reste en dessous des orbitales pi_2p.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'interaction sp modifie la symétrie des orbitales pi.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les orbitales pi ne sont pas affectées par l'interaction sp car les orbitales 2s (symétrie sigma) ne peuvent pas se combiner avec des orbitales de symétrie pi. L'inversion ne concerne que sigma_2pz qui passe au-dessus du doublet pi pour Z <= 7 (N2)."
+    },
+    {
+      "q": "Quelle est la configuration électronique et l'indice de liaison de la molécule de diazote N2 (10 électrons de valence) ?",
+      "tags": [
+        "N2",
+        "Indice de liaison",
+        "Configuration OM"
+      ],
+      "options": [
+        {
+          "text": "Configuration : (sigma_2s)^2 (sigma*_2s)^2 (pi_2px)^2 (pi_2py)^2 (sigma_2pz)^2",
+          "isCorrect": true
+        },
+        {
+          "text": "Nombre d'électrons liants = 8 ; nombre d'électrons antiliants = 2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Indice de liaison OL = (8 - 2) / 2 = 3 (triple liaison extrêmement robuste).",
+          "isCorrect": true
+        },
+        {
+          "text": "La molécule est diamagnétique (tous les électrons sont appariés).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'indice de liaison de N2 est égal à 2.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "N2 possède une triple liaison d'énergie de dissociation gigantesque (~945 kJ/mol), expliquant son inertie chimique remarquable. Elle est parfaitement diamagnétique."
+    },
+    {
+      "q": "Pourquoi la molécule de di-hélium He2 n'existe-t-elle pas dans les conditions ordinaires ?",
+      "tags": [
+        "He2",
+        "LCAO",
+        "Indice de liaison"
+      ],
+      "options": [
+        {
+          "text": "Chaque atome d'He apporte 2 électrons 1s, soit 4 électrons au total.",
+          "isCorrect": true
+        },
+        {
+          "text": "La configuration est (sigma_1s)^2 (sigma*_1s)^2.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'indice de liaison vaut OL = (2 - 2) / 2 = 0.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'effet déstabilisant de l'orbitale antiliante l'emporte légèrement sur l'effet stabilisant de la liante, rendant l'édifice non lié.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hélium ne possède pas d'électrons.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Avec un indice de liaison nul (autant d'électrons liants qu'antiliants), et une répulsion antiliante légèrement plus forte, He2 n'est pas stable thermodynamiquement."
+    },
+    {
+      "q": "L'ion moléculaire d'hélium He2+ (formé lors d'ionisations dans les plasmas) possède :",
+      "tags": [
+        "He2+",
+        "Calcul",
+        "Indice de liaison"
+      ],
+      "options": [
+        {
+          "text": "3 électrons : (sigma_1s)^2 (sigma*_1s)^1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un indice de liaison OL = (2 - 1) / 2 = 0,5.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une existence physique réelle avec une liaison covalente simple à un électron.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un comportement paramagnétique car il possède un électron célibataire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un indice de liaison égal à 1.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "He2+ possède un indice de liaison fractionnaire de 0,5 : il existe bel et bien et a été observé spectroscopiquement ! Il est paramagnétique."
+    },
+    {
+      "q": "Dans une molécule diatomique hétéronucléaire A-B où B est nettement plus électronégatif que A (ex : H-F) :",
+      "tags": [
+        "Hétéronucléaire",
+        "OM",
+        "Polarisation"
+      ],
+      "options": [
+        {
+          "text": "Les orbitales atomiques de B sont plus basses en énergie que celles de A.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'orbitale moléculaire liante est plus proche en énergie des OA de B et son coefficient LCAO est plus élevé sur B (caractère majoritaire de B).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'orbitale moléculaire antiliante a un coefficient prépondérant sur l'atome le moins électronégatif A.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les électrons de liaison passent plus de temps près de l'atome B, créant une liaison polarisée A(delta+) - B(delta-).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les coefficients de pondération cA et cB sont strictement égaux dans l'OM liante.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans un édifice hétéronucléaire polarisé, l'atome le plus électronégatif attire la densité électronique de l'OM liante (|cB| > |cA|). Inversement, l'OM antiliante est dominée par l'atome le moins électronégatif."
+    },
+    {
+      "q": "Parmi les édifices suivants, lequel/lesquels est/sont de géométrie LINÉAIRE selon VSEPR ?",
+      "tags": [
+        "VSEPR",
+        "Linéaire",
+        "Exemples"
+      ],
+      "options": [
+        {
+          "text": "BeCl2 (AX2)",
+          "isCorrect": true
+        },
+        {
+          "text": "CO2 (AX2)",
+          "isCorrect": true
+        },
+        {
+          "text": "HCN (AX2)",
+          "isCorrect": true
+        },
+        {
+          "text": "C2H2 (acétylène, chaque carbone est AX2)",
+          "isCorrect": true
+        },
+        {
+          "text": "SO2 (AX2E)",
+          "isCorrect": false
+        },
+        {
+          "text": "H2O (AX2E2)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "BeCl2, CO2, HCN et l'éthyne sont rigoureusement linéaires (angles de 180°). SO2 (AX2E, ~119°) et H2O (AX2E2, ~104,5°) ont une géométrie COUDÉE."
+    },
+    {
+      "q": "Quelle est la géométrie et l'angle de valence idéal dans la molécule d'ammoniac NH3 ?",
+      "tags": [
+        "NH3",
+        "VSEPR",
+        "Pyramide trigonale"
+      ],
+      "options": [
+        {
+          "text": "Plan trigonal, 120°.",
+          "isCorrect": false
+        },
+        {
+          "text": "Tétraédrique parfait, 109,5°.",
+          "isCorrect": false
+        },
+        {
+          "text": "Pyramide à base trigonale, angle H-N-H d'environ 107°.",
+          "isCorrect": true
+        },
+        {
+          "text": "Linéaire, 180°.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "NH3 est de type AX3E (3 liaisons N-H et 1 doublet non liant sur N). La disposition des 4 paires est tétraédrique, mais la géométrie moléculaire (position des noyaux) est une PYRAMIDE TRIGONALE avec un angle comprimé à 107° par le doublet libre."
+    },
+    {
+      "q": "L'ion triiodure I3- possède 22 électrons de valence. Quelle est sa géométrie selon VSEPR ?",
+      "tags": [
+        "VSEPR",
+        "I3-",
+        "Linéaire AX2E3"
+      ],
+      "options": [
+        {
+          "text": "AX2E3, géométrie linéaire avec les 3 doublets non liants en position équatoriale.",
+          "isCorrect": true
+        },
+        {
+          "text": "AX2, linéaire sans doublets libres.",
+          "isCorrect": false
+        },
+        {
+          "text": "AX2E2, coudée comme l'eau.",
+          "isCorrect": false
+        },
+        {
+          "text": "AX3, triangulaire plane.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'iode central forme 2 liaisons I-I et porte 3 doublets non liants (AX2E3). L'arrangement électronique est bipyramidal trigonal (5 paires). Les 3 doublets libres occupent le plan équatorial à 120°, et les deux atomes d'iode périphériques sont aux sommets axiaux opposés à 180° : l'ion I3- est rigoureusement LINÉAIRE !"
+    },
+    {
+      "q": "Le monoxyde de carbone CO possède un indice de liaison de 3. Comment s'écrit sa structure de Lewis respectant la règle de l'octet pour les deux atomes ?",
+      "tags": [
+        "Lewis",
+        "CO",
+        "Charges formelles"
+      ],
+      "options": [
+        {
+          "text": ":C≡O: avec une charge formelle -1 sur C et +1 sur O.",
+          "isCorrect": true
+        },
+        {
+          "text": ":C=O: avec des charges formelles nulles partout.",
+          "isCorrect": false
+        },
+        {
+          "text": ":C-O: avec une simple liaison.",
+          "isCorrect": false
+        },
+        {
+          "text": "CO ne respecte pas l'octet.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour que C et O satisfassent tous deux l'octet (8 e-), il faut une triple liaison et un doublet non liant sur chacun : :C≡O:. Le carbone a 4 - 2 - 3 = -1 et l'oxygène a 6 - 2 - 3 = +1. Bien que l'oxygène soit plus électronégatif, la charge formelle négative est sur le carbone !"
+    },
+    {
+      "q": "L'orbitale moléculaire sigma* (antiliante) issue de la combinaison d'orbitales 1s de deux atomes d'hydrogène présente :",
+      "tags": [
+        "OM antiliante",
+        "Plan nodal",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Un plan nodal perpendiculaire à l'axe internucléaire où la fonction d'onde s'annule.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une densité de probabilité de présence nulle au milieu de l'axe internucléaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une énergie supérieure à celle de l'orbitale atomique 1s isolée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une contribution attractive renforçant la liaison.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans sigma*1s, l'interférence destructive engendre un plan nodal où psi = 0 entre les noyaux, provoquant une répulsion électrostatique directe entre les deux noyaux positifs."
+    }
+  ]
+}

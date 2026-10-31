@@ -1,0 +1,217 @@
+[
+  {
+    "recto": "Qu'est-ce qu'un second messager et citer 5 exemples majeurs ?",
+    "verso": "Petite molécule ou ion intracellulaire synthétisé ou libéré suite à l'activation d'un récepteur membranaire pour amplifier le signal.\nExemples : AMPc, GMPc, IP3, DAG, Ca2+.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Seconds messagers",
+      "Amplification"
+    ]
+  },
+  {
+    "recto": "Comment fonctionne un commutateur moléculaire à protéine G ?",
+    "verso": "- État inactif : lié au GDP.\n- Activation : échange de GDP par un GTP (induit par le récepteur).\n- Inactivation : hydrolyse du GTP en GDP par l'activité GTPasique intrinsèque.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Commutateur moléculaire",
+      "Protéine G"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure générale d'un RCPG et d'une protéine G hétérotrimérique ?",
+    "verso": "- RCPG : 7 domaines transmembranaires (7-TM).\n- Protéine G hétérotrimérique : 3 sous-unités (alpha, bêta, gamma). Alpha lie le GDP/GTP ; bêta-gamma forme un dimère stable.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "RCPG",
+      "Structure",
+      "Protéines G"
+    ]
+  },
+  {
+    "recto": "Quelles sont les cibles enzymatiques et les effets respectifs de Gs, Gi et Gq ?",
+    "verso": "- Gs : active l'adénylate cyclase (AMPc en hausse).\n- Gi : inhibe l'adénylate cyclase (AMPc en baisse).\n- Gq : active la phospholipase C (clivage de PIP2 en IP3 et DAG).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Gs",
+      "Gi",
+      "Gq",
+      "Cibles"
+    ]
+  },
+  {
+    "recto": "Comment l'acétylcholine ralentit-elle la fréquence cardiaque via le récepteur M2 muscarinique ?",
+    "verso": "L'ACh se lie à M2 -> activation de Go -> dissociation du complexe bêta-gamma -> ouverture de canaux potassiques (K+) -> sortie de K+ -> hyperpolarisation -> diminution de la fréquence cardiaque.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "M2AChR",
+      "Go",
+      "Canal K+",
+      "Cœur"
+    ]
+  },
+  {
+    "recto": "Quel est le mécanisme d'action de l'atropine ?",
+    "verso": "Antagoniste compétitif des récepteurs muscariniques (M2) : elle bloque l'action de l'acétylcholine sur le cœur et accélère la fréquence cardiaque (traitement du malaise vagal).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Atropine",
+      "Malaise vagal"
+    ]
+  },
+  {
+    "recto": "Détailler les rôles respectifs de l'IP3 et du DAG après clivage de PIP2 par la PLC.",
+    "verso": "- IP3 (hydrosoluble) : diffuse vers le RE et ouvre les canaux calciques IP3-R -> libération de Ca2+ dans le cytosol.\n- DAG (lipophile) : reste ancré à la membrane et active la PKC en synergie avec le Ca2+.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "PLC",
+      "PIP2",
+      "IP3",
+      "DAG"
+    ]
+  },
+  {
+    "recto": "Comment la Protéine Kinase A (PKA) est-elle activée par l'AMPc ?",
+    "verso": "La PKA est un tétramère (2 sous-unités régulatrices R, 2 catalytiques C). La liaison de 4 molécules d'AMPc sur les sous-unités R libère les 2 sous-unités C actives qui phosphorylent leurs cibles.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "PKA",
+      "AMPc",
+      "Structure"
+    ]
+  },
+  {
+    "recto": "Quel est le mécanisme d'action cellulaire de la toxine du choléra ?",
+    "verso": "Elle bloque l'activité GTPasique intrinsèque de la sous-unité alpha-s dans les entérocytes -> alpha-s reste continuellement active -> production permanente d'AMPc -> sortie massive d'ions et d'eau (diarrhée sévère).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Choléra",
+      "Toxine cholérique",
+      "Gs"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la transducine (Gt) et quel est son rôle dans la vision ?",
+    "verso": "Protéine G des bâtonnets rétiniens stimulée par la rhodopsine photo-activée -> active une phosphodiestérase -> hydrolyse du GMPc -> fermeture des canaux Na+ -> hyperpolarisation du photorécepteur.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Transducine",
+      "Gt",
+      "Vision",
+      "GMPc"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques structurales communes des récepteurs à activité enzymatique intrinsèque (RTK) ?",
+    "verso": "Protéines à un seul domaine transmembranaire (1-TM), avec domaine extracellulaire liant le ligand et domaine catalytique intracellulaire. Ils fonctionnent sous forme de dimères.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "RTK",
+      "Structure"
+    ]
+  },
+  {
+    "recto": "Citer les 4 classes de récepteurs membranaires couplés à une enzyme.",
+    "verso": "1) À activité tyrosine kinase (ex: EGFR).\n2) Associés à une sérine/thréonine kinase (ex: TGF-bêta).\n3) Associés à une phosphatase.\n4) À activité guanylate cyclase (synthèse de GMPc).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Classes récepteurs enzymes"
+    ]
+  },
+  {
+    "recto": "Détailler la cascade d'activation de la voie EGFR jusqu'aux MAP-kinases.",
+    "verso": "EGF -> dimérisation du récepteur -> autophosphorylation Tyr -> liaison de Grb2 (SH2) -> recrutement de Sos (SH3) -> activation de Ras (GDP -> GTP) -> cascade de kinases : Raf (MAPKKK) -> MEK (MAPKK) -> MAPK/ERK.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Voie EGFR",
+      "Ras",
+      "MAPK"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle respectif des domaines SH2 et SH3 de la protéine adaptatrice Grb2 ?",
+    "verso": "- Domaine SH2 : se lie spécifiquement aux tyrosines phosphorylées (P-Tyr) du récepteur activé.\n- Domaines SH3 : se lient aux séquences riches en proline de la protéine Sos.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Grb2",
+      "SH2",
+      "SH3"
+    ]
+  },
+  {
+    "recto": "Pourquoi le gène Ras est-il fréquemment impliqué dans les cancers ?",
+    "verso": "Des mutations ponctuelles empêchent l'hydrolyse du GTP en GDP, bloquant Ras sous une forme active permanente qui stimule la prolifération cellulaire incontrôlée indépendamment de tout signal mitogénique.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Ras",
+      "Cancer",
+      "Mutation oncogénique"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la down-regulation d'un récepteur et pourquoi est-elle irréversible ?",
+    "verso": "Internalisation du récepteur par endocytose suivie de son routage et de sa dégradation complète par les protéases acides des lysosomes. De nouveaux récepteurs doivent être resynthétisés de novo.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Down-regulation",
+      "Endocytose",
+      "Lysosome"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence entre désensibilisation homologue et hétérologue ?",
+    "verso": "- Homologue : inactivation spécifique du seul récepteur ayant fixé son ligand.\n- Hétérologue : inactivation croisée de plusieurs récepteurs différents (stimulés ou non) suite à l'activation générale de protéines régulatrices.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Désensibilisation homologue",
+      "Hétérologue"
+    ]
+  },
+  {
+    "recto": "Comment l'acétylcholinestérase met-elle fin au signal à la synapse neuromusculaire ?",
+    "verso": "En hydrolysant quasi instantanément l'acétylcholine en acétate et choline, empêchant la restimulation continue du récepteur nAChR.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "AChE",
+      "Dégradation ligand"
+    ]
+  },
+  {
+    "recto": "Quels acides aminés peuvent être phosphorylés par les protéines kinases eucaryotes ?",
+    "verso": "La Sérine (Ser/S), la Thréonine (Thr/T) et la Tyrosine (Tyr/Y), grâce à leur groupement hydroxyle (-OH) libre.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Phosphorylation",
+      "Acides aminés"
+    ]
+  },
+  {
+    "recto": "Citer deux approches pharmacologiques pour bloquer la voie de l'EGFR dans les tumeurs.",
+    "verso": "1) Anticorps monoclonaux bloquant le domaine extracellulaire du récepteur (ex: cétuximab).\n2) Inhibiteurs enzymatiques de l'activité tyrosine kinase (ITK, ex: géfitinib, erlotinib).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 5 - Signalisation 2",
+    "tags": [
+      "Antitumoraux",
+      "Inhibiteurs kinase",
+      "Anticorps"
+    ]
+  }
+]

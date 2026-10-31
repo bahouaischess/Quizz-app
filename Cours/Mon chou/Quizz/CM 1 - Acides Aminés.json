@@ -1,0 +1,652 @@
+{
+  "name": "CM 1 - Acides Aminés",
+  "folder": "PASS - Molécules du vivant",
+  "description": "Structure, classification, propriétés acido-basiques, stéréochimie et réactivité chimique des acides aminés standard et modifiés.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant la structure générale des acides aminés constitutifs des protéines humaines, quelle(s) proposition(s) est (sont) exacte(s) ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Structure"
+      ],
+      "options": [
+        {
+          "text": "À l'exception de la glycine, le carbone alpha de tous les acides aminés protéinogènes est un centre asymétrique chiral.",
+          "isCorrect": true
+        },
+        {
+          "text": "Tous les acides aminés naturels des protéines appartiennent à la série stéréochimique D selon la nomenclature de Fischer.",
+          "isCorrect": false
+        },
+        {
+          "text": "La masse molaire moyenne d'un résidu d'acide aminé au sein d'une chaîne polypeptidique est estimée à environ 110 Da.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fonction amine primaire est systématiquement portée par le carbone bêta dans les acides aminés standard des mammifères.",
+          "isCorrect": false
+        },
+        {
+          "text": "La proline possède une fonction amine secondaire engagée dans un cycle pyrrolidine rigide.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les acides aminés constitutifs des protéines sont de série L (sauf glycine achirale). La proline a un groupement imine secondaire intégré dans un cycle pyrrolidine à 5 chaînons. La masse moyenne d'un résidu dans un peptide est d'environ 110 Da (tenant compte de la perte d'une molécule d'eau de 18 Da lors de la condensation peptidique)."
+    },
+    {
+      "q": "Parmi les acides aminés suivants, lesquels possèdent une chaîne latérale aliphatique strictement apolaire et hydrophobe ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Classification"
+      ],
+      "options": [
+        {
+          "text": "Valine, Leucine et Isoleucine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sérine et Thréonine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Alanine et Méthionine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Lysine et Arginine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Acide aspartique et Acide glutamique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Val, Leu, Ile, Ala et Met possèdent des chaînes latérales apolaires hydrophobes. Ser et Thr sont polaires neutres à fonction alcool, Lys et Arg sont basiques chargées positivement à pH physiologique, Asp et Glu sont acides chargés négativement."
+    },
+    {
+      "q": "Concernant la stéréochimie des acides aminés, quelle proposition est VRAIE ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Stéréochimie"
+      ],
+      "options": [
+        {
+          "text": "La désignation en série L impose obligatoirement un pouvoir rotatoire lévogyre (-) mesuré au polarimètre.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'isoleucine et la thréonine possèdent chacune deux carbones asymétriques dans leur structure.",
+          "isCorrect": true
+        },
+        {
+          "text": "La glycine présente deux énantiomères optiquement actifs non superposables dans un miroir plan.",
+          "isCorrect": false
+        },
+        {
+          "text": "La configuration absolue de la L-cystéine selon les règles Cahn-Ingold-Prelog est toujours (2S) comme l'alanine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les acides aminés de la série D sont les seuls substrats reconnus par les ribosomes lors de la traduction eucaryote.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'isoleucine (C-alpha et C-bêta) et la thréonine (C-alpha et C-bêta) possèdent deux carbones asymétriques, générant 4 stéréoisomères (2 paires d'énantiomères / diastéréoisomères). En C.I.P., la L-cystéine est (2R) en raison de la priorité du soufre (-CH2-SH prioritaire sur -COOH), contrairement aux autres acides aminés L qui sont (2S). La série D ou L n'indique en rien le signe du pouvoir rotatoire (+ ou -)."
+    },
+    {
+      "q": "Concernant les propriétés spectroscopiques des acides aminés aromatiques, quelle est la proposition exacte ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Spectroscopie"
+      ],
+      "options": [
+        {
+          "text": "La phénylalanine est le principal responsable de l'absorption UV des protéines à 280 nm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le tryptophane présente le coefficient d'extinction molaire le plus élevé à 280 nm parmi tous les acides aminés.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'absorption à 280 nm provient d'une transition électronique sigma -> sigma* des liaisons peptidiques.",
+          "isCorrect": false
+        },
+        {
+          "text": "La tyrosine n'absorbe aucune longueur d'onde dans le domaine ultraviolet.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le tryptophane (Trp, W) possède le coefficient d'absorption molaire le plus fort à 280 nm (noyau indole), suivi de la tyrosine (Tyr, Y, noyau phénol). La phénylalanine absorbe faiblement vers 257 nm."
+    },
+    {
+      "q": "À propos de la 21e et de la 22e molécule d'acide aminé retrouvées dans le monde vivant :",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Classification"
+      ],
+      "options": [
+        {
+          "text": "La sélénocystéine (Sec, U) est codée par le codon stop UGA en présence d'un élément structural SECIS sur l'ARNm.",
+          "isCorrect": true
+        },
+        {
+          "text": "La pyrrolysine (Pyl, O) est présente dans les protéines nucléaires de tous les eucaryotes supérieurs.",
+          "isCorrect": false
+        },
+        {
+          "text": "La sélénocystéine dérive d'un résidu cystéine modifié après l'incorporation de la protéine dans le ribosome.",
+          "isCorrect": false
+        },
+        {
+          "text": "La pyrrolysine est codée par le codon stop UAG chez certaines archées et bactéries méthanogènes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La sélénocystéine possède un atome de sélénium remplaçant l'atome de soufre de la cystéine avec un pKa de la fonction -SeH plus bas (environ 5,2) que celui du -SH.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La sélénocystéine (21e AA) est codée par UGA via une structure en tige-boucle SECIS. Son sélénol (-SeH) est dissocié à pH physiologique (pKa ~ 5,2 contre ~ 8,3 pour le SH de Cys), augmentant son pouvoir nucléophile. La pyrrolysine (22e AA) est codée par UAG chez des archées méthanogènes."
+    },
+    {
+      "q": "On considère un acide aminé diacide comme l'acide aspartique (pK1 = 2,0 ; pKR = 3,9 ; pK2 = 9,8). Quel est son point isoélectrique (pHi) ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Propriétés acido-basiques"
+      ],
+      "options": [
+        {
+          "text": "2,95",
+          "isCorrect": true
+        },
+        {
+          "text": "5,90",
+          "isCorrect": false
+        },
+        {
+          "text": "6,85",
+          "isCorrect": false
+        },
+        {
+          "text": "3,90",
+          "isCorrect": false
+        },
+        {
+          "text": "4,90",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour un acide aminé dicarboxylique (acide), l'espèce zwitterionique neutre se situe entre pK1 et pKR. Le pHi est donc la demi-somme des deux pKa acides : pHi = (pK1 + pKR)/2 = (2,0 + 3,9)/2 = 5,9/2 = 2,95."
+    },
+    {
+      "q": "À pH physiologique (pH = 7,4), quelle est la charge électrique nette prédominante de la lysine (pK1 = 2,2 ; pK2 = 9,0 ; pKR = 10,5) ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Propriétés acido-basiques"
+      ],
+      "options": [
+        {
+          "text": "-2",
+          "isCorrect": false
+        },
+        {
+          "text": "-1",
+          "isCorrect": false
+        },
+        {
+          "text": "0",
+          "isCorrect": false
+        },
+        {
+          "text": "+1",
+          "isCorrect": true
+        },
+        {
+          "text": "+2",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À pH 7,4 : le groupe alpha-COOH est déprotoné (-1) car pH > pK1 (2,2) ; le groupe alpha-NH3+ est protoné (+1) car pH < pK2 (9,0) ; la chaîne latérale epsilon-NH3+ est protonée (+1) car pH < pKR (10,5). Charge nette globale = -1 + 1 + 1 = +1."
+    },
+    {
+      "q": "Concernant la chaîne latérale de l'histidine (pK1 = 1,8 ; pK2 = 9,2 ; pKR = 6,0), quelle(s) affirmation(s) est (sont) EXACTE(S) ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Propriétés acido-basiques"
+      ],
+      "options": [
+        {
+          "text": "Son hétérocycle imidazole possède un pKR proche de la neutralité biologique (environ 6,0).",
+          "isCorrect": true
+        },
+        {
+          "text": "À pH 7,4, la majorité des molécules d'histidine ont leur chaîne latérale sous forme neutre déprotonée.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'histidine ne peut jamais participer aux réactions de catalyse acide-base générale dans les enzymes.",
+          "isCorrect": false
+        },
+        {
+          "text": "À pH 5,0, la chaîne latérale de l'histidine est majoritairement chargée positivement.",
+          "isCorrect": true
+        },
+        {
+          "text": "Son point isoélectrique pHi est calculé par la moyenne entre pK1 et pKR.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le pKR de l'imidazole est de 6,0. À pH 7,4 (pH > pKR), la forme non protonée est majoritaire (~96% neutre). À pH 5,0 (pH < pKR), la forme protonée positivement prédomine. Ce pKR proche du pH physiologique confère à l'His un rôle catalytique majeur de donneur/accepteur de protons. Son pHi = (pKR + pK2)/2 = (6,0 + 9,2)/2 = 7,6."
+    },
+    {
+      "q": "Parmi les propositions suivantes concernant les modifications post-traductionnelles des acides aminés, lesquelles sont exactes ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Modifications post-traductionnelles"
+      ],
+      "options": [
+        {
+          "text": "L'hydroxylation de la proline et de la lysine dans le collagène requiert de la vitamine C (acide ascorbique) comme cofacteur.",
+          "isCorrect": true
+        },
+        {
+          "text": "La gamma-carboxylation de résidus d'acide glutamique dans les facteurs de coagulation dépend de la vitamine K.",
+          "isCorrect": true
+        },
+        {
+          "text": "La N-glycosylation s'effectue sur le groupement amide de la glutamine selon la séquence consensus Gln-X-Ser.",
+          "isCorrect": false
+        },
+        {
+          "text": "La phosphorylation réversible des protéines eucaryotes cible principalement la sérine, la thréonine et la tyrosine.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'O-glycosylation se produit exclusivement sur le soufre de la méthionine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'hydroxylation de Pro et Lys dépend de prolyl/lysyl hydroxylases contenant du Fe2+ et nécessitant l'ascorbate (vit C). La gamma-carboxylation des résidus Glu (formation de Gla chélatant Ca2+) dépend de la vitamine K. La N-glycosylation se fait sur Asparagine (Asn-X-Ser/Thr, avec X != Pro). L'O-glycosylation s'effectue sur Ser ou Thr."
+    },
+    {
+      "q": "L'ancrage lipidique des protéines membranaires peut faire intervenir :",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Ancrage membranaire"
+      ],
+      "options": [
+        {
+          "text": "Une myristoylation par liaison amide d'un acide myristique sur la glycine N-terminale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une palmitoylation réversible par liaison thioester sur une cystéine interne.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une prénylation (farnésyle ou géranylgéranyle) sur une cystéine C-terminale via un motif CAAX.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une glypiation (ancre GPI) liant le carboxyle C-terminal à la phosphoéthanolamine du glycolipide.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une estérification obligatoire de la leucine N-terminale par le cholestérol libre.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les quatre premiers mécanismes sont les voies classiques d'ancrage lipidique : myristoylation (C14 sur Gly N-term), palmitoylation (C16 thioester sur Cys), prénylation isoprénoïde sur Cys du motif CAAX, et glypiation (ancre GPI sur COOH C-terminal de protéines orientées vers l'extérieur de la cellule)."
+    },
+    {
+      "q": "Quelle molécule réagit avec les amines primaires des acides aminés libres pour former le pourpre de Ruhemann (absorbant à 570 nm) ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Réactivité chimique"
+      ],
+      "options": [
+        {
+          "text": "La ninhydrine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le chlorure de dansyle.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le réactif d'Ellman (DTNB).",
+          "isCorrect": false
+        },
+        {
+          "text": "L'isothiocyanate de phényle (réactif d'Edman).",
+          "isCorrect": false
+        },
+        {
+          "text": "Le 1-fluoro-2,4-dinitrobenzène (réactif de Sanger).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La ninhydrine réagit avec les acides alpha-aminés pour donner une coloration violette (pourpre de Ruhemann, 570 nm), sauf avec la proline (amine secondaire) qui donne un dérivé jaune (440 nm)."
+    },
+    {
+      "q": "Le réactif d'Ellman (acide 5,5'-dithiobis-2-nitrobenzoïque ou DTNB) permet spécifiquement de doser par spectrophotométrie à 412 nm :",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Réactivité chimique"
+      ],
+      "options": [
+        {
+          "text": "Les groupements thiols (-SH) libres des résidus de cystéine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les ponts disulfures (-S-S-) intacts des protéines natives.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les noyaux aromatiques de la phénylalanine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les fonctions amines primaires N-terminales après clivage acide.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le DTNB réagit avec les groupements thiols (-SH) libres de la cystéine par échange de disulfure, libérant l'anion jaune 2-nitro-5-thiobenzoate (TNB2-) dosable à 412 nm."
+    },
+    {
+      "q": "Concernant la dégradation d'Edman utilisée pour le séquençage des protéines :",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Méthodes d'étude"
+      ],
+      "options": [
+        {
+          "text": "Elle utilise l'isothiocyanate de phényle (PITC) qui réagit avec la fonction amine N-terminale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle clive le premier résidu sous forme de dérivé phénylthiohydantoïne (PTH-acide aminé).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle détruit l'intégralité du reste de la chaîne peptidique par hydrolyse acide totale à 110°C.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle permet le séquençage récurrent d'environ 30 à 50 acides aminés à partir de l'extrémité N-terminale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle nécessite obligatoirement que l'acide aminé N-terminal soit bloqué par un groupement acétyle.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La méthode d'Edman emploie le PITC en milieu basique, puis un clivage sélectif en milieu acide anhydre sans rompre les autres liaisons peptidiques, libérant un dérivé PTH analysable par HPLC. Un résidu N-terminal bloqué empêche la réaction."
+    },
+    {
+      "q": "Lors d'une hydrolyse acide totale d'un polypeptide par HCl 6 M à 110°C pendant 24 heures :",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Réactivité chimique"
+      ],
+      "options": [
+        {
+          "text": "Le tryptophane est entièrement détruit par le traitement.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'asparagine et la glutamine sont désamidées en acide aspartique et acide glutamique avec libération d'ammoniac.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les liaisons peptidiques sont hydrolysées en acides aminés individuels.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les acides aminés ramifiés (Leu, Ile, Val) sont oxydés en dérivés cétoniques toxiques.",
+          "isCorrect": false
+        },
+        {
+          "text": "La sérine et la thréonine sont partiellement dégradées au cours de la réaction.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'hydrolyse acide forte (HCl 6N, 110°C, 24h) détruit totalement Trp, désamide Asn en Asp et Gln en Glu (rendant la mesure sous forme 'Asx' et 'Glx'), et détruit partiellement Ser et Thr (5 à 10%)."
+    },
+    {
+      "q": "L'acide aminé possédant une chaîne latérale avec un cycle indole est :",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Structure"
+      ],
+      "options": [
+        {
+          "text": "La proline.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'histidine.",
+          "isCorrect": false
+        },
+        {
+          "text": "La tyrosine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le tryptophane.",
+          "isCorrect": true
+        },
+        {
+          "text": "La phénylalanine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le tryptophane (Trp, W) contient un hétérocycle indole. L'histidine possède un imidazole, la tyrosine un phénol, la phénylalanine un benzène (phényle), la proline un cycle pyrrolidine."
+    },
+    {
+      "q": "Parmi les acides aminés suivants, lequel possède une fonction amide sur sa chaîne latérale ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Classification"
+      ],
+      "options": [
+        {
+          "text": "Asparagine (Asn, N).",
+          "isCorrect": true
+        },
+        {
+          "text": "Acide aspartique (Asp, D).",
+          "isCorrect": false
+        },
+        {
+          "text": "Arginine (Arg, R).",
+          "isCorrect": false
+        },
+        {
+          "text": "Lysine (Lys, K).",
+          "isCorrect": false
+        },
+        {
+          "text": "Méthionine (Met, M).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'asparagine (Asn, N) et la glutamine (Gln, Q) portent une fonction amide non ionisable (-CONH2) sur leur chaîne latérale."
+    },
+    {
+      "q": "Quelle est la chaîne latérale portée par l'arginine responsable de son caractère très basique ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Structure"
+      ],
+      "options": [
+        {
+          "text": "Un groupement guanidinium avec un pKR d'environ 12,5.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un noyau imidazole aromatique avec un pKR de 6,0.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une amine primaire aliphatique terminale avec un pKR de 10,5.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un groupement sulfhydryle ionisable avec un pKR de 8,3.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'arginine (Arg, R) porte un groupement guanidino/guanidinium résonant très basique dont le pKR avoisine 12,5, restant chargé positivement à tous les pH physiologiques."
+    },
+    {
+      "q": "L'oxydation ménagée de deux résidus cystéine conduit à la formation :",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Réactivité chimique"
+      ],
+      "options": [
+        {
+          "text": "D'un pont disulfure covalent formant une molécule de cystine.",
+          "isCorrect": true
+        },
+        {
+          "text": "D'une molécule d'acide cystéique irréversible.",
+          "isCorrect": false
+        },
+        {
+          "text": "D'un pont thioester hydrolysable par une lipase.",
+          "isCorrect": false
+        },
+        {
+          "text": "D'un résidu homocystéine par désulfuration spontanée.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'oxydation de 2 fonctions thiols (-SH) de deux cystéines crée un pont disulfure covalent inter- ou intra-caténaire formant de la cystine, réductible par le bêta-mercaptoéthanol ou le DTT."
+    },
+    {
+      "q": "Concernant les acides aminés essentiels chez l'homme adulte (non synthétisés de novo) :",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Nutrition"
+      ],
+      "options": [
+        {
+          "text": "Ils sont au nombre de 8 (Leucine, Thréonine, Lysine, Tryptophane, Phénylalanine, Valine, Méthionine, Isoleucine).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'histidine est essentielle chez le nourrisson en période de croissance rapide.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'alanine et la glycine sont deux acides aminés strictement essentiels indispensables à apporter dans l'alimentation.",
+          "isCorrect": false
+        },
+        {
+          "text": "La tyrosine peut être synthétisée chez l'homme à partir de la phénylalanine grâce à la phénylalanine hydroxylase.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un déficit en phénylalanine hydroxylase est responsable de la phénylcétonurie.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Moyen mnémotechnique : 'Le Très Lyrique Trépied Fait Vachement Méditer Iseult' (Leu, Thr, Lys, Trp, Phe, Val, Met, Ile) + His chez l'enfant. Tyr est non essentielle si Phe est présente. Le déficit en PAH cause la phénylcétonurie."
+    },
+    {
+      "q": "Dans une électrophorèse sur papier à pH 6,0 d'un mélange contenant de l'Acide Aspartique (pHi = 2,95), de l'Alanine (pHi = 6,0) et de l'Arginine (pHi = 10,75) :",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Séparation"
+      ],
+      "options": [
+        {
+          "text": "L'acide aspartique migre vers l'anode (+).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'alanine reste immobile au point de dépôt (charge nette nulle).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'arginine migre vers la cathode (-).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'alanine et l'arginine migrent ensemble vers l'anode (+).",
+          "isCorrect": false
+        },
+        {
+          "text": "L'acide aspartique migre vers la cathode (-) en raison de ses groupements carboxyles protonés.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À pH 6,0 : pour Asp, pH > pHi (2,95) => charge négative, migration vers l'anode (+). Pour Ala, pH = pHi (6,0) => charge nette nulle, reste au dépôt. Pour Arg, pH < pHi (10,75) => charge positive, migration vers la cathode (-)."
+    },
+    {
+      "q": "Parmi les molécules suivantes dérivées d'acides aminés, laquelle n'est PAS un acide aminé protéinogène mais possède un rôle biologique essentiel ?",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Dérivés non protéinogènes"
+      ],
+      "options": [
+        {
+          "text": "L'ornithine et la citrulline, intermédiaires du cycle de l'urée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le GABA (acide gamma-aminobutyrique), principal neurotransmetteur inhibiteur du SNC dérivé du glutamate.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'histamine, médiateur des réactions allergiques issu de la décarboxylation de l'histidine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La thyroxine (T4), hormone thyroïdienne iodée dérivée de la tyrosine.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'arginine, intégrée directement dans les ARN messagers par l'ARN polymérase II.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Ornithine, citrulline, GABA, histamine, sérotonine, dopamine, adrénaline et thyroxine sont tous des dérivés majeurs d'acides aminés non retrouvés dans la séquence codée des protéines."
+    },
+    {
+      "q": "Concernant le point isoélectrique (pHi) de l'alanine dont les pKa sont pK1 (alpha-COOH) = 2,34 et pK2 (alpha-NH3+) = 9,69 :",
+      "tags": [
+        "CM 1 - Acides Aminés",
+        "Propriétés acido-basiques"
+      ],
+      "options": [
+        {
+          "text": "Il est égal à la moyenne arithmétique (2,34 + 9,69) / 2 = 6,015.",
+          "isCorrect": true
+        },
+        {
+          "text": "À un pH strictement inférieur à 2,34, la forme prédominante est le cation H2A+.",
+          "isCorrect": true
+        },
+        {
+          "text": "Au pHi, la solubilité de l'alanine dans l'eau pure est maximale.",
+          "isCorrect": false
+        },
+        {
+          "text": "À un pH supérieur à 9,69, la charge nette moyenne de l'alanine est égale à -1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Au pHi, l'alanine ne possède aucun atome ionisé dans sa structure.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour un acide aminé neutre à chaîne apolaire, pHi = (pK1 + pK2)/2 = 6,015. Au pHi, la forme zwitterionique (+H3N-CH(CH3)-COO-) est à son maximum de concentration (charge globale nette nulle), ce qui correspond au MINIMUM de solubilité électrostatique (précipitation facilitée)."
+    }
+  ]
+}

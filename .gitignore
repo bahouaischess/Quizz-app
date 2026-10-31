@@ -2,3 +2,5 @@
 *.mkv
 *.avi
 scratch/
+.claude/
+

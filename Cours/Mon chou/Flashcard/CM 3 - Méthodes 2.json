@@ -1,0 +1,216 @@
+[
+  {
+    "recto": "Quelle est la différence fondamentale entre Knock-Out (KO) et Knock-In (KI) ?",
+    "verso": "KO = invalidation de l'expression d'un gène (perte de fonction). KI = insertion ciblée d'un gène ou d'une séquence (gain de fonction, gène rapporteur, mutation précise).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "KO",
+      "KI",
+      "Génétique"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un siRNA et comment agit-il ?",
+    "verso": "Petit ARN double brin de 21-23 nt. Intégré dans le complexe RISC, son brin guide s'apparie à l'ARNm cible pour induire sa dégradation ou bloquer sa traduction (Knock-Down transitoire).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "siRNA",
+      "RISC",
+      "Knock-Down"
+    ]
+  },
+  {
+    "recto": "Quel est le principe du système Cre/LoxP ?",
+    "verso": "La recombinase Cre reconnaît les séquences loxP (34 pb). Deux sites loxP orientés dans le même sens encadrant un fragment d'ADN (« souris floxée ») permettent son excision irréversible par la Cre.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "Cre/LoxP",
+      "Recombinaison"
+    ]
+  },
+  {
+    "recto": "Comment réalise-t-on un KO tissu-spécifique avec le système Cre/LoxP ?",
+    "verso": "En plaçant l'expression de la Cre sous le contrôle d'un promoteur spécifique d'un tissu donné (ex: promoteur albumine pour le foie), puis en croisant cette souris avec une souris portant le gène d'intérêt floxé.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "Cre/LoxP",
+      "KO tissu-spécifique"
+    ]
+  },
+  {
+    "recto": "Quel phénotype métabolique présente la souris LIRKO (Liver Insulin Receptor KO) ?",
+    "verso": "Une insulino-résistance marquée et une intolérance au glucose par absence de récepteur de l'insuline dans les hépatocytes (Alb-Cre x IR-lox).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "LIRKO",
+      "Diabète",
+      "Foie"
+    ]
+  },
+  {
+    "recto": "Pourquoi la souris MIRKO (Muscle Insulin Receptor KO) développe-t-elle une obésité ?",
+    "verso": "La capture de glucose étant diminuée dans le muscle par absence de récepteur de l'insuline, le glucose circulant est redirigé vers le tissu adipeux où il est stocké sous forme de triglycérides.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "MIRKO",
+      "Muscle",
+      "Obésité"
+    ]
+  },
+  {
+    "recto": "Quel est le phénotype des souris NIRKO (Neuron Insulin Receptor KO) ?",
+    "verso": "Prise de poids corporelle significative et augmentation de la masse de tissu adipeux (démontrant le rôle central de l'insuline cérébrale dans l'adiposité).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "NIRKO",
+      "Neurone",
+      "Poids"
+    ]
+  },
+  {
+    "recto": "Quel promoteur neuronal est couramment utilisé pour exprimer la Cre dans le système nerveux ?",
+    "verso": "Le promoteur NEX (utilisé pour les souris NIRKO ou KO de la LPL dans les neurones).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "NEX",
+      "Promoteur neuronal"
+    ]
+  },
+  {
+    "recto": "Quelle pathologie humaine est modélisée par les souris MC4R KO ?",
+    "verso": "L'obésité génétique précoce sévère (mutation du récepteur 4 à la mélanocortine chez l'Homme reproduite chez la souris).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "MC4R",
+      "Obésité",
+      "Modèle animal"
+    ]
+  },
+  {
+    "recto": "Quelle est la fonction biologique originelle du système CRISPR/Cas chez les bactéries ?",
+    "verso": "Un système d'immunité adaptative permettant d'acquérir des fragments d'ADN de bactériophages et de cliver leur génome lors d'une réinfection.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "CRISPR",
+      "Immunité bactérienne"
+    ]
+  },
+  {
+    "recto": "Quel rôle jouent Cas1 et Cas2 dans le système CRISPR bactérien ?",
+    "verso": "L'étape d'acquisition : intégration de nouveaux fragments d'ADN étranger (espaceurs) dans le locus CRISPR.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "Cas1",
+      "Cas2",
+      "Acquisition"
+    ]
+  },
+  {
+    "recto": "Quelle est la taille de la séquence de ciblage de l'ARN guide (ARNg) chez Cas9 ?",
+    "verso": "17 à 20 nucléotides complémentaires de la région génomique cible.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "ARNg",
+      "CRISPR",
+      "Ciblage"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le motif PAM et où coupe Cas9 par rapport à celui-ci ?",
+    "verso": "Protospacer Adjacent Motif (motif 5'-NGG-3' ou NGA indispensable). Cas9 coupe les deux brins d'ADN exactement 3 nucléotides avant le PAM.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "PAM",
+      "Cas9",
+      "Coupure"
+    ]
+  },
+  {
+    "recto": "Comment le système FokI-dCas9 évite-t-il les coupures hors-cible (off-target) ?",
+    "verso": "FokI ne coupe l'ADN que sous forme de dimère ; deux dCas9 fusionnées à FokI doivent se fixer simultanément à 13-17 nt de distance via deux ARNg différents, multipliant la spécificité.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "FokI",
+      "dCas9",
+      "Off-target"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la protéine dCas9 ('dead Cas9') ?",
+    "verso": "Une enzyme Cas9 mutée catalytiquement inactive qui ne coupe plus l'ADN, mais conserve sa capacité à être adressée précisément sur une séquence par un ARNg.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "dCas9",
+      "Inactivation catalytique"
+    ]
+  },
+  {
+    "recto": "Quels sont les effets des fusions dCas9-KRAB et dCas9-VP64 sur l'expression d'un gène ?",
+    "verso": "dCas9-KRAB = répression transcriptionnelle active du promoteur.\ndCas9-VP64 = activation transcriptionnelle par recrutement de la machinerie de transcription.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "KRAB",
+      "VP64",
+      "Épigénétique"
+    ]
+  },
+  {
+    "recto": "Comment CRISPR/Cas9 a-t-il été utilisé pour corriger la Dystrophie Musculaire de Duchenne ?",
+    "verso": "Délétion de l'exon 23 muté à l'aide de deux ARNg encadrants et réparation par NHEJ, créant une dystrophine raccourcie mais fonctionnelle restaurant la force musculaire.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "Duchenne",
+      "Dystrophine",
+      "Saut d'exon"
+    ]
+  },
+  {
+    "recto": "Comment CRISPR/Cas9 peut-il cibler la maladie de Huntington ?",
+    "verso": "En excisant l'expansion anormale de triplets CAG dans le gène de la huntingtine via deux ARNg flanquant la région répétée.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "Huntington",
+      "CAG",
+      "CRISPR"
+    ]
+  },
+  {
+    "recto": "Quel est le phénotype des souris ZnT8 KO ?",
+    "verso": "Poids supérieur aux souris sauvages et susceptibilité accrue au développement d'un diabète.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "ZnT8",
+      "Diabète"
+    ]
+  },
+  {
+    "recto": "Quelles sont les deux voies cellulaires de réparation d'une cassure double brin d'ADN ?",
+    "verso": "1) NHEJ (Non-Homologous End Joining) : rapide, sujette à erreurs (indels -> KO).\n2) HDR (Homology-Directed Repair) : précise, dépendante d'une matrice d'ADN donneuse (Knock-In).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 3 - Méthodes 2",
+    "tags": [
+      "NHEJ",
+      "HDR",
+      "Réparation ADN"
+    ]
+  }
+]

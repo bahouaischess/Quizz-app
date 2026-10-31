@@ -1,0 +1,658 @@
+{
+  "name": "Chimie - Polarisation des liaisons",
+  "folder": "PASS - Chimie",
+  "description": "Liaisons covalentes polarisées et ioniques, moment dipolaire permanent et unités (Debye), géométrie et moment dipolaire moléculaire, interactions de Van der Waals (Keesom, Debye, London), liaison hydrogène (propriétés de l'eau, ADN, protéines, ortho vs para-nitrophénol), solubilité et pouvoir diélectrique.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant la polarisation d'une liaison chimique A-B :",
+      "tags": [
+        "Polarisation",
+        "Électronégativité",
+        "Liaison polarisée"
+      ],
+      "options": [
+        {
+          "text": "Elle résulte d'une différence d'électronégativité (Delta_EN) entre les deux atomes liés.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'atome le plus électronégatif attire préférentiellement les électrons de liaison et acquiert une charge partielle négative delta-.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'atome le moins électronégatif acquiert une charge partielle positive delta+ égale en valeur absolue à delta-.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour Delta_EN = 0 (ex : liaison H-H ou Cl-Cl), la liaison covalente est rigoureusement apolaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si Delta_EN > 2,0, le caractère ionique devient très majoritaire (ex : Na+ Cl- ou Li+ F-).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont vraies ! La liaison covalente polarisée est un état intermédiaire continu entre la liaison covalente purement apolaire (Delta_EN = 0) et la liaison ionique pure (transfert complet d'électron, Delta_EN très élevé)."
+    },
+    {
+      "q": "Le moment dipolaire permanent d'une liaison chimique s'exprime par mu = delta * e * d. Quelles affirmations sont EXACTES ?",
+      "tags": [
+        "Moment dipolaire",
+        "Formule",
+        "Debye"
+      ],
+      "options": [
+        {
+          "text": "e est la charge élémentaire de l'électron (1,602.10^-19 C).",
+          "isCorrect": true
+        },
+        {
+          "text": "d est la longueur internucléaire de la liaison.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'unité légale du moment dipolaire dans le Système International est le Coulomb.mètre (C.m).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'unité usuelle en chimie est le Debye (D), avec 1 D ≈ 3,336.10^-30 C.m.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pourcentage de caractère ionique partiel s'exprime par % = (mu_exp / mu_théorique_ionique) * 100.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces affirmations sont rigoureusement exactes. Le moment dipolaire théorique 100% ionique correspond à delta = 1 (charge e complète transférée sur la distance d)."
+    },
+    {
+      "q": "Pourquoi la molécule de dioxyde de carbone CO2 a-t-elle un moment dipolaire moléculaire global NUL (mu = 0 D), alors que ses liaisons C=O sont fortement polarisées ?",
+      "tags": [
+        "CO2",
+        "Symétrie",
+        "Apolarité"
+      ],
+      "options": [
+        {
+          "text": "La molécule est linéaire (angles de 180°), de sorte que les deux vecteurs moments dipolaires de liaison C=O sont de même norme et de sens opposés, s'annulant vectoriellement.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'oxygène a la même électronégativité que le carbone.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le dioxyde de carbone est un liquide apolaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les liaisons C=O ne sont pas polarisées.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le moment dipolaire moléculaire est la somme vectorielle des moments dipolaires de liaison. Comme CO2 est linéaire (VSEPR AX2), mu_total = mu(C=O_gauche) + mu(C=O_droite) = 0. La molécule est donc APOLAIRE malgré des liaisons individuelles très polaires."
+    },
+    {
+      "q": "Parmi les molécules suivantes, laquelle/lesquelles possède(nt) un moment dipolaire permanent NON NUL (molécules polaires) ?",
+      "tags": [
+        "Molécules polaires",
+        "Exemples",
+        "Symétrie"
+      ],
+      "options": [
+        {
+          "text": "L'eau H2O",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ammoniac NH3",
+          "isCorrect": true
+        },
+        {
+          "text": "Le tétrachlorure de carbone CCl4",
+          "isCorrect": false
+        },
+        {
+          "text": "Le trifluorure de bore BF3",
+          "isCorrect": false
+        },
+        {
+          "text": "Le trichlorométhane (chloroforme) CHCl3",
+          "isCorrect": true
+        },
+        {
+          "text": "Le trans-1,2-dichloroéthène",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "H2O (coudée, mu = 1,85 D), NH3 (pyramidale, mu = 1,47 D) et CHCl3 (tétraèdre dissymétrique) sont POLAIRES. En revanche, CCl4 (tétraédrique parfait régulier), BF3 (trigonal plan symétrique) et le trans-1,2-dichloroéthène (centre d'inversion) ont une résultante vectorielle nulle et sont APOLAIRES."
+    },
+    {
+      "q": "Concernant les interactions intermoléculaires de Van der Waals :",
+      "tags": [
+        "Van der Waals",
+        "Keesom, Debye, London",
+        "Classification"
+      ],
+      "options": [
+        {
+          "text": "Les forces de Keesom correspondent aux interactions attractives entre dipôles permanents (molécules polaires).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les forces de Debye correspondent à l'interaction entre un dipôle permanent et un dipôle induit.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les forces de London (forces de dispersion) résultent de dipôles instantanés fluctuants induisant des dipôles dans les molécules voisines.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les forces de London existent entre TOUTES les molécules sans exception, qu'elles soient polaires ou apolaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'énergie des forces de Van der Waals est généralement supérieure à 400 kJ.mol^-1.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les forces de Van der Waals sont des interactions faibles non covalentes, d'énergie comprise entre 0,5 et 20 kJ/mol (très inférieure à une liaison covalente qui vaut environ 200 à 500 kJ/mol). L'énergie potentielle varie typiquement en 1/r^6."
+    },
+    {
+      "q": "À propos des forces de dispersion de London :",
+      "tags": [
+        "London",
+        "Polarisabilité",
+        "Températures d'ébullition"
+      ],
+      "options": [
+        {
+          "text": "Leur intensité augmente avec la polarisabilité du nuage électronique de la molécule.",
+          "isCorrect": true
+        },
+        {
+          "text": "La polarisabilité augmente avec le volume du nuage électronique, le nombre total d'électrons et la masse molaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans la colonne des halogènes (F2, Cl2, Br2, I2), la température d'ébullition augmente vers le bas (I2 solide > Br2 liquide > Cl2 gaz > F2 gaz) en raison de l'augmentation des forces de London.",
+          "isCorrect": true
+        },
+        {
+          "text": "Entre isomères aliphatiques, l'isomère linéaire présente une plus grande surface de contact et donc une température d'ébullition plus élevée que l'isomère ramifié sphérique (ex : n-pentane Teb = 36 °C vs néopentane Teb = 9,5 °C).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les forces de London sont répulsives à grande distance.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Toutes ces propositions sont vraies et expliquent l'état physique des corps purs apolaires ! Les molécules allongées ont plus de surface d'interaction que les molécules compactes sphériques, d'où des forces de London et des températures d'ébullition plus élevées."
+    },
+    {
+      "q": "Quelles sont les conditions indispensables pour la formation d'une liaison hydrogène (pont hydrogène) ?",
+      "tags": [
+        "Liaison hydrogène",
+        "Conditions",
+        "Définition"
+      ],
+      "options": [
+        {
+          "text": "Un atome d'hydrogène lié par covalence à un petit atome très électronégatif (F, O ou N) agissant comme donneur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un doublet électronique non liant porté par un petit atome très électronégatif (F, O ou N) d'une autre molécule (ou du même édifice) agissant comme accepteur.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'énergie d'une liaison hydrogène est typiquement comprise entre 10 et 40 kJ.mol^-1.",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison hydrogène est strictement non directionnelle.",
+          "isCorrect": false
+        },
+        {
+          "text": "La liaison hydrogène est maximale lorsque l'enchaînement Donneur-H...Accepteur est linéaire (angle proche de 180°).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La liaison hydrogène est FORTEMENT DIRECTIONNELLE, son énergie étant maximale pour un angle D-H...A proche de 180°. Son intensité (10 à 40 kJ/mol) est intermédiaire entre les forces de Van der Waals (0,5 - 5 kJ/mol) et les liaisons covalentes (300 - 500 kJ/mol)."
+    },
+    {
+      "q": "Pourquoi la température d'ébullition de l'eau H2O (100 °C) est-elle ANORMALEMENT ÉLEVÉE par rapport à celle du sulfure d'hydrogène H2S (-60 °C), alors que H2S est plus lourd que H2O ?",
+      "tags": [
+        "H2O vs H2S",
+        "Liaison hydrogène",
+        "Ébullition"
+      ],
+      "options": [
+        {
+          "text": "L'eau établit un réseau tridimensionnel étendu de liaisons hydrogène très fortes entre molécules.",
+          "isCorrect": true
+        },
+        {
+          "text": "Chaque molécule d'eau peut former en moyenne 4 liaisons hydrogène (2 par ses H et 2 par ses doublets libres d'oxygène).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'atome de soufre est moins électronégatif et plus volumineux que l'oxygène, ne permettant pas la formation de liaisons hydrogène significatives dans H2S.",
+          "isCorrect": true
+        },
+        {
+          "text": "H2O possède une masse molaire plus grande que H2S.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "M(H2O) = 18 g/mol vs M(H2S) = 34 g/mol. Si seules les forces de Van der Waals intervenaient, l'eau bouillirait vers -80 °C ! L'écart colossal (+160 °C) est exclusivement dû au réseau dense de 4 liaisons hydrogène par molécule d'eau liquide."
+    },
+    {
+      "q": "Dans la structure des acides nucléiques (ADN double hélice) et des protéines :",
+      "tags": [
+        "Liaisons hydrogène",
+        "ADN",
+        "Protéines"
+      ],
+      "options": [
+        {
+          "text": "Les deux brins d'ADN sont maintenus appariés par des liaisons hydrogène spécifiques entre bases azotées complémentaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "La paire Adénine - Thymine (A-T) comporte 2 liaisons hydrogène.",
+          "isCorrect": true
+        },
+        {
+          "text": "La paire Guanine - Cytosine (G-C) comporte 3 liaisons hydrogène.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les structures secondaires des protéines (hélices alpha et feuillets bêta) sont stabilisées par des liaisons hydrogène entre les groupements C=O et N-H du squelette peptidique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les brins d'ADN sont reliés par des liaisons covalentes carbone-carbone.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La double hélice d'ADN est unie par des liaisons H inter-brins (2 pour A=T et 3 pour G≡C, expliquant qu'un ADN riche en GC a une température de fusion Tm plus élevée). Les protéines adoptent leurs repliements alpha et bêta grâce aux liaisons H régulières."
+    },
+    {
+      "q": "Entre le para-nitrophénol et l'ortho-nitrophénol :",
+      "tags": [
+        "Liaison hydrogène",
+        "Intramoléculaire vs Intermoléculaire",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "L'ortho-nitrophénol forme une liaison hydrogène INTRAMOLÉCULAIRE entre son groupe -OH et son groupe -NO2 voisin.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le para-nitrophénol ne peut former que des liaisons hydrogène INTERMOLÉCULAIRES avec les molécules voisines.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ortho-nitrophénol est plus volatil et a une température d'ébullition plus basse que le para-nitrophénol.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le para-nitrophénol est beaucoup plus soluble dans l'eau que l'ortho-nitrophénol.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ortho-nitrophénol forme un polymère par liaisons hydrogène intermoléculaires.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Exemple classique du concours PASS ! Dans l'ortho-nitrophénol, la liaison H intramoléculaire 'ferme' la molécule sur elle-même (cycle chélate à 6 chaînons), réduisant les interactions avec le solvant ou les voisines => plus volatil, moins soluble dans l'eau, Teb plus basse. Le para-nitrophénol forme des liaisons H INTERmoléculaires ouvertes."
+    },
+    {
+      "q": "La règle générale de solubilité 'qui se ressemble dissout qui se ressemble' (similia similibus solvuntur) signifie que :",
+      "tags": [
+        "Solubilité",
+        "Solvants",
+        "Polarité"
+      ],
+      "options": [
+        {
+          "text": "Un soluté polaire ou ionique (ex : NaCl, glucose) est très soluble dans un solvant polaire protique comme l'eau.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un soluté apolaire (ex : lipides, hydrocarbures, cholestérol) est très peu soluble dans l'eau mais très soluble dans les solvants apolaires organiques (ex : hexane, éther).",
+          "isCorrect": true
+        },
+        {
+          "text": "La dissolution d'un sel ionique dans l'eau est favorisée par la forte permittivité diélectrique de l'eau (epsilon_r ≈ 80) qui affaiblit l'attraction coulombienne entre cations et anions.",
+          "isCorrect": true
+        },
+        {
+          "text": "La solvatation (hydratation) des ions libère une énergie favorable (enthalpie d'hydratation exothermique).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'huile se mélange parfaitement à l'eau car elles forment des liaisons covalentes spontanées.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'eau dissout les sels grâce à sa polarité, son fort pouvoir diélectrique (loi de Coulomb divisée par 80) et la solvatation des ions. Les corps gras hydrophobes sont insolubles dans l'eau (effet hydrophobe entropique)."
+    },
+    {
+      "q": "Quelle est la nature des interactions stabilisant les membranes biologiques lipidiques (bicouche de phospholipides) ?",
+      "tags": [
+        "Membranes",
+        "Phospholipides",
+        "Interactions non covalentes"
+      ],
+      "options": [
+        {
+          "text": "Les têtes polaires hydrophiles sont orientées vers les milieux aqueux intra- et extra-cellulaires et interagissent par liaisons hydrogène et dipolaires avec l'eau.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les chaînes aliphatiques hydrophobes sont regroupées au cœur de la bicouche et sont stabilisées par des forces de dispersion de London (effet hydrophobe).",
+          "isCorrect": true
+        },
+        {
+          "text": "La membrane est maintenue par des liaisons covalentes fortes reliant tous les lipides entre eux.",
+          "isCorrect": false
+        },
+        {
+          "text": "La structure en bicouche est spontanée en milieu aqueux car elle maximise l'entropie de l'eau environnante.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les bicouches lipidiques ne comportent AUCUNE liaison covalente inter-lipides : ce sont des édifices supramoléculaires fluides maintenus par l'effet hydrophobe, les forces de London au centre et les liaisons H en surface."
+    },
+    {
+      "q": "Parmi les solvants suivants, lequel possède le moment dipolaire permanent le plus élevé et la plus forte constante diélectrique ?",
+      "tags": [
+        "Solvants",
+        "Constante diélectrique",
+        "Eau"
+      ],
+      "options": [
+        {
+          "text": "L'hexane (C6H14)",
+          "isCorrect": false
+        },
+        {
+          "text": "Le benzène (C6H6)",
+          "isCorrect": false
+        },
+        {
+          "text": "L'eau (H2O)",
+          "isCorrect": true
+        },
+        {
+          "text": "Le tétrachlorométhane (CCl4)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'eau a une constante diélectrique relative exceptionnelle (epsilon_r ≈ 80 à 20 °C) et un moment dipolaire de 1,85 D. Les trois autres sont des solvants strictement apolaires (mu = 0 D, epsilon_r ≈ 2)."
+    },
+    {
+      "q": "Dans la molécule de fluorométhane CH3F, par comparaison avec le chlorométhane CH3Cl :",
+      "tags": [
+        "Moment dipolaire",
+        "CH3F vs CH3Cl",
+        "Subtilité"
+      ],
+      "options": [
+        {
+          "text": "Le fluor est plus électronégatif que le chlore (4,0 vs 3,0).",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison C-F est plus courte que la liaison C-Cl (138 pm vs 178 pm).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le moment dipolaire de CH3Cl (1,87 D) est légèrement supérieur à celui de CH3F (1,82 D) car la plus grande distance d compense la charge partielle delta.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le moment dipolaire dépend à la fois de la charge partielle delta et de la distance d (mu = delta * d).",
+          "isCorrect": true
+        },
+        {
+          "text": "CH3F est une molécule apolaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Curiosité célèbre du programme PASS : mu = delta * d. Même si la charge delta sur F est plus forte que sur Cl, la liaison C-Cl est tellement plus longue que le produit delta * d est légèrement plus grand pour CH3Cl que pour CH3F !"
+    },
+    {
+      "q": "Qu'est-ce que la polarisabilité alpha d'un atome ou d'une molécule ?",
+      "tags": [
+        "Polarisabilité",
+        "Définition",
+        "Nuage électronique"
+      ],
+      "options": [
+        {
+          "text": "La facilité avec laquelle le nuage électronique peut être déformé sous l'effet d'un champ électrique extérieur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un moment dipolaire induit s'exprime par mu_induit = alpha * E_champ.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les gros atomes dont les électrons de valence sont éloignés du noyau (comme l'iode) sont beaucoup plus polarisables que les petits atomes fermement liés (comme le fluor).",
+          "isCorrect": true
+        },
+        {
+          "text": "La polarisabilité est identique au moment dipolaire permanent.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La polarisabilité mesure la déformabilité du nuage. L'iode est mou et très polarisable, alors que le fluor est dur et peu polarisable."
+    },
+    {
+      "q": "Concernant l'interaction ion-dipôle (comme l'hydratation de l'ion Na+ par l'eau) :",
+      "tags": [
+        "Ion-dipôle",
+        "Hydratation",
+        "Énergie"
+      ],
+      "options": [
+        {
+          "text": "Le pôle négatif (oxygène) des molécules d'eau est orienté vers le cation Na+.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour l'hydratation d'un anion comme Cl-, ce sont les atomes d'hydrogène (pôles positifs delta+) qui s'orientent vers l'ion.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'énergie d'une interaction ion-dipôle est inversement proportionnelle au carré de la distance (1/r^2).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est plus énergétique que les interactions dipôle-dipôle de Van der Waals (1/r^6).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'interaction ion-dipôle est toujours répulsive.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'interaction ion-dipôle est attractive et vigoureuse (40 à 100 kJ/mol par liaison de coordination d'hydratation), décroissant en 1/r^2 (beaucoup plus lentement que Van der Waals en 1/r^6)."
+    },
+    {
+      "q": "Le cis-1,2-dichloroéthène et le trans-1,2-dichloroéthène diffèrent par leur polarité. Quelles affirmations sont VRAIES ?",
+      "tags": [
+        "Z/E",
+        "Moment dipolaire",
+        "Teb"
+      ],
+      "options": [
+        {
+          "text": "L'isomère cis (Z) possède un moment dipolaire permanent non nul (mu > 0 D).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isomère trans (E) possède un centre de symétrie et un moment dipolaire nul (mu = 0 D).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isomère cis a une température d'ébullition plus élevée que l'isomère trans en raison des interactions dipôle-dipôle de Keesom supplémentaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les deux isomères ont exactement les mêmes propriétés physiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans le cis, les deux dipôles C-Cl s'additionnent vers le même côté (mu ≈ 1,9 D), provoquant des forces de Keesom qui augmentent Teb (60 °C). Dans le trans, les deux dipôles sont opposés et s'annulent (mu = 0 D, Teb = 48 °C)."
+    },
+    {
+      "q": "Parmi les liaisons suivantes, laquelle présente le caractère ionique partiel le plus ÉLEVÉ ?",
+      "tags": [
+        "Caractère ionique",
+        "Électronégativité",
+        "Comparaison"
+      ],
+      "options": [
+        {
+          "text": "C-H",
+          "isCorrect": false
+        },
+        {
+          "text": "C-Cl",
+          "isCorrect": false
+        },
+        {
+          "text": "C-O",
+          "isCorrect": false
+        },
+        {
+          "text": "K-F",
+          "isCorrect": true
+        },
+        {
+          "text": "N-H",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "K (métal alcalin, EN ≈ 0,8) et F (halogène le plus électronégatif, EN = 4,0) ont un Delta_EN = 3,2, ce qui correspond à une liaison quasi-totalement ionique (> 90 % de caractère ionique)."
+    },
+    {
+      "q": "Quel est l'effet de la liaison hydrogène sur la masse volumique de la glace par rapport à l'eau liquide à 0 °C ?",
+      "tags": [
+        "Glace",
+        "Masse volumique",
+        "Anomalie de l'eau"
+      ],
+      "options": [
+        {
+          "text": "La glace est moins dense que l'eau liquide car les liaisons hydrogène imposent une structure cristalline hexagonale ouverte et aérée.",
+          "isCorrect": true
+        },
+        {
+          "text": "La glace flotte sur l'eau liquide.",
+          "isCorrect": true
+        },
+        {
+          "text": "La densité maximale de l'eau liquide est atteinte à environ 4 °C.",
+          "isCorrect": true
+        },
+        {
+          "text": "La glace coule au fond de l'eau car les solides sont toujours plus denses que les liquides.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "C'est l'anomalie thermique majeure de l'eau : la glace possède un réseau hexagonal lacunaire où chaque molécule est tétraédriquement entourée de 4 voisines par des liaisons H rigides. Lors de la fusion, la structure s'effondre partiellement, augmentant la densité (la glace flotte !)."
+    },
+    {
+      "q": "La permittivité diélectrique relative (constante diélectrique) epsilon_r d'un solvant mesure sa capacité à :",
+      "tags": [
+        "Constante diélectrique",
+        "Solvant",
+        "Écrantage coulombien"
+      ],
+      "options": [
+        {
+          "text": "Diminuer l'attraction électrostatique entre ions de charges opposées selon la force de Coulomb F = (1 / 4*pi*epsilon_0*epsilon_r) * (q1*q2 / r^2).",
+          "isCorrect": true
+        },
+        {
+          "text": "Favoriser la dissociation et l'ionisation des solutés électrolytes.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'eau (epsilon_r ≈ 80) est un solvant très dissociant.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hexane (epsilon_r ≈ 1,9) permet la dissociation spontanée des sels ioniques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La force coulombienne entre charges est divisée par epsilon_r. Dans l'eau (epsilon_r = 80), l'attraction Na+-Cl- est 80 fois plus faible que dans le vide, permettant la séparation et la dissociation complète des ions."
+    },
+    {
+      "q": "Parmi les molécules suivantes, laquelle NE PEUT PAS former de liaisons hydrogène entre ses propres molécules à l'état pur ?",
+      "tags": [
+        "Liaison hydrogène",
+        "Donneur et Accepteur",
+        "Pièges"
+      ],
+      "options": [
+        {
+          "text": "L'éthanol CH3CH2OH",
+          "isCorrect": false
+        },
+        {
+          "text": "La méthylamine CH3NH2",
+          "isCorrect": false
+        },
+        {
+          "text": "L'acétone (CH3)2C=O",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide éthanoïque CH3COOH",
+          "isCorrect": false
+        },
+        {
+          "text": "L'eau H2O",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'acétone possède un oxygène accepteur de liaison H (doublets libres sur C=O), mais NE POSSÈDE AUCUN HYDROGÈNE LIÉ À UN HÉTÉROATOME (les H sont portés par des carbones C-H non donneurs de liaison H). L'acétone pure ne peut donc pas former de liaisons H entre ses molécules (mais peut en accepter de l'eau)."
+    },
+    {
+      "q": "L'énergie de dissociation d'une liaison hydrogène classique (ex : O-H...O dans l'eau) est de l'ordre de :",
+      "tags": [
+        "Liaison hydrogène",
+        "Ordre de grandeur",
+        "Énergie"
+      ],
+      "options": [
+        {
+          "text": "0,1 kJ.mol^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "20 kJ.mol^-1 (soit environ 5 kcal.mol^-1)",
+          "isCorrect": true
+        },
+        {
+          "text": "400 kJ.mol^-1",
+          "isCorrect": false
+        },
+        {
+          "text": "4000 kJ.mol^-1",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Une liaison H vaut environ 10 à 40 kJ/mol (typiquement ~20 kJ/mol pour l'eau). À comparer aux liaisons covalentes C-C ou O-H qui valent ~350 à 460 kJ/mol, et aux liaisons de Van der Waals qui valent ~1 à 5 kJ/mol."
+    }
+  ]
+}

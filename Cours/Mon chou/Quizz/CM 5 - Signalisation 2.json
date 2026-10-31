@@ -1,0 +1,633 @@
+{
+  "name": "CM 5 - Signalisation 2",
+  "folder": "PASS - Biologie Cellulaire",
+  "description": "Quiz approfondi de niveau PASS sur la signalisation cellulaire 2 : seconds messagers, protéines G hétérotrimériques (Gs, Gi, Gq, Gt, Go), adénylate cyclase, phospholipase C, récepteurs à activité enzymatique (RTK, voie Ras/MAPK), désensibilisation et implications cliniques (choléra).",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant les seconds messagers et la notion d'amplification intracellulaire, quelle(s) assertion(s) est (sont) exacte(s) ?",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Seconds messagers",
+        "Amplification"
+      ],
+      "options": [
+        {
+          "text": "Les seconds messagers sont de petites molécules ou ions intracellulaires synthétisés ou libérés en réponse à un signal extracellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'AMP cyclique (AMPc), l'IP3, le DAG, le GMPc et le Ca2+ sont des exemples majeurs de seconds messagers.",
+          "isCorrect": true
+        },
+        {
+          "text": "La cascade de seconds messagers permet une amplification considérable du signal : la liaison d'une seule molécule de ligand peut générer des milliers de seconds messagers.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le ligand extracellulaire (premier messager) pénètre systématiquement dans le noyau pour synthétiser directement les seconds messagers.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le diacylglycérol (DAG) est un second messager hydrosoluble qui diffuse librement dans le nucléoplasme.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les seconds messagers amplifient le signal initial. Le DAG est un lipide hydrophobe qui reste ancré dans la membrane plasmique (contrairement à l'IP3 qui diffuse dans le cytosol)."
+    },
+    {
+      "q": "Concernant les commutateurs moléculaires intracellulaires :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Commutateurs moléculaires"
+      ],
+      "options": [
+        {
+          "text": "Les protéines liant le GTP sont actives sous forme liée au GTP et inactives sous forme liée au GDP.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'activation d'une protéine G s'effectue par phosphorylation directe du GDP en GTP sans dissociation du nucléotide.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'inactivation d'une protéine G repose sur l'activité GTPasique qui hydrolyse le GTP en GDP en libérant un phosphate inorganique (Pi).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans la signalisation par phosphorylation, une protéine kinase ajoute un groupement phosphate en hydrolysant une molécule d'ATP.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les phosphatases catalysent l'élimination d'un phosphate (déphosphorylation), permettant souvent le retour à l'état inactif.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'activation d'une protéine G implique un ÉCHANGE de GDP par un nouveau GTP (induit par un GEF), et non une phosphorylation directe du GDP lié. L'inactivation se fait par hydrolyse du GTP en GDP."
+    },
+    {
+      "q": "Concernant la structure et le fonctionnement des récepteurs couplés aux protéines G (RCPG) et des protéines G hétérotrimériques :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "RCPG",
+        "Protéines G"
+      ],
+      "options": [
+        {
+          "text": "Les RCPG possèdent 7 hélices alpha transmembranaires (7-TM) avec un site de liaison du ligand extracellulaire et une région intracellulaire liant la protéine G.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine G hétérotrimérique est composée de trois sous-unités : alpha, bêta et gamma.",
+          "isCorrect": true
+        },
+        {
+          "text": "À l'état de repos inactif, la sous-unité alpha est liée à une molécule de GTP.",
+          "isCorrect": false
+        },
+        {
+          "text": "Lors de l'activation, la sous-unité alpha liée au GTP se sépare du dimère bêta-gamma activé.",
+          "isCorrect": true
+        },
+        {
+          "text": "Tant la sous-unité alpha-GTP que le dimère bêta-gamma libéré peuvent réguler des effecteurs enzymatiques ou des canaux ioniques.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "À l'état inactif basal, la sous-unité alpha lie le GDP. Lors de l'activation, elle fixe le GTP et se dissocie du dimère bêta-gamma ; les deux fractions peuvent ensuite agir sur des effecteurs cellulaires."
+    },
+    {
+      "q": "Concernant la spécificité des protéines G hétérotrimériques et de leurs cibles enzymatiques :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Protéines G",
+        "Spécificité"
+      ],
+      "options": [
+        {
+          "text": "La protéine Gs active l'adénylate cyclase et augmente la concentration intracellulaire d'AMPc.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine Gi inhibe l'adénylate cyclase et diminue la synthèse d'AMPc.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine Gq active la phospholipase C (PLC) membranaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine Gt (transducine) active une phosphodiestérase spécifique du GMPc dans la rétine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine Go agit notamment sur l'ouverture de canaux potassiques (K+) cardiaques.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Chaque type de protéine G possède des cibles spécifiques : Gs (stimule AC), Gi (inhibe AC), Gq (active PLC), Gt (active PDE du GMPc), Go (canaux K+ cardiaques)."
+    },
+    {
+      "q": "Sur les cellules musculaires cardiaques, quelle cascade est déclenchée par l'acétylcholine se liant au récepteur muscarinique M2 (M2AChR) ?",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "M2AChR",
+        "Cœur",
+        "Atropine"
+      ],
+      "options": [
+        {
+          "text": "Activation d'une protéine Go, libération du dimère bêta-gamma qui ouvre des canaux potassiques (K+), entraînant une sortie de K+, une hyperpolarisation et une diminution de la fréquence cardiaque.",
+          "isCorrect": true
+        },
+        {
+          "text": "Activation directe d'une tyrosine kinase provoquant une contraction tétanique du ventricule.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'atropine est un antagoniste du récepteur muscarinique qui bloque cette voie et accélère le rythme cardiaque.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'atropine est indiquée en urgence dans la prise en charge du malaise vagal ou des intoxications par certains champignons muscariniques.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ouverture du canal K+ cardiaque nécessite la fixation directe de la nicotine sur le pore du canal.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'activation du récepteur métabotrope M2 par l'ACh libère le dimère bêta-gamma de Go qui ouvre les canaux GIRK (K+), provoquant hyperpolarisation et bradycardie. L'atropine antagonise ce récepteur et lève le frein vagal."
+    },
+    {
+      "q": "Concernant la voie de la Phospholipase C (PLC) stimulée par la protéine Gq :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "PLC",
+        "Gq",
+        "IP3",
+        "DAG"
+      ],
+      "options": [
+        {
+          "text": "La PLC hydrolyse le phosphatidylinositol 4,5-bisphosphate (PIP2) membranaire en deux seconds messagers : l'IP3 et le DAG.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'IP3 diffuse dans le cytosol et se lie à des récepteurs-canaux calciques situés sur la membrane du réticulum endoplasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ouverture des canaux du réticulum provoque une libération massive d'ions Ca2+ dans le cytosol.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le diacylglycérol (DAG), conjointement avec les ions Ca2+, active la Protéine Kinase C (PKC) à la membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le Ca2+ cytosolique peut se lier à la calmoduline pour activer des CaM-kinases.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces étapes résument parfaitement la voie PLC-bêta / Gq : PIP2 clivé en IP3 (libération de Ca2+ du RE) et DAG (activation de la PKC avec le Ca2+). Le Ca2+ active aussi les CaM-kinases via la calmoduline."
+    },
+    {
+      "q": "Concernant l'activation de la Protéine Kinase A (PKA) par l'AMP cyclique :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "PKA",
+        "AMPc"
+      ],
+      "options": [
+        {
+          "text": "La PKA inactive est un tétramère composé de 2 sous-unités régulatrices et de 2 sous-unités catalytiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fixation de 4 molécules d'AMPc sur les sous-unités régulatrices induit un changement de conformation et la libération des 2 sous-unités catalytiques actives.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les sous-unités catalytiques libres phosphorylent des protéines cibles cytosoliques et peuvent transloquer dans le noyau pour activer la transcription.",
+          "isCorrect": true
+        },
+        {
+          "text": "La PKA est une endonucléase qui détruit spécifiquement les ARNm dans les ribosomes.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'adénylate cyclase catalyse la synthèse d'AMPc à partir d'ATP.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'AMPc se lie aux 2 sous-unités régulatrices de la PKA, libérant les 2 sous-unités catalytiques actives qui phosphorylent des sérines/thréonines sur des protéines cibles cytosoliques et nucléaires."
+    },
+    {
+      "q": "Concernant les effets physiologiques de l'adrénaline via les récepteurs bêta-adrénergiques (couplés à Gs) :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Adrénaline",
+        "Gs"
+      ],
+      "options": [
+        {
+          "text": "Dans le tissu cardiaque, elle augmente la force et la fréquence des contractions (tachycardie).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le muscle squelettique, elle stimule la glycogénolyse (dégradation du glycogène en glucose).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le tissu adipeux, elle stimule la lipolyse (dégradation des triacylglycérols en acides gras).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'adrénaline est utilisée en urgence médicale dans l'arrêt cardiaque et le choc anaphylactique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les médicaments bêta-bloquants sont des agonistes mimant l'adrénaline pour provoquer une hypertension aiguë.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'adrénaline via Gs/AC/AMPc/PKA active la lipolyse, la glycogénolyse et l'accélération cardiaque. Les bêta-bloquants sont des antagonistes (utilisés contre l'hypertension et la tachycardie)."
+    },
+    {
+      "q": "Concernant la physiopathologie du choléra (infection par Vibrio cholerae) :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Choléra",
+        "Toxine cholérique"
+      ],
+      "options": [
+        {
+          "text": "La toxine cholérique bloque l'activité GTPasique intrinsèque de la sous-unité alpha-s des cellules épithéliales intestinales.",
+          "isCorrect": true
+        },
+        {
+          "text": "La sous-unité alpha-s reste bloquée en permanence sous sa forme active liée au GTP.",
+          "isCorrect": true
+        },
+        {
+          "text": "La production d'AMPc par l'adénylate cyclase devient continue et massivement augmentée.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'élévation d'AMPc provoque une sortie massive d'eau et d'ions dans la lumière intestinale, causant des diarrhées aqueuses profuses et une déshydratation aiguë sévère.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le traitement principal d'urgence repose sur la réhydratation hydro-électrolytique rapide du patient.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La toxine cholérique bloque l'hydrolyse du GTP sur G-alpha-s -> suractivation constitutive de l'AC -> AMPc géant -> efflux massif de chlorure et d'eau -> diarrhée cataclysmique traitable par réhydratation."
+    },
+    {
+      "q": "Concernant la phototransduction dans les bâtonnets rétiniens :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Vision",
+        "Transducine",
+        "Phototransduction"
+      ],
+      "options": [
+        {
+          "text": "Le photorécepteur rhodopsine contient un chromophore, le 11-cis-rétinal, qui s'isomérise en tout-trans-rétinal lors de l'absorption d'un photon.",
+          "isCorrect": true
+        },
+        {
+          "text": "La rhodopsine activée stimule une protéine G spécifique appelée la transducine (Gt).",
+          "isCorrect": true
+        },
+        {
+          "text": "La transducine active une phosphodiestérase (PDE) qui hydrolyse le GMPc en GMP.",
+          "isCorrect": true
+        },
+        {
+          "text": "La chute du taux de GMPc entraîne la FERMETURE des canaux sodium (Na+) GMPc-dépendants.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fermeture des canaux Na+ induit une dépolarisation massive du bâtonnet stimulant l'exocytose de glutamate.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À la lumière, la baisse de GMPc ferme les canaux sodiques, provoquant une HYPERPOLARISATION du bâtonnet et une DIMINUTION de la libération de neurotransmetteur."
+    },
+    {
+      "q": "Concernant les récepteurs couplés à une enzyme ou à activité enzymatique intrinsèque :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Récepteurs kinases",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Ce sont généralement des protéines transmembranaires possédant un seul domaine transmembranaire (1-TM).",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur extrémité N-terminale extracellulaire lie le ligand et leur extrémité C-terminale intracellulaire porte l'activité catalytique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils interviennent souvent en réponse à des médiateurs locaux (facteurs de croissance) à faible concentration régulant la prolifération et la différenciation.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fixation du ligand induit la dimérisation des récepteurs et une trans-autophosphorylation croisée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur activation ne consomme aucune molécule d'ATP.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les récepteurs enzymatiques (ex: RTK) sont à 1-TM, dimérisent lors de la fixation du ligand et réalisent une autophosphorylation croisée consommant de l'ATP."
+    },
+    {
+      "q": "Quels types d'activités enzymatiques intracellulaires peuvent être associés aux récepteurs membranaires enzymatiques ?",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Classes récepteurs enzymes"
+      ],
+      "options": [
+        {
+          "text": "Activité Tyrosine Kinase (phosphoryle des résidus tyrosine).",
+          "isCorrect": true
+        },
+        {
+          "text": "Activité Sérine / Thréonine Kinase (phosphoryle des résidus sérine ou thréonine).",
+          "isCorrect": true
+        },
+        {
+          "text": "Association à une phosphatase (élimine des phosphates).",
+          "isCorrect": true
+        },
+        {
+          "text": "Activité Guanylate Cyclase (synthétise du GMPc).",
+          "isCorrect": true
+        },
+        {
+          "text": "Activité transcriptase inverse bactérienne.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les 4 classes de récepteurs membranaires couplés à une enzyme sont : tyrosine kinase, sérine/thréonine kinase, associés à des phosphatases, et guanylate cyclase."
+    },
+    {
+      "q": "Dans la cascade du récepteur de l'EGF (EGFR, récepteur tyrosine kinase), quel est l'ordre exact des étapes d'activation ?",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Voie Ras/MAPK",
+        "Ordre étapes"
+      ],
+      "options": [
+        {
+          "text": "Liaison de l'EGF -> Dimérisation du récepteur -> Trans-autophosphorylation sur tyrosines -> Recrutement de l'adaptateur Grb2 -> Recrutement du GEF Sos -> Activation de Ras (échange GDP en GTP) -> Activation de Raf -> Activation de MEK -> Activation de MAP-kinase (ERK).",
+          "isCorrect": true
+        },
+        {
+          "text": "Liaison de l'EGF -> Activation de la PKA -> Clivage de PIP2 -> Dimérisation de Sos -> Arrêt du cycle cellulaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "Phosphorylation directe de l'EGF par la phosphodiestérase -> Recrutement de la calmoduline.",
+          "isCorrect": false
+        },
+        {
+          "text": "Activation de Ras -> Recrutement du complexe DISC -> Clivage des caspases initiatrices.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La cascade canonique EGFR est : EGF -> dimérisation -> autophosphorylation Tyr -> Grb2 (SH2) -> Sos (SH3) -> Ras-GTP -> Raf (MAPKKK) -> MEK (MAPKK) -> ERK/MAPK."
+    },
+    {
+      "q": "Concernant la petite protéine G monomérique Ras :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Ras",
+        "Oncologie"
+      ],
+      "options": [
+        {
+          "text": "Elle est ancrée à la face interne de la membrane plasmique par un groupement lipidique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sos agit comme un facteur d'échange de nucléotide guanylique (GEF) stimulant l'échange de GDP en GTP sur Ras.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ras-GTP active directement la sérine/thréonine kinase Raf (MAPKKK).",
+          "isCorrect": true
+        },
+        {
+          "text": "Des mutations ponctuelles oncogéniques du gène Ras bloquent l'hydrolyse du GTP, maintenant Ras constitutivement active dans de nombreux cancers.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ras est un tétramère de 500 kDa localisé dans la matrice mitochondriale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Ras est une petite GTPase monomérique membranaire. Les mutations oncogéniques empêchent l'hydrolyse du GTP, provoquant une prolifération cellulaire incontrôlée indépendante des facteurs de croissance."
+    },
+    {
+      "q": "Concernant les domaines protéiques d'interaction dans la voie des récepteurs tyrosine kinase :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Domaines SH2/SH3"
+      ],
+      "options": [
+        {
+          "text": "Le domaine SH2 de l'adaptateur Grb2 se lie spécifiquement aux résidus phosphotyrosines du récepteur activé.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les domaines SH3 de Grb2 reconnaissent des motifs riches en proline sur la protéine Sos.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le domaine SH2 se lie exclusivement aux lipides du feuillet externe.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'assemblage de ce complexe permet de recruter Sos à proximité immédiate de son substrat Ras à la membrane.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Grb2 possède un domaine SH2 (reconnaît les phosphotyrosines) et deux domaines SH3 (reconnaissent les séquences riches en proline de Sos, amenant Sos à la membrane auprès de Ras)."
+    },
+    {
+      "q": "Quelles stratégies thérapeutiques ciblent l'hyperactivation de la voie EGFR / Ras dans les cancers ?",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Thérapies ciblées",
+        "Cancer"
+      ],
+      "options": [
+        {
+          "text": "Des anticorps monoclonaux bloquant la liaison du ligand sur le domaine extracellulaire du récepteur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Des petites molécules inhibitrices de l'activité enzymatique tyrosine kinase (ITK).",
+          "isCorrect": true
+        },
+        {
+          "text": "Des inhibiteurs de l'ancrage membranaire lipidique de Ras (ex: inhibiteurs de farnésyltransférase).",
+          "isCorrect": true
+        },
+        {
+          "text": "Des activateurs de l'activité GTPasique pour accélérer l'inactivation de Ras.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'inactivation complète des ribosomes 80S par la toxine cholérique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les thérapies antitumorales ciblent l'EGFR (anticorps anti-EGFR, ITK comme le géfitinib/erlotinib) ou Ras (inhibition de l'ancrage membranaire, inhibiteurs allostériques directs de Ras-G12C)."
+    },
+    {
+      "q": "Concernant la désensibilisation et l'adaptation cellulaire face à une stimulation soutenue :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Désensibilisation",
+        "Adaptation"
+      ],
+      "options": [
+        {
+          "text": "La cellule peut contrôler la quantité de ligand disponible, par exemple par dégradation enzymatique extracellulaire (ex: acétylcholinestérase dégradant l'ACh en acétate et choline).",
+          "isCorrect": true
+        },
+        {
+          "text": "La régulation négative ('down-regulation') implique l'endocytose des récepteurs membranaires suivie de leur dégradation lysosomale irréversible.",
+          "isCorrect": true
+        },
+        {
+          "text": "La désensibilisation réversible peut résulter de la phosphorylation du récepteur et de la liaison de protéines inhibitrices.",
+          "isCorrect": true
+        },
+        {
+          "text": "La désensibilisation homologue ne touche sélectivement que le récepteur ayant été stimulé par son ligand.",
+          "isCorrect": true
+        },
+        {
+          "text": "La désensibilisation hétérologue entraîne l'inactivation de plusieurs types de récepteurs différents sur la cellule, stimulés ou non.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes et décrivent les mécanismes clés d'adaptation : régulation du ligand, down-regulation irréversible (lyse), désensibilisation homologue (spécifique) et hétérologue (croisée)."
+    },
+    {
+      "q": "Quel est le rôle biologique de l'acétylcholinestérase (AChE) à la synapse neuromusculaire ?",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "AChE"
+      ],
+      "options": [
+        {
+          "text": "Hydrolyser l'acétylcholine en choline et acétate dans la fente synaptique pour mettre fin rapidement au signal excitateur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Phosphoryler les hélices transmembranaires du récepteur GABA-A.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ouvrir les canaux sodiques voltage-dépendants du réticulum sarcoplasmique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Empêcher la dépolarisation du bouton présynaptique en libérant du NO.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'acétylcholinestérase est une enzyme ultra-rapide qui clive l'ACh dans la fente synaptique, terminant la stimulation du récepteur nicotinique et permettant la relaxation musculaire."
+    },
+    {
+      "q": "Concernant la phosphorylation des protéines comme mécanisme de régulation :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Phosphorylation"
+      ],
+      "options": [
+        {
+          "text": "L'ajout d'un groupement phosphate apporte une charge négative et modifie souvent la conformation et l'activité de la protéine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les résidus d'acides aminés phosphorylés par les kinases eucaryotes sont principalement la Sérine, la Thréonine et la Tyrosine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La phosphorylation est une modification covalente réversible grâce à l'action antagoniste des protéines phosphatases.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les protéines de la cellule sont obligatoirement activées lorsqu'elles sont phosphorylées.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La phosphorylation peut soit activer soit inhiber une enzyme selon le contexte (ex: la glycogène synthase est inactive lorsqu'elle est phosphorylée)."
+    },
+    {
+      "q": "Quelle protéine kinase est activée par la combinaison du diacylglycérol (DAG) et des ions calcium (Ca2+) ?",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "PKC"
+      ],
+      "options": [
+        {
+          "text": "La Protéine Kinase C (PKC).",
+          "isCorrect": true
+        },
+        {
+          "text": "La Protéine Kinase A (PKA).",
+          "isCorrect": false
+        },
+        {
+          "text": "L'adénylate cyclase membranaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "La caspases 8.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La PKC (Protéine Kinase C, dépendante du Calcium et des phospholipides/DAG) est activée par la synergie entre Ca2+ et DAG."
+    },
+    {
+      "q": "Concernant la diminution du rythme cardiaque sous l'effet du système parasympathique :",
+      "tags": [
+        "CM 5 - Signalisation 2",
+        "Bradycardie",
+        "M2AChR"
+      ],
+      "options": [
+        {
+          "text": "Elle met en jeu la fixation de l'acétylcholine sur les récepteurs muscariniques M2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle implique la sous-unité alpha-s d'une protéine Gs stimulant la PKA.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle repose sur l'ouverture de canaux K+ par le dimère bêta-gamma de la protéine Go.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est inhibée par l'atropine.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'acétylcholine active M2 -> activation de Go -> dimère bêta-gamma ouvre les canaux K+ -> efflux de K+ -> hyperpolarisation et baisse du rythme cardiaque (bloqué par l'atropine)."
+    }
+  ]
+}

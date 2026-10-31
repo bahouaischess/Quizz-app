@@ -1,0 +1,631 @@
+{
+  "name": "CM 8 - Mitochondries et Peroxysomes",
+  "folder": "PASS - Biologie Cellulaire",
+  "description": "Quiz approfondi de niveau PASS sur les mitochondries et les peroxysomes : ultrastructure, chaîne respiratoire OXPHOS, génome mitochondrial et transmission maternelle, dynamique mitochondriale (fusion Mfn1/2-Opa1, fission Drp1/Fis1, mitophagie Pink1/Parkin) et fonctions peroxysomales (catalase, bêta-oxydation VLCFA, plasmalogènes, syndrome de Zellweger).",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant les caractéristiques générales et l'origine évolutive des mitochondries :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Structure",
+        "Endosymbiose"
+      ],
+      "options": [
+        {
+          "text": "Elles sont délimitées par deux membranes lipidiques concentriques : une membrane externe et une membrane interne formant des crêtes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Selon la théorie endosymbiotique, elles dérivent d'une bactérie aérobie phagocytée il y a environ 1,5 milliard d'années par une cellule eucaryote primitive.",
+          "isCorrect": true
+        },
+        {
+          "text": "La membrane interne est d'origine bactérienne ancestrale, tandis que la membrane externe est d'origine eucaryote cellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "La masse mitochondriale par cellule est particulièrement élevée dans les tissus à forte demande énergétique (> 30 % chez le cardiomyocyte, > 50 % chez le neurone).",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les cellules animales possèdent rigoureusement une seule mitochondrie unique de forme circulaire fixe.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les mitochondries sont issues d'une endosymbiose bactérienne (double membrane), forment un réseau dynamique et représentent une part massive de la masse cellulaire dans les cardiomyocytes (> 30 %) et neurones (> 50 %)."
+    },
+    {
+      "q": "Concernant la dynamique du réseau mitochondrial (fusion, fission, mitophagie) :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Dynamique",
+        "Fusion",
+        "Fission"
+      ],
+      "options": [
+        {
+          "text": "La fusion de la membrane externe est médiée par les mitofusines Mfn1 et Mfn2, tandis que celle de la membrane interne met en jeu OPA1.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fission mitochondriale nécessite le recrutement de la GTPase cytosolique Drp1 par des récepteurs membranaires externes comme Fis1 et Mff.",
+          "isCorrect": true
+        },
+        {
+          "text": "La mitophagie assure l'élimination sélective par autophagie des mitochondries endommagées via les protéines PINK1 et Parkin.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les mutations du gène Mfn2 sont associées à la maladie de Charcot-Marie-Tooth (neuropathie héréditaire sensitivo-motrice).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les mutations du gène OPA1 sont responsables de l'atrophie optique dominante de type 1.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes. Fusion = Mfn1/2 (externe) et OPA1 (interne) ; Fission = Drp1/Fis1/Mff ; Mitophagie = PINK1/Parkin (mutées dans des formes de Parkinson précoce). Pathologies : Mfn2 -> Charcot-Marie-Tooth ; OPA1 -> Atrophie optique 1."
+    },
+    {
+      "q": "Concernant le génome mitochondrial humain (ADNm) :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Génome mitochondrial",
+        "ADNm"
+      ],
+      "options": [
+        {
+          "text": "C'est une molécule d'ADN double brin circulaire de 16,6 kilobases (16 569 paires de bases).",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est dépourvu d'introns.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il code pour 13 protéines appartenant toutes au complexe de phosphorylation oxydative (OXPHOS), 22 ARNt et 2 ARNr.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sa transmission héréditaire est strictement maternelle chez l'Homme.",
+          "isCorrect": true
+        },
+        {
+          "text": "Son code génétique présente des différences par rapport au code génétique universel de l'ADN nucléaire.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes : l'ADNm humain est circulaire, compact sans introns, code pour 13 protéines OXPHOS, 22 ARNt, 2 ARNr, hérité exclusivement de la mère et avec un code génétique mitochondrial légèrement modifié."
+    },
+    {
+      "q": "Concernant les notions d'hétéroplasmie et d'effet de seuil dans les maladies mitochondriales :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Hétéroplasmie",
+        "Seuil"
+      ],
+      "options": [
+        {
+          "text": "L'homoplasmie signifie que toutes les copies d'ADNm au sein d'une cellule ou d'un individu sont strictement identiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hétéroplasmie désigne la coexistence de molécules d'ADNm sauvages et de molécules d'ADNm mutées au sein d'une même cellule.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'apparition des symptômes cliniques d'une pathologie mitochondriale dépend souvent d'un effet de seuil (proportion minimale d'ADNm muté requise).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les pathologies mitochondriales touchent préférentiellement les organes à fort métabolisme énergétique (cerveau, muscle squelettique, cœur).",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les protéines mitochondriales de la cellule sont codées à 100 % par l'ADN mitochondrial.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Plus de 90 % des ~1000 protéines mitochondriales sont codées par le génome nucléaire. La coexistence d'ADNm normal et muté est l'hétéroplasmie ; le phénotype s'exprime au-delà d'un effet de seuil métabolique."
+    },
+    {
+      "q": "Parmi les syndromes pathologiques suivants, lequel (lesquels) est (sont) associé(s) à des mutations de l'ADN mitochondrial ?",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Pathologies mitochondriales"
+      ],
+      "options": [
+        {
+          "text": "Le syndrome MELAS (Myopathie, Encéphalopathie, Acidose Lactique, Stroke-like episodes).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le syndrome MERRF (Myoclonic Epilepsy with Ragged Red Fibers).",
+          "isCorrect": true
+        },
+        {
+          "text": "La neuropathie optique héréditaire de Leber (LHON).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le syndrome de Kearns-Sayre (KSS).",
+          "isCorrect": true
+        },
+        {
+          "text": "La mucoviscidose classique liée au gène CFTR.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "MELAS, MERRF, LHON et KSS sont des cytopathies mitochondriales typiques liées à des mutations de l'ADNm (ARNt ou sous-unités OXPHOS). La mucoviscidose est une maladie monogénique autosomique récessive nucléaire."
+    },
+    {
+      "q": "Concernant la répartition géographique des enzymes dans les compartiments mitochondriaux :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Compartiments",
+        "Localisation enzymes"
+      ],
+      "options": [
+        {
+          "text": "La membrane externe contient des porines laissant passer librement les molécules de masse moléculaire inférieure à 10 kDa (ou 5 kDa).",
+          "isCorrect": true
+        },
+        {
+          "text": "La membrane externe contient la monoamine oxydase (MAO) et des enzymes d'activation des acides gras (acyl-CoA synthétases).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'espace intermembranaire contient l'adénylate kinase (AMP + ATP <-> 2 ADP).",
+          "isCorrect": true
+        },
+        {
+          "text": "La membrane interne héberge les cytochromes de la chaîne respiratoire et l'ATP synthase (F1/F0).",
+          "isCorrect": true
+        },
+        {
+          "text": "La matrice contient les enzymes solubles du cycle de Krebs et de la bêta-oxydation des acides gras.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions décrivent parfaitement la localisation biochimique précise des enzymes mitochondriales."
+    },
+    {
+      "q": "Concernant l'importation post-traductionnelle des protéines nucléaires dans la mitochondrie :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Importation",
+        "TOM/TIM"
+      ],
+      "options": [
+        {
+          "text": "Elle nécessite une séquence signal N-terminale en hélice alpha amphipathique portant des résidus basiques chargés positivement d'un côté.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les complexes TOM (Translocase of Outer Membrane) et TIM (Translocase of Inner Membrane) agissent comme récepteurs et canaux de translocation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines sont maintenues dépliées dans le cytosol par des chaperonnes moléculaires de la famille Hsp70 avant leur engagement dans TOM.",
+          "isCorrect": true
+        },
+        {
+          "text": "La séquence signal N-terminale est clivée dans la matrice par les peptidases MPP (Mitochondrial Processing Peptidases).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'importation protéique mitochondriale est co-traductionnelle et s'effectue obligatoirement à travers le translocon Sec61.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'import mitochondrial est post-traductionnel, guidé par une hélice amphipathique N-terminale, déplié par Hsp70 cytosolique, transloqué par TOM/TIM, et clivé par MPP. (Sec61 est le translocon du réticulum endoplasmique)."
+    },
+    {
+      "q": "Concernant la chaîne respiratoire et la phosphorylation oxydative (OXPHOS) :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "OXPHOS",
+        "Chaîne respiratoire"
+      ],
+      "options": [
+        {
+          "text": "Elle comporte quatre complexes enzymatiques de transfert d'électrons et un cinquième complexe (ATP synthase).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les complexes I, III et IV agissent comme des pompes à protons expulsant des ions H+ de la matrice vers l'espace intermembranaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le complexe II (succinate déshydrogénase) ne pompe aucun proton à travers la membrane interne.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le gradient de protons généré (force proto-motrice) est utilisé par l'ATP synthase pour catalyser la synthèse d'ATP lors du retour des protons vers la matrice.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'accepteur final des électrons dans la chaîne respiratoire est l'oxygène moléculaire (O2), réduit en eau (H2O) au niveau du complexe IV.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes. Flux d'électrons : I et II -> CoQ -> III -> Cyt c -> IV -> O2 (réduit en H2O). Pompes à protons : I, III, IV. Complexe V (ATP synthase) exploite le gradient pour produire de l'ATP."
+    },
+    {
+      "q": "Concernant les navettes et translocases de la membrane interne mitochondriale :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Translocases",
+        "Membrane interne"
+      ],
+      "options": [
+        {
+          "text": "L'ATP/ADP translocase (ANT) réalise un antiport échangeant l'ATP4- néosynthétisé matriciel contre de l'ADP3- cytosolique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La membrane interne est hautement imperméable aux ions et protons, ce qui permet le maintien du gradient électrochimique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La carnitine palmitoyltransférase permet l'entrée des acides gras à chaîne longue sous forme d'acyl-carnitine dans la matrice.",
+          "isCorrect": true
+        },
+        {
+          "text": "La cardiolipine est un phospholipide particulier à 4 chaînes d'acides gras représentant environ 20 % des lipides de la membrane interne.",
+          "isCorrect": true
+        },
+        {
+          "text": "La membrane interne est totalement dépourvue de protéines et constituée de lipides purs.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La membrane interne est extrêmement riche en protéines (~80 % du poids sec) et en cardiolipine. L'ANT échange ATP4- contre ADP3-."
+    },
+    {
+      "q": "Concernant le bilan énergétique comparé de la glycolyse aérobie vs anaérobie pour une molécule de glucose :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Bilan ATP",
+        "Glycolyse"
+      ],
+      "options": [
+        {
+          "text": "La glycolyse anaérobie cytoplasmique ne produit que 2 molécules d'ATP par molécule de glucose.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'oxydation complète d'une molécule de glucose (glycolyse + cycle de Krebs + chaîne respiratoire) produit environ 36 à 38 molécules d'ATP.",
+          "isCorrect": true
+        },
+        {
+          "text": "En anaérobiose, le pyruvate est réduit en acide lactique pour régénérer le NAD+.",
+          "isCorrect": true
+        },
+        {
+          "text": "En aérobiose, le pyruvate entre dans la mitochondrie où il est converti en acétyl-CoA par le complexe pyruvate déshydrogénase.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le cycle de Krebs consomme directement de l'oxygène moléculaire sans former de pouvoir réducteur.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La glycolyse aérobie couplée à la mitochondrie fournit un rendement bien supérieur (~36-38 ATP contre 2 ATP en anaérobiose). Le cycle de Krebs génère le NADH,H+ et le FADH2 oxydés par l'OXPHOS."
+    },
+    {
+      "q": "Concernant la structure et la biogenèse des peroxysomes :",
+      "tags": [
+        "CM 8 - Peroxysomes",
+        "Structure",
+        "Biogenèse"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des organites délimités par une simple membrane lipidique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils sont totalement dépourvus d'ADN et de ribosomes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes leurs protéines matricielles sont codées par le génome nucléaire et synthétisées sur les ribosomes libres du cytosol.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'adressage des protéines peroxysomales met en jeu des signaux spécifiques comme le tripeptide C-terminal PTS1 (Ser-Lys-Leu / SKL).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines importées dans le peroxysome doivent obligatoirement être totalement dénaturées et découpées en acides aminés individuels.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les protéines peroxysomales sont importées sous forme repliée (contrairement aux mitochondries où elles entrent dépliées) grâce aux récepteurs cytosoliques PEX5 (PTS1) ou PEX7 (PTS2)."
+    },
+    {
+      "q": "Concernant le syndrome de Zellweger :",
+      "tags": [
+        "CM 8 - Peroxysomes",
+        "Zellweger",
+        "Pathologie"
+      ],
+      "options": [
+        {
+          "text": "C'est une maladie génétique rare et grave de la biogenèse des peroxysomes (PBD).",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est causé par des mutations dans les gènes PEX codant les pexines nécessaires à l'importation des protéines peroxysomales.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules des patients sont dépourvues de peroxysomes fonctionnels ('peroxysomes fantômes' vides).",
+          "isCorrect": true
+        },
+        {
+          "text": "Il entraîne une accumulation toxique d'acides gras à très longue chaîne (VLCFA) et un déficit en plasmalogènes, provoquant des atteintes neurologiques sévères et un décès précoce.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est transmis sur un mode strictement paternel lié au chromosome Y.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le syndrome de Zellweger est une maladie autosomique récessive liée aux mutations des gènes PEX (notamment PEX1), empêchant l'importation matricielle et causant l'accumulation de VLCFA."
+    },
+    {
+      "q": "Concernant les fonctions enzymatiques et métaboliques des peroxysomes :",
+      "tags": [
+        "CM 8 - Peroxysomes",
+        "Métabolisme",
+        "Enzymes"
+      ],
+      "options": [
+        {
+          "text": "Ils réalisent des réactions d'oxydation produisant du peroxyde d'hydrogène (H2O2) grâce à des oxydases à flavine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La catalase peroxysomale dégrade le peroxyde d'hydrogène toxique en eau et oxygène (2 H2O2 -> 2 H2O + O2).",
+          "isCorrect": true
+        },
+        {
+          "text": "La catalase peut utiliser le H2O2 pour détoxifier par oxydation des molécules nocives comme l'éthanol ou le méthanol.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils effectuent la première étape de la bêta-oxydation des acides gras à très longue chaîne (VLCFA, > 24 carbones).",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils sont les organites exclusifs de la synthèse de l'ATP par couplage osmotique chimiosmotique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les peroxysomes hébergent des oxydases produisant H2O2, la catalase qui le détruit ou l'utilise pour détoxifier, et la bêta-oxydation des VLCFA. L'ATP chimiosmotique est produit par la mitochondrie."
+    },
+    {
+      "q": "Quel rôle jouent les peroxysomes dans la biosynthèse lipidique des cellules animales ?",
+      "tags": [
+        "CM 8 - Peroxysomes",
+        "Plasmalogènes"
+      ],
+      "options": [
+        {
+          "text": "Ils initient la synthèse des plasmalogènes, des phospholipides à liaison éther indispensables à la myélinisation du système nerveux.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils participent aux premières étapes de la synthèse des acides biliaires dans le foie.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils détruisent obligatoirement tout le cholestérol membranaire de la cellule.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ils synthétisent les molécules d'hémoglobine des érythrocytes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les peroxysomes sont indispensables à la synthèse des éther-phospholipides (plasmalogènes formant 80-90 % des lipides de la myéline) et à la synthèse des acides biliaires hépatiques."
+    },
+    {
+      "q": "Concernant la bêta-oxydation des acides gras dans le peroxysome comparée à celle de la mitochondrie :",
+      "tags": [
+        "CM 8 - Peroxysomes",
+        "Bêta-oxydation"
+      ],
+      "options": [
+        {
+          "text": "Le peroxysome prend en charge spécifiquement les acides gras à très longue chaîne (VLCFA) et les acides gras ramifiés (comme l'acide phytanique).",
+          "isCorrect": true
+        },
+        {
+          "text": "La bêta-oxydation peroxysomale ne conduit pas à une dégradation complète en CO2 et H2O : elle raccourcit les chaînes carbonées en octanoyl-CoA et acétyl-CoA.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les acides gras raccourcis sont exportés vers la mitochondrie pour terminer leur dégradation oxydative.",
+          "isCorrect": true
+        },
+        {
+          "text": "La première étape peroxysomale produit directement de l'ATP par phosphorylation au niveau du substrat.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans le peroxysome, la première enzyme (acyl-CoA oxydase) transfère les électrons directement sur l'O2 en formant du H2O2 (sans production d'ATP). Les fragments raccourcis sont finis dans la mitochondrie."
+    },
+    {
+      "q": "Concernant la protéine PINK1 et l'ubiquitine ligase Parkin dans l'homéostasie mitochondriale :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Mitophagie",
+        "PINK1",
+        "Parkin"
+      ],
+      "options": [
+        {
+          "text": "En cas de dépolarisation de la membrane interne (perte du potentiel membranaire), PINK1 s'accumule à la membrane externe de la mitochondrie endommagée.",
+          "isCorrect": true
+        },
+        {
+          "text": "PINK1 phosphoryle l'ubiquitine et recrute l'ubiquitine-ligase Parkin cytosolique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Parkin ubiquitinyle les protéines de surface mitochondriales, ciblant l'organite défectueux pour son élimination par autophagie (mitophagie).",
+          "isCorrect": true
+        },
+        {
+          "text": "Des mutations de PINK1 ou Parkin sont associées à des formes familiales autosomiques récessives de la maladie de Parkinson précoce.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce mécanisme provoque la duplication explosive de l'ADNm en l'absence d'oxygène.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "PINK1 et Parkin constituent le système de contrôle qualité mitochondrial : leur dysfonctionnement empêche l'élimination des mitochondries endommagées, causant la dégénérescence dopaminergique (Parkinson précoce)."
+    },
+    {
+      "q": "Concernant le transport des mitochondries le long du cytosquelette :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Transport",
+        "Cytosquelette"
+      ],
+      "options": [
+        {
+          "text": "Les mitochondries se déplacent le long des microtubules grâce à des moteurs moléculaires tels que la kinésine (transport antérograde) et la dynéine (transport rétrograde).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines Miro (GTPases transmembranaires externes) et Milton servent d'adaptateurs reliant la mitochondrie aux moteurs kinésines.",
+          "isCorrect": true
+        },
+        {
+          "text": "La syntaphiline permet d'ancrer de manière stationnaire les mitochondries dans les régions axonales à forte demande énergétique (ex: synapses).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les mitochondries sont incapables de se déplacer au sein du cytoplasme et demeurent figées.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le transport mitochondrial sur microtubules utilise kinésine/dynéine via Miro/Milton, et l'arrêt stationnaire est assuré par la syntaphiline aux sites synaptiques."
+    },
+    {
+      "q": "Concernant la régulation thermique par découplage mitochondrial (thermogénine / UCP1) :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "UCP1",
+        "Thermogénèse"
+      ],
+      "options": [
+        {
+          "text": "UCP1 est une protéine de la membrane interne mitochondriale abondante dans le tissu adipeux brun.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle permet le reflux direct des protons vers la matrice sans passer par l'ATP synthase.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'énergie de la force proto-motrice est dissipée sous forme de chaleur pure au lieu de synthétiser de l'ATP.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle assure la thermogenèse sans frisson, particulièrement vitale chez le nouveau-né.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle bloque la respiration cellulaire et détruit instantanément la cellule par nécrose.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "UCP1 (thermogénine) dissipe le gradient de protons sous forme de chaleur dans le tissu adipeux brun des nouveau-nés et animaux hibernants (thermogénèse sans frisson)."
+    },
+    {
+      "q": "Concernant la membrane externe mitochondriale :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Membrane externe"
+      ],
+      "options": [
+        {
+          "text": "Elle contient des porines (VDAC) formant de larges canaux aqueux perméables aux solutés de faible masse moléculaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle héberge le complexe de translocation TOM.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle héberge des enzymes telles que la monoamine oxydase (MAO).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle possède des crêtes profondes riches en cardiolipine et en ATP synthase.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les crêtes, la cardiolipine, la chaîne respiratoire et l'ATP synthase sont des caractéristiques exclusives de la membrane INTERNE mitochondriale."
+    },
+    {
+      "q": "Concernant le rôle des mitochondries dans l'homéostasie du calcium (Ca2+) :",
+      "tags": [
+        "CM 8 - Mitochondries",
+        "Calcium"
+      ],
+      "options": [
+        {
+          "text": "Elles sont capables de capter le calcium cytosolique lors de pics calciques élevés grâce à un uniporteur calcique (MCU) de la membrane interne.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'entrée de Ca2+ dans la matrice stimule l'activité de plusieurs déshydrogénases du cycle de Krebs, augmentant la production d'ATP en période d'activité cellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une surcharge massive et prolongée en calcium matriciel peut déclencher l'ouverture du pore de transition de perméabilité (mPTP) et induire la mort cellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les mitochondries ne contiennent jamais la moindre trace de calcium.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La mitochondrie tamponne le Ca2+ via MCU, ce qui stimule le métabolisme énergétique à doses modérées, mais une surcharge calcique ouvre le mPTP et conduit à la mort cellulaire."
+    },
+    {
+      "q": "Concernant l'Adrénoleucodystrophie liée à l'X (X-ALD) :",
+      "tags": [
+        "CM 8 - Peroxysomes",
+        "X-ALD"
+      ],
+      "options": [
+        {
+          "text": "C'est une pathologie peroxysomale liée à la mutation du transporteur membranaire ABCD1 (famille ABC).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle empêche l'entrée des acides gras à très longue chaîne (VLCFA) dans le peroxysome pour leur bêta-oxydation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle provoque une démyélinisation progressive du système nerveux central et une insuffisance surrénalienne.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est causée par une délétion complète de tous les microtubules cellulaires.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'adrénoleucodystrophie liée à l'X est causée par des mutations du transporteur ABCD1, bloquant l'import des VLCFA dans le peroxysome et conduisant à leur accumulation toxique neurodégénérative."
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+[
+  {
+    "recto": "Comment définit-on la série D ou L d'un ose ?",
+    "verso": "Par la configuration absolue du carbone asymétrique le plus éloigné du groupe carbonyle (carbone subterminal Cn-1) : à droite dans la projection de Fischer standard = série D (majorité écrasante des oses naturels) ; à gauche = série L.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Série D/L",
+      "Oses"
+    ]
+  },
+  {
+    "recto": "Définir la notion d'épimères chez les oses et citer deux exemples avec le D-glucose.",
+    "verso": "Deux molécules qui ne diffèrent que par la configuration absolue d'un seul et unique carbone asymétrique. Le D-galactose est l'épimère en C-4 du D-glucose ; le D-mannose est l'épimère en C-2 du D-glucose.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Épimères",
+      "Glucose"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'anomérie chez les oses cyclisés ?",
+    "verso": "Création d'un nouveau carbone asymétrique (C1 des aldoses, C2 des cétoses) lors de l'hémiacétalisation : anomère alpha si le -OH anomérique est trans par rapport au -CH2OH ; anomère bêta s'il est cis (du même côté).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Anomérie",
+      "Cyclisation"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence entre un acide aldonique et un acide uronique ?",
+    "verso": "Acide aldonique : oxydation du C-1 hémiacétalique (-CHO -> -COOH, ex. acide gluconique). Acide uronique : oxydation du C-6 alcool primaire (-CH2OH -> -COOH, ex. acide glucuronique des GAGs).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Acides aldoniques",
+      "Acides uroniques"
+    ]
+  },
+  {
+    "recto": "Pourquoi le saccharose est-il un diholoside non réducteur alors que le lactose est réducteur ?",
+    "verso": "Dans le saccharose (Glc alpha 1<->2 Fructo bêta), les deux carbones anomériques sont bloqués dans la liaison osidique. Dans le lactose (Gal bêta 1->4 Glc), le carbone C1 anomérique du glucose reste libre et réducteur.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Saccharose",
+      "Lactose",
+      "Pouvoir réducteur"
+    ]
+  },
+  {
+    "recto": "Décrire la structure moléculaire du glycogène.",
+    "verso": "Homopolymère de D-glucose ramifié : chaîne principale unie en liaisons alpha(1->4) osidiques et branchements en liaisons alpha(1->6) tous les 8 à 12 résidus de glucose.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Glycogène",
+      "Ramifications"
+    ]
+  },
+  {
+    "recto": "Pourquoi l'organisme humain ne peut-il pas digérer la cellulose ?",
+    "verso": "Car les résidus de glucose de la cellulose sont unis par des liaisons bêta(1->4) et le tube digestif humain ne sécrète pas de bêta-glucosidase (cellulase).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Cellulose",
+      "Digestion"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un glycosaminoglycane (GAG) et quelle est la particularité de l'acide hyaluronique ?",
+    "verso": "Long polysaccharide linéaire anionique fait d'unités disaccharidiques répétées (acide uronique + hexosamine). L'acide hyaluronique est le seul GAG non sulfaté et non lié de manière covalente à des protéines.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "GAGs",
+      "Acide hyaluronique"
+    ]
+  },
+  {
+    "recto": "Par quel motif trisaccharidique les GAGs sulfatés sont-ils liés à la sérine des protéoglycanes ?",
+    "verso": "Par une liaison O-glycosidique via le motif spécifique : Sérine - Xylose - Galactose - Galactose.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Protéoglycanes",
+      "Liaison O-osidique"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence fondamentale de proportion glucides/protéines entre protéoglycanes et glycoprotéines ?",
+    "verso": "Protéoglycanes : environ 95% de glucides (GAGs) et 5% de protéines. Glycoprotéines : majorité de fraction protéique avec courtes chaînes oligosaccharidiques ramifiées greffées.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Protéoglycanes vs Glycoprotéines"
+    ]
+  },
+  {
+    "recto": "Quels sont les deux acides gras strictement indispensables chez l'homme et pourquoi ?",
+    "verso": "L'acide linoléique (C18:2 w-6) et l'acide alpha-linolénique (C18:3 w-3), car l'homme est dépourvu des désaturases Delta-12 et Delta-15 capables d'insérer des doubles liaisons au-delà du carbone 9.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Acides gras essentiels",
+      "Omega-3/6"
+    ]
+  },
+  {
+    "recto": "Quelle conformation géométrique ont les doubles liaisons des acides gras naturels et quelle en est la conséquence ?",
+    "verso": "Configuration CIS : chaque double liaison produit un coude rigide d'environ 30° qui empêche l'empilement cristallin compact et augmente la fluidité membranaire.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Double liaison CIS",
+      "Fluidité"
+    ]
+  },
+  {
+    "recto": "Quelle molécule est le précurseur des prostaglandines et par quelle enzyme est-elle libérée de la membrane ?",
+    "verso": "L'acide arachidonique (C20:4 w-6), libéré de la position C2 des phospholipides membranaires par la phospholipase A2 (PLA2).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Acide arachidonique",
+      "PLA2"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure de l'acide phosphatidique ?",
+    "verso": "Un glycérol estérifié par deux acides gras en C1 et C2 (1,2-diacylglycérol) et par un groupement phosphate en C3. Précurseur des glycérophospholipides.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Acide phosphatidique",
+      "Phospholipides"
+    ]
+  },
+  {
+    "recto": "Quelle est la charge globale nette de la phosphatidylsérine (PS) et de la phosphatidylcholine (PC) à pH 7,4 ?",
+    "verso": "PS = négative (-1). PC = neutre zwitterionique (0).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Charges",
+      "Phospholipides"
+    ]
+  },
+  {
+    "recto": "Qu'indique l'extériorisation de la phosphatidylsérine sur le feuillet externe de la membrane plasmique ?",
+    "verso": "C'est le marqueur précoce universel de l'apoptose cellulaire (signal de reconnaissance pour les macrophages) et un support catalytique procoagulant sur les plaquettes activées.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Phosphatidylsérine",
+      "Apoptose"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la cardiolipine et où la trouve-t-on spécifiquement ?",
+    "verso": "Diphosphatidylglycérol (contient 4 chaînes d'acides gras et 2 phosphates) ; retrouvée quasi exclusivement dans la membrane mitochondriale interne où elle stabilise les complexes respiratoires.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Cardiolipine",
+      "Mitochondrie"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure du céramide ?",
+    "verso": "Une sphingosine (alcool aminé en C18) dont la fonction amine en C2 est liée à un acide gras par une liaison amide. C'est le précurseur de tous les sphingolipides.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Céramide",
+      "Sphingosine"
+    ]
+  },
+  {
+    "recto": "Quelle est la composition de la sphingomyéline ?",
+    "verso": "Céramide estérifié sur son groupement hydroxyle en C1 par une phosphocholine (ou phosphoéthanolamine). C'est à la fois un sphingolipide et un phospholipide, abondant dans la myéline.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Sphingomyéline",
+      "Myéline"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un ganglioside ?",
+    "verso": "Sphingoglycolipide complexe constitué d'un céramide lié à une chaîne oligosaccharidique ramifiée portant un ou plusieurs acides sialiques (NANA, chargés négativement) ; récepteur membranaire (ex. GM1 pour la toxine cholérique).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Gangliosides",
+      "Acide sialique"
+    ]
+  },
+  {
+    "recto": "Quelles sont les 4 caractéristiques structurales fondamentales du cholestérol ?",
+    "verso": "Noyau stérane rigide à 4 cycles (A,B,C,D), fonction -OH polaire en C3, double liaison en Delta-5, et chaîne aliphatique hydrophobe en C17.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Cholestérol",
+      "Structure"
+    ]
+  },
+  {
+    "recto": "Citer les 4 modes d'ancrage lipidique des protéines à la membrane plasmique.",
+    "verso": "1) Myristoylation (C14 sur Gly N-terminale) ; 2) Palmitoylation (C16 thioester sur Cys interne) ; 3) Prénylation (farnésyle C15 / géranylgéranyle C20 sur Cys du motif CAAX C-term) ; 4) Glypiation (ancre GPI sur C-terminal).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Glucides et lipides",
+    "tags": [
+      "Ancrage lipidique",
+      "Membrane"
+    ]
+  }
+]

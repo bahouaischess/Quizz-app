@@ -1,0 +1,195 @@
+[
+  {
+    "recto": "Définir la structure tertiaire d'une protéine.",
+    "verso": "Conformation tridimensionnelle 3D complète d'une chaîne polypeptidique unique, stabilisée par des interactions non covalentes (effet hydrophobe, ponts salins, liaisons H, forces de van der Waals) et parfois des ponts disulfures intra-caténaires.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Définition",
+      "Structure tertiaire"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un domaine structural dans une protéine ?",
+    "verso": "Unité modulaire de repliement autonome et compacte au sein d'une chaîne polypeptidique (généralement 50 à 300 résidus), assurant souvent une fonction biologique spécifique.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Domaine structural",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Quels sont les niveaux de hiérarchie des classifications structurales SCOP et CATH ?",
+    "verso": "SCOP : Classe, Fold (repliement), Superfamille, Famille. CATH : Class, Architecture, Topology, Homologous superfamily.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "SCOP",
+      "CATH",
+      "Classifications"
+    ]
+  },
+  {
+    "recto": "Donner deux exemples de protéines adoptant l'architecture en faisceau de 4 hélices (four-helix bundle).",
+    "verso": "Le cytochrome b562 et la myohémérythrine (protéine musculaire d'invertébré fixant l'oxygène par un fer non héminique).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Four-helix bundle",
+      "Architecture alpha"
+    ]
+  },
+  {
+    "recto": "Décrire l'architecture et les résidus clés de la myoglobine.",
+    "verso": "Domaine tout-alpha à faisceaux orthogonaux (repliement globine à 8 hélices A-H) ; hème fixé dans une poche hydrophobe entre l'histidine proximale (F8) liée au Fe2+ et l'histidine distale (E7).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Myoglobine",
+      "Hème"
+    ]
+  },
+  {
+    "recto": "Quelle est l'architecture de la Retinol Binding Protein (RBP) ?",
+    "verso": "Tonneau bêta alterné (up-and-down beta-barrel) délimitant une cavité interne hydrophobe dans laquelle vient se loger la vitamine A (rétinol).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "RBP",
+      "Tonneau bêta"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'architecture en sandwich bêta et quelles protéines en sont dotées ?",
+    "verso": "Empilement de deux feuillets bêta antiparallèles courbés face à face ; retrouvé dans la superoxyde dismutase (SOD) et dans les domaines variables et constants des immunoglobulines.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Sandwich bêta",
+      "Immunoglobulines",
+      "SOD"
+    ]
+  },
+  {
+    "recto": "Décrire l'organisation du tonneau TIM (TIM barrel) de la triose phosphate isomérase.",
+    "verso": "Architecture alpha/bêta fermée à 8 brins bêta parallèles formant un cylindre interne entouré de 8 hélices alpha externes (arrangement (alpha/bêta)8) ; le site actif est au niveau des boucles C-terminales des brins.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Tonneau TIM",
+      "Enzymes"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le repliement de Rossmann (Rossmann fold) et quel est son rôle ?",
+    "verso": "Sandwich alpha/bêta ouvert formé d'un feuillet bêta parallèle flanqué d'hélices alpha avec motif riche en glycine (GXGXXG) ; domaine de liaison canonique des dinucléotides (NAD+, NADP+, FAD).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Rossmann fold",
+      "Déshydrogénases"
+    ]
+  },
+  {
+    "recto": "Définir la structure quaternaire d'une protéine.",
+    "verso": "Association spécifique de deux ou plusieurs chaînes polypeptidiques (sous-unités ou protomères) maintenues ensemble par des interactions faibles non covalentes (et parfois des ponts disulfures).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Définition",
+      "Structure quaternaire"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure quaternaire de l'hémoglobine adulte (HbA) et sa différence avec la myoglobine ?",
+    "verso": "HbA est un tétramère alpha2-bêta2 allostérique à courbe de fixation sigmoïde (coopérativité positive), tandis que la myoglobine est un monomère à courbe hyperbolique sans régulation allostérique.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Hémoglobine",
+      "Coopérativité"
+    ]
+  },
+  {
+    "recto": "Quels sont les deux états conformationnels de l'hémoglobine allostérique ?",
+    "verso": "État T (tendu) : désoxygéné, faible affinité pour l'O2, stabilisé par des ponts salins. État R (relâché) : oxygéné, haute affinité pour l'O2, conformation compacte.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "État T",
+      "État R",
+      "Allostérie"
+    ]
+  },
+  {
+    "recto": "Où se fixe le 2,3-BPG dans l'hémoglobine et quel est son effet ?",
+    "verso": "Dans la cavité centrale de l'état T entre les deux chaînes bêta. Il stabilise la forme désoxygénée et diminue l'affinité pour l'oxygène (déplacement de la courbe vers la droite).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "2,3-BPG",
+      "Régulation allostérique"
+    ]
+  },
+  {
+    "recto": "Pourquoi l'hémoglobine fœtale (HbF) a-t-elle plus d'affinité pour O2 que l'HbA ?",
+    "verso": "Dans les chaînes gamma d'HbF, His143 est remplacée par une Sérine, diminuant la fixation du 2,3-BPG et augmentant l'affinité pour O2 (transfert placentaire de la mère au fœtus).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "HbF",
+      "Placenta"
+    ]
+  },
+  {
+    "recto": "Quelle est la composition quaternaire de l'aspartate transcarbamylase (ATCase) ?",
+    "verso": "12 sous-unités : 2 trimères catalytiques (2 x c3) et 3 dimères régulateurs (3 x r2). Elle est inhibée par le CTP et activée par l'ATP.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "ATCase",
+      "Allostérie"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure quaternaire du cœur de nucléosome ?",
+    "verso": "Un octamère d'histones constitué d'un tétramère central (H3)2-(H4)2 flanqué de deux dimères H2A-H2B, autour duquel s'enroulent ~147 paires de bases d'ADN.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Nucléosome",
+      "Histones"
+    ]
+  },
+  {
+    "recto": "Quelle est l'organisation quaternaire d'une IgG ?",
+    "verso": "Hétérotétramère H2L2 (2 chaînes lourdes gamma et 2 chaînes légères kappa ou lambda) reliées par des ponts disulfures inter-caténaires.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "IgG",
+      "Immunoglobulines"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le filtre de sélectivité du canal potassique KcsA ?",
+    "verso": "Un arrangement tétramérique de la séquence TVGYG dont les oxygènes carbonyles miment parfaitement les molécules d'eau entourant l'ion K+, rejetant les ions Na+ plus petits.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Canal potassique",
+      "Sélectivité"
+    ]
+  },
+  {
+    "recto": "Comment fonctionne le motif 'leucine zipper' (fermeture à leucine) ?",
+    "verso": "Deux hélices alpha amphipathiques forment une super-hélice torsadée (coiled-coil) grâce à l'engrènement hydrophobe de résidus leucine disposés tous les 7 acides aminés (positions d).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Structure tertiaire et quaternaire",
+    "tags": [
+      "Leucine zipper",
+      "Facteurs de transcription"
+    ]
+  }
+]

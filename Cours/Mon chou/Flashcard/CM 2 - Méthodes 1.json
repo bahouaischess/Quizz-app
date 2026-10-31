@@ -1,0 +1,209 @@
+[
+  {
+    "recto": "Quelle est la différence fondamentale entre une culture primaire et une lignée cellulaire continue ?",
+    "verso": "Culture primaire : issue directement d'un tissu, mortalité programmée (sénescence, télomères). Lignée continue : immortelle (cellules tumorales ou transformées génétiquement), multiplication indéfinie.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Cultures cellulaires",
+      "Lignées"
+    ]
+  },
+  {
+    "recto": "Pourquoi utilise-t-on de la trypsine combinée à de l'EDTA pour le repiquage des cellules adhérentes ?",
+    "verso": "La trypsine hydrolyse les protéines de surface d'adhésion et l'EDTA chélate les ions Ca2+ requis pour les cadhérines et intégrines, détachant les cellules en douceur.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Culture cellulaire",
+      "Trypsine",
+      "EDTA"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure d'une immunoglobuline G (IgG) ?",
+    "verso": "Tétramère de 2 chaînes lourdes (H) et 2 chaînes légères (L) unies par des ponts disulfures. Deux sites Fab variables (fixation de l'épitope) et un fragment Fc constant.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Anticorps",
+      "IgG",
+      "Structure"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un hybridome en biotechnologie ?",
+    "verso": "Cellule hybride résultant de la fusion d'un lymphocyte B splénique (produisant l'Ac spécifique) et d'un plasmocyte tumoral / myélome (immortel), produisant un anticorps monoclonal unique.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Anticorps monoclonaux",
+      "Hybridome"
+    ]
+  },
+  {
+    "recto": "Quel est le grand avantage de l'immunomarquage indirect par rapport à l'immunomarquage direct ?",
+    "verso": "Amplification significative du signal (plusieurs Ac secondaires se fixent sur un même Ac primaire) et plus grande flexibilité expérimentale.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Immunomarquage",
+      "Amplification"
+    ]
+  },
+  {
+    "recto": "Quel est le double rôle du SDS dans l'électrophorèse SDS-PAGE ?",
+    "verso": "1) Dénaturer les protéines (linéarisation).\n2) Leur conférer une charge négative uniforme proportionnelle à leur masse, permettant une séparation selon la seule taille.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "SDS-PAGE",
+      "Western blot"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle du bêta-mercaptoéthanol (ou DTT) en Western blot ?",
+    "verso": "Réduire les ponts disulfures covalents intra- et intercaténaires pour dissocier les complexes multimériques en sous-unités dénaturées.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Western blot",
+      "DTT",
+      "Ponts disulfures"
+    ]
+  },
+  {
+    "recto": "Pourquoi pratique-t-on une étape de saturation (blocage) de la membrane en Western blot ?",
+    "verso": "Pour saturer les sites de liaison hydrophobes non spécifiques de la membrane (avec BSA ou lait) afin d'éviter la fixation passive non spécifique des anticorps (bruit de fond).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Western blot",
+      "Saturation"
+    ]
+  },
+  {
+    "recto": "Donner l'ordre de culottage des organites en centrifugation différentielle :",
+    "verso": "1) ~1 000 g : Noyaux, grosses cellules et débris.\n2) ~10 000-20 000 g : Mitochondries, lysosomes, peroxysomes.\n3) ~100 000 g : Microsomes (RE, Golgi).\nSurnageant : Cytosol soluble.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Fractionnement",
+      "Centrifugation"
+    ]
+  },
+  {
+    "recto": "Sur quel principe repose la centrifugation isopycnique (sur gradient de densité) ?",
+    "verso": "Séparation des organites ou macromolécules selon leur densité de flottaison propre au sein d'un gradient de saccharose ou CsCl, indépendamment de leur vitesse initiale.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Centrifugation isopycnique",
+      "Densité"
+    ]
+  },
+  {
+    "recto": "En cytométrie en flux, que mesurent respectivement les paramètres FSC et SSC ?",
+    "verso": "FSC (Forward Scatter, petits angles) : proportionnel à la taille de la cellule.\nSSC (Side Scatter, 90°) : proportionnel à la complexité interne et à la granularité cytoplasmique.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Cytométrie en flux",
+      "FSC",
+      "SSC"
+    ]
+  },
+  {
+    "recto": "Comment se répartissent les cellules dans les phases du cycle cellulaire lors d'un marquage à l'iodure de propidium en cytométrie ?",
+    "verso": "- G0/G1 : Pic à 2C d'ADN.\n- Phase S : Phase intermédiaire entre 2C et 4C.\n- G2/M : Pic à 4C (fluorescence double de G1).\n- Sub-G1 (< 2C) : Cellules apoptotiques (fragmentation d'ADN).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Cycle cellulaire",
+      "Cytométrie",
+      "Iodure de propidium"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la GFP et quelle est sa particularité expérimentale majeure ?",
+    "verso": "Green Fluorescent Protein : protéine fluorescente sans ajout de substrat exogène, fusionnée à une protéine cible pour suivre sa localisation spatio-temporelle sur cellules vivantes.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "GFP",
+      "Cellules vivantes"
+    ]
+  },
+  {
+    "recto": "Quelle est la limite de résolution de la microscopie optique photonique vs électronique ?",
+    "verso": "Microscopie optique : ~0,2 µm (200 nm).\nMicroscopie électronique : ~0,1 à 0,2 nm (grossissement x 1 000 000).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Résolution",
+      "Microscopie"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence fondamentale entre MET et MEB ?",
+    "verso": "MET (Transmission) : les électrons traversent une coupe ultrafine, visualisant l'ultrastructure interne.\nMEB (Balayage) : les électrons balaient la surface métallisée, donnant une image 3D du relief cellulaire.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "MET",
+      "MEB",
+      "Microscopie"
+    ]
+  },
+  {
+    "recto": "Quel est le principe d'une co-immunoprécipitation (Co-IP) ?",
+    "verso": "Précipiter une protéine d'intérêt avec un anticorps spécifique couplé à des billes, et révéler (en Western blot) les protéines partenaires associées physiquement dans le complexe.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Co-IP",
+      "Interactions protéiques"
+    ]
+  },
+  {
+    "recto": "Pourquoi doit-on perméabiliser les cellules au détergent (ex: Triton X-100) pour marquer une protéine cytosolique en immunofluorescence ?",
+    "verso": "Les anticorps sont de grosses macromolécules incapables de traverser la bicouche lipidique intacte ; le détergent crée des brèches membranaires nécessaires à leur pénétration.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Perméabilisation",
+      "Immunofluorescence"
+    ]
+  },
+  {
+    "recto": "Quel réactif chimique permet la fixation covalente des cellules pour l'immunofluorescence ?",
+    "verso": "Le paraformaldéhyde (PFA) ou le formaldéhyde, qui crée des pontages chimiques méthylène covalents entre résidus aminés.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Fixation",
+      "PFA"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le 'cell sorter' (FACS) ?",
+    "verso": "Appareil de cytométrie en flux capable d'isoler physiquement et stérilement des sous-populations cellulaires viables par déviation électrostatique de micro-gouttelettes.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "Tri cellulaire",
+      "FACS"
+    ]
+  },
+  {
+    "recto": "Parmi les cellules sanguines, quel type cellulaire présente le plus fort paramètre FSC et SSC ?",
+    "verso": "Polynucléaires neutrophiles (taille moyenne et forte granularité / SSC max). Les monocytes ont une taille plus grande (FSC max) et une granularité moyenne. Les lymphocytes ont les plus faibles FSC et SSC.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 2 - Méthodes 1",
+    "tags": [
+      "FSC",
+      "SSC",
+      "Leucocytes"
+    ]
+  }
+]

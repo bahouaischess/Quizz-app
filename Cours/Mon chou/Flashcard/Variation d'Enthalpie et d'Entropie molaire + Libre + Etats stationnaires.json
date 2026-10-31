@@ -1,0 +1,162 @@
+[
+  {
+    "recto": "Quelle est la définition de l'enthalpie standard de formation Delta_f H° ?",
+    "verso": "Enthalpie de réaction pour la formation d'une mole de composé pur à partir de ses éléments constitutifs dans leur état standard de référence à 298 K (Delta_f H° des éléments de référence = 0).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Delta_f H°",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Qu'énonce la loi de Hess pour le calcul de Delta_r H° ?",
+    "verso": "Delta_r H° = somme [ nu_produits * Delta_f H°(produits) ] - somme [ nu_réactifs * Delta_f H°(réactifs) ].\n(Indépendant du chemin suivi, H étant une fonction d'état).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Loi de Hess",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Comment calcule-t-on Delta_r H° à partir des énergies de dissociation de liaison D ?",
+    "verso": "Delta_r H° = somme [ D(liaisons rompues) ] - somme [ D(liaisons formées) ].\n(Rupture endothermique > 0, formation exothermique < 0).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Énergies de liaison",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Qu'énonce la loi de Kirchhoff pour la variation de Delta_r H° avec la température ?",
+    "verso": "d(Delta_r H°) / dT = Delta_r Cp°.\nSi Delta_r Cp° est constante : Delta_r H°(T2) = Delta_r H°(T1) + Delta_r Cp° * (T2 - T1).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Kirchhoff",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quel facteur contrôle principalement le signe de la variation d'entropie standard Delta_r S° ?",
+    "verso": "La variation du nombre de moles de gaz Delta n_gaz :\n- Si Delta n_gaz > 0  =>  Delta_r S° > 0 (création de désordre)\n- Si Delta n_gaz < 0  =>  Delta_r S° < 0 (perte de désordre gazeux).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Delta_r S°",
+      "Delta n_gaz"
+    ]
+  },
+  {
+    "recto": "Qu'énonce la loi de Van 't Hoff sur la constante d'équilibre K ?",
+    "verso": "d(ln K) / dT = Delta_r H° / (R * T^2).\n- Si exothermique (Delta_r H° < 0) : K diminue quand T augmente.\n- Si endothermique (Delta_r H° > 0) : K augmente quand T augmente.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Van 't Hoff",
+      "Déplacement K"
+    ]
+  },
+  {
+    "recto": "Quelle est la forme intégrée de la loi de Van 't Hoff ?",
+    "verso": "ln(K(T2) / K(T1)) = - (Delta_r H° / R) * (1/T2 - 1/T1).\nLe tracé de ln(K) en fonction de 1/T est une droite de pente -Delta_r H°/R.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Van 't Hoff",
+      "Intégration"
+    ]
+  },
+  {
+    "recto": "Qu'énonce le principe de Le Chatelier pour la pression ?",
+    "verso": "Une augmentation de pression déplace l'équilibre dans le sens qui diminue le nombre de moles de gaz (sens où Delta n_gaz < 0).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Le Chatelier",
+      "Pression"
+    ]
+  },
+  {
+    "recto": "Qu'énonce le principe de Le Chatelier pour la température ?",
+    "verso": "Une élévation de température déplace l'équilibre dans le sens endothermique (Delta H > 0, absorption de chaleur). Un refroidissement le déplace dans le sens exothermique.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Le Chatelier",
+      "Température"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence fondamentale entre équilibre vrai et état stationnaire ?",
+    "verso": "- Équilibre : système fermé/isolé, flux nuls, Delta G = 0, production d'entropie nulle (mort cellulaire).\n- État stationnaire : système ouvert, flux non nuls conservatifs (d[X]/dt = 0 mais v_in = v_out != 0), dissipation d'énergie libre, production continue d'entropie évacuée vers l'extérieur (vie/homéostasie).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "État stationnaire",
+      "Équilibre"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une structure dissipative selon Prigogine ?",
+    "verso": "Un système thermodynamique ouvert loin de l'équilibre qui maintient une structure ordonnée (basse entropie interne) en absorbant de l'énergie libre et en dissipant continuellement de l'entropie vers son environnement.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Prigogine",
+      "Dissipatif"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'approximation de l'état quasi-stationnaire (AEQS) en cinétique / biochimie ?",
+    "verso": "Pour un intermédiaire réactionnel ou un complexe enzyme-substrat [ES] très réactif, on pose que sa concentration reste constante au cours de la réaction : d[ES]/dt ≈ 0 (vitesse d'apparition = vitesse de disparition).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "AEQS",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Pourquoi la constante K de l'estérification ne varie-t-elle pas avec la température ?",
+    "verso": "Car l'estérification est une réaction athermique (Delta_r H° ≈ 0). Selon Van 't Hoff, d(ln K)/dT = 0, donc K reste constante (K ≈ 4).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Estérification",
+      "Athermalité"
+    ]
+  },
+  {
+    "recto": "Quelle est la relation de Clausius pour la variation d'entropie d'un système ?",
+    "verso": "dS = delta_Q_rev / T (transformation réversible).\ndS > delta_Q_irrev / T (transformation irréversible spontanée).\ndSi = dS - delta_Q/T >= 0 (création d'entropie).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Clausius",
+      "Entropie"
+    ]
+  },
+  {
+    "recto": "Quelle est la valeur de Delta_f H° du carbone graphite et du carbone diamant à 298 K ?",
+    "verso": "- Delta_f H°(graphite) = 0 kJ/mol (état standard de référence)\n- Delta_f H°(diamant) = +1,9 kJ/mol (variété allotropique plus énergétique).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Allotropie",
+      "Graphite vs Diamant"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'homéostasie en termes thermodynamiques ?",
+    "verso": "Le maintien dynamique d'un état stationnaire pour les paramètres physico-chimiques internes d'un organisme vivant grâce à des processus dissipatifs d'énergie libre.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Variation d'Enthalpie et d'Entropie molaire + Libre + Etats stationnaires",
+    "tags": [
+      "Homéostasie",
+      "Thermodynamique"
+    ]
+  }
+]

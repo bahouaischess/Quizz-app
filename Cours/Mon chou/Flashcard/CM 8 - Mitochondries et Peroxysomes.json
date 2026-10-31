@@ -1,0 +1,215 @@
+[
+  {
+    "recto": "Quelle est l'origine évolutive des deux membranes de la mitochondrie ?",
+    "verso": "Théorie endosymbiotique : la membrane interne dérive de la membrane plasmique d'une bactérie aérobie ancestrale, tandis que la membrane externe dérive de la vésicule d'endocytose de la cellule eucaryote hôte.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "Endosymbiose",
+      "Membranes"
+    ]
+  },
+  {
+    "recto": "Quelles protéines régulent respectivement la fusion mitochondriale externe et interne ?",
+    "verso": "- Membrane externe : Mitofusines 1 et 2 (Mfn1, Mfn2).\n- Membrane interne : OPA1 (forme longue L-OPA1).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "Fusion",
+      "Mfn2",
+      "OPA1"
+    ]
+  },
+  {
+    "recto": "Quelles protéines assurent la fission mitochondriale ?",
+    "verso": "La GTPase Drp1 (cytosolique), recrutée à la membrane externe par des récepteurs comme Fis1 et Mff pour former un anneau d'étranglement.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "Fission",
+      "Drp1",
+      "Fis1"
+    ]
+  },
+  {
+    "recto": "Comment fonctionne la voie de mitophagie PINK1 / Parkin ?",
+    "verso": "Lors d'une dépolarisation mitochondriale, PINK1 s'accumule sur la membrane externe et active l'ubiquitine ligase Parkin, qui ubiquitinyle les protéines de surface pour déclencher la dégradation par autophagie.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "Mitophagie",
+      "PINK1",
+      "Parkin"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques génétiques majeures de l'ADN mitochondrial humain (ADNm) ?",
+    "verso": "ADN circulaire double brin de 16,6 kb (16 569 pb), sans introns, code pour 13 protéines de l'OXPHOS, 22 ARNt et 2 ARNr. Hérédité STRICTEMENT maternelle.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "ADNm",
+      "Génétique",
+      "Hérédité maternelle"
+    ]
+  },
+  {
+    "recto": "Définir homoplasmie, hétéroplasmie et effet de seuil dans les cytopathies mitochondriales.",
+    "verso": "- Homoplasmie : copies d'ADNm toutes identiques.\n- Hétéroplasmie : coexistence d'ADNm muté et sauvage au sein de la cellule.\n- Effet de seuil : le phénotype pathologique n'apparaît que si le pourcentage d'ADNm muté dépasse un seuil critique métabolique.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "Hétéroplasmie",
+      "Effet de seuil"
+    ]
+  },
+  {
+    "recto": "Citer 3 pathologies génétiques humaines liées à des mutations de l'ADNm.",
+    "verso": "1) MELAS (myopathie, encéphalopathie, acidose lactique).\n2) MERRF (épilepsie myoclonique à fibres rouges déchiquetées).\n3) LHON (neuropathie optique de Leber).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "Cytopathies mitochondriales",
+      "MELAS",
+      "LHON"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques structurales de la membrane interne mitochondriale ?",
+    "verso": "Repliée en crêtes, très riche en protéines (~80 %), enrichie en cardiolipine (~20 % des lipides), hautement imperméable aux ions et protons, héberge la chaîne respiratoire et l'ATP synthase.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "Membrane interne",
+      "Cardiolipine",
+      "Crêtes"
+    ]
+  },
+  {
+    "recto": "Parmi les 4 complexes respiratoires, lesquels pompent des protons vers l'espace intermembranaire ?",
+    "verso": "Les complexes I, III et IV pompent des protons. Le complexe II (succinate déshydrogénase) ne pompe AUCUN proton.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "OXPHOS",
+      "Pompes à protons"
+    ]
+  },
+  {
+    "recto": "Quel est l'accepteur final d'électrons dans la chaîne respiratoire mitochondriale ?",
+    "verso": "L'oxygène moléculaire (O2), réduit en eau (H2O) au niveau du complexe IV (cytochrome c oxydase).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "Complexe IV",
+      "Oxygène",
+      "Eau"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle de la cardiolipine dans la mitochondrie ?",
+    "verso": "Diphosphatidylglycérol à 4 chaînes d'acides gras exclusif de la membrane interne, essentiel au maintien de l'imperméabilité membranaire et à la stabilité des complexes enzymatiques de l'OXPHOS.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "Cardiolipine",
+      "Membrane interne"
+    ]
+  },
+  {
+    "recto": "Comment les protéines nucléaires sont-elles adressées et importées dans la matrice mitochondriale ?",
+    "verso": "Par une séquence signal N-terminale en hélice alpha amphipathique, maintenues dépliées par Hsp70 cytosolique, transloquées via TOM (membrane externe) et TIM23/PAM (membrane interne), puis clivées par MPP.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "TOM",
+      "TIM",
+      "Importation mitochondriale"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la thermogénine (UCP1) et où s'exprime-t-elle ?",
+    "verso": "Protéine découplante de la membrane interne mitochondriale exprimée dans le tissu adipeux brun, dissipant la force proto-motrice sous forme de chaleur pure sans synthèse d'ATP (thermogenèse sans frisson).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Mitochondries",
+    "tags": [
+      "UCP1",
+      "Thermogénine",
+      "Tissu adipeux brun"
+    ]
+  },
+  {
+    "recto": "Combien de membranes délimitent les peroxysomes et contiennent-ils de l'ADN ?",
+    "verso": "Une seule membrane lipidique simple. Ils ne contiennent aucun ADN ni ribosome (100 % de leurs protéines sont importées du cytosol).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Peroxysomes",
+    "tags": [
+      "Peroxysomes",
+      "Simple membrane"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le signal PTS1 et quelle protéine le reconnaît dans le cytosol ?",
+    "verso": "Peroxisomal Targeting Signal 1 : tripeptide C-terminal Ser-Lys-Leu (SKL), reconnu par le récepteur cytosolique PEX5 pour guider la protéine repliée vers le peroxysome.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Peroxysomes",
+    "tags": [
+      "PTS1",
+      "SKL",
+      "PEX5"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle de la catalase peroxysomale ?",
+    "verso": "Dégrader le peroxyde d'hydrogène toxique (H2O2) généré par les oxydases en eau et dioxygène (2 H2O2 -> 2 H2O + O2) ou oxyder des substrats toxiques (éthanol).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Peroxysomes",
+    "tags": [
+      "Catalase",
+      "H2O2",
+      "Détoxification"
+    ]
+  },
+  {
+    "recto": "Quels types d'acides gras sont préférentiellement dégradés par bêta-oxydation dans le peroxysome ?",
+    "verso": "Les acides gras à très longue chaîne (VLCFA > 24 carbones) et les acides gras ramifiés (acide phytanique), raccourcis avant leur transfert à la mitochondrie.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Peroxysomes",
+    "tags": [
+      "Bêta-oxydation",
+      "VLCFA"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que les plasmalogènes et où sont-ils synthétisés ?",
+    "verso": "Phospholipides particuliers à liaison éther synthétisés dans les peroxysomes, constituant 80 à 90 % des phospholipides de la gaine de myéline et abondants dans le cœur.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Peroxysomes",
+    "tags": [
+      "Plasmalogènes",
+      "Myéline"
+    ]
+  },
+  {
+    "recto": "Quelle est la cause génétique et les manifestations du syndrome de Zellweger ?",
+    "verso": "Mutations récessives des gènes PEX (pexines, ex: PEX1) bloquant l'importation matricielle dans les peroxysomes. Entraîne l'accumulation de VLCFA, démyélinisation sévère, dysmorphie craniofaciale et décès précoce.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Peroxysomes",
+    "tags": [
+      "Zellweger",
+      "PEX",
+      "Biogenèse peroxysomale"
+    ]
+  },
+  {
+    "recto": "Quelle est la cause génétique de l'Adrénoleucodystrophie liée à l'X (X-ALD) ?",
+    "verso": "Mutation du transporteur membranaire peroxysomal ABCD1, empêchant l'entrée des acides gras à très longue chaîne (VLCFA) dans le peroxysome, provoquant leur accumulation toxique et une démyélinisation progressive.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 8 - Peroxysomes",
+    "tags": [
+      "X-ALD",
+      "ABCD1",
+      "VLCFA"
+    ]
+  }
+]

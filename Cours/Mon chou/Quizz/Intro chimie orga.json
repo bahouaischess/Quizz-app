@@ -1,0 +1,682 @@
+{
+  "name": "Chimie - Intro chimie orga",
+  "folder": "PASS - Chimie",
+  "description": "Représentations moléculaires, fonctions et degrés d'oxydation, ruptures de liaisons, nucléophiles/électrophiles/nucléofuges, stabilité des carbocations et carbanions, contrôle cinétique vs thermodynamique, additions, éliminations (Zaïtsev, Markovnikov), substitutions (SN1, SN2).",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant les représentations des molécules organiques, quelle(s) proposition(s) est/sont VRAIE(S) ?",
+      "tags": [
+        "Représentations",
+        "Formules",
+        "Nomenclature"
+      ],
+      "options": [
+        {
+          "text": "La formule brute donne la nature et le nombre exact de chaque atome constituant la molécule sans préjuger de leur connectivité.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans une formule topologique, les atomes de carbone et les atomes d'hydrogène qui leur sont directement liés ne sont généralement pas représentés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les hétéroatomes (O, N, S, halogènes) et les atomes d'hydrogène qu'ils portent doivent obligatoirement figurer explicitement dans une formule topologique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La formule développée plane n'explicite aucune liaison covalente.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dans une formule semi-développée, seules les liaisons carbone-carbone sont représentées par des tirets, les liaisons C-H étant condensées.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La formule développée plane explicite TOUTES les liaisons (y compris C-H). En formule topologique, la chaîne carbonée est un zig-zag, les C et H portés par C sont omis, mais tout hétéroatome (ex: -OH, -NH2, -SH) doit obligatoirement être représenté avec ses H."
+    },
+    {
+      "q": "À propos du degré d'oxydation (n.o.) du carbone dans les molécules organiques :",
+      "tags": [
+        "Degré d'oxydation",
+        "Carbone",
+        "Règles"
+      ],
+      "options": [
+        {
+          "text": "Dans le méthane CH4, le nombre d'oxydation du carbone est -IV.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le dioxyde de carbone CO2, le nombre d'oxydation du carbone est +IV.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une liaison carbone-carbone (C-C) ne contribue pas au nombre d'oxydation des carbones engagés (contribution = 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "Chaque liaison simple avec un atome plus électronégatif (O, N, halogène) augmente le n.o. du carbone de +1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le méthanol CH3OH, le carbone est au degré d'oxydation +I.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans le méthanol CH3OH : 3 liaisons C-H (chacune -1) et 1 liaison C-O (+1) => n.o.(C) = 3*(-1) + (+1) = -2 (et non +1 !). Les liaisons C-C contribuent pour 0 car l'électronégativité est identique."
+    },
+    {
+      "q": "Parmi les fonctions suivantes, laquelle/lesquelles est/sont qualifiée(s) de fonction trivallente (degré d'oxydation équivalent à 3 liaisons avec des hétéroatomes) ?",
+      "tags": [
+        "Fonctions trivalentes",
+        "Classification",
+        "Groupes fonctionnels"
+      ],
+      "options": [
+        {
+          "text": "Acide carboxylique (-COOH)",
+          "isCorrect": true
+        },
+        {
+          "text": "Aldéhyde (-CHO)",
+          "isCorrect": false
+        },
+        {
+          "text": "Ester (-COOR)",
+          "isCorrect": true
+        },
+        {
+          "text": "Nitrile (-C≡N)",
+          "isCorrect": true
+        },
+        {
+          "text": "Chlorure d'acyle (-COCl)",
+          "isCorrect": true
+        },
+        {
+          "text": "Cétone (R-CO-R')",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les aldéhydes et cétones sont des fonctions DIVALENTES (2 liaisons avec l'oxygène). Les acides carboxyliques, esters, chlorures d'acyle, amides et nitriles sont des fonctions TRIVALENTES (3 liaisons avec des hétéroatomes, carbone à l'état d'oxydation +III dans un squelette alkyle)."
+    },
+    {
+      "q": "Concernant les ruptures de liaisons covalentes :",
+      "tags": [
+        "Rupture homolytique",
+        "Rupture hétérolytique",
+        "Mécanismes"
+      ],
+      "options": [
+        {
+          "text": "La rupture homolytique (ou homolyse) scinde la liaison en deux fragments possédant chacun un électron célibataire, générant des radicaux libres.",
+          "isCorrect": true
+        },
+        {
+          "text": "La rupture hétérolytique (ou hétérolyse) attribue le doublet électronique liant à l'un des deux atomes, générant un cation et un anion.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hétérolyse d'une liaison C-X où X est plus électronégatif que C produit un carbocation R+ et un anion X-.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une rupture homolytique est favorisée par des solvants polaires protiques.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le déplacement d'un électron unique lors d'une rupture homolytique est représenté par une flèche à simple barbillon (harpon).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'homolyse est favorisée en phase gazeuse, par la chaleur ou les radiations UV, dans des solvants APOLAIRES. Les solvants polaires protiques favorisent au contraire l'hétérolyse en solvatant et stabilisant les ions formés. La flèche à un seul barbillon (harpon) représente le mouvement d'un seul électron."
+    },
+    {
+      "q": "À propos des espèces électrophiles et nucléophiles en chimie organique :",
+      "tags": [
+        "Nucléophile",
+        "Électrophile",
+        "Définitions"
+      ],
+      "options": [
+        {
+          "text": "Un nucléophile est une espèce riche en électrons (possédant un doublet non liant, une charge négative ou une liaison pi) capable d'attaquer un site pauvre en électrons.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un électrophile est un acide de Lewis possédant une lacune électronique ou un centre déficitaire en électrons (charge partielle ou formelle positive).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ion hydroxyde HO-, l'ammoniac NH3 et les carbanions sont d'excellents électrophiles.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le carbocation (CH3)3C+, le cation hydronium H+ et le chlorure d'aluminium AlCl3 sont des espèces électrophiles.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'eau H2O est une molécule strictement neutre qui ne peut agir ni comme nucléophile ni comme électrophile.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "HO-, NH3 et les carbanions sont NUCLÉOPHILES (riches en électrons). L'eau est un nucléophile grâce aux doublets non liants de l'atome d'oxygène. AlCl3 (lacune électronique sur Al) et les carbocations sont bien électrophiles."
+    },
+    {
+      "q": "Parmi les groupes partants (nucléofuges) suivants, quel est le MEILLEUR nucléofuge dans une réaction de substitution nucléophile ?",
+      "tags": [
+        "Nucléofuge",
+        "Groupe partant",
+        "Réactivité"
+      ],
+      "options": [
+        {
+          "text": "F- (ion fluorure)",
+          "isCorrect": false
+        },
+        {
+          "text": "HO- (ion hydroxyde)",
+          "isCorrect": false
+        },
+        {
+          "text": "I- (ion iodure)",
+          "isCorrect": true
+        },
+        {
+          "text": "NH2- (ion amidure)",
+          "isCorrect": false
+        },
+        {
+          "text": "CH3O- (ion méthylate)",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Règle fondamentale : un bon groupe partant est une BASE TRÈS FAIBLE (base conjuguée d'un acide fort). L'acide iodhydrique HI est un acide extrêmement fort (pKa ≈ -10), donc I- est une base extrêmement faible et un groupe partant exceptionnel. HO-, NH2- et RO- sont des bases fortes, donc de très mauvais groupes partants."
+    },
+    {
+      "q": "Concernant la stabilité relative des carbocations alkyles saturés en phase condensée :",
+      "tags": [
+        "Carbocation",
+        "Stabilité",
+        "Effet inductif"
+      ],
+      "options": [
+        {
+          "text": "Carbocation tertiaire (3°) > secondaire (2°) > primaire (1°) > méthyle.",
+          "isCorrect": true
+        },
+        {
+          "text": "Carbocation méthyle > primaire (1°) > secondaire (2°) > tertiaire (3°).",
+          "isCorrect": false
+        },
+        {
+          "text": "Les carbocations sont stabilisés par l'effet donneur inductif (+I) et par l'hyperconjugaison des groupes alkyles adjacents.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le carbone portant la charge positive dans un carbocation alkyle simple est hybridé sp3 et adopte une géométrie tétraédrique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le carbone du carbocation est hybridé sp2, plan (angles de 120°), avec une orbitale 2p pure vacante perpendiculaire au plan.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Un carbocation est hybridé sp2 avec une lacune électronique (orbitale 2p vide perpendiculaire au plan formé par les 3 liaisons sigma). Les groupements alkyles sont électro-donneurs par effet inductif +I et hyperconjugaison, ce qui disperse la charge positive et stabilise préférentiellement les carbocations les plus substitués (3° > 2° > 1° > méthyle)."
+    },
+    {
+      "q": "Concernant les carbanions alkyles saturés (R3C:-) :",
+      "tags": [
+        "Carbanion",
+        "Stabilité",
+        "Géométrie"
+      ],
+      "options": [
+        {
+          "text": "Le carbone portant la charge négative possède un doublet non liant et adopte une géométrie pyramidale trigonale (hybridation sp3).",
+          "isCorrect": true
+        },
+        {
+          "text": "La stabilité des carbanions alkyles simples suit l'ordre : méthyle > primaire > secondaire > tertiaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les groupements alkyles (+I) déstabilisent les carbanions en augmentant la densité électronique sur un carbone déjà surchargé.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un carbanion est stabilisé par la présence de substituants électro-attracteurs (-I ou -M) à proximité immédiate.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un carbanion tertiaire est plus stable qu'un carbanion primaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour les carbanions alkyles, l'ordre de stabilité est INVERSE de celui des carbocations ! La charge négative est amplifiée et déstabilisée par les groupes donneurs +I. Donc le carbanion méthyle est plus stable que le 1°, lui-même plus stable que le 2°, et le 3° est le moins stable."
+    },
+    {
+      "q": "La différence entre contrôle cinétique et contrôle thermodynamique lors d'une réaction organique est fondamentale. Quelles affirmations sont VRAIES ?",
+      "tags": [
+        "Contrôle cinétique",
+        "Contrôle thermodynamique",
+        "Profil énergétique"
+      ],
+      "options": [
+        {
+          "text": "Le produit cinétique est celui qui se forme le plus rapidement via l'état de transition d'énergie d'activation la plus faible.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le produit thermodynamique est le produit le plus stable (dont l'enthalpie libre molaire est la plus basse).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le contrôle cinétique est favorisé par des températures basses et des temps de réaction courts.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le contrôle thermodynamique est favorisé par des températures élevées et des temps de réaction longs permettant la réversibilité.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le produit cinétique est obligatoirement et toujours identique au produit thermodynamique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À basse température, les molécules n'ont que l'énergie pour franchir la barrière la plus basse (produit cinétique rapide). À haute température, l'équilibre s'établit car les barrières inverses peuvent être franchies, conduisant au puits d'énergie le plus profond (produit thermodynamique le plus stable). Ils peuvent être différents (ex: addition 1,2 vs 1,4 sur les diènes conjugués)."
+    },
+    {
+      "q": "Parmi les réactions suivantes, laquelle/lesquelles constitue(nt) une réaction d'ÉLIMINATION ?",
+      "tags": [
+        "Types de réaction",
+        "Élimination",
+        "Classification"
+      ],
+      "options": [
+        {
+          "text": "CH3-CH2-Br + HO- -> CH2=CH2 + H2O + Br-",
+          "isCorrect": true
+        },
+        {
+          "text": "CH3-CH2-Br + HO- -> CH3-CH2-OH + Br-",
+          "isCorrect": false
+        },
+        {
+          "text": "CH2=CH2 + Br2 -> CH2Br-CH2Br",
+          "isCorrect": false
+        },
+        {
+          "text": "Déshydratation d'un alcool en alcène en présence d'acide sulfurique concentré à chaud.",
+          "isCorrect": true
+        },
+        {
+          "text": "CH3-CH=O + HCN -> CH3-CH(OH)-CN",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'élimination retire deux atomes ou groupes portés par des carbones adjacents pour créer une insaturation (double ou triple liaison). La réaction avec HO- donnant l'alcool est une substitution nucléophile. L'addition de Br2 ou HCN est une réaction d'addition."
+    },
+    {
+      "q": "À propos des notions de régiosélectivité et de stéréospécificité :",
+      "tags": [
+        "Régiosélectivité",
+        "Stéréospécificité",
+        "Définitions"
+      ],
+      "options": [
+        {
+          "text": "Une réaction est régiosélective lorsqu'elle conduit préférentiellement ou exclusivement à l'un des isomères de position ou de constitution possibles.",
+          "isCorrect": true
+        },
+        {
+          "text": "La règle de Markovnikov régit la régiosélectivité de l'addition d'un halogénure d'hydrogène H-X sur un alcène asymétrique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une réaction est stéréospécifique lorsque des stéréoisomères réactifs de départ différents conduisent à des stéréoisomères produits différents.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toute réaction stéréosélective est obligatoirement stéréospécifique.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'inversion de Walden lors d'un mécanisme de type SN2 est la signature d'une réaction stéréospécifique.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toute réaction stéréospécifique est stéréosélective, mais la réciproque est FAUSSE (une réaction peut être stéréosélective sans que le réactif de départ ne soit stéréoisomère). La SN2 sur un carbone asymétrique inverse la configuration relative avec une stéréospécificité de 100% (inversion de Walden)."
+    },
+    {
+      "q": "La règle de Markovnikov lors de l'addition électrophile de H-Cl sur le propène CH3-CH=CH2 prédit que :",
+      "tags": [
+        "Markovnikov",
+        "Addition électrophile",
+        "Mécanisme"
+      ],
+      "options": [
+        {
+          "text": "Le proton H+ s'additionne préférentiellement sur le carbone le moins substitué (le plus riche en hydrogènes) pour former le carbocation le plus stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le chlore Cl s'attache majoritairement sur le carbone central C2 pour donner le 2-chloropropane.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le produit majoritaire formé est le 1-chloropropane.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'intermédiaire réactionnel formé préférentiellement est le carbocation secondaire CH3-CH(+)-CH3.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction ne fait intervenir aucun intermédiaire chargé.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Markovnikov : l'électrophile H+ s'additionne sur le C terminal (portant 2 H) pour former le carbocation secondaire (plus stable que le primaire). Le nucléophile Cl- attaque ensuite ce carbocation pour former majoritairement le 2-chloropropane."
+    },
+    {
+      "q": "Concernant la règle de Zaïtsev lors d'une réaction d'élimination (déshydrohalogénation ou déshydratation d'alcools) :",
+      "tags": [
+        "Zaïtsev",
+        "Élimination",
+        "Stabilité des alcènes"
+      ],
+      "options": [
+        {
+          "text": "Elle stipule que l'élimination conduit préférentiellement à l'alcène le plus substitué, qui est thermodynamiquement le plus stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le proton éliminé provient préférentiellement du carbone bêta adjacent le moins hydrogéné.",
+          "isCorrect": true
+        },
+        {
+          "text": "La déshydratation du butan-2-ol donne majoritairement le but-2-ène plutôt que le but-1-ène.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'élimination selon Zaïtsev conduit systématiquement à l'alcène le moins substitué.",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre les isomères Z et E du but-2-ène, l'isomère E (trans) est généralement le produit majoritaire car il présente moins d'encombrement stérique.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Zaïtsev favorise l'alcène le plus thermodynamiquement stable, c'est-à-dire le plus substitué (stabilisé par hyperconjugaison des alkyles) et généralement de configuration E (stériquement plus favorable que Z). Le butan-2-ol donne majoritairement le but-2-ène (disubstitué) et non le but-1-ène (monosubstitué)."
+    },
+    {
+      "q": "Dans une réaction de substitution nucléophile bimoléculaire (SN2) :",
+      "tags": [
+        "SN2",
+        "Cinétique",
+        "Stéréochimie"
+      ],
+      "options": [
+        {
+          "text": "La loi de vitesse est d'ordre global 2 : v = k * [Substrat] * [Nucléophile].",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction se déroule en une seule étape concertée via un état de transition pentacoordonné.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'attaque du nucléophile a lieu du côté opposé au groupe partant (attaque dorsale à 180°), provoquant une inversion complète de configuration (inversion de Walden).",
+          "isCorrect": true
+        },
+        {
+          "text": "La vitesse de réaction est maximale pour les substrats tertiaires en raison de leur encombrement stérique protecteur.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'ordre de réactivité des substrats est : méthyle > primaire > secondaire >> tertiaire (non réactif en SN2).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La SN2 est très sensible à la gêne stérique : l'attaque dorsale est facilitée sur un carbone peu encombré (méthyle et halogénure primaire). Les dérivés tertiaires ne réagissent pas en SN2 à cause de l'encombrement stérique des 3 groupes alkyles qui bloquent l'accès du nucléophile."
+    },
+    {
+      "q": "Dans une réaction de substitution nucléophile monomoléculaire (SN1) :",
+      "tags": [
+        "SN1",
+        "Cinétique",
+        "Mécanisme"
+      ],
+      "options": [
+        {
+          "text": "La réaction se déroule en deux étapes avec formation intermédiaire d'un carbocation.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'étape cinétiquement déterminante est la première étape (hétérolyse de la liaison C-X pour former le carbocation).",
+          "isCorrect": true
+        },
+        {
+          "text": "La vitesse est d'ordre 1 : v = k * [Substrat], et est indépendante de la concentration et de la nature du nucléophile.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si le départ a lieu sur un substrat énantiopur à carbone asymétrique, l'attaque du nucléophile sur les deux faces du carbocation plan conduit généralement à une racémisation (perte d'activité optique).",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction est favorisée par des substrats primaires et des solvants apolaires.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La SN1 nécessite la formation d'un carbocation stable (tertiaire ou stabilisé par résonance) et un solvant POLAIRE PROTIQUE pour ioniser et solvater le groupe partant. Les primaires ne réagissent pas en SN1 (carbocation trop instable). La géométrie plane du carbocation permet l'attaque équiprobable par les deux faces => racémisation."
+    },
+    {
+      "q": "Parmi les solvants suivants, lequel est un solvant POLAIRE APROTIQUE favorisant typiquement les réactions SN2 ?",
+      "tags": [
+        "Solvants",
+        "SN2",
+        "Polaire aprotique"
+      ],
+      "options": [
+        {
+          "text": "L'eau (H2O)",
+          "isCorrect": false
+        },
+        {
+          "text": "L'éthanol (CH3CH2OH)",
+          "isCorrect": false
+        },
+        {
+          "text": "Le diméthylsulfoxyde (DMSO)",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide acétique (CH3COOH)",
+          "isCorrect": false
+        },
+        {
+          "text": "L'acétone ((CH3)2CO)",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'eau, l'éthanol et l'acide acétique sont polaires PROTIQUES (possèdent un H mobile engagé dans des liaisons hydrogène qui cage et désactive les nucléophiles anioniques). Le DMSO, le DMF et l'acétone sont des solvants POLAIRES APROTIQUES : ils solvatent très bien les cations mais peu les anions, laissant les nucléophiles 'nus' et hyper-réactifs, ce qui accélère considérablement la SN2 !"
+    },
+    {
+      "q": "Concernant la basicité et la nucléophilie :",
+      "tags": [
+        "Nucléophilie",
+        "Basicité",
+        "Comparaison"
+      ],
+      "options": [
+        {
+          "text": "La basicité est un concept thermodynamique mesuré par la constante d'acidité Ka (ou pKa).",
+          "isCorrect": true
+        },
+        {
+          "text": "La nucléophilie est un concept cinétique mesuré par la vitesse d'attaque sur un atome de carbone électrophile.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une base très encombrée stériquement (comme le tert-butylate t-BuO-) est une base forte mais un très mauvais nucléophile.",
+          "isCorrect": true
+        },
+        {
+          "text": "La nucléophilie et la basicité sont strictement synonymes et varient toujours dans le même ordre.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dans une même colonne du tableau périodique (dans l'eau), la nucléophilie augmente vers le bas (I- > Br- > Cl- > F-) en raison de la polarisabilité accrue et de la moindre solvatation.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La basicité concerne l'affinité pour le proton H+ (très petit, peu de contrainte stérique), tandis que la nucléophilie concerne l'attaque sur un carbone souvent encombré. Un réactif encombré comme t-BuO- est très basique mais peu nucléophile. Dans l'eau, I- est bien plus nucléophile que F- (qui est trop solvaté par liaisons H)."
+    },
+    {
+      "q": "Quelle est l'hybridation des atomes de carbone dans la molécule de propyne CH3-C≡CH ?",
+      "tags": [
+        "Hybridation",
+        "Alcyne",
+        "Structure"
+      ],
+      "options": [
+        {
+          "text": "C1 (CH) est hybridé sp ; C2 (C central) est hybridé sp ; C3 (CH3) est hybridé sp3.",
+          "isCorrect": true
+        },
+        {
+          "text": "Tous les atomes de carbone sont hybridés sp2.",
+          "isCorrect": false
+        },
+        {
+          "text": "C1 est sp2, C2 est sp2, C3 est sp3.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les trois carbones sont de géométrie tétraédrique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le groupement méthyle (-CH3) forme 4 liaisons sigma => AX4 => hybridation sp3 (tétraédrique). Les deux carbones engagés dans la triple liaison (-C≡CH) forment chacun 2 liaisons sigma et 2 liaisons pi => AX2 => hybridation sp (linéaire, angles de 180°)."
+    },
+    {
+      "q": "Soit la réaction d'addition de H2 sur un alcène catalysée par le platine ou le palladium (hydrogénation catalytique) :",
+      "tags": [
+        "Hydrogénation",
+        "Stéréospécificité",
+        "Syn-addition"
+      ],
+      "options": [
+        {
+          "text": "C'est une syn-addition (les deux atomes d'hydrogène s'additionnent du même côté du plan de la double liaison).",
+          "isCorrect": true
+        },
+        {
+          "text": "C'est une anti-addition (les deux hydrogènes s'additionnent de part et d'autre).",
+          "isCorrect": false
+        },
+        {
+          "text": "L'hydrogénation du 1,2-diméthylcyclopentène conduit exclusivement au cis-1,2-diméthylcyclopentane.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction nécessite la chimisorption préalable de l'alcène et du dihydrogène à la surface du métal.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'hydrogénation catalytique hétérogène (H2/Pd ou Pt) transfère les deux atomes d'hydrogène depuis la surface métallique du même côté de la double liaison : c'est une syn-addition stéréospécifique, donnant le dérivé cis."
+    },
+    {
+      "q": "L'attaque d'un nucléophile sur le carbone du groupe carbonyle (>C=O) d'un aldéhyde ou d'une cétone est possible car :",
+      "tags": [
+        "Carbonyle",
+        "Polarisation",
+        "Nucléophile"
+      ],
+      "options": [
+        {
+          "text": "La liaison C=O est fortement polarisée (Delta_EN importante entre C et O), conférant une charge partielle positive delta+ au carbone.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'oxygène attire les électrons et porte une charge partielle négative delta-.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le carbone carbonyle possède une orbitale antiliante pi* accessible à l'attaque du nucléophile.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le carbone carbonyle est très riche en électrons et repousse les nucléophiles.",
+          "isCorrect": false
+        },
+        {
+          "text": "La géométrie passe de plane (sp2) à tétraédrique (sp3) lors de la formation de l'intermédiaire tétraédrique.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "En raison de l'électronégativité de l'oxygène (EN ≈ 3,5 vs 2,5 pour C), le carbone du carbonyle est un centre électrophile majeur attaqué par les nucléophiles pour former un intermédiaire tétraédrique alcoxyde."
+    },
+    {
+      "q": "Concernant la tautomérie céto-énolique :",
+      "tags": [
+        "Tautomérie",
+        "Céto-énolique",
+        "Équilibre"
+      ],
+      "options": [
+        {
+          "text": "Elle correspond à un équilibre entre une forme cétonique (R-CO-CH2-R') et une forme énolique (R-C(OH)=CH-R').",
+          "isCorrect": true
+        },
+        {
+          "text": "Le passage d'une forme à l'autre implique la migration concertée ou successive d'un proton et le déplacement d'une liaison double.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour les cétones simples comme l'acétone en solution aqueuse, la forme céto est très largement majoritaire (> 99,9 %).",
+          "isCorrect": true
+        },
+        {
+          "text": "La forme énolique peut devenir prépondérante si elle est stabilisée par conjugaison étendue et par une liaison hydrogène intramoléculaire (ex : acétylacétone).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les formes tautomères sont des formes mésomères sans déplacement de noyaux atomiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ATTENTION AU PIÈGE MAJEUR : les tautomères sont de véritables isomères de constitution en équilibre chimique (avec déplacement d'un atome d'hydrogène et rupture de liaisons sigma) ! Ils ne doivent JAMAIS être confondus avec des formes mésomères (qui n'impliquent que le déplacement d'électrons sans bouger les noyaux)."
+    },
+    {
+      "q": "Un carbocation allylique (CH2=CH-CH2+) est particulièrement stable car :",
+      "tags": [
+        "Carbocation",
+        "Délocalisation",
+        "Stabilisation allylique"
+      ],
+      "options": [
+        {
+          "text": "La charge positive est délocalisée sur deux atomes de carbone par résonance mésomère.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'orbitale 2p vacante est conjuguée avec la double liaison pi voisine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est plus stable qu'un carbocation alkyle primaire saturé équivalent.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il possède une géométrie pyramidale très rigide.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "CH2=CH-CH2+ <=> +CH2-CH=CH2. La délocalisation de la charge positive sur deux sites par mésomérie procure une stabilisation thermodynamique majeure (énergie de résonance), rendant le cation allylique primaire aussi stable qu'un carbocation alkyle secondaire ou tertiaire."
+    }
+  ]
+}

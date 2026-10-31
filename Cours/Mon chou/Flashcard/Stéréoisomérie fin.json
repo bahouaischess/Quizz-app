@@ -1,0 +1,162 @@
+[
+  {
+    "recto": "Quelle est la définition d'un diastéréoisomère ?",
+    "verso": "Stéréoisomères de configuration qui ne sont pas des énantiomères (ils ne sont pas images l'un de l'autre dans un miroir et ne sont pas superposables).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Diastéréoisomère",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Pour une molécule ayant n centres chiraux non équivalents, combien y a-t-il de stéréoisomères au total et combien de diastéréoisomères pour l'un d'eux ?",
+    "verso": "Total : 2^n stéréoisomères.\nPour un stéréoisomère donné : 1 énantiomère et (2^n - 2) diastéréoisomères.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Dénombrement",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un composé méso et pourquoi est-il optiquement inactif ?",
+    "verso": "Molécule possédant des centres asymétriques mais achirale en raison d'un plan de symétrie (sigma) ou d'un centre d'inversion (i). Optiquement inactive ([alpha] = 0) par compensation interne.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Composé méso",
+      "Activité optique"
+    ]
+  },
+  {
+    "recto": "Comment sépare-t-on (résout-on) un mélange racémique par voie chimique ?",
+    "verso": "On fait réagir le racémique (R + S) avec un réactif chiral énantiopur (ex : R_agent) pour former deux DIASTÉRÉOISOMÈRES (R, R_agent) et (S, R_agent) ayant des solubilités différentes, que l'on sépare par cristallisation fractionnée.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Dédoublement",
+      "Méthode Pasteur"
+    ]
+  },
+  {
+    "recto": "Quelle est la règle CIP pour la nomenclature Z / E des alcènes ?",
+    "verso": "On classe les 2 substituants de chaque carbone sp2 par ordre de Z décroissant :\n- Z (zusammen) : les deux groupes prioritaires sont du même côté du plan C=C.\n- E (entgegen) : les deux groupes prioritaires sont de côtés opposés.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Z/E",
+      "Règle"
+    ]
+  },
+  {
+    "recto": "La configuration (Z) est-elle toujours synonyme de 'cis' ?",
+    "verso": "NON ! 'Cis/trans' compare les groupes identiques ou la chaîne principale, tandis que Z/E obéit strictement aux règles CIP de numéro atomique. Les priorités CIP peuvent désigner comme (E) une chaîne en cis.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Z/E vs Cis/Trans",
+      "Piège"
+    ]
+  },
+  {
+    "recto": "Combien de stéréoisomères possède l'acide tartrique et quelle est la forme achirale ?",
+    "verso": "3 stéréoisomères : (2R, 3R) et (2S, 3S) qui forment un couple d'énantiomères chiraux, et la forme méso (2R, 3S) achirale et optiquement inactive.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Acide tartrique",
+      "Méso"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un épimère ?",
+    "verso": "Deux diastéréoisomères qui ne diffèrent que par la configuration absolue d'un SEUL centre asymétrique parmi plusieurs (ex : D-glucose et D-galactose sont épimères en C4).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Épimères",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un anomère et le carbone anomérique ?",
+    "verso": "Diastéréoisomères cycliques des oses différant par la configuration du carbone hémiacétalique (C1 pour aldoses, C2 pour cétoses) : forme alpha (OH trans/opposé à CH2OH) et bêta (OH cis/du même côté que CH2OH).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Anomères",
+      "Glucides"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la mutarotation du glucose ?",
+    "verso": "Variation spontanée du pouvoir rotatoire d'une solution d'anomère pur jusqu'à un équilibre (+52,7°) par interconversion réversible entre les formes alpha (36 %) et bêta (64 %) via la forme ouverte.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Mutarotation",
+      "Équilibre"
+    ]
+  },
+  {
+    "recto": "Quel est le conformère le plus stable du trans-1,2-diméthylcyclohexane ?",
+    "verso": "La conformation diéquatoriale (e,e), exempte de toute interaction 1,3-diaxiale défavorable (nettement plus stable que la conformation diaxiale a,a et que le cis a,e).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Cyclohexane",
+      "Stabilité e,e"
+    ]
+  },
+  {
+    "recto": "Quelle conformation des acides gras insaturés prédomine dans les membranes biologiques ?",
+    "verso": "La configuration (Z) (cis), qui crée un coude dans la chaîne carbonée, empêche l'empilement rigide et assure la fluidité des membranes cellulaires.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Acides gras",
+      "Z vs E"
+    ]
+  },
+  {
+    "recto": "Les énantiomères ont-ils des spectres RMN différents en solvant achiral ?",
+    "verso": "NON, leurs spectres RMN sont rigoureusement identiques (isochrones). En revanche, des diastéréoisomères ont des signaux RMN différents (anisochrones).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "RMN",
+      "Énantiomères vs Diastéréoisomères"
+    ]
+  },
+  {
+    "recto": "Quelle méthode physique permet de déterminer sans équivoque la configuration absolue ?",
+    "verso": "La diffraction des rayons X avec diffusion anomale (effet Bijvoet).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Rayons X",
+      "Bijvoet"
+    ]
+  },
+  {
+    "recto": "Quelle est la priorité CIP entre deux substituants de configurations (R) et (S) ?",
+    "verso": "Par convention CIP pour la pseudo-asymétrie : (R) est prioritaire sur (S) ((R) > (S)), et la configuration du centre est notée en minuscule (r ou s).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "CIP",
+      "Pseudo-asymétrie"
+    ]
+  },
+  {
+    "recto": "Combien de stéréoisomères possède une molécule avec 8 centres chiraux (ex : cholestérol) ?",
+    "verso": "2^8 = 256 stéréoisomères de configuration possibles (128 paires d'énantiomères).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Stéréoisomérie fin",
+    "tags": [
+      "Calcul",
+      "2^8"
+    ]
+  }
+]

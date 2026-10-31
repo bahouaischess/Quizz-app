@@ -1,0 +1,181 @@
+[
+  {
+    "recto": "Qu'est-ce qu'une liaison peptidique sur le plan chimique ?",
+    "verso": "Une liaison amide covalente formée entre la fonction carboxylique (-COOH) d'un premier acide aminé et la fonction amine (-NH2) du suivant, avec élimination d'une molécule d'eau (H2O).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Définition",
+      "Liaison peptidique"
+    ]
+  },
+  {
+    "recto": "Quelles sont les 3 caractéristiques fondamentales de la liaison peptidique ?",
+    "verso": "Elle est plane, rigide et polaire (moment dipolaire de 3,5 D), en raison d'un effet mésomère conférant un caractère partiel de double liaison C=N (environ 40%).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Propriétés physico-chimiques"
+    ]
+  },
+  {
+    "recto": "Quelle est la longueur de la liaison C-N peptidique comparée aux liaisons simples et doubles ?",
+    "verso": "1,33 Å, ce qui est intermédiaire entre une simple liaison C-N (1,45 Å) et une double liaison C=N (1,25 Å).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Dimensions",
+      "Liaison peptidique"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'angle oméga (w) de la liaison peptidique et quelles valeurs peut-il prendre ?",
+    "verso": "L'angle de torsion autour de la liaison C-N. Il ne peut prendre que deux valeurs : 180° en configuration TRANS (très majoritaire, plus stable) ou 0° en configuration CIS.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Angle oméga",
+      "Conformation"
+    ]
+  },
+  {
+    "recto": "Pourquoi la configuration TRANS est-elle nettement préférentielle pour la liaison peptidique ?",
+    "verso": "Parce qu'elle minimise l'encombrement stérique et la répulsion électronique entre les chaînes latérales (R) des deux acides aminés successifs.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Stabilité",
+      "TRANS"
+    ]
+  },
+  {
+    "recto": "Quel acide aminé présente une proportion non négligeable (~6 à 10%) de liaison peptidique en configuration CIS ?",
+    "verso": "La proline (Pro, P), car la structure cyclique pyrrolidine rend la différence énergétique entre conformations cis et trans beaucoup plus faible.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Proline",
+      "Configuration CIS"
+    ]
+  },
+  {
+    "recto": "Définir les angles de rotation phi (f) et psi (y) d'une chaîne polypeptidique.",
+    "verso": "Phi (f) : angle de rotation autour de la liaison entre N et Ca. Psi (y) : angle de rotation autour de la liaison entre Ca et le carbone carbonyle (C=O).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Angles dièdres",
+      "Ramachandran"
+    ]
+  },
+  {
+    "recto": "Dans quel sens conventionnel décrit-on et numérote-t-on une chaîne polypeptidique ?",
+    "verso": "De l'extrémité amino-terminale (N-terminale, amine libre à gauche) vers l'extrémité carboxy-terminale (C-terminale, carboxyle libre à droite).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Convention",
+      "Nomenclature"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure exacte du glutathion réduit (GSH) ?",
+    "verso": "Tripeptide : gamma-L-glutamyl-L-cystéinylglycine. Le glutamate est lié à la cystéine par son carboxyle gamma (liaison isopeptidique).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Glutathion",
+      "GSH"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle biologique majeur du glutathion (GSH) ?",
+    "verso": "Principal antioxydant intracellulaire hydrosoluble : neutralise les radicaux libres et H2O2 via la glutathion peroxydase (GSSG formé) et maintient l'état réduit des protéines et de l'hème (Fe2+).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Glutathion",
+      "Fonction antioxydante"
+    ]
+  },
+  {
+    "recto": "Quelle enzyme et quel coenzyme régénèrent le GSH à partir du GSSG ?",
+    "verso": "La glutathion réductase, qui utilise le coenzyme réduit NADPH,H+ (fourni par la voie des pentoses phosphates via la G6PD).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Glutathion",
+      "Glutathion réductase"
+    ]
+  },
+  {
+    "recto": "Quelle est la séquence et la particularité de la TRH (Thyrotropin-Releasing Hormone) ?",
+    "verso": "Tripeptide pGlu-His-Pro-NH2 (pyroglutamyl-histidyl-prolinamide). Ses deux extrémités sont protégées contre les exopeptidases.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "TRH",
+      "Hormones"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques structurales communes à l'ocytocine et la vasopressine (ADH) ?",
+    "verso": "Ce sont des nonapeptides possédant un pont disulfure intra-caténaire entre Cys1 et Cys6 et une extrémité C-terminale amidée (Gly-NH2).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Ocytocine",
+      "Vasopressine"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la ciclosporine et quel est son mécanisme pharmacologique ?",
+    "verso": "Undécapeptide cyclique fongique contenant des acides aminés D et N-méthylés ; puissant immunosuppresseur utilisé en transplantation par inhibition de la calcineurine.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Ciclosporine",
+      "Pharmacologie"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la gramicidine S ?",
+    "verso": "Décapeptide cyclique bactérien antibiotique contenant deux résidus D-phénylalanine, qui désorganise et perméabilise les membranes bactériennes.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Gramicidine S",
+      "Antibiotique"
+    ]
+  },
+  {
+    "recto": "Que sont les défensines ?",
+    "verso": "Petits peptides cationiques de l'immunité innée (29-45 résidus) stabilisés par 3 ponts disulfures (6 cystéines), exerçant une activité lytique sur les parois microbiennes.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Défensines",
+      "Immunité innée"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure chimique de l'aspartame ?",
+    "verso": "Ester méthylique du dipeptide L-aspartyl-L-phénylalanine (Asp-Phe-OCH3).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Aspartame",
+      "Édulcorant"
+    ]
+  },
+  {
+    "recto": "Dans quel sens s'effectue la synthèse peptidique chimique de Merrifield ?",
+    "verso": "Du C-terminal (ancré sur support solide insoluble de polystyrène) vers le N-terminal, à l'inverse de la biosynthèse ribosomale (qui va du N au C-terminal).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Peptides",
+    "tags": [
+      "Merrifield",
+      "Synthèse chimique"
+    ]
+  }
+]

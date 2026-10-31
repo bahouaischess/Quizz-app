@@ -1,0 +1,211 @@
+[
+  {
+    "recto": "Énoncer le dogme d'Anfinsen sur le repliement des protéines (1973).",
+    "verso": "La conformation tridimensionnelle native d'une protéine est entièrement déterminée par sa séquence primaire en acides aminés et correspond au minimum thermodynamique d'énergie libre de Gibbs (G).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "Anfinsen",
+      "Thermodynamique"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le paradoxe de Levinthal ?",
+    "verso": "Le constat qu'une protéine explorant toutes ses conformations de manière aléatoire mettrait des milliards d'années à se replier (~10^77 ans pour 100 aa). Le repliement est donc un processus orienté, dirigé et rapide (ms à s).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "Levinthal",
+      "Paradoxe"
+    ]
+  },
+  {
+    "recto": "Décrire le modèle de l'entonnoir d'énergie (Folding Funnel) de Peter Wolynes.",
+    "verso": "Représentation du repliement où la largeur de l'entonnoir reflète l'entropie conformationnelle (qui diminue) et la profondeur reflète l'énergie libre (qui décroît vers l'état natif au fond).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "Folding Funnel",
+      "Wolynes"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le 'globule fondu' (molten globule) dans le modèle de l'effondrement hydrophobe ?",
+    "verso": "Intermédiaire de repliement compact précoce résultant de l'exclusion rapide de l'eau par les résidus apolaires, possédant des structures secondaires natives mais un cœur tertiaire fluide.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "Molten globule",
+      "Effondrement hydrophobe"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle de la PDI (Protéine Disulfure Isomérase) dans le RE ?",
+    "verso": "Catalyse l'oxydation, la réduction et le réarrangement (isomérisation) des ponts disulfures intra- et intercaténaires afin d'atteindre la conformation native correcte.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "PDI",
+      "Ponts disulfures"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle des PPIases (peptidyl-prolyl cis-trans isomérases) ?",
+    "verso": "Accélèrent l'isomérisation cis/trans des liaisons peptidiques impliquant un résidu de proline, réaction spontanée très lente qui constitue souvent une étape limitante du repliement.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "PPIases",
+      "Proline"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une protéine chaperon moléculaire (HSP) ?",
+    "verso": "Protéine qui assiste le repliement correct des chaînes polypeptidiques en empêchant les interactions hydrophobes illégitimes et l'agrégation, sans faire partie de la structure finale native.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "Chaperons",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence entre une 'holdase' et une 'foldase' ?",
+    "verso": "Une holdase (ex. Hsp70, sHsp) se lie aux segments hydrophobes exposés pour maintenir la protéine dépliée et soluble ; une foldase/chaperonine (ex. GroEL, TRiC) offre une cavité fermée pour faciliter activement le repliement.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "Holdase vs Foldase"
+    ]
+  },
+  {
+    "recto": "Décrire le cycle ATPasique de la chaperonne Hsp70 (DnaK).",
+    "verso": "Hsp70-ATP lie rapidement le substrat ; Hsp40 stimule l'hydrolyse de l'ATP en ADP, verrouillant le peptide dans la poche fermée ; un facteur d'échange (NEF) échange l'ADP contre un ATP, libérant le substrat replié.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "Hsp70",
+      "Cycle ATP"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure quaternaire du complexe GroEL / GroES bactérien ?",
+    "verso": "GroEL est un cylindre formé de deux anneaux de 7 sous-unités (14 x 57 kDa) ; GroES est un couvercle heptamérique unique (7 x 10 kDa) fermant l'une des cavités.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "GroEL/GroES",
+      "Structure"
+    ]
+  },
+  {
+    "recto": "Quel est le mécanisme d''effet cage' de GroEL / GroES ?",
+    "verso": "L'encapsulation sous GroES en présence d'ATP inverse la polarité de la paroi (d'hydrophobe à hydrophile), offrant à la protéine isolée ~10 s pour se replier à l'abri de toute agrégation intermoléculaire.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "GroEL/GroES",
+      "Effet cage"
+    ]
+  },
+  {
+    "recto": "Quel est l'équivalent eucaryote cytosolique de GroEL ?",
+    "verso": "Le complexe TRiC/CCT (TCP-1 Ring Complex), un hétéro-oligomère à double anneau de 8 sous-unités différentes indispensable au repliement de l'actine et de la tubuline.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "TRiC/CCT",
+      "Actine/Tubuline"
+    ]
+  },
+  {
+    "recto": "Comment s'active le facteur de transcription HSF1 lors d'un choc thermique ?",
+    "verso": "Hsp70 et Hsp90 qui séquestrent HSF1 sont détournées par les protéines dénaturées ; HSF1 libéré s'oligomérise en trimère phosphorylé, migre dans le noyau et se lie aux séquences HSE pour induire les gènes de HSP.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "HSF1",
+      "Choc thermique"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la voie ERAD (Endoplasmic Reticulum-Associated Degradation) ?",
+    "verso": "Voie de contrôle qualité du RE qui repère les protéines mal repliées (lectines OS-9), les extrait par dislocation (ATPase p97/VCP) et les polyubiquitine (ligase HRD1) pour dégradation par le protéasome 26S.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "ERAD",
+      "Contrôle qualité"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle de la chaperonne BiP (GRP78) dans la lumière du RE ?",
+    "verso": "Membre de la famille Hsp70 qui assiste le repliement des protéines naissantes dans le RE et maintient inactifs les trois capteurs du stress du RE (IRE1, PERK, ATF6) de la voie UPR.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "BiP",
+      "UPR"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la réponse UPR (Unfolded Protein Response) ?",
+    "verso": "Programme transcriptionnel et traductionnel déclenché lors d'un stress du RE : diminution de la traduction générale, augmentation des chaperonnes du RE et de l'ERAD, ou induction de l'apoptose (via CHOP) si le stress persiste.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "UPR",
+      "Stress du RE"
+    ]
+  },
+  {
+    "recto": "Quelles sont les 3 enzymes successives de la cascade d'ubiquitination ?",
+    "verso": "E1 (enzyme d'activation de l'ubiquitine, consomme de l'ATP), E2 (enzyme de conjugaison) et E3 (ubiquitine ligase, apporte la spécificité de reconnaissance du substrat).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "E1, E2, E3",
+      "Ubiquitine"
+    ]
+  },
+  {
+    "recto": "Quel type de chaîne d'ubiquitine cible une protéine vers la dégradation par le protéasome 26S ?",
+    "verso": "Une chaîne de polyubiquitine reliée par la lysine 48 (K48) de l'ubiquitine (par opposition aux chaînes K63 impliquées dans la signalisation ou l'autophagie).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "Polyubiquitine K48",
+      "Protéasome"
+    ]
+  },
+  {
+    "recto": "Quelle est l'organisation structurale du protéasome 26S ?",
+    "verso": "Un cylindre catalytique 20S (empilement de 4 anneaux heptamériques : alpha7-bêta7-bêta7-alpha7 portant les activités chymotrypsine-, trypsine- et caspase-like) coiffé par un ou deux complexes régulateurs 19S (ATPases dépliases).",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "Protéasome 26S",
+      "Structure"
+    ]
+  },
+  {
+    "recto": "Pourquoi Hsp70 favorise-t-elle la survie des cellules cancéreuses ?",
+    "verso": "Elle tamponne le stress protéotoxique généré par les anomalies génétiques, bloque l'apoptose mitochondriale (inhibe Bax et l'apoptosome) et diminue la détection par l'immunité anti-tumorale.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "Hsp70",
+      "Cancer"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle du complexe cytosolique BAG6 ?",
+    "verso": "Sentinelle cytosolique qui détecte spécifiquement les domaines hydrophobes anormaux des protéines mal conformées et les achemine vers la polyubiquitination et la dégradation protéasomale.",
+    "subject": "Molécules du vivant",
+    "folder": "PASS - Molécules du vivant / Repliement des protéines",
+    "tags": [
+      "BAG6",
+      "Contrôle qualité cytosolique"
+    ]
+  }
+]

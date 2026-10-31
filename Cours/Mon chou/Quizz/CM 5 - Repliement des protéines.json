@@ -1,0 +1,604 @@
+{
+  "name": "CM 5 - Repliement des protéines",
+  "folder": "PASS - Molécules du vivant",
+  "description": "Mécanismes thermodynamiques de repliement (dogme d'Anfinsen, paradoxe de Levinthal, entonnoir d'énergie), chaperons moléculaires (Hsp70, GroEL/GroES, HSF1), contrôle qualité du RE (ERAD) et dégradation protéasomale.",
+  "prerequisites": [
+    "CM 3 suite - Structure tertiaire et quaternaire des protéines"
+  ],
+  "questions": [
+    {
+      "q": "Selon les expériences historiques de Christian Anfinsen sur la ribonucléase A (Nobel 1972) :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Anfinsen"
+      ],
+      "options": [
+        {
+          "text": "La structure tridimensionnelle native d'une protéine est entièrement déterminée par sa séquence primaire en acides aminés.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'état natif replié correspond à l'état thermodynamique de plus basse énergie libre de Gibbs (G minimal).",
+          "isCorrect": true
+        },
+        {
+          "text": "La dénaturation par l'urée 8 M et le bêta-mercaptoéthanol est totalement réversible après dialyse ménagée de ces agents.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'oxydation des ponts disulfures en présence d'urée 8 M restaure immédiatement 100% de l'activité enzymatique native.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le repliement nécessite obligatoirement la présence d'une matrice d'ARN messager pour guider chaque liaison hydrogène.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le dogme d'Anfinsen stipule que la séquence primaire contient toute l'information nécessaire au repliement 3D spontané vers le minimum thermodynamique d'énergie libre. Si l'on réoxyde en présence d'urée, les ponts disulfures se forment au hasard ('ribonucléase brouillée', ~1% d'activité) ; l'addition de traces de réducteur sans dénaturant permet à la protéine de retrouver sa conformation native à 100%."
+    },
+    {
+      "q": "Le paradoxe de Levinthal démontre que :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Thermodynamique"
+      ],
+      "options": [
+        {
+          "text": "Une protéine ne peut pas explorer aléatoirement toutes ses conformations possibles car cela prendrait un temps supérieur à l'âge de l'univers.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le repliement des protéines in vivo est un processus guidé et coopératif s'effectuant sur une échelle de temps de la microseconde à la seconde.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les protéines cellulaires nécessitent une énergie d'activation thermique supérieure à 500 kJ/mol.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'entropie conformationnelle de la chaîne polypeptidique augmente considérablement lors du passage de l'état dénaturé à l'état natif.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour une chaîne de 100 acides aminés ayant 3 conformations par résidu (3^100 ~ 10^47 états), un échantillonnage aléatoire prendrait ~10^77 années (paradoxe de Levinthal). Le repliement est donc un processus orienté et thermodynamiquement dirigé vers le fond d'un entonnoir d'énergie libre."
+    },
+    {
+      "q": "Dans le modèle de l'entonnoir d'énergie (Folding Energy Landscape) décrit par Wolynes :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Folding Funnel"
+      ],
+      "options": [
+        {
+          "text": "La largeur de l'entonnoir représente l'entropie conformationnelle (nombre d'états accessibles), qui diminue au cours du repliement.",
+          "isCorrect": true
+        },
+        {
+          "text": "La profondeur de l'entonnoir représente l'énergie libre de Gibbs (G), qui décroît vers l'état natif le plus stable au fond.",
+          "isCorrect": true
+        },
+        {
+          "text": "Des puits de potentiel locaux latéraux peuvent piéger des intermédiaires métastables mal repliés ou favoriser l'agrégation.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'énergie libre de Gibbs de l'état natif est supérieure à celle de la pelote statistique initiale.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les chaperons moléculaires aident les protéines piégées dans des minima locaux à en sortir pour atteindre le repliement natif.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'entonnoir d'énergie (funnel) illustre la baisse progressive d'énergie libre et d'entropie. Les rugosités de surface représentent des barrières cinétiques et des puits métastables d'agrégation d'où les chaperons peuvent extraire la protéine."
+    },
+    {
+      "q": "Le modèle de repliement par 'effondrement hydrophobe' (hydrophobic collapse) propose que :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Modèles de repliement"
+      ],
+      "options": [
+        {
+          "text": "L'enfouissement initial très rapide des résidus apolaires à l'abri de l'eau forme un état compact intermédiaire appelé 'globule fondu' (molten globule).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le globule fondu possède déjà l'essentiel des structures secondaires natives mais conserve un cœur tertiaire fluide et mobile.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les liaisons hydrogène se brisent spontanément sous l'effet de l'eau.",
+          "isCorrect": false
+        },
+        {
+          "text": "La formation de la structure tertiaire finale rigide s'effectue secondairement à partir de cet intermédiaire condensé.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'effondrement hydrophobe est une étape précoce majeure : l'exclusion de l'eau compacte la chaîne en un 'globule fondu' riche en structures secondaires, qui s'ajuste ensuite pour former les contacts tertiaires précis."
+    },
+    {
+      "q": "Quelles enzymes catalysent des étapes limitantes du repliement des protéines dans le réticulum endoplasmique ?",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Enzymes de repliement"
+      ],
+      "options": [
+        {
+          "text": "La protéine disulfure isomérase (PDI) qui clive et réarrange les ponts disulfures non natifs.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les peptidyl-prolyl cis-trans isomérases (PPIases) qui catalysent l'isomérisation cis-trans de la liaison peptidique précédant une proline.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ADN polymérase I qui ajoute des nucléotides à l'extrémité C-terminale.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'ARNase A qui dégrade les chaperonnes membranaires.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La PDI (accélère l'échange de ponts disulfures jusqu'à conformation native) et les PPIases (accélèrent l'isomérisation cis/trans des prolines, étape lente spontanée) sont les deux enzymes majeures d'assistance au repliement."
+    },
+    {
+      "q": "Concernant la classification et les propriétés générales des protéines chaperons (HSP) :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Chaperons"
+      ],
+      "options": [
+        {
+          "text": "Elles sont classées en familles selon leur masse moléculaire en kDa (Hsp40, Hsp60, Hsp70, Hsp90, Hsp100, petites sHsp).",
+          "isCorrect": true
+        },
+        {
+          "text": "Certaines sont exprimées de manière constitutive (fonctions de ménage) tandis que d'autres sont inductibles par un stress thermique ou chimique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur rôle fondamental est d'empêcher les interactions illégitimes et l'agrégation de surfaces hydrophobes exposées par les chaînes mal repliées.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles modifient définitivement la structure primaire de la protéine en hydrolysant plusieurs acides aminés terminaux.",
+          "isCorrect": false
+        },
+        {
+          "text": "La majorité des cycles d'action des chaperons dépendent de la liaison et de l'hydrolyse de l'ATP.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les chaperons (Hsp) reconnaissent les plages hydrophobes anormalement exposées, évitent l'agrégation et favorisent le bon repliement sans modifier la séquence primaire en acides aminés, via des cycles ATP-dépendants."
+    },
+    {
+      "q": "Dans le système Hsp70 (ou DnaK chez les procaryotes) :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Système Hsp70"
+      ],
+      "options": [
+        {
+          "text": "Hsp70 se lie spécifiquement à de courts segments hydrophobes d'environ 7 acides aminés exposés sur les chaînes polypeptidiques dénaturées.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans l'état lié à l'ATP, Hsp70 présente une cinétique d'association/dissociation rapide avec le substrat.",
+          "isCorrect": true
+        },
+        {
+          "text": "La cochaperonne Hsp40 (DnaJ) stimule fortement l'activité ATPasique de Hsp70, provoquant le verrouillage du substrat à l'état Hsp70-ADP.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un facteur d'échange nucléotidique (NEF tel que GrpE ou Bag-1) induit la libération de l'ADP et la réouverture de la poche de Hsp70 par liaison d'un nouvel ATP.",
+          "isCorrect": true
+        },
+        {
+          "text": "Hsp70 ne consomme aucun nucléotide triphosphate au cours de son cycle catalytique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Cycle Hsp70 : liaison du substrat à l'état ATP -> stimulation de l'hydrolyse par Hsp40 (DnaJ) -> état ADP fermé à haute affinité retenant le peptide -> échange ADP/ATP par un NEF (GrpE/Bag) -> réouverture et libération du peptide pour repliement."
+    },
+    {
+      "q": "Concernant le système des chaperonines bactériennes GroEL / GroES :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "GroEL/GroES"
+      ],
+      "options": [
+        {
+          "text": "GroEL est constitué de deux anneaux heptamériques empilés dos à dos formant un double cylindre creux (14 sous-unités de 57 kDa).",
+          "isCorrect": true
+        },
+        {
+          "text": "GroES est un anneau heptamérique unique (7 sous-unités de 10 kDa) qui fait office de couvercle fermant la cage de réaction d'un des anneaux de GroEL.",
+          "isCorrect": true
+        },
+        {
+          "text": "Chaque sous-unité de GroEL comporte 3 domaines : apical (liaison du substrat et de GroES), intermédiaire (charnière) et équatorial (site ATPasique).",
+          "isCorrect": true
+        },
+        {
+          "text": "La fixation de l'ATP et de GroES transforme la paroi interne de la cage de GroEL d'une surface hydrophobe en une surface hydrophile protectrice.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine encapsulée est hydrolysée en acides aminés libres à l'intérieur de la cage de GroEL.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "GroEL/GroES offre une 'cage d'Anfinsen' isolée : le substrat non replié se fixe sur les résidus hydrophobes du domaine apical ; la liaison d'ATP + GroES fait pivoter les sous-unités, masquant les résidus hydrophobes et exposant une paroi hydrophile polaire où la protéine se replie isolée pendant ~10 secondes."
+    },
+    {
+      "q": "Chez les eucaryotes, l'équivalent cytosolique de la chaperonine GroEL est :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Chaperonines eucaryotes"
+      ],
+      "options": [
+        {
+          "text": "Le complexe TRiC/CCT (tétra-décamère hétéro-oligomérique essentiel au repliement de l'actine et de la tubuline).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le protéasome 20S.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'ARN polymérase III.",
+          "isCorrect": false
+        },
+        {
+          "text": "La calnexine membranaire isolée.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "TRiC (TCP-1 Ring Complex) ou CCT est la chaperonine du cytosol eucaryote (hétéro-oligomère à 8 sous-unités différentes par anneau), indispensable au repliement de protéines cytosquelettiques comme l'actine et la tubuline."
+    },
+    {
+      "q": "Comment le facteur de transcription HSF1 (Heat Shock Factor 1) régule-t-il la réponse cellulaire au stress thermique ?",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "HSF1"
+      ],
+      "options": [
+        {
+          "text": "En conditions basales normales, HSF1 est séquestré à l'état monomérique inactif par les chaperons Hsp70 et Hsp90.",
+          "isCorrect": true
+        },
+        {
+          "text": "Lors d'un choc thermique, l'accumulation de protéines dénaturées mobilise et titre Hsp70/Hsp90, libérant HSF1.",
+          "isCorrect": true
+        },
+        {
+          "text": "HSF1 libéré s'oligomérise en trimères actifs et subit des phosphorylations activatrices.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les trimères de HSF1 migrent dans le noyau et se fixent sur les éléments de réponse au choc thermique (HSE) des promoteurs de gènes codant les HSP.",
+          "isCorrect": true
+        },
+        {
+          "text": "HSF1 dégrade directement l'ARN ribosomique dans le cytoplasme.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'accumulation de protéines mal repliées recrute les chaperons Hsp70/90, ce qui libère HSF1. HSF1 trimérise, migre dans le noyau, se lie aux séquences HSE et active la transcription massive des chaperonnes."
+    },
+    {
+      "q": "Qu'est-ce que le système ERAD (Endoplasmic Reticulum-Associated Degradation) ?",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "ERAD"
+      ],
+      "options": [
+        {
+          "text": "Une voie de contrôle qualité qui élimine les protéines mal repliées du réticulum endoplasmique en les exportant vers le protéasome cytosolique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un système qui reconnaît les glycoprotéines anormales grâce à des lectines comme OS-9 et XTP3-B liant des glycannes modifiés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un complexe de rétrotranslocation (dislocation) impliquant la ligase E3 HRD1 et l'ATPase p97 (VCP).",
+          "isCorrect": true
+        },
+        {
+          "text": "Un mécanisme qui entraîne l'ubiquitination de la protéine défectueuse lors de sa sortie dans le cytosol.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un système qui stocke définitivement les protéines défectueuses sous forme de cristaux intranucléaires.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "ERAD assure le contrôle qualité dans le RE : reconnaissance des glycannes non matures (lectines OS-9), ciblage vers HRD1/SEL1L, rétro-translocation dans le cytosol assistée par l'ATPase p97 (VCP), polyubiquitination et dégradation par le protéasome 26S."
+    },
+    {
+      "q": "Concernant la protéine chaperon BiP (Binding immunoglobulin Protein, ou GRP78) :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "BiP"
+      ],
+      "options": [
+        {
+          "text": "C'est un membre de la famille Hsp70 localisé spécifiquement dans la lumière du réticulum endoplasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle maintient les trois capteurs membranaires de l'UPR (IRE1, PERK, ATF6) à l'état inactif en conditions physiologiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "En cas de stress du RE, la séquestration de BiP par les protéines mal repliées déclenche la réponse UPR (Unfolded Protein Response).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle possède un signal de rétention luminal C-terminal canonique de type KDEL.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est sécrétée en abondance dans le liquide céphalo-rachidien pour lyser les bactéries.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "BiP (Hsp70 du RE, portant le motif KDEL) aide au repliement et garde inactifs IRE1, PERK et ATF6. Lors d'un stress du RE, BiP se détache des capteurs pour se lier aux protéines mal repliées, activant l'UPR."
+    },
+    {
+      "q": "La polyubiquitination ciblant une protéine mal repliée vers la dégradation par le protéasome 26S nécessite successivement :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Ubiquitination"
+      ],
+      "options": [
+        {
+          "text": "Une enzyme d'activation de l'ubiquitine E1 consommant de l'ATP pour former une liaison thioester avec l'ubiquitine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une enzyme de conjugaison de l'ubiquitine E2 recevant l'ubiquitine par trans-thioestérification.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une ubiquitine ligase E3 qui reconnaît spécifiquement la protéine cible et transfère l'ubiquitine sur une lysine de celle-ci.",
+          "isCorrect": true
+        },
+        {
+          "text": "La formation d'une chaîne de polyubiquitine liée par la lysine 48 (K48) de l'ubiquitine.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'intervention obligatoire d'une amylase salivaire acide.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La cascade enzymatique E1 (activation ATP-dépendante), E2 (conjugaison) et E3 (reconnaissance du substrat et ligation isopeptidique) assemble des chaînes de polyubiquitine liées sur la Lys 48 (K48), signal spécifique de dégradation par le protéasome 26S."
+    },
+    {
+      "q": "Concernant la structure et la fonction du complexe du protéasome 26S :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Protéasome 26S"
+      ],
+      "options": [
+        {
+          "text": "Il est composé d'un cylindre catalytique 20S flanqué à l'une ou aux deux extrémités d'un complexe régulateur 19S.",
+          "isCorrect": true
+        },
+        {
+          "text": "La particule 19S reconnaît les protéines polyubiquitinées, les dé-ubiquitine, les déplie grâce à des ATPases et les injecte dans le cœur 20S.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le cœur 20S est formé de 4 anneaux heptamériques empilés (deux anneaux alpha externes et deux anneaux bêta internes).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les sites actifs protéolytiques (activités chymotrypsine-like, trypsine-like et caspase-like) sont portés par les sous-unités bêta du cœur 20S.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le protéasome 26S dégrade les protéines exclusivement en acides gras libres et en molécules de cholestérol.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le protéasome 26S (régulateur 19S + cœur catalytique 20S alpha7-bêta7-bêta7-alpha7) déplie et hydrolyse les protéines ciblées en petits peptides de 3 à 15 acides aminés, recyclant les molécules d'ubiquitine libres."
+    },
+    {
+      "q": "Le complexe cytosolique BAG6 intervient dans :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "BAG6"
+      ],
+      "options": [
+        {
+          "text": "La reconnaissance spécifique de domaines hydrophobes anormalement exposés sur des chaînes polypeptidiques néosynthétisées ou cytosoliques mal repliées.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le recrutement d'ubiquitine ligases pour acheminer les protéines irrécupérables vers le protéasome.",
+          "isCorrect": true
+        },
+        {
+          "text": "La dégradation directe de l'ADN génomique en adénine pure.",
+          "isCorrect": false
+        },
+        {
+          "text": "La synthèse de glycogène hépatique après un repas riche en sucres.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "BAG6 (BCL2-associated athanogene 6) est un complexe sentinelle cytosolique qui capte les chaînes portant des régions hydrophobes anormales et les oriente vers l'ubiquitination et la dégradation protéasomale."
+    },
+    {
+      "q": "Pourquoi la surexpression de Hsp70 est-elle fréquemment observée dans les cellules tumorales malignes ?",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Oncologie"
+      ],
+      "options": [
+        {
+          "text": "Elle permet aux cellules cancéreuses de tolérer le stress protéotoxique généré par de multiples mutations et aneuploïdies.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle exerce une action anti-apoptotique puissante en inhibant la voie mitochondriale de l'apoptose.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle favorise l'échappement à la surveillance immunitaire (notamment en augmentant la production d'IL-10 immunosuppressive).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle induit immédiatement la destruction totale des oncogènes par les lymphocytes T cytotoxiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les cellules tumorales surexpriment Hsp70 pour amortir l'instabilité protéomique liée aux mutations, bloquer l'apoptose (inhibition de Bax, JNK, apoptosome) et échapper au système immunitaire (cellules myéloïdes suppressives, IL-10)."
+    },
+    {
+      "q": "L'apoptozole est une molécule thérapeutique expérimentale développée comme agent anticancéreux ciblant :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Pharmacologie"
+      ],
+      "options": [
+        {
+          "text": "L'activité ATPasique de la protéine chaperon Hsp70, induisant l'apoptose préférentielle des cellules tumorales.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le canal potassique neuronal voltage-dépendant.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le récepteur de l'insuline sur les adipocytes.",
+          "isCorrect": false
+        },
+        {
+          "text": "La synthèse de la paroi bactérienne en peptidoglycane.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'apoptozole est un inhibiteur chimique de poche ATP de Hsp70 qui bloque son activité chaperon et déclenche l'apoptose caspase-dépendante dans les lignées tumorales dépendantes de Hsp70."
+    },
+    {
+      "q": "Dans les maladies neurodégénératives conformationnelles (ex. maladie d'Alzheimer, de Parkinson, chorée de Huntington) :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Pathologie conformationnelle"
+      ],
+      "options": [
+        {
+          "text": "Le repliement défectueux de protéines spécifiques induit la formation d'oligomères solubles toxiques et de dépôts amyloïdes insolubles.",
+          "isCorrect": true
+        },
+        {
+          "text": "La capacité des systèmes chaperons et du protéasome à éliminer les espèces mal conformées diminue avec le vieillissement cellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine bêta-amyloïde et la protéine Tau hyperphosphorylée s'agrègent dans la maladie d'Alzheimer.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'alpha-synucléine forme des corps de Lewy dans la maladie de Parkinson.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes ces pathologies sont immédiatement guéries par une injection intraveineuse d'eau distillée.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les protéinopathies neurodégénératives (Alzheimer: Abeta et Tau ; Parkinson: alpha-synucléine ; Huntington: polyglutamine) résultent d'un déséquilibre entre formation d'espèces mal repliées agrégées et clairance par chaperons/autophagie/protéasome."
+    },
+    {
+      "q": "Quelle protéine chaperon est spécifiquement impliquée dans le transport et l'importation des protéines à travers les membranes mitochondriales ?",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Chaperons mitochondriaux"
+      ],
+      "options": [
+        {
+          "text": "La Hsp70 mitochondriale (mtHsp70 ou mortaline) associée au complexe TIM23.",
+          "isCorrect": true
+        },
+        {
+          "text": "La myoglobine cytosolique libre.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'albumine plasmatique circulante.",
+          "isCorrect": false
+        },
+        {
+          "text": "La kératine alpha capillaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La mtHsp70 (mortaline) agit comme un moteur d'importation ATP-dépendant au niveau du translocateur TIM23, tirant la chaîne polypeptidique dépliée dans la matrice mitochondriale avant son repliement par Hsp60/Hsp10."
+    },
+    {
+      "q": "Qu'est-ce que la réponse UPR (Unfolded Protein Response) du réticulum endoplasmique ?",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "UPR"
+      ],
+      "options": [
+        {
+          "text": "Une voie de signalisation adaptative coordonnée activée lorsque la quantité de protéines mal repliées dépasse la capacité de repliement du RE.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle diminue globalement la traduction générale des protéines pour réduire la charge de travail du RE.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle induit spécifiquement l'expression transcriptionnelle de chaperons luminales (BiP, calréticuline) et de composants de l'ERAD.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si le stress persiste de façon prolongée et insurmontable, elle bascule vers le déclenchement de l'apoptose cellulaire via CHOP.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle stimule la mitose bactérienne dans le cytosol des hépatocytes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'UPR (via PERK, IRE1 et ATF6) atténue la charge protéique, augmente les chaperons et la dégradation ERAD. En cas d'échec du rétablissement de l'homéostasie, la voie pro-apoptotique (induisant CHOP/GADD153) élimine la cellule endommagée."
+    },
+    {
+      "q": "Le terme de 'holdase' appliqué à Hsp70 signifie que :",
+      "tags": [
+        "CM 5 - Repliement des protéines",
+        "Holdases vs Foldases"
+      ],
+      "options": [
+        {
+          "text": "Elle se lie transitoirement aux surfaces hydrophobes pour 'tenir' et maintenir le polypeptide déplié et empêcher son agrégation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle dégrade immédiatement toutes les protéines en gaz carbonique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle phosphoryle irréversiblement les lipides membranaires.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle bloque la réplication de l'ADN en phase S du cycle cellulaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les 'holdases' (système Hsp70, sHsp) se fixent aux intermédiaires instables pour les maintenir solubles et non agrégés (les 'tenir'), contrairement aux 'foldases' (chaperonines Hsp60/GroEL) qui fournissent une cage isolée pour catalyser activement le repliement."
+    }
+  ]
+}

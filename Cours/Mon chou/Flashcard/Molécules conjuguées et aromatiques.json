@@ -1,0 +1,173 @@
+[
+  {
+    "recto": "Qu'est-ce qu'un système conjugué et quels en sont les 3 types majeurs ?",
+    "verso": "Recouvrement latéral continu d'orbitales p parallèles sur au moins 3 atomes adjacents.\n1) pi - sigma - pi (diènes conjugués)\n2) pi - sigma - n (doublet non liant conjugué avec double liaison)\n3) pi - sigma - v (carbocation/lacune conjuguée avec double liaison).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Système conjugué",
+      "Types"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'hybride de résonance par rapport aux formes mésomères ?",
+    "verso": "L'hybride de résonance est la molécule RÉELLE UNIQUE, moyenne pondérée des formes de Lewis limites fictives. Les formes mésomères ne sont pas des espèces réelles en équilibre.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Mésomérie",
+      "Hybride de résonance"
+    ]
+  },
+  {
+    "recto": "Quelles sont les 4 règles de Hückel pour l'aromaticité ?",
+    "verso": "1) Molécule cyclique\n2) Molécule plane (orbitales p parallèles)\n3) Entièrement conjuguée (chaque atome du cycle possède une orbitale p)\n4) Possède (4n + 2) électrons pi délocalisés (n = 0, 1, 2, 3...).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Hückel",
+      "Aromaticité"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une molécule antiaromatique selon Hückel ?",
+    "verso": "Molécule cyclique, plane et entièrement conjuguée possédant 4n électrons pi (ex : cyclobutadiène avec 4 e- pi). Elle est hautement instable et réactive.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Antiaromatique",
+      "Définition"
+    ]
+  },
+  {
+    "recto": "Pourquoi le cyclooctatétraène (8 e- pi) n'est-il pas antiaromatique ?",
+    "verso": "Il adopte une conformation non plane en forme de baignoire pour rompre la conjugaison cyclique, évitant ainsi l'antiaromaticité. Il se comporte comme un polyène non-aromatique ordinaire.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Cyclooctatétraène",
+      "Conformation"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques des liaisons C-C du benzène ?",
+    "verso": "Les 6 liaisons C-C sont strictement identiques, de longueur 0,139 nm (intermédiaire entre simple 0,154 nm et double 0,134 nm). Énergie de résonance ~ 150 kJ/mol (36 kcal/mol).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Benzène",
+      "Liaisons"
+    ]
+  },
+  {
+    "recto": "Pourquoi la pyridine est-elle basique alors que le pyrrole ne l'est pas ?",
+    "verso": "- Pyridine : le doublet de N est dans une orbitale sp2 orthogonale au système pi (ne participe pas au sextet aromatique) => disponible pour capter H+.\n- Pyrrole : le doublet de N est dans une orbitale p et constitue le sextet aromatique (6 e- pi) => sa protonation détruirait l'aromaticité.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Pyridine",
+      "Pyrrole",
+      "Basicité"
+    ]
+  },
+  {
+    "recto": "Combien d'électrons pi possèdent le furane et le thiophène ?",
+    "verso": "6 électrons pi aromatiques (4 provenant des 2 doubles liaisons + 2 provenant d'un SEUL des deux doublets non liants de l'hétéroatome O ou S).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Furane",
+      "Thiophène"
+    ]
+  },
+  {
+    "recto": "Citer trois ions aromatiques remarquables selon la règle de Hückel.",
+    "verso": "1) Cation cyclopropényle (cycle à 3 sommets, 2 e- pi, n=0)\n2) Anion cyclopentadiényle (cycle à 5 sommets, 6 e- pi, n=1)\n3) Cation cycloheptatriényle / tropylium (cycle à 7 sommets, 6 e- pi, n=1).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Ions aromatiques",
+      "Exemples"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un groupe mésomère donneur (+M) et attracteur (-M) ?",
+    "verso": "+M : donne des électrons via un doublet libre (-OH, -OR, -NH2, halogènes).\n-M : attire les électrons via une liaison multiple avec un atome électronégatif (-NO2, -C=O, -CN, -COOH).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Effets mésomères",
+      "+M et -M"
+    ]
+  },
+  {
+    "recto": "Comment le groupe -OH oriente-t-il la substitution électrophile sur le phénol ?",
+    "verso": "En positions ORTHO et PARA (avec forte activation du cycle), car les formes mésomères enrichissent sélectivement ces positions en densité électronique négative.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Phénol",
+      "Orientation"
+    ]
+  },
+  {
+    "recto": "Comment le groupe -NO2 oriente-t-il la substitution sur le benzène ?",
+    "verso": "En position MÉTA (avec forte désactivation du cycle), car les positions ortho et para sont fortement appauvries en électrons (portent des charges positives dans les formes mésomères).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Nitrobenzène",
+      "Orientation"
+    ]
+  },
+  {
+    "recto": "Pourquoi l'aniline est-elle moins basique que la cyclohexylamine ?",
+    "verso": "Le doublet non liant de l'azote de l'aniline est délocalisé par résonance (+M) sur le cycle aromatique, réduisant sa disponibilité électronique par rapport à une amine aliphatique saturée.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Aniline",
+      "Basicité"
+    ]
+  },
+  {
+    "recto": "Quel est l'effet de l'extension de la conjugaison sur le spectre UV-Visible ?",
+    "verso": "Elle réduit l'écart d'énergie Delta E entre HOMO et LUMO, déplaçant l'absorption vers les plus grandes longueurs d'onde (effet bathochrome / vers le rouge et le visible).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Spectroscopie",
+      "Effet bathochrome"
+    ]
+  },
+  {
+    "recto": "Pourquoi l'acide acétique est-il beaucoup plus acide que l'éthanol ?",
+    "verso": "L'ion carboxylate CH3-COO- est stabilisé par délocalisation mésomère de la charge négative sur deux oxygènes équivalents, alors que l'ion éthanolate CH3-CH2-O- a sa charge localisée sur un seul oxygène.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Acide acétique",
+      "Mésomérie carboxylate"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence entre produit d'addition 1,2 et 1,4 sur le butadiène ?",
+    "verso": "- 1,2 : produit cinétique (plus rapide, prédomine à basse température, -80 °C).\n- 1,4 : produit thermodynamique (alcène disubstitué plus stable, prédomine à haute température, 40 °C).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Butadiène",
+      "Addition 1,2 et 1,4"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un effet bathochrome et un effet hypsochrome ?",
+    "verso": "Bathochrome : déplacement vers les grandes longueurs d'onde (plus faible énergie).\nHypsochrome : déplacement vers les courtes longueurs d'onde (plus haute énergie).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Molécules conjuguées et aromatiques",
+    "tags": [
+      "Spectroscopie",
+      "Terminologie"
+    ]
+  }
+]

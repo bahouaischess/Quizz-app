@@ -1,0 +1,649 @@
+{
+  "name": "Chimie - Stéréoisomérie fin",
+  "folder": "PASS - Chimie",
+  "description": "Diastéréoisomérie à plusieurs centres stéréogènes, composés méso, dédoublement chimique et chromatographique des racémiques, isomérie géométrique Z/E et cis/trans, stéréochimie des dérivés du cyclohexane (interactions 1,3-diaxiales), glucides (épimères, anomères, mutarotation), et conséquences biologiques (acides gras cis).",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Une molécule comporte n centres stéréogènes asymétriques distincts sans plan ni centre de symétrie. Quel est le nombre de diastéréoisomères d'un stéréoisomère donné de cette molécule ?",
+      "tags": [
+        "Diastéréoisomères",
+        "Calcul",
+        "Dénombrement"
+      ],
+      "options": [
+        {
+          "text": "2^n - 2",
+          "isCorrect": true
+        },
+        {
+          "text": "2^n",
+          "isCorrect": false
+        },
+        {
+          "text": "2^(n-1)",
+          "isCorrect": false
+        },
+        {
+          "text": "n - 1",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le nombre total de stéréoisomères de configuration est 2^n. Pour un stéréoisomère particulier donné : 1 stéréoisomère est son énantiomère (image dans le miroir), et lui-même compte pour 1. Tous les autres sont des diastéréoisomères, soit exactement 2^n - 2 diastéréoisomères !"
+    },
+    {
+      "q": "Concernant la séparation (résolution / dédoublement) d'un mélange racémique de deux énantiomères (R) et (S) :",
+      "tags": [
+        "Dédoublement",
+        "Mélange racémique",
+        "Procédés"
+      ],
+      "options": [
+        {
+          "text": "Deux énantiomères ne peuvent pas être séparés par distillation fractionnée ou chromatographie sur colonne achirale ordinaire car ils possèdent la même température d'ébullition et la même affinité pour une phase stationnaire achirale.",
+          "isCorrect": true
+        },
+        {
+          "text": "La méthode classique de Pasteur consiste à faire réagir le mélange racémique avec un réactif chiral énantiopur (ex : (R)-acide) pour former deux diastéréoisomères : (R,R) et (S,R).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les diastéréoisomères formés ont des propriétés physiques différentes (solubilités différentes) et peuvent être séparés par cristallisation fractionnée.",
+          "isCorrect": true
+        },
+        {
+          "text": "Après séparation des deux diastéréoisomères, une réaction chimique régénère séparément chacun des deux énantiomères purs (R) et (S).",
+          "isCorrect": true
+        },
+        {
+          "text": "La chromatographie sur phase stationnaire chirale permet de séparer directement deux énantiomères.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont vraies ! Les énantiomères nécessitent un environnement chiral pour être différenciés, soit par formation de sels diastéréoisomériques séparables, soit par interaction sélective sur phase chirale."
+    },
+    {
+      "q": "Concernant la nomenclature géométrique Z / E des alcènes selon les règles CIP :",
+      "tags": [
+        "Z/E",
+        "CIP",
+        "Règles"
+      ],
+      "options": [
+        {
+          "text": "On classe par priorité CIP les deux substituants fixés sur le premier carbone sp2, puis indépendamment les deux substituants sur le second carbone sp2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si les deux groupements de plus haute priorité sont situés du même côté du plan de la double liaison, la molécule est de configuration (Z) (zusammen).",
+          "isCorrect": true
+        },
+        {
+          "text": "Si les deux groupements prioritaires sont de côtés opposés, la molécule est de configuration (E) (entgegen).",
+          "isCorrect": true
+        },
+        {
+          "text": "La configuration (Z) correspond obligatoirement et systématiquement à l'isomère cis.",
+          "isCorrect": false
+        },
+        {
+          "text": "Si l'un des deux carbones sp2 porte deux substituants identiques, l'alcène ne présente pas de stéréoisomérie Z/E.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "PIÈGE CLASSIQUE : (Z) ne coïncide pas toujours avec 'cis' ! 'Cis/trans' compare les chaînes carbonées principales ou substituants identiques, tandis que (Z/E) dépend strictement des numéros atomiques Z selon CIP. Si les priorités CIP inversent la chaîne, un composé cis peut être de configuration (E) !"
+    },
+    {
+      "q": "Quelle est la configuration (Z ou E) du 2-bromo-1-chloroprop-1-ène : Cl-CH=C(Br)-CH3 ?",
+      "tags": [
+        "Calcul",
+        "Z/E",
+        "CIP"
+      ],
+      "options": [
+        {
+          "text": "Si Cl et Br sont du même côté de la double liaison, la configuration est (Z).",
+          "isCorrect": true
+        },
+        {
+          "text": "Sur C1 : Cl (Z=17) > H (Z=1).",
+          "isCorrect": true
+        },
+        {
+          "text": "Sur C2 : Br (Z=35) > C de CH3 (Z=6).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les groupes prioritaires sur C1 et C2 sont donc Cl et Br.",
+          "isCorrect": true
+        },
+        {
+          "text": "Si Cl et Br sont opposés, la configuration est (E).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Sur C1, Cl l'emporte sur H. Sur C2, Br l'emporte sur CH3. Donc les deux groupes prioritaires sont Cl et Br. S'ils sont du même côté, c'est bien (Z) ; s'ils sont opposés, c'est (E)."
+    },
+    {
+      "q": "Soit la molécule d'acide tartrique : HOOC-CH(OH)-CH(OH)-COOH. Quelles affirmations sont EXACTES ?",
+      "tags": [
+        "Acide tartrique",
+        "Composé méso",
+        "Énantiomères"
+      ],
+      "options": [
+        {
+          "text": "Elle possède 2 carbones asymétriques portant les mêmes substituants : -H, -OH, -COOH et -CH(OH)-COOH.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le stéréoisomère (2R, 3S) possède un plan de symétrie interne : c'est l'acide méso-tartrique.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide méso-tartrique est achiral et n'a aucune activité optique (pouvoir rotatoire spécifique [alpha] = 0).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide (2R, 3R)-tartrique et l'acide (2S, 3S)-tartrique sont énantiomères et ont des pouvoirs rotatoires opposés.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'acide tartrique possède au total 4 stéréoisomères isolables.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Il n'y a que 3 stéréoisomères car la forme (2R, 3S) est rigoureusement identique à (2S, 3R) par retournement de 180° dans le plan (composé méso achiral unique). Pasteur a découvert la chiralité en dédoublant les cristaux d'acide tartrique."
+    },
+    {
+      "q": "Concernant les propriétés comparées des diastéréoisomères par rapport aux énantiomères :",
+      "tags": [
+        "Comparaison",
+        "Diastéréoisomères",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Deux diastéréoisomères ont des distances internucléaires différentes entre atomes non liés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux diastéréoisomères ont des moments dipolaires différents et des énergies de cohésion de réseau cristallin différentes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux diastéréoisomères ont des points de fusion et d'ébullition distincts.",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux diastéréoisomères ont des spectres RMN du proton (1H) différents.",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux énantiomères ont des spectres RMN 1H strictement identiques en solvant achiral.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont vraies ! En RMN achirale, les diastéréoisomères donnent des signaux chimiques distincts (déplacements chimiques delta différents), alors que deux énantiomères sont isochrones (donnent des spectres superposables)."
+    },
+    {
+      "q": "À propos du 1,2-diméthylcyclohexane :",
+      "tags": [
+        "Cyclohexane",
+        "Cis/trans",
+        "Stéréochimie"
+      ],
+      "options": [
+        {
+          "text": "L'isomère cis-1,2-diméthylcyclohexane possède un groupement méthyle en position axiale et un en position équatoriale (a,e) dans sa conformation la plus stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isomère trans-1,2-diméthylcyclohexane le plus stable possède ses deux groupements méthyles en position diéquatoriale (e,e).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isomère trans (e,e) est thermodynamiquement plus stable que l'isomère cis (a,e) d'environ 7,5 kJ.mol^-1.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isomère trans-1,2-diméthylcyclohexane est une molécule chirale existant sous forme d'une paire d'énantiomères (1R,2R) et (1S,2S).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isomère cis et l'isomère trans sont des énantiomères.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'isomère cis et l'isomère trans sont des DIASTÉRÉOISOMÈRES géométriques (non superposables et pas images dans un miroir). Le trans diéquatorial (e,e) n'a aucune interaction 1,3-diaxiale, ce qui le rend beaucoup plus stable que le cis (a,e)."
+    },
+    {
+      "q": "Concernant le 1,3-diméthylcyclohexane :",
+      "tags": [
+        "Cyclohexane 1,3",
+        "Composé méso",
+        "Stabilité"
+      ],
+      "options": [
+        {
+          "text": "L'isomère cis-1,3-diméthylcyclohexane peut adopter une conformation diéquatoriale (e,e) très stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isomère cis-1,3-diméthylcyclohexane possède un plan de symétrie passant par C2 et C5 : c'est un composé MÉSO achiral.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isomère trans-1,3-diméthylcyclohexane est chiral et existe sous forme de deux énantiomères.",
+          "isCorrect": true
+        },
+        {
+          "text": "La conformation diaxiale (a,a) du cis-1,3-diméthylcyclohexane est fortement déstabilisée par une répulsion stérique directe 1,3-diaxiale entre les deux méthyles.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le trans-1,3 est plus stable que le cis-1,3.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour le 1,3-diméthylcyclohexane, c'est le CIS qui est le plus stable car il peut placer ses deux méthyles en diéquatorial (e,e) ! Le trans est obligatoirement (a,e)."
+    },
+    {
+      "q": "Que sont deux ANOMÈRES en chimie des glucides ?",
+      "tags": [
+        "Anomères",
+        "Glucides",
+        "Carbone anomérique"
+      ],
+      "options": [
+        {
+          "text": "Des diastéréoisomères qui ne diffèrent que par la configuration absolue du carbone hémiacétalique (carbone anomérique C1 des aldoses ou C2 des cétoses).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'alpha-D-glucopyranose et le bêta-D-glucopyranose sont des anomères.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour la série D en représentation de Haworth, l'anomère alpha a son hydroxyle -OH anomérique dirigé vers le bas (trans par rapport au -CH2OH en C6).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'anomère bêta a son hydroxyle anomérique vers le haut (cis par rapport au -CH2OH en C6, en position équatoriale).",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux anomères sont des énantiomères parfaits.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les anomères sont des épimères particuliers formés lors de la cyclisation hémiacétalique réversible d'un ose. Ce sont des diastéréoisomères ayant des pouvoirs rotatoires distincts (+112° pour alpha-D-glucose, +19° pour bêta-D-glucose)."
+    },
+    {
+      "q": "Qu'est-ce que le phénomène de mutarotation observé pour une solution aqueuse de glucose ?",
+      "tags": [
+        "Mutarotation",
+        "Glucose",
+        "Équilibre"
+      ],
+      "options": [
+        {
+          "text": "La variation spontanée du pouvoir rotatoire d'une solution d'un anomère pur jusqu'à une valeur d'équilibre stable.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle résulte de l'interconversion équilibrée entre les formes cycliques anomères alpha et bêta via la forme ouverte linéaire aldéhydique minoritaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "À l'équilibre à 25 °C, la solution contient environ 64 % d'anomère bêta, 36 % d'anomère alpha et moins de 0,1 % de forme ouverte.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pouvoir rotatoire à l'équilibre du D-glucose vaut +52,7°.",
+          "isCorrect": true
+        },
+        {
+          "text": "La mutarotation correspond à une rupture spontanée des liaisons carbone-carbone du squelette.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La mutarotation est l'ouverture réversible du pont hémiacétalique permettant la rotation autour de C1-C2 avant refermeture en alpha ou bêta. Le bêta est majoritaire (64 %) car son groupement -OH anomérique est en position équatoriale (moins encombrée)."
+    },
+    {
+      "q": "Concernant le D-glucose et le D-galactose :",
+      "tags": [
+        "Épimères",
+        "D-glucose",
+        "D-galactose"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des épimères en C4.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils ne diffèrent que par la configuration du carbone 4 (-OH à droite pour le glucose, à gauche pour le galactose en Fischer).",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce sont des diastéréoisomères.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce sont des énantiomères de pouvoirs rotatoires opposés.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le D-glucose et le D-galactose ne diffèrent que sur le C4 (tous les autres centres C2, C3, C5 sont identiques) : ce sont des épimères en C4, donc des diastéréoisomères."
+    },
+    {
+      "q": "Dans une réaction de déshydratation d'alcool selon Zaïtsev, pourquoi l'isomère (E) est-il généralement produit en quantité supérieure à l'isomère (Z) ?",
+      "tags": [
+        "Zaïtsev",
+        "Stabilité E vs Z",
+        "Encombrement stérique"
+      ],
+      "options": [
+        {
+          "text": "L'isomère (E) possède ses deux substituants les plus encombrants en position opposée (transoïde), minimisant la répulsion stérique de Van der Waals.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'état de transition menant à l'isomère (E) présente moins de contraintes stériques et est d'énergie plus basse.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isomère (Z) présente une gêne stérique entre ses substituants situés du même côté de la double liaison.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isomère (Z) n'est jamais formé dans les conditions réelles.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'encombrement stérique dans l'isomère Z déstabilise la molécule et augmente l'énergie de son état de transition de formation. L'isomère E est donc thermodynamiquement et cinétiquement favorisé."
+    },
+    {
+      "q": "Quelle relation stéréochimique lie le (2R, 3R)-tartrate de diméthyle et le (2S, 3S)-tartrate de diméthyle ?",
+      "tags": [
+        "Stéréochimie",
+        "Énantiomères",
+        "Tartrate"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des énantiomères.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce sont des diastéréoisomères.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ce sont des composés méso.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ce sont des isomères de constitution.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Tous les centres stéréogènes sont inversés ((2R, 3R) devient (2S, 3S)) : ce sont deux énantiomères images l'un de l'autre dans un miroir plan."
+    },
+    {
+      "q": "Quelle relation stéréochimique lie le (2R, 3R)-tartrate de diméthyle et le (2R, 3S)-tartrate de diméthyle ?",
+      "tags": [
+        "Stéréochimie",
+        "Diastéréoisomères",
+        "Tartrate"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des diastéréoisomères.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce sont des énantiomères.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ce sont des molécules identiques.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ce sont des épimères en C3.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Un seul centre asymétrique est inversé (C3 passe de R à S alors que C2 reste R) : ce sont donc des diastéréoisomères (et plus spécifiquement des épimères)."
+    },
+    {
+      "q": "Concernant la pseudo-asymétrie : dans une molécule méso comme l'acide méso-tartrique ou le 1,3-dichloro-2-méthylpropane :",
+      "tags": [
+        "Pseudo-asymétrie",
+        "Symétrie",
+        "Centres stéréogènes"
+      ],
+      "options": [
+        {
+          "text": "Un carbone pseudo-asymétrique est lié à deux substituants constitutionnellement identiques mais de configurations absolues opposées (l'un (R) et l'autre (S)).",
+          "isCorrect": true
+        },
+        {
+          "text": "Selon les règles CIP, le substituant de configuration (R) est prioritaire sur le substituant de configuration (S) : (R) > (S).",
+          "isCorrect": true
+        },
+        {
+          "text": "La configuration d'un centre pseudo-asymétrique est notée en minuscules : (r) ou (s).",
+          "isCorrect": true
+        },
+        {
+          "text": "La permutation de deux substituants sur un centre pseudo-asymétrique transforme un composé méso en un autre diastéréoisomère méso.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un centre pseudo-asymétrique confère une activité optique à la molécule.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La molécule reste située dans un plan de symétrie et demeure achirale (pas d'activité optique). Par convention CIP, la priorité stéréochimique est (R) > (S) et la configuration est désignée par (r) ou (s) en minuscules."
+    },
+    {
+      "q": "À propos de la diastéréosélectivité lors de l'attaque nucléophile sur un carbonyle possédant un centre chiral adjacent (modèle de Felkin-Anh) :",
+      "tags": [
+        "Felkin-Anh",
+        "Diastéréosélectivité",
+        "Attaque nucléophile"
+      ],
+      "options": [
+        {
+          "text": "L'attaque du nucléophile sur les deux faces (si et re) du groupe carbonyle conduit à deux diastéréoisomères en quantités inégales.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction est dite diastéréosélective.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'angle d'attaque préférentiel du nucléophile sur le carbone sp2 est d'environ 107° (angle de Bürgi-Dunitz).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le modèle place le substituant le plus volumineux (L) perpendiculaire à l'axe de la liaison C=O pour minimiser les contraintes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réaction donne obligatoirement un mélange racémique 50:50.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Puisque le réactif de départ est chiral, les deux faces du carbonyle sont diastéréotopiques et non énantiotopiques ! L'attaque conduit donc à deux diastéréoisomères avec des énergies d'activation différentes (diastéréosélectivité, Felkin-Anh)."
+    },
+    {
+      "q": "Le cholestérol possède 8 centres stéréogènes asymétriques. Quel est le nombre maximal théorique de stéréoisomères de configuration possibles pour cette formule brute ?",
+      "tags": [
+        "Cholestérol",
+        "Calcul stéréoisomères",
+        "2^8"
+      ],
+      "options": [
+        {
+          "text": "16",
+          "isCorrect": false
+        },
+        {
+          "text": "64",
+          "isCorrect": false
+        },
+        {
+          "text": "128",
+          "isCorrect": false
+        },
+        {
+          "text": "256 (soit 128 paires d'énantiomères)",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "N = 2^n = 2^8 = 256 stéréoisomères théoriques possibles ! Dans la nature, les enzymes ne synthétisent qu'un SEUL et unique stéréoisomère hautement spécifique."
+    },
+    {
+      "q": "L'inversion de cycle chaise-chaise du cis-1,2-diméthylcyclohexane conduit à :",
+      "tags": [
+        "Cyclohexane cis-1,2",
+        "Inversion de cycle",
+        "Équilibre"
+      ],
+      "options": [
+        {
+          "text": "Un conformère identique en équilibre équimolaire (forme a,e <=> forme e,a).",
+          "isCorrect": true
+        },
+        {
+          "text": "La transformation de l'isomère cis en isomère trans.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une rupture de liaisons covalentes carbone-carbone.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une forme diéquatoriale (e,e).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'inversion chaise-chaise est un simple mouvement conformationnel (rotation autour des liaisons simples sans aucune rupture) : la position axiale devient équatoriale et vice-versa. Pour le cis-1,2 : (1a, 2e) s'interconvertit rapidement en (1e, 2a). Ces deux conformères sont d'énergie identique."
+    },
+    {
+      "q": "Une molécule est dite mésomère si :",
+      "tags": [
+        "Piège de vocabulaire",
+        "Méso vs Mésomère"
+      ],
+      "options": [
+        {
+          "text": "Elle peut être représentée par plusieurs formules de Lewis délocalisées.",
+          "isCorrect": true
+        },
+        {
+          "text": "Attention : ne pas confondre 'composé méso' (stéréoisomère achiral à centres chiraux) et 'forme mésomère' (résonance électronique).",
+          "isCorrect": true
+        },
+        {
+          "text": "Un composé méso est obligatoirement un ion instable.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une forme mésomère est isolable à -80 °C.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Confusion terminologique fréquente : 'composé méso' relève de la STÉRÉOCHIMIE (molécule achirale ayant un plan de symétrie interne malgré des centres asymétriques). 'Mésomérie' relève de la DÉLOCALISATION ÉLECTRONIQUE (résonance)."
+    },
+    {
+      "q": "Concernant les acides gras polyinsaturés naturels (comme l'acide linoléique ou l'acide arachidonique) :",
+      "tags": [
+        "Acides gras",
+        "Configuration Z",
+        "Membranes"
+      ],
+      "options": [
+        {
+          "text": "La quasi-totalité de leurs doubles liaisons présente la configuration géométrique (Z) (cis).",
+          "isCorrect": true
+        },
+        {
+          "text": "La configuration (Z) introduit un coude rigide dans la chaîne aliphatique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ces coudes empêchent l'empilement cristallin compact des lipides, abaissant leur point de fusion et augmentant la fluidité des membranes cellulaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les acides gras 'trans' (E) résultent souvent d'hydrogénations industrielles partielles et augmentent le risque cardiovasculaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les doubles liaisons des acides gras naturels sont de configuration (E).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans la nature vivante, les doubles liaisons des acides gras insaturés sont presque exclusivement Z (cis), ce qui maintient les membranes fluides à 37 °C grâce aux coudes stériques."
+    },
+    {
+      "q": "Parmi les techniques suivantes, laquelle/lesquelles permet(tent) de déterminer avec certitude la CONFIGURATION ABSOLUE (R ou S) d'une molécule sans comparaison préalable ?",
+      "tags": [
+        "Configuration absolue",
+        "Diffraction RX",
+        "Méthodes"
+      ],
+      "options": [
+        {
+          "text": "La diffraction des rayons X avec diffusion anomale (effet Bijvoet).",
+          "isCorrect": true
+        },
+        {
+          "text": "La polarimétrie simple (mesure du signe de [alpha]).",
+          "isCorrect": false
+        },
+        {
+          "text": "La mesure du point de fusion.",
+          "isCorrect": false
+        },
+        {
+          "text": "La chromatographie sur silice achirale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Seule la cristallographie aux rayons X utilisant la diffusion anomale (développée par Bijvoet en 1951 sur le tartrate de rubidium) permet de déterminer expérimentalement la configuration spatiale absolue d'un centre stéréogène sans référence préalable !"
+    },
+    {
+      "q": "Le méso-tartrate de calcium est insoluble dans l'eau alors que le (2R,3R)-tartrate de calcium a une solubilité différente. Cela illustre que :",
+      "tags": [
+        "Diastéréoisomères",
+        "Propriétés physiques",
+        "Solubilité"
+      ],
+      "options": [
+        {
+          "text": "Le méso et le (2R,3R) sont des diastéréoisomères ayant des énergies réticulaires et des solubilités distinctes.",
+          "isCorrect": true
+        },
+        {
+          "text": "La solubilité est une propriété dépendante de la configuration relative des diastéréoisomères.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les énantiomères auraient eu des solubilités identiques en milieu achiral.",
+          "isCorrect": true
+        },
+        {
+          "text": "Tous les tartrates ont rigoureusement la même solubilité.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Deux diastéréoisomères ont des empilements cristallins et des énergies de solvatation différentes, donc des solubilités physiques très différentes."
+    }
+  ]
+}

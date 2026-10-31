@@ -1,0 +1,214 @@
+[
+  {
+    "recto": "Quels sont les 3 critères de classification des phénomènes d'endocytose ?",
+    "verso": "1) Présence ou non d'un manteau protéique (clathrine, cavéoline, nu).\n2) Nature et volume du matériel internalisé (solutés vs grosses particules).\n3) Dépendance ou non à la GTPase dynamine.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Classification endocytose"
+    ]
+  },
+  {
+    "recto": "Définir la phagocytose et citer les types cellulaires concernés.",
+    "verso": "Ingestion de grosses particules (> 0,5 µm : bactéries, corps apoptotiques) dépendante de la polymérisation d'actine (pseudopodes). Réservée aux phagocytes professionnels (macrophages, neutrophiles, cellules dendritiques).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Phagocytose",
+      "Macrophage"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la macropinocytose et comment se caractérise-t-elle ?",
+    "verso": "Internalisation de grands volumes de liquide extracellulaire sans manteau protéique, induite par des facteurs de croissance, via des ondulations d'actine (« ruffles »). Routée vers les lysosomes sans recyclage.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Macropinocytose",
+      "Ruffles"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle de la dynamine dans l'endocytose dépendant de la clathrine et des cavéoles ?",
+    "verso": "GTPase qui s'assemble en anneau hélicoïdal autour du col de la vésicule et hydrolyse le GTP pour étrangler et couper la membrane (fission/scission de la vésicule).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Dynamine",
+      "Scission vésiculaire"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle du complexe adaptateur AP2 dans les puits de clathrine ?",
+    "verso": "Il relie la clathrine à la membrane plasmique en se fixant au PIP2 et reconnaît les signaux d'endocytose (motifs à base de tyrosine YxxPhi ou di-leucine) sur la queue cytosolique des récepteurs.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "AP2",
+      "Clathrine",
+      "Signaux d'endocytose"
+    ]
+  },
+  {
+    "recto": "Quel est le devenir respectif du récepteur LDLR et de la particule de LDL après endocytose ?",
+    "verso": "Dans l'endosome précoce (pH acide), le LDL se détache de son récepteur. Le récepteur LDLR est recyclé à la membrane plasmique, tandis que le LDL est dégradé dans le lysosome en cholestérol libre.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "LDL",
+      "LDLR",
+      "Recyclage"
+    ]
+  },
+  {
+    "recto": "Quelle mutation du récepteur LDLR est responsable de l'hypercholestérolémie familiale ?",
+    "verso": "Mutation dans le motif cytosolique Asn-Pro-X-Tyr (NPxY) empêchant la reconnaissance par l'adaptateur AP2 et bloquant l'internalisation par puits de clathrine.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "LDLR",
+      "NPxY",
+      "Hypercholestérolémie"
+    ]
+  },
+  {
+    "recto": "Comment se déroule le cycle du récepteur de la transferrine (TfR) et du fer ?",
+    "verso": "La ferrotransferrine liée au TfR entre par endocytose. À pH acide, le fer Fe3+ est libéré dans le cytosol. L'apotransferrine reste liée au TfR, est recyclée à la membrane et se détache au pH neutre extérieur.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Transferrine",
+      "TfR",
+      "Fer"
+    ]
+  },
+  {
+    "recto": "Comment l'EGFR ubiquitinylé est-il dégradé par le lysosome ?",
+    "verso": "Reconnu par les complexes ESCRT dans les endosomes, qui invaginent la membrane pour former des vésicules intraluminales (ILVs) au sein d'un corps multivésiculaire (MVB), dégradé après fusion avec le lysosome.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "EGFR",
+      "ESCRT",
+      "MVB",
+      "Down-regulation"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la transcytose et citer un exemple physiologique ?",
+    "verso": "Transport de macromolécules d'un pôle à un autre d'une cellule épithéliale polarisée par endocytose puis exocytose sans dégradation lysosomale. Exemple : transfert des IgG maternelles via FcRn à travers le placenta.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Transcytose",
+      "FcRn",
+      "IgG"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une cavéole et quelle protéine en constitue la charpente ?",
+    "verso": "Petite invagination membranaire en forme de flacon (50-100 nm) enrichie en cholestérol et sphingolipides (rafts), tapissée par la cavéoline, détachée par la dynamine.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Cavéoles",
+      "Cavéoline"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle des petites GTPases Rab dans le transport vésiculaire ?",
+    "verso": "Assurer la spécificité de l'arrimage (tethering) : Rab-GTP sur la vésicule recrute des effecteurs d'arrimage filamenteux sur la membrane cible avant la mise en jeu des SNAREs.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "GTPases Rab",
+      "Arrimage"
+    ]
+  },
+  {
+    "recto": "Quelles sont les protéines formant le complexe trans-SNARE à la synapse ?",
+    "verso": "- v-SNARE : synaptobrévine (VAMP) sur la vésicule.\n- t-SNARE : syntaxine et SNAP-25 sur la membrane présynaptique.\nElles forment un faisceau de 4 hélices alpha forçant la fusion des bicouches.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "SNARE",
+      "Synaptobrévine",
+      "Syntaxine",
+      "SNAP-25"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle de la synaptotagmine lors de l'exocytose synaptique ?",
+    "verso": "Senseur calcique transmembranaire de la vésicule : la fixation du Ca2+ lève le verrou imposé par la complexine et déclenche la fusion ultra-rapide (< 1 ms) du pore de fusion.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Synaptotagmine",
+      "Senseur Ca2+",
+      "Fusion"
+    ]
+  },
+  {
+    "recto": "Comment agissent les toxines botulique et tétanique sur les synapses ?",
+    "verso": "Endopeptidases à zinc qui clivent spécifiquement les protéines SNARE (synaptobrévine, SNAP-25, syntaxine). Botulique -> blocage de l'ACh (paralysie flasque). Tétanique -> blocage de GABA/glycine (paralysie spastique).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Toxine botulique",
+      "Tétanique",
+      "SNARE"
+    ]
+  },
+  {
+    "recto": "Comment se recyclent les complexes SNAREs après la fusion membranaire ?",
+    "verso": "L'ATPase NSF et son adaptateur alpha-SNAP consomment de l'ATP pour dissocier le complexe cis-SNARE extrêmement stable afin de recycler ses composants.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "NSF",
+      "alpha-SNAP",
+      "Recyclage SNARE"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un corps multivésiculaire (MVB) et quel est son destin alternatif à la dégradation ?",
+    "verso": "Endosome tardif contenant des vésicules intraluminales (ILVs). S'il fusionne avec la membrane plasmique au lieu du lysosome, ses vésicules sont libérées dans l'espace extracellulaire sous forme d'exosomes.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "MVB",
+      "Exosomes"
+    ]
+  },
+  {
+    "recto": "Comment évolue le pH le long des compartiments d'endocytose ?",
+    "verso": "Endosome précoce (pH 6,0-6,5) -> Endosome tardif (pH 5,5-6,0) -> Lysosome (pH 4,5-5,0), grâce à l'accumulation de protons par les pompes V-ATPase membranaires.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "pH endosomal",
+      "V-ATPase"
+    ]
+  },
+  {
+    "recto": "Quelle est la fonction de l'endocytose compensatrice à la terminaison nerveuse ?",
+    "verso": "Récupérer la membrane des vésicules synaptiques ayant fusionné lors de l'exocytose pour maintenir la taille de la membrane présynaptique et reconstituer le stock de vésicules.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Endocytose compensatrice",
+      "Synapse"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que l'auxiline et quelle est son action ?",
+    "verso": "Co-chaperonne qui se lie au manteau de clathrine et active l'ATPase Hsc70 pour assurer le déshabillage rapide de la vésicule d'endocytose avant son arrimage à l'endosome.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 10 - Endocytose-Exocytose",
+    "tags": [
+      "Auxiline",
+      "Hsc70",
+      "Déshabillage"
+    ]
+  }
+]

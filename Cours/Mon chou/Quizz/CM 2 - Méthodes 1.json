@@ -1,0 +1,609 @@
+{
+  "name": "CM 2 - Méthodes 1",
+  "folder": "PASS - Biologie Cellulaire",
+  "description": "Quiz approfondi de niveau PASS sur les méthodes d'étude des cellules et tissus : cultures cellulaires, anticorps, immunomarquages, Western blot, fractionnement cellulaire et cytométrie en flux.",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant les cultures cellulaires animales primaires, quelles assertions sont exactes ?",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Cultures primaires"
+      ],
+      "options": [
+        {
+          "text": "Elles sont obtenues directement par dissociation mécanique et/ou enzymatique d'un tissu prélevé sur un organisme.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles possèdent une capacité de prolifération illimitée et ne subissent jamais de sénescence in vitro.",
+          "isCorrect": false
+        },
+        {
+          "text": "Leur milieu de culture nécessite généralement l'apport de sérum (tel que le sérum de veau fœtal) riche en facteurs de croissance.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules épithéliales prélevées se développent spontanément sous forme de cellules flottantes en suspension sans contact avec le support.",
+          "isCorrect": false
+        },
+        {
+          "text": "Certaines cellules primaires fragiles nécessitent une couche de cellules nourricières (feeder layer) pour adhérer et proliférer.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les cultures primaires ont une durée de vie limitée (limite de Hayflick / sénescence réplicative). Les cellules issues de tissus solides sont adhérentes. Le SVF et les cellules nourricières apportent les signaux trophiques indispensables."
+    },
+    {
+      "q": "Concernant les lignées cellulaires continues (immortalisées) :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Lignées cellulaires"
+      ],
+      "options": [
+        {
+          "text": "Elles peuvent dériver d'une tumeur maligne spontanée ou d'une transformation génétique (par exemple par l'oncoprotéine SV40 ou la télomérase hTERT).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles présentent une durée de vie infinie et peuvent être repiquées indéfiniment.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles conservent dans 100 % des cas l'ensemble des caractéristiques phénotypiques et caryotypiques exactes du tissu sain d'origine.",
+          "isCorrect": false
+        },
+        {
+          "text": "La lignée HeLa est un exemple historique de lignée continue issue d'un carcinome du col utérin.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles meurent systématiquement après 20 à 30 divisions cellulaires.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les lignées continues sont immortelles (HeLa, etc.), mais leur dérive génétique, caryotype aneuploïde et altérations fonctionnelles les éloignent souvent de la physiologie du tissu sain."
+    },
+    {
+      "q": "Pour détacher des cellules adhérentes cultivées sur boîte de Pétri lors d'un repiquage, quelle méthode enzymatique est couramment employée ?",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Culture cellulaire",
+        "Trypsine"
+      ],
+      "options": [
+        {
+          "text": "Un traitement combinant la trypsine (protéase) et l'EDTA (chélateur du calcium).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une incubation prolongée avec une solution d'ADNase 1 saturée en chlorure de magnésium.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'ajout d'anticorps polyclonaux dirigés contre les intégrines couplés à la peroxydase.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un choc osmotique par immersion dans de l'eau distillée pure à 37 °C.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La trypsine digère les protéines d'adhérence extracellulaires, et l'EDTA chélate les ions Ca2+ indispensables au fonctionnement des cadhérines et intégrines, permettant le détachement doux des cellules."
+    },
+    {
+      "q": "Concernant la structure des immunoglobulines de type IgG utilisées comme outils en biologie cellulaire :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Anticorps"
+      ],
+      "options": [
+        {
+          "text": "Une molécule d'IgG est composée de deux chaînes lourdes (H) identiques et de deux chaînes légères (L) identiques unies par des ponts disulfures.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le fragment Fab contient les régions hypervariables responsables de la reconnaissance spécifique de l'épitope antigénique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le fragment Fc est la partie variable qui change de séquence lors de chaque réponse immunitaire contre un nouvel antigène.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une molécule d'IgG possède un unique site de fixation de l'antigène (monovalente).",
+          "isCorrect": false
+        },
+        {
+          "text": "Le fragment Fc est reconnu par les anticorps secondaires lors des immunomarquages indirects.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Une IgG est bivalente (deux fragments Fab liant l'antigène). Le fragment Fc est constant pour un isotype et une espèce donnés, et sert de point d'ancrage aux anticorps secondaires."
+    },
+    {
+      "q": "Concernant les anticorps monoclonaux vs polyclonaux :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Anticorps monoclonaux",
+        "Polyclonaux"
+      ],
+      "options": [
+        {
+          "text": "Les anticorps polyclonaux sont sécrétés par plusieurs clones de plasmocytes et reconnaissent plusieurs épitopes différents d'un même antigène.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les anticorps monoclonaux sont produits par des hybridomes obtenus par fusion entre un lymphocyte B et une cellule tumorale de myélome.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les anticorps polyclonaux reconnaissent un épitope unique avec une reproductibilité de production absolue d'un lot à l'autre.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les hybridomes ont la capacité de se multiplier indéfiniment in vitro tout en produisant une immunoglobuline homogène et spécifique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La production d'anticorps monoclonaux ne nécessite aucune immunisation animale préalable.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les anticorps monoclonaux reconnaissent un seul épitope et sont issus d'hybridomes (fusion lymphocyte B d'animal immunisé + myélome). Les polyclonaux reconnaissent plusieurs épitopes avec une variabilité inter-lots."
+    },
+    {
+      "q": "À propos des techniques d'immunomarquage direct et indirect :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Immunomarquage"
+      ],
+      "options": [
+        {
+          "text": "Dans l'immunomarquage direct, l'anticorps primaire spécifique est directement couplé au fluorochrome ou à l'enzyme de révélation.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'immunomarquage indirect permet une amplification significative du signal grâce à la fixation de plusieurs anticorps secondaires sur un seul anticorps primaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'immunomarquage direct est plus sensible que l'immunomarquage indirect.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dans un immunomarquage indirect utilisant un anticorps primaire de lapin, l'anticorps secondaire doit être dirigé contre les fragments Fc d'immunoglobulines de souris.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'immunomarquage indirect offre une plus grande flexibilité expérimentale dans le choix des fluorochromes.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "L'indirect amplifie le signal car plusieurs Ac secondaires marqués se fixent sur la région constante Fc de l'Ac primaire. Si l'Ac primaire est produit chez le lapin, l'Ac secondaire doit être un anti-IgG de lapin (produit chez la chèvre ou l'âne par exemple)."
+    },
+    {
+      "q": "Lors de la préparation d'un Western blot, quel est le rôle du SDS (Sodium Dodécyl Sulfate) ?",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Western blot",
+        "SDS"
+      ],
+      "options": [
+        {
+          "text": "Il dénature les protéines et leur confère une densité de charge négative constante et proportionnelle à leur masse.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il clive spécifiquement les liaisons peptidiques au niveau des résidus méthionine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il charge positivement les protéines pour qu'elles migrent vers la cathode du gel d'électrophorèse.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il permet la formation de ponts disulfures artificiels entre sous-unités protéiques.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le SDS est un détergent anionique qui déplie les protéines et les recouvre d'une charge négative uniforme proportionnelle à leur longueur, permettant une séparation selon la seule masse moléculaire en SDS-PAGE."
+    },
+    {
+      "q": "Quel agent réducteur est classiquement ajouté au tampon d'échantillon de Western blot pour rompre les ponts disulfures ?",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Western blot",
+        "Agents réducteurs"
+      ],
+      "options": [
+        {
+          "text": "Le bêta-mercaptoéthanol ou le Dithiothréitol (DTT).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le formaldéhyde concentré à 37 %.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le bromure d'éthidium (BET).",
+          "isCorrect": false
+        },
+        {
+          "text": "La trypsine bovine purifiée.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le bêta-mercaptoéthanol et le DTT sont des agents réducteurs qui coupent les ponts disulfures covalents intra- et intercaténaires."
+    },
+    {
+      "q": "Concernant les étapes successives d'un Western blot, quelles propositions sont exactes ?",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Western blot",
+        "Étapes"
+      ],
+      "options": [
+        {
+          "text": "Séparation des protéines dénaturées par électrophorèse sur gel de polyacrylamide (SDS-PAGE).",
+          "isCorrect": true
+        },
+        {
+          "text": "Transfert électrophorétique des protéines du gel vers une membrane microporeuse (nitrocellulose ou PVDF).",
+          "isCorrect": true
+        },
+        {
+          "text": "Étape de saturation (blocage) des sites non spécifiques de la membrane à l'aide d'une solution protéique inerte (BSA ou lait écrémé).",
+          "isCorrect": true
+        },
+        {
+          "text": "Incubation avec un anticorps primaire dirigé spécifiquement contre la protéine d'intérêt.",
+          "isCorrect": true
+        },
+        {
+          "text": "La révélation se fait obligatoirement par autoradiographie au carbone 14.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le Western blot comprend : lyse, SDS-PAGE, transfert sur membrane (nitrocellulose/PVDF), saturation (lait/BSA pour éviter le bruit de fond), Ac primaire, Ac secondaire couplé à la peroxydase (HRP) et détection chimioluminescente (ECL)."
+    },
+    {
+      "q": "Lors d'un fractionnement cellulaire par centrifugation différentielle à partir d'un broyat tissulaire doux :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Centrifugation différentielle"
+      ],
+      "options": [
+        {
+          "text": "Le premier culot obtenu à basse vitesse (~1 000 g pendant 10 minutes) contient principalement les noyaux, les cellules intactes et les gros débris cellulaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une centrifugation à vitesse moyenne (~10 000 à 20 000 g) permet de culotter les mitochondries, lysosomes et peroxysomes.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ultracentrifugation à très haute vitesse (~100 000 g pendant plus d'une heure) culotte la fraction microsomale (fragments de RE et de Golgi).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le surnageant final obtenu après ultracentrifugation à 100 000 g correspond à la fraction cytosolique soluble (hyaloplasme).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les ribosomes libres et le cytosol précipitent dès la première centrifugation à 500 g.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La centrifugation différentielle sépare les constituants selon leur taille et masse : culot 1 (1 000 g) = noyaux/débris ; culot 2 (10 000-20 000 g) = mitochondries/lysosomes/peroxysomes ; culot 3 (100 000 g) = microsomes ; surnageant = cytosol soluble."
+    },
+    {
+      "q": "Quelle méthode de centrifugation permet de séparer finement des organites de tailles voisines en fonction de leur densité de flottaison propre ?",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Centrifugation sur gradient"
+      ],
+      "options": [
+        {
+          "text": "La centrifugation sur gradient discontinu ou continu de saccharose (isopycnique).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'électrophorèse capillaire en champ pulsé à pH acide.",
+          "isCorrect": false
+        },
+        {
+          "text": "La dialyse membranaire contre de l'eau distillée froide.",
+          "isCorrect": false
+        },
+        {
+          "text": "La chromatographie d'affinité sur colonne de sépharose-nickel.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La centrifugation à l'équilibre en gradient de densité (isopycnique, ex: saccharose ou chlorure de césium) sépare les organites selon leur densité propre, indépendamment du temps de sédimentation."
+    },
+    {
+      "q": "Concernant le fonctionnement de la cytométrie en flux (FACS) :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Cytométrie en flux"
+      ],
+      "options": [
+        {
+          "text": "Les cellules doivent impérativement être individualisées et mises en suspension liquide.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'écoulement hydrodynamique oblige les cellules à passer une par une au point de focalisation du faisceau laser.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le signal FSC (Forward Scatter) mesuré dans l'axe du laser est proportionnel à la taille de la cellule.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le signal SSC (Side Scatter) mesuré à un angle de 90° renseigne sur la complexité interne et la granularité cytoplasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La cytométrie en flux ne permet en aucun cas de mesurer des signaux de fluorescence émis par des anticorps.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La cytométrie en flux analyse cellule par cellule en suspension : FSC donne la taille relative, SSC donne la granularité/structure interne, et les détecteurs de fluorescence mesurent l'expression d'antigènes marqués."
+    },
+    {
+      "q": "Concernant le tri cellulaire par cytométrie en flux (cell sorting) :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "FACS",
+        "Tri cellulaire"
+      ],
+      "options": [
+        {
+          "text": "Il permet d'isoler physiquement des sous-populations cellulaires vivantes d'intérêt hautement purifiées pour des cultures ultérieures.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'isolement repose sur la formation de micro-gouttelettes chargées électriquement déviées par des plaques sous haute tension.",
+          "isCorrect": true
+        },
+        {
+          "text": "Cette technique détruit obligatoirement et systématiquement 100 % des cellules triées par nécrose thermique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le tri peut s'effectuer sur la base de la combinaison simultanée de signaux de taille (FSC), de granularité (SSC) et de plusieurs fluorescences.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le tri cellulaire (cell sorter) produit des gouttelettes individuelles chargées électrostatiquement puis déviées vers des tubes collecteurs, préservant la viabilité des cellules pour des études in vitro ou in vivo."
+    },
+    {
+      "q": "Dans l'analyse du cycle cellulaire par cytométrie en flux avec marquage de l'ADN à l'iodure de propidium (IP) :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Cytométrie",
+        "Cycle cellulaire"
+      ],
+      "options": [
+        {
+          "text": "L'intensité de fluorescence de l'IP est directement proportionnelle à la quantité d'ADN contenue dans la cellule.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules en phase G2 et en mitose (M) présentent une intensité de fluorescence double de celle des cellules en phase G0/G1.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules en cours de phase S présentent une intensité de fluorescence intermédiaire comprise entre le pic G1 (2C) et le pic G2/M (4C).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules apoptotiques fragmentées apparaissent classiquement dans une région « sub-G1 » d'hypodiploïdie.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les cellules en phase G1 possèdent une teneur en ADN de 4C.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "En G0/G1, l'ADN est à 2C. En phase S, il est répliqué (intensité intermédiaire). En G2/M, l'ADN est à 4C (fluorescence double de G1). Les cellules apoptotiques dont l'ADN est clivé/perdu ont une fluorescence < 2C (pic sub-G1)."
+    },
+    {
+      "q": "Concernant la protéine fluorescente verte GFP (Green Fluorescent Protein) :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "GFP",
+        "Imagerie"
+      ],
+      "options": [
+        {
+          "text": "Elle permet de visualiser la dynamique spatio-temporelle de protéines de fusion dans des cellules vivantes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Son émission de fluorescence verte nécessite obligatoirement l'ajout d'un substrat enzymatique exogène comme la luciférine.",
+          "isCorrect": false
+        },
+        {
+          "text": "La séquence codante de la GFP peut être fusionnée inframe à celle d'une protéine d'intérêt par génie génétique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est naturellement issue d'une méduse (Aequorea victoria).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle ne fonctionne que dans des cellules mortes et fixées par le formol.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La GFP fluoresce spontanément sans cofacteur ni substrat dès qu'elle est excitée par la lumière bleue. Elle est utilisée en vidéo-microscopie sur cellules vivantes."
+    },
+    {
+      "q": "Quelle est la limite de résolution approximative d'un microscope optique photonique conventionnel ?",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Microscopie optique"
+      ],
+      "options": [
+        {
+          "text": "Environ 0,2 µm (200 nm).",
+          "isCorrect": true
+        },
+        {
+          "text": "Environ 0,2 nm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Environ 20 µm.",
+          "isCorrect": false
+        },
+        {
+          "text": "Environ 2 mm.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La limite de résolution de la microscopie photonique est de l'ordre de 0,2 µm (limite de diffraction d'Abbe), contre environ 0,1 à 0,2 nm pour le microscope électronique."
+    },
+    {
+      "q": "Concernant la microscopie électronique à transmission (MET) comparée à la microscopie électronique à balayage (MEB) :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Microscopie électronique"
+      ],
+      "options": [
+        {
+          "text": "Le MET utilise un faisceau d'électrons qui traverse une coupe ultrafine de l'échantillon pour visualiser l'ultrastructure interne.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le MEB permet d'obtenir des images tridimensionnelles du relief de la surface cellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les échantillons observés en MET ou MEB peuvent être maintenus vivants et mobiles pendant l'analyse sous vide poussé.",
+          "isCorrect": false
+        },
+        {
+          "text": "La MET nécessite une fixation préalable (ex: glutaraldéhyde), une inclusion en résine et des coupes au couteau de diamant.",
+          "isCorrect": true
+        },
+        {
+          "text": "La microscopie électronique offre une résolution nettement supérieure à celle de la microscopie optique.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les échantillons en microscopie électronique sont fixés, déshydratés et observés sous vide poussé : l'observation de cellules vivantes est donc strictement impossible."
+    },
+    {
+      "q": "Concernant la technique d'immunoprécipitation (IP) :",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Immunoprécipitation"
+      ],
+      "options": [
+        {
+          "text": "Elle permet d'isoler spécifiquement une protéine cible et ses partenaires moléculaires à partir d'un lysat cellulaire complexe.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle utilise des billes magnétiques ou d'agarose recouvertes de protéine A ou G liant la région Fc des anticorps.",
+          "isCorrect": true
+        },
+        {
+          "text": "La co-immunoprécipitation (Co-IP) est une méthode de choix pour démontrer l'interaction physique entre deux protéines in vivo.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle nécessite obligatoirement l'utilisation d'une source radioactive alpha pour fonctionner.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'IP et la Co-IP utilisent des billes couplées à la protéine A/G (qui lie le fragment Fc des anticorps) pour précipiter un complexe protéique et analyser les interactions moléculaires."
+    },
+    {
+      "q": "Lors d'une expérience de cytométrie en flux à deux paramètres (FSC vs SSC), quelle population sanguine leucocytaire présente le signal SSC le plus élevé ?",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Cytométrie",
+        "FSC/SSC"
+      ],
+      "options": [
+        {
+          "text": "Les polynucléaires neutrophiles.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les lymphocytes.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les hématies énucléées.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les plaquettes sanguines.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les polynucléaires neutrophiles ont un cytoplasme très riche en granulations et un noyau polylobé, ce qui confère une forte diffusion orthogonale (SSC élevé). Les lymphocytes, petits et agranulaires, ont un SSC faible."
+    },
+    {
+      "q": "Concernant la fixation des cellules pour l'immunofluorescence, quel est le rôle des agents fixateurs comme le paraformaldéhyde (PFA) ?",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Fixation",
+        "Immunofluorescence"
+      ],
+      "options": [
+        {
+          "text": "Créer des liaisons covalentes (pontages chimiques) entre résidus aminés pour figer l'architecture cellulaire tout en préservant l'antigénicité.",
+          "isCorrect": true
+        },
+        {
+          "text": "Activer la transcription des gènes codant les chaperonnes thermiques.",
+          "isCorrect": false
+        },
+        {
+          "text": "Digérer les membranes lipidiques pour solubiliser l'ensemble des organites.",
+          "isCorrect": false
+        },
+        {
+          "text": "Permettre la prolifération accélérée des cellules sur lamelle de verre.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le PFA crée des pontages covalents méthylène entre groupements aminés des protéines, figeant les structures intracellulaires in situ."
+    },
+    {
+      "q": "Pourquoi utilise-t-on un détergent doux tel que le Triton X-100 lors d'un immunomarquage intracellulaire ?",
+      "tags": [
+        "CM 2 - Méthodes 1",
+        "Perméabilisation",
+        "Détergents"
+      ],
+      "options": [
+        {
+          "text": "Pour perméabiliser les membranes lipidiques et permettre aux anticorps d'accéder aux antigènes cytosoliques ou nucléaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Pour détruire définitivement l'antigène cible.",
+          "isCorrect": false
+        },
+        {
+          "text": "Pour condenser la chromatine au centre du nucléole.",
+          "isCorrect": false
+        },
+        {
+          "text": "Pour amplifier spontanément la fluorescence verte émise par le bleu de Coomassie.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les anticorps sont de grosses macromolécules (~150 kDa) incapables de traverser une membrane lipidique intacte. La perméabilisation au détergent (Triton X-100, saponine) perfore la membrane."
+    }
+  ]
+}

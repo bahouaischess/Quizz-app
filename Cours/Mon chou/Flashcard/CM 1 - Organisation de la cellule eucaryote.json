@@ -1,0 +1,208 @@
+[
+  {
+    "recto": "Qu'énonce le principe fondamental de la théorie cellulaire formulé par Virchow en 1858 ?",
+    "verso": "« Omnis cellula e cellula » : toute cellule provient d'une cellule préexistante par division.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Théorie cellulaire",
+      "Virchow",
+      "Histoire"
+    ]
+  },
+  {
+    "recto": "Quels sont les ordres de grandeur de taille d'une cellule procaryote et d'une cellule eucaryote animale ?",
+    "verso": "Procaryote : 0,3 à 2 µm. Eucaryote animale : 10 à 100 µm (moyenne 10-30 µm, ovocyte ~100 µm).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Ordres de grandeur",
+      "Tailles"
+    ]
+  },
+  {
+    "recto": "Quelle est la composition moyenne en masse d'une cellule eucaryote (eau, protéines, lipides, glucides, acides nucléiques) ?",
+    "verso": "Eau : 70 %, Protéines : 15 %, Lipides : 2 %, Glucides : 2 %, Acides nucléiques (ADN+ARN) : 1 %.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Composition",
+      "Macromolécules"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence fondamentale entre le cytosol et le cytoplasme ?",
+    "verso": "Cytosol = phase liquide soluble (sans organites ni cytosquelette). Cytoplasme = cytosol + cytosquelette + organites.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Cytosol",
+      "Cytoplasme",
+      "Définitions"
+    ]
+  },
+  {
+    "recto": "Quels sont les deux compartiments cellulaires animaux délimités par une double membrane et contenant de l'ADN ?",
+    "verso": "Le noyau et les mitochondries.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Organites",
+      "Double membrane",
+      "ADN"
+    ]
+  },
+  {
+    "recto": "Quels types de molécules traversent librement la bicouche lipidique membranaire par diffusion simple ?",
+    "verso": "Les petites molécules hydrophobes / liposolubles (gaz O2, CO2, hormones stéroïdes) et très faiblement les petites molécules polaires non chargées (eau).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Membrane plasmique",
+      "Perméabilité"
+    ]
+  },
+  {
+    "recto": "Citer les 3 composantes majeures du cytosquelette eucaryote.",
+    "verso": "1) Microfilaments d'actine (~7 nm)\n2) Filaments intermédiaires (~10 nm)\n3) Microtubules (~25 nm).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Cytosquelette",
+      "Filaments"
+    ]
+  },
+  {
+    "recto": "Quel est le coefficient de sédimentation des ribosomes cytosoliques eucaryotes vs procaryotes ?",
+    "verso": "Eucaryotes : 80S (sous-unités 60S et 40S). Procaryotes : 70S (sous-unités 50S et 30S). Les mitochondries possèdent aussi des ribosomes de type 70S.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Ribosomes",
+      "Sédimentation"
+    ]
+  },
+  {
+    "recto": "Quelle est la principale cellule eucaryote anucléée de l'organisme humain adulte ?",
+    "verso": "L'érythrocyte mature (globule rouge / hématie).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Noyau",
+      "Hématie"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle du nucléole au sein du noyau eucaryote ?",
+    "verso": "Transcription des ARN ribosomiques (ARNr) et assemblage des pré-sous-unités ribosomiques avec les protéines importées du cytosol.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Nucléole",
+      "ARNr",
+      "Ribosomes"
+    ]
+  },
+  {
+    "recto": "Définir l'hétérochromatine vs l'euchromatine.",
+    "verso": "Euchromatine : décondensée, claire en MET, transcriptionnellement active.\nHétérochromatine : condensée, sombre en MET, transcriptionnellement inactive (souvent périphérique sous la lamina).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Chromatine",
+      "Noyau"
+    ]
+  },
+  {
+    "recto": "Quels compartiments constituent le système endomembranaire ?",
+    "verso": "Enveloppe nucléaire, réticulum endoplasmique (rugueux et lisse), appareil de Golgi, endosomes, lysosomes et vésicules de transport. (Mitochondries et peroxysomes en sont EXCLUS).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Système endomembranaire"
+    ]
+  },
+  {
+    "recto": "Quelles sont les fonctions respectives du RER et du REL ?",
+    "verso": "RER (rugueux) : synthèse des protéines sécrétées, transmembranaires et lysosomales + début de N-glycosylation.\nREL (lisse) : synthèse des lipides/stéroïdes, détoxification et stockage du calcium.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "RER",
+      "REL",
+      "Fonctions"
+    ]
+  },
+  {
+    "recto": "Quelle est la fonction biologique principale des mitochondries ?",
+    "verso": "Production majeure d'ATP par respiration cellulaire oxydative (chaîne respiratoire et cycle de Krebs) en présence d'O2.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Mitochondrie",
+      "ATP",
+      "Respiration"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le protéasome et quelle est sa particularité structurale ?",
+    "verso": "Complexe multiprotéique cylindrique dénué de membrane lipidique, assurant la dégradation ciblée des protéines cytosoliques polyubiquitinylées en peptides courts.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Protéasome",
+      "Dégradation"
+    ]
+  },
+  {
+    "recto": "Quelle est la composition de la paroi chez les végétaux, champignons et bactéries ?",
+    "verso": "Végétaux : pecto-cellulosique.\nChampignons : chitine / polysaccharides.\nBactéries : peptidoglycane (muréine).\nAnimaux : AUCUNE paroi.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Paroi",
+      "Comparaisons"
+    ]
+  },
+  {
+    "recto": "Quelle différence majeure existe entre cellules somatiques et cellules germinales ?",
+    "verso": "Cellules germinales : donnent naissance aux gamètes haploïdes pour la transmission héréditaire.\nCellules somatiques : constituent l'ensemble des tissus de l'organisme et ne transmettent pas leur génome à la descendance.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Cellules somatiques",
+      "Germinales"
+    ]
+  },
+  {
+    "recto": "Quels sont les rôles de la matrice extracellulaire (MEC) chez les métazoaires ?",
+    "verso": "Soutien mécanique / charpente architecturale, adhérence et survie des cellules épithéliales/conjonctives, guidage de la migration et réservoir de facteurs de croissance.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Matrice extracellulaire",
+      "MEC"
+    ]
+  },
+  {
+    "recto": "Pourquoi la transcription et la traduction sont-elles découplées chez les eucaryotes mais couplées chez les procaryotes ?",
+    "verso": "Chez les eucaryotes, l'enveloppe nucléaire sépare physiquement la transcription (dans le noyau) de la traduction (dans le cytosol/REG). Chez les procaryotes, l'absence d'enveloppe permet la traduction simultanée de l'ARNm en cours de synthèse.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Transcription",
+      "Traduction",
+      "Compartimentation"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le centrosome ?",
+    "verso": "Le centre organisateur majeur des microtubules (MTOC) dans la cellule animale, constitué d'une paire de centrioles entourée d'un matériel péricentriolaire d'où germent les microtubules.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 1 - Organisation",
+    "tags": [
+      "Centrosome",
+      "Microtubules"
+    ]
+  }
+]

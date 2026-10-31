@@ -1,0 +1,204 @@
+[
+  {
+    "recto": "Quelle est l'épaisseur moyenne de la membrane plasmique ?",
+    "verso": "Environ 7 à 8 nm.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Membrane plasmique",
+      "Épaisseur"
+    ]
+  },
+  {
+    "recto": "Quelle est la proportion moléculaire lipides/protéines dans la membrane plasmique ?",
+    "verso": "Environ 50 molécules de lipides pour une molécule de protéine (bien que lipides et protéines représentent chacun environ 50% de la masse sèche).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Composition",
+      "Lipides/Protéines"
+    ]
+  },
+  {
+    "recto": "Comment se répartissent les phospholipides entre les deux feuillets de la membrane plasmique ?",
+    "verso": "- Feuillet externe : Phosphatidylcholine (PC), Sphingomyéline (SM) et glycolipides.\n- Feuillet interne : Phosphatidylsérine (PS, chargée -) et Phosphatidyléthanolamine (PE).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Asymétrie lipidique"
+    ]
+  },
+  {
+    "recto": "Qu'indique l'externalisation de la phosphatidylsérine sur le feuillet externe ?",
+    "verso": "C'est un signal d'apoptose précoce (« eat-me signal ») reconnu par les macrophages pour la phagocytose de la cellule mourante.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Phosphatidylsérine",
+      "Apoptose"
+    ]
+  },
+  {
+    "recto": "Distinguer flippase, floppase et scramblase.",
+    "verso": "- Flippase : ATP-dépendante, transporte PS et PE de l'externe vers le cytosolique.\n- Floppase : ATP-dépendante (ABC), transporte du cytosolique vers l'externe.\n- Scramblase : ATP-indépendante, bidirectionnelle, activée par le Ca2+ et l'apoptose.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Flippase",
+      "Floppase",
+      "Scramblase"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle du cholestérol sur la fluidité membranaire ?",
+    "verso": "Tampon thermique de fluidité : à température physiologique élevée, il limite la mobilité des chaînes et diminue la fluidité ; à basse température, il empêche la gélification des lipides.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Cholestérol",
+      "Fluidité"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'un radeau lipidique (lipid raft) ?",
+    "verso": "Microdomaine membranaire enrichi en cholestérol et sphingolipides, en phase liquide ordonnée, résistant aux détergents non ioniques à froid (Triton X-100), concentrant des protéines de signalisation (ancre GPI, Src).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Lipid rafts",
+      "Microdomaines"
+    ]
+  },
+  {
+    "recto": "Comment extrait-on les protéines membranaires périphériques vs intrinsèques ?",
+    "verso": "- Périphériques : traitements doux par variation de pH ou force ionique élevée (rompt les liaisons non covalentes).\n- Intrinsèques : détergents (SDS, Triton X-100) indispensables pour dissoudre la bicouche hydrophobe.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Protéines membranaires",
+      "Extraction"
+    ]
+  },
+  {
+    "recto": "Citer 3 types d'ancres lipidiques maintenant des protéines à la face interne de la membrane.",
+    "verso": "1) Myristoylation (acide gras myristate en C14).\n2) Palmitoylation (palmitate en C16).\n3) Prénylation (farnésyle C15 ou géranylgéranyle C20 sur cystéine C-terminale, ex: Ras).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Ancres lipidiques",
+      "Prénylation"
+    ]
+  },
+  {
+    "recto": "Sur quelle face de la membrane le glycocalyx est-il exclusivement présent et quels sont ses rôles ?",
+    "verso": "Face extracellulaire uniquement. Rôles : protection mécanique et chimique, reconnaissance intercellulaire, adhésion, charge de surface négative.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Glycocalyx"
+    ]
+  },
+  {
+    "recto": "Quelles molécules traversent la membrane plasmique par diffusion simple ?",
+    "verso": "Gaz (O2, CO2, N2), molécules hydrophobes liposolubles (stéroïdes), et très lentement les petites molécules polaires non chargées (eau, éthanol, urée).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Diffusion simple",
+      "Perméabilité"
+    ]
+  },
+  {
+    "recto": "Pourquoi la diffusion facilitée par perméase est-elle saturable alors que la diffusion simple ne l'est pas ?",
+    "verso": "La perméase possède un nombre fini de sites de liaison et subit un changement conformationnel limitant (cinétique de Michaelis-Menten avec Vmax et Km), alors que la diffusion simple ne dépend que de la surface et du gradient.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Diffusion facilitée",
+      "Perméases",
+      "Km"
+    ]
+  },
+  {
+    "recto": "Quel est le débit de passage d'ions à travers un canal ionique ouvert ?",
+    "verso": "Très élevé : supérieur à 10^7 ions par seconde (flux passif selon le gradient électrochimique).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Canaux ioniques",
+      "Débit"
+    ]
+  },
+  {
+    "recto": "Quelle est la stœchiométrie et la consommation énergétique de la pompe Na+/K+ ATPase ?",
+    "verso": "Elle expulse 3 Na+ et fait entrer 2 K+ par molécule d'ATP hydrolysée (pompe électrogène maintenant le potentiel de repos et les gradients ioniques).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Pompe Na+/K+",
+      "Stœchiométrie"
+    ]
+  },
+  {
+    "recto": "Quel inhibiteur pharmacologique bloque spécifiquement la pompe Na+/K+ ATPase ?",
+    "verso": "L'ouabaïne et les digitaliques (ex: digoxine).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Ouabaïne",
+      "Digitaliques"
+    ]
+  },
+  {
+    "recto": "Comment fonctionne le symport SGLT1/2 au pôle apical des entérocytes ?",
+    "verso": "Transport actif secondaire : fait entrer 1 glucose contre son gradient couplé à l'entrée de Na+ selon son gradient électrochimique (gradient entretenu par la pompe Na+/K+ basolatérale).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "SGLT",
+      "Symport",
+      "Glucose"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle de la P-glycoprotéine (MDR1 / ABCB1) en cancérologie ?",
+    "verso": "Transporteur actif primaire de la famille ABC qui expulse les anticancéreux hors de la cellule tumorale, conférant une résistance multidrogue (chimiorésistance).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "MDR1",
+      "ABC",
+      "Chimiorésistance"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que la technique FRAP ?",
+    "verso": "Fluorescence Recovery After Photobleaching : mesure de la mobilité latérale des lipides/protéines par décoloration laser d'une zone membranaire et suivi cinétique de la récupération de fluorescence.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "FRAP",
+      "Mobilité latérale"
+    ]
+  },
+  {
+    "recto": "Quelle est la fonction des aquaporines et quelle est leur particularité sélective majeure ?",
+    "verso": "Canaux hydriques tétramériques assurant le passage rapide passif de l'eau tout en étant rigoureusement imperméables aux ions et aux protons (H+ / H3O+).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Aquaporines",
+      "Sélectivité"
+    ]
+  },
+  {
+    "recto": "Quelle valeur a le potentiel de repos de la membrane plasmique des cellules animales et d'où provient-il ?",
+    "verso": "Environ -70 mV (négatif à l'intérieur). Il provient essentiellement de la fuite passive de K+ vers l'extérieur à travers les canaux de fuite potassiques et de l'action de la pompe Na+/K+ ATPase.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 6 - Membrane plasmique",
+    "tags": [
+      "Potentiel de repos",
+      "Canaux de fuite"
+    ]
+  }
+]

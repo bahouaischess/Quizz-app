@@ -1,0 +1,588 @@
+{
+  "name": "CM 2 - Peptides",
+  "folder": "PASS - Molécules du vivant",
+  "description": "Liaison peptidique (géométrie, résonance, angles dièdres), nomenclature des peptides et peptides d'intérêt biologique et pharmacologique.",
+  "prerequisites": [
+    "CM 1 - Acides Aminés"
+  ],
+  "questions": [
+    {
+      "q": "Concernant les propriétés physico-chimiques de la liaison peptidique, quelle(s) proposition(s) est (sont) EXACTE(S) ?",
+      "tags": [
+        "CM 2 - Peptides",
+        "Liaison peptidique"
+      ],
+      "options": [
+        {
+          "text": "Elle présente un caractère partiel de double liaison (environ 40%) dû à la délocalisation des électrons pi entre O, C et N.",
+          "isCorrect": true
+        },
+        {
+          "text": "La longueur de la liaison C-N peptidique est de 1,33 Å, intermédiaire entre une simple liaison (1,45 Å) et une double liaison (1,25 Å).",
+          "isCorrect": true
+        },
+        {
+          "text": "La rotation autour de la liaison C-N peptidique est totalement libre à 360° à température ambiante.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les six atomes du groupe peptidique (C-alpha1, C, O, N, H, C-alpha2) sont coplanaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison peptidique est totalement apolaire et dépourvue de tout moment dipolaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La liaison peptidique est un hybride de résonance rigide et plan avec 40% de caractère de double liaison C-N (1,33 Å). Les 6 atomes se situent dans un même plan. Il n'y a pas de rotation libre autour de l'axe C-N. Elle possède un fort moment dipolaire d'environ 3,5 Debye."
+    },
+    {
+      "q": "À propos de la configuration spatiale de la liaison peptidique et de l'angle oméga (w) :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Angles dièdres"
+      ],
+      "options": [
+        {
+          "text": "L'angle de torsion oméga (w) est défini autour de la liaison C-N peptidique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La configuration TRANS (w = 180°) est très majoritaire dans les protéines en raison d'un encombrement stérique minimal entre chaînes latérales.",
+          "isCorrect": true
+        },
+        {
+          "text": "La configuration CIS correspond à une valeur d'angle oméga w = 0°.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans les liaisons X-Proline, la conformation CIS est observée avec une fréquence notable (jusqu'à 6 à 10%).",
+          "isCorrect": true
+        },
+        {
+          "text": "La configuration CIS est toujours la forme thermodynamiquement la plus stable pour tous les acides aminés sans exception.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La configuration TRANS (w = 180°) est la plus stable (encombrement stérique minimal). Cependant, pour la proline, la différence d'énergie entre cis (w = 0°) et trans est faible, permettant ~6-10% de conformations cis dans les protéines naturelles."
+    },
+    {
+      "q": "Quels sont les deux angles de rotation qui permettent la mobilité conformationnelle du squelette d'une chaîne polypeptidique ?",
+      "tags": [
+        "CM 2 - Peptides",
+        "Angles dièdres"
+      ],
+      "options": [
+        {
+          "text": "L'angle phi (f) autour de la liaison N-Calpha et l'angle psi (y) autour de la liaison Calpha-C.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'angle oméga (w) autour de la liaison C-N et l'angle gamma autour de C-O.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'angle bêta autour de Calpha-C et l'angle téta autour de N-H.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'angle phi (f) autour de C=O et l'angle psi (y) autour de N-Calpha.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les seules libertés de rotation du squelette peptidique sont l'angle phi (autour de la liaison N-Calpha) et l'angle psi (autour de la liaison Calpha-Ccarbonyl). L'angle oméga (C-N) est bloqué à 0° ou 180° par la résonance."
+    },
+    {
+      "q": "Selon la nomenclature internationale, comment est lue et écrite une chaîne peptidique ?",
+      "tags": [
+        "CM 2 - Peptides",
+        "Nomenclature"
+      ],
+      "options": [
+        {
+          "text": "De l'extrémité C-terminale (à gauche) vers l'extrémité N-terminale (à droite).",
+          "isCorrect": false
+        },
+        {
+          "text": "De l'extrémité N-terminale (amine libre, à gauche) vers l'extrémité C-terminale (carboxyle libre, à droite).",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans un ordre alphabétique strict des résidus constitutifs.",
+          "isCorrect": false
+        },
+        {
+          "text": "En commençant obligatoirement par la glycine centrale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Par convention universelle, une séquence polypeptidique s'écrit et se lit toujours de l'extrémité N-terminale (groupe amino libre, placé à gauche) vers l'extrémité C-terminale (groupe carboxylique libre, placé à droite)."
+    },
+    {
+      "q": "Concernant le peptide Alanyltyrosylaspartylglycine :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Nomenclature"
+      ],
+      "options": [
+        {
+          "text": "Son code à 3 lettres est Ala-Tyr-Asp-Gly.",
+          "isCorrect": true
+        },
+        {
+          "text": "Son code à 1 lettre est AYDG.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'alanine constitue l'acide aminé C-terminal portant la fonction carboxyle libre.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il s'agit d'un tétrapeptide comportant 3 liaisons peptidiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "La glycine constitue l'acide aminé N-terminal portant la fonction amine libre.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Alanyltyrosylaspartylglycine (Ala-Tyr-Asp-Gly ou AYDG) est un tétrapeptide (4 acides aminés reliés par 3 liaisons peptidiques). Ala est N-terminal et Gly est C-terminal."
+    },
+    {
+      "q": "Concernant le glutathion (GSH), quelle(s) affirmation(s) est (sont) EXACTE(S) ?",
+      "tags": [
+        "CM 2 - Peptides",
+        "Glutathion"
+      ],
+      "options": [
+        {
+          "text": "C'est un tripeptide dont la séquence est gamma-L-glutamyl-L-cystéinylglycine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison entre le glutamate et la cystéine engage le carboxyle en gamma du glutamate et non son carboxyle en alpha.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il possède une fonction thiol (-SH) libre sur son résidu cystéine jouant le rôle de réducteur intracellulaire majeur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Son oxydation produit une molécule de disulfure de glutathion (GSSG) reliant deux molécules de GSH par un pont disulfure.",
+          "isCorrect": true
+        },
+        {
+          "text": "La réduction de GSSG en deux GSH est catalysée par la glutathion réductase utilisant le NADH comme donneur d'électrons.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le glutathion (GSH) est un tripeptide gamma-Glu-Cys-Gly. Sa liaison isopeptidique gamma le protège de la plupart des peptidases classiques. Son oxydation par la glutathion peroxydase (GPx, sélénoprotéine) donne du GSSG. La glutathion réductase utilise le NADPH,H+ (et non le NADH) issu de la voie des pentoses phosphates pour régénérer le GSH."
+    },
+    {
+      "q": "Quel rôle biologique essentiel joue le glutathion au sein des érythrocytes (globules rouges) ?",
+      "tags": [
+        "CM 2 - Peptides",
+        "Glutathion"
+      ],
+      "options": [
+        {
+          "text": "Il maintient le fer de l'hème sous forme ferreuse Fe2+ et élimine le peroxyde d'hydrogène H2O2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il catalyse directement la synthèse des chaînes de globine par les ribosomes érythrocytaires.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il transporte l'oxygène dissous depuis les poumons jusqu'aux tissus périphériques.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il dégrade les lipides membranaires pour assurer la fluidité du globule rouge.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans les érythrocytes, le GSH protège les lipides de la membrane et les enzymes contre le stress oxydatif, élimine H2O2 (via la glutathion peroxydase) et maintient le fer de l'hémoglobine à l'état ferreux fonctionnel Fe2+ (évitant la formation de méthémoglobine Fe3+)."
+    },
+    {
+      "q": "La TRH (Thyrotropin-Releasing Hormone) sécrétée par l'hypothalamus est un tripeptide dont la structure est :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Hormones peptidiques"
+      ],
+      "options": [
+        {
+          "text": "Pyroglutamyl-histidyl-prolinamide.",
+          "isCorrect": true
+        },
+        {
+          "text": "Alanyl-glycyl-phénylalanine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Aspartyl-seryl-leucinamide.",
+          "isCorrect": false
+        },
+        {
+          "text": "Glutamyl-cystéinyl-glycine libre.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La TRH (ou TRF) est le tripeptide pGlu-His-Pro-NH2. Ses deux extrémités sont protégées contre les exopeptidases par cyclisation N-terminale (acide pyroglutamique) et amidation C-terminale (prolinamide)."
+    },
+    {
+      "q": "Concernant l'ocytocine et la vasopressine (hormone antidiurétique ou ADH) :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Hormones peptidiques"
+      ],
+      "options": [
+        {
+          "text": "Ce sont deux nonapeptides synthétisés dans l'hypothalamus et stockés dans la post-hypophyse.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils possèdent tous deux un pont disulfure intra-caténaire entre leurs résidus de cystéine en positions 1 et 6.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur extrémité C-terminale est modifiée par une amidation (glycinamide).",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur séquence ne diffère que par deux acides aminés en positions 3 et 8.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ocytocine stimule la réabsorption d'eau pure au niveau du canal collecteur rénal.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Ocytocine et ADH sont deux nonapeptides neurohypophysaires à pont disulfure 1-6 et C-term amidé. Ils ne diffèrent qu'en position 3 (Ile chez ocytocine, Phe chez ADH) et 8 (Leu chez ocytocine, Arg chez ADH). C'est la vasopressine (ADH) qui régule la réabsorption d'eau rénale, tandis que l'ocytocine stimule la contraction du myomètre utérin et des cellules myoépithéliales mammaires."
+    },
+    {
+      "q": "La ciclosporine est un peptide à visée thérapeutique caractérisé par :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Peptides pharmacologiques"
+      ],
+      "options": [
+        {
+          "text": "C'est un undécapeptide cyclique isolé à l'origine d'un champignon (Tolypocladium inflatum).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle contient des résidus d'acides aminés D ainsi que des acides aminés N-méthylés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle exerce une puissante activité immunosuppressive en inhibant la calcineurine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est utilisée pour prévenir le rejet de greffe d'organes allogéniques.",
+          "isCorrect": true
+        },
+        {
+          "text": "C'est une hormone sécrétée par la corticosurrénale en réponse à l'ACTH.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La ciclosporine est un undécapeptide cyclique fongique très hydrophobe contenant des acides aminés D et N-méthylés, agissant comme puissant immunosuppresseur en bloquant la calcineurine (prévention du rejet de greffe)."
+    },
+    {
+      "q": "La gramicidine S est :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Peptides antibiotiques"
+      ],
+      "options": [
+        {
+          "text": "Un peptide antibiotique cyclique produit par une bactérie (Bacillus brevis).",
+          "isCorrect": true
+        },
+        {
+          "text": "Un décapeptide symétrique contenant des résidus de D-phénylalanine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une hormone thyroïdienne stimulant le métabolisme de base.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une toxine qui perturbe l'intégrité des membranes bactériennes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un inhibiteur compétitif irréversible de l'ARN polymérase eucaryote.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La gramicidine S est un antibiotique décapeptidique cyclique produit par Bacillus brevis, renfermant deux résidus D-Phe, qui désorganise la membrane plasmique des bactéries cibles."
+    },
+    {
+      "q": "Les défensines sont des peptides de l'immunité innée caractérisés par :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Peptides de défense"
+      ],
+      "options": [
+        {
+          "text": "Leur petite taille (environ 29 à 45 acides aminés) et leur charge globale cationique (basique).",
+          "isCorrect": true
+        },
+        {
+          "text": "La présence de 6 résidus cystéine formant 3 ponts disulfures hautement conservés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur capacité à s'insérer dans les membranes microbiennes pour former des pores lytiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur synthèse exclusive par les ostéoclastes lors du remodelage osseux.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les défensines sont des petits peptides cationiques riches en cystéines (3 ponts disulfures) sécrétés par les leucocytes (neutrophiles) et cellules épithéliales (cellules de Paneth), doués d'activité antimicrobienne à large spectre par perméabilisation membranaire."
+    },
+    {
+      "q": "Considérons le dipeptide Aspartyl-Lysine (Asp-Lys). Sachant que pour Asp : pK1 = 2,0, pKR = 3,9 et pour Lys : pKR = 10,5, pK2 = 9,0 :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Propriétés acido-basiques"
+      ],
+      "options": [
+        {
+          "text": "À pH 7,4, sa charge nette globale est nulle (0).",
+          "isCorrect": true
+        },
+        {
+          "text": "À pH 1,0, tous ses groupements ionisables sont protonés et sa charge nette est de +2.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fonction alpha-amine engagée dans la liaison peptidique reste ionisable à pH physiologique.",
+          "isCorrect": false
+        },
+        {
+          "text": "À pH 12, tous ses groupements sont déprotonés et sa charge nette est de -2.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le dipeptide comporte 3 groupements ionisables libres : un alpha-NH3+, un beta-COO- et un epsilon-NH3+.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le dipeptide Asp-Lys possède 4 groupements ionisables : alpha-NH3+ d'Asp (pK ~ 9,5), beta-COOH d'Asp (pKR = 3,9), alpha-COO- de Lys (pK ~ 2,2) et epsilon-NH3+ de Lys (pKR = 10,5). À pH 7,4 : alpha-NH3+ (+1), beta-COO- (-1), alpha-COO- (-1), epsilon-NH3+ (+1) => Charge nette = +1 - 1 - 1 + 1 = 0."
+    },
+    {
+      "q": "Pourquoi la liaison peptidique est-elle rigide et plane ?",
+      "tags": [
+        "CM 2 - Peptides",
+        "Liaison peptidique"
+      ],
+      "options": [
+        {
+          "text": "À cause de l'hybridation sp3 de l'atome d'azote et de l'atome de carbone.",
+          "isCorrect": false
+        },
+        {
+          "text": "En raison de la délocalisation du doublet non liant de l'azote vers le carbonyle conférant un caractère partiel de double liaison C=N.",
+          "isCorrect": true
+        },
+        {
+          "text": "À cause de la présence constante d'ions magnésium chélatés au sein du groupement amide.",
+          "isCorrect": false
+        },
+        {
+          "text": "En raison de forces d'attraction gravitationnelles intramoléculaires.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'effet mésomère délocalise la paire d'électrons non liants de l'azote de l'amide sur le carbonyle (C=O <-> C-O- et C-N <-> C=N+), conférant 40% de caractère de double liaison et empêchant toute rotation libre autour de l'axe C-N."
+    },
+    {
+      "q": "Quelle est la limite de masse moléculaire ou de longueur communément retenue pour distinguer un polypeptide d'une protéine ?",
+      "tags": [
+        "CM 2 - Peptides",
+        "Définitions"
+      ],
+      "options": [
+        {
+          "text": "Environ 50 acides aminés (ou environ 5 à 10 kDa).",
+          "isCorrect": true
+        },
+        {
+          "text": "Strictement 10 acides aminés.",
+          "isCorrect": false
+        },
+        {
+          "text": "Plus de 1000 acides aminés obligatoirement.",
+          "isCorrect": false
+        },
+        {
+          "text": "200 Da au maximum.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Bien que la frontière ne soit pas absolue, on parle d'oligopeptide pour < 10 acides aminés, de polypeptide entre 10 et 50 résidus (< 10 kDa), et de protéine au-delà de 50 acides aminés adoptant généralement une structure tridimensionnelle autonome bien définie."
+    },
+    {
+      "q": "Concernant le peptide aspartame (édulcorant intense de synthèse) :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Peptides d'intérêt"
+      ],
+      "options": [
+        {
+          "text": "C'est l'ester méthylique du dipeptide L-aspartyl-L-phénylalanine (Asp-Phe-OCH3).",
+          "isCorrect": true
+        },
+        {
+          "text": "Sa consommation doit être strictement limitée chez les patients atteints de phénylcétonurie.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il possède un pouvoir sucrant environ 200 fois supérieur à celui du saccharose.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il résiste indéfiniment à l'ébullition prolongée en milieu très acide sans perdre son goût sucré.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'aspartame est l'ester méthylique de Asp-Phe. Son hydrolyse libère de la phénylalanine (toxique pour les phénylcétonuriques). Il est thermolabile et s'hydrolyse à la cuisson en milieu acide."
+    },
+    {
+      "q": "Parmi les propositions suivantes sur l'angiotensine II :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Hormones peptidiques"
+      ],
+      "options": [
+        {
+          "text": "C'est un octapeptide biologiquement actif issu du clivage de l'angiotensine I par l'enzyme de conversion de l'angiotensine (ECA).",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle possède un très puissant pouvoir vasoconstricteur artériel.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle stimule la sécrétion d'aldostérone par la corticosurrénale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle favorise directement l'excrétion rénale massive de sodium dans les urines.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'angiotensine II est un octapeptide vasoconstricteur majeur qui stimule la sécrétion d'aldostérone pour favoriser la réabsorption d'eau et de sodium (rénine-angiotensine-aldostérone)."
+    },
+    {
+      "q": "Lors de la synthèse peptidique chimique selon la méthode de Merrifield (synthèse sur support solide) :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Synthèse peptidique"
+      ],
+      "options": [
+        {
+          "text": "L'élongation de la chaîne se fait de l'extrémité C-terminale vers l'extrémité N-terminale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le premier acide aminé est ancré par sa fonction carboxyle sur une résine insoluble de polystyrène.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le groupe alpha-amine de chaque nouvel acide aminé entrant est protégé par un groupement protecteur (ex. Fmoc ou Boc).",
+          "isCorrect": true
+        },
+        {
+          "text": "La direction de synthèse chimique est identique à celle de la traduction ribosomique biologique in vivo.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "In vivo (ribosome), la synthèse se fait de N-vers C-terminal. In vitro sur phase solide (Merrifield), elle s'effectue dans le sens inverse : de C-terminal (fixé sur résine) vers N-terminal, avec couplage successif d'acides aminés N-protégés (Fmoc/Boc)."
+    },
+    {
+      "q": "Concernant la liaison isopeptidique :",
+      "tags": [
+        "CM 2 - Peptides",
+        "Liaison peptidique"
+      ],
+      "options": [
+        {
+          "text": "Elle implique une fonction carboxylique ou amine qui n'est pas portée par le carbone alpha.",
+          "isCorrect": true
+        },
+        {
+          "text": "On la retrouve dans le glutathion entre le carboxyle gamma du glutamate et l'amine de la cystéine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est formée lors de l'ubiquitination des protéines entre le carboxyle C-terminal de l'ubiquitine et l'amine epsilon d'une lysine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle ne peut jamais être rompue par aucune enzyme biologique chez l'homme.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Une liaison isopeptidique implique un groupe non-alpha (ex. gamma-COOH de Glu dans GSH, ou epsilon-NH2 de Lys dans l'ubiquitination). Des isopeptidases (ex. DUBs pour l'ubiquitine, gamma-glutamyl transférase pour GSH) peuvent la cliver."
+    },
+    {
+      "q": "Quelle modification chimique subissent fréquemment les extrémités des peptides hormonaux pour accroître leur demi-vie plasmatique ?",
+      "tags": [
+        "CM 2 - Peptides",
+        "Stabilité des peptides"
+      ],
+      "options": [
+        {
+          "text": "Une amidation de l'extrémité C-terminale (-CONH2) et une pyroglutamylation de l'extrémité N-terminale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une oxydation totale de tous les résidus d'acides aminés en monoxyde de carbone.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une protonation permanente de l'extrémité C-terminale par l'acide chlorhydrique gastrique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une polymérisation spontanée sous forme de fibres amyloïdes insolubles.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'amidation C-terminale et la cyclisation N-terminale (pyroglutamate) protègent les peptides régulateurs (TRH, GnRH, ocytocine, gastrine) contre la dégradation rapide par les carboxypeptidases et aminopeptidases plasmatiques."
+    },
+    {
+      "q": "Soit un oligopeptide de séquence : Glu-His-Trp-Ser-Gly. Combien contient-il de liaisons peptidiques et d'acides aminés ?",
+      "tags": [
+        "CM 2 - Peptides",
+        "Structure"
+      ],
+      "options": [
+        {
+          "text": "4 liaisons peptidiques et 5 acides aminés.",
+          "isCorrect": true
+        },
+        {
+          "text": "5 liaisons peptidiques et 5 acides aminés.",
+          "isCorrect": false
+        },
+        {
+          "text": "5 liaisons peptidiques et 4 acides aminés.",
+          "isCorrect": false
+        },
+        {
+          "text": "3 liaisons peptidiques et 4 acides aminés.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Un pentapeptide linéaire formé de 5 résidus d'acides aminés comporte toujours (n - 1) liaisons peptidiques, soit 5 - 1 = 4 liaisons peptidiques."
+    }
+  ]
+}

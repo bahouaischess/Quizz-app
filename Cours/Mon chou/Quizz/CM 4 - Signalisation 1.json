@@ -1,0 +1,612 @@
+{
+  "name": "CM 4 - Signalisation 1",
+  "folder": "PASS - Biologie Cellulaire",
+  "description": "Quiz approfondi de niveau PASS sur la signalisation cellulaire 1 : modalités de communication, messagers solubles/insolubles, gaz dissous (NO), agonistes/antagonistes, récepteurs nucléaires et canaux ionotropes (nAChR, GABA-A).",
+  "prerequisites": [],
+  "questions": [
+    {
+      "q": "Concernant les modes de communication intercellulaire, quelle(s) proposition(s) est (sont) exacte(s) ?",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Modes de communication"
+      ],
+      "options": [
+        {
+          "text": "La communication autocrine correspond à la sécrétion d'un médiateur agissant sur la cellule émettrice elle-même.",
+          "isCorrect": true
+        },
+        {
+          "text": "La communication paracrine implique la diffusion passive d'un médiateur local vers des cellules cibles du voisinage immédiat.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les jonctions lacunaires (gap junctions) permettent le passage direct de petites molécules entre cytoplasmes adjacents sans sécrétion dans le milieu extracellulaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "La communication endocrine se caractérise par la libération de médiateurs dans la circulation sanguine à très forte concentration locale (> 10^-3 M).",
+          "isCorrect": false
+        },
+        {
+          "text": "La communication synaptique met en jeu des concentrations locales très élevées de neurotransmetteurs (> 10^-4 M) avec une action très rapide en quelques millisecondes.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "En communication endocrine, les hormones sont très diluées dans le sang (< 10^-8 M), nécessitant des récepteurs de très haute affinité. Les synapses libèrent une très forte concentration (> 10^-4 M) dans la fente."
+    },
+    {
+      "q": "Concernant les caractéristiques comparées des médiateurs hydrophiles et lipophiles :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Médiateurs",
+        "Propriétés"
+      ],
+      "options": [
+        {
+          "text": "Les médiateurs hydrophiles (solubles) circulent librement dans le milieu extracellulaire mais ne peuvent pas traverser la bicouche lipidique de la membrane plasmique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les médiateurs lipophiles (hydrophobes) nécessitent des protéines de transport circulantes et traversent directement la membrane plasmique par diffusion simple.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les médiateurs hydrophiles agissent exclusivement sur des récepteurs nucléaires régulant la transcription des gènes.",
+          "isCorrect": false
+        },
+        {
+          "text": "La demi-vie des médiateurs hydrophiles est généralement courte (secondes à minutes), tandis que celle des hormones stéroïdes est longue (heures à jours).",
+          "isCorrect": true
+        },
+        {
+          "text": "La thyroxine (hormone thyroïdienne dérivée de la tyrosine) est un médiateur hautement hydrophile agissant sur un récepteur membranaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La thyroxine est hydrophobe (insoluble) et agit sur un récepteur nucléaire intracellulaire. Les médiateurs hydrophiles agissent sur des récepteurs membranaires de surface."
+    },
+    {
+      "q": "Parmi les hormones suivantes, laquelle (lesquelles) dérive(nt) du cholestérol (hormones stéroïdes) ?",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Stéroïdes"
+      ],
+      "options": [
+        {
+          "text": "Le cortisol.",
+          "isCorrect": true
+        },
+        {
+          "text": "La progestérone.",
+          "isCorrect": true
+        },
+        {
+          "text": "La testostérone.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'insuline.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'hormone de croissance (GH).",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Cortisol, progestérone et testostérone sont des hormones stéroïdes lipophiles dérivées du noyau stérol (cholestérol). L'insuline et la GH sont des hormones peptidiques/protéiques."
+    },
+    {
+      "q": "Concernant le monoxyde d'azote (NO) en tant que molécule de signalisation :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "NO",
+        "Gaz dissous"
+      ],
+      "options": [
+        {
+          "text": "C'est un gaz dissous qui traverse librement la bicouche lipidique sans nécessiter de récepteur membranaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sa demi-vie biologique est très courte, de l'ordre de 5 à 10 secondes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans les cellules musculaires lisses des vaisseaux, il active la guanylate cyclase soluble, augmentant le taux intracellulaire de GMPc.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'élévation du GMPc provoque la contraction brutale des vaisseaux et une hypertension artérielle aiguë.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il exerce une action typiquement paracrine de proximité.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le NO diffuse aux cellules musculaires lisses vasculaires, active la guanylate cyclase soluble, augmente le GMPc et provoque un RELÂCHEMENT musculaire (vasodilatation et baisse de pression sanguine)."
+    },
+    {
+      "q": "Concernant les concepts pharmacologiques d'agoniste et d'antagoniste :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Pharmacologie"
+      ],
+      "options": [
+        {
+          "text": "Un agoniste se lie au récepteur et induit la même réponse biologique (ou analogue) que celle du ligand physiologique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un antagoniste se fixe au récepteur sans déclencher de réponse cellulaire, bloquant l'accès du ligand naturel.",
+          "isCorrect": true
+        },
+        {
+          "text": "La nicotine est un agoniste exogène du récepteur nicotinique de l'acétylcholine (nAChR).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le curare est un antagoniste du récepteur nicotinique de l'acétylcholine entraînant une relaxation musculaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les bêta-bloquants sont des agonistes puissants stimulant le récepteur bêta-adrénergique pour accélérer le rythme cardiaque.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les bêta-bloquants sont des ANTAGONISTES des récepteurs bêta-adrénergiques ; ils diminuent la fréquence cardiaque et la pression artérielle."
+    },
+    {
+      "q": "À propos des médicaments curarisants (rocuronium, vécuronium) en anesthésie :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Curare"
+      ],
+      "options": [
+        {
+          "text": "Ils bloquent la transmission neuromusculaire en se fixant sur les récepteurs nicotiniques de l'acétylcholine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils facilitent l'intubation trachéale en induisant une paralysie flasque et une relaxation musculaire chirurgicale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le Sugammadex ou la Néostigmine peuvent être employés pour la décurarisation (lever le bloc neuromusculaire).",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils provoquent des contractions musculaires tétaniques permanentes et irréversibles.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les curares bloquent l'action de l'ACh à la plaque motrice (antagonistes compétitifs), entraînant le relâchement musculaire. La décurarisation est assurée par le Sugammadex (chélateur du rocuronium) ou la Néostigmine (inhibiteur de l'acétylcholinestérase)."
+    },
+    {
+      "q": "Concernant la spécificité d'action des médiateurs :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Spécificité",
+        "Acétylcholine"
+      ],
+      "options": [
+        {
+          "text": "Un même médiateur peut induire des réponses cellulaires opposées selon le type de récepteur exprimé par la cellule cible.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sur les cellules musculaires squelettiques, l'acétylcholine stimule la contraction via le récepteur nicotinique nAChR.",
+          "isCorrect": true
+        },
+        {
+          "text": "Sur les cardiomyocytes, l'acétylcholine diminue la fréquence de contraction via un récepteur muscarinique (mAChR).",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les cellules de l'organisme humain expriment obligatoirement le même répertoire de récepteurs membranaires.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'acétylcholine contracte le muscle squelettique via nAChR (canal ionique) et ralentit le cœur via mAChR (RCPG Gi). L'effet dépend de la nature du récepteur et de sa machinerie de transduction."
+    },
+    {
+      "q": "Concernant la structure des récepteurs nucléaires (ex: récepteur des glucocorticoïdes) :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Récepteurs nucléaires",
+        "Structure"
+      ],
+      "options": [
+        {
+          "text": "Le domaine C contient des motifs en doigts de zinc indispensables à la liaison spécifique sur les séquences HRE de l'ADN.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le domaine E est le domaine de liaison du ligand hydrophobe.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le domaine D dit 'charnière' permet des changements de conformation du récepteur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le domaine F porte un signal de localisation nucléaire (NLS).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le domaine A/B est le domaine transmembranaire inséré dans la membrane externe des mitochondries.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les récepteurs nucléaires sont des protéines intracellulaires solubles sans domaine transmembranaire. Le domaine A/B est régulateur/transactivateur N-terminal."
+    },
+    {
+      "q": "Concernant le mécanisme d'activation du récepteur des glucocorticoïdes (GR) :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Glucocorticoïdes",
+        "Mécanisme"
+      ],
+      "options": [
+        {
+          "text": "En l'absence d'hormone, le récepteur inactif est localisé dans le cytosol, associé à des protéines chaperonnes (PAR / Hsp).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines chaperonnes masquent le signal NLS et le domaine en doigt de zinc du récepteur.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fixation du glucocorticoïde provoque un changement de conformation et la dissociation des protéines chaperonnes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le démasquage du NLS permet l'importation nucléaire du complexe récepteur-ligand via des importines.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le noyau, les récepteurs agissent sous forme de monomères strictement isolés ne liant jamais l'ADN.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Après translocation nucléaire via les importines, le récepteur dimérise pour se fixer sur les éléments de réponse aux hormones (HRE) de l'ADN et réguler la transcription."
+    },
+    {
+      "q": "Concernant le récepteur nicotinique de l'acétylcholine (nAChR) de la jonction neuromusculaire :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "nAChR",
+        "Structure"
+      ],
+      "options": [
+        {
+          "text": "C'est un récepteur ionotrope formant un canal ionique transmembranaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il est constitué de 5 sous-unités : deux sous-unités alpha, une bêta, une gamma et une delta.",
+          "isCorrect": true
+        },
+        {
+          "text": "Chaque sous-unité comporte 4 domaines transmembranaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Deux molécules d'acétylcholine doivent se fixer simultanément sur les deux sous-unités alpha pour déclencher l'ouverture du canal.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ouverture du canal permet sélectivement l'entrée massive d'anions chlorure provoquant une hyperpolarisation membranaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le récepteur nAChR est un canal cationique : son ouverture laisse entrer le sodium (Na+) et sortir le potassium (K+), provoquant une DÉPOLARISATION de la membrane postsynaptique."
+    },
+    {
+      "q": "Concernant le récepteur GABA-A :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "GABA-A",
+        "Canal chlore"
+      ],
+      "options": [
+        {
+          "text": "C'est un récepteur-canal perméable aux ions chlorure (Cl-).",
+          "isCorrect": true
+        },
+        {
+          "text": "La fixation du GABA sur la sous-unité alpha induit l'ouverture du canal et l'entrée de chlore dans le neurone.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'entrée d'ions Cl- induit une hyperpolarisation de la membrane plasmique, diminuant l'excitabilité neuronale.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le GABA est le principal neurotransmetteur excitateur du système nerveux central de l'adulte.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ce récepteur constitue une cible privilégiée pour des médicaments psychotropes.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le GABA est le principal neurotransmetteur INHIBITEUR du SNC. L'ouverture du canal GABA-A fait entrer des ions Cl-, hyperpolarisant le neurone et inhibant la propagation du potentiel d'action."
+    },
+    {
+      "q": "Concernant les sites de modulation allostérique sur le récepteur GABA-A :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "GABA-A",
+        "Pharmacologie"
+      ],
+      "options": [
+        {
+          "text": "Les benzodiazépines se fixent sur la sous-unité bêta et agissent comme modulateurs allostériques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un modulateur allostérique positif (ex: diazépam) augmente l'affinité du récepteur pour le GABA et potentialise l'ouverture du canal.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les dérivés des bêta-carbolines agissent comme des modulateurs allostériques négatifs réduisant l'effet du GABA.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le Flumazénil est un modulateur allostérique neutre utilisé comme antidote en cas de surdosage en benzodiazépines.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les barbituriques (ex: pentobarbital) se lient sur les sous-unités gamma.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes ces propositions sont exactes : BZD sur bêta (positif = diazépam, négatif = bêta-carbolines, neutre/antidote = Flumazénil) ; Barbituriques sur gamma ; GABA sur alpha."
+    },
+    {
+      "q": "Concernant les étapes de la transmission synaptique chimique classique :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Synapse"
+      ],
+      "options": [
+        {
+          "text": "La dépolarisation de la terminaison présynaptique provoque l'ouverture de canaux calciques voltage-dépendants.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'entrée d'ions calcium (Ca2+) stimule l'exocytose des vésicules synaptiques contenant le neurotransmetteur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le neurotransmetteur libéré diffuse dans la fente synaptique et se lie à ses récepteurs postsynaptiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "La transmission prend fin grâce à la dégradation enzymatique et/ou à la recapture du neurotransmetteur.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le potentiel d'action traverse la fente synaptique par conduction électrique directe sans étape chimique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans la synapse chimique, le signal électrique présynaptique est converti en signal chimique (exocytose calcium-dépendante du neurotransmetteur), qui diffuse avant de générer un potentiel postsynaptique."
+    },
+    {
+      "q": "Concernant les prostaglandines en tant que médiateurs cellulaires :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Prostaglandines"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des dérivés lipidiques (eicosanoïdes à 20 atomes de carbone) issus de l'acide arachidonique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles ne sont pas stockées dans des vésicules préformées mais synthétisées de novo à la demande.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles interviennent dans la douleur, la réaction inflammatoire et l'agrégation plaquettaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'aspirine bloque la synthèse de certaines prostaglandines en inhibant la cyclo-oxygénase.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elles sont synthétisées exclusivement dans les crêtes de la membrane interne mitochondriale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les prostaglandines sont synthétisées à la demande à partir de phospholipides membranaires (acide arachidonique) via les cyclo-oxygénases (COX-1/COX-2), cibles de l'aspirine et des AINS."
+    },
+    {
+      "q": "Concernant les hormones polypeptidiques :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Hormones peptidiques"
+      ],
+      "options": [
+        {
+          "text": "L'ocytocine et la vasopressine sont de petits peptides post-hypophysaires (3 à 50 acides aminés).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'insuline et l'hormone de croissance (GH) sont des hormones protéiques de plus de 50 acides aminés.",
+          "isCorrect": true
+        },
+        {
+          "text": "La FSH et la LH sont des hormones glycoprotéiques pré-hypophysaires portant des chaînes glucidiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Toutes les hormones peptidiques traversent directement la bicouche lipidique sans récepteur membranaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les hormones peptidiques et glycoprotéiques sont hydrosolubles et ne traversent pas les membranes : elles se fixent sur des récepteurs membranaires."
+    },
+    {
+      "q": "Concernant le Lévonorgestrel :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Lévonorgestrel"
+      ],
+      "options": [
+        {
+          "text": "C'est un agoniste synthétique de la progestérone utilisé comme contraceptif progestatif.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il bloque de manière irréversible les récepteurs de l'histamine dans les bronches.",
+          "isCorrect": false
+        },
+        {
+          "text": "En mimant l'action hormonale de la progestérone, il empêche l'ovulation.",
+          "isCorrect": true
+        },
+        {
+          "text": "C'est un poison naturel de la chaîne respiratoire mitochondriale.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le lévonorgestrel est un progestatif de synthèse (agoniste des récepteurs de la progestérone) bloquant le pic de LH et inhibant l'ovulation."
+    },
+    {
+      "q": "Concernant les anti-histaminiques :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Histamine",
+        "Antihistaminiques"
+      ],
+      "options": [
+        {
+          "text": "Ce sont des antagonistes qui bloquent la liaison de l'histamine sur ses récepteurs spécifiques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils permettent de limiter la réaction allergique et inflammatoire induite par l'histamine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils détruisent physiquement les molécules d'histamine circulantes en les coupant en deux.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ils empêchent l'histamine de stimuler la réponse cellulaire sur les cellules cibles.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les anti-histaminiques agissent comme antagonistes compétitifs des récepteurs de l'histamine (notamment H1), prévenant les symptômes allergiques."
+    },
+    {
+      "q": "Concernant la demi-vie d'un médiateur chimique :",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Demi-vie"
+      ],
+      "options": [
+        {
+          "text": "Elle correspond au temps nécessaire pour que la molécule perde 50 % de son activité ou de sa concentration.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle est identique pour toutes les molécules biologiques et vaut rigoureusement 24 heures.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les neurotransmetteurs ont une demi-vie très brève dans la fente synaptique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les hormones stéroïdes ont une demi-vie plus longue que les hormones peptidiques.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La demi-vie biologique (T1/2) est la durée requise pour réduire de moitié la concentration/activité du médiateur. Elle varie de la milliseconde pour un neurotransmetteur à plusieurs heures/jours pour un stéroïde."
+    },
+    {
+      "q": "Parmi les neurotransmetteurs suivants, lequel est classiquement considéré comme un excitateur majeur du système nerveux central ?",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Neurotransmetteurs"
+      ],
+      "options": [
+        {
+          "text": "Le glutamate.",
+          "isCorrect": true
+        },
+        {
+          "text": "La glycine.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'acide gamma-aminobutyrique (GABA).",
+          "isCorrect": false
+        },
+        {
+          "text": "La progestérone.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le glutamate est le principal neurotransmetteur excitateur du SNC. Le GABA et la glycine sont les principaux neurotransmetteurs inhibiteurs."
+    },
+    {
+      "q": "Quelle cascade intracellulaire est activée par le sildénafil (Viagra) dans les cellules musculaires lisses ?",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Sildénafil",
+        "NO/GMPc"
+      ],
+      "options": [
+        {
+          "text": "Il inhibe la phosphodiestérase 5 (PDE5), maintenant un taux élevé de GMPc en aval de la voie du NO, ce qui prolonge la vasodilatation.",
+          "isCorrect": true
+        },
+        {
+          "text": "Il stimule directement l'ouverture des récepteurs nicotiniques de l'acétylcholine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il bloque la synthèse d'ADN au cours de la phase S du cycle cellulaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il empêche la dimérisation des sous-unités alpha du récepteur GABA-A.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le sildénafil est un inhibiteur de la PDE5, l'enzyme qui dégrade le GMPc. Il maintient donc des niveaux élevés de GMPc induits par le NO, prolongeant le relâchement des cellules musculaires lisses."
+    },
+    {
+      "q": "Concernant les récepteurs membranaires, quels sont les trois grands groupes protéiques décrits dans le cours ?",
+      "tags": [
+        "CM 4 - Signalisation 1",
+        "Récepteurs membranaires"
+      ],
+      "options": [
+        {
+          "text": "Les récepteurs couplés à des canaux ioniques (ionotropes).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les récepteurs couplés aux protéines G (RCPG).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les récepteurs couplés à une enzyme ou à activité enzymatique intrinsèque.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les récepteurs peptidoglycaniques mitochondriaux.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les 3 grands groupes membranaires sont : récepteurs ionotropes (canaux), RCPG (couplés aux protéines G), et récepteurs couplés à une enzyme (ex: RTK)."
+    }
+  ]
+}

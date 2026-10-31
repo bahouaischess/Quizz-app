@@ -1,0 +1,641 @@
+{
+  "name": "CM 6 - ME",
+  "folder": "PASS - Molécules du vivant",
+  "description": "Méthodes d'étude physiques et immunologiques des protéines : centrifugation, précipitation, dialyse, chromatographies, électrophorèses (SDS-PAGE, IEF, 2D), spectrométrie de masse (MALDI, ESI, MS/MS), Western blot, ELISA, cytométrie en flux et protéomique clinique.",
+  "prerequisites": [
+    "CM 1 - Acides Aminés",
+    "CM 2 - Peptides",
+    "CM 3 - Protéines- Structures secondaires",
+    "CM 3 suite - Structure tertiaire et quaternaire des protéines"
+  ],
+  "questions": [
+    {
+      "q": "Lors d'un fractionnement subcellulaire par centrifugation différentielle d'un lysat cellulaire :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Centrifugation"
+      ],
+      "options": [
+        {
+          "text": "Une centrifugation à basse vitesse (~500 à 1000 g pendant 10 min) permet de culotter la fraction nucléaire et les débris cellulaires.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une centrifugation à vitesse intermédiaire (~10 000 g pendant 20 min) fait sédimenter la fraction mitochondriale, lysosomale et peroxysomale.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ultracentrifugation à haute vitesse (100 000 g pendant 1 heure) fait sédimenter la fraction microsomale (fragments du RE et de Golgi).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le surnageant final obtenu après ultracentrifugation à 100 000 g correspond à la fraction cytosolique contenant les protéines solubles.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les molécules d'eau pure sédimentent toujours dans le premier culot à 500 g.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La centrifugation différentielle sépare les organites selon leur taille et masse : culot 500-1000g = noyaux ; culot 10 000g = mitochondries/lysosomes ; culot 100 000g = microsomes (RE/Golgi) ; surnageant soluble = cytosol."
+    },
+    {
+      "q": "Concernant la précipitation des protéines par addition de sels neutres (ex. sulfate d'ammonium (NH4)2SO4) :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Précipitation"
+      ],
+      "options": [
+        {
+          "text": "À faible force ionique ('salting-in'), le sel augmente la solubilité des protéines en masquant leurs charges de surface.",
+          "isCorrect": true
+        },
+        {
+          "text": "À très forte concentration saline ('salting-out'), les ions captent les molécules d'eau d'hydratation, déshabillant les zones hydrophobes des protéines qui s'agrègent et précipitent.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le sulfate d'ammonium est particulièrement utilisé car il permet de précipiter réversiblement les protéines sans les dénaturer.",
+          "isCorrect": true
+        },
+        {
+          "text": "La solubilité d'une protéine est minimale lorsque le pH de la solution est exactement égal à son point isoélectrique (pH = pHi).",
+          "isCorrect": true
+        },
+        {
+          "text": "Le 'salting-out' hydrolyse définitivement les liaisons peptidiques de la chaîne protéique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le salting-out est un procédé de purification réversible : les ions salins mobilisent l'eau, favorisant l'agrégation hydrophobe des protéines sans dénaturation. La solubilité est minimale au pHi (charge nette nulle, répulsions électrostatiques minimales)."
+    },
+    {
+      "q": "Le principe de la dialyse pour la purification ou le dessalage de protéines repose sur :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Dialyse"
+      ],
+      "options": [
+        {
+          "text": "Une membrane semi-perméable dont le seuil de coupure (cut-off) retient les macromolécules protéiques dans le boudin tout en laissant diffuser les petits solutés et sels vers le bain.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'application d'un champ électrique de 10 000 volts à travers la membrane.",
+          "isCorrect": false
+        },
+        {
+          "text": "La dégradation enzymatique instantanée des sels minéraux par des protéases.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une filtration sous vide poussé à travers des billes de silice hydrophobe.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La dialyse utilise une membrane semi-perméable poreuse de seuil de coupure défini (ex: 10 kDa) : les sels et petites molécules diffusent selon leur gradient de concentration vers le grand volume de tampon externe, alors que les protéines de masse supérieure restent retenues."
+    },
+    {
+      "q": "Dans une chromatographie d'exclusion stérique (gel filtration / tamisage moléculaire sur colonne de Sephadex) :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Chromatographie d'exclusion"
+      ],
+      "options": [
+        {
+          "text": "Les molécules de masse moléculaire supérieure au diamètre des pores des billes sont totalement exclues et sortent en premier (volume mort Vo).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les molécules de petite taille pénètrent à l'intérieur des pores des billes et ont un chemin plus long à parcourir, sortant en dernier.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ordre d'élution est strictement inverse de la taille hydrodynamique des protéines (les plus grosses d'abord, les plus petites ensuite).",
+          "isCorrect": true
+        },
+        {
+          "text": "La séparation dépend de la charge globale de la protéine et non de son volume hydrodynamique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Elle permet d'estimer la masse moléculaire native d'un complexe protéique en comparant son volume d'élution à des étalons.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "En gel filtration, les grosses molécules ne rentrent pas dans les pores poreux et élient d'abord dans le volume mort Vo. Les petites molécules explorent l'intérieur du réseau poreux et élient plus tardivement. La séparation dépend de la taille (rayon hydrodynamique) et non de la charge."
+    },
+    {
+      "q": "Concernant la chromatographie échangeuse d'ions :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Chromatographie échangeuse d'ions"
+      ],
+      "options": [
+        {
+          "text": "Une résine échangeuse d'anions (ex. DEAE-cellulose) porte des groupements chargés positivement et retient les protéines chargées négativement (pH > pHi).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une résine échangeuse de cations (ex. CM-cellulose) porte des groupements chargés négativement et retient les protéines basiques chargées positivement (pH < pHi).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'élution des protéines fixées s'effectue couramment en augmentant la force ionique du tampon par un gradient de NaCl.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'élution peut également être réalisée en modifiant progressivement le pH du tampon pour annuler ou inverser la charge de la protéine.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une protéine dont le pHi est de 9,0, déposée à pH 7,0 sur une colonne échangeuse de cations, sera directement éliminée dans le non-retenu.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À pH 7,0, une protéine de pHi 9,0 est en milieu plus acide que son pHi (pH < pHi) => elle est chargée POSITIVEMENT et se fixera fermement sur une résine échangeuse de cations (chargée négativement). L'élution se fait par compétition avec NaCl ou par variation de pH."
+    },
+    {
+      "q": "La chromatographie d'affinité est la technique de purification présentant la plus haute spécificité car :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Chromatographie d'affinité"
+      ],
+      "options": [
+        {
+          "text": "Elle exploite la reconnaissance biologique sélective entre la protéine d'intérêt et un ligand immobilisé sur la matrice solide.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une protéine recombinante fusionnée à une étiquette polyhistidine (His-tag) peut être purifiée sur résine chélatant du nickel (Ni2+-NTA).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'élution d'une protéine à His-tag fixée sur colonne de nickel s'effectue spécifiquement par compétition avec de l'imidazole.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une protéine de fusion GST (Glutathion S-Transférase) est capturée sur une résine couplée au glutathion et éluée par du glutathion réduit libre.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle repose uniquement sur la vaporisation thermique de l'échantillon à 500°C sous vide.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'affinité repose sur des interactions biologiques hautement spécifiques (Ni-NTA/His-tag, Glutathion/GST, anticorps/antigène). L'élution s'effectue par compétition spécifique (imidazole pour His-tag, glutathion libre pour GST) ou par modification ménagée du pH."
+    },
+    {
+      "q": "Concernant l'électrophorèse dénaturante sur gel de polyacrylamide en présence de SDS (SDS-PAGE) :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "SDS-PAGE"
+      ],
+      "options": [
+        {
+          "text": "Le SDS (dodécylsulfate de sodium) est un détergent anionique qui dénature les protéines et leur confère une charge négative uniforme proportionnelle à leur masse.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fixation du SDS masque la charge intrinsèque propre de la protéine (environ 1,4 g de SDS par gramme de protéine).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'addition d'un agent réducteur (bêta-mercaptoéthanol ou DTT) permet de rompre les ponts disulfures intra- et inter-chaînes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le gel de polyacrylamide, les protéines migrent vers l'anode (+) et leur vitesse de migration est inversement proportionnelle au logarithme de leur masse moléculaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les protéines les plus lourdes migrent le plus loin vers le bas du gel.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans le SDS-PAGE, le SDS dénature et confère un ratio charge/masse négatif constant. La migration vers l'anode (+) dépend uniquement du tamisage moléculaire du gel : les petites protéines se faufilent plus vite et migrent le plus loin, tandis que les protéines lourdes sont freinées et restent en haut."
+    },
+    {
+      "q": "L'électrofocalisation (isofocalisation ou IEF) sépare les protéines selon :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Isoélectrofocalisation"
+      ],
+      "options": [
+        {
+          "text": "Leur point isoélectrique (pHi) le long d'un gradient de pH stable généré par des ampholytes sous l'effet d'un champ électrique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur masse moléculaire exacte en kiloDaltons.",
+          "isCorrect": false
+        },
+        {
+          "text": "Leur teneur exclusive en acides aminés aromatiques.",
+          "isCorrect": false
+        },
+        {
+          "text": "Leur solubilité dans l'éther éthylique à froid.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'IEF soumet les protéines à un gradient de pH : chargée positivement à pH acide, la protéine migre vers la cathode jusqu'à la zone où pH = pHi. À cet endroit, sa charge nette devient nulle (forme zwitterionique) et elle s'arrête de migrer (focalisation)."
+    },
+    {
+      "q": "Dans l'électrophorèse bidimensionnelle (2D-PAGE) :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "2D-PAGE"
+      ],
+      "options": [
+        {
+          "text": "La première dimension sépare les protéines en fonction de leur pHi par électrofocalisation (IEF).",
+          "isCorrect": true
+        },
+        {
+          "text": "La seconde dimension sépare les protéines perpendiculairement selon leur masse moléculaire apparente par SDS-PAGE.",
+          "isCorrect": true
+        },
+        {
+          "text": "Chaque spot du gel 2D correspond potentiellement à une espèce protéique caractérisée par son couple (pHi, masse moléculaire).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les spots d'intérêt peuvent être découpés, digérés par la trypsine et identifiés par spectrométrie de masse.",
+          "isCorrect": true
+        },
+        {
+          "text": "Elle permet de séparer seulement deux protéines au maximum par expérience.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La 2D-PAGE couple l'IEF (1re dimension, pHi) et le SDS-PAGE (2e dimension, masse). Elle permet de résoudre simultanément plusieurs milliers de spots protéiques analysables par spectrométrie de masse."
+    },
+    {
+      "q": "Concernant les sources d'ionisation 'douces' utilisées en spectrométrie de masse pour l'analyse des protéines :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Spectrométrie de masse"
+      ],
+      "options": [
+        {
+          "text": "Le MALDI (Matrix-Assisted Laser Desorption/Ionization) repose sur la co-cristallisation de l'échantillon avec une matrice organique aromatique absorbant l'énergie d'un laser impulsionnel.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ESI (Electrospray Ionization) produit des ions intacts en phase gazeuse à partir d'une solution pulvérisée sous fort potentiel électrique.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ESI génère fréquemment des ions multichargés portant plusieurs protons [M + zH]^z+, permettant l'analyse de macromolécules de très haute masse sur des analyseurs de gamme m/z modeste.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le MALDI produit très majoritairement des ions monochargés de type [M + H]+.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ces techniques détruisent instantanément toutes les liaisons covalentes des protéines avant toute mesure de masse.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "MALDI et ESI (Nobel 2002 à Fenn et Tanaka) sont des ionisations douces permettant de transférer de grosses protéines en phase gazeuse sans fragmentation destructrice. MALDI donne principalement des ions [M+H]+, tandis qu'ESI forme des ions multi-protonés [M+zH]^z+."
+    },
+    {
+      "q": "L'analyseur de masse de type 'Temps de Vol' (TOF pour Time of Flight) repose sur le principe suivant :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Spectrométrie de masse"
+      ],
+      "options": [
+        {
+          "text": "Les ions accélérés par une même différence de potentiel acquièrent une même énergie cinétique ; les ions de plus faible rapport m/z se déplacent plus rapidement et atteignent le détecteur les premiers.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le temps de vol t est directement proportionnel à la racine carrée du rapport m/z (t proportional to sqrt(m/z)).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les ions les plus lourds arrivent toujours au détecteur avant les ions légers.",
+          "isCorrect": false
+        },
+        {
+          "text": "Il nécessite que les protéines soient dissoutes dans du mercure liquide.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Pour une énergie cinétique Ec = qV = (1/2)mv^2, la vitesse v = sqrt(2qV/m). Le temps de vol dans un tube de longueur L est t = L/v = L * sqrt(m / (2zV)). Les ions les plus légers (faible m/z) vont le plus vite et arrivent en premier."
+    },
+    {
+      "q": "Dans l'identification protéique par 'Peptide Mass Fingerprint' (empreinte massique peptidique) :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Protéomique"
+      ],
+      "options": [
+        {
+          "text": "La protéine est préalablement digérée par une endoprotéase spécifique comme la trypsine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La trypsine clive spécifiquement au niveau du carboxyle des résidus basiques Arginine (Arg) et Lysine (Lys), sauf s'ils sont suivis d'une Proline.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le profil des masses des peptides générés mesuré par MALDI-TOF est comparé informatiquement à une base de données de spectres théoriques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une correspondance statistique significative permet d'identifier la protéine avec une grande certitude.",
+          "isCorrect": true
+        },
+        {
+          "text": "La méthode exige que la séquence génomique de l'organisme soit totalement inconnue pour fonctionner.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le PMF compare les masses mesurées des peptides trypsiques (trypsine = coupure après Arg/Lys non suivis de Pro) à des bases de données protéomiques (ex. Mascot/UniProt) pour identifier la protéine sans nécessiter de reséquencer chaque peptide."
+    },
+    {
+      "q": "La spectrométrie de masse en tandem (MS/MS) permet :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Spectrométrie de masse"
+      ],
+      "options": [
+        {
+          "text": "De sélectionner un peptide ionique particulier dans un premier analyseur (MS1), de le fragmenter par collision avec un gaz inerte (CID), puis de mesurer les fragments dans un second analyseur (MS2).",
+          "isCorrect": true
+        },
+        {
+          "text": "D'obtenir le séquençage en acides aminés du peptide à partir des séries d'ions de fragmentation (ions de type b et y).",
+          "isCorrect": true
+        },
+        {
+          "text": "De localiser précisément des sites de modifications post-traductionnelles (ex. phosphorylation de sérine, acétylation de lysine).",
+          "isCorrect": true
+        },
+        {
+          "text": "De séparer uniquement les globules rouges des globules blancs par filtration mécanique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "La MS/MS (CID = dissociation induite par collision) fragmente la liaison peptidique générant des fragments N-terminaux (ions b) et C-terminaux (ions y). La différence de masse entre pics consécutifs donne la masse de l'acide aminé correspondant, permettant le séquençage et la détection des PTM."
+    },
+    {
+      "q": "Concernant les étapes techniques du Western Blot (immunotransfert) :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Western blot"
+      ],
+      "options": [
+        {
+          "text": "Les protéines séparées sur gel SDS-PAGE sont transférées par électrotransfert sur une membrane de nitrocellulose ou de PVDF.",
+          "isCorrect": true
+        },
+        {
+          "text": "La membrane est ensuite saturée avec une solution de protéines non spécifiques (lait écrémé ou BSA) pour bloquer les sites de fixation libre.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un anticorps primaire spécifique de la protéine d'intérêt est incubé sur la membrane.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un anticorps secondaire couplé à une enzyme (ex. peroxydase de raifort HRP) dirigé contre les immunoglobulines de l'espèce de l'anticorps primaire est utilisé pour la détection chimiluminescente.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le Western blot permet une analyse à la fois qualitative (masse apparente) et semi-quantitative (intensité du signal) de la protéine.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Toutes les étapes du Western Blot sont exactes : SDS-PAGE -> transfert membrane -> saturation (blocage) -> anticorps primaire -> anticorps secondaire conjugué HRP -> substrat chimioluminescent (ECL) -> détection du signal proportionnel à la quantité de protéine."
+    },
+    {
+      "q": "L'immunoprécipitation (IP) et la co-immunoprécipitation (Co-IP) permettent :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Immunoprécipitation"
+      ],
+      "options": [
+        {
+          "text": "D'isoler une protéine spécifique à partir d'un extrait cellulaire complexe en utilisant un anticorps couplé à des billes de protéine A ou G.",
+          "isCorrect": true
+        },
+        {
+          "text": "D'identifier des partenaires protéiques formant un complexe macromoléculaire in vivo avec la protéine appât (bait) dans le cas de la Co-IP.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine A et la protéine G se lient avec une haute affinité au fragment Fc des anticorps.",
+          "isCorrect": true
+        },
+        {
+          "text": "D'amplifier des molécules d'ADN par une réaction de polymérisation cyclique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'IP et la Co-IP utilisent des billes magnétiques ou d'agarose portant les protéines A/G (d'origine bactérienne) liant le Fc des anticorps pour purifier un complexe protéique natif et révéler ses partenaires d'interaction."
+    },
+    {
+      "q": "Dans un test ELISA de type 'sandwich' :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "ELISA"
+      ],
+      "options": [
+        {
+          "text": "Un anticorps de capture est immobilisé au fond des puits d'une microplaque.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'antigène protéique présent dans l'échantillon biologique (sérum, LCR, urine) est capturé par cet anticorps.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un deuxième anticorps spécifique reconnaissant un épitope différent de la protéine est ajouté pour former le complexe en sandwich.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'intensité du signal colorimétrique ou fluorescent généré par la réaction enzymatique est directement proportionnelle à la concentration d'antigène.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ce test ne peut doser que des gaz dissous comme l'azote atmosphérique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'ELISA sandwich utilise deux anticorps dirigés contre deux épitopes distincts de l'antigène. C'est la méthode de référence en biologie clinique pour doser précisément des biomarqueurs, hormones ou cytokines à de très faibles concentrations (pg/mL à ng/mL)."
+    },
+    {
+      "q": "Concernant la cytométrie en flux (FACS) :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Cytométrie en flux"
+      ],
+      "options": [
+        {
+          "text": "Elle permet l'analyse individuelle, multiparamétrique et quantitative de cellules en suspension passant une à une devant des faisceaux laser.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le paramètre FSC (Forward Scatter, diffusion aux petits angles) est principalement corrélé à la taille de la cellule.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le paramètre SSC (Side Scatter, diffusion orthogonale à 90°) est corrélé à la complexité interne et à la granulométrie de la cellule.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'utilisation d'anticorps couplés à différents fluorochromes permet de quantifier l'expression de plusieurs marqueurs membranaires et intracellulaires simultanément.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le trieur de cellules (cell sorter) peut séparer physiquement des sous-populations vivantes pures pour des cultures ou greffes ultérieures.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le FACS analyse cellule par cellule à très haut débit (milliers de cellules/sec) : FSC (taille), SSC (granularité/forme noyau), intensités de fluorescences multiples, avec possibilité de tri physique stérile."
+    },
+    {
+      "q": "Sur un tracé d'électrophorèse des protéines sériques (EPS) humaine normale sur gel d'agarose, les protéines sont séparées en :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Électrophorèse des protéines sériques"
+      ],
+      "options": [
+        {
+          "text": "5 fractions principales : Albumine, Alpha-1-globulines, Alpha-2-globulines, Bêta-globulines et Gamma-globulines.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'albumine représente la fraction quantitativement la plus abondante (environ 55 à 65% des protéines sériques).",
+          "isCorrect": true
+        },
+        {
+          "text": "La fraction gamma est constituée de l'ensemble des immunoglobulines polyclonales.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fraction alpha-1 comprend notamment l'alpha-1-antitrypsine.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'albumine migre le moins loin et reste bloquée au niveau de la ligne de dépôt.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'EPS sépare 5 fractions : Albumine (la plus rapide et abondante, migrant le plus près de l'anode), alpha-1 (AAT), alpha-2 (haptoglobine, alpha-2-macroglobuline), bêta (transferrine, C3) et gamma (immunoglobulines à l'extrémité cathodique)."
+    },
+    {
+      "q": "L'observation d'un pic étroit, homogène et symétrique dans la zone des gamma-globulines lors d'une électrophorèse des protéines sériques oriente vers :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "EPS pathologique"
+      ],
+      "options": [
+        {
+          "text": "Une gammapathie monoclonale (ex. myélome multiple de Kahler ou maladie de Waldenström).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une déshydratation aiguë banale sans aucune anomalie hématologique.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une carence alimentaire exclusive en vitamine C.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une mutation du récepteur à l'insuline du tissu musculaire.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Un pic monoclonal en gamma (parfois en bêta) signe la prolifération clonale d'un plasmocyte sécrétant une immunoglobuline monoclonale identique (pic de myélome multiple), par contraste avec le dôme large des gamma polyclonales normales."
+    },
+    {
+      "q": "La technologie Luminex (suspension array) :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Luminex"
+      ],
+      "options": [
+        {
+          "text": "Combine le principe du dosage ELISA sandwich et l'analyse optique de la cytométrie en flux.",
+          "isCorrect": true
+        },
+        {
+          "text": "Utilise des microbilles magnétiques codées par des ratios précis de fluorophores internes (code-barres spectral de chaque bille).",
+          "isCorrect": true
+        },
+        {
+          "text": "Permet le dosage multiplex simultané de plusieurs dizaines de protéines ou cytokines différentes dans un minuscule volume d'échantillon.",
+          "isCorrect": true
+        },
+        {
+          "text": "Nécessite la calcination complète des billes avant chaque analyse.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Luminex permet le multiplexage massif : chaque bille a une 'couleur interne' spécifique couplée à un anticorps de capture spécifique. Un second laser lit l'anticorps de détection fluorescent pour quantifier la molécule liée."
+    },
+    {
+      "q": "Concernant les approches bio-informatiques d'étude in silico des protéines :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Bio-informatique in silico"
+      ],
+      "options": [
+        {
+          "text": "La modélisation par homologie permet de prédire la structure 3D d'une protéine en s'appuyant sur des structures de protéines homologues résolues dans la PDB.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les algorithmes d'intelligence artificielle (ex. AlphaFold) permettent la prédiction de repliement 3D de novo à partir de la séquence primaire avec une précision atomique remarquable.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'amarrage moléculaire (docking) in silico permet de simuler la fixation de petites molécules thérapeutiques dans la poche active d'une cible protéique.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'analyse in silico remplace totalement et définitivement tous les essais cliniques chez l'homme dès la première simulation informatique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les outils in silico (modélisation par homologie, alignements BLAST, prédiction de structure par IA comme AlphaFold, criblage virtuel par docking) accélèrent considérablement la recherche fondamentale et le design de médicaments."
+    },
+    {
+      "q": "Pour purifier une protéine acide dont le point isoélectrique est pHi = 4,5 à partir d'un extrait tamponné à pH 7,5 :",
+      "tags": [
+        "CM 6 - Méthodes d'étude",
+        "Purification"
+      ],
+      "options": [
+        {
+          "text": "On choisira préférentiellement une chromatographie échangeuse d'anions, car la protéine est chargée négativement à pH 7,5 (pH > pHi).",
+          "isCorrect": true
+        },
+        {
+          "text": "On choisira une chromatographie échangeuse de cations car la protéine est chargée positivement.",
+          "isCorrect": false
+        },
+        {
+          "text": "On pourra l'éluer de la résine échangeuse d'anions en augmentant la concentration de NaCl du tampon.",
+          "isCorrect": true
+        },
+        {
+          "text": "On pourra également l'éluer en abaissant le pH de la solution en dessous de 4,5 pour la protoner et supprimer sa charge négative.",
+          "isCorrect": true
+        },
+        {
+          "text": "La protéine ne pourra jamais se fixer sur une résine solide.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "À pH 7,5, une protéine de pHi 4,5 a un pH > pHi, donc une charge nette négative. Elle se lie aux résines échangeuses d'anions (chargées positivement comme le DEAE). L'élution se fait soit par compétition d'anions chlorures (gradient de NaCl), soit en baissant le pH sous 4,5."
+    }
+  ]
+}

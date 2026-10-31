@@ -1,0 +1,593 @@
+{
+  "name": "CM 3 - Protéines- Structures secondaires",
+  "folder": "PASS - Molécules du vivant",
+  "description": "Organisation périodique locale des chaînes polypeptidiques : hélices alpha, feuillets plissés bêta, coudes et boucles, motifs supersecondaires et anomalies conformationnelles (prions).",
+  "prerequisites": [
+    "CM 1 - Acides Aminés",
+    "CM 2 - Peptides"
+  ],
+  "questions": [
+    {
+      "q": "Concernant les caractéristiques géométriques de l'hélice alpha standard des protéines :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Hélice alpha"
+      ],
+      "options": [
+        {
+          "text": "Elle comporte 3,6 résidus d'acides aminés par tour de spire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le pas de l'hélice est de 0,54 nm (5,4 Å), soit une progression axiale de 0,15 nm (1,5 Å) par résidu.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le squelette polypeptidique est situé à l'extérieur tandis que les chaînes latérales sont dirigées vers le centre de l'hélice.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dans la quasi-totalité des protéines naturelles, l'hélice alpha s'enroule vers la droite (pas à droite).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hélice alpha est stabilisée par des ponts disulfures entre chaque acide aminé consécutif.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'hélice alpha standard est droite (dextrogyre), compte 3,6 résidus/tour, un pas de 0,54 nm (1,5 Å/résidu). Le squelette carboné est au centre et les chaînes latérales (R) pointent vers l'extérieur. Elle est stabilisée par des liaisons hydrogène (et non des ponts disulfures)."
+    },
+    {
+      "q": "Comment sont établies les liaisons hydrogène stabilisant l'hélice alpha standard ?",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Hélice alpha"
+      ],
+      "options": [
+        {
+          "text": "Entre le groupement carbonyle C=O du résidu i et le groupement amine N-H du résidu (i + 4).",
+          "isCorrect": true
+        },
+        {
+          "text": "Entre le carbonyle C=O du résidu i et l'amine N-H du résidu (i + 1).",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre les chaînes latérales aromatiques par empilement pi-pi.",
+          "isCorrect": false
+        },
+        {
+          "text": "Entre le groupement C=O du résidu i et le carboxyle C-terminal de la protéine.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Dans l'hélice alpha classique (hélice 3,6_13), chaque groupe C=O du résidu i est lié par une liaison hydrogène dirigée parallèlement à l'axe de l'hélice au groupement N-H du résidu (i + 4)."
+    },
+    {
+      "q": "Quels acides aminés sont réputés pour être des 'casseurs d'hélice' ou défavorables à la formation d'une hélice alpha ?",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Hélice alpha"
+      ],
+      "options": [
+        {
+          "text": "La proline, car son azote engagé dans un cycle pyrrolidine ne possède pas d'atome d'hydrogène amide disponible et impose un angle rigide.",
+          "isCorrect": true
+        },
+        {
+          "text": "La glycine, car sa petite taille confère une trop grande flexibilité conformationnelle déstabilisatrice.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'alanine, qui déstabilise systématiquement toutes les structures en hélice alpha.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les acides aminés ramifiés sur le carbone bêta (Valine, Isoleucine, Thréonine) en raison de leur encombrement stérique.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une succession de résidus de même charge (ex. poly-Glu ou poly-Lys) induisant une répulsion électrostatique.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La proline (absence de H amide, angle phi contraint) et la glycine (entropie conformationnelle trop grande) brisent l'hélice alpha. Les acides aminés ramifiés en C-bêta (Val, Thr, Ile) et les répulsions électrostatiques la défavorisent. À l'inverse, l'alanine est le meilleur formateur d'hélice alpha."
+    },
+    {
+      "q": "Une hélice alpha amphipathique est caractérisée par :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Hélice amphipathique"
+      ],
+      "options": [
+        {
+          "text": "Une face longitudinale hydrophile exposée au solvant aqueux et une face opposée hydrophobe interagissant avec une membrane ou un domaine protéique apolaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une présence exclusive de résidus de glycine sur toute sa longueur.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une visualisation possible de l'alternance des résidus sur une représentation en roue hélicoïdale (diagramme de Wenxiang).",
+          "isCorrect": true
+        },
+        {
+          "text": "Une impossibilité absolue de s'ancrer dans les bicouches lipidiques membranaires.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Une hélice amphipathique sépare spatialement ses résidus polaires et apolaires sur deux faces distinctes le long de son cylindre, ce que visualise parfaitement une roue hélicoïdale (projection axiale tous les 100°)."
+    },
+    {
+      "q": "Concernant les feuillets bêta plissés :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Feuillets bêta"
+      ],
+      "options": [
+        {
+          "text": "Ils sont constitués d'au moins deux brins bêta formés de chaînes polypeptidiques en conformation étirée.",
+          "isCorrect": true
+        },
+        {
+          "text": "La distance entre deux résidus adjacents le long d'un brin bêta est d'environ 3,5 Å, soit plus du double de celle d'une hélice alpha (1,5 Å).",
+          "isCorrect": true
+        },
+        {
+          "text": "Les chaînes latérales (R) émergent alternativement au-dessus et en dessous du plan médian du feuillet.",
+          "isCorrect": true
+        },
+        {
+          "text": "Les brins bêta sont toujours parallèles et ne peuvent jamais être disposés de façon antiparallèle.",
+          "isCorrect": false
+        },
+        {
+          "text": "Les acides aminés aromatiques (Tyr, Trp, Phe) et ramifiés (Val, Ile, Thr) présentent une forte propension à intégrer les feuillets bêta.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les feuillets bêta sont formés de brins étirés (3,5 Å/résidu). Les chaînes R alternent de part et d'autre. Ils peuvent être parallèles, antiparallèles ou mixtes. Phe, Tyr, Trp, Val, Ile, Thr y sont particulièrement abondants."
+    },
+    {
+      "q": "Quelle différence fondamentale distingue un feuillet bêta antiparallèle d'un feuillet bêta parallèle ?",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Feuillets bêta"
+      ],
+      "options": [
+        {
+          "text": "Dans le feuillet antiparallèle, les brins voisins courent en sens opposés et les liaisons hydrogène sont colinéaires et perpendiculaires à l'axe des brins.",
+          "isCorrect": true
+        },
+        {
+          "text": "Dans le feuillet parallèle, les liaisons hydrogène sont inclinées (obliques) et légèrement moins stables que dans le feuillet antiparallèle.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le feuillet parallèle n'est stabilisé par aucune liaison hydrogène.",
+          "isCorrect": false
+        },
+        {
+          "text": "Dans le feuillet antiparallèle, chaque acide aminé est relié par deux liaisons hydrogène au même acide aminé du brin opposé.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le feuillet antiparallèle requiert obligatoirement la présence de métaux de transition pour être stable.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "En antiparallèle, les brins ont des directions N->C inversées et les paires de liaisons H sont rectilignes (colinéaires), procurant une stabilité supérieure. En parallèle, les liaisons H sont décalées et obliques."
+    },
+    {
+      "q": "À propos des coudes bêta (tours ou 'beta-turns') :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Coudes"
+      ],
+      "options": [
+        {
+          "text": "Ils permettent un demi-tour à 180° de la chaîne polypeptidique sur une séquence très courte de 4 acides aminés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils sont fréquemment stabilisés par une liaison hydrogène entre le C=O du résidu i et le N-H du résidu (i + 3).",
+          "isCorrect": true
+        },
+        {
+          "text": "La proline et la glycine y sont particulièrement fréquentes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Ils sont principalement situés au cœur hydrophobe le plus enfoui des protéines globulaires.",
+          "isCorrect": false
+        },
+        {
+          "text": "Ils connectent très fréquemment deux brins bêta adjacents dans un feuillet antiparallèle (motif épingle à cheveu).",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Les coudes bêta comportent 4 résidus, font un virage à 180°, sont stabilisés par une liaison H entre résidus i et i+3, sont riches en Pro (en i+1) et Gly (en i+2), et se trouvent à la SURFACE des protéines (hydrophiles, accessibles au solvant)."
+    },
+    {
+      "q": "Les boucles ('loops') des protéines se distinguent des structures régulières par :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Boucles"
+      ],
+      "options": [
+        {
+          "text": "Leur absence de périodicité spatiale stricte dans les angles phi et psi.",
+          "isCorrect": true
+        },
+        {
+          "text": "Leur localisation fréquente à la surface des protéines en contact direct avec la phase aqueuse.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le fait qu'elles hébergent fréquemment des sites actifs enzymatiques, des sites de liaison de ligands ou des épitopes antigéniques.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une résistance exceptionnelle à toute attaque protéolytique enzymatique par rapport aux hélices alpha.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les boucles sont flexibles, non périodiques, plus longues que les coudes, riches en acides aminés hydrophiles et chargées, exposées en surface, et forment souvent des sites de liaison ou catalytiques. Elles sont particulièrement sensibles aux protéases."
+    },
+    {
+      "q": "Concernant le motif structural 'doigt de zinc' (zinc finger) :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Motifs supersecondaires"
+      ],
+      "options": [
+        {
+          "text": "Il est composé d'une hélice alpha et d'un feuillet bêta de deux brins reliés sur environ 30 acides aminés.",
+          "isCorrect": true
+        },
+        {
+          "text": "L'ion zinc (Zn2+) est coordonné de manière tétraédrique par 2 résidus Cys et 2 résidus His (ou 4 Cys).",
+          "isCorrect": true
+        },
+        {
+          "text": "L'hélice alpha s'insère directement dans le grand sillon de l'ADN double brin pour reconnaître une séquence spécifique.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fixation du zinc induit l'hydrolyse enzymatique irréversible de la molécule d'ADN.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le doigt de zinc (C2H2) est un motif de repliement de ~30 aa stabilisé par un atome de Zn2+ chélaté par 2 Cys et 2 His. L'hélice alpha du motif assure la reconnaissance spécifique des bases dans le grand sillon de l'ADN."
+    },
+    {
+      "q": "Quelle protéine fibreuse humaine est presque exclusivement composée d'hélices alpha associées en super-hélices ?",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Protéines fibreuses"
+      ],
+      "options": [
+        {
+          "text": "L'alpha-kératine des cheveux, des poils et des ongles.",
+          "isCorrect": true
+        },
+        {
+          "text": "La fibroïne de la soie.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'élastine pulmonaire.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'actine globulaire G.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'alpha-kératine est constituée d'hélices alpha droites associées en dimères super-enroulés vers la gauche (coiled-coil), puis en protofilaments et protofibrilles stabilisés par de nombreux ponts disulfures."
+    },
+    {
+      "q": "La structure du tropocollagène se caractérise par :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Collagène"
+      ],
+      "options": [
+        {
+          "text": "Une triple hélice formée de trois chaînes polypeptidiques en hélice gauche enroulées ensemble vers la droite.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une séquence répétitive canonique de type (Gly-X-Y)n où X est souvent la proline et Y l'hydroxyproline.",
+          "isCorrect": true
+        },
+        {
+          "text": "La présence indispensable de la glycine à chaque troisième position car c'est le seul acide aminé assez petit pour loger au cœur de la triple hélice.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une abondance exceptionnelle de tryptophane et de phénylalanine au centre de la triple hélice.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une stabilisation par des liaisons hydrogène inter-chaînes impliquant notamment les hydroxyprolines.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "Le tropocollagène est une triple hélice droite composée de 3 hélices individuelles gauches de type polyproline II. Le motif répété est Gly-X-Y. La glycine, sans encombrement stérique, est obligatoire à l'axe central."
+    },
+    {
+      "q": "Concernant la protéine prion et la transition conformationnelle pathologique :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Prions"
+      ],
+      "options": [
+        {
+          "text": "La forme cellulaire normale PrPC est majoritairement riche en hélices alpha (environ 40%) et sensible à la dégradation par la protéinase K.",
+          "isCorrect": true
+        },
+        {
+          "text": "La forme pathogène scrapie PrPSC présente un enrichissement massif en feuillets bêta plissés (plus de 40%).",
+          "isCorrect": true
+        },
+        {
+          "text": "PrPSC acquiert une insolubilité remarquable dans les détergents non dénaturants et une résistance accrue à la protéolyse.",
+          "isCorrect": true
+        },
+        {
+          "text": "La transition de PrPC vers PrPSC s'accompagne d'une altération de la séquence primaire d'acides aminés codée par le gène PRNP.",
+          "isCorrect": false
+        },
+        {
+          "text": "L'agrégation de PrPSC conduit à la formation de plaques ou fibres amyloïdes neurotoxiques.",
+          "isCorrect": true
+        }
+      ],
+      "explanation": "La maladie à prion résulte d'un changement purement CONFORMATIONNEL sans modification de la séquence primaire en acides aminés : l'enrichissement en feuillets bêta confère à PrPSC son insolubilité, sa résistance à la protéinase K et sa capacité d'agrégation amyloïde."
+    },
+    {
+      "q": "Les fibres amyloïdes formées dans la maladie d'Alzheimer ou les encéphalopathies spongiformes présentent toutes en diffraction des rayons X :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Amyloïde"
+      ],
+      "options": [
+        {
+          "text": "Une structure générique 'cross-bêta' caractérisée par des brins bêta perpendiculaires à l'axe longitudinal de la fibre.",
+          "isCorrect": true
+        },
+        {
+          "text": "Une pelote d'hélices alpha géantes orientées perpendiculairement au flux sanguin.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une disposition hélicoïdale de triglycérides saturés insolubles.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un agencement amorphe totalement dépourvu de liaisons hydrogène régulières.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Toutes les fibres amyloïdes partagent une signature universelle en 'cross-beta' : un empilement régulier de brins bêta orientés perpendiculairement à l'axe de la fibrille, générant des réflexions caractéristiques à 4,7 Å et 10 Å aux rayons X."
+    },
+    {
+      "q": "Quelle liaison chimique covalente est essentielle pour stabiliser la structure secondaire et tertiaire de nombreuses protéines sécrétées ?",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Liaisons covalentes"
+      ],
+      "options": [
+        {
+          "text": "Le pont disulfure formé par oxydation de deux résidus cystéine.",
+          "isCorrect": true
+        },
+        {
+          "text": "La liaison phosphodiester entre deux alanines.",
+          "isCorrect": false
+        },
+        {
+          "text": "La liaison glucosidique alpha-1,4 entre deux glycines.",
+          "isCorrect": false
+        },
+        {
+          "text": "La liaison anhydride phosphorique entre deux prolines.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le pont disulfure (-S-S-) reliant deux cystéines est la liaison covalente majeure qui verrouille la conformation native des protéines extracellulaires sécrétées (anticorps, insuline, enzymes digestives)."
+    },
+    {
+      "q": "Le réducteur chimique classiquement utilisé au laboratoire pour cliver les ponts disulfures des protéines est :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Agents réducteurs"
+      ],
+      "options": [
+        {
+          "text": "Le bêta-mercaptoéthanol.",
+          "isCorrect": true
+        },
+        {
+          "text": "Le dithiothréitol (DTT).",
+          "isCorrect": true
+        },
+        {
+          "text": "La ninhydrine bouillante.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le peroxyde d'hydrogène (eau oxygénée).",
+          "isCorrect": false
+        },
+        {
+          "text": "Le chlorure de sodium concentré.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le bêta-mercaptoéthanol et le DTT (réactif de Cleland) réduisent spécifiquement les ponts disulfures (-S-S-) en fonctions thiols libres (-SH), déstabilisant les architectures protéiques stabilisées par ces ponts."
+    },
+    {
+      "q": "Dans une protéine membranaire transmembranaire, quelle structure secondaire traverse le plus fréquemment la bicouche lipidique hydrophobe ?",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Protéines membranaires"
+      ],
+      "options": [
+        {
+          "text": "Une hélice alpha apolaire d'environ 20 résidus d'acides aminés hydrophobes.",
+          "isCorrect": true
+        },
+        {
+          "text": "Un coude bêta de 4 résidus de glutamate ionisé.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une boucle lâche riche en aspartates et arginines hydratés.",
+          "isCorrect": false
+        },
+        {
+          "text": "Un brin bêta isolé non apparié de 3 acides aminés.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Une hélice alpha apolaire d'environ 20 acides aminés (longueur ~ 30 Å = 3 nm) est la structure idéale pour franchir la bicouche lipidique, car toutes ses liaisons hydrogène C=O et N-H du squelette sont satisfaites en interne."
+    },
+    {
+      "q": "Le tonneau bêta (beta-barrel) retrouvé dans les porines de la membrane externe des bactéries et mitochondries est :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Tonneau bêta"
+      ],
+      "options": [
+        {
+          "text": "Un feuillet bêta refermé sur lui-même formant un canal cylindrique aqueux transmembranaire.",
+          "isCorrect": true
+        },
+        {
+          "text": "Caractérisé par une alternance de résidus hydrophobes tournés vers les lipides et de résidus hydrophiles tournés vers la lumière du pore.",
+          "isCorrect": true
+        },
+        {
+          "text": "Formé exclusivement de résidus de glycine et de proline.",
+          "isCorrect": false
+        },
+        {
+          "text": "Une structure exclusivement cytoplasmique dépourvue de tout contact avec des membranes.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Les porines adoptent un repliement en tonneau bêta fermé avec alternance de faces hydrophobes externes (vers la membrane) et hydrophiles internes (délimitant le pore aqueux)."
+    },
+    {
+      "q": "Quelle méthode expérimentale de spectroscopie permet d'évaluer rapidement le pourcentage d'hélices alpha et de feuillets bêta d'une protéine en solution ?",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Méthodes d'étude"
+      ],
+      "options": [
+        {
+          "text": "Le dichroïsme circulaire (DC) dans l'ultraviolet lointain (190-250 nm).",
+          "isCorrect": true
+        },
+        {
+          "text": "La spectrométrie d'absorption atomique du plomb.",
+          "isCorrect": false
+        },
+        {
+          "text": "La réaction de biuret à chaud.",
+          "isCorrect": false
+        },
+        {
+          "text": "La chromatographie sur résine échangeuse de cations.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le dichroïsme circulaire (CD) dans l'UV lointain permet de quantifier le contenu en structures secondaires : l'hélice alpha donne deux minima caractéristiques à 208 nm et 222 nm, le feuillet bêta un minimum vers 217 nm."
+    },
+    {
+      "q": "Le diagramme de Ramachandran :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Ramachandran"
+      ],
+      "options": [
+        {
+          "text": "Représente les valeurs permises des angles dièdres phi et psi pour chaque acide aminé en tenant compte des collisions stériques entre atomes non liés.",
+          "isCorrect": true
+        },
+        {
+          "text": "Comporte des régions autorisées spécifiques pour les hélices alpha droites (quadrant inférieur gauche) et les feuillets bêta (quadrant supérieur gauche).",
+          "isCorrect": true
+        },
+        {
+          "text": "Montre que la glycine possède la plus grande zone de conformations autorisées en raison de l'absence de chaîne latérale encombrante.",
+          "isCorrect": true
+        },
+        {
+          "text": "Montre que la proline possède une surface de conformations autorisées très restreinte.",
+          "isCorrect": true
+        },
+        {
+          "text": "Mesure directement l'activité catalytique des enzymes en présence de leur substrat.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le graphe de Ramachandran trace psi en fonction de phi. Les conformations permises correspondent aux zones d'hélices alpha, feuillets bêta et hélices de collagène. Gly a le plus vaste domaine autorisé, Pro le plus restreint."
+    },
+    {
+      "q": "L'énergie moyenne d'une liaison hydrogène stabilisant les structures secondaires des protéines est d'environ :",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Liaisons faibles"
+      ],
+      "options": [
+        {
+          "text": "3 à 7 kcal/mol (soit environ 12 à 30 kJ/mol).",
+          "isCorrect": true
+        },
+        {
+          "text": "80 à 100 kcal/mol (équivalente à une liaison covalente C-C).",
+          "isCorrect": false
+        },
+        {
+          "text": "0,01 kcal/mol.",
+          "isCorrect": false
+        },
+        {
+          "text": "1000 kcal/mol.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "L'énergie d'une liaison hydrogène individuelle est de 3 à 7 kcal/mol (12-30 kJ/mol), bien inférieure à une liaison covalente C-C (~85 kcal/mol), mais leur multiplicité coopérative confère une immense stabilité aux hélices et feuillets."
+    },
+    {
+      "q": "Parmi les motifs supersecondaires suivants, lequel est classiquement impliqué dans la dimérisation de facteurs de transcription eucaryotes ?",
+      "tags": [
+        "CM 3 - Structures secondaires",
+        "Motifs supersecondaires"
+      ],
+      "options": [
+        {
+          "text": "Le motif fermeture à leucine (leucine zipper) constitué de deux hélices alpha amphipathiques interagissant par leurs résidus Leu tous les 7 acides aminés.",
+          "isCorrect": true
+        },
+        {
+          "text": "La boucle de clivage de l'insuline par la pepsine.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le coude gamma riche en sérines phosphorylées.",
+          "isCorrect": false
+        },
+        {
+          "text": "Le canal sodium voltage-dépendant monomérique.",
+          "isCorrect": false
+        }
+      ],
+      "explanation": "Le motif 'zipper à leucine' (leucine zipper) comporte des résidus de leucine répétés tous les 7 acides aminés (heptades), formant une bande hydrophobe sur une hélice alpha qui engrène une hélice homologue pour former un dimère fonctionnel fixant l'ADN."
+    }
+  ]
+}

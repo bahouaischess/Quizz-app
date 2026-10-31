@@ -1,0 +1,182 @@
+[
+  {
+    "recto": "Quelle est la définition d'un système ouvert, fermé et isolé ?",
+    "verso": "Ouvert : échange matière ET énergie.\nFermé : échange énergie UNIQUEMENT (pas de matière).\nIsolé : AUCUN échange (ni matière ni énergie).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Systèmes",
+      "Définitions"
+    ]
+  },
+  {
+    "recto": "Quelle est la différence entre grandeur intensive et extensive ?",
+    "verso": "Intensive : indépendante de la quantité de matière (T, P, mu, concentration, masse volumique).\nExtensive : proportionnelle à la taille du système (V, m, n, U, H, S, G).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Variables d'état",
+      "Propriétés"
+    ]
+  },
+  {
+    "recto": "Qu'énonce le Premier Principe de la thermodynamique ?",
+    "verso": "L'énergie de l'univers se conserve.\nPour un système fermé : Delta U = W + Q.\nU est une fonction d'état (Delta U ne dépend pas du chemin).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Premier principe",
+      "Énergie interne"
+    ]
+  },
+  {
+    "recto": "Que valent la chaleur à volume constant Qv et la chaleur à pression constante Qp ?",
+    "verso": "À volume constant : Qv = Delta U.\nÀ pression constante : Qp = Delta H (avec Enthalpie H = U + PV).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Qv et Qp",
+      "U et H"
+    ]
+  },
+  {
+    "recto": "Qu'énonce le Deuxième Principe de la thermodynamique ?",
+    "verso": "dS = dSe + dSi avec dSi >= 0 (création d'entropie positive pour toute transformation irréversible/spontanée, nulle si réversible).\nPour un système isolé : Delta S_iso >= 0.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Deuxième principe",
+      "Entropie"
+    ]
+  },
+  {
+    "recto": "Qu'énonce le Troisième Principe de la thermodynamique (principe de Nernst) ?",
+    "verso": "L'entropie d'un corps pur cristallisé parfait au zéro absolu (0 K) est nulle : S(0 K) = 0. Permet de définir des entropies absolues S°m(T) > 0.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Troisième principe",
+      "Nernst"
+    ]
+  },
+  {
+    "recto": "Quelle est la définition de l'enthalpie libre de Gibbs G et le critère de spontanéité à T et P constantes ?",
+    "verso": "G = H - TS.\nCritère à T et P constantes :\n- Delta G < 0 : réaction spontanée (exergonique)\n- Delta G = 0 : état d'équilibre dynamique\n- Delta G > 0 : impossible spontanément dans ce sens (endergonique).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Gibbs",
+      "Critère de spontanéité"
+    ]
+  },
+  {
+    "recto": "Quelle est l'expression de Delta_r G et la relation entre Delta_r G° et la constante d'équilibre K ?",
+    "verso": "Delta_r G = Delta_r G° + RT ln(Qr).\nÀ l'équilibre : Delta_r G = 0 et Qr = K, d'où :\nDelta_r G° = - RT ln(K)  <=>  K = exp(-Delta_r G° / RT).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Delta_r G°",
+      "Constante K"
+    ]
+  },
+  {
+    "recto": "Comment le signe de (Qr - K) prédit-il le sens d'évolution spontanée d'une réaction ?",
+    "verso": "- Si Qr < K : évolution dans le SENS DIRECT (1) (formation de produits).\n- Si Qr > K : évolution dans le SENS INVERSE (-1) (formation de réactifs).\n- Si Qr = K : système à l'équilibre chimique.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Qr vs K",
+      "Sens d'évolution"
+    ]
+  },
+  {
+    "recto": "Quand une réaction est-elle spontanée selon les signes de Delta H et Delta S ?",
+    "verso": "- Delta H < 0, Delta S > 0 : Spontanée à TOUTE température.\n- Delta H > 0, Delta S < 0 : Jamais spontanée (Delta G > 0 toujours).\n- Delta H < 0, Delta S < 0 : Spontanée à BASSE température (T < T_inv).\n- Delta H > 0, Delta S > 0 : Spontanée à HAUTE température (T > T_inv).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Signes Delta H Delta S",
+      "Tableau de spontanéité"
+    ]
+  },
+  {
+    "recto": "Quelle est la température d'inversion T_inv pour une réaction chimique ?",
+    "verso": "T_inv = Delta_r H° / Delta_r S° (température à laquelle Delta_r G° = 0).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "T_inv",
+      "Formule"
+    ]
+  },
+  {
+    "recto": "Quelle est la relation entre Delta_r H et Delta_r U pour des gaz parfaits ?",
+    "verso": "Delta_r H = Delta_r U + Delta n_gaz * R * T.\nAvec Delta n_gaz = moles de gaz produits - moles de gaz réactifs.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Delta H et Delta U",
+      "Gaz"
+    ]
+  },
+  {
+    "recto": "Quelle est la convention pour l'activité chimique a_i des solutés, solvant, solides purs et gaz ?",
+    "verso": "- Soluté dilué : a_i = [i] / C° (avec C° = 1 mol/L)\n- Solvant (eau) : a = 1\n- Solide ou liquide pur : a = 1\n- Gaz parfait : a_i = P_i / P° (avec P° = 1 bar).\nL'activité est toujours sans dimension.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Activité chimique",
+      "Conventions"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le couplage thermodynamique cellulaire ?",
+    "verso": "Association d'une réaction endergonique défavorable (Delta G1 > 0) avec une réaction très exergonique (Delta G2 << 0, souvent hydrolyse de l'ATP) pour que la somme Delta G_global = Delta G1 + Delta G2 < 0.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Couplage",
+      "ATP"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le travail des forces de pression ?",
+    "verso": "delta_W = - P_ext * dV.\nCompression (dV < 0) => W > 0 (travail reçu).\nDétente (dV > 0) => W < 0 (travail fourni à l'extérieur).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Travail",
+      "Pression-Volume"
+    ]
+  },
+  {
+    "recto": "Quelle est la formule de l'entropie de changement d'état à la température d'équilibre T_chgt ?",
+    "verso": "Delta_chgt S° = Delta_chgt H° / T_chgt (car à l'équilibre Delta_chgt G° = 0).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Changement d'état",
+      "Entropie"
+    ]
+  },
+  {
+    "recto": "Une réaction avec K = 10^10 est-elle nécessairement rapide ?",
+    "verso": "NON ! La thermodynamique indique que l'état d'équilibre est quasi-totalement déplacé vers les produits, mais la cinétique (énergie d'activation Ea) peut être tellement lente que la réaction ne se produit pas à température ordinaire sans catalyseur.",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Piège",
+      "Thermo vs Cinétique"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce que le potentiel chimique mu_i d'un constituant ?",
+    "verso": "L'enthalpie libre molaire partielle : mu_i = dG/dni (à T, P, nj ctes).\nmu_i = mu_i° + RT ln(a_i).\nÀ l'équilibre entre deux phases, mu_i(phase 1) = mu_i(phase 2).",
+    "subject": "Chimie",
+    "folder": "PASS - Chimie / Mise en place de l'outil thermodynamique + Evolution spontanée d'un systeme + Etat d'équilibre",
+    "tags": [
+      "Potentiel chimique",
+      "Définition"
+    ]
+  }
+]

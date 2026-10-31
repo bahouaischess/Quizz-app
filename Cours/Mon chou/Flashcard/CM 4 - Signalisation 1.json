@@ -1,0 +1,214 @@
+[
+  {
+    "recto": "Définir la communication autocrine vs paracrine vs endocrine.",
+    "verso": "- Autocrine : le médiateur agit sur la cellule émettrice elle-même.\n- Paracrine : diffusion locale dans le liquide interstitiel vers les cellules voisines.\n- Endocrine : sécrétion dans le sang vers des cibles éloignées à très faible concentration (< 10^-8 M).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Communication",
+      "Autocrine",
+      "Paracrine",
+      "Endocrine"
+    ]
+  },
+  {
+    "recto": "Qu'est-ce qu'une jonction lacunaire (gap junction) dans la signalisation ?",
+    "verso": "Canaux intercellulaires directs formés de connexons permettant le passage passif d'ions et petites molécules (< 1 kDa) de cytoplasme à cytoplasme sans sécrétion extracellulaire.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Gap junction",
+      "Jonction lacunaire"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques physico-chimiques et le mode d'action des médiateurs hydrosolubles (hydrophiles) ?",
+    "verso": "Solubles dans l'eau, circulent librement, ne traversent pas la membrane plasmique. Se lient à des récepteurs membranaires, réponse rapide, demi-vie courte (secondes/minutes).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Médiateurs hydrophiles"
+    ]
+  },
+  {
+    "recto": "Quelles sont les caractéristiques physico-chimiques et le mode d'action des médiateurs hydrophobes (lipophiles) ?",
+    "verso": "Insolubles en milieu aqueux, transportés par des protéines porteuses. Traversent directement la membrane plasmique, se lient à des récepteurs nucléaires intracellulaires, régulent la transcription des gènes, demi-vie longue (heures/jours).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Médiateurs lipophiles",
+      "Stéroïdes"
+    ]
+  },
+  {
+    "recto": "La thyroxine (T4) est-elle soluble ou insoluble dans l'eau et où se situe son récepteur ?",
+    "verso": "Bien que dérivée de la tyrosine, la thyroxine est hydrophobe (insoluble). Elle diffuse à travers la membrane plasmique et se lie à un récepteur nucléaire.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Thyroxine",
+      "Tyrosine",
+      "Récepteur nucléaire"
+    ]
+  },
+  {
+    "recto": "Quel est le mécanisme d'action du monoxyde d'azote (NO) sur les vaisseaux ?",
+    "verso": "Gaz dissous à demi-vie très courte (5-10 s). Diffuse aux cellules musculaires lisses vasculaires -> active la guanylate cyclase soluble -> élévation de GMPc -> relaxation musculaire / vasodilatation.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "NO",
+      "GMPc",
+      "Vasodilatation"
+    ]
+  },
+  {
+    "recto": "Définir agoniste vs antagoniste.",
+    "verso": "- Agoniste : molécule se fixant sur un récepteur et déclenchant la même réponse que le ligand naturel.\n- Antagoniste : molécule se fixant sur le récepteur sans induire de réponse, bloquant l'action du ligand naturel.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Agoniste",
+      "Antagoniste",
+      "Pharmacologie"
+    ]
+  },
+  {
+    "recto": "Quel est le mécanisme d'action des curares (rocuronium, vécuronium) ?",
+    "verso": "Antagonistes du récepteur nicotinique de l'acétylcholine (nAChR) au niveau de la jonction neuromusculaire, bloquant la contraction et provoquant la relaxation musculaire.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Curare",
+      "nAChR",
+      "Relaxation"
+    ]
+  },
+  {
+    "recto": "Citer deux molécules utilisées pour la décurarisation.",
+    "verso": "Le Sugammadex (encapsulation du rocuronium) et la Néostigmine (inhibiteur de l'acétylcholinestérase augmentant l'ACh dans la fente synaptique).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Décurarisation",
+      "Sugammadex",
+      "Néostigmine"
+    ]
+  },
+  {
+    "recto": "Quels sont les effets opposés de l'acétylcholine sur le muscle squelettique vs le muscle cardiaque ?",
+    "verso": "- Muscle squelettique : récepteur nicotinique (nAChR, ionotrope) -> contraction.\n- Muscle cardiaque : récepteur muscarinique (mAChR, RCPG Gi) -> ralentissement / diminution de contraction.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Acétylcholine",
+      "Spécificité",
+      "nAChR",
+      "mAChR"
+    ]
+  },
+  {
+    "recto": "Quels sont les 5 domaines caractéristiques des récepteurs nucléaires ?",
+    "verso": "- A/B : transactivation régulatrice N-terminale.\n- C : domaine de liaison à l'ADN (doigts de zinc liant les HRE).\n- D : région charnière.\n- E : domaine de liaison du ligand.\n- F : signal de localisation nucléaire (NLS).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Récepteurs nucléaires",
+      "Domaines"
+    ]
+  },
+  {
+    "recto": "Comment le récepteur des glucocorticoïdes est-il maintenu inactif dans le cytosol ?",
+    "verso": "Par association avec des protéines chaperonnes (PAR / Hsp) qui masquent son domaine de liaison à l'ADN et son signal NLS.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Glucocorticoïdes",
+      "Hsp",
+      "Cytosol"
+    ]
+  },
+  {
+    "recto": "Quelle est la structure du récepteur nicotinique nAChR ?",
+    "verso": "Pentamère transmembranaire constitué de 5 sous-unités : 2 alpha, 1 bêta, 1 gamma, 1 delta. Chaque sous-unité possède 4 hélices transmembranaires. Les 2 molécules d'ACh se fixent sur les 2 sous-unités alpha.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "nAChR",
+      "Structure"
+    ]
+  },
+  {
+    "recto": "Quel type d'ions traverse le récepteur GABA-A et quelle en est la conséquence membranaire ?",
+    "verso": "Ions chlorure (Cl-). Leur entrée dans le cytoplasme induit une hyperpolarisation de la membrane, rendant le neurone moins excitable (effet inhibiteur).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "GABA-A",
+      "Chlore",
+      "Hyperpolarisation"
+    ]
+  },
+  {
+    "recto": "Sur quelle sous-unité du récepteur GABA-A se fixent respectivement le GABA et les benzodiazépines ?",
+    "verso": "- GABA (ligand naturel) : sous-unité alpha.\n- Benzodiazépines (modulateurs allostériques) : sous-unité bêta.\n- Barbituriques : sous-unités gamma.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "GABA-A",
+      "Sous-unités",
+      "Sites de liaison"
+    ]
+  },
+  {
+    "recto": "Quel est le rôle du Flumazénil en thérapeutique ?",
+    "verso": "Modulateur allostérique neutre se liant au site des benzodiazépines sur le récepteur GABA-A, utilisé comme antidote spécifique lors des intoxications aux benzodiazépines.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Flumazénil",
+      "Antidote",
+      "Benzodiazépines"
+    ]
+  },
+  {
+    "recto": "Pourquoi dit-on que les prostaglandines ne sont pas stockées ?",
+    "verso": "Ce sont des lipides (eicosanoïdes en C20) synthétisés de novo à la demande à partir de phospholipides membranaires sous l'action des cyclo-oxygénases, puis immédiatement sécrétés.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Prostaglandines",
+      "Synthèse à la demande"
+    ]
+  },
+  {
+    "recto": "Quel est le mécanisme d'action des bêta-bloquants ?",
+    "verso": "Antagonistes des récepteurs bêta-adrénergiques : ils bloquent l'action de l'adrénaline et de la noradrénaline, diminuant le rythme cardiaque et la pression sanguine.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Bêta-bloquants",
+      "Adrénaline"
+    ]
+  },
+  {
+    "recto": "Quel ion déclenche l'exocytose des vésicules synaptiques dans la terminaison présynaptique ?",
+    "verso": "L'ion calcium (Ca2+), qui entre massivement par les canaux calciques voltage-dépendants lors de la dépolarisation.",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Synapse",
+      "Calcium",
+      "Exocytose"
+    ]
+  },
+  {
+    "recto": "Citer les 4 types majeurs de récepteurs cellulaires.",
+    "verso": "1) Récepteurs nucléaires (intracellulaires).\n2) Récepteurs canaux ioniques (ionotropes).\n3) Récepteurs couplés aux protéines G (RCPG).\n4) Récepteurs à activité enzymatique (ex: tyrosine kinase).",
+    "subject": "Biologie Cellulaire",
+    "folder": "PASS - Biologie Cellulaire / CM 4 - Signalisation 1",
+    "tags": [
+      "Classification récepteurs"
+    ]
+  }
+]
